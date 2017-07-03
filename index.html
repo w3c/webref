@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>Reffy reports</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous" />
+    <link rel="stylesheet" href="common/styles.css">
+  </head>
+  <body>
+    <h1>Web Platform exploration with Reffy</h1>
+    <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It takes a list of specifications as input and:</p>
+    <ol>
+      <li>retrieves information about them (e.g. the URL of the latest Editor's Draft);</li>
+      <li>fetches and parses latest Editor's Drafts to extract WebIDL content, links and references;</li>
+      <li>analyses cross-spec references to report anomalies such as missing normative references, invalid or duplicated IDL terms, or links to external documents that do not appear in the list of references;</li>
+      <li>creates an inverse dependencies graph to list specifications that depend on a given specification;</li>
+      <li>generates machine-readable and human-friendly reports of previous activities.</li>
+    </ol>
+
+    <section>
+      <h2>Published reports</h2>
+
+      <p>The results of the exploration depend on the list of specifications given as input to Reffy. The following reports are available:</p>
+
+      <dl>
+        <dt>W3C</dt>
+        <dd>The crawl takes a W3C-centric perspective, preferring W3C specifications to WHATWG specifications when both exist.</dd>
+        <dd>See the <a href="w3c/">latest W3C report</a> (HTML page).</dd>
+        <dd>See the <a href="w3c/crawl.json">results of the crawl</a> (JSON document).</dd>
+
+        <dt>WHATWG</dt>
+        <dd>The crawl takes a WHATWG-centric perspective, preferring WHAT specifications to W3C specifications when both exist.</dd>
+        <dd>See the <a href="whatwg/">latest WHATWG report</a> (HTML page).</dd>
+        <dd>See the <a href="whatwg/crawl.json">results of the crawl</a> (JSON document).</dd>
+      </dl>
+
+      <p><strong>Note:</strong> Efforts so far have focused on analysing WebIDL code. Although the list includes a few CSS and other non IDL specifications, the reports mostly contain specifications that define WebIDL content or that are directly referenced by a specification that defines WebIDL content. Reports may be extended in the future to include more specifications.</p>
+    </section>
+
+    <section>
+      <h2>About Reffy</h2>
+      <p>Reffy was initially created by <a href="https://github.com/tidoust/">François Daoust</a> and <a href="https://github.com/dontcallmedom/">Dominique Hazaël-Massieux</a> during the 2016 edition of the <a href="https://www.w3.org/blog/2016/07/exploring-web-platform-cross-dependencies/">W3C Geek Week</a>, and updated during the 2017 edition of that same W3C Geek Week. Code and instructions are available on <a href="https://github.com/tidoust/reffy" title="Reffy repository on GitHub">GitHub</a>. Feel free to report bugs  The code is available unde an <a href="https://github.com/tidoust/reffy/blob/master/LICENSE">MIT license</a>.</p>
+    </section>
+  </body>
+</html>
