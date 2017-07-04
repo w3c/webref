@@ -46,20 +46,18 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Audio Output Devices API {data-spec=true data-error=true}
+## Audio Output Devices API {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
 - Shortname: audio-output
-- Date: unknown
+- Date: 15 December 2016
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Cannot read property 'href' of null`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -315,7 +313,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 3 July 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -376,7 +374,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 3 July 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -410,7 +408,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 3 July 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -438,7 +436,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 3 July 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -460,7 +458,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 3 July 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -482,7 +480,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 3 July 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -517,7 +515,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 3 July 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -538,7 +536,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 3 July 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -579,7 +577,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 3 July 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -606,7 +604,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 3 July 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -656,20 +654,18 @@ Informative references to this spec from:
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
-## DOM Parsing and Serialization {data-spec=true data-error=true}
+## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/DOM-Parsing/)
 - Shortname: DOM-Parsing
-- Date: unknown
+- Date: and similar APIs
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Cannot read property 'href' of null`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -690,7 +686,7 @@ Informative references to this spec from:
 
 - URL: [Living Standard](https://dom.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 28 June 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -715,6 +711,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Element Traversal Specification](http://www.w3.org/TR/2008/REC-ElementTraversal-20081222/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -1168,6 +1165,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -1185,6 +1183,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -1201,6 +1200,7 @@ Normative references to this spec from:
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
@@ -1260,11 +1260,13 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
@@ -1273,6 +1275,7 @@ Informative references to this spec from:
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
@@ -1402,11 +1405,14 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
@@ -1438,23 +1444,24 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
-## Media Capture from DOM Elements {data-spec=true data-error=true}
+## Media Capture from DOM Elements {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/)
 - Shortname: mediacapture-fromelement
-- Date: unknown
+- Date: 01 July 2017
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Cannot read property 'href' of null`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+     * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2177,20 +2184,18 @@ Informative references to this spec from:
 - [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
 
 
-## Screen Capture {data-spec=true data-error=true}
+## Screen Capture {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/)
 - Shortname: screen-capture
-- Date: unknown
+- Date: 27 April 2017
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Cannot read property 'href' of null`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2771,6 +2776,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
@@ -2843,6 +2849,7 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Basic Card Payment](https://w3c.github.io/webpayments-methods-card/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
@@ -2859,6 +2866,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -2876,6 +2884,7 @@ Normative references to this spec from:
 - [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
@@ -2894,6 +2903,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
@@ -3040,7 +3050,9 @@ Informative references to this spec from:
 
 - [File API](https://w3c.github.io/FileAPI/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
 ## WebVTT: The Web Video Text Tracks Format {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -3072,7 +3084,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 3 July 2017
+- Date: 4 July 2017
 
 ### Potential issue(s) {.anomalies}
 
