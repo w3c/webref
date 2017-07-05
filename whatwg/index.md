@@ -1026,7 +1026,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
@@ -1036,6 +1036,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Obsolete WebIDL constructs found
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/), related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
@@ -1082,7 +1083,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## High Resolution Time Level 3 {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## High Resolution Time Level 3 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
@@ -1092,6 +1093,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Obsolete WebIDL constructs found
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
 
@@ -1383,7 +1385,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Media Capture and Streams {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## Media Capture and Streams {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
@@ -1393,6 +1395,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Obsolete WebIDL constructs found
 - Unknown WebIDL names used: `OverconstrainedError`
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
@@ -1633,7 +1636,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
@@ -1643,6 +1646,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Obsolete WebIDL constructs found
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/), related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
@@ -1793,7 +1797,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-ok=true}
+## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true}
 
 ### Crawl info {.info}
 
@@ -1803,7 +1807,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Obsolete WebIDL constructs found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2047,7 +2051,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Resource Timing Level 3 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Resource Timing Level 3 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
@@ -2057,6 +2061,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Obsolete WebIDL constructs found
 - Inconsistent references for links: 
      * [`https://w3c.github.io/navigation-timing/`](https://w3c.github.io/navigation-timing/), related reference "NAVIGATION-TIMING" uses URL [`https://www.w3.org/TR/navigation-timing/`](https://www.w3.org/TR/navigation-timing/)
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
@@ -3019,7 +3024,7 @@ Informative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 
 
-## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
@@ -3029,6 +3034,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Obsolete WebIDL constructs found
 - Unknown WebIDL names used: `RTCError`
 - WebIDL names also defined elsewhere: 
     * `RTCStats` also defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
