@@ -1,6 +1,6 @@
 % Reffy crawl results
 % Reffy
-% July 04, 2017
+% July 05, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -46,18 +46,20 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Audio Output Devices API {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Audio Output Devices API {data-spec=true data-error=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
 - Shortname: audio-output
-- Date: 15 December 2016
+- Date: unknown
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+The following network or parsing error occurred:
+`Cannot read property 'href' of null`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -193,7 +195,7 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Living Standard](https://console.spec.whatwg.org/)
+- URL: [Editor's Draft](https://console.spec.whatwg.org/)
 - Shortname: no shortname
 - Date: 20 June 2017
 
@@ -248,7 +250,7 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
+- URL: [Editor's Draft](https://w3c.github.io/editing/contentEditable.html)
 - Shortname: no shortname
 - Date: 23 June 2017
 
@@ -825,7 +827,7 @@ Informative references to this spec from:
 
 ### Crawl info {.info}
 
-- URL: [Living Standard](https://fetch.spec.whatwg.org/)
+- URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
 - Date: 15 June 2017
 
@@ -910,7 +912,7 @@ Informative references to this spec from:
 
 ### Crawl info {.info}
 
-- URL: [Living Standard](https://fullscreen.spec.whatwg.org/)
+- URL: [Editor's Draft](https://fullscreen.spec.whatwg.org/)
 - Shortname: no shortname
 - Date: 15 June 2017
 
@@ -1148,7 +1150,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
@@ -1235,7 +1236,6 @@ Informative references to this spec from:
 
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [Progress Events](https://www.w3.org/TR/progress-events)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
 ## HTML Canvas 2D Context {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1264,9 +1264,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://w3c.github.io/html/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-Informative references to this spec from:
-
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+No informative reference to this spec from other specs.
 
 
 ## HTML Media Capture {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -1383,7 +1381,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 04 July 2017
+- Date: 05 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1445,13 +1443,11 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [HTML 5.2](https://w3c.github.io/html/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
@@ -1483,9 +1479,7 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-Informative references to this spec from:
-
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+No informative reference to this spec from other specs.
 
 
 ## Media Capture from DOM Elements {data-spec=true data-error=true}
@@ -1516,7 +1510,7 @@ Informative references to this spec from:
 
 ### Crawl info {.info}
 
-- URL: [Initial URL](https://wicg.github.io/mediasession/)
+- URL: [Editor's Draft](https://wicg.github.io/mediasession/)
 - Shortname: no shortname
 - Date: 12 April 2017
 
@@ -2242,18 +2236,20 @@ Informative references to this spec from:
 - [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
 
 
-## Screen Capture {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Screen Capture {data-spec=true data-error=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/)
 - Shortname: screen-capture
-- Date: 27 April 2017
+- Date: unknown
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+The following network or parsing error occurred:
+`Cannot read property 'href' of null`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2498,7 +2494,7 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Initial URL](https://w3c.github.io/staticrange/)
+- URL: [Editor's Draft](https://w3c.github.io/staticrange/)
 - Shortname: no shortname
 - Date: 27 April 2017
 
@@ -2520,7 +2516,7 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Living Standard](https://storage.spec.whatwg.org/)
+- URL: [Editor's Draft](https://storage.spec.whatwg.org/)
 - Shortname: no shortname
 - Date: 15 June 2017
 
@@ -2540,7 +2536,7 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Living Standard](https://streams.spec.whatwg.org/)
+- URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
 - Date: 30 June 2017
 
@@ -2725,7 +2721,7 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Living Standard](https://url.spec.whatwg.org/)
+- URL: [Editor's Draft](https://url.spec.whatwg.org/)
 - Shortname: no shortname
 - Date: 30 June 2017
 
@@ -3110,7 +3106,6 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
-- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Basic Card Payment](https://w3c.github.io/webpayments-methods-card/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
@@ -3162,7 +3157,6 @@ Normative references to this spec from:
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
@@ -3417,9 +3411,9 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Jul 04 2017
+- Date: Wed Jul 05 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3436,9 +3430,9 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Jul 04 2017
+- Date: Wed Jul 05 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3486,7 +3480,6 @@ Informative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
 ## WebVTT: The Web Video Text Tracks Format {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -3547,7 +3540,7 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Living Standard](https://xhr.spec.whatwg.org/)
+- URL: [Editor's Draft](https://xhr.spec.whatwg.org/)
 - Shortname: no shortname
 - Date: 15 June 2017
 
