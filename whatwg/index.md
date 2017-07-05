@@ -850,6 +850,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
@@ -982,7 +983,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 28 June 2017
+- Date: 30 June 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1142,7 +1143,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## HTML Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## HTML Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true}
 
 ### Crawl info {.info}
 
@@ -1157,11 +1158,10 @@ No informative reference to this spec from other specs.
     * `BinaryType` also defined in [Presentation API](https://w3c.github.io/presentation-api/)
     * `Worker` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Missing references for links: 
+     * [`https://spec.whatwg.org/`](https://spec.whatwg.org/)
      * [`https://www.w3.org/TR/media-frags/`](https://www.w3.org/TR/media-frags/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "MEDIASTREAM" uses URL [`https://w3c.github.io/mediacapture-main/getusermedia.html`](https://w3c.github.io/mediacapture-main/getusermedia.html)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1519,6 +1519,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Media Source Extensions™](https://w3c.github.io/media-source/)
 
 
 ## MediaStream Image Capture {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
@@ -1982,7 +1983,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/push-api/)
 - Shortname: push-api
-- Date: 23 June 2017
+- Date: 05 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2348,6 +2349,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
@@ -2506,6 +2508,7 @@ Normative references to this spec from:
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [UI Events](https://www.w3.org/TR/uievents)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
