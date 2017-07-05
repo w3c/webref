@@ -2,33 +2,46 @@
 % Reffy
 % July 05, 2017
 
-## Audio Output Devices API
+## Geometry Interfaces Module Level 1
 
-- URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
-- Spec could not be rendered: *DEL* Cannot read property 'href' of null
-
-
-## DOM Parsing and Serialization
-
-- URL: [https://www.w3.org/TR/DOM-Parsing/](https://www.w3.org/TR/DOM-Parsing/)
-- Spec could not be rendered: *DEL* Cannot read property 'href' of null
+- URL: [https://www.w3.org/TR/geometry-1/](https://www.w3.org/TR/geometry-1/)
+- Obsolete WebIDL constructs found: *INS* true / *DEL* false
 
 
-## Media Capture from DOM Elements
+## High Resolution Time Level 3
 
-- URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
-- Spec could not be rendered: *DEL* Cannot read property 'href' of null
-
-
-## Scalable Vector Graphics (SVG) 2
-
-- URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
-- Spec could not be rendered: *DEL* FetchError: request to https://svgwg.org/svg2-draft/single-page.html failed, reason: socket hang up
+- URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
+- Obsolete WebIDL constructs found: *INS* true / *DEL* false
 
 
-## Screen Capture
+## Media Capture and Streams
 
-- URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
-- Spec could not be rendered: *DEL* Cannot read property 'href' of null
+- URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
+- Obsolete WebIDL constructs found: *INS* true / *DEL* false
+
+
+## Navigation Timing Level 2
+
+- URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
+- Obsolete WebIDL constructs found: *INS* true / *DEL* false
+
+
+## Performance Timeline Level 2
+
+- URL: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
+- Spec is OK: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* true / *DEL* false
+
+
+## Resource Timing Level 3
+
+- URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
+- Obsolete WebIDL constructs found: *INS* true / *DEL* false
+
+
+## WebRTC 1.0: Real-time Communication Between Browsers
+
+- URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
+- Obsolete WebIDL constructs found: *INS* true / *DEL* false
 
 

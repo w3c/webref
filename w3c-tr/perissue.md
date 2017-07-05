@@ -55,10 +55,16 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 ## List of specifications with obsolete WebIDL constructs
 
 - [Gamepad](https://w3c.github.io/gamepad/)
+- [High Resolution Time Level 3](https://w3c.github.io/hr-time/)
 - [HTML 5.2](https://w3c.github.io/html/)
 - [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
-=> 3 specifications found
+=> 9 specifications found
 
 A typical example is the use of `[]` instead of `FrozenArray`.
 
