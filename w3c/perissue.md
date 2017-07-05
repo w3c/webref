@@ -123,69 +123,31 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 ## Missing references for WebIDL names
 
 - [Battery Status API](https://w3c.github.io/battery/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/) uses:
-    * `DataTransfer` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `Navigator` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [Console Standard](https://console.spec.whatwg.org/) uses:
     * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
     * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
     * `Worklet` but does not reference [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/) uses:
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `Navigator` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `HTMLFormElement` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/) uses:
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/) uses:
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `HTMLElement` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `HTMLImageElement` but does not reference [HTML 5.2](https://w3c.github.io/html/)
     * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/uievents)
     * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/uievents)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/) uses:
     * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
     * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-- [Fetch Standard](https://fetch.spec.whatwg.org/) uses:
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `WindowOrWorkerGlobalScope` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [File API](https://w3c.github.io/FileAPI/) uses:
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/) uses `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [Gamepad](https://w3c.github.io/gamepad/) uses `Navigator` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Generic Sensor API](https://w3c.github.io/sensors/) uses `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [High Resolution Time Level 3](https://w3c.github.io/hr-time/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) uses:
     * `Element` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/uievents)
     * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/uievents)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/) uses `HTMLInputElement` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/) uses:
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `WindowOrWorkerGlobalScope` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `DOMStringList` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html) uses `DataTransfer` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/) uses:
     * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `Event` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `EventInit` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Media Session Standard](https://wicg.github.io/mediasession/) uses:
-    * `Navigator` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/) uses:
     * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `URL` but does not reference [URL Standard](https://url.spec.whatwg.org/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/) uses:
     * `MediaStreamTrack` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-    * `ImageBitmap` but does not reference [HTML 5.2](https://w3c.github.io/html/)
     * `MediaTrackSupportedConstraints` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
     * `MediaTrackCapabilities` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
     * `MediaTrackConstraintSet` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -193,20 +155,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ConstrainDouble` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
     * `ConstrainBoolean` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
     * `MediaTrackSettings` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- [MediaStream Recording](https://w3c.github.io/mediacapture-record/) uses:
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Payment Request API](https://w3c.github.io/browser-payment-api/) uses `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Permissions](https://w3c.github.io/permissions/) uses:
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `Navigator` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) uses `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/) uses:
-    * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `HTMLMediaElement` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) uses:
     * `DOMRect` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
     * `DOMMatrix` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
@@ -214,36 +164,15 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `DOMRectReadOnly` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
     * `DOMPointReadOnly` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
     * `DOMMatrixReadOnly` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/) uses `WindowOrWorkerGlobalScope` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) uses:
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `Navigator` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `MessagePort` but does not reference [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
-    * `WindowOrWorkerGlobalScope` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/) uses:
     * `Selection` but does not reference [Selection API](https://w3c.github.io/selection-api/)
     * `Element` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `CaretPosition` but does not reference [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
     * `StyleSheetList` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
     * `DocumentFragment` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Storage Standard](https://storage.spec.whatwg.org/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/) uses:
-    * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [URL Standard](https://url.spec.whatwg.org/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/) uses:
-    * `Navigator` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Web Animations](https://w3c.github.io/web-animations/) uses:
-    * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 3](https://w3c.github.io/hr-time/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170628/) uses:
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Web Animations](https://w3c.github.io/web-animations/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 3](https://w3c.github.io/hr-time/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-- [Web IDL](https://heycam.github.io/webidl/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html) uses:
     * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `OnErrorEventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
@@ -251,32 +180,20 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
     * `RequestCredentials` but does not reference [Fetch Standard](https://fetch.spec.whatwg.org/)
     * `MessagePort` but does not reference [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html) uses `Navigator` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) uses:
     * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `Event` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `EventInit` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/) uses `TextTrackCue` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) uses:
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `HTMLFormElement` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 
-=> 112 missing references for IDL definitions found in 49 specifications
+=> 51 missing references for IDL definitions found in 19 specifications
 
 
 ## Missing references based on document links
 
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to:
-    * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
-    * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but does not list it in its references
-- [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/) links to:
-    * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
-    * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/) but does not list it in its references
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
+- [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/) links to [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but does not list it in its references
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/) links to [`https://w3c.github.io/webappsec/usecases/credentialmanagement/`](https://w3c.github.io/webappsec/usecases/credentialmanagement/) but does not list it in its references
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but does not list it in its references
 - [CSS Fonts Module Level 3](http://dev.w3.org/csswg/css-fonts/) links to:
     * [`https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/`](https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
@@ -297,17 +214,13 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Gyroscope](https://w3c.github.io/gyroscope/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [HTML 5.2](https://w3c.github.io/html/) links to:
     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
-    * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
     * [`https://www.w3.org/TR/webmessaging/`](https://www.w3.org/TR/webmessaging/) but does not list it in its references
     * [`https://w3c.github.io/aria-in-html/`](https://w3c.github.io/aria-in-html/) but does not list it in its references
     * [`https://w3c.github.io/aria/practices/aria-practices.html`](https://w3c.github.io/aria/practices/aria-practices.html) but does not list it in its references
     * [`https://www.w3.org/TR/css-device-adapt-1/`](https://www.w3.org/TR/css-device-adapt-1/) but does not list it in its references
     * [`https://www.w3.org/TR/turingtest/`](https://www.w3.org/TR/turingtest/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
     * [`https://www.w3.org/TR/xlink11/`](https://www.w3.org/TR/xlink11/) but does not list it in its references
     * [`https://www.w3.org/TR/becss/`](https://www.w3.org/TR/becss/) but does not list it in its references
-- [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/) links to:
     * [`https://www.w3.org/TR/mediaont-10/`](https://www.w3.org/TR/mediaont-10/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/REC-mediaont-10-20120209/`](https://www.w3.org/TR/2012/REC-mediaont-10-20120209/) but does not list it in its references
@@ -328,13 +241,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 - [Push API](https://w3c.github.io/push-api/) links to [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
-- [Remote Playback API](https://w3c.github.io/remote-playback/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but does not list it in its references
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) links to:
     * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/) but does not list it in its references
     * [`https://www.w3.org/TR/filter-effects/`](https://www.w3.org/TR/filter-effects/) but does not list it in its references
     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/) but does not list it in its references
-    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/2014/WD-geometry-1-20140522/`](https://www.w3.org/TR/2014/WD-geometry-1-20140522/) but does not list it in its references
     * [`https://www.w3.org/TR/wai-aria-1.1/`](https://www.w3.org/TR/wai-aria-1.1/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
@@ -394,7 +305,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html) links to:
     * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
     * [`https://www.w3.org/TR/css-values-3//`](https://www.w3.org/TR/css-values-3//) but does not list it in its references
-- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/) links to:
     * [`https://w3c.github.io/webvtt/`](https://w3c.github.io/webvtt/) but does not list it in its references
     * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/) but does not list it in its references
@@ -402,7 +312,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 117 missing references for links found in 39 specifications
+=> 106 missing references for links found in 35 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -413,9 +323,12 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [Beacon](https://w3c.github.io/beacon/) links to [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/) links to:
+    * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/) but related reference "SVG" uses URL [`https://www.w3.org/TR/SVG/`](https://www.w3.org/TR/SVG/)
     * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG" uses URL [`https://www.w3.org/TR/SVG/`](https://www.w3.org/TR/SVG/)
+    * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/) links to:
     * [`https://www.w3.org/TR/2011/WD-html5-20110525/`](https://www.w3.org/TR/2011/WD-html5-20110525/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
@@ -424,6 +337,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [CSS Fonts Module Level 3](http://dev.w3.org/csswg/css-fonts/) links to:
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML5" uses URL [`http://www.w3.org/TR/2014/REC-html5-20141028/`](http://www.w3.org/TR/2014/REC-html5-20141028/)
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/2016/CR-css-values-3-20160929/`](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -445,17 +359,17 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
 - [HTML 5.2](https://w3c.github.io/html/) links to:
-    * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
     * [`https://w3c.github.io/media-source/`](https://w3c.github.io/media-source/) but related reference "MEDIA-SOURCE" uses URL [`https://www.w3.org/TR/media-source/`](https://www.w3.org/TR/media-source/)
-    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
     * [`https://www.w3.org/TR/1999/REC-xpath-19991116`](https://www.w3.org/TR/1999/REC-xpath-19991116) but related reference "XPATH" uses URL [`https://www.w3.org/TR/xpath`](https://www.w3.org/TR/xpath)
+    * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/) but related reference "REFERRERPOLICY" uses URL [`https://www.w3.org/TR/referrer-policy`](https://www.w3.org/TR/referrer-policy)
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
-    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "WORKERS" uses URL [`https://www.w3.org/TR/workers/`](https://www.w3.org/TR/workers/)
-- [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) links to [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
+- [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) links to:
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
+    * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/) links to [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/) links to:
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
@@ -501,6 +415,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/) links to:
     * [`https://www.w3.org/TR/2010/REC-wsc-ui-20100812/`](https://www.w3.org/TR/2010/REC-wsc-ui-20100812/) but related reference "WSC-UI" uses URL [`https://www.w3.org/TR/wsc-ui/`](https://www.w3.org/TR/wsc-ui/)
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/) links to:
     * [`https://w3c.github.io/navigation-timing/`](https://w3c.github.io/navigation-timing/) but related reference "NAVIGATION-TIMING" uses URL [`https://www.w3.org/TR/navigation-timing/`](https://www.w3.org/TR/navigation-timing/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
@@ -514,6 +429,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/compositing/`](https://www.w3.org/TR/compositing/) but related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113/`](https://www.w3.org/TR/2015/CR-compositing-1-20150113/) but related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113`](https://www.w3.org/TR/2015/CR-compositing-1-20150113) but related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "html51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
     * [`https://www.w3.org/TR/2012/WD-css3-values-20120308/`](https://www.w3.org/TR/2012/WD-css3-values-20120308/) but related reference "css-values" uses URL [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
     * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/) but related reference "html51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
     * [`https://www.w3.org/TR/2013/CR-html5-20130806/`](https://www.w3.org/TR/2013/CR-html5-20130806/) but related reference "html51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
@@ -578,10 +494,11 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
     * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/) but related reference "DOM-PARSING" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) links to:
     * [`https://w3c.github.io/webcrypto/`](https://w3c.github.io/webcrypto/) but related reference "WebCryptoAPI" uses URL [`https://www.w3.org/TR/WebCryptoAPI/`](https://www.w3.org/TR/WebCryptoAPI/)
     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
-=> 139 inconsistent references for links found in 56 specifications
+=> 145 inconsistent references for links found in 60 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
