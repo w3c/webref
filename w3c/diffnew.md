@@ -1,16 +1,16 @@
-% Diff between report from "July 04, 2017" and reference report from "July 04, 2017"
+% Diff between report from "July 05, 2017" and reference report from "July 04, 2017"
 % Reffy
-% July 04, 2017
+% July 05, 2017
 
-## Custom Elements
+## Audio Output Devices API
 
-- URL: [https://www.w3.org/TR/custom-elements/](https://www.w3.org/TR/custom-elements/)
+- URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Spec could not be rendered: *INS* Cannot read property 'href' of null
 
 
-## Media Capture from DOM Elements
+## Screen Capture
 
-- URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
+- URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
 - Spec could not be rendered: *INS* Cannot read property 'href' of null
 
 
