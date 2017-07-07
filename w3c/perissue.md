@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 06, 2017
+% July 07, 2017
 
 113 specifications were crawled in this report.
 
@@ -9,13 +9,18 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/): `undefined`
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/): `undefined`
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/): `undefined`
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/): `undefined`
-- [Web Audio API](https://webaudio.github.io/web-audio-api/): `undefined`
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/): `Cannot read property 'href' of null`
+- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/): `Cannot read property 'href' of null`
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/): `Cannot read property 'href' of null`
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/): `Cannot read property 'href' of null`
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/): `Cannot read property 'href' of null`
+- [Web Audio API](https://webaudio.github.io/web-audio-api/): `Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
+    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)`
 
-=> 5 specifications found
+=> 6 specifications found
 
 
 ## Specifications without normative dependencies
@@ -210,10 +215,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/) links to:
     * [`https://www.w3.org/TR/css-writing-modes-4/`](https://www.w3.org/TR/css-writing-modes-4/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-flexbox/`](https://www.w3.org/TR/css3-flexbox/) but does not list it in its references
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/) links to:
-    * [`https://w3c.github.io/aria/aria/aria.html`](https://w3c.github.io/aria/aria/aria.html) but does not list it in its references
-    * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but does not list it in its references
-    * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html) but does not list it in its references
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/) links to [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/) but does not list it in its references
 - [Gyroscope](https://w3c.github.io/gyroscope/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [HTML 5.2](https://w3c.github.io/html/) links to:
@@ -316,7 +317,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 106 missing references for links found in 35 specifications
+=> 103 missing references for links found in 34 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

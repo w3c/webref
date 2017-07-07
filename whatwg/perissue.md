@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% July 06, 2017
+% July 07, 2017
 
 104 specifications were crawled in this report.
 
@@ -9,11 +9,15 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/): `undefined`
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/): `undefined`
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/): `undefined`
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/): `undefined`
-- [Web Audio API](https://webaudio.github.io/web-audio-api/): `undefined`
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/): `Cannot read property 'href' of null`
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/): `Cannot read property 'href' of null`
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/): `Cannot read property 'href' of null`
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/): `Cannot read property 'href' of null`
+- [Web Audio API](https://webaudio.github.io/web-audio-api/): `Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
+    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)`
 
 => 5 specifications found
 
