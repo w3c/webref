@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 06, 2017
+% July 07, 2017
 
 113 specifications were crawled in this report.
 
@@ -25,12 +25,13 @@ Basically all specifications have normative dependencies on some other specifica
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Preload](https://w3c.github.io/preload/)
 - [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 
-=> 11 specifications found
+=> 12 specifications found
 
 Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
@@ -82,7 +83,6 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Input Events Level 2](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
-- [Preload](https://w3c.github.io/preload/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
@@ -91,7 +91,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Static Range](https://w3c.github.io/staticrange/)
 - [UI Events](https://www.w3.org/TR/uievents)
 
-=> 19 specifications found
+=> 18 specifications found
 
 
 
@@ -349,6 +349,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [Preload](https://w3c.github.io/preload/) links to:
     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
+    * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
+    * [`https://mimesniff.spec.whatwg.org/`](https://mimesniff.spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
 - [Progress Events](https://www.w3.org/TR/progress-events) links to:
     * [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/) but does not list it in its references
@@ -418,7 +420,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 176 missing references for links found in 52 specifications
+=> 178 missing references for links found in 52 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -509,7 +511,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM4" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) links to [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but related reference "DOM4" uses URL [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
-- [Preload](https://w3c.github.io/preload/) links to [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Presentation API](https://w3c.github.io/presentation-api/) links to:
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FILEAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
@@ -615,6 +616,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webcrypto/`](https://w3c.github.io/webcrypto/) but related reference "WebCryptoAPI" uses URL [`https://www.w3.org/TR/WebCryptoAPI/`](https://www.w3.org/TR/WebCryptoAPI/)
     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
-=> 155 inconsistent references for links found in 62 specifications
+=> 154 inconsistent references for links found in 61 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

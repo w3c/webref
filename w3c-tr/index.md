@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 06, 2017
+% July 07, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -906,7 +906,6 @@ Normative references to this spec from:
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -2025,22 +2024,22 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Preload {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
+## Preload {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Latest published version](https://www.w3.org/TR/preload/)
 - Shortname: preload
-- Date: 30 November 2016
+- Date: 06 July 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 - Missing references for links: 
      * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+     * [`https://mimesniff.spec.whatwg.org/`](https://mimesniff.spec.whatwg.org/)
      * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3367,7 +3366,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Jul 06 2017
+- Date: Fri Jul 07 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3386,7 +3385,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Jul 06 2017
+- Date: Fri Jul 07 2017
 
 ### Potential issue(s) {.anomalies}
 

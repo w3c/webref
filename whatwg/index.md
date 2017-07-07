@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% July 06, 2017
+% July 07, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -315,7 +315,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -376,7 +376,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -410,7 +410,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 5 July 2017
+- Date: 7 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -438,7 +438,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 5 July 2017
+- Date: 7 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -460,7 +460,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -482,7 +482,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -517,7 +517,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 5 July 2017
+- Date: 7 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -538,7 +538,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -579,7 +579,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -606,7 +606,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1152,7 +1152,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1340,7 +1340,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 06 July 2017
+- Date: 07 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1904,7 +1904,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/preload/)
 - Shortname: preload
-- Date: 30 June 2017
+- Date: 06 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2324,7 +2324,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/ServiceWorker/v1/)
 - Shortname: service-workers-1
-- Date: 30 June 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2768,7 +2768,11 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`Error: .wait() timed out after 30000msec`
+`Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
+    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -2978,7 +2982,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Jul 06 2017
+- Date: Fri Jul 07 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2997,7 +3001,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Jul 06 2017
+- Date: Fri Jul 07 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3081,7 +3085,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 5 July 2017
+- Date: 7 July 2017
 
 ### Potential issue(s) {.anomalies}
 

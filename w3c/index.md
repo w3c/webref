@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 06, 2017
+% July 07, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -315,7 +315,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -380,7 +380,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -418,7 +418,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 5 July 2017
+- Date: 7 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -446,7 +446,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 5 July 2017
+- Date: 7 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -468,7 +468,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -490,7 +490,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -526,7 +526,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 5 July 2017
+- Date: 7 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -547,7 +547,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -588,7 +588,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -616,7 +616,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -645,20 +645,20 @@ Informative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170628/)
 
 
-## Custom Elements {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## Custom Elements {data-spec=true data-error=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/webcomponents/spec/custom/)
 - Shortname: custom-elements
-- Date: 13 February 2017
+- Date: unknown
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/aria/aria/aria.html`](https://w3c.github.io/aria/aria/aria.html)
-     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/)
-     * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
+The following network or parsing error occurred:
+`Cannot read property 'href' of null`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1083,7 +1083,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/html/)
 - Shortname: html52
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1128,7 +1128,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -1258,7 +1257,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -1367,7 +1365,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -1494,7 +1491,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 06 July 2017
+- Date: 07 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2035,7 +2032,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/preload/)
 - Shortname: preload
-- Date: 30 June 2017
+- Date: 06 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2330,7 +2327,6 @@ Informative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
@@ -2505,7 +2501,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/ServiceWorker/v1/)
 - Shortname: service-workers-1
-- Date: 30 June 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2959,7 +2955,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [Element Traversal Specification](http://www.w3.org/TR/2008/REC-ElementTraversal-20081222/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -3110,7 +3105,11 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`Error: .wait() timed out after 30000msec`
+`Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
+    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3207,7 +3206,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -3350,7 +3348,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
 - Shortname: workers
-- Date: 5 July 2017
+- Date: 6 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3392,7 +3390,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -3498,7 +3495,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Jul 06 2017
+- Date: Fri Jul 07 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3517,7 +3514,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Jul 06 2017
+- Date: Fri Jul 07 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3602,7 +3599,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 5 July 2017
+- Date: 7 July 2017
 
 ### Potential issue(s) {.anomalies}
 

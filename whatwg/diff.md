@@ -1,34 +1,14 @@
-% Diff between report from "July 06, 2017" and reference report from "July 05, 2017"
+% Diff between report from "July 07, 2017" and reference report from "July 06, 2017"
 % Reffy
-% July 06, 2017
+% July 07, 2017
 
-## Audio Output Devices API
+## Web Audio API
 
-- URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
-- Spec could not be rendered: *INS* Cannot read property 'href' of null
-
-
-## DOM Parsing and Serialization
-
-- URL: [https://www.w3.org/TR/DOM-Parsing/](https://www.w3.org/TR/DOM-Parsing/)
-- Spec could not be rendered: *INS* Cannot read property 'href' of null
-
-
-## Media Capture from DOM Elements
-
-- URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
-- Spec could not be rendered: *INS* Cannot read property 'href' of null
-
-
-## Screen Capture
-
-- URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
-- Spec could not be rendered: *INS* Cannot read property 'href' of null
-
-
-## Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1
-
-- URL: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- Spec title: *INS* Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1 / *DEL* Web Authentication: An API for accessing Public Key Credentials
+- URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
+- Spec could not be rendered: *INS* Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
+    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5) / *DEL* Error: .wait() timed out after 30000msec
 
 
