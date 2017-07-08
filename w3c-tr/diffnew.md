@@ -1,11 +1,4 @@
-% Diff between report from "July 07, 2017" and reference report from "July 06, 2017"
+% Diff between report from "July 08, 2017" and reference report from "July 07, 2017"
 % Reffy
-% July 07, 2017
-
-## Preload
-
-- URL: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Missing references for links: *INS* https://fetch.spec.whatwg.org/, https://mimesniff.spec.whatwg.org/
-
+% July 08, 2017
 

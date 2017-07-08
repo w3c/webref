@@ -1,20 +1,34 @@
-% Diff between report from "July 07, 2017" and reference report from "July 06, 2017"
+% Diff between report from "July 08, 2017" and reference report from "July 07, 2017"
 % Reffy
-% July 07, 2017
+% July 08, 2017
+
+## Audio Output Devices API
+
+- URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
+- Spec could not be rendered: *DEL* Cannot read property 'href' of null
+
 
 ## Custom Elements
 
 - URL: [https://www.w3.org/TR/custom-elements/](https://www.w3.org/TR/custom-elements/)
-- Spec could not be rendered: *INS* Cannot read property 'href' of null
+- Spec could not be rendered: *DEL* Cannot read property 'href' of null
 
 
-## Web Audio API
+## DOM Parsing and Serialization
 
-- URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
-- Spec could not be rendered: *INS* Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
-    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
-    at ontimeout (timers.js:386:14)
-    at tryOnTimeout (timers.js:250:5)
-    at Timer.listOnTimeout (timers.js:214:5) / *DEL* Error: .wait() timed out after 30000msec
+- URL: [https://www.w3.org/TR/DOM-Parsing/](https://www.w3.org/TR/DOM-Parsing/)
+- Spec could not be rendered: *DEL* Cannot read property 'href' of null
+
+
+## Media Capture from DOM Elements
+
+- URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
+- Spec could not be rendered: *DEL* Cannot read property 'href' of null
+
+
+## Screen Capture
+
+- URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
+- Spec could not be rendered: *DEL* Cannot read property 'href' of null
 
 
