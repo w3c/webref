@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">July 07, 2017</h2>
+            <h2 class="date">July 08, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -88,20 +88,24 @@
   </ul>
   </section>
   </section>
-  <section id="audio-output-devices-api" class="level2" data-spec="true" data-error="true">
+  <section id="audio-output-devices-api" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Audio Output Devices API</h2>
   <section id="crawl-info-2" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/mediacapture-output/">Editor's Draft</a></li>
   <li>Shortname: audio-output</li>
-  <li>Date: unknown</li>
+  <li>Date: 15 December 2016</li>
   </ul>
   </section>
   <section id="potential-issues-2" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Cannot read property 'href' of null</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-2" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -828,20 +832,24 @@
   </ul>
   </section>
   </section>
-  <section id="dom-parsing-and-serialization" class="level2" data-spec="true" data-error="true">
+  <section id="dom-parsing-and-serialization" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>DOM Parsing and Serialization</h2>
   <section id="crawl-info-25" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/DOM-Parsing/">Editor's Draft</a></li>
   <li>Shortname: DOM-Parsing</li>
-  <li>Date: unknown</li>
+  <li>Date: and similar APIs</li>
   </ul>
   </section>
   <section id="potential-issues-25" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Cannot read property 'href' of null</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a>, related reference &quot;DOM4&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-25" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -894,6 +902,7 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="http://www.w3.org/TR/2008/REC-ElementTraversal-20081222/">Element Traversal Specification</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
@@ -1397,7 +1406,7 @@
   <ul>
   <li>URL: <a href="https://html.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 6 July 2017</li>
+  <li>Date: 7 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-40" class="level3 anomalies">
@@ -1422,6 +1431,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
@@ -1439,6 +1449,7 @@
   <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
@@ -1455,6 +1466,7 @@
   <li><a href="https://rawgit.com/w3c/input-events/v1/index.html">Input Events Level 1</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
@@ -1514,11 +1526,13 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/">Metadata API for Media Resources 1.0</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
@@ -1527,6 +1541,7 @@
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   <li><a href="https://w3c.github.io/selection-api/">Selection API</a></li>
   <li><a href="http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html">Touch Events - Level 2</a></li>
@@ -1609,7 +1624,7 @@
   <ul>
   <li>URL: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a></li>
   <li>Shortname: input-events-2</li>
-  <li>Date: 07 July 2017</li>
+  <li>Date: 08 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-43" class="level3 anomalies">
@@ -1694,11 +1709,14 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   </ul>
@@ -1736,23 +1754,31 @@
   <section id="known-dependencies-on-this-specification-46" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
+  </ul>
   </section>
   </section>
-  <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-error="true">
+  <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Media Capture from DOM Elements</h2>
   <section id="crawl-info-47" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/mediacapture-fromelement/">Editor's Draft</a></li>
   <li>Shortname: mediacapture-fromelement</li>
-  <li>Date: unknown</li>
+  <li>Date: 01 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-47" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Cannot read property 'href' of null</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2dcontext2/"><code>https://www.w3.org/TR/2dcontext2/</code></a>, related reference &quot;HTML5&quot; uses URL <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-47" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -2628,20 +2654,24 @@
   </ul>
   </section>
   </section>
-  <section id="screen-capture" class="level2" data-spec="true" data-error="true">
+  <section id="screen-capture" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Screen Capture</h2>
   <section id="crawl-info-72" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/mediacapture-screen-share/">Editor's Draft</a></li>
   <li>Shortname: screen-capture</li>
-  <li>Date: unknown</li>
+  <li>Date: 27 April 2017</li>
   </ul>
   </section>
   <section id="potential-issues-72" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Cannot read property 'href' of null</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-72" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3336,6 +3366,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   </section>
@@ -3426,6 +3457,7 @@
   <ul>
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://w3c.github.io/webpayments-methods-card/">Basic Card Payment</a></li>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
@@ -3442,6 +3474,7 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
@@ -3459,6 +3492,7 @@
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
@@ -3477,6 +3511,7 @@
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   <li><a href="https://w3c.github.io/selection-api/">Selection API</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
@@ -3530,7 +3565,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/webdriver/webdriver-spec.html">Editor's Draft</a></li>
   <li>Shortname: webdriver</li>
-  <li>Date: 30 June 2017</li>
+  <li>Date: 07 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-97" class="level3 anomalies">
@@ -3562,7 +3597,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Fri Jul 07 2017</li>
+  <li>Date: Sat Jul 08 2017</li>
   </ul>
   </section>
   <section id="potential-issues-98" class="level3 anomalies">
@@ -3582,7 +3617,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Fri Jul 07 2017</li>
+  <li>Date: Sat Jul 08 2017</li>
   </ul>
   </section>
   <section id="potential-issues-99" class="level3 anomalies">
@@ -3650,7 +3685,9 @@
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
   </ul>
   </section>
   </section>
