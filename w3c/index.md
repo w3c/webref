@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 10, 2017
+% July 11, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -313,7 +313,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 9 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -378,7 +378,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 9 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -416,7 +416,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 9 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -444,7 +444,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 9 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -466,7 +466,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 9 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -488,7 +488,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 9 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -524,7 +524,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 9 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -545,7 +545,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 9 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -586,7 +586,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 9 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -614,7 +614,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 9 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1499,7 +1499,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 10 July 2017
+- Date: 11 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2207,17 +2207,16 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Resource Timing Level 3 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-inconsistentRef=true}
+## Resource Timing Level 3 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/resource-timing/)
 - Shortname: resource-timing-2
-- Date: 28 June 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Obsolete WebIDL constructs found
 - Inconsistent references for links: 
      * [`https://w3c.github.io/navigation-timing/`](https://w3c.github.io/navigation-timing/), related reference "NAVIGATION-TIMING" uses URL [`https://www.w3.org/TR/navigation-timing/`](https://www.w3.org/TR/navigation-timing/)
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
@@ -2512,7 +2511,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/ServiceWorker/v1/)
 - Shortname: service-workers-1
-- Date: 6 July 2017
+- Date: 11 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3299,7 +3298,6 @@ Informative references to this spec from:
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
-- [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [UI Events](https://www.w3.org/TR/uievents)
@@ -3491,7 +3489,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 07 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3516,7 +3514,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Mon Jul 10 2017
+- Date: Tue Jul 11 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3535,7 +3533,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Mon Jul 10 2017
+- Date: Tue Jul 11 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3622,7 +3620,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 9 July 2017
+- Date: 10 July 2017
 
 ### Potential issue(s) {.anomalies}
 
