@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 10, 2017
+% July 11, 2017
 
 113 specifications were crawled in this report.
 
@@ -68,10 +68,9 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
-=> 10 specifications found
+=> 9 specifications found
 
 A typical example is the use of `[]` instead of `FrozenArray`.
 
