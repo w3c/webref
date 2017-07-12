@@ -1,10 +1,10 @@
-% Diff between report from "July 11, 2017" and reference report from "July 10, 2017"
+% Diff between report from "July 12, 2017" and reference report from "July 11, 2017"
 % Reffy
-% July 11, 2017
+% July 12, 2017
 
-## Resource Timing Level 3
+## Audio Output Devices API
 
-- URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
-- Obsolete WebIDL constructs found: *INS* false / *DEL* true
+- URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
+- Spec could not be rendered: *INS* Cannot read property 'href' of null
 
 
