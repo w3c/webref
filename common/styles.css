@@ -1,5 +1,5 @@
 body {
-  margin: 0.5em;
+  margin: .5em .5em 3em .5em;
 }
 
 [data-spec] section {
@@ -14,6 +14,16 @@ body {
 }
 .error {
   color: #d9534f;
+}
+
+.backgroundOk {
+  background-color: #4ed852;
+}
+.backgroundWarn {
+  background-color: #d8984e;
+}
+.backgroundError {
+  background-color: #d9534f;
 }
 
 h2 {
@@ -36,4 +46,24 @@ h2 a:hover span {
 dt {
   margin-top: 1em;
   font-weight: bold;
+}
+
+#summary {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2em;
+  width: 100%;
+  padding-top: .5em;
+  background-color: #ffffff;
+}
+
+#summary div {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  cursor: default;
 }
