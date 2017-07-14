@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 13, 2017
+% July 14, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -399,7 +399,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://w3c.github.io/html/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
 
@@ -443,6 +443,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -575,7 +576,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170628/)
-- [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
 
@@ -640,7 +641,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
-- [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
 
@@ -671,7 +672,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
 
@@ -851,6 +852,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170628/)
 - [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -1272,7 +1274,7 @@ Normative references to this spec from:
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -1362,7 +1364,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -1459,7 +1460,6 @@ Normative references to this spec from:
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -2454,6 +2454,7 @@ Normative references to this spec from:
 
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Web Animations](https://w3c.github.io/web-animations/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
 
@@ -3011,7 +3012,7 @@ Normative references to this spec from:
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -3311,7 +3312,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -3366,7 +3366,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Jul 13 2017
+- Date: Fri Jul 14 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3385,7 +3385,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Jul 13 2017
+- Date: Fri Jul 14 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3494,7 +3494,7 @@ Normative references to this spec from:
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- [WebVTT: The Web Video Text Tracks Format](http://www.w3.org/TR/2015/WD-webvtt1-20151208/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -3553,21 +3553,23 @@ Informative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
-## WebVTT: The Web Video Text Tracks Format {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## WebVTT: The Web Video Text Tracks Format {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Latest published version](https://www.w3.org/TR/webvtt1/)
 - Shortname: webvtt1
-- Date: 08 December 2015
+- Date: 13 July 2017
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://w3c.github.io/webvtt/`](https://w3c.github.io/webvtt/)
-     * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
      * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/)
      * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING-CR" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
 
 ### Known dependencies on this specification {.dependencies}
 
