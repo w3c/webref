@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% July 14, 2017
+% July 15, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -313,7 +313,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 13 July 2017
+- Date: 14 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -373,7 +373,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 13 July 2017
+- Date: 15 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -408,7 +408,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 13 July 2017
+- Date: 15 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -436,7 +436,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 13 July 2017
+- Date: 15 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -458,7 +458,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 13 July 2017
+- Date: 14 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -481,7 +481,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 13 July 2017
+- Date: 14 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -515,7 +515,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 13 July 2017
+- Date: 15 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -536,7 +536,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 13 July 2017
+- Date: 14 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -577,7 +577,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 13 July 2017
+- Date: 15 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -603,7 +603,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 13 July 2017
+- Date: 15 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -685,7 +685,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://dom.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 13 July 2017
+- Date: 14 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1151,7 +1151,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 13 July 2017
+- Date: 14 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1345,7 +1345,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 14 July 2017
+- Date: 15 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2418,7 +2418,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 30 June 2017
+- Date: 14 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2573,7 +2573,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://url.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 11 July 2017
+- Date: 14 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2992,7 +2992,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Fri Jul 14 2017
+- Date: Sat Jul 15 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3011,7 +3011,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Fri Jul 14 2017
+- Date: Sat Jul 15 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3096,7 +3096,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 13 July 2017
+- Date: 15 July 2017
 
 ### Potential issue(s) {.anomalies}
 
