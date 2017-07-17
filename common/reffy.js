@@ -92,19 +92,42 @@ window.onload = function () {
     };
   });
 
+  // Render summary bar
+  // (making sure narrow columns remain wide enough on narrow screens)
   const barOk = document.getElementById('barOk');
   const barWarning = document.getElementById('barWarning');
   const barError = document.getElementById('barError');
   barOk.innerHTML = totalOk;
   barOk.title = `Correct specs: ${totalOk}`;
-  barOk.style.width = `${100*totalOk/total}%`;
+  if (totalOk === 0) {
+    barOk.style.display = 'none';
+  }
+  else {
+    barOk.style.flex = (totalOk < 10) ?
+      `${totalOk} 0 1em` :
+      `${totalOk} ${totalOk} auto`;
+  }
   barWarning.innerHTML = totalWarning;
   barWarning.title = `Specs with warnings: ${totalWarning}`;
-  barWarning.style.width = `${100*totalWarning/total}%`;
+  if (totalWarning === 0) {
+    barWarning.style.display = 'none';
+  }
+  else {
+    barWarning.style.flex = (totalWarning < 10) ?
+      `${totalWarning} 0 1em` :
+      `${totalWarning} ${totalWarning} auto`;
+  }
   barError.innerHTML = totalError;
   barError.title = `Specs for which analysis failed: ${totalError}`;
-  barError.style.width = `${100*totalError/total}%`;
-  document.getElementById('summary').style.display = 'block';
+  if (totalError === 0) {
+    barError.style.display = 'none';
+  }
+  else {
+    barError.style.flex = (totalError < 10) ?
+      `${totalError} 0 1em` :
+      `${totalError} ${totalError} auto`;
+  }
+  document.getElementById('summary').style.display = 'flex';
 
   // Display the number of specifications in the report
   document.getElementById('stats').innerHTML = 'This report contains ' +
