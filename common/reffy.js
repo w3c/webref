@@ -11,6 +11,9 @@ window.onload = function () {
 
   // Collapse spec sections by default
   let total = 0;
+  let totalOk = 0;
+  let totalError = 0;
+  let totalWarning = 0;
   $(document, '[data-spec]').forEach(spec => {
     total += 1;
     const title = spec.querySelector('h2');
@@ -20,37 +23,42 @@ window.onload = function () {
     if (spec.hasAttribute('data-ok')) {
       flags.push('<i class="fa fa-check fa-lg ok" ' +
         'title="Spec looks good"></i>');
+      totalOk += 1;
     }
-    if (spec.hasAttribute('data-error')) {
+    else if (spec.hasAttribute('data-error')) {
       flags.push('<i class="fa fa-exclamation-triangle fa-lg error" ' +
         'title="Spec could not be parsed"></i>');
+      totalError += 1;
     }
-    if (spec.hasAttribute('data-noNormativeRefs')) {
-      flags.push('<span class="fa-stack" ' +
-        'title="No normative references found in the spec">' +
-        '<i class="fa fa-list fa-stack-1x"></i>' +
-        '<i class="fa fa-ban fa-stack-2x warn"></i>' +
-        '</span>');
-    }
-    if (spec.hasAttribute('data-hasInvalidIdl') ||
+    else {
+      if (spec.hasAttribute('data-noNormativeRefs')) {
+        flags.push('<span class="fa-stack" ' +
+          'title="No normative references found in the spec">' +
+          '<i class="fa fa-list fa-stack-1x"></i>' +
+          '<i class="fa fa-ban fa-stack-2x warn"></i>' +
+          '</span>');
+      }
+      if (spec.hasAttribute('data-hasInvalidIdl') ||
         spec.hasAttribute('data-hasObsoleteIdl')) {
-      flags.push('<i class="fa fa-bug fa-lg error" ' +
-        'title="Invalid or obsolete IDL content found"></i>');
-    }
-    if (spec.hasAttribute('data-unknownIdlNames') ||
+        flags.push('<i class="fa fa-bug fa-lg error" ' +
+          'title="Invalid or obsolete IDL content found"></i>');
+      }
+      if (spec.hasAttribute('data-unknownIdlNames') ||
         spec.hasAttribute('data-redefinedIdlNames')) {
-      flags.push('<i class="fa fa-code fa-lg warn" ' +
-        'title="Spec uses unknown IDL terms or re-defines terms defined elsewhere"></i>');
-    }
-    if (spec.hasAttribute('data-noRefToWebIDL') ||
+        flags.push('<i class="fa fa-code fa-lg warn" ' +
+          'title="Spec uses unknown IDL terms or re-defines terms defined elsewhere"></i>');
+      }
+      if (spec.hasAttribute('data-noRefToWebIDL') ||
         spec.hasAttribute('data-missingWebIdlRef') ||
         spec.hasAttribute('data-missingLinkRef')) {
-      flags.push('<i class="fa fa-chain-broken fa-lg error" ' +
-        'title="Some references are missing"></i>');
-    }
-    if (spec.hasAttribute('data-inconsistentRef')) {
-      flags.push('<i class="fa fa-link fa-lg warn" ' +
+        flags.push('<i class="fa fa-chain-broken fa-lg error" ' +
+          'title="Some references are missing"></i>');
+      }
+      if (spec.hasAttribute('data-inconsistentRef')) {
+        flags.push('<i class="fa fa-link fa-lg warn" ' +
         'title="References exist but used inconsistently"></i>');
+      }
+      totalWarning += 1;
     }
 
     // Update the spec title
@@ -83,6 +91,20 @@ window.onload = function () {
       return false;
     };
   });
+
+  const barOk = document.getElementById('barOk');
+  const barWarning = document.getElementById('barWarning');
+  const barError = document.getElementById('barError');
+  barOk.innerHTML = totalOk;
+  barOk.title = `Correct specs: ${totalOk}`;
+  barOk.style.width = `${100*totalOk/total}%`;
+  barWarning.innerHTML = totalWarning;
+  barWarning.title = `Specs with warnings: ${totalWarning}`;
+  barWarning.style.width = `${100*totalWarning/total}%`;
+  barError.innerHTML = totalError;
+  barError.title = `Specs for which analysis failed: ${totalError}`;
+  barError.style.width = `${100*totalError/total}%`;
+  document.getElementById('summary').style.display = 'block';
 
   // Display the number of specifications in the report
   document.getElementById('stats').innerHTML = 'This report contains ' +
