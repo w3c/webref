@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% July 17, 2017
+% July 18, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -200,7 +200,7 @@ No informative reference to this spec from other specs.
 - Missing references for WebIDL names: 
      * `Window` defined in [HTML Standard](https://html.spec.whatwg.org/)
      * `Worker` defined in [HTML Standard](https://html.spec.whatwg.org/) or [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-     * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+     * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -313,7 +313,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 16 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -373,7 +373,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 16 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -402,18 +402,17 @@ Informative references to this spec from:
 - [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
 
 
-## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
+## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 16 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+- Unknown WebIDL names used: `WorkletGlobalScope`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
 
@@ -425,9 +424,7 @@ Although they do not, the following specs should also normatively reference this
 
 - [Console Standard](https://console.spec.whatwg.org/)
 
-Informative references to this spec from:
-
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+No informative reference to this spec from other specs.
 
 
 ## CSS Properties and Values API Level 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -436,7 +433,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 16 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -458,7 +455,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 16 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -481,7 +478,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 16 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -504,7 +501,6 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170628/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 No informative reference to this spec from other specs.
 
@@ -515,7 +511,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 16 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -536,7 +532,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 16 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -577,7 +573,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 16 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -603,7 +599,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 16 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -800,7 +796,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://encoding.spec.whatwg.org/)
 - Shortname: encoding
-- Date: 15 June 2017
+- Date: 17 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -823,7 +819,6 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170628/)
 - [Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1](https://w3c.github.io/webauthn/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -886,7 +881,6 @@ Normative references to this spec from:
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170628/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -1151,7 +1145,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 15 July 2017
+- Date: 17 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1247,7 +1241,6 @@ Normative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -1317,7 +1310,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/IndexedDB/)
 - Shortname: IndexedDB-2
-- Date: 15 May 2017
+- Date: 22 June 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1345,7 +1338,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 17 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1783,7 +1776,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/browser-payment-api/)
 - Shortname: payment-request
-- Date: 14 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2699,7 +2692,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/wake-lock/)
 - Shortname: wake-lock
-- Date: 29 June 2017
+- Date: 17 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2790,7 +2783,6 @@ Informative references to this spec from:
 
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
 ## Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2937,7 +2929,6 @@ Normative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -2991,7 +2982,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Mon Jul 17 2017
+- Date: Tue Jul 18 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3010,7 +3001,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Mon Jul 17 2017
+- Date: Tue Jul 18 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3089,18 +3080,29 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Worklets Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
+## Worklets Level 1 {data-spec=true data-error=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 16 July 2017
+- Date: unknown
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+The following network or parsing error occurred:
+`FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443 FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443
+    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
+    at emitOne (events.js:96:13)
+    at ClientRequest.emit (events.js:188:7)
+    at TLSSocket.socketErrorListener (_http_client.js:309:9)
+    at emitOne (events.js:96:13)
+    at TLSSocket.emit (events.js:188:7)
+    at emitErrorNT (net.js:1277:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3108,10 +3110,6 @@ Normative references to this spec from:
 
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Console Standard](https://console.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
