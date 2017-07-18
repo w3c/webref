@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 17, 2017
+% July 18, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -3044,7 +3044,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/wake-lock/)
 - Shortname: wake-lock
-- Date: 29 June 2017
+- Date: 17 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3366,7 +3366,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Mon Jul 17 2017
+- Date: Tue Jul 18 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3385,7 +3385,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Mon Jul 17 2017
+- Date: Tue Jul 18 2017
 
 ### Potential issue(s) {.anomalies}
 
