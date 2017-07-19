@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">July 18, 2017</h2>
+            <h2 class="date">July 19, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -283,7 +283,7 @@
   <ul>
   <li><code>Window</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
+  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   </ul>
   </section>
@@ -422,7 +422,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-font-loading/">Editor's Draft</a></li>
   <li>Shortname: css-font-loading-3</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-13" class="level3 anomalies">
@@ -496,7 +496,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/cssom/">Editor's Draft</a></li>
   <li>Shortname: cssom-1</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-15" class="level3 anomalies">
@@ -527,20 +527,23 @@
   </ul>
   </section>
   </section>
-  <section id="css-painting-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="css-painting-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
   <h2>CSS Painting API Level 1</h2>
   <section id="crawl-info-16" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/css-paint-api-1/">Editor's Draft</a></li>
   <li>Shortname: css-paint-api-1</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-16" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>WorkletGlobalScope</code></li>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css-properties-values-api-1/"><code>https://www.w3.org/TR/css-properties-values-api-1/</code></a></li>
@@ -554,7 +557,10 @@
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  </ul>
   </section>
   </section>
   <section id="css-properties-and-values-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
@@ -564,7 +570,7 @@
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/css-properties-values-api-1/">Editor's Draft</a></li>
   <li>Shortname: css-properties-values-api-1</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-17" class="level3 anomalies">
@@ -592,7 +598,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/css-pseudo-4/">Editor's Draft</a></li>
   <li>Shortname: css-pseudo-4</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-18" class="level3 anomalies">
@@ -617,7 +623,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-syntax/">Editor's Draft</a></li>
   <li>Shortname: css-syntax-3</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-19" class="level3 anomalies">
@@ -647,6 +653,7 @@
   <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
+  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -658,7 +665,7 @@
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/css-typed-om-1/">Editor's Draft</a></li>
   <li>Shortname: css-typed-om-1</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-20" class="level3 anomalies">
@@ -681,7 +688,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/css-values/">Editor's Draft</a></li>
   <li>Shortname: css-values-3</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-21" class="level3 anomalies">
@@ -728,7 +735,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-writing-modes-3/">Editor's Draft</a></li>
   <li>Shortname: css-writing-modes-3</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-22" class="level3 anomalies">
@@ -761,7 +768,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/cssom-view/">Editor's Draft</a></li>
   <li>Shortname: cssom-view-1</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-23" class="level3 anomalies">
@@ -864,7 +871,7 @@
   <ul>
   <li>URL: <a href="https://dom.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 14 July 2017</li>
+  <li>Date: 18 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-26" class="level3 anomalies">
@@ -917,6 +924,7 @@
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
+  <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
@@ -1020,6 +1028,7 @@
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -1087,12 +1096,14 @@
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></li>
+  <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
+  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -1504,6 +1515,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
+  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
@@ -1618,7 +1630,7 @@
   <ul>
   <li>URL: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a></li>
   <li>Shortname: input-events-2</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-43" class="level3 anomalies">
@@ -2315,7 +2327,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/preload/">Editor's Draft</a></li>
   <li>Shortname: preload</li>
-  <li>Date: 12 July 2017</li>
+  <li>Date: 18 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-64" class="level3 anomalies">
@@ -2324,9 +2336,6 @@
   <li>No WebIDL definitions found</li>
   <li>Missing references for links:
   <ul>
-  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
-  <li><a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a></li>
-  <li><a href="https://mimesniff.spec.whatwg.org/"><code>https://mimesniff.spec.whatwg.org/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec/specs/content-security-policy/"><code>https://w3c.github.io/webappsec/specs/content-security-policy/</code></a></li>
   </ul></li>
   </ul>
@@ -3360,6 +3369,7 @@
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
+  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   </section>
   </section>
@@ -3524,6 +3534,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
+  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -3535,6 +3546,7 @@
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://rawgit.com/w3c/input-events/v1/index.html">Input Events Level 1</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
@@ -3586,7 +3598,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Tue Jul 18 2017</li>
+  <li>Date: Wed Jul 19 2017</li>
   </ul>
   </section>
   <section id="potential-issues-98" class="level3 anomalies">
@@ -3606,7 +3618,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Tue Jul 18 2017</li>
+  <li>Date: Wed Jul 19 2017</li>
   </ul>
   </section>
   <section id="potential-issues-99" class="level3 anomalies">
@@ -3708,20 +3720,24 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="worklets-level-1" class="level2" data-spec="true" data-error="true">
+  <section id="worklets-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true">
   <h2>Worklets Level 1</h2>
   <section id="crawl-info-102" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/worklets/">Editor's Draft</a></li>
   <li>Shortname: worklets-1</li>
-  <li>Date: unknown</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-102" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443 FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443     at ClientRequest.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)     at emitOne (events.js:96:13)     at ClientRequest.emit (events.js:188:7)     at TLSSocket.socketErrorListener (_http_client.js:309:9)     at emitOne (events.js:96:13)     at TLSSocket.emit (events.js:188:7)     at emitErrorNT (net.js:1277:8)     at _combinedTickCallback (internal/process/next_tick.js:80:11)     at process._tickCallback (internal/process/next_tick.js:104:9)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-102" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3729,6 +3745,10 @@
   <ul>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
+  </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>

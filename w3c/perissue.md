@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 18, 2017
+% July 19, 2017
 
 113 specifications were crawled in this report.
 
@@ -20,23 +20,22 @@ Reffy could not fetch or render these specifications for some reason. This may h
 
 ## Specifications without normative dependencies
 
-- [[No title found for https://w3c.github.io/preload/]](https://w3c.github.io/preload/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 2 specifications found
+=> 1 specification found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
 
 ## Specifications without WebIDL definitions
 
-- [[No title found for https://w3c.github.io/preload/]](https://w3c.github.io/preload/)
 - [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/)
 - [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Preload](https://w3c.github.io/preload/)
 - [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
@@ -236,6 +235,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/) links to [`https://www.w3.org/TR/html/full`](https://www.w3.org/TR/html/full) but does not list it in its references
 - [Payment Handler API](https://w3c.github.io/payment-handler/) links to [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/) but does not list it in its references
 - [Permissions](https://w3c.github.io/permissions/) links to [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but does not list it in its references
+- [Preload](https://w3c.github.io/preload/) links to [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
 - [Progress Events](https://www.w3.org/TR/progress-events) links to:
     * [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
@@ -307,7 +307,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/) links to [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 99 missing references for links found in 34 specifications
+=> 100 missing references for links found in 35 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

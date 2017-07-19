@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 18, 2017
+% July 19, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -908,6 +908,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -1161,7 +1162,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/html52/)
 - Shortname: html52
-- Date: 9 May 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1171,13 +1172,13 @@ Informative references to this spec from:
      * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
      * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
      * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
-     * [`https://www.w3.org/TR/webmessaging/`](https://www.w3.org/TR/webmessaging/)
      * [`https://w3c.github.io/aria-in-html/`](https://w3c.github.io/aria-in-html/)
      * [`https://w3c.github.io/aria/practices/aria-practices.html`](https://w3c.github.io/aria/practices/aria-practices.html)
      * [`https://www.w3.org/TR/css-device-adapt-1/`](https://www.w3.org/TR/css-device-adapt-1/)
      * [`https://www.w3.org/TR/turingtest/`](https://www.w3.org/TR/turingtest/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
      * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
+     * [`https://www.w3.org/TR/webmessaging/`](https://www.w3.org/TR/webmessaging/)
      * [`https://www.w3.org/TR/xlink11/`](https://www.w3.org/TR/xlink11/)
      * [`https://www.w3.org/TR/becss/`](https://www.w3.org/TR/becss/)
 - Inconsistent references for links: 
@@ -1185,10 +1186,13 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
      * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FILEAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+     * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/), related reference "INDEXEDDB" uses URL [`https://www.w3.org/TR/IndexedDB/`](https://www.w3.org/TR/IndexedDB/)
      * [`https://w3c.github.io/media-source/`](https://w3c.github.io/media-source/), related reference "MEDIA-SOURCE" uses URL [`https://www.w3.org/TR/media-source/`](https://www.w3.org/TR/media-source/)
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
      * [`https://www.w3.org/TR/1999/REC-xpath-19991116`](https://www.w3.org/TR/1999/REC-xpath-19991116), related reference "XPATH" uses URL [`https://www.w3.org/TR/xpath`](https://www.w3.org/TR/xpath)
+     * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/), related reference "REFERRERPOLICY" uses URL [`https://www.w3.org/TR/referrer-policy`](https://www.w3.org/TR/referrer-policy)
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -1520,6 +1524,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [HTML 5.2](https://w3c.github.io/html/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 
 Informative references to this spec from:
@@ -2030,15 +2035,12 @@ No informative reference to this spec from other specs.
 
 - URL: [Latest published version](https://www.w3.org/TR/preload/)
 - Shortname: preload
-- Date: 12 July 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
 - No WebIDL definitions found
 - Missing references for links: 
-     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
-     * [`https://mimesniff.spec.whatwg.org/`](https://mimesniff.spec.whatwg.org/)
      * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -2171,6 +2173,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [HTML 5.2](https://w3c.github.io/html/)
 - [Preload](https://w3c.github.io/preload/)
 
 No informative reference to this spec from other specs.
@@ -2984,6 +2987,7 @@ Normative references to this spec from:
 - [Payment Request API](https://w3c.github.io/browser-payment-api/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Progress Events](https://www.w3.org/TR/progress-events)
 - [Push API](https://w3c.github.io/push-api/)
@@ -3366,7 +3370,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Jul 18 2017
+- Date: Wed Jul 19 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3385,7 +3389,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Jul 18 2017
+- Date: Wed Jul 19 2017
 
 ### Potential issue(s) {.anomalies}
 
