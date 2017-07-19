@@ -1,17 +1,17 @@
-% Diff between report from "July 18, 2017" and reference report from "July 17, 2017"
+% Diff between report from "July 19, 2017" and reference report from "July 18, 2017"
 % Reffy
-% July 18, 2017
+% July 19, 2017
 
 ## CSS Painting API Level 1
 
 - URL: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
-- Unknown WebIDL names used: *INS* WorkletGlobalScope
+- WebIDL names also defined elsewhere: *INS* Worklet
 
 
 ## Worklets Level 1
 
 - URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
-- Spec could not be rendered: *INS* FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443 FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443
+- Spec could not be rendered: *DEL* FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443 FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443
     at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
     at emitOne (events.js:96:13)
     at ClientRequest.emit (events.js:188:7)

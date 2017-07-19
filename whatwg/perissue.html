@@ -26,9 +26,8 @@
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a>: <code>Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10) at ontimeout (timers.js:386:14) at tryOnTimeout (timers.js:250:5) at Timer.listOnTimeout (timers.js:214:5)</code></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a>: <code>FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443 FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443 at ClientRequest.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11) at emitOne (events.js:96:13) at ClientRequest.emit (events.js:188:7) at TLSSocket.socketErrorListener (_http_client.js:309:9) at emitOne (events.js:96:13) at TLSSocket.emit (events.js:188:7) at emitErrorNT (net.js:1277:8) at _combinedTickCallback (internal/process/next_tick.js:80:11) at process._tickCallback (internal/process/next_tick.js:104:9)</code></li>
   </ul>
-  <p>=&gt; 2 specifications found</p>
+  <p>=&gt; 1 specification found</p>
   </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
@@ -100,9 +99,8 @@
   <li><code>ReadableStream</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><code>Type</code> used in <a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html">Touch Events - Level 2</a></li>
-  <li><code>WorkletGlobalScope</code> used in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   </ul>
-  <p>=&gt; 6 WebIDL names found</p>
+  <p>=&gt; 5 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -111,8 +109,9 @@
   <li><code>BinaryType</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><code>RTCStats</code> defined in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> and <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
-  <p>=&gt; 3 WebIDL names found</p>
+  <p>=&gt; 4 WebIDL names found</p>
   <p>&quot;There can be only one&quot;...</p>
   </section>
   <section id="missing-references-for-webidl-names" class="level2">
@@ -123,7 +122,7 @@
   <ul>
   <li><code>Window</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
+  <li><code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a> uses:
   <ul>
@@ -232,13 +231,7 @@
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a> links to <a href="https://www.w3.org/TR/html/full"><code>https://www.w3.org/TR/html/full</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a> links to <a href="https://w3c.github.io/payment-method-manifest/"><code>https://w3c.github.io/payment-method-manifest/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a> links to <a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a> but does not list it in its references</li>
-  <li><a href="https://w3c.github.io/preload/">Preload</a> links to:
-  <ul>
-  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but does not list it in its references</li>
-  <li><a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a> but does not list it in its references</li>
-  <li><a href="https://mimesniff.spec.whatwg.org/"><code>https://mimesniff.spec.whatwg.org/</code></a> but does not list it in its references</li>
-  <li><a href="https://w3c.github.io/webappsec/specs/content-security-policy/"><code>https://w3c.github.io/webappsec/specs/content-security-policy/</code></a> but does not list it in its references</li>
-  </ul></li>
+  <li><a href="https://w3c.github.io/preload/">Preload</a> links to <a href="https://w3c.github.io/webappsec/specs/content-security-policy/"><code>https://w3c.github.io/webappsec/specs/content-security-policy/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a> links to <a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a> links to:
   <ul>
@@ -302,7 +295,7 @@
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a> links to <a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 85 missing references for links found in 30 specifications</p>
+  <p>=&gt; 82 missing references for links found in 30 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>

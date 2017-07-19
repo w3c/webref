@@ -1,26 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 18, 2017
-
-## [No title found for https://w3c.github.io/preload/] {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
-
-### Crawl info {.info}
-
-- URL: [Editor's Draft](https://w3c.github.io/preload/)
-- Shortname: preload
-- Date: Tue Jul 18 2017
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-- No WebIDL definitions found
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
+% July 19, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -253,6 +233,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170628/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -332,7 +313,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -396,7 +377,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -435,7 +416,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -463,7 +444,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -485,7 +466,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -508,7 +489,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -543,7 +524,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -564,7 +545,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -605,7 +586,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -632,7 +613,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -838,6 +819,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -1177,6 +1159,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
+- [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
@@ -1297,6 +1280,7 @@ Normative references to this spec from:
 - [Payment Request API](https://w3c.github.io/browser-payment-api/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
@@ -1407,6 +1391,7 @@ Normative references to this spec from:
 - [Payment Request API](https://w3c.github.io/browser-payment-api/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
@@ -1517,7 +1502,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1800,6 +1785,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 
@@ -2055,6 +2041,27 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## Preload {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
+
+### Crawl info {.info}
+
+- URL: [Editor's Draft](https://w3c.github.io/preload/)
+- Shortname: preload
+- Date: 18 July 2017
+
+### Potential issue(s) {.anomalies}
+
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Presentation API {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
@@ -2172,6 +2179,7 @@ Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.2](https://w3c.github.io/html/)
+- [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
 No informative reference to this spec from other specs.
@@ -2978,6 +2986,7 @@ Normative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Progress Events](https://www.w3.org/TR/progress-events)
 - [Push API](https://w3c.github.io/push-api/)
@@ -3285,6 +3294,7 @@ Informative references to this spec from:
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
@@ -3418,6 +3428,7 @@ Normative references to this spec from:
 - [Payment Request API](https://w3c.github.io/browser-payment-api/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
@@ -3504,7 +3515,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Jul 18 2017
+- Date: Wed Jul 19 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3523,7 +3534,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Jul 18 2017
+- Date: Wed Jul 19 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3607,7 +3618,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 

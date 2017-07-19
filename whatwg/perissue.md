@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% July 18, 2017
+% July 19, 2017
 
 104 specifications were crawled in this report.
 
@@ -14,18 +14,8 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at ontimeout (timers.js:386:14)
     at tryOnTimeout (timers.js:250:5)
     at Timer.listOnTimeout (timers.js:214:5)`
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/): `FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443 FetchError: request to https://drafts.css-houdini.org/worklets/ failed, reason: connect ETIMEDOUT 198.74.50.246:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at emitErrorNT (net.js:1277:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
 
-=> 2 specifications found
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -103,9 +93,8 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `ReadableStream` used in [Fetch Standard](https://fetch.spec.whatwg.org/)
 - `Type` used in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/), [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
-- `WorkletGlobalScope` used in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 
-=> 6 WebIDL names found
+=> 5 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -116,8 +105,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `BinaryType` defined in [HTML Standard](https://html.spec.whatwg.org/) and [Presentation API](https://w3c.github.io/presentation-api/)
 - `RTCStats` defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - `Worker` defined in [HTML Standard](https://html.spec.whatwg.org/) and [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
-=> 3 WebIDL names found
+=> 4 WebIDL names found
 
 "There can be only one"...
 
@@ -128,7 +118,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Console Standard](https://console.spec.whatwg.org/) uses:
     * `Window` but does not reference [HTML Standard](https://html.spec.whatwg.org/)
     * `Worker` but does not reference [HTML Standard](https://html.spec.whatwg.org/) or [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-    * `Worklet` but does not reference [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+    * `Worklet` but does not reference [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/) uses:
     * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/uievents)
     * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/uievents)
@@ -210,11 +200,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/) links to [`https://www.w3.org/TR/html/full`](https://www.w3.org/TR/html/full) but does not list it in its references
 - [Payment Handler API](https://w3c.github.io/payment-handler/) links to [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/) but does not list it in its references
 - [Permissions](https://w3c.github.io/permissions/) links to [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but does not list it in its references
-- [Preload](https://w3c.github.io/preload/) links to:
-    * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
-    * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
-    * [`https://mimesniff.spec.whatwg.org/`](https://mimesniff.spec.whatwg.org/) but does not list it in its references
-    * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
+- [Preload](https://w3c.github.io/preload/) links to [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
 - [Push API](https://w3c.github.io/push-api/) links to [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) links to:
     * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/) but does not list it in its references
@@ -270,7 +256,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/) links to [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 85 missing references for links found in 30 specifications
+=> 82 missing references for links found in 30 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
