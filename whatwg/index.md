@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% July 19, 2017
+% July 20, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -862,7 +862,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 15 June 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1153,7 +1153,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 17 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1347,7 +1347,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 19 July 2017
+- Date: 20 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1785,7 +1785,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/browser-payment-api/)
 - Shortname: payment-request
-- Date: 18 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1857,7 +1857,6 @@ Normative references to this spec from:
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/)
 
 No informative reference to this spec from other specs.
 
@@ -2698,7 +2697,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/wake-lock/)
 - Shortname: wake-lock
-- Date: 17 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2966,7 +2965,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 10 July 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2991,7 +2990,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Wed Jul 19 2017
+- Date: Thu Jul 20 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3010,7 +3009,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Wed Jul 19 2017
+- Date: Thu Jul 20 2017
 
 ### Potential issue(s) {.anomalies}
 
