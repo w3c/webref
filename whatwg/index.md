@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% July 20, 2017
+% July 21, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -66,27 +66,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
-
-
-## Basic Card Payment {data-spec=true data-ok=true}
-
-### Crawl info {.info}
-
-- URL: [Editor's Draft](https://w3c.github.io/webpayments-methods-card/)
-- Shortname: payment-method-basic-card
-- Date: 04 May 2017
-
-### Potential issue(s) {.anomalies}
-
-This specification looks good!
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-
-No informative reference to this spec from other specs.
 
 
 ## Battery Status API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -313,7 +292,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -373,7 +352,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -408,7 +387,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -436,7 +415,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -458,7 +437,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -481,7 +460,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -515,7 +494,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -536,7 +515,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -577,7 +556,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -603,7 +582,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1153,7 +1132,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 19 July 2017
+- Date: 20 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1347,7 +1326,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 20 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1720,6 +1699,28 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Page not found · GitHub Pages {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
+
+### Crawl info {.info}
+
+- URL: [Editor's Draft](https://w3c.github.io/webpayments-methods-card/)
+- Shortname: payment-method-basic-card
+- Date: Fri Jul 21 2017
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+
+No informative reference to this spec from other specs.
+
+
 ## Page Visibility Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
@@ -1785,7 +1786,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/browser-payment-api/)
 - Shortname: payment-request
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1795,7 +1796,6 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [Basic Card Payment](https://w3c.github.io/webpayments-methods-card/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 
@@ -2571,7 +2571,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://url.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 14 July 2017
+- Date: 20 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2861,7 +2861,6 @@ Normative references to this spec from:
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
-- [Basic Card Payment](https://w3c.github.io/webpayments-methods-card/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -2990,7 +2989,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Jul 20 2017
+- Date: Fri Jul 21 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3009,7 +3008,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Jul 20 2017
+- Date: Fri Jul 21 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3094,7 +3093,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 19 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
