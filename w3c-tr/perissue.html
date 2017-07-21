@@ -27,8 +27,9 @@
   <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/browser-payment-api/">Error 403</a></li>
   </ul>
-  <p>=&gt; 3 specifications found</p>
+  <p>=&gt; 4 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="specifications-without-webidl-definitions" class="level2">
@@ -40,6 +41,7 @@
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 3</a></li>
   <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/browser-payment-api/">Error 403</a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="http://www.w3.org/TR/2011/REC-css3-selectors-20110929/">Selectors Level 3</a></li>
@@ -47,7 +49,7 @@
   <li><a href="https://w3c.github.io/uievents-code/">UI Events KeyboardEvent code Values</a></li>
   <li><a href="https://w3c.github.io/uievents-key/">UI Events KeyboardEvent key Values</a></li>
   </ul>
-  <p>=&gt; 12 specifications found</p>
+  <p>=&gt; 13 specifications found</p>
   <p>Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.</p>
   </section>
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
@@ -124,6 +126,10 @@
   <li><code>DOMRectReadOnly</code> used in <a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a>, <a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><code>DocumentOrShadowRoot</code> used in <a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a>, <a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a>, <a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><code>OverconstrainedError</code> used in <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  <li><code>PaymentAddress</code> used in <a href="https://w3c.github.io/webpayments-methods-card/">Basic Card Payment</a></li>
+  <li><code>PaymentDetailsModifier</code> used in <a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
+  <li><code>PaymentItem</code> used in <a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
+  <li><code>PaymentMethodData</code> used in <a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><code>RTCError</code> used in <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>ReadableStream</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><code>SensorReading</code> used in <a href="https://w3c.github.io/proximity/">Proximity Sensor</a></li>
@@ -133,7 +139,7 @@
   <li><code>WindowProxy</code> used in <a href="https://w3c.github.io/html/">HTML 5.2</a>, <a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a>, <a href="http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html">Touch Events</a></li>
   <li><code>WorkerType</code> used in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   </ul>
-  <p>=&gt; 23 WebIDL names found</p>
+  <p>=&gt; 27 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">

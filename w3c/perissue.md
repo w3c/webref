@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 20, 2017
+% July 21, 2017
 
 113 specifications were crawled in this report.
 
@@ -20,9 +20,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
 
 ## Specifications without normative dependencies
 
+- [Page not found · GitHub Pages](https://w3c.github.io/webpayments-methods-card/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 1 specification found
+=> 2 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -35,13 +36,14 @@ Basically all specifications have normative dependencies on some other specifica
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Page not found · GitHub Pages](https://w3c.github.io/webpayments-methods-card/)
 - [Preload](https://w3c.github.io/preload/)
 - [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 
-=> 11 specifications found
+=> 12 specifications found
 
 Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
