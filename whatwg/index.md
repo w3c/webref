@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% July 21, 2017
+% July 22, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -66,6 +66,27 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
+
+
+## Basic Card Payment {data-spec=true data-ok=true}
+
+### Crawl info {.info}
+
+- URL: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
+- Shortname: payment-method-basic-card
+- Date: 21 July 2017
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+
+No informative reference to this spec from other specs.
 
 
 ## Battery Status API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -1066,17 +1087,16 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## High Resolution Time Level 3 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-missingWebIdlRef=true}
+## High Resolution Time Level 3 {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/hr-time/)
 - Shortname: hr-time-3
-- Date: 16 June 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Obsolete WebIDL constructs found
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
 
@@ -1132,7 +1152,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 20 July 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1326,7 +1346,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 21 July 2017
+- Date: 22 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1699,28 +1719,6 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Page not found · GitHub Pages {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
-
-### Crawl info {.info}
-
-- URL: [Editor's Draft](https://w3c.github.io/webpayments-methods-card/)
-- Shortname: payment-method-basic-card
-- Date: Fri Jul 21 2017
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-- No WebIDL definitions found
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-
-No informative reference to this spec from other specs.
-
-
 ## Page Visibility Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
@@ -1796,23 +1794,24 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true}
+## Performance Timeline Level 2 {data-spec=true data-ok=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/performance-timeline/)
 - Shortname: performance-timeline-2
-- Date: 14 June 2017
+- Date: 21 July 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Obsolete WebIDL constructs found
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2861,6 +2860,7 @@ Normative references to this spec from:
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -2949,6 +2949,7 @@ Informative references to this spec from:
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Selection API](https://w3c.github.io/selection-api/)
@@ -2989,7 +2990,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Fri Jul 21 2017
+- Date: Sat Jul 22 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3008,7 +3009,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Fri Jul 21 2017
+- Date: Sat Jul 22 2017
 
 ### Potential issue(s) {.anomalies}
 
