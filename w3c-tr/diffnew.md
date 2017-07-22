@@ -1,27 +1,21 @@
-% Diff between report from "July 21, 2017" and reference report from "July 20, 2017"
+% Diff between report from "July 22, 2017" and reference report from "July 21, 2017"
 % Reffy
-% July 21, 2017
+% July 22, 2017
 
 ## Basic Card Payment
 
 - URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* PaymentAddress
+- Latest URL: *INS* https://w3c.github.io/payment-method-basic-card/ / *DEL* https://w3c.github.io/webpayments-methods-card/
+- Spec is OK: *INS* true / *DEL* false
 
 
-## Error 403
+## Payment Request API
 
 - URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Spec title: *INS* Error 403 / *DEL* Payment Request API
-- Spec is OK: *INS* false / *DEL* true
-- No normative references found: *INS* true / *DEL* false
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
-
-
-## Payment Handler API
-
-- URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Unknown WebIDL names used: *INS* PaymentDetailsModifier, PaymentItem, PaymentMethodData
+- Spec title: *INS* Payment Request API / *DEL* Error 403
+- Spec is OK: *INS* true / *DEL* false
+- No normative references found: *INS* false / *DEL* true
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
 
 
