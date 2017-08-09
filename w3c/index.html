@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">July 23, 2017</h2>
+            <h2 class="date">August 09, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -88,24 +88,20 @@
   </ul>
   </section>
   </section>
-  <section id="audio-output-devices-api" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="audio-output-devices-api" class="level2" data-spec="true" data-error="true">
   <h2>Audio Output Devices API</h2>
   <section id="crawl-info-2" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/mediacapture-output/">Editor's Draft</a></li>
   <li>Shortname: audio-output</li>
-  <li>Date: 15 December 2016</li>
+  <li>Date: unknown</li>
   </ul>
   </section>
   <section id="potential-issues-2" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec     at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)     at ontimeout (timers.js:386:14)     at tryOnTimeout (timers.js:250:5)     at Timer.listOnTimeout (timers.js:214:5)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-2" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -116,19 +112,21 @@
   </ul>
   </section>
   </section>
-  <section id="basic-card-payment" class="level2" data-spec="true" data-ok="true">
+  <section id="basic-card-payment" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true">
   <h2>Basic Card Payment</h2>
   <section id="crawl-info-3" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/payment-method-basic-card/">Editor's Draft</a></li>
   <li>Shortname: payment-method-basic-card</li>
-  <li>Date: 21 July 2017</li>
+  <li>Date: 27 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-3" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-3" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -300,7 +298,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/webappsec-csp/">Editor's Draft</a></li>
   <li>Shortname: CSP3</li>
-  <li>Date: 21 June 2017</li>
+  <li>Date: 4 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-9" class="level3 anomalies">
@@ -312,6 +310,7 @@
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
+  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a>, related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a>, related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   </ul></li>
   </ul>
@@ -327,7 +326,7 @@
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
@@ -355,23 +354,27 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="cooperative-scheduling-of-background-tasks" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="cooperative-scheduling-of-background-tasks" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Cooperative Scheduling of Background Tasks</h2>
   <section id="crawl-info-11" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/requestidlecallback/">Editor's Draft</a></li>
   <li>Shortname: requestidlecallback</li>
-  <li>Date: 04 May 2017</li>
+  <li>Date: 07 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-11" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/html/webappapis.html"><code>https://w3c.github.io/html/webappapis.html</code></a></li>
+  <li><a href="https://w3c.github.io/html/browsers.html"><code>https://w3c.github.io/html/browsers.html</code></a></li>
+  </ul></li>
   <li>Inconsistent references for links:
   <ul>
-  <li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/"><code>https://www.w3.org/TR/2011/WD-html5-20110525/</code></a>, related reference &quot;HTML5&quot; uses URL <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
-  <li><a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a>, related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a></li>
+  <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a>, related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -388,7 +391,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/webappsec-credential-management/">Editor's Draft</a></li>
   <li>Shortname: credential-management-1</li>
-  <li>Date: 8 June 2017</li>
+  <li>Date: 4 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-12" class="level3 anomalies">
@@ -410,7 +413,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -422,7 +425,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-font-loading/">Editor's Draft</a></li>
   <li>Shortname: css-font-loading-3</li>
-  <li>Date: 22 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-13" class="level3 anomalies">
@@ -479,7 +482,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
-  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
@@ -501,7 +503,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/cssom/">Editor's Draft</a></li>
   <li>Shortname: cssom-1</li>
-  <li>Date: 22 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-15" class="level3 anomalies">
@@ -543,7 +545,7 @@
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/css-paint-api-1/">Editor's Draft</a></li>
   <li>Shortname: css-paint-api-1</li>
-  <li>Date: 22 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-16" class="level3 anomalies">
@@ -579,7 +581,7 @@
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/css-properties-values-api-1/">Editor's Draft</a></li>
   <li>Shortname: css-properties-values-api-1</li>
-  <li>Date: 22 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-17" class="level3 anomalies">
@@ -607,7 +609,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/css-pseudo-4/">Editor's Draft</a></li>
   <li>Shortname: css-pseudo-4</li>
-  <li>Date: 22 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-18" class="level3 anomalies">
@@ -632,7 +634,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-syntax/">Editor's Draft</a></li>
   <li>Shortname: css-syntax-3</li>
-  <li>Date: 22 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-19" class="level3 anomalies">
@@ -662,7 +664,7 @@
   <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
@@ -675,7 +677,7 @@
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/css-typed-om-1/">Editor's Draft</a></li>
   <li>Shortname: css-typed-om-1</li>
-  <li>Date: 22 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-20" class="level3 anomalies">
@@ -698,7 +700,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/css-values/">Editor's Draft</a></li>
   <li>Shortname: css-values-3</li>
-  <li>Date: 22 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-21" class="level3 anomalies">
@@ -745,7 +747,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-writing-modes-3/">Editor's Draft</a></li>
   <li>Shortname: css-writing-modes-3</li>
-  <li>Date: 22 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-22" class="level3 anomalies">
@@ -772,19 +774,20 @@
   </ul>
   </section>
   </section>
-  <section id="cssom-view-module" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <section id="cssom-view-module" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>CSSOM View Module</h2>
   <section id="crawl-info-23" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/cssom-view/">Editor's Draft</a></li>
   <li>Shortname: cssom-view-1</li>
-  <li>Date: 22 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-23" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>DOMRectList</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>MouseEvent</code> defined in <a href="https://www.w3.org/TR/uievents">UI Events</a></li>
@@ -810,7 +813,7 @@
   <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
   </ul>
   </section>
   </section>
@@ -961,14 +964,14 @@
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
-  <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
   </ul>
   </section>
   </section>
@@ -1009,7 +1012,7 @@
   <ul>
   <li>URL: <a href="https://fetch.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 19 July 2017</li>
+  <li>Date: 2 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-30" class="level3 anomalies">
@@ -1036,7 +1039,7 @@
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
@@ -1048,7 +1051,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
   </ul>
   </section>
   </section>
@@ -1098,7 +1101,7 @@
   <ul>
   <li>URL: <a href="https://fullscreen.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 15 June 2017</li>
+  <li>Date: 3 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-32" class="level3 anomalies">
@@ -1123,24 +1126,23 @@
   <ul>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
   </ul>
   </section>
   </section>
-  <section id="gamepad" class="level2" data-spec="true" data-anomaly="true" data-hasObsoleteIdl="true" data-missingWebIdlRef="true">
+  <section id="gamepad" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Gamepad</h2>
   <section id="crawl-info-33" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/gamepad/">Editor's Draft</a></li>
   <li>Shortname: gamepad</li>
-  <li>Date: 14 June 2017</li>
+  <li>Date: 26 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-33" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Obsolete WebIDL constructs found</li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Navigator</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
@@ -1160,7 +1162,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/sensors/">Editor's Draft</a></li>
   <li>Shortname: generic-sensor</li>
-  <li>Date: 30 June 2017</li>
+  <li>Date: 4 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-34" class="level3 anomalies">
@@ -1281,14 +1283,14 @@
   </ul>
   </section>
   </section>
-  <section id="high-resolution-time-level-3" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
-  <h2>High Resolution Time Level 3</h2>
+  <section id="high-resolution-time-level-2" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <h2>High Resolution Time Level 2</h2>
   <section id="crawl-info-38" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/hr-time/">Editor's Draft</a></li>
   <li>Shortname: hr-time-3</li>
-  <li>Date: 21 July 2017</li>
+  <li>Date: 27 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-38" class="level3 anomalies">
@@ -1322,7 +1324,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 3</a></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
   </ul>
   </section>
@@ -1334,7 +1336,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/html/">Editor's Draft</a></li>
   <li>Shortname: html52</li>
-  <li>Date: 18 July 2017</li>
+  <li>Date: 8 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-39" class="level3 anomalies">
@@ -1372,7 +1374,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
@@ -1399,7 +1400,7 @@
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://www.w3.org/TR/2016/REC-geolocation-API-20161108/">Geolocation API Specification 2nd Edition</a></li>
   <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 3</a></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
   <li><a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a></li>
@@ -1417,7 +1418,7 @@
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/browser-payment-api/">Payment Request API</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
@@ -1444,8 +1445,8 @@
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
-  <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/">Web Cryptography API</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-notifications-20151022/">Web Notifications</a></li>
@@ -1477,7 +1478,6 @@
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
-  <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://www.w3.org/TR/progress-events">Progress Events</a></li>
@@ -1538,7 +1538,7 @@
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 3</a></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
@@ -1548,9 +1548,10 @@
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/browser-payment-api/">Payment Request API</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
+  <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
@@ -1565,8 +1566,8 @@
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
-  <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
@@ -1585,7 +1586,6 @@
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
-  <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
@@ -1656,7 +1656,7 @@
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 3</a></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
   <li><a href="https://rawgit.com/w3c/input-events/v1/index.html">Input Events Level 1</a></li>
@@ -1665,9 +1665,10 @@
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/browser-payment-api/">Payment Request API</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
+  <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
@@ -1684,8 +1685,8 @@
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
-  <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
@@ -1708,7 +1709,6 @@
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
-  <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
@@ -1796,7 +1796,7 @@
   <ul>
   <li>URL: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a></li>
   <li>Shortname: input-events-2</li>
-  <li>Date: 23 July 2017</li>
+  <li>Date: 09 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-45" class="level3 anomalies">
@@ -1881,7 +1881,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
@@ -1968,7 +1967,7 @@
   <ul>
   <li>URL: <a href="https://wicg.github.io/mediasession/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 12 April 2017</li>
+  <li>Date: 4 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-50" class="level3 anomalies">
@@ -2282,7 +2281,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/payment-handler/">Editor's Draft</a></li>
   <li>Shortname: payment-handler</li>
-  <li>Date: 08 July 2017</li>
+  <li>Date: 04 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-59" class="level3 anomalies">
@@ -2312,9 +2311,9 @@
   <section id="crawl-info-60" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
-  <li>URL: <a href="https://w3c.github.io/browser-payment-api/">Editor's Draft</a></li>
+  <li>URL: <a href="https://w3c.github.io/payment-request/">Editor's Draft</a></li>
   <li>Shortname: payment-request</li>
-  <li>Date: 21 July 2017</li>
+  <li>Date: 07 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-60" class="level3 anomalies">
@@ -2355,6 +2354,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   </ul>
@@ -2409,7 +2409,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/pointerevents/">Editor's Draft</a></li>
   <li>Shortname: pointerevents2</li>
-  <li>Date: 24 May 2017</li>
+  <li>Date: 26 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-63" class="level3 anomalies">
@@ -2646,7 +2646,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/remote-playback/">Editor's Draft</a></li>
   <li>Shortname: remote-playback</li>
-  <li>Date: 13 July 2017</li>
+  <li>Date: 04 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-71" class="level3 anomalies">
@@ -2882,8 +2882,8 @@
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
-  <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -3026,7 +3026,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/ServiceWorker/v1/">Editor's Draft</a></li>
   <li>Shortname: service-workers-1</li>
-  <li>Date: 11 July 2017</li>
+  <li>Date: 1 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-80" class="level3 anomalies">
@@ -3061,7 +3061,7 @@
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
@@ -3152,7 +3152,7 @@
   <ul>
   <li>URL: <a href="https://storage.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 15 June 2017</li>
+  <li>Date: 2 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-83" class="level3 anomalies">
@@ -3172,7 +3172,7 @@
   <ul>
   <li>URL: <a href="https://streams.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 14 July 2017</li>
+  <li>Date: 1 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-84" class="level3 anomalies">
@@ -3214,7 +3214,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -3424,8 +3424,8 @@
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
-  <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
@@ -3592,7 +3592,7 @@
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/browser-payment-api/">Payment Request API</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
@@ -3617,8 +3617,8 @@
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
-  <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/">Web Cryptography API</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-notifications-20151022/">Web Notifications</a></li>
   <li><a href="https://www.w3.org/TR/webstorage">Web Storage (Second Edition)</a></li>
@@ -3630,7 +3630,7 @@
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 3</a></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
@@ -3656,7 +3656,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/wake-lock/">Editor's Draft</a></li>
   <li>Shortname: wake-lock</li>
-  <li>Date: 19 July 2017</li>
+  <li>Date: 24 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-96" class="level3 anomalies">
@@ -3676,7 +3676,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/web-animations/">Editor's Draft</a></li>
   <li>Shortname: web-animations-1</li>
-  <li>Date: 28 June 2017</li>
+  <li>Date: 2 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-97" class="level3 anomalies">
@@ -3684,7 +3684,7 @@
   <ul>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>DOMHighResTimeStamp</code> defined in <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 3</a></li>
+  <li><code>DOMHighResTimeStamp</code> defined in <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   </ul></li>
   </ul>
   </section>
@@ -3702,7 +3702,7 @@
   <section id="crawl-info-98" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
-  <li>URL: <a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Latest published version</a></li>
+  <li>URL: <a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Latest published version</a></li>
   <li>Shortname: appmanifest</li>
   <li>Date: Living Document</li>
   </ul>
@@ -3759,27 +3759,31 @@
   </ul>
   </section>
   </section>
-  <section id="web-authenticationan-api-for-accessing-public-key-credentialslevel-1-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
-  <h2>Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</h2>
+  <section id="web-authentication-an-api-for-accessing-public-key-credentials---level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <h2>Web Authentication: An API for accessing Public Key Credentials - Level 1</h2>
   <section id="crawl-info-100" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/webauthn/">Editor's Draft</a></li>
   <li>Shortname: webauthn</li>
-  <li>Date: 11 July 2017</li>
+  <li>Date: 7 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-100" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>AlgorithmIdentifier</code> also defined in <a href="https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/">Web Cryptography API</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/html/browsers.html"><code>https://w3c.github.io/html/browsers.html</code></a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
+  <li><a href="https://w3c.github.io/webappsec-credential-management/"><code>https://w3c.github.io/webappsec-credential-management/</code></a>, related reference &quot;CREDENTIAL-MANAGEMENT-1&quot; uses URL <a href="https://www.w3.org/TR/credential-management-1/"><code>https://www.w3.org/TR/credential-management-1/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a>, related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
-  <li><a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a>, related reference &quot;ENCODING&quot; uses URL <a href="https://www.w3.org/TR/encoding/"><code>https://www.w3.org/TR/encoding/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -3792,7 +3796,7 @@
   </ul>
   </section>
   </section>
-  <section id="web-cryptography-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <section id="web-cryptography-api" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true">
   <h2>Web Cryptography API</h2>
   <section id="crawl-info-101" class="level3 info">
   <h3>Crawl info</h3>
@@ -3805,6 +3809,10 @@
   <section id="potential-issues-101" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>AlgorithmIdentifier</code> also defined in <a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
+  </ul></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
@@ -3816,7 +3824,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
@@ -3829,7 +3837,7 @@
   <ul>
   <li>URL: <a href="https://heycam.github.io/webidl/">Editor's Draft</a></li>
   <li>Shortname: WebIDL-1</li>
-  <li>Date: 13 July 2017</li>
+  <li>Date: 31 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-102" class="level3 anomalies">
@@ -3847,8 +3855,6 @@
   <ul>
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
-  <li><a href="https://w3c.github.io/payment-method-basic-card/">Basic Card Payment</a></li>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
@@ -3875,7 +3881,7 @@
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></li>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 3</a></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
@@ -3891,7 +3897,7 @@
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/browser-payment-api/">Payment Request API</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
@@ -3915,8 +3921,8 @@
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
-  <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/">Web Cryptography API</a></li>
   <li><a href="https://www.w3.org/TR/webstorage">Web Storage (Second Edition)</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
@@ -3929,9 +3935,10 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/payment-method-basic-card/">Basic Card Payment</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 3</a></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://rawgit.com/w3c/input-events/v1/index.html">Input Events Level 1</a></li>
@@ -3946,7 +3953,7 @@
   <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://www.w3.org/TR/uievents">UI Events</a></li>
   <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   </ul>
   </section>
@@ -4021,7 +4028,7 @@
   <ul>
   <li>URL: <a href="https://html.spec.whatwg.org/multipage/workers.html">Editor's Draft</a></li>
   <li>Shortname: workers</li>
-  <li>Date: 21 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-105" class="level3 anomalies">
@@ -4078,7 +4085,7 @@
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 3</a></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
   <li><a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a></li>
@@ -4089,9 +4096,10 @@
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/browser-payment-api/">Payment Request API</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
+  <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
@@ -4109,8 +4117,8 @@
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170628/">Web App Manifest</a></li>
-  <li><a href="https://w3c.github.io/webauthn/">Web Authentication:<br>An API for accessing Public Key Credentials<br>[Level 1] 1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170808/">Web App Manifest</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
@@ -4137,7 +4145,6 @@
   <li><a href="http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/">Metadata API for Media Resources 1.0</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
-  <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
@@ -4156,7 +4163,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/webdriver/webdriver-spec.html">Editor's Draft</a></li>
   <li>Shortname: webdriver</li>
-  <li>Date: 19 July 2017</li>
+  <li>Date: 08 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-106" class="level3 anomalies">
@@ -4165,6 +4172,7 @@
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a></li>
+  <li><a href="https://www.w3.org/TR/page-visibility/?csw=1"><code>https://www.w3.org/TR/page-visibility/?csw=1</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-3//"><code>https://www.w3.org/TR/css-values-3//</code></a></li>
   </ul></li>
   <li>Inconsistent references for links:
@@ -4188,7 +4196,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Sun Jul 23 2017</li>
+  <li>Date: Wed Aug 09 2017</li>
   </ul>
   </section>
   <section id="potential-issues-107" class="level3 anomalies">
@@ -4208,7 +4216,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Sun Jul 23 2017</li>
+  <li>Date: Wed Aug 09 2017</li>
   </ul>
   </section>
   <section id="potential-issues-108" class="level3 anomalies">
@@ -4316,7 +4324,7 @@
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/worklets/">Editor's Draft</a></li>
   <li>Shortname: worklets-1</li>
-  <li>Date: 22 July 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-111" class="level3 anomalies">
