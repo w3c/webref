@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">August 09, 2017</h2>
+            <h2 class="date">August 10, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -838,20 +838,24 @@
   </ul>
   </section>
   </section>
-  <section id="dom-parsing-and-serialization" class="level2" data-spec="true" data-error="true">
+  <section id="dom-parsing-and-serialization" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>DOM Parsing and Serialization</h2>
   <section id="crawl-info-25" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/DOM-Parsing/">Editor's Draft</a></li>
   <li>Shortname: DOM-Parsing</li>
-  <li>Date: unknown</li>
+  <li>Date: and similar APIs</li>
   </ul>
   </section>
   <section id="potential-issues-25" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec     at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)     at ontimeout (timers.js:386:14)     at tryOnTimeout (timers.js:250:5)     at Timer.listOnTimeout (timers.js:214:5)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a>, related reference &quot;DOM4&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-25" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -908,6 +912,7 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="http://www.w3.org/TR/2008/REC-ElementTraversal-20081222/">Element Traversal Specification</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
@@ -1216,7 +1221,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/sensors/">Editor's Draft</a></li>
   <li>Shortname: generic-sensor</li>
-  <li>Date: 4 August 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-34" class="level3 anomalies">
@@ -1454,6 +1459,7 @@
   <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
@@ -1530,6 +1536,7 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
@@ -1625,7 +1632,7 @@
   <ul>
   <li>URL: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a></li>
   <li>Shortname: input-events-2</li>
-  <li>Date: 09 August 2017</li>
+  <li>Date: 10 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-43" class="level3 anomalies">
@@ -2471,7 +2478,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/remote-playback/">Editor's Draft</a></li>
   <li>Shortname: remote-playback</li>
-  <li>Date: 04 August 2017</li>
+  <li>Date: 09 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-69" class="level3 anomalies">
@@ -3365,23 +3372,19 @@
   </ul>
   </section>
   </section>
-  <section id="web-authentication-an-api-for-accessing-public-key-credentials---level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="web-authentication-an-api-for-accessing-public-key-credentials---level-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Web Authentication: An API for accessing Public Key Credentials - Level 1</h2>
   <section id="crawl-info-94" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/webauthn/">Editor's Draft</a></li>
   <li>Shortname: webauthn</li>
-  <li>Date: 7 August 2017</li>
+  <li>Date: 9 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-94" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>AlgorithmIdentifier</code> also defined in <a href="https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/">Web Cryptography API</a></li>
-  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/html/browsers.html"><code>https://w3c.github.io/html/browsers.html</code></a></li>
@@ -3402,7 +3405,7 @@
   </ul>
   </section>
   </section>
-  <section id="web-cryptography-api" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true">
+  <section id="web-cryptography-api" class="level2" data-spec="true" data-ok="true">
   <h2>Web Cryptography API</h2>
   <section id="crawl-info-95" class="level3 info">
   <h3>Crawl info</h3>
@@ -3414,12 +3417,7 @@
   </section>
   <section id="potential-issues-95" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>AlgorithmIdentifier</code> also defined in <a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
-  </ul></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-95" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3476,6 +3474,7 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
@@ -3567,7 +3566,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/webdriver/webdriver-spec.html">Editor's Draft</a></li>
   <li>Shortname: webdriver</li>
-  <li>Date: 08 August 2017</li>
+  <li>Date: 09 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-97" class="level3 anomalies">
@@ -3600,7 +3599,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Wed Aug 09 2017</li>
+  <li>Date: Thu Aug 10 2017</li>
   </ul>
   </section>
   <section id="potential-issues-98" class="level3 anomalies">
@@ -3620,7 +3619,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Wed Aug 09 2017</li>
+  <li>Date: Thu Aug 10 2017</li>
   </ul>
   </section>
   <section id="potential-issues-99" class="level3 anomalies">
