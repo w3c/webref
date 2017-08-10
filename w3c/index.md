@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 09, 2017
+% August 10, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -46,24 +46,18 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Audio Output Devices API {data-spec=true data-error=true}
+## Audio Output Devices API {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
 - Shortname: audio-output
-- Date: unknown
+- Date: 15 December 2016
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
-    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
-    at ontimeout (timers.js:386:14)
-    at tryOnTimeout (timers.js:250:5)
-    at Timer.listOnTimeout (timers.js:214:5)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -940,7 +934,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 4 August 2017
+- Date: 9 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1117,6 +1111,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -1507,7 +1502,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 09 August 2017
+- Date: 10 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1572,6 +1567,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [HTML 5.2](https://w3c.github.io/html/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
@@ -2195,7 +2191,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/remote-playback/)
 - Shortname: remote-playback
-- Date: 04 August 2017
+- Date: 09 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3141,18 +3137,16 @@ Informative references to this spec from:
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
-## Web Authentication: An API for accessing Public Key Credentials - Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Authentication: An API for accessing Public Key Credentials - Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/webauthn/)
 - Shortname: webauthn
-- Date: 7 August 2017
+- Date: 9 August 2017
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `AlgorithmIdentifier` also defined in [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - Missing references for links: 
      * [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html)
 - Inconsistent references for links: 
@@ -3168,7 +3162,7 @@ Informative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 
 
-## Web Cryptography API {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingWebIdlRef=true}
+## Web Cryptography API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
@@ -3178,8 +3172,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `AlgorithmIdentifier` also defined in [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
@@ -3213,6 +3205,7 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -3498,7 +3491,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 08 August 2017
+- Date: 09 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3524,7 +3517,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Wed Aug 09 2017
+- Date: Thu Aug 10 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3543,7 +3536,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Wed Aug 09 2017
+- Date: Thu Aug 10 2017
 
 ### Potential issue(s) {.anomalies}
 
