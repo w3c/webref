@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 10, 2017
+% August 11, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -236,7 +236,7 @@ Normative references to this spec from:
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 No informative reference to this spec from other specs.
@@ -267,7 +267,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
 - Shortname: requestidlecallback
-- Date: 07 August 2017
+- Date: 10 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -316,7 +316,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -375,7 +375,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -410,7 +410,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -438,7 +438,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -460,7 +460,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -483,7 +483,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -505,7 +505,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 No informative reference to this spec from other specs.
@@ -517,7 +517,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -538,7 +538,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -579,7 +579,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -605,7 +605,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -628,7 +628,7 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 
 
 ## DeviceOrientation Event Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -751,7 +751,7 @@ Normative references to this spec from:
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -825,14 +825,12 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Push API](https://w3c.github.io/push-api/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-Informative references to this spec from:
-
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+No informative reference to this spec from other specs.
 
 
 ## Encrypted Media Extensions {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -865,7 +863,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 2 August 2017
+- Date: 10 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -889,7 +887,7 @@ Normative references to this spec from:
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -897,7 +895,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
 
 
 ## File API {data-spec=true data-ok=true}
@@ -961,7 +958,7 @@ Informative references to this spec from:
 
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 
 
 ## Gamepad {data-spec=true data-ok=true}
@@ -1155,7 +1152,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 9 August 2017
+- Date: 10 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1242,7 +1239,7 @@ Normative references to this spec from:
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web IDL](https://heycam.github.io/webidl/)
@@ -1347,7 +1344,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 10 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1785,7 +1782,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 07 August 2017
+- Date: 10 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2236,7 +2233,7 @@ Normative references to this spec from:
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
@@ -2356,7 +2353,7 @@ Normative references to this spec from:
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -2450,7 +2447,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 
 No informative reference to this spec from other specs.
 
@@ -2600,7 +2597,7 @@ Normative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -2736,7 +2733,7 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Latest published version](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- URL: [Latest published version](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - Shortname: appmanifest
 - Date: Living Document
 
@@ -2797,7 +2794,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webauthn/)
 - Shortname: webauthn
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2926,7 +2923,7 @@ Normative references to this spec from:
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -2956,7 +2953,7 @@ Informative references to this spec from:
 - [Selection API](https://w3c.github.io/selection-api/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
@@ -2966,7 +2963,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 09 August 2017
+- Date: 10 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2992,7 +2989,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Aug 10 2017
+- Date: Fri Aug 11 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3011,7 +3008,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Aug 10 2017
+- Date: Fri Aug 11 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3095,7 +3092,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3122,7 +3119,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://xhr.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 15 June 2017
+- Date: 10 August 2017
 
 ### Potential issue(s) {.anomalies}
 
