@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 10, 2017
+% August 11, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -263,7 +263,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Preload](https://w3c.github.io/preload/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 No informative reference to this spec from other specs.
@@ -328,7 +328,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 
 Informative references to this spec from:
 
@@ -569,7 +569,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
@@ -708,7 +708,7 @@ Informative references to this spec from:
 
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 
 
 ## Custom Elements {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -838,14 +838,12 @@ Normative references to this spec from:
 - [Push API](https://w3c.github.io/push-api/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
-- [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-Informative references to this spec from:
-
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+No informative reference to this spec from other specs.
 
 
 ## Encrypted Media Extensions {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -878,7 +876,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 2 August 2017
+- Date: 10 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -902,14 +900,13 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
 
 
 ## File API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
@@ -974,7 +971,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 
 
 ## Gamepad {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -1254,9 +1251,9 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](https://www.w3.org/TR/webstorage)
@@ -1350,9 +1347,9 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
@@ -1445,9 +1442,9 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -1919,7 +1916,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
-- Date: 28 July 2017
+- Date: 10 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2368,8 +2365,8 @@ Normative references to this spec from:
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
-- [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 
 Informative references to this spec from:
 
@@ -2508,7 +2505,7 @@ Normative references to this spec from:
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -2673,7 +2670,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 
 No informative reference to this spec from other specs.
 
@@ -2846,8 +2843,8 @@ Normative references to this spec from:
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
-- [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -2999,9 +2996,9 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](https://www.w3.org/TR/webstorage)
@@ -3136,19 +3133,20 @@ Informative references to this spec from:
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 
 
-## Web Authentication: An API for accessing Public Key Credentials {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Authentication: An API for accessing Public Key Credentials Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Latest published version](https://www.w3.org/TR/webauthn/)
 - Shortname: webauthn
-- Date: 5 May 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
      * [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html)
 - Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/), related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -3178,7 +3176,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
@@ -3303,9 +3301,9 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
@@ -3363,7 +3361,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Aug 10 2017
+- Date: Fri Aug 11 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3382,7 +3380,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Aug 10 2017
+- Date: Fri Aug 11 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3480,9 +3478,9 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Storage (Second Edition)](https://www.w3.org/TR/webstorage)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
@@ -3508,7 +3506,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [UI Events](https://www.w3.org/TR/uievents)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170808/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/)
 - [WebIDL Level 1](https://heycam.github.io/webidl/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
@@ -3610,7 +3608,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://xhr.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 15 June 2017
+- Date: 10 August 2017
 
 ### Potential issue(s) {.anomalies}
 

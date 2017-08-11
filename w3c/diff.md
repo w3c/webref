@@ -1,26 +1,36 @@
-% Diff between report from "August 10, 2017" and reference report from "August 09, 2017"
+% Diff between report from "August 11, 2017" and reference report from "August 10, 2017"
 % Reffy
-% August 10, 2017
+% August 11, 2017
 
-## Audio Output Devices API
+## Custom Elements
 
-- URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
-- Spec could not be rendered: *DEL* Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
-    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
+- URL: [https://www.w3.org/TR/custom-elements/](https://www.w3.org/TR/custom-elements/)
+- Spec could not be rendered: *INS* Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises? Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises?
+    at Timeout.<anonymous> (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:509:10)
     at ontimeout (timers.js:386:14)
     at tryOnTimeout (timers.js:250:5)
     at Timer.listOnTimeout (timers.js:214:5)
 
 
-## Web Authentication: An API for accessing Public Key Credentials - Level 1
+## Scalable Vector Graphics (SVG) 2
 
-- URL: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- WebIDL names also defined elsewhere: *DEL* AlgorithmIdentifier
+- URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
+- Unknown WebIDL names used: *INS* ShadowRoot
 
 
-## Web Cryptography API
+## Shadow DOM
 
-- URL: [https://www.w3.org/TR/WebCryptoAPI/](https://www.w3.org/TR/WebCryptoAPI/)
-- WebIDL names also defined elsewhere: *DEL* AlgorithmIdentifier
+- URL: [https://www.w3.org/TR/shadow-dom/](https://www.w3.org/TR/shadow-dom/)
+- Spec could not be rendered: *INS* Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises? Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises?
+    at Timeout.<anonymous> (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:509:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)
+
+
+## Web App Manifest
+
+- URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
+- Latest URL: *INS* https://www.w3.org/TR/2017/WD-appmanifest-20170811/ / *DEL* https://www.w3.org/TR/2017/WD-appmanifest-20170808/
 
 
