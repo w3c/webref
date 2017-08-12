@@ -1,17 +1,26 @@
-% Diff between report from "August 11, 2017" and reference report from "August 10, 2017"
+% Diff between report from "August 12, 2017" and reference report from "August 11, 2017"
 % Reffy
-% August 11, 2017
+% August 12, 2017
 
-## Web App Manifest
+## Basic Card Payment
 
-- URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest URL: *INS* https://www.w3.org/TR/2017/WD-appmanifest-20170811/ / *DEL* https://www.w3.org/TR/2017/WD-appmanifest-20170808/
+- URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
+- Unknown WebIDL names used: *INS* PaymentAddress
 
 
-## Web Authentication: An API for accessing Public Key Credentials Level 1
+## Error 403
 
-- URL: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- Spec title: *INS* Web Authentication: An API for accessing Public Key Credentials Level 1 / *DEL* Web Authentication: An API for accessing Public Key Credentials
-- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-credential-management/
+- URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
+- Spec title: *INS* Error 403 / *DEL* Payment Request API
+- Spec is OK: *INS* false / *DEL* true
+- No normative references found: *INS* true / *DEL* false
+- No WebIDL definitions found: *INS* true / *DEL* false
+- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
+
+
+## Payment Handler API
+
+- URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
+- Unknown WebIDL names used: *INS* PaymentCurrencyAmount, PaymentDetailsModifier, PaymentMethodData
 
 
