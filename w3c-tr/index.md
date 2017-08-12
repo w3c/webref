@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 11, 2017
+% August 12, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -96,7 +96,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Basic Card Payment {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+## Basic Card Payment {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true}
 
 ### Crawl info {.info}
 
@@ -107,6 +107,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `PaymentAddress`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -870,6 +871,30 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
+## Error 403 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
+
+### Crawl info {.info}
+
+- URL: [Latest published version](https://www.w3.org/TR/payment-request/)
+- Shortname: payment-request
+- Date: Sat Aug 12 2017
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
+- [HTML 5.2](https://w3c.github.io/html/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+
+No informative reference to this spec from other specs.
+
+
 ## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Crawl info {.info}
@@ -1225,7 +1250,6 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -1331,7 +1355,6 @@ Normative references to this spec from:
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
@@ -1424,7 +1447,6 @@ Normative references to this spec from:
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
@@ -1888,7 +1910,7 @@ Informative references to this spec from:
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 
 
-## Payment Handler API {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## Payment Handler API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Crawl info {.info}
 
@@ -1898,6 +1920,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `PaymentCurrencyAmount`, `PaymentDetailsModifier`, `PaymentMethodData`
 - Missing references for links: 
      * [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/)
 
@@ -1908,29 +1931,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
-
-
-## Payment Request API {data-spec=true data-ok=true}
-
-### Crawl info {.info}
-
-- URL: [Latest published version](https://www.w3.org/TR/payment-request/)
-- Shortname: payment-request
-- Date: 10 August 2017
-
-### Potential issue(s) {.anomalies}
-
-This specification looks good!
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
-- [HTML 5.2](https://w3c.github.io/html/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-
-No informative reference to this spec from other specs.
 
 
 ## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -2973,7 +2973,6 @@ Normative references to this spec from:
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Preload](https://w3c.github.io/preload/)
@@ -3282,7 +3281,6 @@ Normative references to this spec from:
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
@@ -3361,7 +3359,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Fri Aug 11 2017
+- Date: Sat Aug 12 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3380,7 +3378,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Fri Aug 11 2017
+- Date: Sat Aug 12 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3458,7 +3456,6 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Presentation API](https://w3c.github.io/presentation-api/)

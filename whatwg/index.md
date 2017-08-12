@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 11, 2017
+% August 12, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -986,7 +986,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 9 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1152,7 +1152,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 10 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1344,7 +1344,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 11 August 2017
+- Date: 12 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1782,7 +1782,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 10 August 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2989,7 +2989,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Fri Aug 11 2017
+- Date: Sat Aug 12 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3008,7 +3008,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Fri Aug 11 2017
+- Date: Sat Aug 12 2017
 
 ### Potential issue(s) {.anomalies}
 
