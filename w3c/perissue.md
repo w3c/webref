@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 12, 2017
+% August 13, 2017
 
 113 specifications were crawled in this report.
 
@@ -9,1152 +9,111 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [2dcontext](https://www.w3.org/TR/2dcontext): `FetchError: request to https://api.w3.org/specifications/2dcontext failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/2dcontext failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [accelerometer](https://www.w3.org/TR/accelerometer): `FetchError: request to https://api.w3.org/specifications/accelerometer failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/accelerometer failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [ambient-light](https://www.w3.org/TR/ambient-light): `FetchError: request to https://api.w3.org/specifications/ambient-light failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/ambient-light failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [appmanifest](https://www.w3.org/TR/appmanifest): `FetchError: request to https://api.w3.org/specifications/appmanifest failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/appmanifest failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [audio-output](https://www.w3.org/TR/audio-output): `FetchError: request to https://api.w3.org/specifications/audio-output failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/audio-output failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [battery-status](https://www.w3.org/TR/battery-status): `FetchError: request to https://api.w3.org/specifications/battery-status failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/battery-status failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [beacon](https://www.w3.org/TR/beacon): `FetchError: request to https://api.w3.org/specifications/beacon failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/beacon failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [clipboard-apis](https://www.w3.org/TR/clipboard-apis): `FetchError: request to https://api.w3.org/specifications/clipboard-apis failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/clipboard-apis failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [compositing-1](https://www.w3.org/TR/compositing-1): `FetchError: request to https://api.w3.org/specifications/compositing-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/compositing-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [credential-management-1](https://www.w3.org/TR/credential-management-1): `FetchError: request to https://api.w3.org/specifications/credential-management-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/credential-management-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [CSP3](https://www.w3.org/TR/CSP3): `FetchError: request to https://api.w3.org/specifications/CSP3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/CSP3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [css-font-loading-3](https://www.w3.org/TR/css-font-loading-3): `FetchError: request to https://api.w3.org/specifications/css-font-loading-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/css-font-loading-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [css-fonts-3](https://www.w3.org/TR/css-fonts-3): `FetchError: request to https://api.w3.org/specifications/css-fonts-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/css-fonts-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [css-paint-api-1](https://www.w3.org/TR/css-paint-api-1): `FetchError: request to https://api.w3.org/specifications/css-paint-api-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/css-paint-api-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [css-properties-values-api-1](https://www.w3.org/TR/css-properties-values-api-1): `FetchError: request to https://api.w3.org/specifications/css-properties-values-api-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/css-properties-values-api-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [css-pseudo-4](https://www.w3.org/TR/css-pseudo-4): `FetchError: request to https://api.w3.org/specifications/css-pseudo-4 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/css-pseudo-4 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [css-syntax-3](https://www.w3.org/TR/css-syntax-3): `FetchError: request to https://api.w3.org/specifications/css-syntax-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/css-syntax-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [css-typed-om-1](https://www.w3.org/TR/css-typed-om-1): `FetchError: request to https://api.w3.org/specifications/css-typed-om-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/css-typed-om-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [css-values-3](https://www.w3.org/TR/css-values-3): `FetchError: request to https://api.w3.org/specifications/css-values-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/css-values-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [css-writing-modes-3](https://www.w3.org/TR/css-writing-modes-3): `FetchError: request to https://api.w3.org/specifications/css-writing-modes-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/css-writing-modes-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [css3-selectors](https://www.w3.org/TR/css3-selectors): `FetchError: request to https://api.w3.org/specifications/css3-selectors failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/css3-selectors failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [cssom-1](https://www.w3.org/TR/cssom-1): `FetchError: request to https://api.w3.org/specifications/cssom-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/cssom-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [cssom-view-1](https://www.w3.org/TR/cssom-view-1): `FetchError: request to https://api.w3.org/specifications/cssom-view-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/cssom-view-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [custom-elements](https://www.w3.org/TR/custom-elements): `FetchError: request to https://api.w3.org/specifications/custom-elements failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/custom-elements failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [DOM-Parsing](https://www.w3.org/TR/DOM-Parsing): `FetchError: request to https://api.w3.org/specifications/DOM-Parsing failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/DOM-Parsing failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [dom41](https://www.w3.org/TR/dom41): `FetchError: request to https://api.w3.org/specifications/dom41 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/dom41 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [ElementTraversal](https://www.w3.org/TR/ElementTraversal): `FetchError: request to https://api.w3.org/specifications/ElementTraversal failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/ElementTraversal failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [encoding](https://www.w3.org/TR/encoding): `FetchError: request to https://api.w3.org/specifications/encoding failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/encoding failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [encrypted-media](https://www.w3.org/TR/encrypted-media): `FetchError: request to https://api.w3.org/specifications/encrypted-media failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/encrypted-media failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [eventsource](https://www.w3.org/TR/eventsource): `FetchError: request to https://api.w3.org/specifications/eventsource failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/eventsource failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [FileAPI](https://www.w3.org/TR/FileAPI): `FetchError: request to https://api.w3.org/specifications/FileAPI failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/FileAPI failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [gamepad](https://www.w3.org/TR/gamepad): `FetchError: request to https://api.w3.org/specifications/gamepad failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/gamepad failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [generic-sensor](https://www.w3.org/TR/generic-sensor): `FetchError: request to https://api.w3.org/specifications/generic-sensor failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/generic-sensor failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [geolocation-API](https://www.w3.org/TR/geolocation-API): `FetchError: request to https://api.w3.org/specifications/geolocation-API failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/geolocation-API failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [geometry-1](https://www.w3.org/TR/geometry-1): `FetchError: request to https://api.w3.org/specifications/geometry-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/geometry-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [gyroscope](https://www.w3.org/TR/gyroscope): `FetchError: request to https://api.w3.org/specifications/gyroscope failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/gyroscope failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [hr-time-3](https://www.w3.org/TR/hr-time-3): `FetchError: request to https://api.w3.org/specifications/hr-time-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/hr-time-3 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [html-media-capture](https://www.w3.org/TR/html-media-capture): `FetchError: request to https://api.w3.org/specifications/html-media-capture failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/html-media-capture failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [html52](https://www.w3.org/TR/html52): `FetchError: request to https://api.w3.org/specifications/html52 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/html52 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/): `FetchError: request to https://console.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND console.spec.whatwg.org console.spec.whatwg.org:443 FetchError: request to https://console.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND console.spec.whatwg.org console.spec.whatwg.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/): `FetchError: request to https://fetch.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND fetch.spec.whatwg.org fetch.spec.whatwg.org:443 FetchError: request to https://fetch.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND fetch.spec.whatwg.org fetch.spec.whatwg.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/): `FetchError: request to https://fullscreen.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND fullscreen.spec.whatwg.org fullscreen.spec.whatwg.org:443 FetchError: request to https://fullscreen.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND fullscreen.spec.whatwg.org fullscreen.spec.whatwg.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/): `FetchError: request to https://storage.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND storage.spec.whatwg.org storage.spec.whatwg.org:443 FetchError: request to https://storage.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND storage.spec.whatwg.org storage.spec.whatwg.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/): `FetchError: request to https://streams.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND streams.spec.whatwg.org streams.spec.whatwg.org:443 FetchError: request to https://streams.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND streams.spec.whatwg.org streams.spec.whatwg.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/): `FetchError: request to https://url.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND url.spec.whatwg.org url.spec.whatwg.org:443 FetchError: request to https://url.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND url.spec.whatwg.org url.spec.whatwg.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/): `FetchError: request to https://www.khronos.org/registry/webgl/specs/latest/1.0/ failed, reason: getaddrinfo ENOTFOUND www.khronos.org www.khronos.org:443 FetchError: request to https://www.khronos.org/registry/webgl/specs/latest/1.0/ failed, reason: getaddrinfo ENOTFOUND www.khronos.org www.khronos.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/): `FetchError: request to https://www.khronos.org/registry/webgl/specs/latest/2.0/ failed, reason: getaddrinfo ENOTFOUND www.khronos.org www.khronos.org:443 FetchError: request to https://www.khronos.org/registry/webgl/specs/latest/2.0/ failed, reason: getaddrinfo ENOTFOUND www.khronos.org www.khronos.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/): `FetchError: request to https://xhr.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND xhr.spec.whatwg.org xhr.spec.whatwg.org:443 FetchError: request to https://xhr.spec.whatwg.org/ failed, reason: getaddrinfo ENOTFOUND xhr.spec.whatwg.org xhr.spec.whatwg.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [image-capture](https://www.w3.org/TR/image-capture): `FetchError: request to https://api.w3.org/specifications/image-capture failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/image-capture failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [IndexedDB-2](https://www.w3.org/TR/IndexedDB-2): `FetchError: request to https://api.w3.org/specifications/IndexedDB-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/IndexedDB-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [input-events-2](https://www.w3.org/TR/input-events-2): `FetchError: request to https://api.w3.org/specifications/input-events-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/input-events-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [magnetometer](https://www.w3.org/TR/magnetometer): `FetchError: request to https://api.w3.org/specifications/magnetometer failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/magnetometer failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [media-source](https://www.w3.org/TR/media-source): `FetchError: request to https://api.w3.org/specifications/media-source failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/media-source failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [mediacapture-depth](https://www.w3.org/TR/mediacapture-depth): `FetchError: request to https://api.w3.org/specifications/mediacapture-depth failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/mediacapture-depth failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [mediacapture-fromelement](https://www.w3.org/TR/mediacapture-fromelement): `FetchError: request to https://api.w3.org/specifications/mediacapture-fromelement failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/mediacapture-fromelement failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [mediacapture-streams](https://www.w3.org/TR/mediacapture-streams): `FetchError: request to https://api.w3.org/specifications/mediacapture-streams failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/mediacapture-streams failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [mediaont-api-1.0](https://www.w3.org/TR/mediaont-api-1.0): `FetchError: request to https://api.w3.org/specifications/mediaont-api-1.0 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/mediaont-api-1.0 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [mediastream-recording](https://www.w3.org/TR/mediastream-recording): `FetchError: request to https://api.w3.org/specifications/mediastream-recording failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/mediastream-recording failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [mixed-content](https://www.w3.org/TR/mixed-content): `FetchError: request to https://api.w3.org/specifications/mixed-content failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/mixed-content failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [navigation-timing-2](https://www.w3.org/TR/navigation-timing-2): `FetchError: request to https://api.w3.org/specifications/navigation-timing-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/navigation-timing-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [notifications](https://www.w3.org/TR/notifications): `FetchError: request to https://api.w3.org/specifications/notifications failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/notifications failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [orientation-event](https://www.w3.org/TR/orientation-event): `FetchError: request to https://api.w3.org/specifications/orientation-event failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/orientation-event failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [orientation-sensor](https://www.w3.org/TR/orientation-sensor): `FetchError: request to https://api.w3.org/specifications/orientation-sensor failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/orientation-sensor failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [page-visibility-2](https://www.w3.org/TR/page-visibility-2): `FetchError: request to https://api.w3.org/specifications/page-visibility-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/page-visibility-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [payment-handler](https://www.w3.org/TR/payment-handler): `FetchError: request to https://api.w3.org/specifications/payment-handler failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/payment-handler failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [payment-method-basic-card](https://www.w3.org/TR/payment-method-basic-card): `FetchError: request to https://api.w3.org/specifications/payment-method-basic-card failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/payment-method-basic-card failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [payment-request](https://www.w3.org/TR/payment-request): `FetchError: request to https://api.w3.org/specifications/payment-request failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/payment-request failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [performance-timeline-2](https://www.w3.org/TR/performance-timeline-2): `FetchError: request to https://api.w3.org/specifications/performance-timeline-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/performance-timeline-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [permissions](https://www.w3.org/TR/permissions): `FetchError: request to https://api.w3.org/specifications/permissions failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/permissions failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [pointerevents2](https://www.w3.org/TR/pointerevents2): `FetchError: request to https://api.w3.org/specifications/pointerevents2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/pointerevents2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [pointerlock-2](https://www.w3.org/TR/pointerlock-2): `FetchError: request to https://api.w3.org/specifications/pointerlock-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/pointerlock-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [preload](https://www.w3.org/TR/preload): `FetchError: request to https://api.w3.org/specifications/preload failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/preload failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [presentation-api](https://www.w3.org/TR/presentation-api): `FetchError: request to https://api.w3.org/specifications/presentation-api failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/presentation-api failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [progress-events](https://www.w3.org/TR/progress-events): `FetchError: request to https://api.w3.org/specifications/progress-events failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/progress-events failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [proximity](https://www.w3.org/TR/proximity): `FetchError: request to https://api.w3.org/specifications/proximity failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/proximity failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [push-api](https://www.w3.org/TR/push-api): `FetchError: request to https://api.w3.org/specifications/push-api failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/push-api failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [referrer-policy](https://www.w3.org/TR/referrer-policy): `FetchError: request to https://api.w3.org/specifications/referrer-policy failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/referrer-policy failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [remote-playback](https://www.w3.org/TR/remote-playback): `FetchError: request to https://api.w3.org/specifications/remote-playback failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/remote-playback failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [requestidlecallback](https://www.w3.org/TR/requestidlecallback): `FetchError: request to https://api.w3.org/specifications/requestidlecallback failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/requestidlecallback failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [resource-timing-2](https://www.w3.org/TR/resource-timing-2): `FetchError: request to https://api.w3.org/specifications/resource-timing-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/resource-timing-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [screen-capture](https://www.w3.org/TR/screen-capture): `FetchError: request to https://api.w3.org/specifications/screen-capture failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/screen-capture failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [screen-orientation](https://www.w3.org/TR/screen-orientation): `FetchError: request to https://api.w3.org/specifications/screen-orientation failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/screen-orientation failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [secure-contexts](https://www.w3.org/TR/secure-contexts): `FetchError: request to https://api.w3.org/specifications/secure-contexts failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/secure-contexts failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [selection-api](https://www.w3.org/TR/selection-api): `FetchError: request to https://api.w3.org/specifications/selection-api failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/selection-api failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [selectors-api](https://www.w3.org/TR/selectors-api): `FetchError: request to https://api.w3.org/specifications/selectors-api failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/selectors-api failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [service-workers-1](https://www.w3.org/TR/service-workers-1): `FetchError: request to https://api.w3.org/specifications/service-workers-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/service-workers-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [shadow-dom](https://www.w3.org/TR/shadow-dom): `FetchError: request to https://api.w3.org/specifications/shadow-dom failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/shadow-dom failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [SVG2](https://www.w3.org/TR/SVG2): `FetchError: request to https://api.w3.org/specifications/SVG2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/SVG2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [touch-events](https://www.w3.org/TR/touch-events): `FetchError: request to https://api.w3.org/specifications/touch-events failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/touch-events failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [uievents](https://www.w3.org/TR/uievents): `FetchError: request to https://api.w3.org/specifications/uievents failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/uievents failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [uievents-code](https://www.w3.org/TR/uievents-code): `FetchError: request to https://api.w3.org/specifications/uievents-code failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/uievents-code failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [uievents-key](https://www.w3.org/TR/uievents-key): `FetchError: request to https://api.w3.org/specifications/uievents-key failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/uievents-key failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [UISecurity](https://www.w3.org/TR/UISecurity): `FetchError: request to https://api.w3.org/specifications/UISecurity failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/UISecurity failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [user-timing-2](https://www.w3.org/TR/user-timing-2): `FetchError: request to https://api.w3.org/specifications/user-timing-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/user-timing-2 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [vibration](https://www.w3.org/TR/vibration): `FetchError: request to https://api.w3.org/specifications/vibration failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/vibration failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [wake-lock](https://www.w3.org/TR/wake-lock): `FetchError: request to https://api.w3.org/specifications/wake-lock failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/wake-lock failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [web-animations-1](https://www.w3.org/TR/web-animations-1): `FetchError: request to https://api.w3.org/specifications/web-animations-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/web-animations-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [webaudio](https://www.w3.org/TR/webaudio): `FetchError: request to https://api.w3.org/specifications/webaudio failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/webaudio failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [webauthn](https://www.w3.org/TR/webauthn): `FetchError: request to https://api.w3.org/specifications/webauthn failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/webauthn failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [WebCryptoAPI](https://www.w3.org/TR/WebCryptoAPI): `FetchError: request to https://api.w3.org/specifications/WebCryptoAPI failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/WebCryptoAPI failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [webdriver](https://www.w3.org/TR/webdriver): `FetchError: request to https://api.w3.org/specifications/webdriver failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/webdriver failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [WebIDL-1](https://www.w3.org/TR/WebIDL-1): `FetchError: request to https://api.w3.org/specifications/WebIDL-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/WebIDL-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [webmessaging](https://www.w3.org/TR/webmessaging): `FetchError: request to https://api.w3.org/specifications/webmessaging failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/webmessaging failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [webrtc](https://www.w3.org/TR/webrtc): `FetchError: request to https://api.w3.org/specifications/webrtc failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/webrtc failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [webrtc-stats](https://www.w3.org/TR/webrtc-stats): `FetchError: request to https://api.w3.org/specifications/webrtc-stats failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/webrtc-stats failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [websockets](https://www.w3.org/TR/websockets): `FetchError: request to https://api.w3.org/specifications/websockets failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/websockets failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [webstorage](https://www.w3.org/TR/webstorage): `FetchError: request to https://api.w3.org/specifications/webstorage failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/webstorage failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [webvtt1](https://www.w3.org/TR/webvtt1): `FetchError: request to https://api.w3.org/specifications/webvtt1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/webvtt1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [workers](https://www.w3.org/TR/workers): `FetchError: request to https://api.w3.org/specifications/workers failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/workers failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
-- [worklets-1](https://www.w3.org/TR/worklets-1): `FetchError: request to https://api.w3.org/specifications/worklets-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443 FetchError: request to https://api.w3.org/specifications/worklets-1 failed, reason: getaddrinfo ENOTFOUND api.w3.org api.w3.org:443
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at connectErrorNT (net.js:1021:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)`
+- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/): `Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises? Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises?
+    at Timeout.<anonymous> (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:509:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)`
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/): `Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises? Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises?
+    at Timeout.<anonymous> (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:509:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)`
+- [Web Audio API](https://webaudio.github.io/web-audio-api/): `Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
+    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)`
 
-=> 110 specifications found
+=> 3 specifications found
 
 
 ## Specifications without normative dependencies
 
+- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 0 specification found
+=> 1 specification found
+
+Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
 
 ## Specifications without WebIDL definitions
 
+- [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/)
 - [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
+- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
+- [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
+- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Preload](https://w3c.github.io/preload/)
+- [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
+- [Streams Standard](https://streams.spec.whatwg.org/)
+- [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
+- [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 
-=> 1 specification found
+=> 11 specifications found
 
 Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
 
 ## List of specifications with invalid WebIDL content
 
+- [CSS Fonts Module Level 3](http://dev.w3.org/csswg/css-fonts/)
+- [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
+- [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
+- [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 
-=> 0 specification found
+=> 4 specifications found
+
+WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
 
 ## List of specifications with obsolete WebIDL constructs
 
+- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
-=> 0 specification found
+=> 6 specifications found
+
+A typical example is the use of `[]` instead of `FrozenArray`.
 
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
+- [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
+- [CSS Fonts Module Level 3](http://dev.w3.org/csswg/css-fonts/)
+- [Element Traversal Specification](http://www.w3.org/TR/2008/REC-ElementTraversal-20081222/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
+- [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
+- [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Static Range](https://w3c.github.io/staticrange/)
+- [UI Events](https://www.w3.org/TR/uievents)
+- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 1 specification found
+=> 12 specifications found
 
 
 
 ## List of WebIDL names not defined in the specifications crawled
 
-- `Navigator` used in [Media Session Standard](https://wicg.github.io/mediasession/)
-- `Node` used in [Static Range](https://w3c.github.io/staticrange/)
-- `Window` used in [Media Session Standard](https://wicg.github.io/mediasession/)
+- `DOMRectList` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- `DocumentOrShadowRoot` used in [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- `OverconstrainedError` used in [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- `RTCError` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+- `ReadableStream` used in [Fetch Standard](https://fetch.spec.whatwg.org/)
+- `ShadowRoot` used in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- `Transferable` used in [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
+- `Type` used in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- `WindowProxy` used in [HTML 5.2](https://w3c.github.io/html/), [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging), [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
 
-=> 3 WebIDL names found
+=> 9 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -1162,23 +121,380 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## List of WebIDL names defined in more than one spec
 
+- `ProgressEvent` defined in [Progress Events](https://www.w3.org/TR/progress-events) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `ProgressEventInit` defined in [Progress Events](https://www.w3.org/TR/progress-events) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `RTCStats` defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+- `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) and [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+- `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
-=> 0 WebIDL name found
+=> 5 WebIDL names found
+
+"There can be only one"...
 
 
 ## Missing references for WebIDL names
 
+- [Battery Status API](https://w3c.github.io/battery/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Console Standard](https://console.spec.whatwg.org/) uses:
+    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+    * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+    * `Worklet` but does not reference [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/) uses:
+    * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/uievents)
+    * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/uievents)
+- [Encoding Standard](https://encoding.spec.whatwg.org/) uses:
+    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+    * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+- [Gamepad](https://w3c.github.io/gamepad/) uses `Navigator` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) uses:
+    * `Element` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+    * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/uievents)
+    * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/uievents)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/) uses:
+    * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+    * `Event` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+    * `EventInit` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Media Source Extensions™](https://w3c.github.io/media-source/) uses:
+    * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+    * `URL` but does not reference [URL Standard](https://url.spec.whatwg.org/)
+- [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/) uses:
+    * `MediaStreamTrack` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+    * `MediaTrackSupportedConstraints` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+    * `MediaTrackCapabilities` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+    * `MediaTrackConstraintSet` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+    * `ConstrainDOMString` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+    * `ConstrainDouble` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+    * `ConstrainBoolean` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+    * `MediaTrackSettings` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) uses `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) uses:
+    * `DOMRect` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+    * `DOMMatrix` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+    * `DOMPoint` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+    * `DOMRectReadOnly` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+    * `DOMPointReadOnly` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+    * `DOMMatrixReadOnly` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Web Animations](https://w3c.github.io/web-animations/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html) uses:
+    * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+    * `OnErrorEventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+    * `RequestCredentials` but does not reference [Fetch Standard](https://fetch.spec.whatwg.org/)
+    * `MessagePort` but does not reference [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) uses:
+    * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+    * `Event` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+    * `EventInit` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
 
-=> 0 missing reference for IDL definitions found in 0 specification
+=> 46 missing references for IDL definitions found in 18 specifications
 
 
 ## Missing references based on document links
 
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
+- [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/) links to [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but does not list it in its references
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/) links to:
+    * [`https://w3c.github.io/html/webappapis.html`](https://w3c.github.io/html/webappapis.html) but does not list it in its references
+    * [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html) but does not list it in its references
+- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/) links to [`https://w3c.github.io/webappsec/usecases/credentialmanagement/`](https://w3c.github.io/webappsec/usecases/credentialmanagement/) but does not list it in its references
+- [CSS Fonts Module Level 3](http://dev.w3.org/csswg/css-fonts/) links to:
+    * [`https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/`](https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
+    * [`https://www.w3.org/TR/2016/WD-charmod-norm-20160407/`](https://www.w3.org/TR/2016/WD-charmod-norm-20160407/) but does not list it in its references
+    * [`https://www.w3.org/TR/2013/WD-css-text-3-20131010/`](https://www.w3.org/TR/2013/WD-css-text-3-20131010/) but does not list it in its references
+    * [`https://www.w3.org/TR/2013/CR-css3-conditional-20130404/`](https://www.w3.org/TR/2013/CR-css3-conditional-20130404/) but does not list it in its references
+    * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/) but does not list it in its references
+- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) links to [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/) but does not list it in its references
+- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/) links to [`https://www.w3.org/TR/selectors-api/`](https://www.w3.org/TR/selectors-api/) but does not list it in its references
+- [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/) links to:
+    * [`https://www.w3.org/TR/css-writing-modes-4/`](https://www.w3.org/TR/css-writing-modes-4/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-flexbox/`](https://www.w3.org/TR/css3-flexbox/) but does not list it in its references
+- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/) links to [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/) but does not list it in its references
+- [Gyroscope](https://w3c.github.io/gyroscope/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
+- [HTML 5.2](https://w3c.github.io/html/) links to:
+    * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
+    * [`https://w3c.github.io/aria-in-html/`](https://w3c.github.io/aria-in-html/) but does not list it in its references
+    * [`https://w3c.github.io/aria/practices/aria-practices.html`](https://w3c.github.io/aria/practices/aria-practices.html) but does not list it in its references
+    * [`https://www.w3.org/TR/css-device-adapt-1/`](https://www.w3.org/TR/css-device-adapt-1/) but does not list it in its references
+    * [`https://www.w3.org/TR/turingtest/`](https://www.w3.org/TR/turingtest/) but does not list it in its references
+    * [`https://www.w3.org/TR/webmessaging/`](https://www.w3.org/TR/webmessaging/) but does not list it in its references
+    * [`https://www.w3.org/TR/xlink11/`](https://www.w3.org/TR/xlink11/) but does not list it in its references
+    * [`https://www.w3.org/TR/becss/`](https://www.w3.org/TR/becss/) but does not list it in its references
+- [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/) links to:
+    * [`https://www.w3.org/TR/mediaont-10/`](https://www.w3.org/TR/mediaont-10/) but does not list it in its references
+    * [`https://www.w3.org/TR/2012/REC-mediaont-10-20120209/`](https://www.w3.org/TR/2012/REC-mediaont-10-20120209/) but does not list it in its references
+    * [`https://www.w3.org/TR/2011/NOTE-dap-policy-reqs-20110317/`](https://www.w3.org/TR/2011/NOTE-dap-policy-reqs-20110317/) but does not list it in its references
+- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/) links to [`https://www.w3.org/TR/eventsource/`](https://www.w3.org/TR/eventsource/) but does not list it in its references
+- [Orientation Sensor](https://w3c.github.io/orientation-sensor/) links to:
+    * [`https://www.w3.org/TR/orientation-event/`](https://www.w3.org/TR/orientation-event/) but does not list it in its references
+    * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/) links to [`https://www.w3.org/TR/html/full`](https://www.w3.org/TR/html/full) but does not list it in its references
+- [Payment Handler API](https://w3c.github.io/payment-handler/) links to [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/) but does not list it in its references
+- [Permissions](https://w3c.github.io/permissions/) links to [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but does not list it in its references
+- [Preload](https://w3c.github.io/preload/) links to [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
+- [Progress Events](https://www.w3.org/TR/progress-events) links to:
+    * [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/) but does not list it in its references
+    * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
+- [Push API](https://w3c.github.io/push-api/) links to [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) links to:
+    * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/) but does not list it in its references
+    * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/) but does not list it in its references
+    * [`https://www.w3.org/TR/filter-effects/`](https://www.w3.org/TR/filter-effects/) but does not list it in its references
+    * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/) but does not list it in its references
+    * [`https://www.w3.org/TR/2014/WD-geometry-1-20140522/`](https://www.w3.org/TR/2014/WD-geometry-1-20140522/) but does not list it in its references
+    * [`https://www.w3.org/TR/wai-aria-1.1/`](https://www.w3.org/TR/wai-aria-1.1/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/wai-aria/states_and_properties`](https://www.w3.org/TR/wai-aria/states_and_properties) but does not list it in its references
+    * [`https://w3c.github.io/html-aam/`](https://w3c.github.io/html-aam/) but does not list it in its references
+    * [`https://w3c.github.io/aria/svg-aam/svg-aam.html`](https://w3c.github.io/aria/svg-aam/svg-aam.html) but does not list it in its references
+    * [`https://w3c.github.io/selection-api/`](https://w3c.github.io/selection-api/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
+    * [`https://www.w3.org/TR/2013/REC-css-style-attr-20131107/`](https://www.w3.org/TR/2013/REC-css-style-attr-20131107/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-position-3/`](https://www.w3.org/TR/css-position-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-exclusions/`](https://www.w3.org/TR/css3-exclusions/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/) but does not list it in its references
+    * [`https://www.w3.org/TR/resource-hints/`](https://www.w3.org/TR/resource-hints/) but does not list it in its references
+    * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/) but does not list it in its references
+    * [`https://www.w3.org/TR/html51/full`](https://www.w3.org/TR/html51/full) but does not list it in its references
+    * [`https://www.w3.org/TR/orientation-event/`](https://www.w3.org/TR/orientation-event/) but does not list it in its references
+    * [`https://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/`](https://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-transforms/`](https://www.w3.org/TR/css3-transforms/) but does not list it in its references
+    * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/) but does not list it in its references
+    * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/) but does not list it in its references
+    * [`https://www.w3.org/TR/accname-aam-1.1/`](https://www.w3.org/TR/accname-aam-1.1/) but does not list it in its references
+    * [`https://w3c.github.io/aria/aria/graphics.html`](https://w3c.github.io/aria/aria/graphics.html) but does not list it in its references
+    * [`https://www.w3.org/TR/smil/`](https://www.w3.org/TR/smil/) but does not list it in its references
+    * [`https://www.w3.org/TR/xsl/`](https://www.w3.org/TR/xsl/) but does not list it in its references
+    * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
+    * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/) but does not list it in its references
+    * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/) but does not list it in its references
+- [Selection API](https://w3c.github.io/selection-api/) links to [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/) but does not list it in its references
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) links to [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/) but does not list it in its references
+- [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html) links to [`https://www.w3.org/TR/touch-events-extensions/`](https://www.w3.org/TR/touch-events-extensions/) but does not list it in its references
+- [UI Events](https://www.w3.org/TR/uievents) links to:
+    * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/2004/REC-xml-20040204/`](https://www.w3.org/TR/2004/REC-xml-20040204/) but does not list it in its references
+- [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html) links to:
+    * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
+    * [`https://w3c.github.io/requestidlecallback/`](https://w3c.github.io/requestidlecallback/) but does not list it in its references
+- [User Timing Level 2](https://w3c.github.io/user-timing/) links to [`https://w3c.github.io/html/webappapis.html`](https://w3c.github.io/html/webappapis.html) but does not list it in its references
+- [W3C DOM 4.1](https://w3c.github.io/dom/) links to [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/) but does not list it in its references
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/) links to [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html) but does not list it in its references
+- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html) links to:
+    * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
+    * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
+    * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but does not list it in its references
+    * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/) but does not list it in its references
+    * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/) but does not list it in its references
+    * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/) but does not list it in its references
+    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
+    * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/) but does not list it in its references
+    * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but does not list it in its references
+    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but does not list it in its references
+- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html) links to:
+    * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
+    * [`https://www.w3.org/TR/page-visibility/?csw=1`](https://www.w3.org/TR/page-visibility/?csw=1) but does not list it in its references
+    * [`https://www.w3.org/TR/css-values-3//`](https://www.w3.org/TR/css-values-3//) but does not list it in its references
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/) links to [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/) but does not list it in its references
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 0 missing reference for links found in 0 specification
+=> 98 missing references for links found in 34 specifications
+
+Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
+
+Note Reffy only reports on links to "well-known" specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.
 
 
 ## Reference URL is inconsistent with URL used in document links
 
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+- [Beacon](https://w3c.github.io/beacon/) links to [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+- [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/) links to:
+    * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+    * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/) but related reference "SVG" uses URL [`https://www.w3.org/TR/SVG/`](https://www.w3.org/TR/SVG/)
+    * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG" uses URL [`https://www.w3.org/TR/SVG/`](https://www.w3.org/TR/SVG/)
+    * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) links to:
+    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+    * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/) links to [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/) links to:
+    * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+- [CSS Fonts Module Level 3](http://dev.w3.org/csswg/css-fonts/) links to:
+    * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML5" uses URL [`http://www.w3.org/TR/2014/REC-html5-20141028/`](http://www.w3.org/TR/2014/REC-html5-20141028/)
+    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/2016/CR-css-values-3-20160929/`](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
+- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS3-VALUES" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/) links to:
+    * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but related reference "SELECT" uses URL [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/)
+    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/) links to:
+    * [`https://www.w3.org/TR/css-syntax/`](https://www.w3.org/TR/css-syntax/) but related reference "CSS3SYN" uses URL [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/)
+    * [`https://www.w3.org/TR/css3-fonts/`](https://www.w3.org/TR/css3-fonts/) but related reference "CSS3-FONTS" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+    * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but related reference "CSS3-SELECTORS" uses URL [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/)
+- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/2016/REC-html51-20161101/`](https://www.w3.org/TR/2016/REC-html51-20161101/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/) links to [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/) links to:
+    * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+    * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
+- [Generic Sensor API](https://w3c.github.io/sensors/) links to [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
+- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/) links to:
+    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+    * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
+- [HTML 5.2](https://w3c.github.io/html/) links to:
+    * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+    * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
+    * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+    * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FILEAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+    * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/) but related reference "INDEXEDDB" uses URL [`https://www.w3.org/TR/IndexedDB/`](https://www.w3.org/TR/IndexedDB/)
+    * [`https://w3c.github.io/media-source/`](https://w3c.github.io/media-source/) but related reference "MEDIA-SOURCE" uses URL [`https://www.w3.org/TR/media-source/`](https://www.w3.org/TR/media-source/)
+    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+    * [`https://www.w3.org/TR/1999/REC-xpath-19991116`](https://www.w3.org/TR/1999/REC-xpath-19991116) but related reference "XPATH" uses URL [`https://www.w3.org/TR/xpath`](https://www.w3.org/TR/xpath)
+    * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/) but related reference "REFERRERPOLICY" uses URL [`https://www.w3.org/TR/referrer-policy`](https://www.w3.org/TR/referrer-policy)
+    * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+- [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) links to:
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
+    * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/) links to [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+- [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/) links to:
+    * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+    * [`https://www.w3.org/TR/domcore/`](https://www.w3.org/TR/domcore/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+- [Magnetometer](https://w3c.github.io/magnetometer/) links to:
+    * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
+    * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/) links to [`https://www.w3.org/TR/2015/WD-html51-20150506/`](https://www.w3.org/TR/2015/WD-html51-20150506/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/) links to:
+    * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+    * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/) but related reference "2DCONTEXT" uses URL [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
+- [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/) links to:
+    * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+    * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+- [MediaStream Recording](https://w3c.github.io/mediacapture-record/) links to [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+- [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/) links to [`https://www.w3.org/TR/2012/REC-media-frags-20120925/`](https://www.w3.org/TR/2012/REC-media-frags-20120925/) but related reference "MEDIA-FRAGMENTS" uses URL [`http://www.w3.org/TR/media-frags/`](http://www.w3.org/TR/media-frags/)
+- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/) links to:
+    * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/) but related reference "XML" uses URL [`https://www.w3.org/TR/xml`](https://www.w3.org/TR/xml)
+    * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/) links to [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/) but related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+- [Orientation Sensor](https://w3c.github.io/orientation-sensor/) links to:
+    * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
+    * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/) but related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
+    * [`https://w3c.github.io/gyroscope/`](https://w3c.github.io/gyroscope/) but related reference "GYROSCOPE" uses URL [`https://www.w3.org/TR/gyroscope/`](https://www.w3.org/TR/gyroscope/)
+    * [`https://w3c.github.io/magnetometer/`](https://w3c.github.io/magnetometer/) but related reference "MAGNETOMETER" uses URL [`https://www.w3.org/TR/magnetometer/`](https://www.w3.org/TR/magnetometer/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/) links to:
+    * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+    * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/) links to [`https://w3c.github.io/payment-handler/`](https://w3c.github.io/payment-handler/) but related reference "payment-handler" uses URL [`https://www.w3.org/TR/payment-handler/`](https://www.w3.org/TR/payment-handler/)
+- [Permissions](https://w3c.github.io/permissions/) links to:
+    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+    * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+- [Presentation API](https://w3c.github.io/presentation-api/) links to:
+    * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+    * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+- [Push API](https://w3c.github.io/push-api/) links to:
+    * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+    * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/) but related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+    * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
+- [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/) links to:
+    * [`https://www.w3.org/TR/2010/REC-wsc-ui-20100812/`](https://www.w3.org/TR/2010/REC-wsc-ui-20100812/) but related reference "WSC-UI" uses URL [`https://www.w3.org/TR/wsc-ui/`](https://www.w3.org/TR/wsc-ui/)
+    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+- [Resource Timing Level 3](https://w3c.github.io/resource-timing/) links to:
+    * [`https://w3c.github.io/navigation-timing/`](https://w3c.github.io/navigation-timing/) but related reference "NAVIGATION-TIMING" uses URL [`https://www.w3.org/TR/navigation-timing/`](https://www.w3.org/TR/navigation-timing/)
+    * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) links to:
+    * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/) but related reference "xml" uses URL [`https://www.w3.org/TR/xml`](https://www.w3.org/TR/xml)
+    * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "xml-names" uses URL [`https://www.w3.org/TR/xml-names`](https://www.w3.org/TR/xml-names)
+    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "css-values" uses URL [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
+    * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "html51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+    * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/) but related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
+    * [`https://www.w3.org/TR/2014/WD-dom-20140204/`](https://www.w3.org/TR/2014/WD-dom-20140204/) but related reference "dom" uses URL [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
+    * [`https://www.w3.org/TR/compositing/`](https://www.w3.org/TR/compositing/) but related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+    * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113/`](https://www.w3.org/TR/2015/CR-compositing-1-20150113/) but related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+    * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113`](https://www.w3.org/TR/2015/CR-compositing-1-20150113) but related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "html51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+    * [`https://www.w3.org/TR/2012/WD-css3-values-20120308/`](https://www.w3.org/TR/2012/WD-css3-values-20120308/) but related reference "css-values" uses URL [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
+    * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/) but related reference "html51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+    * [`https://www.w3.org/TR/2013/CR-html5-20130806/`](https://www.w3.org/TR/2013/CR-html5-20130806/) but related reference "html51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+    * [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/) but related reference "dom" uses URL [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
+    * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but related reference "dom" uses URL [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
+    * [`https://www.w3.org/TR/2015/WD-html51-20150323/`](https://www.w3.org/TR/2015/WD-html51-20150323/) but related reference "html51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+    * [`https://www.w3.org/TR/2012/WD-compositing-20120816/`](https://www.w3.org/TR/2012/WD-compositing-20120816/) but related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "css-writing-modes-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+    * [`https://www.w3.org/TR/2011/WD-css3-fonts-20111004/`](https://www.w3.org/TR/2011/WD-css3-fonts-20111004/) but related reference "css-fonts-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+    * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/) but related reference "DOM-Level-2-Style" uses URL [`https://www.w3.org/TR/DOM-Level-2-Style/`](https://www.w3.org/TR/DOM-Level-2-Style/)
+    * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/) but related reference "web-animations-1" uses URL [`https://www.w3.org/TR/web-animations-1/`](https://www.w3.org/TR/web-animations-1/)
+    * [`https://www.w3.org/TR/2015/CR-css-ui-3-20150707/`](https://www.w3.org/TR/2015/CR-css-ui-3-20150707/) but related reference "css-ui-3" uses URL [`https://www.w3.org/TR/css-ui-3/`](https://www.w3.org/TR/css-ui-3/)
+    * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/) but related reference "smil-animation" uses URL [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/)
+    * [`https://www.w3.org/TR/2013/WD-shadow-dom-20130514/`](https://www.w3.org/TR/2013/WD-shadow-dom-20130514/) but related reference "shadow-dom" uses URL [`https://www.w3.org/TR/shadow-dom/`](https://www.w3.org/TR/shadow-dom/)
+    * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/) but related reference "xlink" uses URL [`https://www.w3.org/TR/xlink/`](https://www.w3.org/TR/xlink/)
+    * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/) but related reference "DOM-Level-2-Views" uses URL [`https://www.w3.org/TR/DOM-Level-2-Views`](https://www.w3.org/TR/DOM-Level-2-Views)
+    * [`https://www.w3.org/TR/2012/WD-css3-animations-20120403/`](https://www.w3.org/TR/2012/WD-css3-animations-20120403/) but related reference "css3-animations" uses URL [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/)
+    * [`https://w3c.github.io/dom/`](https://w3c.github.io/dom/) but related reference "dom" uses URL [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
+    * [`https://w3c.github.io/html/`](https://w3c.github.io/html/) but related reference "html51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+    * [`https://w3c.github.io/webcomponents/spec/shadow/`](https://w3c.github.io/webcomponents/spec/shadow/) but related reference "shadow-dom" uses URL [`https://www.w3.org/TR/shadow-dom/`](https://www.w3.org/TR/shadow-dom/)
+    * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+    * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/) but related reference "UAAG20" uses URL [`https://www.w3.org/TR/UAAG20/`](https://www.w3.org/TR/UAAG20/)
+    * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/) but related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/) links to [`https://www.w3.org/TR/geolocation-API/`](https://www.w3.org/TR/geolocation-API/) but related reference "GEOLOCATION-API" uses URL [`http://dev.w3.org/geo/api/spec-source.html`](http://dev.w3.org/geo/api/spec-source.html)
+- [Selection API](https://w3c.github.io/selection-api/) links to [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/) links to [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/) but related reference "SELECT" uses URL [`http://www.w3.org/TR/2011/REC-css3-selectors-20110929/`](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
+- [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/) links to:
+    * [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/) but related reference "CSS3NAMESPACE" uses URL [`http://www.w3.org/TR/2011/REC-css3-namespace-20110929/`](http://www.w3.org/TR/2011/REC-css3-namespace-20110929/)
+    * [`https://www.w3.org/TR/2001/PR-SVG-20010719/`](https://www.w3.org/TR/2001/PR-SVG-20010719/) but related reference "SVG11" uses URL [`http://www.w3.org/TR/2011/REC-SVG11-20110816/`](http://www.w3.org/TR/2011/REC-SVG11-20110816/)
+    * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/) but related reference "" uses URL [`http://www.w3.org/TR/2009/CR-CSS2-20090908`](http://www.w3.org/TR/2009/CR-CSS2-20090908)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) links to:
+    * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/) but related reference "REFERRER-POLICY" uses URL [`https://www.w3.org/TR/referrer-policy/`](https://www.w3.org/TR/referrer-policy/)
+    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+- [UI Events](https://www.w3.org/TR/uievents) links to [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but related reference "DOM-Level-3-Core" uses URL [`http://www.w3.org/TR/DOM-Level-3-Core/`](http://www.w3.org/TR/DOM-Level-3-Core/)
+- [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html) links to [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW-1" uses URL [`http://www.w3.org/TR/cssom-view-1/`](http://www.w3.org/TR/cssom-view-1/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/) links to:
+    * [`https://w3c.github.io/navigation-timing/`](https://w3c.github.io/navigation-timing/) but related reference "NAVIGATION-TIMING-2" uses URL [`https://www.w3.org/TR/navigation-timing-2/`](https://www.w3.org/TR/navigation-timing-2/)
+    * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+    * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/) but related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/) links to [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
+- [W3C DOM 4.1](https://w3c.github.io/dom/) links to:
+    * [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+    * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
+    * [`https://www.w3.org/TR/2017/WD-dom41-20170420/`](https://www.w3.org/TR/2017/WD-dom41-20170420/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+    * [`https://www.w3.org/TR/2017/WD-dom41-20170321/`](https://www.w3.org/TR/2017/WD-dom41-20170321/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170811/) links to:
+    * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+    * [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/) but related reference "SCREEN-ORIENTATION" uses URL [`https://www.w3.org/TR/screen-orientation/`](https://www.w3.org/TR/screen-orientation/)
+    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/) links to:
+    * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/) but related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
+    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+- [Web IDL](https://heycam.github.io/webidl/) links to [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+- [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/) links to:
+    * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/) but related reference "WEBIDL" uses URL [`https://www.w3.org/TR/2015/PR-notifications-20150910/`](https://www.w3.org/TR/2015/PR-notifications-20150910/)
+    * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/)
+- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html) links to:
+    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+    * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/) but related reference "DOM-PARSING" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
+    * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) links to:
+    * [`https://w3c.github.io/webcrypto/`](https://w3c.github.io/webcrypto/) but related reference "WebCryptoAPI" uses URL [`https://www.w3.org/TR/WebCryptoAPI/`](https://www.w3.org/TR/WebCryptoAPI/)
+    * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
-=> 0 inconsistent reference for links found in 0 specification
+=> 146 inconsistent references for links found in 59 specifications
+
+Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
