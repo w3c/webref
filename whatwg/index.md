@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 14, 2017
+% August 15, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -8,7 +8,7 @@
 
 - URL: [Editor's Draft](https://w3c.github.io/accelerometer/)
 - Shortname: accelerometer
-- Date: 28 June 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -31,7 +31,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/ambient-light/)
 - Shortname: ambient-light
-- Date: 28 June 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -261,21 +261,17 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cooperative Scheduling of Background Tasks {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Cooperative Scheduling of Background Tasks {data-spec=true data-ok=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
 - Shortname: requestidlecallback
-- Date: 10 August 2017
+- Date: 15 August 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/html/webappapis.html`](https://w3c.github.io/html/webappapis.html)
-     * [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -316,7 +312,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -375,7 +371,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -410,7 +406,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -438,7 +434,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -460,7 +456,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -472,7 +468,6 @@ Normative references to this spec from:
 
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
 
@@ -483,7 +478,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -517,7 +512,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -538,7 +533,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -579,7 +574,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -605,7 +600,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1069,7 +1064,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/gyroscope/)
 - Shortname: gyroscope
-- Date: 28 June 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1133,7 +1128,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/html-media-capture/)
 - Shortname: html-media-capture
-- Date: 23 May 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1152,7 +1147,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 12 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1344,7 +1339,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 14 August 2017
+- Date: 15 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1367,7 +1362,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/magnetometer/)
 - Shortname: magnetometer
-- Date: 28 June 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1697,7 +1692,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
 - Shortname: orientation-sensor
-- Date: 28 June 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1739,6 +1734,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Beacon](https://w3c.github.io/beacon/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -1748,7 +1744,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 
 
@@ -1782,7 +1777,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 11 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1961,7 +1956,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/proximity/)
 - Shortname: proximity
-- Date: 2 February 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2033,7 +2028,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/remote-playback/)
 - Shortname: remote-playback
-- Date: 09 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2844,7 +2839,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://heycam.github.io/webidl/)
 - Shortname: WebIDL-1
-- Date: 12 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2938,6 +2933,7 @@ Informative references to this spec from:
 
 - [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
 - [Beacon](https://w3c.github.io/beacon/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
@@ -2988,7 +2984,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Mon Aug 14 2017
+- Date: Tue Aug 15 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3007,7 +3003,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Mon Aug 14 2017
+- Date: Tue Aug 15 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3069,7 +3065,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webvtt/)
 - Shortname: webvtt1
-- Date: 25 June 2017
+- Date: 9 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3091,7 +3087,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 

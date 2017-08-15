@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 14, 2017
+% August 15, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -34,19 +34,17 @@ Informative references to this spec from:
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 
 
-## Accelerometer {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Accelerometer {data-spec=true data-ok=true}
 
 ### Crawl info {.info}
 
 - URL: [Latest published version](https://www.w3.org/TR/accelerometer/)
 - Shortname: accelerometer
-- Date: 18 April 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
-     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -63,7 +61,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Latest published version](https://www.w3.org/TR/ambient-light/)
 - Shortname: ambient-light
-- Date: 22 May 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1075,19 +1073,18 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Gyroscope {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Gyroscope {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Latest published version](https://www.w3.org/TR/gyroscope/)
 - Shortname: gyroscope
-- Date: 18 April 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
-     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+- Missing references for links: 
+     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1550,13 +1547,13 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/magnetometer/)
 - Shortname: magnetometer
-- Date: 18 April 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1831,7 +1828,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/orientation-sensor/)
 - Shortname: orientation-sensor
-- Date: 11 May 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3361,7 +3358,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Mon Aug 14 2017
+- Date: Tue Aug 15 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3380,7 +3377,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Mon Aug 14 2017
+- Date: Tue Aug 15 2017
 
 ### Potential issue(s) {.anomalies}
 
