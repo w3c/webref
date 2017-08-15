@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 14, 2017
+% August 15, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -8,7 +8,7 @@
 
 - URL: [Editor's Draft](https://w3c.github.io/accelerometer/)
 - Shortname: accelerometer
-- Date: 28 June 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -31,7 +31,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/ambient-light/)
 - Shortname: ambient-light
-- Date: 28 June 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -108,7 +108,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 
 
 ## Beacon {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -198,7 +198,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Window` defined in [HTML 5.2](https://w3c.github.io/html/)
+     * `Window` defined in [HTML 5.3](https://w3c.github.io/html/)
      * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
      * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
@@ -232,7 +232,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
@@ -261,21 +261,17 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cooperative Scheduling of Background Tasks {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Cooperative Scheduling of Background Tasks {data-spec=true data-ok=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
 - Shortname: requestidlecallback
-- Date: 10 August 2017
+- Date: 15 August 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/html/webappapis.html`](https://w3c.github.io/html/webappapis.html)
-     * [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -316,7 +312,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -327,7 +323,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 
 No informative reference to this spec from other specs.
 
@@ -361,7 +357,7 @@ Normative references to this spec from:
 
 - [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
@@ -379,7 +375,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -397,15 +393,11 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 
 Informative references to this spec from:
 
@@ -418,7 +410,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -446,7 +438,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -468,7 +460,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -480,7 +472,6 @@ Normative references to this spec from:
 
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
 
@@ -491,7 +482,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -512,7 +503,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170814/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
@@ -526,7 +517,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -547,7 +538,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -572,7 +563,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
 - [Web Animations](https://w3c.github.io/web-animations/)
@@ -588,7 +579,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -601,7 +592,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
@@ -615,7 +606,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -628,14 +619,10 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 
 Informative references to this spec from:
 
@@ -645,26 +632,30 @@ Informative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170814/)
 
 
-## Custom Elements {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## Custom Elements {data-spec=true data-error=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/webcomponents/spec/custom/)
 - Shortname: custom-elements
-- Date: 13 February 2017
+- Date: unknown
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/aria/aria/aria.html`](https://w3c.github.io/aria/aria/aria.html)
-     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/)
-     * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
+The following network or parsing error occurred:
+`Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises? Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises?
+    at Timeout.<anonymous> (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:509:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 
 No informative reference to this spec from other specs.
 
@@ -709,7 +700,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -748,7 +739,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Window` defined in [HTML 5.2](https://w3c.github.io/html/)
+     * `Window` defined in [HTML 5.3](https://w3c.github.io/html/)
      * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 ### Known dependencies on this specification {.dependencies}
@@ -760,7 +751,7 @@ Normative references to this spec from:
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Push API](https://w3c.github.io/push-api/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
@@ -817,7 +808,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [File API](https://w3c.github.io/FileAPI/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Preload](https://w3c.github.io/preload/)
@@ -859,7 +850,7 @@ Normative references to this spec from:
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
@@ -894,7 +885,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
@@ -916,7 +907,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Navigator` defined in [HTML 5.2](https://w3c.github.io/html/)
+     * `Navigator` defined in [HTML 5.3](https://w3c.github.io/html/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -996,7 +987,7 @@ Normative references to this spec from:
 
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -1014,7 +1005,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/gyroscope/)
 - Shortname: gyroscope
-- Date: 28 June 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1052,7 +1043,7 @@ Normative references to this spec from:
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
@@ -1071,13 +1062,13 @@ Informative references to this spec from:
 - [Web Animations](https://w3c.github.io/web-animations/)
 
 
-## HTML 5.2 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## HTML 5.3 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/html/)
 - Shortname: html52
-- Date: 11 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1125,7 +1116,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -1168,7 +1158,6 @@ Normative references to this spec from:
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Server-Sent Events](https://www.w3.org/TR/eventsource)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -1250,6 +1239,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -1258,14 +1248,13 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
@@ -1283,7 +1272,6 @@ Normative references to this spec from:
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -1329,7 +1317,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/html-media-capture/)
 - Shortname: html-media-capture
-- Date: 23 May 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1362,6 +1350,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -1370,7 +1359,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -1396,7 +1384,6 @@ Normative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](https://www.w3.org/TR/eventsource)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -1483,7 +1470,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 
 Informative references to this spec from:
@@ -1499,7 +1486,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 14 August 2017
+- Date: 15 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1522,7 +1509,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/magnetometer/)
 - Shortname: magnetometer
-- Date: 28 June 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1565,7 +1552,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
@@ -1668,7 +1655,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [URL Standard](https://url.spec.whatwg.org/)
 
@@ -1828,7 +1815,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
 - Shortname: orientation-sensor
-- Date: 28 June 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1870,8 +1857,9 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Beacon](https://w3c.github.io/beacon/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
@@ -1880,7 +1868,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 
 
@@ -1914,7 +1901,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 11 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1925,7 +1912,7 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 
 No informative reference to this spec from other specs.
@@ -2026,13 +2013,13 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `DocumentOrShadowRoot`
 - Missing references for WebIDL names: 
-     * `EventHandler` defined in [HTML 5.2](https://w3c.github.io/html/)
+     * `EventHandler` defined in [HTML 5.3](https://w3c.github.io/html/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 
 No informative reference to this spec from other specs.
@@ -2077,7 +2064,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 
 Informative references to this spec from:
 
@@ -2105,7 +2092,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 
 No informative reference to this spec from other specs.
 
@@ -2116,7 +2103,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/proximity/)
 - Shortname: proximity
-- Date: 2 February 2017
+- Date: 11 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2175,7 +2162,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
@@ -2188,7 +2175,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/remote-playback/)
 - Shortname: remote-playback
-- Date: 09 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2241,7 +2228,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Type`
+- Unknown WebIDL names used: `ShadowRoot`, `Type`
 - Missing references for WebIDL names: 
      * `DOMRect` defined in [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
      * `DOMMatrix` defined in [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
@@ -2326,7 +2313,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [Web Animations](https://w3c.github.io/web-animations/)
 
@@ -2335,7 +2322,6 @@ Informative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
@@ -2382,7 +2368,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Permissions](https://w3c.github.io/permissions/)
@@ -2417,11 +2403,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
+- [HTML 5.3](https://w3c.github.io/html/)
 
 No informative reference to this spec from other specs.
 
@@ -2495,7 +2477,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 
 Informative references to this spec from:
 
@@ -2528,7 +2510,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -2549,29 +2531,24 @@ Informative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
-## Shadow DOM {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## Shadow DOM {data-spec=true data-error=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/webcomponents/spec/shadow/)
 - Shortname: shadow-dom
-- Date: 13 February 2017
+- Date: unknown
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `DocumentOrShadowRoot`
-- Missing references for WebIDL names: 
-     * `Selection` defined in [Selection API](https://w3c.github.io/selection-api/)
-     * `Element` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `CaretPosition` defined in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-     * `StyleSheetList` defined in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-     * `DocumentFragment` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
-     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+The following network or parsing error occurred:
+`Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises? Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises?
+    at Timeout.<anonymous> (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:509:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2708,7 +2685,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 
 Informative references to this spec from:
 
@@ -2737,7 +2714,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
@@ -2755,9 +2732,7 @@ Although they do not, the following specs should also normatively reference this
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 
-Informative references to this spec from:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
+No informative reference to this spec from other specs.
 
 
 ## UI Events KeyboardEvent code Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
@@ -2829,7 +2804,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
@@ -2962,7 +2937,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Element Traversal Specification](http://www.w3.org/TR/2008/REC-ElementTraversal-20081222/)
@@ -2972,7 +2946,7 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
@@ -3021,7 +2995,6 @@ Although they do not, the following specs should also normatively reference this
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -3030,7 +3003,6 @@ Informative references to this spec from:
 
 - [Element Traversal Specification](http://www.w3.org/TR/2008/REC-ElementTraversal-20081222/)
 - [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -3189,7 +3161,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://heycam.github.io/webidl/)
 - Shortname: WebIDL-1
-- Date: 12 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3217,7 +3189,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -3230,7 +3201,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
@@ -3285,6 +3256,7 @@ Informative references to this spec from:
 
 - [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
 - [Beacon](https://w3c.github.io/beacon/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
@@ -3298,7 +3270,6 @@ Informative references to this spec from:
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Selection API](https://w3c.github.io/selection-api/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -3348,7 +3319,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 
 Informative references to this spec from:
@@ -3363,7 +3334,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
 - Shortname: workers
-- Date: 12 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3373,9 +3344,9 @@ Informative references to this spec from:
     * `Worker` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `OnErrorEventHandler` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `EventHandler` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `Window` defined in [HTML 5.2](https://w3c.github.io/html/)
+     * `OnErrorEventHandler` defined in [HTML 5.3](https://w3c.github.io/html/)
+     * `EventHandler` defined in [HTML 5.3](https://w3c.github.io/html/)
+     * `Window` defined in [HTML 5.3](https://w3c.github.io/html/)
      * `RequestCredentials` defined in [Fetch Standard](https://fetch.spec.whatwg.org/)
      * `MessagePort` defined in [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
 - Missing references for links: 
@@ -3397,6 +3368,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -3405,14 +3377,13 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
@@ -3433,7 +3404,6 @@ Normative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](https://www.w3.org/TR/eventsource)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -3513,7 +3483,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Mon Aug 14 2017
+- Date: Tue Aug 15 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3532,7 +3502,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Mon Aug 14 2017
+- Date: Tue Aug 15 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3543,7 +3513,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 
 Informative references to this spec from:
@@ -3594,7 +3564,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webvtt/)
 - Shortname: webvtt1
-- Date: 25 June 2017
+- Date: 9 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3607,7 +3577,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 
 
 ## Worklets Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
@@ -3616,7 +3586,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 13 August 2017
+- Date: 14 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3659,7 +3629,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
-- [HTML 5.2](https://w3c.github.io/html/)
+- [HTML 5.3](https://w3c.github.io/html/)
 
 Informative references to this spec from:
 

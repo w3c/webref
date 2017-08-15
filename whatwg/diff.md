@@ -1,10 +1,12 @@
-% Diff between report from "August 14, 2017" and reference report from "August 13, 2017"
+% Diff between report from "August 15, 2017" and reference report from "August 14, 2017"
 % Reffy
-% August 14, 2017
+% August 15, 2017
 
-## Web App Manifest
+## Cooperative Scheduling of Background Tasks
 
-- URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest URL: *INS* https://www.w3.org/TR/2017/WD-appmanifest-20170814/ / *DEL* https://www.w3.org/TR/2017/WD-appmanifest-20170811/
+- URL: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
+- Spec is OK: *INS* true / *DEL* false
+- Missing references for links: *DEL* https://w3c.github.io/html/webappapis.html, https://w3c.github.io/html/browsers.html
+- Inconsistent references for links: *DEL* https://w3c.github.io/hr-time/
 
 
