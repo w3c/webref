@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 15, 2017
+% August 16, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -904,6 +904,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -1891,7 +1892,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
-- Date: 04 August 2017
+- Date: 15 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1913,7 +1914,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
-- Date: 11 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2600,7 +2601,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 1 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3358,7 +3359,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Aug 15 2017
+- Date: Wed Aug 16 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3377,7 +3378,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Aug 15 2017
+- Date: Wed Aug 16 2017
 
 ### Potential issue(s) {.anomalies}
 
