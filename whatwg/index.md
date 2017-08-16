@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 15, 2017
+% August 16, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -111,18 +111,17 @@ Informative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 
 
-## Beacon {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Beacon {data-spec=true data-ok=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/beacon/)
 - Shortname: beacon
-- Date: 28 June 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -312,7 +311,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -371,7 +370,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -406,7 +405,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -434,7 +433,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -456,7 +455,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -478,7 +477,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -512,7 +511,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -533,7 +532,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -574,7 +573,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -594,17 +593,16 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 
 
-## CSSOM View Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## CSSOM View Module {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMRectList`
 - Missing references for WebIDL names: 
      * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/uievents)
      * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/uievents)
@@ -889,6 +887,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -908,7 +907,6 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
@@ -981,7 +979,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 11 August 2017
+- Date: 15 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1025,20 +1023,17 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-inconsistentRef=true}
+## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](http://dev.w3.org/fxtf/geometry/)
 - Shortname: geometry-1
-- Date: 29 May 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
 - Obsolete WebIDL constructs found
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/), related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1147,7 +1142,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 14 August 2017
+- Date: 15 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1157,7 +1152,6 @@ No informative reference to this spec from other specs.
     * `Worker` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Missing references for links: 
      * [`https://spec.whatwg.org/`](https://spec.whatwg.org/)
-     * [`https://www.w3.org/TR/media-frags/`](https://www.w3.org/TR/media-frags/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
 
@@ -1339,7 +1333,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 15 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1753,7 +1747,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-handler/)
 - Shortname: payment-handler
-- Date: 04 August 2017
+- Date: 15 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1777,7 +1771,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2028,7 +2022,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/remote-playback/)
 - Shortname: remote-playback
-- Date: 14 August 2017
+- Date: 15 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2320,7 +2314,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/ServiceWorker/v1/)
 - Shortname: service-workers-1
-- Date: 1 August 2017
+- Date: 15 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2408,7 +2402,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 1 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2932,7 +2926,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
-- [Beacon](https://w3c.github.io/beacon/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
@@ -2984,7 +2977,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Aug 15 2017
+- Date: Wed Aug 16 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3003,7 +2996,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Aug 15 2017
+- Date: Wed Aug 16 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3087,7 +3080,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 14 August 2017
+- Date: 16 August 2017
 
 ### Potential issue(s) {.anomalies}
 
