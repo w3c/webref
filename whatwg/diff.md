@@ -1,23 +1,11 @@
-% Diff between report from "August 17, 2017" and reference report from "August 16, 2017"
+% Diff between report from "August 18, 2017" and reference report from "August 17, 2017"
 % Reffy
-% August 17, 2017
-
-## 404 Not Found
-
-- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Spec title: *INS* 404 Not Found / *DEL* HTML Standard
-- No normative references found: *INS* true / *DEL* false
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
-- Unknown WebIDL names used: *DEL* WindowProxy
-- WebIDL names also defined elsewhere: *DEL* BinaryType, Worker
-- Missing references for links: *DEL* https://spec.whatwg.org/, https://w3c.github.io/webappsec-secure-contexts/, https://www.w3.org/TR/css3-color/
-
+% August 18, 2017
 
 ## Audio Output Devices API
 
 - URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
-- Spec could not be rendered: *INS* Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
+- Spec could not be rendered: *DEL* Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
     at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
     at ontimeout (timers.js:386:14)
     at tryOnTimeout (timers.js:250:5)
@@ -27,430 +15,443 @@
 ## Battery Status API
 
 - URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
-- Unknown WebIDL names used: *INS* EventHandler, Navigator
+- Unknown WebIDL names used: *DEL* EventHandler, Navigator
 
 
 ## Beacon
 
 - URL: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Navigator
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Navigator
 
 
 ## Clipboard API and events
 
 - URL: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
-- Unknown WebIDL names used: *INS* DataTransfer, Navigator
+- Unknown WebIDL names used: *DEL* DataTransfer, Navigator
 
 
 ## Console Standard
 
 - URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
-- Unknown WebIDL names used: *INS* Window
-- Missing references for WebIDL names: *DEL* Window
+- Unknown WebIDL names used: *DEL* Window
+- Missing references for WebIDL names: *INS* Window
 
 
 ## Cooperative Scheduling of Background Tasks
 
 - URL: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Window
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Window
 
 
 ## Credential Management Level 1
 
 - URL: [https://www.w3.org/TR/credential-management-1/](https://www.w3.org/TR/credential-management-1/)
-- Unknown WebIDL names used: *INS* HTMLFormElement, Navigator, Window
+- Unknown WebIDL names used: *DEL* HTMLFormElement, Navigator, Window
 
 
 ## CSS Font Loading Module Level 3
 
 - URL: [https://www.w3.org/TR/css-font-loading-3/](https://www.w3.org/TR/css-font-loading-3/)
-- Unknown WebIDL names used: *INS* EventHandler, Window
+- Unknown WebIDL names used: *DEL* EventHandler, Window
 
 
 ## CSS Object Model (CSSOM)
 
 - URL: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Window
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Window
 
 
 ## CSS Pseudo-Elements Module Level 4
 
 - URL: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Window
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Window
 
 
 ## CSS Typed OM Level 1
 
 - URL: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Window
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Window
 
 
 ## CSSOM View Module
 
 - URL: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
-- Unknown WebIDL names used: *INS* EventHandler, HTMLElement, HTMLImageElement, Window
+- Unknown WebIDL names used: *INS* DOMRectList / *DEL* EventHandler, HTMLElement, HTMLImageElement, Window
 
 
 ## DeviceOrientation Event Specification
 
 - URL: [https://www.w3.org/TR/orientation-event/](https://www.w3.org/TR/orientation-event/)
-- Unknown WebIDL names used: *INS* EventHandler, Window
+- Unknown WebIDL names used: *DEL* EventHandler, Window
 
 
 ## DOM Standard
 
 - URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Unknown WebIDL names used: *INS* EventHandler, HTMLSlotElement, Window
+- Unknown WebIDL names used: *DEL* EventHandler, HTMLSlotElement, Window
 
 
 ## Encoding Standard
 
 - URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
-- Unknown WebIDL names used: *INS* Window
-- Missing references for WebIDL names: *DEL* Window
+- Unknown WebIDL names used: *DEL* Window
+- Missing references for WebIDL names: *INS* Window
 
 
 ## Encrypted Media Extensions
 
 - URL: [https://www.w3.org/TR/encrypted-media/](https://www.w3.org/TR/encrypted-media/)
-- Unknown WebIDL names used: *INS* EventHandler, HTMLMediaElement, Navigator
+- Unknown WebIDL names used: *DEL* EventHandler, HTMLMediaElement, Navigator
 
 
 ## Fetch Standard
 
 - URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Unknown WebIDL names used: *INS* Window, WindowOrWorkerGlobalScope
+- Unknown WebIDL names used: *DEL* Window, WindowOrWorkerGlobalScope
 
 
 ## File API
 
 - URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* DedicatedWorker, EventHandler, SharedWorker, Window
-- Missing references for WebIDL names: *INS* Worker
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* DedicatedWorker, EventHandler, SharedWorker, Window
+- Missing references for WebIDL names: *DEL* Worker
 
 
 ## Fullscreen API Standard
 
 - URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
-- Unknown WebIDL names used: *INS* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Gamepad
 
 - URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Navigator
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Navigator
 
 
 ## Generic Sensor API
 
 - URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Unknown WebIDL names used: *INS* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Geolocation API Specification 2nd Edition
 
 - URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Navigator
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Navigator
 
 
 ## Geometry Interfaces Module Level 1
 
 - URL: [https://www.w3.org/TR/geometry-1/](https://www.w3.org/TR/geometry-1/)
-- Unknown WebIDL names used: *INS* Window
-- Missing references for WebIDL names: *INS* Worker
+- Unknown WebIDL names used: *DEL* Window
+- Missing references for WebIDL names: *DEL* Worker
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-values/, https://www.w3.org/TR/cssom-view/
 
 
 ## High Resolution Time Level 2
 
 - URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
-- Unknown WebIDL names used: *INS* Window, WindowOrWorkerGlobalScope
-- Missing references for WebIDL names: *INS* Worker
+- Unknown WebIDL names used: *DEL* Window, WindowOrWorkerGlobalScope
+- Missing references for WebIDL names: *DEL* Worker
 
 
 ## HTML Media Capture
 
 - URL: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* HTMLInputElement
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* HTMLInputElement
+
+
+## HTML Standard
+
+- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
+- Spec title: *INS* HTML Standard / *DEL* 404 Not Found
+- No normative references found: *INS* false / *DEL* true
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- Unknown WebIDL names used: *INS* WindowProxy
+- WebIDL names also defined elsewhere: *INS* BinaryType, Worker
+- Missing references for links: *INS* https://spec.whatwg.org/, https://w3c.github.io/webappsec-secure-contexts/, https://www.w3.org/TR/css3-color/
 
 
 ## Indexed Database API 2.0
 
 - URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
-- Unknown WebIDL names used: *INS* DOMStringList, EventHandler, Window, WindowOrWorkerGlobalScope
-- Missing references for WebIDL names: *INS* Worker
+- Unknown WebIDL names used: *DEL* DOMStringList, EventHandler, Window, WindowOrWorkerGlobalScope
+- Missing references for WebIDL names: *DEL* Worker
 
 
 ## Input Events Level 1
 
 - URL: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
-- Unknown WebIDL names used: *INS* DataTransfer
+- Unknown WebIDL names used: *DEL* DataTransfer
 
 
 ## Media Capture and Streams
 
 - URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
-- Unknown WebIDL names used: *INS* EventHandler, Window
+- Unknown WebIDL names used: *DEL* EventHandler, Window
 
 
 ## Media Capture from DOM Elements
 
 - URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
-- Unknown WebIDL names used: *INS* HTMLCanvasElement, HTMLMediaElement
+- Unknown WebIDL names used: *DEL* HTMLCanvasElement, HTMLMediaElement
 
 
 ## Media Session Standard
 
 - URL: [https://wicg.github.io/mediasession/](https://wicg.github.io/mediasession/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Navigator, Window
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Navigator, Window
 
 
 ## Media Source Extensions™
 
 - URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
-- Unknown WebIDL names used: *INS* AudioTrack, AudioTrackList, EventHandler, TextTrack, TextTrackList, TimeRanges, VideoTrack, VideoTrackList
+- Unknown WebIDL names used: *DEL* AudioTrack, AudioTrackList, EventHandler, TextTrack, TextTrackList, TimeRanges, VideoTrack, VideoTrackList
 
 
 ## MediaStream Image Capture
 
 - URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
-- Unknown WebIDL names used: *INS* ImageBitmap
+- Unknown WebIDL names used: *DEL* ImageBitmap
 
 
 ## MediaStream Recording
 
 - URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
-- Unknown WebIDL names used: *INS* EventHandler, Window
+- Unknown WebIDL names used: *DEL* EventHandler, Window
 
 
 ## Navigation Timing Level 2
 
 - URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
-- Unknown WebIDL names used: *INS* Window
+- Unknown WebIDL names used: *DEL* Window
 
 
 ## Notifications API Standard
 
 - URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* EventHandler, Window
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* EventHandler, Window
 
 
 ## Page Visibility Level 2
 
 - URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
-- Unknown WebIDL names used: *INS* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Payment Handler API
 
 - URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Unknown WebIDL names used: *INS* EventHandler, Window
+- Unknown WebIDL names used: *DEL* EventHandler, Window
 
 
 ## Payment Request API
 
 - URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* EventHandler
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Performance Timeline Level 2
 
 - URL: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Window
-- Missing references for WebIDL names: *INS* Worker
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Window
+- Missing references for WebIDL names: *DEL* Worker
 
 
 ## Permissions
 
 - URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
-- Unknown WebIDL names used: *INS* EventHandler, Navigator, Window, WorkerNavigator
-- Missing references for WebIDL names: *INS* Worker
+- Unknown WebIDL names used: *DEL* EventHandler, Navigator, Window, WorkerNavigator
+- Missing references for WebIDL names: *DEL* Worker
 
 
 ## Pointer Events - Level 2
 
 - URL: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
-- Unknown WebIDL names used: *INS* EventHandler, GlobalEventHandlers, Navigator
+- Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers, Navigator
 
 
 ## Pointer Lock 2.0
 
 - URL: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
-- Unknown WebIDL names used: *INS* EventHandler
-- Missing references for WebIDL names: *DEL* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
+- Missing references for WebIDL names: *INS* EventHandler
 
 
 ## Presentation API
 
 - URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
-- Unknown WebIDL names used: *INS* EventHandler, Navigator
-- WebIDL names also defined elsewhere: *DEL* BinaryType
+- Unknown WebIDL names used: *DEL* EventHandler, Navigator
+- WebIDL names also defined elsewhere: *INS* BinaryType
 
 
 ## Push API
 
 - URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
-- Unknown WebIDL names used: *INS* EventHandler, Window
+- Unknown WebIDL names used: *DEL* EventHandler, Window
 
 
 ## Remote Playback API
 
 - URL: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
-- Unknown WebIDL names used: *INS* EventHandler, HTMLMediaElement
+- Unknown WebIDL names used: *DEL* EventHandler, HTMLMediaElement
 
 
 ## Resource Timing Level 3
 
 - URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
-- Unknown WebIDL names used: *INS* EventHandler, Window
+- Unknown WebIDL names used: *DEL* EventHandler, Window
 
 
 ## Scalable Vector Graphics (SVG) 2
 
 - URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
-- Unknown WebIDL names used: *INS* DOMStringMap
+- Unknown WebIDL names used: *DEL* DOMStringMap
 
 
 ## Secure Contexts
 
 - URL: [https://www.w3.org/TR/secure-contexts/](https://www.w3.org/TR/secure-contexts/)
-- Unknown WebIDL names used: *INS* WindowOrWorkerGlobalScope
+- Unknown WebIDL names used: *DEL* WindowOrWorkerGlobalScope
 
 
 ## Selection API
 
 - URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
-- Unknown WebIDL names used: *INS* EventHandler, GlobalEventHandlers, Window
+- Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers, Window
 
 
 ## Service Workers 1
 
 - URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
-- Unknown WebIDL names used: *INS* EventHandler, MessagePort, Navigator, Window, WindowOrWorkerGlobalScope, WorkerGlobalScope, WorkerNavigator, WorkerType
-- WebIDL names also defined elsewhere: *DEL* Worker
+- Unknown WebIDL names used: *DEL* EventHandler, MessagePort, Navigator, Window, WindowOrWorkerGlobalScope, WorkerGlobalScope, WorkerNavigator, WorkerType
+- WebIDL names also defined elsewhere: *INS* Worker
 
 
 ## Storage Standard
 
 - URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Window
-- Missing references for WebIDL names: *INS* Worker
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Window
+- Missing references for WebIDL names: *DEL* Worker
 
 
 ## The Screen Orientation API
 
 - URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Unknown WebIDL names used: *INS* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Touch Events - Level 2
 
 - URL: [https://www.w3.org/TR/touch-events/](https://www.w3.org/TR/touch-events/)
-- Unknown WebIDL names used: *INS* EventHandler, GlobalEventHandlers
+- Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers
 
 
 ## UI Events
 
 - URL: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
-- Unknown WebIDL names used: *INS* Window
+- Unknown WebIDL names used: *DEL* Window
 
 
 ## URL Standard
 
 - URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Window
-- Missing references for WebIDL names: *INS* Worker
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Window
+- Missing references for WebIDL names: *DEL* Worker
 
 
 ## User Timing Level 2
 
 - URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
-- Unknown WebIDL names used: *INS* Window
-- Missing references for WebIDL names: *INS* Worker
+- Unknown WebIDL names used: *DEL* Window
+- Missing references for WebIDL names: *DEL* Worker
 
 
 ## Vibration API (Second Edition)
 
 - URL: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
-- Unknown WebIDL names used: *INS* Navigator
+- Unknown WebIDL names used: *DEL* Navigator
 
 
 ## Wake Lock API
 
 - URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* EventHandler, Navigator
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* EventHandler, Navigator
 
 
 ## Web Animations
 
 - URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
-- Unknown WebIDL names used: *INS* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Web App Manifest
 
 - URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Unknown WebIDL names used: *INS* EventHandler, Window
+- Unknown WebIDL names used: *DEL* EventHandler, Window
 
 
 ## Web Cryptography API
 
 - URL: [https://www.w3.org/TR/WebCryptoAPI/](https://www.w3.org/TR/WebCryptoAPI/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Window
-- Missing references for WebIDL names: *INS* Worker
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* Window
+- Missing references for WebIDL names: *DEL* Worker
 
 
 ## Web IDL
 
 - URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
-- Unknown WebIDL names used: *INS* Window
-- Missing references for WebIDL names: *INS* Worker
+- Unknown WebIDL names used: *DEL* Window
+- Missing references for WebIDL names: *DEL* Worker
 
 
 ## WebDriver
 
 - URL: [https://www.w3.org/TR/webdriver/](https://www.w3.org/TR/webdriver/)
-- Unknown WebIDL names used: *INS* Window
+- Unknown WebIDL names used: *DEL* Window
 
 
 ## WebGL Specification
 
 - URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Unknown WebIDL names used: *INS* HTMLCanvasElement, HTMLImageElement, HTMLVideoElement, ImageBitmap, ImageData
+- Unknown WebIDL names used: *DEL* HTMLCanvasElement, HTMLImageElement, HTMLVideoElement, ImageBitmap, ImageData
 
 
 ## WebRTC 1.0: Real-time Communication Between Browsers
 
 - URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Unknown WebIDL names used: *INS* EventHandler, Window, WorkerGlobalScope
+- Unknown WebIDL names used: *DEL* EventHandler, Window, WorkerGlobalScope
 
 
 ## WebVTT: The Web Video Text Tracks Format
 
 - URL: [https://www.w3.org/TR/webvtt1/](https://www.w3.org/TR/webvtt1/)
-- Unknown WebIDL names used: *INS* TextTrackCue
+- Unknown WebIDL names used: *DEL* TextTrackCue
 
 
 ## XMLHttpRequest Standard
 
 - URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
-- Unknown WebIDL names used: *INS* DedicatedWorker, EventHandler, HTMLFormElement, SharedWorker, Window
-- Missing references for WebIDL names: *INS* Worker
+- Unknown WebIDL names used: *DEL* DedicatedWorker, EventHandler, HTMLFormElement, SharedWorker, Window
+- Missing references for WebIDL names: *DEL* Worker
 
 
