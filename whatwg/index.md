@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 18, 2017
+% August 19, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -31,7 +31,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/ambient-light/)
 - Shortname: ambient-light
-- Date: 17 August 2017
+- Date: 18 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1335,7 +1335,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 18 August 2017
+- Date: 19 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2405,7 +2405,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 16 August 2017
+- Date: 18 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2954,7 +2954,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 17 August 2017
+- Date: 18 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2980,7 +2980,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Fri Aug 18 2017
+- Date: Sat Aug 19 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2999,7 +2999,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Fri Aug 18 2017
+- Date: Sat Aug 19 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3061,7 +3061,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webvtt/)
 - Shortname: webvtt1
-- Date: 15 August 2017
+- Date: 18 August 2017
 
 ### Potential issue(s) {.anomalies}
 
