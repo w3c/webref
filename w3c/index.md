@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 19, 2017
+% August 20, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -311,7 +311,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 18 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -374,7 +374,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 18 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -413,7 +413,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 18 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -441,7 +441,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 18 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -463,7 +463,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 18 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -485,7 +485,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 18 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -520,7 +520,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 18 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -541,7 +541,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 18 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -580,7 +580,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 18 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -601,17 +601,16 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 
 
-## CSSOM View Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## CSSOM View Module {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 18 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMRectList`
 - Missing references for WebIDL names: 
      * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/uievents)
      * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/uievents)
@@ -967,20 +966,17 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-inconsistentRef=true}
+## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](http://dev.w3.org/fxtf/geometry/)
 - Shortname: geometry-1
-- Date: 17 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
 - Obsolete WebIDL constructs found
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/), related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1495,7 +1491,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 19 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3186,7 +3182,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://heycam.github.io/webidl/)
 - Shortname: WebIDL-1
-- Date: 16 August 2017
+- Date: 19 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3360,7 +3356,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
 - Shortname: workers
-- Date: 16 August 2017
+- Date: 19 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3486,7 +3482,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 18 August 2017
+- Date: 19 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3512,7 +3508,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Sat Aug 19 2017
+- Date: Sun Aug 20 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3531,7 +3527,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Sat Aug 19 2017
+- Date: Sun Aug 20 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3615,7 +3611,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 18 August 2017
+- Date: 20 August 2017
 
 ### Potential issue(s) {.anomalies}
 
