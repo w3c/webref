@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 20, 2017
+% August 21, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -112,7 +112,9 @@ Normative references to this spec from:
 
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Payment Request API](https://w3c.github.io/payment-request/)
 
 
 ## Battery Status API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -1914,7 +1916,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
-- Date: 17 August 2017
+- Date: 21 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3359,7 +3361,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Sun Aug 20 2017
+- Date: Mon Aug 21 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3378,7 +3380,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Sun Aug 20 2017
+- Date: Mon Aug 21 2017
 
 ### Potential issue(s) {.anomalies}
 
