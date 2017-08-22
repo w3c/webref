@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">August 21, 2017</h2>
+            <h2 class="date">August 22, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -72,7 +72,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/ambient-light/">Editor's Draft</a></li>
   <li>Shortname: ambient-light</li>
-  <li>Date: 18 August 2017</li>
+  <li>Date: 21 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-1" class="level3 anomalies">
@@ -410,22 +410,32 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-font-loading-module-level-3" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="css-font-loading-module-level-3" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>CSS Font Loading Module Level 3</h2>
   <section id="crawl-info-13" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-font-loading/">Editor's Draft</a></li>
   <li>Shortname: css-font-loading-3</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-13" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Inconsistent references for links:
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Missing references for WebIDL names:
   <ul>
-  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a>, related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
+  <li><code>CSSOMString</code> defined in <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><code>Window</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
+  <li><code>EventInit</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>Event</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>EventHandler</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
+  </ul></li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -476,37 +486,33 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
-  <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   </ul>
   </section>
   </section>
-  <section id="css-object-model-cssom" class="level2" data-spec="true" data-ok="true">
+  <section id="css-object-model-cssom" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true">
   <h2>CSS Object Model (CSSOM)</h2>
   <section id="crawl-info-15" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/cssom/">Editor's Draft</a></li>
   <li>Shortname: cssom-1</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-15" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-15" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
-  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
@@ -515,32 +521,47 @@
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
   </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
+  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   </ul>
   </section>
   </section>
-  <section id="css-painting-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
+  <section id="css-painting-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>CSS Painting API Level 1</h2>
   <section id="crawl-info-16" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/css-paint-api-1/">Editor's Draft</a></li>
   <li>Shortname: css-paint-api-1</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-16" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>CSS</code> defined in <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><code>WorkletGlobalScope</code> defined in <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css-properties-values-api-1/"><code>https://www.w3.org/TR/css-properties-values-api-1/</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -557,19 +578,24 @@
   </ul>
   </section>
   </section>
-  <section id="css-properties-and-values-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="css-properties-and-values-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true" data-inconsistentRef="true">
   <h2>CSS Properties and Values API Level 1</h2>
   <section id="crawl-info-17" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/css-properties-values-api-1/">Editor's Draft</a></li>
   <li>Shortname: css-properties-values-api-1</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-17" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>CSS</code> defined in <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a>, related reference &quot;CSS3-VALUES&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
@@ -585,26 +611,36 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-pseudo-elements-module-level-4" class="level2" data-spec="true" data-ok="true">
+  <section id="css-pseudo-elements-module-level-4" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
   <h2>CSS Pseudo-Elements Module Level 4</h2>
   <section id="crawl-info-18" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/css-pseudo-4/">Editor's Draft</a></li>
   <li>Shortname: css-pseudo-4</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-18" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Window</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
+  <li><code>Element</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-18" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
+  </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -616,7 +652,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-syntax/">Editor's Draft</a></li>
   <li>Shortname: css-syntax-3</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-19" class="level3 anomalies">
@@ -625,12 +661,12 @@
   <li>No WebIDL definitions found</li>
   <li>Missing references for links:
   <ul>
+  <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a></li>
   <li><a href="https://www.w3.org/TR/selectors-api/"><code>https://www.w3.org/TR/selectors-api/</code></a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a>, related reference &quot;SELECT&quot; uses URL <a href="https://www.w3.org/TR/css3-selectors/"><code>https://www.w3.org/TR/css3-selectors/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a>, related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -639,60 +675,66 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170814/">Web App Manifest</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-typed-om-level-1" class="level2" data-spec="true" data-ok="true">
+  <section id="css-typed-om-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
   <h2>CSS Typed OM Level 1</h2>
   <section id="crawl-info-20" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/css-typed-om-1/">Editor's Draft</a></li>
   <li>Shortname: css-typed-om-1</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-20" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Element</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>CSSStyleRule</code> defined in <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><code>CSS</code> defined in <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><code>DOMMatrix</code> defined in <a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMMatrixReadOnly</code> defined in <a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-20" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
-  <p>Normative references to this spec from:</p>
-  <ul>
-  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
-  </ul>
+  <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-values-and-units-module-level-4" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-inconsistentRef="true">
+  <section id="css-values-and-units-module-level-4" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>CSS Values and Units Module Level 4</h2>
   <section id="crawl-info-21" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/css-values/">Editor's Draft</a></li>
   <li>Shortname: css-values-3</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-21" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>No WebIDL definitions found</li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a></li>
+  </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css-syntax/"><code>https://www.w3.org/TR/css-syntax/</code></a>, related reference &quot;CSS3SYN&quot; uses URL <a href="https://www.w3.org/TR/css-syntax-3/"><code>https://www.w3.org/TR/css-syntax-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-fonts/"><code>https://www.w3.org/TR/css3-fonts/</code></a>, related reference &quot;CSS3-FONTS&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
-  <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a>, related reference &quot;CSS3-SELECTORS&quot; uses URL <a href="https://www.w3.org/TR/css3-selectors/"><code>https://www.w3.org/TR/css3-selectors/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -702,13 +744,9 @@
   <ul>
   <li><a href="http://dev.w3.org/fxtf/compositing-1/">Compositing and Blending Level 1</a></li>
   <li><a href="http://dev.w3.org/csswg/css-fonts/">CSS Fonts Module Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
-  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html">Touch Events - Level 2</a></li>
@@ -726,7 +764,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-writing-modes-3/">Editor's Draft</a></li>
   <li>Shortname: css-writing-modes-3</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-22" class="level3 anomalies">
@@ -759,7 +797,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/cssom-view/">Editor's Draft</a></li>
   <li>Shortname: cssom-view-1</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-23" class="level3 anomalies">
@@ -767,8 +805,16 @@
   <ul>
   <li>Missing references for WebIDL names:
   <ul>
+  <li><code>DOMRect</code> defined in <a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMRectList</code> defined in <a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><code>MouseEvent</code> defined in <a href="https://www.w3.org/TR/uievents">UI Events</a></li>
   <li><code>MouseEventInit</code> defined in <a href="https://www.w3.org/TR/uievents">UI Events</a></li>
+  <li><code>DOMQuad</code> defined in <a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMQuadInit</code> defined in <a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMRectReadOnly</code> defined in <a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMPoint</code> defined in <a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMPointInit</code> defined in <a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>CSSPseudoElement</code> defined in <a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   </ul></li>
   </ul>
   </section>
@@ -862,7 +908,7 @@
   <ul>
   <li>URL: <a href="https://dom.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 17 August 2017</li>
+  <li>Date: 21 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-26" class="level3 anomalies">
@@ -888,12 +934,7 @@
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
-  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
@@ -943,6 +984,9 @@
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
+  <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
@@ -1019,7 +1063,6 @@
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170814/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
@@ -1091,8 +1134,11 @@
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170814/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
+  </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -1259,7 +1305,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/fxtf/geometry/">Editor's Draft</a></li>
   <li>Shortname: geometry-1</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-36" class="level3 anomalies">
@@ -1272,8 +1318,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
@@ -1281,9 +1325,14 @@
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
+  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
+  <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
+  </ul>
   </section>
   </section>
   <section id="gyroscope" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
@@ -1391,7 +1440,7 @@
   <ul>
   <li>URL: <a href="https://html.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 20 August 2017</li>
+  <li>Date: 21 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-40" class="level3 anomalies">
@@ -1423,13 +1472,8 @@
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
-  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="http://dev.w3.org/csswg/css-fonts/">CSS Fonts Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
@@ -1493,12 +1537,13 @@
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
+  <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   </ul>
@@ -1509,7 +1554,6 @@
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
@@ -1606,7 +1650,7 @@
   <ul>
   <li>URL: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a></li>
   <li>Shortname: input-events-2</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-43" class="level3 anomalies">
@@ -2147,7 +2191,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/payment-request/">Editor's Draft</a></li>
   <li>Shortname: payment-request</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-59" class="level3 anomalies">
@@ -2271,7 +2315,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/pointerlock/">Editor's Draft</a></li>
   <li>Shortname: pointerlock-2</li>
-  <li>Date: 16 May 2017</li>
+  <li>Date: 21 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-63" class="level3 anomalies">
@@ -2385,7 +2429,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/push-api/">Editor's Draft</a></li>
   <li>Shortname: push-api</li>
-  <li>Date: 13 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-67" class="level3 anomalies">
@@ -2609,7 +2653,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="http://dev.w3.org/fxtf/compositing-1/">Compositing and Blending Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
@@ -2621,7 +2664,6 @@
   <ul>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
-  <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
@@ -2781,16 +2823,13 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="http://www.w3.org/TR/2013/REC-selectors-api-20130221/">Selectors API Level 1</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
-  <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   </ul>
   </section>
@@ -3441,12 +3480,6 @@
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
-  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
@@ -3507,7 +3540,6 @@
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -3540,7 +3572,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/webdriver/webdriver-spec.html">Editor's Draft</a></li>
   <li>Shortname: webdriver</li>
-  <li>Date: 19 August 2017</li>
+  <li>Date: 21 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-97" class="level3 anomalies">
@@ -3573,7 +3605,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Mon Aug 21 2017</li>
+  <li>Date: Tue Aug 22 2017</li>
   </ul>
   </section>
   <section id="potential-issues-98" class="level3 anomalies">
@@ -3593,7 +3625,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Mon Aug 21 2017</li>
+  <li>Date: Tue Aug 22 2017</li>
   </ul>
   </section>
   <section id="potential-issues-99" class="level3 anomalies">
@@ -3694,22 +3726,31 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="worklets-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true">
+  <section id="worklets-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>Worklets Level 1</h2>
   <section id="crawl-info-102" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/worklets/">Editor's Draft</a></li>
   <li>Shortname: worklets-1</li>
-  <li>Date: 21 August 2017</li>
+  <li>Date: 22 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-102" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
+  </ul></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>RequestCredentials</code> defined in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
+  </ul></li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -3717,12 +3758,12 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
