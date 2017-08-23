@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 22, 2017
+% August 23, 2017
 
 113 specifications were crawled in this report.
 
@@ -61,9 +61,8 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
-=> 8 specifications found
+=> 7 specifications found
 
 A typical example is the use of `[]` instead of `FrozenArray`.
 
@@ -592,13 +591,10 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/`](https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/) but related reference "DOM" uses URL [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
     * [`https://www.w3.org/TR/2011/WD-html5-20110525/`](https://www.w3.org/TR/2011/WD-html5-20110525/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) links to:
-    * [`https://w3c.github.io/webcrypto/`](https://w3c.github.io/webcrypto/) but related reference "WebCryptoAPI" uses URL [`https://www.w3.org/TR/WebCryptoAPI/`](https://www.w3.org/TR/WebCryptoAPI/)
-    * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/) links to:
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING-CR" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
 
-=> 155 inconsistent references for links found in 60 specifications
+=> 153 inconsistent references for links found in 59 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
