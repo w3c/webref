@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 22, 2017
+% August 23, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -1894,7 +1894,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
-- Date: 15 August 2017
+- Date: 22 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2022,7 +2022,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Latest published version](https://www.w3.org/TR/preload/)
 - Shortname: preload
-- Date: 18 July 2017
+- Date: 23 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2119,7 +2119,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Latest published version](https://www.w3.org/TR/push-api/)
 - Shortname: push-api
-- Date: 22 August 2017
+- Date: 23 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2603,7 +2603,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 18 August 2017
+- Date: 22 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3361,7 +3361,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Aug 22 2017
+- Date: Wed Aug 23 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3380,7 +3380,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Aug 22 2017
+- Date: Wed Aug 23 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3510,17 +3510,16 @@ Informative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Latest published version](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc
-- Date: 05 June 2017
+- Date: 22 August 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Obsolete WebIDL constructs found
 - Unknown WebIDL names used: `RTCError`
 - WebIDL names also defined elsewhere: 
     * `RTCStats` also defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
@@ -3528,9 +3527,6 @@ Informative references to this spec from:
      * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
      * `Event` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
      * `EventInit` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webcrypto/`](https://w3c.github.io/webcrypto/), related reference "WebCryptoAPI" uses URL [`https://www.w3.org/TR/WebCryptoAPI/`](https://www.w3.org/TR/WebCryptoAPI/)
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
 ### Known dependencies on this specification {.dependencies}
 

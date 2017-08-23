@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 22, 2017
+% August 23, 2017
 
 113 specifications were crawled in this report.
 
@@ -65,9 +65,8 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
-=> 6 specifications found
+=> 5 specifications found
 
 A typical example is the use of `[]` instead of `FrozenArray`.
 
@@ -75,13 +74,8 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
 - [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
 - [CSS Fonts Module Level 3](http://dev.w3.org/csswg/css-fonts/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
-- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Element Traversal Specification](http://www.w3.org/TR/2008/REC-ElementTraversal-20081222/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
@@ -93,9 +87,8 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Static Range](https://w3c.github.io/staticrange/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
-=> 20 specifications found
+=> 14 specifications found
 
 
 
@@ -135,37 +128,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `Window` but does not reference [HTML 5.3](https://w3c.github.io/html/)
     * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
     * `Worklet` but does not reference [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/) uses:
-    * `CSSOMString` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-    * `Window` but does not reference [HTML 5.3](https://w3c.github.io/html/)
-    * `EventInit` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `Event` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `EventHandler` but does not reference [HTML 5.3](https://w3c.github.io/html/)
-- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) uses:
-    * `CSS` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-    * `WorkletGlobalScope` but does not reference [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
-- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/) uses `CSS` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/) uses:
-    * `Window` but does not reference [HTML 5.3](https://w3c.github.io/html/)
-    * `Element` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/) uses:
-    * `Element` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `CSSStyleRule` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-    * `CSS` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-    * `DOMMatrix` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-    * `DOMMatrixReadOnly` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/) uses:
-    * `DOMRect` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-    * `DOMRectList` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
     * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/uievents)
     * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/uievents)
-    * `DOMQuad` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-    * `DOMQuadInit` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-    * `DOMRectReadOnly` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-    * `DOMPoint` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-    * `DOMPointInit` but does not reference [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-    * `CSSPseudoElement` but does not reference [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/) uses:
     * `Window` but does not reference [HTML 5.3](https://w3c.github.io/html/)
     * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
@@ -220,9 +185,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `Event` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `EventInit` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/) uses `RequestCredentials` but does not reference [Fetch Standard](https://fetch.spec.whatwg.org/)
 
-=> 76 missing references for IDL definitions found in 25 specifications
+=> 51 missing references for IDL definitions found in 19 specifications
 
 
 ## Missing references based on document links
@@ -231,7 +195,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/) links to [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but does not list it in its references
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/) links to [`https://w3c.github.io/webappsec/usecases/credentialmanagement/`](https://w3c.github.io/webappsec/usecases/credentialmanagement/) but does not list it in its references
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but does not list it in its references
 - [CSS Fonts Module Level 3](http://dev.w3.org/csswg/css-fonts/) links to:
     * [`https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/`](https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
@@ -239,13 +202,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2013/WD-css-text-3-20131010/`](https://www.w3.org/TR/2013/WD-css-text-3-20131010/) but does not list it in its references
     * [`https://www.w3.org/TR/2013/CR-css3-conditional-20130404/`](https://www.w3.org/TR/2013/CR-css3-conditional-20130404/) but does not list it in its references
     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/) but does not list it in its references
-- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) links to:
-    * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/) but does not list it in its references
-    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
-- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/) links to:
-    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but does not list it in its references
-    * [`https://www.w3.org/TR/selectors-api/`](https://www.w3.org/TR/selectors-api/) but does not list it in its references
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/) links to [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
+- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) links to [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/) but does not list it in its references
+- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/) links to [`https://www.w3.org/TR/selectors-api/`](https://www.w3.org/TR/selectors-api/) but does not list it in its references
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/) links to:
     * [`https://www.w3.org/TR/css-writing-modes-4/`](https://www.w3.org/TR/css-writing-modes-4/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-flexbox/`](https://www.w3.org/TR/css3-flexbox/) but does not list it in its references
@@ -346,10 +304,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/page-visibility/?csw=1`](https://www.w3.org/TR/page-visibility/?csw=1) but does not list it in its references
     * [`https://www.w3.org/TR/css-values-3//`](https://www.w3.org/TR/css-values-3//) but does not list it in its references
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/) links to [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/) but does not list it in its references
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 106 missing references for links found in 38 specifications
+=> 101 missing references for links found in 35 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -372,14 +329,18 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [CSS Fonts Module Level 3](http://dev.w3.org/csswg/css-fonts/) links to:
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML5" uses URL [`http://www.w3.org/TR/2014/REC-html5-20141028/`](http://www.w3.org/TR/2014/REC-html5-20141028/)
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/2016/CR-css-values-3-20160929/`](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS3-VALUES" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/) links to [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but related reference "SELECT" uses URL [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/)
+- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/) links to:
+    * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but related reference "SELECT" uses URL [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/)
+    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/) links to:
     * [`https://www.w3.org/TR/css-syntax/`](https://www.w3.org/TR/css-syntax/) but related reference "CSS3SYN" uses URL [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/)
     * [`https://www.w3.org/TR/css3-fonts/`](https://www.w3.org/TR/css3-fonts/) but related reference "CSS3-FONTS" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+    * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but related reference "CSS3-SELECTORS" uses URL [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/2016/REC-html51-20161101/`](https://www.w3.org/TR/2016/REC-html51-20161101/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/) links to [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/) links to:
@@ -525,10 +486,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/) but related reference "DOM-PARSING" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) links to:
-    * [`https://w3c.github.io/webcrypto/`](https://w3c.github.io/webcrypto/) but related reference "WebCryptoAPI" uses URL [`https://www.w3.org/TR/WebCryptoAPI/`](https://www.w3.org/TR/WebCryptoAPI/)
-    * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
-=> 140 inconsistent references for links found in 56 specifications
+=> 141 inconsistent references for links found in 56 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
