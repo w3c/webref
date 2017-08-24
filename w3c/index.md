@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 23, 2017
+% August 24, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -313,7 +313,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -415,7 +415,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -443,7 +443,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -465,7 +465,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -487,7 +487,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -522,7 +522,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -543,7 +543,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -581,7 +581,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -608,7 +608,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -657,6 +657,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 
 No informative reference to this spec from other specs.
 
@@ -973,7 +974,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](http://dev.w3.org/fxtf/geometry/)
 - Shortname: geometry-1
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1199,6 +1200,7 @@ Informative references to this spec from:
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
@@ -1255,7 +1257,6 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML 5.3](https://w3c.github.io/html/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
@@ -1298,6 +1299,7 @@ Informative references to this spec from:
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
@@ -1318,7 +1320,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/html-media-capture/)
 - Shortname: html-media-capture
-- Date: 17 August 2017
+- Date: 23 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1367,7 +1369,6 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
@@ -1417,6 +1418,7 @@ Informative references to this spec from:
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
@@ -1489,7 +1491,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1904,7 +1906,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 22 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2617,7 +2619,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 22 August 2017
+- Date: 23 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3402,7 +3404,6 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML 5.3](https://w3c.github.io/html/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
@@ -3456,6 +3457,7 @@ Informative references to this spec from:
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
@@ -3476,7 +3478,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 22 August 2017
+- Date: 23 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3502,7 +3504,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Wed Aug 23 2017
+- Date: Thu Aug 24 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3521,7 +3523,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Wed Aug 23 2017
+- Date: Thu Aug 24 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3601,7 +3603,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 23 August 2017
+- Date: 24 August 2017
 
 ### Potential issue(s) {.anomalies}
 
