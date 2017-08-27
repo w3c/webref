@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 26, 2017
+% August 27, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -1492,7 +1492,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 26 August 2017
+- Date: 27 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3504,7 +3504,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Sat Aug 26 2017
+- Date: Sun Aug 27 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3523,7 +3523,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Sat Aug 26 2017
+- Date: Sun Aug 27 2017
 
 ### Potential issue(s) {.anomalies}
 
