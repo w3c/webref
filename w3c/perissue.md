@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 29, 2017
+% August 30, 2017
 
 113 specifications were crawled in this report.
 
@@ -52,9 +52,8 @@ Not all specifications define IDL content, presence in this list may be complete
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
-=> 5 specifications found
+=> 4 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -101,9 +100,8 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `Transferable` used in [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
 - `Type` used in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - `WindowProxy` used in [HTML 5.3](https://w3c.github.io/html/), [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging), [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
-- `WorkletGlobalScope` used in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 
-=> 8 WebIDL names found
+=> 7 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -115,8 +113,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `ProgressEventInit` defined in [Progress Events](https://www.w3.org/TR/progress-events) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `RTCStats` defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) and [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+- `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
-=> 4 WebIDL names found
+=> 5 WebIDL names found
 
 "There can be only one"...
 
@@ -127,7 +126,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Console Standard](https://console.spec.whatwg.org/) uses:
     * `Window` but does not reference [HTML 5.3](https://w3c.github.io/html/)
     * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-    * `Worklet` but does not reference [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+    * `Worklet` but does not reference [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/) uses:
     * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/uievents)
     * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/uievents)

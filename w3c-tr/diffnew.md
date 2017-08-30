@@ -1,10 +1,4 @@
-% Diff between report from "August 29, 2017" and reference report from "August 28, 2017"
+% Diff between report from "August 30, 2017" and reference report from "August 29, 2017"
 % Reffy
-% August 29, 2017
-
-## Web App Manifest
-
-- URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest URL: *INS* https://www.w3.org/TR/2017/WD-appmanifest-20170828/ / *DEL* https://www.w3.org/TR/2017/WD-appmanifest-20170814/
-
+% August 30, 2017
 

@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 29, 2017
+% August 30, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -201,7 +201,7 @@ No informative reference to this spec from other specs.
 - Missing references for WebIDL names: 
      * `Window` defined in [HTML Standard](https://html.spec.whatwg.org/)
      * `Worker` defined in [HTML Standard](https://html.spec.whatwg.org/) or [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-     * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+     * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -313,7 +313,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 29 August 2017
+- Date: 20 April 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -402,17 +402,18 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
 - Shortname: css-paint-api-1
-- Date: 29 August 2017
+- Date: 15 August 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `WorkletGlobalScope`
+- WebIDL names also defined elsewhere: 
+    * `Worklet` also defined in [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
 
@@ -435,7 +436,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
-- Date: 29 August 2017
+- Date: 19 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -457,7 +458,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 29 August 2017
+- Date: 23 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -479,7 +480,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/)
 - Shortname: css-syntax-3
-- Date: 29 August 2017
+- Date: 9 June 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -534,7 +535,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 29 August 2017
+- Date: 12 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -572,7 +573,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 29 August 2017
+- Date: 18 July 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -598,7 +599,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 29 August 2017
+- Date: 4 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -855,7 +856,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 17 August 2017
+- Date: 29 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1029,7 +1030,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](http://dev.w3.org/fxtf/geometry/)
 - Shortname: geometry-1
-- Date: 29 August 2017
+- Date: 28 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1123,7 +1124,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/html-media-capture/)
 - Shortname: html-media-capture
-- Date: 23 August 2017
+- Date: 29 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1142,7 +1143,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 28 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1332,7 +1333,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 29 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2396,7 +2397,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 28 August 2017
+- Date: 29 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2943,7 +2944,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 25 August 2017
+- Date: 29 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2969,7 +2970,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Aug 29 2017
+- Date: Wed Aug 30 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2988,7 +2989,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Aug 29 2017
+- Date: Wed Aug 30 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3062,17 +3063,18 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Worklets Level 1 {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## Worklets Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 29 August 2017
+- Date: 1 May 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- WebIDL names also defined elsewhere: 
+    * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3080,6 +3082,10 @@ Normative references to this spec from:
 
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Console Standard](https://console.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
