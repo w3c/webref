@@ -1,16 +1,19 @@
-% Diff between report from "August 29, 2017" and reference report from "August 28, 2017"
+% Diff between report from "August 30, 2017" and reference report from "August 29, 2017"
 % Reffy
-% August 29, 2017
+% August 30, 2017
 
-## Media Capture and Streams
+## CSS Painting API Level 1
 
-- URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
-- Obsolete WebIDL constructs found: *INS* false / *DEL* true
+- URL: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
+- WebIDL names also defined elsewhere: *INS* Worklet
 
 
-## Web App Manifest
+## Worklets Level 1
 
-- URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest URL: *INS* https://www.w3.org/TR/2017/WD-appmanifest-20170828/ / *DEL* https://www.w3.org/TR/2017/WD-appmanifest-20170814/
+- URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
+- No WebIDL definitions found: *INS* false
+- Invalid WebIDL content found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- WebIDL names also defined elsewhere: *INS* Worklet
 
 

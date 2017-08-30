@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">August 29, 2017</h2>
+            <h2 class="date">August 30, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -283,7 +283,7 @@
   <ul>
   <li><code>Window</code> defined in <a href="https://w3c.github.io/html/">HTML 5.3</a></li>
   <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
-  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
+  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   </ul>
   </section>
@@ -417,7 +417,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-font-loading/">Editor's Draft</a></li>
   <li>Shortname: css-font-loading-3</li>
-  <li>Date: 29 August 2017</li>
+  <li>Date: 20 April 2017</li>
   </ul>
   </section>
   <section id="potential-issues-13" class="level3 anomalies">
@@ -533,20 +533,23 @@
   </ul>
   </section>
   </section>
-  <section id="css-painting-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="css-painting-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
   <h2>CSS Painting API Level 1</h2>
   <section id="crawl-info-16" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/css-paint-api-1/">Editor's Draft</a></li>
   <li>Shortname: css-paint-api-1</li>
-  <li>Date: 29 August 2017</li>
+  <li>Date: 15 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-16" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>WorkletGlobalScope</code></li>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css-properties-values-api-1/"><code>https://www.w3.org/TR/css-properties-values-api-1/</code></a></li>
@@ -573,7 +576,7 @@
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/css-properties-values-api-1/">Editor's Draft</a></li>
   <li>Shortname: css-properties-values-api-1</li>
-  <li>Date: 29 August 2017</li>
+  <li>Date: 19 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-17" class="level3 anomalies">
@@ -601,7 +604,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/css-pseudo-4/">Editor's Draft</a></li>
   <li>Shortname: css-pseudo-4</li>
-  <li>Date: 29 August 2017</li>
+  <li>Date: 23 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-18" class="level3 anomalies">
@@ -625,7 +628,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-syntax/">Editor's Draft</a></li>
   <li>Shortname: css-syntax-3</li>
-  <li>Date: 29 August 2017</li>
+  <li>Date: 9 June 2017</li>
   </ul>
   </section>
   <section id="potential-issues-19" class="level3 anomalies">
@@ -691,7 +694,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/css-values/">Editor's Draft</a></li>
   <li>Shortname: css-values-3</li>
-  <li>Date: 29 August 2017</li>
+  <li>Date: 12 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-21" class="level3 anomalies">
@@ -735,7 +738,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-writing-modes-3/">Editor's Draft</a></li>
   <li>Shortname: css-writing-modes-3</li>
-  <li>Date: 29 August 2017</li>
+  <li>Date: 18 July 2017</li>
   </ul>
   </section>
   <section id="potential-issues-22" class="level3 anomalies">
@@ -769,7 +772,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/cssom-view/">Editor's Draft</a></li>
   <li>Shortname: cssom-view-1</li>
-  <li>Date: 29 August 2017</li>
+  <li>Date: 4 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-23" class="level3 anomalies">
@@ -997,7 +1000,7 @@
   <ul>
   <li>URL: <a href="https://fetch.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 17 August 2017</li>
+  <li>Date: 29 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-30" class="level3 anomalies">
@@ -1205,7 +1208,7 @@
   <ul>
   <li>URL: <a href="http://dev.w3.org/fxtf/geometry/">Editor's Draft</a></li>
   <li>Shortname: geometry-1</li>
-  <li>Date: 29 August 2017</li>
+  <li>Date: 28 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-36" class="level3 anomalies">
@@ -1585,7 +1588,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/html-media-capture/">Editor's Draft</a></li>
   <li>Shortname: html-media-capture</li>
-  <li>Date: 23 August 2017</li>
+  <li>Date: 29 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-41" class="level3 anomalies">
@@ -1776,7 +1779,7 @@
   <ul>
   <li>URL: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a></li>
   <li>Shortname: input-events-2</li>
-  <li>Date: 29 August 2017</li>
+  <li>Date: 30 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-45" class="level3 anomalies">
@@ -3146,7 +3149,7 @@
   <ul>
   <li>URL: <a href="https://streams.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 28 August 2017</li>
+  <li>Date: 29 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-84" class="level3 anomalies">
@@ -3988,7 +3991,7 @@
   <ul>
   <li>URL: <a href="https://html.spec.whatwg.org/multipage/workers.html">Editor's Draft</a></li>
   <li>Shortname: workers</li>
-  <li>Date: 28 August 2017</li>
+  <li>Date: 30 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-105" class="level3 anomalies">
@@ -4123,7 +4126,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/webdriver/webdriver-spec.html">Editor's Draft</a></li>
   <li>Shortname: webdriver</li>
-  <li>Date: 25 August 2017</li>
+  <li>Date: 29 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-106" class="level3 anomalies">
@@ -4156,7 +4159,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Tue Aug 29 2017</li>
+  <li>Date: Wed Aug 30 2017</li>
   </ul>
   </section>
   <section id="potential-issues-107" class="level3 anomalies">
@@ -4176,7 +4179,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Tue Aug 29 2017</li>
+  <li>Date: Wed Aug 30 2017</li>
   </ul>
   </section>
   <section id="potential-issues-108" class="level3 anomalies">
@@ -4271,20 +4274,23 @@
   </ul>
   </section>
   </section>
-  <section id="worklets-level-1" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true">
+  <section id="worklets-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true">
   <h2>Worklets Level 1</h2>
   <section id="crawl-info-111" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://drafts.css-houdini.org/worklets/">Editor's Draft</a></li>
   <li>Shortname: worklets-1</li>
-  <li>Date: 29 August 2017</li>
+  <li>Date: 1 May 2017</li>
   </ul>
   </section>
   <section id="potential-issues-111" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Invalid WebIDL content found</li>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-111" class="level3 dependencies">
@@ -4292,6 +4298,10 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
+  </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
