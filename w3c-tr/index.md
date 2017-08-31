@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 30, 2017
+% August 31, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -876,7 +876,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 29 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1894,7 +1894,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
-- Date: 22 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1916,7 +1916,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
-- Date: 25 August 2017
+- Date: 31 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2022,7 +2022,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Latest published version](https://www.w3.org/TR/preload/)
 - Shortname: preload
-- Date: 23 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2603,7 +2603,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 29 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3361,7 +3361,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Wed Aug 30 2017
+- Date: Thu Aug 31 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3380,7 +3380,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Wed Aug 30 2017
+- Date: Thu Aug 31 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3603,7 +3603,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://xhr.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 10 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 

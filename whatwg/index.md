@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 30, 2017
+% August 31, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -856,7 +856,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 29 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -980,7 +980,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 25 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1333,7 +1333,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 30 August 2017
+- Date: 31 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1659,7 +1659,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://notifications.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 15 June 2017
+- Date: 29 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1744,7 +1744,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-handler/)
 - Shortname: payment-handler
-- Date: 22 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1768,7 +1768,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 25 August 2017
+- Date: 31 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1897,7 +1897,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/preload/)
 - Shortname: preload
-- Date: 23 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2397,7 +2397,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 29 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2829,7 +2829,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://heycam.github.io/webidl/)
 - Shortname: WebIDL-1
-- Date: 24 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2944,7 +2944,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 29 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2970,7 +2970,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Wed Aug 30 2017
+- Date: Thu Aug 31 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2989,7 +2989,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Wed Aug 30 2017
+- Date: Thu Aug 31 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3096,7 +3096,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://xhr.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 10 August 2017
+- Date: 30 August 2017
 
 ### Potential issue(s) {.anomalies}
 
