@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 31, 2017
+% September 01, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -681,7 +681,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://dom.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 27 August 2017
+- Date: 31 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -932,7 +932,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fullscreen.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 3 August 2017
+- Date: 31 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1143,7 +1143,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 30 August 2017
+- Date: 31 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1333,7 +1333,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 31 August 2017
+- Date: 01 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2944,7 +2944,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 30 August 2017
+- Date: 31 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2970,7 +2970,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Aug 31 2017
+- Date: Fri Sep 01 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2989,7 +2989,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Aug 31 2017
+- Date: Fri Sep 01 2017
 
 ### Potential issue(s) {.anomalies}
 

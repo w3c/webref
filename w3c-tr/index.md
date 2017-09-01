@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 31, 2017
+% September 01, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -731,6 +731,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML 5.2](https://w3c.github.io/html/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 
 No informative reference to this spec from other specs.
 
@@ -954,7 +955,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fullscreen.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 3 August 2017
+- Date: 31 August 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1278,6 +1279,7 @@ Informative references to this spec from:
 
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [Encoding](https://encoding.spec.whatwg.org/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Progress Events](https://www.w3.org/TR/progress-events)
 - [Push API](https://w3c.github.io/push-api/)
@@ -1358,6 +1360,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Push API](https://w3c.github.io/push-api/)
@@ -1368,18 +1371,17 @@ Informative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## HTML Media Capture {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## HTML Media Capture {data-spec=true data-ok=true}
 
 ### Crawl info {.info}
 
 - URL: [Latest published version](https://www.w3.org/TR/html-media-capture/)
 - Shortname: html-media-capture
-- Date: 04 May 2017
+- Date: 31 August 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1454,6 +1456,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
@@ -3320,6 +3323,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
@@ -3361,7 +3365,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Aug 31 2017
+- Date: Fri Sep 01 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3380,7 +3384,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Aug 31 2017
+- Date: Fri Sep 01 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3497,6 +3501,7 @@ Informative references to this spec from:
 - [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Input Events Level 2](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
