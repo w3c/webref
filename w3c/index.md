@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 01, 2017
+% September 02, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -544,7 +544,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-values/)
 - Shortname: css-values-3
-- Date: 12 August 2017
+- Date: 1 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -796,7 +796,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 30 August 2017
+- Date: 1 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -976,7 +976,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](http://dev.w3.org/fxtf/geometry/)
 - Shortname: geometry-1
-- Date: 28 August 2017
+- Date: 1 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1490,7 +1490,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 01 September 2017
+- Date: 02 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1902,7 +1902,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 31 August 2017
+- Date: 01 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2614,7 +2614,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 30 August 2017
+- Date: 1 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3127,7 +3127,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webauthn/)
 - Shortname: webauthn
-- Date: 11 August 2017
+- Date: 1 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3176,7 +3176,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://heycam.github.io/webidl/)
 - Shortname: WebIDL-1
-- Date: 30 August 2017
+- Date: 1 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3471,7 +3471,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 31 August 2017
+- Date: 01 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3497,7 +3497,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Fri Sep 01 2017
+- Date: Sat Sep 02 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3516,7 +3516,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Fri Sep 01 2017
+- Date: Sat Sep 02 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3590,18 +3590,20 @@ Informative references to this spec from:
 - [HTML 5.3](https://w3c.github.io/html/)
 
 
-## Worklets Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
+## Worklets Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
 - Shortname: worklets-1
-- Date: 1 May 2017
+- Date: 1 September 2017
 
 ### Potential issue(s) {.anomalies}
 
 - WebIDL names also defined elsewhere: 
     * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
 
 ### Known dependencies on this specification {.dependencies}
 

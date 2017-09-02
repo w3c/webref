@@ -1,10 +1,4 @@
-% Diff between report from "September 01, 2017" and reference report from "August 31, 2017"
+% Diff between report from "September 02, 2017" and reference report from "September 01, 2017"
 % Reffy
-% September 01, 2017
-
-## HTML Media Capture
-
-- URL: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
-- Spec is OK: *INS* true / *DEL* false
-
+% September 02, 2017
 
