@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 05, 2017
+% September 06, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -275,7 +275,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/editing/contentEditable.html)
 - Shortname: no shortname
-- Date: 23 June 2017
+- Date: 05 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -877,7 +877,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 4 September 2017
+- Date: 5 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1530,7 +1530,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/input-events-2/)
 - Shortname: input-events-2
-- Date: 29 June 2017
+- Date: 05 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1897,7 +1897,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
-- Date: 30 August 2017
+- Date: 05 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2533,7 +2533,7 @@ Informative references to this spec from:
 
 - URL: [Latest published version](https://www.w3.org/TR/shadow-dom/)
 - Shortname: shadow-dom
-- Date: 13 February 2017
+- Date: 05 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2606,7 +2606,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 4 September 2017
+- Date: 5 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3365,7 +3365,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Sep 05 2017
+- Date: Wed Sep 06 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3384,7 +3384,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Sep 05 2017
+- Date: Wed Sep 06 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3510,6 +3510,7 @@ Informative references to this spec from:
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [WebIDL Level 1](https://heycam.github.io/webidl/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
