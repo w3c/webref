@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 05, 2017
+% September 06, 2017
 
 ## Accelerometer {data-spec=true data-ok=true}
 
@@ -249,7 +249,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/editing/contentEditable.html)
 - Shortname: no shortname
-- Date: 23 June 2017
+- Date: 05 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -644,7 +644,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webcomponents/spec/custom/)
 - Shortname: custom-elements
-- Date: 13 February 2017
+- Date: 05 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -796,7 +796,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 4 September 2017
+- Date: 5 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1490,7 +1490,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 05 September 2017
+- Date: 06 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1878,7 +1878,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-handler/)
 - Shortname: payment-handler
-- Date: 30 August 2017
+- Date: 05 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2541,7 +2541,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webcomponents/spec/shadow/)
 - Shortname: shadow-dom
-- Date: 13 February 2017
+- Date: 05 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2614,7 +2614,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 4 September 2017
+- Date: 5 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2752,7 +2752,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/uievents-code/)
 - Shortname: uievents-code
-- Date: 3 February 2017
+- Date: 5 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3176,7 +3176,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://heycam.github.io/webidl/)
 - Shortname: WebIDL-1
-- Date: 4 September 2017
+- Date: 5 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3347,7 +3347,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
 - Shortname: workers
-- Date: 4 September 2017
+- Date: 5 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3471,7 +3471,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 01 September 2017
+- Date: 05 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3497,7 +3497,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Sep 05 2017
+- Date: Wed Sep 06 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3516,7 +3516,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Sep 05 2017
+- Date: Wed Sep 06 2017
 
 ### Potential issue(s) {.anomalies}
 
