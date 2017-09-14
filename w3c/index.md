@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 13, 2017
+% September 14, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
@@ -196,7 +196,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://console.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 12 September 2017
+- Date: 13 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -754,7 +754,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/encrypted-media/)
 - Shortname: encrypted-media
-- Date: 23 June 2017
+- Date: 14 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1484,7 +1484,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 13 September 2017
+- Date: 14 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1933,7 +1933,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 11 September 2017
+- Date: 13 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2672,7 +2672,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 8 September 2017
+- Date: 13 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2810,7 +2810,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/uievents-code/)
 - Shortname: uievents-code
-- Date: 5 September 2017
+- Date: 14 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3183,7 +3183,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webauthn/)
 - Shortname: webauthn
-- Date: 1 September 2017
+- Date: 13 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3328,7 +3328,6 @@ Informative references to this spec from:
 
 - [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
@@ -3556,7 +3555,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Wed Sep 13 2017
+- Date: Thu Sep 14 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3575,7 +3574,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Wed Sep 13 2017
+- Date: Thu Sep 14 2017
 
 ### Potential issue(s) {.anomalies}
 
