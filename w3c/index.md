@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 14, 2017
+% September 15, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
@@ -48,18 +48,17 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Audio Output Devices API {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Audio Output Devices API {data-spec=true data-ok=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
 - Shortname: audio-output
-- Date: 15 December 2016
+- Date: 14 September 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -144,7 +143,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/clipboard-apis/)
 - Shortname: clipboard-apis
-- Date: 15 May 2017
+- Date: 14 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -609,7 +608,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 11 September 2017
+- Date: 14 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -959,7 +958,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](http://dev.w3.org/fxtf/geometry/)
 - Shortname: geometry-1
-- Date: 12 September 2017
+- Date: 14 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1484,7 +1483,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 14 September 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1933,7 +1932,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 13 September 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3404,7 +3403,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
 - Shortname: workers
-- Date: 9 September 2017
+- Date: 14 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3555,7 +3554,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Sep 14 2017
+- Date: Fri Sep 15 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3574,7 +3573,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Sep 14 2017
+- Date: Fri Sep 15 2017
 
 ### Potential issue(s) {.anomalies}
 
