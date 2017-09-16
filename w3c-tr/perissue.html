@@ -20,7 +20,7 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>115 specifications were crawled in this report.</p>
+  <p>116 specifications were crawled in this report.</p>
   <section id="specifications-that-could-not-be-rendered" class="level2">
   <h2>Specifications that could not be rendered</h2>
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
@@ -63,13 +63,14 @@
   <ul>
   <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/">Metadata API for Media Resources 1.0</a></li>
   <li><a href="http://www.w3.org/TR/2012/CR-websockets-20120920/">The WebSocket API</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   <li><a href="https://heycam.github.io/webidl/">WebIDL Level 1</a></li>
   </ul>
-  <p>=&gt; 7 specifications found</p>
+  <p>=&gt; 8 specifications found</p>
   <p>WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features</p>
   </section>
   <section id="list-of-specifications-with-obsolete-webidl-constructs" class="level2">
@@ -104,10 +105,9 @@
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   <li><a href="http://www.w3.org/TR/2013/REC-selectors-api-20130221/">Selectors API Level 1</a></li>
   <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
-  <li><a href="https://w3c.github.io/staticrange/">Static Range</a></li>
   <li><a href="https://www.w3.org/TR/uievents">UI Events</a></li>
   </ul>
-  <p>=&gt; 17 specifications found</p>
+  <p>=&gt; 16 specifications found</p>
   </section>
   <section id="list-of-webidl-names-not-defined-in-the-specifications-crawled" class="level2">
   <h2>List of WebIDL names not defined in the specifications crawled</h2>
@@ -237,6 +237,7 @@
   <li><code>StyleSheetList</code> but does not reference <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><code>DocumentFragment</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/staticrange/">Static Range</a> uses <code>Window</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="https://w3c.github.io/permissions/">The Permissions API</a> uses <code>EventTarget</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a> uses <code>EventTarget</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html">Touch Events</a> uses <code>UIEvent</code> but does not reference <a href="https://www.w3.org/TR/uievents">UI Events</a></li>
@@ -249,7 +250,7 @@
   <li><code>EventInit</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 56 missing references for IDL definitions found in 26 specifications</p>
+  <p>=&gt; 57 missing references for IDL definitions found in 27 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -368,6 +369,13 @@
   <li><a href="https://www.w3.org/TR/webmessaging/"><code>https://www.w3.org/TR/webmessaging/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/xlink11/"><code>https://www.w3.org/TR/xlink11/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/becss/"><code>https://www.w3.org/TR/becss/</code></a> but does not list it in its references</li>
+  </ul></li>
+  <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a> links to:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-masking-1/"><code>https://www.w3.org/TR/css-masking-1/</code></a> but does not list it in its references</li>
+  <li><a href="https://fullscreen.spec.whatwg.org/"><code>https://fullscreen.spec.whatwg.org/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a> links to:
   <ul>
@@ -489,7 +497,7 @@
   </ul></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 162 missing references for links found in 53 specifications</p>
+  <p>=&gt; 166 missing references for links found in 54 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -560,6 +568,11 @@
   <li><a href="https://www.w3.org/TR/domcore/"><code>https://www.w3.org/TR/domcore/</code></a> but related reference &quot;DOM&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
   </ul></li>
   <li><a href="https://rawgit.com/w3c/input-events/v1/index.html">Input Events Level 2</a> links to <a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UI-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
+  <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a> but related reference &quot;CSSOM-VIEW-1&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
@@ -736,7 +749,7 @@
   <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM-20151119&quot; uses URL <a href="https://www.w3.org/TR/2015/REC-dom-20151119/"><code>https://www.w3.org/TR/2015/REC-dom-20151119/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 152 inconsistent references for links found in 59 specifications</p>
+  <p>=&gt; 154 inconsistent references for links found in 60 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>

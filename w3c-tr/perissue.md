@@ -1,8 +1,8 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 15, 2017
+% September 16, 2017
 
-115 specifications were crawled in this report.
+116 specifications were crawled in this report.
 
 
 ## Specifications that could not be rendered
@@ -50,13 +50,14 @@ Not all specifications define IDL content, presence in this list may be complete
 
 - [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebIDL Level 1](https://heycam.github.io/webidl/)
 
-=> 7 specifications found
+=> 8 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -93,10 +94,9 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
-- [Static Range](https://w3c.github.io/staticrange/)
 - [UI Events](https://www.w3.org/TR/uievents)
 
-=> 17 specifications found
+=> 16 specifications found
 
 
 
@@ -206,6 +206,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `CaretPosition` but does not reference [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
     * `StyleSheetList` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
     * `DocumentFragment` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Static Range](https://w3c.github.io/staticrange/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [The Permissions API](https://w3c.github.io/permissions/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Touch Events](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html) uses `UIEvent` but does not reference [UI Events](https://www.w3.org/TR/uievents)
@@ -216,7 +217,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `Event` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `EventInit` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
 
-=> 56 missing references for IDL definitions found in 26 specifications
+=> 57 missing references for IDL definitions found in 27 specifications
 
 
 ## Missing references based on document links
@@ -314,6 +315,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/webmessaging/`](https://www.w3.org/TR/webmessaging/) but does not list it in its references
     * [`https://www.w3.org/TR/xlink11/`](https://www.w3.org/TR/xlink11/) but does not list it in its references
     * [`https://www.w3.org/TR/becss/`](https://www.w3.org/TR/becss/) but does not list it in its references
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/) links to:
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
+    * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-masking-1/`](https://www.w3.org/TR/css-masking-1/) but does not list it in its references
+    * [`https://fullscreen.spec.whatwg.org/`](https://fullscreen.spec.whatwg.org/) but does not list it in its references
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/) links to:
     * [`https://w3c.github.io/html/webappapis.html`](https://w3c.github.io/html/webappapis.html) but does not list it in its references
     * [`https://w3c.github.io/html/infrastructure.html`](https://w3c.github.io/html/infrastructure.html) but does not list it in its references
@@ -408,7 +414,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 162 missing references for links found in 53 specifications
+=> 166 missing references for links found in 54 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -467,6 +473,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
     * [`https://www.w3.org/TR/domcore/`](https://www.w3.org/TR/domcore/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 - [Input Events Level 2](https://rawgit.com/w3c/input-events/v1/index.html) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/) links to:
+    * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
+    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [Magnetometer](https://w3c.github.io/magnetometer/) links to:
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
@@ -599,6 +608,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING-CR" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
 
-=> 152 inconsistent references for links found in 59 specifications
+=> 154 inconsistent references for links found in 60 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

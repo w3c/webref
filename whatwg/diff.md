@@ -1,32 +1,32 @@
-% Diff between report from "September 15, 2017" and reference report from "September 14, 2017"
+% Diff between report from "September 16, 2017" and reference report from "September 15, 2017"
 % Reffy
-% September 15, 2017
+% September 16, 2017
 
-## Audio Output Devices API
+## Basic Card Payment
 
-- URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
+- URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Spec is OK: *INS* true / *DEL* false
-- Inconsistent references for links: *DEL* https://w3c.github.io/mediacapture-main/
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
 
 
-## HTML Standard
+## CSS Font Loading Module Level 3
 
-- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Unknown WebIDL names used: *DEL* SVGImageElement, SVGScriptElement
+- URL: [https://www.w3.org/TR/css-font-loading-3/](https://www.w3.org/TR/css-font-loading-3/)
+- No WebIDL definitions found: *DEL* false
+- Invalid WebIDL content found: *INS* true / *DEL* false
+- Obsolete WebIDL constructs found: *DEL* false
 
 
-## Scalable Vector Graphics (SVG) 2
+## Intersection Observer
 
-- URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
-- Spec could not be rendered: *DEL* FetchError: request to https://svgwg.org/svg2-draft/single-page.html failed, reason: socket hang up FetchError: request to https://svgwg.org/svg2-draft/single-page.html failed, reason: socket hang up
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketOnEnd (_http_client.js:345:9)
-    at emitNone (events.js:91:20)
-    at TLSSocket.emit (events.js:185:7)
-    at endReadableNT (_stream_readable.js:974:12)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
+- URL: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
+- This specification was not in the reference crawl report.
+
+
+## Static Range
+
+- URL: [https://w3c.github.io/staticrange/](https://w3c.github.io/staticrange/)
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- Missing references for WebIDL names: *INS* Window
 
 

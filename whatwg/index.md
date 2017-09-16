@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% September 15, 2017
+% September 16, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
@@ -69,17 +69,17 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Basic Card Payment {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+## Basic Card Payment {data-spec=true data-ok=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
 - Shortname: payment-method-basic-card
-- Date: 27 July 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -143,7 +143,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/clipboard-apis/)
 - Shortname: clipboard-apis
-- Date: 14 September 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -250,7 +250,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/editing/contentEditable.html)
 - Shortname: no shortname
-- Date: 05 September 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -308,16 +308,17 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/)
 - Shortname: css-font-loading-3
-- Date: 20 April 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
+- Invalid WebIDL content found
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
@@ -500,6 +501,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170907/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
@@ -557,6 +559,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
 - [Web Animations](https://w3c.github.io/web-animations/)
@@ -598,7 +601,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom-view/)
 - Shortname: cssom-view-1
-- Date: 14 September 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -612,6 +615,7 @@ Normative references to this spec from:
 
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -717,6 +721,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
@@ -1021,6 +1026,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -1125,7 +1131,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 14 September 2017
+- Date: 16 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1143,6 +1149,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -1234,6 +1241,7 @@ Although they do not, the following specs should also normatively reference this
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
+- [Static Range](https://w3c.github.io/staticrange/)
 
 Informative references to this spec from:
 
@@ -1322,7 +1330,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 15 September 2017
+- Date: 16 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1337,6 +1345,31 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
+
+
+## Intersection Observer {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true}
+
+### Crawl info {.info}
+
+- URL: [Editor's Draft](https://w3c.github.io/IntersectionObserver/)
+- Shortname: intersection-observer
+- Date: 13 September 2017
+
+### Potential issue(s) {.anomalies}
+
+- Invalid WebIDL content found
+- Missing references for links: 
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+     * [`https://www.w3.org/TR/css-masking-1/`](https://www.w3.org/TR/css-masking-1/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
+
+No informative reference to this spec from other specs.
 
 
 ## longtasks {data-spec=true data-error=true}
@@ -1949,7 +1982,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/presentation-api/)
 - Shortname: presentation-api
-- Date: 08 June 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2402,17 +2435,18 @@ Informative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
-## Static Range {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+## Static Range {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/staticrange/)
 - Shortname: no shortname
-- Date: 27 April 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- Missing references for WebIDL names: 
+     * `Window` defined in [HTML Standard](https://html.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2448,7 +2482,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 13 September 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2893,6 +2927,7 @@ Normative references to this spec from:
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -2922,6 +2957,7 @@ Normative references to this spec from:
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
@@ -2950,6 +2986,7 @@ Normative references to this spec from:
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
@@ -2996,7 +3033,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 11 September 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3022,7 +3059,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Fri Sep 15 2017
+- Date: Sat Sep 16 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3041,7 +3078,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Fri Sep 15 2017
+- Date: Sat Sep 16 2017
 
 ### Potential issue(s) {.anomalies}
 
