@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">September 15, 2017</h2>
+            <h2 class="date">September 16, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -374,7 +374,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/editing/contentEditable.html">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 05 September 2017</li>
+  <li>Date: 15 September 2017</li>
   </ul>
   </section>
   <section id="potential-issues-11" class="level3 anomalies">
@@ -731,6 +731,7 @@
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
+  <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170907/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
@@ -806,6 +807,7 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
+  <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
@@ -891,6 +893,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
+  <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
@@ -1321,6 +1324,7 @@
   <ul>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
+  <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
@@ -1550,6 +1554,7 @@
   <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
+  <li><a href="https://w3c.github.io/staticrange/">Static Range</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -1864,20 +1869,33 @@
   </ul>
   </section>
   </section>
-  <section id="longtasks" class="level2" data-spec="true" data-error="true">
-  <h2>longtasks</h2>
+  <section id="intersection-observer" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <h2>Intersection Observer</h2>
   <section id="crawl-info-46" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
-  <li>URL: <a href="https://www.w3.org/TR/longtasks/">Latest published version</a></li>
-  <li>Shortname: longtasks</li>
-  <li>Date: unknown</li>
+  <li>URL: <a href="https://www.w3.org/TR/intersection-observer/">Latest published version</a></li>
+  <li>Shortname: intersection-observer</li>
+  <li>Date: 14 September 2017</li>
   </ul>
   </section>
   <section id="potential-issues-46" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:133:34)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Invalid WebIDL content found</li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a></li>
+  <li><a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-masking-1/"><code>https://www.w3.org/TR/css-masking-1/</code></a></li>
+  <li><a href="https://fullscreen.spec.whatwg.org/"><code>https://fullscreen.spec.whatwg.org/</code></a></li>
+  </ul></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a>, related reference &quot;CSSOM-VIEW-1&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a>, related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-46" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1885,9 +1903,30 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
+  <section id="longtasks" class="level2" data-spec="true" data-error="true">
+  <h2>longtasks</h2>
+  <section id="crawl-info-47" class="level3 info">
+  <h3>Crawl info</h3>
+  <ul>
+  <li>URL: <a href="https://www.w3.org/TR/longtasks/">Latest published version</a></li>
+  <li>Shortname: longtasks</li>
+  <li>Date: unknown</li>
+  </ul>
+  </section>
+  <section id="potential-issues-47" class="level3 anomalies">
+  <h3>Potential issue(s)</h3>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:133:34)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  </section>
+  <section id="known-dependencies-on-this-specification-47" class="level3 dependencies">
+  <h3>Known dependencies on this specification</h3>
+  <p>No normative reference to this spec from other specs.</p>
+  <p>No informative reference to this spec from other specs.</p>
+  </section>
+  </section>
   <section id="magnetometer" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Magnetometer</h2>
-  <section id="crawl-info-47" class="level3 info">
+  <section id="crawl-info-48" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/magnetometer/">Latest published version</a></li>
@@ -1895,7 +1934,7 @@
   <li>Date: 14 August 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-47" class="level3 anomalies">
+  <section id="potential-issues-48" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -1905,7 +1944,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-47" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-48" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -1916,7 +1955,7 @@
   </section>
   <section id="media-capture-and-streams" class="level2" data-spec="true" data-anomaly="true" data-hasObsoleteIdl="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Media Capture and Streams</h2>
-  <section id="crawl-info-48" class="level3 info">
+  <section id="crawl-info-49" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/mediacapture-streams/">Latest published version</a></li>
@@ -1924,7 +1963,7 @@
   <li>Date: 19 May 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-48" class="level3 anomalies">
+  <section id="potential-issues-49" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Obsolete WebIDL constructs found</li>
@@ -1946,7 +1985,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-48" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-49" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -1975,7 +2014,7 @@
   </section>
   <section id="media-capture-depth-stream-extensions" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Media Capture Depth Stream Extensions</h2>
-  <section id="crawl-info-49" class="level3 info">
+  <section id="crawl-info-50" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/mediacapture-depth/">Latest published version</a></li>
@@ -1983,7 +2022,7 @@
   <li>Date: 18 April 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-49" class="level3 anomalies">
+  <section id="potential-issues-50" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -1992,7 +2031,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-49" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-50" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -2003,7 +2042,7 @@
   </section>
   <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Media Capture from DOM Elements</h2>
-  <section id="crawl-info-50" class="level3 info">
+  <section id="crawl-info-51" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/mediacapture-fromelement/">Latest published version</a></li>
@@ -2011,7 +2050,7 @@
   <li>Date: 06 September 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-50" class="level3 anomalies">
+  <section id="potential-issues-51" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -2021,7 +2060,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-50" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-51" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2029,7 +2068,7 @@
   </section>
   <section id="media-session-standard" class="level2" data-spec="true" data-ok="true">
   <h2>Media Session Standard</h2>
-  <section id="crawl-info-51" class="level3 info">
+  <section id="crawl-info-52" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://wicg.github.io/mediasession/">Editor's Draft</a></li>
@@ -2037,11 +2076,11 @@
   <li>Date: 17 August 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-51" class="level3 anomalies">
+  <section id="potential-issues-52" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-51" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-52" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2049,7 +2088,7 @@
   </section>
   <section id="media-source-extensions" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>Media Source Extensions™</h2>
-  <section id="crawl-info-52" class="level3 info">
+  <section id="crawl-info-53" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/media-source/">Latest published version</a></li>
@@ -2057,7 +2096,7 @@
   <li>Date: 17 November 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-52" class="level3 anomalies">
+  <section id="potential-issues-53" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for WebIDL names:
@@ -2071,7 +2110,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-52" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-53" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2087,7 +2126,7 @@
   </section>
   <section id="mediastream-recording" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>MediaStream Recording</h2>
-  <section id="crawl-info-53" class="level3 info">
+  <section id="crawl-info-54" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/mediastream-recording/">Latest published version</a></li>
@@ -2095,7 +2134,7 @@
   <li>Date: 21 June 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-53" class="level3 anomalies">
+  <section id="potential-issues-54" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for WebIDL names:
@@ -2114,7 +2153,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-53" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-54" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -2125,7 +2164,7 @@
   </section>
   <section id="metadata-api-for-media-resources-1.0" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Metadata API for Media Resources 1.0</h2>
-  <section id="crawl-info-54" class="level3 info">
+  <section id="crawl-info-55" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/mediaont-api-1.0/">Latest published version</a></li>
@@ -2133,7 +2172,7 @@
   <li>Date: 13 March 2014</li>
   </ul>
   </section>
-  <section id="potential-issues-54" class="level3 anomalies">
+  <section id="potential-issues-55" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Invalid WebIDL content found</li>
@@ -2149,7 +2188,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-54" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-55" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2157,7 +2196,7 @@
   </section>
   <section id="mixed-content" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Mixed Content</h2>
-  <section id="crawl-info-55" class="level3 info">
+  <section id="crawl-info-56" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/mixed-content/">Latest published version</a></li>
@@ -2165,7 +2204,7 @@
   <li>Date: 2 August 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-55" class="level3 anomalies">
+  <section id="potential-issues-56" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>No WebIDL definitions found</li>
@@ -2183,7 +2222,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-55" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-56" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2203,7 +2242,7 @@
   </section>
   <section id="navigation-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-hasObsoleteIdl="true" data-inconsistentRef="true">
   <h2>Navigation Timing Level 2</h2>
-  <section id="crawl-info-56" class="level3 info">
+  <section id="crawl-info-57" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/navigation-timing-2/">Latest published version</a></li>
@@ -2211,7 +2250,7 @@
   <li>Date: 29 June 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-56" class="level3 anomalies">
+  <section id="potential-issues-57" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Obsolete WebIDL constructs found</li>
@@ -2221,7 +2260,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-56" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-57" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2240,7 +2279,7 @@
   </section>
   <section id="orientation-sensor" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Orientation Sensor</h2>
-  <section id="crawl-info-57" class="level3 info">
+  <section id="crawl-info-58" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/orientation-sensor/">Latest published version</a></li>
@@ -2248,7 +2287,7 @@
   <li>Date: 14 August 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-57" class="level3 anomalies">
+  <section id="potential-issues-58" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>DOMMatrix</code></li>
@@ -2266,7 +2305,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-57" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-58" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2274,7 +2313,7 @@
   </section>
   <section id="page-visibility-level-2" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Page Visibility Level 2</h2>
-  <section id="crawl-info-58" class="level3 info">
+  <section id="crawl-info-59" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/page-visibility-2/">Latest published version</a></li>
@@ -2282,7 +2321,7 @@
   <li>Date: 28 March 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-58" class="level3 anomalies">
+  <section id="potential-issues-59" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
@@ -2297,7 +2336,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-58" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-59" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2319,7 +2358,7 @@
   </section>
   <section id="paint-timing-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Paint Timing 1</h2>
-  <section id="crawl-info-59" class="level3 info">
+  <section id="crawl-info-60" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/paint-timing/">Latest published version</a></li>
@@ -2327,7 +2366,7 @@
   <li>Date: 7 September 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-59" class="level3 anomalies">
+  <section id="potential-issues-60" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for links:
@@ -2340,7 +2379,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-59" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-60" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2348,7 +2387,7 @@
   </section>
   <section id="payment-handler-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
   <h2>Payment Handler API</h2>
-  <section id="crawl-info-60" class="level3 info">
+  <section id="crawl-info-61" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/payment-handler/">Latest published version</a></li>
@@ -2356,7 +2395,7 @@
   <li>Date: 05 September 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-60" class="level3 anomalies">
+  <section id="potential-issues-61" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for links:
@@ -2365,7 +2404,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-60" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-61" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -2376,7 +2415,7 @@
   </section>
   <section id="payment-request-api" class="level2" data-spec="true" data-ok="true">
   <h2>Payment Request API</h2>
-  <section id="crawl-info-61" class="level3 info">
+  <section id="crawl-info-62" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/payment-request/">Latest published version</a></li>
@@ -2384,11 +2423,11 @@
   <li>Date: 14 September 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-61" class="level3 anomalies">
+  <section id="potential-issues-62" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-61" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-62" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2401,7 +2440,7 @@
   </section>
   <section id="performance-timeline-level-2" class="level2" data-spec="true" data-anomaly="true" data-hasObsoleteIdl="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>Performance Timeline Level 2</h2>
-  <section id="crawl-info-62" class="level3 info">
+  <section id="crawl-info-63" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/performance-timeline-2/">Latest published version</a></li>
@@ -2409,7 +2448,7 @@
   <li>Date: 08 December 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-62" class="level3 anomalies">
+  <section id="potential-issues-63" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Obsolete WebIDL constructs found</li>
@@ -2425,7 +2464,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-62" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-63" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2443,7 +2482,7 @@
   </section>
   <section id="pointer-events---level-2" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingLinkRef="true">
   <h2>Pointer Events - Level 2</h2>
-  <section id="crawl-info-63" class="level3 info">
+  <section id="crawl-info-64" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/pointerevents2/">Latest published version</a></li>
@@ -2451,7 +2490,7 @@
   <li>Date: 19 July 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-63" class="level3 anomalies">
+  <section id="potential-issues-64" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
@@ -2461,7 +2500,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-63" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-64" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2475,7 +2514,7 @@
   </section>
   <section id="pointer-lock-2.0" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Pointer Lock 2.0</h2>
-  <section id="crawl-info-64" class="level3 info">
+  <section id="crawl-info-65" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/pointerlock-2/">Latest published version</a></li>
@@ -2483,7 +2522,7 @@
   <li>Date: 22 November 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-64" class="level3 anomalies">
+  <section id="potential-issues-65" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>DocumentOrShadowRoot</code></li>
@@ -2501,7 +2540,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-64" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-65" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2512,7 +2551,7 @@
   </section>
   <section id="preload" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-missingLinkRef="true">
   <h2>Preload</h2>
-  <section id="crawl-info-65" class="level3 info">
+  <section id="crawl-info-66" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/preload/">Latest published version</a></li>
@@ -2520,7 +2559,7 @@
   <li>Date: 30 August 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-65" class="level3 anomalies">
+  <section id="potential-issues-66" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>No WebIDL definitions found</li>
@@ -2530,7 +2569,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-65" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-66" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2538,7 +2577,7 @@
   </section>
   <section id="presentation-api" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Presentation API</h2>
-  <section id="crawl-info-66" class="level3 info">
+  <section id="crawl-info-67" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/presentation-api/">Latest published version</a></li>
@@ -2546,7 +2585,7 @@
   <li>Date: 01 June 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-66" class="level3 anomalies">
+  <section id="potential-issues-67" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -2557,7 +2596,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-66" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-67" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2571,7 +2610,7 @@
   </section>
   <section id="progress-events" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
   <h2>Progress Events</h2>
-  <section id="crawl-info-67" class="level3 info">
+  <section id="crawl-info-68" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/progress-events/">Latest published version</a></li>
@@ -2579,7 +2618,7 @@
   <li>Date: 11 February 2014</li>
   </ul>
   </section>
-  <section id="potential-issues-67" class="level3 anomalies">
+  <section id="potential-issues-68" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>WebIDL names also defined elsewhere:
@@ -2594,7 +2633,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-67" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-68" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2606,7 +2645,7 @@
   </section>
   <section id="proximity-sensor" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Proximity Sensor</h2>
-  <section id="crawl-info-68" class="level3 info">
+  <section id="crawl-info-69" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/proximity/">Latest published version</a></li>
@@ -2614,7 +2653,7 @@
   <li>Date: 19 July 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-68" class="level3 anomalies">
+  <section id="potential-issues-69" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
@@ -2626,7 +2665,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-68" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-69" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2634,7 +2673,7 @@
   </section>
   <section id="push-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Push API</h2>
-  <section id="crawl-info-69" class="level3 info">
+  <section id="crawl-info-70" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/push-api/">Latest published version</a></li>
@@ -2642,7 +2681,7 @@
   <li>Date: 23 August 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-69" class="level3 anomalies">
+  <section id="potential-issues-70" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for links:
@@ -2657,7 +2696,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-69" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-70" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -2668,7 +2707,7 @@
   </section>
   <section id="referrer-policy" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-inconsistentRef="true">
   <h2>Referrer Policy</h2>
-  <section id="crawl-info-70" class="level3 info">
+  <section id="crawl-info-71" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/referrer-policy/">Latest published version</a></li>
@@ -2676,7 +2715,7 @@
   <li>Date: 26 January 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-70" class="level3 anomalies">
+  <section id="potential-issues-71" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
@@ -2688,7 +2727,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-70" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-71" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2701,7 +2740,7 @@
   </section>
   <section id="remote-playback-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>Remote Playback API</h2>
-  <section id="crawl-info-71" class="level3 info">
+  <section id="crawl-info-72" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/remote-playback/">Latest published version</a></li>
@@ -2709,7 +2748,7 @@
   <li>Date: 07 November 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-71" class="level3 anomalies">
+  <section id="potential-issues-72" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for WebIDL names:
@@ -2722,7 +2761,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-71" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-72" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2730,7 +2769,7 @@
   </section>
   <section id="resource-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-hasObsoleteIdl="true" data-inconsistentRef="true">
   <h2>Resource Timing Level 2</h2>
-  <section id="crawl-info-72" class="level3 info">
+  <section id="crawl-info-73" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/resource-timing-2/">Latest published version</a></li>
@@ -2738,7 +2777,7 @@
   <li>Date: 29 March 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-72" class="level3 anomalies">
+  <section id="potential-issues-73" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Obsolete WebIDL constructs found</li>
@@ -2751,7 +2790,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-72" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-73" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2767,7 +2806,7 @@
   </section>
   <section id="scalable-vector-graphics-svg-2" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Scalable Vector Graphics (SVG) 2</h2>
-  <section id="crawl-info-73" class="level3 info">
+  <section id="crawl-info-74" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/SVG2/">Latest published version</a></li>
@@ -2775,7 +2814,7 @@
   <li>Date: 15 September 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-73" class="level3 anomalies">
+  <section id="potential-issues-74" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>DOMMatrix</code>, <code>DOMMatrixReadOnly</code>, <code>DOMPoint</code>, <code>DOMPointReadOnly</code>, <code>DOMRect</code>, <code>DOMRectReadOnly</code>, <code>Type</code></li>
@@ -2852,7 +2891,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-73" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-74" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2878,7 +2917,7 @@
   </section>
   <section id="screen-capture" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Screen Capture</h2>
-  <section id="crawl-info-74" class="level3 info">
+  <section id="crawl-info-75" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/screen-capture/">Latest published version</a></li>
@@ -2886,7 +2925,7 @@
   <li>Date: 14 July 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-74" class="level3 anomalies">
+  <section id="potential-issues-75" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -2895,7 +2934,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-74" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-75" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2903,7 +2942,7 @@
   </section>
   <section id="secure-contexts" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-inconsistentRef="true">
   <h2>Secure Contexts</h2>
-  <section id="crawl-info-75" class="level3 info">
+  <section id="crawl-info-76" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/secure-contexts/">Latest published version</a></li>
@@ -2911,7 +2950,7 @@
   <li>Date: 15 September 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-75" class="level3 anomalies">
+  <section id="potential-issues-76" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
@@ -2921,7 +2960,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-75" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-76" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2944,7 +2983,7 @@
   </section>
   <section id="selection-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Selection API</h2>
-  <section id="crawl-info-76" class="level3 info">
+  <section id="crawl-info-77" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/selection-api/">Latest published version</a></li>
@@ -2952,7 +2991,7 @@
   <li>Date: 28 June 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-76" class="level3 anomalies">
+  <section id="potential-issues-77" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for links:
@@ -2965,7 +3004,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-76" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-77" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2980,7 +3019,7 @@
   </section>
   <section id="selectors-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-inconsistentRef="true">
   <h2>Selectors API Level 1</h2>
-  <section id="crawl-info-77" class="level3 info">
+  <section id="crawl-info-78" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/selectors-api/">Latest published version</a></li>
@@ -2988,7 +3027,7 @@
   <li>Date: 21 February 2013</li>
   </ul>
   </section>
-  <section id="potential-issues-77" class="level3 anomalies">
+  <section id="potential-issues-78" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
@@ -2998,7 +3037,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-77" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-78" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -3006,7 +3045,7 @@
   </section>
   <section id="selectors-level-3" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-inconsistentRef="true">
   <h2>Selectors Level 3</h2>
-  <section id="crawl-info-78" class="level3 info">
+  <section id="crawl-info-79" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/css3-selectors/">Latest published version</a></li>
@@ -3014,7 +3053,7 @@
   <li>Date: 29 September 2011</li>
   </ul>
   </section>
-  <section id="potential-issues-78" class="level3 anomalies">
+  <section id="potential-issues-79" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>No WebIDL definitions found</li>
@@ -3026,7 +3065,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-78" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-79" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3042,7 +3081,7 @@
   </section>
   <section id="server-timing" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Server Timing</h2>
-  <section id="crawl-info-79" class="level3 info">
+  <section id="crawl-info-80" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/server-timing/">Latest published version</a></li>
@@ -3050,7 +3089,7 @@
   <li>Date: 02 September 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-79" class="level3 anomalies">
+  <section id="potential-issues-80" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for WebIDL names:
@@ -3060,7 +3099,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-79" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-80" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -3068,7 +3107,7 @@
   </section>
   <section id="server-sent-events" class="level2" data-spec="true" data-ok="true">
   <h2>Server-Sent Events</h2>
-  <section id="crawl-info-80" class="level3 info">
+  <section id="crawl-info-81" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/eventsource/">Latest published version</a></li>
@@ -3076,11 +3115,11 @@
   <li>Date: 03 February 2015</li>
   </ul>
   </section>
-  <section id="potential-issues-80" class="level3 anomalies">
+  <section id="potential-issues-81" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-80" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-81" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3094,7 +3133,7 @@
   </section>
   <section id="service-workers-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
   <h2>Service Workers 1</h2>
-  <section id="crawl-info-81" class="level3 info">
+  <section id="crawl-info-82" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/service-workers-1/">Latest published version</a></li>
@@ -3102,7 +3141,7 @@
   <li>Date: 11 October 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-81" class="level3 anomalies">
+  <section id="potential-issues-82" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>WorkerType</code></li>
@@ -3118,7 +3157,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-81" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-82" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3154,7 +3193,7 @@
   </section>
   <section id="shadow-dom" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Shadow DOM</h2>
-  <section id="crawl-info-82" class="level3 info">
+  <section id="crawl-info-83" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/shadow-dom/">Latest published version</a></li>
@@ -3162,7 +3201,7 @@
   <li>Date: 05 September 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-82" class="level3 anomalies">
+  <section id="potential-issues-83" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
@@ -3186,7 +3225,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-82" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-83" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3195,23 +3234,26 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="static-range" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true">
+  <section id="static-range" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Static Range</h2>
-  <section id="crawl-info-83" class="level3 info">
+  <section id="crawl-info-84" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/staticrange/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 27 April 2017</li>
+  <li>Date: 15 September 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-83" class="level3 anomalies">
+  <section id="potential-issues-84" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Window</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
+  </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-83" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-84" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3222,7 +3264,7 @@
   </section>
   <section id="storage-standard" class="level2" data-spec="true" data-ok="true">
   <h2>Storage Standard</h2>
-  <section id="crawl-info-84" class="level3 info">
+  <section id="crawl-info-85" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://storage.spec.whatwg.org/">Editor's Draft</a></li>
@@ -3230,11 +3272,11 @@
   <li>Date: 2 August 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-84" class="level3 anomalies">
+  <section id="potential-issues-85" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-84" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-85" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -3242,21 +3284,21 @@
   </section>
   <section id="streams-standard" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true">
   <h2>Streams Standard</h2>
-  <section id="crawl-info-85" class="level3 info">
+  <section id="crawl-info-86" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://streams.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 13 September 2017</li>
+  <li>Date: 15 September 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-85" class="level3 anomalies">
+  <section id="potential-issues-86" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>No WebIDL definitions found</li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-85" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-86" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3268,7 +3310,7 @@
   </section>
   <section id="the-permissions-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>The Permissions API</h2>
-  <section id="crawl-info-86" class="level3 info">
+  <section id="crawl-info-87" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/permissions/">Latest published version</a></li>
@@ -3276,7 +3318,7 @@
   <li>Date: 7 April 2015</li>
   </ul>
   </section>
-  <section id="potential-issues-86" class="level3 anomalies">
+  <section id="potential-issues-87" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for WebIDL names:
@@ -3285,7 +3327,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-86" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-87" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3306,7 +3348,7 @@
   </section>
   <section id="the-screen-orientation-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>The Screen Orientation API</h2>
-  <section id="crawl-info-87" class="level3 info">
+  <section id="crawl-info-88" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/screen-orientation/">Latest published version</a></li>
@@ -3314,7 +3356,7 @@
   <li>Date: 31 October 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-87" class="level3 anomalies">
+  <section id="potential-issues-88" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for WebIDL names:
@@ -3327,7 +3369,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-87" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-88" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3338,7 +3380,7 @@
   </section>
   <section id="the-websocket-api" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true">
   <h2>The WebSocket API</h2>
-  <section id="crawl-info-88" class="level3 info">
+  <section id="crawl-info-89" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/websockets/">Latest published version</a></li>
@@ -3346,13 +3388,13 @@
   <li>Date: 20 September 2012</li>
   </ul>
   </section>
-  <section id="potential-issues-88" class="level3 anomalies">
+  <section id="potential-issues-89" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Invalid WebIDL content found</li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-88" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-89" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3367,7 +3409,7 @@
   </section>
   <section id="touch-events" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Touch Events</h2>
-  <section id="crawl-info-89" class="level3 info">
+  <section id="crawl-info-90" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/touch-events/">Latest published version</a></li>
@@ -3375,7 +3417,7 @@
   <li>Date: 10 October 2013</li>
   </ul>
   </section>
-  <section id="potential-issues-89" class="level3 anomalies">
+  <section id="potential-issues-90" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>WindowProxy</code></li>
@@ -3385,7 +3427,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-89" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-90" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3396,7 +3438,7 @@
   </section>
   <section id="ui-events" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>UI Events</h2>
-  <section id="crawl-info-90" class="level3 info">
+  <section id="crawl-info-91" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/uievents/">Latest published version</a></li>
@@ -3404,7 +3446,7 @@
   <li>Date: 04 August 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-90" class="level3 anomalies">
+  <section id="potential-issues-91" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
@@ -3420,7 +3462,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-90" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-91" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3449,38 +3491,11 @@
   </section>
   <section id="ui-events-keyboardevent-code-values" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true">
   <h2>UI Events KeyboardEvent code Values</h2>
-  <section id="crawl-info-91" class="level3 info">
+  <section id="crawl-info-92" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/uievents-code/">Latest published version</a></li>
   <li>Shortname: uievents-code</li>
-  <li>Date: 01 June 2017</li>
-  </ul>
-  </section>
-  <section id="potential-issues-91" class="level3 anomalies">
-  <h3>Potential issue(s)</h3>
-  <ul>
-  <li>No WebIDL definitions found</li>
-  </ul>
-  </section>
-  <section id="known-dependencies-on-this-specification-91" class="level3 dependencies">
-  <h3>Known dependencies on this specification</h3>
-  <p>Normative references to this spec from:</p>
-  <ul>
-  <li><a href="https://www.w3.org/TR/uievents">UI Events</a></li>
-  <li><a href="https://w3c.github.io/uievents-key/">UI Events KeyboardEvent key Values</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
-  </ul>
-  <p>No informative reference to this spec from other specs.</p>
-  </section>
-  </section>
-  <section id="ui-events-keyboardevent-key-values" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true">
-  <h2>UI Events KeyboardEvent key Values</h2>
-  <section id="crawl-info-92" class="level3 info">
-  <h3>Crawl info</h3>
-  <ul>
-  <li>URL: <a href="https://www.w3.org/TR/uievents-key/">Latest published version</a></li>
-  <li>Shortname: uievents-key</li>
   <li>Date: 01 June 2017</li>
   </ul>
   </section>
@@ -3495,6 +3510,33 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://www.w3.org/TR/uievents">UI Events</a></li>
+  <li><a href="https://w3c.github.io/uievents-key/">UI Events KeyboardEvent key Values</a></li>
+  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
+  </ul>
+  <p>No informative reference to this spec from other specs.</p>
+  </section>
+  </section>
+  <section id="ui-events-keyboardevent-key-values" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true">
+  <h2>UI Events KeyboardEvent key Values</h2>
+  <section id="crawl-info-93" class="level3 info">
+  <h3>Crawl info</h3>
+  <ul>
+  <li>URL: <a href="https://www.w3.org/TR/uievents-key/">Latest published version</a></li>
+  <li>Shortname: uievents-key</li>
+  <li>Date: 01 June 2017</li>
+  </ul>
+  </section>
+  <section id="potential-issues-93" class="level3 anomalies">
+  <h3>Potential issue(s)</h3>
+  <ul>
+  <li>No WebIDL definitions found</li>
+  </ul>
+  </section>
+  <section id="known-dependencies-on-this-specification-93" class="level3 dependencies">
+  <h3>Known dependencies on this specification</h3>
+  <p>Normative references to this spec from:</p>
+  <ul>
+  <li><a href="https://www.w3.org/TR/uievents">UI Events</a></li>
   <li><a href="https://w3c.github.io/uievents-code/">UI Events KeyboardEvent code Values</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   </ul>
@@ -3503,7 +3545,7 @@
   </section>
   <section id="url-standard" class="level2" data-spec="true" data-ok="true">
   <h2>URL Standard</h2>
-  <section id="crawl-info-93" class="level3 info">
+  <section id="crawl-info-94" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://url.spec.whatwg.org/">Editor's Draft</a></li>
@@ -3511,11 +3553,11 @@
   <li>Date: 20 July 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-93" class="level3 anomalies">
+  <section id="potential-issues-94" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-93" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-94" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3553,7 +3595,7 @@
   </section>
   <section id="user-interface-security-and-the-visibility-api" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>User Interface Security and the Visibility API</h2>
-  <section id="crawl-info-94" class="level3 info">
+  <section id="crawl-info-95" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/UISecurity/">Latest published version</a></li>
@@ -3561,7 +3603,7 @@
   <li>Date: 7 June 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-94" class="level3 anomalies">
+  <section id="potential-issues-95" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Invalid WebIDL content found</li>
@@ -3577,7 +3619,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-94" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-95" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -3588,7 +3630,7 @@
   </section>
   <section id="user-timing-level-2" class="level2" data-spec="true" data-ok="true">
   <h2>User Timing Level 2</h2>
-  <section id="crawl-info-95" class="level3 info">
+  <section id="crawl-info-96" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/user-timing-2/">Latest published version</a></li>
@@ -3596,11 +3638,11 @@
   <li>Date: 01 November 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-95" class="level3 anomalies">
+  <section id="potential-issues-96" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-95" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-96" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -3612,7 +3654,7 @@
   </section>
   <section id="vibration-api-second-edition" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Vibration API (Second Edition)</h2>
-  <section id="crawl-info-96" class="level3 info">
+  <section id="crawl-info-97" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/vibration/">Latest published version</a></li>
@@ -3620,7 +3662,7 @@
   <li>Date: 18 October 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-96" class="level3 anomalies">
+  <section id="potential-issues-97" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -3629,7 +3671,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-96" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-97" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -3637,7 +3679,7 @@
   </section>
   <section id="w3c-dom-4.1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>W3C DOM 4.1</h2>
-  <section id="crawl-info-97" class="level3 info">
+  <section id="crawl-info-98" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/dom41/">Latest published version</a></li>
@@ -3645,7 +3687,7 @@
   <li>Date: 09 June 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-97" class="level3 anomalies">
+  <section id="potential-issues-98" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for links:
@@ -3661,7 +3703,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-97" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-98" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3684,6 +3726,7 @@
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
+  <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
@@ -3747,7 +3790,7 @@
   </section>
   <section id="wake-lock-api" class="level2" data-spec="true" data-ok="true">
   <h2>Wake Lock API</h2>
-  <section id="crawl-info-98" class="level3 info">
+  <section id="crawl-info-99" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/wake-lock/">Latest published version</a></li>
@@ -3755,11 +3798,11 @@
   <li>Date: 12 September 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-98" class="level3 anomalies">
+  <section id="potential-issues-99" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-98" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-99" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -3767,7 +3810,7 @@
   </section>
   <section id="web-animations" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Web Animations</h2>
-  <section id="crawl-info-99" class="level3 info">
+  <section id="crawl-info-100" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/web-animations-1/">Latest published version</a></li>
@@ -3775,7 +3818,7 @@
   <li>Date: 13 September 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-99" class="level3 anomalies">
+  <section id="potential-issues-100" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for WebIDL names:
@@ -3793,7 +3836,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-99" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-100" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3804,7 +3847,7 @@
   </section>
   <section id="web-app-manifest" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Web App Manifest</h2>
-  <section id="crawl-info-100" class="level3 info">
+  <section id="crawl-info-101" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/appmanifest/">Latest published version</a></li>
@@ -3812,7 +3855,7 @@
   <li>Date: Living Document</li>
   </ul>
   </section>
-  <section id="potential-issues-100" class="level3 anomalies">
+  <section id="potential-issues-101" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -3824,7 +3867,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-100" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-101" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3840,7 +3883,7 @@
   </section>
   <section id="web-audio-api" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Web Audio API</h2>
-  <section id="crawl-info-101" class="level3 info">
+  <section id="crawl-info-102" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/webaudio/">Latest published version</a></li>
@@ -3848,7 +3891,7 @@
   <li>Date: 08 December 2015</li>
   </ul>
   </section>
-  <section id="potential-issues-101" class="level3 anomalies">
+  <section id="potential-issues-102" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Invalid WebIDL content found</li>
@@ -3863,7 +3906,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-101" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-102" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -3875,7 +3918,7 @@
   </section>
   <section id="web-authentication-an-api-for-accessing-public-key-credentials-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Web Authentication: An API for accessing Public Key Credentials Level 1</h2>
-  <section id="crawl-info-102" class="level3 info">
+  <section id="crawl-info-103" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/webauthn/">Latest published version</a></li>
@@ -3883,7 +3926,7 @@
   <li>Date: 11 August 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-102" class="level3 anomalies">
+  <section id="potential-issues-103" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for links:
@@ -3897,7 +3940,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-102" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-103" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -3908,7 +3951,7 @@
   </section>
   <section id="web-cryptography-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Web Cryptography API</h2>
-  <section id="crawl-info-103" class="level3 info">
+  <section id="crawl-info-104" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/WebCryptoAPI/">Latest published version</a></li>
@@ -3916,7 +3959,7 @@
   <li>Date: 26 January 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-103" class="level3 anomalies">
+  <section id="potential-issues-104" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for WebIDL names:
@@ -3925,7 +3968,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-103" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-104" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3941,7 +3984,7 @@
   </section>
   <section id="web-notifications" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Web Notifications</h2>
-  <section id="crawl-info-104" class="level3 info">
+  <section id="crawl-info-105" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/notifications/">Latest published version</a></li>
@@ -3949,7 +3992,7 @@
   <li>Date: 22 October 2015</li>
   </ul>
   </section>
-  <section id="potential-issues-104" class="level3 anomalies">
+  <section id="potential-issues-105" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -3959,7 +4002,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-104" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-105" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3976,7 +4019,7 @@
   </section>
   <section id="web-storage-second-edition" class="level2" data-spec="true" data-ok="true">
   <h2>Web Storage (Second Edition)</h2>
-  <section id="crawl-info-105" class="level3 info">
+  <section id="crawl-info-106" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/webstorage/">Latest published version</a></li>
@@ -3984,11 +4027,11 @@
   <li>Date: 19 April 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-105" class="level3 anomalies">
+  <section id="potential-issues-106" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-105" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-106" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -4004,7 +4047,7 @@
   </section>
   <section id="web-workers" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Web Workers</h2>
-  <section id="crawl-info-106" class="level3 info">
+  <section id="crawl-info-107" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/workers/">Latest published version</a></li>
@@ -4012,7 +4055,7 @@
   <li>Date: 24 September 2015</li>
   </ul>
   </section>
-  <section id="potential-issues-106" class="level3 anomalies">
+  <section id="potential-issues-107" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>ApplicationCache</code>, <code>Transferable</code></li>
@@ -4031,7 +4074,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-106" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-107" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -4109,7 +4152,7 @@
   </section>
   <section id="webdriver" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>WebDriver</h2>
-  <section id="crawl-info-107" class="level3 info">
+  <section id="crawl-info-108" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/webdriver/">Latest published version</a></li>
@@ -4117,7 +4160,7 @@
   <li>Date: 30 March 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-107" class="level3 anomalies">
+  <section id="potential-issues-108" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for links:
@@ -4134,7 +4177,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-107" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-108" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -4142,19 +4185,19 @@
   </section>
   <section id="webgl-2.0-specification" class="level2" data-spec="true" data-ok="true">
   <h2>WebGL 2.0 Specification</h2>
-  <section id="crawl-info-108" class="level3 info">
+  <section id="crawl-info-109" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Fri Sep 15 2017</li>
+  <li>Date: Sat Sep 16 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-108" class="level3 anomalies">
+  <section id="potential-issues-109" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-108" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-109" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -4162,15 +4205,15 @@
   </section>
   <section id="webgl-specification" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>WebGL Specification</h2>
-  <section id="crawl-info-109" class="level3 info">
+  <section id="crawl-info-110" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Fri Sep 15 2017</li>
+  <li>Date: Sat Sep 16 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-109" class="level3 anomalies">
+  <section id="potential-issues-110" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -4179,7 +4222,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-109" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-110" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -4195,7 +4238,7 @@
   </section>
   <section id="webidl-level-1" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-inconsistentRef="true">
   <h2>WebIDL Level 1</h2>
-  <section id="crawl-info-110" class="level3 info">
+  <section id="crawl-info-111" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/WebIDL-1/">Latest published version</a></li>
@@ -4203,7 +4246,7 @@
   <li>Date: 15 December 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-110" class="level3 anomalies">
+  <section id="potential-issues-111" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Invalid WebIDL content found</li>
@@ -4216,7 +4259,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-110" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-111" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -4248,6 +4291,7 @@
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
+  <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
@@ -4271,6 +4315,7 @@
   <li><a href="https://w3c.github.io/selection-api/">Selection API</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><a href="https://w3c.github.io/staticrange/">Static Range</a></li>
   <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
@@ -4317,7 +4362,7 @@
   </section>
   <section id="webrtc-1.0-real-time-communication-between-browsers" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebRTC 1.0: Real-time Communication Between Browsers</h2>
-  <section id="crawl-info-111" class="level3 info">
+  <section id="crawl-info-112" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/webrtc/">Latest published version</a></li>
@@ -4325,7 +4370,7 @@
   <li>Date: 22 August 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-111" class="level3 anomalies">
+  <section id="potential-issues-112" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>RTCError</code></li>
@@ -4341,7 +4386,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-111" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-112" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -4359,7 +4404,7 @@
   </section>
   <section id="webvtt-the-web-video-text-tracks-format" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>WebVTT: The Web Video Text Tracks Format</h2>
-  <section id="crawl-info-112" class="level3 info">
+  <section id="crawl-info-113" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/webvtt1/">Latest published version</a></li>
@@ -4367,7 +4412,7 @@
   <li>Date: 08 August 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-112" class="level3 anomalies">
+  <section id="potential-issues-113" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for links:
@@ -4383,7 +4428,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-112" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-113" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -4394,7 +4439,7 @@
   </section>
   <section id="worklets-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true">
   <h2>Worklets Level 1</h2>
-  <section id="crawl-info-113" class="level3 info">
+  <section id="crawl-info-114" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/worklets-1/">Latest published version</a></li>
@@ -4402,7 +4447,7 @@
   <li>Date: 07 June 2016</li>
   </ul>
   </section>
-  <section id="potential-issues-113" class="level3 anomalies">
+  <section id="potential-issues-114" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>Console</code></li>
@@ -4412,7 +4457,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-113" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-114" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -4427,7 +4472,7 @@
   </section>
   <section id="xmlhttprequest-standard" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
   <h2>XMLHttpRequest Standard</h2>
-  <section id="crawl-info-114" class="level3 info">
+  <section id="crawl-info-115" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://xhr.spec.whatwg.org/">Editor's Draft</a></li>
@@ -4435,7 +4480,7 @@
   <li>Date: 8 September 2017</li>
   </ul>
   </section>
-  <section id="potential-issues-114" class="level3 anomalies">
+  <section id="potential-issues-115" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>WebIDL names also defined elsewhere:
@@ -4449,7 +4494,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-114" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-115" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
