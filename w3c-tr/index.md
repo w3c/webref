@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 18, 2017
+% September 19, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -814,7 +814,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML 5.2](https://w3c.github.io/html/)
@@ -835,14 +835,13 @@ No informative reference to this spec from other specs.
 
 - URL: [Latest published version](https://www.w3.org/TR/encrypted-media/)
 - Shortname: encrypted-media
-- Date: 16 March 2017
+- Date: 18 September 2017
 
 ### Potential issue(s) {.anomalies}
 
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
-     * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/), related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
-     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://www.w3.org/TR/2016/CR-encoding-20161215/`](https://www.w3.org/TR/2016/CR-encoding-20161215/)
+     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1187,7 +1186,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -1743,7 +1742,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 
 
 ## MediaStream Recording {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1824,7 +1823,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -1957,7 +1956,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Latest published version](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
-- Date: 05 September 2017
+- Date: 18 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2436,7 +2435,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 
 
 ## Selection API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2907,7 +2906,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://url.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 20 July 2017
+- Date: 18 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3049,7 +3048,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -3451,7 +3450,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Mon Sep 18 2017
+- Date: Tue Sep 19 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3470,7 +3469,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Mon Sep 18 2017
+- Date: Tue Sep 19 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3528,7 +3527,7 @@ Normative references to this spec from:
 - [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://w3c.github.io/gamepad/)
@@ -3591,7 +3590,6 @@ Informative references to this spec from:
 
 - [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
 - [Beacon](https://w3c.github.io/beacon/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Input Events Level 2](https://rawgit.com/w3c/input-events/v1/index.html)

@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% September 18, 2017
+% September 19, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
@@ -143,7 +143,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/clipboard-apis/)
 - Shortname: clipboard-apis
-- Date: 15 September 2017
+- Date: 18 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -713,7 +713,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -794,7 +794,7 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Standard](https://html.spec.whatwg.org/)
@@ -812,7 +812,7 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Editor's Draft](https://w3c.github.io/encrypted-media/)
+- URL: [Editor's Draft](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - Shortname: encrypted-media
 - Date: 14 September 2017
 
@@ -826,10 +826,7 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-Informative references to this spec from:
-
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
-- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+No informative reference to this spec from other specs.
 
 
 ## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -963,7 +960,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 6 September 2017
+- Date: 15 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1131,7 +1128,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 16 September 2017
+- Date: 18 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1168,7 +1165,7 @@ Normative references to this spec from:
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -1253,7 +1250,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
@@ -1330,7 +1327,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 18 September 2017
+- Date: 19 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1548,7 +1545,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 
 
@@ -1644,7 +1641,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Preload](https://w3c.github.io/preload/)
@@ -1803,7 +1800,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-handler/)
 - Shortname: payment-handler
-- Date: 05 September 2017
+- Date: 18 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1827,7 +1824,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 15 September 2017
+- Date: 19 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2275,7 +2272,6 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Permissions](https://w3c.github.io/permissions/)
@@ -2288,7 +2284,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Generic Sensor API](https://w3c.github.io/sensors/)
 
 
 ## Selection API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2637,7 +2634,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://url.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 20 July 2017
+- Date: 18 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2945,7 +2942,7 @@ Normative references to this spec from:
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -3059,7 +3056,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Mon Sep 18 2017
+- Date: Tue Sep 19 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3078,7 +3075,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Mon Sep 18 2017
+- Date: Tue Sep 19 2017
 
 ### Potential issue(s) {.anomalies}
 
