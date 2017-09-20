@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 19, 2017
+% September 20, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
@@ -584,7 +584,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
-- Date: 8 September 2017
+- Date: 19 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -909,7 +909,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 15 September 2017
+- Date: 18 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1057,7 +1057,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/html/)
 - Shortname: html52
-- Date: 15 September 2017
+- Date: 19 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1489,7 +1489,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 19 September 2017
+- Date: 20 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1937,7 +1937,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-handler/)
 - Shortname: payment-handler
-- Date: 18 September 2017
+- Date: 19 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2115,7 +2115,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/presentation-api/)
 - Shortname: presentation-api
-- Date: 15 September 2017
+- Date: 19 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2239,7 +2239,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/remote-playback/)
 - Shortname: remote-playback
-- Date: 06 September 2017
+- Date: 19 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2701,7 +2701,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 15 September 2017
+- Date: 19 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3132,7 +3132,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/web-animations/)
 - Shortname: web-animations-1
-- Date: 25 August 2017
+- Date: 20 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3262,7 +3262,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://heycam.github.io/webidl/)
 - Shortname: WebIDL-1
-- Date: 12 September 2017
+- Date: 19 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3589,7 +3589,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Sep 19 2017
+- Date: Wed Sep 20 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3608,7 +3608,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Sep 19 2017
+- Date: Wed Sep 20 2017
 
 ### Potential issue(s) {.anomalies}
 
