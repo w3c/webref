@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 20, 2017
+% September 21, 2017
 
 116 specifications were crawled in this report.
 
@@ -102,6 +102,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 
 ## List of WebIDL names not defined in the specifications crawled
 
+- `AbortSignal` used in [Fetch Standard](https://fetch.spec.whatwg.org/)
 - `ApplicationCache` used in [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - `Console` used in [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - `DOMError` used in [File API](https://w3c.github.io/FileAPI/)
@@ -125,7 +126,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `WindowProxy` used in [HTML 5.2](https://w3c.github.io/html/), [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging), [Touch Events](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
 - `WorkerType` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
-=> 22 WebIDL names found
+=> 23 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -574,7 +575,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Web Animations](https://w3c.github.io/web-animations/) links to:
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170907/) links to:
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170920/) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/) but related reference "SCREEN-ORIENTATION" uses URL [`https://www.w3.org/TR/screen-orientation/`](https://www.w3.org/TR/screen-orientation/)
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
