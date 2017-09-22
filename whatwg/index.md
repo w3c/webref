@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% September 21, 2017
+% September 22, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
@@ -8,7 +8,7 @@
 
 - URL: [Editor's Draft](https://w3c.github.io/accelerometer/)
 - Shortname: accelerometer
-- Date: 6 September 2017
+- Date: 21 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -32,7 +32,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/ambient-light/)
 - Shortname: ambient-light
-- Date: 6 September 2017
+- Date: 21 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -54,7 +54,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
 - Shortname: audio-output
-- Date: 14 September 2017
+- Date: 21 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1022,7 +1022,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/gyroscope/)
 - Shortname: gyroscope
-- Date: 6 September 2017
+- Date: 21 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1110,7 +1110,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 18 September 2017
+- Date: 21 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1311,7 +1311,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 21 September 2017
+- Date: 22 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1702,7 +1702,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
 - Shortname: orientation-sensor
-- Date: 6 September 2017
+- Date: 21 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1811,7 +1811,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
 - Shortname: payment-method-basic-card
-- Date: 20 September 2017
+- Date: 21 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1878,16 +1878,17 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
-## Permissions {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/permissions/)
 - Shortname: permissions
-- Date: 20 September 2017
+- Date: 21 September 2017
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `PermissionName`
 - Missing references for links: 
      * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
@@ -2016,7 +2017,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/proximity/)
 - Shortname: proximity
-- Date: 6 September 2017
+- Date: 21 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2480,7 +2481,9 @@ This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
 
 No informative reference to this spec from other specs.
 
@@ -2843,7 +2846,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
 - Shortname: webaudio
-- Date: 20 September 2017
+- Date: 21 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3073,7 +3076,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Sep 21 2017
+- Date: Fri Sep 22 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3092,7 +3095,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Sep 21 2017
+- Date: Fri Sep 22 2017
 
 ### Potential issue(s) {.anomalies}
 
