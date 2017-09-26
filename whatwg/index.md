@@ -1,19 +1,22 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% September 25, 2017
+% September 26, 2017
 
-## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/accelerometer/)
 - Shortname: accelerometer
-- Date: 21 September 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
      * `Window` defined in [HTML Standard](https://html.spec.whatwg.org/)
+- Missing references for links: 
+     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
+     * [`https://w3c.github.io/sensors/usecases.html`](https://w3c.github.io/sensors/usecases.html)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -32,7 +35,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/ambient-light/)
 - Shortname: ambient-light
-- Date: 21 September 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -246,7 +249,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
 - Shortname: requestidlecallback
-- Date: 15 August 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -858,7 +861,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/FileAPI/)
 - Shortname: FileAPI
-- Date: 11 May 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -941,7 +944,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 20 September 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1311,7 +1314,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 25 September 2017
+- Date: 26 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1382,7 +1385,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/magnetometer/)
 - Shortname: magnetometer
-- Date: 6 September 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1642,17 +1645,16 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-inconsistentRef=true}
+## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/navigation-timing/)
 - Shortname: navigation-timing-2
-- Date: 29 June 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Obsolete WebIDL constructs found
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/), related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
@@ -1834,7 +1836,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 19 September 2017
+- Date: 26 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1884,7 +1886,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/permissions/)
 - Shortname: permissions
-- Date: 24 September 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2017,7 +2019,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/proximity/)
 - Shortname: proximity
-- Date: 21 September 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2494,7 +2496,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 22 September 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2846,7 +2848,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
 - Shortname: webaudio
-- Date: 22 September 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2931,7 +2933,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://heycam.github.io/webidl/)
 - Shortname: WebIDL-1
-- Date: 22 September 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3076,7 +3078,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Mon Sep 25 2017
+- Date: Tue Sep 26 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3095,7 +3097,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Mon Sep 25 2017
+- Date: Tue Sep 26 2017
 
 ### Potential issue(s) {.anomalies}
 

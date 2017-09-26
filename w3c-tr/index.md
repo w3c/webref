@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 25, 2017
+% September 26, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -52,7 +52,9 @@ Normative references to this spec from:
 
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
 
 
 ## Ambient Light Sensor {data-spec=true data-ok=true}
@@ -71,7 +73,9 @@ This specification looks good!
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
 
 
 ## Audio Output Devices API {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -91,7 +95,9 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
 
 
 ## Basic Card Payment {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
@@ -183,7 +189,9 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
 
 
 ## Compositing and Blending Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1024,8 +1032,8 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [The Permissions API](https://w3c.github.io/permissions/)
 
 
 ## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1079,7 +1087,9 @@ Normative references to this spec from:
 
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
 
 
 ## High Resolution Time Level 3 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -1211,6 +1221,7 @@ Normative references to this spec from:
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -1227,7 +1238,6 @@ Normative references to this spec from:
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Permissions API](https://w3c.github.io/permissions/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Touch Events](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
 - [UI Events](https://www.w3.org/TR/uievents)
@@ -1320,6 +1330,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
@@ -1328,7 +1339,6 @@ Normative references to this spec from:
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Permissions API](https://w3c.github.io/permissions/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -1413,6 +1423,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
@@ -1423,7 +1434,6 @@ Normative references to this spec from:
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Permissions API](https://w3c.github.io/permissions/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -1603,7 +1613,9 @@ Normative references to this spec from:
 
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
 
 
 ## Media Capture and Streams {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1651,6 +1663,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - ["MediaStream Image Capture"](https://w3c.github.io/mediacapture-image/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
@@ -1835,17 +1848,16 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-inconsistentRef=true}
+## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Latest published version](https://www.w3.org/TR/navigation-timing-2/)
 - Shortname: navigation-timing-2
-- Date: 29 June 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Obsolete WebIDL constructs found
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/), related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
@@ -2028,6 +2040,45 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
+## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Crawl info {.info}
+
+- URL: [Latest published version](https://www.w3.org/TR/permissions/)
+- Shortname: permissions
+- Date: 25 September 2017
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `PermissionName`
+- Missing references for links: 
+     * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
+     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Accelerometer](https://w3c.github.io/accelerometer/)
+- [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Gyroscope](https://w3c.github.io/gyroscope/)
+- [Magnetometer](https://w3c.github.io/magnetometer/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Permissions](https://w3c.github.io/permissions/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Proximity Sensor](https://w3c.github.io/proximity/)
+- [Storage Standard](https://storage.spec.whatwg.org/)
+
+No informative reference to this spec from other specs.
+
+
 ## Pointer Events - Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true}
 
 ### Crawl info {.info}
@@ -2200,7 +2251,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [The Permissions API](https://w3c.github.io/permissions/)
+- [Permissions](https://w3c.github.io/permissions/)
 
 
 ## Referrer Policy {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
@@ -2427,6 +2478,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
@@ -2680,7 +2732,9 @@ This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
 
 No informative reference to this spec from other specs.
 
@@ -2691,7 +2745,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 22 September 2017
+- Date: 25 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2703,38 +2757,6 @@ Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
-
-No informative reference to this spec from other specs.
-
-
-## The Permissions API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
-
-### Crawl info {.info}
-
-- URL: [Latest published version](https://www.w3.org/TR/permissions/)
-- Shortname: permissions
-- Date: 7 April 2015
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Accelerometer](https://w3c.github.io/accelerometer/)
-- [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Gyroscope](https://w3c.github.io/gyroscope/)
-- [Magnetometer](https://w3c.github.io/magnetometer/)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Proximity Sensor](https://w3c.github.io/proximity/)
-- [Storage Standard](https://storage.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -2834,6 +2856,7 @@ Normative references to this spec from:
 
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Input Events Level 2](https://rawgit.com/w3c/input-events/v1/index.html)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -3062,6 +3085,7 @@ Normative references to this spec from:
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Preload](https://w3c.github.io/preload/)
@@ -3106,7 +3130,6 @@ Although they do not, the following specs should also normatively reference this
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
-- [The Permissions API](https://w3c.github.io/permissions/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
@@ -3293,9 +3316,9 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [The Permissions API](https://w3c.github.io/permissions/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 
 
@@ -3370,6 +3393,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
@@ -3380,7 +3404,6 @@ Normative references to this spec from:
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Permissions API](https://w3c.github.io/permissions/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -3450,7 +3473,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Mon Sep 25 2017
+- Date: Tue Sep 26 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3469,7 +3492,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Mon Sep 25 2017
+- Date: Tue Sep 26 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3552,6 +3575,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)

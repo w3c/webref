@@ -80,11 +80,10 @@
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a></li>
   </ul>
-  <p>=&gt; 7 specifications found</p>
+  <p>=&gt; 6 specifications found</p>
   <p>A typical example is the use of <code>[]</code> instead of <code>FrozenArray</code>.</p>
   </section>
   <section id="specifications-that-use-webidl-but-do-not-reference-the-webidl-spec" class="level2">
@@ -127,6 +126,7 @@
   <li><code>DOMRectReadOnly</code> used in <a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a>, <a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><code>DocumentOrShadowRoot</code> used in <a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a>, <a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a>, <a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><code>OverconstrainedError</code> used in <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  <li><code>PermissionName</code> used in <a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><code>RTCError</code> used in <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>ReadableStream</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><code>SensorReading</code> used in <a href="https://w3c.github.io/proximity/">Proximity Sensor</a></li>
@@ -136,7 +136,7 @@
   <li><code>WindowProxy</code> used in <a href="https://w3c.github.io/html/">HTML 5.2</a>, <a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a>, <a href="http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html">Touch Events</a></li>
   <li><code>WorkerType</code> used in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   </ul>
-  <p>=&gt; 23 WebIDL names found</p>
+  <p>=&gt; 24 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -239,7 +239,6 @@
   <li><code>DocumentFragment</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/staticrange/">Static Range</a> uses <code>Window</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><a href="https://w3c.github.io/permissions/">The Permissions API</a> uses <code>EventTarget</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a> uses <code>EventTarget</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html">Touch Events</a> uses <code>UIEvent</code> but does not reference <a href="https://www.w3.org/TR/uievents">UI Events</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 3</a></li>
@@ -251,7 +250,7 @@
   <li><code>EventInit</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 57 missing references for IDL definitions found in 27 specifications</p>
+  <p>=&gt; 56 missing references for IDL definitions found in 26 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -414,6 +413,11 @@
   <li><a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but does not list it in its references</li>
   </ul></li>
+  <li><a href="https://w3c.github.io/permissions/">Permissions</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/manifest/"><code>https://w3c.github.io/manifest/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a> links to <a href="https://www.w3.org/TR/touch-events/"><code>https://www.w3.org/TR/touch-events/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/preload/">Preload</a> links to <a href="https://w3c.github.io/webappsec/specs/content-security-policy/"><code>https://w3c.github.io/webappsec/specs/content-security-policy/</code></a> but does not list it in its references</li>
@@ -498,7 +502,7 @@
   </ul></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 166 missing references for links found in 54 specifications</p>
+  <p>=&gt; 168 missing references for links found in 55 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -607,6 +611,12 @@
   <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM4&quot; uses URL <a href="https://www.w3.org/TR/2015/REC-dom-20151119/"><code>https://www.w3.org/TR/2015/REC-dom-20151119/</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/paint-timing/">Paint Timing 1</a> links to <a href="https://w3c.github.io/performance-timeline/"><code>https://w3c.github.io/performance-timeline/</code></a> but related reference &quot;PERFORMANCE-TIMELINE-2&quot; uses URL <a href="https://www.w3.org/TR/performance-timeline-2/"><code>https://www.w3.org/TR/performance-timeline-2/</code></a></li>
+  <li><a href="https://w3c.github.io/permissions/">Permissions</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
+  <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a> links to <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but related reference &quot;DOM4&quot; uses URL <a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a> links to:
   <ul>
@@ -749,7 +759,7 @@
   <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM-20151119&quot; uses URL <a href="https://www.w3.org/TR/2015/REC-dom-20151119/"><code>https://www.w3.org/TR/2015/REC-dom-20151119/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 153 inconsistent references for links found in 60 specifications</p>
+  <p>=&gt; 156 inconsistent references for links found in 61 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>

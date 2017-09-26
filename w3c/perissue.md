@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 25, 2017
+% September 26, 2017
 
 116 specifications were crawled in this report.
 
@@ -60,9 +60,8 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 - [HTML 5.2](https://w3c.github.io/html/)
 - [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 
-=> 3 specifications found
+=> 2 specifications found
 
 A typical example is the use of `[]` instead of `FrozenArray`.
 
@@ -187,6 +186,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## Missing references based on document links
 
+- [Accelerometer](https://w3c.github.io/accelerometer/) links to:
+    * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
+    * [`https://w3c.github.io/sensors/usecases.html`](https://w3c.github.io/sensors/usecases.html) but does not list it in its references
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
 - [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/) links to [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but does not list it in its references
@@ -307,7 +309,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 104 missing references for links found in 39 specifications
+=> 106 missing references for links found in 40 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
