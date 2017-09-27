@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 26, 2017
+% September 27, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -892,7 +892,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 25 September 2017
+- Date: 26 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1041,7 +1041,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/html/)
 - Shortname: html52
-- Date: 20 September 2017
+- Date: 26 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1449,7 +1449,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/IndexedDB/)
 - Shortname: IndexedDB-2
-- Date: 22 June 2017
+- Date: 26 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1477,7 +1477,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 26 September 2017
+- Date: 27 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2719,7 +2719,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 25 September 2017
+- Date: 26 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3461,7 +3461,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
 - Shortname: workers
-- Date: 22 September 2017
+- Date: 26 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3588,7 +3588,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Shortname: webdriver
-- Date: 15 September 2017
+- Date: 26 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3614,7 +3614,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Sep 26 2017
+- Date: Wed Sep 27 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3633,7 +3633,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Sep 26 2017
+- Date: Wed Sep 27 2017
 
 ### Potential issue(s) {.anomalies}
 
