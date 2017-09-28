@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 27, 2017
+% September 28, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -945,7 +945,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fullscreen.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 31 August 2017
+- Date: 27 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3473,7 +3473,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Wed Sep 27 2017
+- Date: Thu Sep 28 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3492,7 +3492,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Wed Sep 27 2017
+- Date: Thu Sep 28 2017
 
 ### Potential issue(s) {.anomalies}
 
