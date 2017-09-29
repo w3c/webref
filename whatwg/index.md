@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% September 28, 2017
+% September 29, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -1113,7 +1113,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 27 September 2017
+- Date: 28 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1313,7 +1313,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 28 September 2017
+- Date: 29 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2496,7 +2496,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 26 September 2017
+- Date: 28 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2848,7 +2848,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
 - Shortname: webaudio
-- Date: 27 September 2017
+- Date: 28 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3078,7 +3078,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Sep 28 2017
+- Date: Fri Sep 29 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3097,7 +3097,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Sep 28 2017
+- Date: Fri Sep 29 2017
 
 ### Potential issue(s) {.anomalies}
 
