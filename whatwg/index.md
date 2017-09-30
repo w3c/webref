@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% September 29, 2017
+% September 30, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -123,14 +123,14 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/clipboard-apis/)
 - Shortname: clipboard-apis
-- Date: 18 September 2017
+- Date: 29 September 2017
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -145,7 +145,7 @@ Informative references to this spec from:
 
 ### Crawl info {.info}
 
-- URL: [Editor's Draft](http://dev.w3.org/fxtf/compositing-1/)
+- URL: [Editor's Draft](https://drafts.fxtf.org/compositing-1/)
 - Shortname: compositing-1
 - Date: 28 October 2015
 
@@ -351,7 +351,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://drafts.csswg.org/cssom/)
 - Shortname: cssom-1
-- Date: 15 September 2017
+- Date: 29 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -482,7 +482,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
-- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -532,15 +532,17 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/)
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
+- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -606,7 +608,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
-- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 
@@ -992,7 +994,7 @@ Informative references to this spec from:
 
 ### Crawl info {.info}
 
-- URL: [Editor's Draft](http://dev.w3.org/fxtf/geometry/)
+- URL: [Editor's Draft](https://drafts.fxtf.org/geometry/)
 - Shortname: geometry-1
 - Date: 14 September 2017
 
@@ -1133,7 +1135,7 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/)
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
@@ -1155,7 +1157,7 @@ Normative references to this spec from:
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
-- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
@@ -1228,6 +1230,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Battery Status API](https://w3c.github.io/battery/)
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
@@ -1313,7 +1316,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 29 September 2017
+- Date: 30 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2113,7 +2116,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/resource-timing/)
 - Shortname: resource-timing-2
-- Date: 27 September 2017
+- Date: 29 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2147,12 +2150,12 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Type`
 - Missing references for WebIDL names: 
-     * `DOMRect` defined in [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-     * `DOMMatrix` defined in [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-     * `DOMPoint` defined in [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-     * `DOMRectReadOnly` defined in [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-     * `DOMPointReadOnly` defined in [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
-     * `DOMMatrixReadOnly` defined in [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+     * `DOMRect` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+     * `DOMMatrix` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+     * `DOMPoint` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+     * `DOMRectReadOnly` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+     * `DOMPointReadOnly` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+     * `DOMMatrixReadOnly` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/)
      * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/)
@@ -2225,7 +2228,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/)
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
@@ -2239,7 +2242,7 @@ Informative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
@@ -2496,7 +2499,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 28 September 2017
+- Date: 29 September 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2970,7 +2973,7 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
@@ -3078,7 +3081,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Fri Sep 29 2017
+- Date: Sat Sep 30 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3097,7 +3100,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Fri Sep 29 2017
+- Date: Sat Sep 30 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3157,7 +3160,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webvtt/)
 - Shortname: webvtt1
-- Date: 22 August 2017
+- Date: 29 September 2017
 
 ### Potential issue(s) {.anomalies}
 

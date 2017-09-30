@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 29, 2017
+% September 30, 2017
 
 116 specifications were crawled in this report.
 
@@ -28,7 +28,7 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## Specifications without WebIDL definitions
 
-- [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/)
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values/)
@@ -49,7 +49,7 @@ Not all specifications define IDL content, presence in this list may be complete
 ## List of specifications with invalid WebIDL content
 
 - [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
-- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
@@ -79,7 +79,6 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
 - [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -95,7 +94,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [UI Events](https://www.w3.org/TR/uievents)
 
-=> 16 specifications found
+=> 15 specifications found
 
 
 
@@ -223,7 +222,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 ## Missing references based on document links
 
 - [Beacon](https://w3c.github.io/beacon/) links to [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/) but does not list it in its references
-- [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) links to:
     * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but does not list it in its references
     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/) but does not list it in its references
@@ -296,7 +296,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html) links to [`https://www.w3.org/TR/2016/REC-geolocation-API-20161108/`](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/) but does not list it in its references
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/) links to [`https://domparsing.spec.whatwg.org/`](https://domparsing.spec.whatwg.org/) but does not list it in its references
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/) links to [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/) but does not list it in its references
-- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/) links to:
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/) links to:
     * [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/) but does not list it in its references
     * [`https://www.w3.org/TR/css-transforms-1/`](https://www.w3.org/TR/css-transforms-1/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but does not list it in its references
@@ -417,7 +417,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 168 missing references for links found in 55 specifications
+=> 169 missing references for links found in 56 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -431,8 +431,8 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [Beacon](https://w3c.github.io/beacon/) links to [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
-- [Compositing and Blending Level 1](http://dev.w3.org/fxtf/compositing-1/) links to:
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/) links to:
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but related reference "CSS3BG" uses URL [`http://www.w3.org/TR/2012/CR-css3-background-20120724/`](http://www.w3.org/TR/2012/CR-css3-background-20120724/)
     * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/) but related reference "SVG11" uses URL [`http://www.w3.org/TR/SVG11/`](http://www.w3.org/TR/SVG11/)
     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but related reference "CSS3COLOR" uses URL [`http://www.w3.org/TR/2011/REC-css3-color-20110607`](http://www.w3.org/TR/2011/REC-css3-color-20110607)
@@ -452,7 +452,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 - [Generic Sensor API](https://w3c.github.io/sensors/) links to [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
-- [Geometry Interfaces Module Level 1](http://dev.w3.org/fxtf/geometry/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "html5" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "html5" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
 - [HTML 5.2](https://w3c.github.io/html/) links to:
     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
