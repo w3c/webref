@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">September 29, 2017</h2>
+            <h2 class="date">September 30, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -247,23 +247,26 @@
   </ul>
   </section>
   </section>
-  <section id="clipboard-api-and-events" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-inconsistentRef="true">
+  <section id="clipboard-api-and-events" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Clipboard API and events</h2>
   <section id="crawl-info-7" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://www.w3.org/TR/clipboard-apis/">Latest published version</a></li>
   <li>Shortname: clipboard-apis</li>
-  <li>Date: 13 December 2016</li>
+  <li>Date: 29 September 2017</li>
   </ul>
   </section>
   <section id="potential-issues-7" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a></li>
+  </ul></li>
   <li>Inconsistent references for links:
   <ul>
-  <li><a href="https://www.w3.org/TR/html/"><code>https://www.w3.org/TR/html/</code></a>, related reference &quot;HTML5&quot; uses URL <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
+  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -1167,6 +1170,7 @@
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-image/">&quot;MediaStream Image Capture&quot;</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
+  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
@@ -1501,7 +1505,7 @@
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://www.w3.org/TR/2016/REC-geolocation-API-20161108/">Geolocation API Specification 2nd Edition</a></li>
-  <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 3</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
@@ -1572,6 +1576,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
@@ -1618,7 +1623,7 @@
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-image/">&quot;MediaStream Image Capture&quot;</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
-  <li><a href="http://dev.w3.org/fxtf/compositing-1/">Compositing and Blending Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
@@ -1663,7 +1668,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
-  <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
@@ -2959,7 +2964,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="http://dev.w3.org/fxtf/compositing-1/">Compositing and Blending Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
@@ -2970,10 +2975,11 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
-  <li><a href="http://dev.w3.org/fxtf/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a></li>
   <li><a href="http://www.w3.org/TR/2011/REC-css3-selectors-20110929/">Selectors Level 3</a></li>
   </ul>
@@ -3357,7 +3363,7 @@
   <ul>
   <li>URL: <a href="https://streams.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 28 September 2017</li>
+  <li>Date: 29 September 2017</li>
   </ul>
   </section>
   <section id="potential-issues-87" class="level3 anomalies">
@@ -4221,7 +4227,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Fri Sep 29 2017</li>
+  <li>Date: Sat Sep 30 2017</li>
   </ul>
   </section>
   <section id="potential-issues-109" class="level3 anomalies">
@@ -4241,7 +4247,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Fri Sep 29 2017</li>
+  <li>Date: Sat Sep 30 2017</li>
   </ul>
   </section>
   <section id="potential-issues-110" class="level3 anomalies">
@@ -4300,6 +4306,7 @@
   <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
+  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
