@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 30, 2017
+% October 03, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -230,7 +230,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://console.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 13 September 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -994,7 +994,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Latest published version](https://www.w3.org/TR/generic-sensor/)
 - Shortname: generic-sensor
-- Date: 9 August 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1012,7 +1012,9 @@ Normative references to this spec from:
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Generic Sensor API](https://w3c.github.io/sensors/)
 
 
 ## Geolocation API Specification 2nd Edition {data-spec=true data-ok=true}
@@ -2640,7 +2642,6 @@ Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
@@ -2749,7 +2750,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 29 September 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3477,7 +3478,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Sat Sep 30 2017
+- Date: Tue Oct 03 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3496,7 +3497,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Sat Sep 30 2017
+- Date: Tue Oct 03 2017
 
 ### Potential issue(s) {.anomalies}
 

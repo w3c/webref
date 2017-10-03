@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 30, 2017
+% October 03, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -100,7 +100,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/beacon/)
 - Shortname: beacon
-- Date: 11 September 2017
+- Date: 02 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -175,7 +175,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://console.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 13 September 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -707,7 +707,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://encoding.spec.whatwg.org/)
 - Shortname: encoding
-- Date: 17 August 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -789,6 +789,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -894,7 +895,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 27 September 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -912,7 +913,9 @@ Normative references to this spec from:
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Generic Sensor API](https://w3c.github.io/sensors/)
 
 
 ## Geolocation API Specification 2nd Edition {data-spec=true data-ok=true}
@@ -1043,7 +1046,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/html/)
 - Shortname: html52
-- Date: 28 September 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1198,7 +1201,6 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 ## HTML Canvas 2D Context {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
@@ -1299,7 +1301,6 @@ Informative references to this spec from:
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 ## HTML Media Capture {data-spec=true data-ok=true}
@@ -1418,7 +1419,6 @@ Informative references to this spec from:
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 ## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-redefinedIdlNames=true data-inconsistentRef=true}
@@ -1480,7 +1480,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 30 September 2017
+- Date: 03 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2450,6 +2450,7 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
@@ -2464,7 +2465,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 
 
 ## Selection API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2722,7 +2722,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 29 September 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3402,7 +3402,6 @@ Informative references to this spec from:
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 ## Web Notifications {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -3464,7 +3463,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
 - Shortname: workers
-- Date: 28 September 2017
+- Date: 3 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3582,7 +3581,6 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 ## WebDriver {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3617,7 +3615,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Sat Sep 30 2017
+- Date: Tue Oct 03 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3636,7 +3634,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Sat Sep 30 2017
+- Date: Tue Oct 03 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3656,13 +3654,13 @@ Informative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
-## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true}
+## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
 - Shortname: webrtc
-- Date: 22 August 2017
+- Date: 02 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3673,6 +3671,8 @@ Informative references to this spec from:
      * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
      * `Event` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
      * `EventInit` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/), related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
 ### Known dependencies on this specification {.dependencies}
 

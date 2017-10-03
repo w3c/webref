@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% September 30, 2017
+% October 03, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -100,7 +100,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/beacon/)
 - Shortname: beacon
-- Date: 11 September 2017
+- Date: 02 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -175,7 +175,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://console.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 13 September 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -664,16 +664,18 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 
 
-## DOM Standard {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## DOM Standard {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://dom.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 27 September 2017
+- Date: 30 September 2017
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for WebIDL names: 
+     * `AudioWorklet` defined in [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
      * [`https://w3c.github.io/touch-events/`](https://w3c.github.io/touch-events/)
@@ -765,7 +767,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://encoding.spec.whatwg.org/)
 - Shortname: encoding
-- Date: 17 August 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -847,6 +849,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -946,7 +949,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 27 September 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -964,7 +967,9 @@ Normative references to this spec from:
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Generic Sensor API](https://w3c.github.io/sensors/)
 
 
 ## Geolocation API Specification 2nd Edition {data-spec=true data-ok=true}
@@ -1115,7 +1120,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 28 September 2017
+- Date: 3 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1125,6 +1130,7 @@ No informative reference to this spec from other specs.
     * `Worker` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Missing references for links: 
      * [`https://spec.whatwg.org/`](https://spec.whatwg.org/)
+     * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/)
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -1316,7 +1322,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 30 September 2017
+- Date: 03 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2288,6 +2294,7 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
@@ -2302,7 +2309,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 
 
 ## Selection API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2499,7 +2505,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 29 September 2017
+- Date: 2 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2871,6 +2877,7 @@ No normative reference to this spec from other specs.
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Console Standard](https://console.spec.whatwg.org/)
+- [DOM Standard](https://dom.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -3046,7 +3053,6 @@ Informative references to this spec from:
 - [Selection API](https://w3c.github.io/selection-api/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 ## WebDriver {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3081,7 +3087,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Sat Sep 30 2017
+- Date: Tue Oct 03 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3100,7 +3106,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Sat Sep 30 2017
+- Date: Tue Oct 03 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3120,13 +3126,13 @@ Informative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
-## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true}
+## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
 - Shortname: webrtc
-- Date: 22 August 2017
+- Date: 02 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3137,6 +3143,8 @@ Informative references to this spec from:
      * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
      * `Event` defined in [DOM Standard](https://dom.spec.whatwg.org/)
      * `EventInit` defined in [DOM Standard](https://dom.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/), related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
 ### Known dependencies on this specification {.dependencies}
 
