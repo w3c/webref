@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 03, 2017
+% October 04, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -78,18 +78,17 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Audio Output Devices API {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Audio Output Devices API {data-spec=true data-ok=true}
 
 ### Crawl info {.info}
 
 - URL: [Latest published version](https://www.w3.org/TR/audio-output/)
 - Shortname: audio-output
-- Date: 15 December 2016
+- Date: 03 October 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1623,27 +1622,21 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Media Capture and Streams {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## Media Capture and Streams {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Latest published version](https://www.w3.org/TR/mediacapture-streams/)
 - Shortname: mediacapture-streams
-- Date: 19 May 2016
+- Date: 3 October 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Obsolete WebIDL constructs found
 - Unknown WebIDL names used: `OverconstrainedError`
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `EventInit` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
      * `Event` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-- Missing references for links: 
-     * [`https://w3c.github.io/html/webappapis.html`](https://w3c.github.io/html/webappapis.html)
-     * [`https://w3c.github.io/html/infrastructure.html`](https://w3c.github.io/html/infrastructure.html)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/2015/WD-html51-20150506/`](https://www.w3.org/TR/2015/WD-html51-20150506/), related reference "HTML5" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
+     * `EventInit` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1712,7 +1705,9 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 
 
 ## Media Session Standard {data-spec=true data-ok=true}
@@ -2750,7 +2745,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 2 October 2017
+- Date: 3 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3478,7 +3473,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Oct 03 2017
+- Date: Wed Oct 04 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3497,7 +3492,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Oct 03 2017
+- Date: Wed Oct 04 2017
 
 ### Potential issue(s) {.anomalies}
 
