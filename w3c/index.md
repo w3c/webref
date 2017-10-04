@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 03, 2017
+% October 04, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -895,7 +895,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 2 October 2017
+- Date: 3 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -969,7 +969,9 @@ Although they do not, the following specs should also normatively reference this
 
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## Gyroscope {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -1480,7 +1482,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 03 October 2017
+- Date: 04 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1977,7 +1979,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Shortname: payment-request
-- Date: 26 September 2017
+- Date: 04 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2000,7 +2002,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/performance-timeline/)
 - Shortname: performance-timeline-2
-- Date: 21 July 2017
+- Date: 03 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2722,7 +2724,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 2 October 2017
+- Date: 3 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2790,7 +2792,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
 - Shortname: touch-events
-- Date: 22 September 2017
+- Date: 03 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3205,7 +3207,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
 - Shortname: webaudio
-- Date: 28 September 2017
+- Date: 03 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3289,7 +3291,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://heycam.github.io/webidl/)
 - Shortname: WebIDL-1
-- Date: 25 September 2017
+- Date: 3 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3615,7 +3617,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Tue Oct 03 2017
+- Date: Wed Oct 04 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3634,7 +3636,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Tue Oct 03 2017
+- Date: Wed Oct 04 2017
 
 ### Potential issue(s) {.anomalies}
 
