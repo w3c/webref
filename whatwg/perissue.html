@@ -89,7 +89,7 @@
   <li><code>RTCError</code> used in <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>ReadableStream</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><code>Type</code> used in <a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
-  <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html">Touch Events - Level 2</a></li>
+  <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   </ul>
   <p>=&gt; 7 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
@@ -99,7 +99,7 @@
   <ul>
   <li><code>BinaryType</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><code>RTCStats</code> defined in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> and <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
-  <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   <p>=&gt; 4 WebIDL names found</p>
@@ -114,7 +114,7 @@
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a> uses:
   <ul>
   <li><code>Window</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
-  <li><code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a> uses:
@@ -126,7 +126,7 @@
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a> uses:
   <ul>
   <li><code>Window</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
-  <li><code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a> uses <code>Window</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a> uses <code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
@@ -268,8 +268,8 @@
   <li><a href="https://www.w3.org/TR/2015/WD-svg-strokes-20150407/"><code>https://www.w3.org/TR/2015/WD-svg-strokes-20150407/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://w3c.github.io/selection-api/">Selection API</a> links to <a href="https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/"><code>https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/</code></a> but does not list it in its references</li>
-  <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a> links to <a href="https://w3c.github.io/push-api/"><code>https://w3c.github.io/push-api/</code></a> but does not list it in its references</li>
-  <li><a href="http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html">Touch Events - Level 2</a> links to <a href="https://www.w3.org/TR/touch-events-extensions/"><code>https://www.w3.org/TR/touch-events-extensions/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> links to <a href="https://w3c.github.io/push-api/"><code>https://w3c.github.io/push-api/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a> links to <a href="https://www.w3.org/TR/touch-events-extensions/"><code>https://www.w3.org/TR/touch-events-extensions/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/uievents">UI Events</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a> but does not list it in its references</li>
@@ -341,7 +341,7 @@
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a> links to <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/2016/REC-html51-20161101/"><code>https://www.w3.org/TR/2016/REC-html51-20161101/</code></a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a> links to <a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM4&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a> links to <a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a></li>
-  <li><a href="https://rawgit.com/w3c/encrypted-media/V1/index.html">Encrypted Media Extensions</a> links to:
+  <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
   <li><a href="https://www.w3.org/TR/encoding/"><code>https://www.w3.org/TR/encoding/</code></a> but related reference &quot;ENCODING&quot; uses URL <a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a></li>
@@ -465,7 +465,7 @@
   <li><a href="https://www.w3.org/TR/2001/PR-SVG-20010719/"><code>https://www.w3.org/TR/2001/PR-SVG-20010719/</code></a> but related reference &quot;SVG11&quot; uses URL <a href="http://www.w3.org/TR/2011/REC-SVG11-20110816/"><code>http://www.w3.org/TR/2011/REC-SVG11-20110816/</code></a></li>
   <li><a href="https://www.w3.org/TR/2011/REC-CSS2-20110607/"><code>https://www.w3.org/TR/2011/REC-CSS2-20110607/</code></a> but related reference &quot;&quot; uses URL <a href="http://www.w3.org/TR/2009/CR-CSS2-20090908"><code>http://www.w3.org/TR/2009/CR-CSS2-20090908</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a> links to:
+  <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/"><code>https://w3c.github.io/webappsec-referrer-policy/</code></a> but related reference &quot;REFERRER-POLICY&quot; uses URL <a href="https://www.w3.org/TR/referrer-policy/"><code>https://www.w3.org/TR/referrer-policy/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
