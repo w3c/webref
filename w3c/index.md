@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 04, 2017
+% October 05, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -181,7 +181,7 @@ No informative reference to this spec from other specs.
 
 - Missing references for WebIDL names: 
      * `Window` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
      * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -217,7 +217,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Preload](https://w3c.github.io/preload/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
@@ -555,7 +555,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -713,7 +713,7 @@ Informative references to this spec from:
 
 - Missing references for WebIDL names: 
      * `Window` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -721,7 +721,7 @@ Normative references to this spec from:
 
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML 5.2](https://w3c.github.io/html/)
@@ -740,7 +740,7 @@ No informative reference to this spec from other specs.
 
 ### Crawl info {.info}
 
-- URL: [Editor's Draft](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- URL: [Editor's Draft](https://w3c.github.io/encrypted-media/)
 - Shortname: encrypted-media
 - Date: 14 September 2017
 
@@ -754,7 +754,10 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
 ## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -785,7 +788,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -836,7 +839,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 
 ## Fullscreen API Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
@@ -895,7 +898,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 3 October 2017
+- Date: 4 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1006,7 +1009,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/hr-time/)
 - Shortname: hr-time-3
-- Date: 27 July 2017
+- Date: 04 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1098,7 +1101,7 @@ Normative references to this spec from:
 - [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -1139,12 +1142,12 @@ Normative references to this spec from:
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Server-Sent Events](https://www.w3.org/TR/eventsource)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
-- [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
@@ -1155,7 +1158,7 @@ Normative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](https://www.w3.org/TR/webstorage)
@@ -1191,7 +1194,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
@@ -1202,7 +1205,7 @@ Informative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
-- [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 
 
 ## HTML Canvas 2D Context {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
@@ -1263,7 +1266,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -1290,7 +1293,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
@@ -1301,7 +1304,7 @@ Informative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
-- [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
@@ -1378,7 +1381,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](https://www.w3.org/TR/eventsource)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -1410,7 +1413,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
@@ -1419,7 +1422,7 @@ Informative references to this spec from:
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
-- [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 
 
@@ -1472,7 +1475,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
@@ -1482,7 +1485,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 04 October 2017
+- Date: 05 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1699,7 +1702,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 
 
@@ -1797,7 +1800,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -1893,7 +1896,7 @@ Normative references to this spec from:
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.2](https://w3c.github.io/html/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
@@ -1932,7 +1935,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/payment-handler/)
 - Shortname: payment-handler
-- Date: 21 September 2017
+- Date: 04 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2247,7 +2250,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Preload](https://w3c.github.io/preload/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 No informative reference to this spec from other specs.
 
@@ -2459,14 +2462,14 @@ Normative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 Informative references to this spec from:
 
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 
 
 ## Selection API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2562,7 +2565,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
      * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -2595,11 +2598,11 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## Service Workers 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Service Workers Nightly {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
-- URL: [Editor's Draft](https://w3c.github.io/ServiceWorker/v1/)
+- URL: [Editor's Draft](https://w3c.github.io/ServiceWorker/)
 - Shortname: service-workers-1
 - Date: 15 August 2017
 
@@ -2633,7 +2636,7 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Server Timing](https://w3c.github.io/server-timing/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 Informative references to this spec from:
 
@@ -2790,7 +2793,7 @@ Informative references to this spec from:
 
 ### Crawl info {.info}
 
-- URL: [Editor's Draft](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- URL: [Editor's Draft](https://w3c.github.io/touch-events/)
 - Shortname: touch-events
 - Date: 03 October 2017
 
@@ -2839,7 +2842,7 @@ Normative references to this spec from:
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
@@ -2885,7 +2888,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/uievents-key/)
 - Shortname: uievents-key
-- Date: 2 February 2017
+- Date: 4 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2933,7 +2936,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -3062,7 +3065,7 @@ Normative references to this spec from:
 - [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -3090,10 +3093,10 @@ Normative references to this spec from:
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Server-Sent Events](https://www.w3.org/TR/eventsource)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
@@ -3103,7 +3106,7 @@ Normative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](https://www.w3.org/TR/webstorage)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -3156,7 +3159,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/web-animations/)
 - Shortname: web-animations-1
-- Date: 21 September 2017
+- Date: 5 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3241,7 +3244,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webauthn/)
 - Shortname: webauthn
-- Date: 28 September 2017
+- Date: 4 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3265,14 +3268,14 @@ Informative references to this spec from:
 
 ### Crawl info {.info}
 
-- URL: [Latest published version](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- URL: [Editor's Draft](https://w3c.github.io/webcrypto/Overview.html)
 - Shortname: WebCryptoAPI
-- Date: 26 January 2017
+- Date: 24 October 2016
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3322,7 +3325,7 @@ Normative references to this spec from:
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -3363,11 +3366,11 @@ Normative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
-- [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
@@ -3378,7 +3381,7 @@ Normative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web Storage (Second Edition)](https://www.w3.org/TR/webstorage)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
@@ -3430,7 +3433,7 @@ Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 
 
@@ -3472,7 +3475,7 @@ Informative references to this spec from:
 - No normative references found
 - Spec uses WebIDL but does not reference it normatively
 - WebIDL names also defined elsewhere: 
-    * `Worker` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+    * `Worker` also defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
      * `OnErrorEventHandler` defined in [HTML 5.2](https://w3c.github.io/html/)
@@ -3535,7 +3538,7 @@ Normative references to this spec from:
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](https://www.w3.org/TR/eventsource)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -3561,7 +3564,7 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Server Timing](https://w3c.github.io/server-timing/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 Informative references to this spec from:
 
@@ -3570,7 +3573,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
@@ -3582,7 +3585,7 @@ Informative references to this spec from:
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
-- [Touch Events - Level 2](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 
 
 ## WebDriver {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3617,7 +3620,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Wed Oct 04 2017
+- Date: Thu Oct 05 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3636,7 +3639,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Wed Oct 04 2017
+- Date: Thu Oct 05 2017
 
 ### Potential issue(s) {.anomalies}
 

@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 04, 2017
+% October 05, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -235,7 +235,7 @@ No informative reference to this spec from other specs.
 
 - Missing references for WebIDL names: 
      * `Window` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
      * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -815,14 +815,14 @@ Informative references to this spec from:
 
 - Missing references for WebIDL names: 
      * `Window` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML 5.2](https://w3c.github.io/html/)
@@ -888,7 +888,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -913,7 +913,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `DOMError`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -936,7 +936,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 
@@ -1199,7 +1199,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -1237,12 +1237,12 @@ Normative references to this spec from:
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Server-Sent Events](https://www.w3.org/TR/eventsource)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
-- [Touch Events](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events](https://w3c.github.io/touch-events/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
@@ -1253,7 +1253,7 @@ Normative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](https://www.w3.org/TR/webstorage)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
@@ -1339,7 +1339,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -1434,7 +1434,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](https://www.w3.org/TR/eventsource)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -1503,7 +1503,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
@@ -1520,7 +1520,7 @@ Informative references to this spec from:
 
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
@@ -1755,7 +1755,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 
 
 ## MediaStream Recording {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1836,7 +1836,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -1928,7 +1928,7 @@ Normative references to this spec from:
 - [Beacon](https://w3c.github.io/beacon/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.2](https://w3c.github.io/html/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
@@ -1968,7 +1968,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Latest published version](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
-- Date: 21 September 2017
+- Date: 04 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2020,7 +2020,7 @@ No informative reference to this spec from other specs.
 - Obsolete WebIDL constructs found
 - Missing references for WebIDL names: 
      * `Window` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - Missing references for links: 
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
@@ -2482,13 +2482,13 @@ Normative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
 
 Informative references to this spec from:
 
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 
 
 ## Selection API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2580,7 +2580,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
      * `DOMHighResTimeStamp` defined in [High Resolution Time Level 3](https://w3c.github.io/hr-time/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -2653,7 +2653,7 @@ Although they do not, the following specs should also normatively reference this
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Server Timing](https://w3c.github.io/server-timing/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 Informative references to this spec from:
 
@@ -2870,7 +2870,7 @@ Although they do not, the following specs should also normatively reference this
 
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
-- [Touch Events](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events](https://w3c.github.io/touch-events/)
 
 Informative references to this spec from:
 
@@ -2951,7 +2951,7 @@ Normative references to this spec from:
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -3071,7 +3071,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -3098,10 +3098,10 @@ Normative references to this spec from:
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Server-Sent Events](https://www.w3.org/TR/eventsource)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [Touch Events](http://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html)
+- [Touch Events](https://w3c.github.io/touch-events/)
 - [UI Events](https://www.w3.org/TR/uievents)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
@@ -3111,7 +3111,7 @@ Normative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](https://www.w3.org/TR/webstorage)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
@@ -3279,7 +3279,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3318,7 +3318,7 @@ Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 
 
@@ -3359,7 +3359,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `ApplicationCache`, `Transferable`
 - WebIDL names also defined elsewhere: 
-    * `Worker` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+    * `Worker` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
      * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -3400,7 +3400,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](https://www.w3.org/TR/eventsource)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -3427,7 +3427,7 @@ Although they do not, the following specs should also normatively reference this
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Server Timing](https://w3c.github.io/server-timing/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 Informative references to this spec from:
 
@@ -3473,7 +3473,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Wed Oct 04 2017
+- Date: Thu Oct 05 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3492,7 +3492,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Wed Oct 04 2017
+- Date: Thu Oct 05 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3551,7 +3551,7 @@ Normative references to this spec from:
 - [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://rawgit.com/w3c/encrypted-media/V1/index.html)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://w3c.github.io/gamepad/)
@@ -3586,7 +3586,7 @@ Normative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -3600,7 +3600,7 @@ Normative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://w3c.github.io/webauthn/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web Storage (Second Edition)](https://www.w3.org/TR/webstorage)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
