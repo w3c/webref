@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% October 05, 2017
+% October 06, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -123,7 +123,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/clipboard-apis/)
 - Shortname: clipboard-apis
-- Date: 29 September 2017
+- Date: 5 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -670,18 +670,17 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://dom.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 30 September 2017
+- Date: 5 October 2017
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
      * `AudioWorklet` defined in [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
-     * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
-     * [`https://w3c.github.io/touch-events/`](https://w3c.github.io/touch-events/)
      * [`https://w3c.github.io/webcomponents/spec/shadow/`](https://w3c.github.io/webcomponents/spec/shadow/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+     * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/), related reference "UIEVENTS" uses URL [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -826,7 +825,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 20 September 2017
+- Date: 5 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -952,7 +951,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 4 October 2017
+- Date: 5 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1125,7 +1124,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 3 October 2017
+- Date: 5 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1329,7 +1328,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 05 October 2017
+- Date: 06 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2569,6 +2568,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [DOM Standard](https://dom.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -2598,6 +2598,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [DOM Standard](https://dom.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Permissions](https://w3c.github.io/permissions/)
@@ -2623,7 +2624,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/uievents-code/)
 - Shortname: uievents-code
-- Date: 14 September 2017
+- Date: 5 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2866,7 +2867,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
 - Shortname: webaudio
-- Date: 03 October 2017
+- Date: 05 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2902,7 +2903,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webauthn/)
 - Shortname: webauthn
-- Date: 4 October 2017
+- Date: 5 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2953,7 +2954,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://heycam.github.io/webidl/)
 - Shortname: WebIDL-1
-- Date: 3 October 2017
+- Date: 5 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3097,7 +3098,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Oct 05 2017
+- Date: Fri Oct 06 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3116,7 +3117,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Oct 05 2017
+- Date: Fri Oct 06 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3230,7 +3231,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://xhr.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 8 September 2017
+- Date: 5 October 2017
 
 ### Potential issue(s) {.anomalies}
 
