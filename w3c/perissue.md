@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 07, 2017
+% October 08, 2017
 
 116 specifications were crawled in this report.
 
@@ -41,17 +41,24 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at process._tickCallback (internal/process/next_tick.js:104:9)`
 - [longtasks](https://www.w3.org/TR/longtasks): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:133:34)`
+- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html): `FetchError: request to https://html.spec.whatwg.org/multipage/workers.html failed, reason: socket hang up FetchError: request to https://html.spec.whatwg.org/multipage/workers.html failed, reason: socket hang up
+    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
+    at emitOne (events.js:96:13)
+    at ClientRequest.emit (events.js:188:7)
+    at TLSSocket.socketOnEnd (_http_client.js:345:9)
+    at emitNone (events.js:91:20)
+    at TLSSocket.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)`
 
-=> 4 specifications found
+=> 5 specifications found
 
 
 ## Specifications without normative dependencies
 
-- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 1 specification found
-
-Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
+=> 0 specification found
 
 
 ## Specifications without WebIDL definitions
@@ -104,9 +111,8 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [UI Events](https://www.w3.org/TR/uievents)
-- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 10 specifications found
+=> 9 specifications found
 
 
 
@@ -114,16 +120,21 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 
 - `AbortSignal` used in [Fetch Standard](https://fetch.spec.whatwg.org/)
 - `AudioWorkletOptions` used in [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- `DedicatedWorker` used in [File API](https://w3c.github.io/FileAPI/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `DocumentOrShadowRoot` used in [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/), [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - `OverconstrainedError` used in [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
 - `RTCError` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - `ReadableStream` used in [Fetch Standard](https://fetch.spec.whatwg.org/)
+- `SharedWorker` used in [File API](https://w3c.github.io/FileAPI/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `Transferable` used in [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
 - `Type` used in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - `WindowProxy` used in [HTML 5.2](https://w3c.github.io/html/), [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- `WorkerGlobalScope` used in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+- `WorkerNavigator` used in [Permissions](https://w3c.github.io/permissions/), [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- `WorkerType` used in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
-=> 10 WebIDL names found
+=> 15 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -134,10 +145,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `ProgressEvent` defined in [Progress Events](https://www.w3.org/TR/progress-events) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `ProgressEventInit` defined in [Progress Events](https://www.w3.org/TR/progress-events) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `RTCStats` defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) and [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Web Audio API](https://webaudio.github.io/web-audio-api/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
-=> 5 WebIDL names found
+=> 4 WebIDL names found
 
 "There can be only one"...
 
@@ -149,21 +159,27 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Battery Status API](https://w3c.github.io/battery/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Console Standard](https://console.spec.whatwg.org/) uses:
     * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+    * `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `Worklet` but does not reference [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/) uses:
     * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/uievents)
     * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/uievents)
 - [Encoding Standard](https://encoding.spec.whatwg.org/) uses:
     * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+    * `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [File API](https://w3c.github.io/FileAPI/) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Gamepad](https://w3c.github.io/gamepad/) uses `Navigator` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Gyroscope](https://w3c.github.io/gyroscope/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/) uses:
+    * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+    * `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) uses:
     * `Element` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/uievents)
     * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/uievents)
+- [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Magnetometer](https://w3c.github.io/magnetometer/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/) uses:
     * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
@@ -173,6 +189,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `URL` but does not reference [URL Standard](https://url.spec.whatwg.org/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [Permissions](https://w3c.github.io/permissions/) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) uses `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [Proximity Sensor](https://w3c.github.io/proximity/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
@@ -184,7 +202,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `DOMPointReadOnly` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
     * `DOMMatrixReadOnly` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Server Timing](https://w3c.github.io/server-timing/) uses:
-    * `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+    * `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/) uses:
     * `Selection` but does not reference [Selection API](https://w3c.github.io/selection-api/)
@@ -193,22 +211,21 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `StyleSheetList` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
     * `DocumentFragment` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Static Range](https://w3c.github.io/staticrange/) uses `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
+- [Storage Standard](https://storage.spec.whatwg.org/) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [URL Standard](https://url.spec.whatwg.org/) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [W3C DOM 4.1](https://w3c.github.io/dom/) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web Animations](https://w3c.github.io/web-animations/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html) uses:
-    * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `OnErrorEventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `EventHandler` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `Window` but does not reference [HTML 5.2](https://w3c.github.io/html/)
-    * `RequestCredentials` but does not reference [Fetch Standard](https://fetch.spec.whatwg.org/)
-    * `MessagePort` but does not reference [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [Web IDL](https://heycam.github.io/webidl/) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) uses:
     * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `Event` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
     * `EventInit` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) uses `Worker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
-=> 52 missing references for IDL definitions found in 26 specifications
+=> 59 missing references for IDL definitions found in 37 specifications
 
 
 ## Missing references based on document links
@@ -313,17 +330,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/mediacapture-fromelement/`](https://w3c.github.io/mediacapture-fromelement/) but does not list it in its references
     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/) links to [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html) but does not list it in its references
-- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html) links to:
-    * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
-    * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
-    * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but does not list it in its references
-    * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/) but does not list it in its references
-    * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/) but does not list it in its references
-    * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/) but does not list it in its references
-    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
-    * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/) but does not list it in its references
-    * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but does not list it in its references
-    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but does not list it in its references
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html) links to:
     * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
     * [`https://www.w3.org/TR/page-visibility/?csw=1`](https://www.w3.org/TR/page-visibility/?csw=1) but does not list it in its references
@@ -332,7 +338,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 103 missing references for links found in 38 specifications
+=> 93 missing references for links found in 37 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
