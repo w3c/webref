@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 07, 2017
+% October 08, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -181,7 +181,7 @@ No informative reference to this spec from other specs.
 
 - Missing references for WebIDL names: 
      * `Window` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -731,7 +731,7 @@ Informative references to this spec from:
 
 - Missing references for WebIDL names: 
      * `Window` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -813,10 +813,6 @@ Normative references to this spec from:
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-
 Informative references to this spec from:
 
 - [Payment Request API](https://w3c.github.io/payment-request/)
@@ -824,7 +820,7 @@ Informative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
-## File API {data-spec=true data-ok=true}
+## File API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
@@ -834,7 +830,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `DedicatedWorker`, `SharedWorker`
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -961,7 +959,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Geometry Interfaces Module Level 1 {data-spec=true data-ok=true}
+## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
@@ -971,7 +969,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1032,6 +1031,7 @@ Informative references to this spec from:
 
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1198,7 +1198,6 @@ Although they do not, the following specs should also normatively reference this
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
 - [Static Range](https://w3c.github.io/staticrange/)
-- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 Informative references to this spec from:
 
@@ -1339,7 +1338,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## HTML5 Web Messaging {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true}
+## HTML5 Web Messaging {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
@@ -1351,6 +1350,8 @@ No informative reference to this spec from other specs.
 
 - Obsolete WebIDL constructs found
 - Unknown WebIDL names used: `Transferable`, `WindowProxy`
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1412,10 +1413,6 @@ Normative references to this spec from:
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-
 Informative references to this spec from:
 
 - [Battery Status API](https://w3c.github.io/battery/)
@@ -1461,7 +1458,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Indexed Database API 2.0 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Indexed Database API 2.0 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
@@ -1471,6 +1468,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://www.w3.org/TR/domcore/`](https://www.w3.org/TR/domcore/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
@@ -1495,7 +1494,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 07 October 2017
+- Date: 08 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2009,17 +2008,18 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-ok=true}
+## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/performance-timeline/)
 - Shortname: performance-timeline-2
-- Date: 03 October 2017
+- Date: 07 October 2017
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2037,7 +2037,7 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
-## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
@@ -2047,7 +2047,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PermissionName`
+- Unknown WebIDL names used: `PermissionName`, `WorkerNavigator`
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
      * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
@@ -2573,7 +2575,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -2606,7 +2608,7 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## Service Workers Nightly {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Service Workers Nightly {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
@@ -2616,8 +2618,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `Worker` also defined in [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+- Unknown WebIDL names used: `WorkerGlobalScope`, `WorkerNavigator`, `WorkerType`
 - Missing references for links: 
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
 - Inconsistent references for links: 
@@ -2643,8 +2644,21 @@ Although they do not, the following specs should also normatively reference this
 
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [File API](https://w3c.github.io/FileAPI/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
+- [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Server Timing](https://w3c.github.io/server-timing/)
+- [Storage Standard](https://storage.spec.whatwg.org/)
+- [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
+- [Web IDL](https://heycam.github.io/webidl/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -2708,7 +2722,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Storage Standard {data-spec=true data-ok=true}
+## Storage Standard {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
@@ -2718,7 +2732,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2913,7 +2928,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## URL Standard {data-spec=true data-ok=true}
+## URL Standard {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
@@ -2923,7 +2938,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2990,7 +3006,7 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## User Timing Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## User Timing Level 2 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
@@ -3000,6 +3016,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
      * [`https://w3c.github.io/html/webappapis.html`](https://w3c.github.io/html/webappapis.html)
 - Inconsistent references for links: 
@@ -3037,7 +3055,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## W3C DOM 4.1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## W3C DOM 4.1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
@@ -3047,6 +3065,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/)
 - Inconsistent references for links: 
@@ -3131,7 +3151,6 @@ Although they do not, the following specs should also normatively reference this
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
-- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
@@ -3282,7 +3301,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3295,7 +3314,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Web IDL {data-spec=true data-ok=true}
+## Web IDL {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Crawl info {.info}
 
@@ -3305,7 +3324,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3468,38 +3488,29 @@ Informative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 
 
-## Web Workers {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## Web Workers {data-spec=true data-error=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
 - Shortname: workers
-- Date: 6 October 2017
+- Date: unknown
 
 ### Potential issue(s) {.anomalies}
 
-- No normative references found
-- Spec uses WebIDL but does not reference it normatively
-- WebIDL names also defined elsewhere: 
-    * `Worker` also defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `OnErrorEventHandler` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `EventHandler` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `Window` defined in [HTML 5.2](https://w3c.github.io/html/)
-     * `RequestCredentials` defined in [Fetch Standard](https://fetch.spec.whatwg.org/)
-     * `MessagePort` defined in [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging)
-- Missing references for links: 
-     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
-     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
-     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/)
-     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
-     * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/)
-     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
-     * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
-     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/)
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
+The following network or parsing error occurred:
+`FetchError: request to https://html.spec.whatwg.org/multipage/workers.html failed, reason: socket hang up FetchError: request to https://html.spec.whatwg.org/multipage/workers.html failed, reason: socket hang up
+    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
+    at emitOne (events.js:96:13)
+    at ClientRequest.emit (events.js:188:7)
+    at TLSSocket.socketOnEnd (_http_client.js:345:9)
+    at emitNone (events.js:91:20)
+    at TLSSocket.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3564,13 +3575,6 @@ Normative references to this spec from:
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Console Standard](https://console.spec.whatwg.org/)
-- [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Server Timing](https://w3c.github.io/server-timing/)
-- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
-
 Informative references to this spec from:
 
 - [Battery Status API](https://w3c.github.io/battery/)
@@ -3624,7 +3628,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Sat Oct 07 2017
+- Date: Sun Oct 08 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3643,7 +3647,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Sat Oct 07 2017
+- Date: Sun Oct 08 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3673,7 +3677,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `RTCError`
+- Unknown WebIDL names used: `RTCError`, `WorkerGlobalScope`
 - WebIDL names also defined elsewhere: 
     * `RTCStats` also defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - Missing references for WebIDL names: 
@@ -3750,7 +3754,7 @@ Although they do not, the following specs should also normatively reference this
 No informative reference to this spec from other specs.
 
 
-## XMLHttpRequest Standard {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
+## XMLHttpRequest Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Crawl info {.info}
 
@@ -3760,9 +3764,12 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `DedicatedWorker`, `SharedWorker`
 - WebIDL names also defined elsewhere: 
     * `ProgressEvent` also defined in [Progress Events](https://www.w3.org/TR/progress-events)
     * `ProgressEventInit` also defined in [Progress Events](https://www.w3.org/TR/progress-events)
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 

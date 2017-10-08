@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">October 07, 2017</h2>
+            <h2 class="date">October 08, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -264,7 +264,7 @@
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Window</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   </ul>
@@ -874,7 +874,7 @@
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Window</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul></li>
   </ul>
   </section>
@@ -968,10 +968,6 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
-  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
-  <ul>
-  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
-  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
@@ -980,7 +976,7 @@
   </ul>
   </section>
   </section>
-  <section id="file-api" class="level2" data-spec="true" data-ok="true">
+  <section id="file-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>File API</h2>
   <section id="crawl-info-29" class="level3 info">
   <h3>Crawl info</h3>
@@ -992,7 +988,13 @@
   </section>
   <section id="potential-issues-29" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>DedicatedWorker</code>, <code>SharedWorker</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-29" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1141,7 +1143,7 @@
   </ul>
   </section>
   </section>
-  <section id="geometry-interfaces-module-level-1" class="level2" data-spec="true" data-ok="true">
+  <section id="geometry-interfaces-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Geometry Interfaces Module Level 1</h2>
   <section id="crawl-info-34" class="level3 info">
   <h3>Crawl info</h3>
@@ -1153,7 +1155,12 @@
   </section>
   <section id="potential-issues-34" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-34" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1228,6 +1235,7 @@
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>EventTarget</code> defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul></li>
   </ul>
   </section>
@@ -1405,7 +1413,6 @@
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   <li><a href="https://w3c.github.io/proximity/">Proximity Sensor</a></li>
   <li><a href="https://w3c.github.io/staticrange/">Static Range</a></li>
-  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -1557,7 +1564,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="html5-web-messaging" class="level2" data-spec="true" data-anomaly="true" data-hasObsoleteIdl="true" data-unknownIdlNames="true">
+  <section id="html5-web-messaging" class="level2" data-spec="true" data-anomaly="true" data-hasObsoleteIdl="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>HTML5 Web Messaging</h2>
   <section id="crawl-info-40" class="level3 info">
   <h3>Crawl info</h3>
@@ -1572,6 +1579,10 @@
   <ul>
   <li>Obsolete WebIDL constructs found</li>
   <li>Unknown WebIDL names used: <code>Transferable</code>, <code>WindowProxy</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-40" class="level3 dependencies">
@@ -1634,10 +1645,6 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
-  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
-  <ul>
-  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
-  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
@@ -1692,7 +1699,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="indexed-database-api-2.0" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="indexed-database-api-2.0" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-inconsistentRef="true">
   <h2>Indexed Database API 2.0</h2>
   <section id="crawl-info-42" class="level3 info">
   <h3>Crawl info</h3>
@@ -1705,6 +1712,10 @@
   <section id="potential-issues-42" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -1734,7 +1745,7 @@
   <ul>
   <li>URL: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a></li>
   <li>Shortname: input-events-2</li>
-  <li>Date: 07 October 2017</li>
+  <li>Date: 08 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-43" class="level3 anomalies">
@@ -2365,19 +2376,24 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="performance-timeline-level-2" class="level2" data-spec="true" data-ok="true">
+  <section id="performance-timeline-level-2" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Performance Timeline Level 2</h2>
   <section id="crawl-info-63" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/performance-timeline/">Editor's Draft</a></li>
   <li>Shortname: performance-timeline-2</li>
-  <li>Date: 03 October 2017</li>
+  <li>Date: 07 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-63" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-63" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -2396,7 +2412,7 @@
   </ul>
   </section>
   </section>
-  <section id="permissions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="permissions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Permissions</h2>
   <section id="crawl-info-64" class="level3 info">
   <h3>Crawl info</h3>
@@ -2409,7 +2425,11 @@
   <section id="potential-issues-64" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>PermissionName</code></li>
+  <li>Unknown WebIDL names used: <code>PermissionName</code>, <code>WorkerNavigator</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/manifest/"><code>https://w3c.github.io/manifest/</code></a></li>
@@ -3051,7 +3071,7 @@
   <ul>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>DOMHighResTimeStamp</code> defined in <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   </ul></li>
   </ul>
@@ -3088,7 +3108,7 @@
   </ul>
   </section>
   </section>
-  <section id="service-workers-nightly" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="service-workers-nightly" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Service Workers Nightly</h2>
   <section id="crawl-info-83" class="level3 info">
   <h3>Crawl info</h3>
@@ -3101,10 +3121,7 @@
   <section id="potential-issues-83" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>Worker</code> also defined in <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
-  </ul></li>
+  <li>Unknown WebIDL names used: <code>WorkerGlobalScope</code>, <code>WorkerNavigator</code>, <code>WorkerType</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/push-api/"><code>https://w3c.github.io/push-api/</code></a></li>
@@ -3135,8 +3152,21 @@
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
+  <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
+  <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
+  <li><a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a></li>
+  <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
+  <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
+  <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
+  <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
+  <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
+  <li><a href="https://w3c.github.io/user-timing/">User Timing Level 2</a></li>
+  <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></li>
+  <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
+  <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -3217,7 +3247,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="storage-standard" class="level2" data-spec="true" data-ok="true">
+  <section id="storage-standard" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Storage Standard</h2>
   <section id="crawl-info-86" class="level3 info">
   <h3>Crawl info</h3>
@@ -3229,7 +3259,12 @@
   </section>
   <section id="potential-issues-86" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-86" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3463,7 +3498,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="url-standard" class="level2" data-spec="true" data-ok="true">
+  <section id="url-standard" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>URL Standard</h2>
   <section id="crawl-info-94" class="level3 info">
   <h3>Crawl info</h3>
@@ -3475,7 +3510,12 @@
   </section>
   <section id="potential-issues-94" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-94" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3551,7 +3591,7 @@
   </ul>
   </section>
   </section>
-  <section id="user-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="user-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>User Timing Level 2</h2>
   <section id="crawl-info-96" class="level3 info">
   <h3>Crawl info</h3>
@@ -3564,6 +3604,10 @@
   <section id="potential-issues-96" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/html/webappapis.html"><code>https://w3c.github.io/html/webappapis.html</code></a></li>
@@ -3611,7 +3655,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="w3c-dom-4.1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="w3c-dom-4.1" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>W3C DOM 4.1</h2>
   <section id="crawl-info-98" class="level3 info">
   <h3>Crawl info</h3>
@@ -3624,6 +3668,10 @@
   <section id="potential-issues-98" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/touch-events/"><code>https://www.w3.org/TR/touch-events/</code></a></li>
@@ -3713,7 +3761,6 @@
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
   <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
-  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -3901,7 +3948,7 @@
   <ul>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul></li>
   </ul>
   </section>
@@ -3916,7 +3963,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-idl" class="level2" data-spec="true" data-ok="true">
+  <section id="web-idl" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Web IDL</h2>
   <section id="crawl-info-105" class="level3 info">
   <h3>Crawl info</h3>
@@ -3928,7 +3975,12 @@
   </section>
   <section id="potential-issues-105" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-105" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -4102,48 +4154,20 @@
   </ul>
   </section>
   </section>
-  <section id="web-workers" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
+  <section id="web-workers" class="level2" data-spec="true" data-error="true">
   <h2>Web Workers</h2>
   <section id="crawl-info-108" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://html.spec.whatwg.org/multipage/workers.html">Editor's Draft</a></li>
   <li>Shortname: workers</li>
-  <li>Date: 6 October 2017</li>
+  <li>Date: unknown</li>
   </ul>
   </section>
   <section id="potential-issues-108" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>No normative references found</li>
-  <li>Spec uses WebIDL but does not reference it normatively</li>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>Worker</code> also defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>EventTarget</code> defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><code>OnErrorEventHandler</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><code>EventHandler</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><code>Window</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><code>RequestCredentials</code> defined in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
-  <li><code>MessagePort</code> defined in <a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a></li>
-  </ul></li>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a></li>
-  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
-  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a></li>
-  <li><a href="https://infra.spec.whatwg.org/"><code>https://infra.spec.whatwg.org/</code></a></li>
-  <li><a href="https://url.spec.whatwg.org/"><code>https://url.spec.whatwg.org/</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-referrer-policy/"><code>https://w3c.github.io/webappsec-referrer-policy/</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a></li>
-  <li><a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a></li>
-  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>FetchError: request to https://html.spec.whatwg.org/multipage/workers.html failed, reason: socket hang up FetchError: request to https://html.spec.whatwg.org/multipage/workers.html failed, reason: socket hang up     at ClientRequest.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)     at emitOne (events.js:96:13)     at ClientRequest.emit (events.js:188:7)     at TLSSocket.socketOnEnd (_http_client.js:345:9)     at emitNone (events.js:91:20)     at TLSSocket.emit (events.js:185:7)     at endReadableNT (_stream_readable.js:974:12)     at _combinedTickCallback (internal/process/next_tick.js:80:11)     at process._tickCallback (internal/process/next_tick.js:104:9)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-108" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -4208,13 +4232,6 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
-  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
-  <ul>
-  <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
-  <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
-  <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
-  <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></li>
-  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
@@ -4277,7 +4294,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Sat Oct 07 2017</li>
+  <li>Date: Sun Oct 08 2017</li>
   </ul>
   </section>
   <section id="potential-issues-110" class="level3 anomalies">
@@ -4297,7 +4314,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Sat Oct 07 2017</li>
+  <li>Date: Sun Oct 08 2017</li>
   </ul>
   </section>
   <section id="potential-issues-111" class="level3 anomalies">
@@ -4336,7 +4353,7 @@
   <section id="potential-issues-112" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>RTCError</code></li>
+  <li>Unknown WebIDL names used: <code>RTCError</code>, <code>WorkerGlobalScope</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>RTCStats</code> also defined in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
@@ -4435,7 +4452,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="xmlhttprequest-standard" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
+  <section id="xmlhttprequest-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>XMLHttpRequest Standard</h2>
   <section id="crawl-info-115" class="level3 info">
   <h3>Crawl info</h3>
@@ -4448,10 +4465,15 @@
   <section id="potential-issues-115" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>DedicatedWorker</code>, <code>SharedWorker</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>ProgressEvent</code> also defined in <a href="https://www.w3.org/TR/progress-events">Progress Events</a></li>
   <li><code>ProgressEventInit</code> also defined in <a href="https://www.w3.org/TR/progress-events">Progress Events</a></li>
+  </ul></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
