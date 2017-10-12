@@ -25,24 +25,27 @@
   <h2>Specifications that could not be rendered</h2>
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
-  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a>: <code>FetchError: request to http://dev.w3.org/csswg/css-font-loading/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80 FetchError: request to http://dev.w3.org/csswg/css-font-loading/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80 at ClientRequest.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11) at emitOne (events.js:96:13) at ClientRequest.emit (events.js:188:7) at Socket.socketErrorListener (_http_client.js:309:9) at emitOne (events.js:96:13) at Socket.emit (events.js:188:7) at emitErrorNT (net.js:1277:8) at _combinedTickCallback (internal/process/next_tick.js:80:11) at process._tickCallback (internal/process/next_tick.js:104:9)</code></li>
-  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a>: <code>FetchError: request to http://dev.w3.org/csswg/css-syntax/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80 FetchError: request to http://dev.w3.org/csswg/css-syntax/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80 at ClientRequest.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11) at emitOne (events.js:96:13) at ClientRequest.emit (events.js:188:7) at Socket.socketErrorListener (_http_client.js:309:9) at emitOne (events.js:96:13) at Socket.emit (events.js:188:7) at emitErrorNT (net.js:1277:8) at _combinedTickCallback (internal/process/next_tick.js:80:11) at process._tickCallback (internal/process/next_tick.js:104:9)</code></li>
-  <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a>: <code>FetchError: request to http://dev.w3.org/csswg/css-writing-modes-3/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80 FetchError: request to http://dev.w3.org/csswg/css-writing-modes-3/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80 at ClientRequest.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11) at emitOne (events.js:96:13) at ClientRequest.emit (events.js:188:7) at Socket.socketErrorListener (_http_client.js:309:9) at emitOne (events.js:96:13) at Socket.emit (events.js:188:7) at emitErrorNT (net.js:1277:8) at _combinedTickCallback (internal/process/next_tick.js:80:11) at process._tickCallback (internal/process/next_tick.js:104:9)</code></li>
   <li><a href="https://www.w3.org/TR/longtasks">longtasks</a>: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:133:34)</code></li>
-  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a>: <code>FetchError: request to https://html.spec.whatwg.org/multipage/workers.html failed, reason: socket hang up FetchError: request to https://html.spec.whatwg.org/multipage/workers.html failed, reason: socket hang up at ClientRequest.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11) at emitOne (events.js:96:13) at ClientRequest.emit (events.js:188:7) at TLSSocket.socketOnEnd (_http_client.js:345:9) at emitNone (events.js:91:20) at TLSSocket.emit (events.js:185:7) at endReadableNT (_stream_readable.js:974:12) at _combinedTickCallback (internal/process/next_tick.js:80:11) at process._tickCallback (internal/process/next_tick.js:104:9)</code></li>
+  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a>: <code>Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10) at ontimeout (timers.js:386:14) at tryOnTimeout (timers.js:250:5) at Timer.listOnTimeout (timers.js:214:5)</code></li>
   </ul>
-  <p>=&gt; 5 specifications found</p>
+  <p>=&gt; 2 specifications found</p>
   </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
-  <p>=&gt; 0 specification found</p>
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
+  </ul>
+  <p>=&gt; 1 specification found</p>
+  <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="specifications-without-webidl-definitions" class="level2">
   <h2>Specifications without WebIDL definitions</h2>
   <ul>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
   <li><a href="https://w3c.github.io/editing/contentEditable.html">ContentEditable</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="http://www.w3.org/TR/2011/REC-css3-selectors-20110929/">Selectors Level 3</a></li>
@@ -50,18 +53,19 @@
   <li><a href="https://w3c.github.io/uievents-code/">UI Events KeyboardEvent code Values</a></li>
   <li><a href="https://w3c.github.io/uievents-key/">UI Events KeyboardEvent key Values</a></li>
   </ul>
-  <p>=&gt; 9 specifications found</p>
+  <p>=&gt; 11 specifications found</p>
   <p>Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.</p>
   </section>
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
   <h2>List of specifications with invalid WebIDL content</h2>
   <ul>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/">Metadata API for Media Resources 1.0</a></li>
   <li><a href="http://www.w3.org/TR/2012/CR-websockets-20120920/">The WebSocket API</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
   </ul>
-  <p>=&gt; 4 specifications found</p>
+  <p>=&gt; 5 specifications found</p>
   <p>WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features</p>
   </section>
   <section id="list-of-specifications-with-obsolete-webidl-constructs" class="level2">
@@ -85,29 +89,26 @@
   <li><a href="http://www.w3.org/TR/2013/REC-selectors-api-20130221/">Selectors API Level 1</a></li>
   <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://www.w3.org/TR/uievents">UI Events</a></li>
+  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   </ul>
-  <p>=&gt; 9 specifications found</p>
+  <p>=&gt; 10 specifications found</p>
   </section>
   <section id="list-of-webidl-names-not-defined-in-the-specifications-crawled" class="level2">
   <h2>List of WebIDL names not defined in the specifications crawled</h2>
   <ul>
   <li><code>AbortSignal</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><code>AudioWorkletOptions</code> used in <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
-  <li><code>DedicatedWorker</code> used in <a href="https://w3c.github.io/FileAPI/">File API</a>, <a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   <li><code>DocumentOrShadowRoot</code> used in <a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a>, <a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a>, <a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
+  <li><code>HTMLMenuElement</code> used in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><code>OverconstrainedError</code> used in <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><code>PermissionName</code> used in <a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><code>RTCError</code> used in <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>ReadableStream</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
-  <li><code>SharedWorker</code> used in <a href="https://w3c.github.io/FileAPI/">File API</a>, <a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   <li><code>Transferable</code> used in <a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a></li>
   <li><code>Type</code> used in <a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><code>WindowProxy</code> used in <a href="https://w3c.github.io/html/">HTML 5.2</a>, <a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a>, <a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
-  <li><code>WorkerGlobalScope</code> used in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a>, <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
-  <li><code>WorkerNavigator</code> used in <a href="https://w3c.github.io/permissions/">Permissions</a>, <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  <li><code>WorkerType</code> used in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul>
-  <p>=&gt; 15 WebIDL names found</p>
+  <p>=&gt; 11 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -116,9 +117,10 @@
   <li><code>ProgressEvent</code> defined in <a href="https://www.w3.org/TR/progress-events">Progress Events</a> and <a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   <li><code>ProgressEventInit</code> defined in <a href="https://www.w3.org/TR/progress-events">Progress Events</a> and <a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   <li><code>RTCStats</code> defined in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> and <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> and <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
-  <p>=&gt; 4 WebIDL names found</p>
+  <p>=&gt; 5 WebIDL names found</p>
   <p>&quot;There can be only one&quot;...</p>
   </section>
   <section id="missing-references-for-webidl-names" class="level2">
@@ -130,7 +132,7 @@
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a> uses:
   <ul>
   <li><code>Window</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   <li><code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a> uses:
@@ -141,25 +143,17 @@
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a> uses:
   <ul>
   <li><code>Window</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/FileAPI/">File API</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://w3c.github.io/gamepad/">Gamepad</a> uses <code>Navigator</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a> uses <code>Window</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a> uses:
-  <ul>
-  <li><code>EventTarget</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a> uses <code>EventTarget</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a> uses:
   <ul>
   <li><code>Element</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><code>MouseEvent</code> but does not reference <a href="https://www.w3.org/TR/uievents">UI Events</a></li>
   <li><code>MouseEventInit</code> but does not reference <a href="https://www.w3.org/TR/uievents">UI Events</a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a> uses <code>Window</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a> uses:
   <ul>
@@ -173,8 +167,6 @@
   <li><code>URL</code> but does not reference <a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a> uses <code>Window</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  <li><a href="https://w3c.github.io/permissions/">Permissions</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a> uses <code>EventHandler</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="https://w3c.github.io/proximity/">Proximity Sensor</a> uses <code>Window</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a> uses <code>EventTarget</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
@@ -189,7 +181,7 @@
   </ul></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a> uses:
   <ul>
-  <li><code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   <li><code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a> uses:
@@ -201,23 +193,26 @@
   <li><code>DocumentFragment</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/staticrange/">Static Range</a> uses <code>Window</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a> uses <code>EventTarget</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><a href="https://url.spec.whatwg.org/">URL Standard</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  <li><a href="https://w3c.github.io/user-timing/">User Timing Level 2</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
-  <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  <li><a href="https://heycam.github.io/webidl/">Web IDL</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
+  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a> uses:
+  <ul>
+  <li><code>EventTarget</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
+  <li><code>OnErrorEventHandler</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
+  <li><code>EventHandler</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
+  <li><code>Window</code> but does not reference <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
+  <li><code>RequestCredentials</code> but does not reference <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
+  <li><code>MessagePort</code> but does not reference <a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> uses:
   <ul>
   <li><code>EventTarget</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><code>Event</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><code>EventInit</code> but does not reference <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   </ul></li>
-  <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> uses <code>Worker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul>
-  <p>=&gt; 59 missing references for IDL definitions found in 37 specifications</p>
+  <p>=&gt; 52 missing references for IDL definitions found in 26 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -233,6 +228,13 @@
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a> links to <a href="https://w3c.github.io/webappsec/usecases/credentialmanagement/"><code>https://w3c.github.io/webappsec/usecases/credentialmanagement/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a> links to <a href="https://www.w3.org/TR/css3-syntax/"><code>https://www.w3.org/TR/css3-syntax/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> links to <a href="https://www.w3.org/TR/css-properties-values-api-1/"><code>https://www.w3.org/TR/css-properties-values-api-1/</code></a> but does not list it in its references</li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a> links to <a href="https://www.w3.org/TR/selectors-api/"><code>https://www.w3.org/TR/selectors-api/</code></a> but does not list it in its references</li>
+  <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-writing-modes-4/"><code>https://www.w3.org/TR/css-writing-modes-4/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-flexbox/"><code>https://www.w3.org/TR/css3-flexbox/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/aria/aria/aria.html"><code>https://w3c.github.io/aria/aria/aria.html</code></a> but does not list it in its references</li>
@@ -348,6 +350,19 @@
   <li><a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a> links to <a href="https://w3c.github.io/html/browsers.html"><code>https://w3c.github.io/html/browsers.html</code></a> but does not list it in its references</li>
+  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a> links to:
+  <ul>
+  <li><a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but does not list it in its references</li>
+  <li><a href="https://infra.spec.whatwg.org/"><code>https://infra.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://url.spec.whatwg.org/"><code>https://url.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/webappsec-referrer-policy/"><code>https://w3c.github.io/webappsec-referrer-policy/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
+  <li><a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a> but does not list it in its references</li>
@@ -358,7 +373,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 93 missing references for links found in 37 specifications</p>
+  <p>=&gt; 107 missing references for links found in 40 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -384,7 +399,13 @@
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
   </ul></li>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a> links to <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS3-VALUES&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a> but related reference &quot;SELECT&quot; uses URL <a href="https://www.w3.org/TR/css3-selectors/"><code>https://www.w3.org/TR/css3-selectors/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  </ul></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-syntax/"><code>https://www.w3.org/TR/css-syntax/</code></a> but related reference &quot;CSS3SYN&quot; uses URL <a href="https://www.w3.org/TR/css-syntax-3/"><code>https://www.w3.org/TR/css-syntax-3/</code></a></li>
@@ -430,11 +451,6 @@
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a> links to <a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
-  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a> links to:
-  <ul>
-  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
-  <li><a href="https://www.w3.org/TR/2dcontext2/"><code>https://www.w3.org/TR/2dcontext2/</code></a> but related reference &quot;2DCONTEXT&quot; uses URL <a href="https://www.w3.org/TR/2dcontext/"><code>https://www.w3.org/TR/2dcontext/</code></a></li>
-  </ul></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -573,6 +589,7 @@
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/"><code>https://w3c.github.io/webappsec-mixed-content/</code></a> but related reference &quot;MIXED-CONTENT&quot; uses URL <a href="https://www.w3.org/TR/mixed-content/"><code>https://www.w3.org/TR/mixed-content/</code></a></li>
   </ul></li>
+  <li><a href="https://heycam.github.io/webidl/">Web IDL</a> links to <a href="https://www.w3.org/TR/geolocation-API/"><code>https://www.w3.org/TR/geolocation-API/</code></a> but related reference &quot;GEOLOCATION-API&quot; uses URL <a href="http://dev.w3.org/geo/api/spec-source.html"><code>http://dev.w3.org/geo/api/spec-source.html</code></a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-notifications-20151022/">Web Notifications</a> links to:
   <ul>
   <li><a href="https://notifications.spec.whatwg.org/"><code>https://notifications.spec.whatwg.org/</code></a> but related reference &quot;WEBIDL&quot; uses URL <a href="https://www.w3.org/TR/2015/PR-notifications-20150910/"><code>https://www.w3.org/TR/2015/PR-notifications-20150910/</code></a></li>
@@ -587,7 +604,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but related reference &quot;CANVAS&quot; uses URL <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element"><code>https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element</code></a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> links to <a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   </ul>
-  <p>=&gt; 137 inconsistent references for links found in 53 specifications</p>
+  <p>=&gt; 139 inconsistent references for links found in 55 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
