@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">October 08, 2017</h2>
+            <h2 class="date">October 12, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -264,7 +264,7 @@
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Window</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   </ul>
@@ -282,7 +282,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/webappsec-csp/">Editor's Draft</a></li>
   <li>Shortname: CSP3</li>
-  <li>Date: 4 August 2017</li>
+  <li>Date: 21 August 2017</li>
   </ul>
   </section>
   <section id="potential-issues-8" class="level3 anomalies">
@@ -345,7 +345,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/requestidlecallback/">Editor's Draft</a></li>
   <li>Shortname: requestidlecallback</li>
-  <li>Date: 25 September 2017</li>
+  <li>Date: 09 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-10" class="level3 anomalies">
@@ -392,20 +392,25 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-font-loading-module-level-3" class="level2" data-spec="true" data-error="true">
+  <section id="css-font-loading-module-level-3" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-inconsistentRef="true">
   <h2>CSS Font Loading Module Level 3</h2>
   <section id="crawl-info-12" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-font-loading/">Editor's Draft</a></li>
   <li>Shortname: css-font-loading-3</li>
-  <li>Date: unknown</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-12" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>FetchError: request to http://dev.w3.org/csswg/css-font-loading/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80 FetchError: request to http://dev.w3.org/csswg/css-font-loading/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80     at ClientRequest.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)     at emitOne (events.js:96:13)     at ClientRequest.emit (events.js:188:7)     at Socket.socketErrorListener (_http_client.js:309:9)     at emitOne (events.js:96:13)     at Socket.emit (events.js:188:7)     at emitErrorNT (net.js:1277:8)     at _combinedTickCallback (internal/process/next_tick.js:80:11)     at process._tickCallback (internal/process/next_tick.js:104:9)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Invalid WebIDL content found</li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a>, related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-12" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -443,8 +448,10 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
@@ -456,6 +463,7 @@
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   </ul>
   </section>
   </section>
@@ -466,7 +474,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/cssom/">Editor's Draft</a></li>
   <li>Shortname: cssom-1</li>
-  <li>Date: 29 September 2017</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-14" class="level3 anomalies">
@@ -478,6 +486,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
@@ -498,6 +507,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   </ul>
   </section>
@@ -573,7 +583,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/css-pseudo-4/">Editor's Draft</a></li>
   <li>Shortname: css-pseudo-4</li>
-  <li>Date: 23 August 2017</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-17" class="level3 anomalies">
@@ -590,20 +600,30 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-syntax-module-level-3" class="level2" data-spec="true" data-error="true">
+  <section id="css-syntax-module-level-3" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>CSS Syntax Module Level 3</h2>
   <section id="crawl-info-18" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-syntax/">Editor's Draft</a></li>
   <li>Shortname: css-syntax-3</li>
-  <li>Date: unknown</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-18" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>FetchError: request to http://dev.w3.org/csswg/css-syntax/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80 FetchError: request to http://dev.w3.org/csswg/css-syntax/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80     at ClientRequest.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)     at emitOne (events.js:96:13)     at ClientRequest.emit (events.js:188:7)     at Socket.socketErrorListener (_http_client.js:309:9)     at emitOne (events.js:96:13)     at Socket.emit (events.js:188:7)     at emitErrorNT (net.js:1277:8)     at _combinedTickCallback (internal/process/next_tick.js:80:11)     at process._tickCallback (internal/process/next_tick.js:104:9)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>No WebIDL definitions found</li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/selectors-api/"><code>https://www.w3.org/TR/selectors-api/</code></a></li>
+  </ul></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a>, related reference &quot;SELECT&quot; uses URL <a href="https://www.w3.org/TR/css3-selectors/"><code>https://www.w3.org/TR/css3-selectors/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a>, related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-18" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -655,7 +675,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/css-values/">Editor's Draft</a></li>
   <li>Shortname: css-values-3</li>
-  <li>Date: 1 September 2017</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-20" class="level3 anomalies">
@@ -675,11 +695,14 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
@@ -693,20 +716,27 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-writing-modes-level-3" class="level2" data-spec="true" data-error="true">
+  <section id="css-writing-modes-level-3" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-missingLinkRef="true">
   <h2>CSS Writing Modes Level 3</h2>
   <section id="crawl-info-21" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="http://dev.w3.org/csswg/css-writing-modes-3/">Editor's Draft</a></li>
   <li>Shortname: css-writing-modes-3</li>
-  <li>Date: unknown</li>
+  <li>Date: 27 September 2017</li>
   </ul>
   </section>
   <section id="potential-issues-21" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>FetchError: request to http://dev.w3.org/csswg/css-writing-modes-3/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80 FetchError: request to http://dev.w3.org/csswg/css-writing-modes-3/ failed, reason: connect EHOSTUNREACH 128.30.52.30:80     at ClientRequest.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)     at emitOne (events.js:96:13)     at ClientRequest.emit (events.js:188:7)     at Socket.socketErrorListener (_http_client.js:309:9)     at emitOne (events.js:96:13)     at Socket.emit (events.js:188:7)     at emitErrorNT (net.js:1277:8)     at _combinedTickCallback (internal/process/next_tick.js:80:11)     at process._tickCallback (internal/process/next_tick.js:104:9)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>No WebIDL definitions found</li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-writing-modes-4/"><code>https://www.w3.org/TR/css-writing-modes-4/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-flexbox/"><code>https://www.w3.org/TR/css3-flexbox/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-21" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -728,7 +758,7 @@
   <ul>
   <li>URL: <a href="https://drafts.csswg.org/cssom-view/">Editor's Draft</a></li>
   <li>Shortname: cssom-view-1</li>
-  <li>Date: 15 September 2017</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-22" class="level3 anomalies">
@@ -822,6 +852,7 @@
   <ul>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
+  <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   </ul>
   </section>
   </section>
@@ -874,7 +905,7 @@
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Window</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   </ul></li>
   </ul>
   </section>
@@ -883,6 +914,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
@@ -935,7 +967,7 @@
   <ul>
   <li>URL: <a href="https://fetch.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 5 October 2017</li>
+  <li>Date: 10 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-28" class="level3 anomalies">
@@ -968,6 +1000,10 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
+  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
@@ -976,7 +1012,7 @@
   </ul>
   </section>
   </section>
-  <section id="file-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="file-api" class="level2" data-spec="true" data-ok="true">
   <h2>File API</h2>
   <section id="crawl-info-29" class="level3 info">
   <h3>Crawl info</h3>
@@ -988,13 +1024,7 @@
   </section>
   <section id="potential-issues-29" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>DedicatedWorker</code>, <code>SharedWorker</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-29" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1089,7 +1119,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/sensors/">Editor's Draft</a></li>
   <li>Shortname: generic-sensor</li>
-  <li>Date: 5 October 2017</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-32" class="level3 anomalies">
@@ -1140,10 +1170,11 @@
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
+  <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   </ul>
   </section>
   </section>
-  <section id="geometry-interfaces-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <section id="geometry-interfaces-module-level-1" class="level2" data-spec="true" data-ok="true">
   <h2>Geometry Interfaces Module Level 1</h2>
   <section id="crawl-info-34" class="level3 info">
   <h3>Crawl info</h3>
@@ -1155,12 +1186,7 @@
   </section>
   <section id="potential-issues-34" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-34" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1235,7 +1261,6 @@
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>EventTarget</code> defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul></li>
   </ul>
   </section>
@@ -1276,14 +1301,14 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/html/">Editor's Draft</a></li>
   <li>Shortname: html52</li>
-  <li>Date: 2 October 2017</li>
+  <li>Date: 10 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-37" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Obsolete WebIDL constructs found</li>
-  <li>Unknown WebIDL names used: <code>WindowProxy</code></li>
+  <li>Unknown WebIDL names used: <code>HTMLMenuElement</code>, <code>WindowProxy</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-syntax/"><code>https://www.w3.org/TR/css3-syntax/</code></a></li>
@@ -1322,11 +1347,13 @@
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
@@ -1347,7 +1374,6 @@
   <li><a href="https://rawgit.com/w3c/input-events/v1/index.html">Input Events Level 1</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
@@ -1413,12 +1439,14 @@
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   <li><a href="https://w3c.github.io/proximity/">Proximity Sensor</a></li>
   <li><a href="https://w3c.github.io/staticrange/">Static Range</a></li>
+  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
@@ -1473,6 +1501,7 @@
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
@@ -1525,12 +1554,12 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
@@ -1564,7 +1593,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="html5-web-messaging" class="level2" data-spec="true" data-anomaly="true" data-hasObsoleteIdl="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="html5-web-messaging" class="level2" data-spec="true" data-anomaly="true" data-hasObsoleteIdl="true" data-unknownIdlNames="true">
   <h2>HTML5 Web Messaging</h2>
   <section id="crawl-info-40" class="level3 info">
   <h3>Crawl info</h3>
@@ -1579,10 +1608,6 @@
   <ul>
   <li>Obsolete WebIDL constructs found</li>
   <li>Unknown WebIDL names used: <code>Transferable</code>, <code>WindowProxy</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-40" class="level3 dependencies">
@@ -1595,6 +1620,7 @@
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
@@ -1645,10 +1671,15 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
+  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
@@ -1699,23 +1730,19 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="indexed-database-api-2.0" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-inconsistentRef="true">
+  <section id="indexed-database-api-2.0" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Indexed Database API 2.0</h2>
   <section id="crawl-info-42" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/IndexedDB/">Editor's Draft</a></li>
   <li>Shortname: IndexedDB-2</li>
-  <li>Date: 26 September 2017</li>
+  <li>Date: 9 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-42" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -1745,7 +1772,7 @@
   <ul>
   <li>URL: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a></li>
   <li>Shortname: input-events-2</li>
-  <li>Date: 08 October 2017</li>
+  <li>Date: 12 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-43" class="level3 anomalies">
@@ -1883,7 +1910,6 @@
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
@@ -1895,6 +1921,7 @@
   <ul>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
+  <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   </ul>
   </section>
   </section>
@@ -1926,25 +1953,20 @@
   </ul>
   </section>
   </section>
-  <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-error="true">
   <h2>Media Capture from DOM Elements</h2>
   <section id="crawl-info-49" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/mediacapture-fromelement/">Editor's Draft</a></li>
   <li>Shortname: mediacapture-fromelement</li>
-  <li>Date: 22 September 2017</li>
+  <li>Date: unknown</li>
   </ul>
   </section>
   <section id="potential-issues-49" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
-  <li><a href="https://www.w3.org/TR/2dcontext2/"><code>https://www.w3.org/TR/2dcontext2/</code></a>, related reference &quot;2DCONTEXT&quot; uses URL <a href="https://www.w3.org/TR/2dcontext/"><code>https://www.w3.org/TR/2dcontext/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec     at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)     at ontimeout (timers.js:386:14)     at tryOnTimeout (timers.js:250:5)     at Timer.listOnTimeout (timers.js:214:5)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-49" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -2300,7 +2322,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/payment-handler/">Editor's Draft</a></li>
   <li>Shortname: payment-handler</li>
-  <li>Date: 04 October 2017</li>
+  <li>Date: 10 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-60" class="level3 anomalies">
@@ -2332,7 +2354,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/payment-method-basic-card/">Editor's Draft</a></li>
   <li>Shortname: payment-method-basic-card</li>
-  <li>Date: 21 September 2017</li>
+  <li>Date: 10 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-61" class="level3 anomalies">
@@ -2376,7 +2398,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="performance-timeline-level-2" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <section id="performance-timeline-level-2" class="level2" data-spec="true" data-ok="true">
   <h2>Performance Timeline Level 2</h2>
   <section id="crawl-info-63" class="level3 info">
   <h3>Crawl info</h3>
@@ -2388,12 +2410,7 @@
   </section>
   <section id="potential-issues-63" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-63" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -2412,7 +2429,7 @@
   </ul>
   </section>
   </section>
-  <section id="permissions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="permissions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Permissions</h2>
   <section id="crawl-info-64" class="level3 info">
   <h3>Crawl info</h3>
@@ -2425,11 +2442,7 @@
   <section id="potential-issues-64" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>PermissionName</code>, <code>WorkerNavigator</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
+  <li>Unknown WebIDL names used: <code>PermissionName</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/manifest/"><code>https://w3c.github.io/manifest/</code></a></li>
@@ -2551,7 +2564,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/presentation-api/">Editor's Draft</a></li>
   <li>Shortname: presentation-api</li>
-  <li>Date: 19 September 2017</li>
+  <li>Date: 10 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-68" class="level3 anomalies">
@@ -2868,6 +2881,7 @@
   <ul>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.2</a></li>
@@ -3044,6 +3058,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="http://www.w3.org/TR/2013/REC-selectors-api-20130221/">Selectors API Level 1</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
@@ -3071,7 +3086,7 @@
   <ul>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   <li><code>DOMHighResTimeStamp</code> defined in <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   </ul></li>
   </ul>
@@ -3108,20 +3123,23 @@
   </ul>
   </section>
   </section>
-  <section id="service-workers-nightly" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="service-workers-nightly" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Service Workers Nightly</h2>
   <section id="crawl-info-83" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://w3c.github.io/ServiceWorker/">Editor's Draft</a></li>
   <li>Shortname: service-workers-1</li>
-  <li>Date: 15 August 2017</li>
+  <li>Date: 10 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-83" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>WorkerGlobalScope</code>, <code>WorkerNavigator</code>, <code>WorkerType</code></li>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>Worker</code> also defined in <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/push-api/"><code>https://w3c.github.io/push-api/</code></a></li>
@@ -3146,27 +3164,15 @@
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
+  <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-appmanifest-20170922/">Web App Manifest</a></li>
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
-  <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
-  <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
-  <li><a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a></li>
-  <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
-  <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
-  <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
-  <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
-  <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
-  <li><a href="https://w3c.github.io/user-timing/">User Timing Level 2</a></li>
-  <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></li>
-  <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
-  <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -3247,7 +3253,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="storage-standard" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <section id="storage-standard" class="level2" data-spec="true" data-ok="true">
   <h2>Storage Standard</h2>
   <section id="crawl-info-86" class="level3 info">
   <h3>Crawl info</h3>
@@ -3259,12 +3265,7 @@
   </section>
   <section id="potential-issues-86" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-86" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3282,7 +3283,7 @@
   <ul>
   <li>URL: <a href="https://streams.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 6 October 2017</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-87" class="level3 anomalies">
@@ -3498,24 +3499,19 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="url-standard" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <section id="url-standard" class="level2" data-spec="true" data-ok="true">
   <h2>URL Standard</h2>
   <section id="crawl-info-94" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://url.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 18 September 2017</li>
+  <li>Date: 10 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-94" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-94" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3591,7 +3587,7 @@
   </ul>
   </section>
   </section>
-  <section id="user-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="user-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>User Timing Level 2</h2>
   <section id="crawl-info-96" class="level3 info">
   <h3>Crawl info</h3>
@@ -3604,10 +3600,6 @@
   <section id="potential-issues-96" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/html/webappapis.html"><code>https://w3c.github.io/html/webappapis.html</code></a></li>
@@ -3637,7 +3629,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/vibration/">Editor's Draft</a></li>
   <li>Shortname: vibration</li>
-  <li>Date: 24 January 2017</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-97" class="level3 anomalies">
@@ -3655,7 +3647,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="w3c-dom-4.1" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="w3c-dom-4.1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>W3C DOM 4.1</h2>
   <section id="crawl-info-98" class="level3 info">
   <h3>Crawl info</h3>
@@ -3668,10 +3660,6 @@
   <section id="potential-issues-98" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/touch-events/"><code>https://www.w3.org/TR/touch-events/</code></a></li>
@@ -3693,6 +3681,7 @@
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
@@ -3761,6 +3750,7 @@
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
   <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
+  <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -3862,7 +3852,7 @@
   <ul>
   <li>URL: <a href="https://webaudio.github.io/web-audio-api/">Editor's Draft</a></li>
   <li>Shortname: webaudio</li>
-  <li>Date: 06 October 2017</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-102" class="level3 anomalies">
@@ -3894,7 +3884,6 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   </section>
@@ -3906,7 +3895,7 @@
   <ul>
   <li>URL: <a href="https://w3c.github.io/webauthn/">Editor's Draft</a></li>
   <li>Shortname: webauthn</li>
-  <li>Date: 5 October 2017</li>
+  <li>Date: 12 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-103" class="level3 anomalies">
@@ -3948,7 +3937,7 @@
   <ul>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   </ul></li>
   </ul>
   </section>
@@ -3963,22 +3952,22 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-idl" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <section id="web-idl" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Web IDL</h2>
   <section id="crawl-info-105" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://heycam.github.io/webidl/">Editor's Draft</a></li>
   <li>Shortname: WebIDL-1</li>
-  <li>Date: 5 October 2017</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-105" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Missing references for WebIDL names:
+  <li>Inconsistent references for links:
   <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><a href="https://www.w3.org/TR/geolocation-API/"><code>https://www.w3.org/TR/geolocation-API/</code></a>, related reference &quot;GEOLOCATION-API&quot; uses URL <a href="http://dev.w3.org/geo/api/spec-source.html"><code>http://dev.w3.org/geo/api/spec-source.html</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -3996,6 +3985,7 @@
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
@@ -4023,7 +4013,6 @@
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
@@ -4154,20 +4143,48 @@
   </ul>
   </section>
   </section>
-  <section id="web-workers" class="level2" data-spec="true" data-error="true">
+  <section id="web-workers" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>Web Workers</h2>
   <section id="crawl-info-108" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://html.spec.whatwg.org/multipage/workers.html">Editor's Draft</a></li>
   <li>Shortname: workers</li>
-  <li>Date: unknown</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-108" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>FetchError: request to https://html.spec.whatwg.org/multipage/workers.html failed, reason: socket hang up FetchError: request to https://html.spec.whatwg.org/multipage/workers.html failed, reason: socket hang up     at ClientRequest.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)     at emitOne (events.js:96:13)     at ClientRequest.emit (events.js:188:7)     at TLSSocket.socketOnEnd (_http_client.js:345:9)     at emitNone (events.js:91:20)     at TLSSocket.emit (events.js:185:7)     at endReadableNT (_stream_readable.js:974:12)     at _combinedTickCallback (internal/process/next_tick.js:80:11)     at process._tickCallback (internal/process/next_tick.js:104:9)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>No normative references found</li>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>Worker</code> also defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
+  <li><code>OnErrorEventHandler</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
+  <li><code>EventHandler</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
+  <li><code>Window</code> defined in <a href="https://w3c.github.io/html/">HTML 5.2</a></li>
+  <li><code>RequestCredentials</code> defined in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
+  <li><code>MessagePort</code> defined in <a href="https://www.w3.org/TR/webmessaging">HTML5 Web Messaging</a></li>
+  </ul></li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a></li>
+  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
+  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a></li>
+  <li><a href="https://infra.spec.whatwg.org/"><code>https://infra.spec.whatwg.org/</code></a></li>
+  <li><a href="https://url.spec.whatwg.org/"><code>https://url.spec.whatwg.org/</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-referrer-policy/"><code>https://w3c.github.io/webappsec-referrer-policy/</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a></li>
+  <li><a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a></li>
+  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-108" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -4179,6 +4196,7 @@
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
@@ -4232,9 +4250,17 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
+  <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
+  <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
+  <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></li>
+  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
@@ -4294,7 +4320,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Sun Oct 08 2017</li>
+  <li>Date: Thu Oct 12 2017</li>
   </ul>
   </section>
   <section id="potential-issues-110" class="level3 anomalies">
@@ -4314,7 +4340,7 @@
   <ul>
   <li>URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: Sun Oct 08 2017</li>
+  <li>Date: Thu Oct 12 2017</li>
   </ul>
   </section>
   <section id="potential-issues-111" class="level3 anomalies">
@@ -4337,6 +4363,7 @@
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
+  <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   </ul>
   </section>
   </section>
@@ -4353,7 +4380,7 @@
   <section id="potential-issues-112" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>RTCError</code>, <code>WorkerGlobalScope</code></li>
+  <li>Unknown WebIDL names used: <code>RTCError</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>RTCStats</code> also defined in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
@@ -4381,7 +4408,6 @@
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
   </ul>
@@ -4449,31 +4475,29 @@
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
+  </ul>
   </section>
   </section>
-  <section id="xmlhttprequest-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
+  <section id="xmlhttprequest-standard" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
   <h2>XMLHttpRequest Standard</h2>
   <section id="crawl-info-115" class="level3 info">
   <h3>Crawl info</h3>
   <ul>
   <li>URL: <a href="https://xhr.spec.whatwg.org/">Editor's Draft</a></li>
   <li>Shortname: no shortname</li>
-  <li>Date: 5 October 2017</li>
+  <li>Date: 11 October 2017</li>
   </ul>
   </section>
   <section id="potential-issues-115" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DedicatedWorker</code>, <code>SharedWorker</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>ProgressEvent</code> also defined in <a href="https://www.w3.org/TR/progress-events">Progress Events</a></li>
   <li><code>ProgressEventInit</code> also defined in <a href="https://www.w3.org/TR/progress-events">Progress Events</a></li>
-  </ul></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>

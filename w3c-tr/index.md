@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 08, 2017
+% October 12, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -296,19 +296,17 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cooperative Scheduling of Background Tasks {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Cooperative Scheduling of Background Tasks {data-spec=true data-ok=true}
 
 ### Crawl info {.info}
 
 - URL: [Latest published version](https://www.w3.org/TR/requestidlecallback/)
 - Shortname: requestidlecallback
-- Date: 31 January 2017
+- Date: 10 October 2017
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/2011/WD-html5-20110525/`](https://www.w3.org/TR/2011/WD-html5-20110525/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
-     * [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -866,7 +864,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 5 October 2017
+- Date: 10 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1926,6 +1924,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Beacon](https://w3c.github.io/beacon/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.2](https://w3c.github.io/html/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/)
@@ -1936,7 +1935,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 
 
@@ -1968,7 +1966,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Latest published version](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
-- Date: 04 October 2017
+- Date: 10 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2745,7 +2743,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 6 October 2017
+- Date: 11 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2929,7 +2927,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://url.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 18 September 2017
+- Date: 10 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3473,7 +3471,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Sun Oct 08 2017
+- Date: Thu Oct 12 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3492,7 +3490,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Sun Oct 08 2017
+- Date: Thu Oct 12 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3615,6 +3613,7 @@ Informative references to this spec from:
 
 - [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/)
 - [Beacon](https://w3c.github.io/beacon/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Input Events Level 2](https://rawgit.com/w3c/input-events/v1/index.html)
@@ -3722,7 +3721,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://xhr.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 5 October 2017
+- Date: 11 October 2017
 
 ### Potential issue(s) {.anomalies}
 
