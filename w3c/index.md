@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 12, 2017
+% October 17, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -8,7 +8,7 @@
 
 - URL: [Editor's Draft](https://w3c.github.io/accelerometer/)
 - Shortname: accelerometer
-- Date: 25 September 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -35,7 +35,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/ambient-light/)
 - Shortname: ambient-light
-- Date: 25 September 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -57,7 +57,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
 - Shortname: audio-output
-- Date: 21 September 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -123,13 +123,14 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/clipboard-apis/)
 - Shortname: clipboard-apis
-- Date: 5 October 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
 - Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -197,14 +198,13 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/webappsec-csp/)
 - Shortname: CSP3
-- Date: 21 August 2017
+- Date: 12 October 2017
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
      * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -447,7 +447,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/)
 - Shortname: css-pseudo-4
-- Date: 11 October 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -506,7 +506,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Shortname: css-typed-om-1
-- Date: 29 August 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -768,7 +768,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 10 October 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -900,7 +900,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/sensors/)
 - Shortname: generic-sensor
-- Date: 11 October 2017
+- Date: 13 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -986,7 +986,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/gyroscope/)
 - Shortname: gyroscope
-- Date: 21 September 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1054,7 +1054,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/html/)
 - Shortname: html52
-- Date: 10 October 2017
+- Date: 13 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1120,6 +1120,7 @@ Normative references to this spec from:
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
@@ -1198,6 +1199,7 @@ Informative references to this spec from:
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -1297,6 +1299,8 @@ Informative references to this spec from:
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -1416,6 +1420,7 @@ Informative references to this spec from:
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -1486,7 +1491,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Shortname: input-events-2
-- Date: 12 October 2017
+- Date: 17 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1555,7 +1560,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/magnetometer/)
 - Shortname: magnetometer
-- Date: 5 October 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1601,6 +1606,7 @@ Normative references to this spec from:
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
@@ -1621,7 +1627,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-depth/)
 - Shortname: mediacapture-depth
-- Date: 22 September 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1637,24 +1643,19 @@ Informative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
-## Media Capture from DOM Elements {data-spec=true data-error=true}
+## Media Capture from DOM Elements {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Crawl info {.info}
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/)
 - Shortname: mediacapture-fromelement
-- Date: unknown
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
-    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
-    at ontimeout (timers.js:386:14)
-    at tryOnTimeout (timers.js:250:5)
-    at Timer.listOnTimeout (timers.js:214:5)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+     * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/), related reference "2DCONTEXT" uses URL [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1718,7 +1719,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-image/)
 - Shortname: image-capture
-- Date: 6 September 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1741,7 +1742,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-record/)
 - Shortname: mediastream-recording
-- Date: 12 September 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1810,7 +1811,6 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 
 Informative references to this spec from:
@@ -1855,7 +1855,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
 - Shortname: orientation-sensor
-- Date: 21 September 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2057,6 +2057,7 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
@@ -2194,7 +2195,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/proximity/)
 - Shortname: proximity
-- Date: 25 September 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2267,7 +2268,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/remote-playback/)
 - Shortname: remote-playback
-- Date: 19 September 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2427,7 +2428,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/)
 - Shortname: screen-capture
-- Date: 22 September 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2468,6 +2469,7 @@ Normative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -2610,7 +2612,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/ServiceWorker/)
 - Shortname: service-workers-1
-- Date: 10 October 2017
+- Date: 13 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2635,7 +2637,6 @@ Normative references to this spec from:
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
-- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -2734,7 +2735,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 11 October 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3166,7 +3167,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://w3c.github.io/web-animations/)
 - Shortname: web-animations-1
-- Date: 6 October 2017
+- Date: 13 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3217,7 +3218,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
 - Shortname: webaudio
-- Date: 11 October 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3241,6 +3242,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
@@ -3250,7 +3252,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://w3c.github.io/webauthn/)
 - Shortname: webauthn
-- Date: 12 October 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3300,7 +3302,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://heycam.github.io/webidl/)
 - Shortname: WebIDL-1
-- Date: 11 October 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3349,6 +3351,7 @@ Normative references to this spec from:
 - [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
@@ -3474,7 +3477,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
 - Shortname: workers
-- Date: 11 October 2017
+- Date: 17 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3583,6 +3586,7 @@ Informative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
+- [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
@@ -3626,7 +3630,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Oct 12 2017
+- Date: Tue Oct 17 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3636,7 +3640,10 @@ This specification looks good!
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
 ## WebGL Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -3645,7 +3652,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Oct 12 2017
+- Date: Tue Oct 17 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3697,6 +3704,7 @@ Informative references to this spec from:
 
 - [File API](https://w3c.github.io/FileAPI/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
@@ -3742,6 +3750,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
@@ -3760,7 +3769,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://xhr.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 11 October 2017
+- Date: 13 October 2017
 
 ### Potential issue(s) {.anomalies}
 

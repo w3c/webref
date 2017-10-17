@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 12, 2017
+% October 17, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -864,7 +864,7 @@ Informative references to this spec from:
 
 - URL: [Editor's Draft](https://fetch.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 10 October 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -1908,7 +1908,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Latest published version](https://www.w3.org/TR/page-visibility-2/)
 - Shortname: page-visibility-2
-- Date: 28 March 2017
+- Date: 17 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -2743,7 +2743,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://streams.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 11 October 2017
+- Date: 16 October 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3471,7 +3471,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Shortname: no shortname
-- Date: Thu Oct 12 2017
+- Date: Tue Oct 17 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3490,7 +3490,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Shortname: no shortname
-- Date: Thu Oct 12 2017
+- Date: Tue Oct 17 2017
 
 ### Potential issue(s) {.anomalies}
 
@@ -3721,7 +3721,7 @@ No informative reference to this spec from other specs.
 
 - URL: [Editor's Draft](https://xhr.spec.whatwg.org/)
 - Shortname: no shortname
-- Date: 11 October 2017
+- Date: 13 October 2017
 
 ### Potential issue(s) {.anomalies}
 

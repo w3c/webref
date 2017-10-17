@@ -26,9 +26,8 @@
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
   <li><a href="https://www.w3.org/TR/longtasks">longtasks</a>: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:133:34)</code></li>
-  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a>: <code>Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10) at ontimeout (timers.js:386:14) at tryOnTimeout (timers.js:250:5) at Timer.listOnTimeout (timers.js:214:5)</code></li>
   </ul>
-  <p>=&gt; 2 specifications found</p>
+  <p>=&gt; 1 specification found</p>
   </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
@@ -380,7 +379,11 @@
   <section id="reference-url-is-inconsistent-with-url-used-in-document-links" class="level2">
   <h2>Reference URL is inconsistent with URL used in document links</h2>
   <ul>
-  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a> links to <a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
+  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
+  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
+  </ul></li>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/2dcontext2/"><code>https://www.w3.org/TR/2dcontext2/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
@@ -388,11 +391,7 @@
   <li><a href="https://www.w3.org/TR/2011/REC-SVG11-20110816/"><code>https://www.w3.org/TR/2011/REC-SVG11-20110816/</code></a> but related reference &quot;SVG&quot; uses URL <a href="https://www.w3.org/TR/SVG/"><code>https://www.w3.org/TR/SVG/</code></a></li>
   <li><a href="https://www.w3.org/TR/2dcontext/"><code>https://www.w3.org/TR/2dcontext/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a> links to:
-  <ul>
-  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
-  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
-  </ul></li>
+  <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/"><code>https://w3c.github.io/webappsec-mixed-content/</code></a> but related reference &quot;MIXED-CONTENT&quot; uses URL <a href="https://www.w3.org/TR/mixed-content/"><code>https://www.w3.org/TR/mixed-content/</code></a></li>
@@ -451,6 +450,11 @@
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a> links to <a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
+  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2dcontext2/"><code>https://www.w3.org/TR/2dcontext2/</code></a> but related reference &quot;2DCONTEXT&quot; uses URL <a href="https://www.w3.org/TR/2dcontext/"><code>https://www.w3.org/TR/2dcontext/</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -604,7 +608,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but related reference &quot;CANVAS&quot; uses URL <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element"><code>https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element</code></a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> links to <a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   </ul>
-  <p>=&gt; 139 inconsistent references for links found in 55 specifications</p>
+  <p>=&gt; 141 inconsistent references for links found in 56 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
