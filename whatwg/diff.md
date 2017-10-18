@@ -1,16 +1,37 @@
-% Diff between report from "October 17, 2017" and reference report from "October 12, 2017"
+% Diff between report from "October 18, 2017" and reference report from "October 17, 2017"
 % Reffy
-% October 17, 2017
+% October 18, 2017
 
-## Clipboard API and events
+## HTML Standard
 
-- URL: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
-- Inconsistent references for links: *INS* https://w3c.github.io/permissions/
+- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/)
+- Missing references for links: *DEL* https://w3c.github.io/payment-request/
+- Inconsistent references for links: *INS* https://w3c.github.io/payment-request/
 
 
-## Content Security Policy Level 3
+## Long Tasks API 1
 
-- URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
-- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-csp/
+- URL: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/longtasks/)
+- Repository: [GitHub w3c/longtasks](https://github.com/w3c/longtasks)
+- This specification was not in the reference crawl report.
+
+
+## longtasks
+
+- URL: [https://www.w3.org/TR/longtasks/](https://www.w3.org/TR/longtasks/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/longtasks)
+- This specification is not in the new crawl report.
+
+
+## UI Events
+
+- URL: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- Editor's Draft: [https://w3c.github.io/uievents/](https://w3c.github.io/uievents/)
+- Repository: [GitHub w3c/uievents](https://github.com/w3c/uievents)
+- Missing references for links: *DEL* https://www.w3.org/TR/css-syntax-3/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css-syntax-3/
 
 
