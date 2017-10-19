@@ -1,29 +1,20 @@
-% Diff between report from "October 18, 2017" and reference report from "October 17, 2017"
+% Diff between report from "October 19, 2017" and reference report from "October 18, 2017"
 % Reffy
-% October 18, 2017
+% October 19, 2017
 
-## Long Tasks API 1
+## HTML 5.3
 
-- URL: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/longtasks/)
-- Repository: [GitHub w3c/longtasks](https://github.com/w3c/longtasks)
-- This specification was not in the reference crawl report.
-
-
-## longtasks
-
-- URL: [https://www.w3.org/TR/longtasks/](https://www.w3.org/TR/longtasks/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/longtasks)
-- This specification is not in the new crawl report.
+- URL: [https://www.w3.org/TR/html52/](https://www.w3.org/TR/html52/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/html/)
+- Repository: [GitHub w3c/html](https://github.com/w3c/html)
+- Spec title: *INS* HTML 5.3 / *DEL* HTML 5.2
 
 
-## UI Events
+## Secure Contexts
 
-- URL: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- Editor's Draft: [https://w3c.github.io/uievents/](https://w3c.github.io/uievents/)
-- Repository: [GitHub w3c/uievents](https://github.com/w3c/uievents)
-- Missing references for links: *DEL* https://www.w3.org/TR/css-syntax-3/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-syntax-3/
+- URL: [https://www.w3.org/TR/secure-contexts/](https://www.w3.org/TR/secure-contexts/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-secure-contexts/)
+- Repository: [GitHub w3c/webappsec-secure-contexts](https://github.com/w3c/webappsec-secure-contexts)
+- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-mixed-content/ / *DEL* https://www.w3.org/TR/geolocation-API/
 
 
