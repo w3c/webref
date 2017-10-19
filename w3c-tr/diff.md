@@ -1,80 +1,52 @@
-% Diff between report from "October 18, 2017" and reference report from "October 17, 2017"
+% Diff between report from "October 19, 2017" and reference report from "October 18, 2017"
 % Reffy
-% October 18, 2017
+% October 19, 2017
 
-## CSS Object Model (CSSOM)
+## Accelerometer
 
-- URL: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
-- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-- Editor's Draft: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *DEL* https://www.w3.org/TR/css-pseudo-4/, https://www.w3.org/TR/css3-values/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-pseudo-4/, https://www.w3.org/TR/css3-values/
-
-
-## CSS Values and Units Module Level 3
-
-- URL: [https://www.w3.org/TR/css-values-3/](https://www.w3.org/TR/css-values-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
-- Editor's Draft: [https://drafts.csswg.org/css-values/](https://drafts.csswg.org/css-values/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *DEL* https://www.w3.org/TR/css-syntax/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-syntax/
+- URL: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
+- Editor's Draft: [https://w3c.github.io/accelerometer/](https://w3c.github.io/accelerometer/)
+- Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
+- Spec is OK: *INS* false / *DEL* true
+- Missing references for WebIDL names: *INS* Window
+- Missing references for links: *INS* https://w3c.github.io/motion-sensors/, https://w3c.github.io/sensors/usecases.html
 
 
-## CSSOM View Module
+## Ambient Light Sensor
 
-- URL: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
-- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
-- Editor's Draft: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for WebIDL names: *DEL* CSSPseudoElement
-- Missing references for links: *DEL* https://www.w3.org/TR/css-writing-modes-3/, https://www.w3.org/TR/css-pseudo-4/, https://www.w3.org/TR/css3-values/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-writing-modes-3/, https://www.w3.org/TR/css-pseudo-4/, https://www.w3.org/TR/css3-values/
-
-
-## Input Events Level 1
-
-- URL: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
-- Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
-- Repository: [GitHub w3c/input-events](https://github.com/w3c/input-events)
-- Spec title: *INS* Input Events Level 1 / *DEL* Input Events Level 2
+- URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
+- Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
+- Repository: [GitHub w3c/ambient-light](https://github.com/w3c/ambient-light)
+- Spec is OK: *INS* false / *DEL* true
+- Missing references for WebIDL names: *INS* Window
 
 
-## Long Tasks API 1
+## Gyroscope
 
-- URL: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
-- Editor's Draft: [https://w3c.github.io/longtasks/](https://w3c.github.io/longtasks/)
-- Repository: [GitHub w3c/longtasks](https://github.com/w3c/longtasks)
-- This specification was not in the reference crawl report.
-
-
-## longtasks
-
-- URL: [https://www.w3.org/TR/longtasks/](https://www.w3.org/TR/longtasks/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/longtasks/)
-- This specification is not in the new crawl report.
+- URL: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
+- Editor's Draft: [https://w3c.github.io/gyroscope/](https://w3c.github.io/gyroscope/)
+- Repository: [GitHub w3c/gyroscope](https://github.com/w3c/gyroscope)
+- Missing references for WebIDL names: *INS* Window
 
 
-## Service Workers 1
+## Magnetometer
 
-- URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
-- Editor's Draft: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
-- Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
-- Missing references for links: *DEL* https://w3c.github.io/webappsec/specs/powerfulfeatures/
-- Inconsistent references for links: *INS* https://w3c.github.io/webappsec/specs/powerfulfeatures/
+- URL: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
+- Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
+- Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
+- Missing references for WebIDL names: *INS* Window
 
 
-## UI Events
+## Orientation Sensor
 
-- URL: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- Editor's Draft: [https://w3c.github.io/uievents/](https://w3c.github.io/uievents/)
-- Repository: [GitHub w3c/uievents](https://github.com/w3c/uievents)
-- Missing references for links: *DEL* https://www.w3.org/TR/css-syntax-3/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-syntax-3/
+- URL: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- Editor's Draft: [https://w3c.github.io/orientation-sensor/](https://w3c.github.io/orientation-sensor/)
+- Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
+- Missing references for WebIDL names: *INS* Window
 
 

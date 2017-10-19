@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 18, 2017
+% October 19, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -37,46 +37,51 @@ Informative references to this spec from:
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 
 
-## Accelerometer {data-spec=true data-ok=true}
+## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-accelerometer-20170814/) (14 August 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-accelerometer-20171018/) (18 October 2017)
 - Editor's Draft: [https://w3c.github.io/accelerometer/](https://w3c.github.io/accelerometer/)
 - Latest published version: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-accelerometer-20170814/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
 - Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
 - Shortname: accelerometer
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for WebIDL names: 
+     * `Window` defined in [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
+- Missing references for links: 
+     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
+     * [`https://w3c.github.io/sensors/usecases.html`](https://w3c.github.io/sensors/usecases.html)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20170814/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 
 Informative references to this spec from:
 
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 
 
-## Ambient Light Sensor {data-spec=true data-ok=true}
+## Ambient Light Sensor {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-ambient-light-20170814/) (14 August 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-ambient-light-20171018/) (18 October 2017)
 - Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
 - Latest published version: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-ambient-light-20170814/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
 - Repository: [GitHub w3c/ambient-light](https://github.com/w3c/ambient-light)
 - Shortname: ambient-light
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for WebIDL names: 
+     * `Window` defined in [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -489,7 +494,9 @@ Although they do not, the following specs should also normatively reference this
 
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
 
 
 ## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
@@ -839,7 +846,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [The Screen Orientation API](https://www.w3.org/TR/2016/WD-screen-orientation-20161031/)
 
 
@@ -978,7 +985,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20170920/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -1078,10 +1085,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/) (2 October 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/) (18 October 2017)
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
 - Shortname: generic-sensor
 
@@ -1094,16 +1101,16 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20170814/)
-- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20170814/)
-- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20170814/)
-- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20170814/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20170814/)
+- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
+- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
+- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Proximity Sensor](http://www.w3.org/TR/2016/WD-proximity-20160719/)
 
 Informative references to this spec from:
 
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 
 
 ## Geolocation API Specification 2nd Edition {data-spec=true data-ok=true}
@@ -1125,7 +1132,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
@@ -1157,26 +1164,28 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20170814/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
 No informative reference to this spec from other specs.
 
 
-## Gyroscope {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## Gyroscope {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-gyroscope-20170814/) (14 August 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-gyroscope-20171018/) (18 October 2017)
 - Editor's Draft: [https://w3c.github.io/gyroscope/](https://w3c.github.io/gyroscope/)
 - Latest published version: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-gyroscope-20170814/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
 - Repository: [GitHub w3c/gyroscope](https://github.com/w3c/gyroscope)
 - Shortname: gyroscope
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for WebIDL names: 
+     * `Window` defined in [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - Missing references for links: 
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
 
@@ -1184,7 +1193,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20170814/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 
 Informative references to this spec from:
 
@@ -1216,7 +1225,7 @@ Normative references to this spec from:
 
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
@@ -1230,7 +1239,7 @@ Although they do not, the following specs should also normatively reference this
 
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20170920/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 
 Informative references to this spec from:
@@ -1306,7 +1315,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -1338,7 +1347,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20170920/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/)
@@ -1370,9 +1379,14 @@ Normative references to this spec from:
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
+- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 - [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
+- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
+- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/)
 - [Static Range](https://w3c.github.io/staticrange/)
@@ -1384,6 +1398,7 @@ Informative references to this spec from:
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
@@ -1430,7 +1445,7 @@ Normative references to this spec from:
 - [Custom Elements](https://www.w3.org/TR/2016/WD-custom-elements-20161013/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -1467,6 +1482,7 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -1529,7 +1545,7 @@ Normative references to this spec from:
 - [Custom Elements](https://www.w3.org/TR/2016/WD-custom-elements-20161013/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
@@ -1567,6 +1583,7 @@ Informative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
@@ -1721,28 +1738,30 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Magnetometer {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Magnetometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-magnetometer-20170814/) (14 August 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-magnetometer-20171018/) (18 October 2017)
 - Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
 - Latest published version: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-magnetometer-20170814/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
 - Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
 - Shortname: magnetometer
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for WebIDL names: 
+     * `Window` defined in [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20170814/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 
 Informative references to this spec from:
 
@@ -2015,7 +2034,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20170920/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 
@@ -2026,20 +2045,22 @@ Informative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 
 
-## Orientation Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Orientation Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-orientation-sensor-20170814/) (14 August 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/) (18 October 2017)
 - Editor's Draft: [https://w3c.github.io/orientation-sensor/](https://w3c.github.io/orientation-sensor/)
 - Latest published version: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-orientation-sensor-20170814/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
 - Shortname: orientation-sensor
 
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `DOMMatrix`
+- Missing references for WebIDL names: 
+     * `Window` defined in [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/orientation-event/`](https://www.w3.org/TR/orientation-event/)
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
@@ -2082,7 +2103,7 @@ Normative references to this spec from:
 
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
 - [The Screen Orientation API](https://www.w3.org/TR/2016/WD-screen-orientation-20161031/)
@@ -2199,13 +2220,13 @@ Normative references to this spec from:
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20170920/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
 
 Informative references to this spec from:
 
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
 
 
 ## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2234,11 +2255,11 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20170814/)
-- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20170814/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
-- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20170814/)
-- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20170814/)
+- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
+- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171010/)
@@ -2525,7 +2546,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20170920/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
 
 Informative references to this spec from:
 
@@ -2684,7 +2705,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171010/)
@@ -2788,10 +2809,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-server-timing-20170920/) (20 September 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-server-timing-20171018/) (18 October 2017)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-server-timing-20170920/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
 - Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
 - Shortname: server-timing
 
@@ -2876,7 +2897,7 @@ Although they do not, the following specs should also normatively reference this
 - [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20170920/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 
 Informative references to this spec from:
@@ -3329,7 +3350,7 @@ Normative references to this spec from:
 - [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
@@ -3660,7 +3681,7 @@ Normative references to this spec from:
 - [Custom Elements](https://www.w3.org/TR/2016/WD-custom-elements-20161013/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
@@ -3703,7 +3724,7 @@ Although they do not, the following specs should also normatively reference this
 - [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20170920/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 
 Informative references to this spec from:
@@ -3711,6 +3732,7 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
@@ -3751,7 +3773,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Oct 18 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Oct 19 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3770,7 +3792,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Oct 18 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Oct 19 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3816,8 +3838,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
-- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20170814/)
-- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20170814/)
+- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
@@ -3837,8 +3859,8 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/)
-- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20170814/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
@@ -3846,7 +3868,7 @@ Normative references to this spec from:
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
-- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20170814/)
+- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -3854,7 +3876,7 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20170814/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171010/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
@@ -3868,7 +3890,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20170920/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)

@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 18, 2017
+% October 19, 2017
 
 116 specifications were crawled in this report.
 
@@ -93,7 +93,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `ApplicationCache` used in [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - `Console` used in [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - `DOMError` used in [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
-- `DOMMatrix` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/), [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20170814/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
+- `DOMMatrix` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/), [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - `DOMMatrixReadOnly` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - `DOMPoint` used in [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - `DOMPointInit` used in [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
@@ -144,6 +144,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ConstrainDouble` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
     * `ConstrainBoolean` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
     * `MediaTrackSettings` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
+- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/) uses `Window` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/) uses `Window` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
 - [Console Standard](https://console.spec.whatwg.org/) uses:
     * `Window` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
@@ -163,6 +165,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/) uses `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/) uses `Navigator` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
+- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/) uses `Window` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) uses:
     * `Element` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
@@ -170,6 +173,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/) uses `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/) uses `Window` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/) uses:
     * `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
     * `Event` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
@@ -180,12 +184,13 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/) uses:
     * `MediaStream` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/) uses `Window` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/) uses:
     * `Window` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
     * `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/) uses `EventHandler` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Remote Playback API](https://www.w3.org/TR/2016/WD-remote-playback-20161107/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20170920/) uses:
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/) uses:
     * `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/) uses:
@@ -204,11 +209,14 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `Event` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
     * `EventInit` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
 
-=> 55 missing references for IDL definitions found in 26 specifications
+=> 60 missing references for IDL definitions found in 31 specifications
 
 
 ## Missing references based on document links
 
+- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/) links to:
+    * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
+    * [`https://w3c.github.io/sensors/usecases.html`](https://w3c.github.io/sensors/usecases.html) but does not list it in its references
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/) links to [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/) but does not list it in its references
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/) links to [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
@@ -282,7 +290,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/) but does not list it in its references
     * [`https://www.w3.org/TR/css-transforms-1/`](https://www.w3.org/TR/css-transforms-1/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but does not list it in its references
-- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20170814/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
+- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/) links to [`https://w3c.github.io/workers/`](https://w3c.github.io/workers/) but does not list it in its references
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/) links to:
     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/) but does not list it in its references
@@ -315,7 +323,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/) but does not list it in its references
     * [`https://www.w3.org/TR/eventsource/`](https://www.w3.org/TR/eventsource/) but does not list it in its references
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20170814/) links to:
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/) links to:
     * [`https://www.w3.org/TR/orientation-event/`](https://www.w3.org/TR/orientation-event/) but does not list it in its references
     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/) links to [`https://www.w3.org/TR/html/full`](https://www.w3.org/TR/html/full) but does not list it in its references
@@ -395,7 +403,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 160 missing references for links found in 56 specifications
+=> 162 missing references for links found in 57 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -434,7 +442,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/) links to:
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171002/) links to [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/) links to [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "html5" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/) links to:
     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
@@ -464,9 +472,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/) links to:
     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/) but related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
-- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20170814/) links to:
-    * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/) links to:
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
+    * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/) links to:
     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
@@ -478,7 +486,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/) links to [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/) but related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20170814/) links to:
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/) links to:
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
     * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/) but related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
     * [`https://w3c.github.io/gyroscope/`](https://w3c.github.io/gyroscope/) but related reference "GYROSCOPE" uses URL [`https://www.w3.org/TR/gyroscope/`](https://www.w3.org/TR/gyroscope/)
