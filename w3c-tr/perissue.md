@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 19, 2017
+% October 20, 2017
 
 116 specifications were crawled in this report.
 
@@ -189,7 +189,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `Window` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
     * `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/) uses `EventHandler` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
-- [Remote Playback API](https://www.w3.org/TR/2016/WD-remote-playback-20161107/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/) uses:
     * `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -342,7 +342,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/) links to [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
-- [Remote Playback API](https://www.w3.org/TR/2016/WD-remote-playback-20161107/) links to [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/) but does not list it in its references
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/) links to:
     * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/) but does not list it in its references
@@ -403,7 +402,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 162 missing references for links found in 57 specifications
+=> 161 missing references for links found in 56 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
