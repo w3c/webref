@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 19, 2017
+% October 20, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -818,6 +818,7 @@ Normative references to this spec from:
 
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
+- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 
 No informative reference to this spec from other specs.
 
@@ -1342,7 +1343,7 @@ Normative references to this spec from:
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
-- [Remote Playback API](https://www.w3.org/TR/2016/WD-remote-playback-20161107/)
+- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
@@ -1456,7 +1457,6 @@ Normative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
-- [Remote Playback API](https://www.w3.org/TR/2016/WD-remote-playback-20161107/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/)
@@ -1556,7 +1556,6 @@ Normative references to this spec from:
 - [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
-- [Remote Playback API](https://www.w3.org/TR/2016/WD-remote-playback-20161107/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
@@ -2379,7 +2378,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Remote Playback API](https://www.w3.org/TR/2016/WD-remote-playback-20161107/)
+- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 
 
 ## Progress Events {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
@@ -2496,14 +2495,14 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Remote Playback API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## Remote Playback API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/WD-remote-playback-20161107/) (07 November 2016)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-remote-playback-20171019/) (19 October 2017)
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
 - Latest published version: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-remote-playback-20161107/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - Repository: [GitHub w3c/remote-playback](https://github.com/w3c/remote-playback)
 - Shortname: remote-playback
 
@@ -2511,8 +2510,6 @@ No informative reference to this spec from other specs.
 
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
-- Missing references for links: 
-     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2712,6 +2709,7 @@ Normative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
+- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
@@ -3212,6 +3210,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171010/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
+- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
@@ -3402,7 +3401,7 @@ Although they do not, the following specs should also normatively reference this
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
-- [Remote Playback API](https://www.w3.org/TR/2016/WD-remote-playback-20161107/)
+- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/)
 - [The Screen Orientation API](https://www.w3.org/TR/2016/WD-screen-orientation-20161031/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/WD-webrtc-20170822/)
@@ -3694,7 +3693,6 @@ Normative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
-- [Remote Playback API](https://www.w3.org/TR/2016/WD-remote-playback-20161107/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
@@ -3773,7 +3771,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Oct 19 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Oct 20 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3792,7 +3790,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Oct 19 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Oct 20 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3885,7 +3883,7 @@ Normative references to this spec from:
 - [Pointer Lock 2.0](https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
-- [Remote Playback API](https://www.w3.org/TR/2016/WD-remote-playback-20161107/)
+- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
