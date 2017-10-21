@@ -1,8 +1,17 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 20, 2017
+% October 21, 2017
 
 116 specifications were crawled in this report.
+
+
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html): `Cannot read property 'href' of null`
+
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -19,7 +28,6 @@ Basically all specifications have normative dependencies on some other specifica
 ## Specifications without WebIDL definitions
 
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
-- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Syntax Module Level 3](http://www.w3.org/TR/2014/CR-css-syntax-3-20140220/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 - [CSS Writing Modes Level 3](http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/)
@@ -31,7 +39,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
 - [UI Events KeyboardEvent key Values](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
 
-=> 12 specifications found
+=> 11 specifications found
 
 Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
