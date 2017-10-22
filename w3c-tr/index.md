@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 21, 2017
+% October 22, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -156,7 +156,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -772,7 +772,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 
 
@@ -848,11 +848,11 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `SupportedType`
 - Missing references for WebIDL names: 
-     * `Document` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
-     * `Node` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
-     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
-     * `Range` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
-     * `DocumentFragment` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+     * `Document` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `Node` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `Range` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `DocumentFragment` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - Missing references for links: 
      * [`https://domparsing.spec.whatwg.org/`](https://domparsing.spec.whatwg.org/)
 
@@ -866,7 +866,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 
 
 ## Encoding {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -896,7 +896,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2017/WD-webvtt1-20170808/)
@@ -960,7 +960,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -1198,7 +1198,7 @@ Informative references to this spec from:
 
 - Obsolete WebIDL constructs found
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - Missing references for links: 
      * [`https://w3c.github.io/workers/`](https://w3c.github.io/workers/)
 
@@ -1342,7 +1342,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -1403,7 +1403,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
      * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
      * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - Inconsistent references for links: 
@@ -1447,7 +1447,7 @@ Normative references to this spec from:
 - [The Screen Orientation API](https://www.w3.org/TR/2016/WD-screen-orientation-20161031/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -1547,7 +1547,7 @@ Normative references to this spec from:
 - [The Screen Orientation API](https://www.w3.org/TR/2016/WD-screen-orientation-20161031/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -1568,7 +1568,7 @@ Informative references to this spec from:
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/WD-webrtc-20170822/)
 
 
@@ -1653,7 +1653,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/WD-webrtc-20170822/)
 
@@ -1785,9 +1785,9 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `OverconstrainedError`
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
-     * `Event` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
-     * `EventInit` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `Event` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `EventInit` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1900,7 +1900,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
      * `URL` defined in [URL Standard](https://url.spec.whatwg.org/)
 - Missing references for links: 
      * [`https://w3c.github.io/encrypted-media/`](https://w3c.github.io/encrypted-media/)
@@ -2512,7 +2512,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2926,10 +2926,10 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `DocumentOrShadowRoot`
 - Missing references for WebIDL names: 
      * `Selection` defined in [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
-     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
      * `CaretPosition` defined in [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
      * `StyleSheetList` defined in [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-     * `DocumentFragment` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+     * `DocumentFragment` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
      * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
@@ -3023,7 +3023,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - Missing references for links: 
      * [`https://fullscreen.spec.whatwg.org/`](https://fullscreen.spec.whatwg.org/)
 
@@ -3120,7 +3120,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
 - [UI Events KeyboardEvent key Values](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -3217,7 +3217,7 @@ Normative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -3316,10 +3316,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-dom41-20170609/) (09 June 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-dom41-20171021/) (21 October 2017)
 - Editor's Draft: [https://w3c.github.io/dom/](https://w3c.github.io/dom/)
 - Latest published version: [https://www.w3.org/TR/dom41/](https://www.w3.org/TR/dom41/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - Repository: [GitHub w3c/dom](https://github.com/w3c/dom)
 - Shortname: dom41
 
@@ -3328,10 +3328,10 @@ No informative reference to this spec from other specs.
 - Missing references for links: 
      * [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
      * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
      * [`https://www.w3.org/TR/2017/WD-dom41-20170420/`](https://www.w3.org/TR/2017/WD-dom41-20170420/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
      * [`https://www.w3.org/TR/2017/WD-dom41-20170321/`](https://www.w3.org/TR/2017/WD-dom41-20170321/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3381,7 +3381,7 @@ Normative references to this spec from:
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -3641,7 +3641,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 
 
 ## Web Workers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3707,7 +3707,7 @@ Normative references to this spec from:
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -3774,7 +3774,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Oct 21 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Oct 22 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3793,7 +3793,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Oct 21 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Oct 22 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3901,7 +3901,7 @@ Normative references to this spec from:
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -3954,9 +3954,9 @@ Informative references to this spec from:
 - WebIDL names also defined elsewhere: 
     * `RTCStats` also defined in [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/)
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
-     * `Event` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
-     * `EventInit` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20170609/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `Event` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `EventInit` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
 
 ### Known dependencies on this specification {.dependencies}
 
