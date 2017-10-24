@@ -1,4 +1,12 @@
-% Diff between report from "October 23, 2017" and reference report from "October 22, 2017"
+% Diff between report from "October 24, 2017" and reference report from "October 23, 2017"
 % Reffy
-% October 23, 2017
+% October 24, 2017
+
+## ContentEditable
+
+- URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
+- Spec title: *INS* ContentEditable / *DEL* https://w3c.github.io/editing/contentEditable.html
+- Spec could not be rendered: *DEL* Cannot read property 'href' of null
+
 
