@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 25, 2017
+% October 26, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -269,7 +269,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (09 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (25 October 2017)
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
 - Latest published version: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
@@ -322,8 +322,8 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css-font-loading/) (11 October 2017)
-- Editor's Draft: [http://dev.w3.org/csswg/css-font-loading/](http://dev.w3.org/csswg/css-font-loading/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-font-loading/) (25 October 2017)
+- Editor's Draft: [https://drafts.csswg.org/css-font-loading/](https://drafts.csswg.org/css-font-loading/)
 - Latest published version: [http://www.w3.org/TR/css-font-loading-3/](http://www.w3.org/TR/css-font-loading-3/)
 - Latest published status: [Last Call](http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
@@ -367,10 +367,10 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
@@ -382,7 +382,7 @@ Informative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 
 
 ## CSS Object Model (CSSOM) {data-spec=true data-ok=true}
@@ -405,7 +405,7 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -426,7 +426,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
-- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -488,7 +488,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/) (16 October 2017)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/) (25 October 2017)
 - Editor's Draft: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
 - Latest published version: [http://www.w3.org/TR/css-pseudo-4/](http://www.w3.org/TR/css-pseudo-4/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
@@ -513,8 +513,8 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css-syntax/) (23 October 2017)
-- Editor's Draft: [http://dev.w3.org/csswg/css-syntax/](http://dev.w3.org/csswg/css-syntax/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-syntax/) (25 October 2017)
+- Editor's Draft: [https://drafts.csswg.org/css-syntax/](https://drafts.csswg.org/css-syntax/)
 - Latest published version: [http://www.w3.org/TR/css-syntax-3/](http://www.w3.org/TR/css-syntax-3/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2014/CR-css-syntax-3-20140220/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
@@ -579,7 +579,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values/) (16 October 2017)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values/) (25 October 2017)
 - Editor's Draft: [https://drafts.csswg.org/css-values/](https://drafts.csswg.org/css-values/)
 - Latest published version: [https://www.w3.org/TR/css-values-3/](https://www.w3.org/TR/css-values-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -599,14 +599,14 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTML 5.3](https://w3c.github.io/html/)
@@ -624,8 +624,8 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css-writing-modes-3/) (27 September 2017)
-- Editor's Draft: [http://dev.w3.org/csswg/css-writing-modes-3/](http://dev.w3.org/csswg/css-writing-modes-3/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (25 October 2017)
+- Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
 - Latest published version: [http://www.w3.org/TR/css-writing-modes-3/](http://www.w3.org/TR/css-writing-modes-3/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
@@ -798,7 +798,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
@@ -845,7 +845,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (16 October 2017)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (25 October 2017)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -894,8 +894,8 @@ Informative references to this spec from:
 
 - Crawled version: [Editor's Draft](https://w3c.github.io/FileAPI/) (24 October 2017)
 - Editor's Draft: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
-- Latest published version: [http://www.w3.org/TR/FileAPI/](http://www.w3.org/TR/FileAPI/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- Latest published version: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - Repository: [GitHub w3c/FileAPI](https://github.com/w3c/FileAPI)
 - Shortname: FileAPI
 
@@ -1194,13 +1194,13 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
@@ -1294,7 +1294,7 @@ Informative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -1341,7 +1341,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -1395,7 +1395,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Battery Status API](https://w3c.github.io/battery/)
-- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -1461,7 +1461,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -1521,7 +1521,7 @@ Informative references to this spec from:
 
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -1570,7 +1570,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/IndexedDB/) (22 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/IndexedDB/) (26 October 2017)
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
@@ -1602,7 +1602,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (25 October 2017)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (26 October 2017)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -2302,7 +2302,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (30 August 2017)
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
 - Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-preload-20170830/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - Repository: [GitHub w3c/preload](https://github.com/w3c/preload)
 - Shortname: preload
 
@@ -2610,7 +2610,7 @@ Normative references to this spec from:
 
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Writing Modes Level 3](http://dev.w3.org/csswg/css-writing-modes-3/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML 5.3](https://w3c.github.io/html/)
@@ -2768,7 +2768,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [Web Animations](https://w3c.github.io/web-animations/)
@@ -2920,6 +2920,7 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Crawled version: [Initial URL](https://w3c.github.io/staticrange/) (15 September 2017)
+- Repository: [GitHub w3c/staticrange](https://github.com/w3c/staticrange)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3293,10 +3294,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/dom/) (20 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/dom/) (25 October 2017)
 - Editor's Draft: [https://w3c.github.io/dom/](https://w3c.github.io/dom/)
 - Latest published version: [https://www.w3.org/TR/dom41/](https://www.w3.org/TR/dom41/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - Repository: [GitHub w3c/dom](https://github.com/w3c/dom)
 - Shortname: dom41
 
@@ -3304,6 +3305,7 @@ No informative reference to this spec from other specs.
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/)
+     * [`https://www.w3.org/TR/shadow-dom/`](https://www.w3.org/TR/shadow-dom/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
      * [`https://www.w3.org/TR/2017/WD-dom41-20170420/`](https://www.w3.org/TR/2017/WD-dom41-20170420/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
@@ -3318,7 +3320,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -3403,7 +3405,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (12 September 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (25 October 2017)
 - Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
 - Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
@@ -3518,7 +3520,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (23 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (25 October 2017)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
@@ -3601,7 +3603,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -3759,7 +3761,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (22 October 2017)
+- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (25 October 2017)
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/workers.html](https://html.spec.whatwg.org/multipage/workers.html)
 - Latest published version: [http://www.w3.org/TR/workers/](http://www.w3.org/TR/workers/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -3801,7 +3803,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Font Loading Module Level 3](http://dev.w3.org/csswg/css-font-loading/)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -3866,7 +3868,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Battery Status API](https://w3c.github.io/battery/)
-- [CSS Syntax Module Level 3](http://dev.w3.org/csswg/css-syntax/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -3918,7 +3920,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Oct 25 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Oct 26 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3941,7 +3943,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Oct 25 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Oct 26 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
