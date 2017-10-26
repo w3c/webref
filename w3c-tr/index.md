@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 25, 2017
+% October 26, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -156,7 +156,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -304,7 +304,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
-- [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
+- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
@@ -385,7 +385,7 @@ Informative references to this spec from:
 ### Spec info {.info}
 
 - Crawled version: [Latest published version](http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/) (22 May 2014)
-- Editor's Draft: [http://dev.w3.org/csswg/css-font-loading/](http://dev.w3.org/csswg/css-font-loading/)
+- Editor's Draft: [https://drafts.csswg.org/css-font-loading/](https://drafts.csswg.org/css-font-loading/)
 - Latest published version: [http://www.w3.org/TR/css-font-loading-3/](http://www.w3.org/TR/css-font-loading-3/)
 - Latest published status: [Last Call](http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
@@ -588,7 +588,7 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Crawled version: [Latest published version](http://www.w3.org/TR/2014/CR-css-syntax-3-20140220/) (20 February 2014)
-- Editor's Draft: [http://dev.w3.org/csswg/css-syntax/](http://dev.w3.org/csswg/css-syntax/)
+- Editor's Draft: [https://drafts.csswg.org/css-syntax/](https://drafts.csswg.org/css-syntax/)
 - Latest published version: [http://www.w3.org/TR/css-syntax-3/](http://www.w3.org/TR/css-syntax-3/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2014/CR-css-syntax-3-20140220/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
@@ -713,7 +713,7 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Crawled version: [Latest published version](http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/) (15 December 2015)
-- Editor's Draft: [http://dev.w3.org/csswg/css-writing-modes-3/](http://dev.w3.org/csswg/css-writing-modes-3/)
+- Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
 - Latest published version: [http://www.w3.org/TR/css-writing-modes-3/](http://www.w3.org/TR/css-writing-modes-3/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
@@ -790,7 +790,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 
 
@@ -866,11 +866,11 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `SupportedType`
 - Missing references for WebIDL names: 
-     * `Document` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
-     * `Node` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
-     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
-     * `Range` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
-     * `DocumentFragment` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `Document` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
+     * `Node` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
+     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
+     * `Range` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
+     * `DocumentFragment` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - Missing references for links: 
      * [`https://domparsing.spec.whatwg.org/`](https://domparsing.spec.whatwg.org/)
 
@@ -884,7 +884,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 
 
 ## Encoding {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -910,11 +910,11 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2017/WD-webvtt1-20170808/)
@@ -953,7 +953,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (16 October 2017)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (25 October 2017)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -969,16 +969,16 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-- [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
-- [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
+- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -990,22 +990,27 @@ Informative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
-## File API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## File API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2015/WD-FileAPI-20150421/) (21 April 2015)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-FileAPI-20171026/) (26 October 2017)
 - Editor's Draft: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
-- Latest published version: [http://www.w3.org/TR/FileAPI/](http://www.w3.org/TR/FileAPI/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- Latest published version: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - Repository: [GitHub w3c/FileAPI](https://github.com/w3c/FileAPI)
 - Shortname: FileAPI
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMError`
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+     * `DedicatedWorker` defined in [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+     * `SharedWorker` defined in [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/dom/`](https://w3c.github.io/dom/), related reference "DOM" uses URL [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/)
+     * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/), related reference "Encoding" uses URL [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/)
+     * [`https://w3c.github.io/html/`](https://w3c.github.io/html/), related reference "HTML" uses URL [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1216,7 +1221,7 @@ Informative references to this spec from:
 
 - Obsolete WebIDL constructs found
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - Missing references for links: 
      * [`https://w3c.github.io/workers/`](https://w3c.github.io/workers/)
 
@@ -1314,7 +1319,7 @@ Normative references to this spec from:
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
@@ -1339,7 +1344,7 @@ Normative references to this spec from:
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
-- [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
+- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -1360,7 +1365,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -1400,6 +1405,7 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
@@ -1421,7 +1427,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
      * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
      * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - Inconsistent references for links: 
@@ -1455,7 +1461,6 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171010/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
@@ -1465,7 +1470,7 @@ Normative references to this spec from:
 - [The Screen Orientation API](https://www.w3.org/TR/2016/WD-screen-orientation-20161031/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -1483,6 +1488,7 @@ Informative references to this spec from:
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -1553,7 +1559,6 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171010/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
@@ -1565,7 +1570,7 @@ Normative references to this spec from:
 - [The Screen Orientation API](https://www.w3.org/TR/2016/WD-screen-orientation-20161031/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -1583,10 +1588,11 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/WD-webrtc-20170822/)
 
 
@@ -1650,7 +1656,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/WD-webrtc-20170822/)
 
@@ -1782,9 +1788,9 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `OverconstrainedError`
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
-     * `Event` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
-     * `EventInit` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
+     * `Event` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
+     * `EventInit` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1897,7 +1903,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
      * `URL` defined in [URL Standard](https://url.spec.whatwg.org/)
 - Missing references for links: 
      * [`https://w3c.github.io/encrypted-media/`](https://w3c.github.io/encrypted-media/)
@@ -2002,7 +2008,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
+- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 
 Informative references to this spec from:
@@ -2332,10 +2338,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-preload-20170830/) (30 August 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-preload-20171026/) (26 October 2017)
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
 - Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-preload-20170830/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - Repository: [GitHub w3c/preload](https://github.com/w3c/preload)
 - Shortname: preload
 
@@ -2343,6 +2349,7 @@ No informative reference to this spec from other specs.
 
 - No WebIDL definitions found
 - Missing references for links: 
+     * [`https://w3c.github.io/html/document-metadata.html`](https://w3c.github.io/html/document-metadata.html)
      * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -2404,7 +2411,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 
 No informative reference to this spec from other specs.
@@ -2490,7 +2496,7 @@ Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
-- [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
+- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 
 No informative reference to this spec from other specs.
 
@@ -2509,7 +2515,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2892,7 +2898,7 @@ Although they do not, the following specs should also normatively reference this
 
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
-- [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
@@ -2923,10 +2929,10 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `DocumentOrShadowRoot`
 - Missing references for WebIDL names: 
      * `Selection` defined in [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
-     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
      * `CaretPosition` defined in [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
      * `StyleSheetList` defined in [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-     * `DocumentFragment` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `DocumentFragment` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
      * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
@@ -2947,6 +2953,7 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Crawled version: [Initial URL](https://w3c.github.io/staticrange/) (15 September 2017)
+- Repository: [GitHub w3c/staticrange](https://github.com/w3c/staticrange)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3001,7 +3008,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 
 No informative reference to this spec from other specs.
 
@@ -3020,7 +3027,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - Missing references for links: 
      * [`https://fullscreen.spec.whatwg.org/`](https://fullscreen.spec.whatwg.org/)
 
@@ -3117,7 +3124,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
 - [UI Events KeyboardEvent key Values](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -3205,7 +3212,7 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171010/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -3214,7 +3221,7 @@ Normative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -3313,10 +3320,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-dom41-20171021/) (21 October 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-dom41-20171025/) (25 October 2017)
 - Editor's Draft: [https://w3c.github.io/dom/](https://w3c.github.io/dom/)
 - Latest published version: [https://www.w3.org/TR/dom41/](https://www.w3.org/TR/dom41/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - Repository: [GitHub w3c/dom](https://github.com/w3c/dom)
 - Shortname: dom41
 
@@ -3324,6 +3331,7 @@ No informative reference to this spec from other specs.
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/)
+     * [`https://www.w3.org/TR/shadow-dom/`](https://www.w3.org/TR/shadow-dom/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
      * [`https://www.w3.org/TR/2017/WD-dom41-20170420/`](https://www.w3.org/TR/2017/WD-dom41-20170420/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
@@ -3346,7 +3354,7 @@ Normative references to this spec from:
 - [Custom Elements](https://www.w3.org/TR/2016/WD-custom-elements-20161013/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
@@ -3361,7 +3369,7 @@ Normative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/)
-- [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
+- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
@@ -3378,7 +3386,7 @@ Normative references to this spec from:
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -3638,7 +3646,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 
 
 ## Web Workers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3691,7 +3699,6 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171010/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Preload](https://www.w3.org/TR/2017/WD-preload-20170830/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
@@ -3704,7 +3711,7 @@ Normative references to this spec from:
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -3719,7 +3726,7 @@ Although they do not, the following specs should also normatively reference this
 
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
-- [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
@@ -3727,11 +3734,13 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
@@ -3771,7 +3780,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Oct 25 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Oct 26 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3790,7 +3799,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Oct 25 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Oct 26 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3855,6 +3864,7 @@ Normative references to this spec from:
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
@@ -3898,7 +3908,7 @@ Normative references to this spec from:
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/)
@@ -3951,9 +3961,9 @@ Informative references to this spec from:
 - WebIDL names also defined elsewhere: 
     * `RTCStats` also defined in [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/)
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
-     * `Event` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
-     * `EventInit` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171021/)
+     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
+     * `Event` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
+     * `EventInit` defined in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3964,7 +3974,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -4052,7 +4062,7 @@ Normative references to this spec from:
 
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [File API](http://www.w3.org/TR/2015/WD-FileAPI-20150421/)
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 
 Informative references to this spec from:
