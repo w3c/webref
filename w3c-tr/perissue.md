@@ -1,8 +1,17 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 26, 2017
+% October 27, 2017
 
 116 specifications were crawled in this report.
+
+
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html): `Cannot read property 'href' of null`
+
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -19,7 +28,6 @@ Basically all specifications have normative dependencies on some other specifica
 ## Specifications without WebIDL definitions
 
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
-- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Syntax Module Level 3](http://www.w3.org/TR/2014/CR-css-syntax-3-20140220/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 - [CSS Writing Modes Level 3](http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/)
@@ -31,7 +39,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
 - [UI Events KeyboardEvent key Values](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
 
-=> 12 specifications found
+=> 11 specifications found
 
 Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
@@ -124,10 +132,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `ProgressEvent` defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `ProgressEventInit` defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `RTCStats` defined in [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/WD-webrtc-20170822/)
+- `ServiceWorkerRegistration` defined in [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/) and [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
 - `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/) and [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - `Worklet` defined in [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 
-=> 5 WebIDL names found
+=> 6 WebIDL names found
 
 "There can be only one"...
 
@@ -345,7 +354,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/) links to:
     * [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
-- [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/) links to [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
+- [Push API](https://www.w3.org/TR/2017/WD-push-api-20171026/) links to [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/) links to:
     * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/) but does not list it in its references
@@ -516,7 +525,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Proximity Sensor](http://www.w3.org/TR/2016/WD-proximity-20160719/) links to:
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-- [Push API](https://www.w3.org/TR/2017/WD-push-api-20170823/) links to:
+- [Push API](https://www.w3.org/TR/2017/WD-push-api-20171026/) links to:
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
     * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/) but related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
@@ -586,7 +595,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/) links to:
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20170922/) links to:
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/) but related reference "SCREEN-ORIENTATION" uses URL [`https://www.w3.org/TR/screen-orientation/`](https://www.w3.org/TR/screen-orientation/)
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)

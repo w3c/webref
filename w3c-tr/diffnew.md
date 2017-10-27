@@ -1,32 +1,29 @@
-% Diff between report from "October 26, 2017" and reference report from "October 25, 2017"
+% Diff between report from "October 27, 2017" and reference report from "October 26, 2017"
 % Reffy
-% October 26, 2017
+% October 27, 2017
 
-## File API
+## https://w3c.github.io/editing/contentEditable.html
 
-- URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
-- Editor's Draft: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
-- Repository: [GitHub w3c/FileAPI](https://github.com/w3c/FileAPI)
-- Missing references for WebIDL names: *INS* DedicatedWorker, SharedWorker
-- Inconsistent references for links: *INS* https://w3c.github.io/dom/, https://encoding.spec.whatwg.org/, https://w3c.github.io/html/
+- URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
+- Spec title: *INS* https://w3c.github.io/editing/contentEditable.html / *DEL* ContentEditable
+- Spec could not be rendered: *INS* Cannot read property 'href' of null
 
 
-## Preload
+## Service Workers 1
 
-- URL: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-preload-20171026/)
-- Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
-- Repository: [GitHub w3c/preload](https://github.com/w3c/preload)
-- Missing references for links: *INS* https://w3c.github.io/html/document-metadata.html
+- URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/)
+- Editor's Draft: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
+- Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
+- WebIDL names also defined elsewhere: *INS* ServiceWorkerRegistration
 
 
-## W3C DOM 4.1
+## Web App Manifest
 
-- URL: [https://www.w3.org/TR/dom41/](https://www.w3.org/TR/dom41/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-dom41-20171025/)
-- Editor's Draft: [https://w3c.github.io/dom/](https://w3c.github.io/dom/)
-- Repository: [GitHub w3c/dom](https://github.com/w3c/dom)
-- Missing references for links: *INS* https://www.w3.org/TR/shadow-dom/
+- URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
+- WebIDL names also defined elsewhere: *INS* ServiceWorkerRegistration
 
 
