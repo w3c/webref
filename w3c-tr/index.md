@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 27, 2017
+% October 28, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -307,6 +307,24 @@ Normative references to this spec from:
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
+
+No informative reference to this spec from other specs.
+
+
+## ContentEditable {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (15 September 2017)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -1050,10 +1068,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-gamepad-20170726/) (26 July 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-gamepad-20171027/) (27 October 2017)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-gamepad-20171027/)
 - Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
 - Shortname: gamepad
 
@@ -1212,7 +1230,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
-- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
+- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20171027/)
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
@@ -1371,7 +1389,7 @@ Although they do not, the following specs should also normatively reference this
 - [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
-- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
+- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20171027/)
 - [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
 - [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
@@ -1576,27 +1594,6 @@ Informative references to this spec from:
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/WD-webrtc-20170822/)
-
-
-## https://w3c.github.io/editing/contentEditable.html {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Cannot read property 'href' of null`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
@@ -2041,7 +2038,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
+- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20171027/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171018/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
@@ -3360,7 +3357,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
+- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20171027/)
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
@@ -3786,7 +3783,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Oct 27 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Oct 28 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3805,7 +3802,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Oct 27 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Oct 28 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3872,7 +3869,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/)
+- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20171027/)
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
