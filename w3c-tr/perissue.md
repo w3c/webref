@@ -1,17 +1,8 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 27, 2017
+% October 28, 2017
 
 116 specifications were crawled in this report.
-
-
-## Specifications that could not be rendered
-
-Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
-
-- [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html): `Cannot read property 'href' of null`
-
-=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -28,6 +19,7 @@ Basically all specifications have normative dependencies on some other specifica
 ## Specifications without WebIDL definitions
 
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
+- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Syntax Module Level 3](http://www.w3.org/TR/2014/CR-css-syntax-3-20140220/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 - [CSS Writing Modes Level 3](http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/)
@@ -39,7 +31,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
 - [UI Events KeyboardEvent key Values](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
 
-=> 11 specifications found
+=> 12 specifications found
 
 Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
@@ -175,7 +167,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2016/WD-service-workers-1-20161011/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
     * `DedicatedWorker` but does not reference [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
     * `SharedWorker` but does not reference [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
-- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20170726/) uses `Navigator` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
+- [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20171027/) uses `Navigator` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/) uses `Window` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/CR-html52-20170808/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171025/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) uses:
