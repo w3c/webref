@@ -1,8 +1,18 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% October 29, 2017
+% October 30, 2017
 
 107 specifications were crawled in this report.
+
+
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [css-fonts-4](https://www.w3.org/TR/css-fonts-4/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:133:34)`
+
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -50,7 +60,6 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
@@ -59,7 +68,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 
-=> 8 specifications found
+=> 7 specifications found
 
 
 
@@ -151,7 +160,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/) links to [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but does not list it in its references
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/) links to [`https://w3c.github.io/webappsec/usecases/credentialmanagement/`](https://w3c.github.io/webappsec/usecases/credentialmanagement/) but does not list it in its references
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/) links to [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) links to [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/) but does not list it in its references
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/) links to [`https://www.w3.org/TR/selectors-api/`](https://www.w3.org/TR/selectors-api/) but does not list it in its references
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/) links to:
@@ -242,7 +250,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 85 missing references for links found in 36 specifications
+=> 84 missing references for links found in 35 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
