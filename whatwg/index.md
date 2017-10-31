@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% October 30, 2017
+% October 31, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -269,7 +269,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (25 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (30 October 2017)
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
 - Latest published version: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
@@ -341,7 +341,46 @@ Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+
+
+## CSS Fonts Module Level 4 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (15 August 2017)
+- Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
+- Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: css-fonts-4
+
+### Potential issue(s) {.anomalies}
+
+- Spec uses WebIDL but does not reference it normatively
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+
+Informative references to this spec from:
+
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 
 
 ## CSS Object Model (CSSOM) {data-spec=true data-ok=true}
@@ -365,6 +404,7 @@ Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
@@ -487,6 +527,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -553,6 +594,7 @@ Normative references to this spec from:
 
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -601,41 +643,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-
-
-## css-fonts-4 {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://www.w3.org/TR/css-fonts-4/)
-- Latest published version: [https://www.w3.org/TR/css-fonts-4](https://www.w3.org/TR/css-fonts-4)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: css-fonts-4
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:133:34)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-
-Informative references to this spec from:
-
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 
 
 ## CSSOM View Module {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -1199,7 +1206,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/) (23 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/) (30 October 2017)
 - Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
 - Latest published version: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
@@ -1221,7 +1228,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (29 October 2017)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (30 October 2017)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1251,6 +1258,7 @@ Normative references to this spec from:
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -1431,7 +1439,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (30 October 2017)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (31 October 2017)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -2317,7 +2325,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/) (27 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/) (30 October 2017)
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
@@ -2461,7 +2469,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/) (16 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/) (30 October 2017)
 - Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
 - Latest published version: [http://www.w3.org/TR/screen-capture/](http://www.w3.org/TR/screen-capture/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -3363,7 +3371,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Oct 30 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Oct 31 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3386,7 +3394,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Oct 30 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Oct 31 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3413,7 +3421,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (23 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (30 October 2017)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-webrtc-20170822/)
