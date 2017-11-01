@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% October 31, 2017
+% November 01, 2017
 
 107 specifications were crawled in this report.
 
