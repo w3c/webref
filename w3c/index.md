@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 01, 2017
+% November 02, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -697,7 +697,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/custom/) (05 September 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/custom/) (02 November 2017)
 - Editor's Draft: [https://w3c.github.io/webcomponents/spec/custom/](https://w3c.github.io/webcomponents/spec/custom/)
 - Latest published version: [https://www.w3.org/TR/custom-elements/](https://www.w3.org/TR/custom-elements/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-custom-elements-20161013/)
@@ -845,7 +845,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (25 October 2017)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (1 November 2017)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -1150,7 +1150,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/html/) (31 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/html/) (1 November 2017)
 - Editor's Draft: [https://w3c.github.io/html/](https://w3c.github.io/html/)
 - Latest published version: [https://www.w3.org/TR/html52/](https://www.w3.org/TR/html52/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-html52-20170808/)
@@ -1602,7 +1602,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (01 November 2017)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (02 November 2017)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -2884,7 +2884,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/shadow/) (05 September 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/shadow/) (02 November 2017)
 - Editor's Draft: [https://w3c.github.io/webcomponents/spec/shadow/](https://w3c.github.io/webcomponents/spec/shadow/)
 - Latest published version: [https://www.w3.org/TR/shadow-dom/](https://www.w3.org/TR/shadow-dom/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/)
@@ -2963,7 +2963,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (24 October 2017)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (1 November 2017)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -2985,10 +2985,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (31 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (01 November 2017)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-screen-orientation-20161031/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-screen-orientation-20171101/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
@@ -3295,10 +3295,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/dom/) (31 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/dom/) (2 November 2017)
 - Editor's Draft: [https://w3c.github.io/dom/](https://w3c.github.io/dom/)
 - Latest published version: [https://www.w3.org/TR/dom41/](https://www.w3.org/TR/dom41/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-dom41-20171031/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - Repository: [GitHub w3c/dom](https://github.com/w3c/dom)
 - Shortname: dom41
 
@@ -3923,7 +3923,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Nov 01 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Nov 02 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3946,7 +3946,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Nov 01 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Nov 02 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3973,7 +3973,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (31 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (01 November 2017)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-webrtc-20170822/)
