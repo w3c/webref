@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 04, 2017
+% November 05, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -780,7 +780,7 @@ Normative references to this spec from:
 
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
@@ -850,7 +850,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 
 
 ## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -1059,7 +1059,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
 Informative references to this spec from:
@@ -1372,7 +1372,7 @@ Normative references to this spec from:
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -1480,7 +1480,7 @@ Normative references to this spec from:
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
@@ -1580,7 +1580,7 @@ Normative references to this spec from:
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
@@ -2124,7 +2124,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20170912/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
@@ -3032,10 +3032,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/) (03 November 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/) (05 November 2017)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
@@ -3394,7 +3394,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -3516,7 +3516,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 
 
 ## Web Audio API {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3721,7 +3721,7 @@ Normative references to this spec from:
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
@@ -3794,7 +3794,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Nov 04 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Nov 05 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3815,7 +3815,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Nov 04 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Nov 05 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3922,7 +3922,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171103/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
