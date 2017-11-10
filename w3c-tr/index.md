@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 09, 2017
+% November 10, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -447,6 +447,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
+- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Writing Modes Level 3](http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/)
 
@@ -482,7 +483,7 @@ Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
-- [CSS Properties and Values API Level 1](http://www.w3.org/TR/2016/WD-css-properties-values-api-1-20160607/)
+- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -535,16 +536,16 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-css-properties-values-api-1-20160607/) (07 June 2016)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/) (9 November 2017)
 - Editor's Draft: [https://drafts.css-houdini.org/css-properties-values-api-1/](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- Latest published version: [http://www.w3.org/TR/css-properties-values-api-1/](http://www.w3.org/TR/css-properties-values-api-1/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-css-properties-values-api-1-20160607/)
+- Latest published version: [https://www.w3.org/TR/css-properties-values-api-1/](https://www.w3.org/TR/css-properties-values-api-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - Shortname: css-properties-values-api-1
 
 ### Potential issue(s) {.anomalies}
 
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS3-VALUES" uses URL [`http://www.w3.org/TR/css-values/`](http://www.w3.org/TR/css-values/)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS3-VALUES" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -630,6 +631,7 @@ Normative references to this spec from:
 
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
+- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
@@ -696,7 +698,7 @@ Normative references to this spec from:
 
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-- [CSS Properties and Values API Level 1](http://www.w3.org/TR/2016/WD-css-properties-values-api-1-20160607/)
+- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Writing Modes Level 3](http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
@@ -1323,6 +1325,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
+- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -1458,6 +1461,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
+- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -1557,6 +1561,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
+- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -3360,6 +3365,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
+- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
@@ -3695,6 +3701,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
+- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -3794,7 +3801,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Nov 09 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Nov 10 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3815,7 +3822,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Nov 09 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Nov 10 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3876,7 +3883,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
-- [CSS Properties and Values API Level 1](http://www.w3.org/TR/2016/WD-css-properties-values-api-1-20160607/)
+- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Custom Elements](https://www.w3.org/TR/2016/WD-custom-elements-20161013/)
