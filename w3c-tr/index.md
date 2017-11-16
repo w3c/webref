@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 15, 2017
+% November 16, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -1027,7 +1027,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
+- [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -1345,7 +1345,7 @@ Normative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
+- [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -1420,7 +1420,6 @@ Informative references to this spec from:
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
@@ -1503,7 +1502,6 @@ Informative references to this spec from:
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -1605,7 +1603,6 @@ Informative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171026/)
@@ -1648,10 +1645,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/) (10 August 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/) (16 November 2017)
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
+- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - Repository: [GitHub w3c/IndexedDB](https://github.com/w3c/IndexedDB)
 - Shortname: IndexedDB-2
 
@@ -1660,9 +1657,10 @@ No informative reference to this spec from other specs.
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
-     * [`https://www.w3.org/TR/domcore/`](https://www.w3.org/TR/domcore/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML52" uses URL [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/)
+     * [`https://www.w3.org/TR/domcore/`](https://www.w3.org/TR/domcore/), related reference "DOM41" uses URL [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/)
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "DOM41" uses URL [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2919,7 +2917,7 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
+- [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171102/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
@@ -3378,7 +3376,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
+- [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
@@ -3665,7 +3663,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
+- [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 
 
@@ -3748,7 +3746,7 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
+- [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171102/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
@@ -3758,7 +3756,6 @@ Informative references to this spec from:
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
@@ -3801,7 +3798,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Nov 15 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Nov 16 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3822,7 +3819,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Nov 15 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Nov 16 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3900,7 +3897,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2017/CR-IndexedDB-2-20170810/)
+- [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
