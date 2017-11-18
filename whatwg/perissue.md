@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% November 17, 2017
+% November 18, 2017
 
 107 specifications were crawled in this report.
 
@@ -44,8 +44,11 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 ## List of specifications with obsolete WebIDL constructs
 
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 
-=> 0 specification found
+=> 1 specification found
+
+A typical example is the use of `[]` instead of `FrozenArray`.
 
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
