@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 17, 2017
+% November 18, 2017
 
 116 specifications were crawled in this report.
 
@@ -48,10 +48,11 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 ## List of specifications with obsolete WebIDL constructs
 
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 
-=> 2 specifications found
+=> 3 specifications found
 
 A typical example is the use of `[]` instead of `FrozenArray`.
 
