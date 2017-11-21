@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 20, 2017
+% November 21, 2017
 
 116 specifications were crawled in this report.
 
@@ -195,7 +195,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/) uses `EventHandler` but does not reference [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171102/) uses:
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/) uses:
     * `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/) uses:
