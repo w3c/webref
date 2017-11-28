@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 27, 2017
+% November 28, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -821,7 +821,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
-- [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
+- [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 
 No informative reference to this spec from other specs.
@@ -957,7 +957,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (24 November 2017)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (26 November 2017)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -1026,7 +1026,6 @@ Normative references to this spec from:
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
-- [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
@@ -1038,6 +1037,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 
@@ -1342,7 +1342,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
-- [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
+- [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
@@ -1419,7 +1419,7 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
-- [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
+- [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
@@ -1501,7 +1501,7 @@ Informative references to this spec from:
 
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
-- [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
+- [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -1516,10 +1516,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/) (31 August 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/) (28 November 2017)
 - Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
 - Latest published version: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
+- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - Repository: [GitHub w3c/html-media-capture](https://github.com/w3c/html-media-capture)
 - Shortname: html-media-capture
 
@@ -1602,7 +1602,7 @@ Informative references to this spec from:
 
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
-- [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
+- [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171026/)
@@ -1814,7 +1814,7 @@ Normative references to this spec from:
 
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
-- [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
+- [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -3209,7 +3209,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (3 November 2017)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (27 November 2017)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -3755,7 +3755,7 @@ Informative references to this spec from:
 
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
-- [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
+- [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
@@ -3798,7 +3798,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Nov 27 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Nov 28 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3819,7 +3819,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Nov 27 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Nov 28 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3896,7 +3896,7 @@ Normative references to this spec from:
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
-- [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
+- [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
@@ -3954,7 +3954,7 @@ Informative references to this spec from:
 - [Basic Card Payment](https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
-- [HTML Media Capture](https://www.w3.org/TR/2017/CR-html-media-capture-20170831/)
+- [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
