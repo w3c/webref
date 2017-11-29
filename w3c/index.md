@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 28, 2017
+% November 29, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -242,7 +242,7 @@ Normative references to this spec from:
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 No informative reference to this spec from other specs.
@@ -547,7 +547,7 @@ Normative references to this spec from:
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
@@ -693,7 +693,7 @@ Informative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 
 
 ## Custom Elements {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -809,7 +809,7 @@ Normative references to this spec from:
 - [Push API](https://w3c.github.io/push-api/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -874,7 +874,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -956,7 +956,7 @@ Informative references to this spec from:
 
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -987,7 +987,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (18 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (27 November 2017)
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
@@ -1263,7 +1263,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
@@ -1386,7 +1386,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web IDL](https://heycam.github.io/webidl/)
@@ -1507,7 +1507,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web IDL](https://heycam.github.io/webidl/)
@@ -1606,7 +1606,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (28 November 2017)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (29 November 2017)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -2075,7 +2075,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/paint-timing/) (6 September 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/paint-timing/) (28 November 2017)
 - Editor's Draft: [https://w3c.github.io/paint-timing/](https://w3c.github.io/paint-timing/)
 - Latest published version: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
@@ -2100,10 +2100,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (13 November 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (29 November 2017)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
 - Shortname: payment-handler
 
@@ -2682,13 +2682,12 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
@@ -2847,7 +2846,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - WebIDL names also defined elsewhere: 
-    * `ServiceWorkerRegistration` also defined in [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+    * `ServiceWorkerRegistration` also defined in [Web App Manifest](https://w3c.github.io/manifest/)
     * `Worker` also defined in [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - Missing references for links: 
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
@@ -2868,7 +2867,7 @@ Normative references to this spec from:
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -2924,7 +2923,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/staticrange/) (15 September 2017)
+- Crawled version: [Initial URL](https://w3c.github.io/staticrange/) (28 November 2017)
 - Repository: [GitHub w3c/staticrange](https://github.com/w3c/staticrange)
 - Shortname: no shortname
 
@@ -3004,7 +3003,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
 
@@ -3195,7 +3194,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -3375,7 +3374,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
@@ -3456,9 +3455,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/appmanifest/) (Living Document)
+- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/) (Living Document)
+- Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Shortname: appmanifest
 
@@ -3675,7 +3675,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
@@ -3855,7 +3855,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web IDL](https://heycam.github.io/webidl/)
@@ -3898,7 +3898,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (27 November 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (28 November 2017)
 - Editor's Draft: [https://w3c.github.io/webdriver/webdriver-spec.html](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Latest published version: [https://www.w3.org/TR/webdriver/](https://www.w3.org/TR/webdriver/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
@@ -3927,7 +3927,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Nov 28 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Nov 29 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3950,7 +3950,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Nov 28 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Nov 29 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
