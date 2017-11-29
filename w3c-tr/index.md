@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 28, 2017
+% November 29, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -135,7 +135,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 
 Informative references to this spec from:
 
@@ -307,7 +307,7 @@ Normative references to this spec from:
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
 No informative reference to this spec from other specs.
@@ -638,7 +638,7 @@ Normative references to this spec from:
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2017/WD-webvtt1-20170808/)
 
 No informative reference to this spec from other specs.
@@ -795,7 +795,7 @@ Informative references to this spec from:
 
 - [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 
 
 ## Custom Elements {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -919,7 +919,7 @@ Normative references to this spec from:
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171026/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2017/WD-webvtt1-20170808/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -983,7 +983,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -1067,7 +1067,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 
 
 ## Gamepad {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -1356,7 +1356,7 @@ Normative references to this spec from:
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
@@ -1384,7 +1384,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
@@ -1474,7 +1474,7 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -1489,7 +1489,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
@@ -1572,7 +1572,7 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -1589,7 +1589,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -2166,10 +2166,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-payment-handler-20171113/) (13 November 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-payment-handler-20171129/) (29 November 2017)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
 - Shortname: payment-handler
 
@@ -2184,7 +2184,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 
 
 ## Payment Request API {data-spec=true data-ok=true}
@@ -2208,7 +2208,7 @@ Normative references to this spec from:
 
 - [Basic Card Payment](https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 
 No informative reference to this spec from other specs.
 
@@ -2283,7 +2283,7 @@ Normative references to this spec from:
 - [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Proximity Sensor](http://www.w3.org/TR/2016/WD-proximity-20160719/)
@@ -2728,13 +2728,12 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171026/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 
 Informative references to this spec from:
@@ -2890,7 +2889,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `WorkerType`
 - WebIDL names also defined elsewhere: 
-    * `ServiceWorkerRegistration` also defined in [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+    * `ServiceWorkerRegistration` also defined in [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
     * `Worker` also defined in [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - Missing references for links: 
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
@@ -2906,11 +2905,11 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171026/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -2970,7 +2969,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/staticrange/) (15 September 2017)
+- Crawled version: [Initial URL](https://w3c.github.io/staticrange/) (28 November 2017)
 - Repository: [GitHub w3c/staticrange](https://github.com/w3c/staticrange)
 - Shortname: no shortname
 
@@ -3050,7 +3049,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 
 No informative reference to this spec from other specs.
 
@@ -3229,7 +3228,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -3237,7 +3236,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
@@ -3380,7 +3379,7 @@ Normative references to this spec from:
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
@@ -3406,7 +3405,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
@@ -3494,9 +3493,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-appmanifest-20171026/) (Living Document)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-appmanifest-20171129/) (Living Document)
+- Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Shortname: appmanifest
 
@@ -3515,7 +3515,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Media Session Standard](https://wicg.github.io/mediasession/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 
 Informative references to this spec from:
 
@@ -3601,7 +3601,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
 
@@ -3715,7 +3715,7 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -3733,7 +3733,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
@@ -3798,7 +3798,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Nov 28 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Nov 29 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3819,7 +3819,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Nov 28 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Nov 29 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3910,7 +3910,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171113/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -3935,7 +3935,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
-- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171026/)
+- [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
