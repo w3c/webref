@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 03, 2017
+% December 04, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -135,7 +135,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 
 Informative references to this spec from:
 
@@ -1356,7 +1356,7 @@ Normative references to this spec from:
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
@@ -1474,7 +1474,7 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -1572,7 +1572,7 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -2166,10 +2166,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-payment-handler-20171129/) (29 November 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-payment-handler-20171203/) (03 December 2017)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
 - Shortname: payment-handler
 
@@ -2184,7 +2184,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 
 
 ## Payment Request API {data-spec=true data-ok=true}
@@ -2208,7 +2208,7 @@ Normative references to this spec from:
 
 - [Basic Card Payment](https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 
 No informative reference to this spec from other specs.
 
@@ -2283,7 +2283,7 @@ Normative references to this spec from:
 - [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Proximity Sensor](http://www.w3.org/TR/2016/WD-proximity-20160719/)
@@ -2905,7 +2905,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171026/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
@@ -3228,7 +3228,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -3379,7 +3379,7 @@ Normative references to this spec from:
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
@@ -3515,7 +3515,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Media Session Standard](https://wicg.github.io/mediasession/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 
 Informative references to this spec from:
 
@@ -3601,7 +3601,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
 
@@ -3715,7 +3715,7 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -3798,7 +3798,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Dec 03 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Dec 04 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3819,7 +3819,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Dec 03 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Dec 04 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3910,7 +3910,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/)
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
