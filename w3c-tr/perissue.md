@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 03, 2017
+% December 04, 2017
 
 116 specifications were crawled in this report.
 
@@ -331,7 +331,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/) links to [`https://www.w3.org/TR/html/full`](https://www.w3.org/TR/html/full) but does not list it in its references
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
-- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171129/) links to [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/) but does not list it in its references
+- [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/) links to [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/) but does not list it in its references
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/) links to:
     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but does not list it in its references
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but does not list it in its references
