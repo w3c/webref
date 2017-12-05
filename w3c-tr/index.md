@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 04, 2017
+% December 05, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -1382,7 +1382,7 @@ Normative references to this spec from:
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
-- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
+- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -1487,7 +1487,7 @@ Normative references to this spec from:
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
-- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
+- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -1587,7 +1587,7 @@ Normative references to this spec from:
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
-- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
+- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -2129,7 +2129,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
-- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
+- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
 Informative references to this spec from:
@@ -3403,7 +3403,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
-- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
+- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -3441,10 +3441,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-wake-lock-20171123/) (23 November 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-wake-lock-20171204/) (04 December 2017)
 - Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
 - Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
 - Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
 - Shortname: wake-lock
 
@@ -3731,7 +3731,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
-- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
+- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -3798,7 +3798,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Dec 04 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Dec 05 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3819,7 +3819,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Dec 04 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Dec 05 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3933,7 +3933,7 @@ Normative references to this spec from:
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
-- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171123/)
+- [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -4069,7 +4069,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (13 October 2017)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (4 December 2017)
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
