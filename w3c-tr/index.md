@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 05, 2017
+% December 06, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -375,7 +375,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 
 Informative references to this spec from:
 
@@ -920,7 +920,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2017/WD-webvtt1-20170808/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -977,6 +977,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
@@ -984,6 +985,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -1241,7 +1243,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
@@ -1354,7 +1356,7 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
@@ -1386,7 +1388,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
@@ -1474,6 +1476,7 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -1491,7 +1494,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
@@ -1572,6 +1575,7 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -1591,7 +1595,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
@@ -2026,6 +2030,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 
 Informative references to this spec from:
 
@@ -2038,10 +2043,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/) (25 September 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/) (05 December 2017)
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
 - Shortname: navigation-timing-2
 
@@ -2061,7 +2066,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 
@@ -2130,6 +2135,7 @@ Normative references to this spec from:
 - [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
 Informative references to this spec from:
@@ -2239,13 +2245,13 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
 
 Informative references to this spec from:
 
-- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
 
@@ -2565,12 +2571,12 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
 
 Informative references to this spec from:
 
-- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 
 
@@ -2734,7 +2740,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 
 Informative references to this spec from:
 
@@ -2904,7 +2910,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.2](https://www.w3.org/TR/2017/PR-html52-20171102/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171026/)
@@ -3208,7 +3214,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (30 November 2017)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (5 December 2017)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -3237,7 +3243,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -3249,7 +3255,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 
 
 ## User Interface Security and the Visibility API {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3407,7 +3413,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
@@ -3553,14 +3559,14 @@ Informative references to this spec from:
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 
 
-## Web Authentication: An API for accessing Public Key Credentials Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Authentication: An API for accessing Public Key Credentials - Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-webauthn-20170811/) (11 August 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-webauthn-20171205/) (5 December 2017)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Shortname: webauthn
 
@@ -3602,7 +3608,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
 
 Informative references to this spec from:
@@ -3715,6 +3721,7 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -3735,7 +3742,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
 - [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
@@ -3798,7 +3805,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Dec 05 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Dec 06 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3819,7 +3826,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Dec 05 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Dec 06 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3907,7 +3914,7 @@ Normative references to this spec from:
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
@@ -3937,7 +3944,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2017/WD-appmanifest-20171129/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -3957,7 +3964,6 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)

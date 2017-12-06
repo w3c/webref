@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 05, 2017
+% December 06, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -418,7 +418,6 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -480,9 +479,7 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Web Animations](https://w3c.github.io/web-animations/)
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -507,7 +504,6 @@ This specification looks good!
 Normative references to this spec from:
 
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 
 No informative reference to this spec from other specs.
 
@@ -616,18 +612,17 @@ Normative references to this spec from:
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
 
 
-## CSS Writing Modes Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
+## CSS Writing Modes Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (9 November 2017)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (5 December 2017)
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
 - Latest published version: [http://www.w3.org/TR/css-writing-modes-3/](http://www.w3.org/TR/css-writing-modes-3/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/)
@@ -638,9 +633,15 @@ No informative reference to this spec from other specs.
 
 - No WebIDL definitions found
 - Missing references for links: 
+     * [`https://www.w3.org/TR/css-logical-1/`](https://www.w3.org/TR/css-logical-1/)
+     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
      * [`https://www.w3.org/TR/css-writing-modes-4/`](https://www.w3.org/TR/css-writing-modes-4/)
      * [`https://www.w3.org/TR/css3-flexbox/`](https://www.w3.org/TR/css3-flexbox/)
      * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
+     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -868,6 +869,7 @@ Normative references to this spec from:
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
@@ -1135,8 +1137,8 @@ Normative references to this spec from:
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
@@ -1147,7 +1149,6 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 
 
 ## HTML 5.3 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1262,10 +1263,10 @@ Normative references to this spec from:
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -1389,7 +1390,6 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -1512,7 +1512,6 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -1612,7 +1611,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (05 December 2017)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (06 December 2017)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1978,10 +1977,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/) (30 November 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/) (05 December 2017)
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-navigation-timing-2-20170925/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
 - Shortname: navigation-timing-2
 
@@ -1996,6 +1995,7 @@ Normative references to this spec from:
 
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Server Timing](https://w3c.github.io/server-timing/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
 
 Informative references to this spec from:
 
@@ -2202,6 +2202,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
 
 Informative references to this spec from:
 
@@ -2436,6 +2437,31 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
+## Redirecting... {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/) (Wed Dec 06 2017)
+- Editor's Draft: [https://w3c.github.io/web-animations/](https://w3c.github.io/web-animations/)
+- Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
+- Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
+- Shortname: web-animations-1
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+
+No informative reference to this spec from other specs.
+
+
 ## Referrer Policy {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -2470,7 +2496,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (16 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (05 December 2017)
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
 - Latest published version: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -2535,7 +2561,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Type`
+- Unknown WebIDL names used: `Animatable`, `Animation`, `Type`
 - Missing references for WebIDL names: 
      * `DOMRect` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
      * `DOMMatrix` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
@@ -2622,7 +2648,6 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 
 Informative references to this spec from:
 
@@ -2777,7 +2802,6 @@ Normative references to this spec from:
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 
 Informative references to this spec from:
 
@@ -3170,7 +3194,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (30 November 2017)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (5 December 2017)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -3246,11 +3270,11 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## User Timing Level 2 {data-spec=true data-error=true}
+## User Timing Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/) (05 December 2017)
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
@@ -3259,16 +3283,12 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 💣 Not a ReSpec source document? https://w3c.github.io/user-timing/ Error: 💣 Not a ReSpec source document? https://w3c.github.io/user-timing/
-    at Object.<anonymous> (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:102:15)
-    at next (native)
-    at /home/dom/github.com/reffy/node_modules/marcosc-async/lib/async.js:22:24
-    at next (native)
-    at p.then.result (/home/dom/github.com/reffy/node_modules/marcosc-async/lib/async.js:16:36)
-    at process._tickCallback (internal/process/next_tick.js:109:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://w3c.github.io/html/webappapis.html`](https://w3c.github.io/html/webappapis.html)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/navigation-timing/`](https://w3c.github.io/navigation-timing/), related reference "NAVIGATION-TIMING-2" uses URL [`https://www.w3.org/TR/navigation-timing-2/`](https://www.w3.org/TR/navigation-timing-2/)
+     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3277,6 +3297,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
 
 
 ## Vibration API (Second Edition) {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -3387,7 +3408,6 @@ Normative references to this spec from:
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -3436,31 +3456,6 @@ This specification looks good!
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Web Animations {data-spec=true data-anomaly=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/) (4 December 2017)
-- Editor's Draft: [https://w3c.github.io/web-animations/](https://w3c.github.io/web-animations/)
-- Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
-- Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
-- Shortname: web-animations-1
-
-### Potential issue(s) {.anomalies}
-
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 No informative reference to this spec from other specs.
 
@@ -3540,10 +3535,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (30 November 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (5 December 2017)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-webauthn-20170811/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Shortname: webauthn
 
@@ -3684,10 +3679,10 @@ Normative references to this spec from:
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -3780,7 +3775,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (4 November 2017)
+- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (5 December 2017)
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/workers.html](https://html.spec.whatwg.org/multipage/workers.html)
 - Latest published version: [http://www.w3.org/TR/workers/](http://www.w3.org/TR/workers/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -3864,9 +3859,9 @@ Normative references to this spec from:
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
-- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -3938,7 +3933,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Dec 05 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Dec 06 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3963,7 +3958,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Dec 05 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Dec 06 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
