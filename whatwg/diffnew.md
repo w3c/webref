@@ -1,25 +1,12 @@
-% Diff between report from "December 06, 2017" and reference report from "December 05, 2017"
+% Diff between report from "December 07, 2017" and reference report from "December 06, 2017"
 % Reffy
-% December 06, 2017
+% December 07, 2017
 
-## CSS Writing Modes Level 3
+## HTML Standard
 
-- URL: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/css-logical-1/, https://www.w3.org/TR/css3-break/, https://www.w3.org/TR/css3-positioning/, https://www.w3.org/TR/css3-background/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-values/
-
-
-## Redirecting...
-
-- URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/)
-- Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
-- Spec title: *INS* Redirecting... / *DEL* Web Animations
-- No normative references found: *INS* true / *DEL* false
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
+- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/)
+- Unknown WebIDL names used: *INS* SVGImageElement, SVGScriptElement
 
 
 ## Scalable Vector Graphics (SVG) 2
@@ -27,20 +14,15 @@
 - URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
-- Unknown WebIDL names used: *INS* Animatable, Animation
-
-
-## User Timing Level 2
-
-- URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
-- Repository: [GitHub w3c/user-timing](https://github.com/w3c/user-timing)
-- Spec could not be rendered: *DEL* Error: 💣 Not a ReSpec source document? https://w3c.github.io/user-timing/ Error: 💣 Not a ReSpec source document? https://w3c.github.io/user-timing/
-    at Object.<anonymous> (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:102:15)
-    at next (native)
-    at /home/dom/github.com/reffy/node_modules/marcosc-async/lib/async.js:22:24
-    at next (native)
-    at p.then.result (/home/dom/github.com/reffy/node_modules/marcosc-async/lib/async.js:16:36)
-    at process._tickCallback (internal/process/next_tick.js:109:7)
+- Spec could not be rendered: *INS* FetchError: request to https://svgwg.org/svg2-draft/single-page.html failed, reason: socket hang up FetchError: request to https://svgwg.org/svg2-draft/single-page.html failed, reason: socket hang up
+    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
+    at emitOne (events.js:96:13)
+    at ClientRequest.emit (events.js:188:7)
+    at TLSSocket.socketOnEnd (_http_client.js:345:9)
+    at emitNone (events.js:91:20)
+    at TLSSocket.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
 
 

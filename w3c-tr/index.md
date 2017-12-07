@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 06, 2017
+% December 07, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -1247,7 +1247,7 @@ Normative references to this spec from:
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
-- [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
+- [User Timing Level 2](https://www.w3.org/TR/2017/WD-user-timing-2-20171206/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -1381,7 +1381,7 @@ Normative references to this spec from:
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
+- [User Timing Level 2](https://www.w3.org/TR/2017/WD-user-timing-2-20171206/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
@@ -2061,7 +2061,7 @@ Normative references to this spec from:
 
 - [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20171027/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
-- [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
+- [User Timing Level 2](https://www.w3.org/TR/2017/WD-user-timing-2-20171206/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 
 Informative references to this spec from:
@@ -2248,7 +2248,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
-- [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
+- [User Timing Level 2](https://www.w3.org/TR/2017/WD-user-timing-2-20171206/)
 
 Informative references to this spec from:
 
@@ -3018,7 +3018,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (1 December 2017)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (6 December 2017)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -3288,20 +3288,25 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 
 
-## User Timing Level 2 {data-spec=true data-ok=true}
+## User Timing Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/) (01 November 2016)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-user-timing-2-20171206/) (06 December 2017)
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-user-timing-2-20171206/)
 - Repository: [GitHub w3c/user-timing](https://github.com/w3c/user-timing)
 - Shortname: user-timing-2
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for links: 
+     * [`https://w3c.github.io/html/webappapis.html`](https://w3c.github.io/html/webappapis.html)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/navigation-timing/`](https://w3c.github.io/navigation-timing/), related reference "NAVIGATION-TIMING-2" uses URL [`https://www.w3.org/TR/navigation-timing-2/`](https://www.w3.org/TR/navigation-timing-2/)
+     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3310,7 +3315,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
+- [User Timing Level 2](https://www.w3.org/TR/2017/WD-user-timing-2-20171206/)
 
 
 ## Vibration API (Second Edition) {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -3736,7 +3741,7 @@ Normative references to this spec from:
 - [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
+- [User Timing Level 2](https://www.w3.org/TR/2017/WD-user-timing-2-20171206/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
@@ -3805,7 +3810,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Dec 06 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Dec 07 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3826,7 +3831,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Dec 06 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Dec 07 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3937,7 +3942,7 @@ Normative references to this spec from:
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
-- [User Timing Level 2](https://www.w3.org/TR/2016/WD-user-timing-2-20161101/)
+- [User Timing Level 2](https://www.w3.org/TR/2017/WD-user-timing-2-20171206/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171102/)
 - [Wake Lock API](https://www.w3.org/TR/2017/WD-wake-lock-20171204/)
