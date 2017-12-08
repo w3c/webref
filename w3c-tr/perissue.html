@@ -21,6 +21,14 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>116 specifications were crawled in this report.</p>
+  <section id="specifications-that-could-not-be-rendered" class="level2">
+  <h2>Specifications that could not be rendered</h2>
+  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
+  <ul>
+  <li><a href="https://www.w3.org/TR/webvtt1">webvtt1</a>: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:133:34)</code></li>
+  </ul>
+  <p>=&gt; 1 specification found</p>
+  </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -38,7 +46,7 @@
   <li><a href="https://w3c.github.io/editing/contentEditable.html">ContentEditable</a></li>
   <li><a href="http://www.w3.org/TR/2014/CR-css-syntax-3-20140220/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2016/CR-css-values-3-20160929/">CSS Values and Units Module Level 3</a></li>
-  <li><a href="http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/">CSS Writing Modes Level 3</a></li>
+  <li><a href="https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/">DeviceOrientation Event Specification</a></li>
   <li><a href="https://www.w3.org/TR/2016/CR-mixed-content-20160802/">Mixed Content</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-preload-20171026/">Preload</a></li>
@@ -113,8 +121,8 @@
   <li><code>DOMQuadInit</code> used in <a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">CSSOM View Module</a></li>
   <li><code>DOMRect</code> used in <a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">CSSOM View Module</a>, <a href="https://www.w3.org/TR/2016/CR-SVG2-20160915/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><code>DOMRectReadOnly</code> used in <a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">CSSOM View Module</a>, <a href="https://www.w3.org/TR/2016/CR-SVG2-20160915/">Scalable Vector Graphics (SVG) 2</a></li>
-  <li><code>DocumentOrShadowRoot</code> used in <a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a>, <a href="https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/">Pointer Lock 2.0</a>, <a href="https://www.w3.org/TR/2017/WD-shadow-dom-20170905/">Shadow DOM</a></li>
   <li><code>HTMLMenuElement</code> used in <a href="https://www.w3.org/TR/2017/PR-html52-20171102/">HTML 5.2</a></li>
+  <li><code>HTMLSlotElement</code> used in <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   <li><code>OverconstrainedError</code> used in <a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Media Capture and Streams</a></li>
   <li><code>PermissionName</code> used in <a href="https://www.w3.org/TR/2017/WD-permissions-20170925/">Permissions</a></li>
   <li><code>RTCError</code> used in <a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
@@ -136,10 +144,12 @@
   <li><code>ProgressEventInit</code> defined in <a href="http://www.w3.org/TR/2014/REC-progress-events-20140211/">Progress Events</a> and <a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   <li><code>RTCStats</code> defined in <a href="https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/">Identifiers for WebRTC's Statistics API</a> and <a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>ServiceWorkerRegistration</code> defined in <a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a> and <a href="https://www.w3.org/TR/2017/WD-appmanifest-20171129/">Web App Manifest</a></li>
+  <li><code>ShadowRoot</code> defined in <a href="https://www.w3.org/TR/2017/WD-shadow-dom-20170905/">Shadow DOM</a> and <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
+  <li><code>ShadowRootMode</code> defined in <a href="https://www.w3.org/TR/2017/WD-shadow-dom-20170905/">Shadow DOM</a> and <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   <li><code>Worker</code> defined in <a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a> and <a href="http://www.w3.org/TR/2015/WD-workers-20150924/">Web Workers</a></li>
   <li><code>Worklet</code> defined in <a href="http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/">CSS Painting API Level 1</a> and <a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Worklets Level 1</a></li>
   </ul>
-  <p>=&gt; 6 WebIDL names found</p>
+  <p>=&gt; 8 WebIDL names found</p>
   <p>&quot;There can be only one&quot;...</p>
   </section>
   <section id="missing-references-for-webidl-names" class="level2">
@@ -158,7 +168,7 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/2017/WD-accelerometer-20171018/">Accelerometer</a> uses <code>Window</code> but does not reference <a href="https://www.w3.org/TR/2017/PR-html52-20171102/">HTML 5.2</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-ambient-light-20171018/">Ambient Light Sensor</a> uses <code>Window</code> but does not reference <a href="https://www.w3.org/TR/2017/PR-html52-20171102/">HTML 5.2</a></li>
-  <li><a href="http://www.w3.org/TR/2016/CR-battery-status-20160707/">Battery Status API</a> uses <code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
+  <li><a href="http://www.w3.org/TR/2016/CR-battery-status-20160707/">Battery Status API</a> uses <code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a> uses:
   <ul>
   <li><code>Window</code> but does not reference <a href="https://www.w3.org/TR/2017/PR-html52-20171102/">HTML 5.2</a></li>
@@ -172,11 +182,11 @@
   </ul></li>
   <li><a href="http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/">DOM Parsing and Serialization</a> uses:
   <ul>
-  <li><code>Document</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
-  <li><code>Node</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
-  <li><code>Element</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
-  <li><code>Range</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
-  <li><code>DocumentFragment</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
+  <li><code>Document</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
+  <li><code>Node</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
+  <li><code>Element</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
+  <li><code>Range</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
+  <li><code>DocumentFragment</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/2017/CR-encoding-20170413/">Encoding</a> uses:
   <ul>
@@ -191,11 +201,11 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/2017/WD-gamepad-20171027/">Gamepad</a> uses <code>Navigator</code> but does not reference <a href="https://www.w3.org/TR/2017/PR-html52-20171102/">HTML 5.2</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-gyroscope-20171018/">Gyroscope</a> uses <code>Window</code> but does not reference <a href="https://www.w3.org/TR/2017/PR-html52-20171102/">HTML 5.2</a></li>
-  <li><a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">High Resolution Time Level 3</a> uses <code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">High Resolution Time Level 3</a> uses <code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   <li><a href="https://www.w3.org/TR/2017/PR-html52-20171102/">HTML 5.2</a> uses <code>WebGLRenderingContext</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a> uses:
   <ul>
-  <li><code>Element</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
+  <li><code>Element</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   <li><code>MouseEvent</code> but does not reference <a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   <li><code>MouseEventInit</code> but does not reference <a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   </ul></li>
@@ -204,13 +214,13 @@
   <li><a href="https://www.w3.org/TR/2017/WD-magnetometer-20171018/">Magnetometer</a> uses <code>Window</code> but does not reference <a href="https://www.w3.org/TR/2017/PR-html52-20171102/">HTML 5.2</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Media Capture and Streams</a> uses:
   <ul>
-  <li><code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
-  <li><code>Event</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
-  <li><code>EventInit</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
+  <li><code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
+  <li><code>Event</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
+  <li><code>EventInit</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/2016/REC-media-source-20161117/">Media Source Extensions™</a> uses:
   <ul>
-  <li><code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
+  <li><code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   <li><code>URL</code> but does not reference <a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/">MediaStream Recording</a> uses:
@@ -225,7 +235,7 @@
   <li><code>Worker</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a> or <a href="http://www.w3.org/TR/2015/WD-workers-20150924/">Web Workers</a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/">Pointer Lock 2.0</a> uses <code>EventHandler</code> but does not reference <a href="https://www.w3.org/TR/2017/PR-html52-20171102/">HTML 5.2</a></li>
-  <li><a href="https://www.w3.org/TR/2017/CR-remote-playback-20171019/">Remote Playback API</a> uses <code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/CR-remote-playback-20171019/">Remote Playback API</a> uses <code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-server-timing-20171120/">Server Timing</a> uses:
   <ul>
   <li><code>Worker</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a> or <a href="http://www.w3.org/TR/2015/WD-workers-20150924/">Web Workers</a></li>
@@ -233,11 +243,12 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/2017/WD-shadow-dom-20170905/">Shadow DOM</a> uses:
   <ul>
+  <li><code>DocumentOrShadowRoot</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   <li><code>Selection</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-selection-api-20170628/">Selection API</a></li>
-  <li><code>Element</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
+  <li><code>Element</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   <li><code>CaretPosition</code> but does not reference <a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">CSSOM View Module</a></li>
   <li><code>StyleSheetList</code> but does not reference <a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
-  <li><code>DocumentFragment</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
+  <li><code>DocumentFragment</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/staticrange/">Static Range</a> uses <code>Window</code> but does not reference <a href="https://www.w3.org/TR/2017/PR-html52-20171102/">HTML 5.2</a></li>
   <li><a href="http://www.w3.org/TR/2013/REC-touch-events-20131010/">Touch Events</a> uses <code>UIEvent</code> but does not reference <a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
@@ -245,12 +256,12 @@
   <li><a href="https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/">Web Cryptography API</a> uses <code>Worker</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a> or <a href="http://www.w3.org/TR/2015/WD-workers-20150924/">Web Workers</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">WebRTC 1.0: Real-time Communication Between Browsers</a> uses:
   <ul>
-  <li><code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
-  <li><code>Event</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
-  <li><code>EventInit</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a></li>
+  <li><code>EventTarget</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
+  <li><code>Event</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
+  <li><code>EventInit</code> but does not reference <a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 62 missing references for IDL definitions found in 31 specifications</p>
+  <p>=&gt; 63 missing references for IDL definitions found in 31 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -323,11 +334,15 @@
   <li><a href="https://www.w3.org/TR/css3-fonts/"><code>https://www.w3.org/TR/css3-fonts/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/">CSS Writing Modes Level 3</a> links to:
+  <li><a href="https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/">CSS Writing Modes Level 3</a> links to:
   <ul>
-  <li><a href="https://www.w3.org/TR/css-cascade-3/"><code>https://www.w3.org/TR/css-cascade-3/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-logical-1/"><code>https://www.w3.org/TR/css-logical-1/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-break/"><code>https://www.w3.org/TR/css3-break/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-writing-modes-4/"><code>https://www.w3.org/TR/css-writing-modes-4/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-flexbox/"><code>https://www.w3.org/TR/css3-flexbox/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">CSSOM View Module</a> links to:
   <ul>
@@ -479,26 +494,16 @@
   <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/requestidlecallback/"><code>https://w3c.github.io/requestidlecallback/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-user-timing-2-20171206/">User Timing Level 2</a> links to <a href="https://w3c.github.io/html/webappapis.html"><code>https://w3c.github.io/html/webappapis.html</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/touch-events/"><code>https://www.w3.org/TR/touch-events/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/shadow-dom/"><code>https://www.w3.org/TR/shadow-dom/</code></a> but does not list it in its references</li>
-  </ul></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-user-timing-2-20171207/">User Timing Level 2</a> links to <a href="https://w3c.github.io/html/webappapis.html"><code>https://w3c.github.io/html/webappapis.html</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a> links to <a href="https://www.w3.org/TR/touch-events/"><code>https://www.w3.org/TR/touch-events/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2016/WD-web-animations-1-20160913/">Web Animations</a> links to <a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a> but does not list it in its references</li>
   <li><a href="http://www.w3.org/TR/2015/WD-webaudio-20151208/">Web Audio API</a> links to <a href="https://w3c.github.io/workers/"><code>https://w3c.github.io/workers/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2017/WD-webauthn-20171205/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a> links to <a href="https://w3c.github.io/html/browsers.html"><code>https://w3c.github.io/html/browsers.html</code></a> but does not list it in its references</li>
   <li><a href="http://www.w3.org/TR/2015/WD-workers-20150924/">Web Workers</a> links to <a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2017/CR-webdriver-20170330/">WebDriver</a> links to <a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/2017/WD-webvtt1-20170808/">WebVTT: The Web Video Text Tracks Format</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-align/"><code>https://www.w3.org/TR/css3-align/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-ui/"><code>https://www.w3.org/TR/css3-ui/</code></a> but does not list it in its references</li>
-  </ul></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 161 missing references for links found in 56 specifications</p>
+  <p>=&gt; 161 missing references for links found in 55 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -535,7 +540,7 @@
   <li><a href="https://www.w3.org/TR/css-syntax/"><code>https://www.w3.org/TR/css-syntax/</code></a> but related reference &quot;CSS3SYN&quot; uses URL <a href="https://dev.w3.org/csswg/css-syntax/"><code>https://dev.w3.org/csswg/css-syntax/</code></a></li>
   <li><a href="https://www.w3.org/TR/cssom-1/"><code>https://www.w3.org/TR/cssom-1/</code></a> but related reference &quot;CSSOM&quot; uses URL <a href="https://drafts.csswg.org/cssom/"><code>https://drafts.csswg.org/cssom/</code></a></li>
   </ul></li>
-  <li><a href="http://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/">CSS Writing Modes Level 3</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES&quot; uses URL <a href="http://www.w3.org/TR/css-values/"><code>http://www.w3.org/TR/css-values/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/">CSS Writing Modes Level 3</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">CSSOM View Module</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-writing-modes-3/"><code>https://www.w3.org/TR/css-writing-modes-3/</code></a> but related reference &quot;CSS-WRITING-MODES-3&quot; uses URL <a href="http://dev.w3.org/csswg/css-writing-modes-3/"><code>http://dev.w3.org/csswg/css-writing-modes-3/</code></a></li>
@@ -729,16 +734,18 @@
   <li><a href="https://www.w3.org/TR/css-syntax-3/"><code>https://www.w3.org/TR/css-syntax-3/</code></a> but related reference &quot;CSS-SYNTAX-3&quot; uses URL <a href="http://dev.w3.org/csswg/css-syntax/"><code>http://dev.w3.org/csswg/css-syntax/</code></a></li>
   </ul></li>
   <li><a href="http://www.w3.org/TR/2016/WD-UISecurity-20160607/">User Interface Security and the Visibility API</a> links to <a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a> but related reference &quot;CSSOM-VIEW-1&quot; uses URL <a href="http://www.w3.org/TR/cssom-view-1/"><code>http://www.w3.org/TR/cssom-view-1/</code></a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-user-timing-2-20171206/">User Timing Level 2</a> links to:
+  <li><a href="https://www.w3.org/TR/2017/WD-user-timing-2-20171207/">User Timing Level 2</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/navigation-timing/"><code>https://w3c.github.io/navigation-timing/</code></a> but related reference &quot;NAVIGATION-TIMING-2&quot; uses URL <a href="https://www.w3.org/TR/navigation-timing-2/"><code>https://www.w3.org/TR/navigation-timing-2/</code></a></li>
   <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
   <li><a href="https://w3c.github.io/performance-timeline/"><code>https://w3c.github.io/performance-timeline/</code></a> but related reference &quot;PERFORMANCE-TIMELINE-2&quot; uses URL <a href="https://www.w3.org/TR/performance-timeline-2/"><code>https://www.w3.org/TR/performance-timeline-2/</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/2016/REC-vibration-20161018/">Vibration API (Second Edition)</a> links to <a href="https://w3c.github.io/page-visibility/"><code>https://w3c.github.io/page-visibility/</code></a> but related reference &quot;PAGE-VISIBILITY-2&quot; uses URL <a href="https://www.w3.org/TR/page-visibility-2/"><code>https://www.w3.org/TR/page-visibility-2/</code></a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-dom41-20171102/">W3C DOM 4.1</a> links to:
+  <li><a href="https://www.w3.org/TR/2017/WD-dom41-20171207/">W3C DOM 4.1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/encoding/"><code>https://www.w3.org/TR/encoding/</code></a> but related reference &quot;ENCODING&quot; uses URL <a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a></li>
+  <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a></li>
+  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-dom41-20170420/"><code>https://www.w3.org/TR/2017/WD-dom41-20170420/</code></a> but related reference &quot;DOM&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-dom41-20170321/"><code>https://www.w3.org/TR/2017/WD-dom41-20170321/</code></a> but related reference &quot;DOM&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
   <li><a href="https://www.w3.org/TR/2015/REC-dom-20151119/"><code>https://www.w3.org/TR/2015/REC-dom-20151119/</code></a> but related reference &quot;DOM&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
@@ -792,13 +799,8 @@
   <li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/"><code>https://www.w3.org/TR/2011/WD-html5-20110525/</code></a> but related reference &quot;HTML5&quot; uses URL <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">WebRTC 1.0: Real-time Communication Between Browsers</a> links to <a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-webvtt1-20170808/">WebVTT: The Web Video Text Tracks Format</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/encoding/"><code>https://www.w3.org/TR/encoding/</code></a> but related reference &quot;ENCODING-CR&quot; uses URL <a href="https://www.w3.org/TR/2017/CR-encoding-20170413/"><code>https://www.w3.org/TR/2017/CR-encoding-20170413/</code></a></li>
-  <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM-20151119&quot; uses URL <a href="https://www.w3.org/TR/2015/REC-dom-20151119/"><code>https://www.w3.org/TR/2015/REC-dom-20151119/</code></a></li>
-  </ul></li>
   </ul>
-  <p>=&gt; 178 inconsistent references for links found in 64 specifications</p>
+  <p>=&gt; 178 inconsistent references for links found in 63 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
