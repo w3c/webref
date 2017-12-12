@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% December 08, 2017
+% December 12, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -1030,7 +1030,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (29 November 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (11 December 2017)
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
@@ -1361,11 +1361,11 @@ Informative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-redefinedIdlNames=true data-inconsistentRef=true}
+## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (22 November 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (08 December 2017)
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/)
@@ -1375,6 +1375,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `record_RTCQualityLimitationReason__double_`
 - WebIDL names also defined elsewhere: 
     * `RTCStats` also defined in [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - Inconsistent references for links: 
@@ -1424,7 +1425,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (08 December 2017)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (12 December 2017)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -2022,7 +2023,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (05 November 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (08 December 2017)
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
@@ -2255,7 +2256,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/) (Fri Dec 08 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/) (Tue Dec 12 2017)
 - Editor's Draft: [https://w3c.github.io/web-animations/](https://w3c.github.io/web-animations/)
 - Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
@@ -2378,10 +2379,10 @@ The following network or parsing error occurred:
     at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
     at emitOne (events.js:96:13)
     at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketOnEnd (_http_client.js:345:9)
-    at emitNone (events.js:91:20)
-    at TLSSocket.emit (events.js:185:7)
-    at endReadableNT (_stream_readable.js:974:12)
+    at TLSSocket.socketErrorListener (_http_client.js:309:9)
+    at emitOne (events.js:96:13)
+    at TLSSocket.emit (events.js:188:7)
+    at emitErrorNT (net.js:1277:8)
     at _combinedTickCallback (internal/process/next_tick.js:80:11)
     at process._tickCallback (internal/process/next_tick.js:104:9)`
 
@@ -3038,7 +3039,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (30 November 2017)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (08 December 2017)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [http://www.w3.org/TR/webaudio/](http://www.w3.org/TR/webaudio/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -3077,7 +3078,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (7 December 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (8 December 2017)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
@@ -3135,7 +3136,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (7 December 2017)
+- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (10 December 2017)
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
@@ -3283,7 +3284,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Dec 08 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Dec 12 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3306,7 +3307,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Dec 08 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Dec 12 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3372,7 +3373,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webvtt/) (3 December 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webvtt/) (8 December 2017)
 - Editor's Draft: [https://w3c.github.io/webvtt/](https://w3c.github.io/webvtt/)
 - Latest published version: [https://www.w3.org/TR/webvtt1/](https://www.w3.org/TR/webvtt1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-webvtt1-20170808/)

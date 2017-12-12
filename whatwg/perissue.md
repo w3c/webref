@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% December 08, 2017
+% December 12, 2017
 
 107 specifications were crawled in this report.
 
@@ -13,10 +13,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
     at emitOne (events.js:96:13)
     at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketOnEnd (_http_client.js:345:9)
-    at emitNone (events.js:91:20)
-    at TLSSocket.emit (events.js:185:7)
-    at endReadableNT (_stream_readable.js:974:12)
+    at TLSSocket.socketErrorListener (_http_client.js:309:9)
+    at emitOne (events.js:96:13)
+    at TLSSocket.emit (events.js:188:7)
+    at emitErrorNT (net.js:1277:8)
     at _combinedTickCallback (internal/process/next_tick.js:80:11)
     at process._tickCallback (internal/process/next_tick.js:104:9)`
 
@@ -98,8 +98,9 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `SVGImageElement` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `SVGScriptElement` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- `record_RTCQualityLimitationReason__double_` used in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 
-=> 8 WebIDL names found
+=> 9 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.

@@ -1,12 +1,12 @@
-% Diff between report from "December 08, 2017" and reference report from "December 07, 2017"
+% Diff between report from "December 12, 2017" and reference report from "December 08, 2017"
 % Reffy
-% December 08, 2017
+% December 12, 2017
 
-## CSS Writing Modes Level 3
+## Identifiers for WebRTC's Statistics API
 
-- URL: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *DEL* https://www.w3.org/TR/css-writing-modes-4/
+- URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
+- Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
+- Unknown WebIDL names used: *INS* record_RTCQualityLimitationReason__double_
 
 
