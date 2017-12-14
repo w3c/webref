@@ -1,28 +1,12 @@
-% Diff between report from "December 13, 2017" and reference report from "December 12, 2017"
+% Diff between report from "December 14, 2017" and reference report from "December 13, 2017"
 % Reffy
-% December 13, 2017
+% December 14, 2017
 
-## HTML Standard
+## Identifiers for WebRTC's Statistics API
 
-- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/)
-- Unknown WebIDL names used: *DEL* SVGImageElement, SVGScriptElement
-
-
-## Scalable Vector Graphics (SVG) 2
-
-- URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
-- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/)
-- Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
-- Spec could not be rendered: *DEL* FetchError: request to https://svgwg.org/svg2-draft/ failed, reason: socket hang up FetchError: request to https://svgwg.org/svg2-draft/ failed, reason: socket hang up
-    at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:188:7)
-    at TLSSocket.socketErrorListener (_http_client.js:309:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:188:7)
-    at emitErrorNT (net.js:1277:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
+- URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
+- Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
+- Unknown WebIDL names used: *DEL* record_RTCQualityLimitationReason__double_
 
 
