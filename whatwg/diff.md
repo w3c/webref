@@ -1,12 +1,12 @@
-% Diff between report from "December 18, 2017" and reference report from "December 17, 2017"
+% Diff between report from "December 19, 2017" and reference report from "December 18, 2017"
 % Reffy
-% December 18, 2017
+% December 19, 2017
 
 ## HTML Standard
 
 - URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled version: [Living Standard](https://html.spec.whatwg.org/)
-- Unknown WebIDL names used: *INS* SVGImageElement, SVGScriptElement
+- Unknown WebIDL names used: *DEL* SVGImageElement, SVGScriptElement
 
 
 ## Scalable Vector Graphics (SVG) 2
@@ -14,7 +14,7 @@
 - URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
-- Spec could not be rendered: *INS* FetchError: request to https://svgwg.org/svg2-draft/ failed, reason: socket hang up FetchError: request to https://svgwg.org/svg2-draft/ failed, reason: socket hang up
+- Spec could not be rendered: *DEL* FetchError: request to https://svgwg.org/svg2-draft/ failed, reason: socket hang up FetchError: request to https://svgwg.org/svg2-draft/ failed, reason: socket hang up
     at ClientRequest.<anonymous> (/home/dom/github.com/reffy/node_modules/node-fetch/index.js:133:11)
     at emitOne (events.js:96:13)
     at ClientRequest.emit (events.js:188:7)
