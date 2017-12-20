@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 19, 2017
+% December 20, 2017
 
 116 specifications were crawled in this report.
 
@@ -212,6 +212,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-device-adapt-1/`](https://www.w3.org/TR/css-device-adapt-1/) but does not list it in its references
     * [`https://www.w3.org/TR/turingtest/`](https://www.w3.org/TR/turingtest/) but does not list it in its references
     * [`https://www.w3.org/TR/xlink11/`](https://www.w3.org/TR/xlink11/) but does not list it in its references
+    * [`https://www.w3.org/TR/2017/WD-html53-20171214/%3EHTML%205.3%20First%20Public%20Working%20Draft%3C/a%3E%20%20%3Cdl%3E%20%20%20%20%3Cdt%3E%3Ca%20href=`](https://www.w3.org/TR/2017/WD-html53-20171214/%3EHTML%205.3%20First%20Public%20Working%20Draft%3C/a%3E%20%20%3Cdl%3E%20%20%20%20%3Cdt%3E%3Ca%20href=) but does not list it in its references
+    * [`https://www.w3.org/TR/2017/WD-html53-20171214/%3EHTML%205.3%20First%20Public%20Working%20Draft%3C/a%3E%20and%20%20%3Ca%20href=`](https://www.w3.org/TR/2017/WD-html53-20171214/%3EHTML%205.3%20First%20Public%20Working%20Draft%3C/a%3E%20and%20%20%3Ca%20href=) but does not list it in its references
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) links to:
     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
@@ -304,7 +306,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 102 missing references for links found in 39 specifications
+=> 104 missing references for links found in 39 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -355,7 +357,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/html/`](https://w3c.github.io/html/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/webmessaging/`](https://www.w3.org/TR/webmessaging/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
-    * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/) links to:
     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
@@ -491,6 +492,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) links to [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
-=> 147 inconsistent references for links found in 56 specifications
+=> 146 inconsistent references for links found in 56 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

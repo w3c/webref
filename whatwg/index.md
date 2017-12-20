@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% December 19, 2017
+% December 20, 2017
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
@@ -81,7 +81,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Battery Status API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## Battery Status API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -94,8 +94,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
+- Unknown WebIDL names used: `EventTarget`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -132,7 +131,7 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## Clipboard API and events {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Clipboard API and events {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -145,6 +144,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`
 - Missing references for links: 
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
 - Inconsistent references for links: 
@@ -213,7 +213,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Content Security Policy Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Content Security Policy Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -226,6 +226,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Event`, `EventInit`
 - Missing references for links: 
      * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/)
 - Inconsistent references for links: 
@@ -288,7 +289,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Credential Management Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Credential Management Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -301,6 +302,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `AbortSignal`
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec/usecases/credentialmanagement/`](https://w3c.github.io/webappsec/usecases/credentialmanagement/)
 - Inconsistent references for links: 
@@ -385,7 +387,7 @@ Informative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 
 
-## CSS Object Model (CSSOM) {data-spec=true data-ok=true}
+## CSS Object Model (CSSOM) {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -398,7 +400,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `Document`, `Element`, `ProcessingInstruction`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -477,7 +479,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS Pseudo-Elements Module Level 4 {data-spec=true data-ok=true}
+## CSS Pseudo-Elements Module Level 4 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -490,7 +492,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `Element`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -545,7 +547,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Typed OM Level 1 {data-spec=true data-ok=true}
+## CSS Typed OM Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -557,7 +559,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `Element`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -643,7 +645,7 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 
 
-## CSSOM View Module {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## CSSOM View Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -656,6 +658,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Document`, `Element`, `Event`, `EventInit`, `EventListener`, `EventTarget`, `Node`, `Range`, `Text`
 - Missing references for WebIDL names: 
      * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
      * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
@@ -680,7 +683,7 @@ Informative references to this spec from:
 - [Web App Manifest](https://w3c.github.io/manifest/)
 
 
-## DeviceOrientation Event Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## DeviceOrientation Event Specification {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -693,6 +696,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Event`, `EventInit`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML51" uses URL [`https://www.w3.org/TR/2016/REC-html51-20161101/`](https://www.w3.org/TR/2016/REC-html51-20161101/)
 
@@ -709,7 +713,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -722,6 +726,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Document`, `DocumentFragment`, `Element`, `Node`, `Range`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 
@@ -738,18 +743,17 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 
 
-## DOM Standard {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## DOM Standard {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (21 November 2017)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (19 December 2017)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `AudioWorklet` defined in [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- Invalid WebIDL content found
 - Missing references for links: 
      * [`https://w3c.github.io/webcomponents/spec/shadow/`](https://w3c.github.io/webcomponents/spec/shadow/)
 - Inconsistent references for links: 
@@ -819,15 +823,6 @@ Normative references to this spec from:
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Battery Status API](https://w3c.github.io/battery/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- [Media Source Extensions™](https://w3c.github.io/media-source/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-
 Informative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
@@ -872,7 +867,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Encrypted Media Extensions {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Encrypted Media Extensions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -885,6 +880,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
      * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
@@ -903,13 +899,13 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (26 November 2017)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (19 December 2017)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ReadableStream`
+- Unknown WebIDL names used: `AbortSignal`, `ReadableStream`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -944,7 +940,7 @@ Informative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
-## File API {data-spec=true data-ok=true}
+## File API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -957,7 +953,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `EventTarget`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -982,7 +978,7 @@ Informative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 
-## Fullscreen API Standard {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## Fullscreen API Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -992,6 +988,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Document`, `DocumentOrShadowRoot`, `Element`
 - Missing references for links: 
      * [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/)
 
@@ -1011,7 +1008,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## Gamepad {data-spec=true data-ok=true}
+## Gamepad {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -1024,7 +1021,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `Event`, `EventInit`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1033,7 +1030,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Generic Sensor API {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Generic Sensor API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1046,6 +1043,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
 
@@ -1155,7 +1153,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## High Resolution Time Level 2 {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## High Resolution Time Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -1168,8 +1166,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
+- Unknown WebIDL names used: `EventTarget`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1226,12 +1223,12 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (18 December 2017)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (19 December 2017)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `WindowProxy`
+- Unknown WebIDL names used: `DOMTokenList`, `Document`, `DocumentFragment`, `Element`, `Event`, `EventInit`, `EventTarget`, `HTMLCollection`, `Node`, `NodeList`, `WindowProxy`
 - WebIDL names also defined elsewhere: 
     * `BinaryType` also defined in [Presentation API](https://w3c.github.io/presentation-api/)
     * `Worker` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
@@ -1400,7 +1397,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Indexed Database API 2.0 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Indexed Database API 2.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1413,6 +1410,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://www.w3.org/TR/domcore/`](https://www.w3.org/TR/domcore/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
@@ -1435,7 +1433,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (19 December 2017)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (20 December 2017)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1489,7 +1487,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/longtasks/) (30 August 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/longtasks/) (19 December 2017)
 - Editor's Draft: [https://w3c.github.io/longtasks/](https://w3c.github.io/longtasks/)
 - Latest published version: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
@@ -1541,7 +1539,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Media Capture and Streams {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## Media Capture and Streams {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -1554,11 +1552,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `OverconstrainedError`
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
-     * `Event` defined in [DOM Standard](https://dom.spec.whatwg.org/)
-     * `EventInit` defined in [DOM Standard](https://dom.spec.whatwg.org/)
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`, `OverconstrainedError`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1654,7 +1648,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Media Source Extensions™ {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## Media Source Extensions™ {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -1667,8 +1661,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `EventTarget`
 - Missing references for WebIDL names: 
-     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
      * `URL` defined in [URL Standard](https://url.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -1711,7 +1705,7 @@ Informative references to this spec from:
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 
 
-## MediaStream Recording {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## MediaStream Recording {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1724,6 +1718,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 
@@ -1831,7 +1826,7 @@ Informative references to this spec from:
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 
 
-## Notifications API Standard {data-spec=true data-ok=true}
+## Notifications API Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -1841,7 +1836,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `EventTarget`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1886,7 +1881,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Page Visibility Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+## Page Visibility Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -1900,6 +1895,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `Document`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1998,7 +1994,7 @@ Informative references to this spec from:
 - [Payment Request API](https://w3c.github.io/payment-request/)
 
 
-## Payment Request API {data-spec=true data-ok=true}
+## Payment Request API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -2011,7 +2007,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2069,7 +2065,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PermissionName`
+- Unknown WebIDL names used: `EventTarget`, `PermissionName`
 - Missing references for links: 
      * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
@@ -2096,7 +2092,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Pointer Events - Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+## Pointer Events - Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -2110,6 +2106,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `Element`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2123,7 +2120,7 @@ Informative references to this spec from:
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 
 
-## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -2136,6 +2133,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Document`, `DocumentOrShadowRoot`, `Element`
 - Missing references for WebIDL names: 
      * `EventHandler` defined in [HTML Standard](https://html.spec.whatwg.org/)
 
@@ -2175,7 +2173,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Presentation API {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-inconsistentRef=true}
+## Presentation API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2188,6 +2186,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`
 - WebIDL names also defined elsewhere: 
     * `BinaryType` also defined in [HTML Standard](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -2261,7 +2260,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/) (Tue Dec 19 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/) (Wed Dec 20 2017)
 - Editor's Draft: [https://w3c.github.io/web-animations/](https://w3c.github.io/web-animations/)
 - Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
@@ -2312,7 +2311,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Remote Playback API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## Remote Playback API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2325,8 +2324,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
+- Unknown WebIDL names used: `EventTarget`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
@@ -2381,7 +2379,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Animatable`, `Animation`, `Type`
+- Unknown WebIDL names used: `Animatable`, `Animation`, `Document`, `Element`, `NodeList`, `ShadowRoot`, `Type`
 - Missing references for WebIDL names: 
      * `DOMRect` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
      * `DOMMatrix` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
@@ -2543,7 +2541,7 @@ Informative references to this spec from:
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 
 
-## Selection API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Selection API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2556,6 +2554,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Document`, `Node`, `Range`
 - Missing references for links: 
      * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/)
 - Inconsistent references for links: 
@@ -2570,7 +2569,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Selectors API Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
+## Selectors API Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2582,6 +2581,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `Document`, `DocumentFragment`, `Element`, `NodeList`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/), related reference "SELECT" uses URL [`http://www.w3.org/TR/2011/REC-css3-selectors-20110929/`](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
 
@@ -2648,7 +2648,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Service Workers 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Service Workers 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2661,6 +2661,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`
 - WebIDL names also defined elsewhere: 
     * `ServiceWorkerRegistration` also defined in [Web App Manifest](https://w3c.github.io/manifest/)
     * `Worker` also defined in [HTML Standard](https://html.spec.whatwg.org/)
@@ -2699,7 +2700,7 @@ Informative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
-## Static Range {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## Static Range {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -2709,6 +2710,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Node`, `Range`
 - Missing references for WebIDL names: 
      * `Window` defined in [HTML Standard](https://html.spec.whatwg.org/)
 
@@ -2746,7 +2748,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (6 December 2017)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (19 December 2017)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -2764,7 +2766,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## The Screen Orientation API {data-spec=true data-ok=true}
+## The Screen Orientation API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -2777,7 +2779,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `EventTarget`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2802,7 +2804,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `WindowProxy`
+- Unknown WebIDL names used: `Document`, `EventTarget`, `WindowProxy`
 - Missing references for links: 
      * [`https://www.w3.org/TR/touch-events-extensions/`](https://www.w3.org/TR/touch-events-extensions/)
 
@@ -2818,7 +2820,7 @@ Informative references to this spec from:
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
 
 
-## UI Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
+## UI Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2832,6 +2834,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`
 - Missing references for links: 
      * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
      * [`https://www.w3.org/TR/2004/REC-xml-20040204/`](https://www.w3.org/TR/2004/REC-xml-20040204/)
@@ -3050,7 +3053,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Wake Lock API {data-spec=true data-ok=true}
+## Wake Lock API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -3063,7 +3066,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `EventTarget`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3072,7 +3075,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web App Manifest {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-inconsistentRef=true}
+## Web App Manifest {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3085,6 +3088,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Event`
 - WebIDL names also defined elsewhere: 
     * `ServiceWorkerRegistration` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Inconsistent references for links: 
@@ -3119,7 +3123,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AudioWorkletOptions`
+- Unknown WebIDL names used: `AudioWorkletOptions`, `Event`, `EventInit`, `EventTarget`
 - WebIDL names also defined elsewhere: 
     * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - Missing references for links: 
@@ -3135,7 +3139,6 @@ No normative reference to this spec from other specs.
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Console Standard](https://console.spec.whatwg.org/)
-- [DOM Standard](https://dom.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -3206,7 +3209,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (14 December 2017)
+- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (19 December 2017)
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
@@ -3355,7 +3358,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Dec 19 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Dec 20 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3374,16 +3377,17 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## WebGL Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## WebGL Specification {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Dec 19 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Dec 20 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Event`, `EventInit`
 - Inconsistent references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
 
@@ -3401,7 +3405,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3414,13 +3418,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `RTCError`
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`, `RTCError`
 - WebIDL names also defined elsewhere: 
     * `RTCStats` also defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
-     * `Event` defined in [DOM Standard](https://dom.spec.whatwg.org/)
-     * `EventInit` defined in [DOM Standard](https://dom.spec.whatwg.org/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/), related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
@@ -3440,7 +3440,7 @@ Informative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
-## WebVTT: The Web Video Text Tracks Format {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## WebVTT: The Web Video Text Tracks Format {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -3453,6 +3453,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `DocumentFragment`
 - Missing references for links: 
      * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
 
@@ -3500,7 +3501,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## XMLHttpRequest Standard {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## XMLHttpRequest Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -3510,6 +3511,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Document`, `Event`, `EventInit`, `EventTarget`
 - Missing references for links: 
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
