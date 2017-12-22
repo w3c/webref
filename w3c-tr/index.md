@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 21, 2017
+% December 22, 2017
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -1005,7 +1005,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Payment Request API](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171221/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -1268,7 +1268,7 @@ Although they do not, the following specs should also normatively reference this
 
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171221/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 
 Informative references to this spec from:
@@ -1372,7 +1372,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171221/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/)
@@ -2054,7 +2054,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20171027/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171221/)
 - [User Timing Level 2](https://www.w3.org/TR/2017/WD-user-timing-2-20171207/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 
@@ -2247,7 +2247,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171221/)
 
 
 ## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2569,7 +2569,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171221/)
 
 Informative references to this spec from:
 
@@ -2834,10 +2834,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-server-timing-20171120/) (20 November 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-server-timing-20171221/) (21 December 2017)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-server-timing-20171221/)
 - Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
 - Shortname: server-timing
 
@@ -2924,7 +2924,7 @@ Although they do not, the following specs should also normatively reference this
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171221/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 
 Informative references to this spec from:
@@ -3773,7 +3773,7 @@ Although they do not, the following specs should also normatively reference this
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2017/PR-IndexedDB-2-20171116/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171221/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 
 Informative references to this spec from:
@@ -3825,7 +3825,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Dec 21 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Dec 22 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3846,7 +3846,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Dec 21 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Dec 22 2017)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3946,7 +3946,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171120/)
+- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171221/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
