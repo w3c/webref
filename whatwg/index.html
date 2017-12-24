@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">December 23, 2017</h2>
+            <h2 class="date">December 24, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -175,7 +175,7 @@
   <section id="potential-issues-4" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Navigator</code></li>
+  <li>Unknown WebIDL names used: <code>BodyInit</code>, <code>Navigator</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-4" class="level3 dependencies">
@@ -1094,12 +1094,12 @@
   </ul>
   </section>
   </section>
-  <section id="fetch-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="fetch-standard" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true">
   <h2>Fetch Standard</h2>
   <section id="spec-info-28" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://fetch.spec.whatwg.org/">Living Standard</a> (20 December 2017)</li>
+  <li>Crawled version: <a href="https://fetch.spec.whatwg.org/">Living Standard</a> (23 December 2017)</li>
   <li>Repository: <a href="https://github.com/whatwg/fetch">GitHub whatwg/fetch</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -1107,7 +1107,7 @@
   <section id="potential-issues-28" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>AbortSignal</code>, <code>ReadableStream</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code></li>
+  <li>Invalid WebIDL content found</li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-28" class="level3 dependencies">
@@ -1321,7 +1321,7 @@
   </ul>
   </section>
   </section>
-  <section id="geometry-interfaces-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-hasObsoleteIdl="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="geometry-interfaces-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Geometry Interfaces Module Level 1</h2>
   <section id="spec-info-34" class="level3 info">
   <h3>Spec info</h3>
@@ -1337,7 +1337,6 @@
   <section id="potential-issues-34" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Obsolete WebIDL constructs found</li>
   <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for WebIDL names:
   <ul>
@@ -1700,7 +1699,7 @@
   <section id="spec-info-41" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (23 December 2017)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (24 December 2017)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -2705,7 +2704,7 @@
   <section id="spec-info-70" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/web-animations/">Editor's Draft</a> (Sat Dec 23 2017)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/web-animations/">Editor's Draft</a> (Sun Dec 24 2017)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/web-animations/">https://w3c.github.io/web-animations/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/web-animations-1/">https://www.w3.org/TR/web-animations-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2016/WD-web-animations-1-20160913/">Working Draft</a></li>
@@ -3097,7 +3096,7 @@
   <section id="potential-issues-81" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>MessagePort</code>, <code>Navigator</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code>, <code>WorkerGlobalScope</code>, <code>WorkerNavigator</code>, <code>WorkerType</code></li>
+  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>MessagePort</code>, <code>Navigator</code>, <code>Request</code>, <code>RequestInfo</code>, <code>Response</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code>, <code>WorkerGlobalScope</code>, <code>WorkerNavigator</code>, <code>WorkerType</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/push-api/"><code>https://w3c.github.io/push-api/</code></a></li>
@@ -3136,7 +3135,6 @@
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
-  <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="https://w3c.github.io/user-timing/">User Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></li>
@@ -3176,12 +3174,12 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="storage-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="storage-standard" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true">
   <h2>Storage Standard</h2>
   <section id="spec-info-83" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://storage.spec.whatwg.org/">Living Standard</a> (20 December 2017)</li>
+  <li>Crawled version: <a href="https://storage.spec.whatwg.org/">Living Standard</a> (23 December 2017)</li>
   <li>Repository: <a href="https://github.com/whatwg/storage">GitHub whatwg/storage</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -3189,11 +3187,7 @@
   <section id="potential-issues-83" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  </ul></li>
+  <li>Invalid WebIDL content found</li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-83" class="level3 dependencies">
@@ -3936,7 +3930,7 @@
   <section id="spec-info-101" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sat Dec 23 2017)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sun Dec 24 2017)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -3961,7 +3955,7 @@
   <section id="spec-info-102" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sat Dec 23 2017)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sun Dec 24 2017)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4067,7 +4061,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="worklets-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
+  <section id="worklets-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
   <h2>Worklets Level 1</h2>
   <section id="spec-info-105" class="level3 info">
   <h3>Spec info</h3>
@@ -4082,6 +4076,7 @@
   <section id="potential-issues-105" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>RequestCredentials</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
@@ -4124,7 +4119,7 @@
   <section id="potential-issues-106" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DedicatedWorker</code>, <code>Document</code>, <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>HTMLFormElement</code>, <code>SharedWorker</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>BodyInit</code>, <code>DedicatedWorker</code>, <code>Document</code>, <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>HTMLFormElement</code>, <code>SharedWorker</code>, <code>Window</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>

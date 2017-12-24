@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">December 23, 2017</h2>
+            <h2 class="date">December 24, 2017</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -255,7 +255,7 @@
   <section id="potential-issues-6" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Navigator</code></li>
+  <li>Unknown WebIDL names used: <code>BodyInit</code>, <code>Navigator</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://xhr.spec.whatwg.org/"><code>https://xhr.spec.whatwg.org/</code></a></li>
@@ -1207,12 +1207,12 @@
   </ul>
   </section>
   </section>
-  <section id="fetch-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="fetch-standard" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true">
   <h2>Fetch Standard</h2>
   <section id="spec-info-30" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://fetch.spec.whatwg.org/">Living Standard</a> (20 December 2017)</li>
+  <li>Crawled version: <a href="https://fetch.spec.whatwg.org/">Living Standard</a> (23 December 2017)</li>
   <li>Repository: <a href="https://github.com/whatwg/fetch">GitHub whatwg/fetch</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -1220,7 +1220,7 @@
   <section id="potential-issues-30" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>AbortSignal</code>, <code>ReadableStream</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code></li>
+  <li>Invalid WebIDL content found</li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-30" class="level3 dependencies">
@@ -3500,7 +3500,7 @@
   <section id="potential-issues-83" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>Navigator</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code>, <code>WorkerType</code></li>
+  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>Navigator</code>, <code>Request</code>, <code>RequestInfo</code>, <code>Response</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code>, <code>WorkerType</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>Worker</code> also defined in <a href="http://www.w3.org/TR/2015/WD-workers-20150924/">Web Workers</a></li>
@@ -3627,12 +3627,12 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="storage-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="storage-standard" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true">
   <h2>Storage Standard</h2>
   <section id="spec-info-86" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://storage.spec.whatwg.org/">Living Standard</a> (20 December 2017)</li>
+  <li>Crawled version: <a href="https://storage.spec.whatwg.org/">Living Standard</a> (23 December 2017)</li>
   <li>Repository: <a href="https://github.com/whatwg/storage">GitHub whatwg/storage</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -3640,7 +3640,7 @@
   <section id="potential-issues-86" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
+  <li>Invalid WebIDL content found</li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-86" class="level3 dependencies">
@@ -4605,7 +4605,7 @@
   <section id="spec-info-109" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sat Dec 23 2017)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sun Dec 24 2017)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4628,7 +4628,7 @@
   <section id="spec-info-110" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sat Dec 23 2017)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sun Dec 24 2017)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4922,7 +4922,7 @@
   <section id="potential-issues-115" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>HTMLFormElement</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>BodyInit</code>, <code>EventHandler</code>, <code>HTMLFormElement</code>, <code>Window</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>ProgressEvent</code> also defined in <a href="http://www.w3.org/TR/2014/REC-progress-events-20140211/">Progress Events</a></li>

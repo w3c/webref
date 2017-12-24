@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% December 23, 2017
+% December 24, 2017
 
 107 specifications were crawled in this report.
 
@@ -56,29 +56,28 @@ Not all specifications define IDL content, presence in this list may be complete
 
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Storage Standard](https://storage.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
-=> 12 specifications found
+=> 14 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
 
 ## List of specifications with obsolete WebIDL constructs
 
-- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 
-=> 1 specification found
-
-A typical example is the use of `[]` instead of `FrozenArray`.
+=> 0 specification found
 
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
@@ -98,9 +97,10 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 
 ## List of WebIDL names not defined in the specifications crawled
 
-- `AbortSignal` used in [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [Fetch Standard](https://fetch.spec.whatwg.org/)
+- `AbortSignal` used in [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - `AudioTrack` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
 - `AudioTrackList` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
+- `BodyInit` used in [Beacon](https://w3c.github.io/beacon/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `DOMStringList` used in [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - `DataTransfer` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - `DedicatedWorker` used in [File API](https://w3c.github.io/FileAPI/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -134,7 +134,10 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `ProcessingInstruction` used in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - `RTCError` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - `Range` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Selection API](https://w3c.github.io/selection-api/), [Static Range](https://w3c.github.io/staticrange/)
-- `ReadableStream` used in [Fetch Standard](https://fetch.spec.whatwg.org/)
+- `Request` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- `RequestCredentials` used in [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+- `RequestInfo` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- `Response` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - `SharedWorker` used in [File API](https://w3c.github.io/FileAPI/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `Text` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - `TextTrack` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
@@ -143,14 +146,14 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `TimeRanges` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
 - `VideoTrack` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
 - `VideoTrackList` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
-- `Window` used in [Accelerometer](https://w3c.github.io/accelerometer/), [Ambient Light Sensor](https://w3c.github.io/ambient-light/), [Battery Status API](https://w3c.github.io/battery/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Console Standard](https://console.spec.whatwg.org/), [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Encoding Standard](https://encoding.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/), [Generic Sensor API](https://w3c.github.io/sensors/), [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/), [Gyroscope](https://w3c.github.io/gyroscope/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Magnetometer](https://w3c.github.io/magnetometer/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/), [Media Session Standard](https://wicg.github.io/mediasession/), [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Orientation Sensor](https://w3c.github.io/orientation-sensor/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events - Level 2](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Proximity Sensor](https://w3c.github.io/proximity/), [Push API](https://w3c.github.io/push-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Resource Timing Level 3](https://w3c.github.io/resource-timing/), [Selection API](https://w3c.github.io/selection-api/), [Server Timing](https://w3c.github.io/server-timing/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Static Range](https://w3c.github.io/staticrange/), [Storage Standard](https://storage.spec.whatwg.org/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 2](https://w3c.github.io/user-timing/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/), [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html), [Web IDL](https://heycam.github.io/webidl/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
-- `WindowOrWorkerGlobalScope` used in [Fetch Standard](https://fetch.spec.whatwg.org/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- `Window` used in [Accelerometer](https://w3c.github.io/accelerometer/), [Ambient Light Sensor](https://w3c.github.io/ambient-light/), [Battery Status API](https://w3c.github.io/battery/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Console Standard](https://console.spec.whatwg.org/), [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Encoding Standard](https://encoding.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/), [Generic Sensor API](https://w3c.github.io/sensors/), [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/), [Gyroscope](https://w3c.github.io/gyroscope/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Magnetometer](https://w3c.github.io/magnetometer/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/), [Media Session Standard](https://wicg.github.io/mediasession/), [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Orientation Sensor](https://w3c.github.io/orientation-sensor/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events - Level 2](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Proximity Sensor](https://w3c.github.io/proximity/), [Push API](https://w3c.github.io/push-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Resource Timing Level 3](https://w3c.github.io/resource-timing/), [Selection API](https://w3c.github.io/selection-api/), [Server Timing](https://w3c.github.io/server-timing/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Static Range](https://w3c.github.io/staticrange/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 2](https://w3c.github.io/user-timing/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/), [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html), [Web IDL](https://heycam.github.io/webidl/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `WindowOrWorkerGlobalScope` used in [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - `WindowProxy` used in [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - `WorkerGlobalScope` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - `WorkerNavigator` used in [Permissions](https://w3c.github.io/permissions/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - `WorkerType` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
-=> 51 WebIDL names found
+=> 55 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -184,14 +187,13 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Server Timing](https://w3c.github.io/server-timing/) uses:
     * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [Storage Standard](https://storage.spec.whatwg.org/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [URL Standard](https://url.spec.whatwg.org/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [User Timing Level 2](https://w3c.github.io/user-timing/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Web IDL](https://heycam.github.io/webidl/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
-=> 19 missing references for IDL definitions found in 16 specifications
+=> 18 missing references for IDL definitions found in 15 specifications
 
 
 ## Missing references based on document links
