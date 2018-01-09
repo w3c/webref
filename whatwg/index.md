@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% December 26, 2017
+% January 09, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
@@ -133,7 +133,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/clipboard-apis/) (7 November 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/clipboard-apis/) (5 January 2018)
 - Editor's Draft: [https://w3c.github.io/clipboard-apis/](https://w3c.github.io/clipboard-apis/)
 - Latest published version: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
@@ -158,7 +158,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Compositing and Blending Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## Compositing and Blending Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -171,7 +171,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
 - Inconsistent references for links: 
@@ -191,7 +191,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://console.spec.whatwg.org/) (20 December 2017)
+- Crawled version: [Living Standard](https://console.spec.whatwg.org/) (5 January 2018)
 - Repository: [GitHub whatwg/console](https://github.com/whatwg/console)
 - Shortname: no shortname
 
@@ -245,7 +245,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## ContentEditable {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
+## ContentEditable {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
 
@@ -254,7 +254,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -350,7 +350,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (15 November 2017)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (25 December 2017)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
@@ -478,7 +478,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/) (9 November 2017)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-pseudo-4/) (30 December 2017)
 - Editor's Draft: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
 - Latest published version: [http://www.w3.org/TR/css-pseudo-4/](http://www.w3.org/TR/css-pseudo-4/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
@@ -498,7 +498,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Syntax Module Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Syntax Module Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -511,7 +511,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
      * [`https://www.w3.org/TR/selectors-api/`](https://www.w3.org/TR/selectors-api/)
 - Inconsistent references for links: 
@@ -565,11 +565,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Values and Units Module Level 4 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-inconsistentRef=true}
+## CSS Values and Units Module Level 4 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values/) (9 November 2017)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values/) (3 January 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-values/](https://drafts.csswg.org/css-values/)
 - Latest published version: [https://www.w3.org/TR/css-values-3/](https://www.w3.org/TR/css-values-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -578,7 +578,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-syntax/`](https://www.w3.org/TR/css-syntax/), related reference "CSS3SYN" uses URL [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/)
      * [`https://www.w3.org/TR/css3-fonts/`](https://www.w3.org/TR/css3-fonts/), related reference "CSS3-FONTS" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
@@ -608,7 +608,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Writing Modes Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
+## CSS Writing Modes Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -621,7 +621,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-logical-1/`](https://www.w3.org/TR/css-logical-1/)
      * [`https://www.w3.org/TR/css3-flexbox/`](https://www.w3.org/TR/css3-flexbox/)
@@ -740,7 +740,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (20 December 2017)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (8 January 2018)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -891,7 +891,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (23 December 2017)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (8 January 2018)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -975,7 +975,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fullscreen.spec.whatwg.org/) (20 December 2017)
+- Crawled version: [Living Standard](https://fullscreen.spec.whatwg.org/) (7 January 2018)
 - Repository: [GitHub whatwg/fullscreen](https://github.com/whatwg/fullscreen)
 - Shortname: no shortname
 
@@ -1215,7 +1215,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (20 December 2017)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (6 January 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1408,7 +1408,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (26 December 2017)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (09 January 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1736,7 +1736,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Mixed Content {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-inconsistentRef=true}
+## Mixed Content {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1749,7 +1749,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/), related reference "XML" uses URL [`https://www.w3.org/TR/xml`](https://www.w3.org/TR/xml)
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
@@ -1809,7 +1809,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://notifications.spec.whatwg.org/) (20 December 2017)
+- Crawled version: [Living Standard](https://notifications.spec.whatwg.org/) (5 January 2018)
 - Repository: [GitHub whatwg/notifications](https://github.com/whatwg/notifications)
 - Shortname: no shortname
 
@@ -1924,10 +1924,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (03 December 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (08 January 2018)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-payment-handler-20171203/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
 - Shortname: payment-handler
 
@@ -2128,7 +2128,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Preload {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
+## Preload {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -2141,7 +2141,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
 
@@ -2235,11 +2235,11 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Redirecting... {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
+## Redirecting... {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/) (Tue Dec 26 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/) (Tue Jan 09 2018)
 - Editor's Draft: [https://w3c.github.io/web-animations/](https://w3c.github.io/web-animations/)
 - Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
@@ -2249,7 +2249,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - No normative references found
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2509,7 +2509,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Selectors Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-inconsistentRef=true}
+## Selectors Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2521,7 +2521,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/), related reference "CSS3NAMESPACE" uses URL [`http://www.w3.org/TR/2011/REC-css3-namespace-20110929/`](http://www.w3.org/TR/2011/REC-css3-namespace-20110929/)
      * [`https://www.w3.org/TR/2001/PR-SVG-20010719/`](https://www.w3.org/TR/2001/PR-SVG-20010719/), related reference "SVG11" uses URL [`http://www.w3.org/TR/2011/REC-SVG11-20110816/`](http://www.w3.org/TR/2011/REC-SVG11-20110816/)
@@ -2545,10 +2545,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (21 December 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (29 December 2017)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-server-timing-20171221/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
 - Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
 - Shortname: server-timing
 
@@ -2651,7 +2651,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://storage.spec.whatwg.org/) (23 December 2017)
+- Crawled version: [Living Standard](https://storage.spec.whatwg.org/) (6 January 2018)
 - Repository: [GitHub whatwg/storage](https://github.com/whatwg/storage)
 - Shortname: no shortname
 
@@ -2668,17 +2668,17 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Streams Standard {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
+## Streams Standard {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (20 December 2017)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (5 January 2018)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2788,7 +2788,7 @@ Although they do not, the following specs should also normatively reference this
 No informative reference to this spec from other specs.
 
 
-## UI Events KeyboardEvent code Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
+## UI Events KeyboardEvent code Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
 
@@ -2801,7 +2801,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2814,7 +2814,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## UI Events KeyboardEvent key Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
+## UI Events KeyboardEvent key Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
 
@@ -2827,7 +2827,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2844,7 +2844,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (20 December 2017)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (6 January 2018)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -3072,7 +3072,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (21 December 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (5 January 2018)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
@@ -3132,7 +3132,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (20 December 2017)
+- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (7 January 2018)
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
@@ -3255,7 +3255,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (21 December 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (08 January 2018)
 - Editor's Draft: [https://w3c.github.io/webdriver/webdriver-spec.html](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Latest published version: [https://www.w3.org/TR/webdriver/](https://www.w3.org/TR/webdriver/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
@@ -3282,17 +3282,17 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebGL 2.0 Specification {data-spec=true data-ok=true}
+## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Dec 26 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Jan 09 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Invalid WebIDL content found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3305,17 +3305,17 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## WebGL Specification {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## WebGL Specification {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Dec 26 2017)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Jan 09 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Event`, `EventInit`, `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`, `ImageBitmap`, `ImageData`
+- Invalid WebIDL content found
 - Inconsistent references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
 
@@ -3337,7 +3337,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (21 December 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (08 January 2018)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
@@ -3434,7 +3434,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (20 December 2017)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (6 January 2018)
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
