@@ -1,24 +1,55 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% January 09, 2018
+% January 10, 2018
 
 116 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
 
-- [Redirecting...](https://w3c.github.io/web-animations/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 2 specifications found
+=> 1 specification found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
 
 ## Specifications without WebIDL definitions
 
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
+- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [HTML 5.3](https://w3c.github.io/html/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
+- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Preload](https://w3c.github.io/preload/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
+- [Storage Standard](https://storage.spec.whatwg.org/)
+- [Streams Standard](https://streams.spec.whatwg.org/)
+- [The WebSocket API](https://www.w3.org/TR/websockets/)
+- [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
+- [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
+- [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
+- [Web Animations](https://w3c.github.io/web-animations/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
+- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 0 specification found
+=> 30 specifications found
+
+Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
 
 ## List of specifications with invalid WebIDL content
@@ -35,6 +66,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [The WebSocket API](https://www.w3.org/TR/websockets/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
+- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
@@ -42,7 +74,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 18 specifications found
+=> 19 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -58,30 +90,17 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
-- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
-- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Pointer Events - Level 2](https://w3c.github.io/pointerevents/)
-- [Preload](https://w3c.github.io/preload/)
-- [Redirecting...](https://w3c.github.io/web-animations/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
-- [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
-- [Streams Standard](https://streams.spec.whatwg.org/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
-- [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
-- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 22 specifications found
+=> 9 specifications found
 
 
 
@@ -492,6 +511,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2017/WD-dom41-20170420/`](https://www.w3.org/TR/2017/WD-dom41-20170420/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
     * [`https://www.w3.org/TR/2017/WD-dom41-20170321/`](https://www.w3.org/TR/2017/WD-dom41-20170321/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
     * [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- [Web Animations](https://w3c.github.io/web-animations/) links to [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 - [Web App Manifest](https://w3c.github.io/manifest/) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/) but related reference "SCREEN-ORIENTATION" uses URL [`https://www.w3.org/TR/screen-orientation/`](https://www.w3.org/TR/screen-orientation/)
@@ -513,6 +533,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) links to [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
-=> 148 inconsistent references for links found in 56 specifications
+=> 149 inconsistent references for links found in 57 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

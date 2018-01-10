@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% January 09, 2018
+% January 10, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -226,7 +226,7 @@ Informative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 
 
-## Compositing and Blending Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
+## Compositing and Blending Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -239,7 +239,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -316,7 +316,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## ContentEditable {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+## ContentEditable {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
@@ -325,7 +325,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -386,7 +386,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
 
-## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-hasInvalidIdl=true data-missingLinkRef=true}
+## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -400,8 +400,8 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - No normative references found
+- No WebIDL definitions found
 - Invalid WebIDL content found
-- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
      * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
@@ -592,7 +592,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Syntax Module Level 3 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-missingLinkRef=true}
+## CSS Syntax Module Level 3 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -606,7 +606,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - No normative references found
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
      * [`https://www.w3.org/TR/css-text-decor-3/`](https://www.w3.org/TR/css-text-decor-3/)
@@ -677,7 +677,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Values and Units Module Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Values and Units Module Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -690,7 +690,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-fonts/`](https://www.w3.org/TR/css3-fonts/)
      * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/)
@@ -718,7 +718,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Writing Modes Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Writing Modes Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -731,7 +731,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-logical-1/`](https://www.w3.org/TR/css-logical-1/)
      * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
@@ -838,7 +838,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## DeviceOrientation Event Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-missingLinkRef=true}
+## DeviceOrientation Event Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -852,7 +852,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - No normative references found
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/2016/REC-geolocation-API-20161108/`](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
 
@@ -965,7 +965,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
 
-## Fetch Standard {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## Fetch Standard {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true}
 
 ### Spec info {.info}
 
@@ -975,6 +975,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 
 ### Known dependencies on this specification {.dependencies}
@@ -1164,7 +1165,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
 
-## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1177,6 +1178,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
@@ -1277,7 +1279,7 @@ Informative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 
 
-## HTML 5.2 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## HTML 5.2 {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1290,6 +1292,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
@@ -1698,7 +1701,7 @@ Informative references to this spec from:
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 
 
-## Intersection Observer {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## Intersection Observer {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1711,6 +1714,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
@@ -1965,7 +1969,7 @@ Informative references to this spec from:
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 
 
-## Metadata API for Media Resources 1.0 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## Metadata API for Media Resources 1.0 {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1976,6 +1980,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://www.w3.org/TR/mediaont-10/`](https://www.w3.org/TR/mediaont-10/)
@@ -1991,7 +1996,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Mixed Content {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
+## Mixed Content {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2004,7 +2009,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 - Missing references for links: 
      * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
      * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/)
@@ -2161,7 +2166,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true}
+## Payment Handler API {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -2174,6 +2179,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/)
@@ -2187,7 +2193,7 @@ Informative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 
 
-## Payment Request API {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## Payment Request API {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true}
 
 ### Spec info {.info}
 
@@ -2200,6 +2206,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 
 ### Known dependencies on this specification {.dependencies}
@@ -2349,7 +2356,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Preload {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true}
+## Preload {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -2362,7 +2369,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 - Missing references for links: 
      * [`https://w3c.github.io/html/document-metadata.html`](https://w3c.github.io/html/document-metadata.html)
      * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
@@ -2577,7 +2584,7 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 
 
-## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2590,6 +2597,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/)
@@ -2799,7 +2807,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Selectors Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
+## Selectors Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2811,7 +2819,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/), related reference "CSS3NAMESPACE" uses URL [`http://www.w3.org/TR/2011/REC-css3-namespace-20110929/`](http://www.w3.org/TR/2011/REC-css3-namespace-20110929/)
      * [`https://www.w3.org/TR/2001/PR-SVG-20010719/`](https://www.w3.org/TR/2001/PR-SVG-20010719/), related reference "SVG11" uses URL [`http://www.w3.org/TR/2011/REC-SVG11-20110816/`](http://www.w3.org/TR/2011/REC-SVG11-20110816/)
@@ -2996,16 +3004,17 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Storage Standard {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## Storage Standard {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://storage.spec.whatwg.org/) (6 January 2018)
+- Crawled version: [Living Standard](https://storage.spec.whatwg.org/) (9 January 2018)
 - Repository: [GitHub whatwg/storage](https://github.com/whatwg/storage)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 
 ### Known dependencies on this specification {.dependencies}
@@ -3017,7 +3026,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Streams Standard {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+## Streams Standard {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
@@ -3027,7 +3036,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3063,7 +3072,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## The WebSocket API {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## The WebSocket API {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true}
 
 ### Spec info {.info}
 
@@ -3074,6 +3083,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 
 ### Known dependencies on this specification {.dependencies}
@@ -3162,7 +3172,7 @@ Informative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
 
 
-## UI Events KeyboardEvent code Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+## UI Events KeyboardEvent code Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
@@ -3175,7 +3185,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3188,7 +3198,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## UI Events KeyboardEvent key Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+## UI Events KeyboardEvent key Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
@@ -3201,7 +3211,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3218,7 +3228,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (6 January 2018)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (9 January 2018)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -3262,7 +3272,7 @@ Informative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 
 
-## User Interface Security and the Visibility API {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## User Interface Security and the Visibility API {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3275,6 +3285,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
@@ -3512,7 +3523,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Web App Manifest {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## Web App Manifest {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3525,6 +3536,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 - Inconsistent references for links: 
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
@@ -3545,7 +3557,7 @@ Informative references to this spec from:
 - [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 
 
-## Web Audio API {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Audio API {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3558,6 +3570,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://w3c.github.io/workers/`](https://w3c.github.io/workers/)
@@ -3821,16 +3834,17 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Jan 09 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Jan 10 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 
 ### Known dependencies on this specification {.dependencies}
@@ -3842,16 +3856,17 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebGL Specification {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## WebGL Specification {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Jan 09 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Jan 10 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 - Inconsistent references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
@@ -3869,7 +3884,7 @@ Informative references to this spec from:
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
 
 
-## WebIDL Level 1 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## WebIDL Level 1 {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3881,6 +3896,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No WebIDL definitions found
 - Invalid WebIDL content found
 - Inconsistent references for links: 
      * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "DOM" uses URL [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
