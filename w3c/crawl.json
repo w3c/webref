@@ -1,7 +1,7 @@
 {
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-01-13T02:01:17.509Z",
+  "date": "2018-01-14T02:01:10.411Z",
   "options": {
     "publishedVersion": false
   },
@@ -696,7 +696,7 @@
       "repository": "https://github.com/whatwg/fetch",
       "title": "Fetch Standard",
       "crawled": "https://fetch.spec.whatwg.org/",
-      "date": "8 January 2018",
+      "date": "13 January 2018",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://url.spec.whatwg.org/",
@@ -3022,7 +3022,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Sat Jan 13 2018",
+      "date": "Sun Jan 14 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -3274,7 +3274,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Sat Jan 13 2018",
+      "date": "Sun Jan 14 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -48032,7 +48032,7 @@
       "edDraft": "https://rawgit.com/w3c/input-events/v1/index.html",
       "repository": "https://github.com/w3c/input-events",
       "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-      "date": "13 January 2018",
+      "date": "14 January 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://github.com/w3c/web-platform-tests/tree/master/input-events",
@@ -67413,13 +67413,13 @@
       "edDraft": "https://w3c.github.io/ServiceWorker/v1/",
       "repository": "https://github.com/w3c/ServiceWorker",
       "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-      "date": "22 December 2017",
+      "date": "13 January 2018",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://www.w3.org/TR/",
         "https://www.w3.org/sw/",
         "https://lists.w3.org/Archives/Public/public-webapps/",
-        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
+        "https://www.w3.org/Consortium/Patent-Policy/",
         "https://www.w3.org/2004/01/pp-impl/101220/status",
         "https://www.w3.org/2017/Process-20170301/",
         "https://alistapart.com/article/application-cache-is-a-douchebag",
@@ -68447,22 +68447,6 @@
                 "extAttrs": []
               },
               {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "boolean"
-                },
-                "name": "reserved",
-                "extAttrs": []
-              },
-              {
                 "type": "operation",
                 "getter": false,
                 "setter": false,
@@ -68892,23 +68876,6 @@
               },
               {
                 "type": "field",
-                "name": "includeReserved",
-                "required": false,
-                "idlType": {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "boolean"
-                },
-                "extAttrs": [],
-                "default": {
-                  "type": "boolean",
-                  "value": false
-                }
-              },
-              {
-                "type": "field",
                 "name": "type",
                 "required": false,
                 "idlType": {
@@ -69078,38 +69045,6 @@
                 "extAttrs": []
               },
               {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "name": "reservedClientId",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "name": "targetClientId",
-                "extAttrs": []
-              },
-              {
                 "type": "operation",
                 "getter": false,
                 "setter": false,
@@ -69213,40 +69148,6 @@
               {
                 "type": "field",
                 "name": "clientId",
-                "required": false,
-                "idlType": {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "extAttrs": [],
-                "default": {
-                  "type": "string",
-                  "value": ""
-                }
-              },
-              {
-                "type": "field",
-                "name": "reservedClientId",
-                "required": false,
-                "idlType": {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "extAttrs": [],
-                "default": {
-                  "type": "string",
-                  "value": ""
-                }
-              },
-              {
-                "type": "field",
-                "name": "targetClientId",
                 "required": false,
                 "idlType": {
                   "sequence": false,
