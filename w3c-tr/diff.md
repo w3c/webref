@@ -1,4 +1,4 @@
-% Diff between report from "January 17, 2018" and reference report from "January 16, 2018"
+% Diff between report from "January 18, 2018" and reference report from "January 17, 2018"
 % Reffy
-% January 17, 2018
+% January 18, 2018
 
