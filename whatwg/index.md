@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% January 22, 2018
+% January 23, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
@@ -202,7 +202,7 @@ No informative reference to this spec from other specs.
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-     * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+     * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -320,7 +320,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -333,7 +333,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
@@ -440,7 +439,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+    * `Worklet` also defined in [Web Audio API](https://webaudio.github.io/web-audio-api/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
 
@@ -747,7 +746,7 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 
 
-## DOM Standard {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## DOM Standard {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -757,7 +756,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://w3c.github.io/webcomponents/spec/shadow/`](https://w3c.github.io/webcomponents/spec/shadow/)
@@ -901,7 +899,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Fetch Standard {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true}
+## Fetch Standard {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
 
 ### Spec info {.info}
 
@@ -911,7 +909,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 
 ### Known dependencies on this specification {.dependencies}
@@ -1021,7 +1018,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (27 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (22 January 2018)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-gamepad-20171027/)
@@ -1230,7 +1227,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## HTML Standard {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## HTML Standard {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1239,7 +1236,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://spec.whatwg.org/`](https://spec.whatwg.org/)
@@ -1431,7 +1427,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (22 January 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (23 January 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1454,7 +1450,7 @@ Informative references to this spec from:
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 
 
-## Intersection Observer {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true}
+## Intersection Observer {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -1467,7 +1463,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
@@ -1483,7 +1478,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Long Tasks API 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Long Tasks API 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1496,7 +1491,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -1735,7 +1729,7 @@ Informative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
-## Metadata API for Media Resources 1.0 {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## Metadata API for Media Resources 1.0 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1746,7 +1740,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://www.w3.org/TR/mediaont-10/`](https://www.w3.org/TR/mediaont-10/)
@@ -1920,7 +1913,7 @@ Informative references to this spec from:
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 
 
-## Paint Timing 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Paint Timing 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1933,7 +1926,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -1946,7 +1938,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## Payment Handler API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1959,8 +1951,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `EventHandler`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/)
 - Inconsistent references for links: 
@@ -1975,7 +1966,7 @@ Informative references to this spec from:
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 
 
-## Payment Method: Basic Card {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Payment Method: Basic Card {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -1988,7 +1979,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PaymentAddress`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2001,11 +1992,11 @@ Informative references to this spec from:
 - [Payment Request API](https://w3c.github.io/payment-request/)
 
 
-## Payment Request API {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true}
+## Payment Request API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (19 January 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (23 January 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-payment-request-20170921/)
@@ -2014,8 +2005,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2028,7 +2018,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true}
+## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -2041,8 +2031,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `PerformanceEntryList`, `PerformanceObserver`, `Window`
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2331,7 +2322,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `PerformanceEntry`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `Window`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/navigation-timing/`](https://w3c.github.io/navigation-timing/), related reference "NAVIGATION-TIMING" uses URL [`https://www.w3.org/TR/navigation-timing/`](https://www.w3.org/TR/navigation-timing/)
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
@@ -2350,11 +2341,11 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
-## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (10 January 2018)
+- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (22 January 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
@@ -2363,7 +2354,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/)
@@ -2631,7 +2621,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Service Workers 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Service Workers 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2645,6 +2635,8 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `MessagePort`, `Navigator`, `Request`, `RequestInfo`, `Response`, `Window`, `WindowOrWorkerGlobalScope`, `WorkerGlobalScope`, `WorkerNavigator`, `WorkerType`
+- WebIDL names also defined elsewhere: 
+    * `ServiceWorkerRegistration` also defined in [Web App Manifest](https://w3c.github.io/manifest/)
 - Missing references for links: 
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
 - Inconsistent references for links: 
@@ -2676,6 +2668,7 @@ Although they do not, the following specs should also normatively reference this
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -2712,7 +2705,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Storage Standard {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true}
+## Storage Standard {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
 
 ### Spec info {.info}
 
@@ -2722,7 +2715,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 
 ### Known dependencies on this specification {.dependencies}
@@ -2960,7 +2952,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## User Interface Security and the Visibility API {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## User Interface Security and the Visibility API {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2973,7 +2965,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
@@ -3004,7 +2995,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`, `Window`
+- Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Missing references for links: 
@@ -3072,7 +3063,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Animations {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## Web Animations {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3085,7 +3076,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 - Inconsistent references for links: 
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
@@ -3099,7 +3089,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Web App Manifest {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## Web App Manifest {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3112,8 +3102,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `Event`, `EventHandler`, `PromptResponseObject`, `Window`
+- WebIDL names also defined elsewhere: 
+    * `ServiceWorkerRegistration` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/), related reference "SCREEN-ORIENTATION" uses URL [`https://www.w3.org/TR/screen-orientation/`](https://www.w3.org/TR/screen-orientation/)
@@ -3133,11 +3124,11 @@ Informative references to this spec from:
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
-## Web Audio API {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Audio API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (08 December 2017)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (22 January 2018)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [http://www.w3.org/TR/webaudio/](http://www.w3.org/TR/webaudio/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -3146,8 +3137,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `AudioWorkletOptions`, `BaseAudioContext`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLMediaElement`, `MessagePort`, `Window`
+- WebIDL names also defined elsewhere: 
+    * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - Missing references for links: 
      * [`https://w3c.github.io/mediacapture-fromelement/`](https://w3c.github.io/mediacapture-fromelement/)
      * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
@@ -3157,6 +3149,10 @@ Informative references to this spec from:
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Console Standard](https://console.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -3349,7 +3345,7 @@ Informative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## WebDriver {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## WebDriver {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3362,7 +3358,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 - Missing references for links: 
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
@@ -3382,17 +3377,16 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true}
+## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Jan 22 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Jan 23 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 
 ### Known dependencies on this specification {.dependencies}
@@ -3406,17 +3400,16 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## WebGL Specification {data-spec=true data-anomaly=true data-noIdlContent=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## WebGL Specification {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Jan 22 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Jan 23 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Invalid WebIDL content found
 - Inconsistent references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
@@ -3509,7 +3502,7 @@ No informative reference to this spec from other specs.
 
 - Unknown WebIDL names used: `RequestCredentials`
 - WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+    * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
 

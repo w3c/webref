@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% January 22, 2018
+% January 23, 2018
 
 107 specifications were crawled in this report.
 
@@ -15,35 +15,17 @@
 
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
-- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
-- [DOM Standard](https://dom.spec.whatwg.org/)
-- [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
-- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
-- [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Preload](https://w3c.github.io/preload/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
-- [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
-- [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
-- [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
-- [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
-- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 29 specifications found
+=> 11 specifications found
 
 Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
@@ -56,20 +38,15 @@ Not all specifications define IDL content, presence in this list may be complete
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
-- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 18 specifications found
+=> 13 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -100,6 +77,8 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `AbortSignal` used in [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - `AudioTrack` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
 - `AudioTrackList` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
+- `AudioWorkletOptions` used in [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- `BaseAudioContext` used in [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - `BodyInit` used in [Beacon](https://w3c.github.io/beacon/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `DOMStringList` used in [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - `DataTransfer` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
@@ -108,28 +87,29 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `DocumentFragment` used in [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Selectors API Level 1](https://www.w3.org/TR/selectors-api/), [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - `DocumentOrShadowRoot` used in [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - `Element` used in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Pointer Events - Level 2](https://w3c.github.io/pointerevents/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/), [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
-- `Event` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Generic Sensor API](https://w3c.github.io/sensors/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Presentation API](https://w3c.github.io/presentation-api/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
-- `EventHandler` used in [Battery Status API](https://w3c.github.io/battery/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [File API](https://w3c.github.io/FileAPI/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Generic Sensor API](https://w3c.github.io/sensors/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Source Extensions™](https://w3c.github.io/media-source/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Page Visibility Level 2](https://w3c.github.io/page-visibility/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events - Level 2](https://w3c.github.io/pointerevents/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/), [Presentation API](https://w3c.github.io/presentation-api/), [Push API](https://w3c.github.io/push-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Resource Timing Level 3](https://w3c.github.io/resource-timing/), [Selection API](https://w3c.github.io/selection-api/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [Wake Lock API](https://w3c.github.io/wake-lock/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
-- `EventInit` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Generic Sensor API](https://w3c.github.io/sensors/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Presentation API](https://w3c.github.io/presentation-api/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `Event` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Generic Sensor API](https://w3c.github.io/sensors/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Payment Request API](https://w3c.github.io/payment-request/), [Presentation API](https://w3c.github.io/presentation-api/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [Web App Manifest](https://w3c.github.io/manifest/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `EventHandler` used in [Battery Status API](https://w3c.github.io/battery/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [File API](https://w3c.github.io/FileAPI/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Generic Sensor API](https://w3c.github.io/sensors/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Source Extensions™](https://w3c.github.io/media-source/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Page Visibility Level 2](https://w3c.github.io/page-visibility/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Payment Request API](https://w3c.github.io/payment-request/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events - Level 2](https://w3c.github.io/pointerevents/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/), [Presentation API](https://w3c.github.io/presentation-api/), [Push API](https://w3c.github.io/push-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Resource Timing Level 3](https://w3c.github.io/resource-timing/), [Selection API](https://w3c.github.io/selection-api/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web App Manifest](https://w3c.github.io/manifest/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `EventInit` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Generic Sensor API](https://w3c.github.io/sensors/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Payment Request API](https://w3c.github.io/payment-request/), [Presentation API](https://w3c.github.io/presentation-api/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `EventListener` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- `EventTarget` used in [Battery Status API](https://w3c.github.io/battery/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [File API](https://w3c.github.io/FileAPI/), [Generic Sensor API](https://w3c.github.io/sensors/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Source Extensions™](https://w3c.github.io/media-source/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Permissions](https://w3c.github.io/permissions/), [Presentation API](https://w3c.github.io/presentation-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [Wake Lock API](https://w3c.github.io/wake-lock/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `EventTarget` used in [Battery Status API](https://w3c.github.io/battery/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [File API](https://w3c.github.io/FileAPI/), [Generic Sensor API](https://w3c.github.io/sensors/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Source Extensions™](https://w3c.github.io/media-source/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Payment Request API](https://w3c.github.io/payment-request/), [Permissions](https://w3c.github.io/permissions/), [Presentation API](https://w3c.github.io/presentation-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `GlobalEventHandlers` used in [Pointer Events - Level 2](https://w3c.github.io/pointerevents/), [Selection API](https://w3c.github.io/selection-api/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - `HTMLCanvasElement` used in [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - `HTMLElement` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - `HTMLFormElement` used in [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `HTMLImageElement` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - `HTMLInputElement` used in [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-- `HTMLMediaElement` used in [Audio Output Devices API](https://w3c.github.io/mediacapture-output/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/), [Remote Playback API](https://w3c.github.io/remote-playback/)
+- `HTMLMediaElement` used in [Audio Output Devices API](https://w3c.github.io/mediacapture-output/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - `ImageBitmap` used in [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
-- `MessagePort` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- `MessagePort` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - `Navigator` used in [Battery Status API](https://w3c.github.io/battery/), [Beacon](https://w3c.github.io/beacon/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Media Session Standard](https://wicg.github.io/mediasession/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events - Level 2](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Vibration API (Second Edition)](https://w3c.github.io/vibration/), [Wake Lock API](https://w3c.github.io/wake-lock/)
 - `Node` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Selection API](https://w3c.github.io/selection-api/), [Static Range](https://w3c.github.io/staticrange/)
 - `NodeList` used in [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - `OverconstrainedError` used in [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- `PaymentAddress` used in [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- `PerformanceEntry` used in [Long Tasks API 1](https://w3c.github.io/longtasks/), [Paint Timing 1](https://w3c.github.io/paint-timing/), [Resource Timing Level 3](https://w3c.github.io/resource-timing/), [User Timing Level 2](https://w3c.github.io/user-timing/)
+- `PerformanceEntryList` used in [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- `PerformanceObserver` used in [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
 - `ProcessingInstruction` used in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- `PromptResponseObject` used in [Web App Manifest](https://w3c.github.io/manifest/)
 - `RTCError` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - `Range` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Selection API](https://w3c.github.io/selection-api/), [Static Range](https://w3c.github.io/staticrange/)
 - `Request` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
@@ -144,14 +124,14 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `TimeRanges` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
 - `VideoTrack` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
 - `VideoTrackList` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
-- `Window` used in [Accelerometer](https://w3c.github.io/accelerometer/), [Ambient Light Sensor](https://w3c.github.io/ambient-light/), [Battery Status API](https://w3c.github.io/battery/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Console Standard](https://console.spec.whatwg.org/), [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Encoding Standard](https://encoding.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/), [Generic Sensor API](https://w3c.github.io/sensors/), [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/), [Gyroscope](https://w3c.github.io/gyroscope/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Magnetometer](https://w3c.github.io/magnetometer/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/), [Media Session Standard](https://wicg.github.io/mediasession/), [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Orientation Sensor](https://w3c.github.io/orientation-sensor/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events - Level 2](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Proximity Sensor](https://w3c.github.io/proximity/), [Push API](https://w3c.github.io/push-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Resource Timing Level 3](https://w3c.github.io/resource-timing/), [Selection API](https://w3c.github.io/selection-api/), [Server Timing](https://w3c.github.io/server-timing/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Static Range](https://w3c.github.io/staticrange/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 2](https://w3c.github.io/user-timing/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/), [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html), [Web IDL](https://heycam.github.io/webidl/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `Window` used in [Accelerometer](https://w3c.github.io/accelerometer/), [Ambient Light Sensor](https://w3c.github.io/ambient-light/), [Battery Status API](https://w3c.github.io/battery/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Console Standard](https://console.spec.whatwg.org/), [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Encoding Standard](https://encoding.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/), [Generic Sensor API](https://w3c.github.io/sensors/), [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/), [Gyroscope](https://w3c.github.io/gyroscope/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Magnetometer](https://w3c.github.io/magnetometer/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/), [Media Session Standard](https://wicg.github.io/mediasession/), [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Orientation Sensor](https://w3c.github.io/orientation-sensor/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Payment Request API](https://w3c.github.io/payment-request/), [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events - Level 2](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Proximity Sensor](https://w3c.github.io/proximity/), [Push API](https://w3c.github.io/push-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Resource Timing Level 3](https://w3c.github.io/resource-timing/), [Selection API](https://w3c.github.io/selection-api/), [Server Timing](https://w3c.github.io/server-timing/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Static Range](https://w3c.github.io/staticrange/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 2](https://w3c.github.io/user-timing/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web App Manifest](https://w3c.github.io/manifest/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/), [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html), [Web IDL](https://heycam.github.io/webidl/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `WindowOrWorkerGlobalScope` used in [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - `WindowProxy` used in [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - `WorkerGlobalScope` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - `WorkerNavigator` used in [Permissions](https://w3c.github.io/permissions/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - `WorkerType` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
-=> 53 WebIDL names found
+=> 56 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -160,9 +140,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 ## List of WebIDL names defined in more than one spec
 
 - `RTCStats` defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+- `ServiceWorkerRegistration` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) and [Web App Manifest](https://w3c.github.io/manifest/)
+- `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Web Audio API](https://webaudio.github.io/web-audio-api/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
-=> 2 WebIDL names found
+=> 3 WebIDL names found
 
 "There can be only one"...
 
@@ -171,7 +152,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 - [Console Standard](https://console.spec.whatwg.org/) uses:
     * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-    * `Worklet` but does not reference [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+    * `Worklet` but does not reference [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/) uses:
     * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
     * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
@@ -181,6 +162,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/) uses `URL` but does not reference [URL Standard](https://url.spec.whatwg.org/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Permissions](https://w3c.github.io/permissions/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Server Timing](https://w3c.github.io/server-timing/) uses:
     * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
@@ -191,7 +173,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Web IDL](https://heycam.github.io/webidl/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
-=> 18 missing references for IDL definitions found in 15 specifications
+=> 19 missing references for IDL definitions found in 16 specifications
 
 
 ## Missing references based on document links
