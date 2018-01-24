@@ -39,7 +39,7 @@
     <input class="submit" id="submit" type="submit" value="Apply" />
   </p>
   <p id="stats"></p>
-  <section id="accelerometer" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="accelerometer" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
   <h2>Accelerometer</h2>
   <section id="spec-info" class="level3 info">
   <h3>Spec info</h3>
@@ -55,7 +55,6 @@
   <section id="potential-issues" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
@@ -75,7 +74,7 @@
   </ul>
   </section>
   </section>
-  <section id="ambient-light-sensor" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="ambient-light-sensor" class="level2" data-spec="true" data-ok="true">
   <h2>Ambient Light Sensor</h2>
   <section id="spec-info-1" class="level3 info">
   <h3>Spec info</h3>
@@ -90,9 +89,7 @@
   </section>
   <section id="potential-issues-1" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-1" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -103,7 +100,7 @@
   </ul>
   </section>
   </section>
-  <section id="audio-output-devices-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="audio-output-devices-api" class="level2" data-spec="true" data-ok="true">
   <h2>Audio Output Devices API</h2>
   <section id="spec-info-2" class="level3 info">
   <h3>Spec info</h3>
@@ -118,9 +115,7 @@
   </section>
   <section id="potential-issues-2" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>HTMLMediaElement</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-2" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -131,7 +126,7 @@
   </ul>
   </section>
   </section>
-  <section id="battery-status-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="battery-status-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Battery Status API</h2>
   <section id="spec-info-3" class="level3 info">
   <h3>Spec info</h3>
@@ -147,7 +142,10 @@
   <section id="potential-issues-3" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>EventTarget</code>, <code>Navigator</code>, <code>Window</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-3" class="level3 dependencies">
@@ -159,7 +157,7 @@
   </ul>
   </section>
   </section>
-  <section id="beacon" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="beacon" class="level2" data-spec="true" data-ok="true">
   <h2>Beacon</h2>
   <section id="spec-info-4" class="level3 info">
   <h3>Spec info</h3>
@@ -174,9 +172,7 @@
   </section>
   <section id="potential-issues-4" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>BodyInit</code>, <code>Navigator</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-4" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -190,7 +186,7 @@
   </ul>
   </section>
   </section>
-  <section id="clipboard-api-and-events" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="clipboard-api-and-events" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Clipboard API and events</h2>
   <section id="spec-info-5" class="level3 info">
   <h3>Spec info</h3>
@@ -206,7 +202,6 @@
   <section id="potential-issues-5" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DataTransfer</code>, <code>Event</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>Navigator</code>, <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a></li>
@@ -266,7 +261,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="console-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="console-standard" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Console Standard</h2>
   <section id="spec-info-7" class="level3 info">
   <h3>Spec info</h3>
@@ -279,10 +274,9 @@
   <section id="potential-issues-7" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   </ul>
@@ -293,7 +287,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="content-security-policy-level-3" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="content-security-policy-level-3" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Content Security Policy Level 3</h2>
   <section id="spec-info-8" class="level3 info">
   <h3>Spec info</h3>
@@ -309,7 +303,6 @@
   <section id="potential-issues-8" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventInit</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/reporting/"><code>https://w3c.github.io/reporting/</code></a></li>
@@ -358,7 +351,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="cooperative-scheduling-of-background-tasks" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="cooperative-scheduling-of-background-tasks" class="level2" data-spec="true" data-ok="true">
   <h2>Cooperative Scheduling of Background Tasks</h2>
   <section id="spec-info-10" class="level3 info">
   <h3>Spec info</h3>
@@ -373,9 +366,7 @@
   </section>
   <section id="potential-issues-10" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-10" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -383,7 +374,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="credential-management-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="credential-management-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Credential Management Level 1</h2>
   <section id="spec-info-11" class="level3 info">
   <h3>Spec info</h3>
@@ -399,7 +390,6 @@
   <section id="potential-issues-11" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>AbortSignal</code>, <code>HTMLFormElement</code>, <code>Navigator</code>, <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/webappsec/usecases/credentialmanagement/"><code>https://w3c.github.io/webappsec/usecases/credentialmanagement/</code></a></li>
@@ -504,7 +494,7 @@
   </ul>
   </section>
   </section>
-  <section id="css-object-model-cssom" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="css-object-model-cssom" class="level2" data-spec="true" data-ok="true">
   <h2>CSS Object Model (CSSOM)</h2>
   <section id="spec-info-14" class="level3 info">
   <h3>Spec info</h3>
@@ -519,9 +509,7 @@
   </section>
   <section id="potential-issues-14" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Document</code>, <code>Element</code>, <code>ProcessingInstruction</code>, <code>Window</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-14" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -618,7 +606,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-pseudo-elements-module-level-4" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="css-pseudo-elements-module-level-4" class="level2" data-spec="true" data-ok="true">
   <h2>CSS Pseudo-Elements Module Level 4</h2>
   <section id="spec-info-17" class="level3 info">
   <h3>Spec info</h3>
@@ -633,9 +621,7 @@
   </section>
   <section id="potential-issues-17" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Element</code>, <code>Window</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-17" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -699,7 +685,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-typed-om-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="css-typed-om-level-1" class="level2" data-spec="true" data-ok="true">
   <h2>CSS Typed OM Level 1</h2>
   <section id="spec-info-19" class="level3 info">
   <h3>Spec info</h3>
@@ -713,9 +699,7 @@
   </section>
   <section id="potential-issues-19" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Element</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-19" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -782,7 +766,7 @@
   <section id="spec-info-21" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.csswg.org/css-writing-modes-3/">Editor's Draft</a> (16 January 2018)</li>
+  <li>Crawled version: <a href="https://drafts.csswg.org/css-writing-modes-3/">Editor's Draft</a> (23 January 2018)</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-writing-modes-3/" class="uri">https://drafts.csswg.org/css-writing-modes-3/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-writing-modes-3/" class="uri">https://www.w3.org/TR/css-writing-modes-3/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/">Candidate Recommendation</a></li>
@@ -815,7 +799,7 @@
   </ul>
   </section>
   </section>
-  <section id="cssom-view-module" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="cssom-view-module" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>CSSOM View Module</h2>
   <section id="spec-info-22" class="level3 info">
   <h3>Spec info</h3>
@@ -831,7 +815,6 @@
   <section id="potential-issues-22" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Document</code>, <code>Element</code>, <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventListener</code>, <code>EventTarget</code>, <code>HTMLElement</code>, <code>HTMLImageElement</code>, <code>Node</code>, <code>Range</code>, <code>Text</code>, <code>Window</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>MouseEvent</code> defined in <a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
@@ -860,7 +843,7 @@
   </ul>
   </section>
   </section>
-  <section id="deviceorientation-event-specification" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="deviceorientation-event-specification" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>DeviceOrientation Event Specification</h2>
   <section id="spec-info-23" class="level3 info">
   <h3>Spec info</h3>
@@ -876,7 +859,6 @@
   <section id="potential-issues-23" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a>, related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/2016/REC-html51-20161101/"><code>https://www.w3.org/TR/2016/REC-html51-20161101/</code></a></li>
@@ -897,7 +879,7 @@
   </ul>
   </section>
   </section>
-  <section id="dom-parsing-and-serialization" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="dom-parsing-and-serialization" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>DOM Parsing and Serialization</h2>
   <section id="spec-info-24" class="level3 info">
   <h3>Spec info</h3>
@@ -913,7 +895,6 @@
   <section id="potential-issues-24" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Document</code>, <code>DocumentFragment</code>, <code>Element</code>, <code>Node</code>, <code>Range</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a>, related reference &quot;DOM4&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
@@ -934,7 +915,7 @@
   </ul>
   </section>
   </section>
-  <section id="dom-standard" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="dom-standard" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>DOM Standard</h2>
   <section id="spec-info-25" class="level3 info">
   <h3>Spec info</h3>
@@ -947,7 +928,10 @@
   <section id="potential-issues-25" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Invalid WebIDL content found</li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>AudioWorklet</code> defined in <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/webcomponents/spec/shadow/"><code>https://w3c.github.io/webcomponents/spec/shadow/</code></a></li>
@@ -1023,6 +1007,15 @@
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
+  <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
+  <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
+  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
@@ -1031,7 +1024,7 @@
   </ul>
   </section>
   </section>
-  <section id="encoding-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="encoding-standard" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Encoding Standard</h2>
   <section id="spec-info-26" class="level3 info">
   <h3>Spec info</h3>
@@ -1046,10 +1039,9 @@
   <section id="potential-issues-26" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   </ul></li>
   </ul>
   </section>
@@ -1074,7 +1066,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="encrypted-media-extensions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="encrypted-media-extensions" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Encrypted Media Extensions</h2>
   <section id="spec-info-27" class="level3 info">
   <h3>Spec info</h3>
@@ -1090,7 +1082,6 @@
   <section id="potential-issues-27" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>HTMLMediaElement</code>, <code>Navigator</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a>, related reference &quot;DOM&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
@@ -1108,7 +1099,7 @@
   </ul>
   </section>
   </section>
-  <section id="fetch-standard" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true">
+  <section id="fetch-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Fetch Standard</h2>
   <section id="spec-info-28" class="level3 info">
   <h3>Spec info</h3>
@@ -1121,7 +1112,7 @@
   <section id="potential-issues-28" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Invalid WebIDL content found</li>
+  <li>Unknown WebIDL names used: <code>ReadableStream</code>, <code>WindowOrWorkerGlobalScope</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-28" class="level3 dependencies">
@@ -1158,7 +1149,7 @@
   </ul>
   </section>
   </section>
-  <section id="file-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="file-api" class="level2" data-spec="true" data-ok="true">
   <h2>File API</h2>
   <section id="spec-info-29" class="level3 info">
   <h3>Spec info</h3>
@@ -1173,13 +1164,7 @@
   </section>
   <section id="potential-issues-29" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>DedicatedWorker</code>, <code>EventHandler</code>, <code>EventTarget</code>, <code>SharedWorker</code>, <code>Window</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  </ul></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-29" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1218,7 +1203,7 @@
   <section id="potential-issues-30" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Document</code>, <code>DocumentOrShadowRoot</code>, <code>Element</code>, <code>EventHandler</code></li>
+  <li>Unknown WebIDL names used: <code>DocumentOrShadowRoot</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/screen-orientation/"><code>https://w3c.github.io/screen-orientation/</code></a></li>
@@ -1242,7 +1227,7 @@
   </ul>
   </section>
   </section>
-  <section id="gamepad" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="gamepad" class="level2" data-spec="true" data-ok="true">
   <h2>Gamepad</h2>
   <section id="spec-info-31" class="level3 info">
   <h3>Spec info</h3>
@@ -1257,9 +1242,7 @@
   </section>
   <section id="potential-issues-31" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventInit</code>, <code>Navigator</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-31" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1267,7 +1250,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="generic-sensor-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="generic-sensor-api" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Generic Sensor API</h2>
   <section id="spec-info-32" class="level3 info">
   <h3>Spec info</h3>
@@ -1283,7 +1266,6 @@
   <section id="potential-issues-32" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/page-visibility/"><code>https://w3c.github.io/page-visibility/</code></a>, related reference &quot;PAGE-VISIBILITY&quot; uses URL <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a></li>
@@ -1307,7 +1289,7 @@
   </ul>
   </section>
   </section>
-  <section id="geolocation-api-specification-2nd-edition" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="geolocation-api-specification-2nd-edition" class="level2" data-spec="true" data-ok="true">
   <h2>Geolocation API Specification 2nd Edition</h2>
   <section id="spec-info-33" class="level3 info">
   <h3>Spec info</h3>
@@ -1320,9 +1302,7 @@
   </section>
   <section id="potential-issues-33" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Navigator</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-33" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1336,7 +1316,7 @@
   </ul>
   </section>
   </section>
-  <section id="geometry-interfaces-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="geometry-interfaces-module-level-1" class="level2" data-spec="true" data-ok="true">
   <h2>Geometry Interfaces Module Level 1</h2>
   <section id="spec-info-34" class="level3 info">
   <h3>Spec info</h3>
@@ -1351,13 +1331,7 @@
   </section>
   <section id="potential-issues-34" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  </ul></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-34" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1377,7 +1351,7 @@
   </ul>
   </section>
   </section>
-  <section id="gyroscope" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="gyroscope" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
   <h2>Gyroscope</h2>
   <section id="spec-info-35" class="level3 info">
   <h3>Spec info</h3>
@@ -1393,7 +1367,6 @@
   <section id="potential-issues-35" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
@@ -1428,10 +1401,10 @@
   <section id="potential-issues-36" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventTarget</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code></li>
+  <li>Unknown WebIDL names used: <code>WindowOrWorkerGlobalScope</code></li>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -1470,7 +1443,7 @@
   </ul>
   </section>
   </section>
-  <section id="html-media-capture" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="html-media-capture" class="level2" data-spec="true" data-ok="true">
   <h2>HTML Media Capture</h2>
   <section id="spec-info-37" class="level3 info">
   <h3>Spec info</h3>
@@ -1485,9 +1458,7 @@
   </section>
   <section id="potential-issues-37" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>HTMLInputElement</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-37" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1495,19 +1466,28 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="html-standard" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="html-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>HTML Standard</h2>
   <section id="spec-info-38" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://html.spec.whatwg.org/">Living Standard</a> (23 January 2018)</li>
+  <li>Crawled version: <a href="https://html.spec.whatwg.org/">Living Standard</a> (24 January 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
   <section id="potential-issues-38" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Invalid WebIDL content found</li>
+  <li>Unknown WebIDL names used: <code>NavigatorID</code>, <code>SVGImageElement</code>, <code>SVGScriptElement</code>, <code>WindowProxy</code></li>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>BinaryType</code> also defined in <a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
+  <li><code>Worker</code> also defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  </ul></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>AudioWorklet</code> defined in <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://spec.whatwg.org/"><code>https://spec.whatwg.org/</code></a></li>
@@ -1606,6 +1586,12 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
+  <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
+  <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
+  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
@@ -1674,7 +1660,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="indexed-database-api-2.0" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-inconsistentRef="true">
+  <section id="indexed-database-api-2.0" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Indexed Database API 2.0</h2>
   <section id="spec-info-40" class="level3 info">
   <h3>Spec info</h3>
@@ -1690,11 +1676,7 @@
   <section id="potential-issues-40" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DOMStringList</code>, <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  </ul></li>
+  <li>Unknown WebIDL names used: <code>WindowOrWorkerGlobalScope</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -1717,7 +1699,7 @@
   </ul>
   </section>
   </section>
-  <section id="input-events-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="input-events-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-inconsistentRef="true">
   <h2>Input Events Level 1</h2>
   <section id="spec-info-41" class="level3 info">
   <h3>Spec info</h3>
@@ -1734,7 +1716,6 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
-  <li>Unknown WebIDL names used: <code>DataTransfer</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a>, related reference &quot;UI-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
@@ -1817,7 +1798,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="magnetometer" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="magnetometer" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Magnetometer</h2>
   <section id="spec-info-44" class="level3 info">
   <h3>Spec info</h3>
@@ -1833,7 +1814,6 @@
   <section id="potential-issues-44" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a>, related reference &quot;GENERIC-SENSOR&quot; uses URL <a href="https://www.w3.org/TR/generic-sensor/"><code>https://www.w3.org/TR/generic-sensor/</code></a></li>
@@ -1853,7 +1833,7 @@
   </ul>
   </section>
   </section>
-  <section id="media-capture-and-streams" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="media-capture-and-streams" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Media Capture and Streams</h2>
   <section id="spec-info-45" class="level3 info">
   <h3>Spec info</h3>
@@ -1869,7 +1849,13 @@
   <section id="potential-issues-45" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>OverconstrainedError</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>OverconstrainedError</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>Event</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>EventInit</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-45" class="level3 dependencies">
@@ -1928,7 +1914,7 @@
   </ul>
   </section>
   </section>
-  <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Media Capture from DOM Elements</h2>
   <section id="spec-info-47" class="level3 info">
   <h3>Spec info</h3>
@@ -1944,7 +1930,6 @@
   <section id="potential-issues-47" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>HTMLCanvasElement</code>, <code>HTMLMediaElement</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
@@ -1961,7 +1946,7 @@
   </ul>
   </section>
   </section>
-  <section id="media-session-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="media-session-standard" class="level2" data-spec="true" data-ok="true">
   <h2>Media Session Standard</h2>
   <section id="spec-info-48" class="level3 info">
   <h3>Spec info</h3>
@@ -1973,9 +1958,7 @@
   </section>
   <section id="potential-issues-48" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Navigator</code>, <code>Window</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-48" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1983,7 +1966,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="media-source-extensions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="media-source-extensions" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Media Source Extensions™</h2>
   <section id="spec-info-49" class="level3 info">
   <h3>Spec info</h3>
@@ -1999,9 +1982,9 @@
   <section id="potential-issues-49" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>AudioTrack</code>, <code>AudioTrackList</code>, <code>EventHandler</code>, <code>EventTarget</code>, <code>TextTrack</code>, <code>TextTrackList</code>, <code>TimeRanges</code>, <code>VideoTrack</code>, <code>VideoTrackList</code></li>
   <li>Missing references for WebIDL names:
   <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><code>URL</code> defined in <a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   </ul></li>
   </ul>
@@ -2022,7 +2005,7 @@
   </ul>
   </section>
   </section>
-  <section id="mediastream-image-capture" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="mediastream-image-capture" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>MediaStream Image Capture</h2>
   <section id="spec-info-50" class="level3 info">
   <h3>Spec info</h3>
@@ -2038,7 +2021,6 @@
   <section id="potential-issues-50" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>ImageBitmap</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -2055,7 +2037,7 @@
   </ul>
   </section>
   </section>
-  <section id="mediastream-recording" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="mediastream-recording" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>MediaStream Recording</h2>
   <section id="spec-info-51" class="level3 info">
   <h3>Spec info</h3>
@@ -2071,7 +2053,6 @@
   <section id="potential-issues-51" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -2165,7 +2146,7 @@
   </ul>
   </section>
   </section>
-  <section id="navigation-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="navigation-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Navigation Timing Level 2</h2>
   <section id="spec-info-54" class="level3 info">
   <h3>Spec info</h3>
@@ -2181,7 +2162,6 @@
   <section id="potential-issues-54" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/service-workers/"><code>https://www.w3.org/TR/service-workers/</code></a>, related reference &quot;SERVICE-WORKERS&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
@@ -2204,7 +2184,7 @@
   </ul>
   </section>
   </section>
-  <section id="notifications-api-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="notifications-api-standard" class="level2" data-spec="true" data-ok="true">
   <h2>Notifications API Standard</h2>
   <section id="spec-info-55" class="level3 info">
   <h3>Spec info</h3>
@@ -2216,9 +2196,7 @@
   </section>
   <section id="potential-issues-55" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>EventTarget</code>, <code>Window</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-55" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -2232,7 +2210,7 @@
   </ul>
   </section>
   </section>
-  <section id="orientation-sensor" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="orientation-sensor" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Orientation Sensor</h2>
   <section id="spec-info-56" class="level3 info">
   <h3>Spec info</h3>
@@ -2248,7 +2226,6 @@
   <section id="potential-issues-56" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/orientation-event/"><code>https://www.w3.org/TR/orientation-event/</code></a></li>
@@ -2269,7 +2246,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="page-visibility-level-2" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true">
+  <section id="page-visibility-level-2" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true">
   <h2>Page Visibility Level 2</h2>
   <section id="spec-info-57" class="level3 info">
   <h3>Spec info</h3>
@@ -2286,7 +2263,6 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
-  <li>Unknown WebIDL names used: <code>Document</code>, <code>EventHandler</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-57" class="level3 dependencies">
@@ -2341,7 +2317,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="payment-handler-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="payment-handler-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Payment Handler API</h2>
   <section id="spec-info-59" class="level3 info">
   <h3>Spec info</h3>
@@ -2357,7 +2333,6 @@
   <section id="potential-issues-59" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/payment-method-manifest/"><code>https://w3c.github.io/payment-method-manifest/</code></a></li>
@@ -2406,12 +2381,12 @@
   </ul>
   </section>
   </section>
-  <section id="payment-request-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="payment-request-api" class="level2" data-spec="true" data-ok="true">
   <h2>Payment Request API</h2>
   <section id="spec-info-61" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/payment-request/">Editor's Draft</a> (23 January 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/payment-request/">Editor's Draft</a> (24 January 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/payment-request/" class="uri">https://w3c.github.io/payment-request/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/payment-request/" class="uri">https://www.w3.org/TR/payment-request/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/CR-payment-request-20180123/">Candidate Recommendation</a></li>
@@ -2421,9 +2396,7 @@
   </section>
   <section id="potential-issues-61" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>Window</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-61" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -2436,7 +2409,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="performance-timeline-level-2" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="performance-timeline-level-2" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Performance Timeline Level 2</h2>
   <section id="spec-info-62" class="level3 info">
   <h3>Spec info</h3>
@@ -2452,11 +2425,7 @@
   <section id="potential-issues-62" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>PerformanceEntryList</code>, <code>PerformanceObserver</code>, <code>Window</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  </ul></li>
+  <li>Unknown WebIDL names used: <code>PerformanceEntryList</code>, <code>PerformanceObserver</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-62" class="level3 dependencies">
@@ -2477,7 +2446,7 @@
   </ul>
   </section>
   </section>
-  <section id="permissions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="permissions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Permissions</h2>
   <section id="spec-info-63" class="level3 info">
   <h3>Spec info</h3>
@@ -2493,11 +2462,7 @@
   <section id="potential-issues-63" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>EventTarget</code>, <code>Navigator</code>, <code>PermissionName</code>, <code>Window</code>, <code>WorkerNavigator</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  </ul></li>
+  <li>Unknown WebIDL names used: <code>PermissionName</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/manifest/"><code>https://w3c.github.io/manifest/</code></a></li>
@@ -2547,7 +2512,7 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
-  <li>Unknown WebIDL names used: <code>Element</code>, <code>EventHandler</code>, <code>GlobalEventHandlers</code>, <code>Navigator</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>GlobalEventHandlers</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-64" class="level3 dependencies">
@@ -2563,7 +2528,7 @@
   </ul>
   </section>
   </section>
-  <section id="pointer-lock-2.0" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="pointer-lock-2.0" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Pointer Lock 2.0</h2>
   <section id="spec-info-65" class="level3 info">
   <h3>Spec info</h3>
@@ -2579,7 +2544,11 @@
   <section id="potential-issues-65" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Document</code>, <code>DocumentOrShadowRoot</code>, <code>Element</code>, <code>EventHandler</code></li>
+  <li>Unknown WebIDL names used: <code>DocumentOrShadowRoot</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventHandler</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-65" class="level3 dependencies">
@@ -2624,7 +2593,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="presentation-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="presentation-api" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-inconsistentRef="true">
   <h2>Presentation API</h2>
   <section id="spec-info-67" class="level3 info">
   <h3>Spec info</h3>
@@ -2640,7 +2609,10 @@
   <section id="potential-issues-67" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>Navigator</code>, <code>Window</code></li>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>BinaryType</code> also defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
+  </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a>, related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
@@ -2660,7 +2632,7 @@
   </ul>
   </section>
   </section>
-  <section id="proximity-sensor" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="proximity-sensor" class="level2" data-spec="true" data-ok="true">
   <h2>Proximity Sensor</h2>
   <section id="spec-info-68" class="level3 info">
   <h3>Spec info</h3>
@@ -2675,9 +2647,7 @@
   </section>
   <section id="potential-issues-68" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-68" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -2685,7 +2655,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="push-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="push-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Push API</h2>
   <section id="spec-info-69" class="level3 info">
   <h3>Spec info</h3>
@@ -2701,7 +2671,6 @@
   <section id="potential-issues-69" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a></li>
@@ -2759,7 +2728,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="remote-playback-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="remote-playback-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-inconsistentRef="true">
   <h2>Remote Playback API</h2>
   <section id="spec-info-71" class="level3 info">
   <h3>Spec info</h3>
@@ -2775,7 +2744,10 @@
   <section id="potential-issues-71" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>EventTarget</code>, <code>HTMLMediaElement</code>, <code>Window</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a>, related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
@@ -2788,7 +2760,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="resource-timing-level-3" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="resource-timing-level-3" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Resource Timing Level 3</h2>
   <section id="spec-info-72" class="level3 info">
   <h3>Spec info</h3>
@@ -2804,7 +2776,6 @@
   <section id="potential-issues-72" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/navigation-timing/"><code>https://w3c.github.io/navigation-timing/</code></a>, related reference &quot;NAVIGATION-TIMING&quot; uses URL <a href="https://www.w3.org/TR/navigation-timing/"><code>https://www.w3.org/TR/navigation-timing/</code></a></li>
@@ -3034,7 +3005,7 @@
   <section id="potential-issues-76" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Document</code>, <code>EventHandler</code>, <code>GlobalEventHandlers</code>, <code>Node</code>, <code>Range</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>GlobalEventHandlers</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/"><code>https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/</code></a></li>
@@ -3054,7 +3025,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="selectors-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="selectors-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-inconsistentRef="true">
   <h2>Selectors API Level 1</h2>
   <section id="spec-info-77" class="level3 info">
   <h3>Spec info</h3>
@@ -3069,7 +3040,6 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
-  <li>Unknown WebIDL names used: <code>Document</code>, <code>DocumentFragment</code>, <code>Element</code>, <code>NodeList</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-selectors/"><code>https://www.w3.org/TR/css3-selectors/</code></a>, related reference &quot;SELECT&quot; uses URL <a href="http://www.w3.org/TR/2011/REC-css3-selectors-20110929/"><code>http://www.w3.org/TR/2011/REC-css3-selectors-20110929/</code></a></li>
@@ -3123,7 +3093,7 @@
   </ul>
   </section>
   </section>
-  <section id="server-timing" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="server-timing" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Server Timing</h2>
   <section id="spec-info-79" class="level3 info">
   <h3>Spec info</h3>
@@ -3139,10 +3109,8 @@
   <section id="potential-issues-79" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><code>DOMHighResTimeStamp</code> defined in <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   </ul></li>
   </ul>
@@ -3169,10 +3137,11 @@
   <section id="potential-issues-80" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>MessagePort</code>, <code>Navigator</code>, <code>Request</code>, <code>RequestInfo</code>, <code>Response</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code>, <code>WorkerGlobalScope</code>, <code>WorkerNavigator</code>, <code>WorkerType</code></li>
+  <li>Unknown WebIDL names used: <code>WindowOrWorkerGlobalScope</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>ServiceWorkerRegistration</code> also defined in <a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
+  <li><code>Worker</code> also defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -3206,18 +3175,6 @@
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
-  <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
-  <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
-  <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
-  <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
-  <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
-  <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
-  <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
-  <li><a href="https://w3c.github.io/user-timing/">User Timing Level 2</a></li>
-  <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></li>
-  <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
-  <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -3227,7 +3184,7 @@
   </ul>
   </section>
   </section>
-  <section id="static-range" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="static-range" class="level2" data-spec="true" data-ok="true">
   <h2>Static Range</h2>
   <section id="spec-info-81" class="level3 info">
   <h3>Spec info</h3>
@@ -3239,9 +3196,7 @@
   </section>
   <section id="potential-issues-81" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Node</code>, <code>Range</code>, <code>Window</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-81" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3252,7 +3207,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="storage-standard" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true">
+  <section id="storage-standard" class="level2" data-spec="true" data-ok="true">
   <h2>Storage Standard</h2>
   <section id="spec-info-82" class="level3 info">
   <h3>Spec info</h3>
@@ -3264,9 +3219,7 @@
   </section>
   <section id="potential-issues-82" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Invalid WebIDL content found</li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-82" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3303,7 +3256,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="the-screen-orientation-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="the-screen-orientation-api" class="level2" data-spec="true" data-ok="true">
   <h2>The Screen Orientation API</h2>
   <section id="spec-info-84" class="level3 info">
   <h3>Spec info</h3>
@@ -3318,9 +3271,7 @@
   </section>
   <section id="potential-issues-84" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>EventTarget</code>, <code>Window</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-84" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3348,7 +3299,7 @@
   <section id="potential-issues-85" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Document</code>, <code>EventHandler</code>, <code>EventTarget</code>, <code>GlobalEventHandlers</code>, <code>Window</code>, <code>WindowProxy</code></li>
+  <li>Unknown WebIDL names used: <code>GlobalEventHandlers</code>, <code>WindowProxy</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/touch-events-extensions/"><code>https://www.w3.org/TR/touch-events-extensions/</code></a></li>
@@ -3368,7 +3319,7 @@
   </ul>
   </section>
   </section>
-  <section id="ui-events" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="ui-events" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>UI Events</h2>
   <section id="spec-info-86" class="level3 info">
   <h3>Spec info</h3>
@@ -3385,7 +3336,6 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a></li>
@@ -3481,7 +3431,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="url-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="url-standard" class="level2" data-spec="true" data-ok="true">
   <h2>URL Standard</h2>
   <section id="spec-info-89" class="level3 info">
   <h3>Spec info</h3>
@@ -3493,13 +3443,7 @@
   </section>
   <section id="potential-issues-89" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  </ul></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-89" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3579,7 +3523,7 @@
   </ul>
   </section>
   </section>
-  <section id="user-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="user-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>User Timing Level 2</h2>
   <section id="spec-info-91" class="level3 info">
   <h3>Spec info</h3>
@@ -3595,11 +3539,6 @@
   <section id="potential-issues-91" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/html/webappapis.html"><code>https://w3c.github.io/html/webappapis.html</code></a></li>
@@ -3622,7 +3561,7 @@
   </ul>
   </section>
   </section>
-  <section id="vibration-api-second-edition" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="vibration-api-second-edition" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Vibration API (Second Edition)</h2>
   <section id="spec-info-92" class="level3 info">
   <h3>Spec info</h3>
@@ -3638,7 +3577,6 @@
   <section id="potential-issues-92" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Navigator</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/page-visibility/"><code>https://w3c.github.io/page-visibility/</code></a>, related reference &quot;PAGE-VISIBILITY-2&quot; uses URL <a href="https://www.w3.org/TR/page-visibility-2/"><code>https://www.w3.org/TR/page-visibility-2/</code></a></li>
@@ -3654,7 +3592,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="wake-lock-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="wake-lock-api" class="level2" data-spec="true" data-ok="true">
   <h2>Wake Lock API</h2>
   <section id="spec-info-93" class="level3 info">
   <h3>Spec info</h3>
@@ -3669,9 +3607,7 @@
   </section>
   <section id="potential-issues-93" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>EventTarget</code>, <code>Navigator</code>, <code>Window</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-93" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3679,7 +3615,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-animations" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-inconsistentRef="true">
+  <section id="web-animations" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Web Animations</h2>
   <section id="spec-info-94" class="level3 info">
   <h3>Spec info</h3>
@@ -3695,7 +3631,6 @@
   <section id="potential-issues-94" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Invalid WebIDL content found</li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a>, related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
@@ -3727,7 +3662,7 @@
   <section id="potential-issues-95" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>PromptResponseObject</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>PromptResponseObject</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>ServiceWorkerRegistration</code> also defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
@@ -3771,7 +3706,7 @@
   <section id="potential-issues-96" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>AudioWorkletOptions</code>, <code>BaseAudioContext</code>, <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>HTMLMediaElement</code>, <code>MessagePort</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>AudioWorkletOptions</code>, <code>BaseAudioContext</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
@@ -3793,6 +3728,8 @@
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
+  <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -3802,7 +3739,7 @@
   </ul>
   </section>
   </section>
-  <section id="web-authentication-an-api-for-accessing-public-key-credentials---level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="web-authentication-an-api-for-accessing-public-key-credentials---level-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Web Authentication: An API for accessing Public Key Credentials - Level 1</h2>
   <section id="spec-info-97" class="level3 info">
   <h3>Spec info</h3>
@@ -3818,7 +3755,6 @@
   <section id="potential-issues-97" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/html/browsers.html"><code>https://w3c.github.io/html/browsers.html</code></a></li>
@@ -3840,7 +3776,7 @@
   </ul>
   </section>
   </section>
-  <section id="web-cryptography-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="web-cryptography-api" class="level2" data-spec="true" data-ok="true">
   <h2>Web Cryptography API</h2>
   <section id="spec-info-98" class="level3 info">
   <h3>Spec info</h3>
@@ -3855,13 +3791,7 @@
   </section>
   <section id="potential-issues-98" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  </ul></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-98" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3877,7 +3807,7 @@
   </ul>
   </section>
   </section>
-  <section id="web-idl" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-inconsistentRef="true">
+  <section id="web-idl" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Web IDL</h2>
   <section id="spec-info-99" class="level3 info">
   <h3>Spec info</h3>
@@ -3892,11 +3822,6 @@
   <section id="potential-issues-99" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/geolocation-API/"><code>https://www.w3.org/TR/geolocation-API/</code></a>, related reference &quot;GEOLOCATION-API&quot; uses URL <a href="http://dev.w3.org/geo/api/spec-source.html"><code>http://dev.w3.org/geo/api/spec-source.html</code></a></li>
@@ -4010,7 +3935,7 @@
   </ul>
   </section>
   </section>
-  <section id="webdriver" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="webdriver" class="level2" data-spec="true" data-anomaly="true" data-noIdlContent="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>WebDriver</h2>
   <section id="spec-info-100" class="level3 info">
   <h3>Spec info</h3>
@@ -4026,7 +3951,7 @@
   <section id="potential-issues-100" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Invalid WebIDL content found</li>
+  <li>No WebIDL definitions found</li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a></li>
@@ -4050,7 +3975,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-2.0-specification" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true">
+  <section id="webgl-2.0-specification" class="level2" data-spec="true" data-ok="true">
   <h2>WebGL 2.0 Specification</h2>
   <section id="spec-info-101" class="level3 info">
   <h3>Spec info</h3>
@@ -4062,9 +3987,7 @@
   </section>
   <section id="potential-issues-101" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Invalid WebIDL content found</li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-101" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -4077,7 +4000,7 @@
   </ul>
   </section>
   </section>
-  <section id="webgl-specification" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-inconsistentRef="true">
+  <section id="webgl-specification" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>WebGL Specification</h2>
   <section id="spec-info-102" class="level3 info">
   <h3>Spec info</h3>
@@ -4090,7 +4013,6 @@
   <section id="potential-issues-102" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Invalid WebIDL content found</li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a>, related reference &quot;CANVAS&quot; uses URL <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element"><code>https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element</code></a></li>
@@ -4112,7 +4034,7 @@
   </ul>
   </section>
   </section>
-  <section id="webrtc-1.0-real-time-communication-between-browsers" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-inconsistentRef="true">
+  <section id="webrtc-1.0-real-time-communication-between-browsers" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-inconsistentRef="true">
   <h2>WebRTC 1.0: Real-time Communication Between Browsers</h2>
   <section id="spec-info-103" class="level3 info">
   <h3>Spec info</h3>
@@ -4128,10 +4050,16 @@
   <section id="potential-issues-103" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>RTCError</code>, <code>Window</code>, <code>WorkerGlobalScope</code></li>
+  <li>Unknown WebIDL names used: <code>RTCError</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>RTCStats</code> also defined in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
+  </ul></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>Event</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>EventInit</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
@@ -4155,7 +4083,7 @@
   </ul>
   </section>
   </section>
-  <section id="webvtt-the-web-video-text-tracks-format" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="webvtt-the-web-video-text-tracks-format" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
   <h2>WebVTT: The Web Video Text Tracks Format</h2>
   <section id="spec-info-104" class="level3 info">
   <h3>Spec info</h3>
@@ -4171,7 +4099,6 @@
   <section id="potential-issues-104" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DocumentFragment</code>, <code>TextTrackCue</code>, <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a></li>
@@ -4187,7 +4114,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="worklets-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
+  <section id="worklets-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
   <h2>Worklets Level 1</h2>
   <section id="spec-info-105" class="level3 info">
   <h3>Spec info</h3>
@@ -4202,7 +4129,6 @@
   <section id="potential-issues-105" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>RequestCredentials</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
@@ -4232,7 +4158,7 @@
   </ul>
   </section>
   </section>
-  <section id="xmlhttprequest-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
+  <section id="xmlhttprequest-standard" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
   <h2>XMLHttpRequest Standard</h2>
   <section id="spec-info-106" class="level3 info">
   <h3>Spec info</h3>
@@ -4245,11 +4171,6 @@
   <section id="potential-issues-106" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>BodyInit</code>, <code>DedicatedWorker</code>, <code>Document</code>, <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>HTMLFormElement</code>, <code>SharedWorker</code>, <code>Window</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a></li>
