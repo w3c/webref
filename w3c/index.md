@@ -118,7 +118,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `BodyInit`, `Navigator`
+- Unknown WebIDL names used: `Navigator`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -203,7 +203,7 @@ No informative reference to this spec from other specs.
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
      * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -628,7 +628,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (16 January 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (23 January 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/)
@@ -799,7 +799,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -850,7 +850,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Fetch Standard {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -860,7 +860,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `AbortSignal`, `ReadableStream`, `Window`, `WindowOrWorkerGlobalScope`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -888,6 +888,10 @@ Normative references to this spec from:
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+
 Informative references to this spec from:
 
 - [Payment Request API](https://w3c.github.io/payment-request/)
@@ -895,7 +899,7 @@ Informative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
-## File API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## File API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -908,9 +912,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DedicatedWorker`, `EventHandler`, `SharedWorker`, `Window`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- Unknown WebIDL names used: `EventHandler`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1045,7 +1047,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -1059,8 +1061,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Window`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1123,7 +1123,6 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `Window`, `WindowOrWorkerGlobalScope`
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/hr-time-1/`](https://www.w3.org/TR/hr-time-1/)
 
@@ -1436,7 +1435,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## HTML5 Web Messaging {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## HTML5 Web Messaging {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -1450,8 +1449,6 @@ No informative reference to this spec from other specs.
 
 - Obsolete WebIDL constructs found
 - Unknown WebIDL names used: `EventHandler`, `Transferable`, `Window`, `WindowProxy`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1518,6 +1515,10 @@ Normative references to this spec from:
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+
 Informative references to this spec from:
 
 - [Battery Status API](https://w3c.github.io/battery/)
@@ -1566,7 +1567,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Indexed Database API 2.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## Indexed Database API 2.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1580,8 +1581,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `DOMStringList`, `EventHandler`, `Window`, `WindowOrWorkerGlobalScope`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://www.w3.org/TR/domcore/`](https://www.w3.org/TR/domcore/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
@@ -2153,7 +2152,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (23 January 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (24 January 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180123/)
@@ -2175,7 +2174,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -2189,8 +2188,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `PerformanceEntryList`, `PerformanceObserver`, `Window`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2209,7 +2206,7 @@ Informative references to this spec from:
 - [Server Timing](https://w3c.github.io/server-timing/)
 
 
-## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2222,9 +2219,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `PermissionName`, `Window`, `WorkerNavigator`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- Unknown WebIDL names used: `EventHandler`, `Navigator`, `PermissionName`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
@@ -2800,7 +2795,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
      * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -2848,9 +2843,10 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Request`, `RequestInfo`, `Response`, `Window`, `WindowOrWorkerGlobalScope`, `WorkerGlobalScope`, `WorkerNavigator`, `WorkerType`
+- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`, `WindowOrWorkerGlobalScope`
 - WebIDL names also defined elsewhere: 
     * `ServiceWorkerRegistration` also defined in [Web App Manifest](https://w3c.github.io/manifest/)
+    * `Worker` also defined in [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - Missing references for links: 
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
 - Inconsistent references for links: 
@@ -2877,19 +2873,8 @@ Although they do not, the following specs should also normatively reference this
 
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [File API](https://w3c.github.io/FileAPI/)
-- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
-- [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Permissions](https://w3c.github.io/permissions/)
 - [Server Timing](https://w3c.github.io/server-timing/)
-- [URL Standard](https://url.spec.whatwg.org/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
-- [Web IDL](https://heycam.github.io/webidl/)
-- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -2959,7 +2944,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Storage Standard {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## Storage Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -2969,7 +2954,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3179,7 +3164,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## URL Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## URL Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -3190,8 +3175,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Window`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3261,7 +3244,7 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## User Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## User Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3275,8 +3258,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Window`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Missing references for links: 
      * [`https://w3c.github.io/html/webappapis.html`](https://w3c.github.io/html/webappapis.html)
 - Inconsistent references for links: 
@@ -3424,6 +3405,7 @@ Although they do not, the following specs should also normatively reference this
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
+- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
@@ -3455,7 +3437,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Animations {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## Web Animations {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3468,7 +3450,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `EventHandler`, `Window`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 
@@ -3598,7 +3580,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3612,7 +3594,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Web IDL {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## Web IDL {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3625,8 +3607,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Window`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/geolocation-API/`](https://www.w3.org/TR/geolocation-API/), related reference "GEOLOCATION-API" uses URL [`http://dev.w3.org/geo/api/spec-source.html`](http://dev.w3.org/geo/api/spec-source.html)
 
@@ -3798,11 +3778,11 @@ Informative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 
 
-## Web Workers {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-hasInvalidIdl=true data-missingLinkRef=true}
+## Web Workers {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (23 January 2018)
+- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (24 January 2018)
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/workers.html](https://html.spec.whatwg.org/multipage/workers.html)
 - Latest published version: [http://www.w3.org/TR/workers/](http://www.w3.org/TR/workers/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -3812,8 +3792,14 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - No normative references found
-- Invalid WebIDL content found
 - Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `EventHandler`, `OnErrorEventHandler`, `Window`
+- WebIDL names also defined elsewhere: 
+    * `Worker` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- Missing references for WebIDL names: 
+     * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+     * `RequestCredentials` defined in [Fetch Standard](https://fetch.spec.whatwg.org/)
+     * `MessagePort` defined in [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - Missing references for links: 
      * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
      * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
@@ -3893,6 +3879,13 @@ Normative references to this spec from:
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Console Standard](https://console.spec.whatwg.org/)
+- [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Server Timing](https://w3c.github.io/server-timing/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
+
 Informative references to this spec from:
 
 - [Battery Status API](https://w3c.github.io/battery/)
@@ -3915,7 +3908,7 @@ Informative references to this spec from:
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 
 
-## WebDriver {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## WebDriver {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3928,7 +3921,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- No WebIDL definitions found
 - Missing references for links: 
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
      * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
@@ -3947,7 +3940,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## WebGL 2.0 Specification {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -3957,7 +3950,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3972,7 +3965,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## WebGL Specification {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## WebGL Specification {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3982,7 +3975,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`, `ImageBitmap`
 - Inconsistent references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
 
@@ -4013,7 +4006,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `RTCError`, `Window`, `WorkerGlobalScope`
+- Unknown WebIDL names used: `EventHandler`, `RTCError`, `Window`
 - WebIDL names also defined elsewhere: 
     * `RTCStats` also defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - Missing references for WebIDL names: 
@@ -4064,7 +4057,7 @@ Informative references to this spec from:
 - [HTML 5.3](https://w3c.github.io/html/)
 
 
-## Worklets Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true}
+## Worklets Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -4076,7 +4069,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `RequestCredentials`
 - WebIDL names also defined elsewhere: 
     * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
@@ -4099,7 +4091,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## XMLHttpRequest Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## XMLHttpRequest Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -4109,12 +4101,10 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `BodyInit`, `DedicatedWorker`, `EventHandler`, `HTMLFormElement`, `SharedWorker`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `HTMLFormElement`, `Window`
 - WebIDL names also defined elsewhere: 
     * `ProgressEvent` also defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
     * `ProgressEventInit` also defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 

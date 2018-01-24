@@ -180,7 +180,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `BodyInit`, `Navigator`
+- Unknown WebIDL names used: `Navigator`
 - Missing references for links: 
      * [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -964,7 +964,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
 
-## Fetch Standard {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -974,7 +974,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `AbortSignal`, `ReadableStream`, `Window`, `WindowOrWorkerGlobalScope`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2890,7 +2890,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Request`, `RequestInfo`, `Response`, `Window`, `WindowOrWorkerGlobalScope`, `WorkerType`
+- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`, `WindowOrWorkerGlobalScope`, `WorkerType`
 - WebIDL names also defined elsewhere: 
     * `ServiceWorkerRegistration` also defined in [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180118/)
     * `Worker` also defined in [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -2994,7 +2994,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Storage Standard {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## Storage Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -3004,7 +3004,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3821,7 +3821,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
+## WebGL 2.0 Specification {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -3831,7 +3831,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3842,7 +3842,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebGL Specification {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## WebGL Specification {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3852,7 +3852,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`, `ImageBitmap`
 - Inconsistent references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
 
@@ -4099,7 +4099,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `BodyInit`, `EventHandler`, `HTMLFormElement`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `HTMLFormElement`, `Window`
 - WebIDL names also defined elsewhere: 
     * `ProgressEvent` also defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
     * `ProgressEventInit` also defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
