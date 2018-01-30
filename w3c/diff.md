@@ -1,12 +1,12 @@
-% Diff between report from "January 29, 2018" and reference report from "January 24, 2018"
+% Diff between report from "January 30, 2018" and reference report from "January 29, 2018"
 % Reffy
-% January 29, 2018
+% January 30, 2018
 
-## Resource Timing Level 3
+## CSS Typed OM Level 1
 
-- URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/)
-- Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
-- Inconsistent references for links: *DEL* https://w3c.github.io/navigation-timing/, https://www.w3.org/TR/dom/
+- URL: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
+- Spec is OK: *INS* false / *DEL* true
+- Unknown WebIDL names used: *INS* Window
 
 
