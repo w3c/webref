@@ -81,6 +81,7 @@
   <li><code>BaseAudioContext</code> used in <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   <li><code>DocumentOrShadowRoot</code> used in <a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a>, <a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   <li><code>GlobalEventHandlers</code> used in <a href="https://w3c.github.io/pointerevents/">Pointer Events - Level 2</a>, <a href="https://w3c.github.io/selection-api/">Selection API</a>, <a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
+  <li><code>LayoutWorklet</code> used in <a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><code>NavigatorID</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><code>OverconstrainedError</code> used in <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><code>PerformanceEntryList</code> used in <a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
@@ -94,7 +95,7 @@
   <li><code>WindowOrWorkerGlobalScope</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a>, <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a>, <a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a>, <a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a>, <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   </ul>
-  <p>=&gt; 16 WebIDL names found</p>
+  <p>=&gt; 17 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -117,6 +118,11 @@
   <ul>
   <li><code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  </ul></li>
+  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a> uses:
+  <ul>
+  <li><code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><code>PaintWorklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a> uses:
   <ul>
@@ -141,6 +147,7 @@
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a> uses <code>EventHandler</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a> uses <code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a> uses <code>Coordinates</code> but does not reference <a href="https://www.w3.org/TR/geolocation-API/">Geolocation API Specification 2nd Edition</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> uses:
   <ul>
   <li><code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
@@ -148,7 +155,7 @@
   <li><code>EventInit</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 20 missing references for IDL definitions found in 13 specifications</p>
+  <p>=&gt; 23 missing references for IDL definitions found in 15 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>

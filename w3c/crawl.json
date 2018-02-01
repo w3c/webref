@@ -2,13 +2,13 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-01-31T02:03:28.014Z",
+  "date": "2018-02-01T02:03:27.127Z",
   "options": {
     "publishedVersion": false
   },
   "stats": {
     "crawled": 116,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -681,7 +681,7 @@
       "repository": "https://github.com/whatwg/fetch",
       "title": "Fetch Standard",
       "crawled": "https://fetch.spec.whatwg.org/",
-      "date": "23 January 2018",
+      "date": "31 January 2018",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://url.spec.whatwg.org/",
@@ -703,7 +703,7 @@
         "https://tools.ietf.org/html/rfc6797",
         "https://w3c.github.io/webappsec-subresource-integrity/",
         "https://w3c.github.io/FileAPI/",
-        "https://simonsapin.github.io/data-urls/",
+        "https://mimesniff.spec.whatwg.org/",
         "https://encoding.spec.whatwg.org/",
         "https://tools.ietf.org/html/rfc6265",
         "https://tools.ietf.org/html/rfc7231",
@@ -730,7 +730,8 @@
         "https://www.kb.cert.org/vuls/id/150227",
         "https://tools.ietf.org/html/rfc6960",
         "https://tools.ietf.org/html/rfc6454",
-        "https://wicg.github.io/reporting/"
+        "https://wicg.github.io/reporting/",
+        "https://tools.ietf.org/html/rfc2397"
       ],
       "refs": {
         "normative": [
@@ -749,10 +750,6 @@
           {
             "name": "CSP",
             "url": "https://w3c.github.io/webappsec-csp/"
-          },
-          {
-            "name": "DATAURL",
-            "url": "https://simonsapin.github.io/data-urls/"
           },
           {
             "name": "DOM",
@@ -797,6 +794,10 @@
           {
             "name": "INFRA",
             "url": "https://infra.spec.whatwg.org/"
+          },
+          {
+            "name": "MIMESNIFF",
+            "url": "https://mimesniff.spec.whatwg.org/"
           },
           {
             "name": "MIX",
@@ -887,6 +888,10 @@
           {
             "name": "REPORTING",
             "url": "https://wicg.github.io/reporting/"
+          },
+          {
+            "name": "RFC2397",
+            "url": "https://tools.ietf.org/html/rfc2397"
           }
         ]
       },
@@ -3004,7 +3009,7 @@
       "repository": "https://github.com/whatwg/streams",
       "title": "Streams Standard",
       "crawled": "https://streams.spec.whatwg.org/",
-      "date": "26 January 2018",
+      "date": "31 January 2018",
       "links": [
         "https://fetch.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -4744,7 +4749,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Wed Jan 31 2018",
+      "date": "Thu Feb 01 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -5782,7 +5787,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Wed Jan 31 2018",
+      "date": "Thu Feb 01 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -15558,6 +15563,7 @@
         "https://github.com/w3c/css-houdini-drafts/issues/186",
         "https://github.com/w3c/css-houdini-drafts/issues/159",
         "https://github.com/w3c/css-houdini-drafts/issues/488",
+        "https://www.w3.org/TR/cssom-1/",
         "https://github.com/w3c/css-houdini-drafts/issues/490",
         "https://www.w3.org/TR/CSS21/",
         "https://www.w3.org/TR/CSS/",
@@ -15574,7 +15580,6 @@
         "https://www.w3.org/TR/css-values-3/",
         "https://www.w3.org/TR/css-variables-1/",
         "https://www.w3.org/TR/css3-images/",
-        "https://www.w3.org/TR/cssom-1/",
         "https://www.w3.org/TR/geometry-1/",
         "https://tools.ietf.org/html/rfc2119",
         "https://www.w3.org/TR/css-cascade-4/"
@@ -15692,13 +15697,106 @@
               "CSSMatrixComponent",
               "CSSPositionValue",
               "CSSURLImageValue"
+            ],
+            "Worker": [
+              "CSSUnparsedValue",
+              "CSSVariableReferenceValue",
+              "CSSKeywordValue",
+              "CSSUnitValue",
+              "CSSMathSum",
+              "CSSMathProduct",
+              "CSSMathNegate",
+              "CSSMathInvert",
+              "CSSMathMin",
+              "CSSMathMax",
+              "CSSTransformValue",
+              "CSSTranslate",
+              "CSSRotate",
+              "CSSScale",
+              "CSSSkew",
+              "CSSPerspective",
+              "CSSMatrixComponent",
+              "CSSPositionValue",
+              "CSSURLImageValue"
+            ],
+            "PaintWorklet": [
+              "CSSUnparsedValue",
+              "CSSVariableReferenceValue",
+              "CSSKeywordValue",
+              "CSSUnitValue",
+              "CSSMathSum",
+              "CSSMathProduct",
+              "CSSMathNegate",
+              "CSSMathInvert",
+              "CSSMathMin",
+              "CSSMathMax",
+              "CSSTransformValue",
+              "CSSTranslate",
+              "CSSRotate",
+              "CSSScale",
+              "CSSSkew",
+              "CSSPerspective",
+              "CSSMatrixComponent",
+              "CSSPositionValue",
+              "CSSURLImageValue"
+            ],
+            "LayoutWorklet": [
+              "CSSUnparsedValue",
+              "CSSVariableReferenceValue",
+              "CSSKeywordValue",
+              "CSSUnitValue",
+              "CSSMathSum",
+              "CSSMathProduct",
+              "CSSMathNegate",
+              "CSSMathInvert",
+              "CSSMathMin",
+              "CSSMathMax",
+              "CSSTransformValue",
+              "CSSTranslate",
+              "CSSRotate",
+              "CSSScale",
+              "CSSSkew",
+              "CSSPerspective",
+              "CSSMatrixComponent",
+              "CSSPositionValue",
+              "CSSURLImageValue"
             ]
           },
           "functions": {
             "Window": [
+              "CSSStyleValue",
               "StylePropertyMapReadOnly",
               "StylePropertyMap",
+              "CSSNumericValue",
+              "CSSMathValue",
+              "CSSNumericArray",
+              "CSSTransformComponent",
+              "CSSResourceValue",
+              "CSSImageValue"
+            ],
+            "Worker": [
               "CSSStyleValue",
+              "StylePropertyMapReadOnly",
+              "CSSNumericValue",
+              "CSSMathValue",
+              "CSSNumericArray",
+              "CSSTransformComponent",
+              "CSSResourceValue",
+              "CSSImageValue"
+            ],
+            "PaintWorklet": [
+              "CSSStyleValue",
+              "StylePropertyMapReadOnly",
+              "CSSNumericValue",
+              "CSSMathValue",
+              "CSSNumericArray",
+              "CSSTransformComponent",
+              "CSSResourceValue",
+              "CSSImageValue"
+            ],
+            "LayoutWorklet": [
+              "CSSStyleValue",
+              "StylePropertyMapReadOnly",
               "CSSNumericValue",
               "CSSMathValue",
               "CSSNumericArray",
@@ -15712,10 +15810,17 @@
         "idlNames": {
           "_dependencies": {
             "CSSStyleValue": [
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSStyleValue"
             ],
             "StylePropertyMapReadOnly": [
               "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSStyleValue"
             ],
             "StylePropertyMap": [
@@ -15735,19 +15840,35 @@
             ],
             "CSSUnparsedValue": [
               "CSSStyleValue",
-              "CSSVariableReferenceValue"
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
+              "CSSUnparsedSegment"
             ],
             "CSSVariableReferenceValue": [
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSUnparsedValue"
             ],
             "CSSKeywordValue": [
-              "CSSStyleValue"
+              "CSSStyleValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet"
             ],
             "CSSNumericType": [
               "CSSNumericBaseType"
             ],
             "CSSNumericValue": [
               "CSSStyleValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumericValue",
               "CSSNumberish",
               "CSSUnitValue",
@@ -15755,43 +15876,79 @@
               "CSSNumericType"
             ],
             "CSSUnitValue": [
-              "CSSNumericValue"
+              "CSSNumericValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet"
             ],
             "CSSMathValue": [
               "CSSNumericValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSMathOperator"
             ],
             "CSSMathSum": [
               "CSSMathValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumberish",
               "CSSNumericArray"
             ],
             "CSSMathProduct": [
               "CSSMathValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumberish",
               "CSSNumericArray"
             ],
             "CSSMathNegate": [
               "CSSMathValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumberish",
               "CSSNumericValue"
             ],
             "CSSMathInvert": [
               "CSSMathValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumberish",
               "CSSNumericValue"
             ],
             "CSSMathMin": [
               "CSSMathValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumberish",
               "CSSNumericArray"
             ],
             "CSSMathMax": [
               "CSSMathValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumberish",
               "CSSNumericArray"
             ],
             "CSSNumericArray": [
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumericValue"
             ],
             "CSS": [
@@ -15799,35 +15956,67 @@
             ],
             "CSSTransformValue": [
               "CSSStyleValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSTransformComponent",
               "DOMMatrix"
             ],
             "CSSTransformComponent": [
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "DOMMatrix"
             ],
             "CSSTranslate": [
               "CSSTransformComponent",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumericValue"
             ],
             "CSSRotate": [
               "CSSTransformComponent",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumericValue",
               "CSSNumberish"
             ],
             "CSSScale": [
               "CSSTransformComponent",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumberish"
             ],
             "CSSSkew": [
               "CSSTransformComponent",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumericValue"
             ],
             "CSSPerspective": [
               "CSSTransformComponent",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumericValue"
             ],
             "CSSMatrixComponent": [
               "CSSTransformComponent",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "DOMMatrixReadOnly",
               "CSSMatrixComponentOptions",
               "DOMMatrix"
@@ -15835,17 +16024,33 @@
             "CSSMatrixComponentOptions": [],
             "CSSPositionValue": [
               "CSSStyleValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSNumericValue"
             ],
             "CSSResourceValue": [
               "CSSStyleValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet",
               "CSSResourceState"
             ],
             "CSSImageValue": [
-              "CSSResourceValue"
+              "CSSResourceValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet"
             ],
             "CSSURLImageValue": [
-              "CSSImageValue"
+              "CSSImageValue",
+              "Window",
+              "Worker",
+              "PaintWorklet",
+              "LayoutWorklet"
             ]
           },
           "_reallyDependsOnWindow": false,
@@ -15906,7 +16111,17 @@
                     "name": "cssText"
                   }
                 ],
-                "extAttrs": []
+                "extAttrs": [
+                  {
+                    "name": "Exposed",
+                    "arguments": null,
+                    "type": "extended-attribute",
+                    "rhs": {
+                      "type": "identifier",
+                      "value": "Window"
+                    }
+                  }
+                ]
               },
               {
                 "type": "operation",
@@ -15957,11 +16172,36 @@
                     "name": "cssText"
                   }
                 ],
-                "extAttrs": []
+                "extAttrs": [
+                  {
+                    "name": "Exposed",
+                    "arguments": null,
+                    "type": "extended-attribute",
+                    "rhs": {
+                      "type": "identifier",
+                      "value": "Window"
+                    }
+                  }
+                ]
               }
             ],
             "inheritance": null,
-            "extAttrs": []
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              }
+            ]
           },
           "StylePropertyMapReadOnly": {
             "type": "interface",
@@ -16114,15 +16354,14 @@
                 "arguments": null,
                 "type": "extended-attribute",
                 "rhs": {
-                  "type": "identifier",
-                  "value": "Window"
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
                 }
-              },
-              {
-                "name": "PaintWorklet",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": null
               }
             ]
           },
@@ -16408,23 +16647,8 @@
                     "sequence": false,
                     "generic": null,
                     "nullable": false,
-                    "union": true,
-                    "idlType": [
-                      {
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "DOMString"
-                      },
-                      {
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "CSSVariableReferenceValue"
-                      }
-                    ]
+                    "union": false,
+                    "idlType": "CSSUnparsedSegment"
                   }
                 ],
                 "extAttrs": []
@@ -16456,23 +16680,8 @@
                   "sequence": false,
                   "generic": null,
                   "nullable": false,
-                  "union": true,
-                  "idlType": [
-                    {
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    {
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "CSSVariableReferenceValue"
-                    }
-                  ]
+                  "union": false,
+                  "idlType": "CSSUnparsedSegment"
                 },
                 "name": null,
                 "arguments": [
@@ -16491,38 +16700,88 @@
                   }
                 ],
                 "extAttrs": []
-              }
-            ],
-            "inheritance": "CSSStyleValue",
-            "extAttrs": [
+              },
               {
-                "name": "Constructor",
+                "type": "operation",
+                "getter": false,
+                "setter": true,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSUnparsedSegment"
+                },
+                "name": null,
                 "arguments": [
                   {
                     "optional": false,
-                    "variadic": true,
+                    "variadic": false,
                     "extAttrs": [],
                     "idlType": {
                       "sequence": false,
                       "generic": null,
                       "nullable": false,
-                      "union": true,
-                      "idlType": [
-                        {
-                          "sequence": false,
-                          "generic": null,
-                          "nullable": false,
-                          "union": false,
-                          "idlType": "DOMString"
-                        },
-                        {
-                          "sequence": false,
-                          "generic": null,
-                          "nullable": false,
-                          "union": false,
-                          "idlType": "CSSVariableReferenceValue"
-                        }
-                      ]
+                      "union": false,
+                      "idlType": "unsigned long"
+                    },
+                    "name": "index"
+                  },
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "CSSUnparsedSegment"
+                    },
+                    "name": "val"
+                  }
+                ],
+                "extAttrs": []
+              }
+            ],
+            "inheritance": "CSSStyleValue",
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
+              {
+                "name": "Constructor",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "sequence": true,
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": {
+                        "sequence": false,
+                        "generic": null,
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "CSSUnparsedSegment"
+                      }
                     },
                     "name": "members"
                   }
@@ -16531,6 +16790,33 @@
                 "rhs": null
               }
             ]
+          },
+          "CSSUnparsedSegment": {
+            "type": "typedef",
+            "idlType": {
+              "sequence": false,
+              "generic": null,
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSVariableReferenceValue"
+                }
+              ]
+            },
+            "name": "CSSUnparsedSegment",
+            "extAttrs": []
           },
           "CSSVariableReferenceValue": {
             "type": "interface",
@@ -16572,6 +16858,20 @@
             ],
             "inheritance": null,
             "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
               {
                 "name": "Constructor",
                 "arguments": [
@@ -16631,6 +16931,20 @@
             ],
             "inheritance": "CSSStyleValue",
             "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
               {
                 "name": "Constructor",
                 "arguments": [
@@ -17196,11 +17510,36 @@
                     "name": "cssText"
                   }
                 ],
-                "extAttrs": []
+                "extAttrs": [
+                  {
+                    "name": "Exposed",
+                    "arguments": null,
+                    "type": "extended-attribute",
+                    "rhs": {
+                      "type": "identifier",
+                      "value": "Window"
+                    }
+                  }
+                ]
               }
             ],
             "inheritance": "CSSStyleValue",
-            "extAttrs": []
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              }
+            ]
           },
           "CSSUnitValue": {
             "type": "interface",
@@ -17242,6 +17581,20 @@
             ],
             "inheritance": "CSSNumericValue",
             "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
               {
                 "name": "Constructor",
                 "arguments": [
@@ -17300,7 +17653,22 @@
               }
             ],
             "inheritance": "CSSNumericValue",
-            "extAttrs": []
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              }
+            ]
           },
           "CSSMathSum": {
             "type": "interface",
@@ -17326,6 +17694,20 @@
             ],
             "inheritance": "CSSMathValue",
             "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
               {
                 "name": "Constructor",
                 "arguments": [
@@ -17373,6 +17755,20 @@
             "inheritance": "CSSMathValue",
             "extAttrs": [
               {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
+              {
                 "name": "Constructor",
                 "arguments": [
                   {
@@ -17418,6 +17814,20 @@
             ],
             "inheritance": "CSSMathValue",
             "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
               {
                 "name": "Constructor",
                 "arguments": [
@@ -17465,6 +17875,20 @@
             "inheritance": "CSSMathValue",
             "extAttrs": [
               {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
+              {
                 "name": "Constructor",
                 "arguments": [
                   {
@@ -17511,6 +17935,20 @@
             "inheritance": "CSSMathValue",
             "extAttrs": [
               {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
+              {
                 "name": "Constructor",
                 "arguments": [
                   {
@@ -17556,6 +17994,20 @@
             ],
             "inheritance": "CSSMathValue",
             "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
               {
                 "name": "Constructor",
                 "arguments": [
@@ -17646,7 +18098,22 @@
               }
             ],
             "inheritance": null,
-            "extAttrs": []
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              }
+            ]
           },
           "CSSMathOperator": {
             "type": "enum",
@@ -17746,6 +18213,51 @@
                 "extAttrs": []
               },
               {
+                "type": "operation",
+                "getter": false,
+                "setter": true,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSTransformComponent"
+                },
+                "name": null,
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "unsigned long"
+                    },
+                    "name": "index"
+                  },
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "CSSTransformComponent"
+                    },
+                    "name": "val"
+                  }
+                ],
+                "extAttrs": []
+              },
+              {
                 "type": "attribute",
                 "static": false,
                 "stringifier": false,
@@ -17782,6 +18294,20 @@
             ],
             "inheritance": "CSSStyleValue",
             "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
               {
                 "name": "Constructor",
                 "arguments": [
@@ -17860,7 +18386,22 @@
               }
             ],
             "inheritance": null,
-            "extAttrs": []
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              }
+            ]
           },
           "CSSTranslate": {
             "type": "interface",
@@ -17918,6 +18459,20 @@
             ],
             "inheritance": "CSSTransformComponent",
             "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
               {
                 "name": "Constructor",
                 "arguments": [
@@ -18038,6 +18593,20 @@
             ],
             "inheritance": "CSSTransformComponent",
             "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
               {
                 "name": "Constructor",
                 "arguments": [
@@ -18176,6 +18745,20 @@
             "inheritance": "CSSTransformComponent",
             "extAttrs": [
               {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
+              {
                 "name": "Constructor",
                 "arguments": [
                   {
@@ -18264,6 +18847,20 @@
             "inheritance": "CSSTransformComponent",
             "extAttrs": [
               {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
+              {
                 "name": "Constructor",
                 "arguments": [
                   {
@@ -18323,6 +18920,20 @@
             "inheritance": "CSSTransformComponent",
             "extAttrs": [
               {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
+              {
                 "name": "Constructor",
                 "arguments": [
                   {
@@ -18368,6 +18979,20 @@
             ],
             "inheritance": "CSSTransformComponent",
             "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
               {
                 "name": "Constructor",
                 "arguments": [
@@ -18470,6 +19095,20 @@
             "inheritance": "CSSStyleValue",
             "extAttrs": [
               {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
+              {
                 "name": "Constructor",
                 "arguments": [
                   {
@@ -18550,7 +19189,22 @@
               }
             ],
             "inheritance": "CSSStyleValue",
-            "extAttrs": []
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              }
+            ]
           },
           "CSSImageValue": {
             "type": "interface",
@@ -18607,7 +19261,22 @@
               }
             ],
             "inheritance": "CSSResourceValue",
-            "extAttrs": []
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              }
+            ]
           },
           "CSSURLImageValue": {
             "type": "interface",
@@ -18633,6 +19302,20 @@
             ],
             "inheritance": "CSSImageValue",
             "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker",
+                    "PaintWorklet",
+                    "LayoutWorklet"
+                  ]
+                }
+              },
               {
                 "name": "Constructor",
                 "arguments": [
@@ -18682,7 +19365,22 @@
                   "extAttrs": []
                 }
               ],
-              "extAttrs": []
+              "extAttrs": [
+                {
+                  "name": "Exposed",
+                  "arguments": null,
+                  "type": "extended-attribute",
+                  "rhs": {
+                    "type": "identifier-list",
+                    "value": [
+                      "Window",
+                      "Worker",
+                      "PaintWorklet",
+                      "LayoutWorklet"
+                    ]
+                  }
+                }
+              ]
             }
           ],
           "CSSStyleRule": [
@@ -18715,7 +19413,22 @@
                   ]
                 }
               ],
-              "extAttrs": []
+              "extAttrs": [
+                {
+                  "name": "Exposed",
+                  "arguments": null,
+                  "type": "extended-attribute",
+                  "rhs": {
+                    "type": "identifier-list",
+                    "value": [
+                      "Window",
+                      "Worker",
+                      "PaintWorklet",
+                      "LayoutWorklet"
+                    ]
+                  }
+                }
+              ]
             }
           ],
           "ElementCSSInlineStyle": [
@@ -18748,7 +19461,22 @@
                   ]
                 }
               ],
-              "extAttrs": []
+              "extAttrs": [
+                {
+                  "name": "Exposed",
+                  "arguments": null,
+                  "type": "extended-attribute",
+                  "rhs": {
+                    "type": "identifier-list",
+                    "value": [
+                      "Window",
+                      "Worker",
+                      "PaintWorklet",
+                      "LayoutWorklet"
+                    ]
+                  }
+                }
+              ]
             }
           ],
           "CSS": [
@@ -19852,6 +20580,9 @@
         },
         "externalDependencies": [
           "Window",
+          "Worker",
+          "PaintWorklet",
+          "LayoutWorklet",
           "Element",
           "CSSStyleRule",
           "ElementCSSInlineStyle",
@@ -20432,6 +21163,7 @@
       "latest": "https://www.w3.org/TR/selectors-3/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-selectors-3-20180130/",
       "datedStatus": "Candidate Recommendation",
+      "repository": "https://github.com/w3c/csswg-drafts",
       "crawled": "https://www.w3.org/TR/css3-selectors/",
       "date": "30 January 2018",
       "links": [
@@ -20577,7 +21309,7 @@
       "edDraft": "https://drafts.csswg.org/cssom/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "crawled": "https://drafts.csswg.org/cssom/",
-      "date": "9 November 2017",
+      "date": "31 January 2018",
       "links": [
         "https://www.battleforthenet.com/",
         "https://www.w3.org/TR/CSS/",
@@ -26022,290 +26754,11 @@
       "edDraft": "https://w3c.github.io/webcomponents/spec/custom/",
       "repository": "https://github.com/w3c/webcomponents",
       "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-      "date": "04 December 2017",
-      "links": [
-        "https://github.com/whatwg/html/commit/81ee034f316f4366aeb315d16ea21521c83ab427",
-        "https://github.com/whatwg/dom/commit/cb85ac4c35baa1345f2b71e2dd3d57b098ddf2d1",
-        "https://www.w3.org/TR/",
-        "https://www.w3.org/WebPlatform/WG/",
-        "https://lists.w3.org/Archives/Public/public-webapps/",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/83482/status",
-        "https://www.w3.org/2017/Process-20170301/",
-        "https://en.wikipedia.org/wiki/Algorithm",
-        "https://html.spec.whatwg.org/",
-        "https://dom.spec.whatwg.org/",
-        "https://w3c.github.io/aria/aria/aria.html",
-        "https://w3c.github.io/uievents/",
-        "https://www.w3.org/TR/xml/",
-        "https://heycam.github.io/webidl/",
-        "https://tc39.github.io/ecma262/",
-        "https://w3c.github.io/editing/execCommand.html",
-        "https://drafts.csswg.org/selectors/",
-        "https://github.com/heycam/webidl/issues/97",
-        "https://dev.w3.org/2006/xbl2/",
-        "https://customelements.io/stevenrskelton/flag-icon/",
-        "https://stevenskelton.ca/",
-        "https://opensource.org/licenses/MIT",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://www.w3.org/Math/draft-spec/",
-        "https://www.w3.org/TR/SVG11/"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "HTML",
-            "url": "https://html.spec.whatwg.org/multipage/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "WEBIDL",
-            "url": "https://heycam.github.io/webidl/"
-          },
-          {
-            "name": "WHATWG-DOM",
-            "url": "https://dom.spec.whatwg.org/"
-          },
-          {
-            "name": "XML",
-            "url": "https://www.w3.org/TR/xml/"
-          }
-        ],
-        "informative": [
-          {
-            "name": "MATHML",
-            "url": "https://www.w3.org/Math/draft-spec/"
-          },
-          {
-            "name": "SVG",
-            "url": "https://www.w3.org/TR/SVG11/"
-          }
-        ]
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {},
-          "functions": {
-            "Window": [
-              "CustomElementRegistry"
-            ]
-          },
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "CustomElementRegistry": [
-              "ElementDefinitionOptions"
-            ],
-            "ElementDefinitionOptions": [],
-            "Window": [
-              "CustomElementRegistry"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "CustomElementRegistry": {
-            "type": "interface",
-            "name": "CustomElementRegistry",
-            "partial": false,
-            "members": [
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "void"
-                },
-                "name": "define",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    "name": "name"
-                  },
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "Function"
-                    },
-                    "name": "constructor"
-                  },
-                  {
-                    "optional": true,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "ElementDefinitionOptions"
-                    },
-                    "name": "options"
-                  }
-                ],
-                "extAttrs": [
-                  {
-                    "name": "CEReactions",
-                    "arguments": null,
-                    "type": "extended-attribute",
-                    "rhs": null
-                  }
-                ]
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "any"
-                },
-                "name": "get",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    "name": "name"
-                  }
-                ],
-                "extAttrs": []
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "sequence": false,
-                  "generic": "Promise",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": {
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "void"
-                  }
-                },
-                "name": "whenDefined",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    "name": "name"
-                  }
-                ],
-                "extAttrs": []
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": []
-          },
-          "ElementDefinitionOptions": {
-            "type": "dictionary",
-            "name": "ElementDefinitionOptions",
-            "partial": false,
-            "members": [
-              {
-                "type": "field",
-                "name": "extends",
-                "required": false,
-                "idlType": {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "extAttrs": []
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": []
-          }
-        },
-        "idlExtendedNames": {
-          "Window": [
-            {
-              "type": "interface",
-              "name": "Window",
-              "partial": true,
-              "members": [
-                {
-                  "type": "attribute",
-                  "static": false,
-                  "stringifier": false,
-                  "inherit": false,
-                  "readonly": true,
-                  "idlType": {
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "CustomElementRegistry"
-                  },
-                  "name": "customElements",
-                  "extAttrs": []
-                }
-              ],
-              "extAttrs": []
-            }
-          ]
-        },
-        "externalDependencies": [
-          "Window"
-        ],
-        "hasObsoleteIdl": false
-      }
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {},
+      "error": "Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises? Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises?\n    at Timeout.<anonymous> (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:509:10)\n    at ontimeout (timers.js:386:14)\n    at tryOnTimeout (timers.js:250:5)\n    at Timer.listOnTimeout (timers.js:214:5)"
     },
     {
       "url": "https://www.w3.org/TR/DOM-Parsing/",
@@ -38163,7 +38616,7 @@
       "edDraft": "https://w3c.github.io/FileAPI/",
       "repository": "https://github.com/w3c/FileAPI",
       "crawled": "https://w3c.github.io/FileAPI/",
-      "date": "29 January 2018",
+      "date": "31 January 2018",
       "links": [
         "https://xhr.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -40394,15 +40847,15 @@
       "datedUrl": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/",
       "datedStatus": "Recommendation",
       "crawled": "https://www.w3.org/TR/geolocation-API/",
-      "date": "8 November 2016",
+      "date": "31 January 2018)",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/TR/2013/REC-geolocation-API-20131024/",
         "https://www.w3.org/2008/geolocation/geoapi-errata.html",
         "https://groups.google.com/forum/",
         "https://www.w3.org/2008/geolocation/",
+        "https://github.com/w3c/geolocation-api/issues",
         "https://lists.w3.org/Archives/Public/public-geolocation/",
-        "https://www.w3.org/Mail/Request",
         "https://www.w3.org/2008/geolocation/drafts/API/Implementation-Report.html",
         "https://www.w3.org/Consortium/Patent-Policy-20040205/",
         "https://www.w3.org/2004/01/pp-impl/42891/status",
@@ -46445,7 +46898,7 @@
       "edDraft": "https://w3c.github.io/html/",
       "repository": "https://github.com/w3c/html",
       "crawled": "https://w3c.github.io/html/",
-      "date": "30 January 2018",
+      "date": "31 January 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/WebPlatform/WG/",
@@ -52540,7 +52993,7 @@
       "edDraft": "https://rawgit.com/w3c/input-events/v1/index.html",
       "repository": "https://github.com/w3c/input-events",
       "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-      "date": "31 January 2018",
+      "date": "01 February 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://github.com/w3c/web-platform-tests/tree/master/input-events",
@@ -93361,7 +93814,7 @@
       "edDraft": "https://w3c.github.io/webauthn/",
       "repository": "https://github.com/w3c/webauthn",
       "crawled": "https://w3c.github.io/webauthn/",
-      "date": "30 January 2018",
+      "date": "31 January 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/webauthn/",
@@ -93415,6 +93868,7 @@
         "https://tools.ietf.org/html/rfc7049",
         "https://www.secg.org/sec1-v2.pdf",
         "https://www.w3.org/TR/secure-contexts/",
+        "https://trustedcomputinggroup.org/wp-content/uploads/IWG_CMC_Profile_Cert_Enrollment_v1_r7.pdf",
         "https://xml2rfc.tools.ietf.org/cgi-bin/xml2rfc.cgi?modeAsFormat=html/ascii&url=https://raw.githubusercontent.com/w3c/webauthn/master/draft-hodges-webauthn-registries.xml",
         "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/",
         "https://eprint.iacr.org/2007/399.pdf",
@@ -93424,7 +93878,6 @@
         "https://fidoalliance.org/specs/fido-security-requirements-v1.0-fd-20170524/",
         "https://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-metadata-service-v1.0-ps-20141208.html",
         "https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-security-ref-v1.2-ps-20170411.html",
-        "https://geojson.org/geojson-spec.html",
         "https://standards.iso.org/ittf/PubliclyAvailableStandards/c055194_ISOIEC_2382-37_2012.zip",
         "https://tools.ietf.org/html/rfc4949",
         "https://tools.ietf.org/html/rfc5280",
@@ -93545,6 +93998,10 @@
             "url": "https://www.w3.org/TR/secure-contexts/"
           },
           {
+            "name": "TCG-CMCProfile-AIKCertEnroll",
+            "url": "https://trustedcomputinggroup.org/wp-content/uploads/IWG_CMC_Profile_Cert_Enrollment_v1_r7.pdf"
+          },
+          {
             "name": "TokenBinding",
             "url": "https://tools.ietf.org/html/draft-ietf-tokbind-protocol"
           },
@@ -93593,10 +94050,6 @@
           {
             "name": "FIDOSecRef",
             "url": "https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-security-ref-v1.2-ps-20170411.html"
-          },
-          {
-            "name": "GeoJSON",
-            "url": "http://geojson.org/geojson-spec.html"
           },
           {
             "name": "ISOBiometricVocabulary",
@@ -93671,7 +94124,7 @@
               "Credential",
               "Window",
               "AuthenticatorResponse",
-              "AuthenticationExtensions"
+              "AuthenticationExtensionsClientOutputs"
             ],
             "CredentialCreationOptions": [
               "MakePublicKeyCredentialOptions"
@@ -93701,7 +94154,7 @@
               "PublicKeyCredentialDescriptor",
               "AuthenticatorSelectionCriteria",
               "AttestationConveyancePreference",
-              "AuthenticationExtensions"
+              "AuthenticationExtensionsClientInputs"
             ],
             "PublicKeyCredentialEntity": [],
             "PublicKeyCredentialRpEntity": [
@@ -93717,10 +94170,20 @@
             "PublicKeyCredentialRequestOptions": [
               "PublicKeyCredentialDescriptor",
               "UserVerificationRequirement",
-              "AuthenticationExtensions"
+              "AuthenticationExtensionsClientInputs"
+            ],
+            "AuthenticationExtensionsClientInputs": [
+              "txAuthGenericArg",
+              "AuthenticatorSelectionList"
+            ],
+            "AuthenticationExtensionsClientOutputs": [
+              "AuthenticationExtensionsSupported",
+              "Coordinates",
+              "UvmEntries"
             ],
             "CollectedClientData": [
-              "AuthenticationExtensions"
+              "AuthenticationExtensionsClientInputs",
+              "AuthenticationExtensionsAuthenticatorInputs"
             ],
             "PublicKeyCredentialDescriptor": [
               "PublicKeyCredentialType",
@@ -93792,7 +94255,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "AuthenticationExtensions"
+                  "idlType": "AuthenticationExtensionsClientOutputs"
                 },
                 "name": "getClientExtensionResults",
                 "arguments": [],
@@ -94181,7 +94644,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "AuthenticationExtensions"
+                  "idlType": "AuthenticationExtensionsClientInputs"
                 },
                 "extAttrs": []
               }
@@ -94464,7 +94927,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "AuthenticationExtensions"
+                  "idlType": "AuthenticationExtensionsClientInputs"
                 },
                 "extAttrs": []
               }
@@ -94472,7 +94935,23 @@
             "inheritance": null,
             "extAttrs": []
           },
-          "AuthenticationExtensions": {
+          "AuthenticationExtensionsClientInputs": {
+            "type": "dictionary",
+            "name": "AuthenticationExtensionsClientInputs",
+            "partial": false,
+            "members": [],
+            "inheritance": null,
+            "extAttrs": []
+          },
+          "AuthenticationExtensionsClientOutputs": {
+            "type": "dictionary",
+            "name": "AuthenticationExtensionsClientOutputs",
+            "partial": false,
+            "members": [],
+            "inheritance": null,
+            "extAttrs": []
+          },
+          "AuthenticationExtensionsAuthenticatorInputs": {
             "type": "typedef",
             "idlType": {
               "sequence": false,
@@ -94492,11 +94971,11 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "DOMString"
                 }
               ]
             },
-            "name": "AuthenticationExtensions",
+            "name": "AuthenticationExtensionsAuthenticatorInputs",
             "extAttrs": []
           },
           "CollectedClientData": {
@@ -94565,7 +95044,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "AuthenticationExtensions"
+                  "idlType": "AuthenticationExtensionsClientInputs"
                 },
                 "extAttrs": []
               },
@@ -94578,7 +95057,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "AuthenticationExtensions"
+                  "idlType": "AuthenticationExtensionsAuthenticatorInputs"
                 },
                 "extAttrs": []
               }
@@ -94765,6 +95244,60 @@
             },
             "name": "AAGUID",
             "extAttrs": []
+          },
+          "AuthenticationExtensionsSupported": {
+            "type": "typedef",
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "union": false,
+                "idlType": "USVString"
+              }
+            },
+            "name": "AuthenticationExtensionsSupported",
+            "extAttrs": []
+          },
+          "UvmEntry": {
+            "type": "typedef",
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "union": false,
+                "idlType": "unsigned long"
+              }
+            },
+            "name": "UvmEntry",
+            "extAttrs": []
+          },
+          "UvmEntries": {
+            "type": "typedef",
+            "idlType": {
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": {
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "union": false,
+                "idlType": "UvmEntry"
+              }
+            },
+            "name": "UvmEntries",
+            "extAttrs": []
           }
         },
         "idlExtendedNames": {
@@ -94847,13 +95380,354 @@
               ],
               "extAttrs": []
             }
+          ],
+          "AuthenticationExtensionsClientInputs": [
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "appid",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "txAuthSimple",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "txAuthGeneric",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "txAuthGenericArg"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "authnSel",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AuthenticatorSelectionList"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "exts",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "uvi",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "loc",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "uvm",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            }
+          ],
+          "AuthenticationExtensionsClientOutputs": [
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "appid",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "txAuthSimple",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "txAuthGeneric",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "ArrayBuffer"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "authnSel",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "exts",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AuthenticationExtensionsSupported"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "uvi",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "ArrayBuffer"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "loc",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "Coordinates"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "uvm",
+                  "required": false,
+                  "idlType": {
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "UvmEntries"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            }
           ]
         },
         "externalDependencies": [
           "Credential",
           "Window",
           "CredentialCreationOptions",
-          "CredentialRequestOptions"
+          "CredentialRequestOptions",
+          "Coordinates"
         ],
         "hasObsoleteIdl": false
       }
@@ -99535,6 +100409,7 @@
       "url": "https://www.w3.org/TR/webrtc-stats/",
       "shortname": "webrtc-stats",
       "versions": [
+        "https://www.w3.org/TR/2018/WD-webrtc-stats-20180131/",
         "https://www.w3.org/TR/2018/WD-webrtc-stats-20180117/",
         "https://www.w3.org/TR/2018/WD-webrtc-stats-20180110/",
         "https://www.w3.org/TR/2016/WD-webrtc-stats-20161214/",
@@ -99548,12 +100423,12 @@
       ],
       "title": "Identifiers for WebRTC's Statistics API",
       "latest": "https://www.w3.org/TR/webrtc-stats/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180117/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180131/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/webrtc-stats/",
       "repository": "https://github.com/w3c/webrtc-stats",
       "crawled": "https://w3c.github.io/webrtc-stats/",
-      "date": "17 January 2018",
+      "date": "31 January 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/2011/04/webrtc/",
@@ -99571,7 +100446,6 @@
         "https://www.iana.org/assignments/srtp-protection/srtp-protection.xhtml",
         "https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml",
         "https://datatracker.ietf.org/doc/draft-ietf-rtcweb-jsep/",
-        "https://www.w3.org/TR/media-source/",
         "https://tools.ietf.org/html/rfc2119",
         "https://tools.ietf.org/html/rfc3550",
         "https://tools.ietf.org/html/rfc3611",
@@ -99634,10 +100508,6 @@
           {
             "name": "JSEP",
             "url": "http://datatracker.ietf.org/doc/draft-ietf-rtcweb-jsep/"
-          },
-          {
-            "name": "MEDIA-SOURCE",
-            "url": "https://www.w3.org/TR/media-source/"
           },
           {
             "name": "RFC2119",
@@ -100319,19 +101189,6 @@
               },
               {
                 "type": "field",
-                "name": "packetsDuplicated",
-                "required": false,
-                "idlType": {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                },
-                "extAttrs": []
-              },
-              {
-                "type": "field",
                 "name": "packetsDiscarded",
                 "required": false,
                 "idlType": {
@@ -100510,6 +101367,32 @@
               },
               {
                 "type": "field",
+                "name": "averageRtcpInterval",
+                "required": false,
+                "idlType": {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "fecPacketsReceived",
+                "required": false,
+                "idlType": {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
                 "name": "bytesReceived",
                 "required": false,
                 "idlType": {
@@ -100524,6 +101407,19 @@
               {
                 "type": "field",
                 "name": "packetsFailedDecryption",
+                "required": false,
+                "idlType": {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "packetsDuplicated",
                 "required": false,
                 "idlType": {
                   "sequence": false,
@@ -100647,6 +101543,19 @@
               },
               {
                 "type": "field",
+                "name": "fecPacketsSent",
+                "required": false,
+                "idlType": {
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
                 "name": "bytesSent",
                 "required": false,
                 "idlType": {
@@ -100747,7 +101656,7 @@
               },
               {
                 "type": "field",
-                "name": "averageRTCPInterval",
+                "name": "averageRtcpInterval",
                 "required": false,
                 "idlType": {
                   "sequence": false,
@@ -101303,19 +102212,6 @@
               {
                 "type": "field",
                 "name": "framesDropped",
-                "required": false,
-                "idlType": {
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                },
-                "extAttrs": []
-              },
-              {
-                "type": "field",
-                "name": "framesCorrupted",
                 "required": false,
                 "idlType": {
                   "sequence": false,
@@ -102612,7 +103508,7 @@
       "edDraft": "https://w3c.github.io/webrtc-pc/",
       "repository": "https://github.com/w3c/webrtc-pc",
       "crawled": "https://w3c.github.io/webrtc-pc/",
-      "date": "25 January 2018",
+      "date": "31 January 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://github.com/w3c/webrtc-pc/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20-label%3AEditorial%20",
@@ -102620,7 +103516,7 @@
         "https://wpt.fyi/webrtc",
         "https://www.w3.org/2011/04/webrtc/",
         "https://lists.w3.org/Archives/Public/public-webrtc/",
-        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
+        "https://www.w3.org/Consortium/Patent-Policy/",
         "https://www.w3.org/2004/01/pp-impl/47318/status",
         "https://www.w3.org/2017/Process-20170301/",
         "https://datatracker.ietf.org/wg/rtcweb/",
@@ -102705,6 +103601,10 @@
           {
             "name": "ECMASCRIPT-6.0",
             "url": "http://www.ecma-international.org/ecma-262/6.0/index.html"
+          },
+          {
+            "name": "fetch",
+            "url": "https://fetch.spec.whatwg.org/"
           },
           {
             "name": "FILEAPI",
@@ -102867,8 +103767,16 @@
             "url": "https://tools.ietf.org/html/draft-ietf-tsvwg-rtcweb-qos"
           },
           {
+            "name": "WebCryptoAPI",
+            "url": "https://www.w3.org/TR/WebCryptoAPI/"
+          },
+          {
             "name": "WEBIDL-1",
             "url": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/"
+          },
+          {
+            "name": "webmessaging",
+            "url": "https://www.w3.org/TR/webmessaging/"
           },
           {
             "name": "WEBRTC-STATS",
@@ -102879,24 +103787,12 @@
             "url": "https://www.w3.org/TR/workers/"
           },
           {
-            "name": "WebCryptoAPI",
-            "url": "https://www.w3.org/TR/WebCryptoAPI/"
-          },
-          {
             "name": "X509V3",
             "url": ""
           },
           {
             "name": "X690",
             "url": "https://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf"
-          },
-          {
-            "name": "fetch",
-            "url": "https://fetch.spec.whatwg.org/"
-          },
-          {
-            "name": "webmessaging",
-            "url": "https://www.w3.org/TR/webmessaging/"
           }
         ],
         "informative": [
@@ -111005,7 +111901,7 @@
       "edDraft": "https://w3c.github.io/webvtt/",
       "repository": "https://github.com/w3c/webvtt",
       "crawled": "https://w3c.github.io/webvtt/",
-      "date": "5 January 2018",
+      "date": "31 January 2018",
       "links": [
         "https://www.w3.org/community/texttracks/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -111819,7 +112715,7 @@
       "edDraft": "https://html.spec.whatwg.org/multipage/workers.html",
       "repository": "https://github.com/whatwg/html",
       "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-      "date": "29 January 2018",
+      "date": "31 January 2018",
       "links": [
         "https://fetch.spec.whatwg.org/",
         "https://caniuse.com/",

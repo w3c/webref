@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">January 31, 2018</h2>
+            <h2 class="date">February 01, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -514,7 +514,7 @@
   <section id="spec-info-14" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.csswg.org/cssom/">Editor's Draft</a> (9 November 2017)</li>
+  <li>Crawled version: <a href="https://drafts.csswg.org/cssom/">Editor's Draft</a> (31 January 2018)</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/cssom/" class="uri">https://drafts.csswg.org/cssom/</a></li>
   <li>Latest published version: <a href="http://www.w3.org/TR/cssom-1/" class="uri">http://www.w3.org/TR/cssom-1/</a></li>
   <li>Latest published status: <a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">Working Draft</a></li>
@@ -590,6 +590,7 @@
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -708,7 +709,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-typed-om-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="css-typed-om-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>CSS Typed OM Level 1</h2>
   <section id="spec-info-19" class="level3 info">
   <h3>Spec info</h3>
@@ -723,7 +724,12 @@
   <section id="potential-issues-19" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>LayoutWorklet</code>, <code>Window</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Worker</code> defined in <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
+  <li><code>PaintWorklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-19" class="level3 dependencies">
@@ -874,12 +880,12 @@
   </ul>
   </section>
   </section>
-  <section id="custom-elements" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="custom-elements" class="level2" data-spec="true" data-error="true">
   <h2>Custom Elements</h2>
   <section id="spec-info-23" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webcomponents/spec/custom/">Editor's Draft</a> (04 December 2017)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webcomponents/spec/custom/">Editor's Draft</a></li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webcomponents/spec/custom/" class="uri">https://w3c.github.io/webcomponents/spec/custom/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/custom-elements/" class="uri">https://www.w3.org/TR/custom-elements/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2016/WD-custom-elements-20161013/">Working Draft</a></li>
@@ -889,15 +895,8 @@
   </section>
   <section id="potential-issues-23" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/aria/aria/aria.html"><code>https://w3c.github.io/aria/aria/aria.html</code></a></li>
-  <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a></li>
-  <li><a href="https://w3c.github.io/editing/execCommand.html"><code>https://w3c.github.io/editing/execCommand.html</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises? Error: Evaluation timed out after 30000msec.  Are you calling done() or resolving your promises?     at Timeout.&lt;anonymous&gt; (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:509:10)     at ontimeout (timers.js:386:14)     at tryOnTimeout (timers.js:250:5)     at Timer.listOnTimeout (timers.js:214:5)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-23" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1062,7 +1061,7 @@
   <section id="spec-info-28" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://fetch.spec.whatwg.org/">Living Standard</a> (23 January 2018)</li>
+  <li>Crawled version: <a href="https://fetch.spec.whatwg.org/">Living Standard</a> (31 January 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/fetch">GitHub whatwg/fetch</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -1117,7 +1116,7 @@
   <section id="spec-info-29" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/FileAPI/">Editor's Draft</a> (29 January 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/FileAPI/">Editor's Draft</a> (31 January 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/FileAPI/" class="uri">https://w3c.github.io/FileAPI/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/FileAPI/" class="uri">https://www.w3.org/TR/FileAPI/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-FileAPI-20171026/">Working Draft</a></li>
@@ -1262,7 +1261,7 @@
   <section id="spec-info-33" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/geolocation-API/">Latest published version</a> (8 November 2016)</li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/geolocation-API/">Latest published version</a> (31 January 2018))</li>
   <li>Latest published version: <a href="https://www.w3.org/TR/geolocation-API/" class="uri">https://www.w3.org/TR/geolocation-API/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2016/REC-geolocation-API-20161108/">Recommendation</a></li>
   <li>Shortname: geolocation-API</li>
@@ -1277,6 +1276,10 @@
   <section id="known-dependencies-on-this-specification-33" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
+  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
@@ -1421,7 +1424,7 @@
   <section id="spec-info-37" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/html/">Editor's Draft</a> (30 January 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/html/">Editor's Draft</a> (31 January 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/html/" class="uri">https://w3c.github.io/html/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/html52/" class="uri">https://www.w3.org/TR/html52/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/REC-html52-20171214/">Recommendation</a></li>
@@ -1484,7 +1487,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
@@ -1626,7 +1628,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
@@ -1756,7 +1757,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
@@ -1835,10 +1835,10 @@
   <section id="spec-info-41" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webrtc-stats/">Editor's Draft</a> (17 January 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webrtc-stats/">Editor's Draft</a> (31 January 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webrtc-stats/" class="uri">https://w3c.github.io/webrtc-stats/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webrtc-stats/" class="uri">https://www.w3.org/TR/webrtc-stats/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-webrtc-stats-20180117/">Working Draft</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-webrtc-stats-20180131/">Working Draft</a></li>
   <li>Repository: <a href="https://github.com/w3c/webrtc-stats">GitHub w3c/webrtc-stats</a></li>
   <li>Shortname: webrtc-stats</li>
   </ul>
@@ -1911,7 +1911,7 @@
   <section id="spec-info-43" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (31 January 2018)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (01 February 2018)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -2204,7 +2204,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
-  <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -3128,7 +3127,6 @@
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css3-selectors/">Selectors Level 3</a></li>
   </ul>
@@ -3285,6 +3283,7 @@
   <li>Crawled version: <a href="https://www.w3.org/TR/css3-selectors/">Initial URL</a> (30 January 2018)</li>
   <li>Latest published version: <a href="https://www.w3.org/TR/selectors-3/" class="uri">https://www.w3.org/TR/selectors-3/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/CR-selectors-3-20180130/">Candidate Recommendation</a></li>
+  <li>Repository: <a href="https://github.com/w3c/csswg-drafts">GitHub w3c/csswg-drafts</a></li>
   <li>Shortname: css3-selectors</li>
   </ul>
   </section>
@@ -3427,6 +3426,7 @@
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
   <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></li>
@@ -3546,7 +3546,7 @@
   <section id="spec-info-87" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://streams.spec.whatwg.org/">Living Standard</a> (26 January 2018)</li>
+  <li>Crawled version: <a href="https://streams.spec.whatwg.org/">Living Standard</a> (31 January 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/streams">GitHub whatwg/streams</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -3990,7 +3990,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
@@ -4213,12 +4212,12 @@
   </ul>
   </section>
   </section>
-  <section id="web-authentication-an-api-for-accessing-public-key-credentials---level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="web-authentication-an-api-for-accessing-public-key-credentials---level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Web Authentication: An API for accessing Public Key Credentials - Level 1</h2>
   <section id="spec-info-103" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webauthn/">Editor's Draft</a> (30 January 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webauthn/">Editor's Draft</a> (31 January 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webauthn/" class="uri">https://w3c.github.io/webauthn/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webauthn/" class="uri">https://www.w3.org/TR/webauthn/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-webauthn-20171205/">Working Draft</a></li>
@@ -4230,6 +4229,10 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>Window</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Coordinates</code> defined in <a href="https://www.w3.org/TR/geolocation-API/">Geolocation API Specification 2nd Edition</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/html/browsers.html"><code>https://w3c.github.io/html/browsers.html</code></a></li>
@@ -4330,7 +4333,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
@@ -4493,7 +4495,7 @@
   <section id="spec-info-108" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://html.spec.whatwg.org/multipage/workers.html">Editor's Draft</a> (29 January 2018)</li>
+  <li>Crawled version: <a href="https://html.spec.whatwg.org/multipage/workers.html">Editor's Draft</a> (31 January 2018)</li>
   <li>Editor's Draft: <a href="https://html.spec.whatwg.org/multipage/workers.html" class="uri">https://html.spec.whatwg.org/multipage/workers.html</a></li>
   <li>Latest published version: <a href="http://www.w3.org/TR/workers/" class="uri">http://www.w3.org/TR/workers/</a></li>
   <li>Latest published status: <a href="http://www.w3.org/TR/2015/WD-workers-20150924/">Working Draft</a></li>
@@ -4549,7 +4551,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
@@ -4603,6 +4604,7 @@
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
   <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></li>
@@ -4674,7 +4676,7 @@
   <section id="spec-info-110" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Wed Jan 31 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Thu Feb 01 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4702,7 +4704,7 @@
   <section id="spec-info-111" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Wed Jan 31 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Thu Feb 01 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4737,7 +4739,7 @@
   <section id="spec-info-112" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (25 January 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (31 January 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webrtc-pc/" class="uri">https://w3c.github.io/webrtc-pc/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webrtc/" class="uri">https://www.w3.org/TR/webrtc/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">Candidate Recommendation</a></li>
@@ -4786,7 +4788,7 @@
   <section id="spec-info-113" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webvtt/">Editor's Draft</a> (5 January 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webvtt/">Editor's Draft</a> (31 January 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webvtt/" class="uri">https://w3c.github.io/webvtt/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webvtt1/" class="uri">https://www.w3.org/TR/webvtt1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-webvtt1-20170808/">Working Draft</a></li>
