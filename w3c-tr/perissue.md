@@ -1,8 +1,8 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% February 01, 2018
+% February 02, 2018
 
-116 specifications were crawled in this report.
+119 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -39,6 +39,7 @@ Not all specifications define IDL content, presence in this list may be complete
 ## List of specifications with invalid WebIDL content
 
 - [CSS Font Loading Module Level 3](http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
@@ -49,7 +50,7 @@ Not all specifications define IDL content, presence in this list may be complete
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
-=> 10 specifications found
+=> 11 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -105,15 +106,16 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `DOMRectReadOnly` used in [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - `DOMStringList` used in [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - `DataTransfer` used in [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/), [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
+- `DataTransferItem` used in [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - `EventHandler` used in [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/), [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/), [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/), [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/), [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/), [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180123/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/), [Pointer Lock 2.0](https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/), [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/), [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/), [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/), [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/), [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/), [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/), [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/), [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/), [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/), [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/), [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180130/), [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/), [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `GlobalEventHandlers` used in [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/), [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
 - `HTMLCanvasElement` used in [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/), [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - `HTMLElement` used in [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - `HTMLFormElement` used in [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `HTMLImageElement` used in [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/), [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- `HTMLInputElement` used in [HTML Media Capture](https://www.w3.org/TR/2017/PR-html-media-capture-20171128/)
+- `HTMLInputElement` used in [File and Directory Entries API](https://wicg.github.io/entries-api/), [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - `HTMLMediaElement` used in [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/), [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
-- `HTMLSlotElement` used in [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+- `HTMLSlotElement` used in [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - `HTMLVideoElement` used in [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - `ImageBitmap` used in ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - `Navigator` used in [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/), [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/), [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/), [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [Gamepad](https://www.w3.org/TR/2017/WD-gamepad-20171027/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/), [Media Session Standard](https://wicg.github.io/mediasession/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/), [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/), [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/), [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/), [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/), [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
@@ -132,12 +134,12 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `Transferable` used in [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - `VideoTrack` used in [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - `VideoTrackList` used in [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
-- `Window` used in [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/), [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/), [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/), [Console Standard](https://console.spec.whatwg.org/), [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/), [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/), [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/), [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/), [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/), [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/), [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/), [Custom Elements](https://www.w3.org/TR/2016/WD-custom-elements-20161013/), [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/), [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/), [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/), [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/), [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/), [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/), [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/), [Media Session Standard](https://wicg.github.io/mediasession/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/), [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/), [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/), [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180123/), [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/), [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/), [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/), [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/), [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171229/), [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/), [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/), [Static Range](https://w3c.github.io/staticrange/), [Storage Standard](https://storage.spec.whatwg.org/), [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 2](https://www.w3.org/TR/2017/WD-user-timing-2-20171207/), [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/), [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/), [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180130/), [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/), [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/), [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/), [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `Window` used in [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/), [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/), [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/), [Console Standard](https://console.spec.whatwg.org/), [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/), [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/), [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/), [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/), [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/), [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/), [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/), [Custom Elements](https://www.w3.org/TR/2016/WD-custom-elements-20161013/), [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/), [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/), [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/), [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/), [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/), [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/), [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/), [Media Session Standard](https://wicg.github.io/mediasession/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/), [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/), [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/), [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180123/), [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/), [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/), [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/), [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/), [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171229/), [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/), [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/), [Static Range](https://w3c.github.io/staticrange/), [Storage Standard](https://storage.spec.whatwg.org/), [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 2](https://www.w3.org/TR/2017/WD-user-timing-2-20171207/), [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/), [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/), [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180130/), [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/), [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/), [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/), [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/), [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `WindowOrWorkerGlobalScope` used in [Fetch Standard](https://fetch.spec.whatwg.org/), [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/), [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/), [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - `WindowProxy` used in [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - `WorkerType` used in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 
-=> 46 WebIDL names found
+=> 47 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -149,8 +151,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `ProgressEventInit` defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `RTCStats` defined in [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180131/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
 - `ServiceWorkerRegistration` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) and [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180130/)
-- `ShadowRoot` defined in [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/) and [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
-- `ShadowRootMode` defined in [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/) and [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+- `ShadowRoot` defined in [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/) and [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+- `ShadowRootMode` defined in [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/) and [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) and [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - `Worklet` defined in [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 
@@ -170,7 +172,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ConstrainDouble` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
     * `ConstrainBoolean` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
     * `MediaTrackSettings` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
-- [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+- [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Console Standard](https://console.spec.whatwg.org/) uses:
     * `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
     * `Worklet` but does not reference [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
@@ -178,53 +180,54 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
     * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/) uses:
-    * `Document` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
-    * `Node` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
-    * `Element` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
-    * `Range` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
-    * `DocumentFragment` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+    * `Document` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+    * `Node` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+    * `Element` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+    * `Range` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+    * `DocumentFragment` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/) uses `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/) uses:
     * `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
     * `DedicatedWorker` but does not reference [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
     * `SharedWorker` but does not reference [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
-- [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+- [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) uses:
-    * `Element` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+    * `Element` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
     * `MouseEvent` but does not reference [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
     * `MouseEventInit` but does not reference [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/) uses `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/) uses:
-    * `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
-    * `Event` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
-    * `EventInit` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+    * `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+    * `Event` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+    * `EventInit` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/) uses:
-    * `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+    * `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
     * `URL` but does not reference [URL Standard](https://url.spec.whatwg.org/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/) uses:
     * `MediaStream` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/) uses `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
-- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171229/) uses:
     * `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [Shadow DOM](https://www.w3.org/TR/2017/WD-shadow-dom-20170905/) uses:
-    * `DocumentOrShadowRoot` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+    * `DocumentOrShadowRoot` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
     * `Selection` but does not reference [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
-    * `Element` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+    * `Element` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
     * `CaretPosition` but does not reference [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
     * `StyleSheetList` but does not reference [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-    * `DocumentFragment` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+    * `DocumentFragment` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/) uses `UIEvent` but does not reference [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/) uses `Worker` but does not reference [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html) uses `Worklet` but does not reference [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/) uses:
-    * `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
-    * `Event` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
-    * `EventInit` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/)
+    * `EventTarget` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+    * `Event` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+    * `EventInit` but does not reference [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 
-=> 50 missing references for IDL definitions found in 21 specifications
+=> 51 missing references for IDL definitions found in 22 specifications
 
 
 ## Missing references based on document links
@@ -245,6 +248,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-css3-fonts-20130212/`](https://www.w3.org/TR/2013/WD-css3-fonts-20130212/) but does not list it in its references
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/) links to [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) links to [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/) links to:
     * [`https://www.w3.org/TR/css-namespaces-3/`](https://www.w3.org/TR/css-namespaces-3/) but does not list it in its references
     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
@@ -408,7 +412,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/requestidlecallback/`](https://w3c.github.io/requestidlecallback/) but does not list it in its references
 - [User Timing Level 2](https://www.w3.org/TR/2017/WD-user-timing-2-20171207/) links to [`https://w3c.github.io/html/webappapis.html`](https://w3c.github.io/html/webappapis.html) but does not list it in its references
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/) links to [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/) but does not list it in its references
+- [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/) links to [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/) but does not list it in its references
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/) links to [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/) links to [`https://w3c.github.io/workers/`](https://w3c.github.io/workers/) but does not list it in its references
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/) links to [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html) but does not list it in its references
@@ -420,7 +424,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 164 missing references for links found in 57 specifications
+=> 165 missing references for links found in 58 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -459,6 +463,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/) links to:
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
+- [File and Directory Entries API](https://wicg.github.io/entries-api/) links to [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/) links to:
     * [`https://w3c.github.io/dom/`](https://w3c.github.io/dom/) but related reference "DOM" uses URL [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/)
     * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/) but related reference "Encoding" uses URL [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/)
@@ -591,7 +596,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/) but related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/) links to [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2017/WD-dom41-20171207/) links to:
+- [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/) links to:
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
@@ -635,6 +640,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING-CR" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
 
-=> 168 inconsistent references for links found in 63 specifications
+=> 169 inconsistent references for links found in 64 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
