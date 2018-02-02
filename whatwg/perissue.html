@@ -20,7 +20,7 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>107 specifications were crawled in this report.</p>
+  <p>110 specifications were crawled in this report.</p>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <p>=&gt; 0 specification found</p>
@@ -48,12 +48,13 @@
   <h2>List of specifications with invalid WebIDL content</h2>
   <ul>
   <li><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="https://www.w3.org/TR/mediaont-api-1.0/">Metadata API for Media Resources 1.0</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
   </ul>
-  <p>=&gt; 5 specifications found</p>
+  <p>=&gt; 6 specifications found</p>
   <p>WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features</p>
   </section>
   <section id="list-of-specifications-with-obsolete-webidl-constructs" class="level2">
@@ -148,6 +149,7 @@
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a> uses <code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a> uses <code>Coordinates</code> but does not reference <a href="https://www.w3.org/TR/geolocation-API/">Geolocation API Specification 2nd Edition</a></li>
+  <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a> uses <code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> uses:
   <ul>
   <li><code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
@@ -155,7 +157,7 @@
   <li><code>EventInit</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 23 missing references for IDL definitions found in 15 specifications</p>
+  <p>=&gt; 24 missing references for IDL definitions found in 16 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -170,6 +172,7 @@
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a> links to <a href="https://w3c.github.io/reporting/"><code>https://w3c.github.io/reporting/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a> links to <a href="https://w3c.github.io/webappsec/usecases/credentialmanagement/"><code>https://w3c.github.io/webappsec/usecases/credentialmanagement/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a> links to <a href="https://www.w3.org/TR/css3-syntax/"><code>https://www.w3.org/TR/css3-syntax/</code></a> but does not list it in its references</li>
+  <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a> links to <a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> links to <a href="https://www.w3.org/TR/css-properties-values-api-1/"><code>https://www.w3.org/TR/css-properties-values-api-1/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a> links to <a href="https://www.w3.org/TR/selectors-api/"><code>https://www.w3.org/TR/selectors-api/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a> links to:
@@ -283,7 +286,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 86 missing references for links found in 37 specifications</p>
+  <p>=&gt; 87 missing references for links found in 38 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -335,6 +338,7 @@
   <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
   <li><a href="https://www.w3.org/TR/encoding/"><code>https://www.w3.org/TR/encoding/</code></a> but related reference &quot;ENCODING&quot; uses URL <a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a></li>
   </ul></li>
+  <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a> links to <a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a> links to <a href="https://w3c.github.io/page-visibility/"><code>https://w3c.github.io/page-visibility/</code></a> but related reference &quot;PAGE-VISIBILITY&quot; uses URL <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a> links to <a href="https://w3c.github.io/payment-request/"><code>https://w3c.github.io/payment-request/</code></a> but related reference &quot;PAYMENTREQUEST&quot; uses URL <a href="https://w3c.github.io/browser-payment-api/"><code>https://w3c.github.io/browser-payment-api/</code></a></li>
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> links to <a href="https://www.w3.org/TR/2014/REC-html5-20141028/"><code>https://www.w3.org/TR/2014/REC-html5-20141028/</code></a> but related reference &quot;HTML5&quot; uses URL <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
@@ -462,7 +466,11 @@
   <li><a href="https://w3c.github.io/performance-timeline/"><code>https://w3c.github.io/performance-timeline/</code></a> but related reference &quot;PERFORMANCE-TIMELINE-2&quot; uses URL <a href="https://www.w3.org/TR/performance-timeline-2/"><code>https://www.w3.org/TR/performance-timeline-2/</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a> links to <a href="https://w3c.github.io/page-visibility/"><code>https://w3c.github.io/page-visibility/</code></a> but related reference &quot;PAGE-VISIBILITY-2&quot; uses URL <a href="https://www.w3.org/TR/page-visibility-2/"><code>https://www.w3.org/TR/page-visibility-2/</code></a></li>
-  <li><a href="https://w3c.github.io/web-animations/">Web Animations</a> links to <a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
+  <li><a href="https://w3c.github.io/web-animations/">Web Animations</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
+  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
@@ -487,7 +495,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but related reference &quot;CANVAS&quot; uses URL <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element"><code>https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element</code></a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> links to <a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   </ul>
-  <p>=&gt; 121 inconsistent references for links found in 52 specifications</p>
+  <p>=&gt; 123 inconsistent references for links found in 53 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
