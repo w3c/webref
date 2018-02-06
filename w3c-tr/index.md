@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% February 05, 2018
+% February 06, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -315,24 +315,6 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## ContentEditable {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (15 September 2017)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- No WebIDL definitions found
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Cooperative Scheduling of Background Tasks {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
@@ -454,6 +436,26 @@ Informative references to this spec from:
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/)
 
 
+## CSS Layout API Level 1 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://drafts.css-houdini.org/css-layout-api-1/) (12 January 2018)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Invalid WebIDL content found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## CSS Object Model (CSSOM) {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -486,6 +488,7 @@ Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
@@ -585,6 +588,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
@@ -672,6 +676,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
 
 No informative reference to this spec from other specs.
@@ -703,6 +708,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
@@ -754,25 +760,6 @@ Normative references to this spec from:
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2017/WD-webvtt1-20170808/)
-
-No informative reference to this spec from other specs.
-
-
-## CSS-TAG Houdini Editor Drafts {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://drafts.css-houdini.org/css-layout-api-1/) (Mon Feb 05 2018)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-- No WebIDL definitions found
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -1369,6 +1356,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
@@ -1495,6 +1483,7 @@ Normative references to this spec from:
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
@@ -1597,6 +1586,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
@@ -1652,6 +1642,31 @@ Informative references to this spec from:
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
+
+
+## https://w3c.github.io/editing/contentEditable.html {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
+    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-redefinedIdlNames=true data-inconsistentRef=true}
@@ -3429,6 +3444,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
@@ -3771,6 +3787,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
@@ -3896,7 +3913,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Feb 05 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Feb 06 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3917,7 +3934,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Feb 05 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Feb 06 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3974,6 +3991,7 @@ Normative references to this spec from:
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
@@ -4153,6 +4171,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
