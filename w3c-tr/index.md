@@ -1,42 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% February 06, 2018
-
-## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-image-capture-20170621/) (21 June 2017)
-- Editor's Draft: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
-- Latest published version: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
-- Repository: [GitHub w3c/mediacapture-image](https://github.com/w3c/mediacapture-image)
-- Shortname: image-capture
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `ImageBitmap`
-- Missing references for WebIDL names: 
-     * `MediaStreamTrack` defined in [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
-     * `MediaTrackSupportedConstraints` defined in [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
-     * `MediaTrackCapabilities` defined in [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
-     * `MediaTrackConstraintSet` defined in [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
-     * `ConstrainDOMString` defined in [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
-     * `ConstrainDouble` defined in [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
-     * `ConstrainBoolean` defined in [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
-     * `MediaTrackSettings` defined in [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-Informative references to this spec from:
-
-- [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
-
+% February 07, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
@@ -810,7 +774,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
-- [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180202/)
 
@@ -1065,7 +1029,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -1077,6 +1040,7 @@ Normative references to this spec from:
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -1348,7 +1312,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
@@ -1394,7 +1357,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180123/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
@@ -1478,7 +1441,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
@@ -1505,6 +1467,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180123/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
@@ -1582,7 +1545,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
@@ -1607,6 +1569,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180123/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
@@ -1695,6 +1658,32 @@ Normative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
 
 No informative reference to this spec from other specs.
+
+
+## image-capture {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/image-capture)
+- Latest published version: [https://www.w3.org/TR/image-capture](https://www.w3.org/TR/image-capture)
+- Repository: [GitHub w3c/mediacapture-image](https://github.com/w3c/mediacapture-image)
+- Shortname: image-capture
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Informative references to this spec from:
+
+- [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 
 
 ## Indexed Database API 2.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
@@ -1882,12 +1871,10 @@ Normative references to this spec from:
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 
 Informative references to this spec from:
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
@@ -2354,23 +2341,21 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Pointer Events - Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true}
+## Pointer Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/) (19 July 2016)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/) (Level 2)
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Latest published version: [http://www.w3.org/TR/pointerevents2/](http://www.w3.org/TR/pointerevents2/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
+- Latest published version: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
 - Shortname: pointerevents2
 
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `Navigator`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/)
+- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `Navigator`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2380,7 +2365,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 
 
 ## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2407,6 +2392,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 
 No informative reference to this spec from other specs.
 
@@ -3172,7 +3158,9 @@ Normative references to this spec from:
 
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 
 
 ## UI Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3204,7 +3192,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
@@ -3467,7 +3455,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180123/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Pointer Events - Level 2](http://www.w3.org/TR/2016/WD-pointerevents2-20160719/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -3783,7 +3771,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
@@ -3811,6 +3798,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180123/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
@@ -3859,11 +3847,11 @@ Informative references to this spec from:
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 
 
-## WebAssembly JavaScript Interface {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## WebAssembly JavaScript Interface {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (31 January 2018)
+- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (6 February 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3871,6 +3859,8 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
      * `Worklet` defined in [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3913,7 +3903,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Feb 06 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Feb 07 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3934,7 +3924,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Feb 06 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Feb 07 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3980,7 +3970,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
 - [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
@@ -4073,6 +4062,7 @@ Informative references to this spec from:
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180131/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)

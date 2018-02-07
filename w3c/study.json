@@ -2,17 +2,17 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-02-06T02:03:24.177Z",
+  "date": "2018-02-07T02:03:52.880Z",
   "stats": {
-    "crawled": 100,
-    "errors": 37,
-    "studied": 100
+    "crawled": 119,
+    "errors": 39,
+    "studied": 119
   },
   "results": [
     {
       "title": "Accelerometer",
       "shortname": "accelerometer",
-      "date": "1 February 2018",
+      "date": "4 February 2018",
       "url": "https://www.w3.org/TR/accelerometer/",
       "latest": "https://www.w3.org/TR/accelerometer/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-accelerometer-20171018/",
@@ -357,6 +357,67 @@
       }
     },
     {
+      "title": "Console Standard",
+      "date": "5 January 2018",
+      "url": "https://console.spec.whatwg.org/",
+      "crawled": "https://console.spec.whatwg.org/",
+      "repository": "https://github.com/whatwg/console",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://w3c.github.io/ServiceWorker/v1/",
+                "date": "13 January 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/workers/",
+                "title": "Web Workers",
+                "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
+                "date": "5 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "28 January 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "9 November 2017"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Content Security Policy Level 3",
       "shortname": "CSP3",
       "date": "15 January 2018",
@@ -401,6 +462,12 @@
               "title": "Credential Management Level 1",
               "crawled": "https://w3c.github.io/webappsec-credential-management/",
               "date": "14 November 2017"
+            },
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -474,10 +541,8 @@
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
           "AbortSignal",
-          "FormData",
           "HTMLFormElement",
           "Navigator",
-          "URLSearchParams",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -521,7 +586,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "31 January 2018"
+              "date": "6 February 2018"
             }
           ],
           "informative": [
@@ -579,7 +644,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "4 February 2018"
+              "date": "6 February 2018"
             }
           ]
         },
@@ -589,7 +654,7 @@
     {
       "title": "CSS Fonts Module Level 4",
       "shortname": "css-fonts-4",
-      "date": "4 February 2018",
+      "date": "6 February 2018",
       "url": "https://www.w3.org/TR/css-fonts-4/",
       "latest": "https://www.w3.org/TR/css-fonts-4/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/",
@@ -622,7 +687,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "4 February 2018"
+              "date": "6 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -665,6 +730,12 @@
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
               "date": "22 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "31 January 2018"
             }
           ],
           "informative": [
@@ -693,6 +764,30 @@
               "date": "29 January 2018"
             }
           ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "CSS Layout API Level 1",
+      "date": "12 January 2018",
+      "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+      "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": true,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css3-positioning/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
         },
         "ok": false
       }
@@ -739,7 +834,13 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "4 February 2018"
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "date": "12 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
@@ -794,6 +895,12 @@
               "title": "Web Animations",
               "crawled": "https://w3c.github.io/web-animations/",
               "date": "17 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "31 January 2018"
             }
           ],
           "informative": [
@@ -836,10 +943,20 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "WorkletGlobalScope"
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "9 November 2017"
+              }
+            ]
+          }
         ],
-        "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css-properties-values-api-1/"
@@ -847,7 +964,14 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
+            }
+          ]
         },
         "ok": false
       }
@@ -922,6 +1046,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "date": "12 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/cssom-view-1/",
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/",
@@ -990,7 +1120,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "4 February 2018"
+              "date": "6 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -1051,6 +1181,18 @@
               "title": "Web IDL",
               "crawled": "https://heycam.github.io/webidl/",
               "date": "19 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
             }
           ],
           "informative": []
@@ -1113,6 +1255,12 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "date": "12 January 2018"
+            },
             {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
@@ -1187,7 +1335,13 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "4 February 2018"
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "date": "12 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -1260,6 +1414,18 @@
               "title": "Web Animations",
               "crawled": "https://w3c.github.io/web-animations/",
               "date": "17 January 2018"
+            },
+            {
+              "url": "https://webassembly.github.io/spec/js-api/index.html",
+              "title": "WebAssembly JavaScript Interface",
+              "crawled": "https://webassembly.github.io/spec/js-api/index.html",
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "31 January 2018"
             }
           ],
           "informative": []
@@ -1306,6 +1472,12 @@
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
               "date": "22 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "31 January 2018"
             }
           ],
           "informative": [
@@ -1539,6 +1711,12 @@
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
               "date": "5 February 2018"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "12 January 2018"
             }
           ],
           "informative": [
@@ -1615,6 +1793,12 @@
               "date": "14 September 2017"
             },
             {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/",
@@ -1627,6 +1811,12 @@
               "date": "5 February 2018"
             },
             {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/dom41/",
               "title": "W3C DOM 4.1",
               "crawled": "https://w3c.github.io/dom/",
@@ -1636,7 +1826,25 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "31 January 2018"
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://webassembly.github.io/spec/js-api/index.html",
+              "title": "WebAssembly JavaScript Interface",
+              "crawled": "https://webassembly.github.io/spec/js-api/index.html",
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "12 January 2018"
             }
           ],
           "informative": []
@@ -1706,6 +1914,174 @@
       }
     },
     {
+      "title": "Fetch Standard",
+      "date": "31 January 2018",
+      "url": "https://fetch.spec.whatwg.org/",
+      "crawled": "https://fetch.spec.whatwg.org/",
+      "repository": "https://github.com/whatwg/fetch",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "AbortSignal",
+          "ReadableStream",
+          "Window",
+          "WindowOrWorkerGlobalScope"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://w3c.github.io/webappsec-csp/",
+              "date": "15 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/credential-management-1/",
+              "title": "Credential Management Level 1",
+              "crawled": "https://w3c.github.io/webappsec-credential-management/",
+              "date": "14 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/cssom-1/",
+              "title": "CSS Object Model (CSSOM)",
+              "crawled": "https://drafts.csswg.org/cssom/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-typed-om-1/",
+              "title": "CSS Typed OM Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
+              "date": "4 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.3",
+              "crawled": "https://w3c.github.io/html/",
+              "date": "5 February 2018"
+            },
+            {
+              "url": "https://wicg.github.io/mediasession/",
+              "title": "Media Session Standard",
+              "crawled": "https://wicg.github.io/mediasession/",
+              "date": "17 August 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
+              "date": "23 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/referrer-policy/",
+              "title": "Referrer Policy",
+              "crawled": "https://w3c.github.io/webappsec-referrer-policy/",
+              "date": "20 April 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://svgwg.org/svg2-draft/",
+              "date": "22 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/service-workers-1/",
+              "title": "Service Workers 1",
+              "crawled": "https://w3c.github.io/ServiceWorker/v1/",
+              "date": "13 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://w3c.github.io/dom/",
+              "date": "3 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webauthn/",
+              "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
+              "crawled": "https://w3c.github.io/webauthn/",
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "12 January 2018"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://streams.spec.whatwg.org/",
+              "title": "Streams Standard",
+              "crawled": "https://streams.spec.whatwg.org/",
+              "date": "31 January 2018"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "File and Directory Entries API",
+      "date": "29 January 2018",
+      "url": "https://wicg.github.io/entries-api/",
+      "crawled": "https://wicg.github.io/entries-api/",
+      "repository": "https://github.com/wicg/entries-api",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "DataTransferItem",
+          "HTMLInputElement"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FileAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "File API",
       "shortname": "FileAPI",
       "date": "31 January 2018",
@@ -1724,7 +2100,6 @@
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
           "EventHandler",
-          "URL",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -1738,6 +2113,18 @@
               "title": "Clipboard API and events",
               "crawled": "https://w3c.github.io/clipboard-apis/",
               "date": "25 January 2018"
+            },
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://wicg.github.io/entries-api/",
+              "title": "File and Directory Entries API",
+              "crawled": "https://wicg.github.io/entries-api/",
+              "date": "29 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -1770,10 +2157,34 @@
               "date": "16 October 2017"
             },
             {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://w3c.github.io/web-animations/",
               "date": "17 January 2018"
+            },
+            {
+              "url": "https://webassembly.github.io/spec/js-api/index.html",
+              "title": "WebAssembly JavaScript Interface",
+              "crawled": "https://webassembly.github.io/spec/js-api/index.html",
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "12 January 2018"
             }
           ],
           "informative": [
@@ -1782,6 +2193,54 @@
               "title": "Web Cryptography API",
               "crawled": "https://w3c.github.io/webcrypto/Overview.html",
               "date": "24 October 2016"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Fullscreen API Standard",
+      "date": "1 February 2018",
+      "url": "https://fullscreen.spec.whatwg.org/",
+      "crawled": "https://fullscreen.spec.whatwg.org/",
+      "repository": "https://github.com/whatwg/fullscreen",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "EventHandler"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/screen-orientation/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.3",
+              "crawled": "https://w3c.github.io/html/",
+              "date": "5 February 2018"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "18 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/WebIDL-1/",
+              "title": "Web IDL",
+              "crawled": "https://heycam.github.io/webidl/",
+              "date": "19 January 2018"
             }
           ]
         },
@@ -1857,7 +2316,7 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "1 February 2018"
+              "date": "4 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/ambient-light/",
@@ -2143,6 +2602,12 @@
               "title": "Web Animations",
               "crawled": "https://w3c.github.io/web-animations/",
               "date": "17 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
             }
           ],
           "informative": [
@@ -2317,7 +2782,13 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "4 February 2018"
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "date": "12 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -2368,10 +2839,28 @@
               "date": "14 September 2017"
             },
             {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://wicg.github.io/entries-api/",
+              "title": "File and Directory Entries API",
+              "crawled": "https://wicg.github.io/entries-api/",
+              "date": "29 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/",
               "date": "31 January 2018"
+            },
+            {
+              "url": "https://fullscreen.spec.whatwg.org/",
+              "title": "Fullscreen API Standard",
+              "crawled": "https://fullscreen.spec.whatwg.org/",
+              "date": "1 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -2420,6 +2909,12 @@
               "title": "Media Capture and Streams",
               "crawled": "https://w3c.github.io/mediacapture-main/",
               "date": "28 August 2017"
+            },
+            {
+              "url": "https://wicg.github.io/mediasession/",
+              "title": "Media Session Standard",
+              "crawled": "https://wicg.github.io/mediasession/",
+              "date": "17 August 2017"
             },
             {
               "url": "https://www.w3.org/TR/media-source/",
@@ -2482,10 +2977,28 @@
               "date": "13 January 2018"
             },
             {
+              "url": "https://storage.spec.whatwg.org/",
+              "title": "Storage Standard",
+              "crawled": "https://storage.spec.whatwg.org/",
+              "date": "9 January 2018"
+            },
+            {
+              "url": "https://streams.spec.whatwg.org/",
+              "title": "Streams Standard",
+              "crawled": "https://streams.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
               "date": "04 August 2016"
+            },
+            {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/dom41/",
@@ -2503,7 +3016,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "31 January 2018"
+              "date": "6 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -2528,6 +3041,48 @@
               "title": "Web Storage (Second Edition)",
               "crawled": "http://www.w3.org/TR/2016/REC-webstorage-20160419/",
               "date": "19 April 2016"
+            },
+            {
+              "url": "https://webassembly.github.io/spec/js-api/index.html",
+              "title": "WebAssembly JavaScript Interface",
+              "crawled": "https://webassembly.github.io/spec/js-api/index.html",
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+              "title": "WebGL 2.0 Specification",
+              "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+              "date": "Wed Feb 07 2018"
+            },
+            {
+              "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+              "title": "WebGL Specification",
+              "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+              "date": "Wed Feb 07 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "12 January 2018"
             }
           ],
           "informative": [
@@ -2590,6 +3145,12 @@
               "title": "Selectors Level 3",
               "crawled": "https://www.w3.org/TR/css3-selectors/",
               "date": "30 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
             }
           ]
         },
@@ -2702,6 +3263,12 @@
               "date": "29 January 2018"
             },
             {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "date": "12 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
@@ -2738,10 +3305,28 @@
               "date": "11 October 2017"
             },
             {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://wicg.github.io/entries-api/",
+              "title": "File and Directory Entries API",
+              "crawled": "https://wicg.github.io/entries-api/",
+              "date": "29 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/",
               "date": "31 January 2018"
+            },
+            {
+              "url": "https://fullscreen.spec.whatwg.org/",
+              "title": "Fullscreen API Standard",
+              "crawled": "https://fullscreen.spec.whatwg.org/",
+              "date": "1 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -2766,6 +3351,12 @@
               "title": "Indexed Database API 2.0",
               "crawled": "https://w3c.github.io/IndexedDB/",
               "date": "18 January 2018"
+            },
+            {
+              "url": "https://wicg.github.io/mediasession/",
+              "title": "Media Session Standard",
+              "crawled": "https://wicg.github.io/mediasession/",
+              "date": "17 August 2017"
             },
             {
               "url": "https://www.w3.org/TR/image-capture/",
@@ -2810,10 +3401,28 @@
               "date": "13 January 2018"
             },
             {
+              "url": "https://storage.spec.whatwg.org/",
+              "title": "Storage Standard",
+              "crawled": "https://storage.spec.whatwg.org/",
+              "date": "9 January 2018"
+            },
+            {
+              "url": "https://streams.spec.whatwg.org/",
+              "title": "Streams Standard",
+              "crawled": "https://streams.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
               "date": "04 August 2016"
+            },
+            {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/dom41/",
@@ -2831,13 +3440,43 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "31 January 2018"
+              "date": "6 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "Web IDL",
               "crawled": "https://heycam.github.io/webidl/",
               "date": "19 January 2018"
+            },
+            {
+              "url": "https://webassembly.github.io/spec/js-api/index.html",
+              "title": "WebAssembly JavaScript Interface",
+              "crawled": "https://webassembly.github.io/spec/js-api/index.html",
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+              "title": "WebGL Specification",
+              "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+              "date": "Wed Feb 07 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "12 January 2018"
             }
           ],
           "informative": [
@@ -2870,6 +3509,12 @@
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/",
               "date": "18 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
             }
           ]
         },
@@ -2964,6 +3609,12 @@
               "date": "29 January 2018"
             },
             {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "date": "12 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
@@ -3000,10 +3651,28 @@
               "date": "11 October 2017"
             },
             {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://wicg.github.io/entries-api/",
+              "title": "File and Directory Entries API",
+              "crawled": "https://wicg.github.io/entries-api/",
+              "date": "29 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/",
               "date": "31 January 2018"
+            },
+            {
+              "url": "https://fullscreen.spec.whatwg.org/",
+              "title": "Fullscreen API Standard",
+              "crawled": "https://fullscreen.spec.whatwg.org/",
+              "date": "1 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -3028,6 +3697,12 @@
               "title": "Indexed Database API 2.0",
               "crawled": "https://w3c.github.io/IndexedDB/",
               "date": "18 January 2018"
+            },
+            {
+              "url": "https://wicg.github.io/mediasession/",
+              "title": "Media Session Standard",
+              "crawled": "https://wicg.github.io/mediasession/",
+              "date": "17 August 2017"
             },
             {
               "url": "https://www.w3.org/TR/image-capture/",
@@ -3078,10 +3753,28 @@
               "date": "13 January 2018"
             },
             {
+              "url": "https://storage.spec.whatwg.org/",
+              "title": "Storage Standard",
+              "crawled": "https://storage.spec.whatwg.org/",
+              "date": "9 January 2018"
+            },
+            {
+              "url": "https://streams.spec.whatwg.org/",
+              "title": "Streams Standard",
+              "crawled": "https://streams.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
               "date": "04 August 2016"
+            },
+            {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/dom41/",
@@ -3099,13 +3792,43 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "31 January 2018"
+              "date": "6 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "Web IDL",
               "crawled": "https://heycam.github.io/webidl/",
               "date": "19 January 2018"
+            },
+            {
+              "url": "https://webassembly.github.io/spec/js-api/index.html",
+              "title": "WebAssembly JavaScript Interface",
+              "crawled": "https://webassembly.github.io/spec/js-api/index.html",
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "12 January 2018"
             }
           ],
           "informative": [
@@ -3150,8 +3873,73 @@
               "title": "W3C DOM 4.1",
               "crawled": "https://w3c.github.io/dom/",
               "date": "3 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
             }
           ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "https://w3c.github.io/editing/contentEditable.html",
+      "date": "",
+      "url": "https://w3c.github.io/editing/contentEditable.html",
+      "crawled": "https://w3c.github.io/editing/contentEditable.html",
+      "report": {
+        "error": "Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec\n    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)\n    at ontimeout (timers.js:386:14)\n    at tryOnTimeout (timers.js:250:5)\n    at Timer.listOnTimeout (timers.js:214:5)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Identifiers for WebRTC's Statistics API",
+      "shortname": "webrtc-stats",
+      "date": "",
+      "url": "https://www.w3.org/TR/webrtc-stats/",
+      "latest": "https://www.w3.org/TR/webrtc-stats/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180131/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/webrtc-stats/",
+      "crawled": "https://w3c.github.io/webrtc-stats/",
+      "repository": "https://github.com/w3c/webrtc-stats",
+      "report": {
+        "error": "Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec\n    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)\n    at ontimeout (timers.js:386:14)\n    at tryOnTimeout (timers.js:250:5)\n    at Timer.listOnTimeout (timers.js:214:5)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
+            }
+          ],
+          "informative": []
         },
         "ok": false
       }
@@ -3225,6 +4013,12 @@
               "title": "Web Cryptography API",
               "crawled": "https://w3c.github.io/webcrypto/Overview.html",
               "date": "24 October 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
             }
           ]
         },
@@ -3479,6 +4273,18 @@
               "title": "MediaStream Recording",
               "crawled": "https://w3c.github.io/mediacapture-record/",
               "date": "16 October 2017"
+            },
+            {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
             }
           ],
           "informative": [
@@ -3571,6 +4377,33 @@
       }
     },
     {
+      "title": "Media Session Standard",
+      "date": "17 August 2017",
+      "url": "https://wicg.github.io/mediasession/",
+      "crawled": "https://wicg.github.io/mediasession/",
+      "repository": "https://github.com/wicg/mediasession",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "Navigator",
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Media Source Extensions™",
       "shortname": "media-source",
       "date": "08 November 2016",
@@ -3594,7 +4427,6 @@
           "TextTrack",
           "TextTrackList",
           "TimeRanges",
-          "URL",
           "VideoTrack",
           "VideoTrackList"
         ],
@@ -3610,6 +4442,17 @@
                 "date": "3 February 2018"
               }
             ]
+          },
+          {
+            "name": "URL",
+            "refs": [
+              {
+                "url": "https://url.spec.whatwg.org/",
+                "title": "URL Standard",
+                "crawled": "https://url.spec.whatwg.org/",
+                "date": "10 January 2018"
+              }
+            ]
           }
         ],
         "missingLinkRef": [],
@@ -3621,6 +4464,12 @@
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
               "date": "5 February 2018"
+            },
+            {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
             }
           ],
           "informative": [
@@ -3839,10 +4688,16 @@
               "date": "14 September 2017"
             },
             {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "31 January 2018"
+              "date": "6 February 2018"
             }
           ],
           "informative": [
@@ -4007,7 +4862,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "31 January 2018"
+              "date": "6 February 2018"
             }
           ],
           "informative": []
@@ -4221,7 +5076,7 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "1 February 2018"
+              "date": "4 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/ambient-light/",
@@ -4258,6 +5113,12 @@
               "title": "Media Capture and Streams",
               "crawled": "https://w3c.github.io/mediacapture-main/",
               "date": "28 August 2017"
+            },
+            {
+              "url": "https://storage.spec.whatwg.org/",
+              "title": "Storage Standard",
+              "crawled": "https://storage.spec.whatwg.org/",
+              "date": "9 January 2018"
             }
           ],
           "informative": []
@@ -4266,12 +5127,12 @@
       }
     },
     {
-      "title": "Pointer Events - Level 2",
+      "title": "Pointer Events",
       "shortname": "pointerevents2",
       "date": "",
       "url": "https://www.w3.org/TR/pointerevents2/",
-      "latest": "http://www.w3.org/TR/pointerevents2/",
-      "datedUrl": "http://www.w3.org/TR/2016/WD-pointerevents2-20160719/",
+      "latest": "https://www.w3.org/TR/pointerevents2/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/pointerevents/",
       "crawled": "https://w3c.github.io/pointerevents/",
@@ -4419,7 +5280,30 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "ProgressEvent",
+            "refs": [
+              {
+                "url": "https://xhr.spec.whatwg.org/",
+                "title": "XMLHttpRequest Standard",
+                "crawled": "https://xhr.spec.whatwg.org/",
+                "date": "12 January 2018"
+              }
+            ]
+          },
+          {
+            "name": "ProgressEventInit",
+            "refs": [
+              {
+                "url": "https://xhr.spec.whatwg.org/",
+                "title": "XMLHttpRequest Standard",
+                "crawled": "https://xhr.spec.whatwg.org/",
+                "date": "12 January 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://xhr.spec.whatwg.org/",
@@ -4546,6 +5430,12 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
             {
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
@@ -4935,6 +5825,12 @@
               "date": "11 October 2017"
             },
             {
+              "url": "https://fullscreen.spec.whatwg.org/",
+              "title": "Fullscreen API Standard",
+              "crawled": "https://fullscreen.spec.whatwg.org/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
@@ -5110,7 +6006,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "31 January 2018"
+              "date": "6 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -5369,9 +6265,6 @@
         "unknownIdlNames": [
           "EventHandler",
           "Navigator",
-          "Request",
-          "RequestInfo",
-          "Response",
           "VisibilityState",
           "Window",
           "WindowOrWorkerGlobalScope"
@@ -5425,6 +6318,12 @@
               "date": "15 January 2018"
             },
             {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
@@ -5443,6 +6342,12 @@
               "title": "Secure Contexts",
               "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
               "date": "18 October 2017"
+            },
+            {
+              "url": "https://streams.spec.whatwg.org/",
+              "title": "Streams Standard",
+              "crawled": "https://streams.spec.whatwg.org/",
+              "date": "31 January 2018"
             }
           ]
         },
@@ -5486,6 +6391,102 @@
       }
     },
     {
+      "title": "Static Range",
+      "date": "14 December 2017",
+      "url": "https://w3c.github.io/staticrange/",
+      "crawled": "https://w3c.github.io/staticrange/",
+      "repository": "https://github.com/w3c/staticrange",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Storage Standard",
+      "date": "9 January 2018",
+      "url": "https://storage.spec.whatwg.org/",
+      "crawled": "https://storage.spec.whatwg.org/",
+      "repository": "https://github.com/whatwg/storage",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/permissions/",
+              "title": "Permissions",
+              "crawled": "https://w3c.github.io/permissions/",
+              "date": "22 December 2017"
+            }
+          ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Streams Standard",
+      "date": "31 January 2018",
+      "url": "https://streams.spec.whatwg.org/",
+      "crawled": "https://streams.spec.whatwg.org/",
+      "repository": "https://github.com/whatwg/streams",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
+            }
+          ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "The Screen Orientation API",
       "shortname": "screen-orientation",
       "date": "",
@@ -5513,7 +6514,7 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "1 February 2018"
+              "date": "4 February 2018"
             }
           ],
           "informative": []
@@ -5555,6 +6556,12 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/",
               "date": "15 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
             }
           ]
         },
@@ -5768,6 +6775,148 @@
       }
     },
     {
+      "title": "URL Standard",
+      "date": "10 January 2018",
+      "url": "https://url.spec.whatwg.org/",
+      "crawled": "https://url.spec.whatwg.org/",
+      "repository": "https://github.com/whatwg/url",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://w3c.github.io/webappsec-csp/",
+              "date": "15 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/credential-management-1/",
+              "title": "Credential Management Level 1",
+              "crawled": "https://w3c.github.io/webappsec-credential-management/",
+              "date": "14 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/cssom-1/",
+              "title": "CSS Object Model (CSSOM)",
+              "crawled": "https://drafts.csswg.org/cssom/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-values-3/",
+              "title": "CSS Values and Units Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-values/",
+              "date": "2 February 2018"
+            },
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.3",
+              "crawled": "https://w3c.github.io/html/",
+              "date": "5 February 2018"
+            },
+            {
+              "url": "https://wicg.github.io/mediasession/",
+              "title": "Media Session Standard",
+              "crawled": "https://wicg.github.io/mediasession/",
+              "date": "17 August 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
+              "date": "23 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/referrer-policy/",
+              "title": "Referrer Policy",
+              "crawled": "https://w3c.github.io/webappsec-referrer-policy/",
+              "date": "20 April 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "18 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/service-workers-1/",
+              "title": "Service Workers 1",
+              "crawled": "https://w3c.github.io/ServiceWorker/v1/",
+              "date": "13 January 2018"
+            },
+            {
+              "url": "https://storage.spec.whatwg.org/",
+              "title": "Storage Standard",
+              "crawled": "https://storage.spec.whatwg.org/",
+              "date": "9 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://w3c.github.io/dom/",
+              "date": "3 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webauthn/",
+              "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
+              "crawled": "https://w3c.github.io/webauthn/",
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://webassembly.github.io/spec/js-api/index.html",
+              "title": "WebAssembly JavaScript Interface",
+              "crawled": "https://webassembly.github.io/spec/js-api/index.html",
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "12 January 2018"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/encoding/",
+              "title": "Encoding Standard",
+              "crawled": "https://encoding.spec.whatwg.org/",
+              "date": "8 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/WebIDL-1/",
+              "title": "Web IDL",
+              "crawled": "https://heycam.github.io/webidl/",
+              "date": "19 January 2018"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "User Interface Security and the Visibility API",
       "shortname": "UISecurity",
       "date": "3 June 2016",
@@ -5970,6 +7119,12 @@
               "date": "29 January 2018"
             },
             {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "date": "12 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
@@ -6018,10 +7173,22 @@
               "date": "14 September 2017"
             },
             {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/",
               "date": "31 January 2018"
+            },
+            {
+              "url": "https://fullscreen.spec.whatwg.org/",
+              "title": "Fullscreen API Standard",
+              "crawled": "https://fullscreen.spec.whatwg.org/",
+              "date": "1 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -6114,10 +7281,28 @@
               "date": "13 January 2018"
             },
             {
+              "url": "https://w3c.github.io/staticrange/",
+              "title": "Static Range",
+              "crawled": "https://w3c.github.io/staticrange/",
+              "date": "14 December 2017"
+            },
+            {
+              "url": "https://storage.spec.whatwg.org/",
+              "title": "Storage Standard",
+              "crawled": "https://storage.spec.whatwg.org/",
+              "date": "9 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
               "date": "04 August 2016"
+            },
+            {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/UISecurity/",
@@ -6141,7 +7326,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "31 January 2018"
+              "date": "6 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -6160,6 +7345,24 @@
               "title": "Web Storage (Second Edition)",
               "crawled": "http://www.w3.org/TR/2016/REC-webstorage-20160419/",
               "date": "19 April 2016"
+            },
+            {
+              "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+              "title": "WebGL Specification",
+              "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+              "date": "Wed Feb 07 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "12 January 2018"
             }
           ],
           "informative": [
@@ -6287,7 +7490,14 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/mediasession/",
+              "title": "Media Session Standard",
+              "crawled": "https://wicg.github.io/mediasession/",
+              "date": "17 August 2017"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -6330,6 +7540,12 @@
               "title": "Media Capture and Streams",
               "crawled": "https://w3c.github.io/mediacapture-main/",
               "date": "28 August 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
             }
           ]
         },
@@ -6339,7 +7555,7 @@
     {
       "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
       "shortname": "webauthn",
-      "date": "31 January 2018",
+      "date": "6 February 2018",
       "url": "https://www.w3.org/TR/webauthn/",
       "latest": "https://www.w3.org/TR/webauthn/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-webauthn-20171205/",
@@ -6453,7 +7669,14 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -6503,7 +7726,7 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "1 February 2018"
+              "date": "4 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/ambient-light/",
@@ -6516,6 +7739,12 @@
               "title": "Clipboard API and events",
               "crawled": "https://w3c.github.io/clipboard-apis/",
               "date": "25 January 2018"
+            },
+            {
+              "url": "https://console.spec.whatwg.org/",
+              "title": "Console Standard",
+              "crawled": "https://console.spec.whatwg.org/",
+              "date": "5 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -6534,6 +7763,12 @@
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/",
               "date": "29 January 2018"
+            },
+            {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "date": "12 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -6590,10 +7825,28 @@
               "date": "14 September 2017"
             },
             {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://wicg.github.io/entries-api/",
+              "title": "File and Directory Entries API",
+              "crawled": "https://wicg.github.io/entries-api/",
+              "date": "29 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/",
               "date": "31 January 2018"
+            },
+            {
+              "url": "https://fullscreen.spec.whatwg.org/",
+              "title": "Fullscreen API Standard",
+              "crawled": "https://fullscreen.spec.whatwg.org/",
+              "date": "1 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -6656,6 +7909,12 @@
               "date": "28 August 2017"
             },
             {
+              "url": "https://wicg.github.io/mediasession/",
+              "title": "Media Session Standard",
+              "crawled": "https://wicg.github.io/mediasession/",
+              "date": "17 August 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/media-source/",
               "title": "Media Source Extensions™",
               "crawled": "https://w3c.github.io/media-source/",
@@ -6716,10 +7975,28 @@
               "date": "13 January 2018"
             },
             {
+              "url": "https://w3c.github.io/staticrange/",
+              "title": "Static Range",
+              "crawled": "https://w3c.github.io/staticrange/",
+              "date": "14 December 2017"
+            },
+            {
+              "url": "https://storage.spec.whatwg.org/",
+              "title": "Storage Standard",
+              "crawled": "https://storage.spec.whatwg.org/",
+              "date": "9 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/websockets/",
               "title": "The WebSocket API",
               "crawled": "https://www.w3.org/TR/websockets/",
               "date": "20 September 2012"
+            },
+            {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/UISecurity/",
@@ -6743,7 +8020,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "31 January 2018"
+              "date": "6 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -6756,6 +8033,48 @@
               "title": "Web Storage (Second Edition)",
               "crawled": "http://www.w3.org/TR/2016/REC-webstorage-20160419/",
               "date": "19 April 2016"
+            },
+            {
+              "url": "https://webassembly.github.io/spec/js-api/index.html",
+              "title": "WebAssembly JavaScript Interface",
+              "crawled": "https://webassembly.github.io/spec/js-api/index.html",
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+              "title": "WebGL 2.0 Specification",
+              "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+              "date": "Wed Feb 07 2018"
+            },
+            {
+              "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+              "title": "WebGL Specification",
+              "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+              "date": "Wed Feb 07 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "12 January 2018"
             }
           ],
           "informative": [
@@ -6764,6 +8083,12 @@
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
               "date": "04 August 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
             }
           ]
         },
@@ -6903,7 +8228,6 @@
         "unknownIdlNames": [
           "EventHandler",
           "OnErrorEventHandler",
-          "RequestCredentials",
           "Window"
         ],
         "redefinedIdlNames": [
@@ -6928,6 +8252,17 @@
                 "title": "W3C DOM 4.1",
                 "crawled": "https://w3c.github.io/dom/",
                 "date": "3 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "RequestCredentials",
+            "refs": [
+              {
+                "url": "https://fetch.spec.whatwg.org/",
+                "title": "Fetch Standard",
+                "crawled": "https://fetch.spec.whatwg.org/",
+                "date": "31 January 2018"
               }
             ]
           },
@@ -6989,6 +8324,12 @@
               "date": "29 January 2018"
             },
             {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "date": "12 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
@@ -7025,10 +8366,28 @@
               "date": "11 October 2017"
             },
             {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://wicg.github.io/entries-api/",
+              "title": "File and Directory Entries API",
+              "crawled": "https://wicg.github.io/entries-api/",
+              "date": "29 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/",
               "date": "31 January 2018"
+            },
+            {
+              "url": "https://fullscreen.spec.whatwg.org/",
+              "title": "Fullscreen API Standard",
+              "crawled": "https://fullscreen.spec.whatwg.org/",
+              "date": "1 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -7059,6 +8418,12 @@
               "title": "Indexed Database API 2.0",
               "crawled": "https://w3c.github.io/IndexedDB/",
               "date": "18 January 2018"
+            },
+            {
+              "url": "https://wicg.github.io/mediasession/",
+              "title": "Media Session Standard",
+              "crawled": "https://wicg.github.io/mediasession/",
+              "date": "17 August 2017"
             },
             {
               "url": "https://www.w3.org/TR/image-capture/",
@@ -7109,10 +8474,28 @@
               "date": "13 January 2018"
             },
             {
+              "url": "https://storage.spec.whatwg.org/",
+              "title": "Storage Standard",
+              "crawled": "https://storage.spec.whatwg.org/",
+              "date": "9 January 2018"
+            },
+            {
+              "url": "https://streams.spec.whatwg.org/",
+              "title": "Streams Standard",
+              "crawled": "https://streams.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
               "date": "04 August 2016"
+            },
+            {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/dom41/",
@@ -7130,13 +8513,43 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "31 January 2018"
+              "date": "6 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "Web IDL",
               "crawled": "https://heycam.github.io/webidl/",
               "date": "19 January 2018"
+            },
+            {
+              "url": "https://webassembly.github.io/spec/js-api/index.html",
+              "title": "WebAssembly JavaScript Interface",
+              "crawled": "https://webassembly.github.io/spec/js-api/index.html",
+              "date": "6 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "12 January 2018"
             }
           ],
           "informative": [
@@ -7181,8 +8594,65 @@
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/",
               "date": "18 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://w3c.github.io/webrtc-pc/",
+              "date": "05 February 2018"
             }
           ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "WebAssembly JavaScript Interface",
+      "date": "6 February 2018",
+      "url": "https://webassembly.github.io/spec/js-api/index.html",
+      "crawled": "https://webassembly.github.io/spec/js-api/index.html",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "28 January 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "9 November 2017"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FileAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
         },
         "ok": false
       }
@@ -7219,6 +8689,385 @@
             }
           ],
           "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "WebGL 2.0 Specification",
+      "date": "Wed Feb 07 2018",
+      "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+      "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.3",
+              "crawled": "https://w3c.github.io/html/",
+              "date": "5 February 2018"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/WebIDL-1/",
+              "title": "Web IDL",
+              "crawled": "https://heycam.github.io/webidl/",
+              "date": "19 January 2018"
+            }
+          ]
+        },
+        "ok": true
+      }
+    },
+    {
+      "title": "WebGL Specification",
+      "date": "Wed Feb 07 2018",
+      "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+      "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "HTMLCanvasElement",
+          "HTMLImageElement",
+          "HTMLVideoElement",
+          "ImageBitmap"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://html.spec.whatwg.org/",
+            "ref": {
+              "name": "CANVAS",
+              "url": "https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.3",
+              "crawled": "https://w3c.github.io/html/",
+              "date": "5 February 2018"
+            },
+            {
+              "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+              "title": "WebGL 2.0 Specification",
+              "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+              "date": "Wed Feb 07 2018"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/WebIDL-1/",
+              "title": "Web IDL",
+              "crawled": "https://heycam.github.io/webidl/",
+              "date": "19 January 2018"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+      "shortname": "webrtc",
+      "date": "05 February 2018",
+      "url": "https://www.w3.org/TR/webrtc/",
+      "latest": "https://www.w3.org/TR/webrtc/",
+      "datedUrl": "https://www.w3.org/TR/2017/CR-webrtc-20171102/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://w3c.github.io/webrtc-pc/",
+      "crawled": "https://w3c.github.io/webrtc-pc/",
+      "repository": "https://github.com/w3c/webrtc-pc",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "EventHandler",
+          "RTCError",
+          "RTCStatsType",
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://w3c.github.io/dom/",
+                "date": "3 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Event",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://w3c.github.io/dom/",
+                "date": "3 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "EventInit",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://w3c.github.io/dom/",
+                "date": "3 February 2018"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/html52/",
+            "ref": {
+              "name": "HTML51",
+              "url": "https://www.w3.org/TR/html51/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/",
+              "date": "28 August 2017"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "WebVTT: The Web Video Text Tracks Format",
+      "shortname": "webvtt1",
+      "date": "31 January 2018",
+      "url": "https://www.w3.org/TR/webvtt1/",
+      "latest": "https://www.w3.org/TR/webvtt1/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-webvtt1-20170808/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/webvtt/",
+      "crawled": "https://w3c.github.io/webvtt/",
+      "repository": "https://github.com/w3c/webvtt",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "TextTrackCue",
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://encoding.spec.whatwg.org/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.3",
+              "crawled": "https://w3c.github.io/html/",
+              "date": "5 February 2018"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Worklets Level 1",
+      "shortname": "worklets-1",
+      "date": "9 November 2017",
+      "url": "https://www.w3.org/TR/worklets-1/",
+      "latest": "http://www.w3.org/TR/worklets-1/",
+      "datedUrl": "http://www.w3.org/TR/2016/WD-worklets-1-20160607/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://drafts.css-houdini.org/worklets/",
+      "crawled": "https://drafts.css-houdini.org/worklets/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "28 January 2018"
+              }
+            ]
+          }
+        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/webappsec-csp/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://w3c.github.io/webappsec-csp/",
+              "date": "15 January 2018"
+            },
+            {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "date": "12 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+              "date": "28 January 2018"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/WebIDL-1/",
+              "title": "Web IDL",
+              "crawled": "https://heycam.github.io/webidl/",
+              "date": "19 January 2018"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "XMLHttpRequest Standard",
+      "date": "12 January 2018",
+      "url": "https://xhr.spec.whatwg.org/",
+      "crawled": "https://xhr.spec.whatwg.org/",
+      "repository": "https://github.com/whatwg/xhr",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "EventHandler",
+          "HTMLFormElement",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "ProgressEvent",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/progress-events/",
+                "title": "Progress Events",
+                "crawled": "http://www.w3.org/TR/2014/REC-progress-events-20140211/",
+                "date": "11 February 2014"
+              }
+            ]
+          },
+          {
+            "name": "ProgressEventInit",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/progress-events/",
+                "title": "Progress Events",
+                "crawled": "http://www.w3.org/TR/2014/REC-progress-events-20140211/",
+                "date": "11 February 2014"
+              }
+            ]
+          }
+        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/credential-management-1/",
+              "title": "Credential Management Level 1",
+              "crawled": "https://w3c.github.io/webappsec-credential-management/",
+              "date": "14 November 2017"
+            },
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.3",
+              "crawled": "https://w3c.github.io/html/",
+              "date": "5 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
+              "date": "23 October 2017"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://w3c.github.io/webappsec-csp/",
+              "date": "15 January 2018"
+            }
+          ]
         },
         "ok": false
       }
