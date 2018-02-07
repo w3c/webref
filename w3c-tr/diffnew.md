@@ -1,29 +1,31 @@
-% Diff between report from "February 06, 2018" and reference report from "February 05, 2018"
+% Diff between report from "February 07, 2018" and reference report from "February 06, 2018"
 % Reffy
-% February 06, 2018
+% February 07, 2018
 
-## CSS Layout API Level 1
+## image-capture
 
-- URL: [https://drafts.css-houdini.org/css-layout-api-1/](https://drafts.css-houdini.org/css-layout-api-1/)
-- Crawled version: [Initial URL](https://drafts.css-houdini.org/css-layout-api-1/)
-- Spec title: *INS* CSS Layout API Level 1 / *DEL* CSS-TAG Houdini Editor Drafts
-- No normative references found: *INS* false / *DEL* true
-- No WebIDL definitions found: *INS* false / *DEL* true
-- Invalid WebIDL content found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-- Missing references for links: *INS* https://www.w3.org/TR/css3-positioning/
+- URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/image-capture)
+- Repository: [GitHub w3c/mediacapture-image](https://github.com/w3c/mediacapture-image)
+- Spec title: *INS* image-capture / *DEL* "MediaStream Image Capture"
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
 
 
-## https://w3c.github.io/editing/contentEditable.html
+## Pointer Events
 
-- URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
-- Spec title: *INS* https://w3c.github.io/editing/contentEditable.html / *DEL* ContentEditable
-- Spec could not be rendered: *INS* Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
-    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
-    at ontimeout (timers.js:386:14)
-    at tryOnTimeout (timers.js:250:5)
-    at Timer.listOnTimeout (timers.js:214:5)
+- URL: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
+- Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
+- Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
+- Spec title: *INS* Pointer Events / *DEL* Pointer Events - Level 2
+- Unknown WebIDL names used: *INS* Window
+
+
+## WebAssembly JavaScript Interface
+
+- URL: [https://webassembly.github.io/spec/js-api/index.html](https://webassembly.github.io/spec/js-api/index.html)
+- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html)
+- Inconsistent references for links: *INS* https://w3c.github.io/FileAPI/
 
 
