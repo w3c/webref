@@ -1,29 +1,6 @@
-% Diff between report from "March 02, 2018" and reference report from "February 07, 2018"
+% Diff between report from "March 02, 2018" and reference report from "March 02, 2018"
 % Reffy
 % March 02, 2018
-
-## "MediaStream Image Capture"
-
-- URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
-- Editor's Draft: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
-- Repository: [GitHub w3c/mediacapture-image](https://github.com/w3c/mediacapture-image)
-- Spec title: *INS* "MediaStream Image Capture" / *DEL* image-capture
-- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-
-
-## ContentEditable
-
-- URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
-- Spec title: *INS* ContentEditable / *DEL* https://w3c.github.io/editing/contentEditable.html
-- Spec could not be rendered: *DEL* Error: .wait() timed out after 30000msec Error: .wait() timed out after 30000msec
-    at Timeout._onTimeout (/home/dom/github.com/reffy/node_modules/nightmare/lib/actions.js:453:10)
-    at ontimeout (timers.js:386:14)
-    at tryOnTimeout (timers.js:250:5)
-    at Timer.listOnTimeout (timers.js:214:5)
-
 
 ## CSS Object Model (CSSOM)
 
@@ -31,17 +8,18 @@
 - Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - Editor's Draft: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/css-pseudo-4/
-- Inconsistent references for links: *DEL* https://www.w3.org/TR/css-pseudo-4/
+- Missing references for links: *DEL* https://www.w3.org/TR/css-pseudo-4/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css-pseudo-4/
 
 
-## css-pseudo-4
+## CSS Pseudo-Elements Module Level 4
 
 - URL: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-pseudo-4)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
+- Editor's Draft: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec title: *INS* css-pseudo-4 / *DEL* CSS Pseudo-Elements Module Level 4
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+- Spec title: *INS* CSS Pseudo-Elements Module Level 4 / *DEL* css-pseudo-4
+- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
     at <anonymous>
 
@@ -52,9 +30,9 @@
 - Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - Editor's Draft: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Unknown WebIDL names used: *INS* CSSPseudoElement
-- Missing references for links: *INS* https://www.w3.org/TR/css-pseudo-4/
-- Inconsistent references for links: *DEL* https://www.w3.org/TR/css-pseudo-4/
+- Unknown WebIDL names used: *DEL* CSSPseudoElement
+- Missing references for links: *DEL* https://www.w3.org/TR/css-pseudo-4/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css-pseudo-4/
 
 
 ## Fetch Standard
@@ -62,16 +40,35 @@
 - URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled version: [Living Standard](https://fetch.spec.whatwg.org/)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
-- Missing references for links: *INS* https://w3c.github.io/ServiceWorker/
+- Missing references for links: *DEL* https://w3c.github.io/ServiceWorker/
 
 
-## Identifiers for WebRTC's Statistics API
+## https://w3c.github.io/editing/contentEditable.html
 
-- URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-webrtc-stats-20180227/)
-- Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
-- Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
-- Unknown WebIDL names used: *INS* RTCRTPStreamStats
+- URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
+- Spec title: *INS* https://w3c.github.io/editing/contentEditable.html / *DEL* ContentEditable
+- Spec could not be rendered: *INS* Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
 
 
 ## Payment Handler API
@@ -80,17 +77,7 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
-- Unknown WebIDL names used: *INS* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration, WindowClient
-
-
-## Pointer Lock 2.0
-
-- URL: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
-- Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
-- Repository: [GitHub w3c/pointerlock](https://github.com/w3c/pointerlock)
-- Missing references for links: *DEL* https://html.spec.whatwg.org/
-- Inconsistent references for links: *DEL* https://dom.spec.whatwg.org/
+- Unknown WebIDL names used: *DEL* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration, WindowClient
 
 
 ## Push API
@@ -99,34 +86,20 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-push-api-20171215/)
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
 - Repository: [GitHub w3c/push-api](https://github.com/w3c/push-api)
-- Unknown WebIDL names used: *INS* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration
-- Missing references for WebIDL names: *INS* Worker
+- Unknown WebIDL names used: *DEL* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration
+- Missing references for WebIDL names: *DEL* Worker
 
 
-## service-workers-1
+## Service Workers 1
 
 - URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/service-workers-1)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
+- Editor's Draft: [https://w3c.github.io/ServiceWorker/v1/](https://w3c.github.io/ServiceWorker/v1/)
 - Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
-- Spec title: *INS* service-workers-1 / *DEL* Service Workers 1
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+- Spec title: *INS* Service Workers 1 / *DEL* service-workers-1
+- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
     at <anonymous>
-
-
-## Shadow DOM
-
-- URL: [https://www.w3.org/TR/shadow-dom/](https://www.w3.org/TR/shadow-dom/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/NOTE-shadow-dom-20180301/)
-- Editor's Draft: [https://w3c.github.io/webcomponents/spec/shadow/](https://w3c.github.io/webcomponents/spec/shadow/)
-- Repository: [GitHub w3c/webcomponents](https://github.com/w3c/webcomponents)
-- No normative references found: *INS* true / *DEL* false
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Unknown WebIDL names used: *DEL* Window
-- WebIDL names also defined elsewhere: *DEL* ShadowRoot, ShadowRootMode
-- Missing references for WebIDL names: *DEL* DocumentOrShadowRoot, Selection, Element, CaretPosition, StyleSheetList, DocumentFragment
-- Missing references for links: *INS* https://www.w3.org/TR/dom41/, https://www.w3.org/TR/css-scoping-1/, https://www.w3.org/TR/uievents/ / *DEL* https://www.w3.org/TR/css3-ui/, https://www.w3.org/TR/cssom/
-- Inconsistent references for links: *DEL* https://w3c.github.io/uievents/
 
 
 ## Streams Standard
@@ -134,26 +107,7 @@
 - URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled version: [Living Standard](https://streams.spec.whatwg.org/)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
-- Missing references for links: *INS* https://w3c.github.io/ServiceWorker/
-
-
-## User Timing Level 2
-
-- URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-user-timing-2-20180222/)
-- Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
-- Repository: [GitHub w3c/user-timing](https://github.com/w3c/user-timing)
-- Missing references for links: *DEL* https://w3c.github.io/html/webappapis.html
-- Inconsistent references for links: *DEL* https://w3c.github.io/navigation-timing/, https://w3c.github.io/hr-time/, https://w3c.github.io/performance-timeline/
-
-
-## W3C DOM 4.1
-
-- URL: [https://www.w3.org/TR/dom41/](https://www.w3.org/TR/dom41/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- Editor's Draft: [https://w3c.github.io/dom/](https://w3c.github.io/dom/)
-- Repository: [GitHub w3c/dom](https://github.com/w3c/dom)
-- WebIDL names also defined elsewhere: *DEL* ShadowRoot, ShadowRootMode
+- Missing references for links: *DEL* https://w3c.github.io/ServiceWorker/
 
 
 ## Web App Manifest
@@ -162,9 +116,7 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
-- Unknown WebIDL names used: *INS* ServiceWorkerUpdateViaCache, WorkerType / *DEL* PromptResponseObject
-- WebIDL names also defined elsewhere: *DEL* ServiceWorkerRegistration
-- Inconsistent references for links: *DEL* https://w3c.github.io/screen-orientation/, https://w3c.github.io/webappsec-csp/, https://w3c.github.io/webappsec-secure-contexts/
+- Unknown WebIDL names used: *DEL* ServiceWorkerUpdateViaCache
 
 
 ## Web Workers
@@ -173,14 +125,6 @@
 - Crawled version: [Latest published version](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/workers.html](https://html.spec.whatwg.org/multipage/workers.html)
 - Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
-- WebIDL names also defined elsewhere: *DEL* Worker
-
-
-## WebAssembly JavaScript Interface
-
-- URL: [https://webassembly.github.io/spec/js-api/index.html](https://webassembly.github.io/spec/js-api/index.html)
-- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html)
-- Missing references for links: *INS* https://www.w3.org/TR/wasm-core/, https://www.w3.org/TR/wasm-js-api/, https://www.w3.org/TR/wasm-web-api/
-- Inconsistent references for links: *DEL* https://w3c.github.io/FileAPI/
+- WebIDL names also defined elsewhere: *INS* Worker
 
 

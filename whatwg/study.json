@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-03-02T02:08:50.745Z",
+  "date": "2018-03-02T08:53:30.889Z",
   "stats": {
     "crawled": 110,
-    "errors": 1,
+    "errors": 39,
     "studied": 110
   },
   "results": [
@@ -130,7 +130,7 @@
     {
       "title": "Audio Output Devices API",
       "shortname": "audio-output",
-      "date": "23 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/audio-output/",
       "latest": "https://www.w3.org/TR/audio-output/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
@@ -139,11 +139,11 @@
       "crawled": "https://w3c.github.io/mediacapture-output/",
       "repository": "https://github.com/w3c/mediacapture-output",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -160,13 +160,42 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
+      }
+    },
+    {
+      "title": "Basic Card Payment",
+      "shortname": "payment-method-basic-card",
+      "date": "",
+      "url": "https://www.w3.org/TR/payment-method-basic-card/",
+      "latest": "https://www.w3.org/TR/payment-method-basic-card/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/payment-method-basic-card/",
+      "crawled": "https://w3c.github.io/payment-method-basic-card/",
+      "repository": "https://github.com/w3c/payment-method-basic-card",
+      "report": {
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
       }
     },
     {
       "title": "Battery Status API",
       "shortname": "battery-status",
-      "date": "23 October 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/battery-status/",
       "latest": "http://www.w3.org/TR/battery-status/",
       "datedUrl": "http://www.w3.org/TR/2016/CR-battery-status-20160707/",
@@ -175,26 +204,14 @@
       "crawled": "https://w3c.github.io/battery/",
       "repository": "https://github.com/w3c/battery",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "EventTarget",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/",
-                "date": "25 February 2018"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -204,7 +221,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             }
           ]
         },
@@ -214,7 +231,7 @@
     {
       "title": "Beacon",
       "shortname": "beacon",
-      "date": "02 October 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/beacon/",
       "latest": "https://www.w3.org/TR/beacon/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-beacon-20170413/",
@@ -223,25 +240,18 @@
       "crawled": "https://w3c.github.io/beacon/",
       "repository": "https://github.com/w3c/beacon",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
-            }
-          ],
+          "normative": [],
           "informative": [
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -251,7 +261,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -402,7 +412,7 @@
                 "url": "https://html.spec.whatwg.org/",
                 "title": "HTML Standard",
                 "crawled": "https://html.spec.whatwg.org/",
-                "date": "27 February 2018"
+                "date": "2 March 2018"
               },
               {
                 "url": "https://www.w3.org/TR/service-workers-1/",
@@ -420,12 +430,6 @@
                 "title": "CSS Painting API Level 1",
                 "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
                 "date": "28 January 2018"
-              },
-              {
-                "url": "https://www.w3.org/TR/webaudio/",
-                "title": "Web Audio API",
-                "crawled": "https://webaudio.github.io/web-audio-api/",
-                "date": "26 February 2018"
               },
               {
                 "url": "https://www.w3.org/TR/worklets-1/",
@@ -501,7 +505,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -510,22 +514,10 @@
               "date": "23 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/preload/",
-              "title": "Preload",
-              "crawled": "https://w3c.github.io/preload/",
-              "date": "09 January 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
               "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
             }
           ],
           "informative": []
@@ -534,16 +526,22 @@
       }
     },
     {
-      "title": "ContentEditable",
-      "date": "15 September 2017",
-      "url": "https://w3c.github.io/editing/contentEditable.html",
-      "crawled": "https://w3c.github.io/editing/contentEditable.html",
+      "title": "Cooperative Scheduling of Background Tasks",
+      "shortname": "requestidlecallback",
+      "date": "",
+      "url": "https://www.w3.org/TR/requestidlecallback/",
+      "latest": "https://www.w3.org/TR/requestidlecallback/",
+      "datedUrl": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
+      "datedStatus": "Proposed Recommendation",
+      "edDraft": "https://w3c.github.io/requestidlecallback/",
+      "crawled": "https://w3c.github.io/requestidlecallback/",
+      "repository": "https://github.com/w3c/requestidlecallback",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -554,35 +552,6 @@
           "informative": []
         },
         "ok": false
-      }
-    },
-    {
-      "title": "Cooperative Scheduling of Background Tasks",
-      "shortname": "requestidlecallback",
-      "date": "30 October 2017",
-      "url": "https://www.w3.org/TR/requestidlecallback/",
-      "latest": "https://www.w3.org/TR/requestidlecallback/",
-      "datedUrl": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
-      "datedStatus": "Proposed Recommendation",
-      "edDraft": "https://w3c.github.io/requestidlecallback/",
-      "crawled": "https://w3c.github.io/requestidlecallback/",
-      "repository": "https://github.com/w3c/requestidlecallback",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "ok": true
       }
     },
     {
@@ -694,7 +663,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             }
           ],
           "informative": [
@@ -926,7 +895,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/referrer-policy/",
@@ -992,12 +961,6 @@
           {
             "name": "Worklet",
             "refs": [
-              {
-                "url": "https://www.w3.org/TR/webaudio/",
-                "title": "Web Audio API",
-                "crawled": "https://webaudio.github.io/web-audio-api/",
-                "date": "26 February 2018"
-              },
               {
                 "url": "https://www.w3.org/TR/worklets-1/",
                 "title": "Worklets Level 1",
@@ -1217,7 +1180,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -1226,22 +1189,10 @@
               "date": "4 December 2017"
             },
             {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
               "date": "04 August 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -1295,7 +1246,7 @@
                 "url": "https://html.spec.whatwg.org/",
                 "title": "HTML Standard",
                 "crawled": "https://html.spec.whatwg.org/",
-                "date": "27 February 2018"
+                "date": "2 March 2018"
               },
               {
                 "url": "https://www.w3.org/TR/service-workers-1/",
@@ -1461,7 +1412,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -1474,12 +1425,6 @@
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
               "date": "14 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/touch-events/",
-              "title": "Touch Events - Level 2",
-              "crawled": "https://w3c.github.io/touch-events/",
-              "date": "23 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -1627,19 +1572,13 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
               "title": "Intersection Observer",
               "crawled": "https://w3c.github.io/IntersectionObserver/",
               "date": "4 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/screen-orientation/",
-              "title": "The Screen Orientation API",
-              "crawled": "https://w3c.github.io/screen-orientation/",
-              "date": "05 November 2017"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -1666,18 +1605,6 @@
               "title": "Geometry Interfaces Module Level 1",
               "crawled": "https://drafts.fxtf.org/geometry/",
               "date": "27 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://w3c.github.io/pointerevents/",
-              "date": "Level 2"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
             }
           ]
         },
@@ -1731,12 +1658,6 @@
               "date": "1 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/screen-orientation/",
-              "title": "The Screen Orientation API",
-              "crawled": "https://w3c.github.io/screen-orientation/",
-              "date": "05 November 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "Web IDL",
               "crawled": "https://heycam.github.io/webidl/",
@@ -1750,7 +1671,7 @@
     {
       "title": "DOM Parsing and Serialization",
       "shortname": "DOM-Parsing",
-      "date": "and similar APIs",
+      "date": "",
       "url": "https://www.w3.org/TR/DOM-Parsing/",
       "latest": "http://www.w3.org/TR/DOM-Parsing/",
       "datedUrl": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
@@ -1759,31 +1680,23 @@
       "crawled": "https://w3c.github.io/DOM-Parsing/",
       "repository": "https://github.com/w3c/DOM-Parsing",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/dom/",
-            "ref": {
-              "name": "DOM4",
-              "url": "https://dom.spec.whatwg.org/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -1816,21 +1729,12 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "AudioWorklet",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/webaudio/",
-                "title": "Web Audio API",
-                "crawled": "https://webaudio.github.io/web-audio-api/",
-                "date": "26 February 2018"
-              }
-            ]
-          }
+        "unknownIdlNames": [
+          "AudioWorklet",
+          "DOMHighResTimeStamp"
         ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/webcomponents/spec/shadow/"
         ],
@@ -1852,12 +1756,6 @@
         ],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/",
-              "date": "02 October 2017"
-            },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
               "title": "Clipboard API and events",
@@ -1931,12 +1829,6 @@
               "date": "1 July 2016"
             },
             {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
-            },
-            {
               "url": "https://www.w3.org/TR/encrypted-media/",
               "title": "Encrypted Media Extensions",
               "crawled": "https://w3c.github.io/encrypted-media/",
@@ -1961,12 +1853,6 @@
               "date": "1 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/gamepad/",
-              "title": "Gamepad",
-              "crawled": "https://w3c.github.io/gamepad/",
-              "date": "16 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/",
@@ -1976,7 +1862,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -2009,76 +1895,16 @@
               "date": "1 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/page-visibility-2/",
-              "title": "Page Visibility Level 2",
-              "crawled": "https://w3c.github.io/page-visibility/",
-              "date": "15 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "06 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/",
-              "date": "28 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/",
-              "date": "10 January 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/",
               "date": "22 December 2017"
             },
             {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://w3c.github.io/pointerevents/",
-              "date": "Level 2"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerlock-2/",
-              "title": "Pointer Lock 2.0",
-              "crawled": "https://w3c.github.io/pointerlock/",
-              "date": "07 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/preload/",
-              "title": "Preload",
-              "crawled": "https://w3c.github.io/preload/",
-              "date": "09 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/",
-              "date": "15 December 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://w3c.github.io/webappsec-referrer-policy/",
               "date": "20 April 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -2091,12 +1917,6 @@
               "title": "Secure Contexts",
               "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
               "date": "19 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/selection-api/",
-              "title": "Selection API",
-              "crawled": "https://w3c.github.io/selection-api/",
-              "date": "28 June 2017"
             },
             {
               "url": "https://www.w3.org/TR/selectors-api/",
@@ -2123,18 +1943,6 @@
               "date": "9 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/screen-orientation/",
-              "title": "The Screen Orientation API",
-              "crawled": "https://w3c.github.io/screen-orientation/",
-              "date": "05 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/touch-events/",
-              "title": "Touch Events - Level 2",
-              "crawled": "https://w3c.github.io/touch-events/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
@@ -2153,28 +1961,10 @@
               "date": "3 June 2016"
             },
             {
-              "url": "https://www.w3.org/TR/wake-lock/",
-              "title": "Wake Lock API",
-              "crawled": "https://w3c.github.io/wake-lock/",
-              "date": "13 December 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://w3c.github.io/web-animations/",
               "date": "15 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -2257,7 +2047,7 @@
                 "url": "https://html.spec.whatwg.org/",
                 "title": "HTML Standard",
                 "crawled": "https://html.spec.whatwg.org/",
-                "date": "27 February 2018"
+                "date": "2 March 2018"
               },
               {
                 "url": "https://www.w3.org/TR/service-workers-1/",
@@ -2312,25 +2102,13 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/",
-              "date": "15 December 2017"
+              "date": "2 March 2018"
             },
             {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
               "date": "10 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -2442,12 +2220,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/",
-              "date": "02 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/CSP3/",
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/",
@@ -2475,7 +2247,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://wicg.github.io/mediasession/",
@@ -2490,34 +2262,16 @@
               "date": "23 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/navigation-timing-2/",
-              "title": "Navigation Timing Level 2",
-              "crawled": "https://w3c.github.io/navigation-timing/",
-              "date": "04 February 2018"
-            },
-            {
               "url": "https://notifications.spec.whatwg.org/",
               "title": "Notifications API Standard",
               "crawled": "https://notifications.spec.whatwg.org/",
               "date": "1 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/preload/",
-              "title": "Preload",
-              "crawled": "https://w3c.github.io/preload/",
-              "date": "09 January 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://w3c.github.io/webappsec-referrer-policy/",
               "date": "20 April 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -2532,22 +2286,10 @@
               "date": "23 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
-            },
-            {
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
               "date": "28 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "01 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -2563,18 +2305,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/",
-              "date": "28 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://w3c.github.io/server-timing/",
-              "date": "07 February 2018"
-            },
             {
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
@@ -2664,7 +2394,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -2691,28 +2421,10 @@
               "date": "16 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/",
-              "date": "15 December 2017"
-            },
-            {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
               "date": "10 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "01 March 2018"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -2722,12 +2434,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/html-media-capture/",
-              "title": "HTML Media Capture",
-              "crawled": "https://w3c.github.io/html-media-capture/",
-              "date": "01 February 2018"
-            },
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
@@ -2766,33 +2472,15 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/screen-orientation/",
-              "title": "The Screen Orientation API",
-              "crawled": "https://w3c.github.io/screen-orientation/",
-              "date": "05 November 2017"
+              "date": "2 March 2018"
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/pointerlock-2/",
-              "title": "Pointer Lock 2.0",
-              "crawled": "https://w3c.github.io/pointerlock/",
-              "date": "07 February 2018"
-            },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
               "title": "Secure Contexts",
               "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
               "date": "19 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -2808,7 +2496,7 @@
     {
       "title": "Gamepad",
       "shortname": "gamepad",
-      "date": "16 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/gamepad/",
       "latest": "https://www.w3.org/TR/gamepad/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-gamepad-20180216/",
@@ -2817,11 +2505,11 @@
       "crawled": "https://w3c.github.io/gamepad/",
       "repository": "https://github.com/w3c/gamepad",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -2831,7 +2519,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -2851,7 +2539,9 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -3021,7 +2711,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -3124,9 +2814,9 @@
       }
     },
     {
-      "title": "High Resolution Time Level 2",
+      "title": "High Resolution Time Level 3",
       "shortname": "hr-time-3",
-      "date": "28 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/hr-time-3/",
       "latest": "https://www.w3.org/TR/hr-time-3/",
       "datedUrl": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
@@ -3135,51 +2825,23 @@
       "crawled": "https://w3c.github.io/hr-time/",
       "repository": "https://github.com/w3c/hr-time",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "WindowOrWorkerGlobalScope"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "EventTarget",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/",
-                "date": "25 February 2018"
-              }
-            ]
-          }
-        ],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/hr-time-1/"
-        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/requestidlecallback/",
-              "title": "Cooperative Scheduling of Background Tasks",
-              "crawled": "https://w3c.github.io/requestidlecallback/",
-              "date": "30 October 2017"
-            },
             {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
               "date": "25 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/gamepad/",
-              "title": "Gamepad",
-              "crawled": "https://w3c.github.io/gamepad/",
-              "date": "16 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -3191,13 +2853,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc-stats/",
-              "title": "Identifiers for WebRTC's Statistics API",
-              "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/longtasks-1/",
@@ -3212,52 +2868,16 @@
               "date": "16 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/navigation-timing-2/",
-              "title": "Navigation Timing Level 2",
-              "crawled": "https://w3c.github.io/navigation-timing/",
-              "date": "04 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/paint-timing/",
               "title": "Paint Timing 1",
               "crawled": "https://w3c.github.io/paint-timing/",
               "date": "9 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/",
-              "date": "10 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/user-timing-2/",
-              "title": "User Timing Level 2",
-              "crawled": "https://w3c.github.io/user-timing/",
-              "date": "22 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://w3c.github.io/web-animations/",
               "date": "15 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "01 March 2018"
             }
           ],
           "informative": [
@@ -3275,7 +2895,7 @@
     {
       "title": "HTML Media Capture",
       "shortname": "html-media-capture",
-      "date": "01 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/html-media-capture/",
       "latest": "https://www.w3.org/TR/html-media-capture/",
       "datedUrl": "https://www.w3.org/TR/2018/REC-html-media-capture-20180201/",
@@ -3284,11 +2904,11 @@
       "crawled": "https://w3c.github.io/html-media-capture/",
       "repository": "https://github.com/w3c/html-media-capture",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -3298,12 +2918,12 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
       "title": "HTML Standard",
-      "date": "27 February 2018",
+      "date": "2 March 2018",
       "url": "https://html.spec.whatwg.org/",
       "crawled": "https://html.spec.whatwg.org/",
       "report": {
@@ -3313,23 +2933,15 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
+          "AudioWorklet",
+          "DOMHighResTimeStamp",
+          "MediaStream",
           "NavigatorID",
           "SVGImageElement",
           "SVGScriptElement",
           "WindowProxy"
         ],
         "redefinedIdlNames": [
-          {
-            "name": "BinaryType",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/presentation-api/",
-                "title": "Presentation API",
-                "crawled": "https://w3c.github.io/presentation-api/",
-                "date": "08 November 2017"
-              }
-            ]
-          },
           {
             "name": "Worker",
             "refs": [
@@ -3342,19 +2954,7 @@
             ]
           }
         ],
-        "missingWebIdlRef": [
-          {
-            "name": "AudioWorklet",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/webaudio/",
-                "title": "Web Audio API",
-                "crawled": "https://webaudio.github.io/web-audio-api/",
-                "date": "26 February 2018"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://spec.whatwg.org/",
           "https://www.w3.org/TR/css3-color/"
@@ -3370,24 +2970,6 @@
         ],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/audio-output/",
-              "title": "Audio Output Devices API",
-              "crawled": "https://w3c.github.io/mediacapture-output/",
-              "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/battery-status/",
-              "title": "Battery Status API",
-              "crawled": "https://w3c.github.io/battery/",
-              "date": "23 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/",
-              "date": "02 October 2017"
-            },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
               "title": "Clipboard API and events",
@@ -3405,12 +2987,6 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/",
               "date": "15 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/requestidlecallback/",
-              "title": "Cooperative Scheduling of Background Tasks",
-              "crawled": "https://w3c.github.io/requestidlecallback/",
-              "date": "30 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/credential-management-1/",
@@ -3479,12 +3055,6 @@
               "date": "1 July 2016"
             },
             {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
-            },
-            {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
@@ -3521,12 +3091,6 @@
               "date": "1 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/gamepad/",
-              "title": "Gamepad",
-              "crawled": "https://w3c.github.io/gamepad/",
-              "date": "16 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/",
@@ -3545,52 +3109,10 @@
               "date": "27 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/hr-time-3/",
-              "title": "High Resolution Time Level 2",
-              "crawled": "https://w3c.github.io/hr-time/",
-              "date": "28 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/html-media-capture/",
-              "title": "HTML Media Capture",
-              "crawled": "https://w3c.github.io/html-media-capture/",
-              "date": "01 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc-stats/",
-              "title": "Identifiers for WebRTC's Statistics API",
-              "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "27 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
               "title": "Indexed Database API 2.0",
               "crawled": "https://w3c.github.io/IndexedDB/",
               "date": "18 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "02 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/",
-              "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-depth/",
-              "title": "Media Capture Depth Stream Extensions",
-              "crawled": "https://w3c.github.io/mediacapture-depth/",
-              "date": "16 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://w3c.github.io/mediacapture-fromelement/",
-              "date": "23 February 2018"
             },
             {
               "url": "https://wicg.github.io/mediasession/",
@@ -3623,46 +3145,10 @@
               "date": "23 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/navigation-timing-2/",
-              "title": "Navigation Timing Level 2",
-              "crawled": "https://w3c.github.io/navigation-timing/",
-              "date": "04 February 2018"
-            },
-            {
               "url": "https://notifications.spec.whatwg.org/",
               "title": "Notifications API Standard",
               "crawled": "https://notifications.spec.whatwg.org/",
               "date": "1 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/page-visibility-2/",
-              "title": "Page Visibility Level 2",
-              "crawled": "https://w3c.github.io/page-visibility/",
-              "date": "15 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "06 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-method-basic-card/",
-              "title": "Payment Method: Basic Card",
-              "crawled": "https://w3c.github.io/payment-method-basic-card/",
-              "date": "29 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/",
-              "date": "28 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/",
-              "date": "10 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -3671,46 +3157,10 @@
               "date": "22 December 2017"
             },
             {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://w3c.github.io/pointerevents/",
-              "date": "Level 2"
-            },
-            {
-              "url": "https://www.w3.org/TR/preload/",
-              "title": "Preload",
-              "crawled": "https://w3c.github.io/preload/",
-              "date": "09 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/",
-              "date": "15 December 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://w3c.github.io/webappsec-referrer-policy/",
               "date": "20 April 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/remote-playback/",
-              "title": "Remote Playback API",
-              "crawled": "https://w3c.github.io/remote-playback/",
-              "date": "11 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -3723,18 +3173,6 @@
               "title": "Secure Contexts",
               "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
               "date": "19 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/selection-api/",
-              "title": "Selection API",
-              "crawled": "https://w3c.github.io/selection-api/",
-              "date": "28 June 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://w3c.github.io/server-timing/",
-              "date": "07 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -3755,18 +3193,6 @@
               "date": "27 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/screen-orientation/",
-              "title": "The Screen Orientation API",
-              "crawled": "https://w3c.github.io/screen-orientation/",
-              "date": "05 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/touch-events/",
-              "title": "Touch Events - Level 2",
-              "crawled": "https://w3c.github.io/touch-events/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
@@ -3779,40 +3205,10 @@
               "date": "10 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-2/",
-              "title": "User Timing Level 2",
-              "crawled": "https://w3c.github.io/user-timing/",
-              "date": "22 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/vibration/",
-              "title": "Vibration API (Second Edition)",
-              "crawled": "https://w3c.github.io/vibration/",
-              "date": "23 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/wake-lock/",
-              "title": "Wake Lock API",
-              "crawled": "https://w3c.github.io/wake-lock/",
-              "date": "13 December 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://w3c.github.io/web-animations/",
               "date": "15 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -3851,12 +3247,6 @@
               "date": "Fri Mar 02 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "01 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/",
@@ -3876,12 +3266,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/battery-status/",
-              "title": "Battery Status API",
-              "crawled": "https://w3c.github.io/battery/",
-              "date": "23 October 2017"
-            },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
               "title": "Clipboard API and events",
@@ -3931,12 +3315,6 @@
               "date": "14 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
-            },
-            {
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
@@ -3955,28 +3333,10 @@
               "date": "31 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/hr-time-3/",
-              "title": "High Resolution Time Level 2",
-              "crawled": "https://w3c.github.io/hr-time/",
-              "date": "28 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/html-media-capture/",
-              "title": "HTML Media Capture",
-              "crawled": "https://w3c.github.io/html-media-capture/",
-              "date": "01 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
               "title": "Indexed Database API 2.0",
               "crawled": "https://w3c.github.io/IndexedDB/",
               "date": "18 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://w3c.github.io/mediacapture-fromelement/",
-              "date": "23 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediaont-api-1.0/",
@@ -3991,52 +3351,10 @@
               "date": "26 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/",
-              "date": "10 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerlock-2/",
-              "title": "Pointer Lock 2.0",
-              "crawled": "https://w3c.github.io/pointerlock/",
-              "date": "07 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/",
-              "date": "15 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/screen-capture/",
-              "title": "Screen Capture",
-              "crawled": "https://w3c.github.io/mediacapture-screen-share/",
-              "date": "23 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css3-selectors/",
               "title": "Selectors Level 3",
               "crawled": "https://www.w3.org/TR/css3-selectors/",
               "date": "30 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "01 March 2018"
             }
           ]
         },
@@ -4044,9 +3362,32 @@
       }
     },
     {
+      "title": "https://w3c.github.io/editing/contentEditable.html",
+      "date": "",
+      "url": "https://w3c.github.io/editing/contentEditable.html",
+      "crawled": "https://w3c.github.io/editing/contentEditable.html",
+      "report": {
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Identifiers for WebRTC's Statistics API",
       "shortname": "webrtc-stats",
-      "date": "27 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/webrtc-stats/",
       "latest": "https://www.w3.org/TR/webrtc-stats/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180227/",
@@ -4055,47 +3396,18 @@
       "crawled": "https://w3c.github.io/webrtc-stats/",
       "repository": "https://github.com/w3c/webrtc-stats",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "RTCRTPStreamStats"
-        ],
-        "redefinedIdlNames": [
-          {
-            "name": "RTCStats",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/webrtc/",
-                "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-                "crawled": "https://w3c.github.io/webrtc-pc/",
-                "date": "01 March 2018"
-              }
-            ]
-          }
-        ],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/2014/REC-html5-20141028/",
-            "ref": {
-              "name": "HTML5",
-              "url": "https://www.w3.org/TR/html5/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "01 March 2018"
-            }
-          ],
+          "normative": [],
           "informative": []
         },
         "ok": false
@@ -4146,13 +3458,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
+              "date": "2 March 2018"
             }
           ],
           "informative": [
@@ -4167,12 +3473,6 @@
               "title": "Web Cryptography API",
               "crawled": "https://w3c.github.io/webcrypto/Overview.html",
               "date": "24 October 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "01 March 2018"
             }
           ]
         },
@@ -4182,7 +3482,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "02 March 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -4191,34 +3491,19 @@
       "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
       "repository": "https://github.com/w3c/input-events",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/uievents/",
-            "ref": {
-              "name": "UI-EVENTS",
-              "url": "https://www.w3.org/TR/uievents/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "02 March 2018"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -4254,7 +3539,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             }
           ],
           "informative": []
@@ -4279,7 +3564,9 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "PerformanceEntry"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -4400,7 +3687,7 @@
     {
       "title": "Media Capture and Streams",
       "shortname": "mediacapture-streams",
-      "date": "23 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/mediacapture-streams/",
       "latest": "https://www.w3.org/TR/mediacapture-streams/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
@@ -4409,89 +3696,23 @@
       "crawled": "https://w3c.github.io/mediacapture-main/",
       "repository": "https://github.com/w3c/mediacapture-main",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "OverconstrainedError"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "EventTarget",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/",
-                "date": "25 February 2018"
-              }
-            ]
-          },
-          {
-            "name": "Event",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/",
-                "date": "25 February 2018"
-              }
-            ]
-          },
-          {
-            "name": "EventInit",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/",
-                "date": "25 February 2018"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/audio-output/",
-              "title": "Audio Output Devices API",
-              "crawled": "https://w3c.github.io/mediacapture-output/",
-              "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/html-media-capture/",
-              "title": "HTML Media Capture",
-              "crawled": "https://w3c.github.io/html-media-capture/",
-              "date": "01 February 2018"
-            },
-            {
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc-stats/",
-              "title": "Identifiers for WebRTC's Statistics API",
-              "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-depth/",
-              "title": "Media Capture Depth Stream Extensions",
-              "crawled": "https://w3c.github.io/mediacapture-depth/",
-              "date": "16 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://w3c.github.io/mediacapture-fromelement/",
-              "date": "23 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/image-capture/",
@@ -4506,28 +3727,10 @@
               "date": "16 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/screen-capture/",
-              "title": "Screen Capture",
-              "crawled": "https://w3c.github.io/mediacapture-screen-share/",
-              "date": "23 February 2018"
-            },
-            {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
               "date": "10 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "01 March 2018"
             }
           ],
           "informative": [
@@ -4557,7 +3760,7 @@
     {
       "title": "Media Capture Depth Stream Extensions",
       "shortname": "mediacapture-depth",
-      "date": "16 October 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/mediacapture-depth/",
       "latest": "https://www.w3.org/TR/mediacapture-depth/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/",
@@ -4566,34 +3769,19 @@
       "crawled": "https://w3c.github.io/mediacapture-depth/",
       "repository": "https://github.com/w3c/mediacapture-depth",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/mediacapture-main/",
-            "ref": {
-              "name": "GETUSERMEDIA",
-              "url": "https://www.w3.org/TR/mediacapture-streams/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/screen-capture/",
-              "title": "Screen Capture",
-              "crawled": "https://w3c.github.io/mediacapture-screen-share/",
-              "date": "23 February 2018"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -4601,7 +3789,7 @@
     {
       "title": "Media Capture from DOM Elements",
       "shortname": "mediacapture-fromelement",
-      "date": "23 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/mediacapture-fromelement/",
       "latest": "https://www.w3.org/TR/mediacapture-fromelement/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/",
@@ -4610,41 +3798,19 @@
       "crawled": "https://w3c.github.io/mediacapture-fromelement/",
       "repository": "https://github.com/w3c/mediacapture-fromelement",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/mediacapture-main/",
-            "ref": {
-              "name": "GETUSERMEDIA",
-              "url": "https://www.w3.org/TR/mediacapture-streams/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/2dcontext2/",
-            "ref": {
-              "name": "HTML5",
-              "url": "https://www.w3.org/TR/html5/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/",
-              "date": "23 February 2018"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -4724,7 +3890,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://url.spec.whatwg.org/",
@@ -4774,7 +3940,16 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "ConstrainBoolean",
+          "ConstrainDOMString",
+          "ConstrainDouble",
+          "MediaStreamTrack",
+          "MediaTrackCapabilities",
+          "MediaTrackConstraintSet",
+          "MediaTrackSettings",
+          "MediaTrackSupportedConstraints"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -4796,14 +3971,7 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/",
-              "date": "23 February 2018"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -4825,7 +3993,10 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "MediaStream"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -4840,20 +4011,7 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/",
-              "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -4957,19 +4115,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/preload/",
-              "title": "Preload",
-              "crawled": "https://w3c.github.io/preload/",
-              "date": "09 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -4986,12 +4132,6 @@
               "date": "15 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/",
-              "date": "23 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/secure-contexts/",
               "title": "Secure Contexts",
               "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
@@ -5005,7 +4145,7 @@
     {
       "title": "Navigation Timing Level 2",
       "shortname": "navigation-timing-2",
-      "date": "04 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/navigation-timing-2/",
       "latest": "https://www.w3.org/TR/navigation-timing-2/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/",
@@ -5014,71 +4154,19 @@
       "crawled": "https://w3c.github.io/navigation-timing/",
       "repository": "https://github.com/w3c/navigation-timing",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/service-workers/",
-            "ref": {
-              "name": "SERVICE-WORKERS",
-              "url": "https://www.w3.org/TR/service-workers-1/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/gamepad/",
-              "title": "Gamepad",
-              "crawled": "https://w3c.github.io/gamepad/",
-              "date": "16 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://w3c.github.io/server-timing/",
-              "date": "07 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/user-timing-2/",
-              "title": "User Timing Level 2",
-              "crawled": "https://w3c.github.io/user-timing/",
-              "date": "22 February 2018"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/navigation-timing-2/",
-              "title": "Navigation Timing Level 2",
-              "crawled": "https://w3c.github.io/navigation-timing/",
-              "date": "04 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/",
-              "date": "10 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/user-timing-2/",
-              "title": "User Timing Level 2",
-              "crawled": "https://w3c.github.io/user-timing/",
-              "date": "22 February 2018"
-            }
-          ]
+          "normative": [],
+          "informative": []
         },
         "ok": false
       }
@@ -5095,7 +4183,9 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "VibratePattern"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -5110,26 +4200,14 @@
               "date": "22 December 2017"
             },
             {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/",
-              "date": "15 December 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
               "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/vibration/",
-              "title": "Vibration API (Second Edition)",
-              "crawled": "https://w3c.github.io/vibration/",
-              "date": "23 October 2017"
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -5220,7 +4298,7 @@
     {
       "title": "Page Visibility Level 2",
       "shortname": "page-visibility-2",
-      "date": "15 December 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/page-visibility-2/",
       "latest": "https://www.w3.org/TR/page-visibility-2/",
       "datedUrl": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/",
@@ -5229,11 +4307,11 @@
       "crawled": "https://w3c.github.io/page-visibility/",
       "repository": "https://github.com/w3c/page-visibility",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -5241,18 +4319,6 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/",
-              "date": "02 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/requestidlecallback/",
-              "title": "Cooperative Scheduling of Background Tasks",
-              "crawled": "https://w3c.github.io/requestidlecallback/",
-              "date": "30 October 2017"
-            },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
@@ -5266,38 +4332,13 @@
               "date": "23 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/screen-orientation/",
-              "title": "The Screen Orientation API",
-              "crawled": "https://w3c.github.io/screen-orientation/",
-              "date": "05 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/vibration/",
-              "title": "Vibration API (Second Edition)",
-              "crawled": "https://w3c.github.io/vibration/",
-              "date": "23 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/wake-lock/",
-              "title": "Wake Lock API",
-              "crawled": "https://w3c.github.io/wake-lock/",
-              "date": "13 December 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
               "date": "28 February 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/page-visibility-2/",
-              "title": "Page Visibility Level 2",
-              "crawled": "https://w3c.github.io/page-visibility/",
-              "date": "15 December 2017"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -5319,7 +4360,9 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "PerformanceEntry"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -5344,7 +4387,7 @@
     {
       "title": "Payment Handler API",
       "shortname": "payment-handler",
-      "date": "06 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/payment-handler/",
       "latest": "https://www.w3.org/TR/payment-handler/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-payment-handler-20180108/",
@@ -5353,89 +4396,27 @@
       "crawled": "https://w3c.github.io/payment-handler/",
       "repository": "https://github.com/w3c/payment-handler",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "PaymentManager"
-        ],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/payment-method-manifest/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/payment-handler/",
-            "ref": {
-              "name": "payment-handler",
-              "url": "https://www.w3.org/TR/payment-handler/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "06 February 2018"
-            }
-          ]
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "Payment Method: Basic Card",
-      "shortname": "payment-method-basic-card",
-      "date": "29 January 2018",
-      "url": "https://www.w3.org/TR/payment-method-basic-card/",
-      "latest": "https://www.w3.org/TR/payment-method-basic-card/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/payment-method-basic-card/",
-      "crawled": "https://w3c.github.io/payment-method-basic-card/",
-      "repository": "https://github.com/w3c/payment-method-basic-card",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "06 February 2018"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/",
-              "date": "28 February 2018"
-            }
-          ]
+          "normative": [],
+          "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
       "title": "Payment Request API",
       "shortname": "payment-request",
-      "date": "28 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/payment-request/",
       "latest": "https://www.w3.org/TR/payment-request/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-payment-request-20180301/",
@@ -5444,11 +4425,11 @@
       "crawled": "https://w3c.github.io/payment-request/",
       "repository": "https://github.com/w3c/payment-request",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -5460,30 +4441,18 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "06 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-method-basic-card/",
-              "title": "Payment Method: Basic Card",
-              "crawled": "https://w3c.github.io/payment-method-basic-card/",
-              "date": "29 January 2018"
+              "date": "2 March 2018"
             }
           ],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
       "title": "Performance Timeline Level 2",
       "shortname": "performance-timeline-2",
-      "date": "10 January 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/performance-timeline-2/",
       "latest": "https://www.w3.org/TR/performance-timeline-2/",
       "datedUrl": "https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/",
@@ -5492,11 +4461,11 @@
       "crawled": "https://w3c.github.io/performance-timeline/",
       "repository": "https://github.com/w3c/performance-timeline",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -5511,52 +4480,15 @@
               "date": "9 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/navigation-timing-2/",
-              "title": "Navigation Timing Level 2",
-              "crawled": "https://w3c.github.io/navigation-timing/",
-              "date": "04 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/paint-timing/",
               "title": "Paint Timing 1",
               "crawled": "https://w3c.github.io/paint-timing/",
               "date": "9 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/user-timing-2/",
-              "title": "User Timing Level 2",
-              "crawled": "https://w3c.github.io/user-timing/",
-              "date": "22 February 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/hr-time-3/",
-              "title": "High Resolution Time Level 2",
-              "crawled": "https://w3c.github.io/hr-time/",
-              "date": "28 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/",
-              "date": "10 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://w3c.github.io/server-timing/",
-              "date": "07 February 2018"
-            }
-          ]
+          "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -5583,8 +4515,7 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/manifest/",
-          "https://w3c.github.io/sensors/",
-          "https://w3c.github.io/webdriver/webdriver-spec.html"
+          "https://w3c.github.io/sensors/"
         ],
         "inconsistentRef": [
           {
@@ -5599,6 +4530,13 @@
             "ref": {
               "name": "GETUSERMEDIA",
               "url": "https://www.w3.org/TR/mediacapture-streams/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webdriver/webdriver-spec.html",
+            "ref": {
+              "name": "WebDriver",
+              "url": "https://www.w3.org/TR/webdriver/"
             }
           }
         ],
@@ -5641,30 +4579,6 @@
               "date": "1 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/",
-              "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-depth/",
-              "title": "Media Capture Depth Stream Extensions",
-              "crawled": "https://w3c.github.io/mediacapture-depth/",
-              "date": "16 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "06 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -5679,7 +4593,7 @@
     {
       "title": "Pointer Events",
       "shortname": "pointerevents2",
-      "date": "Level 2",
+      "date": "",
       "url": "https://www.w3.org/TR/pointerevents2/",
       "latest": "https://www.w3.org/TR/pointerevents2/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
@@ -5688,14 +4602,12 @@
       "crawled": "https://w3c.github.io/pointerevents/",
       "repository": "https://github.com/w3c/pointerevents",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "GlobalEventHandlers"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -5706,17 +4618,10 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://w3c.github.io/pointerevents/",
-              "date": "Level 2"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -5724,7 +4629,7 @@
     {
       "title": "Pointer Lock 2.0",
       "shortname": "pointerlock-2",
-      "date": "07 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/pointerlock-2/",
       "latest": "https://www.w3.org/TR/pointerlock-2/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/",
@@ -5733,28 +4638,14 @@
       "crawled": "https://w3c.github.io/pointerlock/",
       "repository": "https://github.com/w3c/pointerlock",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "DocumentOrShadowRoot"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "EventHandler",
-            "refs": [
-              {
-                "url": "https://html.spec.whatwg.org/",
-                "title": "HTML Standard",
-                "crawled": "https://html.spec.whatwg.org/",
-                "date": "27 February 2018"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -5763,13 +4654,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://w3c.github.io/pointerevents/",
-              "date": "Level 2"
+              "date": "2 March 2018"
             }
           ],
           "informative": []
@@ -5780,7 +4665,7 @@
     {
       "title": "Preload",
       "shortname": "preload",
-      "date": "09 January 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/preload/",
       "latest": "https://www.w3.org/TR/preload/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-preload-20171026/",
@@ -5789,17 +4674,15 @@
       "crawled": "https://w3c.github.io/preload/",
       "repository": "https://github.com/w3c/preload",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/webappsec/specs/content-security-policy/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -5807,7 +4690,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             }
           ],
           "informative": []
@@ -5818,7 +4701,7 @@
     {
       "title": "Presentation API",
       "shortname": "presentation-api",
-      "date": "08 November 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/presentation-api/",
       "latest": "https://www.w3.org/TR/presentation-api/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/",
@@ -5827,60 +4710,26 @@
       "crawled": "https://w3c.github.io/presentation-api/",
       "repository": "https://github.com/w3c/presentation-api",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
-        "redefinedIdlNames": [
-          {
-            "name": "BinaryType",
-            "refs": [
-              {
-                "url": "https://html.spec.whatwg.org/",
-                "title": "HTML Standard",
-                "crawled": "https://html.spec.whatwg.org/",
-                "date": "27 February 2018"
-              }
-            ]
-          }
-        ],
+        "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/permissions/",
-            "ref": {
-              "name": "PERMISSIONS",
-              "url": "https://www.w3.org/TR/permissions/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/webappsec-mixed-content/",
-            "ref": {
-              "name": "MIXED-CONTENT",
-              "url": "https://www.w3.org/TR/mixed-content/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/remote-playback/",
-              "title": "Remote Playback API",
-              "crawled": "https://w3c.github.io/remote-playback/",
-              "date": "11 January 2018"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -5917,7 +4766,7 @@
     {
       "title": "Push API",
       "shortname": "push-api",
-      "date": "15 December 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/push-api/",
       "latest": "https://www.w3.org/TR/push-api/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-push-api-20171215/",
@@ -5926,40 +4775,16 @@
       "crawled": "https://w3c.github.io/push-api/",
       "repository": "https://github.com/w3c/push-api",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://fetch.spec.whatwg.org/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/dom/",
-            "ref": {
-              "name": "DOM",
-              "url": "https://dom.spec.whatwg.org/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/service-workers/",
-            "ref": {
-              "name": "SERVICE-WORKERS",
-              "url": "https://www.w3.org/TR/service-workers-1/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/encoding/",
-            "ref": {
-              "name": "ENCODING",
-              "url": "https://encoding.spec.whatwg.org/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": [
@@ -6023,13 +4848,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/preload/",
-              "title": "Preload",
-              "crawled": "https://w3c.github.io/preload/",
-              "date": "09 January 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -6046,7 +4865,7 @@
     {
       "title": "Remote Playback API",
       "shortname": "remote-playback",
-      "date": "11 January 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/remote-playback/",
       "latest": "https://www.w3.org/TR/remote-playback/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/",
@@ -6055,36 +4874,16 @@
       "crawled": "https://w3c.github.io/remote-playback/",
       "repository": "https://github.com/w3c/remote-playback",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "EventTarget",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/",
-                "date": "25 February 2018"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/html5/",
-            "ref": {
-              "name": "HTML",
-              "url": "https://html.spec.whatwg.org/multipage/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -6093,9 +4892,9 @@
       }
     },
     {
-      "title": "Resource Timing Level 3",
+      "title": "Resource Timing Level 2",
       "shortname": "resource-timing-2",
-      "date": "24 January 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/resource-timing-2/",
       "latest": "https://www.w3.org/TR/resource-timing-2/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/",
@@ -6104,53 +4903,21 @@
       "crawled": "https://w3c.github.io/resource-timing/",
       "repository": "https://github.com/w3c/resource-timing",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/navigation-timing-2/",
-              "title": "Navigation Timing Level 2",
-              "crawled": "https://w3c.github.io/navigation-timing/",
-              "date": "04 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/",
-              "date": "10 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://w3c.github.io/server-timing/",
-              "date": "07 February 2018"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/navigation-timing-2/",
-              "title": "Navigation Timing Level 2",
-              "crawled": "https://w3c.github.io/navigation-timing/",
-              "date": "04 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/",
-              "date": "10 January 2018"
-            }
-          ]
+          "normative": [],
+          "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -6469,13 +5236,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -6525,7 +5286,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css3-selectors/",
@@ -6541,7 +5302,7 @@
     {
       "title": "Screen Capture",
       "shortname": "screen-capture",
-      "date": "23 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/screen-capture/",
       "latest": "http://www.w3.org/TR/screen-capture/",
       "datedUrl": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
@@ -6550,24 +5311,16 @@
       "crawled": "https://w3c.github.io/mediacapture-screen-share/",
       "repository": "https://github.com/w3c/mediacapture-screen-share",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/mediacapture-main/",
-            "ref": {
-              "name": "GETUSERMEDIA",
-              "url": "https://www.w3.org/TR/mediacapture-streams/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -6610,12 +5363,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/battery-status/",
-              "title": "Battery Status API",
-              "crawled": "https://w3c.github.io/battery/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/credential-management-1/",
               "title": "Credential Management Level 1",
               "crawled": "https://w3c.github.io/webappsec-credential-management/",
@@ -6637,7 +5384,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -6652,34 +5399,16 @@
               "date": "22 December 2017"
             },
             {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/",
-              "date": "15 December 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://w3c.github.io/webappsec-referrer-policy/",
               "date": "20 April 2017"
             },
             {
-              "url": "https://www.w3.org/TR/remote-playback/",
-              "title": "Remote Playback API",
-              "crawled": "https://w3c.github.io/remote-playback/",
-              "date": "11 January 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
               "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -6709,7 +5438,7 @@
     {
       "title": "Selection API",
       "shortname": "selection-api",
-      "date": "28 June 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/selection-api/",
       "latest": "https://www.w3.org/TR/selection-api/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-selection-api-20170628/",
@@ -6718,42 +5447,23 @@
       "crawled": "https://w3c.github.io/selection-api/",
       "repository": "https://github.com/w3c/selection-api",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "GlobalEventHandlers"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/dom/",
-            "ref": {
-              "name": "DOM4",
-              "url": "https://dom.spec.whatwg.org/"
-            }
-          },
-          {
-            "link": "https://html.spec.whatwg.org/",
-            "ref": {
-              "name": "HTML5",
-              "url": "https://www.w3.org/TR/html5/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             }
           ],
           "informative": []
@@ -6873,7 +5583,7 @@
     {
       "title": "Server Timing",
       "shortname": "server-timing",
-      "date": "07 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/server-timing/",
       "latest": "https://www.w3.org/TR/server-timing/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-server-timing-20171229/",
@@ -6882,26 +5592,14 @@
       "crawled": "https://w3c.github.io/server-timing/",
       "repository": "https://github.com/w3c/server-timing",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "DOMHighResTimeStamp",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/hr-time-3/",
-                "title": "High Resolution Time Level 2",
-                "crawled": "https://w3c.github.io/hr-time/",
-                "date": "28 February 2018"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -6929,6 +5627,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
+          "VisibilityState",
           "WindowOrWorkerGlobalScope"
         ],
         "redefinedIdlNames": [
@@ -6939,7 +5638,7 @@
                 "url": "https://html.spec.whatwg.org/",
                 "title": "HTML Standard",
                 "crawled": "https://html.spec.whatwg.org/",
-                "date": "27 February 2018"
+                "date": "2 March 2018"
               }
             ]
           }
@@ -6995,58 +5694,16 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/navigation-timing-2/",
-              "title": "Navigation Timing Level 2",
-              "crawled": "https://w3c.github.io/navigation-timing/",
-              "date": "04 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://notifications.spec.whatwg.org/",
               "title": "Notifications API Standard",
               "crawled": "https://notifications.spec.whatwg.org/",
               "date": "1 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "06 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/",
-              "date": "15 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/",
-              "date": "02 October 2017"
-            },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
               "title": "Secure Contexts",
@@ -7082,14 +5739,7 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "02 March 2018"
-            }
-          ],
+          "normative": [],
           "informative": []
         },
         "ok": true
@@ -7166,7 +5816,7 @@
     {
       "title": "The Screen Orientation API",
       "shortname": "screen-orientation",
-      "date": "05 November 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/screen-orientation/",
       "latest": "https://www.w3.org/TR/screen-orientation/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
@@ -7175,11 +5825,11 @@
       "crawled": "https://w3c.github.io/screen-orientation/",
       "repository": "https://github.com/w3c/screen-orientation",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -7197,24 +5847,18 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
+              "date": "2 March 2018"
             }
           ],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
-      "title": "Touch Events - Level 2",
+      "title": "Touch Events",
       "shortname": "touch-events",
-      "date": "23 October 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/touch-events/",
       "latest": "http://www.w3.org/TR/touch-events/",
       "datedUrl": "http://www.w3.org/TR/2013/REC-touch-events-20131010/",
@@ -7223,20 +5867,15 @@
       "crawled": "https://w3c.github.io/touch-events/",
       "repository": "https://github.com/w3c/touch-events",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "GlobalEventHandlers",
-          "WindowProxy"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/touch-events-extensions/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -7250,17 +5889,10 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://w3c.github.io/pointerevents/",
-              "date": "Level 2"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -7317,13 +5949,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "02 March 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -7332,28 +5958,10 @@
               "date": "22 December 2017"
             },
             {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://w3c.github.io/pointerevents/",
-              "date": "Level 2"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerlock-2/",
-              "title": "Pointer Lock 2.0",
-              "crawled": "https://w3c.github.io/pointerlock/",
-              "date": "07 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
               "date": "14 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/touch-events/",
-              "title": "Touch Events - Level 2",
-              "crawled": "https://w3c.github.io/touch-events/",
-              "date": "23 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/uievents-code/",
@@ -7477,12 +6085,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/",
-              "date": "02 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/CSP3/",
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/",
@@ -7528,7 +6130,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://wicg.github.io/mediasession/",
@@ -7549,28 +6151,10 @@
               "date": "1 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "06 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://w3c.github.io/webappsec-referrer-policy/",
               "date": "20 April 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/remote-playback/",
-              "title": "Remote Playback API",
-              "crawled": "https://w3c.github.io/remote-playback/",
-              "date": "11 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -7589,12 +6173,6 @@
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
               "date": "9 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -7621,12 +6199,6 @@
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
               "date": "8 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/navigation-timing-2/",
-              "title": "Navigation Timing Level 2",
-              "crawled": "https://w3c.github.io/navigation-timing/",
-              "date": "04 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -7689,7 +6261,7 @@
     {
       "title": "User Timing Level 2",
       "shortname": "user-timing-2",
-      "date": "22 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/user-timing-2/",
       "latest": "https://www.w3.org/TR/user-timing-2/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-user-timing-2-20180222/",
@@ -7698,11 +6270,11 @@
       "crawled": "https://w3c.github.io/user-timing/",
       "repository": "https://github.com/w3c/user-timing",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -7710,28 +6282,15 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/",
-              "date": "10 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/user-timing-2/",
-              "title": "User Timing Level 2",
-              "crawled": "https://w3c.github.io/user-timing/",
-              "date": "22 February 2018"
-            }
-          ]
+          "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
       "title": "Vibration API (Second Edition)",
       "shortname": "vibration",
-      "date": "23 October 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/vibration/",
       "latest": "https://www.w3.org/TR/vibration/",
       "datedUrl": "https://www.w3.org/TR/2016/REC-vibration-20161018/",
@@ -7740,24 +6299,16 @@
       "crawled": "https://w3c.github.io/vibration/",
       "repository": "https://github.com/w3c/vibration",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/page-visibility/",
-            "ref": {
-              "name": "PAGE-VISIBILITY-2",
-              "url": "https://www.w3.org/TR/page-visibility-2/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -7775,7 +6326,7 @@
     {
       "title": "Wake Lock API",
       "shortname": "wake-lock",
-      "date": "13 December 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/wake-lock/",
       "latest": "https://www.w3.org/TR/wake-lock/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-wake-lock-20171214/",
@@ -7784,11 +6335,11 @@
       "crawled": "https://w3c.github.io/wake-lock/",
       "repository": "https://github.com/w3c/wake-lock",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -7798,7 +6349,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -7818,7 +6369,9 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -7848,7 +6401,7 @@
     {
       "title": "Web App Manifest",
       "shortname": "appmanifest",
-      "date": "Living Document",
+      "date": "",
       "url": "https://www.w3.org/TR/appmanifest/",
       "latest": "https://www.w3.org/TR/appmanifest/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-appmanifest-20180222/",
@@ -7857,24 +6410,16 @@
       "crawled": "https://w3c.github.io/manifest/",
       "repository": "https://github.com/w3c/manifest",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/ServiceWorker/",
-            "ref": {
-              "name": "SERVICE-WORKERS-1",
-              "url": "https://www.w3.org/TR/service-workers-1/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -7882,12 +6427,6 @@
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
               "date": "17 August 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "06 February 2018"
             }
           ],
           "informative": [
@@ -7896,12 +6435,6 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/",
               "date": "15 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/screen-orientation/",
-              "title": "The Screen Orientation API",
-              "crawled": "https://w3c.github.io/screen-orientation/",
-              "date": "05 November 2017"
             }
           ]
         },
@@ -7911,7 +6444,7 @@
     {
       "title": "Web Audio API",
       "shortname": "webaudio",
-      "date": "26 February 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/webaudio/",
       "latest": "http://www.w3.org/TR/webaudio/",
       "datedUrl": "http://www.w3.org/TR/2015/WD-webaudio-20151208/",
@@ -7920,62 +6453,19 @@
       "crawled": "https://webaudio.github.io/web-audio-api/",
       "repository": "https://github.com/webaudio/web-audio-api",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "Object"
-        ],
-        "redefinedIdlNames": [
-          {
-            "name": "Worklet",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/css-paint-api-1/",
-                "title": "CSS Painting API Level 1",
-                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
-                "date": "28 January 2018"
-              },
-              {
-                "url": "https://www.w3.org/TR/worklets-1/",
-                "title": "Worklets Level 1",
-                "crawled": "https://drafts.css-houdini.org/worklets/",
-                "date": "9 November 2017"
-              }
-            ]
-          }
-        ],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/mediacapture-fromelement/",
-          "https://fetch.spec.whatwg.org/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/mediacapture-main/",
-            "ref": {
-              "name": "mediacapture-streams",
-              "url": "https://www.w3.org/TR/mediacapture-streams/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/",
-              "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://w3c.github.io/mediacapture-fromelement/",
-              "date": "23 February 2018"
-            },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
               "title": "Worklets Level 1",
@@ -8070,26 +6560,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "06 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "01 March 2018"
-            }
-          ],
+          "normative": [],
           "informative": [
             {
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -8146,24 +6623,6 @@
               "date": "28 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/audio-output/",
-              "title": "Audio Output Devices API",
-              "crawled": "https://w3c.github.io/mediacapture-output/",
-              "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/battery-status/",
-              "title": "Battery Status API",
-              "crawled": "https://w3c.github.io/battery/",
-              "date": "23 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/",
-              "date": "02 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/clipboard-apis/",
               "title": "Clipboard API and events",
               "crawled": "https://w3c.github.io/clipboard-apis/",
@@ -8180,12 +6639,6 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/",
               "date": "15 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/requestidlecallback/",
-              "title": "Cooperative Scheduling of Background Tasks",
-              "crawled": "https://w3c.github.io/requestidlecallback/",
-              "date": "30 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/credential-management-1/",
@@ -8254,12 +6707,6 @@
               "date": "1 July 2016"
             },
             {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
-            },
-            {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
@@ -8302,12 +6749,6 @@
               "date": "1 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/gamepad/",
-              "title": "Gamepad",
-              "crawled": "https://w3c.github.io/gamepad/",
-              "date": "16 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/",
@@ -8326,22 +6767,10 @@
               "date": "1 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/hr-time-3/",
-              "title": "High Resolution Time Level 2",
-              "crawled": "https://w3c.github.io/hr-time/",
-              "date": "28 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/html-media-capture/",
-              "title": "HTML Media Capture",
-              "crawled": "https://w3c.github.io/html-media-capture/",
-              "date": "01 February 2018"
-            },
-            {
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -8368,24 +6797,6 @@
               "date": "1 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/",
-              "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-depth/",
-              "title": "Media Capture Depth Stream Extensions",
-              "crawled": "https://w3c.github.io/mediacapture-depth/",
-              "date": "16 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://w3c.github.io/mediacapture-fromelement/",
-              "date": "23 February 2018"
-            },
-            {
               "url": "https://wicg.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
@@ -8410,12 +6821,6 @@
               "date": "16 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/navigation-timing-2/",
-              "title": "Navigation Timing Level 2",
-              "crawled": "https://w3c.github.io/navigation-timing/",
-              "date": "04 February 2018"
-            },
-            {
               "url": "https://notifications.spec.whatwg.org/",
               "title": "Notifications API Standard",
               "crawled": "https://notifications.spec.whatwg.org/",
@@ -8434,46 +6839,10 @@
               "date": "9 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "06 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-method-basic-card/",
-              "title": "Payment Method: Basic Card",
-              "crawled": "https://w3c.github.io/payment-method-basic-card/",
-              "date": "29 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/",
-              "date": "28 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/",
-              "date": "10 January 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/",
               "date": "22 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerlock-2/",
-              "title": "Pointer Lock 2.0",
-              "crawled": "https://w3c.github.io/pointerlock/",
-              "date": "07 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
             },
             {
               "url": "https://www.w3.org/TR/proximity/",
@@ -8482,52 +6851,16 @@
               "date": "1 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/",
-              "date": "15 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/remote-playback/",
-              "title": "Remote Playback API",
-              "crawled": "https://w3c.github.io/remote-playback/",
-              "date": "11 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
               "date": "14 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/screen-capture/",
-              "title": "Screen Capture",
-              "crawled": "https://w3c.github.io/mediacapture-screen-share/",
-              "date": "23 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/secure-contexts/",
               "title": "Secure Contexts",
               "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
               "date": "19 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/selection-api/",
-              "title": "Selection API",
-              "crawled": "https://w3c.github.io/selection-api/",
-              "date": "28 June 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://w3c.github.io/server-timing/",
-              "date": "07 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -8548,18 +6881,6 @@
               "date": "9 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/screen-orientation/",
-              "title": "The Screen Orientation API",
-              "crawled": "https://w3c.github.io/screen-orientation/",
-              "date": "05 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/touch-events/",
-              "title": "Touch Events - Level 2",
-              "crawled": "https://w3c.github.io/touch-events/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
@@ -8572,40 +6893,10 @@
               "date": "3 June 2016"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-2/",
-              "title": "User Timing Level 2",
-              "crawled": "https://w3c.github.io/user-timing/",
-              "date": "22 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/vibration/",
-              "title": "Vibration API (Second Edition)",
-              "crawled": "https://w3c.github.io/vibration/",
-              "date": "23 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/wake-lock/",
-              "title": "Wake Lock API",
-              "crawled": "https://w3c.github.io/wake-lock/",
-              "date": "13 December 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://w3c.github.io/web-animations/",
               "date": "15 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -8638,12 +6929,6 @@
               "date": "Fri Mar 02 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "01 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/",
@@ -8664,70 +6949,10 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/requestidlecallback/",
-              "title": "Cooperative Scheduling of Background Tasks",
-              "crawled": "https://w3c.github.io/requestidlecallback/",
-              "date": "30 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/html-media-capture/",
-              "title": "HTML Media Capture",
-              "crawled": "https://w3c.github.io/html-media-capture/",
-              "date": "01 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc-stats/",
-              "title": "Identifiers for WebRTC's Statistics API",
-              "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "02 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/page-visibility-2/",
-              "title": "Page Visibility Level 2",
-              "crawled": "https://w3c.github.io/page-visibility/",
-              "date": "15 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/",
-              "date": "10 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://w3c.github.io/pointerevents/",
-              "date": "Level 2"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
               "date": "04 August 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/vibration/",
-              "title": "Vibration API (Second Edition)",
-              "crawled": "https://w3c.github.io/vibration/",
-              "date": "23 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "01 March 2018"
             }
           ]
         },
@@ -8758,12 +6983,6 @@
                 "date": "28 January 2018"
               },
               {
-                "url": "https://www.w3.org/TR/webaudio/",
-                "title": "Web Audio API",
-                "crawled": "https://webaudio.github.io/web-audio-api/",
-                "date": "26 February 2018"
-              },
-              {
                 "url": "https://www.w3.org/TR/worklets-1/",
                 "title": "Worklets Level 1",
                 "crawled": "https://drafts.css-houdini.org/worklets/",
@@ -8786,15 +7005,18 @@
       }
     },
     {
-      "title": "webdriver",
+      "title": "WebDriver",
       "shortname": "webdriver",
       "date": "",
       "url": "https://www.w3.org/TR/webdriver/",
-      "latest": "https://www.w3.org/TR/webdriver",
-      "crawled": "https://www.w3.org/TR/webdriver/",
+      "latest": "https://www.w3.org/TR/webdriver/",
+      "datedUrl": "https://www.w3.org/TR/2017/CR-webdriver-20170330/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://w3c.github.io/webdriver/webdriver-spec.html",
+      "crawled": "https://w3c.github.io/webdriver/webdriver-spec.html",
       "repository": "https://github.com/w3c/webdriver",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
+        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
         "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
@@ -8839,18 +7061,6 @@
           "normative": [],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/mediacapture-depth/",
-              "title": "Media Capture Depth Stream Extensions",
-              "crawled": "https://w3c.github.io/mediacapture-depth/",
-              "date": "16 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "Web IDL",
               "crawled": "https://heycam.github.io/webidl/",
@@ -8892,7 +7102,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
@@ -8902,18 +7112,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/mediacapture-depth/",
-              "title": "Media Capture Depth Stream Extensions",
-              "crawled": "https://w3c.github.io/mediacapture-depth/",
-              "date": "16 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
-            },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "Web IDL",
@@ -8928,7 +7126,7 @@
     {
       "title": "WebRTC 1.0: Real-time Communication Between Browsers",
       "shortname": "webrtc",
-      "date": "01 March 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/webrtc/",
       "latest": "https://www.w3.org/TR/webrtc/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-webrtc-20171102/",
@@ -8937,114 +7135,19 @@
       "crawled": "https://w3c.github.io/webrtc-pc/",
       "repository": "https://github.com/w3c/webrtc-pc",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: kill ESRCH Error: kill ESRCH\n    at Object._errnoException (util.js:1022:11)\n    at process.kill (internal/process.js:183:18)\n    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)\n    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "RTCError",
-          "RTCStatsEventInit"
-        ],
-        "redefinedIdlNames": [
-          {
-            "name": "RTCStats",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/webrtc-stats/",
-                "title": "Identifiers for WebRTC's Statistics API",
-                "crawled": "https://w3c.github.io/webrtc-stats/",
-                "date": "27 February 2018"
-              }
-            ]
-          }
-        ],
-        "missingWebIdlRef": [
-          {
-            "name": "EventTarget",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/",
-                "date": "25 February 2018"
-              }
-            ]
-          },
-          {
-            "name": "Event",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/",
-                "date": "25 February 2018"
-              }
-            ]
-          },
-          {
-            "name": "EventInit",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/",
-                "date": "25 February 2018"
-              }
-            ]
-          }
-        ],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/html52/",
-            "ref": {
-              "name": "HTML51",
-              "url": "https://www.w3.org/TR/html51/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/webrtc-stats/",
-              "title": "Identifiers for WebRTC's Statistics API",
-              "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/",
-              "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://w3c.github.io/mediacapture-fromelement/",
-              "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/",
-              "date": "08 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/screen-capture/",
-              "title": "Screen Capture",
-              "crawled": "https://w3c.github.io/mediacapture-screen-share/",
-              "date": "23 February 2018"
-            }
-          ]
+          "normative": [],
+          "informative": []
         },
         "ok": false
       }
@@ -9079,7 +7182,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             }
           ],
           "informative": []
@@ -9113,12 +7216,6 @@
                 "title": "CSS Painting API Level 1",
                 "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
                 "date": "28 January 2018"
-              },
-              {
-                "url": "https://www.w3.org/TR/webaudio/",
-                "title": "Web Audio API",
-                "crawled": "https://webaudio.github.io/web-audio-api/",
-                "date": "26 February 2018"
               }
             ]
           }
@@ -9152,13 +7249,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
+              "date": "2 March 2018"
             }
           ],
           "informative": [
@@ -9216,19 +7307,13 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "2 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
               "title": "Mixed Content",
               "crawled": "https://w3c.github.io/webappsec-mixed-content/",
               "date": "23 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 3",
-              "crawled": "https://w3c.github.io/resource-timing/",
-              "date": "24 January 2018"
             }
           ],
           "informative": [
@@ -9237,12 +7322,6 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/",
               "date": "15 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 February 2018"
             }
           ]
         },
