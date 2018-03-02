@@ -10,12 +10,33 @@
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+- [Basic Card Payment](https://w3c.github.io/payment-method-basic-card/): `Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -31,12 +52,12 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
 - [Battery Status API](https://w3c.github.io/battery/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -51,41 +72,41 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Socket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Beacon](https://w3c.github.io/beacon/): `Error: kill ESRCH Error: kill ESRCH
+- [Beacon](https://w3c.github.io/beacon/): `Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/): `Error: kill ESRCH Error: kill ESRCH
     at Object._errnoException (util.js:1022:11)
     at process.kill (internal/process.js:183:18)
     at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
     at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)`
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
 - [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -101,12 +122,12 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -121,13 +142,19 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Socket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Gamepad](https://w3c.github.io/gamepad/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+- [encrypted-media](https://www.w3.org/TR/encrypted-media/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+    at <anonymous>`
+- [gamepad](https://www.w3.org/TR/gamepad/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+    at <anonymous>`
+- [High Resolution Time Level 3](https://w3c.github.io/hr-time/): `Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -142,27 +169,16 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Socket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [High Resolution Time Level 3](https://w3c.github.io/hr-time/): `Error: kill ESRCH Error: kill ESRCH
-    at Object._errnoException (util.js:1022:11)
-    at process.kill (internal/process.js:183:18)
-    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
-    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/): `Error: kill ESRCH Error: kill ESRCH
-    at Object._errnoException (util.js:1022:11)
-    at process.kill (internal/process.js:183:18)
-    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
-    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
+- [html-media-capture](https://www.w3.org/TR/html-media-capture/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+    at <anonymous>`
 - [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -178,12 +194,12 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -199,12 +215,12 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -219,55 +235,27 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Socket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/): `Error: kill ESRCH Error: kill ESRCH
+    at Object._errnoException (util.js:1022:11)
+    at process.kill (internal/process.js:183:18)
+    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
+    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/): `Error: kill ESRCH Error: kill ESRCH
+    at Object._errnoException (util.js:1022:11)
+    at process.kill (internal/process.js:183:18)
+    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
+    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -283,12 +271,12 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -303,34 +291,34 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Socket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Page Visibility Level 2](https://w3c.github.io/page-visibility/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Payment Handler API](https://w3c.github.io/payment-handler/): `Error: kill ESRCH Error: kill ESRCH
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/): `Error: kill ESRCH Error: kill ESRCH
     at Object._errnoException (util.js:1022:11)
     at process.kill (internal/process.js:183:18)
     at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
     at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)`
+- [Payment Handler API](https://w3c.github.io/payment-handler/): `Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
 - [Payment Request API](https://w3c.github.io/payment-request/): `Error: kill ESRCH Error: kill ESRCH
     at Object._errnoException (util.js:1022:11)
     at process.kill (internal/process.js:183:18)
@@ -338,16 +326,13 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)`
-- [payment-method-basic-card](https://www.w3.org/TR/payment-method-basic-card/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>`
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -369,62 +354,20 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)`
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Preload](https://w3c.github.io/preload/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Presentation API](https://w3c.github.io/presentation-api/): `Error: kill ESRCH Error: kill ESRCH
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/): `Error: kill ESRCH Error: kill ESRCH
     at Object._errnoException (util.js:1022:11)
     at process.kill (internal/process.js:183:18)
     at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
     at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)`
-- [Push API](https://w3c.github.io/push-api/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+- [Preload](https://w3c.github.io/preload/): `Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -439,13 +382,13 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Socket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Remote Playback API](https://w3c.github.io/remote-playback/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+- [Presentation API](https://w3c.github.io/presentation-api/): `Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -460,34 +403,34 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Socket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+- [Push API](https://w3c.github.io/push-api/): `Error: kill ESRCH Error: kill ESRCH
+    at Object._errnoException (util.js:1022:11)
+    at process.kill (internal/process.js:183:18)
+    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
+    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+- [Remote Playback API](https://w3c.github.io/remote-playback/): `Error: kill ESRCH Error: kill ESRCH
+    at Object._errnoException (util.js:1022:11)
+    at process.kill (internal/process.js:183:18)
+    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
+    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/): `Error: kill ESRCH Error: kill ESRCH
+    at Object._errnoException (util.js:1022:11)
+    at process.kill (internal/process.js:183:18)
+    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
+    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -502,90 +445,30 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Socket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Selection API](https://w3c.github.io/selection-api/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Server Timing](https://w3c.github.io/server-timing/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+- [selection-api](https://www.w3.org/TR/selection-api/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+    at <anonymous>`
+- [Server Timing](https://w3c.github.io/server-timing/): `Error: kill ESRCH Error: kill ESRCH
+    at Object._errnoException (util.js:1022:11)
+    at process.kill (internal/process.js:183:18)
+    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
+    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/): `Error: kill ESRCH Error: kill ESRCH
+    at Object._errnoException (util.js:1022:11)
+    at process.kill (internal/process.js:183:18)
+    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
+    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/): `Error: kill ESRCH Error: kill ESRCH
+    at Object._errnoException (util.js:1022:11)
+    at process.kill (internal/process.js:183:18)
+    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
+    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
 - [Touch Events](https://w3c.github.io/touch-events/): `Error: kill ESRCH Error: kill ESRCH
     at Object._errnoException (util.js:1022:11)
     at process.kill (internal/process.js:183:18)
@@ -594,12 +477,12 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)`
 - [User Timing Level 2](https://w3c.github.io/user-timing/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -614,20 +497,34 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Socket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/): `Error: kill ESRCH Error: kill ESRCH
-    at Object._errnoException (util.js:1022:11)
-    at process.kill (internal/process.js:183:18)
-    at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
-    at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-- [Wake Lock API](https://w3c.github.io/wake-lock/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/): `Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+- [Wake Lock API](https://w3c.github.io/wake-lock/): `Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -643,12 +540,12 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
 - [Web App Manifest](https://w3c.github.io/manifest/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -664,12 +561,12 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
 - [Web Audio API](https://webaudio.github.io/web-audio-api/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
@@ -684,36 +581,36 @@ TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/trou
     at Socket.emit (events.js:208:7)
     at endReadableNT (_stream_readable.js:1055:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html): `Error: kill ESRCH Error: kill ESRCH
+- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html): `Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/): `Error: kill ESRCH Error: kill ESRCH
     at Object._errnoException (util.js:1022:11)
     at process.kill (internal/process.js:183:18)
     at forceKillChrome (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:181:19)
     at Function.launch (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:156:7)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)`
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/): `Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
 
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch chrome!
-/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libatk-bridge-2.0.so.0: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)
-    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)
-    at emitNone (events.js:111:20)
-    at Interface.emit (events.js:208:7)
-    at Interface.close (readline.js:370:8)
-    at Socket.onend (readline.js:149:10)
-    at emitNone (events.js:111:20)
-    at Socket.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1055:12)
-    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
-
-=> 41 specifications found
+=> 42 specifications found
 
 
 ## Specifications without normative dependencies
@@ -790,13 +687,12 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `DOMStringList` used in [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - `DataTransfer` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - `DataTransferItem` used in [File and Directory Entries API](https://wicg.github.io/entries-api/)
-- `EventHandler` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [File API](https://w3c.github.io/FileAPI/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Generic Sensor API](https://w3c.github.io/sensors/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Media Source Extensions™](https://w3c.github.io/media-source/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Permissions](https://w3c.github.io/permissions/), [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Web Animations](https://w3c.github.io/web-animations/), [Web Notifications](https://www.w3.org/TR/notifications/), [Web Workers](https://html.spec.whatwg.org/multipage/workers.html), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `EventHandler` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [File API](https://w3c.github.io/FileAPI/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Generic Sensor API](https://w3c.github.io/sensors/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Media Source Extensions™](https://w3c.github.io/media-source/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Permissions](https://w3c.github.io/permissions/), [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Web Animations](https://w3c.github.io/web-animations/), [Web Notifications](https://www.w3.org/TR/notifications/), [Web Workers](https://html.spec.whatwg.org/multipage/workers.html), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `HTMLCanvasElement` used in [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - `HTMLElement` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - `HTMLFormElement` used in [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `HTMLImageElement` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - `HTMLInputElement` used in [File and Directory Entries API](https://wicg.github.io/entries-api/)
-- `HTMLMediaElement` used in [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - `HTMLSlotElement` used in [W3C DOM 4.1](https://w3c.github.io/dom/)
 - `HTMLVideoElement` used in [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - `ImageBitmap` used in [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -807,7 +703,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `MediaTrackConstraintSet` used in [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - `MediaTrackSettings` used in [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - `MediaTrackSupportedConstraints` used in [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
-- `Navigator` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Media Session Standard](https://wicg.github.io/mediasession/), [Permissions](https://w3c.github.io/permissions/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- `Navigator` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Media Session Standard](https://wicg.github.io/mediasession/), [Permissions](https://w3c.github.io/permissions/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - `OnErrorEventHandler` used in [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - `PerformanceEntry` used in [Long Tasks API 1](https://w3c.github.io/longtasks/), [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
@@ -820,11 +716,11 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `VideoTrack` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
 - `VideoTrackList` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
 - `VisibilityState` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- `Window` used in [Accelerometer](https://w3c.github.io/accelerometer/), [Ambient Light Sensor](https://w3c.github.io/ambient-light/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Console Standard](https://console.spec.whatwg.org/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [Encoding Standard](https://encoding.spec.whatwg.org/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/), [Generic Sensor API](https://w3c.github.io/sensors/), [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/), [Gyroscope](https://w3c.github.io/gyroscope/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Magnetometer](https://w3c.github.io/magnetometer/), [Media Session Standard](https://wicg.github.io/mediasession/), [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Orientation Sensor](https://w3c.github.io/orientation-sensor/), [Permissions](https://w3c.github.io/permissions/), [Proximity Sensor](https://w3c.github.io/proximity/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Static Range](https://w3c.github.io/staticrange/), [Storage Standard](https://storage.spec.whatwg.org/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [URL Standard](https://url.spec.whatwg.org/), [W3C DOM 4.1](https://w3c.github.io/dom/), [Web Animations](https://w3c.github.io/web-animations/), [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/), [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html), [Web IDL](https://heycam.github.io/webidl/), [Web Workers](https://html.spec.whatwg.org/multipage/workers.html), [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html), [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `Window` used in [Accelerometer](https://w3c.github.io/accelerometer/), [Ambient Light Sensor](https://w3c.github.io/ambient-light/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Console Standard](https://console.spec.whatwg.org/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html), [Encoding Standard](https://encoding.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/), [Generic Sensor API](https://w3c.github.io/sensors/), [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/), [Gyroscope](https://w3c.github.io/gyroscope/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Magnetometer](https://w3c.github.io/magnetometer/), [Media Session Standard](https://wicg.github.io/mediasession/), [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Orientation Sensor](https://w3c.github.io/orientation-sensor/), [Permissions](https://w3c.github.io/permissions/), [Proximity Sensor](https://w3c.github.io/proximity/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Static Range](https://w3c.github.io/staticrange/), [Storage Standard](https://storage.spec.whatwg.org/), [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/), [URL Standard](https://url.spec.whatwg.org/), [W3C DOM 4.1](https://w3c.github.io/dom/), [Web Animations](https://w3c.github.io/web-animations/), [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/), [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html), [Web IDL](https://heycam.github.io/webidl/), [Web Workers](https://html.spec.whatwg.org/multipage/workers.html), [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html), [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `WindowOrWorkerGlobalScope` used in [Fetch Standard](https://fetch.spec.whatwg.org/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - `WindowProxy` used in [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 
-=> 43 WebIDL names found
+=> 42 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -1020,9 +916,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/css3-fonts/`](https://www.w3.org/TR/css3-fonts/) but related reference "CSS3-FONTS" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but related reference "SELECTORS-3" uses URL [`https://www.w3.org/TR/selectors-3/`](https://www.w3.org/TR/selectors-3/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/2016/REC-html51-20161101/`](https://www.w3.org/TR/2016/REC-html51-20161101/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/) links to:
-    * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-    * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/) links to [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - [Generic Sensor API](https://w3c.github.io/sensors/) links to:
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
@@ -1137,6 +1030,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
 
-=> 117 inconsistent references for links found in 37 specifications
+=> 115 inconsistent references for links found in 36 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
