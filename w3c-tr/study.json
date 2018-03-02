@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-02T09:10:40.527Z",
+  "date": "2018-03-02T09:51:53.605Z",
   "stats": {
     "crawled": 119,
-    "errors": 1,
+    "errors": 2,
     "studied": 119
   },
   "results": [
@@ -692,6 +692,29 @@
               "date": "30 March 2017"
             }
           ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "ContentEditable",
+      "date": "15 September 2017",
+      "url": "https://w3c.github.io/editing/contentEditable.html",
+      "crawled": "https://w3c.github.io/editing/contentEditable.html",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
           "informative": []
         },
         "ok": false
@@ -1758,12 +1781,6 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-              "date": "Level 2"
-            },
-            {
               "url": "https://www.w3.org/TR/dom41/",
               "title": "W3C DOM 4.1",
               "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
@@ -2738,12 +2755,6 @@
               "title": "Orientation Sensor",
               "crawled": "https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/",
               "date": "18 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/proximity/",
-              "title": "Proximity Sensor",
-              "crawled": "http://www.w3.org/TR/2016/WD-proximity-20160719/",
-              "date": "19 July 2016"
             }
           ],
           "informative": [
@@ -3449,12 +3460,6 @@
               "date": "25 September 2017"
             },
             {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-              "date": "Level 2"
-            },
-            {
               "url": "https://www.w3.org/TR/preload/",
               "title": "Preload",
               "crawled": "https://www.w3.org/TR/2017/CR-preload-20171026/",
@@ -4023,12 +4028,6 @@
               "date": "25 September 2017"
             },
             {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-              "date": "Level 2"
-            },
-            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/",
@@ -4431,12 +4430,6 @@
               "date": "25 September 2017"
             },
             {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-              "date": "Level 2"
-            },
-            {
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
               "crawled": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/",
@@ -4631,29 +4624,6 @@
               "date": "14 December 2017"
             }
           ]
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "",
-      "url": "https://w3c.github.io/editing/contentEditable.html",
-      "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "report": {
-        "error": "Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch chrome!\n/home/dom/github.com/reffy/node_modules/puppeteer/.local-chromium/linux-536395/chrome-linux/chrome: error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:239:14)\n    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:228:50)\n    at emitNone (events.js:111:20)\n    at Interface.emit (events.js:208:7)\n    at Interface.close (readline.js:370:8)\n    at Socket.onend (readline.js:149:10)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1055:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
         },
         "ok": false
       }
@@ -6224,12 +6194,6 @@
               "date": "01 June 2017"
             },
             {
-              "url": "https://www.w3.org/TR/proximity/",
-              "title": "Proximity Sensor",
-              "crawled": "http://www.w3.org/TR/2016/WD-proximity-20160719/",
-              "date": "19 July 2016"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -6237,54 +6201,6 @@
             }
           ],
           "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "Pointer Events",
-      "shortname": "pointerevents2",
-      "date": "Level 2",
-      "url": "https://www.w3.org/TR/pointerevents2/",
-      "latest": "https://www.w3.org/TR/pointerevents2/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/pointerevents/",
-      "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-      "repository": "https://github.com/w3c/pointerevents",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": true,
-        "noIdlContent": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "EventHandler",
-          "GlobalEventHandlers",
-          "Navigator",
-          "Window"
-        ],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2017/CR-webdriver-20170330/",
-              "date": "30 March 2017"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-              "date": "Level 2"
-            }
-          ]
         },
         "ok": false
       }
@@ -6320,12 +6236,39 @@
               "title": "HTML 5.2",
               "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
               "date": "14 December 2017"
-            },
+            }
+          ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "pointerevents2",
+      "shortname": "pointerevents2",
+      "date": "",
+      "url": "https://www.w3.org/TR/pointerevents2/",
+      "latest": "https://www.w3.org/TR/pointerevents2",
+      "crawled": "https://www.w3.org/TR/pointerevents2",
+      "repository": "https://github.com/w3c/pointerevents",
+      "report": {
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
             {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-              "date": "Level 2"
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2017/CR-webdriver-20170330/",
+              "date": "30 March 2017"
             }
           ],
           "informative": []
@@ -6495,44 +6438,24 @@
       }
     },
     {
-      "title": "Proximity Sensor",
+      "title": "proximity",
       "shortname": "proximity",
-      "date": "19 July 2016",
+      "date": "",
       "url": "https://www.w3.org/TR/proximity/",
-      "latest": "http://www.w3.org/TR/proximity/",
-      "datedUrl": "http://www.w3.org/TR/2016/WD-proximity-20160719/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/proximity/",
-      "crawled": "http://www.w3.org/TR/2016/WD-proximity-20160719/",
+      "latest": "https://www.w3.org/TR/proximity",
+      "crawled": "https://www.w3.org/TR/proximity",
       "repository": "https://github.com/w3c/proximity",
       "report": {
-        "noNormativeRefs": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "SensorReading"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/sensors/",
-            "ref": {
-              "name": "GENERIC-SENSOR",
-              "url": "https://www.w3.org/TR/generic-sensor/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/permissions/",
-            "ref": {
-              "name": "PERMISSIONS",
-              "url": "https://www.w3.org/TR/permissions/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -8014,14 +7937,7 @@
               "date": "14 December 2017"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-              "date": "Level 2"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -8087,12 +8003,6 @@
               "title": "Permissions",
               "crawled": "https://www.w3.org/TR/2017/WD-permissions-20170925/",
               "date": "25 September 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-              "date": "Level 2"
             },
             {
               "url": "https://www.w3.org/TR/pointerlock-2/",
@@ -8767,12 +8677,6 @@
               "title": "Permissions",
               "crawled": "https://www.w3.org/TR/2017/WD-permissions-20170925/",
               "date": "25 September 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-              "date": "Level 2"
             },
             {
               "url": "https://www.w3.org/TR/pointerlock-2/",
@@ -9709,12 +9613,6 @@
               "title": "Permissions",
               "crawled": "https://www.w3.org/TR/2017/WD-permissions-20170925/",
               "date": "25 September 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-              "date": "Level 2"
             },
             {
               "url": "https://www.w3.org/TR/referrer-policy/",
@@ -10723,12 +10621,6 @@
               "title": "Page Visibility Level 2",
               "crawled": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/",
               "date": "17 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerevents2/",
-              "title": "Pointer Events",
-              "crawled": "https://www.w3.org/TR/2018/WD-pointerevents2-20180206/",
-              "date": "Level 2"
             },
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
