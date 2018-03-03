@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">March 02, 2018</h2>
+            <h2 class="date">March 03, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -39,12 +39,12 @@
     <input class="submit" id="submit" type="submit" value="Apply" />
   </p>
   <p id="stats"></p>
-  <section id="accelerometer" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
+  <section id="accelerometer" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
   <h2>Accelerometer</h2>
   <section id="spec-info" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/accelerometer/">Editor's Draft</a> (1 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/accelerometer/">Editor's Draft</a> (2 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/accelerometer/" class="uri">https://w3c.github.io/accelerometer/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/accelerometer/" class="uri">https://www.w3.org/TR/accelerometer/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-accelerometer-20171018/">Working Draft</a></li>
@@ -55,10 +55,6 @@
   <section id="potential-issues" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/gyroscope/">Gyroscope</a> and <a href="https://w3c.github.io/magnetometer/">Magnetometer</a> and <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
-  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
@@ -284,7 +280,7 @@
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   </ul></li>
   </ul>
   </section>
@@ -571,7 +567,7 @@
   </ul>
   </section>
   </section>
-  <section id="css-painting-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
+  <section id="css-painting-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
   <h2>CSS Painting API Level 1</h2>
   <section id="spec-info-16" class="level3 info">
   <h3>Spec info</h3>
@@ -586,9 +582,10 @@
   <section id="potential-issues-16" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>WorkletGlobalScope</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
-  <li><code>Worklet</code> also defined in <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> also defined in <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -605,10 +602,7 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a></li>
   </ul>
-  <p>Informative references to this spec from:</p>
-  <ul>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
-  </ul>
+  <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
   <section id="css-properties-and-values-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
@@ -719,7 +713,6 @@
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -729,7 +722,7 @@
   <section id="spec-info-20" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.css-houdini.org/css-typed-om-1/">Editor's Draft</a> (27 February 2018)</li>
+  <li>Crawled version: <a href="https://drafts.css-houdini.org/css-typed-om-1/">Editor's Draft</a> (2 March 2018)</li>
   <li>Editor's Draft: <a href="https://drafts.css-houdini.org/css-typed-om-1/" class="uri">https://drafts.css-houdini.org/css-typed-om-1/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-typed-om-1/" class="uri">https://www.w3.org/TR/css-typed-om-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/">Working Draft</a></li>
@@ -1113,7 +1106,6 @@
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
@@ -1191,7 +1183,6 @@
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -1434,12 +1425,12 @@
   </ul>
   </section>
   </section>
-  <section id="gyroscope" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
+  <section id="gyroscope" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
   <h2>Gyroscope</h2>
   <section id="spec-info-37" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/gyroscope/">Editor's Draft</a> (1 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/gyroscope/">Editor's Draft</a> (2 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/gyroscope/" class="uri">https://w3c.github.io/gyroscope/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/gyroscope/" class="uri">https://www.w3.org/TR/gyroscope/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-gyroscope-20171018/">Working Draft</a></li>
@@ -1450,10 +1441,6 @@
   <section id="potential-issues-37" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/accelerometer/">Accelerometer</a> and <a href="https://w3c.github.io/magnetometer/">Magnetometer</a> and <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
-  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
@@ -1673,7 +1660,6 @@
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
@@ -1796,7 +1782,7 @@
   <section id="spec-info-43" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (02 March 2018)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (03 March 2018)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -1908,7 +1894,7 @@
   <ul>
   <li>WebIDL names also defined elsewhere:
   <ul>
-  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/accelerometer/">Accelerometer</a> and <a href="https://w3c.github.io/gyroscope/">Gyroscope</a> and <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
+  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
@@ -1935,7 +1921,7 @@
   <section id="spec-info-47" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/mediacapture-main/">Editor's Draft</a> (23 February 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/mediacapture-main/">Editor's Draft</a> (02 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/mediacapture-main/" class="uri">https://w3c.github.io/mediacapture-main/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/mediacapture-streams/" class="uri">https://www.w3.org/TR/mediacapture-streams/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Candidate Recommendation</a></li>
@@ -2325,7 +2311,7 @@
   <ul>
   <li>WebIDL names also defined elsewhere:
   <ul>
-  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/accelerometer/">Accelerometer</a> and <a href="https://w3c.github.io/gyroscope/">Gyroscope</a> and <a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
+  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -3784,10 +3770,10 @@
   <section id="potential-issues-98" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Object</code></li>
+  <li>Unknown WebIDL names used: <code>Object</code>, <code>WorkletGlobalScope</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
-  <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -3814,7 +3800,6 @@
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   </section>
   </section>
@@ -3998,7 +3983,6 @@
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -4031,7 +4015,7 @@
   <ul>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -4092,7 +4076,7 @@
   <section id="spec-info-104" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Fri Mar 02 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sat Mar 03 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4117,7 +4101,7 @@
   <section id="spec-info-105" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Fri Mar 02 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sat Mar 03 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4151,7 +4135,7 @@
   <section id="spec-info-106" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (01 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (02 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webrtc-pc/" class="uri">https://w3c.github.io/webrtc-pc/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webrtc/" class="uri">https://www.w3.org/TR/webrtc/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">Candidate Recommendation</a></li>
@@ -4226,30 +4210,20 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="worklets-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
-  <h2>Worklets Level 1</h2>
+  <section id="worklets-1" class="level2" data-spec="true" data-error="true">
+  <h2>worklets-1</h2>
   <section id="spec-info-108" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.css-houdini.org/worklets/">Editor's Draft</a> (9 November 2017)</li>
-  <li>Editor's Draft: <a href="https://drafts.css-houdini.org/worklets/" class="uri">https://drafts.css-houdini.org/worklets/</a></li>
-  <li>Latest published version: <a href="http://www.w3.org/TR/worklets-1/" class="uri">http://www.w3.org/TR/worklets-1/</a></li>
-  <li>Latest published status: <a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Working Draft</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/worklets-1/">Initial URL</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/worklets-1" class="uri">https://www.w3.org/TR/worklets-1</a></li>
   <li>Shortname: worklets-1</li>
   </ul>
   </section>
   <section id="potential-issues-108" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
-  </ul></li>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-108" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -4258,18 +4232,9 @@
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
-  <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   </ul>
-  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
-  <ul>
-  <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
-  <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a></li>
-  </ul>
-  <p>Informative references to this spec from:</p>
-  <ul>
-  <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
-  </ul>
+  <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
   <section id="xmlhttprequest-standard" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
@@ -4277,7 +4242,7 @@
   <section id="spec-info-109" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://xhr.spec.whatwg.org/">Living Standard</a> (12 January 2018)</li>
+  <li>Crawled version: <a href="https://xhr.spec.whatwg.org/">Living Standard</a> (2 March 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/xhr">GitHub whatwg/xhr</a></li>
   <li>Shortname: no shortname</li>
   </ul>

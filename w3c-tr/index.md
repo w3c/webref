@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 02, 2018
+% March 03, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -269,7 +269,7 @@ No informative reference to this spec from other specs.
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
      * `Worklet` defined in [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -820,6 +820,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 
@@ -932,7 +933,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1060,11 +1061,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
+- Unknown WebIDL names used: `DedicatedWorker`, `EventHandler`, `SharedWorker`, `Window`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
-     * `DedicatedWorker` defined in [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
-     * `SharedWorker` defined in [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/dom/`](https://w3c.github.io/dom/), related reference "DOM" uses URL [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/)
      * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/), related reference "Encoding" uses URL [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/)
@@ -1093,7 +1092,6 @@ Informative references to this spec from:
 
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
-- [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 
 
 ## Fullscreen API Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
@@ -1173,6 +1171,7 @@ Normative references to this spec from:
 - [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
 - [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Proximity Sensor](http://www.w3.org/TR/2016/WD-proximity-20160719/)
 
 Informative references to this spec from:
 
@@ -1283,6 +1282,7 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - Missing references for links: 
      * [`https://w3c.github.io/workers/`](https://w3c.github.io/workers/)
 
@@ -1297,7 +1297,6 @@ Normative references to this spec from:
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180227/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
-- [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180222/)
@@ -1403,6 +1402,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
@@ -1432,7 +1432,6 @@ Normative references to this spec from:
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
-- [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
@@ -1513,6 +1512,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
@@ -1571,7 +1571,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## HTML5 Web Messaging {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true}
+## HTML5 Web Messaging {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -1585,6 +1585,8 @@ No informative reference to this spec from other specs.
 
 - Obsolete WebIDL constructs found
 - Unknown WebIDL names used: `EventHandler`, `Transferable`, `Window`, `WindowProxy`
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1615,6 +1617,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
@@ -1630,7 +1633,6 @@ Normative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
-- [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
@@ -1696,7 +1698,7 @@ No informative reference to this spec from other specs.
 
 - Unknown WebIDL names used: `DOMStringList`, `EventHandler`, `Window`, `WindowOrWorkerGlobalScope`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML52" uses URL [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/)
@@ -2183,23 +2185,23 @@ Informative references to this spec from:
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 
 
-## Paint Timing 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## paint-timing {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-paint-timing-20170907/) (7 September 2017)
-- Editor's Draft: [https://w3c.github.io/paint-timing/](https://w3c.github.io/paint-timing/)
-- Latest published version: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/paint-timing)
+- Latest published version: [https://www.w3.org/TR/paint-timing](https://www.w3.org/TR/paint-timing)
 - Repository: [GitHub w3c/paint-timing](https://github.com/w3c/paint-timing)
 - Shortname: paint-timing
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
+    at <anonymous>`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2276,7 +2278,7 @@ No informative reference to this spec from other specs.
 - Obsolete WebIDL constructs found
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
@@ -2287,7 +2289,6 @@ Normative references to this spec from:
 
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
-- [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180222/)
 
@@ -2297,7 +2298,7 @@ Informative references to this spec from:
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
 
 
-## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2310,7 +2311,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `PermissionName`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `Navigator`, `PermissionName`, `Window`, `WorkerNavigator`
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - Missing references for links: 
      * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
@@ -2333,9 +2336,37 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
+- [Proximity Sensor](http://www.w3.org/TR/2016/WD-proximity-20160719/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
+
+
+## Pointer Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/) (Level 2)
+- Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
+- Latest published version: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
+- Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
+- Shortname: pointerevents2
+
+### Potential issue(s) {.anomalies}
+
+- Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `Navigator`, `Window`
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
+
+Informative references to this spec from:
+
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 
 
 ## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -2358,33 +2389,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
-
-No informative reference to this spec from other specs.
-
-
-## pointerevents2 {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](https://www.w3.org/TR/pointerevents2)
-- Latest published version: [https://www.w3.org/TR/pointerevents2](https://www.w3.org/TR/pointerevents2)
-- Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
-- Shortname: pointerevents2
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 
 No informative reference to this spec from other specs.
 
@@ -2472,23 +2477,24 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## proximity {data-spec=true data-error=true}
+## Proximity Sensor {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/proximity)
-- Latest published version: [https://www.w3.org/TR/proximity](https://www.w3.org/TR/proximity)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-proximity-20160719/) (19 July 2016)
+- Editor's Draft: [https://w3c.github.io/proximity/](https://w3c.github.io/proximity/)
+- Latest published version: [http://www.w3.org/TR/proximity/](http://www.w3.org/TR/proximity/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-proximity-20160719/)
 - Repository: [GitHub w3c/proximity](https://github.com/w3c/proximity)
 - Shortname: proximity
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `SensorReading`
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2878,7 +2884,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
      * `DOMHighResTimeStamp` defined in [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -2913,7 +2919,7 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 
 
-## Service Workers 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Service Workers 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2926,9 +2932,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`, `WindowOrWorkerGlobalScope`, `WorkerType`
-- WebIDL names also defined elsewhere: 
-    * `Worker` also defined in [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`, `WindowOrWorkerGlobalScope`, `WorkerGlobalScope`, `WorkerNavigator`, `WorkerType`
 - Missing references for links: 
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
 - Inconsistent references for links: 
@@ -2955,17 +2959,24 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
+- [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
+- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
+- [Storage Standard](https://storage.spec.whatwg.org/)
+- [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180222/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 
 
 ## Shadow DOM {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
@@ -3018,7 +3029,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Storage Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Storage Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -3029,6 +3040,8 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Window`
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3133,7 +3146,9 @@ Normative references to this spec from:
 
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 
 
 ## UI Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3165,6 +3180,7 @@ Normative references to this spec from:
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
@@ -3233,7 +3249,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## URL Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## URL Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -3244,6 +3260,8 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Window`
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3267,7 +3285,6 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
-- [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -3312,7 +3329,7 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 
 
-## User Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## User Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -3326,6 +3343,8 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Window`
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3416,6 +3435,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -3444,7 +3464,6 @@ Normative references to this spec from:
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
-- [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2017/WD-webvtt1-20170808/)
@@ -3625,7 +3644,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3698,108 +3717,6 @@ Informative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 
 
-## Web Workers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](http://www.w3.org/TR/2015/WD-workers-20150924/) (24 September 2015)
-- Editor's Draft: [https://html.spec.whatwg.org/multipage/workers.html](https://html.spec.whatwg.org/multipage/workers.html)
-- Latest published version: [http://www.w3.org/TR/workers/](http://www.w3.org/TR/workers/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-workers-20150924/)
-- Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
-- Shortname: workers
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `ApplicationCache`, `EventHandler`, `OnErrorEventHandler`, `Transferable`, `Window`
-- WebIDL names also defined elsewhere: 
-    * `Worker` also defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- Missing references for links: 
-     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
-- Inconsistent references for links: 
-     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
-     * [`https://www.w3.org/TR/domcore/`](https://www.w3.org/TR/domcore/), related reference "DOM4" uses URL [`http://www.w3.org/TR/dom/`](http://www.w3.org/TR/dom/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
-- [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
-- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
-- [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-- [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
-- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
-- [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
-- [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
-- [Custom Elements](https://www.w3.org/TR/2018/WD-custom-elements-20180216/)
-- [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [File and Directory Entries API](https://wicg.github.io/entries-api/)
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
-- [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
-- [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
-- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
-- [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
-- [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
-- [Media Session Standard](https://wicg.github.io/mediasession/)
-- [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
-- [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
-- [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
-- [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
-- [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [Storage Standard](https://storage.spec.whatwg.org/)
-- [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- [URL Standard](https://url.spec.whatwg.org/)
-- [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180222/)
-- [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
-- [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
-- [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
-- [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
-- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Console Standard](https://console.spec.whatwg.org/)
-- [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
-- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
-- [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
-
-Informative references to this spec from:
-
-- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
-- [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
-- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
-- [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
-- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
-- [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
-- [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
-- [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
-
-
 ## WebAssembly JavaScript Interface {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -3811,6 +3728,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
      * `Worklet` defined in [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/)
@@ -3858,7 +3776,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Mar 02 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Mar 03 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3879,7 +3797,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Mar 02 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Mar 03 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3968,7 +3886,6 @@ Normative references to this spec from:
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
-- [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
@@ -3999,7 +3916,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
-- [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
@@ -4018,6 +3934,7 @@ Informative references to this spec from:
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180227/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
@@ -4038,7 +3955,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `RTCError`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `RTCError`, `Window`, `WorkerGlobalScope`
 - WebIDL names also defined elsewhere: 
     * `RTCStats` also defined in [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180227/)
 - Missing references for WebIDL names: 
@@ -4095,6 +4012,95 @@ Informative references to this spec from:
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 
 
+## workers {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/workers)
+- Latest published version: [https://www.w3.org/TR/workers](https://www.w3.org/TR/workers)
+- Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
+- Shortname: workers
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+    at <anonymous>`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
+- [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
+- [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
+- [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
+- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
+- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
+- [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
+- [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
+- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
+- [Custom Elements](https://www.w3.org/TR/2018/WD-custom-elements-20180216/)
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [File and Directory Entries API](https://wicg.github.io/entries-api/)
+- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
+- [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
+- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
+- [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
+- [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
+- [Media Session Standard](https://wicg.github.io/mediasession/)
+- [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
+- [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
+- [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
+- [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
+- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
+- [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
+- [Storage Standard](https://storage.spec.whatwg.org/)
+- [Streams Standard](https://streams.spec.whatwg.org/)
+- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180222/)
+- [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+- [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
+- [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+- [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
+- [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+
+Informative references to this spec from:
+
+- [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
+- [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
+- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
+- [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
+- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
+- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
+- [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
+- [Selection API](https://www.w3.org/TR/2017/WD-selection-api-20170628/)
+- [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
+
+
 ## Worklets Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true}
 
 ### Spec info {.info}
@@ -4126,20 +4132,22 @@ Although they do not, the following specs should also normatively reference this
 No informative reference to this spec from other specs.
 
 
-## XMLHttpRequest Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true}
+## XMLHttpRequest Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (12 January 2018)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (2 March 2018)
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLFormElement`, `Window`
+- Unknown WebIDL names used: `DedicatedWorker`, `EventHandler`, `HTMLFormElement`, `SharedWorker`, `Window`
 - WebIDL names also defined elsewhere: 
     * `ProgressEvent` also defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
     * `ProgressEventInit` also defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
@@ -4156,7 +4164,6 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 
 
 

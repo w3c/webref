@@ -2,7 +2,7 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-02T09:48:01.260Z",
+  "date": "2018-03-03T02:01:24.133Z",
   "options": {
     "publishedVersion": false
   },
@@ -7354,7 +7354,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Fri Mar 02 2018",
+      "date": "Sat Mar 03 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -8438,7 +8438,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Fri Mar 02 2018",
+      "date": "Sat Mar 03 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -12150,7 +12150,7 @@
       "edDraft": "https://w3c.github.io/accelerometer/",
       "repository": "https://github.com/w3c/accelerometer",
       "crawled": "https://w3c.github.io/accelerometer/",
-      "date": "1 March 2018",
+      "date": "2 March 2018",
       "links": [
         "https://lists.w3.org/Archives/Public/public-device-apis/",
         "https://www.w3.org/2009/dap/",
@@ -12237,7 +12237,7 @@
             ],
             "AccelerometerSensorOptions": [
               "SensorOptions",
-              "LocalCoordinateSystem"
+              "AccelerometerLocalCoordinateSystem"
             ],
             "LinearAccelerationSensor": [
               "Accelerometer",
@@ -12348,9 +12348,9 @@
               }
             ]
           },
-          "LocalCoordinateSystem": {
+          "AccelerometerLocalCoordinateSystem": {
             "type": "enum",
-            "name": "LocalCoordinateSystem",
+            "name": "AccelerometerLocalCoordinateSystem",
             "values": [
               {
                 "type": "string",
@@ -12378,7 +12378,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "LocalCoordinateSystem"
+                  "idlType": "AccelerometerLocalCoordinateSystem"
                 },
                 "extAttrs": [],
                 "default": {
@@ -12494,18 +12494,167 @@
       "url": "https://www.w3.org/TR/ambient-light/",
       "shortname": "ambient-light",
       "versions": [
-        "https://www.w3.org/TR/ambient-light/",
-        "https://www.w3.org/TR/ambient-light"
+        "https://www.w3.org/TR/2017/WD-ambient-light-20171018/",
+        "https://www.w3.org/TR/2017/WD-ambient-light-20170814/",
+        "https://www.w3.org/TR/2017/WD-ambient-light-20170522/",
+        "https://www.w3.org/TR/2016/WD-ambient-light-20160830/",
+        "https://www.w3.org/TR/2016/WD-ambient-light-20160329/",
+        "https://www.w3.org/TR/2015/WD-ambient-light-20150903/",
+        "https://www.w3.org/TR/2014/WD-ambient-light-20140619/",
+        "https://www.w3.org/TR/2013/CR-ambient-light-20131001/",
+        "https://www.w3.org/TR/2012/WD-ambient-light-20121213/",
+        "https://www.w3.org/TR/2012/WD-ambient-light-20120802/",
+        "https://w3c.github.io/ambient-light/",
+        "https://dvcs.w3.org/hg/dap/raw-file/default/light/",
+        "https://www.w3.org/TR/ambient-light/"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-      "latest": "https://www.w3.org/TR/ambient-light",
+      "title": "Ambient Light Sensor",
+      "latest": "https://www.w3.org/TR/ambient-light/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-ambient-light-20171018/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/ambient-light/",
       "repository": "https://github.com/w3c/ambient-light",
-      "title": "ambient-light",
-      "crawled": "https://www.w3.org/TR/ambient-light/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://w3c.github.io/ambient-light/",
+      "date": "28 February 2018",
+      "links": [
+        "https://lists.w3.org/Archives/Public/public-device-apis/",
+        "https://www.w3.org/2009/dap/",
+        "https://www.w3.org/Consortium/Patent-Policy/",
+        "https://www.w3.org/2004/01/pp-impl/43696/status",
+        "https://www.w3.org/2018/Process-20180201/",
+        "https://w3c.github.io/sensors/",
+        "https://w3c.github.io/permissions/",
+        "https://heycam.github.io/webidl/",
+        "https://tools.ietf.org/html/rfc2119",
+        "https://drafts.csswg.org/cssom/",
+        "https://drafts.csswg.org/mediaqueries-5/",
+        "https://www.bipm.org/en/publications/si-brochure/"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "GENERIC-SENSOR",
+            "url": "https://w3c.github.io/sensors/"
+          },
+          {
+            "name": "PERMISSIONS",
+            "url": "https://w3c.github.io/permissions/"
+          },
+          {
+            "name": "RFC2119",
+            "url": "https://tools.ietf.org/html/rfc2119"
+          },
+          {
+            "name": "WEBIDL",
+            "url": "https://heycam.github.io/webidl/"
+          }
+        ],
+        "informative": [
+          {
+            "name": "CSSOM",
+            "url": "https://drafts.csswg.org/cssom/"
+          },
+          {
+            "name": "MEDIAQUERIES-5",
+            "url": "https://drafts.csswg.org/mediaqueries-5/"
+          },
+          {
+            "name": "SI",
+            "url": "http://www.bipm.org/en/publications/si-brochure/"
+          }
+        ]
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {
+            "Window": [
+              "AmbientLightSensor"
+            ]
+          },
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {
+            "AmbientLightSensor": [
+              "Sensor",
+              "Window",
+              "SensorOptions"
+            ]
+          },
+          "_reallyDependsOnWindow": false,
+          "AmbientLightSensor": {
+            "type": "interface",
+            "name": "AmbientLightSensor",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "name": "illuminance",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": "Sensor",
+            "extAttrs": [
+              {
+                "name": "Constructor",
+                "arguments": [
+                  {
+                    "optional": true,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "SensorOptions"
+                    },
+                    "name": "sensorOptions"
+                  }
+                ],
+                "type": "extended-attribute",
+                "rhs": null
+              },
+              {
+                "name": "SecureContext",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": null
+              },
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                }
+              }
+            ]
+          }
+        },
+        "idlExtendedNames": {},
+        "externalDependencies": [
+          "Sensor",
+          "Window",
+          "SensorOptions"
+        ],
+        "hasObsoleteIdl": false
+      }
     },
     {
       "url": "https://www.w3.org/TR/appmanifest/",
@@ -14254,484 +14403,18 @@
       "url": "https://www.w3.org/TR/clipboard-apis/",
       "shortname": "clipboard-apis",
       "versions": [
-        "https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/",
-        "https://www.w3.org/TR/2016/WD-clipboard-apis-20161213/",
-        "https://www.w3.org/TR/2016/WD-clipboard-apis-20160403/",
-        "https://www.w3.org/TR/2016/WD-clipboard-apis-20160311/",
-        "https://www.w3.org/TR/2015/WD-clipboard-apis-20151215/",
-        "https://www.w3.org/TR/2015/WD-clipboard-apis-20150421/",
-        "https://www.w3.org/TR/2014/WD-clipboard-apis-20141209/",
-        "https://www.w3.org/TR/2014/WD-clipboard-apis-20140918/",
-        "https://www.w3.org/TR/2014/WD-clipboard-apis-20140313/",
-        "https://www.w3.org/TR/2013/WD-clipboard-apis-20130411/",
-        "https://www.w3.org/TR/2012/WD-clipboard-apis-20120223/",
-        "https://www.w3.org/TR/2011/WD-clipboard-apis-20110412/",
-        "https://www.w3.org/TR/2006/WD-clipboard-apis-20061115/",
-        "https://w3c.github.io/clipboard-apis/",
-        "https://dev.w3.org/2006/webapi/clipops/clipops.html",
-        "https://www.w3.org/TR/clipboard-apis/"
+        "https://www.w3.org/TR/clipboard-apis/",
+        "https://www.w3.org/TR/clipboard-apis"
       ],
-      "title": "Clipboard API and events",
-      "latest": "https://www.w3.org/TR/clipboard-apis/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/clipboard-apis/",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
+      "latest": "https://www.w3.org/TR/clipboard-apis",
       "repository": "https://github.com/w3c/clipboard-apis",
-      "crawled": "https://w3c.github.io/clipboard-apis/",
-      "date": "18 February 2018",
-      "links": [
-        "https://www.w3.org/TR/",
-        "https://www.w3.org/WebPlatform/WG/",
-        "https://github.com/w3c/clipboard-apis",
-        "https://lists.w3.org/Archives/Public/public-webapps/",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/83482/status",
-        "https://www.w3.org/2018/Process-20180201/",
-        "https://w3c.github.io/permissions/",
-        "https://w3c.github.io/editing/contentEditable.html",
-        "https://html.spec.whatwg.org/",
-        "https://dom.spec.whatwg.org/",
-        "https://heycam.github.io/webidl/",
-        "https://www.w3.org/TR/html5/",
-        "https://tc39.github.io/ecma262/",
-        "https://w3c.github.io/FileAPI/",
-        "https://www.w3.org/TR/FileAPI/",
-        "https://www.w3.org/TR/permissions/",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://www.ietf.org/rfc/rfc2392.txt",
-        "https://msdn.microsoft.com/en-us/library/ms537658.aspx",
-        "https://www.w3.org/TR/SVG11/"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "DOM",
-            "url": "https://dom.spec.whatwg.org/"
-          },
-          {
-            "name": "ECMASCRIPT",
-            "url": "https://tc39.github.io/ecma262/"
-          },
-          {
-            "name": "FileAPI",
-            "url": "https://www.w3.org/TR/FileAPI/"
-          },
-          {
-            "name": "HTML",
-            "url": "https://html.spec.whatwg.org/multipage/"
-          },
-          {
-            "name": "HTMLLS",
-            "url": "https://html.spec.whatwg.org/multipage/"
-          },
-          {
-            "name": "PERMISSIONS",
-            "url": "https://www.w3.org/TR/permissions/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "RFC2392",
-            "url": "http://www.ietf.org/rfc/rfc2392.txt"
-          },
-          {
-            "name": "WebIDL",
-            "url": "https://heycam.github.io/webidl/"
-          }
-        ],
-        "informative": [
-          {
-            "name": "HTML5",
-            "url": "https://www.w3.org/TR/html5/"
-          },
-          {
-            "name": "MICROSOFT-CLIP-OP",
-            "url": "http://msdn.microsoft.com/en-us/library/ms537658.aspx"
-          },
-          {
-            "name": "SVG11",
-            "url": "https://www.w3.org/TR/SVG11/"
-          }
-        ]
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {
-            "Window": [
-              "ClipboardEvent"
-            ]
-          },
-          "functions": {
-            "Window": [
-              "Clipboard"
-            ]
-          },
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "ClipboardEventInit": [
-              "EventInit",
-              "DataTransfer"
-            ],
-            "ClipboardEvent": [
-              "Event",
-              "Window",
-              "ClipboardEventInit",
-              "DataTransfer"
-            ],
-            "Navigator": [
-              "Clipboard"
-            ],
-            "Clipboard": [
-              "EventTarget",
-              "Window",
-              "DataTransfer"
-            ],
-            "ClipboardPermissionDescriptor": [
-              "PermissionDescriptor"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "ClipboardEventInit": {
-            "type": "dictionary",
-            "name": "ClipboardEventInit",
-            "partial": false,
-            "members": [
-              {
-                "type": "field",
-                "name": "clipboardData",
-                "required": false,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": true,
-                  "union": false,
-                  "idlType": "DataTransfer"
-                },
-                "extAttrs": [],
-                "default": {
-                  "type": "null"
-                }
-              }
-            ],
-            "inheritance": "EventInit",
-            "extAttrs": []
-          },
-          "ClipboardEvent": {
-            "type": "interface",
-            "name": "ClipboardEvent",
-            "partial": false,
-            "members": [
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": true,
-                  "union": false,
-                  "idlType": "DataTransfer"
-                },
-                "name": "clipboardData",
-                "extAttrs": []
-              }
-            ],
-            "inheritance": "Event",
-            "extAttrs": [
-              {
-                "name": "Constructor",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    "name": "type"
-                  },
-                  {
-                    "optional": true,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "ClipboardEventInit"
-                    },
-                    "name": "eventInitDict"
-                  }
-                ],
-                "type": "extended-attribute",
-                "rhs": null
-              },
-              {
-                "name": "Exposed",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": {
-                  "type": "identifier",
-                  "value": "Window"
-                }
-              }
-            ]
-          },
-          "Clipboard": {
-            "type": "interface",
-            "name": "Clipboard",
-            "partial": false,
-            "members": [
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": "Promise",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "DataTransfer"
-                  }
-                },
-                "name": "read",
-                "arguments": [],
-                "extAttrs": []
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": "Promise",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "DOMString"
-                  }
-                },
-                "name": "readText",
-                "arguments": [],
-                "extAttrs": []
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": "Promise",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "void"
-                  }
-                },
-                "name": "write",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DataTransfer"
-                    },
-                    "name": "data"
-                  }
-                ],
-                "extAttrs": []
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": "Promise",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "void"
-                  }
-                },
-                "name": "writeText",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    "name": "data"
-                  }
-                ],
-                "extAttrs": []
-              }
-            ],
-            "inheritance": "EventTarget",
-            "extAttrs": [
-              {
-                "name": "SecureContext",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": null
-              },
-              {
-                "name": "Exposed",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": {
-                  "type": "identifier",
-                  "value": "Window"
-                }
-              }
-            ]
-          },
-          "ClipboardPermissionDescriptor": {
-            "type": "dictionary",
-            "name": "ClipboardPermissionDescriptor",
-            "partial": false,
-            "members": [
-              {
-                "type": "field",
-                "name": "allowWithoutGesture",
-                "required": false,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "boolean"
-                },
-                "extAttrs": [],
-                "default": {
-                  "type": "boolean",
-                  "value": false
-                }
-              }
-            ],
-            "inheritance": "PermissionDescriptor",
-            "extAttrs": []
-          }
-        },
-        "idlExtendedNames": {
-          "Navigator": [
-            {
-              "type": "interface",
-              "name": "Navigator",
-              "partial": true,
-              "members": [
-                {
-                  "type": "attribute",
-                  "static": false,
-                  "stringifier": false,
-                  "inherit": false,
-                  "readonly": true,
-                  "idlType": {
-                    "type": "attribute-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "Clipboard"
-                  },
-                  "name": "clipboard",
-                  "extAttrs": [
-                    {
-                      "name": "SecureContext",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": null
-                    },
-                    {
-                      "name": "SameObject",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": null
-                    }
-                  ]
-                }
-              ],
-              "extAttrs": []
-            }
-          ]
-        },
-        "externalDependencies": [
-          "EventInit",
-          "DataTransfer",
-          "Event",
-          "Window",
-          "Navigator",
-          "EventTarget",
-          "PermissionDescriptor"
-        ],
-        "hasObsoleteIdl": false
-      }
+      "title": "clipboard-apis",
+      "crawled": "https://www.w3.org/TR/clipboard-apis/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/compositing-1/",
@@ -18556,7 +18239,7 @@
       "datedStatus": "Working Draft",
       "edDraft": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-      "date": "27 February 2018",
+      "date": "2 March 2018",
       "links": [
         "https://www.battleforthenet.com/",
         "https://github.com/w3c/css-houdini-drafts/issues",
@@ -18570,6 +18253,7 @@
         "https://infra.spec.whatwg.org/",
         "https://drafts.csswg.org/css-syntax-3/",
         "https://drafts.csswg.org/css-lists-3/",
+        "https://drafts.csswg.org/cssom-1/",
         "https://drafts.csswg.org/css-variables-1/",
         "https://drafts.csswg.org/css-backgrounds-3/",
         "https://drafts.csswg.org/css-animations-1/",
@@ -18581,11 +18265,7 @@
         "https://www.w3.org/TR/css-typed-om-1/",
         "https://drafts.csswg.org/css-values-3/",
         "https://drafts.csswg.org/css-images-3/",
-        "https://github.com/w3c/css-houdini-drafts/issues/148",
-        "https://github.com/w3c/css-houdini-drafts/issues/268",
-        "https://github.com/w3c/css-houdini-drafts/issues/276",
         "https://dom.spec.whatwg.org/",
-        "https://drafts.csswg.org/cssom-1/",
         "https://drafts.csswg.org/css2/visudet.html",
         "https://github.com/w3c/css-houdini-drafts/issues/350",
         "https://drafts.csswg.org/css-color-4/",
@@ -18954,7 +18634,7 @@
             "url": "https://www.w3.org/TR/css3-speech/"
           },
           {
-            "name": "CSSOM-1",
+            "name": "CSSOM",
             "url": "https://www.w3.org/TR/cssom-1/"
           },
           {
@@ -22697,7 +22377,14 @@
                   },
                   "name": "computedStyleMap",
                   "arguments": [],
-                  "extAttrs": []
+                  "extAttrs": [
+                    {
+                      "name": "SameObject",
+                      "arguments": null,
+                      "type": "extended-attribute",
+                      "rhs": null
+                    }
+                  ]
                 }
               ],
               "extAttrs": []
@@ -51400,7 +51087,7 @@
       "edDraft": "https://w3c.github.io/gyroscope/",
       "repository": "https://github.com/w3c/gyroscope",
       "crawled": "https://w3c.github.io/gyroscope/",
-      "date": "1 March 2018",
+      "date": "2 March 2018",
       "links": [
         "https://lists.w3.org/Archives/Public/public-device-apis/",
         "https://www.w3.org/2009/dap/",
@@ -51479,7 +51166,7 @@
             ],
             "GyroscopeSensorOptions": [
               "SensorOptions",
-              "LocalCoordinateSystem"
+              "GyroscopeLocalCoordinateSystem"
             ]
           },
           "_reallyDependsOnWindow": false,
@@ -51580,9 +51267,9 @@
               }
             ]
           },
-          "LocalCoordinateSystem": {
+          "GyroscopeLocalCoordinateSystem": {
             "type": "enum",
-            "name": "LocalCoordinateSystem",
+            "name": "GyroscopeLocalCoordinateSystem",
             "values": [
               {
                 "type": "string",
@@ -51610,7 +51297,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "LocalCoordinateSystem"
+                  "idlType": "GyroscopeLocalCoordinateSystem"
                 },
                 "extAttrs": [],
                 "default": {
@@ -52043,7 +51730,7 @@
       "edDraft": "https://w3c.github.io/html/",
       "repository": "https://github.com/w3c/html",
       "crawled": "https://w3c.github.io/html/",
-      "date": "1 March 2018",
+      "date": "2 March 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/WebPlatform/WG/",
@@ -58414,7 +58101,7 @@
       "edDraft": "https://rawgit.com/w3c/input-events/v1/index.html",
       "repository": "https://github.com/w3c/input-events",
       "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-      "date": "02 March 2018",
+      "date": "03 March 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://github.com/w3c/web-platform-tests/tree/master/input-events",
@@ -61741,7 +61428,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-main/",
       "repository": "https://github.com/w3c/mediacapture-main",
       "crawled": "https://w3c.github.io/mediacapture-main/",
-      "date": "23 February 2018",
+      "date": "02 March 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/2011/04/webrtc/",
@@ -111712,7 +111399,7 @@
       "edDraft": "https://w3c.github.io/webrtc-pc/",
       "repository": "https://github.com/w3c/webrtc-pc",
       "crawled": "https://w3c.github.io/webrtc-pc/",
-      "date": "01 March 2018",
+      "date": "02 March 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://github.com/w3c/webrtc-pc/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20-label%3AEditorial%20",
@@ -122821,7 +122508,7 @@
       "repository": "https://github.com/whatwg/xhr",
       "title": "XMLHttpRequest Standard",
       "crawled": "https://xhr.spec.whatwg.org/",
-      "date": "12 January 2018",
+      "date": "2 March 2018",
       "links": [
         "https://fetch.spec.whatwg.org/",
         "https://lists.w3.org/Archives/Public/public-whatwg-archive/",
@@ -122837,6 +122524,7 @@
         "https://infra.spec.whatwg.org/",
         "https://w3c.github.io/FileAPI/",
         "https://mimesniff.spec.whatwg.org/",
+        "https://wicg.github.io/feature-policy/",
         "https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/",
         "https://annevankesteren.nl/",
         "https://www.mozilla.org/",
@@ -122864,6 +122552,10 @@
           {
             "name": "ENCODING",
             "url": "https://encoding.spec.whatwg.org/"
+          },
+          {
+            "name": "FEATURE-POLICY",
+            "url": "https://wicg.github.io/feature-policy/"
           },
           {
             "name": "FETCH",
