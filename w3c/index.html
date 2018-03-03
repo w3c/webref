@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">March 02, 2018</h2>
+            <h2 class="date">March 03, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -39,12 +39,12 @@
     <input class="submit" id="submit" type="submit" value="Apply" />
   </p>
   <p id="stats"></p>
-  <section id="accelerometer" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
+  <section id="accelerometer" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
   <h2>Accelerometer</h2>
   <section id="spec-info" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/accelerometer/">Editor's Draft</a> (1 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/accelerometer/">Editor's Draft</a> (2 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/accelerometer/" class="uri">https://w3c.github.io/accelerometer/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/accelerometer/" class="uri">https://www.w3.org/TR/accelerometer/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-accelerometer-20171018/">Working Draft</a></li>
@@ -56,10 +56,6 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>Window</code></li>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/gyroscope/">Gyroscope</a> and <a href="https://w3c.github.io/magnetometer/">Magnetometer</a> and <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
-  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
@@ -81,21 +77,24 @@
   </ul>
   </section>
   </section>
-  <section id="ambient-light" class="level2" data-spec="true" data-error="true">
-  <h2>ambient-light</h2>
+  <section id="ambient-light-sensor" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <h2>Ambient Light Sensor</h2>
   <section id="spec-info-1" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/ambient-light/">Initial URL</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/ambient-light" class="uri">https://www.w3.org/TR/ambient-light</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/ambient-light/">Editor's Draft</a> (28 February 2018)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/ambient-light/" class="uri">https://w3c.github.io/ambient-light/</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/ambient-light/" class="uri">https://www.w3.org/TR/ambient-light/</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-ambient-light-20171018/">Working Draft</a></li>
   <li>Repository: <a href="https://github.com/w3c/ambient-light">GitHub w3c/ambient-light</a></li>
   <li>Shortname: ambient-light</li>
   </ul>
   </section>
   <section id="potential-issues-1" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>Window</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-1" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -197,33 +196,21 @@
   </ul>
   </section>
   </section>
-  <section id="clipboard-api-and-events" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
-  <h2>Clipboard API and events</h2>
+  <section id="clipboard-apis" class="level2" data-spec="true" data-error="true">
+  <h2>clipboard-apis</h2>
   <section id="spec-info-5" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/clipboard-apis/">Editor's Draft</a> (18 February 2018)</li>
-  <li>Editor's Draft: <a href="https://w3c.github.io/clipboard-apis/" class="uri">https://w3c.github.io/clipboard-apis/</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/clipboard-apis/" class="uri">https://www.w3.org/TR/clipboard-apis/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/">Working Draft</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/clipboard-apis/">Initial URL</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/clipboard-apis" class="uri">https://www.w3.org/TR/clipboard-apis</a></li>
   <li>Repository: <a href="https://github.com/w3c/clipboard-apis">GitHub w3c/clipboard-apis</a></li>
   <li>Shortname: clipboard-apis</li>
   </ul>
   </section>
   <section id="potential-issues-5" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>DataTransfer</code>, <code>Navigator</code>, <code>Window</code></li>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a></li>
-  </ul></li>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a>, related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
-  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)     at &lt;anonymous&gt;</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-5" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -584,6 +571,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   </ul>
@@ -749,7 +737,7 @@
   <section id="spec-info-20" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.css-houdini.org/css-typed-om-1/">Editor's Draft</a> (27 February 2018)</li>
+  <li>Crawled version: <a href="https://drafts.css-houdini.org/css-typed-om-1/">Editor's Draft</a> (2 March 2018)</li>
   <li>Editor's Draft: <a href="https://drafts.css-houdini.org/css-typed-om-1/" class="uri">https://drafts.css-houdini.org/css-typed-om-1/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-typed-om-1/" class="uri">https://www.w3.org/TR/css-typed-om-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/">Working Draft</a></li>
@@ -1207,7 +1195,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
@@ -1319,6 +1306,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
+  <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
@@ -1399,12 +1387,12 @@
   </ul>
   </section>
   </section>
-  <section id="gyroscope" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
+  <section id="gyroscope" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
   <h2>Gyroscope</h2>
   <section id="spec-info-37" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/gyroscope/">Editor's Draft</a> (1 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/gyroscope/">Editor's Draft</a> (2 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/gyroscope/" class="uri">https://w3c.github.io/gyroscope/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/gyroscope/" class="uri">https://www.w3.org/TR/gyroscope/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-gyroscope-20171018/">Working Draft</a></li>
@@ -1416,10 +1404,6 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>Window</code></li>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/accelerometer/">Accelerometer</a> and <a href="https://w3c.github.io/magnetometer/">Magnetometer</a> and <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
-  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
@@ -1501,7 +1485,7 @@
   <section id="spec-info-39" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/html/">Editor's Draft</a> (1 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/html/">Editor's Draft</a> (2 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/html/" class="uri">https://w3c.github.io/html/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/html52/" class="uri">https://www.w3.org/TR/html52/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/REC-html52-20171214/">Recommendation</a></li>
@@ -1554,7 +1538,6 @@
   <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
-  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
@@ -1646,7 +1629,6 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
-  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
@@ -1700,7 +1682,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
-  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
@@ -1833,7 +1814,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
-  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
@@ -2004,7 +1984,7 @@
   <section id="spec-info-45" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (02 March 2018)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (03 March 2018)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -2115,7 +2095,7 @@
   <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
-  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/accelerometer/">Accelerometer</a> and <a href="https://w3c.github.io/gyroscope/">Gyroscope</a> and <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
+  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
@@ -2142,7 +2122,7 @@
   <section id="spec-info-49" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/mediacapture-main/">Editor's Draft</a> (23 February 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/mediacapture-main/">Editor's Draft</a> (02 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/mediacapture-main/" class="uri">https://w3c.github.io/mediacapture-main/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/mediacapture-streams/" class="uri">https://www.w3.org/TR/mediacapture-streams/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Candidate Recommendation</a></li>
@@ -2513,7 +2493,7 @@
   <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
-  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/accelerometer/">Accelerometer</a> and <a href="https://w3c.github.io/gyroscope/">Gyroscope</a> and <a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
+  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -2775,7 +2755,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
-  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
+  <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
@@ -3226,7 +3206,6 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
@@ -4076,7 +4055,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
-  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a></li>
@@ -4405,10 +4383,10 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
+  <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
-  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
@@ -4630,7 +4608,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
-  <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
@@ -4802,7 +4779,7 @@
   <section id="spec-info-113" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Fri Mar 02 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sat Mar 03 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4830,7 +4807,7 @@
   <section id="spec-info-114" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Fri Mar 02 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sat Mar 03 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4865,7 +4842,7 @@
   <section id="spec-info-115" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (01 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (02 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webrtc-pc/" class="uri">https://w3c.github.io/webrtc-pc/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webrtc/" class="uri">https://www.w3.org/TR/webrtc/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">Candidate Recommendation</a></li>
@@ -4991,7 +4968,7 @@
   <section id="spec-info-118" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://xhr.spec.whatwg.org/">Living Standard</a> (12 January 2018)</li>
+  <li>Crawled version: <a href="https://xhr.spec.whatwg.org/">Living Standard</a> (2 March 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/xhr">GitHub whatwg/xhr</a></li>
   <li>Shortname: no shortname</li>
   </ul>
