@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-03-03T02:08:56.781Z",
+  "date": "2018-03-04T02:09:29.767Z",
   "stats": {
     "crawled": 110,
     "errors": 1,
@@ -402,6 +402,12 @@
                 "title": "Web Audio API",
                 "crawled": "https://webaudio.github.io/web-audio-api/",
                 "date": "26 February 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "9 November 2017"
               }
             ]
           }
@@ -969,9 +975,7 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "WorkletGlobalScope"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [
           {
             "name": "Worklet",
@@ -981,6 +985,12 @@
                 "title": "Web Audio API",
                 "crawled": "https://webaudio.github.io/web-audio-api/",
                 "date": "26 February 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "9 November 2017"
               }
             ]
           }
@@ -992,7 +1002,14 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
+            }
+          ]
         },
         "ok": false
       }
@@ -1225,6 +1242,12 @@
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/",
               "date": "25 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
             }
           ],
           "informative": []
@@ -1456,7 +1479,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "1 March 2018"
+              "date": "3 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -1727,7 +1750,7 @@
     {
       "title": "DOM Parsing and Serialization",
       "shortname": "DOM-Parsing",
-      "date": "and similar APIs",
+      "date": "",
       "url": "https://www.w3.org/TR/DOM-Parsing/",
       "latest": "http://www.w3.org/TR/DOM-Parsing/",
       "datedUrl": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
@@ -1736,24 +1759,16 @@
       "crawled": "https://w3c.github.io/DOM-Parsing/",
       "repository": "https://github.com/w3c/DOM-Parsing",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395\n    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)\n    at ontimeout (timers.js:475:11)\n    at tryOnTimeout (timers.js:310:5)\n    at Timer.listOnTimeout (timers.js:270:5)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/dom/",
-            "ref": {
-              "name": "DOM4",
-              "url": "https://dom.spec.whatwg.org/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -1912,12 +1927,6 @@
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
               "date": "1 July 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -2181,7 +2190,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 03 2018"
+              "date": "Sun Mar 04 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -2331,7 +2340,13 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "1 March 2018"
+              "date": "3 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -2537,6 +2552,12 @@
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
               "date": "02 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -3450,12 +3471,6 @@
               "date": "1 July 2016"
             },
             {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
-            },
-            {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
@@ -3543,7 +3558,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "03 March 2018"
+              "date": "04 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3807,7 +3822,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "1 March 2018"
+              "date": "3 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -3819,13 +3834,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 03 2018"
+              "date": "Sun Mar 04 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 03 2018"
+              "date": "Sun Mar 04 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3838,6 +3853,12 @@
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/",
               "date": "25 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -3900,12 +3921,6 @@
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
               "date": "14 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
             },
             {
               "url": "https://www.w3.org/TR/encoding/",
@@ -4153,7 +4168,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "03 March 2018",
+      "date": "04 March 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -4187,7 +4202,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "03 March 2018"
+              "date": "04 March 2018"
             }
           ]
         },
@@ -7052,7 +7067,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "03 March 2018"
+              "date": "04 March 2018"
             }
           ],
           "informative": []
@@ -7288,7 +7303,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "03 March 2018"
+              "date": "04 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -7589,7 +7604,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "1 March 2018"
+              "date": "3 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -7915,8 +7930,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
-          "Object",
-          "WorkletGlobalScope"
+          "Object"
         ],
         "redefinedIdlNames": [
           {
@@ -7927,6 +7941,12 @@
                 "title": "CSS Painting API Level 1",
                 "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
                 "date": "28 January 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "9 November 2017"
               }
             ]
           }
@@ -7959,6 +7979,12 @@
               "title": "Media Capture from DOM Elements",
               "crawled": "https://w3c.github.io/mediacapture-fromelement/",
               "date": "23 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
             }
           ]
         },
@@ -8230,12 +8256,6 @@
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
               "date": "1 July 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
             },
             {
               "url": "https://dom.spec.whatwg.org/",
@@ -8601,7 +8621,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "1 March 2018"
+              "date": "3 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -8613,13 +8633,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 03 2018"
+              "date": "Sun Mar 04 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 03 2018"
+              "date": "Sun Mar 04 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -8632,6 +8652,12 @@
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/",
               "date": "25 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -8663,7 +8689,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "03 March 2018"
+              "date": "04 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -8714,7 +8740,7 @@
     },
     {
       "title": "WebAssembly JavaScript Interface",
-      "date": "1 March 2018",
+      "date": "3 March 2018",
       "url": "https://webassembly.github.io/spec/js-api/index.html",
       "crawled": "https://webassembly.github.io/spec/js-api/index.html",
       "report": {
@@ -8740,6 +8766,12 @@
                 "title": "Web Audio API",
                 "crawled": "https://webaudio.github.io/web-audio-api/",
                 "date": "26 February 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "9 November 2017"
               }
             ]
           }
@@ -8821,7 +8853,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sat Mar 03 2018",
+      "date": "Sun Mar 04 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8864,7 +8896,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sat Mar 03 2018",
+      "date": "Sun Mar 04 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8899,7 +8931,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 03 2018"
+              "date": "Sun Mar 04 2018"
             }
           ],
           "informative": [
@@ -9089,22 +9121,45 @@
       }
     },
     {
-      "title": "worklets-1",
+      "title": "Worklets Level 1",
       "shortname": "worklets-1",
-      "date": "",
+      "date": "9 November 2017",
       "url": "https://www.w3.org/TR/worklets-1/",
-      "latest": "https://www.w3.org/TR/worklets-1",
-      "crawled": "https://www.w3.org/TR/worklets-1/",
+      "latest": "http://www.w3.org/TR/worklets-1/",
+      "datedUrl": "http://www.w3.org/TR/2016/WD-worklets-1-20160607/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://drafts.css-houdini.org/worklets/",
+      "crawled": "https://drafts.css-houdini.org/worklets/",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "28 January 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "26 February 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/webappsec-csp/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -9127,13 +9182,26 @@
               "date": "28 January 2018"
             },
             {
+              "url": "https://html.spec.whatwg.org/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/",
+              "date": "2 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
               "date": "26 February 2018"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/WebIDL-1/",
+              "title": "Web IDL",
+              "crawled": "https://heycam.github.io/webidl/",
+              "date": "2 March 2018"
+            }
+          ]
         },
         "ok": false
       }

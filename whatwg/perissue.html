@@ -25,7 +25,7 @@
   <h2>Specifications that could not be rendered</h2>
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
-  <li><a href="https://www.w3.org/TR/worklets-1/">worklets-1</a>: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34) at &lt;anonymous&gt;</code></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a>: <code>Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14) at ontimeout (timers.js:475:11) at tryOnTimeout (timers.js:310:5) at Timer.listOnTimeout (timers.js:270:5)</code></li>
   </ul>
   <p>=&gt; 1 specification found</p>
   </section>
@@ -101,9 +101,8 @@
   <li><code>SVGScriptElement</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><code>WindowOrWorkerGlobalScope</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a>, <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a>, <a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a>, <a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a>, <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
-  <li><code>WorkletGlobalScope</code> used in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a>, <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   </ul>
-  <p>=&gt; 17 WebIDL names found</p>
+  <p>=&gt; 16 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -113,7 +112,7 @@
   <li><code>LocalCoordinateSystem</code> defined in <a href="https://w3c.github.io/magnetometer/">Magnetometer</a> and <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
   <li><code>RTCStats</code> defined in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> and <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
+  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   <p>=&gt; 5 WebIDL names found</p>
   <p>&quot;There can be only one&quot;...</p>
@@ -125,7 +124,7 @@
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a> uses:
   <ul>
   <li><code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
+  <li><code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a> uses:
   <ul>
@@ -155,7 +154,7 @@
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a> uses <code>EventHandler</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a> uses <code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
-  <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a> uses <code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
+  <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a> uses <code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> uses:
   <ul>
   <li><code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
@@ -294,9 +293,10 @@
   <li><a href="https://www.w3.org/TR/page-visibility/?csw=1"><code>https://www.w3.org/TR/page-visibility/?csw=1</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a> links to <a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 88 missing references for links found in 37 specifications</p>
+  <p>=&gt; 89 missing references for links found in 38 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -337,7 +337,6 @@
   <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a> but related reference &quot;SELECTORS-3&quot; uses URL <a href="https://www.w3.org/TR/selectors-3/"><code>https://www.w3.org/TR/selectors-3/</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a> links to <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/2016/REC-html51-20161101/"><code>https://www.w3.org/TR/2016/REC-html51-20161101/</code></a></li>
-  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a> links to <a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM4&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a></li>
@@ -498,7 +497,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but related reference &quot;CANVAS&quot; uses URL <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element"><code>https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element</code></a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> links to <a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   </ul>
-  <p>=&gt; 119 inconsistent references for links found in 52 specifications</p>
+  <p>=&gt; 118 inconsistent references for links found in 51 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>

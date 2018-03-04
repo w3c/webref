@@ -1,28 +1,24 @@
-% Diff between report from "March 03, 2018" and reference report from "March 02, 2018"
+% Diff between report from "March 04, 2018" and reference report from "March 03, 2018"
 % Reffy
-% March 03, 2018
-
-## Accelerometer
-
-- URL: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/accelerometer/)
-- Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
-- WebIDL names also defined elsewhere: *DEL* LocalCoordinateSystem
-
+% March 04, 2018
 
 ## CSS Painting API Level 1
 
 - URL: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
 - Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
-- Unknown WebIDL names used: *INS* WorkletGlobalScope
+- Unknown WebIDL names used: *DEL* WorkletGlobalScope
 
 
-## Gyroscope
+## DOM Parsing and Serialization
 
-- URL: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/gyroscope/)
-- Repository: [GitHub w3c/gyroscope](https://github.com/w3c/gyroscope)
-- WebIDL names also defined elsewhere: *DEL* LocalCoordinateSystem
+- URL: [https://www.w3.org/TR/DOM-Parsing/](https://www.w3.org/TR/DOM-Parsing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/)
+- Repository: [GitHub w3c/DOM-Parsing](https://github.com/w3c/DOM-Parsing)
+- Spec could not be rendered: *INS* Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395
+    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
 
 
 ## Web Audio API
@@ -30,15 +26,15 @@
 - URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
 - Repository: [GitHub webaudio/web-audio-api](https://github.com/webaudio/web-audio-api)
-- Unknown WebIDL names used: *INS* WorkletGlobalScope
+- Unknown WebIDL names used: *DEL* WorkletGlobalScope
 
 
-## worklets-1
+## Worklets Level 1
 
 - URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/worklets-1/)
-- Spec title: *INS* worklets-1 / *DEL* Worklets Level 1
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/worklets/)
+- Spec title: *INS* Worklets Level 1 / *DEL* worklets-1
+- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
     at <anonymous>
 
