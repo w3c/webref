@@ -2,13 +2,13 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-03T02:05:20.816Z",
+  "date": "2018-03-04T02:06:00.755Z",
   "options": {
     "publishedVersion": true
   },
   "stats": {
     "crawled": 119,
-    "errors": 2
+    "errors": 0
   },
   "results": [
     {
@@ -4604,7 +4604,7 @@
       ],
       "title": "WebAssembly JavaScript Interface",
       "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-      "date": "1 March 2018",
+      "date": "3 March 2018",
       "links": [
         "https://www.w3.org/TR/wasm-core/",
         "https://www.w3.org/TR/wasm-js-api/",
@@ -7354,7 +7354,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Sat Mar 03 2018",
+      "date": "Sun Mar 04 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -8438,7 +8438,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Sat Mar 03 2018",
+      "date": "Sun Mar 04 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -61351,18 +61351,81 @@
       "url": "https://www.w3.org/TR/paint-timing/",
       "shortname": "paint-timing",
       "versions": [
-        "https://www.w3.org/TR/paint-timing/",
-        "https://www.w3.org/TR/paint-timing"
+        "https://www.w3.org/TR/2017/WD-paint-timing-20170907/",
+        "https://w3c.github.io/paint-timing/",
+        "https://www.w3.org/TR/paint-timing/"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-      "latest": "https://www.w3.org/TR/paint-timing",
+      "title": "Paint Timing 1",
+      "latest": "https://www.w3.org/TR/paint-timing/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-paint-timing-20170907/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/paint-timing/",
       "repository": "https://github.com/w3c/paint-timing",
-      "title": "paint-timing",
-      "crawled": "https://www.w3.org/TR/paint-timing",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/2017/WD-paint-timing-20170907/",
+      "date": "7 September 2017",
+      "links": [
+        "https://www.w3.org/TR/",
+        "https://www.w3.org/webperf/",
+        "https://lists.w3.org/Archives/Public/public-web-perf/",
+        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
+        "https://www.w3.org/2004/01/pp-impl/45211/status",
+        "https://www.w3.org/2017/Process-20170301/",
+        "https://html.spec.whatwg.org/",
+        "https://www.w3.org/TR/performance-timeline-2/",
+        "https://heycam.github.io/webidl/",
+        "https://www.w3.org/TR/hr-time-2/",
+        "https://w3c.github.io/performance-timeline/",
+        "https://github.com/w3c/paint-timing/graphs/contributors"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "HR-TIME-2",
+            "url": "https://www.w3.org/TR/hr-time-2/"
+          },
+          {
+            "name": "PERFORMANCE-TIMELINE-2",
+            "url": "https://www.w3.org/TR/performance-timeline-2/"
+          },
+          {
+            "name": "WebIDL",
+            "url": "https://heycam.github.io/webidl/"
+          }
+        ],
+        "informative": []
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {
+            "Window": [
+              "PerformancePaintTiming"
+            ]
+          },
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {
+            "PerformancePaintTiming": [
+              "PerformanceEntry"
+            ]
+          },
+          "_reallyDependsOnWindow": false,
+          "PerformancePaintTiming": {
+            "type": "interface",
+            "name": "PerformancePaintTiming",
+            "partial": false,
+            "members": [],
+            "inheritance": "PerformanceEntry",
+            "extAttrs": []
+          }
+        },
+        "idlExtendedNames": {},
+        "externalDependencies": [
+          "PerformanceEntry"
+        ],
+        "hasObsoleteIdl": false
+      }
     },
     {
       "url": "https://www.w3.org/TR/payment-handler/",
@@ -103431,19 +103494,894 @@
       "url": "https://www.w3.org/TR/workers/",
       "shortname": "workers",
       "versions": [
+        "https://www.w3.org/TR/2015/WD-workers-20150924/",
+        "https://www.w3.org/TR/2012/CR-workers-20120501/",
+        "https://www.w3.org/TR/2012/WD-workers-20120313/",
+        "https://www.w3.org/TR/2011/WD-workers-20110901/",
+        "https://www.w3.org/TR/2011/WD-workers-20110310/",
+        "https://www.w3.org/TR/2011/WD-workers-20110208/",
+        "https://www.w3.org/TR/2009/WD-workers-20091222/",
+        "https://www.w3.org/TR/2009/WD-workers-20091029/",
+        "https://www.w3.org/TR/2009/WD-workers-20090423/",
+        "https://html.spec.whatwg.org/",
         "https://www.w3.org/TR/workers/",
-        "https://www.w3.org/TR/workers",
-        "https://html.spec.whatwg.org/"
+        "http://www.w3.org/TR/workers/",
+        "https://html.spec.whatwg.org/multipage/workers.html"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-      "latest": "https://www.w3.org/TR/workers",
+      "title": "Web Workers",
+      "latest": "http://www.w3.org/TR/workers/",
+      "datedUrl": "http://www.w3.org/TR/2015/WD-workers-20150924/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://html.spec.whatwg.org/multipage/workers.html",
       "repository": "https://github.com/whatwg/html",
-      "title": "workers",
-      "crawled": "https://www.w3.org/TR/workers",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "http://www.w3.org/TR/2015/WD-workers-20150924/",
+      "date": "24 September 2015",
+      "links": [
+        "https://www.w3.org/TR/",
+        "https://www.w3.org/2008/webapps/",
+        "https://github.com/w3c/web-platform-tests/tree/master/workers",
+        "https://w3c.github.io/test-results/workers/all.html",
+        "https://github.com/whatwg/html/issues/new",
+        "https://lists.w3.org/Archives/Public/public-webapps/",
+        "https://lists.whatwg.org/listinfo.cgi/whatwg-whatwg.org",
+        "https://lists.whatwg.org/pipermail/whatwg-whatwg.org/",
+        "https://html.spec.whatwg.org/",
+        "https://www.w3.org/TR/2012/CR-workers-20120501/",
+        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
+        "https://www.w3.org/2004/01/pp-impl/42538/status",
+        "https://www.w3.org/2015/Process-20150901/",
+        "https://www.whatwg.org/demos/workers/primes/page.html",
+        "https://www.whatwg.org/demos/workers/stocks/page.html",
+        "https://www.whatwg.org/demos/workers/shared/001/test.html",
+        "https://www.whatwg.org/demos/workers/shared/002/test.html",
+        "https://www.whatwg.org/demos/workers/shared/003/test.html",
+        "https://www.whatwg.org/demos/workers/multiviewer/page.html",
+        "https://www.whatwg.org/demos/workers/multicore/page.html",
+        "https://www.w3.org/TR/webmessaging/",
+        "https://www.w3.org/TR/domcore/",
+        "https://www.w3.org/TR/html5/",
+        "https://fetch.spec.whatwg.org/",
+        "https://www.w3.org/TR/dom/",
+        "https://www.ecma-international.org/publications/standards/Ecma-262.htm",
+        "https://tools.ietf.org/html/rfc2119",
+        "https://www.w3.org/TR/WebIDL-1/",
+        "https://url.spec.whatwg.org/",
+        "https://www.w3.org/TR/FileAPI/",
+        "https://xhr.spec.whatwg.org/",
+        "https://www.w3.org/TR/service-workers/"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "DOM4",
+            "url": "http://www.w3.org/TR/dom/"
+          },
+          {
+            "name": "ECMA262",
+            "url": "http://www.ecma-international.org/publications/standards/Ecma-262.htm"
+          },
+          {
+            "name": "HTML",
+            "url": "http://www.w3.org/TR/html5/"
+          },
+          {
+            "name": "RFC2119",
+            "url": "http://tools.ietf.org/html/rfc2119"
+          },
+          {
+            "name": "WEBIDL",
+            "url": "http://www.w3.org/TR/WebIDL-1/"
+          },
+          {
+            "name": "MESSAGING",
+            "url": "http://www.w3.org/TR/webmessaging/"
+          },
+          {
+            "name": "URL",
+            "url": "https://url.spec.whatwg.org/"
+          }
+        ],
+        "informative": [
+          {
+            "name": "FILEAPI",
+            "url": "http://www.w3.org/TR/FileAPI/"
+          },
+          {
+            "name": "XHR",
+            "url": "https://xhr.spec.whatwg.org/"
+          },
+          {
+            "name": "SW",
+            "url": "http://www.w3.org/TR/service-workers/"
+          }
+        ]
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {
+            "Window": [
+              "Worker",
+              "SharedWorker"
+            ],
+            "Worker": [
+              "Worker",
+              "SharedWorker"
+            ]
+          },
+          "functions": {
+            "Worker": [
+              "WorkerGlobalScope",
+              "WorkerNavigator",
+              "WorkerLocation"
+            ],
+            "DedicatedWorker": [
+              "DedicatedWorkerGlobalScope"
+            ],
+            "SharedWorker": [
+              "SharedWorkerGlobalScope"
+            ]
+          },
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {
+            "WorkerGlobalScope": [
+              "EventTarget",
+              "Worker",
+              "WorkerGlobalScope",
+              "WorkerLocation",
+              "OnErrorEventHandler",
+              "EventHandler",
+              "WorkerNavigator",
+              "WindowTimers",
+              "WindowBase64"
+            ],
+            "DedicatedWorkerGlobalScope": [
+              "WorkerGlobalScope",
+              "DedicatedWorker",
+              "Transferable",
+              "EventHandler"
+            ],
+            "SharedWorkerGlobalScope": [
+              "WorkerGlobalScope",
+              "SharedWorker",
+              "ApplicationCache",
+              "EventHandler"
+            ],
+            "AbstractWorker": [
+              "Window",
+              "Worker",
+              "EventHandler"
+            ],
+            "Worker": [
+              "EventTarget",
+              "Window",
+              "Worker",
+              "Transferable",
+              "EventHandler",
+              "AbstractWorker"
+            ],
+            "SharedWorker": [
+              "EventTarget",
+              "Window",
+              "Worker",
+              "MessagePort",
+              "AbstractWorker"
+            ],
+            "WorkerNavigator": [
+              "Worker",
+              "NavigatorID",
+              "NavigatorLanguage",
+              "NavigatorOnLine"
+            ],
+            "WorkerLocation": [
+              "Worker",
+              "URLUtilsReadOnly"
+            ]
+          },
+          "_reallyDependsOnWindow": false,
+          "WorkerGlobalScope": {
+            "type": "interface",
+            "name": "WorkerGlobalScope",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WorkerGlobalScope"
+                },
+                "name": "self",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WorkerLocation"
+                },
+                "name": "location",
+                "extAttrs": []
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "void"
+                },
+                "name": "close",
+                "arguments": [],
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": false,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "OnErrorEventHandler"
+                },
+                "name": "onerror",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": false,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EventHandler"
+                },
+                "name": "onlanguagechange",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": false,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EventHandler"
+                },
+                "name": "onoffline",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": false,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EventHandler"
+                },
+                "name": "ononline",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": "EventTarget",
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Worker"
+                }
+              }
+            ]
+          },
+          "DedicatedWorkerGlobalScope": {
+            "type": "interface",
+            "name": "DedicatedWorkerGlobalScope",
+            "partial": false,
+            "members": [
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "void"
+                },
+                "name": "postMessage",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "any"
+                    },
+                    "name": "message"
+                  },
+                  {
+                    "optional": true,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": true,
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": {
+                        "type": "argument-type",
+                        "sequence": false,
+                        "generic": null,
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "Transferable"
+                      }
+                    },
+                    "name": "transfer"
+                  }
+                ],
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": false,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EventHandler"
+                },
+                "name": "onmessage",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": "WorkerGlobalScope",
+            "extAttrs": [
+              {
+                "name": "Global",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Worker",
+                    "DedicatedWorker"
+                  ]
+                }
+              },
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "DedicatedWorker"
+                }
+              }
+            ]
+          },
+          "Worker": {
+            "type": "interface",
+            "name": "Worker",
+            "partial": false,
+            "members": [
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "void"
+                },
+                "name": "terminate",
+                "arguments": [],
+                "extAttrs": []
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "void"
+                },
+                "name": "postMessage",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "any"
+                    },
+                    "name": "message"
+                  },
+                  {
+                    "optional": true,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": true,
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": {
+                        "type": "argument-type",
+                        "sequence": false,
+                        "generic": null,
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "Transferable"
+                      }
+                    },
+                    "name": "transfer"
+                  }
+                ],
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": false,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EventHandler"
+                },
+                "name": "onmessage",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": "EventTarget",
+            "extAttrs": [
+              {
+                "name": "Constructor",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    "name": "scriptURL"
+                  }
+                ],
+                "type": "extended-attribute",
+                "rhs": null
+              },
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker"
+                  ]
+                }
+              }
+            ]
+          },
+          "DedicatedWorker": [
+            "DedicatedWorkerGlobalScope"
+          ],
+          "SharedWorkerGlobalScope": {
+            "type": "interface",
+            "name": "SharedWorkerGlobalScope",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "name": "name",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ApplicationCache"
+                },
+                "name": "applicationCache",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": false,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EventHandler"
+                },
+                "name": "onconnect",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": "WorkerGlobalScope",
+            "extAttrs": [
+              {
+                "name": "Global",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Worker",
+                    "SharedWorker"
+                  ]
+                }
+              },
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "SharedWorker"
+                }
+              }
+            ]
+          },
+          "SharedWorker": {
+            "type": "interface",
+            "name": "SharedWorker",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MessagePort"
+                },
+                "name": "port",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": "EventTarget",
+            "extAttrs": [
+              {
+                "name": "Constructor",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    "name": "scriptURL"
+                  },
+                  {
+                    "optional": true,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    "name": "name"
+                  }
+                ],
+                "type": "extended-attribute",
+                "rhs": null
+              },
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker"
+                  ]
+                }
+              }
+            ]
+          },
+          "AbstractWorker": {
+            "type": "interface",
+            "name": "AbstractWorker",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": false,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EventHandler"
+                },
+                "name": "onerror",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": [
+              {
+                "name": "NoInterfaceObject",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": null
+              },
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker"
+                  ]
+                }
+              }
+            ]
+          },
+          "WorkerNavigator": {
+            "type": "interface",
+            "name": "WorkerNavigator",
+            "partial": false,
+            "members": [],
+            "inheritance": null,
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Worker"
+                }
+              }
+            ]
+          },
+          "WorkerLocation": {
+            "type": "interface",
+            "name": "WorkerLocation",
+            "partial": false,
+            "members": [],
+            "inheritance": null,
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Worker"
+                }
+              }
+            ]
+          }
+        },
+        "idlExtendedNames": {
+          "WorkerGlobalScope": [
+            {
+              "type": "interface",
+              "name": "WorkerGlobalScope",
+              "partial": true,
+              "members": [
+                {
+                  "type": "operation",
+                  "getter": false,
+                  "setter": false,
+                  "deleter": false,
+                  "static": false,
+                  "stringifier": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "void"
+                  },
+                  "name": "importScripts",
+                  "arguments": [
+                    {
+                      "optional": false,
+                      "variadic": true,
+                      "extAttrs": [],
+                      "idlType": {
+                        "type": "argument-type",
+                        "sequence": false,
+                        "generic": null,
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "DOMString"
+                      },
+                      "name": "urls"
+                    }
+                  ],
+                  "extAttrs": []
+                },
+                {
+                  "type": "attribute",
+                  "static": false,
+                  "stringifier": false,
+                  "inherit": false,
+                  "readonly": true,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "WorkerNavigator"
+                  },
+                  "name": "navigator",
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": [
+                {
+                  "name": "Exposed",
+                  "arguments": null,
+                  "type": "extended-attribute",
+                  "rhs": {
+                    "type": "identifier",
+                    "value": "Worker"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "externalDependencies": [
+          "EventTarget",
+          "OnErrorEventHandler",
+          "EventHandler",
+          "Transferable",
+          "ApplicationCache",
+          "Window",
+          "MessagePort"
+        ],
+        "hasObsoleteIdl": false
+      }
     },
     {
       "url": "https://www.w3.org/TR/worklets-1/",
