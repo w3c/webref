@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 05, 2018
+% March 06, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -465,6 +465,7 @@ Informative references to this spec from:
 
 - Invalid WebIDL content found
 - Missing references for links: 
+     * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -722,7 +723,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
-- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
@@ -3051,7 +3051,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (27 February 2018)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (5 March 2018)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -3817,7 +3817,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (3 March 2018)
+- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (5 March 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3871,7 +3871,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Mar 05 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Mar 06 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3892,7 +3892,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Mar 05 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Mar 06 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 

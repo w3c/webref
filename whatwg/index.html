@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">March 05, 2018</h2>
+            <h2 class="date">March 06, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -44,7 +44,7 @@
   <section id="spec-info" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/accelerometer/">Editor's Draft</a> (2 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/accelerometer/">Editor's Draft</a> (5 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/accelerometer/" class="uri">https://w3c.github.io/accelerometer/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/accelerometer/" class="uri">https://www.w3.org/TR/accelerometer/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-accelerometer-20171018/">Working Draft</a></li>
@@ -258,7 +258,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
@@ -280,7 +279,7 @@
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><code>Worklet</code> defined in <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   </ul>
   </section>
@@ -453,12 +452,12 @@
   </ul>
   </section>
   </section>
-  <section id="css-fonts-module-level-4" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
+  <section id="css-fonts-module-level-4" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true">
   <h2>CSS Fonts Module Level 4</h2>
   <section id="spec-info-13" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.csswg.org/css-fonts-4/">Editor's Draft</a> (21 February 2018)</li>
+  <li>Crawled version: <a href="https://drafts.csswg.org/css-fonts-4/">Editor's Draft</a> (5 March 2018)</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-fonts-4/" class="uri">https://drafts.csswg.org/css-fonts-4/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-fonts-4/" class="uri">https://www.w3.org/TR/css-fonts-4/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/">Working Draft</a></li>
@@ -469,6 +468,7 @@
   <section id="potential-issues-13" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Invalid WebIDL content found</li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-syntax/"><code>https://www.w3.org/TR/css3-syntax/</code></a></li>
@@ -512,6 +512,7 @@
   <li>Invalid WebIDL content found</li>
   <li>Missing references for links:
   <ul>
+  <li><a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a></li>
   </ul></li>
   </ul>
@@ -547,6 +548,7 @@
   <li><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
@@ -566,9 +568,49 @@
   </ul>
   </section>
   </section>
+  <section id="css-painting-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true">
+  <h2>CSS Painting API Level 1</h2>
+  <section id="spec-info-16" class="level3 info">
+  <h3>Spec info</h3>
+  <ul>
+  <li>Crawled version: <a href="https://drafts.css-houdini.org/css-paint-api-1/">Editor's Draft</a> (28 January 2018)</li>
+  <li>Editor's Draft: <a href="https://drafts.css-houdini.org/css-paint-api-1/" class="uri">https://drafts.css-houdini.org/css-paint-api-1/</a></li>
+  <li>Latest published version: <a href="http://www.w3.org/TR/css-paint-api-1/" class="uri">http://www.w3.org/TR/css-paint-api-1/</a></li>
+  <li>Latest published status: <a href="http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/">Working Draft</a></li>
+  <li>Shortname: css-paint-api-1</li>
+  </ul>
+  </section>
+  <section id="potential-issues-16" class="level3 anomalies">
+  <h3>Potential issue(s)</h3>
+  <ul>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>Worklet</code> also defined in <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  </ul></li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-properties-values-api-1/"><code>https://www.w3.org/TR/css-properties-values-api-1/</code></a></li>
+  </ul></li>
+  </ul>
+  </section>
+  <section id="known-dependencies-on-this-specification-16" class="level3 dependencies">
+  <h3>Known dependencies on this specification</h3>
+  <p>No normative reference to this spec from other specs.</p>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
+  <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a></li>
+  </ul>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  </ul>
+  </section>
+  </section>
   <section id="css-properties-and-values-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>CSS Properties and Values API Level 1</h2>
-  <section id="spec-info-16" class="level3 info">
+  <section id="spec-info-17" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://drafts.css-houdini.org/css-properties-values-api-1/">Editor's Draft</a> (14 November 2017)</li>
@@ -578,7 +620,7 @@
   <li>Shortname: css-properties-values-api-1</li>
   </ul>
   </section>
-  <section id="potential-issues-16" class="level3 anomalies">
+  <section id="potential-issues-17" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -587,7 +629,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-16" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-17" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -601,7 +643,7 @@
   </section>
   <section id="css-pseudo-elements-module-level-4" class="level2" data-spec="true" data-ok="true">
   <h2>CSS Pseudo-Elements Module Level 4</h2>
-  <section id="spec-info-17" class="level3 info">
+  <section id="spec-info-18" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://drafts.csswg.org/css-pseudo-4/">Editor's Draft</a> (21 February 2018)</li>
@@ -612,11 +654,11 @@
   <li>Shortname: css-pseudo-4</li>
   </ul>
   </section>
-  <section id="potential-issues-17" class="level3 anomalies">
+  <section id="potential-issues-18" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-17" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-18" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -629,7 +671,7 @@
   </section>
   <section id="css-syntax-module-level-3" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>CSS Syntax Module Level 3</h2>
-  <section id="spec-info-18" class="level3 info">
+  <section id="spec-info-19" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://drafts.csswg.org/css-syntax/">Editor's Draft</a> (20 December 2017)</li>
@@ -640,7 +682,7 @@
   <li>Shortname: css-syntax-3</li>
   </ul>
   </section>
-  <section id="potential-issues-18" class="level3 anomalies">
+  <section id="potential-issues-19" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>No WebIDL definitions found</li>
@@ -655,13 +697,14 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-18" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-19" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
@@ -680,7 +723,7 @@
   </section>
   <section id="css-typed-om-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>CSS Typed OM Level 1</h2>
-  <section id="spec-info-19" class="level3 info">
+  <section id="spec-info-20" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://drafts.css-houdini.org/css-typed-om-1/">Editor's Draft</a> (2 March 2018)</li>
@@ -690,28 +733,30 @@
   <li>Shortname: css-typed-om-1</li>
   </ul>
   </section>
-  <section id="potential-issues-19" class="level3 anomalies">
+  <section id="potential-issues-20" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>LayoutWorklet</code>, <code>PaintWorklet</code></li>
+  <li>Unknown WebIDL names used: <code>LayoutWorklet</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><code>PaintWorklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-19" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-20" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
   <section id="css-values-and-units-module-level-4" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-inconsistentRef="true">
   <h2>CSS Values and Units Module Level 4</h2>
-  <section id="spec-info-20" class="level3 info">
+  <section id="spec-info-21" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://drafts.csswg.org/css-values/">Editor's Draft</a> (14 February 2018)</li>
@@ -722,7 +767,7 @@
   <li>Shortname: css-values-3</li>
   </ul>
   </section>
-  <section id="potential-issues-20" class="level3 anomalies">
+  <section id="potential-issues-21" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>No WebIDL definitions found</li>
@@ -734,14 +779,12 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-20" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-21" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a></li>
@@ -763,10 +806,10 @@
   </section>
   <section id="css-writing-modes-level-3" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-missingLinkRef="true">
   <h2>CSS Writing Modes Level 3</h2>
-  <section id="spec-info-21" class="level3 info">
+  <section id="spec-info-22" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.csswg.org/css-writing-modes-3/">Editor's Draft</a> (14 February 2018)</li>
+  <li>Crawled version: <a href="https://drafts.csswg.org/css-writing-modes-3/">Editor's Draft</a> (4 March 2018)</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-writing-modes-3/" class="uri">https://drafts.csswg.org/css-writing-modes-3/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-writing-modes-3/" class="uri">https://www.w3.org/TR/css-writing-modes-3/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/">Candidate Recommendation</a></li>
@@ -774,7 +817,7 @@
   <li>Shortname: css-writing-modes-3</li>
   </ul>
   </section>
-  <section id="potential-issues-21" class="level3 anomalies">
+  <section id="potential-issues-22" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>No WebIDL definitions found</li>
@@ -786,7 +829,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-21" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-22" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -797,30 +840,6 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
-  </ul>
-  </section>
-  </section>
-  <section id="css-paint-api-1" class="level2" data-spec="true" data-error="true">
-  <h2>css-paint-api-1</h2>
-  <section id="spec-info-22" class="level3 info">
-  <h3>Spec info</h3>
-  <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/css-paint-api-1/">Initial URL</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/css-paint-api-1" class="uri">https://www.w3.org/TR/css-paint-api-1</a></li>
-  <li>Shortname: css-paint-api-1</li>
-  </ul>
-  </section>
-  <section id="potential-issues-22" class="level3 anomalies">
-  <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
-  </section>
-  <section id="known-dependencies-on-this-specification-22" class="level3 dependencies">
-  <h3>Known dependencies on this specification</h3>
-  <p>No normative reference to this spec from other specs.</p>
-  <p>Informative references to this spec from:</p>
-  <ul>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   </section>
   </section>
@@ -851,6 +870,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
@@ -979,12 +999,14 @@
   <li><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
+  <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
@@ -1076,6 +1098,7 @@
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
@@ -1090,27 +1113,35 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="encrypted-media" class="level2" data-spec="true" data-error="true">
-  <h2>encrypted-media</h2>
+  <section id="encrypted-media-extensions" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <h2>Encrypted Media Extensions</h2>
   <section id="spec-info-28" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/encrypted-media/">Initial URL</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/encrypted-media" class="uri">https://www.w3.org/TR/encrypted-media</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/encrypted-media/">Editor's Draft</a> (22 February 2018)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/encrypted-media/" class="uri">https://w3c.github.io/encrypted-media/</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/encrypted-media/" class="uri">https://www.w3.org/TR/encrypted-media/</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Recommendation</a></li>
   <li>Repository: <a href="https://github.com/w3c/encrypted-media">GitHub w3c/encrypted-media</a></li>
   <li>Shortname: encrypted-media</li>
   </ul>
   </section>
   <section id="potential-issues-28" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a>, related reference &quot;DOM&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
+  <li><a href="https://www.w3.org/TR/encoding/"><code>https://www.w3.org/TR/encoding/</code></a>, related reference &quot;ENCODING&quot; uses URL <a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-28" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   </ul>
   </section>
@@ -1402,7 +1433,7 @@
   <section id="spec-info-37" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/gyroscope/">Editor's Draft</a> (2 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/gyroscope/">Editor's Draft</a> (5 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/gyroscope/" class="uri">https://w3c.github.io/gyroscope/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/gyroscope/" class="uri">https://www.w3.org/TR/gyroscope/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-gyroscope-20171018/">Working Draft</a></li>
@@ -1561,6 +1592,7 @@
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
@@ -1568,6 +1600,7 @@
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
@@ -1653,6 +1686,7 @@
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
+  <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
@@ -1676,7 +1710,7 @@
   <section id="spec-info-41" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webrtc-stats/">Editor's Draft</a> (27 February 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webrtc-stats/">Editor's Draft</a> (05 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webrtc-stats/" class="uri">https://w3c.github.io/webrtc-stats/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webrtc-stats/" class="uri">https://www.w3.org/TR/webrtc-stats/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-webrtc-stats-20180227/">Working Draft</a></li>
@@ -1752,7 +1786,7 @@
   <section id="spec-info-43" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (05 March 2018)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (06 March 2018)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -1851,7 +1885,7 @@
   <section id="spec-info-46" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/magnetometer/">Editor's Draft</a> (1 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/magnetometer/">Editor's Draft</a> (4 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/magnetometer/" class="uri">https://w3c.github.io/magnetometer/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/magnetometer/" class="uri">https://www.w3.org/TR/magnetometer/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-magnetometer-20171018/">Working Draft</a></li>
@@ -2051,6 +2085,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   </ul>
@@ -2182,6 +2217,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
+  <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
@@ -2266,7 +2302,7 @@
   <section id="spec-info-58" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/orientation-sensor/">Editor's Draft</a> (26 February 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/orientation-sensor/">Editor's Draft</a> (5 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/orientation-sensor/" class="uri">https://w3c.github.io/orientation-sensor/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/orientation-sensor/" class="uri">https://www.w3.org/TR/orientation-sensor/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/">Working Draft</a></li>
@@ -3033,7 +3069,10 @@
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
+  </ul>
   </section>
   </section>
   <section id="selection-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
@@ -3281,7 +3320,7 @@
   <section id="spec-info-85" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://streams.spec.whatwg.org/">Living Standard</a> (27 February 2018)</li>
+  <li>Crawled version: <a href="https://streams.spec.whatwg.org/">Living Standard</a> (5 March 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/streams">GitHub whatwg/streams</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -3738,7 +3777,7 @@
   <li>Unknown WebIDL names used: <code>Object</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
-  <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -3876,6 +3915,7 @@
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
@@ -3884,6 +3924,7 @@
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
+  <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
@@ -3971,7 +4012,7 @@
   <section id="spec-info-102" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://webassembly.github.io/spec/js-api/index.html">Initial URL</a> (3 March 2018)</li>
+  <li>Crawled version: <a href="https://webassembly.github.io/spec/js-api/index.html">Initial URL</a> (5 March 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -3980,7 +4021,7 @@
   <ul>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>Worklet</code> defined in <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -4041,7 +4082,7 @@
   <section id="spec-info-104" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Mon Mar 05 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Tue Mar 06 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4066,7 +4107,7 @@
   <section id="spec-info-105" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Mon Mar 05 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Tue Mar 06 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4100,7 +4141,7 @@
   <section id="spec-info-106" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (02 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (05 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webrtc-pc/" class="uri">https://w3c.github.io/webrtc-pc/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webrtc/" class="uri">https://www.w3.org/TR/webrtc/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">Candidate Recommendation</a></li>
@@ -4192,7 +4233,7 @@
   <ul>
   <li>WebIDL names also defined elsewhere:
   <ul>
-  <li><code>Worklet</code> also defined in <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
+  <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -4206,6 +4247,7 @@
   <ul>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   </ul>

@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 05, 2018
+% March 06, 2018
 
 119 specifications were crawled in this report.
 
@@ -239,7 +239,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-css3-fonts-20130212/`](https://www.w3.org/TR/2013/WD-css3-fonts-20130212/) but does not list it in its references
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/) links to [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
-- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) links to [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) links to:
+    * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/) links to:
     * [`https://www.w3.org/TR/css-namespaces-3/`](https://www.w3.org/TR/css-namespaces-3/) but does not list it in its references
     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
@@ -417,7 +419,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 166 missing references for links found in 56 specifications
+=> 167 missing references for links found in 56 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
