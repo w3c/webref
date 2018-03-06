@@ -2,17 +2,17 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-03-05T02:09:37.585Z",
+  "date": "2018-03-06T02:08:58.617Z",
   "stats": {
     "crawled": 110,
-    "errors": 2,
+    "errors": 0,
     "studied": 110
   },
   "results": [
     {
       "title": "Accelerometer",
       "shortname": "accelerometer",
-      "date": "2 March 2018",
+      "date": "5 March 2018",
       "url": "https://www.w3.org/TR/accelerometer/",
       "latest": "https://www.w3.org/TR/accelerometer/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-accelerometer-20171018/",
@@ -40,19 +40,19 @@
               "url": "https://www.w3.org/TR/gyroscope/",
               "title": "Gyroscope",
               "crawled": "https://w3c.github.io/gyroscope/",
-              "date": "2 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/magnetometer/",
               "title": "Magnetometer",
               "crawled": "https://w3c.github.io/magnetometer/",
-              "date": "1 March 2018"
+              "date": "4 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/",
-              "date": "26 February 2018"
+              "date": "5 March 2018"
             }
           ],
           "informative": [
@@ -339,12 +339,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-typed-om-1/",
-              "title": "CSS Typed OM Level 1",
-              "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "2 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
@@ -391,6 +385,12 @@
           {
             "name": "Worklet",
             "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "28 January 2018"
+              },
               {
                 "url": "https://www.w3.org/TR/webaudio/",
                 "title": "Web Audio API",
@@ -678,7 +678,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "21 February 2018"
+              "date": "5 March 2018"
             }
           ]
         },
@@ -688,7 +688,7 @@
     {
       "title": "CSS Fonts Module Level 4",
       "shortname": "css-fonts-4",
-      "date": "21 February 2018",
+      "date": "5 March 2018",
       "url": "https://www.w3.org/TR/css-fonts-4/",
       "latest": "https://www.w3.org/TR/css-fonts-4/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/",
@@ -700,8 +700,7 @@
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
+        "hasInvalidIdl": true,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -721,7 +720,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "21 February 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -783,7 +782,7 @@
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "14 February 2018"
+              "date": "4 March 2018"
             }
           ]
         },
@@ -804,6 +803,7 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
+          "https://www.w3.org/TR/css-values-3/",
           "https://www.w3.org/TR/css3-positioning/"
         ],
         "inconsistentRef": [],
@@ -854,13 +854,19 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "21 February 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
               "date": "12 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+              "date": "28 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -945,6 +951,61 @@
           ]
         },
         "ok": true
+      }
+    },
+    {
+      "title": "CSS Painting API Level 1",
+      "shortname": "css-paint-api-1",
+      "date": "28 January 2018",
+      "url": "https://www.w3.org/TR/css-paint-api-1/",
+      "latest": "http://www.w3.org/TR/css-paint-api-1/",
+      "datedUrl": "http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://drafts.css-houdini.org/css-paint-api-1/",
+      "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "26 February 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "9 November 2017"
+              }
+            ]
+          }
+        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css-properties-values-api-1/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
+            }
+          ]
+        },
+        "ok": false
       }
     },
     {
@@ -1096,13 +1157,19 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "21 February 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
               "date": "12 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+              "date": "28 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -1199,8 +1266,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
-          "LayoutWorklet",
-          "PaintWorklet"
+          "LayoutWorklet"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
@@ -1220,6 +1286,17 @@
                 "date": "23 February 2018"
               }
             ]
+          },
+          {
+            "name": "PaintWorklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "28 January 2018"
+              }
+            ]
           }
         ],
         "missingLinkRef": [],
@@ -1231,6 +1308,12 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
               "date": "12 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+              "date": "28 January 2018"
             }
           ],
           "informative": []
@@ -1291,22 +1374,10 @@
               "date": "28 October 2015"
             },
             {
-              "url": "https://www.w3.org/TR/css-font-loading-3/",
-              "title": "CSS Font Loading Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-font-loading/",
-              "date": "29 January 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "21 February 2018"
-            },
-            {
-              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "title": "CSS Layout API Level 1",
-              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "12 January 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -1336,7 +1407,7 @@
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "14 February 2018"
+              "date": "4 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -1384,7 +1455,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "3 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -1407,7 +1478,7 @@
     {
       "title": "CSS Writing Modes Level 3",
       "shortname": "css-writing-modes-3",
-      "date": "14 February 2018",
+      "date": "4 March 2018",
       "url": "https://www.w3.org/TR/css-writing-modes-3/",
       "latest": "https://www.w3.org/TR/css-writing-modes-3/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/",
@@ -1464,38 +1535,6 @@
       }
     },
     {
-      "title": "css-paint-api-1",
-      "shortname": "css-paint-api-1",
-      "date": "",
-      "url": "https://www.w3.org/TR/css-paint-api-1/",
-      "latest": "https://www.w3.org/TR/css-paint-api-1",
-      "crawled": "https://www.w3.org/TR/css-paint-api-1/",
-      "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/worklets-1/",
-              "title": "Worklets Level 1",
-              "crawled": "https://drafts.css-houdini.org/worklets/",
-              "date": "9 November 2017"
-            }
-          ]
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "CSSOM View Module",
       "shortname": "cssom-view-1",
       "date": "11 October 2017",
@@ -1542,6 +1581,12 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+              "date": "28 January 2018"
+            },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
@@ -1832,6 +1877,12 @@
               "date": "12 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+              "date": "28 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
@@ -1866,6 +1917,12 @@
               "title": "DOM Parsing and Serialization",
               "crawled": "https://w3c.github.io/DOM-Parsing/",
               "date": "and similar APIs"
+            },
+            {
+              "url": "https://www.w3.org/TR/encrypted-media/",
+              "title": "Encrypted Media Extensions",
+              "crawled": "https://w3c.github.io/encrypted-media/",
+              "date": "22 February 2018"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -2123,7 +2180,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 05 2018"
+              "date": "Tue Mar 06 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -2222,6 +2279,12 @@
               "date": "25 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/encrypted-media/",
+              "title": "Encrypted Media Extensions",
+              "crawled": "https://w3c.github.io/encrypted-media/",
+              "date": "22 February 2018"
+            },
+            {
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
@@ -2267,7 +2330,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "3 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -2288,27 +2351,51 @@
       }
     },
     {
-      "title": "encrypted-media",
+      "title": "Encrypted Media Extensions",
       "shortname": "encrypted-media",
-      "date": "",
+      "date": "22 February 2018",
       "url": "https://www.w3.org/TR/encrypted-media/",
-      "latest": "https://www.w3.org/TR/encrypted-media",
-      "crawled": "https://www.w3.org/TR/encrypted-media/",
+      "latest": "https://www.w3.org/TR/encrypted-media/",
+      "datedUrl": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/",
+      "datedStatus": "Recommendation",
+      "edDraft": "https://w3c.github.io/encrypted-media/",
+      "crawled": "https://w3c.github.io/encrypted-media/",
       "repository": "https://github.com/w3c/encrypted-media",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/dom/",
+            "ref": {
+              "name": "DOM",
+              "url": "https://dom.spec.whatwg.org/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/encoding/",
+            "ref": {
+              "name": "ENCODING",
+              "url": "https://encoding.spec.whatwg.org/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/encrypted-media/",
+              "title": "Encrypted Media Extensions",
+              "crawled": "https://w3c.github.io/encrypted-media/",
+              "date": "22 February 2018"
+            },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
               "title": "Secure Contexts",
@@ -2454,7 +2541,7 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "02 March 2018"
+              "date": "05 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -2486,7 +2573,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "5 March 2018"
             }
           ]
         },
@@ -2619,7 +2706,7 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "02 March 2018"
+              "date": "05 March 2018"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -2790,7 +2877,7 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "2 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/ambient-light/",
@@ -2802,19 +2889,19 @@
               "url": "https://www.w3.org/TR/gyroscope/",
               "title": "Gyroscope",
               "crawled": "https://w3c.github.io/gyroscope/",
-              "date": "2 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/magnetometer/",
               "title": "Magnetometer",
               "crawled": "https://w3c.github.io/magnetometer/",
-              "date": "1 March 2018"
+              "date": "4 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/",
-              "date": "26 February 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/proximity/",
@@ -2946,7 +3033,7 @@
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/",
-              "date": "26 February 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/UISecurity/",
@@ -2976,7 +3063,7 @@
     {
       "title": "Gyroscope",
       "shortname": "gyroscope",
-      "date": "2 March 2018",
+      "date": "5 March 2018",
       "url": "https://www.w3.org/TR/gyroscope/",
       "latest": "https://www.w3.org/TR/gyroscope/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-gyroscope-20171018/",
@@ -3003,7 +3090,7 @@
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/",
-              "date": "26 February 2018"
+              "date": "5 March 2018"
             }
           ],
           "informative": [
@@ -3092,7 +3179,7 @@
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "27 February 2018"
+              "date": "05 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/longtasks-1/",
@@ -3152,7 +3239,7 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "02 March 2018"
+              "date": "05 March 2018"
             }
           ],
           "informative": [
@@ -3323,7 +3410,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "21 February 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -3336,6 +3423,12 @@
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
               "date": "12 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+              "date": "28 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -3353,7 +3446,7 @@
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "14 February 2018"
+              "date": "4 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -3378,6 +3471,12 @@
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
               "date": "25 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/encrypted-media/",
+              "title": "Encrypted Media Extensions",
+              "crawled": "https://w3c.github.io/encrypted-media/",
+              "date": "22 February 2018"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -3443,7 +3542,7 @@
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "27 February 2018"
+              "date": "05 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -3455,7 +3554,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "05 March 2018"
+              "date": "06 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3635,7 +3734,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -3719,7 +3818,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "3 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -3731,19 +3830,19 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 05 2018"
+              "date": "Tue Mar 06 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 05 2018"
+              "date": "Tue Mar 06 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "02 March 2018"
+              "date": "05 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -3817,7 +3916,7 @@
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "14 February 2018"
+              "date": "4 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/DOM-Parsing/",
@@ -3830,6 +3929,12 @@
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
               "date": "8 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/encrypted-media/",
+              "title": "Encrypted Media Extensions",
+              "crawled": "https://w3c.github.io/encrypted-media/",
+              "date": "22 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -3871,7 +3976,7 @@
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/",
-              "date": "26 February 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -3919,7 +4024,7 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "02 March 2018"
+              "date": "05 March 2018"
             }
           ]
         },
@@ -3929,7 +4034,7 @@
     {
       "title": "Identifiers for WebRTC's Statistics API",
       "shortname": "webrtc-stats",
-      "date": "27 February 2018",
+      "date": "05 March 2018",
       "url": "https://www.w3.org/TR/webrtc-stats/",
       "latest": "https://www.w3.org/TR/webrtc-stats/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180227/",
@@ -3954,7 +4059,7 @@
                 "url": "https://www.w3.org/TR/webrtc/",
                 "title": "WebRTC 1.0: Real-time Communication Between Browsers",
                 "crawled": "https://w3c.github.io/webrtc-pc/",
-                "date": "02 March 2018"
+                "date": "05 March 2018"
               }
             ]
           }
@@ -3976,7 +4081,7 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "02 March 2018"
+              "date": "05 March 2018"
             }
           ],
           "informative": []
@@ -4055,7 +4160,7 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "02 March 2018"
+              "date": "05 March 2018"
             }
           ]
         },
@@ -4065,7 +4170,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "05 March 2018",
+      "date": "06 March 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -4099,7 +4204,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "05 March 2018"
+              "date": "06 March 2018"
             }
           ]
         },
@@ -4194,7 +4299,7 @@
     {
       "title": "Magnetometer",
       "shortname": "magnetometer",
-      "date": "1 March 2018",
+      "date": "4 March 2018",
       "url": "https://www.w3.org/TR/magnetometer/",
       "latest": "https://www.w3.org/TR/magnetometer/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-magnetometer-20171018/",
@@ -4217,7 +4322,7 @@
                 "url": "https://www.w3.org/TR/orientation-sensor/",
                 "title": "Orientation Sensor",
                 "crawled": "https://w3c.github.io/orientation-sensor/",
-                "date": "26 February 2018"
+                "date": "5 March 2018"
               }
             ]
           }
@@ -4253,7 +4358,7 @@
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/",
-              "date": "26 February 2018"
+              "date": "5 March 2018"
             }
           ],
           "informative": [
@@ -4350,7 +4455,7 @@
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "27 February 2018"
+              "date": "05 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -4398,7 +4503,7 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "02 March 2018"
+              "date": "05 March 2018"
             }
           ],
           "informative": [
@@ -4606,6 +4711,12 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/encrypted-media/",
+              "title": "Encrypted Media Extensions",
+              "crawled": "https://w3c.github.io/encrypted-media/",
+              "date": "22 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/",
@@ -4807,6 +4918,12 @@
               "date": "19 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/encrypted-media/",
+              "title": "Encrypted Media Extensions",
+              "crawled": "https://w3c.github.io/encrypted-media/",
+              "date": "22 February 2018"
+            },
+            {
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
@@ -4994,7 +5111,7 @@
     {
       "title": "Orientation Sensor",
       "shortname": "orientation-sensor",
-      "date": "26 February 2018",
+      "date": "5 March 2018",
       "url": "https://www.w3.org/TR/orientation-sensor/",
       "latest": "https://www.w3.org/TR/orientation-sensor/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/",
@@ -5017,7 +5134,7 @@
                 "url": "https://www.w3.org/TR/magnetometer/",
                 "title": "Magnetometer",
                 "crawled": "https://w3c.github.io/magnetometer/",
-                "date": "1 March 2018"
+                "date": "4 March 2018"
               }
             ]
           }
@@ -5467,7 +5584,7 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "2 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/ambient-light/",
@@ -5491,13 +5608,13 @@
               "url": "https://www.w3.org/TR/gyroscope/",
               "title": "Gyroscope",
               "crawled": "https://w3c.github.io/gyroscope/",
-              "date": "2 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/magnetometer/",
               "title": "Magnetometer",
               "crawled": "https://w3c.github.io/magnetometer/",
-              "date": "1 March 2018"
+              "date": "4 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -6316,7 +6433,7 @@
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "14 February 2018"
+              "date": "4 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -6559,7 +6676,14 @@
               "date": "4 March 2018"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/encrypted-media/",
+              "title": "Encrypted Media Extensions",
+              "crawled": "https://w3c.github.io/encrypted-media/",
+              "date": "22 February 2018"
+            }
+          ]
         },
         "ok": false
       }
@@ -6915,7 +7039,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "27 February 2018"
+              "date": "5 March 2018"
             }
           ]
         },
@@ -6945,7 +7069,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "05 March 2018"
+              "date": "06 March 2018"
             }
           ],
           "informative": []
@@ -6986,7 +7110,7 @@
     },
     {
       "title": "Streams Standard",
-      "date": "27 February 2018",
+      "date": "5 March 2018",
       "url": "https://streams.spec.whatwg.org/",
       "crawled": "https://streams.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/streams",
@@ -7049,7 +7173,7 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "2 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://html.spec.whatwg.org/",
@@ -7181,7 +7305,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "05 March 2018"
+              "date": "06 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -7482,7 +7606,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "3 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -7815,6 +7939,12 @@
             "name": "Worklet",
             "refs": [
               {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "28 January 2018"
+              },
+              {
                 "url": "https://www.w3.org/TR/worklets-1/",
                 "title": "Worklets Level 1",
                 "crawled": "https://drafts.css-houdini.org/worklets/",
@@ -7957,7 +8087,7 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "02 March 2018"
+              "date": "05 March 2018"
             }
           ],
           "informative": [
@@ -8013,7 +8143,7 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "2 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/ambient-light/",
@@ -8079,7 +8209,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "21 February 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -8092,6 +8222,12 @@
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
               "date": "12 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+              "date": "28 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -8142,6 +8278,12 @@
               "date": "8 January 2018"
             },
             {
+              "url": "https://www.w3.org/TR/encrypted-media/",
+              "title": "Encrypted Media Extensions",
+              "crawled": "https://w3c.github.io/encrypted-media/",
+              "date": "22 February 2018"
+            },
+            {
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
@@ -8187,7 +8329,7 @@
               "url": "https://www.w3.org/TR/gyroscope/",
               "title": "Gyroscope",
               "crawled": "https://w3c.github.io/gyroscope/",
-              "date": "2 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/hr-time-3/",
@@ -8229,7 +8371,7 @@
               "url": "https://www.w3.org/TR/magnetometer/",
               "title": "Magnetometer",
               "crawled": "https://w3c.github.io/magnetometer/",
-              "date": "1 March 2018"
+              "date": "4 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -8289,7 +8431,7 @@
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/",
-              "date": "26 February 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/paint-timing/",
@@ -8487,7 +8629,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "3 March 2018"
+              "date": "5 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -8499,19 +8641,19 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 05 2018"
+              "date": "Tue Mar 06 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 05 2018"
+              "date": "Tue Mar 06 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "02 March 2018"
+              "date": "05 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -8549,13 +8691,13 @@
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "27 February 2018"
+              "date": "05 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "05 March 2018"
+              "date": "06 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -8597,7 +8739,7 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
-              "date": "02 March 2018"
+              "date": "05 March 2018"
             }
           ]
         },
@@ -8606,7 +8748,7 @@
     },
     {
       "title": "WebAssembly JavaScript Interface",
-      "date": "3 March 2018",
+      "date": "5 March 2018",
       "url": "https://webassembly.github.io/spec/js-api/index.html",
       "crawled": "https://webassembly.github.io/spec/js-api/index.html",
       "report": {
@@ -8621,6 +8763,12 @@
           {
             "name": "Worklet",
             "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "28 January 2018"
+              },
               {
                 "url": "https://www.w3.org/TR/webaudio/",
                 "title": "Web Audio API",
@@ -8713,7 +8861,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Mon Mar 05 2018",
+      "date": "Tue Mar 06 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8756,7 +8904,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Mon Mar 05 2018",
+      "date": "Tue Mar 06 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8791,7 +8939,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 05 2018"
+              "date": "Tue Mar 06 2018"
             }
           ],
           "informative": [
@@ -8821,7 +8969,7 @@
     {
       "title": "WebRTC 1.0: Real-time Communication Between Browsers",
       "shortname": "webrtc",
-      "date": "02 March 2018",
+      "date": "05 March 2018",
       "url": "https://www.w3.org/TR/webrtc/",
       "latest": "https://www.w3.org/TR/webrtc/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-webrtc-20171102/",
@@ -8847,7 +8995,7 @@
                 "url": "https://www.w3.org/TR/webrtc-stats/",
                 "title": "Identifiers for WebRTC's Statistics API",
                 "crawled": "https://w3c.github.io/webrtc-stats/",
-                "date": "27 February 2018"
+                "date": "05 March 2018"
               }
             ]
           }
@@ -8903,7 +9051,7 @@
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "27 February 2018"
+              "date": "05 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -9002,6 +9150,12 @@
             "name": "Worklet",
             "refs": [
               {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "28 January 2018"
+              },
+              {
                 "url": "https://www.w3.org/TR/webaudio/",
                 "title": "Web Audio API",
                 "crawled": "https://webaudio.github.io/web-audio-api/",
@@ -9028,6 +9182,12 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
               "date": "12 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+              "date": "28 January 2018"
             },
             {
               "url": "https://html.spec.whatwg.org/",

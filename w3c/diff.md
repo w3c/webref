@@ -1,4 +1,84 @@
-% Diff between report from "March 05, 2018" and reference report from "March 04, 2018"
+% Diff between report from "March 06, 2018" and reference report from "March 05, 2018"
 % Reffy
-% March 05, 2018
+% March 06, 2018
+
+## CSS Fonts Module Level 4
+
+- URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Invalid WebIDL content found: *INS* true / *DEL* false
+- Obsolete WebIDL constructs found: *DEL* false
+- Unknown WebIDL names used: *DEL* Window
+
+
+## CSS Layout API Level 1
+
+- URL: [https://drafts.css-houdini.org/css-layout-api-1/](https://drafts.css-houdini.org/css-layout-api-1/)
+- Crawled version: [Initial URL](https://drafts.css-houdini.org/css-layout-api-1/)
+- Missing references for links: *INS* https://www.w3.org/TR/css-values-3/
+
+
+## Custom Elements
+
+- URL: [https://www.w3.org/TR/custom-elements/](https://www.w3.org/TR/custom-elements/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/custom/)
+- Repository: [GitHub w3c/webcomponents](https://github.com/w3c/webcomponents)
+- Spec could not be rendered: *INS* Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395
+    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+
+
+## magnetometer
+
+- URL: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/magnetometer/)
+- Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
+- Spec title: *INS* magnetometer / *DEL* Magnetometer
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+    at <anonymous>
+
+
+## mediaont-api-1.0
+
+- URL: [https://www.w3.org/TR/mediaont-api-1.0/](https://www.w3.org/TR/mediaont-api-1.0/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/mediaont-api-1.0/)
+- Spec title: *INS* mediaont-api-1.0 / *DEL* Metadata API for Media Resources 1.0
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+    at <anonymous>
+
+
+## Orientation Sensor
+
+- URL: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
+- Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
+- WebIDL names also defined elsewhere: *DEL* LocalCoordinateSystem
+- Missing references for links: *INS* https://w3c.github.io/magnetometer/
+- Inconsistent references for links: *DEL* https://w3c.github.io/magnetometer/
+
+
+## Shadow DOM
+
+- URL: [https://www.w3.org/TR/shadow-dom/](https://www.w3.org/TR/shadow-dom/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/shadow/)
+- Repository: [GitHub w3c/webcomponents](https://github.com/w3c/webcomponents)
+- Spec could not be rendered: *INS* Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395
+    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+
+
+## W3C DOM 4.1
+
+- URL: [https://www.w3.org/TR/dom41/](https://www.w3.org/TR/dom41/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/dom/)
+- Repository: [GitHub w3c/dom](https://github.com/w3c/dom)
+- WebIDL names also defined elsewhere: *DEL* ShadowRoot, ShadowRootMode
+
 
