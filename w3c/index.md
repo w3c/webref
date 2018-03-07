@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 06, 2018
+% March 07, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
@@ -15,7 +15,7 @@
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
+- Unknown WebIDL names used: `Sensor`, `SensorOptions`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
      * [`https://w3c.github.io/sensors/usecases.html`](https://w3c.github.io/sensors/usecases.html)
@@ -25,6 +25,7 @@
 Normative references to this spec from:
 
 - [Gyroscope](https://w3c.github.io/gyroscope/)
+- [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 
 Informative references to this spec from:
@@ -45,7 +46,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
+- Unknown WebIDL names used: `Sensor`, `SensorOptions`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -354,7 +355,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (5 March 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (6 March 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
@@ -445,6 +446,10 @@ Normative references to this spec from:
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 
 Informative references to this spec from:
 
@@ -645,7 +650,6 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -656,7 +660,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (4 March 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (5 March 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/)
@@ -716,6 +720,10 @@ Normative references to this spec from:
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
+
 Informative references to this spec from:
 
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
@@ -724,11 +732,11 @@ Informative references to this spec from:
 - [Web App Manifest](https://w3c.github.io/manifest/)
 
 
-## Custom Elements {data-spec=true data-error=true}
+## Custom Elements {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/custom/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/custom/) (02 March 2018)
 - Editor's Draft: [https://w3c.github.io/webcomponents/spec/custom/](https://w3c.github.io/webcomponents/spec/custom/)
 - Latest published version: [https://www.w3.org/TR/custom-elements/](https://www.w3.org/TR/custom-elements/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-custom-elements-20180216/)
@@ -737,14 +745,11 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395
-    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)
-    at ontimeout (timers.js:475:11)
-    at tryOnTimeout (timers.js:310:5)
-    at Timer.listOnTimeout (timers.js:270:5)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `Window`
+- Missing references for links: 
+     * [`https://w3c.github.io/aria/aria/aria.html`](https://w3c.github.io/aria/aria/aria.html)
+     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/)
+     * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -779,7 +784,6 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
@@ -1041,37 +1045,32 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Generic Sensor API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## generic-sensor {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (1 March 2018)
-- Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
-- Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/generic-sensor/)
+- Latest published version: [https://www.w3.org/TR/generic-sensor](https://www.w3.org/TR/generic-sensor)
 - Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
 - Shortname: generic-sensor
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
-     * [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/), related reference "PERMISSIONS" uses URL [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
+    at <anonymous>`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Accelerometer](https://w3c.github.io/accelerometer/)
-- [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
-- [Gyroscope](https://w3c.github.io/gyroscope/)
+- [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
-- [Proximity Sensor](https://w3c.github.io/proximity/)
 
-Informative references to this spec from:
-
-- [Generic Sensor API](https://w3c.github.io/sensors/)
+No informative reference to this spec from other specs.
 
 
 ## Geolocation API Specification 2nd Edition {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -1095,7 +1094,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Web IDL](https://heycam.github.io/webidl/)
@@ -1146,7 +1144,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
+- Unknown WebIDL names used: `Sensor`, `SensorOptions`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
 
@@ -1186,7 +1184,6 @@ Normative references to this spec from:
 
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Gamepad](https://w3c.github.io/gamepad/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
@@ -1214,7 +1211,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/html/) (3 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/html/) (6 March 2018)
 - Editor's Draft: [https://w3c.github.io/html/](https://w3c.github.io/html/)
 - Latest published version: [https://www.w3.org/TR/html52/](https://www.w3.org/TR/html52/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2017/REC-html52-20171214/)
@@ -1274,6 +1271,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -1281,7 +1279,6 @@ Normative references to this spec from:
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
@@ -1320,6 +1317,7 @@ Normative references to this spec from:
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -1327,7 +1325,6 @@ Normative references to this spec from:
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
@@ -1408,11 +1405,11 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML 5.3](https://w3c.github.io/html/)
@@ -1437,6 +1434,7 @@ Normative references to this spec from:
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -1531,11 +1529,11 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML 5.3](https://w3c.github.io/html/)
@@ -1562,6 +1560,7 @@ Normative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -1670,7 +1669,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (06 March 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (07 March 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1745,23 +1744,27 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## magnetometer {data-spec=true data-error=true}
+## Magnetometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/magnetometer/)
-- Latest published version: [https://www.w3.org/TR/magnetometer](https://www.w3.org/TR/magnetometer)
+- Crawled version: [Editor's Draft](https://w3c.github.io/magnetometer/) (4 March 2018)
+- Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
+- Latest published version: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
 - Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
 - Shortname: magnetometer
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `Sensor`, `SensorOptions`, `Window`
+- WebIDL names also defined elsewhere: 
+    * `LocalCoordinateSystem` also defined in [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- Missing references for links: 
+     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/), related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1920,30 +1923,6 @@ Informative references to this spec from:
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 
 
-## mediaont-api-1.0 {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://www.w3.org/TR/mediaont-api-1.0/)
-- Latest published version: [https://www.w3.org/TR/mediaont-api-1.0](https://www.w3.org/TR/mediaont-api-1.0)
-- Shortname: mediaont-api-1.0
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## MediaStream Image Capture {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -1996,6 +1975,32 @@ Informative references to this spec from:
 
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+
+
+## Metadata API for Media Resources 1.0 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://www.w3.org/TR/mediaont-api-1.0/) (13 March 2014)
+- Latest published version: [http://www.w3.org/TR/mediaont-api-1.0/](http://www.w3.org/TR/mediaont-api-1.0/)
+- Latest published status: [Recommendation](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
+- Shortname: mediaont-api-1.0
+
+### Potential issue(s) {.anomalies}
+
+- Invalid WebIDL content found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/mediaont-10/`](https://www.w3.org/TR/mediaont-10/)
+     * [`https://www.w3.org/TR/2012/REC-mediaont-10-20120209/`](https://www.w3.org/TR/2012/REC-mediaont-10-20120209/)
+     * [`https://www.w3.org/TR/2011/NOTE-dap-policy-reqs-20110317/`](https://www.w3.org/TR/2011/NOTE-dap-policy-reqs-20110317/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2012/REC-media-frags-20120925/`](https://www.w3.org/TR/2012/REC-media-frags-20120925/), related reference "MEDIA-FRAGMENTS" uses URL [`http://www.w3.org/TR/media-frags/`](http://www.w3.org/TR/media-frags/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Mixed Content {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-inconsistentRef=true}
@@ -2067,7 +2072,7 @@ Informative references to this spec from:
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
 
 
-## Orientation Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Orientation Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2080,15 +2085,17 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
+- Unknown WebIDL names used: `Sensor`, `SensorOptions`, `Window`
+- WebIDL names also defined elsewhere: 
+    * `LocalCoordinateSystem` also defined in [Magnetometer](https://w3c.github.io/magnetometer/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/orientation-event/`](https://www.w3.org/TR/orientation-event/)
+     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
-     * [`https://w3c.github.io/magnetometer/`](https://w3c.github.io/magnetometer/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
      * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/), related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
      * [`https://w3c.github.io/gyroscope/`](https://w3c.github.io/gyroscope/), related reference "GYROSCOPE" uses URL [`https://www.w3.org/TR/gyroscope/`](https://www.w3.org/TR/gyroscope/)
+     * [`https://w3c.github.io/magnetometer/`](https://w3c.github.io/magnetometer/), related reference "MAGNETOMETER" uses URL [`https://www.w3.org/TR/magnetometer/`](https://www.w3.org/TR/magnetometer/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2119,11 +2126,9 @@ Normative references to this spec from:
 
 - [Beacon](https://w3c.github.io/beacon/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -2299,8 +2304,8 @@ Normative references to this spec from:
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
+- [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
@@ -2458,7 +2463,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
+- Unknown WebIDL names used: `Sensor`, `SensorOptions`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2685,6 +2690,7 @@ Informative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
 
@@ -2736,7 +2742,6 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Permissions](https://w3c.github.io/permissions/)
@@ -2778,6 +2783,10 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 
 No informative reference to this spec from other specs.
 
@@ -2939,11 +2948,11 @@ Informative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
-## Shadow DOM {data-spec=true data-error=true}
+## Shadow DOM {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/shadow/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/shadow/) (02 March 2018)
 - Editor's Draft: [https://w3c.github.io/webcomponents/spec/shadow/](https://w3c.github.io/webcomponents/spec/shadow/)
 - Latest published version: [https://www.w3.org/TR/shadow-dom/](https://www.w3.org/TR/shadow-dom/)
 - Latest published status: [Retired](https://www.w3.org/TR/2018/NOTE-shadow-dom-20180301/)
@@ -2952,14 +2961,23 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395
-    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)
-    at ontimeout (timers.js:475:11)
-    at tryOnTimeout (timers.js:310:5)
-    at Timer.listOnTimeout (timers.js:270:5)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `Window`
+- WebIDL names also defined elsewhere: 
+    * `ShadowRoot` also defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+    * `ShadowRootMode` also defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+- Missing references for WebIDL names: 
+     * `DocumentOrShadowRoot` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+     * `Selection` defined in [Selection API](https://w3c.github.io/selection-api/)
+     * `Element` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+     * `CaretPosition` defined in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+     * `StyleSheetList` defined in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+     * `DocumentFragment` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
+     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3016,7 +3034,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (5 March 2018)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (6 March 2018)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -3155,7 +3173,9 @@ Although they do not, the following specs should also normatively reference this
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 
 
 ## UI Events KeyboardEvent code Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
@@ -3316,22 +3336,23 @@ Informative references to this spec from:
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
 
 
-## Vibration API (Second Edition) {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## vibration {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/) (23 October 2017)
-- Editor's Draft: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
-- Latest published version: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
-- Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-vibration-20161018/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/vibration/)
+- Latest published version: [https://www.w3.org/TR/vibration](https://www.w3.org/TR/vibration)
 - Repository: [GitHub w3c/vibration](https://github.com/w3c/vibration)
 - Shortname: vibration
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Navigator`
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+    at <anonymous>`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3340,7 +3361,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## W3C DOM 4.1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## W3C DOM 4.1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3354,6 +3375,9 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `HTMLSlotElement`, `Window`
+- WebIDL names also defined elsewhere: 
+    * `ShadowRoot` also defined in [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
+    * `ShadowRootMode` also defined in [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/)
 - Inconsistent references for links: 
@@ -3380,6 +3404,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -3387,7 +3412,6 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://w3c.github.io/gamepad/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
@@ -3442,12 +3466,14 @@ Although they do not, the following specs should also normatively reference this
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
 
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -3574,7 +3600,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (28 February 2018)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-webauthn-20171205/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webauthn-20180306/)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Shortname: webauthn
 
@@ -3665,6 +3691,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -3674,7 +3701,6 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://w3c.github.io/gamepad/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
@@ -3684,6 +3710,7 @@ Normative references to this spec from:
 - [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
@@ -3719,7 +3746,6 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
@@ -3747,8 +3773,8 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
@@ -3779,7 +3805,6 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 
 
 ## Web Storage (Second Edition) {data-spec=true data-ok=true}
@@ -3862,11 +3887,11 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML 5.3](https://w3c.github.io/html/)
@@ -3893,6 +3918,7 @@ Normative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -3933,6 +3959,7 @@ Informative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
@@ -3945,7 +3972,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (5 March 2018)
+- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (6 March 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4001,7 +4028,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Mar 06 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Mar 07 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4026,7 +4053,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Mar 06 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Mar 07 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
