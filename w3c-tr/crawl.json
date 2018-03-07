@@ -2,13 +2,13 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-06T02:05:22.224Z",
+  "date": "2018-03-07T02:06:08.679Z",
   "options": {
     "publishedVersion": true
   },
   "stats": {
     "crawled": 119,
-    "errors": 0
+    "errors": 2
   },
   "results": [
     {
@@ -3357,7 +3357,7 @@
       "repository": "https://github.com/whatwg/streams",
       "title": "Streams Standard",
       "crawled": "https://streams.spec.whatwg.org/",
-      "date": "5 March 2018",
+      "date": "6 March 2018",
       "links": [
         "https://fetch.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -4608,7 +4608,7 @@
       ],
       "title": "WebAssembly JavaScript Interface",
       "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-      "date": "5 March 2018",
+      "date": "6 March 2018",
       "links": [
         "https://www.w3.org/TR/wasm-core/",
         "https://www.w3.org/TR/wasm-js-api/",
@@ -4638,7 +4638,6 @@
         "https://webassembly.github.io/spec/core/exec/instructions.html",
         "https://webassembly.github.io/spec/core/exec/conventions.html",
         "https://webassembly.github.io/spec/core/exec/numerics.html",
-        "https://www.w3.org/TR/css-values-3/",
         "https://www.w3.org/2001/tag/doc/promises-guide",
         "https://tools.ietf.org/html/rfc2119",
         "https://webassembly.github.io/spec/core/"
@@ -4646,8 +4645,8 @@
       "refs": {
         "normative": [
           {
-            "name": "CSS-VALUES-3",
-            "url": "https://www.w3.org/TR/css-values-3/"
+            "name": "CSS-VALUES-4",
+            "url": "https://drafts.csswg.org/css-values-4/"
           },
           {
             "name": "ECMASCRIPT",
@@ -7360,7 +7359,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Tue Mar 06 2018",
+      "date": "Wed Mar 07 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -8444,7 +8443,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Tue Mar 06 2018",
+      "date": "Wed Mar 07 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -71852,231 +71851,18 @@
       "url": "https://www.w3.org/TR/screen-capture/",
       "shortname": "screen-capture",
       "versions": [
-        "https://www.w3.org/TR/2016/WD-screen-capture-20160714/",
-        "https://www.w3.org/TR/2016/WD-screen-capture-20160607/",
-        "https://www.w3.org/TR/2015/WD-screen-capture-20150210/",
-        "https://w3c.github.io/mediacapture-screen-share/",
         "https://www.w3.org/TR/screen-capture/",
-        "http://www.w3.org/TR/screen-capture/"
+        "https://www.w3.org/TR/screen-capture"
       ],
-      "title": "Screen Capture",
-      "latest": "http://www.w3.org/TR/screen-capture/",
-      "datedUrl": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/mediacapture-screen-share/",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
+      "latest": "https://www.w3.org/TR/screen-capture",
       "repository": "https://github.com/w3c/mediacapture-screen-share",
-      "crawled": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
-      "date": "14 July 2016",
-      "links": [
-        "https://www.w3.org/TR/",
-        "https://www.w3.org/2009/dap/",
-        "https://www.w3.org/2011/04/webrtc/",
-        "https://lists.w3.org/Archives/Public/public-media-capture/",
-        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
-        "https://www.w3.org/2004/01/pp-impl/43696/status",
-        "https://www.w3.org/2004/01/pp-impl/47318/status",
-        "https://www.w3.org/2015/Process-20150901/",
-        "https://w3c.github.io/mediacapture-main/",
-        "https://www.w3.org/TR/mediacapture-streams/",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://datatracker.ietf.org/doc/draft-ietf-rtcweb-security/",
-        "https://datatracker.ietf.org/doc/draft-ietf-rtcweb-security-arch/",
-        "https://www.w3.org/TR/WebIDL-1/",
-        "https://www.w3.org/TR/2dcontext/",
-        "https://tc39.github.io/ecma262/",
-        "https://www.w3.org/TR/html5/",
-        "https://www.w3.org/TR/mediacapture-depth/",
-        "https://www.w3.org/TR/webrtc/"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "GETUSERMEDIA",
-            "url": "https://www.w3.org/TR/mediacapture-streams/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "RTCWEB-SECURITY",
-            "url": "http://datatracker.ietf.org/doc/draft-ietf-rtcweb-security/"
-          },
-          {
-            "name": "RTCWEB-SECURITY-ARCH",
-            "url": "http://datatracker.ietf.org/doc/draft-ietf-rtcweb-security-arch/"
-          },
-          {
-            "name": "WEBIDL",
-            "url": "https://www.w3.org/TR/WebIDL-1/"
-          }
-        ],
-        "informative": [
-          {
-            "name": "2DCONTEXT",
-            "url": "https://www.w3.org/TR/2dcontext/"
-          },
-          {
-            "name": "ECMA-262",
-            "url": "https://tc39.github.io/ecma262/"
-          },
-          {
-            "name": "HTML5",
-            "url": "https://www.w3.org/TR/html5/"
-          },
-          {
-            "name": "MEDIACAPTURE-DEPTH",
-            "url": "https://www.w3.org/TR/mediacapture-depth/"
-          },
-          {
-            "name": "WEBRTC",
-            "url": "https://www.w3.org/TR/webrtc/"
-          }
-        ]
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {},
-          "functions": {},
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "NavigatorUserMedia": [
-              "MediaStream",
-              "MediaStreamConstraints"
-            ],
-            "MediaTrackConstraintSet": [
-              "ConstrainDOMString",
-              "ConstrainBoolean"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "DisplayCaptureSurfaceType": {
-            "type": "enum",
-            "name": "DisplayCaptureSurfaceType",
-            "values": [
-              {
-                "type": "string",
-                "value": "monitor"
-              },
-              {
-                "type": "string",
-                "value": "window"
-              },
-              {
-                "type": "string",
-                "value": "application"
-              },
-              {
-                "type": "string",
-                "value": "browser"
-              }
-            ],
-            "extAttrs": []
-          }
-        },
-        "idlExtendedNames": {
-          "NavigatorUserMedia": [
-            {
-              "type": "interface",
-              "name": "NavigatorUserMedia",
-              "partial": true,
-              "members": [
-                {
-                  "type": "operation",
-                  "getter": false,
-                  "setter": false,
-                  "deleter": false,
-                  "static": false,
-                  "stringifier": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": "Promise",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": {
-                      "type": "return-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "MediaStream"
-                    }
-                  },
-                  "name": "getDisplayMedia",
-                  "arguments": [
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "MediaStreamConstraints"
-                      },
-                      "name": "constraints"
-                    }
-                  ],
-                  "extAttrs": []
-                }
-              ],
-              "extAttrs": []
-            }
-          ],
-          "MediaTrackConstraintSet": [
-            {
-              "type": "dictionary",
-              "name": "MediaTrackConstraintSet",
-              "partial": true,
-              "members": [
-                {
-                  "type": "field",
-                  "name": "displaySurface",
-                  "required": false,
-                  "idlType": {
-                    "type": "dictionary-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "ConstrainDOMString"
-                  },
-                  "extAttrs": []
-                },
-                {
-                  "type": "field",
-                  "name": "logicalSurface",
-                  "required": false,
-                  "idlType": {
-                    "type": "dictionary-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "ConstrainBoolean"
-                  },
-                  "extAttrs": []
-                }
-              ],
-              "extAttrs": []
-            }
-          ]
-        },
-        "externalDependencies": [
-          "NavigatorUserMedia",
-          "MediaStream",
-          "MediaStreamConstraints",
-          "MediaTrackConstraintSet",
-          "ConstrainDOMString",
-          "ConstrainBoolean"
-        ],
-        "hasObsoleteIdl": false
-      }
+      "title": "screen-capture",
+      "crawled": "https://www.w3.org/TR/screen-capture",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/screen-orientation/",
@@ -73923,281 +73709,18 @@
       "url": "https://www.w3.org/TR/server-timing/",
       "shortname": "server-timing",
       "versions": [
-        "https://www.w3.org/TR/2017/WD-server-timing-20171229/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20171221/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20171120/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20171102/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20171018/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20170920/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20170902/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20170828/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20170824/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20170823/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20170818/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20170726/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20170725/",
-        "https://www.w3.org/TR/2017/WD-server-timing-20170713/",
-        "https://www.w3.org/TR/2016/NOTE-server-timing-20160523/",
-        "https://www.w3.org/TR/2015/WD-server-timing-20150717/",
-        "https://www.w3.org/TR/2015/WD-server-timing-20150428/",
-        "https://www.w3.org/TR/2015/WD-server-timing-20150217/",
-        "https://w3c.github.io/server-timing/",
-        "https://www.w3.org/TR/server-timing/"
+        "https://www.w3.org/TR/server-timing/",
+        "https://www.w3.org/TR/server-timing"
       ],
-      "title": "Server Timing",
-      "latest": "https://www.w3.org/TR/server-timing/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-server-timing-20171229/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/server-timing/",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
+      "latest": "https://www.w3.org/TR/server-timing",
       "repository": "https://github.com/w3c/server-timing",
-      "crawled": "https://www.w3.org/TR/2017/WD-server-timing-20171229/",
-      "date": "29 December 2017",
-      "links": [
-        "https://www.w3.org/TR/",
-        "https://www.w3.org/webperf/",
-        "https://lists.w3.org/Archives/Public/public-web-perf/",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/45211/status",
-        "https://www.w3.org/2017/Process-20170301/",
-        "https://heycam.github.io/webidl/",
-        "https://www.w3.org/TR/resource-timing-2/",
-        "https://www.w3.org/TR/navigation-timing-2/",
-        "https://fetch.spec.whatwg.org/",
-        "https://www.w3.org/TR/html5/",
-        "https://tools.ietf.org/html/rfc5234",
-        "https://tools.ietf.org/html/rfc7230",
-        "https://www.w3.org/TR/performance-timeline-2/",
-        "https://tools.ietf.org/html/rfc3864",
-        "https://tools.ietf.org/html/rfc6797"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "HTML5",
-            "url": "https://www.w3.org/TR/html5/"
-          },
-          {
-            "name": "NAVIGATION-TIMING-2",
-            "url": "https://www.w3.org/TR/navigation-timing-2/"
-          },
-          {
-            "name": "RESOURCE-TIMING-2",
-            "url": "https://www.w3.org/TR/resource-timing-2/"
-          },
-          {
-            "name": "RFC5234",
-            "url": "https://tools.ietf.org/html/rfc5234"
-          },
-          {
-            "name": "RFC7230",
-            "url": "https://tools.ietf.org/html/rfc7230"
-          },
-          {
-            "name": "WEBIDL",
-            "url": "https://heycam.github.io/webidl/"
-          }
-        ],
-        "informative": [
-          {
-            "name": "FETCH",
-            "url": "https://fetch.spec.whatwg.org/"
-          },
-          {
-            "name": "PERFORMANCE-TIMELINE-2",
-            "url": "https://www.w3.org/TR/performance-timeline-2/"
-          },
-          {
-            "name": "RFC3864",
-            "url": "https://tools.ietf.org/html/rfc3864"
-          },
-          {
-            "name": "RFC6797",
-            "url": "https://tools.ietf.org/html/rfc6797"
-          }
-        ]
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {},
-          "functions": {
-            "Window": [
-              "PerformanceServerTiming"
-            ],
-            "Worker": [
-              "PerformanceServerTiming"
-            ]
-          },
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "PerformanceServerTiming": [
-              "Window",
-              "Worker",
-              "DOMHighResTimeStamp"
-            ],
-            "PerformanceResourceTiming": [
-              "PerformanceServerTiming"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "PerformanceServerTiming": {
-            "type": "interface",
-            "name": "PerformanceServerTiming",
-            "partial": false,
-            "members": [
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "name": "name",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMHighResTimeStamp"
-                },
-                "name": "duration",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "name": "description",
-                "extAttrs": []
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "object"
-                },
-                "name": "toJSON",
-                "arguments": [],
-                "extAttrs": [
-                  {
-                    "name": "Default",
-                    "arguments": null,
-                    "type": "extended-attribute",
-                    "rhs": null
-                  }
-                ]
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": [
-              {
-                "name": "Exposed",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": {
-                  "type": "identifier-list",
-                  "value": [
-                    "Window",
-                    "Worker"
-                  ]
-                }
-              }
-            ]
-          }
-        },
-        "idlExtendedNames": {
-          "PerformanceResourceTiming": [
-            {
-              "type": "interface",
-              "name": "PerformanceResourceTiming",
-              "partial": true,
-              "members": [
-                {
-                  "type": "attribute",
-                  "static": false,
-                  "stringifier": false,
-                  "inherit": false,
-                  "readonly": true,
-                  "idlType": {
-                    "type": "attribute-type",
-                    "sequence": false,
-                    "generic": "FrozenArray",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": {
-                      "type": "attribute-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "PerformanceServerTiming"
-                    }
-                  },
-                  "name": "serverTiming",
-                  "extAttrs": []
-                }
-              ],
-              "extAttrs": [
-                {
-                  "name": "Exposed",
-                  "arguments": null,
-                  "type": "extended-attribute",
-                  "rhs": {
-                    "type": "identifier-list",
-                    "value": [
-                      "Window",
-                      "Worker"
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        "externalDependencies": [
-          "Window",
-          "Worker",
-          "DOMHighResTimeStamp",
-          "PerformanceResourceTiming"
-        ],
-        "hasObsoleteIdl": false
-      }
+      "title": "server-timing",
+      "crawled": "https://www.w3.org/TR/server-timing",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/service-workers-1/",
@@ -84641,6 +84164,7 @@
       "url": "https://www.w3.org/TR/webauthn/",
       "shortname": "webauthn",
       "versions": [
+        "https://www.w3.org/TR/2018/WD-webauthn-20180306/",
         "https://www.w3.org/TR/2017/WD-webauthn-20171205/",
         "https://www.w3.org/TR/2017/WD-webauthn-20170811/",
         "https://www.w3.org/TR/2017/WD-webauthn-20170505/",
@@ -84652,14 +84176,14 @@
         "https://w3c.github.io/webauthn/",
         "https://www.w3.org/TR/webauthn/"
       ],
-      "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
+      "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
       "latest": "https://www.w3.org/TR/webauthn/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-webauthn-20171205/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-webauthn-20180306/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/webauthn/",
       "repository": "https://github.com/w3c/webauthn",
-      "crawled": "https://www.w3.org/TR/2017/WD-webauthn-20171205/",
-      "date": "5 December 2017",
+      "crawled": "https://www.w3.org/TR/2018/WD-webauthn-20180306/",
+      "date": "6 March 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/webauthn/",
@@ -84667,40 +84191,43 @@
         "https://lists.w3.org/Archives/Public/public-webauthn/",
         "https://www.w3.org/Consortium/Patent-Policy/",
         "https://www.w3.org/2004/01/pp-impl/87227/status",
-        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
-        "https://www.w3.org/2017/Process-20170301/",
+        "https://www.w3.org/2018/Process-20180201/",
         "https://w3c.github.io/html/browsers.html",
         "https://w3c.github.io/webappsec-credential-management/",
         "https://www.w3.org/TR/credential-management-1/",
+        "https://fidoalliance.org/specs/fido-v2.0-ps-20170927/fido-client-to-authenticator-protocol-v2.0-ps-20170927.html",
         "https://heycam.github.io/webidl/",
         "https://tc39.github.io/ecma262/",
         "https://html.spec.whatwg.org/",
+        "https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-appid-and-facets-v1.2-ps-20170411.html",
         "https://infra.spec.whatwg.org/",
         "https://url.spec.whatwg.org/",
         "https://w3c.github.io/webappsec-secure-contexts/",
         "https://dom.spec.whatwg.org/",
-        "https://www.w3.org/TR/webauthn/",
-        "https://www.w3.org/TR/WebCryptoAPI/",
         "https://tools.ietf.org/html/draft-ietf-tokbind-protocol",
         "https://github.com/w3c/webauthn/issues/613",
-        "https://github.com/w3c/webauthn/issues/462",
-        "https://github.com/w3c/webauthn/issues/694",
         "https://github.com/w3c/webauthn/pull/665",
         "https://www.w3.org/TR/mixed-content/",
         "https://www.w3.org/TR/page-visibility/",
         "https://fetch.spec.whatwg.org/",
         "https://github.com/whatwg/html/issues/2711",
         "https://encoding.spec.whatwg.org/",
+        "https://tools.ietf.org/html/rfc8152",
+        "https://tools.ietf.org/html/rfc8230",
         "https://developer.android.com/preview/api-overview.html",
         "https://developer.android.com/training/articles/security-key-attestation.html",
         "https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html",
         "https://developer.android.com/training/safetynet/",
+        "https://www.w3.org/TR/webauthn/",
         "https://dev.w3.org/geo/api/spec-source.html",
+        "https://www.w3.org/Webauthn/",
         "https://tools.ietf.org/html/draft-greevenbosch-appsawg-cbor-cddl",
-        "https://fidoalliance.org/specs/fido-v2.0-rd-20170927/fido-client-to-authenticator-protocol-v2.0-rd-20170927.html",
+        "https://fidoalliance.org/specs/fido-v2.0-ps-20170927/fido-appid-and-facets-v2.0-ps-20170927.html",
+        "https://fidoalliance.org/wp-content/uploads/2014/12/FIDO_Alliance_Whitepaper_Privacy_Principles.pdf",
         "https://fidoalliance.org/specs/fido-u2f-v1.1-id-20160915/fido-u2f-raw-message-formats-v1.1-id-20160915.html",
         "https://fidoalliance.org/specs/fido-uaf-v1.1-id-20170202/fido-ecdaa-algorithm-v1.1-id-20170202.html",
         "https://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-reg-v1.0-ps-20141208.html",
+        "https://www.w3.org/TR/geolocation-API/",
         "https://www.w3.org/TR/html52/",
         "https://www.iana.org/assignments/cose/cose.xhtml",
         "https://tools.ietf.org/html/rfc2119",
@@ -84708,19 +84235,21 @@
         "https://tools.ietf.org/html/rfc5234",
         "https://tools.ietf.org/html/rfc5890",
         "https://tools.ietf.org/html/rfc7049",
-        "https://tools.ietf.org/html/rfc8152",
         "https://www.secg.org/sec1-v2.pdf",
         "https://www.w3.org/TR/secure-contexts/",
+        "https://trustedcomputinggroup.org/wp-content/uploads/IWG_CMC_Profile_Cert_Enrollment_v1_r7.pdf",
         "https://xml2rfc.tools.ietf.org/cgi-bin/xml2rfc.cgi?modeAsFormat=html/ascii&url=https://raw.githubusercontent.com/w3c/webauthn/master/draft-hodges-webauthn-registries.xml",
         "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/",
         "https://eprint.iacr.org/2007/399.pdf",
+        "https://www.internet2.edu/media/medialibrary/2013/09/04/internet2-mace-dir-eduperson-200604.html",
         "https://wicg.github.io/feature-policy/",
-        "https://fidoalliance.org/specs/fido-uaf-v1.1-rd-20161005/fido-appid-and-facets-v1.1-rd-20161005.html",
         "https://fidoalliance.org/specs/fido-uaf-v1.1-id-20170202/fido-uaf-authnr-cmds-v1.1-id-20170202.html",
+        "https://fidoalliance.org/specs/fido-security-requirements-v1.0-fd-20170524/",
         "https://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-metadata-service-v1.0-ps-20141208.html",
-        "https://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-security-ref-v1.0-ps-20141208.html",
-        "https://geojson.org/geojson-spec.html",
+        "https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-security-ref-v1.2-ps-20170411.html",
+        "https://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-authnr-metadata-v1.0-ps-20141208.html",
         "https://standards.iso.org/ittf/PubliclyAvailableStandards/c055194_ISOIEC_2382-37_2012.zip",
+        "https://tools.ietf.org/html/rfc3279",
         "https://tools.ietf.org/html/rfc4949",
         "https://tools.ietf.org/html/rfc5280",
         "https://tools.ietf.org/html/rfc6265",
@@ -84760,8 +84289,16 @@
             "url": "https://fetch.spec.whatwg.org/"
           },
           {
+            "name": "FIDO-APPID",
+            "url": "https://fidoalliance.org/specs/fido-v2.0-ps-20170927/fido-appid-and-facets-v2.0-ps-20170927.html"
+          },
+          {
             "name": "FIDO-CTAP",
-            "url": "https://fidoalliance.org/specs/fido-v2.0-rd-20170927/fido-client-to-authenticator-protocol-v2.0-rd-20170927.html"
+            "url": "https://fidoalliance.org/specs/fido-v2.0-ps-20170927/fido-client-to-authenticator-protocol-v2.0-ps-20170927.html"
+          },
+          {
+            "name": "FIDO-Privacy-Principles",
+            "url": "https://fidoalliance.org/wp-content/uploads/2014/12/FIDO_Alliance_Whitepaper_Privacy_Principles.pdf"
           },
           {
             "name": "FIDO-U2F-Message-Formats",
@@ -84774,6 +84311,10 @@
           {
             "name": "FIDOReg",
             "url": "https://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-reg-v1.0-ps-20141208.html"
+          },
+          {
+            "name": "Geolocation-API",
+            "url": "https://www.w3.org/TR/geolocation-API/"
           },
           {
             "name": "HTML",
@@ -84824,12 +84365,20 @@
             "url": "https://tools.ietf.org/html/rfc8152"
           },
           {
+            "name": "RFC8230",
+            "url": "https://tools.ietf.org/html/rfc8230"
+          },
+          {
             "name": "SEC1",
             "url": "http://www.secg.org/sec1-v2.pdf"
           },
           {
             "name": "SECURE-CONTEXTS",
             "url": "https://www.w3.org/TR/secure-contexts/"
+          },
+          {
+            "name": "TCG-CMCProfile-AIKCertEnroll",
+            "url": "https://trustedcomputinggroup.org/wp-content/uploads/IWG_CMC_Profile_Cert_Enrollment_v1_r7.pdf"
           },
           {
             "name": "TokenBinding",
@@ -84842,10 +84391,6 @@
           {
             "name": "WebAuthn-Registries",
             "url": "https://xml2rfc.tools.ietf.org/cgi-bin/xml2rfc.cgi?modeAsFormat=html/ascii&url=https://raw.githubusercontent.com/w3c/webauthn/master/draft-hodges-webauthn-registries.xml"
-          },
-          {
-            "name": "WebCryptoAPI",
-            "url": "https://www.w3.org/TR/WebCryptoAPI/"
           },
           {
             "name": "WebIDL",
@@ -84862,16 +84407,20 @@
             "url": "https://eprint.iacr.org/2007/399.pdf"
           },
           {
+            "name": "EduPersonObjectClassSpec",
+            "url": "https://www.internet2.edu/media/medialibrary/2013/09/04/internet2-mace-dir-eduperson-200604.html"
+          },
+          {
             "name": "Feature-Policy",
             "url": "https://wicg.github.io/feature-policy/"
           },
           {
-            "name": "FIDO-APPID",
-            "url": "https://fidoalliance.org/specs/fido-uaf-v1.1-rd-20161005/fido-appid-and-facets-v1.1-rd-20161005.html"
-          },
-          {
             "name": "FIDO-UAF-AUTHNR-CMDS",
             "url": "https://fidoalliance.org/specs/fido-uaf-v1.1-id-20170202/fido-uaf-authnr-cmds-v1.1-id-20170202.html"
+          },
+          {
+            "name": "FIDOAuthnrSecReqs",
+            "url": "https://fidoalliance.org/specs/fido-security-requirements-v1.0-fd-20170524/"
           },
           {
             "name": "FIDOMetadataService",
@@ -84879,15 +84428,19 @@
           },
           {
             "name": "FIDOSecRef",
-            "url": "https://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-security-ref-v1.0-ps-20141208.html"
+            "url": "https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-security-ref-v1.2-ps-20170411.html"
           },
           {
-            "name": "GeoJSON",
-            "url": "http://geojson.org/geojson-spec.html"
+            "name": "FIDOUAFAuthenticatorMetadataStatements",
+            "url": "https://fidoalliance.org/specs/fido-uaf-v1.0-ps-20141208/fido-uaf-authnr-metadata-v1.0-ps-20141208.html"
           },
           {
             "name": "ISOBiometricVocabulary",
             "url": "http://standards.iso.org/ittf/PubliclyAvailableStandards/c055194_ISOIEC_2382-37_2012.zip"
+          },
+          {
+            "name": "RFC3279",
+            "url": "https://tools.ietf.org/html/rfc3279"
           },
           {
             "name": "RFC4949",
@@ -84954,10 +84507,10 @@
               "Credential",
               "Window",
               "AuthenticatorResponse",
-              "AuthenticationExtensions"
+              "AuthenticationExtensionsClientOutputs"
             ],
             "CredentialCreationOptions": [
-              "MakePublicKeyCredentialOptions"
+              "PublicKeyCredentialCreationOptions"
             ],
             "CredentialRequestOptions": [
               "PublicKeyCredentialRequestOptions"
@@ -84977,14 +84530,14 @@
               "PublicKeyCredentialType",
               "COSEAlgorithmIdentifier"
             ],
-            "MakePublicKeyCredentialOptions": [
+            "PublicKeyCredentialCreationOptions": [
               "PublicKeyCredentialRpEntity",
               "PublicKeyCredentialUserEntity",
               "PublicKeyCredentialParameters",
               "PublicKeyCredentialDescriptor",
               "AuthenticatorSelectionCriteria",
               "AttestationConveyancePreference",
-              "AuthenticationExtensions"
+              "AuthenticationExtensionsClientInputs"
             ],
             "PublicKeyCredentialEntity": [],
             "PublicKeyCredentialRpEntity": [
@@ -85000,15 +84553,29 @@
             "PublicKeyCredentialRequestOptions": [
               "PublicKeyCredentialDescriptor",
               "UserVerificationRequirement",
-              "AuthenticationExtensions"
+              "AuthenticationExtensionsClientInputs"
+            ],
+            "AuthenticationExtensionsClientInputs": [
+              "txAuthGenericArg",
+              "AuthenticatorSelectionList"
+            ],
+            "AuthenticationExtensionsClientOutputs": [
+              "AuthenticationExtensionsSupported",
+              "Coordinates",
+              "UvmEntries"
             ],
             "CollectedClientData": [
-              "AuthenticationExtensions"
+              "TokenBinding"
+            ],
+            "TokenBinding": [
+              "TokenBindingStatus"
             ],
             "PublicKeyCredentialDescriptor": [
               "PublicKeyCredentialType",
               "AuthenticatorTransport"
-            ]
+            ],
+            "txAuthGenericArg": [],
+            "authenticatorBiometricPerfBounds": []
           },
           "_reallyDependsOnWindow": false,
           "PublicKeyCredential": {
@@ -85077,7 +84644,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "AuthenticationExtensions"
+                  "idlType": "AuthenticationExtensionsClientOutputs"
                 },
                 "name": "getClientExtensionResults",
                 "arguments": [],
@@ -85264,7 +84831,7 @@
                   "type": "attribute-type",
                   "sequence": false,
                   "generic": null,
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "ArrayBuffer"
                 },
@@ -85335,9 +84902,9 @@
             "inheritance": null,
             "extAttrs": []
           },
-          "MakePublicKeyCredentialOptions": {
+          "PublicKeyCredentialCreationOptions": {
             "type": "dictionary",
-            "name": "MakePublicKeyCredentialOptions",
+            "name": "PublicKeyCredentialCreationOptions",
             "partial": false,
             "members": [
               {
@@ -85484,7 +85051,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "AuthenticationExtensions"
+                  "idlType": "AuthenticationExtensionsClientInputs"
                 },
                 "extAttrs": []
               }
@@ -85782,7 +85349,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "AuthenticationExtensions"
+                  "idlType": "AuthenticationExtensionsClientInputs"
                 },
                 "extAttrs": []
               }
@@ -85790,7 +85357,23 @@
             "inheritance": null,
             "extAttrs": []
           },
-          "AuthenticationExtensions": {
+          "AuthenticationExtensionsClientInputs": {
+            "type": "dictionary",
+            "name": "AuthenticationExtensionsClientInputs",
+            "partial": false,
+            "members": [],
+            "inheritance": null,
+            "extAttrs": []
+          },
+          "AuthenticationExtensionsClientOutputs": {
+            "type": "dictionary",
+            "name": "AuthenticationExtensionsClientOutputs",
+            "partial": false,
+            "members": [],
+            "inheritance": null,
+            "extAttrs": []
+          },
+          "AuthenticationExtensionsAuthenticatorInputs": {
             "type": "typedef",
             "idlType": {
               "type": "typedef-type",
@@ -85813,11 +85396,11 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "DOMString"
                 }
               ]
             },
-            "name": "AuthenticationExtensions",
+            "name": "AuthenticationExtensionsAuthenticatorInputs",
             "extAttrs": []
           },
           "CollectedClientData": {
@@ -85869,7 +85452,30 @@
               },
               {
                 "type": "field",
-                "name": "hashAlgorithm",
+                "name": "tokenBinding",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TokenBinding"
+                },
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": []
+          },
+          "TokenBinding": {
+            "type": "dictionary",
+            "name": "TokenBinding",
+            "partial": false,
+            "members": [
+              {
+                "type": "field",
+                "name": "status",
                 "required": true,
                 "idlType": {
                   "type": "dictionary-type",
@@ -85877,13 +85483,13 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "TokenBindingStatus"
                 },
                 "extAttrs": []
               },
               {
                 "type": "field",
-                "name": "tokenBindingId",
+                "name": "id",
                 "required": false,
                 "idlType": {
                   "type": "dictionary-type",
@@ -85892,39 +85498,30 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "DOMString"
-                },
-                "extAttrs": []
-              },
-              {
-                "type": "field",
-                "name": "clientExtensions",
-                "required": false,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "AuthenticationExtensions"
-                },
-                "extAttrs": []
-              },
-              {
-                "type": "field",
-                "name": "authenticatorExtensions",
-                "required": false,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "AuthenticationExtensions"
                 },
                 "extAttrs": []
               }
             ],
             "inheritance": null,
+            "extAttrs": []
+          },
+          "TokenBindingStatus": {
+            "type": "enum",
+            "name": "TokenBindingStatus",
+            "values": [
+              {
+                "type": "string",
+                "value": "present"
+              },
+              {
+                "type": "string",
+                "value": "supported"
+              },
+              {
+                "type": "string",
+                "value": "not-supported"
+              }
+            ],
             "extAttrs": []
           },
           "PublicKeyCredentialType": {
@@ -86047,6 +85644,43 @@
             ],
             "extAttrs": []
           },
+          "txAuthGenericArg": {
+            "type": "dictionary",
+            "name": "txAuthGenericArg",
+            "partial": false,
+            "members": [
+              {
+                "type": "field",
+                "name": "contentType",
+                "required": true,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "content",
+                "required": true,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ArrayBuffer"
+                },
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": []
+          },
           "AuthenticatorSelectionList": {
             "type": "typedef",
             "idlType": {
@@ -86079,6 +85713,103 @@
             },
             "name": "AAGUID",
             "extAttrs": []
+          },
+          "AuthenticationExtensionsSupported": {
+            "type": "typedef",
+            "idlType": {
+              "type": "typedef-type",
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": {
+                "type": "typedef-type",
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "union": false,
+                "idlType": "USVString"
+              }
+            },
+            "name": "AuthenticationExtensionsSupported",
+            "extAttrs": []
+          },
+          "UvmEntry": {
+            "type": "typedef",
+            "idlType": {
+              "type": "typedef-type",
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": {
+                "type": "typedef-type",
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "union": false,
+                "idlType": "unsigned long"
+              }
+            },
+            "name": "UvmEntry",
+            "extAttrs": []
+          },
+          "UvmEntries": {
+            "type": "typedef",
+            "idlType": {
+              "type": "typedef-type",
+              "sequence": true,
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": {
+                "type": "typedef-type",
+                "sequence": false,
+                "generic": null,
+                "nullable": false,
+                "union": false,
+                "idlType": "UvmEntry"
+              }
+            },
+            "name": "UvmEntries",
+            "extAttrs": []
+          },
+          "authenticatorBiometricPerfBounds": {
+            "type": "dictionary",
+            "name": "authenticatorBiometricPerfBounds",
+            "partial": false,
+            "members": [
+              {
+                "type": "field",
+                "name": "FAR",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "float"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "FRR",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "float"
+                },
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": []
           }
         },
         "idlExtendedNames": {
@@ -86098,7 +85829,7 @@
                     "generic": null,
                     "nullable": false,
                     "union": false,
-                    "idlType": "MakePublicKeyCredentialOptions"
+                    "idlType": "PublicKeyCredentialCreationOptions"
                   },
                   "extAttrs": []
                 }
@@ -86165,13 +85896,370 @@
               ],
               "extAttrs": []
             }
+          ],
+          "AuthenticationExtensionsClientInputs": [
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "appid",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "txAuthSimple",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "txAuthGeneric",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "txAuthGenericArg"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "authnSel",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AuthenticatorSelectionList"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "exts",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "uvi",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "loc",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientInputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "uvm",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            }
+          ],
+          "AuthenticationExtensionsClientOutputs": [
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "appid",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "txAuthSimple",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "txAuthGeneric",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "ArrayBuffer"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "authnSel",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "exts",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AuthenticationExtensionsSupported"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "uvi",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "ArrayBuffer"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "loc",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "Coordinates"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            },
+            {
+              "type": "dictionary",
+              "name": "AuthenticationExtensionsClientOutputs",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "uvm",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "UvmEntries"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            }
           ]
         },
         "externalDependencies": [
           "Credential",
           "Window",
           "CredentialCreationOptions",
-          "CredentialRequestOptions"
+          "CredentialRequestOptions",
+          "Coordinates"
         ],
         "hasObsoleteIdl": false
       }
