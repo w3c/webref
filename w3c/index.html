@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">March 07, 2018</h2>
+            <h2 class="date">March 08, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -55,7 +55,7 @@
   <section id="potential-issues" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Sensor</code>, <code>SensorOptions</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
@@ -82,7 +82,7 @@
   <section id="spec-info-1" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/ambient-light/">Editor's Draft</a> (28 February 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/ambient-light/">Editor's Draft</a> (1 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/ambient-light/" class="uri">https://w3c.github.io/ambient-light/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/ambient-light/" class="uri">https://www.w3.org/TR/ambient-light/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-ambient-light-20171018/">Working Draft</a></li>
@@ -93,7 +93,7 @@
   <section id="potential-issues-1" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Sensor</code>, <code>SensorOptions</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>Window</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-1" class="level3 dependencies">
@@ -277,7 +277,7 @@
   <section id="spec-info-7" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://console.spec.whatwg.org/">Living Standard</a> (14 February 2018)</li>
+  <li>Crawled version: <a href="https://console.spec.whatwg.org/">Living Standard</a> (6 March 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/console">GitHub whatwg/console</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -749,7 +749,7 @@
   <section id="spec-info-20" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.css-houdini.org/css-typed-om-1/">Editor's Draft</a> (2 March 2018)</li>
+  <li>Crawled version: <a href="https://drafts.css-houdini.org/css-typed-om-1/">Editor's Draft</a> (7 March 2018)</li>
   <li>Editor's Draft: <a href="https://drafts.css-houdini.org/css-typed-om-1/" class="uri">https://drafts.css-houdini.org/css-typed-om-1/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-typed-om-1/" class="uri">https://www.w3.org/TR/css-typed-om-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/">Working Draft</a></li>
@@ -979,6 +979,7 @@
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   </ul>
@@ -1285,30 +1286,45 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="generic-sensor" class="level2" data-spec="true" data-error="true">
-  <h2>generic-sensor</h2>
+  <section id="generic-sensor-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <h2>Generic Sensor API</h2>
   <section id="spec-info-34" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/generic-sensor/">Initial URL</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/generic-sensor" class="uri">https://www.w3.org/TR/generic-sensor</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/sensors/">Editor's Draft</a> (7 March 2018)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/sensors/" class="uri">https://w3c.github.io/sensors/</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/generic-sensor/" class="uri">https://www.w3.org/TR/generic-sensor/</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-generic-sensor-20171018/">Working Draft</a></li>
   <li>Repository: <a href="https://github.com/w3c/sensors">GitHub w3c/sensors</a></li>
   <li>Shortname: generic-sensor</li>
   </ul>
   </section>
   <section id="potential-issues-34" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>Window</code></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/page-visibility/"><code>https://w3c.github.io/page-visibility/</code></a>, related reference &quot;PAGE-VISIBILITY&quot; uses URL <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a></li>
+  <li><a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a>, related reference &quot;PERMISSIONS&quot; uses URL <a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-34" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
+  <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
+  <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
+  <li><a href="https://w3c.github.io/proximity/">Proximity Sensor</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
+  </ul>
   </section>
   </section>
   <section id="geolocation-api-specification-2nd-edition" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
@@ -1336,6 +1352,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
@@ -1395,7 +1412,7 @@
   <section id="potential-issues-37" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Sensor</code>, <code>SensorOptions</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
@@ -1447,6 +1464,7 @@
   <ul>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://w3c.github.io/longtasks/">Long Tasks API 1</a></li>
@@ -1476,7 +1494,7 @@
   <section id="spec-info-39" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/html/">Editor's Draft</a> (6 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/html/">Editor's Draft</a> (7 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/html/" class="uri">https://w3c.github.io/html/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/html52/" class="uri">https://www.w3.org/TR/html52/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/REC-html52-20171214/">Recommendation</a></li>
@@ -1551,6 +1569,7 @@
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://www.w3.org/TR/geolocation-API/">Geolocation API Specification 2nd Edition</a></li>
   <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
@@ -1597,6 +1616,7 @@
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="https://w3c.github.io/user-timing/">User Timing Level 2</a></li>
+  <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a></li>
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
@@ -1691,6 +1711,7 @@
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
@@ -1823,6 +1844,7 @@
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
@@ -1898,10 +1920,10 @@
   <section id="spec-info-43" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webrtc-stats/">Editor's Draft</a> (05 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webrtc-stats/">Editor's Draft</a> (07 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webrtc-stats/" class="uri">https://w3c.github.io/webrtc-stats/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webrtc-stats/" class="uri">https://www.w3.org/TR/webrtc-stats/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-webrtc-stats-20180227/">Working Draft</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/">Working Draft</a></li>
   <li>Repository: <a href="https://github.com/w3c/webrtc-stats">GitHub w3c/webrtc-stats</a></li>
   <li>Shortname: webrtc-stats</li>
   </ul>
@@ -1975,7 +1997,7 @@
   <section id="spec-info-45" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (07 March 2018)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (08 March 2018)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -2067,7 +2089,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="magnetometer" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="magnetometer" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-inconsistentRef="true">
   <h2>Magnetometer</h2>
   <section id="spec-info-48" class="level3 info">
   <h3>Spec info</h3>
@@ -2083,17 +2105,14 @@
   <section id="potential-issues-48" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Sensor</code>, <code>SensorOptions</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
   </ul></li>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a></li>
-  </ul></li>
   <li>Inconsistent references for links:
   <ul>
+  <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a>, related reference &quot;GENERIC-SENSOR&quot; uses URL <a href="https://www.w3.org/TR/generic-sensor/"><code>https://www.w3.org/TR/generic-sensor/</code></a></li>
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a>, related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   <li><a href="https://w3c.github.io/accelerometer/"><code>https://w3c.github.io/accelerometer/</code></a>, related reference &quot;ACCELEROMETER&quot; uses URL <a href="https://www.w3.org/TR/accelerometer/"><code>https://www.w3.org/TR/accelerometer/</code></a></li>
   </ul></li>
@@ -2291,7 +2310,7 @@
   <section id="spec-info-54" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/mediacapture-image/">Editor's Draft</a> (16 October 2017)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/mediacapture-image/">Editor's Draft</a> (7 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/mediacapture-image/" class="uri">https://w3c.github.io/mediacapture-image/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/image-capture/" class="uri">https://www.w3.org/TR/image-capture/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-image-capture-20170621/">Working Draft</a></li>
@@ -2484,7 +2503,7 @@
   <section id="potential-issues-59" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Sensor</code>, <code>SensorOptions</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
@@ -2492,11 +2511,11 @@
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/orientation-event/"><code>https://www.w3.org/TR/orientation-event/</code></a></li>
-  <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a></li>
   <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
+  <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a>, related reference &quot;GENERIC-SENSOR&quot; uses URL <a href="https://www.w3.org/TR/generic-sensor/"><code>https://www.w3.org/TR/generic-sensor/</code></a></li>
   <li><a href="https://w3c.github.io/accelerometer/"><code>https://w3c.github.io/accelerometer/</code></a>, related reference &quot;ACCELEROMETER&quot; uses URL <a href="https://www.w3.org/TR/accelerometer/"><code>https://www.w3.org/TR/accelerometer/</code></a></li>
   <li><a href="https://w3c.github.io/gyroscope/"><code>https://w3c.github.io/gyroscope/</code></a>, related reference &quot;GYROSCOPE&quot; uses URL <a href="https://www.w3.org/TR/gyroscope/"><code>https://www.w3.org/TR/gyroscope/</code></a></li>
   <li><a href="https://w3c.github.io/magnetometer/"><code>https://w3c.github.io/magnetometer/</code></a>, related reference &quot;MAGNETOMETER&quot; uses URL <a href="https://www.w3.org/TR/magnetometer/"><code>https://www.w3.org/TR/magnetometer/</code></a></li>
@@ -2535,9 +2554,11 @@
   <ul>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
+  <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
@@ -2749,6 +2770,7 @@
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
@@ -2941,7 +2963,7 @@
   <section id="potential-issues-72" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Sensor</code>, <code>SensorOptions</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>Window</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-72" class="level3 dependencies">
@@ -3266,6 +3288,7 @@
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
@@ -3976,21 +3999,28 @@
   </ul>
   </section>
   </section>
-  <section id="vibration" class="level2" data-spec="true" data-error="true">
-  <h2>vibration</h2>
+  <section id="vibration-api-second-edition" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <h2>Vibration API (Second Edition)</h2>
   <section id="spec-info-99" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/vibration/">Initial URL</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/vibration" class="uri">https://www.w3.org/TR/vibration</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/vibration/">Editor's Draft</a> (23 October 2017)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/vibration/" class="uri">https://w3c.github.io/vibration/</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/vibration/" class="uri">https://www.w3.org/TR/vibration/</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2016/REC-vibration-20161018/">Recommendation</a></li>
   <li>Repository: <a href="https://github.com/w3c/vibration">GitHub w3c/vibration</a></li>
   <li>Shortname: vibration</li>
   </ul>
   </section>
   <section id="potential-issues-99" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>Navigator</code></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/page-visibility/"><code>https://w3c.github.io/page-visibility/</code></a>, related reference &quot;PAGE-VISIBILITY-2&quot; uses URL <a href="https://www.w3.org/TR/page-visibility-2/"><code>https://www.w3.org/TR/page-visibility-2/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-99" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -4059,6 +4089,7 @@
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-webmessaging-20150519/">HTML5 Web Messaging</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
@@ -4396,6 +4427,7 @@
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
@@ -4441,6 +4473,7 @@
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
   <li><a href="https://w3c.github.io/user-timing/">User Timing Level 2</a></li>
+  <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a></li>
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
@@ -4470,6 +4503,7 @@
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
+  <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   </ul>
   </section>
@@ -4507,6 +4541,7 @@
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a></li>
   </ul>
   </section>
   </section>
@@ -4546,7 +4581,7 @@
   <section id="spec-info-110" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://html.spec.whatwg.org/multipage/workers.html">Editor's Draft</a> (5 March 2018)</li>
+  <li>Crawled version: <a href="https://html.spec.whatwg.org/multipage/workers.html">Editor's Draft</a> (7 March 2018)</li>
   <li>Editor's Draft: <a href="https://html.spec.whatwg.org/multipage/workers.html" class="uri">https://html.spec.whatwg.org/multipage/workers.html</a></li>
   <li>Latest published version: <a href="http://www.w3.org/TR/workers/" class="uri">http://www.w3.org/TR/workers/</a></li>
   <li>Latest published status: <a href="http://www.w3.org/TR/2015/WD-workers-20150924/">Working Draft</a></li>
@@ -4608,6 +4643,7 @@
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
+  <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
@@ -4761,7 +4797,7 @@
   <section id="spec-info-113" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Wed Mar 07 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Thu Mar 08 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4789,7 +4825,7 @@
   <section id="spec-info-114" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Wed Mar 07 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Thu Mar 08 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4824,7 +4860,7 @@
   <section id="spec-info-115" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (05 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (07 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webrtc-pc/" class="uri">https://w3c.github.io/webrtc-pc/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webrtc/" class="uri">https://www.w3.org/TR/webrtc/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">Candidate Recommendation</a></li>
