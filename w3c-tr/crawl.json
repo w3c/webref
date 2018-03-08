@@ -2,13 +2,13 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-07T02:06:08.679Z",
+  "date": "2018-03-08T02:05:41.493Z",
   "options": {
     "publishedVersion": true
   },
   "stats": {
     "crawled": 119,
-    "errors": 2
+    "errors": 0
   },
   "results": [
     {
@@ -19,7 +19,7 @@
       "repository": "https://github.com/whatwg/console",
       "title": "Console Standard",
       "crawled": "https://console.spec.whatwg.org/",
-      "date": "14 February 2018",
+      "date": "6 March 2018",
       "links": [
         "https://github.com/whatwg/console/issues",
         "https://heycam.github.io/webidl/",
@@ -7359,7 +7359,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Wed Mar 07 2018",
+      "date": "Thu Mar 08 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -8443,7 +8443,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Wed Mar 07 2018",
+      "date": "Thu Mar 08 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -71851,18 +71851,231 @@
       "url": "https://www.w3.org/TR/screen-capture/",
       "shortname": "screen-capture",
       "versions": [
+        "https://www.w3.org/TR/2016/WD-screen-capture-20160714/",
+        "https://www.w3.org/TR/2016/WD-screen-capture-20160607/",
+        "https://www.w3.org/TR/2015/WD-screen-capture-20150210/",
+        "https://w3c.github.io/mediacapture-screen-share/",
         "https://www.w3.org/TR/screen-capture/",
-        "https://www.w3.org/TR/screen-capture"
+        "http://www.w3.org/TR/screen-capture/"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-      "latest": "https://www.w3.org/TR/screen-capture",
+      "title": "Screen Capture",
+      "latest": "http://www.w3.org/TR/screen-capture/",
+      "datedUrl": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/mediacapture-screen-share/",
       "repository": "https://github.com/w3c/mediacapture-screen-share",
-      "title": "screen-capture",
-      "crawled": "https://www.w3.org/TR/screen-capture",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
+      "date": "14 July 2016",
+      "links": [
+        "https://www.w3.org/TR/",
+        "https://www.w3.org/2009/dap/",
+        "https://www.w3.org/2011/04/webrtc/",
+        "https://lists.w3.org/Archives/Public/public-media-capture/",
+        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
+        "https://www.w3.org/2004/01/pp-impl/43696/status",
+        "https://www.w3.org/2004/01/pp-impl/47318/status",
+        "https://www.w3.org/2015/Process-20150901/",
+        "https://w3c.github.io/mediacapture-main/",
+        "https://www.w3.org/TR/mediacapture-streams/",
+        "https://tools.ietf.org/html/rfc2119",
+        "https://datatracker.ietf.org/doc/draft-ietf-rtcweb-security/",
+        "https://datatracker.ietf.org/doc/draft-ietf-rtcweb-security-arch/",
+        "https://www.w3.org/TR/WebIDL-1/",
+        "https://www.w3.org/TR/2dcontext/",
+        "https://tc39.github.io/ecma262/",
+        "https://www.w3.org/TR/html5/",
+        "https://www.w3.org/TR/mediacapture-depth/",
+        "https://www.w3.org/TR/webrtc/"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "GETUSERMEDIA",
+            "url": "https://www.w3.org/TR/mediacapture-streams/"
+          },
+          {
+            "name": "RFC2119",
+            "url": "https://tools.ietf.org/html/rfc2119"
+          },
+          {
+            "name": "RTCWEB-SECURITY",
+            "url": "http://datatracker.ietf.org/doc/draft-ietf-rtcweb-security/"
+          },
+          {
+            "name": "RTCWEB-SECURITY-ARCH",
+            "url": "http://datatracker.ietf.org/doc/draft-ietf-rtcweb-security-arch/"
+          },
+          {
+            "name": "WEBIDL",
+            "url": "https://www.w3.org/TR/WebIDL-1/"
+          }
+        ],
+        "informative": [
+          {
+            "name": "2DCONTEXT",
+            "url": "https://www.w3.org/TR/2dcontext/"
+          },
+          {
+            "name": "ECMA-262",
+            "url": "https://tc39.github.io/ecma262/"
+          },
+          {
+            "name": "HTML5",
+            "url": "https://www.w3.org/TR/html5/"
+          },
+          {
+            "name": "MEDIACAPTURE-DEPTH",
+            "url": "https://www.w3.org/TR/mediacapture-depth/"
+          },
+          {
+            "name": "WEBRTC",
+            "url": "https://www.w3.org/TR/webrtc/"
+          }
+        ]
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {
+            "NavigatorUserMedia": [
+              "MediaStream",
+              "MediaStreamConstraints"
+            ],
+            "MediaTrackConstraintSet": [
+              "ConstrainDOMString",
+              "ConstrainBoolean"
+            ]
+          },
+          "_reallyDependsOnWindow": false,
+          "DisplayCaptureSurfaceType": {
+            "type": "enum",
+            "name": "DisplayCaptureSurfaceType",
+            "values": [
+              {
+                "type": "string",
+                "value": "monitor"
+              },
+              {
+                "type": "string",
+                "value": "window"
+              },
+              {
+                "type": "string",
+                "value": "application"
+              },
+              {
+                "type": "string",
+                "value": "browser"
+              }
+            ],
+            "extAttrs": []
+          }
+        },
+        "idlExtendedNames": {
+          "NavigatorUserMedia": [
+            {
+              "type": "interface",
+              "name": "NavigatorUserMedia",
+              "partial": true,
+              "members": [
+                {
+                  "type": "operation",
+                  "getter": false,
+                  "setter": false,
+                  "deleter": false,
+                  "static": false,
+                  "stringifier": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": false,
+                    "generic": "Promise",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": {
+                      "type": "return-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "MediaStream"
+                    }
+                  },
+                  "name": "getDisplayMedia",
+                  "arguments": [
+                    {
+                      "optional": false,
+                      "variadic": false,
+                      "extAttrs": [],
+                      "idlType": {
+                        "type": "argument-type",
+                        "sequence": false,
+                        "generic": null,
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "MediaStreamConstraints"
+                      },
+                      "name": "constraints"
+                    }
+                  ],
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            }
+          ],
+          "MediaTrackConstraintSet": [
+            {
+              "type": "dictionary",
+              "name": "MediaTrackConstraintSet",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "displaySurface",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "ConstrainDOMString"
+                  },
+                  "extAttrs": []
+                },
+                {
+                  "type": "field",
+                  "name": "logicalSurface",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "ConstrainBoolean"
+                  },
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            }
+          ]
+        },
+        "externalDependencies": [
+          "NavigatorUserMedia",
+          "MediaStream",
+          "MediaStreamConstraints",
+          "MediaTrackConstraintSet",
+          "ConstrainDOMString",
+          "ConstrainBoolean"
+        ],
+        "hasObsoleteIdl": false
+      }
     },
     {
       "url": "https://www.w3.org/TR/screen-orientation/",
@@ -73709,18 +73922,281 @@
       "url": "https://www.w3.org/TR/server-timing/",
       "shortname": "server-timing",
       "versions": [
-        "https://www.w3.org/TR/server-timing/",
-        "https://www.w3.org/TR/server-timing"
+        "https://www.w3.org/TR/2017/WD-server-timing-20171229/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20171221/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20171120/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20171102/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20171018/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20170920/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20170902/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20170828/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20170824/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20170823/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20170818/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20170726/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20170725/",
+        "https://www.w3.org/TR/2017/WD-server-timing-20170713/",
+        "https://www.w3.org/TR/2016/NOTE-server-timing-20160523/",
+        "https://www.w3.org/TR/2015/WD-server-timing-20150717/",
+        "https://www.w3.org/TR/2015/WD-server-timing-20150428/",
+        "https://www.w3.org/TR/2015/WD-server-timing-20150217/",
+        "https://w3c.github.io/server-timing/",
+        "https://www.w3.org/TR/server-timing/"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-      "latest": "https://www.w3.org/TR/server-timing",
+      "title": "Server Timing",
+      "latest": "https://www.w3.org/TR/server-timing/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-server-timing-20171229/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/server-timing/",
       "repository": "https://github.com/w3c/server-timing",
-      "title": "server-timing",
-      "crawled": "https://www.w3.org/TR/server-timing",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/2017/WD-server-timing-20171229/",
+      "date": "29 December 2017",
+      "links": [
+        "https://www.w3.org/TR/",
+        "https://www.w3.org/webperf/",
+        "https://lists.w3.org/Archives/Public/public-web-perf/",
+        "https://www.w3.org/Consortium/Patent-Policy/",
+        "https://www.w3.org/2004/01/pp-impl/45211/status",
+        "https://www.w3.org/2017/Process-20170301/",
+        "https://heycam.github.io/webidl/",
+        "https://www.w3.org/TR/resource-timing-2/",
+        "https://www.w3.org/TR/navigation-timing-2/",
+        "https://fetch.spec.whatwg.org/",
+        "https://www.w3.org/TR/html5/",
+        "https://tools.ietf.org/html/rfc5234",
+        "https://tools.ietf.org/html/rfc7230",
+        "https://www.w3.org/TR/performance-timeline-2/",
+        "https://tools.ietf.org/html/rfc3864",
+        "https://tools.ietf.org/html/rfc6797"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "HTML5",
+            "url": "https://www.w3.org/TR/html5/"
+          },
+          {
+            "name": "NAVIGATION-TIMING-2",
+            "url": "https://www.w3.org/TR/navigation-timing-2/"
+          },
+          {
+            "name": "RESOURCE-TIMING-2",
+            "url": "https://www.w3.org/TR/resource-timing-2/"
+          },
+          {
+            "name": "RFC5234",
+            "url": "https://tools.ietf.org/html/rfc5234"
+          },
+          {
+            "name": "RFC7230",
+            "url": "https://tools.ietf.org/html/rfc7230"
+          },
+          {
+            "name": "WEBIDL",
+            "url": "https://heycam.github.io/webidl/"
+          }
+        ],
+        "informative": [
+          {
+            "name": "FETCH",
+            "url": "https://fetch.spec.whatwg.org/"
+          },
+          {
+            "name": "PERFORMANCE-TIMELINE-2",
+            "url": "https://www.w3.org/TR/performance-timeline-2/"
+          },
+          {
+            "name": "RFC3864",
+            "url": "https://tools.ietf.org/html/rfc3864"
+          },
+          {
+            "name": "RFC6797",
+            "url": "https://tools.ietf.org/html/rfc6797"
+          }
+        ]
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {
+            "Window": [
+              "PerformanceServerTiming"
+            ],
+            "Worker": [
+              "PerformanceServerTiming"
+            ]
+          },
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {
+            "PerformanceServerTiming": [
+              "Window",
+              "Worker",
+              "DOMHighResTimeStamp"
+            ],
+            "PerformanceResourceTiming": [
+              "PerformanceServerTiming"
+            ]
+          },
+          "_reallyDependsOnWindow": false,
+          "PerformanceServerTiming": {
+            "type": "interface",
+            "name": "PerformanceServerTiming",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "name": "name",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMHighResTimeStamp"
+                },
+                "name": "duration",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "name": "description",
+                "extAttrs": []
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "object"
+                },
+                "name": "toJSON",
+                "arguments": [],
+                "extAttrs": [
+                  {
+                    "name": "Default",
+                    "arguments": null,
+                    "type": "extended-attribute",
+                    "rhs": null
+                  }
+                ]
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "idlExtendedNames": {
+          "PerformanceResourceTiming": [
+            {
+              "type": "interface",
+              "name": "PerformanceResourceTiming",
+              "partial": true,
+              "members": [
+                {
+                  "type": "attribute",
+                  "static": false,
+                  "stringifier": false,
+                  "inherit": false,
+                  "readonly": true,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": "FrozenArray",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": {
+                      "type": "attribute-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "PerformanceServerTiming"
+                    }
+                  },
+                  "name": "serverTiming",
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": [
+                {
+                  "name": "Exposed",
+                  "arguments": null,
+                  "type": "extended-attribute",
+                  "rhs": {
+                    "type": "identifier-list",
+                    "value": [
+                      "Window",
+                      "Worker"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "externalDependencies": [
+          "Window",
+          "Worker",
+          "DOMHighResTimeStamp",
+          "PerformanceResourceTiming"
+        ],
+        "hasObsoleteIdl": false
+      }
     },
     {
       "url": "https://www.w3.org/TR/service-workers-1/",
@@ -90525,6 +91001,7 @@
       "url": "https://www.w3.org/TR/webrtc-stats/",
       "shortname": "webrtc-stats",
       "versions": [
+        "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
         "https://www.w3.org/TR/2018/WD-webrtc-stats-20180227/",
         "https://www.w3.org/TR/2018/WD-webrtc-stats-20180226/",
         "https://www.w3.org/TR/2018/WD-webrtc-stats-20180131/",
@@ -90541,12 +91018,12 @@
       ],
       "title": "Identifiers for WebRTC's Statistics API",
       "latest": "https://www.w3.org/TR/webrtc-stats/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180227/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/webrtc-stats/",
       "repository": "https://github.com/w3c/webrtc-stats",
-      "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180227/",
-      "date": "27 February 2018",
+      "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
+      "date": "07 March 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/2011/04/webrtc/",

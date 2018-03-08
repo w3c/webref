@@ -1,35 +1,28 @@
-% Diff between report from "March 07, 2018" and reference report from "March 06, 2018"
+% Diff between report from "March 08, 2018" and reference report from "March 07, 2018"
 % Reffy
-% March 07, 2018
+% March 08, 2018
 
-## screen-capture
+## Screen Capture
 
 - URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/screen-capture)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
+- Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
 - Repository: [GitHub w3c/mediacapture-screen-share](https://github.com/w3c/mediacapture-screen-share)
-- Spec title: *INS* screen-capture / *DEL* Screen Capture
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+- Spec title: *INS* Screen Capture / *DEL* screen-capture
+- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
     at <anonymous>
 
 
-## server-timing
+## Server Timing
 
 - URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/server-timing)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
+- Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
-- Spec title: *INS* server-timing / *DEL* Server Timing
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+- Spec title: *INS* Server Timing / *DEL* server-timing
+- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
     at <anonymous>
-
-
-## Web Authentication: An API for accessing Public Key Credentials Level 1
-
-- URL: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-webauthn-20180306/)
-- Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
-- Spec title: *INS* Web Authentication: An API for accessing Public Key Credentials Level 1 / *DEL* Web Authentication: An API for accessing Public Key Credentials - Level 1
 
 
