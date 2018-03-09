@@ -1,42 +1,68 @@
-% Diff between report from "March 08, 2018" and reference report from "March 07, 2018"
+% Diff between report from "March 09, 2018" and reference report from "March 08, 2018"
 % Reffy
-% March 08, 2018
+% March 09, 2018
 
-## Generic Sensor API
+## MediaStream Recording
 
-- URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/)
-- Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
-- Spec title: *INS* Generic Sensor API / *DEL* generic-sensor
-- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+- URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-record/)
+- Repository: [GitHub w3c/mediacapture-record](https://github.com/w3c/mediacapture-record)
+- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-secure-contexts/
+
+
+## navigation-timing-2
+
+- URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/navigation-timing-2/)
+- Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
+- Spec title: *INS* navigation-timing-2 / *DEL* Navigation Timing Level 2
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
     at <anonymous>
 
 
-## Magnetometer
+## Service Workers 1
 
-- URL: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/magnetometer/)
-- Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
-- Inconsistent references for links: *INS* https://w3c.github.io/sensors/
-
-
-## Orientation Sensor
-
-- URL: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
-- Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
-- Inconsistent references for links: *INS* https://w3c.github.io/sensors/
+- URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/ServiceWorker/v1/)
+- Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
+- Unknown WebIDL names used: *INS* MessagePort
 
 
-## Vibration API (Second Edition)
+## SVG2
 
-- URL: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/)
-- Repository: [GitHub w3c/vibration](https://github.com/w3c/vibration)
-- Spec title: *INS* Vibration API (Second Edition) / *DEL* vibration
-- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+- URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/SVG2/)
+- Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
+- Spec title: *INS* SVG2 / *DEL* Scalable Vector Graphics (SVG) 2
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
+    at <anonymous>
+
+
+## Web Audio API
+
+- URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
+- Repository: [GitHub webaudio/web-audio-api](https://github.com/webaudio/web-audio-api)
+- Unknown WebIDL names used: *INS* MessagePort / *DEL* Object
+
+
+## Web Workers
+
+- URL: [https://www.w3.org/TR/workers/](https://www.w3.org/TR/workers/)
+- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
+- Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
+- Unknown WebIDL names used: *INS* MessagePort
+
+
+## webmessaging
+
+- URL: [https://www.w3.org/TR/webmessaging/](https://www.w3.org/TR/webmessaging/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/webmessaging)
+- Spec title: *INS* webmessaging / *DEL* HTML5 Web Messaging
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
     at <anonymous>
 
 
