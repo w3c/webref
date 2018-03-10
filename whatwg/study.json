@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-03-09T02:08:37.321Z",
+  "date": "2018-03-10T02:07:24.864Z",
   "stats": {
     "crawled": 110,
-    "errors": 0,
+    "errors": 1,
     "studied": 110
   },
   "results": [
@@ -251,7 +251,8 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/editing/contentEditable.html"
+          "https://w3c.github.io/editing/contentEditable.html",
+          "https://w3c.github.io/FileAPI/"
         ],
         "inconsistentRef": [
           {
@@ -259,13 +260,6 @@
             "ref": {
               "name": "PERMISSIONS",
               "url": "https://www.w3.org/TR/permissions/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/FileAPI/",
-            "ref": {
-              "name": "FileAPI",
-              "url": "https://www.w3.org/TR/FileAPI/"
             }
           }
         ],
@@ -1925,12 +1919,6 @@
               "date": "14 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/",
-              "date": "31 January 2018"
-            },
-            {
               "url": "https://fullscreen.spec.whatwg.org/",
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/",
@@ -2174,7 +2162,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Mar 09 2018"
+              "date": "Sat Mar 10 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -2283,12 +2271,6 @@
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
               "date": "14 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/",
-              "date": "31 January 2018"
             },
             {
               "url": "https://html.spec.whatwg.org/",
@@ -2414,6 +2396,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
+          "Blob",
           "ReadableStream",
           "WindowOrWorkerGlobalScope"
         ],
@@ -2446,12 +2429,6 @@
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
               "date": "12 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/",
-              "date": "31 January 2018"
             },
             {
               "url": "https://html.spec.whatwg.org/",
@@ -2567,7 +2544,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "8 March 2018"
+              "date": "9 March 2018"
             }
           ]
         },
@@ -2586,19 +2563,15 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "File"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/FileAPI/",
-            "ref": {
-              "name": "FileAPI",
-              "url": "https://www.w3.org/TR/FileAPI/"
-            }
-          }
+        "missingLinkRef": [
+          "https://w3c.github.io/FileAPI/"
         ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -2607,22 +2580,19 @@
       }
     },
     {
-      "title": "File API",
+      "title": "FileAPI",
       "shortname": "FileAPI",
-      "date": "31 January 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/FileAPI/",
-      "latest": "https://www.w3.org/TR/FileAPI/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-FileAPI-20171026/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/FileAPI/",
-      "crawled": "https://w3c.github.io/FileAPI/",
+      "latest": "https://www.w3.org/TR/FileAPI",
+      "crawled": "https://www.w3.org/TR/FileAPI/",
       "repository": "https://github.com/w3c/FileAPI",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -2637,22 +2607,10 @@
               "date": "18 February 2018"
             },
             {
-              "url": "https://fetch.spec.whatwg.org/",
-              "title": "Fetch Standard",
-              "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "14 February 2018"
-            },
-            {
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
               "date": "29 January 2018"
-            },
-            {
-              "url": "https://html.spec.whatwg.org/",
-              "title": "HTML Standard",
-              "crawled": "https://html.spec.whatwg.org/",
-              "date": "8 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -2691,22 +2649,10 @@
               "date": "15 December 2017"
             },
             {
-              "url": "https://url.spec.whatwg.org/",
-              "title": "URL Standard",
-              "crawled": "https://url.spec.whatwg.org/",
-              "date": "10 January 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
               "date": "08 March 2018"
-            },
-            {
-              "url": "https://xhr.spec.whatwg.org/",
-              "title": "XMLHttpRequest Standard",
-              "crawled": "https://xhr.spec.whatwg.org/",
-              "date": "2 March 2018"
             }
           ],
           "informative": [
@@ -2724,7 +2670,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -3289,6 +3235,9 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
+          "Blob",
+          "File",
+          "FileList",
           "NavigatorID",
           "SVGImageElement",
           "SVGScriptElement",
@@ -3485,12 +3434,6 @@
               "date": "29 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/",
-              "date": "31 January 2018"
-            },
-            {
               "url": "https://fullscreen.spec.whatwg.org/",
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/",
@@ -3548,7 +3491,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "09 March 2018"
+              "date": "10 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3680,7 +3623,7 @@
               "url": "https://www.w3.org/TR/remote-playback/",
               "title": "Remote Playback API",
               "crawled": "https://w3c.github.io/remote-playback/",
-              "date": "11 January 2018"
+              "date": "09 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
@@ -3728,7 +3671,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "8 March 2018"
+              "date": "9 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -3824,13 +3767,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Mar 09 2018"
+              "date": "Sat Mar 10 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Mar 09 2018"
+              "date": "Sat Mar 10 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3929,12 +3872,6 @@
               "title": "Encrypted Media Extensions",
               "crawled": "https://w3c.github.io/encrypted-media/",
               "date": "22 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/",
-              "date": "31 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/hr-time-3/",
@@ -4105,15 +4042,10 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/FileAPI/"
+        ],
         "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/FileAPI/",
-            "ref": {
-              "name": "FileAPI",
-              "url": "https://www.w3.org/TR/FileAPI/"
-            }
-          },
           {
             "link": "https://www.w3.org/TR/domcore/",
             "ref": {
@@ -4164,7 +4096,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "09 March 2018",
+      "date": "10 March 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -4198,7 +4130,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "09 March 2018"
+              "date": "10 March 2018"
             }
           ]
         },
@@ -4711,12 +4643,6 @@
               "date": "22 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/",
-              "date": "31 January 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/media-source/",
               "title": "Media Source Extensions™",
               "crawled": "https://w3c.github.io/media-source/",
@@ -4744,18 +4670,15 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Blob"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/FileAPI/"
+        ],
         "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/FileAPI/",
-            "ref": {
-              "name": "FileAPI",
-              "url": "https://www.w3.org/TR/FileAPI/"
-            }
-          },
           {
             "link": "https://w3c.github.io/mediacapture-main/",
             "ref": {
@@ -4795,18 +4718,15 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Blob"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/FileAPI/"
+        ],
         "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/FileAPI/",
-            "ref": {
-              "name": "FileAPI",
-              "url": "https://www.w3.org/TR/FileAPI/"
-            }
-          },
           {
             "link": "https://w3c.github.io/webappsec-secure-contexts/",
             "ref": {
@@ -5815,7 +5735,9 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Blob"
+        ],
         "redefinedIdlNames": [
           {
             "name": "BinaryType",
@@ -5861,7 +5783,7 @@
               "url": "https://www.w3.org/TR/remote-playback/",
               "title": "Remote Playback API",
               "crawled": "https://w3c.github.io/remote-playback/",
-              "date": "11 January 2018"
+              "date": "09 March 2018"
             }
           ]
         },
@@ -5914,7 +5836,9 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Blob"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -6029,7 +5953,7 @@
     {
       "title": "Remote Playback API",
       "shortname": "remote-playback",
-      "date": "11 January 2018",
+      "date": "09 March 2018",
       "url": "https://www.w3.org/TR/remote-playback/",
       "latest": "https://www.w3.org/TR/remote-playback/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/",
@@ -6656,7 +6580,7 @@
               "url": "https://www.w3.org/TR/remote-playback/",
               "title": "Remote Playback API",
               "crawled": "https://w3c.github.io/remote-playback/",
-              "date": "11 January 2018"
+              "date": "09 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -7046,7 +6970,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "8 March 2018"
+              "date": "9 March 2018"
             }
           ]
         },
@@ -7076,7 +7000,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "09 March 2018"
+              "date": "10 March 2018"
             }
           ],
           "informative": []
@@ -7117,7 +7041,7 @@
     },
     {
       "title": "Streams Standard",
-      "date": "8 March 2018",
+      "date": "9 March 2018",
       "url": "https://streams.spec.whatwg.org/",
       "crawled": "https://streams.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/streams",
@@ -7139,12 +7063,6 @@
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
               "date": "14 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/",
-              "date": "31 January 2018"
             }
           ],
           "informative": []
@@ -7312,7 +7230,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "09 March 2018"
+              "date": "10 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -7526,12 +7444,6 @@
               "date": "14 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/",
-              "date": "31 January 2018"
-            },
-            {
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
@@ -7577,7 +7489,7 @@
               "url": "https://www.w3.org/TR/remote-playback/",
               "title": "Remote Playback API",
               "crawled": "https://w3c.github.io/remote-playback/",
-              "date": "11 January 2018"
+              "date": "09 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -8301,12 +8213,6 @@
               "date": "29 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/",
-              "date": "31 January 2018"
-            },
-            {
               "url": "https://fullscreen.spec.whatwg.org/",
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/",
@@ -8502,7 +8408,7 @@
               "url": "https://www.w3.org/TR/remote-playback/",
               "title": "Remote Playback API",
               "crawled": "https://w3c.github.io/remote-playback/",
-              "date": "11 January 2018"
+              "date": "09 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
@@ -8646,13 +8552,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Mar 09 2018"
+              "date": "Sat Mar 10 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Mar 09 2018"
+              "date": "Sat Mar 10 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -8702,7 +8608,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "09 March 2018"
+              "date": "10 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -8866,7 +8772,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Fri Mar 09 2018",
+      "date": "Sat Mar 10 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8909,7 +8815,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Fri Mar 09 2018",
+      "date": "Sat Mar 10 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8944,7 +8850,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Mar 09 2018"
+              "date": "Sat Mar 10 2018"
             }
           ],
           "informative": [
@@ -8989,6 +8895,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
+          "Blob",
           "RTCError",
           "RTCStatsEventInit"
         ],
@@ -9231,7 +9138,10 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Blob",
+          "File"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -9251,12 +9161,6 @@
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
               "date": "14 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/",
-              "date": "31 January 2018"
             },
             {
               "url": "https://html.spec.whatwg.org/",
