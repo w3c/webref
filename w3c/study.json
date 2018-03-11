@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-10T02:01:12.077Z",
+  "date": "2018-03-11T02:01:07.577Z",
   "stats": {
     "crawled": 119,
-    "errors": 0,
+    "errors": 3,
     "studied": 119
   },
   "results": [
@@ -27,6 +27,8 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
+          "Sensor",
+          "SensorOptions",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -87,6 +89,8 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
+          "Sensor",
+          "SensorOptions",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -1710,7 +1714,7 @@
     {
       "title": "Custom Elements",
       "shortname": "custom-elements",
-      "date": "08 March 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/custom-elements/",
       "latest": "https://www.w3.org/TR/custom-elements/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-custom-elements-20180216/",
@@ -1719,21 +1723,15 @@
       "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
       "repository": "https://github.com/w3c/webcomponents",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395\n    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)\n    at ontimeout (timers.js:482:11)\n    at tryOnTimeout (timers.js:317:5)\n    at Timer.listOnTimeout (timers.js:277:5)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/aria/aria/aria.html",
-          "https://w3c.github.io/uievents/",
-          "https://w3c.github.io/editing/execCommand.html"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -1791,12 +1789,6 @@
         "referencedBy": {
           "normative": [],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
-            },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
@@ -2512,65 +2504,26 @@
       }
     },
     {
-      "title": "Generic Sensor API",
+      "title": "generic-sensor",
       "shortname": "generic-sensor",
-      "date": "7 March 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/generic-sensor/",
-      "latest": "https://www.w3.org/TR/generic-sensor/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-generic-sensor-20171018/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/sensors/",
-      "crawled": "https://w3c.github.io/sensors/",
+      "latest": "https://www.w3.org/TR/generic-sensor",
+      "crawled": "https://www.w3.org/TR/generic-sensor/",
       "repository": "https://github.com/w3c/sensors",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "EventHandler",
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/page-visibility/",
-            "ref": {
-              "name": "PAGE-VISIBILITY",
-              "url": "https://www.w3.org/TR/page-visibility/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/permissions/",
-            "ref": {
-              "name": "PERMISSIONS",
-              "url": "https://w3c.github.io/permissions/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/accelerometer/",
-              "title": "Accelerometer",
-              "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "5 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/ambient-light/",
-              "title": "Ambient Light Sensor",
-              "crawled": "https://w3c.github.io/ambient-light/",
-              "date": "1 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/gyroscope/",
-              "title": "Gyroscope",
-              "crawled": "https://w3c.github.io/gyroscope/",
-              "date": "5 March 2018"
-            },
             {
               "url": "https://www.w3.org/TR/magnetometer/",
               "title": "Magnetometer",
@@ -2582,22 +2535,9 @@
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/",
               "date": "5 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/proximity/",
-              "title": "Proximity Sensor",
-              "crawled": "https://w3c.github.io/proximity/",
-              "date": "1 March 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -2634,12 +2574,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
-            },
             {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
@@ -2762,6 +2696,8 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
+          "Sensor",
+          "SensorOptions",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -2843,12 +2779,6 @@
               "title": "Gamepad",
               "crawled": "https://w3c.github.io/gamepad/",
               "date": "16 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -3173,12 +3103,6 @@
               "date": "11 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "08 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/orientation-event/",
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
@@ -3219,12 +3143,6 @@
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/",
               "date": "1 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/geolocation-API/",
@@ -3284,7 +3202,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3455,12 +3373,6 @@
               "date": "23 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "08 March 2018"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -3584,13 +3496,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3897,12 +3809,6 @@
               "date": "11 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "08 March 2018"
-            },
-            {
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
@@ -3925,12 +3831,6 @@
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/",
               "date": "1 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/geometry-1/",
@@ -3960,7 +3860,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -4077,12 +3977,6 @@
               "date": "23 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "08 March 2018"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -4170,7 +4064,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -4437,12 +4331,6 @@
               "date": "11 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "08 March 2018"
-            },
-            {
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
@@ -4465,12 +4353,6 @@
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/",
               "date": "1 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/geometry-1/",
@@ -4500,7 +4382,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -4627,12 +4509,6 @@
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
               "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "08 March 2018"
             },
             {
               "url": "https://storage.spec.whatwg.org/",
@@ -4987,7 +4863,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "10 March 2018",
+      "date": "11 March 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -5023,7 +4899,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             }
           ]
         },
@@ -5126,6 +5002,8 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
+          "Sensor",
+          "SensorOptions",
           "Window"
         ],
         "redefinedIdlNames": [
@@ -5142,15 +5020,10 @@
           }
         ],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/sensors/"
+        ],
         "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/sensors/",
-            "ref": {
-              "name": "GENERIC-SENSOR",
-              "url": "https://www.w3.org/TR/generic-sensor/"
-            }
-          },
           {
             "link": "https://w3c.github.io/permissions/",
             "ref": {
@@ -5918,6 +5791,8 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
+          "Sensor",
+          "SensorOptions",
           "Window"
         ],
         "redefinedIdlNames": [
@@ -5936,16 +5811,10 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/orientation-event/",
+          "https://w3c.github.io/sensors/",
           "https://w3c.github.io/motion-sensors/"
         ],
         "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/sensors/",
-            "ref": {
-              "name": "GENERIC-SENSOR",
-              "url": "https://www.w3.org/TR/generic-sensor/"
-            }
-          },
           {
             "link": "https://w3c.github.io/accelerometer/",
             "ref": {
@@ -6012,12 +5881,6 @@
               "title": "Cooperative Scheduling of Background Tasks",
               "crawled": "https://w3c.github.io/requestidlecallback/",
               "date": "30 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -6131,7 +5994,8 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
-          "PaymentManager"
+          "EventHandler",
+          "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -6407,12 +6271,6 @@
               "title": "Clipboard API and events",
               "crawled": "https://w3c.github.io/clipboard-apis/",
               "date": "18 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/gyroscope/",
@@ -6733,6 +6591,8 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
+          "Sensor",
+          "SensorOptions",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -7370,12 +7230,6 @@
               "date": "11 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "08 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/geometry-1/",
               "title": "Geometry Interfaces Module Level 1",
               "crawled": "https://drafts.fxtf.org/geometry/",
@@ -7480,12 +7334,6 @@
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
               "date": "1 July 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -7989,7 +7837,7 @@
     {
       "title": "Shadow DOM",
       "shortname": "shadow-dom",
-      "date": "08 March 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/shadow-dom/",
       "latest": "https://www.w3.org/TR/shadow-dom/",
       "datedUrl": "https://www.w3.org/TR/2018/NOTE-shadow-dom-20180301/",
@@ -7998,119 +7846,16 @@
       "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
       "repository": "https://github.com/w3c/webcomponents",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395\n    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)\n    at ontimeout (timers.js:482:11)\n    at tryOnTimeout (timers.js:317:5)\n    at Timer.listOnTimeout (timers.js:277:5)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
-        "redefinedIdlNames": [
-          {
-            "name": "ShadowRoot",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "ShadowRootMode",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          }
-        ],
-        "missingWebIdlRef": [
-          {
-            "name": "DocumentOrShadowRoot",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "Selection",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/selection-api/",
-                "title": "Selection API",
-                "crawled": "https://w3c.github.io/selection-api/",
-                "date": "28 June 2017"
-              }
-            ]
-          },
-          {
-            "name": "Element",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "CaretPosition",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/cssom-view-1/",
-                "title": "CSSOM View Module",
-                "crawled": "https://drafts.csswg.org/cssom-view/",
-                "date": "11 October 2017"
-              }
-            ]
-          },
-          {
-            "name": "StyleSheetList",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/cssom-1/",
-                "title": "CSS Object Model (CSSOM)",
-                "crawled": "https://drafts.csswg.org/cssom/",
-                "date": "12 February 2018"
-              }
-            ]
-          },
-          {
-            "name": "DocumentFragment",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          }
-        ],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-ui/",
-          "https://www.w3.org/TR/cssom/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/uievents/",
-            "ref": {
-              "name": "uievents",
-              "url": "https://www.w3.org/TR/uievents/"
-            }
-          }
-        ],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -8150,7 +7895,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             }
           ],
           "informative": []
@@ -8423,7 +8168,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -8480,14 +8225,7 @@
               "date": "04 March 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "08 March 2018"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -8923,30 +8661,7 @@
           "HTMLSlotElement",
           "Window"
         ],
-        "redefinedIdlNames": [
-          {
-            "name": "ShadowRoot",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/shadow-dom/",
-                "title": "Shadow DOM",
-                "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-                "date": "08 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "ShadowRootMode",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/shadow-dom/",
-                "title": "Shadow DOM",
-                "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-                "date": "08 March 2018"
-              }
-            ]
-          }
-        ],
+        "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/touch-events/"
@@ -9063,12 +8778,6 @@
               "date": "11 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "08 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/orientation-event/",
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
@@ -9109,12 +8818,6 @@
               "title": "Gamepad",
               "crawled": "https://w3c.github.io/gamepad/",
               "date": "16 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -9372,7 +9075,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -9393,12 +9096,6 @@
               "title": "Selectors Level 3",
               "crawled": "https://www.w3.org/TR/css3-selectors/",
               "date": "30 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "08 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -9917,12 +9614,6 @@
               "date": "11 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "08 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/orientation-event/",
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
@@ -9975,12 +9666,6 @@
               "title": "Gamepad",
               "crawled": "https://w3c.github.io/gamepad/",
               "date": "16 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/geometry-1/",
@@ -10322,13 +10007,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -10378,7 +10063,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -10403,12 +10088,6 @@
               "title": "Presentation API",
               "crawled": "https://w3c.github.io/presentation-api/",
               "date": "08 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "08 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -10734,12 +10413,6 @@
               "date": "11 October 2017"
             },
             {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "08 March 2018"
-            },
-            {
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
@@ -10762,12 +10435,6 @@
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/",
               "date": "1 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/generic-sensor/",
-              "title": "Generic Sensor API",
-              "crawled": "https://w3c.github.io/sensors/",
-              "date": "7 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/geometry-1/",
@@ -10803,7 +10470,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -10924,12 +10591,6 @@
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
               "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "08 March 2018"
             },
             {
               "url": "https://storage.spec.whatwg.org/",
@@ -11271,7 +10932,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sat Mar 10 2018",
+      "date": "Sun Mar 11 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -11321,7 +10982,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sat Mar 10 2018",
+      "date": "Sun Mar 11 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -11361,7 +11022,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             }
           ],
           "informative": [
