@@ -2,13 +2,13 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-10T02:01:12.077Z",
+  "date": "2018-03-11T02:01:07.577Z",
   "options": {
     "publishedVersion": false
   },
   "stats": {
     "crawled": 119,
-    "errors": 0
+    "errors": 3
   },
   "results": [
     {
@@ -7360,7 +7360,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Sat Mar 10 2018",
+      "date": "Sun Mar 11 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -8444,7 +8444,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Sat Mar 10 2018",
+      "date": "Sun Mar 11 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -30526,301 +30526,11 @@
       "edDraft": "https://w3c.github.io/webcomponents/spec/custom/",
       "repository": "https://github.com/w3c/webcomponents",
       "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-      "date": "08 March 2018",
-      "links": [
-        "https://github.com/whatwg/html/commit/81ee034f316f4366aeb315d16ea21521c83ab427",
-        "https://github.com/whatwg/dom/commit/cb85ac4c35baa1345f2b71e2dd3d57b098ddf2d1",
-        "https://www.w3.org/TR/",
-        "https://www.w3.org/WebPlatform/WG/",
-        "https://lists.w3.org/Archives/Public/public-webapps/",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/83482/status",
-        "https://www.w3.org/2018/Process-20180201/",
-        "https://en.wikipedia.org/wiki/Algorithm",
-        "https://html.spec.whatwg.org/",
-        "https://dom.spec.whatwg.org/",
-        "https://w3c.github.io/aria/aria/aria.html",
-        "https://w3c.github.io/uievents/",
-        "https://www.w3.org/TR/xml/",
-        "https://heycam.github.io/webidl/",
-        "https://tc39.github.io/ecma262/",
-        "https://w3c.github.io/editing/execCommand.html",
-        "https://drafts.csswg.org/selectors/",
-        "https://github.com/heycam/webidl/issues/97",
-        "https://dev.w3.org/2006/xbl2/",
-        "https://customelements.io/stevenrskelton/flag-icon/",
-        "https://stevenskelton.ca/",
-        "https://opensource.org/licenses/MIT",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://www.w3.org/Math/draft-spec/",
-        "https://www.w3.org/TR/SVG11/"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "HTML",
-            "url": "https://html.spec.whatwg.org/multipage/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "WEBIDL",
-            "url": "https://heycam.github.io/webidl/"
-          },
-          {
-            "name": "WHATWG-DOM",
-            "url": "https://dom.spec.whatwg.org/"
-          },
-          {
-            "name": "XML",
-            "url": "https://www.w3.org/TR/xml/"
-          }
-        ],
-        "informative": [
-          {
-            "name": "MATHML",
-            "url": "https://www.w3.org/Math/draft-spec/"
-          },
-          {
-            "name": "SVG",
-            "url": "https://www.w3.org/TR/SVG11/"
-          }
-        ]
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {},
-          "functions": {
-            "Window": [
-              "CustomElementRegistry"
-            ]
-          },
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "CustomElementRegistry": [
-              "ElementDefinitionOptions"
-            ],
-            "ElementDefinitionOptions": [],
-            "Window": [
-              "CustomElementRegistry"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "CustomElementRegistry": {
-            "type": "interface",
-            "name": "CustomElementRegistry",
-            "partial": false,
-            "members": [
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "void"
-                },
-                "name": "define",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    "name": "name"
-                  },
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "Function"
-                    },
-                    "name": "constructor"
-                  },
-                  {
-                    "optional": true,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "ElementDefinitionOptions"
-                    },
-                    "name": "options"
-                  }
-                ],
-                "extAttrs": [
-                  {
-                    "name": "CEReactions",
-                    "arguments": null,
-                    "type": "extended-attribute",
-                    "rhs": null
-                  }
-                ]
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "any"
-                },
-                "name": "get",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    "name": "name"
-                  }
-                ],
-                "extAttrs": []
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": "Promise",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "void"
-                  }
-                },
-                "name": "whenDefined",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    "name": "name"
-                  }
-                ],
-                "extAttrs": []
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": []
-          },
-          "ElementDefinitionOptions": {
-            "type": "dictionary",
-            "name": "ElementDefinitionOptions",
-            "partial": false,
-            "members": [
-              {
-                "type": "field",
-                "name": "extends",
-                "required": false,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "extAttrs": []
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": []
-          }
-        },
-        "idlExtendedNames": {
-          "Window": [
-            {
-              "type": "interface",
-              "name": "Window",
-              "partial": true,
-              "members": [
-                {
-                  "type": "attribute",
-                  "static": false,
-                  "stringifier": false,
-                  "inherit": false,
-                  "readonly": true,
-                  "idlType": {
-                    "type": "attribute-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "CustomElementRegistry"
-                  },
-                  "name": "customElements",
-                  "extAttrs": []
-                }
-              ],
-              "extAttrs": []
-            }
-          ]
-        },
-        "externalDependencies": [
-          "Window"
-        ],
-        "hasObsoleteIdl": false
-      }
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {},
+      "error": "Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395\n    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)\n    at ontimeout (timers.js:482:11)\n    at tryOnTimeout (timers.js:317:5)\n    at Timer.listOnTimeout (timers.js:277:5)"
     },
     {
       "url": "https://www.w3.org/TR/DOM-Parsing/",
@@ -45278,498 +44988,18 @@
       "url": "https://www.w3.org/TR/generic-sensor/",
       "shortname": "generic-sensor",
       "versions": [
-        "https://www.w3.org/TR/2017/WD-generic-sensor-20171018/",
-        "https://www.w3.org/TR/2017/WD-generic-sensor-20171002/",
-        "https://www.w3.org/TR/2017/WD-generic-sensor-20170809/",
-        "https://www.w3.org/TR/2017/WD-generic-sensor-20170530/",
-        "https://www.w3.org/TR/2017/WD-generic-sensor-20170524/",
-        "https://www.w3.org/TR/2017/WD-generic-sensor-20170130/",
-        "https://www.w3.org/TR/2016/WD-generic-sensor-20160830/",
-        "https://www.w3.org/TR/2016/WD-generic-sensor-20160324/",
-        "https://www.w3.org/TR/2015/WD-generic-sensor-20151015/",
-        "https://w3c.github.io/sensors/",
-        "https://www.w3.org/TR/generic-sensor/"
+        "https://www.w3.org/TR/generic-sensor/",
+        "https://www.w3.org/TR/generic-sensor"
       ],
-      "title": "Generic Sensor API",
-      "latest": "https://www.w3.org/TR/generic-sensor/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-generic-sensor-20171018/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/sensors/",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
+      "latest": "https://www.w3.org/TR/generic-sensor",
       "repository": "https://github.com/w3c/sensors",
-      "crawled": "https://w3c.github.io/sensors/",
-      "date": "7 March 2018",
-      "links": [
-        "https://lists.w3.org/Archives/Public/public-device-apis/",
-        "https://www.w3.org/2009/dap/",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/43696/status",
-        "https://www.w3.org/2018/Process-20180201/",
-        "https://w3c.github.io/permissions/",
-        "https://w3c.github.io/webappsec-secure-contexts/",
-        "https://dom.spec.whatwg.org/",
-        "https://wicg.github.io/feature-policy/",
-        "https://html.spec.whatwg.org/",
-        "https://w3c.github.io/page-visibility/",
-        "https://www.w3.org/TR/permissions/",
-        "https://infra.spec.whatwg.org/",
-        "https://heycam.github.io/webidl/",
-        "https://w3c.github.io/hr-time/",
-        "https://w3ctag.github.io/security-questionnaire/",
-        "https://www.w3.org/TR/page-visibility/",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://synrg.csl.illinois.edu/papers/AccelPrint_NDSS14.pdf",
-        "https://w3ctag.github.io/design-principles/",
-        "https://ads.harvard.edu/books/1989fcm..book/Chapter2.pdf",
-        "https://extensiblewebmanifesto.org/",
-        "https://w3c.github.io/sensors/usecases",
-        "https://dev.w3.org/geo/api/spec-source.html",
-        "https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-michalevsky.pdf",
-        "https://w3c.github.io/motion-sensors/",
-        "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
-        "https://www.qudt.org/",
-        "https://tools.ietf.org/html/rfc6454",
-        "https://www.bipm.org/en/publications/si-brochure/",
-        "https://rd.springer.com/article/10.1007/s10207-017-0369-x?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "DOM",
-            "url": "https://dom.spec.whatwg.org/"
-          },
-          {
-            "name": "FEATURE-POLICY",
-            "url": "https://wicg.github.io/feature-policy/"
-          },
-          {
-            "name": "HR-TIME-2",
-            "url": "https://w3c.github.io/hr-time/"
-          },
-          {
-            "name": "HTML",
-            "url": "https://html.spec.whatwg.org/multipage/"
-          },
-          {
-            "name": "INFRA",
-            "url": "https://infra.spec.whatwg.org/"
-          },
-          {
-            "name": "PAGE-VISIBILITY",
-            "url": "https://www.w3.org/TR/page-visibility/"
-          },
-          {
-            "name": "PERMISSIONS",
-            "url": "https://w3c.github.io/permissions/"
-          },
-          {
-            "name": "POWERFUL-FEATURES",
-            "url": "https://w3c.github.io/webappsec-secure-contexts/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "SECURITY-PRIVACY-QUESTIONNAIRE",
-            "url": "https://w3ctag.github.io/security-questionnaire/"
-          },
-          {
-            "name": "WebIDL",
-            "url": "https://heycam.github.io/webidl/"
-          }
-        ],
-        "informative": [
-          {
-            "name": "ACCELPRINT",
-            "url": "http://synrg.csl.illinois.edu/papers/AccelPrint_NDSS14.pdf"
-          },
-          {
-            "name": "API-DESIGN-PRINCIPLES",
-            "url": "https://w3ctag.github.io/design-principles/"
-          },
-          {
-            "name": "COORDINATES-TRANSFORMATION",
-            "url": "http://ads.harvard.edu/books/1989fcm..book/Chapter2.pdf"
-          },
-          {
-            "name": "EXTENNNNSIBLE",
-            "url": "https://extensiblewebmanifesto.org/"
-          },
-          {
-            "name": "GENERIC-SENSOR-USECASES",
-            "url": "https://w3c.github.io/sensors/usecases"
-          },
-          {
-            "name": "GEOLOCATION-API",
-            "url": "http://dev.w3.org/geo/api/spec-source.html"
-          },
-          {
-            "name": "GYROSPEECHRECOGNITION",
-            "url": "https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-michalevsky.pdf"
-          },
-          {
-            "name": "MOBILESENSORS",
-            "url": ""
-          },
-          {
-            "name": "MOTION-SENSORS",
-            "url": "https://w3c.github.io/motion-sensors/"
-          },
-          {
-            "name": "ORIENTATION-EVENT",
-            "url": "https://w3c.github.io/deviceorientation/spec-source-orientation.html"
-          },
-          {
-            "name": "QUDT",
-            "url": "http://www.qudt.org/"
-          },
-          {
-            "name": "RFC6454",
-            "url": "https://tools.ietf.org/html/rfc6454"
-          },
-          {
-            "name": "SI",
-            "url": "http://www.bipm.org/en/publications/si-brochure/"
-          },
-          {
-            "name": "STEALINGPINSVIASENSORS",
-            "url": "https://rd.springer.com/article/10.1007/s10207-017-0369-x?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst"
-          }
-        ]
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {
-            "Window": [
-              "SensorErrorEvent"
-            ]
-          },
-          "functions": {
-            "Window": [
-              "Sensor"
-            ]
-          },
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "Sensor": [
-              "EventTarget",
-              "Window",
-              "DOMHighResTimeStamp",
-              "EventHandler"
-            ],
-            "SensorOptions": [],
-            "SensorErrorEvent": [
-              "Event",
-              "Window",
-              "SensorErrorEventInit"
-            ],
-            "SensorErrorEventInit": [
-              "EventInit"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "Sensor": {
-            "type": "interface",
-            "name": "Sensor",
-            "partial": false,
-            "members": [
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "boolean"
-                },
-                "name": "activated",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "boolean"
-                },
-                "name": "hasReading",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": true,
-                  "union": false,
-                  "idlType": "DOMHighResTimeStamp"
-                },
-                "name": "timestamp",
-                "extAttrs": []
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "void"
-                },
-                "name": "start",
-                "arguments": [],
-                "extAttrs": []
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "void"
-                },
-                "name": "stop",
-                "arguments": [],
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": false,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "EventHandler"
-                },
-                "name": "onreading",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": false,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "EventHandler"
-                },
-                "name": "onactivate",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": false,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "EventHandler"
-                },
-                "name": "onerror",
-                "extAttrs": []
-              }
-            ],
-            "inheritance": "EventTarget",
-            "extAttrs": [
-              {
-                "name": "SecureContext",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": null
-              },
-              {
-                "name": "Exposed",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": {
-                  "type": "identifier",
-                  "value": "Window"
-                }
-              }
-            ]
-          },
-          "SensorOptions": {
-            "type": "dictionary",
-            "name": "SensorOptions",
-            "partial": false,
-            "members": [
-              {
-                "type": "field",
-                "name": "frequency",
-                "required": false,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                },
-                "extAttrs": []
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": []
-          },
-          "SensorErrorEvent": {
-            "type": "interface",
-            "name": "SensorErrorEvent",
-            "partial": false,
-            "members": [
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMException"
-                },
-                "name": "error",
-                "extAttrs": []
-              }
-            ],
-            "inheritance": "Event",
-            "extAttrs": [
-              {
-                "name": "Constructor",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    "name": "type"
-                  },
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "SensorErrorEventInit"
-                    },
-                    "name": "errorEventInitDict"
-                  }
-                ],
-                "type": "extended-attribute",
-                "rhs": null
-              },
-              {
-                "name": "SecureContext",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": null
-              },
-              {
-                "name": "Exposed",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": {
-                  "type": "identifier",
-                  "value": "Window"
-                }
-              }
-            ]
-          },
-          "SensorErrorEventInit": {
-            "type": "dictionary",
-            "name": "SensorErrorEventInit",
-            "partial": false,
-            "members": [
-              {
-                "type": "field",
-                "name": "error",
-                "required": true,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMException"
-                },
-                "extAttrs": []
-              }
-            ],
-            "inheritance": "EventInit",
-            "extAttrs": []
-          }
-        },
-        "idlExtendedNames": {},
-        "externalDependencies": [
-          "EventTarget",
-          "Window",
-          "DOMHighResTimeStamp",
-          "EventHandler",
-          "Event",
-          "EventInit"
-        ],
-        "hasObsoleteIdl": false
-      }
+      "title": "generic-sensor",
+      "crawled": "https://www.w3.org/TR/generic-sensor/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/geolocation-API/",
@@ -58572,7 +57802,7 @@
       "edDraft": "https://rawgit.com/w3c/input-events/v1/index.html",
       "repository": "https://github.com/w3c/input-events",
       "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-      "date": "10 March 2018",
+      "date": "11 March 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://github.com/w3c/web-platform-tests/tree/master/input-events",
@@ -69559,9 +68789,9 @@
         "https://dom.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
         "https://www.w3.org/TR/payment-method-basic-card/",
+        "https://heycam.github.io/webidl/",
         "https://www.w3.org/TR/permissions/",
         "https://tc39.github.io/ecma262/",
-        "https://heycam.github.io/webidl/",
         "https://www.w3.org/TR/appmanifest/",
         "https://w3c.github.io/payment-handler/",
         "https://github.com/w3c/payment-handler/issues/117",
@@ -69650,17 +68880,991 @@
       },
       "idl": {
         "jsNames": {
-          "constructors": {},
-          "functions": {},
+          "constructors": {
+            "ServiceWorker": [
+              "PaymentRequestEvent"
+            ]
+          },
+          "functions": {
+            "Window": [
+              "PaymentManager",
+              "PaymentInstruments"
+            ],
+            "Worker": [
+              "PaymentManager",
+              "PaymentInstruments"
+            ]
+          },
           "objects": {}
         },
         "idlNames": {
           "_dependencies": {
             "ServiceWorkerRegistration": [
               "PaymentManager"
+            ],
+            "PaymentManager": [
+              "Window",
+              "Worker",
+              "PaymentInstruments",
+              "PermissionState"
+            ],
+            "PaymentInstruments": [
+              "Window",
+              "Worker",
+              "PaymentInstrument"
+            ],
+            "PaymentInstrument": [
+              "ImageObject"
+            ],
+            "ImageObject": [],
+            "ServiceWorkerGlobalScope": [
+              "EventHandler"
+            ],
+            "PaymentRequestEvent": [
+              "ExtendableEvent",
+              "ServiceWorker",
+              "PaymentRequestEventInit",
+              "PaymentMethodData",
+              "PaymentDetailsModifier",
+              "WindowClient",
+              "PaymentHandlerResponse"
+            ],
+            "PaymentRequestEventInit": [
+              "ExtendableEventInit",
+              "PaymentMethodData",
+              "PaymentCurrencyAmount",
+              "PaymentDetailsModifier"
+            ],
+            "PaymentHandlerResponse": []
+          },
+          "_reallyDependsOnWindow": false,
+          "PaymentManager": {
+            "type": "interface",
+            "name": "PaymentManager",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PaymentInstruments"
+                },
+                "name": "instruments",
+                "extAttrs": [
+                  {
+                    "name": "SameObject",
+                    "arguments": null,
+                    "type": "extended-attribute",
+                    "rhs": null
+                  }
+                ]
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": true,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": "Promise",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PermissionState"
+                  }
+                },
+                "name": "requestPermission",
+                "arguments": [],
+                "extAttrs": [
+                  {
+                    "name": "Exposed",
+                    "arguments": null,
+                    "type": "extended-attribute",
+                    "rhs": {
+                      "type": "identifier",
+                      "value": "Window"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": false,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "name": "userHint",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": [
+              {
+                "name": "SecureContext",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": null
+              },
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker"
+                  ]
+                }
+              }
             ]
           },
-          "_reallyDependsOnWindow": false
+          "PaymentInstruments": {
+            "type": "interface",
+            "name": "PaymentInstruments",
+            "partial": false,
+            "members": [
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": "Promise",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  }
+                },
+                "name": "delete",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    "name": "instrumentKey"
+                  }
+                ],
+                "extAttrs": []
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": "Promise",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "any"
+                  }
+                },
+                "name": "get",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    "name": "instrumentKey"
+                  }
+                ],
+                "extAttrs": []
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": "Promise",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": true,
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": {
+                      "type": "return-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    }
+                  }
+                },
+                "name": "keys",
+                "arguments": [],
+                "extAttrs": []
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": "Promise",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  }
+                },
+                "name": "has",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    "name": "instrumentKey"
+                  }
+                ],
+                "extAttrs": []
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": "Promise",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "void"
+                  }
+                },
+                "name": "set",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    "name": "instrumentKey"
+                  },
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "PaymentInstrument"
+                    },
+                    "name": "details"
+                  }
+                ],
+                "extAttrs": []
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": "Promise",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "void"
+                  }
+                },
+                "name": "clear",
+                "arguments": [],
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": [
+              {
+                "name": "SecureContext",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": null
+              },
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier-list",
+                  "value": [
+                    "Window",
+                    "Worker"
+                  ]
+                }
+              }
+            ]
+          },
+          "PaymentInstrument": {
+            "type": "dictionary",
+            "name": "PaymentInstrument",
+            "partial": false,
+            "members": [
+              {
+                "type": "field",
+                "name": "name",
+                "required": true,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "icons",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": true,
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "ImageObject"
+                  }
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "enabledMethods",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": true,
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  }
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "capabilities",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "object"
+                },
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": []
+          },
+          "ImageObject": {
+            "type": "dictionary",
+            "name": "ImageObject",
+            "partial": false,
+            "members": [
+              {
+                "type": "field",
+                "name": "src",
+                "required": true,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "sizes",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "type",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": []
+          },
+          "PaymentRequestEvent": {
+            "type": "interface",
+            "name": "PaymentRequestEvent",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "name": "topLevelOrigin",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "name": "paymentRequestOrigin",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "name": "paymentRequestId",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": "FrozenArray",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PaymentMethodData"
+                  }
+                },
+                "name": "methodData",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "object"
+                },
+                "name": "total",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": "FrozenArray",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PaymentDetailsModifier"
+                  }
+                },
+                "name": "modifiers",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "name": "instrumentKey",
+                "extAttrs": []
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": "Promise",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": true,
+                    "union": false,
+                    "idlType": "WindowClient"
+                  }
+                },
+                "name": "openWindow",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USVString"
+                    },
+                    "name": "url"
+                  }
+                ],
+                "extAttrs": []
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "void"
+                },
+                "name": "respondWith",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": "Promise",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": {
+                        "type": "argument-type",
+                        "sequence": false,
+                        "generic": null,
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "PaymentHandlerResponse"
+                      }
+                    },
+                    "name": "handlerResponsePromise"
+                  }
+                ],
+                "extAttrs": []
+              }
+            ],
+            "inheritance": "ExtendableEvent",
+            "extAttrs": [
+              {
+                "name": "Constructor",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    "name": "type"
+                  },
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "PaymentRequestEventInit"
+                    },
+                    "name": "eventInitDict"
+                  }
+                ],
+                "type": "extended-attribute",
+                "rhs": null
+              },
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "ServiceWorker"
+                }
+              }
+            ]
+          },
+          "PaymentRequestEventInit": {
+            "type": "dictionary",
+            "name": "PaymentRequestEventInit",
+            "partial": false,
+            "members": [
+              {
+                "type": "field",
+                "name": "topLevelOrigin",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "paymentRequestOrigin",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "paymentRequestId",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "methodData",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": true,
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PaymentMethodData"
+                  }
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "total",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PaymentCurrencyAmount"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "modifiers",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": true,
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PaymentDetailsModifier"
+                  }
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "instrumentKey",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "extAttrs": []
+              }
+            ],
+            "inheritance": "ExtendableEventInit",
+            "extAttrs": []
+          },
+          "PaymentHandlerResponse": {
+            "type": "dictionary",
+            "name": "PaymentHandlerResponse",
+            "partial": false,
+            "members": [
+              {
+                "type": "field",
+                "name": "methodName",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "details",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "object"
+                },
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": []
+          }
         },
         "idlExtendedNames": {
           "ServiceWorkerRegistration": [
@@ -69689,11 +69893,49 @@
               ],
               "extAttrs": []
             }
+          ],
+          "ServiceWorkerGlobalScope": [
+            {
+              "type": "interface",
+              "name": "ServiceWorkerGlobalScope",
+              "partial": true,
+              "members": [
+                {
+                  "type": "attribute",
+                  "static": false,
+                  "stringifier": false,
+                  "inherit": false,
+                  "readonly": false,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "EventHandler"
+                  },
+                  "name": "onpaymentrequest",
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            }
           ]
         },
         "externalDependencies": [
           "ServiceWorkerRegistration",
-          "PaymentManager"
+          "Window",
+          "Worker",
+          "PermissionState",
+          "ServiceWorkerGlobalScope",
+          "EventHandler",
+          "ExtendableEvent",
+          "ServiceWorker",
+          "PaymentMethodData",
+          "PaymentDetailsModifier",
+          "WindowClient",
+          "ExtendableEventInit",
+          "PaymentCurrencyAmount"
         ],
         "hasObsoleteIdl": false
       }
@@ -84594,403 +84836,11 @@
       "edDraft": "https://w3c.github.io/webcomponents/spec/shadow/",
       "repository": "https://github.com/w3c/webcomponents",
       "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-      "date": "08 March 2018",
-      "links": [
-        "https://github.com/w3c/webcomponents/issues/377",
-        "https://www.w3.org/TR/",
-        "https://www.w3.org/WebPlatform/WG/",
-        "https://lists.w3.org/Archives/Public/public-webapps/",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/83482/status",
-        "https://www.w3.org/2018/Process-20180201/",
-        "https://en.wikipedia.org/wiki/Algorithm",
-        "https://dom.spec.whatwg.org/",
-        "https://html.spec.whatwg.org/",
-        "https://heycam.github.io/webidl/",
-        "https://w3c.github.io/uievents/",
-        "https://dvcs.w3.org/hg/editing/raw-file/tip/editing.html",
-        "https://www.w3.org/TR/css3-ui/",
-        "https://www.w3.org/Bugs/Public/show_bug.cgi?id=26365",
-        "https://www.w3.org/Bugs/Public/show_bug.cgi?id=27406",
-        "https://github.com/whatwg/html/commit/43c57866c2bbc20dc0deb15a721a28cbaad2140c",
-        "https://github.com/w3c/webcomponents/issues/628",
-        "https://github.com/w3c/webcomponents/issues/477",
-        "https://github.com/w3c/webcomponents/issues/391",
-        "https://github.com/w3c/webcomponents/issues/184",
-        "https://www.w3.org/TR/cssom/",
-        "https://en.wikipedia.org/wiki/List_of_coffee_beverages",
-        "https://en.wikipedia.org/wiki/Splatoon",
-        "https://dev.w3.org/2006/xbl2/",
-        "https://www.w3.org/TR/css-ui-3/",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://www.w3.org/TR/wai-aria/",
-        "https://www.w3.org/TR/css-scoping-1/",
-        "https://www.w3.org/TR/uievents/"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "CSS3-UI",
-            "url": "https://www.w3.org/TR/css-ui-3/"
-          },
-          {
-            "name": "EDITING",
-            "url": "https://dvcs.w3.org/hg/editing/raw-file/tip/editing.html"
-          },
-          {
-            "name": "HTML",
-            "url": "https://html.spec.whatwg.org/multipage/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "WAI-ARIA",
-            "url": "https://www.w3.org/TR/wai-aria/"
-          }
-        ],
-        "informative": [
-          {
-            "name": "css-scoping-1",
-            "url": "https://www.w3.org/TR/css-scoping-1/"
-          },
-          {
-            "name": "uievents",
-            "url": "https://www.w3.org/TR/uievents/"
-          },
-          {
-            "name": "WEBIDL",
-            "url": "https://heycam.github.io/webidl/"
-          },
-          {
-            "name": "WHATWG-DOM",
-            "url": "https://dom.spec.whatwg.org/"
-          }
-        ]
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {},
-          "functions": {
-            "Window": [
-              "ShadowRoot"
-            ]
-          },
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "DocumentOrShadowRoot": [
-              "Selection",
-              "Element",
-              "CaretPosition",
-              "StyleSheetList"
-            ],
-            "ShadowRoot": [
-              "DocumentFragment",
-              "Window",
-              "ShadowRootMode",
-              "Element"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "ShadowRoot": {
-            "type": "interface",
-            "name": "ShadowRoot",
-            "partial": false,
-            "members": [
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ShadowRootMode"
-                },
-                "name": "mode",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Element"
-                },
-                "name": "host",
-                "extAttrs": []
-              }
-            ],
-            "inheritance": "DocumentFragment",
-            "extAttrs": [
-              {
-                "name": "Exposed",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": {
-                  "type": "identifier",
-                  "value": "Window"
-                }
-              }
-            ]
-          },
-          "ShadowRootMode": {
-            "type": "enum",
-            "name": "ShadowRootMode",
-            "values": [
-              {
-                "type": "string",
-                "value": "open"
-              },
-              {
-                "type": "string",
-                "value": "closed"
-              }
-            ],
-            "extAttrs": []
-          }
-        },
-        "idlExtendedNames": {
-          "DocumentOrShadowRoot": [
-            {
-              "type": "interface",
-              "name": "DocumentOrShadowRoot",
-              "partial": true,
-              "members": [
-                {
-                  "type": "operation",
-                  "getter": false,
-                  "setter": false,
-                  "deleter": false,
-                  "static": false,
-                  "stringifier": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": true,
-                    "union": false,
-                    "idlType": "Selection"
-                  },
-                  "name": "getSelection",
-                  "arguments": [],
-                  "extAttrs": []
-                },
-                {
-                  "type": "operation",
-                  "getter": false,
-                  "setter": false,
-                  "deleter": false,
-                  "static": false,
-                  "stringifier": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": true,
-                    "union": false,
-                    "idlType": "Element"
-                  },
-                  "name": "elementFromPoint",
-                  "arguments": [
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "double"
-                      },
-                      "name": "x"
-                    },
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "double"
-                      },
-                      "name": "y"
-                    }
-                  ],
-                  "extAttrs": []
-                },
-                {
-                  "type": "operation",
-                  "getter": false,
-                  "setter": false,
-                  "deleter": false,
-                  "static": false,
-                  "stringifier": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": true,
-                    "generic": "sequence",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": {
-                      "type": "return-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "Element"
-                    }
-                  },
-                  "name": "elementsFromPoint",
-                  "arguments": [
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "double"
-                      },
-                      "name": "x"
-                    },
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "double"
-                      },
-                      "name": "y"
-                    }
-                  ],
-                  "extAttrs": []
-                },
-                {
-                  "type": "operation",
-                  "getter": false,
-                  "setter": false,
-                  "deleter": false,
-                  "static": false,
-                  "stringifier": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": true,
-                    "union": false,
-                    "idlType": "CaretPosition"
-                  },
-                  "name": "caretPositionFromPoint",
-                  "arguments": [
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "double"
-                      },
-                      "name": "x"
-                    },
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "double"
-                      },
-                      "name": "y"
-                    }
-                  ],
-                  "extAttrs": []
-                },
-                {
-                  "type": "attribute",
-                  "static": false,
-                  "stringifier": false,
-                  "inherit": false,
-                  "readonly": true,
-                  "idlType": {
-                    "type": "attribute-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": true,
-                    "union": false,
-                    "idlType": "Element"
-                  },
-                  "name": "activeElement",
-                  "extAttrs": []
-                },
-                {
-                  "type": "attribute",
-                  "static": false,
-                  "stringifier": false,
-                  "inherit": false,
-                  "readonly": true,
-                  "idlType": {
-                    "type": "attribute-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "StyleSheetList"
-                  },
-                  "name": "styleSheets",
-                  "extAttrs": []
-                }
-              ],
-              "extAttrs": []
-            }
-          ]
-        },
-        "externalDependencies": [
-          "DocumentOrShadowRoot",
-          "Selection",
-          "Element",
-          "CaretPosition",
-          "StyleSheetList",
-          "DocumentFragment",
-          "Window"
-        ],
-        "hasObsoleteIdl": false
-      }
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {},
+      "error": "Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395\n    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)\n    at ontimeout (timers.js:482:11)\n    at tryOnTimeout (timers.js:317:5)\n    at Timer.listOnTimeout (timers.js:277:5)"
     },
     {
       "url": "https://www.w3.org/TR/SVG2/",

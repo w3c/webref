@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-03-10T02:07:24.864Z",
+  "date": "2018-03-11T02:07:55.714Z",
   "stats": {
     "crawled": 110,
-    "errors": 1,
+    "errors": 2,
     "studied": 110
   },
   "results": [
@@ -251,8 +251,7 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/editing/contentEditable.html",
-          "https://w3c.github.io/FileAPI/"
+          "https://w3c.github.io/editing/contentEditable.html"
         ],
         "inconsistentRef": [
           {
@@ -260,6 +259,13 @@
             "ref": {
               "name": "PERMISSIONS",
               "url": "https://www.w3.org/TR/permissions/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FileAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
             }
           }
         ],
@@ -667,118 +673,7 @@
               "date": "8 March 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/css-fonts-4/",
-              "title": "CSS Fonts Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "6 March 2018"
-            }
-          ]
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "CSS Fonts Module Level 4",
-      "shortname": "css-fonts-4",
-      "date": "6 March 2018",
-      "url": "https://www.w3.org/TR/css-fonts-4/",
-      "latest": "https://www.w3.org/TR/css-fonts-4/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://drafts.csswg.org/css-fonts-4/",
-      "crawled": "https://drafts.csswg.org/css-fonts-4/",
-      "repository": "https://github.com/w3c/csswg-drafts",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasInvalidIdl": true,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-syntax/"
-        ],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/css-font-loading-3/",
-              "title": "CSS Font Loading Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-font-loading/",
-              "date": "29 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-fonts-4/",
-              "title": "CSS Fonts Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "6 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "https://drafts.csswg.org/cssom/",
-              "date": "12 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-syntax-3/",
-              "title": "CSS Syntax Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-syntax/",
-              "date": "20 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-typed-om-1/",
-              "title": "CSS Typed OM Level 1",
-              "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-values-3/",
-              "title": "CSS Values and Units Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-values/",
-              "date": "14 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/SVG2/",
-              "title": "Scalable Vector Graphics (SVG) 2",
-              "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "14 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webvtt1/",
-              "title": "WebVTT: The Web Video Text Tracks Format",
-              "crawled": "https://w3c.github.io/webvtt/",
-              "date": "25 February 2018"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "https://drafts.csswg.org/cssom/",
-              "date": "12 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-properties-values-api-1/",
-              "title": "CSS Properties and Values API Level 1",
-              "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
-              "date": "14 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-pseudo-4/",
-              "date": "21 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "5 March 2018"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -845,12 +740,6 @@
               "date": "29 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-fonts-4/",
-              "title": "CSS Fonts Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "6 March 2018"
-            },
-            {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -879,12 +768,6 @@
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
               "date": "7 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-values-3/",
-              "title": "CSS Values and Units Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-values/",
-              "date": "14 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -1148,12 +1031,6 @@
               "date": "29 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-fonts-4/",
-              "title": "CSS Fonts Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "6 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
@@ -1176,12 +1053,6 @@
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
               "date": "7 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-values-3/",
-              "title": "CSS Values and Units Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-values/",
-              "date": "14 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/geometry-1/",
@@ -1316,154 +1187,6 @@
       }
     },
     {
-      "title": "CSS Values and Units Module Level 4",
-      "shortname": "css-values-3",
-      "date": "14 February 2018",
-      "url": "https://www.w3.org/TR/css-values-3/",
-      "latest": "https://www.w3.org/TR/css-values-3/",
-      "datedUrl": "https://www.w3.org/TR/2016/CR-css-values-3-20160929/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://drafts.csswg.org/css-values/",
-      "crawled": "https://drafts.csswg.org/css-values/",
-      "repository": "https://github.com/w3c/csswg-drafts",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css-syntax/",
-            "ref": {
-              "name": "CSS3SYN",
-              "url": "https://www.w3.org/TR/css-syntax-3/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/css3-fonts/",
-            "ref": {
-              "name": "CSS3-FONTS",
-              "url": "https://www.w3.org/TR/css-fonts-3/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/selectors/",
-            "ref": {
-              "name": "SELECTORS-3",
-              "url": "https://www.w3.org/TR/selectors-3/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/compositing-1/",
-              "title": "Compositing and Blending Level 1",
-              "crawled": "https://drafts.fxtf.org/compositing-1/",
-              "date": "28 October 2015"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-fonts-4/",
-              "title": "CSS Fonts Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "6 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "https://drafts.csswg.org/cssom/",
-              "date": "12 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-properties-values-api-1/",
-              "title": "CSS Properties and Values API Level 1",
-              "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
-              "date": "14 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-syntax-3/",
-              "title": "CSS Syntax Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-syntax/",
-              "date": "20 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-typed-om-1/",
-              "title": "CSS Typed OM Level 1",
-              "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "5 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-view-1/",
-              "title": "CSSOM View Module",
-              "crawled": "https://drafts.csswg.org/cssom-view/",
-              "date": "11 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/geometry-1/",
-              "title": "Geometry Interfaces Module Level 1",
-              "crawled": "https://drafts.fxtf.org/geometry/",
-              "date": "27 January 2018"
-            },
-            {
-              "url": "https://html.spec.whatwg.org/",
-              "title": "HTML Standard",
-              "crawled": "https://html.spec.whatwg.org/",
-              "date": "8 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/intersection-observer/",
-              "title": "Intersection Observer",
-              "crawled": "https://w3c.github.io/IntersectionObserver/",
-              "date": "4 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/SVG2/",
-              "title": "Scalable Vector Graphics (SVG) 2",
-              "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "14 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/touch-events/",
-              "title": "Touch Events - Level 2",
-              "crawled": "https://w3c.github.io/touch-events/",
-              "date": "23 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/web-animations-1/",
-              "title": "Web Animations",
-              "crawled": "https://w3c.github.io/web-animations/",
-              "date": "15 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://w3c.github.io/webdriver/webdriver-spec.html",
-              "date": "04 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webvtt1/",
-              "title": "WebVTT: The Web Video Text Tracks Format",
-              "crawled": "https://w3c.github.io/webvtt/",
-              "date": "25 February 2018"
-            }
-          ],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "CSS Writing Modes Level 3",
       "shortname": "css-writing-modes-3",
       "date": "5 March 2018",
@@ -1518,6 +1241,193 @@
               "date": "21 February 2018"
             }
           ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "css-fonts-4",
+      "shortname": "css-fonts-4",
+      "date": "",
+      "url": "https://www.w3.org/TR/css-fonts-4/",
+      "latest": "https://www.w3.org/TR/css-fonts-4",
+      "crawled": "https://www.w3.org/TR/css-fonts-4/",
+      "repository": "https://github.com/w3c/csswg-drafts",
+      "report": {
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-font-loading-3/",
+              "title": "CSS Font Loading Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-font-loading/",
+              "date": "29 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/cssom-1/",
+              "title": "CSS Object Model (CSSOM)",
+              "crawled": "https://drafts.csswg.org/cssom/",
+              "date": "12 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-syntax-3/",
+              "title": "CSS Syntax Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-syntax/",
+              "date": "20 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-typed-om-1/",
+              "title": "CSS Typed OM Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
+              "date": "7 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://svgwg.org/svg2-draft/",
+              "date": "14 February 2018"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/cssom-1/",
+              "title": "CSS Object Model (CSSOM)",
+              "crawled": "https://drafts.csswg.org/cssom/",
+              "date": "12 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-properties-values-api-1/",
+              "title": "CSS Properties and Values API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
+              "date": "14 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-pseudo-4/",
+              "title": "CSS Pseudo-Elements Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-pseudo-4/",
+              "date": "21 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-writing-modes-3/",
+              "title": "CSS Writing Modes Level 3",
+              "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
+              "date": "5 March 2018"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "css-values-3",
+      "shortname": "css-values-3",
+      "date": "",
+      "url": "https://www.w3.org/TR/css-values-3/",
+      "latest": "https://www.w3.org/TR/css-values-3",
+      "crawled": "https://www.w3.org/TR/css-values-3/",
+      "repository": "https://github.com/w3c/csswg-drafts",
+      "report": {
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/compositing-1/",
+              "title": "Compositing and Blending Level 1",
+              "crawled": "https://drafts.fxtf.org/compositing-1/",
+              "date": "28 October 2015"
+            },
+            {
+              "url": "https://www.w3.org/TR/cssom-1/",
+              "title": "CSS Object Model (CSSOM)",
+              "crawled": "https://drafts.csswg.org/cssom/",
+              "date": "12 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-properties-values-api-1/",
+              "title": "CSS Properties and Values API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
+              "date": "14 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-syntax-3/",
+              "title": "CSS Syntax Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-syntax/",
+              "date": "20 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-typed-om-1/",
+              "title": "CSS Typed OM Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
+              "date": "7 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-writing-modes-3/",
+              "title": "CSS Writing Modes Level 3",
+              "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
+              "date": "5 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "https://drafts.csswg.org/cssom-view/",
+              "date": "11 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/geometry-1/",
+              "title": "Geometry Interfaces Module Level 1",
+              "crawled": "https://drafts.fxtf.org/geometry/",
+              "date": "27 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/intersection-observer/",
+              "title": "Intersection Observer",
+              "crawled": "https://w3c.github.io/IntersectionObserver/",
+              "date": "4 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://svgwg.org/svg2-draft/",
+              "date": "14 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/touch-events/",
+              "title": "Touch Events - Level 2",
+              "crawled": "https://w3c.github.io/touch-events/",
+              "date": "23 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/webdriver-spec.html",
+              "date": "04 March 2018"
+            }
+          ],
+          "informative": []
         },
         "ok": false
       }
@@ -1919,6 +1829,12 @@
               "date": "14 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
+            },
+            {
               "url": "https://fullscreen.spec.whatwg.org/",
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/",
@@ -2162,7 +2078,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -2271,6 +2187,12 @@
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
               "date": "14 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
             },
             {
               "url": "https://html.spec.whatwg.org/",
@@ -2396,7 +2318,6 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
-          "Blob",
           "ReadableStream",
           "WindowOrWorkerGlobalScope"
         ],
@@ -2429,6 +2350,12 @@
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
               "date": "12 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
             },
             {
               "url": "https://html.spec.whatwg.org/",
@@ -2563,15 +2490,19 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "File"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/FileAPI/"
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FileAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          }
         ],
-        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -2580,19 +2511,22 @@
       }
     },
     {
-      "title": "FileAPI",
+      "title": "File API",
       "shortname": "FileAPI",
-      "date": "",
+      "date": "31 January 2018",
       "url": "https://www.w3.org/TR/FileAPI/",
-      "latest": "https://www.w3.org/TR/FileAPI",
-      "crawled": "https://www.w3.org/TR/FileAPI/",
+      "latest": "https://www.w3.org/TR/FileAPI/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-FileAPI-20171026/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/FileAPI/",
+      "crawled": "https://w3c.github.io/FileAPI/",
       "repository": "https://github.com/w3c/FileAPI",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -2607,10 +2541,22 @@
               "date": "18 February 2018"
             },
             {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "14 February 2018"
+            },
+            {
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
               "date": "29 January 2018"
+            },
+            {
+              "url": "https://html.spec.whatwg.org/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/",
+              "date": "8 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -2649,10 +2595,22 @@
               "date": "15 December 2017"
             },
             {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
               "date": "08 March 2018"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "2 March 2018"
             }
           ],
           "informative": [
@@ -2670,7 +2628,7 @@
             }
           ]
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -3235,9 +3193,6 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
-          "Blob",
-          "File",
-          "FileList",
           "NavigatorID",
           "SVGImageElement",
           "SVGScriptElement",
@@ -3350,12 +3305,6 @@
               "date": "29 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-fonts-4/",
-              "title": "CSS Fonts Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "6 March 2018"
-            },
-            {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -3434,6 +3383,12 @@
               "date": "29 January 2018"
             },
             {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
+            },
+            {
               "url": "https://fullscreen.spec.whatwg.org/",
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/",
@@ -3491,7 +3446,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3767,13 +3722,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3844,12 +3799,6 @@
               "date": "7 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-values-3/",
-              "title": "CSS Values and Units Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-values/",
-              "date": "14 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
@@ -3872,6 +3821,12 @@
               "title": "Encrypted Media Extensions",
               "crawled": "https://w3c.github.io/encrypted-media/",
               "date": "22 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/hr-time-3/",
@@ -4042,10 +3997,15 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/FileAPI/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FileAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          },
           {
             "link": "https://www.w3.org/TR/domcore/",
             "ref": {
@@ -4096,7 +4056,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "10 March 2018",
+      "date": "11 March 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -4130,7 +4090,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             }
           ]
         },
@@ -4643,6 +4603,12 @@
               "date": "22 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/media-source/",
               "title": "Media Source Extensions™",
               "crawled": "https://w3c.github.io/media-source/",
@@ -4670,15 +4636,18 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "Blob"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/FileAPI/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FileAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          },
           {
             "link": "https://w3c.github.io/mediacapture-main/",
             "ref": {
@@ -4718,15 +4687,18 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "Blob"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/FileAPI/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FileAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          },
           {
             "link": "https://w3c.github.io/webappsec-secure-contexts/",
             "ref": {
@@ -5249,9 +5221,7 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "PaymentManager"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -5735,9 +5705,7 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "Blob"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [
           {
             "name": "BinaryType",
@@ -5836,9 +5804,7 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "Blob"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -6747,12 +6713,6 @@
               "date": "20 December 2017"
             },
             {
-              "url": "https://www.w3.org/TR/css-values-3/",
-              "title": "CSS Values and Units Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-values/",
-              "date": "14 February 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/selectors-api/",
               "title": "Selectors API Level 1",
               "crawled": "https://www.w3.org/TR/selectors-api/",
@@ -7000,7 +6960,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             }
           ],
           "informative": []
@@ -7063,6 +7023,12 @@
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
               "date": "14 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
             }
           ],
           "informative": []
@@ -7230,7 +7196,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -7426,12 +7392,6 @@
               "date": "12 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-values-3/",
-              "title": "CSS Values and Units Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-values/",
-              "date": "14 February 2018"
-            },
-            {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
@@ -7442,6 +7402,12 @@
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
               "date": "14 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
             },
             {
               "url": "https://html.spec.whatwg.org/",
@@ -8123,12 +8089,6 @@
               "date": "29 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-fonts-4/",
-              "title": "CSS Fonts Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "6 March 2018"
-            },
-            {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -8211,6 +8171,12 @@
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
               "date": "29 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
             },
             {
               "url": "https://fullscreen.spec.whatwg.org/",
@@ -8552,13 +8518,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -8608,7 +8574,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "10 March 2018"
+              "date": "11 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -8772,7 +8738,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sat Mar 10 2018",
+      "date": "Sun Mar 11 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8815,7 +8781,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sat Mar 10 2018",
+      "date": "Sun Mar 11 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8850,7 +8816,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 10 2018"
+              "date": "Sun Mar 11 2018"
             }
           ],
           "informative": [
@@ -8895,7 +8861,6 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
-          "Blob",
           "RTCError",
           "RTCStatsEventInit"
         ],
@@ -9138,10 +9103,7 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "Blob",
-          "File"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -9161,6 +9123,12 @@
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
               "date": "14 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://w3c.github.io/FileAPI/",
+              "date": "31 January 2018"
             },
             {
               "url": "https://html.spec.whatwg.org/",
