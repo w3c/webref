@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 11, 2018
+% March 12, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -605,7 +605,6 @@ Normative references to this spec from:
 
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 
 No informative reference to this spec from other specs.
@@ -727,7 +726,6 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
@@ -769,7 +767,6 @@ Normative references to this spec from:
 
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2017/WD-webvtt1-20170808/)
@@ -777,34 +774,23 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSSOM View Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## cssom-view-1 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/) (17 March 2016)
-- Editor's Draft: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
-- Latest published version: [http://www.w3.org/TR/cssom-view-1/](http://www.w3.org/TR/cssom-view-1/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/cssom-view-1)
+- Latest published version: [https://www.w3.org/TR/cssom-view-1](https://www.w3.org/TR/cssom-view-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: cssom-view-1
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMPoint`, `DOMPointInit`, `DOMQuad`, `DOMQuadInit`, `DOMRect`, `DOMRectReadOnly`, `EventHandler`, `HTMLElement`, `HTMLImageElement`, `Window`
-- Missing references for WebIDL names: 
-     * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-     * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-display-3/`](https://www.w3.org/TR/css-display-3/)
-     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
-     * [`https://www.w3.org/TR/geometry-1/`](https://www.w3.org/TR/geometry-1/)
-     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/), related reference "CSS-WRITING-MODES-3" uses URL [`http://dev.w3.org/csswg/css-writing-modes-3/`](http://dev.w3.org/csswg/css-writing-modes-3/)
-     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/), related reference "CSS-PSEUDO-4" uses URL [`http://dev.w3.org/csswg/css-pseudo-4/`](http://dev.w3.org/csswg/css-pseudo-4/)
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES" uses URL [`http://dev.w3.org/csswg/css-values/`](http://dev.w3.org/csswg/css-values/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
+    at <anonymous>`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -812,8 +798,6 @@ Normative references to this spec from:
 
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
@@ -879,7 +863,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 
 
 ## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -1115,7 +1098,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
 Informative references to this spec from:
@@ -1376,7 +1358,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Custom Elements](https://www.w3.org/TR/2018/WD-custom-elements-20180216/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
@@ -1421,7 +1402,6 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -1502,7 +1482,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Custom Elements](https://www.w3.org/TR/2018/WD-custom-elements-20180216/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
@@ -1523,7 +1502,6 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -1606,7 +1584,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Custom Elements](https://www.w3.org/TR/2018/WD-custom-elements-20180216/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
@@ -1628,7 +1605,6 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -2178,7 +2154,6 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180306/)
@@ -2714,7 +2689,6 @@ Normative references to this spec from:
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
@@ -2724,7 +2698,6 @@ Informative references to this spec from:
 
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Custom Elements](https://www.w3.org/TR/2018/WD-custom-elements-20180216/)
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/)
@@ -2750,6 +2723,33 @@ Informative references to this spec from:
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## screen-orientation {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/screen-orientation)
+- Latest published version: [https://www.w3.org/TR/screen-orientation](https://www.w3.org/TR/screen-orientation)
+- Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
+- Shortname: screen-orientation
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
+    at <anonymous>`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 
 No informative reference to this spec from other specs.
 
@@ -3070,30 +3070,6 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## The Screen Orientation API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/) (05 November 2017)
-- Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
-- Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
-- Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
-- Shortname: screen-orientation
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `EventHandler`, `Window`
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
-
-No informative reference to this spec from other specs.
-
-
 ## The WebSocket API {data-spec=true data-anomaly=true data-hasInvalidIdl=true}
 
 ### Spec info {.info}
@@ -3186,7 +3162,6 @@ Normative references to this spec from:
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 
@@ -3411,7 +3386,6 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Custom Elements](https://www.w3.org/TR/2018/WD-custom-elements-20180216/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -3443,7 +3417,6 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -3547,7 +3520,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`, `WorkerType`
+- Unknown WebIDL names used: `EventHandler`, `OrientationLockType`, `Window`, `WorkerType`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
@@ -3561,7 +3534,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 
 
 ## Web Audio API {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3747,7 +3719,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Custom Elements](https://www.w3.org/TR/2018/WD-custom-elements-20180216/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
@@ -3772,7 +3743,6 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180222/)
@@ -3871,7 +3841,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Mar 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Mar 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3892,7 +3862,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Mar 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Mar 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3953,7 +3923,6 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Custom Elements](https://www.w3.org/TR/2018/WD-custom-elements-20180216/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
@@ -3998,7 +3967,6 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
