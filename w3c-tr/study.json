@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-12T02:05:32.274Z",
+  "date": "2018-03-13T02:05:41.296Z",
   "stats": {
     "crawled": 119,
-    "errors": 2,
+    "errors": 1,
     "studied": 119
   },
   "results": [
@@ -1251,6 +1251,12 @@
               "date": "17 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+              "date": "17 March 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
@@ -1509,6 +1515,12 @@
               "date": "7 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+              "date": "17 March 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.2",
               "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
@@ -1603,6 +1615,12 @@
               "date": "29 September 2016"
             },
             {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+              "date": "17 March 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.2",
               "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
@@ -1627,24 +1645,90 @@
       }
     },
     {
-      "title": "cssom-view-1",
+      "title": "CSSOM View Module",
       "shortname": "cssom-view-1",
-      "date": "",
+      "date": "17 March 2016",
       "url": "https://www.w3.org/TR/cssom-view-1/",
-      "latest": "https://www.w3.org/TR/cssom-view-1",
-      "crawled": "https://www.w3.org/TR/cssom-view-1",
+      "latest": "http://www.w3.org/TR/cssom-view-1/",
+      "datedUrl": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://drafts.csswg.org/cssom-view/",
+      "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
-        "unknownIdlNames": [],
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "DOMPoint",
+          "DOMPointInit",
+          "DOMQuad",
+          "DOMQuadInit",
+          "DOMRect",
+          "DOMRectReadOnly",
+          "EventHandler",
+          "HTMLElement",
+          "HTMLImageElement",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "MouseEvent",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/uievents/",
+                "title": "UI Events",
+                "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+                "date": "04 August 2016"
+              }
+            ]
+          },
+          {
+            "name": "MouseEventInit",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/uievents/",
+                "title": "UI Events",
+                "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+                "date": "04 August 2016"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css-display-3/",
+          "https://www.w3.org/TR/svg2/",
+          "https://www.w3.org/TR/geometry-1/",
+          "https://www.w3.org/TR/css3-break/",
+          "https://www.w3.org/TR/css3-background/",
+          "https://www.w3.org/TR/css3-positioning/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-writing-modes-3/",
+            "ref": {
+              "name": "CSS-WRITING-MODES-3",
+              "url": "http://dev.w3.org/csswg/css-writing-modes-3/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/css-pseudo-4/",
+            "ref": {
+              "name": "CSS-PSEUDO-4",
+              "url": "http://dev.w3.org/csswg/css-pseudo-4/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/css3-values/",
+            "ref": {
+              "name": "CSS-VALUES",
+              "url": "http://dev.w3.org/csswg/css-values/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -1658,6 +1742,18 @@
               "title": "Intersection Observer",
               "crawled": "https://www.w3.org/TR/2017/WD-intersection-observer-20170914/",
               "date": "14 September 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+              "date": "05 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
             },
             {
               "url": "https://www.w3.org/TR/UISecurity/",
@@ -1782,6 +1878,12 @@
               "title": "Generic Sensor API",
               "crawled": "https://www.w3.org/TR/2017/WD-generic-sensor-20171018/",
               "date": "18 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+              "date": "05 November 2017"
             }
           ]
         },
@@ -2517,6 +2619,12 @@
               "date": "14 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+              "date": "05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/webdriver/",
               "title": "WebDriver",
               "crawled": "https://www.w3.org/TR/2017/CR-webdriver-20170330/",
@@ -3180,6 +3288,12 @@
               "date": "7 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+              "date": "17 March 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/custom-elements/",
               "title": "Custom Elements",
               "crawled": "https://www.w3.org/TR/2018/WD-custom-elements-20180216/",
@@ -3274,12 +3388,6 @@
               "title": "Indexed Database API 2.0",
               "crawled": "https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/",
               "date": "30 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
-              "date": "05 September 2017"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3444,6 +3552,12 @@
               "date": "9 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+              "date": "05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/touch-events/",
               "title": "Touch Events",
               "crawled": "http://www.w3.org/TR/2013/REC-touch-events-20131010/",
@@ -3549,13 +3663,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 12 2018"
+              "date": "Tue Mar 13 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 12 2018"
+              "date": "Tue Mar 13 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3832,6 +3946,12 @@
               "date": "29 September 2016"
             },
             {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+              "date": "17 March 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/custom-elements/",
               "title": "Custom Elements",
               "crawled": "https://www.w3.org/TR/2018/WD-custom-elements-20180216/",
@@ -3866,12 +3986,6 @@
               "title": "HTML 5.2",
               "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
               "date": "14 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
-              "date": "05 September 2017"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -3952,6 +4066,12 @@
               "date": "9 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+              "date": "05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
@@ -4009,7 +4129,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 12 2018"
+              "date": "Tue Mar 13 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -4234,6 +4354,12 @@
               "date": "29 September 2016"
             },
             {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+              "date": "17 March 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/custom-elements/",
               "title": "Custom Elements",
               "crawled": "https://www.w3.org/TR/2018/WD-custom-elements-20180216/",
@@ -4262,12 +4388,6 @@
               "title": "Generic Sensor API",
               "crawled": "https://www.w3.org/TR/2017/WD-generic-sensor-20171018/",
               "date": "18 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
-              "date": "05 September 2017"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -4358,6 +4478,12 @@
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
               "date": "9 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+              "date": "05 November 2017"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -4688,47 +4814,26 @@
       }
     },
     {
-      "title": "Input Events Level 1",
+      "title": "input-events-2",
       "shortname": "input-events-2",
-      "date": "05 September 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/input-events-2/",
-      "latest": "https://www.w3.org/TR/input-events-1/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://rawgit.com/w3c/input-events/v1/index.html",
-      "crawled": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
-      "repository": "https://github.com/w3c/input-events",
+      "latest": "https://www.w3.org/TR/input-events-2",
+      "crawled": "https://www.w3.org/TR/input-events-2",
       "report": {
-        "noNormativeRefs": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "DataTransfer"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/uievents/",
-            "ref": {
-              "name": "UI-EVENTS",
-              "url": "https://www.w3.org/TR/uievents/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
-              "date": "05 September 2017"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -5690,6 +5795,12 @@
               "title": "Service Workers 1",
               "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
               "date": "2 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+              "date": "05 November 2017"
             },
             {
               "url": "https://www.w3.org/TR/vibration/",
@@ -6964,6 +7075,12 @@
               "date": "7 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+              "date": "17 March 2016"
+            },
+            {
               "url": "https://fullscreen.spec.whatwg.org/",
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/",
@@ -6999,6 +7116,12 @@
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
+              "date": "17 March 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
               "date": "17 March 2016"
             },
             {
@@ -7062,39 +7185,6 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "screen-orientation",
-      "shortname": "screen-orientation",
-      "date": "",
-      "url": "https://www.w3.org/TR/screen-orientation/",
-      "latest": "https://www.w3.org/TR/screen-orientation",
-      "crawled": "https://www.w3.org/TR/screen-orientation",
-      "repository": "https://github.com/w3c/screen-orientation",
-      "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2018/WD-appmanifest-20180222/",
-              "date": "Living Document"
-            }
-          ],
           "informative": []
         },
         "ok": false
@@ -7668,14 +7758,7 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
-              "date": "05 September 2017"
-            }
-          ],
+          "normative": [],
           "informative": []
         },
         "ok": false
@@ -7744,6 +7827,45 @@
               "title": "File API",
               "crawled": "https://www.w3.org/TR/2017/WD-FileAPI-20171026/",
               "date": "26 October 2017"
+            }
+          ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "The Screen Orientation API",
+      "shortname": "screen-orientation",
+      "date": "05 November 2017",
+      "url": "https://www.w3.org/TR/screen-orientation/",
+      "latest": "https://www.w3.org/TR/screen-orientation/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/screen-orientation/",
+      "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+      "repository": "https://github.com/w3c/screen-orientation",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/appmanifest/",
+              "title": "Web App Manifest",
+              "crawled": "https://www.w3.org/TR/2018/WD-appmanifest-20180222/",
+              "date": "Living Document"
             }
           ],
           "informative": []
@@ -7903,12 +8025,6 @@
               "title": "HTML 5.2",
               "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
               "date": "14 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
-              "date": "05 September 2017"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -8495,6 +8611,12 @@
               "date": "1 August 2017"
             },
             {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+              "date": "17 March 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/custom-elements/",
               "title": "Custom Elements",
               "crawled": "https://www.w3.org/TR/2018/WD-custom-elements-20180216/",
@@ -8681,6 +8803,12 @@
               "date": "9 January 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+              "date": "05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/touch-events/",
               "title": "Touch Events",
               "crawled": "http://www.w3.org/TR/2013/REC-touch-events-20131010/",
@@ -8774,7 +8902,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 12 2018"
+              "date": "Tue Mar 13 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -8932,7 +9060,6 @@
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
           "EventHandler",
-          "OrientationLockType",
           "Window",
           "WorkerType"
         ],
@@ -8969,6 +9096,12 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
               "date": "13 September 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+              "date": "05 November 2017"
             }
           ]
         },
@@ -9414,6 +9547,12 @@
               "date": "29 September 2016"
             },
             {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+              "date": "17 March 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/custom-elements/",
               "title": "Custom Elements",
               "crawled": "https://www.w3.org/TR/2018/WD-custom-elements-20180216/",
@@ -9460,12 +9599,6 @@
               "title": "HTML5 Web Messaging",
               "crawled": "http://www.w3.org/TR/2015/REC-webmessaging-20150519/",
               "date": "19 May 2015"
-            },
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
-              "date": "05 September 2017"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -9556,6 +9689,12 @@
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
               "date": "9 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+              "date": "05 November 2017"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -9832,7 +9971,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Mon Mar 12 2018",
+      "date": "Tue Mar 13 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -9863,7 +10002,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Mon Mar 12 2018",
+      "date": "Tue Mar 13 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -9903,7 +10042,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 12 2018"
+              "date": "Tue Mar 13 2018"
             }
           ],
           "informative": [
@@ -10064,6 +10203,12 @@
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/",
               "date": "1 August 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/custom-elements/",
@@ -10330,6 +10475,12 @@
               "date": "9 January 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+              "date": "05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/websockets/",
               "title": "The WebSocket API",
               "crawled": "http://www.w3.org/TR/2012/CR-websockets-20120920/",
@@ -10429,13 +10580,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 12 2018"
+              "date": "Tue Mar 13 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 12 2018"
+              "date": "Tue Mar 13 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -10492,12 +10643,6 @@
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
               "date": "07 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
-              "date": "05 September 2017"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",

@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 12, 2018
+% March 13, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
@@ -777,7 +777,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (25 February 2018)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (12 March 2018)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -823,6 +823,7 @@ Normative references to this spec from:
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
@@ -975,6 +976,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
@@ -1280,7 +1282,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## HTML Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## HTML Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1297,8 +1299,9 @@ No informative reference to this spec from other specs.
      * `AudioWorklet` defined in [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
      * [`https://spec.whatwg.org/`](https://spec.whatwg.org/)
-     * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/)
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/), related reference "PAYMENTREQUEST" uses URL [`https://w3c.github.io/browser-payment-api/`](https://w3c.github.io/browser-payment-api/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1351,6 +1354,7 @@ Normative references to this spec from:
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
@@ -1492,7 +1496,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (12 March 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (13 March 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1568,11 +1572,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Magnetometer {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-inconsistentRef=true}
+## Magnetometer {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/magnetometer/) (4 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/magnetometer/) (12 March 2018)
 - Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
 - Latest published version: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
@@ -1581,8 +1585,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `LocalCoordinateSystem` also defined in [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
@@ -1603,7 +1605,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (08 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (12 March 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
@@ -1915,11 +1917,11 @@ Informative references to this spec from:
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 
 
-## Orientation Sensor {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Orientation Sensor {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/) (5 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/) (12 March 2018)
 - Editor's Draft: [https://w3c.github.io/orientation-sensor/](https://w3c.github.io/orientation-sensor/)
 - Latest published version: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
@@ -1928,8 +1930,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `LocalCoordinateSystem` also defined in [Magnetometer](https://w3c.github.io/magnetometer/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/orientation-event/`](https://www.w3.org/TR/orientation-event/)
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
@@ -2005,11 +2005,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Payment Handler API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (06 February 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (12 March 2018)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -2018,7 +2018,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PaymentCurrencyAmount`, `PaymentDetailsModifier`, `PaymentMethodData`
 - Missing references for links: 
      * [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/)
 - Inconsistent references for links: 
@@ -2033,7 +2032,7 @@ Informative references to this spec from:
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 
 
-## Payment Method: Basic Card {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Payment Method: Basic Card {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -2046,7 +2045,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PaymentAddress`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2054,31 +2053,31 @@ Normative references to this spec from:
 
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Payment Request API](https://w3c.github.io/payment-request/)
 
 
-## payment-request {data-spec=true data-error=true}
+## Payment Request API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/payment-request/)
-- Latest published version: [https://www.w3.org/TR/payment-request](https://www.w3.org/TR/payment-request)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (28 February 2018)
+- Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
+- Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
 - Shortname: payment-request
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 
@@ -3201,7 +3200,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (28 February 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (13 March 2018)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webauthn-20180306/)
@@ -3325,6 +3324,7 @@ Normative references to this spec from:
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
@@ -3436,7 +3436,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Mar 12 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Mar 13 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3459,7 +3459,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Mar 12 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Mar 13 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3486,7 +3486,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (08 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (12 March 2018)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-webrtc-20171102/)

@@ -21,14 +21,6 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>110 specifications were crawled in this report.</p>
-  <section id="specifications-that-could-not-be-rendered" class="level2">
-  <h2>Specifications that could not be rendered</h2>
-  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
-  <ul>
-  <li><a href="https://www.w3.org/TR/payment-request/">payment-request</a>: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41) at &lt;anonymous&gt;</code></li>
-  </ul>
-  <p>=&gt; 1 specification found</p>
-  </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <p>=&gt; 0 specification found</p>
@@ -91,10 +83,6 @@
   <li><code>LayoutWorklet</code> used in <a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><code>NavigatorID</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><code>OverconstrainedError</code> used in <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  <li><code>PaymentAddress</code> used in <a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a></li>
-  <li><code>PaymentCurrencyAmount</code> used in <a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><code>PaymentDetailsModifier</code> used in <a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><code>PaymentMethodData</code> used in <a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><code>PermissionName</code> used in <a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><code>RTCError</code> used in <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>RTCRTPStreamStats</code> used in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
@@ -105,19 +93,18 @@
   <li><code>WindowOrWorkerGlobalScope</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a>, <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a>, <a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a>, <a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a>, <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   </ul>
-  <p>=&gt; 18 WebIDL names found</p>
+  <p>=&gt; 14 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
   <h2>List of WebIDL names defined in more than one spec</h2>
   <ul>
   <li><code>BinaryType</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
-  <li><code>LocalCoordinateSystem</code> defined in <a href="https://w3c.github.io/magnetometer/">Magnetometer</a> and <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
   <li><code>RTCStats</code> defined in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> and <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
-  <p>=&gt; 5 WebIDL names found</p>
+  <p>=&gt; 4 WebIDL names found</p>
   <p>&quot;There can be only one&quot;...</p>
   </section>
   <section id="missing-references-for-webidl-names" class="level2">
@@ -200,7 +187,6 @@
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a> links to:
   <ul>
   <li><a href="https://spec.whatwg.org/"><code>https://spec.whatwg.org/</code></a> but does not list it in its references</li>
-  <li><a href="https://w3c.github.io/payment-request/"><code>https://w3c.github.io/payment-request/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a> links to:
@@ -304,7 +290,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 91 missing references for links found in 38 specifications</p>
+  <p>=&gt; 90 missing references for links found in 38 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -362,6 +348,7 @@
   <li><a href="https://w3c.github.io/page-visibility/"><code>https://w3c.github.io/page-visibility/</code></a> but related reference &quot;PAGE-VISIBILITY&quot; uses URL <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a></li>
   <li><a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a></li>
   </ul></li>
+  <li><a href="https://html.spec.whatwg.org/">HTML Standard</a> links to <a href="https://w3c.github.io/payment-request/"><code>https://w3c.github.io/payment-request/</code></a> but related reference &quot;PAYMENTREQUEST&quot; uses URL <a href="https://w3c.github.io/browser-payment-api/"><code>https://w3c.github.io/browser-payment-api/</code></a></li>
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> links to <a href="https://www.w3.org/TR/2014/REC-html5-20141028/"><code>https://www.w3.org/TR/2014/REC-html5-20141028/</code></a> but related reference &quot;HTML5&quot; uses URL <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a> links to:
   <ul>
@@ -509,7 +496,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but related reference &quot;CANVAS&quot; uses URL <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element"><code>https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element</code></a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> links to <a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   </ul>
-  <p>=&gt; 119 inconsistent references for links found in 51 specifications</p>
+  <p>=&gt; 120 inconsistent references for links found in 52 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>

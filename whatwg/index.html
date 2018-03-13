@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">March 12, 2018</h2>
+            <h2 class="date">March 13, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -964,7 +964,7 @@
   <section id="spec-info-26" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://dom.spec.whatwg.org/">Living Standard</a> (25 February 2018)</li>
+  <li>Crawled version: <a href="https://dom.spec.whatwg.org/">Living Standard</a> (12 March 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/dom">GitHub whatwg/dom</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -1019,6 +1019,7 @@
   <li><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events</a></li>
@@ -1188,6 +1189,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
   </ul>
@@ -1540,7 +1542,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="html-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
+  <section id="html-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>HTML Standard</h2>
   <section id="spec-info-40" class="level3 info">
   <h3>Spec info</h3>
@@ -1565,8 +1567,11 @@
   <li>Missing references for links:
   <ul>
   <li><a href="https://spec.whatwg.org/"><code>https://spec.whatwg.org/</code></a></li>
-  <li><a href="https://w3c.github.io/payment-request/"><code>https://w3c.github.io/payment-request/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a></li>
+  </ul></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/payment-request/"><code>https://w3c.github.io/payment-request/</code></a>, related reference &quot;PAYMENTREQUEST&quot; uses URL <a href="https://w3c.github.io/browser-payment-api/"><code>https://w3c.github.io/browser-payment-api/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -1621,6 +1626,7 @@
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events</a></li>
@@ -1779,7 +1785,7 @@
   <section id="spec-info-43" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (12 March 2018)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (13 March 2018)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -1873,12 +1879,12 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="magnetometer" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-inconsistentRef="true">
+  <section id="magnetometer" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Magnetometer</h2>
   <section id="spec-info-46" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/magnetometer/">Editor's Draft</a> (4 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/magnetometer/">Editor's Draft</a> (12 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/magnetometer/" class="uri">https://w3c.github.io/magnetometer/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/magnetometer/" class="uri">https://www.w3.org/TR/magnetometer/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-magnetometer-20171018/">Working Draft</a></li>
@@ -1889,10 +1895,6 @@
   <section id="potential-issues-46" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
-  </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a>, related reference &quot;GENERIC-SENSOR&quot; uses URL <a href="https://www.w3.org/TR/generic-sensor/"><code>https://www.w3.org/TR/generic-sensor/</code></a></li>
@@ -1918,7 +1920,7 @@
   <section id="spec-info-47" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/mediacapture-main/">Editor's Draft</a> (08 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/mediacapture-main/">Editor's Draft</a> (12 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/mediacapture-main/" class="uri">https://w3c.github.io/mediacapture-main/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/mediacapture-streams/" class="uri">https://www.w3.org/TR/mediacapture-streams/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Candidate Recommendation</a></li>
@@ -2291,12 +2293,12 @@
   </ul>
   </section>
   </section>
-  <section id="orientation-sensor" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="orientation-sensor" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Orientation Sensor</h2>
   <section id="spec-info-58" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/orientation-sensor/">Editor's Draft</a> (5 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/orientation-sensor/">Editor's Draft</a> (12 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/orientation-sensor/" class="uri">https://w3c.github.io/orientation-sensor/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/orientation-sensor/" class="uri">https://www.w3.org/TR/orientation-sensor/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/">Working Draft</a></li>
@@ -2307,10 +2309,6 @@
   <section id="potential-issues-58" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>LocalCoordinateSystem</code> also defined in <a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
-  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/orientation-event/"><code>https://www.w3.org/TR/orientation-event/</code></a></li>
@@ -2402,12 +2400,12 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="payment-handler-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="payment-handler-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Payment Handler API</h2>
   <section id="spec-info-61" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/payment-handler/">Editor's Draft</a> (06 February 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/payment-handler/">Editor's Draft</a> (12 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/payment-handler/" class="uri">https://w3c.github.io/payment-handler/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/payment-handler/" class="uri">https://www.w3.org/TR/payment-handler/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-payment-handler-20180108/">Working Draft</a></li>
@@ -2418,7 +2416,6 @@
   <section id="potential-issues-61" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>PaymentCurrencyAmount</code>, <code>PaymentDetailsModifier</code>, <code>PaymentMethodData</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/payment-method-manifest/"><code>https://w3c.github.io/payment-method-manifest/</code></a></li>
@@ -2438,7 +2435,7 @@
   </ul>
   </section>
   </section>
-  <section id="payment-method-basic-card" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="payment-method-basic-card" class="level2" data-spec="true" data-ok="true">
   <h2>Payment Method: Basic Card</h2>
   <section id="spec-info-62" class="level3 info">
   <h3>Spec info</h3>
@@ -2453,9 +2450,7 @@
   </section>
   <section id="potential-issues-62" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>PaymentAddress</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-62" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -2463,29 +2458,34 @@
   <ul>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
+  </ul>
   </section>
   </section>
-  <section id="payment-request" class="level2" data-spec="true" data-error="true">
-  <h2>payment-request</h2>
+  <section id="payment-request-api" class="level2" data-spec="true" data-ok="true">
+  <h2>Payment Request API</h2>
   <section id="spec-info-63" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/payment-request/">Initial URL</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/payment-request" class="uri">https://www.w3.org/TR/payment-request</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/payment-request/">Editor's Draft</a> (28 February 2018)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/payment-request/" class="uri">https://w3c.github.io/payment-request/</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/payment-request/" class="uri">https://www.w3.org/TR/payment-request/</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2018/CR-payment-request-20180301/">Candidate Recommendation</a></li>
   <li>Repository: <a href="https://github.com/w3c/payment-request">GitHub w3c/payment-request</a></li>
   <li>Shortname: payment-request</li>
   </ul>
   </section>
   <section id="potential-issues-63" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-63" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a></li>
   </ul>
@@ -3804,7 +3804,7 @@
   <section id="spec-info-99" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webauthn/">Editor's Draft</a> (28 February 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webauthn/">Editor's Draft</a> (13 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webauthn/" class="uri">https://w3c.github.io/webauthn/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webauthn/" class="uri">https://www.w3.org/TR/webauthn/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-webauthn-20180306/">Working Draft</a></li>
@@ -3944,6 +3944,7 @@
   <li><a href="https://w3c.github.io/paint-timing/">Paint Timing 1</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
@@ -4072,7 +4073,7 @@
   <section id="spec-info-104" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Mon Mar 12 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Tue Mar 13 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4097,7 +4098,7 @@
   <section id="spec-info-105" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Mon Mar 12 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Tue Mar 13 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4131,7 +4132,7 @@
   <section id="spec-info-106" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (08 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (12 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webrtc-pc/" class="uri">https://w3c.github.io/webrtc-pc/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webrtc/" class="uri">https://www.w3.org/TR/webrtc/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">Candidate Recommendation</a></li>
