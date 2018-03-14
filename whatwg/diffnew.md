@@ -1,30 +1,15 @@
-% Diff between report from "March 13, 2018" and reference report from "March 12, 2018"
+% Diff between report from "March 14, 2018" and reference report from "March 13, 2018"
 % Reffy
-% March 13, 2018
+% March 14, 2018
 
-## HTML Standard
+## image-capture
 
-- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/)
-- Inconsistent references for links: *INS* https://w3c.github.io/payment-request/
-
-
-## Payment Method: Basic Card
-
-- URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
-- Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Payment Request API
-
-- URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/)
-- Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
-- Spec title: *INS* Payment Request API / *DEL* payment-request
-- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
+- URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/image-capture/)
+- Repository: [GitHub w3c/mediacapture-image](https://github.com/w3c/mediacapture-image)
+- Spec title: *INS* image-capture / *DEL* MediaStream Image Capture
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
     at <anonymous>
 
 

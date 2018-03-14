@@ -2,13 +2,13 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-13T02:05:41.296Z",
+  "date": "2018-03-14T02:04:47.227Z",
   "options": {
     "publishedVersion": true
   },
   "stats": {
     "crawled": 119,
-    "errors": 1
+    "errors": 2
   },
   "results": [
     {
@@ -4609,7 +4609,7 @@
       ],
       "title": "WebAssembly JavaScript Interface",
       "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-      "date": "6 March 2018",
+      "date": "13 March 2018",
       "links": [
         "https://www.w3.org/TR/wasm-core/",
         "https://www.w3.org/TR/wasm-js-api/",
@@ -7360,7 +7360,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Tue Mar 13 2018",
+      "date": "Wed Mar 14 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -8444,7 +8444,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Tue Mar 13 2018",
+      "date": "Wed Mar 14 2018",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -16673,7 +16673,7 @@
       "title": "CSS Font Loading Module Level 3",
       "latest": "http://www.w3.org/TR/css-font-loading-3/",
       "datedUrl": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/",
-      "datedStatus": "Last Call",
+      "datedStatus": "Working Draft",
       "edDraft": "https://drafts.csswg.org/css-font-loading/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "crawled": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/",
@@ -28966,417 +28966,18 @@
       "url": "https://www.w3.org/TR/DOM-Parsing/",
       "shortname": "DOM-Parsing",
       "versions": [
-        "https://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
-        "https://www.w3.org/TR/2014/CR-DOM-Parsing-20140617/",
-        "https://www.w3.org/TR/2014/WD-DOM-Parsing-20140501/",
-        "https://www.w3.org/TR/2013/WD-DOM-Parsing-20131210/",
-        "https://www.w3.org/TR/2012/WD-DOM-Parsing-20120920/",
-        "https://w3c.github.io/DOM-Parsing/",
-        "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/",
         "https://www.w3.org/TR/DOM-Parsing/",
-        "http://www.w3.org/TR/DOM-Parsing/"
+        "https://www.w3.org/TR/DOM-Parsing"
       ],
-      "title": "DOM Parsing and Serialization",
-      "latest": "http://www.w3.org/TR/DOM-Parsing/",
-      "datedUrl": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/DOM-Parsing/",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
+      "latest": "https://www.w3.org/TR/DOM-Parsing",
       "repository": "https://github.com/w3c/DOM-Parsing",
-      "crawled": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
-      "date": "and similar APIs",
-      "links": [
-        "https://www.w3.org/TR/",
-        "https://domparsing.spec.whatwg.org/",
-        "https://www.w3.org/WebPlatform/WG/",
-        "https://lists.w3.org/Archives/Public/www-dom/",
-        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
-        "https://www.w3.org/2004/01/pp-impl/83482/status",
-        "https://www.w3.org/2015/Process-20150901/",
-        "https://w3c-test.org/domparsing/",
-        "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/implementationReport.html",
-        "https://www.w3.org/TR/dom/",
-        "https://www.w3.org/TR/html5/",
-        "https://dvcs.w3.org/hg/innerhtml/summary/",
-        "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/LC2_comments.html",
-        "https://www.mozilla.org/",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://www.w3.org/TR/WebIDL-1/",
-        "https://www.w3.org/TR/xml/"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "HTML5",
-            "url": "http://www.w3.org/TR/html5/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "WEBIDL",
-            "url": "http://www.w3.org/TR/WebIDL-1/"
-          }
-        ],
-        "informative": [
-          {
-            "name": "DOM4",
-            "url": "http://www.w3.org/TR/dom/"
-          },
-          {
-            "name": "XML10",
-            "url": "http://www.w3.org/TR/xml"
-          }
-        ]
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {
-            "Window": [
-              "DOMParser",
-              "XMLSerializer"
-            ]
-          },
-          "functions": {},
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "DOMParser": [
-              "Document",
-              "SupportedType"
-            ],
-            "XMLSerializer": [
-              "Node"
-            ],
-            "Element": [],
-            "Range": [
-              "DocumentFragment"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "DOMParser": {
-            "type": "interface",
-            "name": "DOMParser",
-            "partial": false,
-            "members": [
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Document"
-                },
-                "name": "parseFromString",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    "name": "str"
-                  },
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "SupportedType"
-                    },
-                    "name": "type"
-                  }
-                ],
-                "extAttrs": [
-                  {
-                    "name": "NewObject",
-                    "arguments": null,
-                    "type": "extended-attribute",
-                    "rhs": null
-                  }
-                ]
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": [
-              {
-                "name": "Constructor",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": null
-              }
-            ]
-          },
-          "XMLSerializer": {
-            "type": "interface",
-            "name": "XMLSerializer",
-            "partial": false,
-            "members": [
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "name": "serializeToString",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "Node"
-                    },
-                    "name": "root"
-                  }
-                ],
-                "extAttrs": []
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": [
-              {
-                "name": "Constructor",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": null
-              }
-            ]
-          }
-        },
-        "idlExtendedNames": {
-          "Element": [
-            {
-              "type": "interface",
-              "name": "Element",
-              "partial": true,
-              "members": [
-                {
-                  "type": "attribute",
-                  "static": false,
-                  "stringifier": false,
-                  "inherit": false,
-                  "readonly": false,
-                  "idlType": {
-                    "type": "attribute-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "DOMString"
-                  },
-                  "name": "innerHTML",
-                  "extAttrs": [
-                    {
-                      "name": "CEReactions",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": null
-                    },
-                    {
-                      "name": "TreatNullAs",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": {
-                        "type": "identifier",
-                        "value": "EmptyString"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "attribute",
-                  "static": false,
-                  "stringifier": false,
-                  "inherit": false,
-                  "readonly": false,
-                  "idlType": {
-                    "type": "attribute-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "DOMString"
-                  },
-                  "name": "outerHTML",
-                  "extAttrs": [
-                    {
-                      "name": "CEReactions",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": null
-                    },
-                    {
-                      "name": "TreatNullAs",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": {
-                        "type": "identifier",
-                        "value": "EmptyString"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "operation",
-                  "getter": false,
-                  "setter": false,
-                  "deleter": false,
-                  "static": false,
-                  "stringifier": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "void"
-                  },
-                  "name": "insertAdjacentHTML",
-                  "arguments": [
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "DOMString"
-                      },
-                      "name": "position"
-                    },
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "DOMString"
-                      },
-                      "name": "text"
-                    }
-                  ],
-                  "extAttrs": [
-                    {
-                      "name": "CEReactions",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": null
-                    }
-                  ]
-                }
-              ],
-              "extAttrs": []
-            }
-          ],
-          "Range": [
-            {
-              "type": "interface",
-              "name": "Range",
-              "partial": true,
-              "members": [
-                {
-                  "type": "operation",
-                  "getter": false,
-                  "setter": false,
-                  "deleter": false,
-                  "static": false,
-                  "stringifier": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "DocumentFragment"
-                  },
-                  "name": "createContextualFragment",
-                  "arguments": [
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "DOMString"
-                      },
-                      "name": "fragment"
-                    }
-                  ],
-                  "extAttrs": [
-                    {
-                      "name": "CEReactions",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": null
-                    },
-                    {
-                      "name": "NewObject",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": null
-                    }
-                  ]
-                }
-              ],
-              "extAttrs": []
-            }
-          ]
-        },
-        "externalDependencies": [
-          "Document",
-          "SupportedType",
-          "Node",
-          "Element",
-          "Range",
-          "DocumentFragment"
-        ],
-        "hasObsoleteIdl": false
-      }
+      "title": "DOM-Parsing",
+      "crawled": "https://www.w3.org/TR/DOM-Parsing",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/dom41/",
@@ -51477,18 +51078,259 @@
       "url": "https://www.w3.org/TR/input-events-2/",
       "shortname": "input-events-2",
       "versions": [
+        "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
+        "https://www.w3.org/TR/2017/WD-input-events-1-20170714/",
+        "https://www.w3.org/TR/2017/WD-input-events-1-20170627/",
+        "https://www.w3.org/TR/2017/WD-input-events-1-20170321/",
+        "https://www.w3.org/TR/2017/WD-input-events-20170320/",
+        "https://www.w3.org/TR/2017/WD-input-events-20170319/",
+        "https://www.w3.org/TR/2016/WD-input-events-20161216/",
+        "https://www.w3.org/TR/2016/WD-input-events-20161205/",
+        "https://www.w3.org/TR/2016/WD-input-events-20161018/",
+        "https://www.w3.org/TR/2016/WD-input-events-20161011/",
+        "https://www.w3.org/TR/2016/WD-input-events-20160928/",
+        "https://www.w3.org/TR/2016/WD-input-events-20160922/",
+        "https://www.w3.org/TR/2016/WD-input-events-20160830/",
+        "https://rawgit.com/w3c/input-events/v1/",
+        "https://w3c.github.io/input-events/",
         "https://www.w3.org/TR/input-events-2/",
-        "https://www.w3.org/TR/input-events-2",
+        "https://www.w3.org/TR/input-events-1/",
+        "https://rawgit.com/w3c/input-events/v1/index.html"
+      ],
+      "title": "Input Events Level 1",
+      "latest": "https://www.w3.org/TR/input-events-1/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://rawgit.com/w3c/input-events/v1/index.html",
+      "repository": "https://github.com/w3c/input-events",
+      "crawled": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
+      "date": "05 September 2017",
+      "links": [
+        "https://www.w3.org/TR/",
+        "https://github.com/w3c/web-platform-tests/tree/master/input-events",
+        "https://w3c.github.io/test-results/input-events/",
+        "https://www.w3.org/WebPlatform/WG/",
+        "https://lists.w3.org/Archives/Public/public-editing-tf/",
+        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
+        "https://www.w3.org/2004/01/pp-impl/83482/status",
+        "https://www.w3.org/2017/Process-20170301/",
+        "https://w3c.github.io/uievents/",
+        "https://html.spec.whatwg.org/",
+        "https://extensiblewebmanifesto.org/",
+        "https://www.w3.org/TR/uievents/",
+        "https://heycam.github.io/webidl/",
+        "https://www.w3.org/TR/css-color-4/",
+        "https://www.w3.org/TR/fingerprinting-guidance/",
+        "https://w3c.github.io/staticrange/",
         "https://www.w3.org/TR/input-events-1/"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-      "latest": "https://www.w3.org/TR/input-events-2",
-      "title": "input-events-2",
-      "crawled": "https://www.w3.org/TR/input-events-2",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "refs": {
+        "normative": [
+          {
+            "name": "CSS-COLOR-4",
+            "url": "https://www.w3.org/TR/css-color-4/"
+          },
+          {
+            "name": "DATA-TRANSFER",
+            "url": "https://html.spec.whatwg.org/#the-datatransfer-interface"
+          },
+          {
+            "name": "HTML",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          },
+          {
+            "name": "STATIC-RANGE",
+            "url": "https://w3c.github.io/staticrange/index.html"
+          },
+          {
+            "name": "UI-EVENTS",
+            "url": "https://www.w3.org/TR/uievents/"
+          }
+        ],
+        "informative": [
+          {
+            "name": "INPUT-EVENTS",
+            "url": "https://www.w3.org/TR/input-events-1/"
+          },
+          {
+            "name": "WEBIDL",
+            "url": "https://heycam.github.io/webidl/"
+          },
+          {
+            "name": "fingerprinting-guidance",
+            "url": "https://www.w3.org/TR/fingerprinting-guidance/"
+          }
+        ]
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {
+            "InputEvent": [
+              "DataTransfer",
+              "StaticRange"
+            ],
+            "InputEventInit": [
+              "DataTransfer",
+              "StaticRange"
+            ]
+          },
+          "_reallyDependsOnWindow": false
+        },
+        "idlExtendedNames": {
+          "InputEvent": [
+            {
+              "type": "interface",
+              "name": "InputEvent",
+              "partial": true,
+              "members": [
+                {
+                  "type": "attribute",
+                  "static": false,
+                  "stringifier": false,
+                  "inherit": false,
+                  "readonly": true,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "name": "inputType",
+                  "extAttrs": []
+                },
+                {
+                  "type": "attribute",
+                  "static": false,
+                  "stringifier": false,
+                  "inherit": false,
+                  "readonly": true,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": true,
+                    "union": false,
+                    "idlType": "DataTransfer"
+                  },
+                  "name": "dataTransfer",
+                  "extAttrs": []
+                },
+                {
+                  "type": "operation",
+                  "getter": false,
+                  "setter": false,
+                  "deleter": false,
+                  "static": false,
+                  "stringifier": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": true,
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": {
+                      "type": "return-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "StaticRange"
+                    }
+                  },
+                  "name": "getTargetRanges",
+                  "arguments": [],
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            }
+          ],
+          "InputEventInit": [
+            {
+              "type": "dictionary",
+              "name": "InputEventInit",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "inputType",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "extAttrs": [],
+                  "default": {
+                    "type": "string",
+                    "value": ""
+                  }
+                },
+                {
+                  "type": "field",
+                  "name": "dataTransfer",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": true,
+                    "union": false,
+                    "idlType": "DataTransfer"
+                  },
+                  "extAttrs": [],
+                  "default": {
+                    "type": "null"
+                  }
+                },
+                {
+                  "type": "field",
+                  "name": "targetRanges",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": true,
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": {
+                      "type": "dictionary-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "StaticRange"
+                    }
+                  },
+                  "extAttrs": [],
+                  "default": {
+                    "type": "sequence",
+                    "value": []
+                  }
+                }
+              ],
+              "extAttrs": []
+            }
+          ]
+        },
+        "externalDependencies": [
+          "InputEvent",
+          "DataTransfer",
+          "StaticRange",
+          "InputEventInit"
+        ],
+        "hasObsoleteIdl": false
+      }
     },
     {
       "url": "https://www.w3.org/TR/intersection-observer/",
@@ -51605,190 +51447,18 @@
       "url": "https://www.w3.org/TR/longtasks-1/",
       "shortname": "longtasks-1",
       "versions": [
-        "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/",
-        "https://w3c.github.io/longtasks/",
-        "https://www.w3.org/TR/longtasks-1/"
+        "https://www.w3.org/TR/longtasks-1/",
+        "https://www.w3.org/TR/longtasks-1"
       ],
-      "title": "Long Tasks API 1",
-      "latest": "https://www.w3.org/TR/longtasks-1/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/longtasks/",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
+      "latest": "https://www.w3.org/TR/longtasks-1",
       "repository": "https://github.com/w3c/longtasks",
-      "crawled": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/",
-      "date": "7 September 2017",
-      "links": [
-        "https://www.w3.org/TR/",
-        "https://www.w3.org/webperf/",
-        "https://lists.w3.org/Archives/Public/public-web-perf/",
-        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
-        "https://www.w3.org/2004/01/pp-impl/45211/status",
-        "https://www.w3.org/2017/Process-20170301/",
-        "https://w3c.github.io/performance-timeline/",
-        "https://heycam.github.io/webidl/",
-        "https://w3c.github.io/hr-time/",
-        "https://html.spec.whatwg.org/",
-        "https://docs.google.com/document/d/1tIMI1gau_q6X5EBnjDNiFS5NWV9cpYJ5KKA7xPd3VB8/edit",
-        "https://github.com/w3c/longtasks/graphs/contributors",
-        "https://www.w3.org/TR/hr-time-2/",
-        "https://www.w3.org/TR/performance-timeline-2/"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "HR-TIME-2",
-            "url": "https://www.w3.org/TR/hr-time-2/"
-          },
-          {
-            "name": "PERFORMANCE-TIMELINE-2",
-            "url": "https://www.w3.org/TR/performance-timeline-2/"
-          },
-          {
-            "name": "WebIDL",
-            "url": "https://heycam.github.io/webidl/"
-          }
-        ],
-        "informative": []
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {},
-          "functions": {
-            "Window": [
-              "PerformanceLongTaskTiming",
-              "TaskAttributionTiming"
-            ]
-          },
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "PerformanceLongTaskTiming": [
-              "PerformanceEntry",
-              "TaskAttributionTiming"
-            ],
-            "TaskAttributionTiming": [
-              "PerformanceEntry"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "PerformanceLongTaskTiming": {
-            "type": "interface",
-            "name": "PerformanceLongTaskTiming",
-            "partial": false,
-            "members": [
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": "FrozenArray",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": {
-                    "type": "attribute-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "TaskAttributionTiming"
-                  }
-                },
-                "name": "attribution",
-                "extAttrs": []
-              }
-            ],
-            "inheritance": "PerformanceEntry",
-            "extAttrs": []
-          },
-          "TaskAttributionTiming": {
-            "type": "interface",
-            "name": "TaskAttributionTiming",
-            "partial": false,
-            "members": [
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "name": "containerType",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "name": "containerSrc",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "name": "containerId",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "name": "containerName",
-                "extAttrs": []
-              }
-            ],
-            "inheritance": "PerformanceEntry",
-            "extAttrs": []
-          }
-        },
-        "idlExtendedNames": {},
-        "externalDependencies": [
-          "PerformanceEntry"
-        ],
-        "hasObsoleteIdl": false
-      }
+      "title": "longtasks-1",
+      "crawled": "https://www.w3.org/TR/longtasks-1",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/magnetometer/",

@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">March 13, 2018</h2>
+            <h2 class="date">March 14, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -516,7 +516,7 @@
   <li>Crawled version: <a href="http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/">Latest published version</a> (22 May 2014)</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-font-loading/" class="uri">https://drafts.csswg.org/css-font-loading/</a></li>
   <li>Latest published version: <a href="http://www.w3.org/TR/css-font-loading-3/" class="uri">http://www.w3.org/TR/css-font-loading-3/</a></li>
-  <li>Latest published status: <a href="http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/">Last Call</a></li>
+  <li>Latest published status: <a href="http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/">Working Draft</a></li>
   <li>Repository: <a href="https://github.com/w3c/csswg-drafts">GitHub w3c/csswg-drafts</a></li>
   <li>Shortname: css-font-loading-3</li>
   </ul>
@@ -1108,36 +1108,21 @@
   </ul>
   </section>
   </section>
-  <section id="dom-parsing-and-serialization" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
-  <h2>DOM Parsing and Serialization</h2>
+  <section id="dom-parsing" class="level2" data-spec="true" data-error="true">
+  <h2>DOM-Parsing</h2>
   <section id="spec-info-28" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/">Latest published version</a> (and similar APIs)</li>
-  <li>Editor's Draft: <a href="https://w3c.github.io/DOM-Parsing/" class="uri">https://w3c.github.io/DOM-Parsing/</a></li>
-  <li>Latest published version: <a href="http://www.w3.org/TR/DOM-Parsing/" class="uri">http://www.w3.org/TR/DOM-Parsing/</a></li>
-  <li>Latest published status: <a href="http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/">Working Draft</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/DOM-Parsing">Latest published version</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/DOM-Parsing" class="uri">https://www.w3.org/TR/DOM-Parsing</a></li>
   <li>Repository: <a href="https://github.com/w3c/DOM-Parsing">GitHub w3c/DOM-Parsing</a></li>
   <li>Shortname: DOM-Parsing</li>
   </ul>
   </section>
   <section id="potential-issues-28" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>SupportedType</code></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Document</code> defined in <a href="https://www.w3.org/TR/2018/WD-dom41-20180201/">W3C DOM 4.1</a></li>
-  <li><code>Node</code> defined in <a href="https://www.w3.org/TR/2018/WD-dom41-20180201/">W3C DOM 4.1</a></li>
-  <li><code>Element</code> defined in <a href="https://www.w3.org/TR/2018/WD-dom41-20180201/">W3C DOM 4.1</a></li>
-  <li><code>Range</code> defined in <a href="https://www.w3.org/TR/2018/WD-dom41-20180201/">W3C DOM 4.1</a></li>
-  <li><code>DocumentFragment</code> defined in <a href="https://www.w3.org/TR/2018/WD-dom41-20180201/">W3C DOM 4.1</a></li>
-  </ul></li>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://domparsing.spec.whatwg.org/"><code>https://domparsing.spec.whatwg.org/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)     at &lt;anonymous&gt;</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-28" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1145,7 +1130,6 @@
   <ul>
   <li><a href="https://www.w3.org/TR/2017/REC-html52-20171214/">HTML 5.2</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-webdriver-20170330/">WebDriver</a></li>
-  <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -1609,7 +1593,6 @@
   <li><a href="https://www.w3.org/TR/2017/WD-generic-sensor-20171018/">Generic Sensor API</a></li>
   <li><a href="https://www.w3.org/TR/2017/REC-html52-20171214/">HTML 5.2</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/">Identifiers for WebRTC's Statistics API</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-longtasks-1-20170907/">Long Tasks API 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/">Navigation Timing Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-paint-timing-20170907/">Paint Timing 1</a></li>
   <li><a href="https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/">Performance Timeline Level 2</a></li>
@@ -1698,7 +1681,6 @@
   <li><a href="https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/">CSS Writing Modes Level 3</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">CSSOM View Module</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-custom-elements-20180216/">Custom Elements</a></li>
-  <li><a href="http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/">DOM Parsing and Serialization</a></li>
   <li><a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
@@ -1713,6 +1695,7 @@
   <li><a href="http://www.w3.org/TR/2015/REC-webmessaging-20150519/">HTML5 Web Messaging</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/">Indexed Database API 2.0</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Input Events Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Media Capture and Streams</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/">Media Capture from DOM Elements</a></li>
@@ -1837,6 +1820,7 @@
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-generic-sensor-20171018/">Generic Sensor API</a></li>
   <li><a href="https://www.w3.org/TR/2017/REC-html52-20171214/">HTML 5.2</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Input Events Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/">MediaStream Recording</a></li>
@@ -1947,6 +1931,7 @@
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-generic-sensor-20171018/">Generic Sensor API</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Input Events Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/">MediaStream Recording</a></li>
@@ -2076,25 +2061,37 @@
   </ul>
   </section>
   </section>
-  <section id="input-events-2" class="level2" data-spec="true" data-error="true">
-  <h2>input-events-2</h2>
+  <section id="input-events-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <h2>Input Events Level 1</h2>
   <section id="spec-info-47" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/input-events-2">Latest published version</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/input-events-2" class="uri">https://www.w3.org/TR/input-events-2</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Latest published version</a> (05 September 2017)</li>
+  <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
+  <li>Repository: <a href="https://github.com/w3c/input-events">GitHub w3c/input-events</a></li>
   <li>Shortname: input-events-2</li>
   </ul>
   </section>
   <section id="potential-issues-47" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>DataTransfer</code></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a>, related reference &quot;UI-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-47" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Input Events Level 1</a></li>
+  </ul>
   </section>
   </section>
   <section id="intersection-observer" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
@@ -2134,32 +2131,21 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="long-tasks-api-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
-  <h2>Long Tasks API 1</h2>
+  <section id="longtasks-1" class="level2" data-spec="true" data-error="true">
+  <h2>longtasks-1</h2>
   <section id="spec-info-49" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/2017/WD-longtasks-1-20170907/">Latest published version</a> (7 September 2017)</li>
-  <li>Editor's Draft: <a href="https://w3c.github.io/longtasks/" class="uri">https://w3c.github.io/longtasks/</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/longtasks-1/" class="uri">https://www.w3.org/TR/longtasks-1/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-longtasks-1-20170907/">Working Draft</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/longtasks-1">Latest published version</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/longtasks-1" class="uri">https://www.w3.org/TR/longtasks-1</a></li>
   <li>Repository: <a href="https://github.com/w3c/longtasks">GitHub w3c/longtasks</a></li>
   <li>Shortname: longtasks-1</li>
   </ul>
   </section>
   <section id="potential-issues-49" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a></li>
-  </ul></li>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/performance-timeline/"><code>https://w3c.github.io/performance-timeline/</code></a>, related reference &quot;PERFORMANCE-TIMELINE-2&quot; uses URL <a href="https://www.w3.org/TR/performance-timeline-2/"><code>https://www.w3.org/TR/performance-timeline-2/</code></a></li>
-  <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a>, related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-49" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -2763,7 +2749,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://www.w3.org/TR/2017/WD-longtasks-1-20170907/">Long Tasks API 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/">Navigation Timing Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-paint-timing-20170907/">Paint Timing 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/">Resource Timing Level 2</a></li>
@@ -3633,7 +3618,10 @@
   </section>
   <section id="known-dependencies-on-this-specification-87" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
-  <p>No normative reference to this spec from other specs.</p>
+  <p>Normative references to this spec from:</p>
+  <ul>
+  <li><a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Input Events Level 1</a></li>
+  </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
@@ -3816,6 +3804,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://www.w3.org/TR/2017/REC-html52-20171214/">HTML 5.2</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Input Events Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-permissions-20170925/">Permissions</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-pointerevents2-20180206/">Pointer Events</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/">Pointer Lock 2.0</a></li>
@@ -4145,7 +4134,6 @@
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="http://www.w3.org/TR/2016/CR-battery-status-20160707/">Battery Status API</a></li>
-  <li><a href="http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/">DOM Parsing and Serialization</a></li>
   <li><a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">High Resolution Time Level 3</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Media Capture and Streams</a></li>
@@ -4155,7 +4143,6 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
-  <li><a href="http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/">DOM Parsing and Serialization</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-selectors-3-20180130/">Selectors Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a></li>
   </ul>
@@ -4499,6 +4486,7 @@
   <li><a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">High Resolution Time Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2017/REC-html52-20171214/">HTML 5.2</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-webmessaging-20150519/">HTML5 Web Messaging</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Input Events Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/">MediaStream Recording</a></li>
@@ -4561,7 +4549,7 @@
   <section id="spec-info-110" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://webassembly.github.io/spec/js-api/index.html">Initial URL</a> (6 March 2018)</li>
+  <li>Crawled version: <a href="https://webassembly.github.io/spec/js-api/index.html">Initial URL</a> (13 March 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -4606,12 +4594,12 @@
   <li>Unknown WebIDL names used: <code>Navigator</code></li>
   <li>Missing references for links:
   <ul>
+  <li><a href="https://w3c.github.io/DOM-Parsing/"><code>https://w3c.github.io/DOM-Parsing/</code></a></li>
   <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a>, related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
-  <li><a href="https://w3c.github.io/DOM-Parsing/"><code>https://w3c.github.io/DOM-Parsing/</code></a>, related reference &quot;DOM-PARSING&quot; uses URL <a href="https://www.w3.org/TR/DOM-Parsing/"><code>https://www.w3.org/TR/DOM-Parsing/</code></a></li>
   <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a>, related reference &quot;UI-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a>, related reference &quot;CSS3-VALUES&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a>, related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
@@ -4629,7 +4617,7 @@
   <section id="spec-info-112" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Tue Mar 13 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Wed Mar 14 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4652,7 +4640,7 @@
   <section id="spec-info-113" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Tue Mar 13 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Wed Mar 14 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4727,7 +4715,6 @@
   <li><a href="https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/">CSS Typed OM Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">CSSOM View Module</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-custom-elements-20180216/">Custom Elements</a></li>
-  <li><a href="http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/">DOM Parsing and Serialization</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-encoding-20170413/">Encoding</a></li>
   <li><a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
@@ -4743,7 +4730,6 @@
   <li><a href="https://www.w3.org/TR/2018/REC-html-media-capture-20180201/">HTML Media Capture</a></li>
   <li><a href="https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/">Indexed Database API 2.0</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-intersection-observer-20170914/">Intersection Observer</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-longtasks-1-20170907/">Long Tasks API 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-magnetometer-20171018/">Magnetometer</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Media Capture and Streams</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/">Media Capture Depth Stream Extensions</a></li>
@@ -4801,6 +4787,7 @@
   <li><a href="https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://www.w3.org/TR/2018/REC-html-media-capture-20180201/">HTML Media Capture</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/">Identifiers for WebRTC's Statistics API</a></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Input Events Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/">Page Visibility Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-pointerevents2-20180206/">Pointer Events</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/">Resource Timing Level 2</a></li>
