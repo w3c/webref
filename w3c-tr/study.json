@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-14T02:04:47.227Z",
+  "date": "2018-03-15T02:05:37.127Z",
   "stats": {
     "crawled": 119,
     "errors": 2,
@@ -1645,6 +1645,57 @@
       }
     },
     {
+      "title": "css3-selectors",
+      "shortname": "css3-selectors",
+      "date": "",
+      "url": "https://www.w3.org/TR/css3-selectors/",
+      "latest": "https://www.w3.org/TR/css3-selectors",
+      "crawled": "https://www.w3.org/TR/css3-selectors",
+      "report": {
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/selectors-api/",
+              "title": "Selectors API Level 1",
+              "crawled": "http://www.w3.org/TR/2013/REC-selectors-api-20130221/",
+              "date": "21 February 2013"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
+              "date": "13 September 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://www.w3.org/TR/2017/WD-webvtt1-20170808/",
+              "date": "08 August 2017"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2016/CR-SVG2-20160915/",
+              "date": "15 September 2016"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "CSSOM View Module",
       "shortname": "cssom-view-1",
       "date": "17 March 2016",
@@ -1891,23 +1942,86 @@
       }
     },
     {
-      "title": "DOM-Parsing",
+      "title": "DOM Parsing and Serialization",
       "shortname": "DOM-Parsing",
-      "date": "",
+      "date": "and similar APIs",
       "url": "https://www.w3.org/TR/DOM-Parsing/",
-      "latest": "https://www.w3.org/TR/DOM-Parsing",
-      "crawled": "https://www.w3.org/TR/DOM-Parsing",
+      "latest": "http://www.w3.org/TR/DOM-Parsing/",
+      "datedUrl": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/DOM-Parsing/",
+      "crawled": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
       "repository": "https://github.com/w3c/DOM-Parsing",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
-        "unknownIdlNames": [],
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "SupportedType"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Document",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Node",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Element",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Range",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "DocumentFragment",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [
+          "https://domparsing.spec.whatwg.org/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -1922,6 +2036,12 @@
               "title": "WebDriver",
               "crawled": "https://www.w3.org/TR/2017/CR-webdriver-20170330/",
               "date": "30 March 2017"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/",
+              "date": "2 March 2018"
             }
           ],
           "informative": [
@@ -2043,7 +2163,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "13 March 2018"
+              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -2280,7 +2400,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "9 March 2018"
+              "date": "13 March 2018"
             }
           ]
         },
@@ -2640,16 +2760,10 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/page-visibility/",
-            "ref": {
-              "name": "PAGE-VISIBILITY",
-              "url": "https://www.w3.org/TR/page-visibility/"
-            }
-          }
+        "missingLinkRef": [
+          "https://w3c.github.io/page-visibility/"
         ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -2947,8 +3061,14 @@
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
-              "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
-              "date": "07 March 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180314/",
+              "date": "14 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/longtasks-1/",
+              "title": "Long Tasks API 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/",
+              "date": "7 September 2017"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -3225,6 +3345,12 @@
               "date": "16 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/DOM-Parsing/",
+              "title": "DOM Parsing and Serialization",
+              "crawled": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
+              "date": "and similar APIs"
+            },
+            {
               "url": "https://www.w3.org/TR/encrypted-media/",
               "title": "Encrypted Media Extensions",
               "crawled": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/",
@@ -3299,8 +3425,8 @@
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
-              "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
-              "date": "07 March 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180314/",
+              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -3361,12 +3487,6 @@
               "title": "Navigation Timing Level 2",
               "crawled": "https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/",
               "date": "05 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/page-visibility-2/",
-              "title": "Page Visibility Level 2",
-              "crawled": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/",
-              "date": "17 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -3474,7 +3594,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "9 March 2018"
+              "date": "13 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -3576,7 +3696,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "13 March 2018"
+              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -3588,13 +3708,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Mar 14 2018"
+              "date": "Thu Mar 15 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Mar 14 2018"
+              "date": "Thu Mar 15 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3699,12 +3819,6 @@
               "title": "Selection API",
               "crawled": "https://www.w3.org/TR/2017/WD-selection-api-20170628/",
               "date": "28 June 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css3-selectors/",
-              "title": "Selectors Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-selectors-3-20180130/",
-              "date": "30 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/wake-lock/",
@@ -3994,7 +4108,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "9 March 2018"
+              "date": "13 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -4048,7 +4162,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "13 March 2018"
+              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -4060,7 +4174,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Mar 14 2018"
+              "date": "Thu Mar 15 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -4414,7 +4528,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "9 March 2018"
+              "date": "13 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -4474,7 +4588,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "13 March 2018"
+              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -4576,13 +4690,13 @@
     {
       "title": "Identifiers for WebRTC's Statistics API",
       "shortname": "webrtc-stats",
-      "date": "07 March 2018",
+      "date": "14 March 2018",
       "url": "https://www.w3.org/TR/webrtc-stats/",
       "latest": "https://www.w3.org/TR/webrtc-stats/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180314/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/webrtc-stats/",
-      "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
+      "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180314/",
       "repository": "https://github.com/w3c/webrtc-stats",
       "report": {
         "noNormativeRefs": false,
@@ -4845,24 +4959,44 @@
       }
     },
     {
-      "title": "longtasks-1",
+      "title": "Long Tasks API 1",
       "shortname": "longtasks-1",
-      "date": "",
+      "date": "7 September 2017",
       "url": "https://www.w3.org/TR/longtasks-1/",
-      "latest": "https://www.w3.org/TR/longtasks-1",
-      "crawled": "https://www.w3.org/TR/longtasks-1",
+      "latest": "https://www.w3.org/TR/longtasks-1/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/longtasks/",
+      "crawled": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/",
       "repository": "https://github.com/w3c/longtasks",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://html.spec.whatwg.org/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/performance-timeline/",
+            "ref": {
+              "name": "PERFORMANCE-TIMELINE-2",
+              "url": "https://www.w3.org/TR/performance-timeline-2/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/hr-time/",
+            "ref": {
+              "name": "HR-TIME-2",
+              "url": "https://www.w3.org/TR/hr-time-2/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -5013,8 +5147,8 @@
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
-              "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
-              "date": "07 March 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180314/",
+              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -5662,46 +5796,24 @@
       }
     },
     {
-      "title": "Page Visibility Level 2",
+      "title": "page-visibility-2",
       "shortname": "page-visibility-2",
-      "date": "17 October 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/page-visibility-2/",
-      "latest": "https://www.w3.org/TR/page-visibility-2/",
-      "datedUrl": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/",
-      "datedStatus": "Proposed Recommendation",
-      "edDraft": "https://w3c.github.io/page-visibility/",
-      "crawled": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/",
+      "latest": "https://www.w3.org/TR/page-visibility-2",
+      "crawled": "https://www.w3.org/TR/page-visibility-2",
       "repository": "https://github.com/w3c/page-visibility",
       "report": {
-        "noNormativeRefs": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "EventHandler"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/html/full"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/html/",
-            "ref": {
-              "name": "HTML51",
-              "url": "https://www.w3.org/TR/html51/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/dom/",
-            "ref": {
-              "name": "DOM4",
-              "url": "https://www.w3.org/TR/2015/REC-dom-20151119/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -5765,14 +5877,7 @@
               "date": "30 March 2017"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/page-visibility-2/",
-              "title": "Page Visibility Level 2",
-              "crawled": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/",
-              "date": "17 October 2017"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -5955,6 +6060,12 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/longtasks-1/",
+              "title": "Long Tasks API 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/",
+              "date": "7 September 2017"
+            },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
@@ -7073,12 +7184,6 @@
               "title": "Resource Timing Level 2",
               "crawled": "https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/",
               "date": "29 March 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css3-selectors/",
-              "title": "Selectors Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-selectors-3-20180130/",
-              "date": "30 January 2018"
             }
           ]
         },
@@ -7321,62 +7426,6 @@
       }
     },
     {
-      "title": "Selectors Level 3",
-      "shortname": "css3-selectors",
-      "date": "30 January 2018",
-      "url": "https://www.w3.org/TR/css3-selectors/",
-      "latest": "https://www.w3.org/TR/selectors-3/",
-      "datedUrl": "https://www.w3.org/TR/2018/CR-selectors-3-20180130/",
-      "datedStatus": "Candidate Recommendation",
-      "crawled": "https://www.w3.org/TR/2018/CR-selectors-3-20180130/",
-      "repository": "https://github.com/w3c/csswg-drafts",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-namespace/"
-        ],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/selectors-api/",
-              "title": "Selectors API Level 1",
-              "crawled": "http://www.w3.org/TR/2013/REC-selectors-api-20130221/",
-              "date": "21 February 2013"
-            },
-            {
-              "url": "https://www.w3.org/TR/web-animations-1/",
-              "title": "Web Animations",
-              "crawled": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
-              "date": "13 September 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/webvtt1/",
-              "title": "WebVTT: The Web Video Text Tracks Format",
-              "crawled": "https://www.w3.org/TR/2017/WD-webvtt1-20170808/",
-              "date": "08 August 2017"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/SVG2/",
-              "title": "Scalable Vector Graphics (SVG) 2",
-              "crawled": "https://www.w3.org/TR/2016/CR-SVG2-20160915/",
-              "date": "15 September 2016"
-            }
-          ]
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "Server Timing",
       "shortname": "server-timing",
       "date": "29 December 2017",
@@ -7500,6 +7549,7 @@
         "unknownIdlNames": [
           "EventHandler",
           "Navigator",
+          "VisibilityState",
           "Window",
           "WindowOrWorkerGlobalScope",
           "WorkerType"
@@ -7617,7 +7667,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "9 March 2018"
+              "date": "13 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -7738,7 +7788,7 @@
     },
     {
       "title": "Streams Standard",
-      "date": "9 March 2018",
+      "date": "13 March 2018",
       "url": "https://streams.spec.whatwg.org/",
       "crawled": "https://streams.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/streams",
@@ -8260,7 +8310,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "13 March 2018"
+              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -8406,16 +8456,10 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/page-visibility/",
-            "ref": {
-              "name": "PAGE-VISIBILITY-2",
-              "url": "https://www.w3.org/TR/page-visibility-2/"
-            }
-          }
+        "missingLinkRef": [
+          "https://w3c.github.io/page-visibility/"
         ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -8634,12 +8678,6 @@
               "date": "21 June 2017"
             },
             {
-              "url": "https://www.w3.org/TR/page-visibility-2/",
-              "title": "Page Visibility Level 2",
-              "crawled": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/",
-              "date": "17 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://www.w3.org/TR/2018/WD-payment-handler-20180108/",
@@ -8847,7 +8885,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Mar 14 2018"
+              "date": "Thu Mar 15 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -8864,10 +8902,10 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/css3-selectors/",
-              "title": "Selectors Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-selectors-3-20180130/",
-              "date": "30 January 2018"
+              "url": "https://www.w3.org/TR/DOM-Parsing/",
+              "title": "DOM Parsing and Serialization",
+              "crawled": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
+              "date": "and similar APIs"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -9633,7 +9671,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "9 March 2018"
+              "date": "13 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -9693,7 +9731,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "13 March 2018"
+              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -9800,7 +9838,7 @@
     },
     {
       "title": "WebAssembly JavaScript Interface",
-      "date": "13 March 2018",
+      "date": "14 March 2018",
       "url": "https://webassembly.github.io/spec/js-api/index.html",
       "crawled": "https://webassembly.github.io/spec/js-api/index.html",
       "report": {
@@ -9868,7 +9906,6 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/DOM-Parsing/",
           "https://w3c.github.io/editing/contentEditable.html"
         ],
         "inconsistentRef": [
@@ -9877,6 +9914,13 @@
             "ref": {
               "name": "CSP3",
               "url": "https://www.w3.org/TR/CSP3/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/DOM-Parsing/",
+            "ref": {
+              "name": "DOM-PARSING",
+              "url": "https://www.w3.org/TR/DOM-Parsing/"
             }
           },
           {
@@ -9910,7 +9954,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Wed Mar 14 2018",
+      "date": "Thu Mar 15 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -9941,7 +9985,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Wed Mar 14 2018",
+      "date": "Thu Mar 15 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -9981,7 +10025,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Mar 14 2018"
+              "date": "Thu Mar 15 2018"
             }
           ],
           "informative": [
@@ -10156,6 +10200,12 @@
               "date": "16 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/DOM-Parsing/",
+              "title": "DOM Parsing and Serialization",
+              "crawled": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
+              "date": "and similar APIs"
+            },
+            {
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding",
               "crawled": "https://www.w3.org/TR/2017/CR-encoding-20170413/",
@@ -10244,6 +10294,12 @@
               "title": "Intersection Observer",
               "crawled": "https://www.w3.org/TR/2017/WD-intersection-observer-20170914/",
               "date": "14 September 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/longtasks-1/",
+              "title": "Long Tasks API 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/",
+              "date": "7 September 2017"
             },
             {
               "url": "https://www.w3.org/TR/magnetometer/",
@@ -10495,7 +10551,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "13 March 2018"
+              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -10507,13 +10563,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Mar 14 2018"
+              "date": "Thu Mar 15 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Mar 14 2018"
+              "date": "Thu Mar 15 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -10568,20 +10624,14 @@
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
-              "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
-              "date": "07 March 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180314/",
+              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
               "date": "05 September 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/page-visibility-2/",
-              "title": "Page Visibility Level 2",
-              "crawled": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/",
-              "date": "17 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -10653,8 +10703,8 @@
               {
                 "url": "https://www.w3.org/TR/webrtc-stats/",
                 "title": "Identifiers for WebRTC's Statistics API",
-                "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
-                "date": "07 March 2018"
+                "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180314/",
+                "date": "14 March 2018"
               }
             ]
           }
@@ -10709,8 +10759,8 @@
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
-              "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180307/",
-              "date": "07 March 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180314/",
+              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
