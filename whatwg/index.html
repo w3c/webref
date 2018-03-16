@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">March 15, 2018</h2>
+            <h2 class="date">March 16, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -39,7 +39,7 @@
     <input class="submit" id="submit" type="submit" value="Apply" />
   </p>
   <p id="stats"></p>
-  <section id="accelerometer" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
+  <section id="accelerometer" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Accelerometer</h2>
   <section id="spec-info" class="level3 info">
   <h3>Spec info</h3>
@@ -59,6 +59,10 @@
   <ul>
   <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
   <li><a href="https://w3c.github.io/sensors/usecases.html"><code>https://w3c.github.io/sensors/usecases.html</code></a></li>
+  </ul></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/screen-orientation/"><code>https://www.w3.org/TR/screen-orientation/</code></a>, related reference &quot;SCREEN-ORIENTATION&quot; uses URL <a href="https://w3c.github.io/screen-orientation/"><code>https://w3c.github.io/screen-orientation/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -81,7 +85,7 @@
   <section id="spec-info-1" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/ambient-light/">Editor's Draft</a> (1 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/ambient-light/">Editor's Draft</a> (15 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/ambient-light/" class="uri">https://w3c.github.io/ambient-light/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/ambient-light/" class="uri">https://www.w3.org/TR/ambient-light/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-ambient-light-20171018/">Working Draft</a></li>
@@ -128,35 +132,26 @@
   </ul>
   </section>
   </section>
-  <section id="battery-status-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
-  <h2>Battery Status API</h2>
+  <section id="battery-status" class="level2" data-spec="true" data-error="true">
+  <h2>battery-status</h2>
   <section id="spec-info-3" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/battery/">Editor's Draft</a> (23 October 2017)</li>
-  <li>Editor's Draft: <a href="https://w3c.github.io/battery/" class="uri">https://w3c.github.io/battery/</a></li>
-  <li>Latest published version: <a href="http://www.w3.org/TR/battery-status/" class="uri">http://www.w3.org/TR/battery-status/</a></li>
-  <li>Latest published status: <a href="http://www.w3.org/TR/2016/CR-battery-status-20160707/">Candidate Recommendation</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/battery-status/">Initial URL</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/battery-status" class="uri">https://www.w3.org/TR/battery-status</a></li>
   <li>Repository: <a href="https://github.com/w3c/battery">GitHub w3c/battery</a></li>
   <li>Shortname: battery-status</li>
   </ul>
   </section>
   <section id="potential-issues-3" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-3" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
-  <p>Informative references to this spec from:</p>
-  <ul>
-  <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
-  </ul>
+  <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
   <section id="beacon" class="level2" data-spec="true" data-ok="true">
@@ -457,7 +452,7 @@
   <section id="spec-info-13" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.csswg.org/css-fonts-4/">Editor's Draft</a> (13 March 2018)</li>
+  <li>Crawled version: <a href="https://drafts.csswg.org/css-fonts-4/">Editor's Draft</a> (14 March 2018)</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-fonts-4/" class="uri">https://drafts.csswg.org/css-fonts-4/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-fonts-4/" class="uri">https://www.w3.org/TR/css-fonts-4/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/">Working Draft</a></li>
@@ -847,7 +842,7 @@
   <section id="spec-info-23" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.csswg.org/cssom-view/">Editor's Draft</a> (11 October 2017)</li>
+  <li>Crawled version: <a href="https://drafts.csswg.org/cssom-view/">Editor's Draft</a> (20 December 2017)</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/cssom-view/" class="uri">https://drafts.csswg.org/cssom-view/</a></li>
   <li>Latest published version: <a href="http://www.w3.org/TR/cssom-view-1/" class="uri">http://www.w3.org/TR/cssom-view-1/</a></li>
   <li>Latest published status: <a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">Working Draft</a></li>
@@ -964,7 +959,7 @@
   <section id="spec-info-26" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://dom.spec.whatwg.org/">Living Standard</a> (14 March 2018)</li>
+  <li>Crawled version: <a href="https://dom.spec.whatwg.org/">Living Standard</a> (15 March 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/dom">GitHub whatwg/dom</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -1054,7 +1049,6 @@
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
-  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
@@ -1327,7 +1321,7 @@
   <section id="spec-info-34" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/sensors/">Editor's Draft</a> (14 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/sensors/">Editor's Draft</a> (15 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/sensors/" class="uri">https://w3c.github.io/sensors/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/generic-sensor/" class="uri">https://www.w3.org/TR/generic-sensor/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-generic-sensor-20171018/">Working Draft</a></li>
@@ -1548,7 +1542,7 @@
   <section id="spec-info-40" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://html.spec.whatwg.org/">Living Standard</a> (14 March 2018)</li>
+  <li>Crawled version: <a href="https://html.spec.whatwg.org/">Living Standard</a> (15 March 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -1581,7 +1575,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
-  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
@@ -1675,7 +1668,6 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
@@ -1786,7 +1778,7 @@
   <section id="spec-info-43" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (15 March 2018)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (16 March 2018)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -1880,12 +1872,12 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="magnetometer" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="magnetometer" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Magnetometer</h2>
   <section id="spec-info-46" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/magnetometer/">Editor's Draft</a> (14 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/magnetometer/">Editor's Draft</a> (15 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/magnetometer/" class="uri">https://w3c.github.io/magnetometer/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/magnetometer/" class="uri">https://www.w3.org/TR/magnetometer/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-magnetometer-20171018/">Working Draft</a></li>
@@ -1896,6 +1888,10 @@
   <section id="potential-issues-46" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
+  </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a>, related reference &quot;GENERIC-SENSOR&quot; uses URL <a href="https://www.w3.org/TR/generic-sensor/"><code>https://www.w3.org/TR/generic-sensor/</code></a></li>
@@ -2470,7 +2466,7 @@
   <section id="spec-info-63" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/payment-request/">Editor's Draft</a> (14 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/payment-request/">Editor's Draft</a> (15 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/payment-request/" class="uri">https://w3c.github.io/payment-request/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/payment-request/" class="uri">https://www.w3.org/TR/payment-request/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/CR-payment-request-20180301/">Candidate Recommendation</a></li>
@@ -3046,7 +3042,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
@@ -3689,7 +3684,7 @@
   <section id="spec-info-96" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/web-animations/">Editor's Draft</a> (15 February 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/web-animations/">Editor's Draft</a> (15 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/web-animations/" class="uri">https://w3c.github.io/web-animations/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/web-animations-1/" class="uri">https://www.w3.org/TR/web-animations-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2016/WD-web-animations-1-20160913/">Working Draft</a></li>
@@ -3808,7 +3803,7 @@
   <li>Crawled version: <a href="https://w3c.github.io/webauthn/">Editor's Draft</a> (14 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webauthn/" class="uri">https://w3c.github.io/webauthn/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webauthn/" class="uri">https://www.w3.org/TR/webauthn/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-webauthn-20180306/">Working Draft</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-webauthn-20180315/">Working Draft</a></li>
   <li>Repository: <a href="https://github.com/w3c/webauthn">GitHub w3c/webauthn</a></li>
   <li>Shortname: webauthn</li>
   </ul>
@@ -3896,7 +3891,6 @@
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
-  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
@@ -4074,7 +4068,7 @@
   <section id="spec-info-104" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Thu Mar 15 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Fri Mar 16 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4099,7 +4093,7 @@
   <section id="spec-info-105" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Thu Mar 15 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Fri Mar 16 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4133,7 +4127,7 @@
   <section id="spec-info-106" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (14 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webrtc-pc/">Editor's Draft</a> (15 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webrtc-pc/" class="uri">https://w3c.github.io/webrtc-pc/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webrtc/" class="uri">https://www.w3.org/TR/webrtc/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">Candidate Recommendation</a></li>
