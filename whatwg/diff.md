@@ -1,31 +1,31 @@
-% Diff between report from "March 15, 2018" and reference report from "March 14, 2018"
+% Diff between report from "March 16, 2018" and reference report from "March 15, 2018"
 % Reffy
-% March 15, 2018
+% March 16, 2018
 
-## Generic Sensor API
+## Accelerometer
 
-- URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/)
-- Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
-- Inconsistent references for links: *INS* https://www.w3.org/TR/page-visibility-2/, https://www.w3.org/TR/hr-time-2/ / *DEL* https://w3c.github.io/page-visibility/
+- URL: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/accelerometer/)
+- Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
+- Inconsistent references for links: *INS* https://www.w3.org/TR/screen-orientation/
 
 
-## MediaStream Image Capture
+## battery-status
 
-- URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-image/)
-- Repository: [GitHub w3c/mediacapture-image](https://github.com/w3c/mediacapture-image)
-- Spec title: *INS* MediaStream Image Capture / *DEL* image-capture
-- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+- URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/battery-status/)
+- Repository: [GitHub w3c/battery](https://github.com/w3c/battery)
+- Spec title: *INS* battery-status / *DEL* Battery Status API
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
     at <anonymous>
 
 
-## Orientation Sensor
+## Magnetometer
 
-- URL: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
-- Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
-- Missing references for links: *INS* https://www.w3.org/TR/2016/CR-orientation-event-20160818/ / *DEL* https://www.w3.org/TR/orientation-event/
+- URL: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/magnetometer/)
+- Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
+- Missing references for links: *INS* https://w3c.github.io/motion-sensors/
 
 
