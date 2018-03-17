@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 16, 2018
+% March 17, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -82,29 +82,29 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## battery-status {data-spec=true data-error=true}
+## Battery Status API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/battery-status/)
-- Latest published version: [https://www.w3.org/TR/battery-status](https://www.w3.org/TR/battery-status)
+- Crawled version: [Editor's Draft](https://w3c.github.io/battery/) (23 October 2017)
+- Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
+- Latest published version: [http://www.w3.org/TR/battery-status/](http://www.w3.org/TR/battery-status/)
+- Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - Repository: [GitHub w3c/battery](https://github.com/w3c/battery)
 - Shortname: battery-status
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for WebIDL names: 
+     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 
 ## Beacon {data-spec=true data-ok=true}
@@ -352,7 +352,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (14 March 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (16 March 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
@@ -775,16 +775,18 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 
 
-## DOM Standard {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## DOM Standard {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (15 March 2018)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (16 March 2018)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
+- WebIDL names also defined elsewhere: 
+    * `StaticRange` also defined in [Static Range](https://w3c.github.io/staticrange/)
 - Missing references for WebIDL names: 
      * `AudioWorklet` defined in [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
@@ -792,6 +794,7 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
      * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/), related reference "UIEVENTS" uses URL [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/)
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "DOM-Level-3-Core" uses URL [`https://www.w3.org/TR/DOM-Level-3-Core/`](https://www.w3.org/TR/DOM-Level-3-Core/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -860,6 +863,7 @@ Normative references to this spec from:
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
+- [Battery Status API](https://w3c.github.io/battery/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
@@ -1288,7 +1292,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (15 March 2018)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (16 March 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1310,6 +1314,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
@@ -1403,6 +1408,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
+- [Battery Status API](https://w3c.github.io/battery/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
@@ -1496,7 +1502,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (16 March 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (17 March 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -2064,7 +2070,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (15 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (16 March 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
@@ -2557,6 +2563,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Battery Status API](https://w3c.github.io/battery/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
@@ -2735,7 +2742,7 @@ Informative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
-## Static Range {data-spec=true data-ok=true}
+## Static Range {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
 
 ### Spec info {.info}
 
@@ -2745,7 +2752,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- WebIDL names also defined elsewhere: 
+    * `StaticRange` also defined in [DOM Standard](https://dom.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2781,7 +2789,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (13 March 2018)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (16 March 2018)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -3276,6 +3284,7 @@ Normative references to this spec from:
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Console Standard](https://console.spec.whatwg.org/)
@@ -3436,7 +3445,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Mar 16 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Mar 17 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3459,7 +3468,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Mar 16 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Mar 17 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 

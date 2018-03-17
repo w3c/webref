@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 16, 2018
+% March 17, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -208,7 +208,7 @@ No informative reference to this spec from other specs.
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-     * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+     * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -308,9 +308,9 @@ No informative reference to this spec from other specs.
 - Unknown WebIDL names used: `AbortSignal`, `HTMLFormElement`, `Navigator`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec/usecases/credentialmanagement/`](https://w3c.github.io/webappsec/usecases/credentialmanagement/)
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
      * [`https://w3c.github.io/webauthn/`](https://w3c.github.io/webauthn/), related reference "WEBAUTHN" uses URL [`https://www.w3.org/TR/webauthn/`](https://www.w3.org/TR/webauthn/)
 
@@ -320,7 +320,9 @@ Normative references to this spec from:
 
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
 ## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
@@ -355,7 +357,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (14 March 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (16 March 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
@@ -467,7 +469,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+    * `Worklet` also defined in [Web Audio API](https://webaudio.github.io/web-audio-api/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
 
@@ -573,6 +575,7 @@ Normative references to this spec from:
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -684,7 +687,7 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 
 
-## CSSOM View Module {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## CSSOM View Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -697,7 +700,10 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLElement`, `HTMLImageElement`, `MouseEvent`, `MouseEventInit`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `HTMLElement`, `HTMLImageElement`, `Window`
+- Missing references for WebIDL names: 
+     * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+     * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -708,6 +714,7 @@ Normative references to this spec from:
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
@@ -872,6 +879,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
 ## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -1008,6 +1016,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
@@ -1092,6 +1101,7 @@ Informative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -1192,6 +1202,7 @@ Normative references to this spec from:
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web Animations](https://w3c.github.io/web-animations/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -1308,6 +1319,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
@@ -1316,11 +1328,15 @@ Normative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
@@ -1369,9 +1385,11 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`, `MouseEvent`, `MouseEventInit`
+- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`
 - Missing references for WebIDL names: 
      * `Element` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+     * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+     * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - Inconsistent references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
      * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
@@ -1421,14 +1439,18 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
@@ -1454,6 +1476,7 @@ Informative references to this spec from:
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
@@ -1540,15 +1563,19 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
@@ -1637,6 +1664,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -1646,7 +1674,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (16 March 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (17 March 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1656,7 +1684,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `DataTransfer`, `InputEvent`, `InputEventInit`
+- Unknown WebIDL names used: `DataTransfer`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 
@@ -1786,11 +1814,13 @@ Normative references to this spec from:
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -1924,7 +1954,7 @@ Informative references to this spec from:
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 
 
-## MediaStream Recording {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## MediaStream Recording {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1938,10 +1968,9 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `EventHandler`, `Window`
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1950,6 +1979,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
 ## Metadata API for Media Resources 1.0 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2011,6 +2041,7 @@ Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
 ## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -2102,6 +2133,8 @@ Normative references to this spec from:
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
@@ -2193,7 +2226,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (15 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (16 March 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
@@ -2263,9 +2296,9 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `EventHandler`, `Navigator`, `PermissionName`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
 - Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
      * [`https://w3c.github.io/webdriver/webdriver-spec.html`](https://w3c.github.io/webdriver/webdriver-spec.html), related reference "WebDriver" uses URL [`https://www.w3.org/TR/webdriver/`](https://www.w3.org/TR/webdriver/)
 
@@ -2302,7 +2335,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `MouseEvent`, `MouseEventInit`, `Navigator`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `Navigator`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2328,7 +2361,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `MouseEvent`, `MouseEventInit`
+- Unknown WebIDL names used: `EventHandler`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2475,7 +2508,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Referrer Policy {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
+## Referrer Policy {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2489,10 +2522,9 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/2010/REC-wsc-ui-20100812/`](https://www.w3.org/TR/2010/REC-wsc-ui-20100812/), related reference "WSC-UI" uses URL [`https://www.w3.org/TR/wsc-ui/`](https://www.w3.org/TR/wsc-ui/)
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2655,6 +2687,7 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 
 Informative references to this spec from:
@@ -2690,23 +2723,22 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## secure-contexts {data-spec=true data-error=true}
+## Secure Contexts {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/secure-contexts/)
-- Latest published version: [https://www.w3.org/TR/secure-contexts](https://www.w3.org/TR/secure-contexts)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-secure-contexts/) (19 January 2018)
+- Editor's Draft: [https://w3c.github.io/webappsec-secure-contexts/](https://w3c.github.io/webappsec-secure-contexts/)
+- Latest published version: [https://www.w3.org/TR/secure-contexts/](https://www.w3.org/TR/secure-contexts/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - Repository: [GitHub w3c/webappsec-secure-contexts](https://github.com/w3c/webappsec-secure-contexts)
 - Shortname: secure-contexts
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `WindowOrWorkerGlobalScope`
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIX" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2715,6 +2747,7 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
@@ -2725,6 +2758,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 Informative references to this spec from:
 
@@ -2882,9 +2916,9 @@ Informative references to this spec from:
     * `Worker` also defined in [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - Missing references for links: 
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/), related reference "REFERRER-POLICY" uses URL [`https://www.w3.org/TR/referrer-policy/`](https://www.w3.org/TR/referrer-policy/)
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP-3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -2913,6 +2947,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Beacon](https://w3c.github.io/beacon/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -2993,7 +3028,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (13 March 2018)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (16 March 2018)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -3074,7 +3109,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `EventModifierInit`, `GlobalEventHandlers`, `UIEvent`, `Window`, `WindowProxy`
+- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `Window`, `WindowProxy`
 - Missing references for links: 
      * [`https://www.w3.org/TR/touch-events-extensions/`](https://www.w3.org/TR/touch-events-extensions/)
 
@@ -3089,23 +3124,27 @@ Informative references to this spec from:
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
-## uievents {data-spec=true data-error=true}
+## UI Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/uievents)
-- Latest published version: [https://www.w3.org/TR/uievents](https://www.w3.org/TR/uievents)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2016/WD-uievents-20160804/) (04 August 2016)
+- Editor's Draft: [https://w3c.github.io/uievents/](https://w3c.github.io/uievents/)
+- Latest published version: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - Repository: [GitHub w3c/uievents](https://github.com/w3c/uievents)
 - Shortname: uievents
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `Window`
+- Missing references for links: 
+     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
+     * [`https://www.w3.org/TR/2004/REC-xml-20040204/`](https://www.w3.org/TR/2004/REC-xml-20040204/)
+- Inconsistent references for links: 
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "DOM-Level-3-Core" uses URL [`http://www.w3.org/TR/DOM-Level-3-Core/`](http://www.w3.org/TR/DOM-Level-3-Core/)
+     * [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/), related reference "CSS-SYNTAX-3" uses URL [`http://dev.w3.org/csswg/css-syntax/`](http://dev.w3.org/csswg/css-syntax/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3118,61 +3157,66 @@ Normative references to this spec from:
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
+- [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
 
 No informative reference to this spec from other specs.
 
 
-## uievents-code {data-spec=true data-error=true}
+## UI Events KeyboardEvent code Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/uievents-code/)
-- Latest published version: [https://www.w3.org/TR/uievents-code](https://www.w3.org/TR/uievents-code)
+- Crawled version: [Editor's Draft](https://w3c.github.io/uievents-code/) (5 October 2017)
+- Editor's Draft: [https://w3c.github.io/uievents-code/](https://w3c.github.io/uievents-code/)
+- Latest published version: [https://www.w3.org/TR/uievents-code/](https://www.w3.org/TR/uievents-code/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
 - Repository: [GitHub w3c/uievents-code](https://github.com/w3c/uievents-code)
 - Shortname: uievents-code
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 No informative reference to this spec from other specs.
 
 
-## uievents-key {data-spec=true data-error=true}
+## UI Events KeyboardEvent key Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/uievents-key/)
-- Latest published version: [https://www.w3.org/TR/uievents-key](https://www.w3.org/TR/uievents-key)
+- Crawled version: [Editor's Draft](https://w3c.github.io/uievents-key/) (4 October 2017)
+- Editor's Draft: [https://w3c.github.io/uievents-key/](https://w3c.github.io/uievents-key/)
+- Latest published version: [https://www.w3.org/TR/uievents-key/](https://www.w3.org/TR/uievents-key/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
 - Repository: [GitHub w3c/uievents-key](https://github.com/w3c/uievents-key)
 - Shortname: uievents-key
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 No informative reference to this spec from other specs.
@@ -3208,6 +3252,7 @@ Normative references to this spec from:
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
@@ -3283,23 +3328,22 @@ Informative references to this spec from:
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
 
 
-## vibration {data-spec=true data-error=true}
+## Vibration API (Second Edition) {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/vibration/)
-- Latest published version: [https://www.w3.org/TR/vibration](https://www.w3.org/TR/vibration)
+- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/) (23 October 2017)
+- Editor's Draft: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
+- Latest published version: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - Repository: [GitHub w3c/vibration](https://github.com/w3c/vibration)
 - Shortname: vibration
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `Navigator`
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3375,6 +3419,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
@@ -3383,11 +3428,14 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web Notifications](https://www.w3.org/TR/notifications/)
@@ -3414,23 +3462,20 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## wake-lock {data-spec=true data-error=true}
+## Wake Lock API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/wake-lock/)
-- Latest published version: [https://www.w3.org/TR/wake-lock](https://www.w3.org/TR/wake-lock)
+- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (13 December 2017)
+- Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
+- Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
 - Shortname: wake-lock
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3495,6 +3540,44 @@ Informative references to this spec from:
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
+## Web Audio API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (5 March 2018)
+- Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
+- Latest published version: [http://www.w3.org/TR/webaudio/](http://www.w3.org/TR/webaudio/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
+- Repository: [GitHub webaudio/web-audio-api](https://github.com/webaudio/web-audio-api)
+- Shortname: webaudio
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `Window`
+- WebIDL names also defined elsewhere: 
+    * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+- Missing references for links: 
+     * [`https://w3c.github.io/mediacapture-fromelement/`](https://w3c.github.io/mediacapture-fromelement/)
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "MEDIACAPTURE-STREAMS" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Console Standard](https://console.spec.whatwg.org/)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+
+Informative references to this spec from:
+
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+
+
 ## Web Authentication: An API for accessing Public Key Credentials - Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -3511,9 +3594,9 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html)
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/), related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
      * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -3549,7 +3632,9 @@ Normative references to this spec from:
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
 ## Web IDL {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -3634,6 +3719,7 @@ Normative references to this spec from:
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
@@ -3645,9 +3731,12 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
@@ -3670,6 +3759,8 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
@@ -3700,6 +3791,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 
 
 ## Web Storage (Second Edition) {data-spec=true data-ok=true}
@@ -3734,7 +3826,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (15 March 2018)
+- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (16 March 2018)
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/workers.html](https://html.spec.whatwg.org/multipage/workers.html)
 - Latest published version: [http://www.w3.org/TR/workers/](http://www.w3.org/TR/workers/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -3810,16 +3902,20 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
@@ -3869,7 +3965,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+     * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/)
      * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/)
@@ -3880,35 +3976,6 @@ Informative references to this spec from:
 No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
-
-
-## webaudio {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://www.w3.org/TR/webaudio/)
-- Latest published version: [https://www.w3.org/TR/webaudio](https://www.w3.org/TR/webaudio)
-- Repository: [GitHub webaudio/web-audio-api](https://github.com/webaudio/web-audio-api)
-- Shortname: webaudio
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-Informative references to this spec from:
-
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
 ## WebDriver {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3947,7 +4014,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Mar 16 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Mar 17 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3964,6 +4031,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -3971,7 +4039,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Mar 16 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Mar 17 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3991,6 +4059,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -4022,6 +4091,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 Informative references to this spec from:
 
@@ -4070,7 +4140,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+    * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
 
@@ -4081,6 +4151,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -4123,6 +4194,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
 

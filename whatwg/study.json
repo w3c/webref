@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-03-16T02:08:42.945Z",
+  "date": "2018-03-17T02:08:04.285Z",
   "stats": {
     "crawled": 110,
-    "errors": 1,
+    "errors": 0,
     "studied": 110
   },
   "results": [
@@ -148,27 +148,49 @@
       }
     },
     {
-      "title": "battery-status",
+      "title": "Battery Status API",
       "shortname": "battery-status",
-      "date": "",
+      "date": "23 October 2017",
       "url": "https://www.w3.org/TR/battery-status/",
-      "latest": "https://www.w3.org/TR/battery-status",
-      "crawled": "https://www.w3.org/TR/battery-status/",
+      "latest": "http://www.w3.org/TR/battery-status/",
+      "datedUrl": "http://www.w3.org/TR/2016/CR-battery-status-20160707/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://w3c.github.io/battery/",
+      "crawled": "https://w3c.github.io/battery/",
       "repository": "https://github.com/w3c/battery",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/",
+                "date": "16 March 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://html.spec.whatwg.org/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/",
+              "date": "16 March 2018"
+            }
+          ]
         },
         "ok": false
       }
@@ -358,7 +380,7 @@
                 "url": "https://html.spec.whatwg.org/",
                 "title": "HTML Standard",
                 "crawled": "https://html.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               },
               {
                 "url": "https://www.w3.org/TR/service-workers-1/",
@@ -457,7 +479,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -656,7 +678,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             }
           ],
           "informative": [
@@ -664,7 +686,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "14 March 2018"
+              "date": "16 March 2018"
             }
           ]
         },
@@ -674,7 +696,7 @@
     {
       "title": "CSS Fonts Module Level 4",
       "shortname": "css-fonts-4",
-      "date": "14 March 2018",
+      "date": "16 March 2018",
       "url": "https://www.w3.org/TR/css-fonts-4/",
       "latest": "https://www.w3.org/TR/css-fonts-4/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/",
@@ -706,7 +728,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "14 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -840,7 +862,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "14 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -888,7 +910,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/referrer-policy/",
@@ -1143,7 +1165,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "14 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -1185,7 +1207,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -1263,7 +1285,7 @@
                 "url": "https://html.spec.whatwg.org/",
                 "title": "HTML Standard",
                 "crawled": "https://html.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               },
               {
                 "url": "https://www.w3.org/TR/service-workers-1/",
@@ -1363,7 +1385,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "14 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -1411,7 +1433,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -1577,7 +1599,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -1615,7 +1637,7 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/geometry-1/",
@@ -1676,7 +1698,7 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             }
           ],
           "informative": [
@@ -1739,7 +1761,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -1759,7 +1781,7 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             }
           ]
         },
@@ -1768,7 +1790,7 @@
     },
     {
       "title": "DOM Standard",
-      "date": "15 March 2018",
+      "date": "16 March 2018",
       "url": "https://dom.spec.whatwg.org/",
       "crawled": "https://dom.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/dom",
@@ -1779,7 +1801,19 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "StaticRange",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/staticrange/",
+                "title": "Static Range",
+                "crawled": "https://w3c.github.io/staticrange/",
+                "date": "14 December 2017"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [
           {
             "name": "AudioWorklet",
@@ -1809,6 +1843,13 @@
             "ref": {
               "name": "UIEVENTS",
               "url": "https://w3c.github.io/uievents/"
+            }
+          },
+          {
+            "link": "https://dom.spec.whatwg.org/",
+            "ref": {
+              "name": "DOM-Level-3-Core",
+              "url": "https://www.w3.org/TR/DOM-Level-3-Core/"
             }
           }
         ],
@@ -1938,7 +1979,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -1986,7 +2027,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -2160,7 +2201,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Mar 16 2018"
+              "date": "Sat Mar 17 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -2180,7 +2221,7 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css3-selectors/",
@@ -2225,7 +2266,7 @@
                 "url": "https://html.spec.whatwg.org/",
                 "title": "HTML Standard",
                 "crawled": "https://html.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               },
               {
                 "url": "https://www.w3.org/TR/service-workers-1/",
@@ -2256,7 +2297,7 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -2280,7 +2321,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/push-api/",
@@ -2443,7 +2484,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://wicg.github.io/mediasession/",
@@ -2541,7 +2582,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
@@ -2553,7 +2594,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "13 March 2018"
+              "date": "16 March 2018"
             }
           ]
         },
@@ -2638,7 +2679,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -2740,7 +2781,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -3008,7 +3049,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -3121,7 +3162,7 @@
                 "url": "https://dom.spec.whatwg.org/",
                 "title": "DOM Standard",
                 "crawled": "https://dom.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           }
@@ -3142,7 +3183,7 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/gamepad/",
@@ -3160,7 +3201,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
@@ -3272,7 +3313,7 @@
     },
     {
       "title": "HTML Standard",
-      "date": "15 March 2018",
+      "date": "16 March 2018",
       "url": "https://html.spec.whatwg.org/",
       "crawled": "https://html.spec.whatwg.org/",
       "report": {
@@ -3346,6 +3387,12 @@
               "date": "23 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/",
+              "date": "23 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://w3c.github.io/beacon/",
@@ -3391,7 +3438,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "14 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -3451,7 +3498,7 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -3535,7 +3582,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "16 March 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3619,7 +3666,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -3715,7 +3762,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "13 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -3811,13 +3858,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Mar 16 2018"
+              "date": "Sat Mar 17 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Mar 16 2018"
+              "date": "Sat Mar 17 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3845,6 +3892,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/",
+              "date": "23 October 2017"
+            },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
               "title": "Clipboard API and events",
@@ -4109,7 +4162,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -4145,7 +4198,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "16 March 2018",
+      "date": "17 March 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -4179,7 +4232,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "16 March 2018"
+              "date": "17 March 2018"
             }
           ]
         },
@@ -4217,7 +4270,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             }
           ],
           "informative": []
@@ -4367,7 +4420,7 @@
                 "url": "https://dom.spec.whatwg.org/",
                 "title": "DOM Standard",
                 "crawled": "https://dom.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           },
@@ -4378,7 +4431,7 @@
                 "url": "https://dom.spec.whatwg.org/",
                 "title": "DOM Standard",
                 "crawled": "https://dom.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           },
@@ -4389,7 +4442,7 @@
                 "url": "https://dom.spec.whatwg.org/",
                 "title": "DOM Standard",
                 "crawled": "https://dom.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           }
@@ -4414,7 +4467,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
@@ -4641,7 +4694,7 @@
                 "url": "https://dom.spec.whatwg.org/",
                 "title": "DOM Standard",
                 "crawled": "https://dom.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           },
@@ -4665,7 +4718,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://url.spec.whatwg.org/",
@@ -4905,7 +4958,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -5353,7 +5406,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             }
           ]
         },
@@ -5363,7 +5416,7 @@
     {
       "title": "Payment Request API",
       "shortname": "payment-request",
-      "date": "15 March 2018",
+      "date": "16 March 2018",
       "url": "https://www.w3.org/TR/payment-request/",
       "latest": "https://www.w3.org/TR/payment-request/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-payment-request-20180301/",
@@ -5388,7 +5441,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -5640,7 +5693,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -5690,7 +5743,7 @@
                 "url": "https://html.spec.whatwg.org/",
                 "title": "HTML Standard",
                 "crawled": "https://html.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           }
@@ -5703,7 +5756,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -5747,7 +5800,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             }
           ],
           "informative": []
@@ -5781,7 +5834,7 @@
                 "url": "https://html.spec.whatwg.org/",
                 "title": "HTML Standard",
                 "crawled": "https://html.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           }
@@ -5810,7 +5863,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             }
           ],
           "informative": [
@@ -5963,7 +6016,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -6010,7 +6063,7 @@
                 "url": "https://dom.spec.whatwg.org/",
                 "title": "DOM Standard",
                 "crawled": "https://dom.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           }
@@ -6409,7 +6462,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
@@ -6465,7 +6518,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css3-selectors/",
@@ -6550,6 +6603,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/",
+              "date": "23 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/credential-management-1/",
               "title": "Credential Management Level 1",
               "crawled": "https://w3c.github.io/webappsec-credential-management/",
@@ -6571,7 +6630,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -6693,7 +6752,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             }
           ],
           "informative": []
@@ -6879,7 +6938,7 @@
                 "url": "https://html.spec.whatwg.org/",
                 "title": "HTML Standard",
                 "crawled": "https://html.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           }
@@ -6923,7 +6982,7 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -6935,7 +6994,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -6997,7 +7056,7 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
-              "date": "13 March 2018"
+              "date": "16 March 2018"
             }
           ]
         },
@@ -7017,7 +7076,19 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "StaticRange",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/",
+                "date": "16 March 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -7027,12 +7098,12 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "16 March 2018"
+              "date": "17 March 2018"
             }
           ],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -7068,7 +7139,7 @@
     },
     {
       "title": "Streams Standard",
-      "date": "13 March 2018",
+      "date": "16 March 2018",
       "url": "https://streams.spec.whatwg.org/",
       "crawled": "https://streams.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/streams",
@@ -7137,7 +7208,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -7184,13 +7255,13 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             }
           ],
           "informative": [
@@ -7251,19 +7322,19 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "16 March 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -7468,7 +7539,7 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -7486,7 +7557,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://wicg.github.io/mediasession/",
@@ -8051,7 +8122,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -8114,6 +8185,12 @@
               "date": "23 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/",
+              "date": "23 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://w3c.github.io/beacon/",
@@ -8159,7 +8236,7 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
-              "date": "14 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -8219,7 +8296,7 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/encoding/",
@@ -8297,7 +8374,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -8405,7 +8482,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -8591,13 +8668,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Mar 16 2018"
+              "date": "Sat Mar 17 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Mar 16 2018"
+              "date": "Sat Mar 17 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -8647,7 +8724,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "16 March 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -8811,7 +8888,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Fri Mar 16 2018",
+      "date": "Sat Mar 17 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8854,7 +8931,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Fri Mar 16 2018",
+      "date": "Sat Mar 17 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8883,13 +8960,13 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Mar 16 2018"
+              "date": "Sat Mar 17 2018"
             }
           ],
           "informative": [
@@ -8958,7 +9035,7 @@
                 "url": "https://dom.spec.whatwg.org/",
                 "title": "DOM Standard",
                 "crawled": "https://dom.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           },
@@ -8969,7 +9046,7 @@
                 "url": "https://dom.spec.whatwg.org/",
                 "title": "DOM Standard",
                 "crawled": "https://dom.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           },
@@ -8980,7 +9057,7 @@
                 "url": "https://dom.spec.whatwg.org/",
                 "title": "DOM Standard",
                 "crawled": "https://dom.spec.whatwg.org/",
-                "date": "15 March 2018"
+                "date": "16 March 2018"
               }
             ]
           }
@@ -9070,7 +9147,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             }
           ],
           "informative": []
@@ -9143,7 +9220,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -9207,7 +9284,7 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/",
-              "date": "15 March 2018"
+              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
