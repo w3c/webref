@@ -1,31 +1,33 @@
-% Diff between report from "March 16, 2018" and reference report from "March 15, 2018"
+% Diff between report from "March 17, 2018" and reference report from "March 16, 2018"
 % Reffy
-% March 16, 2018
+% March 17, 2018
 
-## Accelerometer
-
-- URL: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/accelerometer/)
-- Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
-- Inconsistent references for links: *INS* https://www.w3.org/TR/screen-orientation/
-
-
-## battery-status
+## Battery Status API
 
 - URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/battery-status/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/battery/)
 - Repository: [GitHub w3c/battery](https://github.com/w3c/battery)
-- Spec title: *INS* battery-status / *DEL* Battery Status API
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+- Spec title: *INS* Battery Status API / *DEL* battery-status
+- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
     at <anonymous>
 
 
-## Magnetometer
+## DOM Standard
 
-- URL: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/magnetometer/)
-- Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
-- Missing references for links: *INS* https://w3c.github.io/motion-sensors/
+- URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/)
+- Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
+- WebIDL names also defined elsewhere: *INS* StaticRange
+- Inconsistent references for links: *INS* https://dom.spec.whatwg.org/
+
+
+## Static Range
+
+- URL: [https://w3c.github.io/staticrange/](https://w3c.github.io/staticrange/)
+- Crawled version: [Initial URL](https://w3c.github.io/staticrange/)
+- Repository: [GitHub w3c/staticrange](https://github.com/w3c/staticrange)
+- Spec is OK: *INS* false / *DEL* true
+- WebIDL names also defined elsewhere: *INS* StaticRange
 
 

@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">March 16, 2018</h2>
+            <h2 class="date">March 17, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -132,26 +132,35 @@
   </ul>
   </section>
   </section>
-  <section id="battery-status" class="level2" data-spec="true" data-error="true">
-  <h2>battery-status</h2>
+  <section id="battery-status-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <h2>Battery Status API</h2>
   <section id="spec-info-3" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/battery-status/">Initial URL</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/battery-status" class="uri">https://www.w3.org/TR/battery-status</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/battery/">Editor's Draft</a> (23 October 2017)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/battery/" class="uri">https://w3c.github.io/battery/</a></li>
+  <li>Latest published version: <a href="http://www.w3.org/TR/battery-status/" class="uri">http://www.w3.org/TR/battery-status/</a></li>
+  <li>Latest published status: <a href="http://www.w3.org/TR/2016/CR-battery-status-20160707/">Candidate Recommendation</a></li>
   <li>Repository: <a href="https://github.com/w3c/battery">GitHub w3c/battery</a></li>
   <li>Shortname: battery-status</li>
   </ul>
   </section>
   <section id="potential-issues-3" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-3" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
+  </ul>
   </section>
   </section>
   <section id="beacon" class="level2" data-spec="true" data-ok="true">
@@ -452,7 +461,7 @@
   <section id="spec-info-13" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.csswg.org/css-fonts-4/">Editor's Draft</a> (14 March 2018)</li>
+  <li>Crawled version: <a href="https://drafts.csswg.org/css-fonts-4/">Editor's Draft</a> (16 March 2018)</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-fonts-4/" class="uri">https://drafts.csswg.org/css-fonts-4/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-fonts-4/" class="uri">https://www.w3.org/TR/css-fonts-4/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/">Working Draft</a></li>
@@ -954,12 +963,12 @@
   </ul>
   </section>
   </section>
-  <section id="dom-standard" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="dom-standard" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>DOM Standard</h2>
   <section id="spec-info-26" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://dom.spec.whatwg.org/">Living Standard</a> (15 March 2018)</li>
+  <li>Crawled version: <a href="https://dom.spec.whatwg.org/">Living Standard</a> (16 March 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/dom">GitHub whatwg/dom</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -967,6 +976,10 @@
   <section id="potential-issues-26" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>StaticRange</code> also defined in <a href="https://w3c.github.io/staticrange/">Static Range</a></li>
+  </ul></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>AudioWorklet</code> defined in <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
@@ -979,6 +992,7 @@
   <ul>
   <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a>, related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a></li>
   <li><a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a>, related reference &quot;UIEVENTS&quot; uses URL <a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a></li>
+  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a>, related reference &quot;DOM-Level-3-Core&quot; uses URL <a href="https://www.w3.org/TR/DOM-Level-3-Core/"><code>https://www.w3.org/TR/DOM-Level-3-Core/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -1049,6 +1063,7 @@
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
@@ -1542,7 +1557,7 @@
   <section id="spec-info-40" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://html.spec.whatwg.org/">Living Standard</a> (15 March 2018)</li>
+  <li>Crawled version: <a href="https://html.spec.whatwg.org/">Living Standard</a> (16 March 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -1575,6 +1590,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
@@ -1668,6 +1684,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
@@ -1778,7 +1795,7 @@
   <section id="spec-info-43" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (16 March 2018)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (17 March 2018)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -2466,7 +2483,7 @@
   <section id="spec-info-63" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/payment-request/">Editor's Draft</a> (15 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/payment-request/">Editor's Draft</a> (16 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/payment-request/" class="uri">https://w3c.github.io/payment-request/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/payment-request/" class="uri">https://www.w3.org/TR/payment-request/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/CR-payment-request-20180301/">Candidate Recommendation</a></li>
@@ -3042,6 +3059,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
@@ -3257,7 +3275,7 @@
   </ul>
   </section>
   </section>
-  <section id="static-range" class="level2" data-spec="true" data-ok="true">
+  <section id="static-range" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true">
   <h2>Static Range</h2>
   <section id="spec-info-83" class="level3 info">
   <h3>Spec info</h3>
@@ -3269,7 +3287,12 @@
   </section>
   <section id="potential-issues-83" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>StaticRange</code> also defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-83" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3308,7 +3331,7 @@
   <section id="spec-info-85" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://streams.spec.whatwg.org/">Living Standard</a> (13 March 2018)</li>
+  <li>Crawled version: <a href="https://streams.spec.whatwg.org/">Living Standard</a> (16 March 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/streams">GitHub whatwg/streams</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -3891,6 +3914,7 @@
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
@@ -4068,7 +4092,7 @@
   <section id="spec-info-104" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Fri Mar 16 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sat Mar 17 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4093,7 +4117,7 @@
   <section id="spec-info-105" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Fri Mar 16 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sat Mar 17 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
