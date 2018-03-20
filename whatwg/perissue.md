@@ -1,8 +1,19 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 19, 2018
+% March 20, 2018
 
 110 specifications were crawled in this report.
+
+
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [preload](https://www.w3.org/TR/preload/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
+    at <anonymous>`
+
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -19,21 +30,18 @@
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Preload](https://w3c.github.io/preload/)
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
-=> 12 specifications found
+=> 10 specifications found
 
 Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
 
 ## List of specifications with invalid WebIDL content
 
-- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
@@ -41,7 +49,7 @@ Not all specifications define IDL content, presence in this list may be complete
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 
-=> 7 specifications found
+=> 6 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -68,10 +76,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 ## List of WebIDL names not defined in the specifications crawled
 
-- `DocumentOrShadowRoot` used in [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- `GlobalEventHandlers` used in [Pointer Events](https://w3c.github.io/pointerevents/), [Selection API](https://w3c.github.io/selection-api/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - `LayoutWorklet` used in [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- `NavigatorID` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `OverconstrainedError` used in [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
 - `RTCError` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -80,10 +85,9 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `ReadableStream` used in [Fetch Standard](https://fetch.spec.whatwg.org/)
 - `SVGImageElement` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `SVGScriptElement` used in [HTML Standard](https://html.spec.whatwg.org/)
-- `WindowOrWorkerGlobalScope` used in [Fetch Standard](https://fetch.spec.whatwg.org/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 2.0](https://w3c.github.io/IndexedDB/), [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 
-=> 14 WebIDL names found
+=> 10 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -181,7 +185,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Permissions](https://w3c.github.io/permissions/) links to:
     * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/) but does not list it in its references
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but does not list it in its references
-- [Preload](https://w3c.github.io/preload/) links to [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
 - [Push API](https://w3c.github.io/push-api/) links to [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) links to:
     * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/) but does not list it in its references
@@ -245,7 +248,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 91 missing references for links found in 39 specifications
+=> 90 missing references for links found in 38 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

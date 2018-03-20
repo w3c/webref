@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">March 19, 2018</h2>
+            <h2 class="date">March 20, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -1779,6 +1779,7 @@
   <li><a href="http://www.w3.org/TR/2014/REC-progress-events-20140211/">Progress Events</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-push-api-20171215/">Push API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/">Resource Timing Level 2</a></li>
+  <li><a href="http://www.w3.org/TR/2016/WD-screen-capture-20160714/">Screen Capture</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-selection-api-20170628/">Selection API</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-selectors-3-20180130/">Selectors Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-wake-lock-20171214/">Wake Lock API</a></li>
@@ -1876,6 +1877,7 @@
   <li><a href="https://www.w3.org/TR/2017/CR-preload-20171026/">Preload</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-push-api-20171215/">Push API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/">Resource Timing Level 2</a></li>
+  <li><a href="http://www.w3.org/TR/2016/WD-screen-capture-20160714/">Screen Capture</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-selection-api-20170628/">Selection API</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-wake-lock-20171214/">Wake Lock API</a></li>
   <li><a href="http://www.w3.org/TR/2015/WD-webaudio-20151208/">Web Audio API</a></li>
@@ -2251,6 +2253,7 @@
   <li><a href="https://www.w3.org/TR/2018/WD-webrtc-stats-20180314/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/">Media Capture from DOM Elements</a></li>
+  <li><a href="http://www.w3.org/TR/2016/WD-screen-capture-20160714/">Screen Capture</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="http://www.w3.org/TR/2015/WD-webaudio-20151208/">Web Audio API</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-webrtc-20171102/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
@@ -2293,7 +2296,10 @@
   <section id="known-dependencies-on-this-specification-52" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="http://www.w3.org/TR/2016/WD-screen-capture-20160714/">Screen Capture</a></li>
+  </ul>
   </section>
   </section>
   <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
@@ -3290,21 +3296,27 @@
   </ul>
   </section>
   </section>
-  <section id="screen-capture" class="level2" data-spec="true" data-error="true">
-  <h2>screen-capture</h2>
+  <section id="screen-capture" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <h2>Screen Capture</h2>
   <section id="spec-info-78" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/screen-capture">Latest published version</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/screen-capture" class="uri">https://www.w3.org/TR/screen-capture</a></li>
+  <li>Crawled version: <a href="http://www.w3.org/TR/2016/WD-screen-capture-20160714/">Latest published version</a> (14 July 2016)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/mediacapture-screen-share/" class="uri">https://w3c.github.io/mediacapture-screen-share/</a></li>
+  <li>Latest published version: <a href="http://www.w3.org/TR/screen-capture/" class="uri">http://www.w3.org/TR/screen-capture/</a></li>
+  <li>Latest published status: <a href="http://www.w3.org/TR/2016/WD-screen-capture-20160714/">Working Draft</a></li>
   <li>Repository: <a href="https://github.com/w3c/mediacapture-screen-share">GitHub w3c/mediacapture-screen-share</a></li>
   <li>Shortname: screen-capture</li>
   </ul>
   </section>
   <section id="potential-issues-78" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-78" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -4637,7 +4649,7 @@
   <section id="spec-info-112" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Mon Mar 19 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Tue Mar 20 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4660,7 +4672,7 @@
   <section id="spec-info-113" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Mon Mar 19 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Tue Mar 20 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4772,6 +4784,7 @@
   <li><a href="https://www.w3.org/TR/2017/CR-remote-playback-20171019/">Remote Playback API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/">Resource Timing Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2016/CR-SVG2-20160915/">Scalable Vector Graphics (SVG) 2</a></li>
+  <li><a href="http://www.w3.org/TR/2016/WD-screen-capture-20160714/">Screen Capture</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-selection-api-20170628/">Selection API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-server-timing-20171229/">Server Timing</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a></li>
@@ -4865,6 +4878,7 @@
   <li><a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Media Capture and Streams</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/">Media Capture from DOM Elements</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-presentation-api-20170601/">Presentation API</a></li>
+  <li><a href="http://www.w3.org/TR/2016/WD-screen-capture-20160714/">Screen Capture</a></li>
   </ul>
   </section>
   </section>
