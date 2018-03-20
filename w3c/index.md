@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 19, 2018
+% March 20, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -325,11 +325,11 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-font-loading/) (29 January 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-font-loading/) (17 March 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-font-loading/](https://drafts.csswg.org/css-font-loading/)
 - Latest published version: [http://www.w3.org/TR/css-font-loading-3/](http://www.w3.org/TR/css-font-loading-3/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/)
@@ -338,7 +338,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `EventHandler`, `Window`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
@@ -445,12 +445,9 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 
 Informative references to this spec from:
 
@@ -508,7 +505,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Web Animations](https://w3c.github.io/web-animations/)
 
 Informative references to this spec from:
 
@@ -536,6 +535,7 @@ Normative references to this spec from:
 
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 
 No informative reference to this spec from other specs.
 
@@ -575,6 +575,7 @@ Normative references to this spec from:
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -646,6 +647,7 @@ Normative references to this spec from:
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -685,7 +687,7 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 
 
-## CSSOM View Module {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## CSSOM View Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -698,7 +700,10 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLElement`, `HTMLImageElement`, `MouseEvent`, `MouseEventInit`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `HTMLElement`, `HTMLImageElement`, `Window`
+- Missing references for WebIDL names: 
+     * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+     * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -709,12 +714,9 @@ Normative references to this spec from:
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 
 Informative references to this spec from:
 
@@ -724,11 +726,11 @@ Informative references to this spec from:
 - [Web App Manifest](https://w3c.github.io/manifest/)
 
 
-## Custom Elements {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## Custom Elements {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/custom/) (Draft16 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/custom/)
 - Editor's Draft: [https://w3c.github.io/webcomponents/spec/custom/](https://w3c.github.io/webcomponents/spec/custom/)
 - Latest published version: [https://www.w3.org/TR/custom-elements/](https://www.w3.org/TR/custom-elements/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-custom-elements-20180216/)
@@ -737,11 +739,14 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
-- Missing references for links: 
-     * [`https://w3c.github.io/aria/aria/aria.html`](https://w3c.github.io/aria/aria/aria.html)
-     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/)
-     * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
+The following network or parsing error occurred:
+`Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395
+    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1196,6 +1201,7 @@ Normative references to this spec from:
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
@@ -1203,7 +1209,9 @@ Although they do not, the following specs should also normatively reference this
 
 - [Server Timing](https://w3c.github.io/server-timing/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Web Animations](https://w3c.github.io/web-animations/)
 
 
 ## HTML 5.3 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1270,7 +1278,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -1317,15 +1324,17 @@ Normative references to this spec from:
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -1376,9 +1385,11 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`, `MouseEvent`, `MouseEventInit`
+- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`
 - Missing references for WebIDL names: 
      * `Element` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+     * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+     * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - Inconsistent references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
      * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
@@ -1401,7 +1412,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
@@ -1431,12 +1441,14 @@ Normative references to this spec from:
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -1523,7 +1535,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
@@ -1555,12 +1566,14 @@ Normative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -1661,7 +1674,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (Draft19 March 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (Draft20 March 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1671,7 +1684,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `DataTransfer`, `InputEvent`, `InputEventInit`
+- Unknown WebIDL names used: `DataTransfer`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 
@@ -1918,7 +1931,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-image/) (7 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-image/) (19 March 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
 - Latest published version: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
@@ -2121,6 +2134,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
@@ -2212,7 +2226,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (Draft16 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (Draft19 March 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
@@ -2321,7 +2335,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `MouseEvent`, `MouseEventInit`, `Navigator`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `Navigator`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2347,7 +2361,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `MouseEvent`, `MouseEventInit`
+- Unknown WebIDL names used: `EventHandler`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2609,7 +2623,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
      * [`https://www.w3.org/TR/2013/REC-css-style-attr-20131107/`](https://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
      * [`https://www.w3.org/TR/css-position-3/`](https://www.w3.org/TR/css-position-3/)
-     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
      * [`https://www.w3.org/TR/css3-exclusions/`](https://www.w3.org/TR/css3-exclusions/)
      * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/)
      * [`https://www.w3.org/TR/resource-hints/`](https://www.w3.org/TR/resource-hints/)
@@ -2648,6 +2661,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "css-writing-modes-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
      * [`https://www.w3.org/TR/2011/WD-css3-fonts-20111004/`](https://www.w3.org/TR/2011/WD-css3-fonts-20111004/), related reference "css-fonts-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
      * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/), related reference "DOM-Level-2-Style" uses URL [`https://www.w3.org/TR/DOM-Level-2-Style/`](https://www.w3.org/TR/DOM-Level-2-Style/)
+     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/), related reference "web-animations-1" uses URL [`https://www.w3.org/TR/web-animations-1/`](https://www.w3.org/TR/web-animations-1/)
      * [`https://www.w3.org/TR/2015/CR-css-ui-3-20150707/`](https://www.w3.org/TR/2015/CR-css-ui-3-20150707/), related reference "css-ui-3" uses URL [`https://www.w3.org/TR/css-ui-3/`](https://www.w3.org/TR/css-ui-3/)
      * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/), related reference "smil-animation" uses URL [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/)
      * [`https://www.w3.org/TR/2013/WD-shadow-dom-20130514/`](https://www.w3.org/TR/2013/WD-shadow-dom-20130514/), related reference "shadow-dom" uses URL [`https://www.w3.org/TR/shadow-dom/`](https://www.w3.org/TR/shadow-dom/)
@@ -2673,6 +2687,8 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 
 Informative references to this spec from:
 
@@ -2680,7 +2696,6 @@ Informative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
 
@@ -2776,10 +2791,6 @@ Normative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
 
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
-
 No informative reference to this spec from other specs.
 
 
@@ -2829,6 +2840,7 @@ Normative references to this spec from:
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 
 Informative references to this spec from:
 
@@ -2939,11 +2951,11 @@ Informative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
-## Shadow DOM {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## Shadow DOM {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/shadow/) (Draft16 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/shadow/)
 - Editor's Draft: [https://w3c.github.io/webcomponents/spec/shadow/](https://w3c.github.io/webcomponents/spec/shadow/)
 - Latest published version: [https://www.w3.org/TR/shadow-dom/](https://www.w3.org/TR/shadow-dom/)
 - Latest published status: [Retired](https://www.w3.org/TR/2018/NOTE-shadow-dom-20180301/)
@@ -2952,23 +2964,14 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `Window`
-- WebIDL names also defined elsewhere: 
-    * `ShadowRoot` also defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `ShadowRootMode` also defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-- Missing references for WebIDL names: 
-     * `DocumentOrShadowRoot` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `Selection` defined in [Selection API](https://w3c.github.io/selection-api/)
-     * `Element` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `CaretPosition` defined in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-     * `StyleSheetList` defined in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-     * `DocumentFragment` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
-     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+The following network or parsing error occurred:
+`Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395
+    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3106,7 +3109,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `EventModifierInit`, `GlobalEventHandlers`, `UIEvent`, `Window`, `WindowProxy`
+- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `Window`, `WindowProxy`
 - Missing references for links: 
      * [`https://www.w3.org/TR/touch-events-extensions/`](https://www.w3.org/TR/touch-events-extensions/)
 
@@ -3119,6 +3122,78 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Pointer Events](https://w3c.github.io/pointerevents/)
+
+
+## UI Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2016/WD-uievents-20160804/) (04 August 2016)
+- Editor's Draft: [https://w3c.github.io/uievents/](https://w3c.github.io/uievents/)
+- Latest published version: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- Repository: [GitHub w3c/uievents](https://github.com/w3c/uievents)
+- Shortname: uievents
+
+### Potential issue(s) {.anomalies}
+
+- Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `Window`
+- Missing references for links: 
+     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
+     * [`https://www.w3.org/TR/2004/REC-xml-20040204/`](https://www.w3.org/TR/2004/REC-xml-20040204/)
+- Inconsistent references for links: 
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "DOM-Level-3-Core" uses URL [`http://www.w3.org/TR/DOM-Level-3-Core/`](http://www.w3.org/TR/DOM-Level-3-Core/)
+     * [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/), related reference "CSS-SYNTAX-3" uses URL [`http://dev.w3.org/csswg/css-syntax/`](http://dev.w3.org/csswg/css-syntax/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [HTML 5.3](https://w3c.github.io/html/)
+- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
+- [Permissions](https://w3c.github.io/permissions/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
+- [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
+- [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
+
+No informative reference to this spec from other specs.
+
+
+## UI Events KeyboardEvent code Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/uievents-code/) (5 October 2017)
+- Editor's Draft: [https://w3c.github.io/uievents-code/](https://w3c.github.io/uievents-code/)
+- Latest published version: [https://www.w3.org/TR/uievents-code/](https://www.w3.org/TR/uievents-code/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
+- Repository: [GitHub w3c/uievents-code](https://github.com/w3c/uievents-code)
+- Shortname: uievents-code
+
+### Potential issue(s) {.anomalies}
+
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
+- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
+
+No informative reference to this spec from other specs.
 
 
 ## UI Events KeyboardEvent key Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
@@ -3140,72 +3215,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
-
-No informative reference to this spec from other specs.
-
-
-## uievents {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](https://www.w3.org/TR/uievents)
-- Latest published version: [https://www.w3.org/TR/uievents](https://www.w3.org/TR/uievents)
-- Repository: [GitHub w3c/uievents](https://github.com/w3c/uievents)
-- Shortname: uievents
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [HTML 5.3](https://w3c.github.io/html/)
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
-- [Permissions](https://w3c.github.io/permissions/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
-- [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
-- [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
-
-Informative references to this spec from:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
-
-
-## uievents-code {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://www.w3.org/TR/uievents-code/)
-- Latest published version: [https://www.w3.org/TR/uievents-code](https://www.w3.org/TR/uievents-code)
-- Repository: [GitHub w3c/uievents-code](https://github.com/w3c/uievents-code)
-- Shortname: uievents-code
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 No informative reference to this spec from other specs.
@@ -3341,7 +3352,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## W3C DOM 4.1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## W3C DOM 4.1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3355,9 +3366,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `HTMLSlotElement`, `Window`
-- WebIDL names also defined elsewhere: 
-    * `ShadowRoot` also defined in [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
-    * `ShadowRootMode` also defined in [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/)
 - Inconsistent references for links: 
@@ -3383,7 +3391,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -3421,9 +3428,12 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -3443,38 +3453,59 @@ Although they do not, the following specs should also normatively reference this
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
 
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## wake-lock {data-spec=true data-error=true}
+## Wake Lock API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/wake-lock/)
-- Latest published version: [https://www.w3.org/TR/wake-lock](https://www.w3.org/TR/wake-lock)
+- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (Draft13 December 2017)
+- Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
+- Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
 - Shortname: wake-lock
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Web Animations {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/) (15 March 2018)
+- Editor's Draft: [https://w3c.github.io/web-animations/](https://w3c.github.io/web-animations/)
+- Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
+- Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
+- Shortname: web-animations-1
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `EventHandler`, `Window`
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 No informative reference to this spec from other specs.
 
@@ -3645,7 +3676,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -3703,6 +3733,8 @@ Normative references to this spec from:
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -3727,7 +3759,7 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
@@ -3842,7 +3874,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
@@ -3874,13 +3905,15 @@ Normative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
+- [Web Animations](https://w3c.github.io/web-animations/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -3921,33 +3954,6 @@ Informative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## web-animations-1 {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://www.w3.org/TR/web-animations-1/)
-- Latest published version: [https://www.w3.org/TR/web-animations-1](https://www.w3.org/TR/web-animations-1)
-- Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
-- Shortname: web-animations-1
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-
-No informative reference to this spec from other specs.
-
-
 ## WebAssembly JavaScript Interface {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -3972,7 +3978,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebDriver {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## WebDriver {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3985,7 +3991,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Missing references for links: 
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
      * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
@@ -4008,7 +4013,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Mar 19 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Mar 20 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4033,7 +4038,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Mar 19 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Mar 20 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 

@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 19, 2018
+% March 20, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -240,7 +240,6 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -320,11 +319,11 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
+## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-font-loading/) (29 January 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-font-loading/) (17 March 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-font-loading/](https://drafts.csswg.org/css-font-loading/)
 - Latest published version: [http://www.w3.org/TR/css-font-loading-3/](http://www.w3.org/TR/css-font-loading-3/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/)
@@ -333,7 +332,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
@@ -832,7 +830,6 @@ Normative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
@@ -950,7 +947,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ReadableStream`, `WindowOrWorkerGlobalScope`
+- Unknown WebIDL names used: `ReadableStream`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -966,7 +963,6 @@ Normative references to this spec from:
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
-- [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -1044,7 +1040,7 @@ Informative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 
-## Fullscreen API Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## Fullscreen API Standard {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -1054,7 +1050,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DocumentOrShadowRoot`
 - Missing references for links: 
      * [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/)
 
@@ -1216,7 +1211,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## High Resolution Time Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## High Resolution Time Level 2 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -1229,7 +1224,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `WindowOrWorkerGlobalScope`
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
 - Missing references for links: 
@@ -1296,7 +1290,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `NavigatorID`, `SVGImageElement`, `SVGScriptElement`, `WindowProxy`
+- Unknown WebIDL names used: `SVGImageElement`, `SVGScriptElement`, `WindowProxy`
 - WebIDL names also defined elsewhere: 
     * `BinaryType` also defined in [Presentation API](https://w3c.github.io/presentation-api/)
     * `Worker` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
@@ -1363,7 +1357,6 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
@@ -1465,7 +1458,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Indexed Database API 2.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Indexed Database API 2.0 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1478,7 +1471,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `WindowOrWorkerGlobalScope`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://www.w3.org/TR/domcore/`](https://www.w3.org/TR/domcore/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
@@ -1501,7 +1493,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (Draft19 March 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (Draft20 March 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1756,7 +1748,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-image/) (7 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-image/) (19 March 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
 - Latest published version: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
@@ -1857,7 +1849,6 @@ Normative references to this spec from:
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
-- [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 
@@ -2069,7 +2060,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (Draft16 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (Draft19 March 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
@@ -2164,7 +2155,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Pointer Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true}
+## Pointer Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
 
@@ -2178,7 +2169,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `GlobalEventHandlers`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2192,7 +2182,7 @@ Informative references to this spec from:
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
-## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -2205,7 +2195,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DocumentOrShadowRoot`
 - Missing references for WebIDL names: 
      * `EventHandler` defined in [HTML Standard](https://html.spec.whatwg.org/)
 
@@ -2219,28 +2208,27 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Preload {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
+## preload {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (Draft09 January 2018)
-- Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
-- Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-preload-20171026/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/preload/)
+- Latest published version: [https://www.w3.org/TR/preload](https://www.w3.org/TR/preload)
 - Repository: [GitHub w3c/preload](https://github.com/w3c/preload)
 - Shortname: preload
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
+    at <anonymous>`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [HTML Standard](https://html.spec.whatwg.org/)
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -2350,7 +2338,6 @@ Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
-- [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
 No informative reference to this spec from other specs.
@@ -2541,7 +2528,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Secure Contexts {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Secure Contexts {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2554,7 +2541,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `WindowOrWorkerGlobalScope`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIX" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 
@@ -2583,7 +2569,7 @@ Informative references to this spec from:
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 
 
-## Selection API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Selection API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2596,7 +2582,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `GlobalEventHandlers`
 - Missing references for links: 
      * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/)
 - Inconsistent references for links: 
@@ -2689,7 +2674,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Service Workers 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Service Workers 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2702,7 +2687,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `WindowOrWorkerGlobalScope`
 - WebIDL names also defined elsewhere: 
     * `Worker` also defined in [HTML Standard](https://html.spec.whatwg.org/)
 - Missing references for links: 
@@ -2845,7 +2829,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `GlobalEventHandlers`, `WindowProxy`
+- Unknown WebIDL names used: `WindowProxy`
 - Missing references for links: 
      * [`https://www.w3.org/TR/touch-events-extensions/`](https://www.w3.org/TR/touch-events-extensions/)
 
@@ -3408,7 +3392,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebDriver {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## WebDriver {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3421,7 +3405,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Missing references for links: 
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
      * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
@@ -3444,7 +3427,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Mar 19 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Mar 20 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3467,7 +3450,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Mar 19 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Mar 20 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 

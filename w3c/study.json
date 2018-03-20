@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-19T02:01:13.282Z",
+  "date": "2018-03-20T02:01:06.841Z",
   "stats": {
     "crawled": 119,
-    "errors": 4,
+    "errors": 2,
     "studied": 119
   },
   "results": [
@@ -671,7 +671,7 @@
     {
       "title": "CSS Font Loading Module Level 3",
       "shortname": "css-font-loading-3",
-      "date": "29 January 2018",
+      "date": "17 March 2018",
       "url": "https://www.w3.org/TR/css-font-loading-3/",
       "latest": "http://www.w3.org/TR/css-font-loading-3/",
       "datedUrl": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/",
@@ -683,8 +683,12 @@
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
-        "hasInvalidIdl": true,
-        "unknownIdlNames": [],
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -747,7 +751,7 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/",
-              "date": "29 January 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -895,7 +899,7 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/",
-              "date": "29 January 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -956,6 +960,12 @@
               "title": "Referrer Policy",
               "crawled": "https://w3c.github.io/webappsec-referrer-policy/",
               "date": "20 April 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -1079,7 +1089,14 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -1129,6 +1146,12 @@
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/",
               "date": "20 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             }
           ],
           "informative": []
@@ -1181,7 +1204,7 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/",
-              "date": "29 January 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -1242,6 +1265,12 @@
               "title": "Resource Timing Level 3",
               "crawled": "https://w3c.github.io/resource-timing/",
               "date": "Draft17 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -1471,6 +1500,12 @@
               "date": "23 October 2017"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webdriver/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/webdriver-spec.html",
@@ -1574,12 +1609,33 @@
           "EventHandler",
           "HTMLElement",
           "HTMLImageElement",
-          "MouseEvent",
-          "MouseEventInit",
           "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "MouseEvent",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/uievents/",
+                "title": "UI Events",
+                "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+                "date": "04 August 2016"
+              }
+            ]
+          },
+          {
+            "name": "MouseEventInit",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/uievents/",
+                "title": "UI Events",
+                "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+                "date": "04 August 2016"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -1613,6 +1669,12 @@
               "title": "The Screen Orientation API",
               "crawled": "https://w3c.github.io/screen-orientation/",
               "date": "Draft05 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
             },
             {
               "url": "https://www.w3.org/TR/UISecurity/",
@@ -1660,7 +1722,7 @@
     {
       "title": "Custom Elements",
       "shortname": "custom-elements",
-      "date": "Draft16 March 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/custom-elements/",
       "latest": "https://www.w3.org/TR/custom-elements/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-custom-elements-20180216/",
@@ -1669,21 +1731,15 @@
       "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
       "repository": "https://github.com/w3c/webcomponents",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395\n    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)\n    at ontimeout (timers.js:482:11)\n    at tryOnTimeout (timers.js:317:5)\n    at Timer.listOnTimeout (timers.js:277:5)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/aria/aria/aria.html",
-          "https://w3c.github.io/uievents/",
-          "https://w3c.github.io/editing/execCommand.html"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -2180,7 +2236,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft16 March 2018"
+              "date": "Draft19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
@@ -2301,7 +2357,7 @@
               "url": "https://www.w3.org/TR/image-capture/",
               "title": "MediaStream Image Capture",
               "crawled": "https://w3c.github.io/mediacapture-image/",
-              "date": "7 March 2018"
+              "date": "19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -2868,6 +2924,12 @@
               "date": "8 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
@@ -2880,7 +2942,14 @@
               "date": "15 March 2018"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            }
+          ]
         },
         "ok": false
       }
@@ -3066,7 +3135,7 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/",
-              "date": "29 January 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -3115,12 +3184,6 @@
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/",
               "date": "20 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "Draft16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/orientation-event/",
@@ -3228,7 +3291,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft19 March 2018"
+              "date": "Draft20 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3264,7 +3327,7 @@
               "url": "https://www.w3.org/TR/image-capture/",
               "title": "MediaStream Image Capture",
               "crawled": "https://w3c.github.io/mediacapture-image/",
-              "date": "7 March 2018"
+              "date": "19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -3306,7 +3369,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft16 March 2018"
+              "date": "Draft19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -3399,12 +3462,6 @@
               "date": "13 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "Draft16 March 2018"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -3429,6 +3486,12 @@
               "date": "23 October 2017"
             },
             {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
+            },
+            {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
@@ -3451,6 +3514,18 @@
               "title": "W3C DOM 4.1",
               "crawled": "https://w3c.github.io/dom/",
               "date": "8 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/wake-lock/",
+              "title": "Wake Lock API",
+              "crawled": "https://w3c.github.io/wake-lock/",
+              "date": "Draft13 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -3510,13 +3585,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3681,9 +3756,7 @@
         "unknownIdlNames": [
           "HTMLCanvasElement",
           "HTMLImageElement",
-          "HTMLVideoElement",
-          "MouseEvent",
-          "MouseEventInit"
+          "HTMLVideoElement"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
@@ -3695,6 +3768,28 @@
                 "title": "W3C DOM 4.1",
                 "crawled": "https://w3c.github.io/dom/",
                 "date": "8 March 2018"
+              }
+            ]
+          },
+          {
+            "name": "MouseEvent",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/uievents/",
+                "title": "UI Events",
+                "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+                "date": "04 August 2016"
+              }
+            ]
+          },
+          {
+            "name": "MouseEventInit",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/uievents/",
+                "title": "UI Events",
+                "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+                "date": "04 August 2016"
               }
             ]
           }
@@ -3758,7 +3853,7 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/",
-              "date": "29 January 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -3801,12 +3896,6 @@
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/",
               "date": "20 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "Draft16 March 2018"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -3866,7 +3955,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft19 March 2018"
+              "date": "Draft20 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -3884,7 +3973,7 @@
               "url": "https://www.w3.org/TR/image-capture/",
               "title": "MediaStream Image Capture",
               "crawled": "https://w3c.github.io/mediacapture-image/",
-              "date": "7 March 2018"
+              "date": "19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -3926,7 +4015,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft16 March 2018"
+              "date": "Draft19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -3983,12 +4072,6 @@
               "date": "13 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "Draft16 March 2018"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -4007,6 +4090,12 @@
               "date": "Draft05 November 2017"
             },
             {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
+            },
+            {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
@@ -4017,6 +4106,18 @@
               "title": "W3C DOM 4.1",
               "crawled": "https://w3c.github.io/dom/",
               "date": "8 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/wake-lock/",
+              "title": "Wake Lock API",
+              "crawled": "https://w3c.github.io/wake-lock/",
+              "date": "Draft13 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -4058,7 +4159,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -4280,7 +4381,7 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/",
-              "date": "29 January 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -4323,12 +4424,6 @@
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/",
               "date": "20 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "Draft16 March 2018"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -4388,7 +4483,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft19 March 2018"
+              "date": "Draft20 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -4406,7 +4501,7 @@
               "url": "https://www.w3.org/TR/image-capture/",
               "title": "MediaStream Image Capture",
               "crawled": "https://w3c.github.io/mediacapture-image/",
-              "date": "7 March 2018"
+              "date": "19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -4448,7 +4543,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft16 March 2018"
+              "date": "Draft19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -4517,12 +4612,6 @@
               "date": "13 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "Draft16 March 2018"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -4541,6 +4630,12 @@
               "date": "Draft05 November 2017"
             },
             {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
+            },
+            {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
@@ -4551,6 +4646,18 @@
               "title": "W3C DOM 4.1",
               "crawled": "https://w3c.github.io/dom/",
               "date": "8 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/wake-lock/",
+              "title": "Wake Lock API",
+              "crawled": "https://w3c.github.io/wake-lock/",
+              "date": "Draft13 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -4857,7 +4964,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "Draft19 March 2018",
+      "date": "Draft20 March 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -4872,9 +4979,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
-          "DataTransfer",
-          "InputEvent",
-          "InputEventInit"
+          "DataTransfer"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -4895,7 +5000,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft19 March 2018"
+              "date": "Draft20 March 2018"
             }
           ]
         },
@@ -5151,7 +5256,7 @@
               "url": "https://www.w3.org/TR/image-capture/",
               "title": "MediaStream Image Capture",
               "crawled": "https://w3c.github.io/mediacapture-image/",
-              "date": "7 March 2018"
+              "date": "19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -5430,7 +5535,7 @@
     {
       "title": "MediaStream Image Capture",
       "shortname": "image-capture",
-      "date": "7 March 2018",
+      "date": "19 March 2018",
       "url": "https://www.w3.org/TR/image-capture/",
       "latest": "https://www.w3.org/TR/image-capture/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-image-capture-20170621/",
@@ -5894,6 +5999,12 @@
               "date": "Draft23 October 2017"
             },
             {
+              "url": "https://www.w3.org/TR/wake-lock/",
+              "title": "Wake Lock API",
+              "crawled": "https://w3c.github.io/wake-lock/",
+              "date": "Draft13 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
@@ -6042,7 +6153,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft16 March 2018"
+              "date": "Draft19 March 2018"
             }
           ]
         },
@@ -6052,7 +6163,7 @@
     {
       "title": "Payment Request API",
       "shortname": "payment-request",
-      "date": "Draft16 March 2018",
+      "date": "Draft19 March 2018",
       "url": "https://www.w3.org/TR/payment-request/",
       "latest": "https://www.w3.org/TR/payment-request/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-payment-request-20180301/",
@@ -6327,8 +6438,6 @@
         "unknownIdlNames": [
           "EventHandler",
           "GlobalEventHandlers",
-          "MouseEvent",
-          "MouseEventInit",
           "Navigator",
           "Window"
         ],
@@ -6375,9 +6484,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
-          "EventHandler",
-          "MouseEvent",
-          "MouseEventInit"
+          "EventHandler"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -6879,7 +6986,6 @@
           "https://www.w3.org/TR/css3-mediaqueries/",
           "https://www.w3.org/TR/2013/REC-css-style-attr-20131107/",
           "https://www.w3.org/TR/css-position-3/",
-          "https://w3c.github.io/web-animations/",
           "https://www.w3.org/TR/css3-exclusions/",
           "https://www.w3.org/TR/css-shapes/",
           "https://www.w3.org/TR/resource-hints/",
@@ -7040,6 +7146,13 @@
             }
           },
           {
+            "link": "https://w3c.github.io/web-animations/",
+            "ref": {
+              "name": "web-animations-1",
+              "url": "https://www.w3.org/TR/web-animations-1/"
+            }
+          },
+          {
             "link": "https://www.w3.org/TR/2015/CR-css-ui-3-20150707/",
             "ref": {
               "name": "css-ui-3",
@@ -7173,6 +7286,18 @@
               "title": "Resource Timing Level 3",
               "crawled": "https://w3c.github.io/resource-timing/",
               "date": "Draft17 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             }
           ],
           "informative": [
@@ -7199,12 +7324,6 @@
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/",
               "date": "20 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "Draft16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/geometry-1/",
@@ -7537,6 +7656,12 @@
               "title": "Selectors API Level 1",
               "crawled": "https://www.w3.org/TR/selectors-api/",
               "date": "21 February 2013"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             }
           ],
           "informative": [
@@ -7814,7 +7939,7 @@
     {
       "title": "Shadow DOM",
       "shortname": "shadow-dom",
-      "date": "Draft16 March 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/shadow-dom/",
       "latest": "https://www.w3.org/TR/shadow-dom/",
       "datedUrl": "https://www.w3.org/TR/2018/NOTE-shadow-dom-20180301/",
@@ -7823,119 +7948,16 @@
       "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
       "repository": "https://github.com/w3c/webcomponents",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395\n    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)\n    at ontimeout (timers.js:482:11)\n    at tryOnTimeout (timers.js:317:5)\n    at Timer.listOnTimeout (timers.js:277:5)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
-        "redefinedIdlNames": [
-          {
-            "name": "ShadowRoot",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "ShadowRootMode",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          }
-        ],
-        "missingWebIdlRef": [
-          {
-            "name": "DocumentOrShadowRoot",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "Selection",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/selection-api/",
-                "title": "Selection API",
-                "crawled": "https://w3c.github.io/selection-api/",
-                "date": "Draft28 June 2017"
-              }
-            ]
-          },
-          {
-            "name": "Element",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "CaretPosition",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/cssom-view-1/",
-                "title": "CSSOM View Module",
-                "crawled": "https://drafts.csswg.org/cssom-view/",
-                "date": "20 December 2017"
-              }
-            ]
-          },
-          {
-            "name": "StyleSheetList",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/cssom-1/",
-                "title": "CSS Object Model (CSSOM)",
-                "crawled": "https://drafts.csswg.org/cssom/",
-                "date": "12 February 2018"
-              }
-            ]
-          },
-          {
-            "name": "DocumentFragment",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          }
-        ],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-ui/",
-          "https://www.w3.org/TR/cssom/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/uievents/",
-            "ref": {
-              "name": "uievents",
-              "url": "https://www.w3.org/TR/uievents/"
-            }
-          }
-        ],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -7975,7 +7997,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft19 March 2018"
+              "date": "Draft20 March 2018"
             }
           ],
           "informative": []
@@ -8163,9 +8185,7 @@
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
           "EventHandler",
-          "EventModifierInit",
           "GlobalEventHandlers",
-          "UIEvent",
           "Window",
           "WindowProxy"
         ],
@@ -8197,60 +8217,47 @@
       }
     },
     {
-      "title": "UI Events KeyboardEvent key Values",
-      "shortname": "uievents-key",
-      "date": "4 October 2017",
-      "url": "https://www.w3.org/TR/uievents-key/",
-      "latest": "https://www.w3.org/TR/uievents-key/",
-      "datedUrl": "https://www.w3.org/TR/2017/CR-uievents-key-20170601/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://w3c.github.io/uievents-key/",
-      "crawled": "https://w3c.github.io/uievents-key/",
-      "repository": "https://github.com/w3c/uievents-key",
+      "title": "UI Events",
+      "shortname": "uievents",
+      "date": "04 August 2016",
+      "url": "https://www.w3.org/TR/uievents/",
+      "latest": "https://www.w3.org/TR/uievents/",
+      "datedUrl": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/uievents/",
+      "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+      "repository": "https://github.com/w3c/uievents",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://w3c.github.io/webdriver/webdriver-spec.html",
-              "date": "Recommendation04 March 2018"
+        "missingLinkRef": [
+          "https://www.w3.org/TR/svg2/",
+          "https://www.w3.org/TR/2004/REC-xml-20040204/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://dom.spec.whatwg.org/",
+            "ref": {
+              "name": "DOM-Level-3-Core",
+              "url": "http://www.w3.org/TR/DOM-Level-3-Core/"
             }
-          ],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "uievents",
-      "shortname": "uievents",
-      "date": "",
-      "url": "https://www.w3.org/TR/uievents/",
-      "latest": "https://www.w3.org/TR/uievents",
-      "crawled": "https://www.w3.org/TR/uievents",
-      "repository": "https://github.com/w3c/uievents",
-      "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+          },
+          {
+            "link": "https://www.w3.org/TR/css-syntax-3/",
+            "ref": {
+              "name": "CSS-SYNTAX-3",
+              "url": "http://dev.w3.org/csswg/css-syntax/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -8263,7 +8270,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft19 March 2018"
+              "date": "Draft20 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -8296,6 +8303,12 @@
               "date": "23 October 2017"
             },
             {
+              "url": "https://www.w3.org/TR/uievents-code/",
+              "title": "UI Events KeyboardEvent code Values",
+              "crawled": "https://w3c.github.io/uievents-code/",
+              "date": "5 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/uievents-key/",
               "title": "UI Events KeyboardEvent key Values",
               "crawled": "https://w3c.github.io/uievents-key/",
@@ -8314,32 +8327,28 @@
               "date": "Recommendation04 March 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "Draft16 March 2018"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
     },
     {
-      "title": "uievents-code",
+      "title": "UI Events KeyboardEvent code Values",
       "shortname": "uievents-code",
-      "date": "",
+      "date": "5 October 2017",
       "url": "https://www.w3.org/TR/uievents-code/",
-      "latest": "https://www.w3.org/TR/uievents-code",
-      "crawled": "https://www.w3.org/TR/uievents-code/",
+      "latest": "https://www.w3.org/TR/uievents-code/",
+      "datedUrl": "https://www.w3.org/TR/2017/CR-uievents-code-20170601/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://w3c.github.io/uievents-code/",
+      "crawled": "https://w3c.github.io/uievents-code/",
       "repository": "https://github.com/w3c/uievents-code",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": true,
         "noIdlContent": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -8348,10 +8357,64 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/uievents-key/",
               "title": "UI Events KeyboardEvent key Values",
               "crawled": "https://w3c.github.io/uievents-key/",
               "date": "4 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/webdriver-spec.html",
+              "date": "Recommendation04 March 2018"
+            }
+          ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "UI Events KeyboardEvent key Values",
+      "shortname": "uievents-key",
+      "date": "4 October 2017",
+      "url": "https://www.w3.org/TR/uievents-key/",
+      "latest": "https://www.w3.org/TR/uievents-key/",
+      "datedUrl": "https://www.w3.org/TR/2017/CR-uievents-key-20170601/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://w3c.github.io/uievents-key/",
+      "crawled": "https://w3c.github.io/uievents-key/",
+      "repository": "https://github.com/w3c/uievents-key",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/uievents-code/",
+              "title": "UI Events KeyboardEvent code Values",
+              "crawled": "https://w3c.github.io/uievents-code/",
+              "date": "5 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -8700,30 +8763,7 @@
           "HTMLSlotElement",
           "Window"
         ],
-        "redefinedIdlNames": [
-          {
-            "name": "ShadowRoot",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/shadow-dom/",
-                "title": "Shadow DOM",
-                "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-                "date": "Draft16 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "ShadowRootMode",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/shadow-dom/",
-                "title": "Shadow DOM",
-                "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-                "date": "Draft16 March 2018"
-              }
-            ]
-          }
-        ],
+        "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/touch-events/"
@@ -8795,7 +8835,7 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/",
-              "date": "29 January 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -8838,12 +8878,6 @@
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/",
               "date": "20 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "Draft16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/orientation-event/",
@@ -8945,7 +8979,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft16 March 2018"
+              "date": "Draft19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -9068,6 +9102,12 @@
               "date": "23 October 2017"
             },
             {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
+            },
+            {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
@@ -9084,6 +9124,18 @@
               "title": "W3C DOM 4.1",
               "crawled": "https://w3c.github.io/dom/",
               "date": "8 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/wake-lock/",
+              "title": "Wake Lock API",
+              "crawled": "https://w3c.github.io/wake-lock/",
+              "date": "Draft13 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -9131,7 +9183,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -9154,12 +9206,6 @@
               "date": "30 January 2018"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "Draft16 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "Web IDL",
               "crawled": "https://heycam.github.io/webidl/",
@@ -9171,26 +9217,80 @@
       }
     },
     {
-      "title": "wake-lock",
+      "title": "Wake Lock API",
       "shortname": "wake-lock",
-      "date": "",
+      "date": "Draft13 December 2017",
       "url": "https://www.w3.org/TR/wake-lock/",
-      "latest": "https://www.w3.org/TR/wake-lock",
-      "crawled": "https://www.w3.org/TR/wake-lock/",
+      "latest": "https://www.w3.org/TR/wake-lock/",
+      "datedUrl": "https://www.w3.org/TR/2017/CR-wake-lock-20171214/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://w3c.github.io/wake-lock/",
+      "crawled": "https://w3c.github.io/wake-lock/",
       "repository": "https://github.com/w3c/wake-lock",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
-        "unknownIdlNames": [],
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Web Animations",
+      "shortname": "web-animations-1",
+      "date": "15 March 2018",
+      "url": "https://www.w3.org/TR/web-animations-1/",
+      "latest": "https://www.w3.org/TR/web-animations-1/",
+      "datedUrl": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/web-animations/",
+      "crawled": "https://w3c.github.io/web-animations/",
+      "repository": "https://github.com/w3c/web-animations",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/hr-time/",
+            "ref": {
+              "name": "HR-TIME-2",
+              "url": "https://www.w3.org/TR/hr-time-2/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://svgwg.org/svg2-draft/",
+              "date": "14 February 2018"
+            }
+          ],
           "informative": []
         },
         "ok": false
@@ -9571,7 +9671,7 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/",
-              "date": "29 January 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -9620,12 +9720,6 @@
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/",
               "date": "20 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "Draft16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/orientation-event/",
@@ -9781,7 +9875,7 @@
               "url": "https://www.w3.org/TR/image-capture/",
               "title": "MediaStream Image Capture",
               "crawled": "https://w3c.github.io/mediacapture-image/",
-              "date": "7 March 2018"
+              "date": "19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -9823,7 +9917,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft16 March 2018"
+              "date": "Draft19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -9970,6 +10064,18 @@
               "date": "8 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/wake-lock/",
+              "title": "Wake Lock API",
+              "crawled": "https://w3c.github.io/wake-lock/",
+              "date": "Draft13 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://w3c.github.io/manifest/",
@@ -10015,13 +10121,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -10071,7 +10177,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft19 March 2018"
+              "date": "Draft20 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -10098,10 +10204,10 @@
               "date": "Draft08 November 2017"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "Draft16 March 2018"
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
             },
             {
               "url": "https://www.w3.org/TR/vibration/",
@@ -10376,7 +10482,7 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/",
-              "date": "29 January 2018"
+              "date": "17 March 2018"
             },
             {
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -10419,12 +10525,6 @@
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/",
               "date": "20 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/custom-elements/",
-              "title": "Custom Elements",
-              "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
-              "date": "Draft16 March 2018"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -10490,7 +10590,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft19 March 2018"
+              "date": "Draft20 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -10508,7 +10608,7 @@
               "url": "https://www.w3.org/TR/image-capture/",
               "title": "MediaStream Image Capture",
               "crawled": "https://w3c.github.io/mediacapture-image/",
-              "date": "7 March 2018"
+              "date": "19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -10550,7 +10650,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft16 March 2018"
+              "date": "Draft19 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -10613,12 +10713,6 @@
               "date": "13 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "Draft16 March 2018"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -10637,6 +10731,12 @@
               "date": "Draft05 November 2017"
             },
             {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
+            },
+            {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
@@ -10653,6 +10753,18 @@
               "title": "W3C DOM 4.1",
               "crawled": "https://w3c.github.io/dom/",
               "date": "8 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/wake-lock/",
+              "title": "Wake Lock API",
+              "crawled": "https://w3c.github.io/wake-lock/",
+              "date": "Draft13 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -10824,39 +10936,6 @@
       }
     },
     {
-      "title": "web-animations-1",
-      "shortname": "web-animations-1",
-      "date": "",
-      "url": "https://www.w3.org/TR/web-animations-1/",
-      "latest": "https://www.w3.org/TR/web-animations-1",
-      "crawled": "https://www.w3.org/TR/web-animations-1/",
-      "repository": "https://github.com/w3c/web-animations",
-      "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/SVG2/",
-              "title": "Scalable Vector Graphics (SVG) 2",
-              "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "14 February 2018"
-            }
-          ],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "WebAssembly JavaScript Interface",
       "date": "18 March 2018",
       "url": "https://webassembly.github.io/spec/js-api/index.html",
@@ -10923,7 +11002,7 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [],
@@ -10973,7 +11052,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Mon Mar 19 2018",
+      "date": "Tue Mar 20 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -11023,7 +11102,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Mon Mar 19 2018",
+      "date": "Tue Mar 20 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -11063,7 +11142,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             }
           ],
           "informative": [

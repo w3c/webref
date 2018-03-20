@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-19T02:05:30.654Z",
+  "date": "2018-03-20T02:05:22.012Z",
   "stats": {
     "crawled": 119,
-    "errors": 1,
+    "errors": 0,
     "studied": 119
   },
   "results": [
@@ -3669,13 +3669,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3768,6 +3768,12 @@
               "title": "Resource Timing Level 2",
               "crawled": "https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/",
               "date": "29 March 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
+              "date": "14 July 2016"
             },
             {
               "url": "https://www.w3.org/TR/selection-api/",
@@ -4135,7 +4141,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -4204,6 +4210,12 @@
               "title": "Resource Timing Level 2",
               "crawled": "https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/",
               "date": "29 March 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
+              "date": "14 July 2016"
             },
             {
               "url": "https://www.w3.org/TR/selection-api/",
@@ -5118,6 +5130,12 @@
               "date": "06 September 2017"
             },
             {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
+              "date": "14 July 2016"
+            },
+            {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
@@ -5192,7 +5210,14 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
+              "date": "14 July 2016"
+            }
+          ]
         },
         "ok": false
       }
@@ -7168,24 +7193,35 @@
       }
     },
     {
-      "title": "screen-capture",
+      "title": "Screen Capture",
       "shortname": "screen-capture",
-      "date": "",
+      "date": "14 July 2016",
       "url": "https://www.w3.org/TR/screen-capture/",
-      "latest": "https://www.w3.org/TR/screen-capture",
-      "crawled": "https://www.w3.org/TR/screen-capture",
+      "latest": "http://www.w3.org/TR/screen-capture/",
+      "datedUrl": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/mediacapture-screen-share/",
+      "crawled": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
       "repository": "https://github.com/w3c/mediacapture-screen-share",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/mediacapture-main/",
+            "ref": {
+              "name": "GETUSERMEDIA",
+              "url": "https://www.w3.org/TR/mediacapture-streams/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -8918,7 +8954,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -9993,7 +10029,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Mon Mar 19 2018",
+      "date": "Tue Mar 20 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -10024,7 +10060,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Mon Mar 19 2018",
+      "date": "Tue Mar 20 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -10064,7 +10100,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             }
           ],
           "informative": [
@@ -10461,6 +10497,12 @@
               "date": "15 September 2016"
             },
             {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
+              "date": "14 July 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/selection-api/",
               "title": "Selection API",
               "crawled": "https://www.w3.org/TR/2017/WD-selection-api-20170628/",
@@ -10596,13 +10638,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Mar 19 2018"
+              "date": "Tue Mar 20 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -10832,6 +10874,12 @@
               "title": "Presentation API",
               "crawled": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/",
               "date": "01 June 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
+              "date": "14 July 2016"
             }
           ]
         },
