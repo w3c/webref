@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 20, 2018
+% March 21, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -9,7 +9,7 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/accelerometer/) (14 March 2018)
 - Editor's Draft: [https://w3c.github.io/accelerometer/](https://w3c.github.io/accelerometer/)
 - Latest published version: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
 - Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
 - Shortname: accelerometer
 
@@ -41,7 +41,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/ambient-light/) (15 March 2018)
 - Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
 - Latest published version: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - Repository: [GitHub w3c/ambient-light](https://github.com/w3c/ambient-light)
 - Shortname: ambient-light
 
@@ -240,6 +240,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
@@ -830,6 +831,7 @@ Normative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
@@ -963,6 +965,7 @@ Normative references to this spec from:
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Resource Timing Level 3](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -1098,7 +1101,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (15 March 2018)
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
 - Shortname: generic-sensor
 
@@ -1191,7 +1194,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/gyroscope/) (14 March 2018)
 - Editor's Draft: [https://w3c.github.io/gyroscope/](https://w3c.github.io/gyroscope/)
 - Latest published version: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
 - Repository: [GitHub w3c/gyroscope](https://github.com/w3c/gyroscope)
 - Shortname: gyroscope
 
@@ -1357,6 +1360,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
@@ -1493,7 +1497,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (Draft20 March 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (Draft21 March 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1576,7 +1580,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/magnetometer/) (15 March 2018)
 - Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
 - Latest published version: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
 - Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
 - Shortname: magnetometer
 
@@ -1849,6 +1853,7 @@ Normative references to this spec from:
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 
@@ -1922,7 +1927,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/) (14 March 2018)
 - Editor's Draft: [https://w3c.github.io/orientation-sensor/](https://w3c.github.io/orientation-sensor/)
 - Latest published version: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
 - Shortname: orientation-sensor
 
@@ -2060,10 +2065,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (Draft19 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (Draft21 March 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
 - Shortname: payment-request
 
@@ -2208,27 +2213,28 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## preload {data-spec=true data-error=true}
+## Preload {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/preload/)
-- Latest published version: [https://www.w3.org/TR/preload](https://www.w3.org/TR/preload)
+- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (Draft09 January 2018)
+- Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
+- Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - Repository: [GitHub w3c/preload](https://github.com/w3c/preload)
 - Shortname: preload
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -2338,6 +2344,7 @@ Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
 No informative reference to this spec from other specs.
@@ -3195,7 +3202,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (14 March 2018)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Shortname: webauthn
 
@@ -3373,7 +3380,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (18 March 2018)
+- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (20 March 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3427,7 +3434,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Mar 20 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Mar 21 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3450,7 +3457,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Mar 20 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Mar 21 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 

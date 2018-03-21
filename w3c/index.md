@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 20, 2018
+% March 21, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -9,7 +9,7 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/accelerometer/) (14 March 2018)
 - Editor's Draft: [https://w3c.github.io/accelerometer/](https://w3c.github.io/accelerometer/)
 - Latest published version: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
 - Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
 - Shortname: accelerometer
 
@@ -42,7 +42,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/ambient-light/) (15 March 2018)
 - Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
 - Latest published version: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - Repository: [GitHub w3c/ambient-light](https://github.com/w3c/ambient-light)
 - Shortname: ambient-light
 
@@ -1050,7 +1050,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (15 March 2018)
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
 - Shortname: generic-sensor
 
@@ -1144,7 +1144,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/gyroscope/) (14 March 2018)
 - Editor's Draft: [https://w3c.github.io/gyroscope/](https://w3c.github.io/gyroscope/)
 - Latest published version: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
 - Repository: [GitHub w3c/gyroscope](https://github.com/w3c/gyroscope)
 - Shortname: gyroscope
 
@@ -1674,7 +1674,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (Draft20 March 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (Draft21 March 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1756,7 +1756,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/magnetometer/) (15 March 2018)
 - Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
 - Latest published version: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
 - Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
 - Shortname: magnetometer
 
@@ -2084,7 +2084,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/) (14 March 2018)
 - Editor's Draft: [https://w3c.github.io/orientation-sensor/](https://w3c.github.io/orientation-sensor/)
 - Latest published version: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
 - Shortname: orientation-sensor
 
@@ -2229,7 +2229,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (Draft19 March 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
 - Shortname: payment-request
 
@@ -3585,7 +3585,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (14 March 2018)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Shortname: webauthn
 
@@ -3958,7 +3958,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (18 March 2018)
+- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (20 March 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4013,7 +4013,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Mar 20 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Mar 21 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4038,7 +4038,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Mar 20 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Mar 21 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
