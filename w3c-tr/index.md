@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 20, 2018
+% March 21, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -38,14 +38,14 @@ Informative references to this spec from:
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 
 
-## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-accelerometer-20171018/) (18 October 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-accelerometer-20180320/) (20 March 2018)
 - Editor's Draft: [https://w3c.github.io/accelerometer/](https://w3c.github.io/accelerometer/)
 - Latest published version: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
 - Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
 - Shortname: accelerometer
 
@@ -55,12 +55,16 @@ Informative references to this spec from:
 - Missing references for links: 
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
      * [`https://w3c.github.io/sensors/usecases.html`](https://w3c.github.io/sensors/usecases.html)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/screen-orientation/`](https://www.w3.org/TR/screen-orientation/), related reference "SCREEN-ORIENTATION" uses URL [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
+- [Magnetometer](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
+- [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 
 Informative references to this spec from:
 
@@ -71,10 +75,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-ambient-light-20171018/) (18 October 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-ambient-light-20180320/) (20 March 2018)
 - Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
 - Latest published version: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - Repository: [GitHub w3c/ambient-light](https://github.com/w3c/ambient-light)
 - Shortname: ambient-light
 
@@ -138,7 +142,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 
 
 ## Battery Status API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
@@ -378,7 +382,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 
 Informative references to this spec from:
 
@@ -520,7 +524,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 
 
 ## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true}
@@ -878,7 +882,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 
 
@@ -947,7 +951,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2017/WD-webvtt1-20170808/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -1014,14 +1018,14 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
@@ -1151,10 +1155,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/) (18 October 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/) (20 March 2018)
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
 - Shortname: generic-sensor
 
@@ -1162,22 +1166,24 @@ No informative reference to this spec from other specs.
 
 - Unknown WebIDL names used: `EventHandler`, `Window`
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
+     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
+     * [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/), related reference "PERMISSIONS" uses URL [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/)
+     * [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/), related reference "HR-TIME-2" uses URL [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
-- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
-- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
-- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
+- [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
+- [Magnetometer](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
+- [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Proximity Sensor](http://www.w3.org/TR/2016/WD-proximity-20160719/)
 
 Informative references to this spec from:
 
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 
 
 ## Geolocation API Specification 2nd Edition {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -1197,11 +1203,11 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 
 Informative references to this spec from:
 
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
@@ -1234,7 +1240,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
@@ -1245,10 +1251,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-gyroscope-20171018/) (18 October 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-gyroscope-20180320/) (20 March 2018)
 - Editor's Draft: [https://w3c.github.io/gyroscope/](https://w3c.github.io/gyroscope/)
 - Latest published version: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
 - Repository: [GitHub w3c/gyroscope](https://github.com/w3c/gyroscope)
 - Shortname: gyroscope
 
@@ -1262,7 +1268,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 
 Informative references to this spec from:
 
@@ -1295,7 +1301,7 @@ Normative references to this spec from:
 
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180216/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180314/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
@@ -1384,7 +1390,7 @@ Normative references to this spec from:
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -1404,7 +1410,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -1432,7 +1438,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
@@ -1453,7 +1459,7 @@ Informative references to this spec from:
 - [Encoding](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
@@ -1507,7 +1513,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -1515,7 +1521,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -1530,7 +1536,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -1543,7 +1549,7 @@ Informative references to this spec from:
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
@@ -1611,14 +1617,14 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -1635,7 +1641,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
@@ -1648,7 +1654,7 @@ Informative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
@@ -1807,29 +1813,32 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Magnetometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Magnetometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-magnetometer-20171018/) (18 October 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-magnetometer-20180320/) (20 March 2018)
 - Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
 - Latest published version: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
 - Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
 - Shortname: magnetometer
 
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Window`
+- Missing references for links: 
+     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/), related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 
 Informative references to this spec from:
 
@@ -2075,7 +2084,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 
 Informative references to this spec from:
 
@@ -2122,10 +2131,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/) (18 October 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/) (20 March 2018)
 - Editor's Draft: [https://w3c.github.io/orientation-sensor/](https://w3c.github.io/orientation-sensor/)
 - Latest published version: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
 - Shortname: orientation-sensor
 
@@ -2133,7 +2142,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `DOMMatrix`, `Window`
 - Missing references for links: 
-     * [`https://www.w3.org/TR/orientation-event/`](https://www.w3.org/TR/orientation-event/)
+     * [`https://www.w3.org/TR/2016/CR-orientation-event-20160818/`](https://www.w3.org/TR/2016/CR-orientation-event-20160818/)
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
@@ -2175,13 +2184,13 @@ Normative references to this spec from:
 
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [The Screen Orientation API](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 
 Informative references to this spec from:
@@ -2244,10 +2253,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-payment-request-20180301/) (1 March 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-payment-request-20180320/) (20 March 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
 - Shortname: payment-request
 
@@ -2329,11 +2338,11 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
-- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
-- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
-- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
+- [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
+- [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
+- [Magnetometer](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -2777,7 +2786,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -2786,7 +2795,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 
 Informative references to this spec from:
 
@@ -3089,6 +3098,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 
 No informative reference to this spec from other specs.
@@ -3278,7 +3288,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
@@ -3418,7 +3428,7 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180216/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
@@ -3426,7 +3436,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
@@ -3453,7 +3463,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
@@ -3598,10 +3608,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-webauthn-20180315/) (15 March 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-webauthn-20180320/) (20 March 2018)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Shortname: webauthn
 
@@ -3752,7 +3762,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
@@ -3762,7 +3772,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -3780,7 +3790,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebDriver](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
@@ -3803,7 +3813,7 @@ Informative references to this spec from:
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -3817,7 +3827,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (18 March 2018)
+- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (20 March 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3871,7 +3881,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Mar 20 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Mar 21 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3892,7 +3902,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Mar 20 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Mar 21 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3939,8 +3949,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
-- [Accelerometer](https://www.w3.org/TR/2017/WD-accelerometer-20171018/)
-- [Ambient Light Sensor](https://www.w3.org/TR/2017/WD-ambient-light-20171018/)
+- [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
@@ -3963,8 +3973,8 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180216/)
-- [Generic Sensor API](https://www.w3.org/TR/2017/WD-generic-sensor-20171018/)
-- [Gyroscope](https://www.w3.org/TR/2017/WD-gyroscope-20171018/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
+- [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
@@ -3972,7 +3982,7 @@ Normative references to this spec from:
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
-- [Magnetometer](https://www.w3.org/TR/2017/WD-magnetometer-20171018/)
+- [Magnetometer](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -3980,10 +3990,10 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
-- [Orientation Sensor](https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/)
+- [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180301/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
@@ -4009,7 +4019,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180222/)
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/WD-webauthn-20180315/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
