@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-23T02:01:17.585Z",
+  "date": "2018-03-24T02:01:14.929Z",
   "stats": {
     "crawled": 119,
-    "errors": 7,
+    "errors": 0,
     "studied": 119
   },
   "results": [
@@ -32,11 +32,18 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/screen-orientation/",
           "https://w3c.github.io/motion-sensors/",
           "https://w3c.github.io/sensors/usecases.html"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/screen-orientation/",
+            "ref": {
+              "name": "SCREEN-ORIENTATION",
+              "url": "https://w3c.github.io/screen-orientation/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -223,7 +230,14 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -384,13 +398,13 @@
                 "url": "https://www.w3.org/TR/service-workers-1/",
                 "title": "Service Workers 1",
                 "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-                "date": "13 March 2018"
+                "date": "23 March 2018"
               },
               {
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "21 March 2018"
+                "date": "23 March 2018"
               }
             ]
           },
@@ -501,7 +515,7 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -601,8 +615,7 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/webappsec/usecases/credentialmanagement/",
-          "https://w3c.github.io/webappsec-secure-contexts/"
+          "https://w3c.github.io/webappsec/usecases/credentialmanagement/"
         ],
         "inconsistentRef": [
           {
@@ -610,6 +623,13 @@
             "ref": {
               "name": "MIXED-CONTENT",
               "url": "https://www.w3.org/TR/mixed-content/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-secure-contexts/",
+            "ref": {
+              "name": "SECURE-CONTEXTS",
+              "url": "https://www.w3.org/TR/secure-contexts/"
             }
           },
           {
@@ -633,10 +653,17 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
+            }
+          ]
         },
         "ok": false
       }
@@ -748,7 +775,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -804,7 +831,7 @@
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "5 March 2018"
+              "date": "23 March 2018"
             }
           ]
         },
@@ -813,7 +840,7 @@
     },
     {
       "title": "CSS Layout API Level 1",
-      "date": "22 March 2018",
+      "date": "23 March 2018",
       "url": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "report": {
@@ -884,7 +911,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "22 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
@@ -908,7 +935,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -1075,7 +1102,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             }
           ]
         },
@@ -1112,7 +1139,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "22 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -1207,7 +1234,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -1232,6 +1259,12 @@
               "title": "Intersection Observer",
               "crawled": "https://w3c.github.io/IntersectionObserver/",
               "date": "17 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -1272,7 +1305,7 @@
     {
       "title": "CSS Typed OM Level 1",
       "shortname": "css-typed-om-1",
-      "date": "7 March 2018",
+      "date": "23 March 2018",
       "url": "https://www.w3.org/TR/css-typed-om-1/",
       "latest": "https://www.w3.org/TR/css-typed-om-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/",
@@ -1298,13 +1331,13 @@
                 "url": "https://www.w3.org/TR/service-workers-1/",
                 "title": "Service Workers 1",
                 "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-                "date": "13 March 2018"
+                "date": "23 March 2018"
               },
               {
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "21 March 2018"
+                "date": "23 March 2018"
               }
             ]
           },
@@ -1328,7 +1361,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "22 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
@@ -1422,13 +1455,13 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "5 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -1461,6 +1494,12 @@
               "date": "22 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/touch-events/",
+              "title": "Touch Events - Level 2",
+              "crawled": "https://w3c.github.io/touch-events/",
+              "date": "23 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://w3c.github.io/web-animations/",
@@ -1487,7 +1526,7 @@
     {
       "title": "CSS Writing Modes Level 3",
       "shortname": "css-writing-modes-3",
-      "date": "5 March 2018",
+      "date": "23 March 2018",
       "url": "https://www.w3.org/TR/css-writing-modes-3/",
       "latest": "https://www.w3.org/TR/css-writing-modes-3/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/",
@@ -1506,6 +1545,7 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css-logical-1/",
+          "https://www.w3.org/TR/css-text/",
           "https://www.w3.org/TR/css3-flexbox/",
           "https://www.w3.org/TR/css3-multicol/"
         ],
@@ -1516,7 +1556,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -1611,7 +1651,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -1624,6 +1664,12 @@
               "title": "Intersection Observer",
               "crawled": "https://w3c.github.io/IntersectionObserver/",
               "date": "17 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -1765,6 +1811,12 @@
               "date": "15 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "Web IDL",
               "crawled": "https://heycam.github.io/webidl/",
@@ -1868,13 +1920,13 @@
                 "url": "https://www.w3.org/TR/service-workers-1/",
                 "title": "Service Workers 1",
                 "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-                "date": "13 March 2018"
+                "date": "23 March 2018"
               },
               {
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "21 March 2018"
+                "date": "23 March 2018"
               }
             ]
           }
@@ -1947,7 +1999,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://webassembly.github.io/spec/js-api/index.html",
@@ -2023,6 +2075,12 @@
               "title": "Encrypted Media Extensions",
               "crawled": "https://w3c.github.io/encrypted-media/",
               "date": "22 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
             }
           ]
         },
@@ -2120,6 +2178,12 @@
               "date": "20 April 2017"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
@@ -2129,7 +2193,7 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/dom41/",
@@ -2147,7 +2211,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -2179,7 +2243,13 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft21 March 2018"
+              "date": "Draft23 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
+              "date": "Draft07 February 2018"
             },
             {
               "url": "https://streams.spec.whatwg.org/",
@@ -2381,6 +2451,12 @@
               "date": "18 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/webdriver/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/webdriver-spec.html",
@@ -2393,6 +2469,12 @@
               "title": "Pointer Lock 2.0",
               "crawled": "https://w3c.github.io/pointerlock/",
               "date": "Draft07 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -2568,7 +2650,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             }
           ],
           "informative": [
@@ -2583,6 +2665,12 @@
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/",
               "date": "22 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -2625,7 +2713,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -2823,6 +2911,12 @@
               "title": "Performance Timeline Level 2",
               "crawled": "https://w3c.github.io/performance-timeline/",
               "date": "Draft10 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/user-timing-2/",
@@ -3060,7 +3154,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "22 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -3090,7 +3184,7 @@
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "5 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -3210,7 +3304,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft23 March 2018"
+              "date": "Draft24 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3288,7 +3382,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft21 March 2018"
+              "date": "Draft23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -3339,16 +3433,34 @@
               "date": "Draft09 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
               "date": "22 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/selection-api/",
               "title": "Selection API",
               "crawled": "https://w3c.github.io/selection-api/",
               "date": "Draft28 June 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
+              "date": "Draft07 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/eventsource/",
@@ -3360,7 +3472,7 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/shadow-dom/",
@@ -3379,6 +3491,18 @@
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
               "date": "22 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/touch-events/",
+              "title": "Touch Events - Level 2",
+              "crawled": "https://w3c.github.io/touch-events/",
+              "date": "23 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -3438,7 +3562,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -3480,13 +3604,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Mar 23 2018"
+              "date": "Sat Mar 24 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Mar 23 2018"
+              "date": "Sat Mar 24 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3542,7 +3666,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -3554,7 +3678,7 @@
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "5 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/DOM-Parsing/",
@@ -3609,6 +3733,12 @@
               "title": "Push API",
               "crawled": "https://w3c.github.io/push-api/",
               "date": "Draft15 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "https://w3c.github.io/mediacapture-screen-share/",
+              "date": "Draft23 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/css3-selectors/",
@@ -3748,7 +3878,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "22 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -3778,7 +3908,7 @@
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "5 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -3850,7 +3980,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft23 March 2018"
+              "date": "Draft24 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -3910,7 +4040,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft21 March 2018"
+              "date": "Draft23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -3949,10 +4079,22 @@
               "date": "Draft09 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/shadow-dom/",
@@ -3971,6 +4113,12 @@
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
               "date": "22 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -4018,7 +4166,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -4042,7 +4190,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Mar 23 2018"
+              "date": "Sat Mar 24 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -4080,7 +4228,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -4141,6 +4289,12 @@
               "title": "Push API",
               "crawled": "https://w3c.github.io/push-api/",
               "date": "Draft15 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "https://w3c.github.io/mediacapture-screen-share/",
+              "date": "Draft23 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -4264,7 +4418,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "22 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -4294,7 +4448,7 @@
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "5 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -4366,7 +4520,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft23 March 2018"
+              "date": "Draft24 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -4426,7 +4580,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft21 March 2018"
+              "date": "Draft23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -4471,6 +4625,18 @@
               "date": "Draft09 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/eventsource/",
               "title": "Server-Sent Events",
               "crawled": "http://www.w3.org/TR/2015/REC-eventsource-20150203/",
@@ -4480,7 +4646,7 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/shadow-dom/",
@@ -4499,6 +4665,12 @@
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
               "date": "22 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -4546,7 +4718,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -4614,7 +4786,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -4804,6 +4976,12 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/dom41/",
               "title": "W3C DOM 4.1",
               "crawled": "https://w3c.github.io/dom/",
@@ -4829,7 +5007,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "Draft23 March 2018",
+      "date": "Draft24 March 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -4865,7 +5043,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft23 March 2018"
+              "date": "Draft24 March 2018"
             }
           ]
         },
@@ -5130,6 +5308,12 @@
               "date": "9 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "https://w3c.github.io/mediacapture-screen-share/",
+              "date": "Draft23 February 2018"
+            },
+            {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
@@ -5154,6 +5338,12 @@
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/",
               "date": "22 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -5198,7 +5388,14 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "https://w3c.github.io/mediacapture-screen-share/",
+              "date": "Draft23 February 2018"
+            }
+          ]
         },
         "ok": false
       }
@@ -5455,15 +5652,20 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/webappsec-secure-contexts/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
           {
             "link": "https://w3c.github.io/FileAPI/",
             "ref": {
               "name": "FileAPI",
               "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-secure-contexts/",
+            "ref": {
+              "name": "SECURE-CONTEXTS",
+              "url": "https://www.w3.org/TR/secure-contexts/"
             }
           }
         ],
@@ -5598,7 +5800,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             }
           ],
           "informative": [
@@ -5613,6 +5815,12 @@
               "title": "Media Capture and Streams",
               "crawled": "https://w3c.github.io/mediacapture-main/",
               "date": "12 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
             }
           ]
         },
@@ -5637,7 +5845,6 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
-          "PerformanceResourceTiming",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -5661,6 +5868,12 @@
               "date": "Draft16 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
+              "date": "Draft07 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 2",
               "crawled": "https://w3c.github.io/user-timing/",
@@ -5679,6 +5892,12 @@
               "title": "Performance Timeline Level 2",
               "crawled": "https://w3c.github.io/performance-timeline/",
               "date": "Draft10 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/user-timing-2/",
@@ -5808,7 +6027,13 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
             },
             {
               "url": "https://www.w3.org/TR/vibration/",
@@ -5826,7 +6051,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -5971,7 +6196,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft21 March 2018"
+              "date": "Draft23 March 2018"
             }
           ]
         },
@@ -5981,7 +6206,7 @@
     {
       "title": "Payment Request API",
       "shortname": "payment-request",
-      "date": "Draft21 March 2018",
+      "date": "Draft23 March 2018",
       "url": "https://www.w3.org/TR/payment-request/",
       "latest": "https://www.w3.org/TR/payment-request/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-payment-request-20180320/",
@@ -6074,6 +6299,12 @@
               "date": "9 January 2018"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 2",
               "crawled": "https://w3c.github.io/user-timing/",
@@ -6092,6 +6323,12 @@
               "title": "Performance Timeline Level 2",
               "crawled": "https://w3c.github.io/performance-timeline/",
               "date": "Draft10 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
+              "date": "Draft07 February 2018"
             }
           ]
         },
@@ -6125,10 +6362,16 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/manifest/",
-          "https://w3c.github.io/webappsec-secure-contexts/",
           "https://w3c.github.io/sensors/"
         ],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-secure-contexts/",
+            "ref": {
+              "name": "SECURE-CONTEXTS",
+              "url": "https://www.w3.org/TR/secure-contexts/"
+            }
+          },
           {
             "link": "https://w3c.github.io/mediacapture-main/",
             "ref": {
@@ -6585,15 +6828,20 @@
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/webappsec-secure-contexts/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
           {
             "link": "https://www.w3.org/TR/2010/REC-wsc-ui-20100812/",
             "ref": {
               "name": "WSC-UI",
               "url": "https://www.w3.org/TR/wsc-ui/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-secure-contexts/",
+            "ref": {
+              "name": "SECURE-CONTEXTS",
+              "url": "https://www.w3.org/TR/secure-contexts/"
             }
           }
         ],
@@ -6621,7 +6869,7 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             }
           ],
           "informative": []
@@ -6683,20 +6931,26 @@
       }
     },
     {
-      "title": "resource-timing-2",
+      "title": "Resource Timing Level 3",
       "shortname": "resource-timing-2",
-      "date": "",
+      "date": "Draft17 March 2018",
       "url": "https://www.w3.org/TR/resource-timing-2/",
-      "latest": "https://www.w3.org/TR/resource-timing-2",
-      "crawled": "https://www.w3.org/TR/resource-timing-2/",
+      "latest": "https://www.w3.org/TR/resource-timing-2/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-resource-timing-2-20170329/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/resource-timing/",
+      "crawled": "https://w3c.github.io/resource-timing/",
       "repository": "https://github.com/w3c/resource-timing",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
-        "unknownIdlNames": [],
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -6714,6 +6968,12 @@
               "title": "Performance Timeline Level 2",
               "crawled": "https://w3c.github.io/performance-timeline/",
               "date": "Draft10 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
+              "date": "Draft07 February 2018"
             }
           ],
           "informative": [
@@ -7038,13 +7298,13 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "5 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -7063,6 +7323,12 @@
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
               "date": "18 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -7126,24 +7392,35 @@
       }
     },
     {
-      "title": "screen-capture",
+      "title": "Screen Capture",
       "shortname": "screen-capture",
-      "date": "",
+      "date": "Draft23 February 2018",
       "url": "https://www.w3.org/TR/screen-capture/",
-      "latest": "https://www.w3.org/TR/screen-capture",
-      "crawled": "https://www.w3.org/TR/screen-capture/",
+      "latest": "http://www.w3.org/TR/screen-capture/",
+      "datedUrl": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/mediacapture-screen-share/",
+      "crawled": "https://w3c.github.io/mediacapture-screen-share/",
       "repository": "https://github.com/w3c/mediacapture-screen-share",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/mediacapture-main/",
+            "ref": {
+              "name": "GETUSERMEDIA",
+              "url": "https://www.w3.org/TR/mediacapture-streams/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -7152,57 +7429,37 @@
       }
     },
     {
-      "title": "screen-orientation",
-      "shortname": "screen-orientation",
-      "date": "",
-      "url": "https://www.w3.org/TR/screen-orientation/",
-      "latest": "https://www.w3.org/TR/screen-orientation",
-      "crawled": "https://www.w3.org/TR/screen-orientation/",
-      "repository": "https://github.com/w3c/screen-orientation",
-      "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
-            }
-          ],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "secure-contexts",
+      "title": "Secure Contexts",
       "shortname": "secure-contexts",
-      "date": "",
+      "date": "19 January 2018",
       "url": "https://www.w3.org/TR/secure-contexts/",
-      "latest": "https://www.w3.org/TR/secure-contexts",
-      "crawled": "https://www.w3.org/TR/secure-contexts/",
+      "latest": "https://www.w3.org/TR/secure-contexts/",
+      "datedUrl": "https://www.w3.org/TR/2016/CR-secure-contexts-20160915/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://w3c.github.io/webappsec-secure-contexts/",
+      "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
       "repository": "https://github.com/w3c/webappsec-secure-contexts",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
-        "unknownIdlNames": [],
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "WindowOrWorkerGlobalScope"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-mixed-content/",
+            "ref": {
+              "name": "MIX",
+              "url": "https://www.w3.org/TR/mixed-content/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -7222,6 +7479,12 @@
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
               "date": "1 July 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/generic-sensor/",
+              "title": "Generic Sensor API",
+              "crawled": "https://w3c.github.io/sensors/",
+              "date": "15 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -7269,7 +7532,7 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -7281,7 +7544,13 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/WebIDL-1/",
+              "title": "Web IDL",
+              "crawled": "https://heycam.github.io/webidl/",
+              "date": "4 March 2018"
             }
           ],
           "informative": [
@@ -7354,6 +7623,41 @@
       }
     },
     {
+      "title": "Selectors API Level 1",
+      "shortname": "selectors-api",
+      "date": "21 February 2013",
+      "url": "https://www.w3.org/TR/selectors-api/",
+      "latest": "http://www.w3.org/TR/selectors-api/",
+      "datedUrl": "http://www.w3.org/TR/2013/REC-selectors-api-20130221/",
+      "datedStatus": "Recommendation",
+      "crawled": "https://www.w3.org/TR/selectors-api/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": true,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css3-selectors/",
+            "ref": {
+              "name": "SELECT",
+              "url": "http://www.w3.org/TR/2011/REC-css3-selectors-20110929/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Selectors Level 3",
       "shortname": "css3-selectors",
       "date": "30 January 2018",
@@ -7397,6 +7701,12 @@
               "date": "14 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/selectors-api/",
+              "title": "Selectors API Level 1",
+              "crawled": "https://www.w3.org/TR/selectors-api/",
+              "date": "21 February 2013"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://w3c.github.io/web-animations/",
@@ -7422,21 +7732,56 @@
       }
     },
     {
-      "title": "selectors-api",
-      "shortname": "selectors-api",
-      "date": "",
-      "url": "https://www.w3.org/TR/selectors-api/",
-      "latest": "https://www.w3.org/TR/selectors-api",
-      "crawled": "https://www.w3.org/TR/selectors-api/",
+      "title": "Server Timing",
+      "shortname": "server-timing",
+      "date": "Draft07 February 2018",
+      "url": "https://www.w3.org/TR/server-timing/",
+      "latest": "https://www.w3.org/TR/server-timing/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-server-timing-20171229/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/server-timing/",
+      "crawled": "https://w3c.github.io/server-timing/",
+      "repository": "https://github.com/w3c/server-timing",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
-        "unknownIdlNames": [],
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://w3c.github.io/ServiceWorker/v1/",
+                "date": "23 March 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/workers/",
+                "title": "Web Workers",
+                "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
+                "date": "23 March 2018"
+              }
+            ]
+          },
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time Level 2",
+                "crawled": "https://w3c.github.io/hr-time/",
+                "date": "Draft28 February 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -7491,35 +7836,9 @@
       }
     },
     {
-      "title": "server-timing",
-      "shortname": "server-timing",
-      "date": "",
-      "url": "https://www.w3.org/TR/server-timing/",
-      "latest": "https://www.w3.org/TR/server-timing",
-      "crawled": "https://www.w3.org/TR/server-timing/",
-      "repository": "https://github.com/w3c/server-timing",
-      "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "Service Workers 1",
       "shortname": "service-workers-1",
-      "date": "13 March 2018",
+      "date": "23 March 2018",
       "url": "https://www.w3.org/TR/service-workers-1/",
       "latest": "https://www.w3.org/TR/service-workers-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
@@ -7547,15 +7866,14 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "21 March 2018"
+                "date": "23 March 2018"
               }
             ]
           }
         ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/push-api/",
-          "https://w3c.github.io/webappsec-secure-contexts/"
+          "https://w3c.github.io/push-api/"
         ],
         "inconsistentRef": [
           {
@@ -7563,6 +7881,13 @@
             "ref": {
               "name": "REFERRER-POLICY",
               "url": "https://www.w3.org/TR/referrer-policy/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-secure-contexts/",
+            "ref": {
+              "name": "SECURE-CONTEXTS",
+              "url": "https://www.w3.org/TR/secure-contexts/"
             }
           },
           {
@@ -7618,6 +7943,12 @@
               "date": "Draft15 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/dom41/",
               "title": "W3C DOM 4.1",
               "crawled": "https://w3c.github.io/dom/",
@@ -7636,6 +7967,12 @@
               "title": "Beacon",
               "crawled": "https://w3c.github.io/beacon/",
               "date": "Draft02 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
             },
             {
               "url": "https://streams.spec.whatwg.org/",
@@ -7812,7 +8149,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft23 March 2018"
+              "date": "Draft24 March 2018"
             }
           ],
           "informative": []
@@ -7891,6 +8228,51 @@
       }
     },
     {
+      "title": "The Screen Orientation API",
+      "shortname": "screen-orientation",
+      "date": "Draft05 November 2017",
+      "url": "https://www.w3.org/TR/screen-orientation/",
+      "latest": "https://www.w3.org/TR/screen-orientation/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/screen-orientation/",
+      "crawled": "https://w3c.github.io/screen-orientation/",
+      "repository": "https://github.com/w3c/screen-orientation",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/accelerometer/",
+              "title": "Accelerometer",
+              "crawled": "https://w3c.github.io/accelerometer/",
+              "date": "14 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/appmanifest/",
+              "title": "Web App Manifest",
+              "crawled": "https://w3c.github.io/manifest/",
+              "date": "Living Document"
+            }
+          ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "The WebSocket API",
       "shortname": "websockets",
       "date": "20 September 2012",
@@ -7937,23 +8319,33 @@
       }
     },
     {
-      "title": "touch-events",
+      "title": "Touch Events - Level 2",
       "shortname": "touch-events",
-      "date": "",
+      "date": "23 October 2017",
       "url": "https://www.w3.org/TR/touch-events/",
-      "latest": "https://www.w3.org/TR/touch-events",
-      "crawled": "https://www.w3.org/TR/touch-events/",
+      "latest": "http://www.w3.org/TR/touch-events/",
+      "datedUrl": "http://www.w3.org/TR/2013/REC-touch-events-20131010/",
+      "datedStatus": "Recommendation",
+      "edDraft": "https://w3c.github.io/touch-events/",
+      "crawled": "https://w3c.github.io/touch-events/",
       "repository": "https://github.com/w3c/touch-events",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
-        "unknownIdlNames": [],
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "EventHandler",
+          "GlobalEventHandlers",
+          "Window",
+          "WindowProxy"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/touch-events-extensions/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -8030,7 +8422,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft23 March 2018"
+              "date": "Draft24 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -8055,6 +8447,12 @@
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
               "date": "22 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/touch-events/",
+              "title": "Touch Events - Level 2",
+              "crawled": "https://w3c.github.io/touch-events/",
+              "date": "23 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/uievents-code/",
@@ -8241,6 +8639,12 @@
               "date": "14 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-writing-modes-3/",
+              "title": "CSS Writing Modes Level 3",
+              "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
+              "date": "23 March 2018"
+            },
+            {
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
@@ -8295,10 +8699,16 @@
               "date": "Draft09 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://storage.spec.whatwg.org/",
@@ -8322,7 +8732,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://webassembly.github.io/spec/js-api/index.html",
@@ -8619,7 +9029,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "22 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -8649,7 +9059,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -8763,7 +9173,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft21 March 2018"
+              "date": "Draft23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -8820,16 +9230,34 @@
               "date": "20 April 2017"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
               "date": "22 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/selection-api/",
               "title": "Selection API",
               "crawled": "https://w3c.github.io/selection-api/",
               "date": "Draft28 June 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/selectors-api/",
+              "title": "Selectors API Level 1",
+              "crawled": "https://www.w3.org/TR/selectors-api/",
+              "date": "21 February 2013"
             },
             {
               "url": "https://www.w3.org/TR/eventsource/",
@@ -8841,7 +9269,7 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://w3c.github.io/staticrange/",
@@ -8854,6 +9282,18 @@
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
               "date": "9 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/touch-events/",
+              "title": "Touch Events - Level 2",
+              "crawled": "https://w3c.github.io/touch-events/",
+              "date": "23 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -8907,7 +9347,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -8937,7 +9377,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Mar 23 2018"
+              "date": "Sat Mar 24 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -9075,7 +9515,6 @@
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
           "EventHandler",
-          "OrientationLockType",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -9111,6 +9550,12 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/",
               "date": "16 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
             }
           ]
         },
@@ -9201,7 +9646,7 @@
     {
       "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
       "shortname": "webauthn",
-      "date": "14 March 2018",
+      "date": "23 March 2018",
       "url": "https://www.w3.org/TR/webauthn/",
       "latest": "https://www.w3.org/TR/webauthn/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-webauthn-20180320/",
@@ -9221,8 +9666,7 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/html/browsers.html",
-          "https://w3c.github.io/webappsec-secure-contexts/"
+          "https://w3c.github.io/html/browsers.html"
         ],
         "inconsistentRef": [
           {
@@ -9230,6 +9674,13 @@
             "ref": {
               "name": "CREDENTIAL-MANAGEMENT-1",
               "url": "https://www.w3.org/TR/credential-management-1/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-secure-contexts/",
+            "ref": {
+              "name": "SECURE-CONTEXTS",
+              "url": "https://www.w3.org/TR/secure-contexts/"
             }
           },
           {
@@ -9283,13 +9734,13 @@
                 "url": "https://www.w3.org/TR/service-workers-1/",
                 "title": "Service Workers 1",
                 "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-                "date": "13 March 2018"
+                "date": "23 March 2018"
               },
               {
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "21 March 2018"
+                "date": "23 March 2018"
               }
             ]
           }
@@ -9311,7 +9762,14 @@
               "date": "15 March 2018"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
+            }
+          ]
         },
         "ok": false
       }
@@ -9425,7 +9883,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "22 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -9455,7 +9913,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -9665,7 +10123,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft21 March 2018"
+              "date": "Draft23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -9710,10 +10168,28 @@
               "date": "Draft09 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
               "date": "22 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "https://w3c.github.io/mediacapture-screen-share/",
+              "date": "Draft23 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/selection-api/",
@@ -9722,10 +10198,16 @@
               "date": "Draft28 June 2017"
             },
             {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
+              "date": "Draft07 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://w3c.github.io/staticrange/",
@@ -9740,10 +10222,22 @@
               "date": "9 January 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/websockets/",
               "title": "The WebSocket API",
               "crawled": "https://www.w3.org/TR/websockets/",
               "date": "20 September 2012"
+            },
+            {
+              "url": "https://www.w3.org/TR/touch-events/",
+              "title": "Touch Events - Level 2",
+              "crawled": "https://w3c.github.io/touch-events/",
+              "date": "23 October 2017"
             },
             {
               "url": "https://url.spec.whatwg.org/",
@@ -9803,7 +10297,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -9833,13 +10327,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Mar 23 2018"
+              "date": "Sat Mar 24 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Mar 23 2018"
+              "date": "Sat Mar 24 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -9889,7 +10383,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft23 March 2018"
+              "date": "Draft24 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -10007,7 +10501,7 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/vibration/",
@@ -10078,7 +10572,7 @@
     {
       "title": "Web Workers",
       "shortname": "workers",
-      "date": "21 March 2018",
+      "date": "23 March 2018",
       "url": "https://www.w3.org/TR/workers/",
       "latest": "http://www.w3.org/TR/workers/",
       "datedUrl": "http://www.w3.org/TR/2015/WD-workers-20150924/",
@@ -10105,7 +10599,7 @@
                 "url": "https://www.w3.org/TR/service-workers-1/",
                 "title": "Service Workers 1",
                 "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-                "date": "13 March 2018"
+                "date": "23 March 2018"
               }
             ]
           }
@@ -10206,7 +10700,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "22 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -10236,7 +10730,7 @@
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-              "date": "5 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -10314,7 +10808,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft23 March 2018"
+              "date": "Draft24 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -10374,7 +10868,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft21 March 2018"
+              "date": "Draft23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -10413,6 +10907,18 @@
               "date": "Draft09 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/",
+              "date": "19 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/eventsource/",
               "title": "Server-Sent Events",
               "crawled": "http://www.w3.org/TR/2015/REC-eventsource-20150203/",
@@ -10422,7 +10928,7 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-              "date": "13 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/shadow-dom/",
@@ -10441,6 +10947,12 @@
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/",
               "date": "22 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -10494,7 +11006,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "14 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -10556,7 +11068,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "7 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -10764,7 +11276,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Fri Mar 23 2018",
+      "date": "Sat Mar 24 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -10814,7 +11326,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Fri Mar 23 2018",
+      "date": "Sat Mar 24 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -10854,7 +11366,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Mar 23 2018"
+              "date": "Sat Mar 24 2018"
             }
           ],
           "informative": [
@@ -10995,6 +11507,12 @@
               "title": "Presentation API",
               "crawled": "https://w3c.github.io/presentation-api/",
               "date": "Draft08 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-capture/",
+              "title": "Screen Capture",
+              "crawled": "https://w3c.github.io/mediacapture-screen-share/",
+              "date": "Draft23 February 2018"
             }
           ]
         },
@@ -11095,7 +11613,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "22 March 2018"
+              "date": "23 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
@@ -11199,6 +11717,12 @@
               "title": "Mixed Content",
               "crawled": "https://w3c.github.io/webappsec-mixed-content/",
               "date": "23 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 3",
+              "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Draft17 March 2018"
             }
           ],
           "informative": [
