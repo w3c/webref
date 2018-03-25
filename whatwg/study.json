@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-03-24T02:06:47.729Z",
+  "date": "2018-03-25T02:08:00.451Z",
   "stats": {
     "crawled": 110,
-    "errors": 4,
+    "errors": 1,
     "studied": 110
   },
   "results": [
@@ -30,11 +30,18 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/screen-orientation/",
           "https://w3c.github.io/motion-sensors/",
           "https://w3c.github.io/sensors/usecases.html"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/screen-orientation/",
+            "ref": {
+              "name": "SCREEN-ORIENTATION",
+              "url": "https://w3c.github.io/screen-orientation/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -1603,6 +1610,12 @@
               "date": "17 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
@@ -1696,6 +1709,12 @@
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/",
               "date": "15 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -1938,6 +1957,12 @@
               "date": "1 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/gamepad/",
+              "title": "Gamepad",
+              "crawled": "https://w3c.github.io/gamepad/",
+              "date": "Draft16 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/",
@@ -2094,6 +2119,12 @@
               "date": "9 January 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/touch-events/",
               "title": "Touch Events - Level 2",
               "crawled": "https://w3c.github.io/touch-events/",
@@ -2163,7 +2194,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 24 2018"
+              "date": "Sun Mar 25 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -2649,6 +2680,12 @@
               "date": "18 January 2018"
             },
             {
+              "url": "https://www.w3.org/TR/media-source/",
+              "title": "Media Source Extensions™",
+              "crawled": "https://w3c.github.io/media-source/",
+              "date": "08 November 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/image-capture/",
               "title": "MediaStream Image Capture",
               "crawled": "https://w3c.github.io/mediacapture-image/",
@@ -2737,6 +2774,12 @@
               "date": "23 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/webdriver/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/webdriver-spec.html",
@@ -2774,19 +2817,22 @@
       }
     },
     {
-      "title": "gamepad",
+      "title": "Gamepad",
       "shortname": "gamepad",
-      "date": "",
+      "date": "Draft16 February 2018",
       "url": "https://www.w3.org/TR/gamepad/",
-      "latest": "https://www.w3.org/TR/gamepad",
-      "crawled": "https://www.w3.org/TR/gamepad/",
+      "latest": "https://www.w3.org/TR/gamepad/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-gamepad-20180216/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/gamepad/",
+      "crawled": "https://w3c.github.io/gamepad/",
       "repository": "https://github.com/w3c/gamepad",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -2796,7 +2842,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -3128,6 +3174,12 @@
               "date": "23 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/gamepad/",
+              "title": "Gamepad",
+              "crawled": "https://w3c.github.io/gamepad/",
+              "date": "Draft16 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/",
@@ -3162,6 +3214,12 @@
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/",
               "date": "Draft04 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/paint-timing/",
+              "title": "Paint Timing 1",
+              "crawled": "https://w3c.github.io/paint-timing/",
+              "date": "9 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -3253,7 +3311,6 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownIdlNames": [
-          "MediaSource",
           "SVGImageElement",
           "SVGScriptElement",
           "WindowProxy"
@@ -3461,6 +3518,12 @@
               "date": "1 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/gamepad/",
+              "title": "Gamepad",
+              "crawled": "https://w3c.github.io/gamepad/",
+              "date": "Draft16 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/",
@@ -3506,7 +3569,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft24 March 2018"
+              "date": "Draft25 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3531,6 +3594,12 @@
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
               "date": "17 August 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/media-source/",
+              "title": "Media Source Extensions™",
+              "crawled": "https://w3c.github.io/media-source/",
+              "date": "08 November 2016"
             },
             {
               "url": "https://www.w3.org/TR/image-capture/",
@@ -3573,12 +3642,6 @@
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
               "date": "Draft12 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-method-basic-card/",
-              "title": "Payment Method: Basic Card",
-              "crawled": "https://w3c.github.io/payment-method-basic-card/",
-              "date": "Draft29 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-request/",
@@ -3683,6 +3746,12 @@
               "date": "22 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/touch-events/",
               "title": "Touch Events - Level 2",
               "crawled": "https://w3c.github.io/touch-events/",
@@ -3770,13 +3839,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 24 2018"
+              "date": "Sun Mar 25 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 24 2018"
+              "date": "Sun Mar 25 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -4108,7 +4177,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "Draft24 March 2018",
+      "date": "Draft25 March 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -4142,7 +4211,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft24 March 2018"
+              "date": "Draft25 March 2018"
             }
           ]
         },
@@ -4578,26 +4647,65 @@
       }
     },
     {
-      "title": "media-source",
+      "title": "Media Source Extensions™",
       "shortname": "media-source",
-      "date": "",
+      "date": "08 November 2016",
       "url": "https://www.w3.org/TR/media-source/",
-      "latest": "https://www.w3.org/TR/media-source",
-      "crawled": "https://www.w3.org/TR/media-source/",
+      "latest": "https://www.w3.org/TR/media-source/",
+      "datedUrl": "https://www.w3.org/TR/2016/REC-media-source-20161117/",
+      "datedStatus": "Recommendation",
+      "edDraft": "https://w3c.github.io/media-source/",
+      "crawled": "https://w3c.github.io/media-source/",
       "repository": "https://github.com/w3c/media-source",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/",
+                "date": "23 March 2018"
+              }
+            ]
+          },
+          {
+            "name": "URL",
+            "refs": [
+              {
+                "url": "https://url.spec.whatwg.org/",
+                "title": "URL Standard",
+                "crawled": "https://url.spec.whatwg.org/",
+                "date": "10 January 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://html.spec.whatwg.org/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/",
+              "date": "23 March 2018"
+            },
+            {
+              "url": "https://url.spec.whatwg.org/",
+              "title": "URL Standard",
+              "crawled": "https://url.spec.whatwg.org/",
+              "date": "10 January 2018"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -4610,6 +4718,12 @@
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/",
               "date": "31 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/media-source/",
+              "title": "Media Source Extensions™",
+              "crawled": "https://w3c.github.io/media-source/",
+              "date": "08 November 2016"
             }
           ]
         },
@@ -4901,6 +5015,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/gamepad/",
+              "title": "Gamepad",
+              "crawled": "https://w3c.github.io/gamepad/",
+              "date": "Draft16 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/server-timing/",
               "title": "Server Timing",
               "crawled": "https://w3c.github.io/server-timing/",
@@ -5102,6 +5222,12 @@
               "date": "23 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/vibration/",
               "title": "Vibration API (Second Edition)",
               "crawled": "https://w3c.github.io/vibration/",
@@ -5139,24 +5265,37 @@
       }
     },
     {
-      "title": "paint-timing",
+      "title": "Paint Timing 1",
       "shortname": "paint-timing",
-      "date": "",
+      "date": "9 January 2018",
       "url": "https://www.w3.org/TR/paint-timing/",
-      "latest": "https://www.w3.org/TR/paint-timing",
-      "crawled": "https://www.w3.org/TR/paint-timing/",
+      "latest": "https://www.w3.org/TR/paint-timing/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-paint-timing-20170907/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/paint-timing/",
+      "crawled": "https://w3c.github.io/paint-timing/",
       "repository": "https://github.com/w3c/paint-timing",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://html.spec.whatwg.org/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/performance-timeline/",
+            "ref": {
+              "name": "PERFORMANCE-TIMELINE-2",
+              "url": "https://www.w3.org/TR/performance-timeline-2/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -5211,49 +5350,6 @@
       }
     },
     {
-      "title": "Payment Method: Basic Card",
-      "shortname": "payment-method-basic-card",
-      "date": "Draft29 January 2018",
-      "url": "https://www.w3.org/TR/payment-method-basic-card/",
-      "latest": "https://www.w3.org/TR/payment-method-basic-card/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/payment-method-basic-card/",
-      "crawled": "https://w3c.github.io/payment-method-basic-card/",
-      "repository": "https://github.com/w3c/payment-method-basic-card",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "Draft12 March 2018"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/",
-              "date": "Draft23 March 2018"
-            }
-          ]
-        },
-        "ok": true
-      }
-    },
-    {
       "title": "Payment Request API",
       "shortname": "payment-request",
       "date": "Draft23 March 2018",
@@ -5288,17 +5384,51 @@
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
               "date": "Draft12 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-method-basic-card/",
-              "title": "Payment Method: Basic Card",
-              "crawled": "https://w3c.github.io/payment-method-basic-card/",
-              "date": "Draft29 January 2018"
             }
           ],
           "informative": []
         },
         "ok": true
+      }
+    },
+    {
+      "title": "payment-method-basic-card",
+      "shortname": "payment-method-basic-card",
+      "date": "",
+      "url": "https://www.w3.org/TR/payment-method-basic-card/",
+      "latest": "https://www.w3.org/TR/payment-method-basic-card",
+      "crawled": "https://www.w3.org/TR/payment-method-basic-card/",
+      "repository": "https://github.com/w3c/payment-method-basic-card",
+      "report": {
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/payment-handler/",
+              "title": "Payment Handler API",
+              "crawled": "https://w3c.github.io/payment-handler/",
+              "date": "Draft12 March 2018"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/payment-request/",
+              "title": "Payment Request API",
+              "crawled": "https://w3c.github.io/payment-request/",
+              "date": "Draft23 March 2018"
+            }
+          ]
+        },
+        "ok": false
       }
     },
     {
@@ -5336,6 +5466,12 @@
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/",
               "date": "Draft04 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/paint-timing/",
+              "title": "Paint Timing 1",
+              "crawled": "https://w3c.github.io/paint-timing/",
+              "date": "9 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
@@ -6399,39 +6535,6 @@
       }
     },
     {
-      "title": "screen-orientation",
-      "shortname": "screen-orientation",
-      "date": "",
-      "url": "https://www.w3.org/TR/screen-orientation/",
-      "latest": "https://www.w3.org/TR/screen-orientation",
-      "crawled": "https://www.w3.org/TR/screen-orientation/",
-      "repository": "https://github.com/w3c/screen-orientation",
-      "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/",
-              "date": "Living Document"
-            }
-          ],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "Secure Contexts",
       "shortname": "secure-contexts",
       "date": "19 January 2018",
@@ -6955,7 +7058,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft24 March 2018"
+              "date": "Draft25 March 2018"
             }
           ],
           "informative": []
@@ -7029,6 +7132,54 @@
           "informative": []
         },
         "ok": false
+      }
+    },
+    {
+      "title": "The Screen Orientation API",
+      "shortname": "screen-orientation",
+      "date": "Draft05 November 2017",
+      "url": "https://www.w3.org/TR/screen-orientation/",
+      "latest": "https://www.w3.org/TR/screen-orientation/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-screen-orientation-20171105/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/screen-orientation/",
+      "crawled": "https://w3c.github.io/screen-orientation/",
+      "repository": "https://github.com/w3c/screen-orientation",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/accelerometer/",
+              "title": "Accelerometer",
+              "crawled": "https://w3c.github.io/accelerometer/",
+              "date": "14 March 2018"
+            },
+            {
+              "url": "https://html.spec.whatwg.org/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/",
+              "date": "23 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/appmanifest/",
+              "title": "Web App Manifest",
+              "crawled": "https://w3c.github.io/manifest/",
+              "date": "Living Document"
+            }
+          ],
+          "informative": []
+        },
+        "ok": true
       }
     },
     {
@@ -7142,7 +7293,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft24 March 2018"
+              "date": "Draft25 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -7711,9 +7862,7 @@
         "noIdlContent": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "OrientationLockType"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -7747,6 +7896,12 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/",
               "date": "16 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
             }
           ]
         },
@@ -8145,6 +8300,12 @@
               "date": "1 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/gamepad/",
+              "title": "Gamepad",
+              "crawled": "https://w3c.github.io/gamepad/",
+              "date": "Draft16 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/",
@@ -8229,6 +8390,12 @@
               "date": "17 August 2017"
             },
             {
+              "url": "https://www.w3.org/TR/media-source/",
+              "title": "Media Source Extensions™",
+              "crawled": "https://w3c.github.io/media-source/",
+              "date": "08 November 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/image-capture/",
               "title": "MediaStream Image Capture",
               "crawled": "https://w3c.github.io/mediacapture-image/",
@@ -8259,16 +8426,16 @@
               "date": "14 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/paint-timing/",
+              "title": "Paint Timing 1",
+              "crawled": "https://w3c.github.io/paint-timing/",
+              "date": "9 January 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
               "date": "Draft12 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-method-basic-card/",
-              "title": "Payment Method: Basic Card",
-              "crawled": "https://w3c.github.io/payment-method-basic-card/",
-              "date": "Draft29 January 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-request/",
@@ -8373,6 +8540,12 @@
               "date": "9 January 2018"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/",
+              "date": "Draft05 November 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/touch-events/",
               "title": "Touch Events - Level 2",
               "crawled": "https://w3c.github.io/touch-events/",
@@ -8454,13 +8627,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 24 2018"
+              "date": "Sun Mar 25 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Mar 24 2018"
+              "date": "Sun Mar 25 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -8510,7 +8683,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "Draft24 March 2018"
+              "date": "Draft25 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -8674,7 +8847,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sat Mar 24 2018",
+      "date": "Sun Mar 25 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8717,7 +8890,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sat Mar 24 2018",
+      "date": "Sun Mar 25 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8752,7 +8925,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Mar 24 2018"
+              "date": "Sun Mar 25 2018"
             }
           ],
           "informative": [

@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">March 24, 2018</h2>
+            <h2 class="date">March 25, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -39,7 +39,7 @@
     <input class="submit" id="submit" type="submit" value="Apply" />
   </p>
   <p id="stats"></p>
-  <section id="accelerometer" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
+  <section id="accelerometer" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Accelerometer</h2>
   <section id="spec-info" class="level3 info">
   <h3>Spec info</h3>
@@ -57,9 +57,12 @@
   <ul>
   <li>Missing references for links:
   <ul>
-  <li><a href="https://www.w3.org/TR/screen-orientation/"><code>https://www.w3.org/TR/screen-orientation/</code></a></li>
   <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
   <li><a href="https://w3c.github.io/sensors/usecases.html"><code>https://w3c.github.io/sensors/usecases.html</code></a></li>
+  </ul></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/screen-orientation/"><code>https://www.w3.org/TR/screen-orientation/</code></a>, related reference &quot;SCREEN-ORIENTATION&quot; uses URL <a href="https://w3c.github.io/screen-orientation/"><code>https://w3c.github.io/screen-orientation/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -874,6 +877,7 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
+  <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
@@ -918,6 +922,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
+  <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   </ul>
   </section>
@@ -1008,6 +1013,7 @@
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
+  <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
@@ -1034,6 +1040,7 @@
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><a href="https://w3c.github.io/staticrange/">Static Range</a></li>
   <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
+  <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
@@ -1054,6 +1061,7 @@
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   </ul>
@@ -1242,6 +1250,7 @@
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
+  <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
@@ -1281,6 +1290,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
+  <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -1292,21 +1302,22 @@
   </ul>
   </section>
   </section>
-  <section id="gamepad" class="level2" data-spec="true" data-error="true">
-  <h2>gamepad</h2>
+  <section id="gamepad" class="level2" data-spec="true" data-ok="true">
+  <h2>Gamepad</h2>
   <section id="spec-info-33" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/gamepad/">Initial URL</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/gamepad" class="uri">https://www.w3.org/TR/gamepad</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/gamepad/">Editor's Draft</a> (Draft16 February 2018)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/gamepad/" class="uri">https://w3c.github.io/gamepad/</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/gamepad/" class="uri">https://www.w3.org/TR/gamepad/</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-gamepad-20180216/">Working Draft</a></li>
   <li>Repository: <a href="https://github.com/w3c/gamepad">GitHub w3c/gamepad</a></li>
   <li>Shortname: gamepad</li>
   </ul>
   </section>
   <section id="potential-issues-33" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-33" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1486,12 +1497,14 @@
   <ul>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://w3c.github.io/longtasks/">Long Tasks API 1</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
+  <li><a href="https://w3c.github.io/paint-timing/">Paint Timing 1</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
   <li><a href="https://w3c.github.io/user-timing/">User Timing Level 2</a></li>
@@ -1544,7 +1557,7 @@
   <section id="potential-issues-40" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>MediaSource</code>, <code>SVGImageElement</code>, <code>SVGScriptElement</code>, <code>WindowProxy</code></li>
+  <li>Unknown WebIDL names used: <code>SVGImageElement</code>, <code>SVGScriptElement</code>, <code>WindowProxy</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>BinaryType</code> also defined in <a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
@@ -1594,6 +1607,7 @@
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
+  <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://www.w3.org/TR/geolocation-API/">Geolocation API Specification 2nd Edition</a></li>
   <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
@@ -1606,6 +1620,7 @@
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
+  <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
@@ -1613,7 +1628,6 @@
   <li><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a></li>
   <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
@@ -1631,6 +1645,7 @@
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
+  <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
@@ -1771,7 +1786,7 @@
   <section id="spec-info-43" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (Draft24 March 2018)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (Draft25 March 2018)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -2038,29 +2053,41 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="media-source" class="level2" data-spec="true" data-error="true">
-  <h2>media-source</h2>
+  <section id="media-source-extensions" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <h2>Media Source Extensions™</h2>
   <section id="spec-info-51" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/media-source/">Initial URL</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/media-source" class="uri">https://www.w3.org/TR/media-source</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/media-source/">Editor's Draft</a> (08 November 2016)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/media-source/" class="uri">https://w3c.github.io/media-source/</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/media-source/" class="uri">https://www.w3.org/TR/media-source/</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2016/REC-media-source-20161117/">Recommendation</a></li>
   <li>Repository: <a href="https://github.com/w3c/media-source">GitHub w3c/media-source</a></li>
   <li>Shortname: media-source</li>
   </ul>
   </section>
   <section id="potential-issues-51" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>URL</code> defined in <a href="https://url.spec.whatwg.org/">URL Standard</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-51" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
-  <p>No normative reference to this spec from other specs.</p>
+  <p>Normative references to this spec from:</p>
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
+  <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
+  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
+  <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   </ul>
   </section>
   </section>
@@ -2232,6 +2259,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
   <li><a href="https://w3c.github.io/user-timing/">User Timing Level 2</a></li>
   </ul>
@@ -2333,6 +2361,7 @@
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
+  <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
@@ -2344,21 +2373,31 @@
   </ul>
   </section>
   </section>
-  <section id="paint-timing" class="level2" data-spec="true" data-error="true">
-  <h2>paint-timing</h2>
+  <section id="paint-timing-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <h2>Paint Timing 1</h2>
   <section id="spec-info-60" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/paint-timing/">Initial URL</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/paint-timing" class="uri">https://www.w3.org/TR/paint-timing</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/paint-timing/">Editor's Draft</a> (9 January 2018)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/paint-timing/" class="uri">https://w3c.github.io/paint-timing/</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/paint-timing/" class="uri">https://www.w3.org/TR/paint-timing/</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-paint-timing-20170907/">Working Draft</a></li>
   <li>Repository: <a href="https://github.com/w3c/paint-timing">GitHub w3c/paint-timing</a></li>
   <li>Shortname: paint-timing</li>
   </ul>
   </section>
   <section id="potential-issues-60" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a></li>
+  </ul></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/performance-timeline/"><code>https://w3c.github.io/performance-timeline/</code></a>, related reference &quot;PERFORMANCE-TIMELINE-2&quot; uses URL <a href="https://www.w3.org/TR/performance-timeline-2/"><code>https://www.w3.org/TR/performance-timeline-2/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-60" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -2401,38 +2440,9 @@
   </ul>
   </section>
   </section>
-  <section id="payment-method-basic-card" class="level2" data-spec="true" data-ok="true">
-  <h2>Payment Method: Basic Card</h2>
-  <section id="spec-info-62" class="level3 info">
-  <h3>Spec info</h3>
-  <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/payment-method-basic-card/">Editor's Draft</a> (Draft29 January 2018)</li>
-  <li>Editor's Draft: <a href="https://w3c.github.io/payment-method-basic-card/" class="uri">https://w3c.github.io/payment-method-basic-card/</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/payment-method-basic-card/" class="uri">https://www.w3.org/TR/payment-method-basic-card/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/">Working Draft</a></li>
-  <li>Repository: <a href="https://github.com/w3c/payment-method-basic-card">GitHub w3c/payment-method-basic-card</a></li>
-  <li>Shortname: payment-method-basic-card</li>
-  </ul>
-  </section>
-  <section id="potential-issues-62" class="level3 anomalies">
-  <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
-  </section>
-  <section id="known-dependencies-on-this-specification-62" class="level3 dependencies">
-  <h3>Known dependencies on this specification</h3>
-  <p>Normative references to this spec from:</p>
-  <ul>
-  <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  </ul>
-  <p>Informative references to this spec from:</p>
-  <ul>
-  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
-  </ul>
-  </section>
-  </section>
   <section id="payment-request-api" class="level2" data-spec="true" data-ok="true">
   <h2>Payment Request API</h2>
-  <section id="spec-info-63" class="level3 info">
+  <section id="spec-info-62" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/payment-request/">Editor's Draft</a> (Draft23 March 2018)</li>
@@ -2443,19 +2453,46 @@
   <li>Shortname: payment-request</li>
   </ul>
   </section>
-  <section id="potential-issues-63" class="level3 anomalies">
+  <section id="potential-issues-62" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-63" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-62" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
+  </section>
+  </section>
+  <section id="payment-method-basic-card" class="level2" data-spec="true" data-error="true">
+  <h2>payment-method-basic-card</h2>
+  <section id="spec-info-63" class="level3 info">
+  <h3>Spec info</h3>
+  <ul>
+  <li>Crawled version: <a href="https://www.w3.org/TR/payment-method-basic-card/">Initial URL</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/payment-method-basic-card" class="uri">https://www.w3.org/TR/payment-method-basic-card</a></li>
+  <li>Repository: <a href="https://github.com/w3c/payment-method-basic-card">GitHub w3c/payment-method-basic-card</a></li>
+  <li>Shortname: payment-method-basic-card</li>
+  </ul>
+  </section>
+  <section id="potential-issues-63" class="level3 anomalies">
+  <h3>Potential issue(s)</h3>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)     at &lt;anonymous&gt;</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  </section>
+  <section id="known-dependencies-on-this-specification-63" class="level3 dependencies">
+  <h3>Known dependencies on this specification</h3>
+  <p>Normative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
+  </ul>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
+  </ul>
   </section>
   </section>
   <section id="performance-timeline-level-2" class="level2" data-spec="true" data-ok="true">
@@ -2481,6 +2518,7 @@
   <ul>
   <li><a href="https://w3c.github.io/longtasks/">Long Tasks API 1</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
+  <li><a href="https://w3c.github.io/paint-timing/">Paint Timing 1</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
   <li><a href="https://w3c.github.io/user-timing/">User Timing Level 2</a></li>
   </ul>
@@ -2981,34 +3019,9 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="screen-orientation" class="level2" data-spec="true" data-error="true">
-  <h2>screen-orientation</h2>
-  <section id="spec-info-77" class="level3 info">
-  <h3>Spec info</h3>
-  <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/screen-orientation/">Initial URL</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/screen-orientation" class="uri">https://www.w3.org/TR/screen-orientation</a></li>
-  <li>Repository: <a href="https://github.com/w3c/screen-orientation">GitHub w3c/screen-orientation</a></li>
-  <li>Shortname: screen-orientation</li>
-  </ul>
-  </section>
-  <section id="potential-issues-77" class="level3 anomalies">
-  <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
-  </section>
-  <section id="known-dependencies-on-this-specification-77" class="level3 dependencies">
-  <h3>Known dependencies on this specification</h3>
-  <p>Normative references to this spec from:</p>
-  <ul>
-  <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
-  </ul>
-  <p>No informative reference to this spec from other specs.</p>
-  </section>
-  </section>
   <section id="secure-contexts" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Secure Contexts</h2>
-  <section id="spec-info-78" class="level3 info">
+  <section id="spec-info-77" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/webappsec-secure-contexts/">Editor's Draft</a> (19 January 2018)</li>
@@ -3019,7 +3032,7 @@
   <li>Shortname: secure-contexts</li>
   </ul>
   </section>
-  <section id="potential-issues-78" class="level3 anomalies">
+  <section id="potential-issues-77" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -3028,7 +3041,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-78" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-77" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3056,7 +3069,7 @@
   </section>
   <section id="selection-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Selection API</h2>
-  <section id="spec-info-79" class="level3 info">
+  <section id="spec-info-78" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/selection-api/">Editor's Draft</a> (Draft28 June 2017)</li>
@@ -3067,7 +3080,7 @@
   <li>Shortname: selection-api</li>
   </ul>
   </section>
-  <section id="potential-issues-79" class="level3 anomalies">
+  <section id="potential-issues-78" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for links:
@@ -3081,7 +3094,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-79" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-78" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3092,7 +3105,7 @@
   </section>
   <section id="selectors-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-inconsistentRef="true">
   <h2>Selectors API Level 1</h2>
-  <section id="spec-info-80" class="level3 info">
+  <section id="spec-info-79" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://www.w3.org/TR/selectors-api/">Initial URL</a> (21 February 2013)</li>
@@ -3101,7 +3114,7 @@
   <li>Shortname: selectors-api</li>
   </ul>
   </section>
-  <section id="potential-issues-80" class="level3 anomalies">
+  <section id="potential-issues-79" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
@@ -3111,7 +3124,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-80" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-79" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -3119,7 +3132,7 @@
   </section>
   <section id="selectors-level-3" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-missingLinkRef="true">
   <h2>Selectors Level 3</h2>
-  <section id="spec-info-81" class="level3 info">
+  <section id="spec-info-80" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://www.w3.org/TR/css3-selectors/">Initial URL</a> (30 January 2018)</li>
@@ -3129,7 +3142,7 @@
   <li>Shortname: css3-selectors</li>
   </ul>
   </section>
-  <section id="potential-issues-81" class="level3 anomalies">
+  <section id="potential-issues-80" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>No WebIDL definitions found</li>
@@ -3139,7 +3152,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-81" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-80" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3158,7 +3171,7 @@
   </section>
   <section id="server-timing" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Server Timing</h2>
-  <section id="spec-info-82" class="level3 info">
+  <section id="spec-info-81" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/server-timing/">Editor's Draft</a> (Draft07 February 2018)</li>
@@ -3169,7 +3182,7 @@
   <li>Shortname: server-timing</li>
   </ul>
   </section>
-  <section id="potential-issues-82" class="level3 anomalies">
+  <section id="potential-issues-81" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for WebIDL names:
@@ -3178,7 +3191,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-82" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-81" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -3186,7 +3199,7 @@
   </section>
   <section id="service-workers-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Service Workers 1</h2>
-  <section id="spec-info-83" class="level3 info">
+  <section id="spec-info-82" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/ServiceWorker/v1/">Editor's Draft</a> (23 March 2018)</li>
@@ -3197,7 +3210,7 @@
   <li>Shortname: service-workers-1</li>
   </ul>
   </section>
-  <section id="potential-issues-83" class="level3 anomalies">
+  <section id="potential-issues-82" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>WebIDL names also defined elsewhere:
@@ -3216,7 +3229,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-83" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-82" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3248,7 +3261,7 @@
   </section>
   <section id="static-range" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true">
   <h2>Static Range</h2>
-  <section id="spec-info-84" class="level3 info">
+  <section id="spec-info-83" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/staticrange/">Initial URL</a> (14 December 2017)</li>
@@ -3256,7 +3269,7 @@
   <li>Shortname: no shortname</li>
   </ul>
   </section>
-  <section id="potential-issues-84" class="level3 anomalies">
+  <section id="potential-issues-83" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>WebIDL names also defined elsewhere:
@@ -3265,7 +3278,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-84" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-83" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3276,7 +3289,7 @@
   </section>
   <section id="storage-standard" class="level2" data-spec="true" data-ok="true">
   <h2>Storage Standard</h2>
-  <section id="spec-info-85" class="level3 info">
+  <section id="spec-info-84" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://storage.spec.whatwg.org/">Living Standard</a> (9 January 2018)</li>
@@ -3284,11 +3297,11 @@
   <li>Shortname: no shortname</li>
   </ul>
   </section>
-  <section id="potential-issues-85" class="level3 anomalies">
+  <section id="potential-issues-84" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <p>This specification looks good!</p>
   </section>
-  <section id="known-dependencies-on-this-specification-85" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-84" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -3299,7 +3312,7 @@
   </section>
   <section id="streams-standard" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true">
   <h2>Streams Standard</h2>
-  <section id="spec-info-86" class="level3 info">
+  <section id="spec-info-85" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://streams.spec.whatwg.org/">Living Standard</a> (22 March 2018)</li>
@@ -3307,18 +3320,46 @@
   <li>Shortname: no shortname</li>
   </ul>
   </section>
-  <section id="potential-issues-86" class="level3 anomalies">
+  <section id="potential-issues-85" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>No WebIDL definitions found</li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-86" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-85" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
+  </ul>
+  <p>No informative reference to this spec from other specs.</p>
+  </section>
+  </section>
+  <section id="the-screen-orientation-api" class="level2" data-spec="true" data-ok="true">
+  <h2>The Screen Orientation API</h2>
+  <section id="spec-info-86" class="level3 info">
+  <h3>Spec info</h3>
+  <ul>
+  <li>Crawled version: <a href="https://w3c.github.io/screen-orientation/">Editor's Draft</a> (Draft05 November 2017)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/screen-orientation/" class="uri">https://w3c.github.io/screen-orientation/</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/screen-orientation/" class="uri">https://www.w3.org/TR/screen-orientation/</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-screen-orientation-20171105/">Working Draft</a></li>
+  <li>Repository: <a href="https://github.com/w3c/screen-orientation">GitHub w3c/screen-orientation</a></li>
+  <li>Shortname: screen-orientation</li>
+  </ul>
+  </section>
+  <section id="potential-issues-86" class="level3 anomalies">
+  <h3>Potential issue(s)</h3>
+  <p>This specification looks good!</p>
+  </section>
+  <section id="known-dependencies-on-this-specification-86" class="level3 dependencies">
+  <h3>Known dependencies on this specification</h3>
+  <p>Normative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
+  <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
+  <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -3515,6 +3556,10 @@
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
+  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
@@ -3673,7 +3718,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-app-manifest" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="web-app-manifest" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Web App Manifest</h2>
   <section id="spec-info-97" class="level3 info">
   <h3>Spec info</h3>
@@ -3689,7 +3734,6 @@
   <section id="potential-issues-97" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>OrientationLockType</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a>, related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
@@ -3706,6 +3750,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
+  <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   </ul>
   </section>
   </section>
@@ -3879,6 +3924,7 @@
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
+  <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></li>
@@ -3893,13 +3939,14 @@
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
+  <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
+  <li><a href="https://w3c.github.io/paint-timing/">Paint Timing 1</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a></li>
   <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
@@ -3917,6 +3964,7 @@
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><a href="https://w3c.github.io/staticrange/">Static Range</a></li>
   <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
+  <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
@@ -4027,7 +4075,7 @@
   <section id="spec-info-104" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sat Mar 24 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sun Mar 25 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4052,7 +4100,7 @@
   <section id="spec-info-105" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sat Mar 24 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sun Mar 25 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
