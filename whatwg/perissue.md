@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 24, 2018
+% March 25, 2018
 
 110 specifications were crawled in this report.
 
@@ -9,20 +9,11 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [gamepad](https://www.w3.org/TR/gamepad/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-- [media-source](https://www.w3.org/TR/media-source/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-- [paint-timing](https://www.w3.org/TR/paint-timing/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
-    at <anonymous>`
-- [screen-orientation](https://www.w3.org/TR/screen-orientation/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+- [payment-method-basic-card](https://www.w3.org/TR/payment-method-basic-card/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
     at <anonymous>`
 
-=> 4 specifications found
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -87,8 +78,6 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 ## List of WebIDL names not defined in the specifications crawled
 
 - `LayoutWorklet` used in [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- `MediaSource` used in [HTML Standard](https://html.spec.whatwg.org/)
-- `OrientationLockType` used in [Web App Manifest](https://w3c.github.io/manifest/)
 - `OverconstrainedError` used in [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
 - `RTCError` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -99,7 +88,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `SVGScriptElement` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 
-=> 12 WebIDL names found
+=> 10 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -138,6 +127,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `Event` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `EventInit` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [Media Source Extensions™](https://w3c.github.io/media-source/) uses:
+    * `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+    * `URL` but does not reference [URL Standard](https://url.spec.whatwg.org/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) uses `EventHandler` but does not reference [HTML Standard](https://html.spec.whatwg.org/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Server Timing](https://w3c.github.io/server-timing/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
@@ -147,13 +139,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `Event` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `EventInit` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 
-=> 21 missing references for IDL definitions found in 14 specifications
+=> 23 missing references for IDL definitions found in 15 specifications
 
 
 ## Missing references based on document links
 
 - [Accelerometer](https://w3c.github.io/accelerometer/) links to:
-    * [`https://www.w3.org/TR/screen-orientation/`](https://www.w3.org/TR/screen-orientation/) but does not list it in its references
     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
     * [`https://w3c.github.io/sensors/usecases.html`](https://w3c.github.io/sensors/usecases.html) but does not list it in its references
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
@@ -190,6 +181,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/) links to:
     * [`https://www.w3.org/TR/2016/CR-orientation-event-20160818/`](https://www.w3.org/TR/2016/CR-orientation-event-20160818/) but does not list it in its references
     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
+- [Paint Timing 1](https://w3c.github.io/paint-timing/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [Payment Handler API](https://w3c.github.io/payment-handler/) links to [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/) but does not list it in its references
 - [Permissions](https://w3c.github.io/permissions/) links to:
     * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/) but does not list it in its references
@@ -258,7 +250,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 91 missing references for links found in 37 specifications
+=> 91 missing references for links found in 38 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -267,6 +259,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 
 ## Reference URL is inconsistent with URL used in document links
 
+- [Accelerometer](https://w3c.github.io/accelerometer/) links to [`https://www.w3.org/TR/screen-orientation/`](https://www.w3.org/TR/screen-orientation/) but related reference "SCREEN-ORIENTATION" uses URL [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to:
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
@@ -336,6 +329,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/) but related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
     * [`https://w3c.github.io/gyroscope/`](https://w3c.github.io/gyroscope/) but related reference "GYROSCOPE" uses URL [`https://www.w3.org/TR/gyroscope/`](https://www.w3.org/TR/gyroscope/)
     * [`https://w3c.github.io/magnetometer/`](https://w3c.github.io/magnetometer/) but related reference "MAGNETOMETER" uses URL [`https://www.w3.org/TR/magnetometer/`](https://www.w3.org/TR/magnetometer/)
+- [Paint Timing 1](https://w3c.github.io/paint-timing/) links to [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/) but related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/) links to [`https://w3c.github.io/payment-handler/`](https://w3c.github.io/payment-handler/) but related reference "payment-handler" uses URL [`https://www.w3.org/TR/payment-handler/`](https://www.w3.org/TR/payment-handler/)
 - [Permissions](https://w3c.github.io/permissions/) links to:
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
@@ -414,6 +408,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) links to [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
-=> 120 inconsistent references for links found in 51 specifications
+=> 122 inconsistent references for links found in 53 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
