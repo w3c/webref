@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-25T02:04:47.572Z",
+  "date": "2018-03-26T02:04:40.421Z",
   "stats": {
     "crawled": 119,
-    "errors": 0,
+    "errors": 1,
     "studied": 119
   },
   "results": [
@@ -3703,13 +3703,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Mar 25 2018"
+              "date": "Mon Mar 26 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Mar 25 2018"
+              "date": "Mon Mar 26 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -4175,7 +4175,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Mar 25 2018"
+              "date": "Mon Mar 26 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -8152,12 +8152,6 @@
               "date": "15 September 2016"
             },
             {
-              "url": "https://www.w3.org/TR/uievents-code/",
-              "title": "UI Events KeyboardEvent code Values",
-              "crawled": "https://www.w3.org/TR/2017/CR-uievents-code-20170601/",
-              "date": "01 June 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/uievents-key/",
               "title": "UI Events KeyboardEvent key Values",
               "crawled": "https://www.w3.org/TR/2017/CR-uievents-key-20170601/",
@@ -8168,54 +8162,6 @@
               "title": "W3C DOM 4.1",
               "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
               "date": "1 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2017/CR-webdriver-20170330/",
-              "date": "30 March 2017"
-            }
-          ],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "UI Events KeyboardEvent code Values",
-      "shortname": "uievents-code",
-      "date": "01 June 2017",
-      "url": "https://www.w3.org/TR/uievents-code/",
-      "latest": "https://www.w3.org/TR/uievents-code/",
-      "datedUrl": "https://www.w3.org/TR/2017/CR-uievents-code-20170601/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://w3c.github.io/uievents-code/",
-      "crawled": "https://www.w3.org/TR/2017/CR-uievents-code-20170601/",
-      "repository": "https://github.com/w3c/uievents-code",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/uievents/",
-              "title": "UI Events",
-              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
-              "date": "04 August 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/uievents-key/",
-              "title": "UI Events KeyboardEvent key Values",
-              "crawled": "https://www.w3.org/TR/2017/CR-uievents-key-20170601/",
-              "date": "01 June 2017"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -8260,9 +8206,48 @@
               "date": "04 August 2016"
             },
             {
-              "url": "https://www.w3.org/TR/uievents-code/",
-              "title": "UI Events KeyboardEvent code Values",
-              "crawled": "https://www.w3.org/TR/2017/CR-uievents-code-20170601/",
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2017/CR-webdriver-20170330/",
+              "date": "30 March 2017"
+            }
+          ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "uievents-code",
+      "shortname": "uievents-code",
+      "date": "",
+      "url": "https://www.w3.org/TR/uievents-code/",
+      "latest": "https://www.w3.org/TR/uievents-code",
+      "crawled": "https://www.w3.org/TR/uievents-code",
+      "repository": "https://github.com/w3c/uievents-code",
+      "report": {
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)\n    at <anonymous>",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasInvalidIdl": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/uievents-key/",
+              "title": "UI Events KeyboardEvent key Values",
+              "crawled": "https://www.w3.org/TR/2017/CR-uievents-key-20170601/",
               "date": "01 June 2017"
             },
             {
@@ -9003,7 +8988,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Mar 25 2018"
+              "date": "Mon Mar 26 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -10078,7 +10063,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sun Mar 25 2018",
+      "date": "Mon Mar 26 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -10109,7 +10094,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sun Mar 25 2018",
+      "date": "Mon Mar 26 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -10149,7 +10134,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Mar 25 2018"
+              "date": "Mon Mar 26 2018"
             }
           ],
           "informative": [
@@ -10687,13 +10672,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Mar 25 2018"
+              "date": "Mon Mar 26 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Mar 25 2018"
+              "date": "Mon Mar 26 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",

@@ -1,19 +1,8 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 25, 2018
+% March 26, 2018
 
 110 specifications were crawled in this report.
-
-
-## Specifications that could not be rendered
-
-Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
-
-- [payment-method-basic-card](https://www.w3.org/TR/payment-method-basic-card/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>`
-
-=> 1 specification found
 
 
 ## Specifications without normative dependencies
