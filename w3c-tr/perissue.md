@@ -1,8 +1,19 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 25, 2018
+% March 26, 2018
 
 119 specifications were crawled in this report.
+
+
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [uievents-code](https://www.w3.org/TR/uievents-code): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+    at <anonymous>`
+
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -30,10 +41,9 @@ Basically all specifications have normative dependencies on some other specifica
 - [Selectors Level 3](https://www.w3.org/TR/2018/CR-selectors-3-20180130/)
 - [Shadow DOM](https://www.w3.org/TR/2018/NOTE-shadow-dom-20180301/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
 - [UI Events KeyboardEvent key Values](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
 
-=> 13 specifications found
+=> 12 specifications found
 
 Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
