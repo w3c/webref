@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">March 26, 2018</h2>
+            <h2 class="date">March 27, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -341,7 +341,6 @@
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -578,12 +577,7 @@
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
-  </ul>
-  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
-  <ul>
-  <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -824,7 +818,6 @@
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   <li><a href="https://w3c.github.io/web-animations/">Web Animations</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
@@ -906,11 +899,6 @@
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
-  </ul>
-  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
-  <ul>
-  <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -921,12 +909,12 @@
   </ul>
   </section>
   </section>
-  <section id="custom-elements" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="custom-elements" class="level2" data-spec="true" data-error="true">
   <h2>Custom Elements</h2>
   <section id="spec-info-24" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webcomponents/spec/custom/">Editor's Draft</a> (Draft16 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webcomponents/spec/custom/">Editor's Draft</a></li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webcomponents/spec/custom/" class="uri">https://w3c.github.io/webcomponents/spec/custom/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/custom-elements/" class="uri">https://www.w3.org/TR/custom-elements/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-custom-elements-20180216/">Working Draft</a></li>
@@ -936,15 +924,8 @@
   </section>
   <section id="potential-issues-24" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/aria/aria/aria.html"><code>https://w3c.github.io/aria/aria/aria.html</code></a></li>
-  <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a></li>
-  <li><a href="https://w3c.github.io/editing/execCommand.html"><code>https://w3c.github.io/editing/execCommand.html</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>Error: waiting failed: timeout 30000ms exceeded Error: waiting failed: timeout 30000ms exceeded     at Timeout.WaitTask._timeoutTimer.setTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/FrameManager.js:789:58)     at ontimeout (timers.js:482:11)     at tryOnTimeout (timers.js:317:5)     at Timer.listOnTimeout (timers.js:277:5)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-24" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1018,7 +999,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -1142,7 +1122,6 @@
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
@@ -1214,7 +1193,6 @@
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
@@ -1255,7 +1233,6 @@
   <ul>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -1394,7 +1371,6 @@
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -1487,6 +1463,7 @@
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
+  <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -1500,7 +1477,7 @@
   <section id="spec-info-39" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/html/">Editor's Draft</a> (18 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/html/">Editor's Draft</a> (27 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/html/" class="uri">https://w3c.github.io/html/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/html52/" class="uri">https://www.w3.org/TR/html52/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/REC-html52-20171214/">Recommendation</a></li>
@@ -1567,7 +1544,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
@@ -1591,7 +1567,6 @@
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
@@ -1614,7 +1589,6 @@
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-eventsource-20150203/">Server-Sent Events</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
@@ -1634,7 +1608,6 @@
   <li><a href="https://www.w3.org/TR/notifications/">Web Notifications</a></li>
   <li><a href="http://www.w3.org/TR/2016/REC-webstorage-20160419/">Web Storage (Second Edition)</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">WebGL 2.0 Specification</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
@@ -1712,7 +1685,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
@@ -1725,7 +1697,6 @@
   <li><a href="https://rawgit.com/w3c/input-events/v1/index.html">Input Events Level 1</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
@@ -1742,7 +1713,6 @@
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 3</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
@@ -1756,7 +1726,6 @@
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
@@ -1845,7 +1814,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
@@ -1858,7 +1826,6 @@
   <li><a href="https://rawgit.com/w3c/input-events/v1/index.html">Input Events Level 1</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
@@ -1877,7 +1844,6 @@
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-eventsource-20150203/">Server-Sent Events</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
@@ -1891,7 +1857,6 @@
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
@@ -1958,9 +1923,34 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
+  <section id="image-capture" class="level2" data-spec="true" data-error="true">
+  <h2>image-capture</h2>
+  <section id="spec-info-44" class="level3 info">
+  <h3>Spec info</h3>
+  <ul>
+  <li>Crawled version: <a href="https://www.w3.org/TR/image-capture/">Initial URL</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/image-capture" class="uri">https://www.w3.org/TR/image-capture</a></li>
+  <li>Repository: <a href="https://github.com/w3c/mediacapture-image">GitHub w3c/mediacapture-image</a></li>
+  <li>Shortname: image-capture</li>
+  </ul>
+  </section>
+  <section id="potential-issues-44" class="level3 anomalies">
+  <h3>Potential issue(s)</h3>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)     at &lt;anonymous&gt;</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  </section>
+  <section id="known-dependencies-on-this-specification-44" class="level3 dependencies">
+  <h3>Known dependencies on this specification</h3>
+  <p>No normative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  </ul>
+  </section>
+  </section>
   <section id="indexed-database-api-2.0" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Indexed Database API 2.0</h2>
-  <section id="spec-info-44" class="level3 info">
+  <section id="spec-info-45" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/IndexedDB/">Editor's Draft</a> (18 January 2018)</li>
@@ -1971,7 +1961,7 @@
   <li>Shortname: IndexedDB-2</li>
   </ul>
   </section>
-  <section id="potential-issues-44" class="level3 anomalies">
+  <section id="potential-issues-45" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>DOMStringList</code>, <code>EventHandler</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code></li>
@@ -1982,7 +1972,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-44" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-45" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2000,10 +1990,10 @@
   </section>
   <section id="input-events-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Input Events Level 1</h2>
-  <section id="spec-info-45" class="level3 info">
+  <section id="spec-info-46" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (Draft26 March 2018)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (Draft27 March 2018)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -2011,7 +2001,7 @@
   <li>Shortname: input-events-2</li>
   </ul>
   </section>
-  <section id="potential-issues-45" class="level3 anomalies">
+  <section id="potential-issues-46" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
@@ -2022,7 +2012,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-45" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-46" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -2031,12 +2021,12 @@
   </ul>
   </section>
   </section>
-  <section id="intersection-observer" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true">
+  <section id="intersection-observer" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>Intersection Observer</h2>
-  <section id="spec-info-46" class="level3 info">
+  <section id="spec-info-47" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/IntersectionObserver/">Editor's Draft</a> (17 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/IntersectionObserver/">Editor's Draft</a> (26 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/IntersectionObserver/" class="uri">https://w3c.github.io/IntersectionObserver/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/intersection-observer/" class="uri">https://www.w3.org/TR/intersection-observer/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-intersection-observer-20170914/">Working Draft</a></li>
@@ -2044,10 +2034,14 @@
   <li>Shortname: intersection-observer</li>
   </ul>
   </section>
-  <section id="potential-issues-46" class="level3 anomalies">
+  <section id="potential-issues-47" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Invalid WebIDL content found</li>
+  <li>Unknown WebIDL names used: <code>Window</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>DOMHighResTimeStamp</code> defined in <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a></li>
@@ -2056,7 +2050,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-46" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-47" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2064,7 +2058,7 @@
   </section>
   <section id="long-tasks-api-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Long Tasks API 1</h2>
-  <section id="spec-info-47" class="level3 info">
+  <section id="spec-info-48" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/longtasks/">Editor's Draft</a> (9 January 2018)</li>
@@ -2075,7 +2069,7 @@
   <li>Shortname: longtasks-1</li>
   </ul>
   </section>
-  <section id="potential-issues-47" class="level3 anomalies">
+  <section id="potential-issues-48" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Missing references for links:
@@ -2089,7 +2083,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-47" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-48" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2097,7 +2091,7 @@
   </section>
   <section id="magnetometer" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Magnetometer</h2>
-  <section id="spec-info-48" class="level3 info">
+  <section id="spec-info-49" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/magnetometer/">Editor's Draft</a> (15 March 2018)</li>
@@ -2108,7 +2102,7 @@
   <li>Shortname: magnetometer</li>
   </ul>
   </section>
-  <section id="potential-issues-48" class="level3 anomalies">
+  <section id="potential-issues-49" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>Window</code></li>
@@ -2124,7 +2118,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-48" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-49" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2138,7 +2132,7 @@
   </section>
   <section id="media-capture-and-streams" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Media Capture and Streams</h2>
-  <section id="spec-info-49" class="level3 info">
+  <section id="spec-info-50" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/mediacapture-main/">Editor's Draft</a> (12 March 2018)</li>
@@ -2149,7 +2143,7 @@
   <li>Shortname: mediacapture-streams</li>
   </ul>
   </section>
-  <section id="potential-issues-49" class="level3 anomalies">
+  <section id="potential-issues-50" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>OverconstrainedError</code>, <code>Window</code></li>
@@ -2161,7 +2155,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-49" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-50" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2171,7 +2165,6 @@
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
@@ -2188,7 +2181,7 @@
   </section>
   <section id="media-capture-depth-stream-extensions" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Media Capture Depth Stream Extensions</h2>
-  <section id="spec-info-50" class="level3 info">
+  <section id="spec-info-51" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/mediacapture-depth/">Editor's Draft</a> (Draft16 October 2017)</li>
@@ -2199,7 +2192,7 @@
   <li>Shortname: mediacapture-depth</li>
   </ul>
   </section>
-  <section id="potential-issues-50" class="level3 anomalies">
+  <section id="potential-issues-51" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Inconsistent references for links:
@@ -2208,7 +2201,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-50" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-51" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -2219,7 +2212,7 @@
   </section>
   <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Media Capture from DOM Elements</h2>
-  <section id="spec-info-51" class="level3 info">
+  <section id="spec-info-52" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/mediacapture-fromelement/">Editor's Draft</a> (Draft23 February 2018)</li>
@@ -2230,7 +2223,7 @@
   <li>Shortname: mediacapture-fromelement</li>
   </ul>
   </section>
-  <section id="potential-issues-51" class="level3 anomalies">
+  <section id="potential-issues-52" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>HTMLCanvasElement</code>, <code>HTMLMediaElement</code>, <code>Window</code></li>
@@ -2241,7 +2234,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-51" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-52" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
@@ -2252,7 +2245,7 @@
   </section>
   <section id="media-session-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Media Session Standard</h2>
-  <section id="spec-info-52" class="level3 info">
+  <section id="spec-info-53" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://wicg.github.io/mediasession/">Initial URL</a> (17 August 2017)</li>
@@ -2260,13 +2253,13 @@
   <li>Shortname: no shortname</li>
   </ul>
   </section>
-  <section id="potential-issues-52" class="level3 anomalies">
+  <section id="potential-issues-53" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>Navigator</code>, <code>Window</code></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-52" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-53" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>No informative reference to this spec from other specs.</p>
@@ -2274,7 +2267,7 @@
   </section>
   <section id="media-source-extensions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Media Source Extensions™</h2>
-  <section id="spec-info-53" class="level3 info">
+  <section id="spec-info-54" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Crawled version: <a href="https://w3c.github.io/media-source/">Editor's Draft</a> (08 November 2016)</li>
@@ -2285,7 +2278,7 @@
   <li>Shortname: media-source</li>
   </ul>
   </section>
-  <section id="potential-issues-53" class="level3 anomalies">
+  <section id="potential-issues-54" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>AudioTrack</code>, <code>AudioTrackList</code>, <code>EventHandler</code>, <code>TextTrack</code>, <code>TextTrackList</code>, <code>TimeRanges</code>, <code>VideoTrack</code>, <code>VideoTrackList</code></li>
@@ -2296,7 +2289,7 @@
   </ul></li>
   </ul>
   </section>
-  <section id="known-dependencies-on-this-specification-53" class="level3 dependencies">
+  <section id="known-dependencies-on-this-specification-54" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
@@ -2308,39 +2301,6 @@
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
-  </ul>
-  </section>
-  </section>
-  <section id="mediastream-image-capture" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
-  <h2>MediaStream Image Capture</h2>
-  <section id="spec-info-54" class="level3 info">
-  <h3>Spec info</h3>
-  <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/mediacapture-image/">Editor's Draft</a> (19 March 2018)</li>
-  <li>Editor's Draft: <a href="https://w3c.github.io/mediacapture-image/" class="uri">https://w3c.github.io/mediacapture-image/</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/image-capture/" class="uri">https://www.w3.org/TR/image-capture/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-image-capture-20170621/">Working Draft</a></li>
-  <li>Repository: <a href="https://github.com/w3c/mediacapture-image">GitHub w3c/mediacapture-image</a></li>
-  <li>Shortname: image-capture</li>
-  </ul>
-  </section>
-  <section id="potential-issues-54" class="level3 anomalies">
-  <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>ImageBitmap</code>, <code>Window</code></li>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
-  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
-  </ul></li>
-  </ul>
-  </section>
-  <section id="known-dependencies-on-this-specification-54" class="level3 dependencies">
-  <h3>Known dependencies on this specification</h3>
-  <p>No normative reference to this spec from other specs.</p>
-  <p>Informative references to this spec from:</p>
-  <ul>
-  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   </ul>
   </section>
   </section>
@@ -2564,7 +2524,6 @@
   <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -2609,7 +2568,7 @@
   <section id="spec-info-62" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/payment-handler/">Editor's Draft</a> (Draft12 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/payment-handler/">Editor's Draft</a> (Draft26 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/payment-handler/" class="uri">https://w3c.github.io/payment-handler/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/payment-handler/" class="uri">https://www.w3.org/TR/payment-handler/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-payment-handler-20180108/">Working Draft</a></li>
@@ -2757,12 +2716,12 @@
   <ul>
   <li><a href="https://w3c.github.io/manifest/"><code>https://w3c.github.io/manifest/</code></a></li>
   <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a></li>
+  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html"><code>https://w3c.github.io/webdriver/webdriver-spec.html</code></a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a>, related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html"><code>https://w3c.github.io/webdriver/webdriver-spec.html</code></a>, related reference &quot;WebDriver&quot; uses URL <a href="https://www.w3.org/TR/webdriver/"><code>https://www.w3.org/TR/webdriver/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -2807,10 +2766,7 @@
   </section>
   <section id="known-dependencies-on-this-specification-67" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
-  <p>Normative references to this spec from:</p>
-  <ul>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
-  </ul>
+  <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events</a></li>
@@ -2883,7 +2839,7 @@
   <section id="spec-info-70" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/presentation-api/">Editor's Draft</a> (Draft08 November 2017)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/presentation-api/">Editor's Draft</a> (Draft26 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/presentation-api/" class="uri">https://w3c.github.io/presentation-api/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/presentation-api/" class="uri">https://www.w3.org/TR/presentation-api/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-presentation-api-20170601/">Candidate Recommendation</a></li>
@@ -3227,7 +3183,6 @@
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css3-selectors/">Selectors Level 3</a></li>
   </ul>
@@ -3343,10 +3298,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/html/">HTML 5.3</a></li>
-  </ul>
-  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
-  <ul>
-  <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -3541,12 +3492,12 @@
   </ul>
   </section>
   </section>
-  <section id="shadow-dom" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="shadow-dom" class="level2" data-spec="true" data-error="true">
   <h2>Shadow DOM</h2>
   <section id="spec-info-86" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webcomponents/spec/shadow/">Editor's Draft</a> (Draft16 March 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webcomponents/spec/shadow/">Editor's Draft</a></li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webcomponents/spec/shadow/" class="uri">https://w3c.github.io/webcomponents/spec/shadow/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/shadow-dom/" class="uri">https://www.w3.org/TR/shadow-dom/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/NOTE-shadow-dom-20180301/">Retired</a></li>
@@ -3556,33 +3507,8 @@
   </section>
   <section id="potential-issues-86" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Spec uses WebIDL but does not reference it normatively</li>
-  <li>Unknown WebIDL names used: <code>Window</code></li>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>ShadowRoot</code> also defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><code>ShadowRootMode</code> also defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  </ul></li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>DocumentOrShadowRoot</code> defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><code>Selection</code> defined in <a href="https://w3c.github.io/selection-api/">Selection API</a></li>
-  <li><code>Element</code> defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><code>CaretPosition</code> defined in <a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><code>StyleSheetList</code> defined in <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
-  <li><code>DocumentFragment</code> defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  </ul></li>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://www.w3.org/TR/css3-ui/"><code>https://www.w3.org/TR/css3-ui/</code></a></li>
-  <li><a href="https://www.w3.org/TR/cssom/"><code>https://www.w3.org/TR/cssom/</code></a></li>
-  </ul></li>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a>, related reference &quot;uievents&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>Error: waiting failed: timeout 30000ms exceeded Error: waiting failed: timeout 30000ms exceeded     at Timeout.WaitTask._timeoutTimer.setTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/FrameManager.js:789:58)     at ontimeout (timers.js:482:11)     at tryOnTimeout (timers.js:317:5)     at Timer.listOnTimeout (timers.js:277:5)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-86" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3807,17 +3733,13 @@
   <li><a href="https://w3c.github.io/uievents-code/">UI Events KeyboardEvent code Values</a></li>
   <li><a href="https://w3c.github.io/uievents-key/">UI Events KeyboardEvent key Values</a></li>
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://www.w3.org/TR/2dcontext/">HTML Canvas 2D Context</a></li>
   </ul>
-  <p>Informative references to this spec from:</p>
-  <ul>
-  <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
-  </ul>
+  <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
   <section id="ui-events-keyboardevent-code-values" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-noIdlContent="true">
@@ -3845,7 +3767,6 @@
   <ul>
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   <li><a href="https://w3c.github.io/uievents-key/">UI Events KeyboardEvent key Values</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -3875,7 +3796,6 @@
   <ul>
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   <li><a href="https://w3c.github.io/uievents-code/">UI Events KeyboardEvent code Values</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -3885,7 +3805,7 @@
   <section id="spec-info-96" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://url.spec.whatwg.org/">Living Standard</a> (10 January 2018)</li>
+  <li>Crawled version: <a href="https://url.spec.whatwg.org/">Living Standard</a> (26 March 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/url">GitHub whatwg/url</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -3922,7 +3842,6 @@
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
@@ -4033,7 +3952,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="w3c-dom-4.1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="w3c-dom-4.1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>W3C DOM 4.1</h2>
   <section id="spec-info-100" class="level3 info">
   <h3>Spec info</h3>
@@ -4050,11 +3969,6 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>HTMLSlotElement</code>, <code>Window</code></li>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>ShadowRoot</code> also defined in <a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
-  <li><code>ShadowRootMode</code> also defined in <a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
-  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/touch-events/"><code>https://www.w3.org/TR/touch-events/</code></a></li>
@@ -4085,7 +3999,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
@@ -4135,7 +4048,6 @@
   <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></li>
   <li><a href="https://www.w3.org/TR/notifications/">Web Notifications</a></li>
   <li><a href="http://www.w3.org/TR/2016/REC-webstorage-20160419/">Web Storage (Second Edition)</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
@@ -4148,14 +4060,12 @@
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://www.w3.org/TR/css3-selectors/">Selectors Level 3</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   </ul>
   </section>
@@ -4259,7 +4169,7 @@
   <section id="spec-info-104" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://webaudio.github.io/web-audio-api/">Editor's Draft</a> (5 March 2018)</li>
+  <li>Crawled version: <a href="https://webaudio.github.io/web-audio-api/">Editor's Draft</a> (26 March 2018)</li>
   <li>Editor's Draft: <a href="https://webaudio.github.io/web-audio-api/" class="uri">https://webaudio.github.io/web-audio-api/</a></li>
   <li>Latest published version: <a href="http://www.w3.org/TR/webaudio/" class="uri">http://www.w3.org/TR/webaudio/</a></li>
   <li>Latest published status: <a href="http://www.w3.org/TR/2015/WD-webaudio-20151208/">Working Draft</a></li>
@@ -4283,6 +4193,7 @@
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;MEDIACAPTURE-STREAMS&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
+  <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a>, related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -4421,7 +4332,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
@@ -4447,7 +4357,6 @@
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
@@ -4487,7 +4396,6 @@
   <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></li>
   <li><a href="http://www.w3.org/TR/2016/REC-webstorage-20160419/">Web Storage (Second Edition)</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">WebGL 2.0 Specification</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
@@ -4505,7 +4413,6 @@
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
@@ -4642,7 +4549,6 @@
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
@@ -4656,7 +4562,6 @@
   <li><a href="https://rawgit.com/w3c/input-events/v1/index.html">Input Events Level 1</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
@@ -4674,7 +4579,6 @@
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-eventsource-20150203/">Server-Sent Events</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><a href="https://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></li>
   <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
@@ -4689,7 +4593,6 @@
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a></li>
-  <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html">WebDriver</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
@@ -4756,35 +4659,21 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webdriver" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
-  <h2>WebDriver</h2>
+  <section id="webdriver" class="level2" data-spec="true" data-error="true">
+  <h2>webdriver</h2>
   <section id="spec-info-112" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webdriver/webdriver-spec.html">Editor's Draft</a> (Recommendation04 March 2018)</li>
-  <li>Editor's Draft: <a href="https://w3c.github.io/webdriver/webdriver-spec.html" class="uri">https://w3c.github.io/webdriver/webdriver-spec.html</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/webdriver/" class="uri">https://www.w3.org/TR/webdriver/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-webdriver-20170330/">Candidate Recommendation</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/webdriver/">Initial URL</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/webdriver" class="uri">https://www.w3.org/TR/webdriver</a></li>
   <li>Repository: <a href="https://github.com/w3c/webdriver">GitHub w3c/webdriver</a></li>
   <li>Shortname: webdriver</li>
   </ul>
   </section>
   <section id="potential-issues-112" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a></li>
-  <li><a href="https://w3c.github.io/editing/execCommand.html"><code>https://w3c.github.io/editing/execCommand.html</code></a></li>
-  <li><a href="https://www.w3.org/TR/page-visibility/?csw=1"><code>https://www.w3.org/TR/page-visibility/?csw=1</code></a></li>
-  </ul></li>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a>, related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
-  <li><a href="https://w3c.github.io/DOM-Parsing/"><code>https://w3c.github.io/DOM-Parsing/</code></a>, related reference &quot;DOM-PARSING&quot; uses URL <a href="https://www.w3.org/TR/DOM-Parsing/"><code>https://www.w3.org/TR/DOM-Parsing/</code></a></li>
-  <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a>, related reference &quot;UI-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)     at &lt;anonymous&gt;</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-112" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -4800,7 +4689,7 @@
   <section id="spec-info-113" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Mon Mar 26 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Tue Mar 27 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -4828,7 +4717,7 @@
   <section id="spec-info-114" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Mon Mar 26 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Tue Mar 27 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>

@@ -1,15 +1,22 @@
-% Diff between report from "March 26, 2018" and reference report from "March 25, 2018"
+% Diff between report from "March 27, 2018" and reference report from "March 26, 2018"
 % Reffy
-% March 26, 2018
+% March 27, 2018
 
-## Payment Method: Basic Card
+## Intersection Observer
 
-- URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
-- Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
-- Spec title: *INS* Payment Method: Basic Card / *DEL* payment-method-basic-card
-- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)
-    at <anonymous>
+- URL: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/IntersectionObserver/)
+- Repository: [GitHub w3c/IntersectionObserver](https://github.com/w3c/IntersectionObserver)
+- Invalid WebIDL content found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Missing references for WebIDL names: *INS* DOMHighResTimeStamp
+
+
+## Web Audio API
+
+- URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
+- Repository: [GitHub webaudio/web-audio-api](https://github.com/webaudio/web-audio-api)
+- Inconsistent references for links: *INS* https://w3c.github.io/hr-time/
 
 
