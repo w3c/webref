@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-03-28T02:01:07.515Z",
+  "date": "2018-03-29T02:01:10.835Z",
   "stats": {
     "crawled": 119,
     "errors": 3,
@@ -418,6 +418,12 @@
                 "date": "28 January 2018"
               },
               {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "26 March 2018"
+              },
+              {
                 "url": "https://www.w3.org/TR/worklets-1/",
                 "title": "Worklets Level 1",
                 "crawled": "https://drafts.css-houdini.org/worklets/",
@@ -492,12 +498,6 @@
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
               "date": "27 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mixed-content/",
-              "title": "Mixed Content",
-              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-              "date": "23 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -609,16 +609,10 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/webappsec/usecases/credentialmanagement/"
+          "https://w3c.github.io/webappsec/usecases/credentialmanagement/",
+          "https://w3c.github.io/webappsec-mixed-content/"
         ],
         "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/webappsec-mixed-content/",
-            "ref": {
-              "name": "MIXED-CONTENT",
-              "url": "https://www.w3.org/TR/mixed-content/"
-            }
-          },
           {
             "link": "https://w3c.github.io/webappsec-secure-contexts/",
             "ref": {
@@ -647,7 +641,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             }
           ],
           "informative": [
@@ -769,7 +763,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -834,7 +828,7 @@
     },
     {
       "title": "CSS Layout API Level 1",
-      "date": "23 March 2018",
+      "date": "28 March 2018",
       "url": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "report": {
@@ -905,7 +899,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
@@ -929,7 +923,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -954,6 +948,12 @@
               "title": "Referrer Policy",
               "crawled": "https://w3c.github.io/webappsec-referrer-policy/",
               "date": "20 April 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -1014,6 +1014,12 @@
             "name": "Worklet",
             "refs": [
               {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "26 March 2018"
+              },
+              {
                 "url": "https://www.w3.org/TR/worklets-1/",
                 "title": "Worklets Level 1",
                 "crawled": "https://drafts.css-houdini.org/worklets/",
@@ -1071,13 +1077,20 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             }
           ]
         },
@@ -1114,13 +1127,19 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/",
               "date": "20 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             }
           ],
           "informative": []
@@ -1203,7 +1222,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -1274,7 +1293,7 @@
     {
       "title": "CSS Typed OM Level 1",
       "shortname": "css-typed-om-1",
-      "date": "23 March 2018",
+      "date": "28 March 2018",
       "url": "https://www.w3.org/TR/css-typed-om-1/",
       "latest": "https://www.w3.org/TR/css-typed-om-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/",
@@ -1330,7 +1349,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
@@ -1424,7 +1443,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
@@ -1467,6 +1486,12 @@
               "title": "Touch Events - Level 2",
               "crawled": "https://w3c.github.io/touch-events/",
               "date": "23 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -1519,7 +1544,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -1614,7 +1639,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -1695,7 +1720,7 @@
       "crawled": "https://w3c.github.io/webcomponents/spec/custom/",
       "repository": "https://github.com/w3c/webcomponents",
       "report": {
-        "error": "Error: waiting failed: timeout 30000ms exceeded Error: waiting failed: timeout 30000ms exceeded\n    at Timeout.WaitTask._timeoutTimer.setTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/FrameManager.js:789:58)\n    at ontimeout (timers.js:482:11)\n    at tryOnTimeout (timers.js:317:5)\n    at Timer.listOnTimeout (timers.js:277:5)",
+        "error": "Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395\n    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)\n    at ontimeout (timers.js:482:11)\n    at tryOnTimeout (timers.js:317:5)\n    at Timer.listOnTimeout (timers.js:277:5)",
         "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
@@ -1956,13 +1981,13 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "22 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -2111,12 +2136,6 @@
               "date": "17 August 2017"
             },
             {
-              "url": "https://www.w3.org/TR/mixed-content/",
-              "title": "Mixed Content",
-              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/",
@@ -2168,7 +2187,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -2607,7 +2626,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             }
           ],
           "informative": [
@@ -2670,7 +2689,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -2837,7 +2856,7 @@
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "14 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/longtasks-1/",
@@ -2888,13 +2907,32 @@
               "date": "8 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/",
               "date": "15 March 2018"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            }
+          ]
         },
         "ok": false
       }
@@ -3092,7 +3130,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -3224,7 +3262,7 @@
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "14 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -3236,7 +3274,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "28 March 2018"
+              "date": "29 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3281,12 +3319,6 @@
               "date": "9 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/mixed-content/",
-              "title": "Mixed Content",
-              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/",
@@ -3302,7 +3334,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-method-basic-card/",
@@ -3407,12 +3439,6 @@
               "date": "23 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "16 March 2018"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -3473,16 +3499,28 @@
               "date": "13 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://w3c.github.io/manifest/",
               "date": "Living Document"
             },
             {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -3512,7 +3550,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "22 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -3524,13 +3562,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Mar 28 2018"
+              "date": "Thu Mar 29 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Mar 28 2018"
+              "date": "Thu Mar 29 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3586,7 +3624,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -3798,7 +3836,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -3894,7 +3932,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "28 March 2018"
+              "date": "29 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -3921,12 +3959,6 @@
               "date": "9 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/mixed-content/",
-              "title": "Mixed Content",
-              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/",
@@ -3942,7 +3974,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-method-basic-card/",
@@ -4011,12 +4043,6 @@
               "date": "23 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "16 March 2018"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -4059,16 +4085,28 @@
               "date": "13 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://w3c.github.io/manifest/",
               "date": "Living Document"
             },
             {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -4080,7 +4118,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "22 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -4092,7 +4130,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Mar 28 2018"
+              "date": "Thu Mar 29 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -4130,7 +4168,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -4197,6 +4235,12 @@
               "title": "Screen Capture",
               "crawled": "https://w3c.github.io/mediacapture-screen-share/",
               "date": "23 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -4314,7 +4358,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -4410,7 +4454,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "28 March 2018"
+              "date": "29 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -4437,12 +4481,6 @@
               "date": "9 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/mixed-content/",
-              "title": "Mixed Content",
-              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/",
@@ -4458,7 +4496,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-method-basic-card/",
@@ -4539,12 +4577,6 @@
               "date": "23 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "16 March 2018"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -4587,16 +4619,28 @@
               "date": "13 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://w3c.github.io/manifest/",
               "date": "Living Document"
             },
             {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -4608,7 +4652,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "22 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -4664,7 +4708,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -4740,10 +4784,10 @@
     {
       "title": "Identifiers for WebRTC's Statistics API",
       "shortname": "webrtc-stats",
-      "date": "14 March 2018",
+      "date": "28 March 2018",
       "url": "https://www.w3.org/TR/webrtc-stats/",
       "latest": "https://www.w3.org/TR/webrtc-stats/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180314/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-stats-20180328/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/webrtc-stats/",
       "crawled": "https://w3c.github.io/webrtc-stats/",
@@ -4885,7 +4929,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "28 March 2018",
+      "date": "29 March 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -4921,7 +4965,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "28 March 2018"
+              "date": "29 March 2018"
             }
           ]
         },
@@ -5174,7 +5218,7 @@
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "14 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -5210,6 +5254,12 @@
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
+              "date": "26 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
               "date": "26 March 2018"
             },
             {
@@ -5564,6 +5614,12 @@
               "title": "Media Capture and Streams",
               "crawled": "https://w3c.github.io/mediacapture-main/",
               "date": "12 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
             }
           ]
         },
@@ -5609,42 +5665,24 @@
       }
     },
     {
-      "title": "Mixed Content",
+      "title": "mixed-content",
       "shortname": "mixed-content",
-      "date": "23 October 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/mixed-content/",
-      "latest": "https://www.w3.org/TR/mixed-content/",
-      "datedUrl": "https://www.w3.org/TR/2016/CR-mixed-content-20160802/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://w3c.github.io/webappsec-mixed-content/",
-      "crawled": "https://w3c.github.io/webappsec-mixed-content/",
+      "latest": "https://www.w3.org/TR/mixed-content",
+      "crawled": "https://www.w3.org/TR/mixed-content/",
       "repository": "https://github.com/w3c/webappsec-mixed-content",
       "report": {
-        "noNormativeRefs": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/2008/REC-xml-20081126/",
-            "ref": {
-              "name": "XML",
-              "url": "https://www.w3.org/TR/xml"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/webappsec-csp/",
-            "ref": {
-              "name": "CSP3",
-              "url": "https://www.w3.org/TR/CSP3/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -5658,12 +5696,6 @@
               "title": "Encrypted Media Extensions",
               "crawled": "https://w3c.github.io/encrypted-media/",
               "date": "22 February 2018"
-            },
-            {
-              "url": "https://fetch.spec.whatwg.org/",
-              "title": "Fetch Standard",
-              "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -5681,7 +5713,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             }
           ],
           "informative": [
@@ -5932,7 +5964,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -5995,7 +6027,7 @@
     {
       "title": "Payment Handler API",
       "shortname": "payment-handler",
-      "date": "26 March 2018",
+      "date": "28 March 2018",
       "url": "https://www.w3.org/TR/payment-handler/",
       "latest": "https://www.w3.org/TR/payment-handler/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-payment-handler-20180108/",
@@ -6034,7 +6066,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             }
           ]
         },
@@ -6069,7 +6101,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             }
           ],
           "informative": [
@@ -6121,7 +6153,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-method-basic-card/",
@@ -6322,7 +6354,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -6496,20 +6528,15 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/webappsec-mixed-content/"
+        ],
         "inconsistentRef": [
           {
             "link": "https://w3c.github.io/permissions/",
             "ref": {
               "name": "PERMISSIONS",
               "url": "https://www.w3.org/TR/permissions/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/webappsec-mixed-content/",
-            "ref": {
-              "name": "MIXED-CONTENT",
-              "url": "https://www.w3.org/TR/mixed-content/"
             }
           }
         ],
@@ -6910,7 +6937,6 @@
           "https://www.w3.org/TR/css3-mediaqueries/",
           "https://www.w3.org/TR/2013/REC-css-style-attr-20131107/",
           "https://www.w3.org/TR/css-position-3/",
-          "https://w3c.github.io/web-animations/",
           "https://www.w3.org/TR/css3-exclusions/",
           "https://www.w3.org/TR/css-shapes/",
           "https://www.w3.org/TR/resource-hints/",
@@ -7071,6 +7097,13 @@
             }
           },
           {
+            "link": "https://w3c.github.io/web-animations/",
+            "ref": {
+              "name": "web-animations-1",
+              "url": "https://www.w3.org/TR/web-animations-1/"
+            }
+          },
+          {
             "link": "https://www.w3.org/TR/2015/CR-css-ui-3-20150707/",
             "ref": {
               "name": "css-ui-3",
@@ -7173,7 +7206,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
@@ -7210,6 +7243,12 @@
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
               "date": "04 August 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             }
           ],
           "informative": [
@@ -7313,16 +7352,10 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/webappsec-mixed-content/",
-            "ref": {
-              "name": "MIX",
-              "url": "https://www.w3.org/TR/mixed-content/"
-            }
-          }
+        "missingLinkRef": [
+          "https://w3c.github.io/webappsec-mixed-content/"
         ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -7360,12 +7393,6 @@
               "title": "MediaStream Recording",
               "crawled": "https://w3c.github.io/mediacapture-record/",
               "date": "9 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mixed-content/",
-              "title": "Mixed Content",
-              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-              "date": "23 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -7407,7 +7434,7 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -7568,6 +7595,12 @@
               "title": "Selectors API Level 1",
               "crawled": "https://www.w3.org/TR/selectors-api/",
               "date": "21 February 2013"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
             }
           ],
           "informative": [
@@ -7785,7 +7818,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -7845,7 +7878,7 @@
     {
       "title": "Shadow DOM",
       "shortname": "shadow-dom",
-      "date": "16 March 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/shadow-dom/",
       "latest": "https://www.w3.org/TR/shadow-dom/",
       "datedUrl": "https://www.w3.org/TR/2018/NOTE-shadow-dom-20180301/",
@@ -7854,119 +7887,16 @@
       "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
       "repository": "https://github.com/w3c/webcomponents",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395 Error: Timed out after 30000 ms while trying to connect to Chrome! The only Chrome revision guaranteed to work is r536395\n    at Timeout.onTimeout (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:250:14)\n    at ontimeout (timers.js:482:11)\n    at tryOnTimeout (timers.js:317:5)\n    at Timer.listOnTimeout (timers.js:277:5)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
-        "redefinedIdlNames": [
-          {
-            "name": "ShadowRoot",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "ShadowRootMode",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          }
-        ],
-        "missingWebIdlRef": [
-          {
-            "name": "DocumentOrShadowRoot",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "Selection",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/selection-api/",
-                "title": "Selection API",
-                "crawled": "https://w3c.github.io/selection-api/",
-                "date": "28 June 2017"
-              }
-            ]
-          },
-          {
-            "name": "Element",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "CaretPosition",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/cssom-view-1/",
-                "title": "CSSOM View Module",
-                "crawled": "https://drafts.csswg.org/cssom-view/",
-                "date": "20 December 2017"
-              }
-            ]
-          },
-          {
-            "name": "StyleSheetList",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/cssom-1/",
-                "title": "CSS Object Model (CSSOM)",
-                "crawled": "https://drafts.csswg.org/cssom/",
-                "date": "20 December 2017"
-              }
-            ]
-          },
-          {
-            "name": "DocumentFragment",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://w3c.github.io/dom/",
-                "date": "8 March 2018"
-              }
-            ]
-          }
-        ],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-ui/",
-          "https://www.w3.org/TR/cssom/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/uievents/",
-            "ref": {
-              "name": "uievents",
-              "url": "https://www.w3.org/TR/uievents/"
-            }
-          }
-        ],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -8006,7 +7936,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "28 March 2018"
+              "date": "29 March 2018"
             }
           ],
           "informative": []
@@ -8149,14 +8079,7 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/mixed-content/",
-              "title": "Mixed Content",
-              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-              "date": "23 October 2017"
-            }
-          ],
+          "normative": [],
           "informative": [
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -8279,7 +8202,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "28 March 2018"
+              "date": "29 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -8336,14 +8259,7 @@
               "date": "04 March 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "16 March 2018"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -8526,16 +8442,10 @@
               "date": "17 August 2017"
             },
             {
-              "url": "https://www.w3.org/TR/mixed-content/",
-              "title": "Mixed Content",
-              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -8589,13 +8499,13 @@
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "22 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -8785,30 +8695,7 @@
           "HTMLSlotElement",
           "Window"
         ],
-        "redefinedIdlNames": [
-          {
-            "name": "ShadowRoot",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/shadow-dom/",
-                "title": "Shadow DOM",
-                "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-                "date": "16 March 2018"
-              }
-            ]
-          },
-          {
-            "name": "ShadowRootMode",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/shadow-dom/",
-                "title": "Shadow DOM",
-                "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-                "date": "16 March 2018"
-              }
-            ]
-          }
-        ],
+        "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/touch-events/"
@@ -8886,7 +8773,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -8916,7 +8803,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -9003,12 +8890,6 @@
               "date": "9 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/mixed-content/",
-              "title": "Mixed Content",
-              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/page-visibility-2/",
               "title": "Page Visibility Level 2",
               "crawled": "https://w3c.github.io/page-visibility/",
@@ -9018,7 +8899,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-request/",
@@ -9177,16 +9058,28 @@
               "date": "13 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://w3c.github.io/manifest/",
               "date": "Living Document"
             },
             {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -9216,7 +9109,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Mar 28 2018"
+              "date": "Thu Mar 29 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -9237,12 +9130,6 @@
               "title": "Selectors Level 3",
               "crawled": "https://www.w3.org/TR/css3-selectors/",
               "date": "30 January 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -9283,6 +9170,53 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Web Animations",
+      "shortname": "web-animations-1",
+      "date": "15 March 2018",
+      "url": "https://www.w3.org/TR/web-animations-1/",
+      "latest": "https://www.w3.org/TR/web-animations-1/",
+      "datedUrl": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/web-animations/",
+      "crawled": "https://w3c.github.io/web-animations/",
+      "repository": "https://github.com/w3c/web-animations",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/hr-time/",
+            "ref": {
+              "name": "HR-TIME-2",
+              "url": "https://www.w3.org/TR/hr-time-2/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://svgwg.org/svg2-draft/",
+              "date": "22 March 2018"
+            }
+          ],
           "informative": []
         },
         "ok": false
@@ -9333,7 +9267,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             }
           ],
           "informative": [
@@ -9355,9 +9289,97 @@
       }
     },
     {
+      "title": "Web Audio API",
+      "shortname": "webaudio",
+      "date": "26 March 2018",
+      "url": "https://www.w3.org/TR/webaudio/",
+      "latest": "http://www.w3.org/TR/webaudio/",
+      "datedUrl": "http://www.w3.org/TR/2015/WD-webaudio-20151208/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://webaudio.github.io/web-audio-api/",
+      "crawled": "https://webaudio.github.io/web-audio-api/",
+      "repository": "https://github.com/webaudio/web-audio-api",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "EventHandler",
+          "HTMLMediaElement",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "28 January 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "9 November 2017"
+              }
+            ]
+          }
+        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/mediacapture-fromelement/",
+          "https://fetch.spec.whatwg.org/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/mediacapture-main/",
+            "ref": {
+              "name": "MEDIACAPTURE-STREAMS",
+              "url": "https://www.w3.org/TR/mediacapture-streams/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/hr-time/",
+            "ref": {
+              "name": "HR-TIME-2",
+              "url": "https://www.w3.org/TR/hr-time-2/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/",
+              "date": "12 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
+              "title": "Media Capture from DOM Elements",
+              "crawled": "https://w3c.github.io/mediacapture-fromelement/",
+              "date": "23 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "9 November 2017"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
       "shortname": "webauthn",
-      "date": "23 March 2018",
+      "date": "28 March 2018",
       "url": "https://www.w3.org/TR/webauthn/",
       "latest": "https://www.w3.org/TR/webauthn/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-webauthn-20180320/",
@@ -9377,7 +9399,8 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/html/browsers.html"
+          "https://w3c.github.io/html/browsers.html",
+          "https://w3c.github.io/webappsec-mixed-content/"
         ],
         "inconsistentRef": [
           {
@@ -9392,13 +9415,6 @@
             "ref": {
               "name": "SECURE-CONTEXTS",
               "url": "https://www.w3.org/TR/secure-contexts/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/webappsec-mixed-content/",
-            "ref": {
-              "name": "MIXED-CONTENT",
-              "url": "https://www.w3.org/TR/mixed-content/"
             }
           }
         ],
@@ -9464,7 +9480,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -9594,7 +9610,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -9624,7 +9640,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -9816,7 +9832,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-method-basic-card/",
@@ -9981,16 +9997,28 @@
               "date": "13 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://w3c.github.io/manifest/",
               "date": "Living Document"
             },
             {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -10008,7 +10036,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "22 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -10020,13 +10048,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Mar 28 2018"
+              "date": "Thu Mar 29 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Mar 28 2018"
+              "date": "Thu Mar 29 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -10070,13 +10098,13 @@
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "14 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "28 March 2018"
+              "date": "29 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -10101,12 +10129,6 @@
               "title": "Presentation API",
               "crawled": "https://w3c.github.io/presentation-api/",
               "date": "26 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "16 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -10393,7 +10415,7 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -10495,7 +10517,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "28 March 2018"
+              "date": "29 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -10522,12 +10544,6 @@
               "date": "9 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/mixed-content/",
-              "title": "Mixed Content",
-              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/",
@@ -10543,7 +10559,7 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/",
-              "date": "26 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-method-basic-card/",
@@ -10618,12 +10634,6 @@
               "date": "23 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/shadow-dom/",
-              "title": "Shadow DOM",
-              "crawled": "https://w3c.github.io/webcomponents/spec/shadow/",
-              "date": "16 March 2018"
-            },
-            {
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
@@ -10672,16 +10682,28 @@
               "date": "13 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://w3c.github.io/web-animations/",
+              "date": "15 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://w3c.github.io/manifest/",
               "date": "Living Document"
             },
             {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 1",
               "crawled": "https://w3c.github.io/webauthn/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -10693,7 +10715,7 @@
               "url": "https://webassembly.github.io/spec/js-api/index.html",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/index.html",
-              "date": "22 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -10743,7 +10765,7 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -10835,41 +10857,8 @@
       }
     },
     {
-      "title": "web-animations-1",
-      "shortname": "web-animations-1",
-      "date": "",
-      "url": "https://www.w3.org/TR/web-animations-1/",
-      "latest": "https://www.w3.org/TR/web-animations-1",
-      "crawled": "https://www.w3.org/TR/web-animations-1/",
-      "repository": "https://github.com/w3c/web-animations",
-      "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/SVG2/",
-              "title": "Scalable Vector Graphics (SVG) 2",
-              "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "22 March 2018"
-            }
-          ],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "WebAssembly JavaScript Interface",
-      "date": "22 March 2018",
+      "date": "28 March 2018",
       "url": "https://webassembly.github.io/spec/js-api/index.html",
       "crawled": "https://webassembly.github.io/spec/js-api/index.html",
       "report": {
@@ -10893,6 +10882,12 @@
                 "date": "28 January 2018"
               },
               {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "26 March 2018"
+              },
+              {
                 "url": "https://www.w3.org/TR/worklets-1/",
                 "title": "Worklets Level 1",
                 "crawled": "https://drafts.css-houdini.org/worklets/",
@@ -10910,51 +10905,6 @@
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "webaudio",
-      "shortname": "webaudio",
-      "date": "",
-      "url": "https://www.w3.org/TR/webaudio/",
-      "latest": "https://www.w3.org/TR/webaudio",
-      "crawled": "https://www.w3.org/TR/webaudio/",
-      "repository": "https://github.com/webaudio/web-audio-api",
-      "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:41)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasInvalidIdl": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/",
-              "date": "12 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://w3c.github.io/mediacapture-fromelement/",
-              "date": "23 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/worklets-1/",
-              "title": "Worklets Level 1",
-              "crawled": "https://drafts.css-houdini.org/worklets/",
-              "date": "9 November 2017"
-            }
-          ]
         },
         "ok": false
       }
@@ -11023,7 +10973,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Wed Mar 28 2018",
+      "date": "Thu Mar 29 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -11055,6 +11005,12 @@
               "date": "16 October 2017"
             },
             {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "Web IDL",
               "crawled": "https://heycam.github.io/webidl/",
@@ -11067,7 +11023,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Wed Mar 28 2018",
+      "date": "Thu Mar 29 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -11107,7 +11063,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Mar 28 2018"
+              "date": "Thu Mar 29 2018"
             }
           ],
           "informative": [
@@ -11116,6 +11072,12 @@
               "title": "Media Capture Depth Stream Extensions",
               "crawled": "https://w3c.github.io/mediacapture-depth/",
               "date": "16 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -11159,7 +11121,7 @@
                 "url": "https://www.w3.org/TR/webrtc-stats/",
                 "title": "Identifiers for WebRTC's Statistics API",
                 "crawled": "https://w3c.github.io/webrtc-stats/",
-                "date": "14 March 2018"
+                "date": "28 March 2018"
               }
             ]
           }
@@ -11215,7 +11177,13 @@
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://w3c.github.io/webrtc-stats/",
-              "date": "14 March 2018"
+              "date": "28 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
             }
           ],
           "informative": [
@@ -11315,6 +11283,12 @@
                 "title": "CSS Painting API Level 1",
                 "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
                 "date": "28 January 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "26 March 2018"
               }
             ]
           }
@@ -11336,13 +11310,19 @@
               "url": "https://drafts.css-houdini.org/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
-              "date": "23 March 2018"
+              "date": "28 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
               "date": "28 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
             }
           ],
           "informative": [
@@ -11430,12 +11410,6 @@
               "date": "27 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/mixed-content/",
-              "title": "Mixed Content",
-              "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-              "date": "23 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 3",
               "crawled": "https://w3c.github.io/resource-timing/",
@@ -11448,6 +11422,12 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/",
               "date": "16 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/",
+              "date": "26 March 2018"
             }
           ]
         },
