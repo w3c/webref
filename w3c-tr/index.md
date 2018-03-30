@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 29, 2018
+% March 30, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -117,32 +117,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-
-
-## Basic Card Payment {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/) (27 July 2017)
-- Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
-- Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/)
-- Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
-- Shortname: payment-method-basic-card
-
-### Potential issue(s) {.anomalies}
-
-- Spec uses WebIDL but does not reference it normatively
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-
-Informative references to this spec from:
-
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 
 
 ## Battery Status API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
@@ -462,7 +436,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.css-houdini.org/css-layout-api-1/) (28 March 2018)
+- Crawled version: [Initial URL](https://drafts.css-houdini.org/css-layout-api-1/) (29 March 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -471,6 +445,7 @@ Informative references to this spec from:
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
+     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -852,7 +827,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
-- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 
 No informative reference to this spec from other specs.
@@ -1095,7 +1069,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 
@@ -1395,7 +1368,6 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
-- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180328/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
@@ -1410,6 +1382,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180329/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
@@ -1458,7 +1431,6 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
-- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -1521,6 +1493,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180329/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
@@ -1547,7 +1520,6 @@ Informative references to this spec from:
 
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
-- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
@@ -1560,20 +1532,23 @@ Informative references to this spec from:
 - [Web Audio API](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
 
 
-## HTML Media Capture {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## html-media-capture {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/) (01 February 2018)
-- Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
-- Latest published version: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
-- Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/html-media-capture)
+- Latest published version: [https://www.w3.org/TR/html-media-capture](https://www.w3.org/TR/html-media-capture)
 - Repository: [GitHub w3c/html-media-capture](https://github.com/w3c/html-media-capture)
 - Shortname: html-media-capture
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLInputElement`
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+    at <anonymous>`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1624,6 +1599,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180329/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
@@ -1653,7 +1629,6 @@ Informative references to this spec from:
 
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
-- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -1870,7 +1845,6 @@ Normative references to this spec from:
 
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
-- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180328/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -2249,6 +2223,32 @@ Informative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 
 
+## Payment Method: Basic Card {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180329/) (29 March 2018)
+- Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
+- Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180329/)
+- Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
+- Shortname: payment-method-basic-card
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
+
+Informative references to this spec from:
+
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
+
+
 ## Payment Request API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
@@ -2268,9 +2268,9 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Basic Card Payment](https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180329/)
 
 No informative reference to this spec from other specs.
 
@@ -3061,7 +3061,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (22 March 2018)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (29 March 2018)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -3772,6 +3772,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180329/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events](https://www.w3.org/TR/2018/WD-pointerevents2-20180206/)
@@ -3811,7 +3812,6 @@ Informative references to this spec from:
 
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
-- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
@@ -3881,7 +3881,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Mar 29 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Mar 30 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3902,7 +3902,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Mar 29 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Mar 30 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3978,7 +3978,6 @@ Normative references to this spec from:
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
-- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
@@ -3993,6 +3992,7 @@ Normative references to this spec from:
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180329/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180320/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -4034,10 +4034,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Basic Card Payment](https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
-- [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180328/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)

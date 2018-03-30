@@ -1,8 +1,19 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 29, 2018
+% March 30, 2018
 
 119 specifications were crawled in this report.
+
+
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [html-media-capture](https://www.w3.org/TR/html-media-capture): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
+    at <anonymous>`
+
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -71,7 +82,6 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
-- [Basic Card Payment](https://www.w3.org/TR/2017/WD-payment-method-basic-card-20170727/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [CSS Font Loading Module Level 3](http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
@@ -86,7 +96,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 
-=> 14 specifications found
+=> 13 specifications found
 
 
 
@@ -114,7 +124,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `HTMLElement` used in [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - `HTMLFormElement` used in [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `HTMLImageElement` used in [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/), [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- `HTMLInputElement` used in [File and Directory Entries API](https://wicg.github.io/entries-api/), [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
+- `HTMLInputElement` used in [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - `HTMLMediaElement` used in [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/), [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - `HTMLSlotElement` used in [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - `HTMLVideoElement` used in [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -242,6 +252,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) links to:
     * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/) but does not list it in its references
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/) links to:
     * [`https://www.w3.org/TR/css-namespaces-3/`](https://www.w3.org/TR/css-namespaces-3/) but does not list it in its references
     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
@@ -420,7 +431,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 168 missing references for links found in 57 specifications
+=> 169 missing references for links found in 57 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
