@@ -1,0 +1,15 @@
+
+partial interface Document {
+  Element?  querySelector(DOMString selectors);
+  NodeList  querySelectorAll(DOMString selectors);
+};
+
+partial interface DocumentFragment {
+  Element?  querySelector(DOMString selectors);
+  NodeList  querySelectorAll(DOMString selectors);
+};
+
+partial interface Element {
+  Element?  querySelector(DOMString selectors);
+  NodeList  querySelectorAll(DOMString selectors);
+};
