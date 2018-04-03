@@ -1,0 +1,18 @@
+
+dictionary BasicCardRequest {
+    sequence<DOMString>     supportedNetworks;
+    sequence<BasicCardType> supportedTypes;
+};
+enum BasicCardType {
+    "credit",
+    "debit",
+    "prepaid"
+};
+dictionary BasicCardResponse {
+    required DOMString       cardNumber;
+             DOMString       cardholderName;
+             DOMString       cardSecurityCode;
+             DOMString       expiryMonth;
+             DOMString       expiryYear;
+             PaymentAddress? billingAddress;
+};

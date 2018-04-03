@@ -1,0 +1,19 @@
+
+partial interface DocumentOrShadowRoot {
+    Selection?        getSelection();
+    Element?          elementFromPoint(double x, double y);
+    sequence<Element> elementsFromPoint(double x, double y);
+    CaretPosition?    caretPositionFromPoint(double x, double y);
+    readonly attribute Element?       activeElement;
+    readonly attribute StyleSheetList styleSheets;
+};
+[Exposed=Window]
+interface ShadowRoot : DocumentFragment {
+    readonly attribute ShadowRootMode mode;
+    readonly attribute Element        host;
+};
+
+enum ShadowRootMode {
+    "open",
+    "closed"
+};

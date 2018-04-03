@@ -1,0 +1,21 @@
+dictionary StaticRangeInit {
+  required Node startContainer;
+  required unsigned long startOffset;
+  required Node endContainer;
+  required unsigned long endOffset;
+};
+
+[Constructor(StaticRangeInit initDict),
+  Exposed=Window]
+interface StaticRange {
+  attribute Node startContainer;
+  attribute unsigned long startOffset;
+		
+  attribute Node endContainer;
+  attribute unsigned long endOffset;
+		
+  readonly attribute boolean collapsed;
+
+  [NewObject] Range toRange();
+};
+
