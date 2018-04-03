@@ -1,38 +1,31 @@
-% Diff between report from "March 30, 2018" and reference report from "March 29, 2018"
+% Diff between report from "April 03, 2018" and reference report from "March 30, 2018"
 % Reffy
-% March 30, 2018
+% April 03, 2018
 
 ## Accelerometer
 
 - URL: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/accelerometer/)
 - Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
-- Missing references for links: *INS* https://www.w3.org/TR/screen-orientation/
-- Inconsistent references for links: *DEL* https://www.w3.org/TR/screen-orientation/
+- Missing references for links: *DEL* https://www.w3.org/TR/screen-orientation/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/screen-orientation/
 
 
-## CSS Layout API Level 1
+## Selection API
 
-- URL: [https://drafts.css-houdini.org/css-layout-api-1/](https://drafts.css-houdini.org/css-layout-api-1/)
-- Crawled version: [Initial URL](https://drafts.css-houdini.org/css-layout-api-1/)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-align/
-
-
-## Pointer Events
-
-- URL: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/)
-- Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
-- Inconsistent references for links: *INS* https://www.w3.org/TR/html51/
+- URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/)
+- Repository: [GitHub w3c/selection-api](https://github.com/w3c/selection-api)
+- Inconsistent references for links: *INS* https://www.w3.org/TR/html5/ / *DEL* https://html.spec.whatwg.org/
 
 
-## screen-orientation
+## The Screen Orientation API
 
 - URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/screen-orientation/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
-- Spec title: *INS* screen-orientation / *DEL* The Screen Orientation API
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+- Spec title: *INS* The Screen Orientation API / *DEL* screen-orientation
+- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:153:34)
     at <anonymous>
 
@@ -42,6 +35,6 @@
 - URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
-- Unknown WebIDL names used: *INS* OrientationLockType
+- Unknown WebIDL names used: *DEL* OrientationLockType
 
 
