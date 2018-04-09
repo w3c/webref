@@ -58,20 +58,20 @@ dictionary MediaTrackSupportedConstraints {
     boolean groupId = true;
 };
 dictionary MediaTrackCapabilities {
-    LongRange           width;
-    LongRange           height;
+    ULongRange          width;
+    ULongRange          height;
     DoubleRange         aspectRatio;
     DoubleRange         frameRate;
     sequence<DOMString> facingMode;
     sequence<DOMString> resizeMode;
     DoubleRange         volume;
-    LongRange           sampleRate;
-    LongRange           sampleSize;
+    ULongRange          sampleRate;
+    ULongRange          sampleSize;
     sequence<boolean>   echoCancellation;
     sequence<boolean>   autoGainControl;
     sequence<boolean>   noiseSuppression;
     DoubleRange         latency;
-    LongRange           channelCount;
+    ULongRange          channelCount;
     DOMString           deviceId;
     DOMString           groupId;
 };
@@ -79,20 +79,20 @@ dictionary MediaTrackConstraints : MediaTrackConstraintSet {
     sequence<MediaTrackConstraintSet> advanced;
 };
 dictionary MediaTrackConstraintSet {
-    ConstrainLong      width;
-    ConstrainLong      height;
+    ConstrainULong     width;
+    ConstrainULong     height;
     ConstrainDouble    aspectRatio;
     ConstrainDouble    frameRate;
     ConstrainDOMString facingMode;
     ConstrainDOMString resizeMode;
     ConstrainDouble    volume;
-    ConstrainLong      sampleRate;
-    ConstrainLong      sampleSize;
+    ConstrainULong     sampleRate;
+    ConstrainULong     sampleSize;
     ConstrainBoolean   echoCancellation;
     ConstrainBoolean   autoGainControl;
     ConstrainBoolean   noiseSuppression;
     ConstrainDouble    latency;
-    ConstrainLong      channelCount;
+    ConstrainULong     channelCount;
     ConstrainDOMString deviceId;
     ConstrainDOMString groupId;
 };
@@ -202,13 +202,17 @@ dictionary ConstrainDoubleRange : DoubleRange {
     double exact;
     double ideal;
 };
-dictionary LongRange {
-    long max;
-    long min;
+dictionary ULongRange {
+    [Clamp]
+    unsigned long max;
+    [Clamp]
+    unsigned long min;
 };
-dictionary ConstrainLongRange : LongRange {
-    long exact;
-    long ideal;
+dictionary ConstrainULongRange : ULongRange {
+    [Clamp]
+    unsigned long exact;
+    [Clamp]
+    unsigned long ideal;
 };
 dictionary ConstrainBooleanParameters {
     boolean exact;
@@ -218,7 +222,7 @@ dictionary ConstrainDOMStringParameters {
     (DOMString or sequence<DOMString>) exact;
     (DOMString or sequence<DOMString>) ideal;
 };
-typedef (long or ConstrainLongRange) ConstrainLong;
+typedef ([Clamp] unsigned long or ConstrainULongRange) ConstrainULong;
 typedef (double or ConstrainDoubleRange) ConstrainDouble;
 typedef (boolean or ConstrainBooleanParameters) ConstrainBoolean;
 typedef (DOMString or sequence<DOMString> or ConstrainDOMStringParameters) ConstrainDOMString;
