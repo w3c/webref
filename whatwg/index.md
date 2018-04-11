@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% April 10, 2018
+% April 11, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -354,7 +354,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (9 April 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-fonts-4-20170711/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-fonts-4
 
@@ -458,10 +458,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/) (9 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/) (10 April 2018)
 - Editor's Draft: [https://drafts.css-houdini.org/css-paint-api-1/](https://drafts.css-houdini.org/css-paint-api-1/)
-- Latest published version: [http://www.w3.org/TR/css-paint-api-1/](http://www.w3.org/TR/css-paint-api-1/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/)
+- Latest published version: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/)
 - Shortname: css-paint-api-1
 
 ### Potential issue(s) {.anomalies}
@@ -586,10 +586,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/) (9 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/) (10 April 2018)
 - Editor's Draft: [https://drafts.css-houdini.org/css-typed-om-1/](https://drafts.css-houdini.org/css-typed-om-1/)
 - Latest published version: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-typed-om-1-20170801/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - Shortname: css-typed-om-1
 
 ### Potential issue(s) {.anomalies}
@@ -785,7 +785,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (9 April 2018)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (10 April 2018)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -1072,6 +1072,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [DOM Standard](https://dom.spec.whatwg.org/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
@@ -1505,7 +1506,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (10 April 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (11 April 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -3267,7 +3268,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (7 April 2018)
+- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (10 April 2018)
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
@@ -3415,7 +3416,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (09 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (10 April 2018)
 - Editor's Draft: [https://w3c.github.io/webdriver/webdriver-spec.html](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Latest published version: [https://www.w3.org/TR/webdriver/](https://www.w3.org/TR/webdriver/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-webdriver-20170330/)
@@ -3446,7 +3447,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Apr 10 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Apr 11 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3469,7 +3470,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Apr 10 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Apr 11 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3559,7 +3560,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/worklets/) (9 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/worklets/) (10 April 2018)
 - Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
 - Latest published version: [http://www.w3.org/TR/worklets-1/](http://www.w3.org/TR/worklets-1/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
@@ -3596,7 +3597,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (2 March 2018)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (10 April 2018)
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
