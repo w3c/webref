@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% April 11, 2018
+% April 12, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -416,7 +416,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/cssom/) (9 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/cssom/) (6 April 2018)
 - Editor's Draft: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
 - Latest published version: [http://www.w3.org/TR/cssom-1/](http://www.w3.org/TR/cssom-1/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
@@ -458,7 +458,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/) (10 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/) (11 April 2018)
 - Editor's Draft: [https://drafts.css-houdini.org/css-paint-api-1/](https://drafts.css-houdini.org/css-paint-api-1/)
 - Latest published version: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/)
@@ -1506,7 +1506,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (11 April 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (12 April 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -2307,7 +2307,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/) (15 December 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/) (12 April 2018)
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
 - Latest published version: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-push-api-20171215/)
@@ -2420,7 +2420,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (10 April 2018)
+- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (11 April 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
@@ -2910,7 +2910,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/uievents-code/) (5 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/uievents-code/) (11 April 2018)
 - Editor's Draft: [https://w3c.github.io/uievents-code/](https://w3c.github.io/uievents-code/)
 - Latest published version: [https://www.w3.org/TR/uievents-code/](https://www.w3.org/TR/uievents-code/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
@@ -2936,7 +2936,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/uievents-key/) (4 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/uievents-key/) (11 April 2018)
 - Editor's Draft: [https://w3c.github.io/uievents-key/](https://w3c.github.io/uievents-key/)
 - Latest published version: [https://www.w3.org/TR/uievents-key/](https://www.w3.org/TR/uievents-key/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
@@ -3171,7 +3171,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (9 April 2018)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (11 April 2018)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [http://www.w3.org/TR/webaudio/](http://www.w3.org/TR/webaudio/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -3211,7 +3211,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (2 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (11 April 2018)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
@@ -3393,7 +3393,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (10 April 2018)
+- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (11 April 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3447,7 +3447,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Apr 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Apr 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3470,7 +3470,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Apr 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Apr 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3597,7 +3597,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (10 April 2018)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (11 April 2018)
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
