@@ -141,13 +141,10 @@ interface OverconstrainedErrorEvent : Event {
 dictionary OverconstrainedErrorEventInit : EventInit {
     OverconstrainedError? error = null;
 };
-[Exposed=Window,
- NoInterfaceObject]
-interface NavigatorUserMedia {
+partial interface Navigator {
     [SameObject]
     readonly attribute MediaDevices mediaDevices;
 };
-Navigator implements NavigatorUserMedia;
 [Exposed=Window]
 interface MediaDevices : EventTarget {
     attribute EventHandler ondevicechange;
@@ -170,7 +167,7 @@ enum MediaDeviceKind {
 interface InputDeviceInfo : MediaDeviceInfo {
     MediaTrackCapabilities getCapabilities();
 };
-partial interface NavigatorUserMedia {
+partial interface Navigator {
     void getUserMedia(MediaStreamConstraints constraints,
                       NavigatorUserMediaSuccessCallback successCallback,
                       NavigatorUserMediaErrorCallback errorCallback);
