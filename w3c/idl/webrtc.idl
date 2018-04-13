@@ -256,18 +256,20 @@ interface RTCRtpSender {
     readonly attribute RTCDtlsTransport? transport;
     readonly attribute RTCDtlsTransport? rtcpTransport;
     static RTCRtpCapabilities getCapabilities(DOMString kind);
-    Promise<void>             setParameters(optional RTCRtpParameters parameters);
-    RTCRtpParameters          getParameters();
+    Promise<void>             setParameters(RTCRtpSendParameters parameters);
+    RTCRtpSendParameters      getParameters();
     Promise<void>             replaceTrack(MediaStreamTrack? withTrack);
     Promise<RTCStatsReport>   getStats();
 };
 dictionary RTCRtpParameters {
-    DOMString                                 transactionId;
-    sequence<RTCRtpEncodingParameters>        encodings;
-    sequence<RTCRtpHeaderExtensionParameters> headerExtensions;
-    RTCRtcpParameters                         rtcp;
-    sequence<RTCRtpCodecParameters>           codecs;
-    RTCDegradationPreference                  degradationPreference;
+    required sequence<RTCRtpEncodingParameters>        encodings;
+    required sequence<RTCRtpHeaderExtensionParameters> headerExtensions;
+    required RTCRtcpParameters                         rtcp;
+    required sequence<RTCRtpCodecParameters>           codecs;
+};
+dictionary RTCRtpSendParameters : RTCRtpParameters {
+    required DOMString                transactionId;
+             RTCDegradationPreference degradationPreference = "balanced";
 };
 dictionary RTCRtpEncodingParameters {
     octet           codecPayloadType;
