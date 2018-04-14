@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% April 13, 2018
+% April 14, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -420,7 +420,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/cssom/) (6 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/cssom/) (12 April 2018)
 - Editor's Draft: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
 - Latest published version: [http://www.w3.org/TR/cssom-1/](http://www.w3.org/TR/cssom-1/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
@@ -1503,7 +1503,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (13 April 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (14 April 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -3170,7 +3170,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (12 April 2018)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (13 April 2018)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [http://www.w3.org/TR/webaudio/](http://www.w3.org/TR/webaudio/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -3446,7 +3446,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Apr 13 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Apr 14 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3469,7 +3469,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Apr 13 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Apr 14 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
