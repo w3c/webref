@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-04-14T02:10:42.007Z",
+  "date": "2018-04-15T02:08:39.368Z",
   "stats": {
     "crawled": 110,
     "errors": 0,
@@ -656,40 +656,17 @@
         "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
           {
-            "name": "Worker",
-            "refs": [
-              {
-                "url": "https://html.spec.whatwg.org/",
-                "title": "HTML Standard",
-                "crawled": "https://html.spec.whatwg.org/",
-                "date": "9 April 2018"
-              },
-              {
-                "url": "https://www.w3.org/TR/service-workers-1/",
-                "title": "Service Workers 1",
-                "crawled": "https://w3c.github.io/ServiceWorker/v1/",
-                "date": "3 April 2018"
-              }
-            ]
-          },
-          {
-            "name": "EventHandler",
-            "refs": [
-              {
-                "url": "https://html.spec.whatwg.org/",
-                "title": "HTML Standard",
-                "crawled": "https://html.spec.whatwg.org/",
-                "date": "9 April 2018"
-              }
-            ]
+            "link": "https://www.w3.org/TR/html5/",
+            "ref": {
+              "name": "HTML",
+              "url": "https://html.spec.whatwg.org/multipage/"
+            }
           }
         ],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/html5/"
-        ],
-        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -841,7 +818,6 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css-values-3/",
-          "https://html.spec.whatwg.org/",
           "https://www.w3.org/TR/css3-positioning/",
           "https://www.w3.org/TR/css3-align/"
         ],
@@ -1030,8 +1006,7 @@
         ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/css-properties-values-api-1/",
-          "https://html.spec.whatwg.org/"
+          "https://www.w3.org/TR/css-properties-values-api-1/"
         ],
         "inconsistentRef": [],
         "referencedBy": {
@@ -2009,7 +1984,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "14 April 2018"
+              "date": "15 April 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -2231,7 +2206,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Apr 14 2018"
+              "date": "Sun Apr 15 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -3453,9 +3428,21 @@
               "date": "19 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-font-loading-3/",
+              "title": "CSS Font Loading Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-font-loading/",
+              "date": "17 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
+              "date": "9 April 2018"
+            },
+            {
+              "url": "https://drafts.css-houdini.org/css-layout-api-1/",
+              "title": "CSS Layout API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
               "date": "9 April 2018"
             },
             {
@@ -3463,6 +3450,24 @@
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
               "date": "12 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+              "date": "11 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-properties-values-api-1/",
+              "title": "CSS Properties and Values API Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
+              "date": "14 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-pseudo-4/",
+              "title": "CSS Pseudo-Elements Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-pseudo-4/",
+              "date": "21 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
@@ -3576,7 +3581,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "14 April 2018"
+              "date": "15 April 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -3852,13 +3857,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Apr 14 2018"
+              "date": "Sun Apr 15 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Apr 14 2018"
+              "date": "Sun Apr 15 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -3871,6 +3876,12 @@
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/",
               "date": "30 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "https://drafts.css-houdini.org/worklets/",
+              "date": "10 April 2018"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -3915,6 +3926,18 @@
               "title": "CSS Syntax Module Level 3",
               "crawled": "https://drafts.csswg.org/css-syntax/",
               "date": "20 December 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-typed-om-1/",
+              "title": "CSS Typed OM Level 1",
+              "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
+              "date": "10 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-values-3/",
+              "title": "CSS Values and Units Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-values/",
+              "date": "14 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
@@ -4178,7 +4201,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "14 April 2018",
+      "date": "15 April 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -4212,7 +4235,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "14 April 2018"
+              "date": "15 April 2018"
             }
           ]
         },
@@ -7313,7 +7336,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "14 April 2018"
+              "date": "15 April 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -8660,13 +8683,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Apr 14 2018"
+              "date": "Sun Apr 15 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Apr 14 2018"
+              "date": "Sun Apr 15 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -8716,7 +8739,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "14 April 2018"
+              "date": "15 April 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -8886,7 +8909,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sat Apr 14 2018",
+      "date": "Sun Apr 15 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8929,7 +8952,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sat Apr 14 2018",
+      "date": "Sun Apr 15 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -8964,7 +8987,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Apr 14 2018"
+              "date": "Sun Apr 15 2018"
             }
           ],
           "informative": [
@@ -9191,7 +9214,6 @@
         ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://html.spec.whatwg.org/",
           "https://w3c.github.io/webappsec-csp/"
         ],
         "inconsistentRef": [],
