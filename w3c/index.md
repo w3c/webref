@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% April 15, 2018
+% April 16, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -937,7 +937,6 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Payment Request API](https://w3c.github.io/payment-request/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -1119,7 +1118,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.fxtf.org/geometry/) (27 January 2018)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/geometry/) (15 April 2018)
 - Editor's Draft: [https://drafts.fxtf.org/geometry/](https://drafts.fxtf.org/geometry/)
 - Latest published version: [http://www.w3.org/TR/geometry-1/](http://www.w3.org/TR/geometry-1/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
@@ -1218,7 +1217,6 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 
 Informative references to this spec from:
 
@@ -1333,7 +1331,6 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
@@ -1696,7 +1693,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (15 April 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (16 April 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -2092,7 +2089,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Gamepad](https://w3c.github.io/gamepad/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [User Timing Level 2](https://w3c.github.io/user-timing/)
 
 Informative references to this spec from:
@@ -2303,7 +2299,6 @@ Informative references to this spec from:
 
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 
 
 ## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2613,7 +2608,6 @@ Normative references to this spec from:
 
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 
 Informative references to this spec from:
 
@@ -2625,7 +2619,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (12 April 2018)
+- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (15 April 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
@@ -2882,31 +2876,6 @@ Informative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
-## Server Timing {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (07 February 2018)
-- Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
-- Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
-- Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
-- Shortname: server-timing
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `Window`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-     * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Server-Sent Events {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
@@ -2930,6 +2899,32 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+
+
+## server-timing {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://www.w3.org/TR/server-timing/)
+- Latest published version: [https://www.w3.org/TR/server-timing](https://www.w3.org/TR/server-timing)
+- Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
+- Shortname: server-timing
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Service Workers 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2975,7 +2970,6 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 Informative references to this spec from:
@@ -3779,7 +3773,6 @@ Normative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
@@ -3993,7 +3986,6 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 Informative references to this spec from:
@@ -4077,7 +4069,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Apr 15 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Apr 16 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4102,7 +4094,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Apr 15 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Apr 16 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4130,7 +4122,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (12 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (15 April 2018)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
