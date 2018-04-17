@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% April 16, 2018
+% April 17, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -1119,7 +1119,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.fxtf.org/geometry/) (15 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/geometry/) (16 April 2018)
 - Editor's Draft: [https://drafts.fxtf.org/geometry/](https://drafts.fxtf.org/geometry/)
 - Latest published version: [http://www.w3.org/TR/geometry-1/](http://www.w3.org/TR/geometry-1/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
@@ -1229,7 +1229,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/html/) (14 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/html/) (16 April 2018)
 - Editor's Draft: [https://w3c.github.io/html/](https://w3c.github.io/html/)
 - Latest published version: [https://www.w3.org/TR/html52/](https://www.w3.org/TR/html52/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2017/REC-html52-20171214/)
@@ -1696,7 +1696,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (16 April 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (17 April 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -2198,7 +2198,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (03 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (17 April 2018)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -3544,7 +3544,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/) (12 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/) (16 April 2018)
 - Editor's Draft: [https://w3c.github.io/web-animations/](https://w3c.github.io/web-animations/)
 - Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
@@ -3639,7 +3639,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (12 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (16 April 2018)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
@@ -3886,7 +3886,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (9 April 2018)
+- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (16 April 2018)
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/workers.html](https://html.spec.whatwg.org/multipage/workers.html)
 - Latest published version: [http://www.w3.org/TR/workers/](http://www.w3.org/TR/workers/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -4077,7 +4077,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Apr 16 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Apr 17 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4102,7 +4102,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Apr 16 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Apr 17 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4130,7 +4130,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (15 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (16 April 2018)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
@@ -4230,7 +4230,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (11 April 2018)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (16 April 2018)
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
