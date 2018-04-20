@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% April 19, 2018
+% April 20, 2018
 
 110 specifications were crawled in this report.
 
@@ -71,13 +71,12 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
 - `RTCError` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - `RTCRTPStreamStats` used in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
-- `RTCStatsEventInit` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - `ReadableStream` used in [Fetch Standard](https://fetch.spec.whatwg.org/)
 - `SVGImageElement` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `SVGScriptElement` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 
-=> 11 WebIDL names found
+=> 10 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
