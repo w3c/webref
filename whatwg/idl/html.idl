@@ -681,7 +681,7 @@ interface HTMLTableColElement : HTMLElement {
  HTMLConstructor]
 interface HTMLTableSectionElement : HTMLElement {
   [SameObject] readonly attribute HTMLCollection rows;
-  HTMLElement insertRow(optional long index = -1);
+  HTMLTableRowElement insertRow(optional long index = -1);
   [CEReactions] void deleteRow(long index);
 
   // also has obsolete members
