@@ -134,7 +134,7 @@ partial interface Window {
 };
 
 [Exposed=Window]
-interface CSS {
-  static CSSOMString escape(CSSOMString ident);
+namespace CSS {
+  CSSOMString escape(CSSOMString ident);
 };
 
