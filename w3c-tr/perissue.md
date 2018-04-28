@@ -1,15 +1,16 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% April 27, 2018
+% April 28, 2018
 
 119 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
 
+- [Page not found · GitHub Pages](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 1 specification found
+=> 2 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -22,13 +23,14 @@ Basically all specifications have normative dependencies on some other specifica
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Page not found · GitHub Pages](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [Preload](https://w3c.github.io/preload/)
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 
-=> 11 specifications found
+=> 12 specifications found
 
 Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
@@ -324,14 +326,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/) but does not list it in its references
     * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/) but does not list it in its references
     * [`https://www.w3.org/TR/wasm-web-api/`](https://www.w3.org/TR/wasm-web-api/) but does not list it in its references
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html) links to:
-    * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
-    * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html) but does not list it in its references
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/) links to [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/) but does not list it in its references
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 123 missing references for links found in 44 specifications
+=> 121 missing references for links found in 43 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -507,13 +506,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Web Notifications](https://www.w3.org/TR/notifications/) links to:
     * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/) but related reference "WEBIDL" uses URL [`https://www.w3.org/TR/2015/PR-notifications-20150910/`](https://www.w3.org/TR/2015/PR-notifications-20150910/)
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html) links to:
-    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
-    * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/) but related reference "DOM-PARSING" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
-    * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "CANVAS" uses URL [`https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element`](https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) links to [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
-=> 143 inconsistent references for links found in 58 specifications
+=> 140 inconsistent references for links found in 57 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

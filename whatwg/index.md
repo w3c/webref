@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% April 27, 2018
+% April 28, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -243,7 +243,6 @@ Normative references to this spec from:
 - [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 No informative reference to this spec from other specs.
 
@@ -444,7 +443,6 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -542,7 +540,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-syntax/) (20 December 2017)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-syntax/) (27 April 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-syntax/](https://drafts.csswg.org/css-syntax/)
 - Latest published version: [http://www.w3.org/TR/css-syntax-3/](http://www.w3.org/TR/css-syntax-3/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2014/CR-css-syntax-3-20140220/)
@@ -586,7 +584,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/) (18 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/) (27 April 2018)
 - Editor's Draft: [https://drafts.css-houdini.org/css-typed-om-1/](https://drafts.css-houdini.org/css-typed-om-1/)
 - Latest published version: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -645,7 +643,6 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
@@ -711,7 +708,6 @@ Normative references to this spec from:
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 Informative references to this spec from:
 
@@ -771,7 +767,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -859,7 +854,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -947,7 +941,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (26 April 2018)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (27 April 2018)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -978,7 +972,6 @@ Normative references to this spec from:
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -1068,7 +1061,6 @@ Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 Informative references to this spec from:
 
@@ -1166,7 +1158,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.fxtf.org/geometry/) (16 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/geometry/) (27 April 2018)
 - Editor's Draft: [https://drafts.fxtf.org/geometry/](https://drafts.fxtf.org/geometry/)
 - Latest published version: [http://www.w3.org/TR/geometry-1/](http://www.w3.org/TR/geometry-1/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
@@ -1187,7 +1179,6 @@ Normative references to this spec from:
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 Informative references to this spec from:
 
@@ -1296,7 +1287,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (26 April 2018)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (27 April 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1395,7 +1386,6 @@ Normative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -1506,7 +1496,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (27 April 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (28 April 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -1618,7 +1608,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (Draft12 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (Draft27 April 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
@@ -1958,6 +1948,31 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Page not found · GitHub Pages {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (Sat Apr 28 2018)
+- Editor's Draft: [https://w3c.github.io/webdriver/webdriver-spec.html](https://w3c.github.io/webdriver/webdriver-spec.html)
+- Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
+- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2018/PR-webdriver1-20180426/)
+- Repository: [GitHub w3c/webdriver](https://github.com/w3c/webdriver)
+- Shortname: webdriver
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
+
+No informative reference to this spec from other specs.
+
+
 ## Page Visibility Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
@@ -1985,7 +2000,6 @@ Normative references to this spec from:
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 Informative references to this spec from:
 
@@ -2191,7 +2205,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 Informative references to this spec from:
 
@@ -2895,7 +2908,6 @@ Normative references to this spec from:
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -2925,7 +2937,6 @@ Normative references to this spec from:
 
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 No informative reference to this spec from other specs.
 
@@ -2951,7 +2962,6 @@ Normative references to this spec from:
 
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 
 No informative reference to this spec from other specs.
 
@@ -2960,7 +2970,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (24 April 2018)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (27 April 2018)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -2976,6 +2986,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -2994,7 +3005,6 @@ Normative references to this spec from:
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -3168,7 +3178,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (19 April 2018)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (27 April 2018)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [http://www.w3.org/TR/webaudio/](http://www.w3.org/TR/webaudio/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -3362,7 +3372,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
-- [WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -3409,41 +3418,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebDriver {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (26 April 2018)
-- Editor's Draft: [https://w3c.github.io/webdriver/webdriver-spec.html](https://w3c.github.io/webdriver/webdriver-spec.html)
-- Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
-- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2018/PR-webdriver1-20180426/)
-- Repository: [GitHub w3c/webdriver](https://github.com/w3c/webdriver)
-- Shortname: webdriver
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
-     * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
-     * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/), related reference "DOM-PARSING" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
-     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Permissions](https://w3c.github.io/permissions/)
-
-No informative reference to this spec from other specs.
-
-
 ## WebGL 2.0 Specification {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Apr 27 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Apr 28 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3466,7 +3445,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Apr 27 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Apr 28 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 

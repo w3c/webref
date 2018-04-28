@@ -38,6 +38,7 @@ interface Request {
   readonly attribute RequestRedirect redirect;
   readonly attribute DOMString integrity;
   readonly attribute boolean keepalive;
+  readonly attribute boolean isReloadNavigation;
   readonly attribute AbortSignal signal;
 
   [NewObject] Request clone();
@@ -91,6 +92,6 @@ dictionary ResponseInit {
 };
 
 enum ResponseType { "basic", "cors", "default", "error", "opaque", "opaqueredirect" };
-partial interface WindowOrWorkerGlobalScope {
+partial interface mixin WindowOrWorkerGlobalScope {
   [NewObject] Promise<Response> fetch(RequestInfo input, optional RequestInit init);
 };
