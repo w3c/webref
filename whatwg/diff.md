@@ -1,6 +1,6 @@
-% Diff between report from "May 03, 2018" and reference report from "May 02, 2018"
+% Diff between report from "May 04, 2018" and reference report from "May 03, 2018"
 % Reffy
-% May 03, 2018
+% May 04, 2018
 
 ## Audio Output Devices API
 
@@ -8,6 +8,21 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
 - Repository: [GitHub w3c/mediacapture-output](https://github.com/w3c/mediacapture-output)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/mediacapture-output/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/mediacapture-output/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-output/
 ReSpec version: 20.10.1
@@ -33,6 +48,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/battery/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/battery/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/battery/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -54,6 +84,21 @@ Error: Error: Evaluation failed: undefined
 - Crawled version: [Editor's Draft](https://w3c.github.io/beacon/)
 - Repository: [GitHub w3c/beacon](https://github.com/w3c/beacon)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/beacon/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/beacon/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/beacon/
 ReSpec version: 20.10.1
@@ -79,6 +124,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/requestidlecallback/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/requestidlecallback/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/requestidlecallback/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -102,6 +162,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/DOM-Parsing/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/DOM-Parsing/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/DOM-Parsing/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -117,20 +192,27 @@ Error: Error: Evaluation failed: undefined
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
 
-## DOM Standard
-
-- URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/)
-- Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
 ## Gamepad
 
 - URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/)
 - Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/gamepad/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/gamepad/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/gamepad/
 ReSpec version: 20.10.1
@@ -148,21 +230,27 @@ Error: Error: Evaluation failed: undefined
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
 
-## Generic Sensor API
-
-- URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/)
-- Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
 ## High Resolution Time Level 3
 
 - URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/)
 - Repository: [GitHub w3c/hr-time](https://github.com/w3c/hr-time)
-- Spec title: *INS* High Resolution Time Level 3 / *DEL* High Resolution Time Level 2
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/hr-time/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/hr-time/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/hr-time/
 ReSpec version: 20.10.1
@@ -188,6 +276,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/html-media-capture/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/html-media-capture/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/html-media-capture/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -203,20 +306,26 @@ Error: Error: Evaluation failed: undefined
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
 
-## HTML Standard
-
-- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-- WebIDL names also defined elsewhere: *DEL* BinaryType
-
-
 ## https://w3c.github.io/editing/contentEditable.html
 
 - URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
 - Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
-- Spec title: *INS* https://w3c.github.io/editing/contentEditable.html / *DEL* ContentEditable
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/editing/contentEditable.html
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/editing/contentEditable.html
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/editing/contentEditable.html
 ReSpec version: 20.10.1
@@ -242,6 +351,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/webrtc-stats/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/webrtc-stats/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/webrtc-stats/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -257,12 +381,36 @@ Error: Error: Evaluation failed: undefined
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
 
+## Indexed Database API 3.0
+
+- URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/IndexedDB/)
+- Repository: [GitHub w3c/IndexedDB](https://github.com/w3c/IndexedDB)
+- Spec title: *INS* Indexed Database API 3.0 / *DEL* Indexed Database API 2.0
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/domcore/
+
+
 ## Input Events Level 1
 
 - URL: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
 - Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Repository: [GitHub w3c/input-events](https://github.com/w3c/input-events)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://rawgit.com/w3c/input-events/v1/index.html
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://rawgit.com/w3c/input-events/v1/index.html
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://rawgit.com/w3c/input-events/v1/index.html
 ReSpec version: 20.10.1
@@ -280,29 +428,27 @@ Error: Error: Evaluation failed: undefined
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
 
-## Intersection Observer
-
-- URL: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/IntersectionObserver/)
-- Repository: [GitHub w3c/IntersectionObserver](https://github.com/w3c/IntersectionObserver)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-- Missing references for WebIDL names: *DEL* DOMHighResTimeStamp
-
-
-## Long Tasks API 1
-
-- URL: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/longtasks/)
-- Repository: [GitHub w3c/longtasks](https://github.com/w3c/longtasks)
-- Unknown WebIDL names used: *INS* PerformanceEntry
-
-
 ## Media Capture Depth Stream Extensions
 
 - URL: [https://www.w3.org/TR/mediacapture-depth/](https://www.w3.org/TR/mediacapture-depth/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/)
 - Repository: [GitHub w3c/mediacapture-depth](https://github.com/w3c/mediacapture-depth)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/mediacapture-depth/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/mediacapture-depth/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-depth/
 ReSpec version: 20.10.1
@@ -328,6 +474,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-fromelement/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/mediacapture-fromelement/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/mediacapture-fromelement/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -343,20 +504,27 @@ Error: Error: Evaluation failed: undefined
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
 
-## MediaStream Recording
-
-- URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-record/)
-- Repository: [GitHub w3c/mediacapture-record](https://github.com/w3c/mediacapture-record)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
 ## Navigation Timing Level 2
 
 - URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/)
 - Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/navigation-timing/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/navigation-timing/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/navigation-timing/
 ReSpec version: 20.10.1
@@ -372,15 +540,6 @@ Error: Error: Evaluation failed: undefined
     at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
-
-
-## Notifications API Standard
-
-- URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://notifications.spec.whatwg.org/)
-- Repository: [GitHub whatwg/notifications](https://github.com/whatwg/notifications)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* VibratePattern
 
 
 ## Page Visibility Level 2
@@ -391,6 +550,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/page-visibility/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/page-visibility/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/page-visibility/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -406,20 +580,27 @@ Error: Error: Evaluation failed: undefined
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
 
-## Paint Timing 1
-
-- URL: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/paint-timing/)
-- Repository: [GitHub w3c/paint-timing](https://github.com/w3c/paint-timing)
-- Unknown WebIDL names used: *INS* PerformanceEntry
-
-
 ## Payment Handler API
 
 - URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/payment-handler/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/payment-handler/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-handler/
 ReSpec version: 20.10.1
@@ -445,6 +626,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-method-basic-card/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/payment-method-basic-card/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/payment-method-basic-card/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -466,6 +662,21 @@ Error: Error: Evaluation failed: undefined
 - Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/payment-request/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/payment-request/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-request/
 ReSpec version: 20.10.1
@@ -491,6 +702,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/performance-timeline/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/performance-timeline/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/performance-timeline/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -512,6 +738,21 @@ Error: Error: Evaluation failed: undefined
 - Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/)
 - Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/pointerevents/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/pointerevents/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/pointerevents/
 ReSpec version: 20.10.1
@@ -537,6 +778,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/pointerlock/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/pointerlock/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/pointerlock/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -558,6 +814,21 @@ Error: Error: Evaluation failed: undefined
 - Crawled version: [Editor's Draft](https://w3c.github.io/preload/)
 - Repository: [GitHub w3c/preload](https://github.com/w3c/preload)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/preload/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/preload/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/preload/
 ReSpec version: 20.10.1
@@ -583,6 +854,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/presentation-api/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/presentation-api/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/presentation-api/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -604,6 +890,21 @@ Error: Error: Evaluation failed: undefined
 - Crawled version: [Editor's Draft](https://w3c.github.io/push-api/)
 - Repository: [GitHub w3c/push-api](https://github.com/w3c/push-api)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/push-api/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/push-api/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/push-api/
 ReSpec version: 20.10.1
@@ -629,6 +930,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/remote-playback/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/remote-playback/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/remote-playback/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -650,6 +966,21 @@ Error: Error: Evaluation failed: undefined
 - Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/)
 - Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/resource-timing/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/resource-timing/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/resource-timing/
 ReSpec version: 20.10.1
@@ -675,6 +1006,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-screen-share/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/mediacapture-screen-share/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/mediacapture-screen-share/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -696,6 +1042,21 @@ Error: Error: Evaluation failed: undefined
 - Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/)
 - Repository: [GitHub w3c/selection-api](https://github.com/w3c/selection-api)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/selection-api/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/selection-api/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/selection-api/
 ReSpec version: 20.10.1
@@ -721,6 +1082,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/server-timing/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/server-timing/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/server-timing/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -736,20 +1112,27 @@ Error: Error: Evaluation failed: undefined
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
 
-## Service Workers 1
-
-- URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/ServiceWorker/v1/)
-- Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
-- Unknown WebIDL names used: *INS* VisibilityState
-
-
 ## The Screen Orientation API
 
 - URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/screen-orientation/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/screen-orientation/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/screen-orientation/
 ReSpec version: 20.10.1
@@ -772,8 +1155,22 @@ Error: Error: Evaluation failed: undefined
 - URL: [https://www.w3.org/TR/touch-events/](https://www.w3.org/TR/touch-events/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/)
 - Repository: [GitHub w3c/touch-events](https://github.com/w3c/touch-events)
-- Spec title: *INS* Touch Events / *DEL* Touch Events - Level 2
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/touch-events/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/touch-events/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/touch-events/
 ReSpec version: 20.10.1
@@ -799,6 +1196,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/user-timing/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/user-timing/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/user-timing/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -820,6 +1232,21 @@ Error: Error: Evaluation failed: undefined
 - Crawled version: [Editor's Draft](https://w3c.github.io/vibration/)
 - Repository: [GitHub w3c/vibration](https://github.com/w3c/vibration)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/vibration/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/vibration/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/vibration/
 ReSpec version: 20.10.1
@@ -845,6 +1272,21 @@ Error: Error: Evaluation failed: undefined
 - Spec could not be rendered: *INS* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/wake-lock/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/wake-lock/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/wake-lock/
 ReSpec version: 20.10.1
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
@@ -860,20 +1302,27 @@ Error: Error: Evaluation failed: undefined
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
 
-## Web Animations
-
-- URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/web-animations/)
-- Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
 ## Web App Manifest
 
 - URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Spec could not be rendered: *INS* Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/manifest/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+ Error: 
+😭  Sorry, there was an error generating the HTML. Please report this issue!
+Specification: https://w3c.github.io/manifest/
+ReSpec version: 20.10.2
+File a bug: https://github.com/w3c/respec/
+Error: Error: Evaluation failed: undefined
+
+    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) / *DEL* Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/manifest/
 ReSpec version: 20.10.1
@@ -889,22 +1338,5 @@ Error: Error: Evaluation failed: undefined
     at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
-
-
-## Web Audio API
-
-- URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
-- Repository: [GitHub webaudio/web-audio-api](https://github.com/webaudio/web-audio-api)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
-## WebRTC 1.0: Real-time Communication Between Browsers
-
-- URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
-- Repository: [GitHub w3c/webrtc-pc](https://github.com/w3c/webrtc-pc)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp, RTCStatsType
-- WebIDL names also defined elsewhere: *DEL* RTCStats
 
 
