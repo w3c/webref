@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% May 04, 2018
+% May 05, 2018
 
 119 specifications were crawled in this report.
 
@@ -659,12 +659,14 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 4 specifications found
+=> 6 specifications found
 
 
 
