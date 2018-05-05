@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">May 04, 2018</h2>
+            <h2 class="date">May 05, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -439,7 +439,7 @@
   </ul>
   </section>
   </section>
-  <section id="css-fonts-module-level-4" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="css-fonts-module-level-4" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>CSS Fonts Module Level 4</h2>
   <section id="spec-info-12" class="level3 info">
   <h3>Spec info</h3>
@@ -456,6 +456,7 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Invalid WebIDL content found</li>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a></li>
@@ -635,7 +636,7 @@
   </ul>
   </section>
   </section>
-  <section id="css-pseudo-elements-module-level-4" class="level2" data-spec="true" data-ok="true">
+  <section id="css-pseudo-elements-module-level-4" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true">
   <h2>CSS Pseudo-Elements Module Level 4</h2>
   <section id="spec-info-17" class="level3 info">
   <h3>Spec info</h3>
@@ -650,7 +651,9 @@
   </section>
   <section id="potential-issues-17" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-17" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1065,7 +1068,6 @@
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 1</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/index.html">WebAssembly JavaScript Interface</a></li>
-  <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
@@ -1584,7 +1586,6 @@
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
@@ -2216,7 +2217,7 @@
   <section id="spec-info-59" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webdriver/webdriver-spec.html">Editor's Draft</a> (Fri May 04 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webdriver/webdriver-spec.html">Editor's Draft</a> (Sat May 05 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webdriver/webdriver-spec.html" class="uri">https://w3c.github.io/webdriver/webdriver-spec.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webdriver1/" class="uri">https://www.w3.org/TR/webdriver1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/PR-webdriver1-20180426/">Proposed Recommendation</a></li>
@@ -2733,7 +2734,7 @@
   <section id="spec-info-76" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://svgwg.org/svg2-draft/">Editor's Draft</a> (03 May 2018)</li>
+  <li>Crawled version: <a href="https://svgwg.org/svg2-draft/">Editor's Draft</a> (05 May 2018)</li>
   <li>Editor's Draft: <a href="https://svgwg.org/svg2-draft/" class="uri">https://svgwg.org/svg2-draft/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/SVG2/" class="uri">https://www.w3.org/TR/SVG2/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2016/CR-SVG2-20160915/">Candidate Recommendation</a></li>
@@ -2821,7 +2822,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.fxtf.org/compositing-1/">Compositing and Blending Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
@@ -3573,7 +3573,7 @@
   <section id="spec-info-99" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://webaudio.github.io/web-audio-api/">Editor's Draft</a> (2 May 2018)</li>
+  <li>Crawled version: <a href="https://webaudio.github.io/web-audio-api/">Editor's Draft</a> (4 May 2018)</li>
   <li>Editor's Draft: <a href="https://webaudio.github.io/web-audio-api/" class="uri">https://webaudio.github.io/web-audio-api/</a></li>
   <li>Latest published version: <a href="http://www.w3.org/TR/webaudio/" class="uri">http://www.w3.org/TR/webaudio/</a></li>
   <li>Latest published status: <a href="http://www.w3.org/TR/2015/WD-webaudio-20151208/">Working Draft</a></li>
@@ -3623,7 +3623,7 @@
   <section id="spec-info-100" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webauthn/">Editor's Draft</a> (3 May 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webauthn/">Editor's Draft</a> (4 May 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webauthn/" class="uri">https://w3c.github.io/webauthn/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webauthn/" class="uri">https://www.w3.org/TR/webauthn/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/CR-webauthn-20180320/">Candidate Recommendation</a></li>
@@ -3717,12 +3717,10 @@
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
@@ -3812,7 +3810,7 @@
   <section id="spec-info-104" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Fri May 04 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sat May 05 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -3836,7 +3834,7 @@
   <section id="spec-info-105" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Fri May 04 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sat May 05 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
