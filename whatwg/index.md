@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% May 06, 2018
+% May 07, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -75,13 +75,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-output/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-output/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -117,13 +117,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/battery/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/battery/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -159,13 +159,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/beacon/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/beacon/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -236,7 +236,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 No informative reference to this spec from other specs.
 
@@ -311,13 +313,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/requestidlecallback/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/requestidlecallback/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -397,7 +399,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (9 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (6 May 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/)
@@ -426,6 +428,7 @@ Normative references to this spec from:
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -685,6 +688,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -715,6 +719,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -801,13 +806,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/DOM-Parsing/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/DOM-Parsing/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -877,6 +882,7 @@ Normative references to this spec from:
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
@@ -994,6 +1000,7 @@ Normative references to this spec from:
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -1104,13 +1111,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/gamepad/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/gamepad/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1264,13 +1271,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/hr-time/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/hr-time/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1316,13 +1323,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/html-media-capture/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/html-media-capture/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1396,6 +1403,7 @@ Normative references to this spec from:
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
@@ -1454,13 +1462,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/editing/contentEditable.html
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/editing/contentEditable.html
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1494,13 +1502,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/webrtc-stats/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/webrtc-stats/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1517,46 +1525,6 @@ Normative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 No informative reference to this spec from other specs.
-
-
-## Index of /svg2-draft {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (Sun May 06 2018)
-- Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
-- Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
-- Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
-- Shortname: SVG2
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-- No WebIDL definitions found
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
-- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- [Web Animations](https://w3c.github.io/web-animations/)
-
-Informative references to this spec from:
-
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
-- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [HTML Standard](https://html.spec.whatwg.org/)
-- [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
 
 
 ## Indexed Database API 3.0 {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -1605,13 +1573,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://rawgit.com/w3c/input-events/v1/index.html
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://rawgit.com/w3c/input-events/v1/index.html
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1767,13 +1735,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-depth/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-depth/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1807,13 +1775,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-fromelement/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-fromelement/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2014,13 +1982,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/navigation-timing/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/navigation-timing/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2092,7 +2060,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (Sun May 06 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (Mon May 07 2018)
 - Editor's Draft: [https://w3c.github.io/webdriver/webdriver-spec.html](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2018/PR-webdriver1-20180426/)
@@ -2130,13 +2098,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/page-visibility/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/page-visibility/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2200,13 +2168,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-handler/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-handler/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2240,13 +2208,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-method-basic-card/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-method-basic-card/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2280,13 +2248,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-request/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-request/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2322,13 +2290,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/performance-timeline/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/performance-timeline/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2403,13 +2371,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/pointerevents/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/pointerevents/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2445,13 +2413,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/pointerlock/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/pointerlock/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2487,13 +2455,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/preload/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/preload/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2529,13 +2497,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/presentation-api/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/presentation-api/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2593,13 +2561,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/push-api/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/push-api/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2664,13 +2632,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/remote-playback/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/remote-playback/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2704,13 +2672,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/resource-timing/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/resource-timing/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2725,6 +2693,111 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
+
+
+## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (07 May 2018)
+- Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
+- Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
+- Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
+- Shortname: SVG2
+
+### Potential issue(s) {.anomalies}
+
+- Invalid WebIDL content found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/)
+     * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/)
+     * [`https://www.w3.org/TR/filter-effects/`](https://www.w3.org/TR/filter-effects/)
+     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/2014/WD-geometry-1-20140522/`](https://www.w3.org/TR/2014/WD-geometry-1-20140522/)
+     * [`https://www.w3.org/TR/geometry-1/`](https://www.w3.org/TR/geometry-1/)
+     * [`https://www.w3.org/TR/wai-aria-1.1/`](https://www.w3.org/TR/wai-aria-1.1/)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+     * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/)
+     * [`https://www.w3.org/TR/wai-aria/states_and_properties`](https://www.w3.org/TR/wai-aria/states_and_properties)
+     * [`https://w3c.github.io/html-aam/`](https://w3c.github.io/html-aam/)
+     * [`https://w3c.github.io/svg-aam/`](https://w3c.github.io/svg-aam/)
+     * [`https://w3c.github.io/selection-api/`](https://w3c.github.io/selection-api/)
+     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
+     * [`https://www.w3.org/TR/2013/REC-css-style-attr-20131107/`](https://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
+     * [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/)
+     * [`https://www.w3.org/TR/css-position-3/`](https://www.w3.org/TR/css-position-3/)
+     * [`https://www.w3.org/TR/css3-exclusions/`](https://www.w3.org/TR/css3-exclusions/)
+     * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/)
+     * [`https://www.w3.org/TR/resource-hints/`](https://www.w3.org/TR/resource-hints/)
+     * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/)
+     * [`https://www.w3.org/TR/css-color/`](https://www.w3.org/TR/css-color/)
+     * [`https://www.w3.org/TR/html51/full`](https://www.w3.org/TR/html51/full)
+     * [`https://www.w3.org/TR/orientation-event/`](https://www.w3.org/TR/orientation-event/)
+     * [`https://www.w3.org/TR/css3-transforms/`](https://www.w3.org/TR/css3-transforms/)
+     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
+     * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/)
+     * [`https://www.w3.org/TR/accname-aam-1.1/`](https://www.w3.org/TR/accname-aam-1.1/)
+     * [`https://w3c.github.io/aria/aria/graphics.html`](https://w3c.github.io/aria/aria/graphics.html)
+     * [`https://w3c.github.io/dom/`](https://w3c.github.io/dom/)
+     * [`https://w3c.github.io/webcomponents/spec/shadow/`](https://w3c.github.io/webcomponents/spec/shadow/)
+     * [`https://www.w3.org/TR/smil/`](https://www.w3.org/TR/smil/)
+     * [`https://w3c.github.io/aria/svg-aam/svg-aam.html`](https://w3c.github.io/aria/svg-aam/svg-aam.html)
+     * [`https://www.w3.org/TR/xsl/`](https://www.w3.org/TR/xsl/)
+     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
+     * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/)
+     * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/), related reference "xml" uses URL [`https://www.w3.org/TR/xml`](https://www.w3.org/TR/xml)
+     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/), related reference "xml-names" uses URL [`https://www.w3.org/TR/xml-names`](https://www.w3.org/TR/xml-names)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "css-values" uses URL [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
+     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/), related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "dom" uses URL [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
+     * [`https://www.w3.org/TR/compositing/`](https://www.w3.org/TR/compositing/), related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113/`](https://www.w3.org/TR/2015/CR-compositing-1-20150113/), related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113`](https://www.w3.org/TR/2015/CR-compositing-1-20150113), related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+     * [`https://www.w3.org/TR/2012/WD-css3-values-20120308/`](https://www.w3.org/TR/2012/WD-css3-values-20120308/), related reference "css-values" uses URL [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
+     * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+     * [`https://www.w3.org/TR/2014/WD-dom-20140204/`](https://www.w3.org/TR/2014/WD-dom-20140204/), related reference "dom" uses URL [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
+     * [`https://www.w3.org/TR/2012/WD-compositing-20120816/`](https://www.w3.org/TR/2012/WD-compositing-20120816/), related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "css-writing-modes-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+     * [`https://www.w3.org/TR/2011/WD-css3-fonts-20111004/`](https://www.w3.org/TR/2011/WD-css3-fonts-20111004/), related reference "css-fonts-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+     * [`https://www.w3.org/TR/2015/CR-css-ui-3-20150707/`](https://www.w3.org/TR/2015/CR-css-ui-3-20150707/), related reference "css-ui-3" uses URL [`https://www.w3.org/TR/css-ui-3/`](https://www.w3.org/TR/css-ui-3/)
+     * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/), related reference "smil-animation" uses URL [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/)
+     * [`https://www.w3.org/TR/2013/WD-shadow-dom-20130514/`](https://www.w3.org/TR/2013/WD-shadow-dom-20130514/), related reference "shadow-dom" uses URL [`https://www.w3.org/TR/shadow-dom/`](https://www.w3.org/TR/shadow-dom/)
+     * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/), related reference "xlink" uses URL [`https://www.w3.org/TR/xlink/`](https://www.w3.org/TR/xlink/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/), related reference "DOM-Level-2-Views" uses URL [`https://www.w3.org/TR/DOM-Level-2-Views`](https://www.w3.org/TR/DOM-Level-2-Views)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/), related reference "DOM-Level-2-Style" uses URL [`https://www.w3.org/TR/DOM-Level-2-Style/`](https://www.w3.org/TR/DOM-Level-2-Style/)
+     * [`https://www.w3.org/TR/2012/WD-css3-animations-20120403/`](https://www.w3.org/TR/2012/WD-css3-animations-20120403/), related reference "css3-animations" uses URL [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/)
+     * [`https://w3c.github.io/html/`](https://w3c.github.io/html/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/), related reference "web-animations-1" uses URL [`https://www.w3.org/TR/web-animations-1/`](https://www.w3.org/TR/web-animations-1/)
+     * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/), related reference "UAAG20" uses URL [`https://www.w3.org/TR/UAAG20/`](https://www.w3.org/TR/UAAG20/)
+     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/), related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [Web Animations](https://w3c.github.io/web-animations/)
+
+Informative references to this spec from:
+
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
 
 
 ## Screen Capture {data-spec=true data-error=true}
@@ -2744,13 +2817,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-screen-share/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-screen-share/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2821,13 +2894,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/selection-api/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/selection-api/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2897,6 +2970,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
 ## Server Timing {data-spec=true data-error=true}
@@ -2916,13 +2990,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/server-timing/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/server-timing/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3063,13 +3137,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/screen-orientation/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/screen-orientation/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3106,13 +3180,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/touch-events/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/touch-events/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3160,6 +3234,7 @@ Normative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 
@@ -3313,13 +3388,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/user-timing/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/user-timing/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3353,13 +3428,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/vibration/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/vibration/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3395,13 +3470,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/wake-lock/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/wake-lock/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3437,7 +3512,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 No informative reference to this spec from other specs.
 
@@ -3459,13 +3536,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/manifest/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/manifest/
-ReSpec version: 20.10.2
+ReSpec version: 20.10.3
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3640,6 +3717,7 @@ Normative references to this spec from:
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Static Range](https://w3c.github.io/staticrange/)
@@ -3691,7 +3769,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun May 06 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon May 07 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3713,7 +3791,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun May 06 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon May 07 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
