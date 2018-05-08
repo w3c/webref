@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% May 07, 2018
+% May 08, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -400,7 +400,7 @@ Informative references to this spec from:
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 
 
-## CSS Fonts Module Level 4 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Fonts Module Level 4 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -414,7 +414,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Invalid WebIDL content found
-- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
      * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
@@ -567,7 +566,7 @@ Informative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 
 
-## CSS Pseudo-Elements Module Level 4 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true}
+## CSS Pseudo-Elements Module Level 4 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -580,7 +579,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
 - Unknown WebIDL names used: `Window`
 
 ### Known dependencies on this specification {.dependencies}
@@ -640,7 +638,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/) (27 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/) (7 May 2018)
 - Editor's Draft: [https://drafts.css-houdini.org/css-typed-om-1/](https://drafts.css-houdini.org/css-typed-om-1/)
 - Latest published version: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -659,6 +657,7 @@ Normative references to this spec from:
 
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 
 No informative reference to this spec from other specs.
 
@@ -667,7 +666,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values/) (23 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values/) (7 May 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-values/](https://drafts.csswg.org/css-values/)
 - Latest published version: [https://www.w3.org/TR/css-values-3/](https://www.w3.org/TR/css-values-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -913,6 +912,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
@@ -1079,7 +1079,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-gamepad-20180505/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-gamepad-20180508/)
 - Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
 - Shortname: gamepad
 
@@ -1332,6 +1332,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
@@ -1393,6 +1394,7 @@ Informative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -1474,6 +1476,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -1544,6 +1547,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
@@ -1595,6 +1599,7 @@ Informative references to this spec from:
 
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -2195,7 +2200,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (Mon May 07 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (Tue May 08 2018)
 - Editor's Draft: [https://w3c.github.io/webdriver/webdriver-spec.html](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2018/PR-webdriver1-20180426/)
@@ -2861,7 +2866,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (07 May 2018)
+- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (08 May 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
@@ -2943,6 +2948,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
@@ -3355,7 +3361,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-screen-orientation-20171105/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-screen-orientation-20180508/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
@@ -3866,7 +3872,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-appmanifest-20180403/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-appmanifest-20180508/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Shortname: appmanifest
 
@@ -4026,10 +4032,12 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
@@ -4144,7 +4152,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (2 May 2018)
+- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (7 May 2018)
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/workers.html](https://html.spec.whatwg.org/multipage/workers.html)
 - Latest published version: [http://www.w3.org/TR/workers/](http://www.w3.org/TR/workers/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -4179,6 +4187,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
@@ -4233,6 +4242,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -4270,7 +4280,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon May 07 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue May 08 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4294,7 +4304,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon May 07 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue May 08 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
