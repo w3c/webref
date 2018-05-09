@@ -6,7 +6,7 @@ interface Performance : EventTarget {
     readonly attribute DOMHighResTimeStamp timeOrigin;
     [Default] object              toJSON();
 };
-partial interface WindowOrWorkerGlobalScope {
+partial interface mixin WindowOrWorkerGlobalScope {
     [Replaceable]
     readonly attribute Performance performance;
 };

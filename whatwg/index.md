@@ -2,6 +2,32 @@
 % Reffy
 % May 09, 2018
 
+## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/shape-detection-api/) (4 April 2018)
+- Repository: [GitHub wicg/shape-detection-api](https://github.com/wicg/shape-detection-api)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for WebIDL names: 
+     * `Point2D` defined in [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
+- Missing references for links: 
+     * [`https://w3c.github.io/mediacapture-image/`](https://w3c.github.io/mediacapture-image/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Informative references to this spec from:
+
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+
+
 ## Accelerometer {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -34,6 +60,25 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
+## Accessibility Object Model, Phase 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (08 May 2018)
+- Repository: [GitHub wicg/aom](https://github.com/wicg/aom)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Spec uses WebIDL but does not reference it normatively
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Ambient Light Sensor {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -58,11 +103,11 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Audio Output Devices API {data-spec=true data-error=true}
+## Audio Output Devices API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/) (23 February 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
 - Latest published version: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
@@ -71,25 +116,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/mediacapture-output/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/mediacapture-output/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -100,11 +127,33 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Battery Status API {data-spec=true data-error=true}
+## Background Fetch {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/battery/)
+- Crawled version: [Initial URL](https://wicg.github.io/background-fetch/) (12 October 2017)
+- Repository: [GitHub wicg/background-fetch](https://github.com/wicg/background-fetch)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://storage.spec.whatwg.org/`](https://storage.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Battery Status API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/battery/) (23 October 2017)
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
 - Latest published version: [http://www.w3.org/TR/battery-status/](http://www.w3.org/TR/battery-status/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
@@ -113,25 +162,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/battery/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/battery/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for WebIDL names: 
+     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -140,13 +172,14 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Media Capabilities](https://wicg.github.io/media-capabilities/)
 
 
-## Beacon {data-spec=true data-error=true}
+## Beacon {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/) (23 April 2018)
 - Editor's Draft: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
 - Latest published version: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-beacon-20170413/)
@@ -155,29 +188,13 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/beacon/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/beacon/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 
 Informative references to this spec from:
 
@@ -212,6 +229,27 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
+## Compatibility Standard {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Living Standard](https://compat.spec.whatwg.org/) (8 January 2018)
+- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+
+No informative reference to this spec from other specs.
+
+
 ## Compositing and Blending Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -238,6 +276,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 No informative reference to this spec from other specs.
@@ -287,20 +327,68 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
+- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
+
+Informative references to this spec from:
+
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+
+
+## Content Security Policy: Embedded Enforcement {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-csp/embedded/) (13 September 2017)
+- Editor's Draft: [https://w3c.github.io/webappsec-csp/embedded/](https://w3c.github.io/webappsec-csp/embedded/)
+- Latest published version: [https://www.w3.org/TR/csp-embedded-enforcement/](https://www.w3.org/TR/csp-embedded-enforcement/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
+- Repository: [GitHub w3c/webappsec-csp](https://github.com/w3c/webappsec-csp)
+- Shortname: csp-embedded-enforcement
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
 
-## Cooperative Scheduling of Background Tasks {data-spec=true data-error=true}
+## ContentEditable {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (15 September 2017)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Cooperative Scheduling of Background Tasks {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (30 October 2017)
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
 - Latest published version: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
@@ -309,25 +397,30 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/requestidlecallback/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/requestidlecallback/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
+This specification looks good!
 
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
+### Known dependencies on this specification {.dependencies}
 
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## CORS and RFC1918 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingWebIdlRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/cors-rfc1918/) (8 August 2017)
+- Repository: [GitHub wicg/cors-rfc1918](https://github.com/wicg/cors-rfc1918)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Spec uses WebIDL but does not reference it normatively
+- Missing references for WebIDL names: 
+     * `Document` defined in [DOM Standard](https://dom.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -366,6 +459,127 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+
+
+## CSS Animation Worklet API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/animation-worklet/) (7 April 2018)
+- Repository: [GitHub wicg/animation-worklet](https://github.com/wicg/animation-worklet)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `AnimationEffectReadOnly`, `GroupEffectReadOnly`, `sequence`
+- WebIDL names also defined elsewhere: 
+    * `VoidFunction` also defined in [Web IDL](https://heycam.github.io/webidl/)
+- Missing references for links: 
+     * [`https://w3c.github.io/web-animations/level-2/`](https://w3c.github.io/web-animations/level-2/)
+     * [`https://w3c.github.io/html/infrastructure.html`](https://w3c.github.io/html/infrastructure.html)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/), related reference "WEB-ANIMATIONS-1" uses URL [`https://www.w3.org/TR/web-animations-1/`](https://www.w3.org/TR/web-animations-1/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## CSS Animations Level 1 {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-animations/) (6 May 2018)
+- Editor's Draft: [https://drafts.csswg.org/css-animations/](https://drafts.csswg.org/css-animations/)
+- Latest published version: [https://www.w3.org/TR/css-animations-1/](https://www.w3.org/TR/css-animations-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-animations-1-20171130/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: css-animations-1
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [Web Animations](https://w3c.github.io/web-animations/)
+
+Informative references to this spec from:
+
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
+
+
+## CSS Conditional Rules Module Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://www.w3.org/TR/css3-conditional/) (4 April 2013)
+- Latest published version: [http://www.w3.org/TR/css3-conditional/](http://www.w3.org/TR/css3-conditional/)
+- Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: css3-conditional
+
+### Potential issue(s) {.anomalies}
+
+- Invalid WebIDL content found
+- Spec uses WebIDL but does not reference it normatively
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2008/REC-CSS1-20080411`](https://www.w3.org/TR/2008/REC-CSS1-20080411)
+     * [`https://www.w3.org/TR/2013/WD-css3-transitions-20130212/`](https://www.w3.org/TR/2013/WD-css3-transitions-20130212/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/), related reference "MEDIAQ" uses URL [`http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/`](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+
+Informative references to this spec from:
+
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+
+
+## CSS Device Adaptation Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-device-adapt/) (21 February 2018)
+- Editor's Draft: [https://drafts.csswg.org/css-device-adapt/](https://drafts.csswg.org/css-device-adapt/)
+- Latest published version: [http://www.w3.org/TR/css-device-adapt-1/](http://www.w3.org/TR/css-device-adapt-1/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: css-device-adapt-1
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
+     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
+     * [`https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/`](https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+
+Informative references to this spec from:
+
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
 ## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -421,12 +635,16 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -442,8 +660,11 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.css-houdini.org/css-layout-api-1/) (24 April 2018)
-- Shortname: no shortname
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-layout-api-1/) (24 April 2018)
+- Editor's Draft: [https://drafts.css-houdini.org/css-layout-api-1/](https://drafts.css-houdini.org/css-layout-api-1/)
+- Latest published version: [https://www.w3.org/TR/css-layout-api-1/](https://www.w3.org/TR/css-layout-api-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
+- Shortname: css-layout-api-1
 
 ### Potential issue(s) {.anomalies}
 
@@ -456,6 +677,44 @@ Informative references to this spec from:
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## CSS Masking Module Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/css-masking-1/) (2 May 2018)
+- Editor's Draft: [https://drafts.fxtf.org/css-masking-1/](https://drafts.fxtf.org/css-masking-1/)
+- Latest published version: [http://www.w3.org/TR/css-masking-1/](http://www.w3.org/TR/css-masking-1/)
+- Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2014/CR-css-masking-1-20140826/)
+- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- Shortname: css-masking-1
+
+### Potential issue(s) {.anomalies}
+
+- Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `SVGAnimatedEnumeration`, `SVGAnimatedLength`, `SVGAnimatedTransformList`, `SVGElement`
+- Missing references for links: 
+     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
+     * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/)
+     * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+     * [`https://www.w3.org/TR/2013/WD-css-masking-20130620/`](https://www.w3.org/TR/2013/WD-css-masking-20130620/)
+     * [`https://www.w3.org/TR/2012/WD-css-masking-20121115/`](https://www.w3.org/TR/2012/WD-css-masking-20121115/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/), related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 No informative reference to this spec from other specs.
 
@@ -480,12 +739,15 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
+- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
@@ -609,6 +871,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
+- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
@@ -620,11 +884,49 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 No informative reference to this spec from other specs.
+
+
+## CSS Transitions {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-transitions/) (21 February 2018)
+- Editor's Draft: [https://drafts.csswg.org/css-transitions/](https://drafts.csswg.org/css-transitions/)
+- Latest published version: [https://www.w3.org/TR/css-transitions-1/](https://www.w3.org/TR/css-transitions-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: css-transitions-1
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/dom/`](https://w3c.github.io/dom/)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+     * [`https://www.w3.org/TR/2013/WD-css3-transitions-20131119/`](https://www.w3.org/TR/2013/WD-css3-transitions-20131119/)
+     * [`https://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog`](https://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
+- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Web Animations](https://w3c.github.io/web-animations/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+
+Informative references to this spec from:
+
+- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 
 ## CSS Typed OM Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
@@ -678,17 +980,26 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
+- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
+- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -718,7 +1029,10 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -752,6 +1066,10 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
+- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 
@@ -759,6 +1077,8 @@ Informative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 
 
 ## DeviceOrientation Event Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -786,14 +1106,15 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## DOM Parsing and Serialization {data-spec=true data-error=true}
+## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/) (and similar APIs)
 - Editor's Draft: [https://w3c.github.io/DOM-Parsing/](https://w3c.github.io/DOM-Parsing/)
 - Latest published version: [http://www.w3.org/TR/DOM-Parsing/](http://www.w3.org/TR/DOM-Parsing/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
@@ -802,25 +1123,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/DOM-Parsing/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/DOM-Parsing/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -834,7 +1138,7 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 
 
-## DOM Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## DOM Standard {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -844,7 +1148,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - WebIDL names also defined elsewhere: 
     * `StaticRange` also defined in [Static Range](https://w3c.github.io/staticrange/)
 - Missing references for WebIDL names: 
@@ -857,53 +1160,94 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Accessibility Object Model, Phase 1](https://wicg.github.io/aom/spec/)
+- [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
+- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [Preload](https://w3c.github.io/preload/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
+- [Selection API](https://w3c.github.io/selection-api/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
+- [Battery Status API](https://w3c.github.io/battery/)
+- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
@@ -931,6 +1275,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
@@ -938,8 +1283,12 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Push API](https://w3c.github.io/push-api/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -974,6 +1323,33 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
+## Feature Policy {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (23 March 2018)
+- Repository: [GitHub wicg/feature-policy](https://github.com/wicg/feature-policy)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+
+Informative references to this spec from:
+
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+
+
 ## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -992,17 +1368,27 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
+- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
@@ -1010,6 +1396,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -1060,13 +1448,50 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
+
+
+## Filter Effects Module Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/filter-effects/) (7 May 2018)
+- Editor's Draft: [https://drafts.fxtf.org/filter-effects/](https://drafts.fxtf.org/filter-effects/)
+- Latest published version: [http://www.w3.org/TR/filter-effects-1/](http://www.w3.org/TR/filter-effects-1/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
+- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- Shortname: filter-effects-1
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `SVGAnimatedEnumeration`, `SVGAnimatedInteger`, `SVGAnimatedLength`, `SVGAnimatedNumber`, `SVGAnimatedNumberList`, `SVGAnimatedPreserveAspectRatio`, `SVGAnimatedString`, `SVGElement`
+- Missing references for links: 
+     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
+     * [`https://www.w3.org/TR/css-transitions-1/`](https://www.w3.org/TR/css-transitions-1/)
+     * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
+     * [`https://www.w3.org/TR/2012/WD-filter-effects-20121025/`](https://www.w3.org/TR/2012/WD-filter-effects-20121025/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/), related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+
+No informative reference to this spec from other specs.
 
 
 ## Fullscreen API Standard {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -1086,20 +1511,26 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 Informative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## Gamepad {data-spec=true data-error=true}
+## Gamepad {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (08 May 2018)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-gamepad-20180508/)
@@ -1108,25 +1539,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/gamepad/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/gamepad/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1135,7 +1548,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Generic Sensor API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Generic Sensor API {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1148,7 +1561,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
      * [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/), related reference "PERMISSIONS" uses URL [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/)
@@ -1160,6 +1572,7 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
@@ -1192,9 +1605,30 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
+
+
+## Geolocation Sensor {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/) (26 February 2018)
+- Repository: [GitHub wicg/geolocation-sensor](https://github.com/wicg/geolocation-sensor)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Geometry Interfaces Module Level 1 {data-spec=true data-ok=true}
@@ -1216,11 +1650,14 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 
 Informative references to this spec from:
@@ -1255,11 +1692,11 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## High Resolution Time Level 3 {data-spec=true data-error=true}
+## High Resolution Time Level 2 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/) (03 May 2018)
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
 - Latest published version: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -1268,50 +1705,50 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/hr-time/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/hr-time/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for WebIDL names: 
+     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/hr-time-1/`](https://www.w3.org/TR/hr-time-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Server Timing](https://w3c.github.io/server-timing/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
 
 - [Web Animations](https://w3c.github.io/web-animations/)
 
 
-## HTML Media Capture {data-spec=true data-error=true}
+## HTML Media Capture {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/) (01 February 2018)
 - Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
 - Latest published version: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
@@ -1320,25 +1757,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/html-media-capture/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/html-media-capture/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1356,8 +1775,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `SVGImageElement`, `SVGScriptElement`, `WindowProxy`
+- Unknown WebIDL names used: `SVGImageElement`, `SVGScriptElement`, `WindowProxy`
 - WebIDL names also defined elsewhere: 
+    * `BinaryType` also defined in [Presentation API](https://w3c.github.io/presentation-api/)
     * `Worker` also defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - Missing references for WebIDL names: 
      * `AudioWorklet` defined in [Web Audio API](https://webaudio.github.io/web-audio-api/)
@@ -1371,56 +1791,115 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
+- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
+- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/)
+- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
+- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
+- [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Preload](https://w3c.github.io/preload/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
+- [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
+- [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
+- [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
+- [Web Share API](https://wicg.github.io/web-share/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+- [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -1429,9 +1908,11 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 
 Informative references to this spec from:
 
+- [Battery Status API](https://w3c.github.io/battery/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
@@ -1440,58 +1921,33 @@ Informative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## https://w3c.github.io/editing/contentEditable.html {data-spec=true data-error=true}
+## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/editing/contentEditable.html
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/editing/contentEditable.html
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Identifiers for WebRTC's Statistics API {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (28 March 2018)
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webrtc-stats-20180328/)
@@ -1500,25 +1956,12 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/webrtc-stats/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/webrtc-stats/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `RTCRTPStreamStats`
+- WebIDL names also defined elsewhere: 
+    * `RTCStats` also defined in [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1550,6 +1993,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 
 Informative references to this spec from:
 
@@ -1558,38 +2002,17 @@ Informative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## Input Events Level 1 {data-spec=true data-error=true}
+## Input Device Capabilities {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
-- Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
-- Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
-- Repository: [GitHub w3c/input-events](https://github.com/w3c/input-events)
-- Shortname: input-events-2
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (16 October 2017)
+- Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
+- Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://rawgit.com/w3c/input-events/v1/index.html
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://rawgit.com/w3c/input-events/v1/index.html
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Spec uses WebIDL but does not reference it normatively
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1598,7 +2021,33 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Intersection Observer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## Input Events Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (09 May 2018)
+- Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
+- Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
+- Repository: [GitHub w3c/input-events](https://github.com/w3c/input-events)
+- Shortname: input-events-2
+
+### Potential issue(s) {.anomalies}
+
+- Spec uses WebIDL but does not reference it normatively
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Informative references to this spec from:
+
+- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
+
+
+## Intersection Observer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -1611,7 +2060,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
+- Missing references for WebIDL names: 
+     * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
@@ -1626,7 +2076,26 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Long Tasks API 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Keyboard Lock {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/keyboard-lock/) (7 May 2018)
+- Repository: [GitHub w3c/keyboard-lock](https://github.com/w3c/keyboard-lock)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Long Tasks API 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1639,7 +2108,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -1684,6 +2152,28 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
+## Media Capabilities {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/media-capabilities/) (3 May 2018)
+- Repository: [GitHub wicg/media-capabilities](https://github.com/wicg/media-capabilities)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/media-source/`](https://w3c.github.io/media-source/), related reference "MEDIA-SOURCE" uses URL [`https://www.w3.org/TR/media-source/`](https://www.w3.org/TR/media-source/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Media Capture and Streams {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
@@ -1707,9 +2197,15 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
@@ -1720,11 +2216,11 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## Media Capture Depth Stream Extensions {data-spec=true data-error=true}
+## Media Capture Depth Stream Extensions {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/) (16 October 2017)
 - Editor's Draft: [https://w3c.github.io/mediacapture-depth/](https://w3c.github.io/mediacapture-depth/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-depth/](https://www.w3.org/TR/mediacapture-depth/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -1733,38 +2229,23 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/mediacapture-depth/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/mediacapture-depth/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
-## Media Capture from DOM Elements {data-spec=true data-error=true}
+## Media Capture from DOM Elements {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/) (23 February 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -1773,25 +2254,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/mediacapture-fromelement/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/mediacapture-fromelement/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+     * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1818,7 +2283,9 @@ This specification looks good!
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 
 
 ## Media Source Extensions™ {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -1843,6 +2310,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [URL Standard](https://url.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -1873,12 +2341,16 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+
 Informative references to this spec from:
 
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 
 
-## MediaStream Recording {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## MediaStream Recording {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1891,7 +2363,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
@@ -1902,6 +2373,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
@@ -1954,10 +2426,13 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Preload](https://w3c.github.io/preload/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 
 Informative references to this spec from:
@@ -1967,11 +2442,11 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Navigation Timing Level 2 {data-spec=true data-error=true}
+## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/) (04 February 2018)
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
@@ -1980,25 +2455,39 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/navigation-timing/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/navigation-timing/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/), related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
+### Known dependencies on this specification {.dependencies}
 
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+Normative references to this spec from:
+
+- [Gamepad](https://w3c.github.io/gamepad/)
+- [Server Timing](https://w3c.github.io/server-timing/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
+
+Informative references to this spec from:
+
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
+
+
+## Network Information API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Living Document)
+- Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Spec uses WebIDL but does not reference it normatively
+- Missing references for links: 
+     * [`https://w3c.github.io/ServiceWorker/v1/`](https://w3c.github.io/ServiceWorker/v1/)
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2007,7 +2496,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Notifications API Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Notifications API Standard {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -2017,7 +2506,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `VibratePattern`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2026,7 +2515,10 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+- [Web Budget API](https://wicg.github.io/budget-api/)
 
 
 ## Orientation Sensor {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2055,7 +2547,9 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 
 ## Page not found · GitHub Pages {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
@@ -2083,11 +2577,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Page Visibility Level 2 {data-spec=true data-error=true}
+## Page Visibility Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/) (15 December 2017)
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
 - Latest published version: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
@@ -2096,38 +2590,27 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/page-visibility/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/page-visibility/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Spec uses WebIDL but does not reference it normatively
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Beacon](https://w3c.github.io/beacon/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 
 
-## Paint Timing 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Paint Timing 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2140,7 +2623,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -2153,11 +2635,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-error=true}
+## Payment Handler API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (07 May 2018)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -2166,38 +2648,25 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/payment-handler/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/payment-handler/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/payment-handler/`](https://w3c.github.io/payment-handler/), related reference "payment-handler" uses URL [`https://www.w3.org/TR/payment-handler/`](https://www.w3.org/TR/payment-handler/)
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 
 
-## Payment Method: Basic Card {data-spec=true data-error=true}
+## Payment Method: Basic Card {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/) (09 May 2018)
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180329/)
@@ -2206,38 +2675,24 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/payment-method-basic-card/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/payment-method-basic-card/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
 
-No informative reference to this spec from other specs.
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+
+Informative references to this spec from:
+
+- [Payment Request API](https://w3c.github.io/payment-request/)
 
 
-## Payment Request API {data-spec=true data-error=true}
+## Payment Request API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (09 May 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180503/)
@@ -2246,40 +2701,24 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/payment-request/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/payment-request/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-error=true}
+## Performance Timeline Level 2 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (10 January 2018)
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
@@ -2288,34 +2727,23 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/performance-timeline/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/performance-timeline/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 
 
 ## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2348,19 +2776,48 @@ Normative references to this spec from:
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [WebUSB API](https://wicg.github.io/webusb/)
+
+Informative references to this spec from:
+
+- [Web Budget API](https://wicg.github.io/budget-api/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
+
+
+## Picture-in-Picture {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (7 May 2018)
+- Repository: [GitHub wicg/picture-in-picture](https://github.com/wicg/picture-in-picture)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/remote-playback/`](https://w3c.github.io/remote-playback/), related reference "Remote-Playback" uses URL [`https://www.w3.org/TR/remote-playback/`](https://www.w3.org/TR/remote-playback/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
 
-## Pointer Events {data-spec=true data-error=true}
+## Pointer Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/) (Level 2)
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-pointerevents2-20180404/)
@@ -2369,40 +2826,28 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/pointerevents/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/pointerevents/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Spec uses WebIDL but does not reference it normatively
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
-## Pointer Lock 2.0 {data-spec=true data-error=true}
+## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/) (07 February 2018)
 - Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
 - Latest published version: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
@@ -2411,40 +2856,26 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/pointerlock/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/pointerlock/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for WebIDL names: 
+     * `EventHandler` defined in [HTML Standard](https://html.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 
 
-## Preload {data-spec=true data-error=true}
+## Preload {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/preload/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (09 January 2018)
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
 - Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -2453,25 +2884,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/preload/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/preload/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2482,11 +2897,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Presentation API {data-spec=true data-error=true}
+## Presentation API {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/) (26 March 2018)
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Latest published version: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -2495,25 +2910,11 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/presentation-api/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/presentation-api/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- WebIDL names also defined elsewhere: 
+    * `BinaryType` also defined in [HTML Standard](https://html.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2521,7 +2922,9 @@ Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 
 
 ## Proximity Sensor {data-spec=true data-ok=true}
@@ -2546,11 +2949,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Push API {data-spec=true data-error=true}
+## Push API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/) (01 May 2018)
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
 - Latest published version: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-push-api-20171215/)
@@ -2559,29 +2962,18 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/push-api/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/push-api/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/), related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Web Budget API](https://wicg.github.io/budget-api/)
 
 Informative references to this spec from:
 
@@ -2612,16 +3004,17 @@ Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
 No informative reference to this spec from other specs.
 
 
-## Remote Playback API {data-spec=true data-error=true}
+## Remote Playback API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (09 March 2018)
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
 - Latest published version: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -2630,25 +3023,34 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/remote-playback/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/remote-playback/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
+- Missing references for WebIDL names: 
+     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
+### Known dependencies on this specification {.dependencies}
 
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+Normative references to this spec from:
+
+- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+
+No informative reference to this spec from other specs.
+
+
+## Resize Observer 1 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/ResizeObserver/) (20 March 2017)
+- Repository: [GitHub wicg/ResizeObserver](https://github.com/wicg/ResizeObserver)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Invalid WebIDL content found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
+     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2657,11 +3059,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Resource Timing Level 2 {data-spec=true data-error=true}
+## Resource Timing Level 2 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/) (22 April 2018)
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-resource-timing-2-20180422/)
@@ -2670,31 +3072,20 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/resource-timing/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/resource-timing/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
 
-No informative reference to this spec from other specs.
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Server Timing](https://w3c.github.io/server-timing/)
+
+Informative references to this spec from:
+
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
 ## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2783,12 +3174,15 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 
@@ -2797,17 +3191,18 @@ Informative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
 
 
-## Screen Capture {data-spec=true data-error=true}
+## Screen Capture {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/) (23 February 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
 - Latest published version: [http://www.w3.org/TR/screen-capture/](http://www.w3.org/TR/screen-capture/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -2816,25 +3211,29 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/mediacapture-screen-share/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/mediacapture-screen-share/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
+- Unknown WebIDL names used: `NavigatorUserMedia`
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
+### Known dependencies on this specification {.dependencies}
 
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Scroll-linked Animations {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/scroll-animations/) (21 September 2017)
+- Repository: [GitHub wicg/scroll-animations](https://github.com/wicg/scroll-animations)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/), related reference "WEB-ANIMATIONS-1" uses URL [`https://www.w3.org/TR/web-animations-1/`](https://www.w3.org/TR/web-animations-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2863,6 +3262,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Battery Status API](https://w3c.github.io/battery/)
+- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
@@ -2870,21 +3271,29 @@ Normative references to this spec from:
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
+- [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 Informative references to this spec from:
 
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [WebUSB API](https://wicg.github.io/webusb/)
 
 
-## Selection API {data-spec=true data-error=true}
+## Selection API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/) (02 April 2018)
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-selection-api-20180402/)
@@ -2893,53 +3302,17 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/selection-api/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/selection-api/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
-
-No informative reference to this spec from other specs.
-
-
-## Selectors API Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://www.w3.org/TR/selectors-api/) (21 February 2013)
-- Latest published version: [http://www.w3.org/TR/selectors-api/](http://www.w3.org/TR/selectors-api/)
-- Latest published status: [Recommendation](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
-- Shortname: selectors-api
-
-### Potential issue(s) {.anomalies}
-
-- Spec uses WebIDL but does not reference it normatively
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/), related reference "SELECT" uses URL [`http://www.w3.org/TR/2011/REC-css3-selectors-20110929/`](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -2967,7 +3340,6 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
-- [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 
 Informative references to this spec from:
@@ -2976,11 +3348,11 @@ Informative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
-## Server Timing {data-spec=true data-error=true}
+## Server Timing {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (07 February 2018)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
@@ -2989,25 +3361,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/server-timing/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/server-timing/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for WebIDL names: 
+     * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3016,7 +3371,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Service Workers 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Service Workers 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3029,7 +3384,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `VisibilityState`
 - WebIDL names also defined elsewhere: 
     * `Worker` also defined in [HTML Standard](https://html.spec.whatwg.org/)
 - Missing references for links: 
@@ -3043,10 +3397,18 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -3056,6 +3418,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
+- [Beacon](https://w3c.github.io/beacon/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
@@ -3123,11 +3486,44 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## The Screen Orientation API {data-spec=true data-error=true}
+## Subresource Integrity {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-subresource-integrity/) (26 August 2016)
+- Editor's Draft: [https://w3c.github.io/webappsec-subresource-integrity/](https://w3c.github.io/webappsec-subresource-integrity/)
+- Latest published version: [http://www.w3.org/TR/SRI/](http://www.w3.org/TR/SRI/)
+- Latest published status: [Recommendation](http://www.w3.org/TR/2016/REC-SRI-20160623/)
+- Repository: [GitHub w3c/webappsec-subresource-integrity](https://github.com/w3c/webappsec-subresource-integrity)
+- Shortname: SRI
+
+### Potential issue(s) {.anomalies}
+
+- Spec uses WebIDL but does not reference it normatively
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
+
+Informative references to this spec from:
+
+- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+
+
+## The Screen Orientation API {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (08 May 2018)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-screen-orientation-20180508/)
@@ -3136,41 +3532,25 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/screen-orientation/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/screen-orientation/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
 
 
-## Touch Events {data-spec=true data-error=true}
+## Touch Events - Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/) (27 April 2018)
 - Editor's Draft: [https://w3c.github.io/touch-events/](https://w3c.github.io/touch-events/)
 - Latest published version: [http://www.w3.org/TR/touch-events/](http://www.w3.org/TR/touch-events/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
@@ -3179,25 +3559,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/touch-events/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/touch-events/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `WindowProxy`
+- Missing references for links: 
+     * [`https://www.w3.org/TR/touch-events-extensions/`](https://www.w3.org/TR/touch-events-extensions/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3206,7 +3570,10 @@ Normative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
 ## UI Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3236,8 +3603,14 @@ Normative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
+- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
+- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 
@@ -3267,6 +3640,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 
@@ -3314,23 +3688,34 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
+- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
+- [Web Share API](https://wicg.github.io/web-share/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -3341,6 +3726,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -3374,11 +3760,11 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## User Timing Level 2 {data-spec=true data-error=true}
+## User Timing Level 2 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/) (02 April 2018)
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-user-timing-2-20180402/)
@@ -3387,38 +3773,23 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/user-timing/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/user-timing/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
 
 
-## Vibration API (Second Edition) {data-spec=true data-error=true}
+## Vibration API (Second Edition) {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/) (23 October 2017)
 - Editor's Draft: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
 - Latest published version: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-vibration-20161018/)
@@ -3427,25 +3798,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/vibration/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/vibration/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3456,11 +3810,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Wake Lock API {data-spec=true data-error=true}
+## Wake Lock API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (13 December 2017)
 - Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
 - Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -3469,25 +3823,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/wake-lock/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/wake-lock/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3496,7 +3832,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Animations {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Web Animations {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3509,7 +3845,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 
@@ -3517,16 +3852,18 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 
 No informative reference to this spec from other specs.
 
 
-## Web App Manifest {data-spec=true data-error=true}
+## Web App Manifest {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/) (Living Document)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-appmanifest-20180508/)
@@ -3535,38 +3872,23 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/manifest/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
- Error: 
-😭  Sorry, there was an error generating the HTML. Please report this issue!
-Specification: https://w3c.github.io/manifest/
-ReSpec version: 20.10.4
-File a bug: https://github.com/w3c/respec/
-Error: Error: Evaluation failed: undefined
-
-    at generateHTML (/home/dom/github.com/reffy/node_modules/respec/tools/respecDocWriter.js:115:11)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Media Session Standard](https://wicg.github.io/mediasession/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
-## Web Audio API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Audio API {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3579,7 +3901,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - WebIDL names also defined elsewhere: 
     * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - Missing references for links: 
@@ -3591,7 +3912,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -3603,6 +3926,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
@@ -3635,6 +3959,80 @@ Informative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 
 
+## Web Background Synchronization {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/BackgroundSync/spec/) (2 August 2016)
+- Repository: [GitHub wicg/BackgroundSync](https://github.com/wicg/BackgroundSync)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/), related reference "SECURE-CONTEXTS" uses URL [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Web Budget API](https://wicg.github.io/budget-api/)
+
+Informative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
+- [Push API](https://w3c.github.io/push-api/)
+
+
+## Web Bluetooth {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/) (20 April 2018)
+- Repository: [GitHub webbluetoothcg/web-bluetooth](https://github.com/webbluetoothcg/web-bluetooth)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Invalid WebIDL content found
+- Missing references for links: 
+     * [`https://w3c.github.io/fingerprinting-guidance/`](https://w3c.github.io/fingerprinting-guidance/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
+
+Informative references to this spec from:
+
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+
+
+## Web Budget API {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/budget-api/) (24 May 2017)
+- Repository: [GitHub wicg/budget-api](https://github.com/wicg/budget-api)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Web Cryptography API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -3654,6 +4052,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
@@ -3662,7 +4061,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Web IDL {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Web IDL {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3674,6 +4073,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- WebIDL names also defined elsewhere: 
+    * `VoidFunction` also defined in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/geolocation-API/`](https://www.w3.org/TR/geolocation-API/), related reference "GEOLOCATION-API" uses URL [`http://dev.w3.org/geo/api/spec-source.html`](http://dev.w3.org/geo/api/spec-source.html)
 
@@ -3681,12 +4082,23 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
+- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
+- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
@@ -3694,57 +4106,187 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
+- [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
+- [Push API](https://w3c.github.io/push-api/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
+- [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
+- [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
+- [Web Share API](https://wicg.github.io/web-share/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+- [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
+- [Accessibility Object Model, Phase 1](https://wicg.github.io/aom/spec/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
+- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
+- [Network Information API](https://wicg.github.io/netinfo/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Selection API](https://w3c.github.io/selection-api/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+
+
+## Web MIDI API {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/) (04 May 2018)
+- Editor's Draft: [http://webaudio.github.io/web-midi-api/](http://webaudio.github.io/web-midi-api/)
+- Latest published version: [http://www.w3.org/TR/webmidi/](http://www.w3.org/TR/webmidi/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
+- Repository: [GitHub webaudio/web-midi-api](https://github.com/webaudio/web-midi-api)
+- Shortname: webmidi
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Informative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
+
+
+## Web NFC API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (06 April 2018)
+- Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `Dictionary`
+- Missing references for links: 
+     * [`https://www.w3.org/TR/url-1/`](https://www.w3.org/TR/url-1/)
+     * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/)
+     * [`https://streams.spec.whatwg.org/`](https://streams.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
+- Inconsistent references for links: 
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+     * [`https://www.w3.org/TR/2011/WD-html5-20110113/`](https://www.w3.org/TR/2011/WD-html5-20110113/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "permissions" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Web Share API {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (15 March 2018)
+- Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## WebAssembly JavaScript Interface {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -3786,8 +4328,13 @@ This specification looks good!
 
 No normative reference to this spec from other specs.
 
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
+
 Informative references to this spec from:
 
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
@@ -3812,13 +4359,18 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
+
 Informative references to this spec from:
 
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3831,7 +4383,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `RTCError`, `RTCStatsType`
+- Unknown WebIDL names used: `RTCError`
+- WebIDL names also defined elsewhere: 
+    * `RTCStats` also defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - Missing references for WebIDL names: 
      * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
      * `Event` defined in [DOM Standard](https://dom.spec.whatwg.org/)
@@ -3843,11 +4397,36 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 Informative references to this spec from:
 
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Web Budget API](https://wicg.github.io/budget-api/)
+
+
+## WebUSB API {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (8 May 2018)
+- Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## WebVTT: The Web Video Text Tracks Format {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -3875,6 +4454,35 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## WebXR Device API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (24 April 2018)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for WebIDL names: 
+     * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+     * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+     * `WebGL2RenderingContext` defined in [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+     * `WebGLFramebuffer` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+     * `WebGLContextAttributes` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+     * `WebGLRenderingContextBase` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/), related reference "ORIENTATION-SENSOR" uses URL [`https://www.w3.org/TR/orientation-sensor/`](https://www.w3.org/TR/orientation-sensor/)
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Worklets Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -3897,6 +4505,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
@@ -3934,6 +4543,7 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 
 Informative references to this spec from:
 
