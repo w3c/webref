@@ -38,14 +38,14 @@ partial interface ServiceWorkerGlobalScope {
 [Constructor(DOMString type, CanMakePaymentEventInit eventInitDict),
  Exposed=ServiceWorker]
 interface CanMakePaymentEvent : ExtendableEvent {
-    readonly attribute USVString                           topLevelOrigin;
+    readonly attribute USVString                           topOrigin;
     readonly attribute USVString                           paymentRequestOrigin;
     readonly attribute FrozenArray<PaymentMethodData>      methodData;
     readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;
     void respondWith(Promise<boolean> canMakePaymentResponse);
 };
 dictionary CanMakePaymentEventInit : ExtendableEventInit {
-    USVString                        topLevelOrigin;
+    USVString                        topOrigin;
     USVString                        paymentRequestOrigin;
     sequence<PaymentMethodData>      methodData;
     sequence<PaymentDetailsModifier> modifiers;
@@ -56,7 +56,7 @@ partial interface ServiceWorkerGlobalScope {
 [Constructor(DOMString type, PaymentRequestEventInit eventInitDict),
  Exposed=ServiceWorker]
 interface PaymentRequestEvent : ExtendableEvent {
-    readonly attribute USVString                           topLevelOrigin;
+    readonly attribute USVString                           topOrigin;
     readonly attribute USVString                           paymentRequestOrigin;
     readonly attribute DOMString                           paymentRequestId;
     readonly attribute FrozenArray<PaymentMethodData>      methodData;
@@ -67,7 +67,7 @@ interface PaymentRequestEvent : ExtendableEvent {
     void                   respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);
 };
 dictionary PaymentRequestEventInit : ExtendableEventInit {
-    USVString                        topLevelOrigin;
+    USVString                        topOrigin;
     USVString                        paymentRequestOrigin;
     DOMString                        paymentRequestId;
     sequence<PaymentMethodData>      methodData;

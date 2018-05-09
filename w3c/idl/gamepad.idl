@@ -1,4 +1,5 @@
 
+[Exposed=Window]
 interface Gamepad {
     readonly attribute DOMString                  id;
     readonly attribute long                       index;
@@ -8,6 +9,7 @@ interface Gamepad {
     readonly attribute FrozenArray<double>        axes;
     readonly attribute FrozenArray<GamepadButton> buttons;
 };
+[Exposed=Window]
 interface GamepadButton {
     readonly attribute boolean pressed;
     readonly attribute boolean touched;
@@ -17,10 +19,12 @@ enum GamepadMappingType {
     "",
     "standard",
 };
+[Exposed=Window]
 partial interface Navigator {
     sequence<Gamepad?> getGamepads();
 };
-[Constructor(GamepadEventInit eventInitDict)]
+[Constructor(GamepadEventInit eventInitDict),
+ Exposed=Window]
 interface GamepadEvent : Event {
     readonly attribute Gamepad gamepad;
 };
