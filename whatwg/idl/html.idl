@@ -114,6 +114,7 @@ interface HTMLElement : Element {
 HTMLElement includes GlobalEventHandlers;
 HTMLElement includes DocumentAndElementEventHandlers;
 HTMLElement includes ElementContentEditable;
+HTMLElement includes HTMLOrSVGElement;
 
 // Note: intentionally not [HTMLConstructor]
 [Exposed=Window]
@@ -126,8 +127,6 @@ interface mixin HTMLOrSVGElement {
   void focus(optional FocusOptions options);
   void blur();
 };
-HTMLElement includes HTMLOrSVGElement;
-SVGElement includes HTMLOrSVGElement;
 
 [Exposed=Window,
  OverrideBuiltins]

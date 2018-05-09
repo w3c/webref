@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% May 08, 2018
+% May 09, 2018
 
 ## Accelerometer {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -75,13 +75,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-output/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-output/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -117,13 +117,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/battery/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/battery/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -159,13 +159,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/beacon/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/beacon/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -313,13 +313,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/requestidlecallback/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/requestidlecallback/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -806,13 +806,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/DOM-Parsing/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/DOM-Parsing/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1112,13 +1112,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/gamepad/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/gamepad/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1272,13 +1272,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/hr-time/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/hr-time/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1324,13 +1324,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/html-media-capture/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/html-media-capture/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1351,7 +1351,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (7 May 2018)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (8 May 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1464,13 +1464,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/editing/contentEditable.html
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/editing/contentEditable.html
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1504,13 +1504,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/webrtc-stats/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/webrtc-stats/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1533,7 +1533,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/IndexedDB/) (3 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/IndexedDB/) (8 May 2018)
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
@@ -1575,13 +1575,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://rawgit.com/w3c/input-events/v1/index.html
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://rawgit.com/w3c/input-events/v1/index.html
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1737,13 +1737,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-depth/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-depth/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1777,13 +1777,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-fromelement/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-fromelement/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -1984,13 +1984,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/navigation-timing/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/navigation-timing/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2062,7 +2062,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (Tue May 08 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (Wed May 09 2018)
 - Editor's Draft: [https://w3c.github.io/webdriver/webdriver-spec.html](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2018/PR-webdriver1-20180426/)
@@ -2100,13 +2100,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/page-visibility/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/page-visibility/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2170,13 +2170,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-handler/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-handler/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2210,13 +2210,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-method-basic-card/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-method-basic-card/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2250,13 +2250,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-request/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/payment-request/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2292,13 +2292,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/performance-timeline/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/performance-timeline/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2373,13 +2373,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/pointerevents/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/pointerevents/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2415,13 +2415,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/pointerlock/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/pointerlock/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2457,13 +2457,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/preload/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/preload/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2499,13 +2499,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/presentation-api/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/presentation-api/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2563,13 +2563,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/push-api/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/push-api/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2634,13 +2634,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/remote-playback/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/remote-playback/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2674,13 +2674,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/resource-timing/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/resource-timing/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2820,13 +2820,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-screen-share/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/mediacapture-screen-share/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2897,13 +2897,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/selection-api/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/selection-api/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -2993,13 +2993,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/server-timing/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/server-timing/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3140,13 +3140,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/screen-orientation/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/screen-orientation/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3183,13 +3183,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/touch-events/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/touch-events/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3302,7 +3302,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (27 April 2018)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (8 May 2018)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -3391,13 +3391,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/user-timing/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/user-timing/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3431,13 +3431,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/vibration/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/vibration/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3473,13 +3473,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/wake-lock/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/wake-lock/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3539,13 +3539,13 @@ The following network or parsing error occurred:
 `Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/manifest/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
  Error: 
 😭  Sorry, there was an error generating the HTML. Please report this issue!
 Specification: https://w3c.github.io/manifest/
-ReSpec version: 20.10.3
+ReSpec version: 20.10.4
 File a bug: https://github.com/w3c/respec/
 Error: Error: Evaluation failed: undefined
 
@@ -3570,7 +3570,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (4 May 2018)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (8 May 2018)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [http://www.w3.org/TR/webaudio/](http://www.w3.org/TR/webaudio/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webaudio-20151208/)
@@ -3751,7 +3751,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (3 May 2018)
+- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (8 May 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3774,7 +3774,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue May 08 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed May 09 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3796,7 +3796,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue May 08 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed May 09 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -3879,7 +3879,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/worklets/) (10 April 2018)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/worklets/) (8 May 2018)
 - Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
 - Latest published version: [http://www.w3.org/TR/worklets-1/](http://www.w3.org/TR/worklets-1/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
@@ -3916,7 +3916,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (23 April 2018)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (8 May 2018)
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
