@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% May 09, 2018
+% May 10, 2018
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -62,25 +62,6 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Accessibility Object Model, Phase 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (08 May 2018)
-- Repository: [GitHub wicg/aom](https://github.com/wicg/aom)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- Spec uses WebIDL but does not reference it normatively
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Ambient Light Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
@@ -105,11 +86,11 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Audio Output Devices API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Audio Output Devices API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/) (23 February 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
 - Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
 - Latest published version: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
@@ -118,7 +99,124 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLMediaElement`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020537.265717:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55aff3a6eb0c base::debug::StackTrace::StackTrace()
+#1 0x55aff3a87780 logging::LogMessage::~LogMessage()
+#2 0x55aff2b172b1 content::ZygoteHostImpl::Init()
+#3 0x55aff2789c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55aff278fa69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55aff78b99a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55aff37a9a00 content::RunNamedProcessTypeMain()
+#7 0x55aff37aa2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55aff37b3f24 service_manager::Main()
+#9 0x55aff37a8f14 content::ContentMain()
+#10 0x55aff78b89b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55aff78b8a42 headless::HeadlessBrowserMain()
+#12 0x55aff37b0f9d headless::HeadlessShellMain()
+#13 0x55aff1e0f1ac ChromeMain
+#14 0x7f2da10de2e1 __libc_start_main
+#15 0x55aff1e0f02a _start
+
+Received signal 6
+#0 0x55aff3a6eb0c base::debug::StackTrace::StackTrace()
+#1 0x55aff3a6e671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f2da703b0c0 <unknown>
+#3 0x7f2da10f0fff gsignal
+#4 0x7f2da10f242a abort
+#5 0x55aff3a6d105 base::debug::BreakDebugger()
+#6 0x55aff3a87bca logging::LogMessage::~LogMessage()
+#7 0x55aff2b172b1 content::ZygoteHostImpl::Init()
+#8 0x55aff2789c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55aff278fa69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55aff78b99a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55aff37a9a00 content::RunNamedProcessTypeMain()
+#12 0x55aff37aa2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55aff37b3f24 service_manager::Main()
+#14 0x55aff37a8f14 content::ContentMain()
+#15 0x55aff78b89b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55aff78b8a42 headless::HeadlessBrowserMain()
+#17 0x55aff37b0f9d headless::HeadlessShellMain()
+#18 0x55aff1e0f1ac ChromeMain
+#19 0x7f2da10de2e1 __libc_start_main
+#20 0x55aff1e0f02a _start
+  r8: 0000000000000000  r9: 00007ffce70b9e60 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffce70ba558 r13: 0000000000000161 r14: 00007ffce70ba560 r15: 00007ffce70ba0f9
+  di: 0000000000000002  si: 00007ffce70b9e60  bp: 00007ffce70ba0a0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f2da10f0fff  sp: 00007ffce70b9ed8
+  ip: 00007f2da10f0fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020537.265717:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55aff3a6eb0c base::debug::StackTrace::StackTrace()
+#1 0x55aff3a87780 logging::LogMessage::~LogMessage()
+#2 0x55aff2b172b1 content::ZygoteHostImpl::Init()
+#3 0x55aff2789c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55aff278fa69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55aff78b99a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55aff37a9a00 content::RunNamedProcessTypeMain()
+#7 0x55aff37aa2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55aff37b3f24 service_manager::Main()
+#9 0x55aff37a8f14 content::ContentMain()
+#10 0x55aff78b89b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55aff78b8a42 headless::HeadlessBrowserMain()
+#12 0x55aff37b0f9d headless::HeadlessShellMain()
+#13 0x55aff1e0f1ac ChromeMain
+#14 0x7f2da10de2e1 __libc_start_main
+#15 0x55aff1e0f02a _start
+
+Received signal 6
+#0 0x55aff3a6eb0c base::debug::StackTrace::StackTrace()
+#1 0x55aff3a6e671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f2da703b0c0 <unknown>
+#3 0x7f2da10f0fff gsignal
+#4 0x7f2da10f242a abort
+#5 0x55aff3a6d105 base::debug::BreakDebugger()
+#6 0x55aff3a87bca logging::LogMessage::~LogMessage()
+#7 0x55aff2b172b1 content::ZygoteHostImpl::Init()
+#8 0x55aff2789c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55aff278fa69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55aff78b99a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55aff37a9a00 content::RunNamedProcessTypeMain()
+#12 0x55aff37aa2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55aff37b3f24 service_manager::Main()
+#14 0x55aff37a8f14 content::ContentMain()
+#15 0x55aff78b89b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55aff78b8a42 headless::HeadlessBrowserMain()
+#17 0x55aff37b0f9d headless::HeadlessShellMain()
+#18 0x55aff1e0f1ac ChromeMain
+#19 0x7f2da10de2e1 __libc_start_main
+#20 0x55aff1e0f02a _start
+  r8: 0000000000000000  r9: 00007ffce70b9e60 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffce70ba558 r13: 0000000000000161 r14: 00007ffce70ba560 r15: 00007ffce70ba0f9
+  di: 0000000000000002  si: 00007ffce70b9e60  bp: 00007ffce70ba0a0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f2da10f0fff  sp: 00007ffce70b9ed8
+  ip: 00007f2da10f0fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -152,11 +250,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Battery Status API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## Battery Status API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/battery/) (23 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/battery/)
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
 - Latest published version: [http://www.w3.org/TR/battery-status/](http://www.w3.org/TR/battery-status/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
@@ -165,9 +263,124 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020536.467310:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55b641e5cb0c base::debug::StackTrace::StackTrace()
+#1 0x55b641e75780 logging::LogMessage::~LogMessage()
+#2 0x55b640f052b1 content::ZygoteHostImpl::Init()
+#3 0x55b640b77c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55b640b7da69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55b645ca79a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55b641b97a00 content::RunNamedProcessTypeMain()
+#7 0x55b641b982e8 content::ContentMainRunnerImpl::Run()
+#8 0x55b641ba1f24 service_manager::Main()
+#9 0x55b641b96f14 content::ContentMain()
+#10 0x55b645ca69b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55b645ca6a42 headless::HeadlessBrowserMain()
+#12 0x55b641b9ef9d headless::HeadlessShellMain()
+#13 0x55b6401fd1ac ChromeMain
+#14 0x7fe5b19cd2e1 __libc_start_main
+#15 0x55b6401fd02a _start
+
+Received signal 6
+#0 0x55b641e5cb0c base::debug::StackTrace::StackTrace()
+#1 0x55b641e5c671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fe5b792a0c0 <unknown>
+#3 0x7fe5b19dffff gsignal
+#4 0x7fe5b19e142a abort
+#5 0x55b641e5b105 base::debug::BreakDebugger()
+#6 0x55b641e75bca logging::LogMessage::~LogMessage()
+#7 0x55b640f052b1 content::ZygoteHostImpl::Init()
+#8 0x55b640b77c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55b640b7da69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55b645ca79a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55b641b97a00 content::RunNamedProcessTypeMain()
+#12 0x55b641b982e8 content::ContentMainRunnerImpl::Run()
+#13 0x55b641ba1f24 service_manager::Main()
+#14 0x55b641b96f14 content::ContentMain()
+#15 0x55b645ca69b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55b645ca6a42 headless::HeadlessBrowserMain()
+#17 0x55b641b9ef9d headless::HeadlessShellMain()
+#18 0x55b6401fd1ac ChromeMain
+#19 0x7fe5b19cd2e1 __libc_start_main
+#20 0x55b6401fd02a _start
+  r8: 0000000000000000  r9: 00007ffd36ab0d40 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd36ab1438 r13: 0000000000000161 r14: 00007ffd36ab1440 r15: 00007ffd36ab0fd9
+  di: 0000000000000002  si: 00007ffd36ab0d40  bp: 00007ffd36ab0f80  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fe5b19dffff  sp: 00007ffd36ab0db8
+  ip: 00007fe5b19dffff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020536.467310:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55b641e5cb0c base::debug::StackTrace::StackTrace()
+#1 0x55b641e75780 logging::LogMessage::~LogMessage()
+#2 0x55b640f052b1 content::ZygoteHostImpl::Init()
+#3 0x55b640b77c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55b640b7da69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55b645ca79a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55b641b97a00 content::RunNamedProcessTypeMain()
+#7 0x55b641b982e8 content::ContentMainRunnerImpl::Run()
+#8 0x55b641ba1f24 service_manager::Main()
+#9 0x55b641b96f14 content::ContentMain()
+#10 0x55b645ca69b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55b645ca6a42 headless::HeadlessBrowserMain()
+#12 0x55b641b9ef9d headless::HeadlessShellMain()
+#13 0x55b6401fd1ac ChromeMain
+#14 0x7fe5b19cd2e1 __libc_start_main
+#15 0x55b6401fd02a _start
+
+Received signal 6
+#0 0x55b641e5cb0c base::debug::StackTrace::StackTrace()
+#1 0x55b641e5c671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fe5b792a0c0 <unknown>
+#3 0x7fe5b19dffff gsignal
+#4 0x7fe5b19e142a abort
+#5 0x55b641e5b105 base::debug::BreakDebugger()
+#6 0x55b641e75bca logging::LogMessage::~LogMessage()
+#7 0x55b640f052b1 content::ZygoteHostImpl::Init()
+#8 0x55b640b77c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55b640b7da69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55b645ca79a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55b641b97a00 content::RunNamedProcessTypeMain()
+#12 0x55b641b982e8 content::ContentMainRunnerImpl::Run()
+#13 0x55b641ba1f24 service_manager::Main()
+#14 0x55b641b96f14 content::ContentMain()
+#15 0x55b645ca69b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55b645ca6a42 headless::HeadlessBrowserMain()
+#17 0x55b641b9ef9d headless::HeadlessShellMain()
+#18 0x55b6401fd1ac ChromeMain
+#19 0x7fe5b19cd2e1 __libc_start_main
+#20 0x55b6401fd02a _start
+  r8: 0000000000000000  r9: 00007ffd36ab0d40 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd36ab1438 r13: 0000000000000161 r14: 00007ffd36ab1440 r15: 00007ffd36ab0fd9
+  di: 0000000000000002  si: 00007ffd36ab0d40  bp: 00007ffd36ab0f80  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fe5b19dffff  sp: 00007ffd36ab0db8
+  ip: 00007fe5b19dffff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -179,11 +392,11 @@ Informative references to this spec from:
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 
 
-## Beacon {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Beacon {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/) (23 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/)
 - Editor's Draft: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
 - Latest published version: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-beacon-20170413/)
@@ -192,13 +405,128 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Navigator`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020537.428395:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55572b978b0c base::debug::StackTrace::StackTrace()
+#1 0x55572b991780 logging::LogMessage::~LogMessage()
+#2 0x55572aa212b1 content::ZygoteHostImpl::Init()
+#3 0x55572a693c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55572a699a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55572f7c39a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55572b6b3a00 content::RunNamedProcessTypeMain()
+#7 0x55572b6b42e8 content::ContentMainRunnerImpl::Run()
+#8 0x55572b6bdf24 service_manager::Main()
+#9 0x55572b6b2f14 content::ContentMain()
+#10 0x55572f7c29b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55572f7c2a42 headless::HeadlessBrowserMain()
+#12 0x55572b6baf9d headless::HeadlessShellMain()
+#13 0x555729d191ac ChromeMain
+#14 0x7ff6e83ec2e1 __libc_start_main
+#15 0x555729d1902a _start
+
+Received signal 6
+#0 0x55572b978b0c base::debug::StackTrace::StackTrace()
+#1 0x55572b978671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7ff6ee3490c0 <unknown>
+#3 0x7ff6e83fefff gsignal
+#4 0x7ff6e840042a abort
+#5 0x55572b977105 base::debug::BreakDebugger()
+#6 0x55572b991bca logging::LogMessage::~LogMessage()
+#7 0x55572aa212b1 content::ZygoteHostImpl::Init()
+#8 0x55572a693c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55572a699a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55572f7c39a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55572b6b3a00 content::RunNamedProcessTypeMain()
+#12 0x55572b6b42e8 content::ContentMainRunnerImpl::Run()
+#13 0x55572b6bdf24 service_manager::Main()
+#14 0x55572b6b2f14 content::ContentMain()
+#15 0x55572f7c29b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55572f7c2a42 headless::HeadlessBrowserMain()
+#17 0x55572b6baf9d headless::HeadlessShellMain()
+#18 0x555729d191ac ChromeMain
+#19 0x7ff6e83ec2e1 __libc_start_main
+#20 0x555729d1902a _start
+  r8: 0000000000000000  r9: 00007ffeca130c40 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffeca131338 r13: 0000000000000161 r14: 00007ffeca131340 r15: 00007ffeca130ed9
+  di: 0000000000000002  si: 00007ffeca130c40  bp: 00007ffeca130e80  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007ff6e83fefff  sp: 00007ffeca130cb8
+  ip: 00007ff6e83fefff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020537.428395:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55572b978b0c base::debug::StackTrace::StackTrace()
+#1 0x55572b991780 logging::LogMessage::~LogMessage()
+#2 0x55572aa212b1 content::ZygoteHostImpl::Init()
+#3 0x55572a693c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55572a699a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55572f7c39a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55572b6b3a00 content::RunNamedProcessTypeMain()
+#7 0x55572b6b42e8 content::ContentMainRunnerImpl::Run()
+#8 0x55572b6bdf24 service_manager::Main()
+#9 0x55572b6b2f14 content::ContentMain()
+#10 0x55572f7c29b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55572f7c2a42 headless::HeadlessBrowserMain()
+#12 0x55572b6baf9d headless::HeadlessShellMain()
+#13 0x555729d191ac ChromeMain
+#14 0x7ff6e83ec2e1 __libc_start_main
+#15 0x555729d1902a _start
+
+Received signal 6
+#0 0x55572b978b0c base::debug::StackTrace::StackTrace()
+#1 0x55572b978671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7ff6ee3490c0 <unknown>
+#3 0x7ff6e83fefff gsignal
+#4 0x7ff6e840042a abort
+#5 0x55572b977105 base::debug::BreakDebugger()
+#6 0x55572b991bca logging::LogMessage::~LogMessage()
+#7 0x55572aa212b1 content::ZygoteHostImpl::Init()
+#8 0x55572a693c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55572a699a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55572f7c39a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55572b6b3a00 content::RunNamedProcessTypeMain()
+#12 0x55572b6b42e8 content::ContentMainRunnerImpl::Run()
+#13 0x55572b6bdf24 service_manager::Main()
+#14 0x55572b6b2f14 content::ContentMain()
+#15 0x55572f7c29b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55572f7c2a42 headless::HeadlessBrowserMain()
+#17 0x55572b6baf9d headless::HeadlessShellMain()
+#18 0x555729d191ac ChromeMain
+#19 0x7ff6e83ec2e1 __libc_start_main
+#20 0x555729d1902a _start
+  r8: 0000000000000000  r9: 00007ffeca130c40 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffeca131338 r13: 0000000000000161 r14: 00007ffeca131340 r15: 00007ffeca130ed9
+  di: 0000000000000002  si: 00007ffeca130c40  bp: 00007ffeca130e80  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007ff6e83fefff  sp: 00007ffeca130cb8
+  ip: 00007ff6e83fefff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
@@ -248,9 +576,7 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Pointer Events](https://w3c.github.io/pointerevents/)
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -292,7 +618,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://console.spec.whatwg.org/) (1 April 2018)
+- Crawled version: [Living Standard](https://console.spec.whatwg.org/) (9 May 2018)
 - Repository: [GitHub whatwg/console](https://github.com/whatwg/console)
 - Shortname: no shortname
 
@@ -340,9 +666,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 
 Informative references to this spec from:
 
@@ -373,29 +697,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## ContentEditable {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
+## Cooperative Scheduling of Background Tasks {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (15 September 2017)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- No WebIDL definitions found
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Cooperative Scheduling of Background Tasks {data-spec=true data-anomaly=true data-unknownIdlNames=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (30 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
 - Latest published version: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
@@ -404,7 +710,119 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020640.229693:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x558811165b0c base::debug::StackTrace::StackTrace()
+#1 0x55881117e780 logging::LogMessage::~LogMessage()
+#2 0x55881020e2b1 content::ZygoteHostImpl::Init()
+#3 0x55880fe80c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55880fe86a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x558814fb09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x558810ea0a00 content::RunNamedProcessTypeMain()
+#7 0x558810ea12e8 content::ContentMainRunnerImpl::Run()
+#8 0x558810eaaf24 service_manager::Main()
+#9 0x558810e9ff14 content::ContentMain()
+#10 0x558814faf9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x558814fafa42 headless::HeadlessBrowserMain()
+#12 0x558810ea7f9d headless::HeadlessShellMain()
+#13 0x55880f5061ac ChromeMain
+#14 0x7f66e19f62e1 __libc_start_main
+#15 0x55880f50602a _start
+
+Received signal 6
+#0 0x558811165b0c base::debug::StackTrace::StackTrace()
+#1 0x558811165671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f66e79530c0 <unknown>
+#3 0x7f66e1a08fff gsignal
+#4 0x7f66e1a0a42a abort
+#5 0x558811164105 base::debug::BreakDebugger()
+#6 0x55881117ebca logging::LogMessage::~LogMessage()
+#7 0x55881020e2b1 content::ZygoteHostImpl::Init()
+#8 0x55880fe80c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55880fe86a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x558814fb09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x558810ea0a00 content::RunNamedProcessTypeMain()
+#12 0x558810ea12e8 content::ContentMainRunnerImpl::Run()
+#13 0x558810eaaf24 service_manager::Main()
+#14 0x558810e9ff14 content::ContentMain()
+#15 0x558814faf9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x558814fafa42 headless::HeadlessBrowserMain()
+#17 0x558810ea7f9d headless::HeadlessShellMain()
+#18 0x55880f5061ac ChromeMain
+#19 0x7f66e19f62e1 __libc_start_main
+#20 0x55880f50602a _start
+  r8: 0000000000000000  r9: 00007fff3df37df0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff3df384e8 r13: 0000000000000161 r14: 00007fff3df384f0 r15: 00007fff3df38089
+  di: 0000000000000002  si: 00007fff3df37df0  bp: 00007fff3df38030  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f66e1a08fff  sp: 00007fff3df37e68
+  ip: 00007f66e1a08fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020640.229693:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x558811165b0c base::debug::StackTrace::StackTrace()
+#1 0x55881117e780 logging::LogMessage::~LogMessage()
+#2 0x55881020e2b1 content::ZygoteHostImpl::Init()
+#3 0x55880fe80c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55880fe86a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x558814fb09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x558810ea0a00 content::RunNamedProcessTypeMain()
+#7 0x558810ea12e8 content::ContentMainRunnerImpl::Run()
+#8 0x558810eaaf24 service_manager::Main()
+#9 0x558810e9ff14 content::ContentMain()
+#10 0x558814faf9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x558814fafa42 headless::HeadlessBrowserMain()
+#12 0x558810ea7f9d headless::HeadlessShellMain()
+#13 0x55880f5061ac ChromeMain
+#14 0x7f66e19f62e1 __libc_start_main
+#15 0x55880f50602a _start
+
+Received signal 6
+#0 0x558811165b0c base::debug::StackTrace::StackTrace()
+#1 0x558811165671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f66e79530c0 <unknown>
+#3 0x7f66e1a08fff gsignal
+#4 0x7f66e1a0a42a abort
+#5 0x558811164105 base::debug::BreakDebugger()
+#6 0x55881117ebca logging::LogMessage::~LogMessage()
+#7 0x55881020e2b1 content::ZygoteHostImpl::Init()
+#8 0x55880fe80c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55880fe86a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x558814fb09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x558810ea0a00 content::RunNamedProcessTypeMain()
+#12 0x558810ea12e8 content::ContentMainRunnerImpl::Run()
+#13 0x558810eaaf24 service_manager::Main()
+#14 0x558810e9ff14 content::ContentMain()
+#15 0x558814faf9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x558814fafa42 headless::HeadlessBrowserMain()
+#17 0x558810ea7f9d headless::HeadlessShellMain()
+#18 0x55880f5061ac ChromeMain
+#19 0x7f66e19f62e1 __libc_start_main
+#20 0x55880f50602a _start
+  r8: 0000000000000000  r9: 00007fff3df37df0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff3df384e8 r13: 0000000000000161 r14: 00007fff3df384f0 r15: 00007fff3df38089
+  di: 0000000000000002  si: 00007fff3df37df0  bp: 00007fff3df38030  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f66e1a08fff  sp: 00007fff3df37e68
+  ip: 00007f66e1a08fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at ChildProcess.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:245:60)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -586,9 +1004,7 @@ Normative references to this spec from:
 
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 
-Informative references to this spec from:
-
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+No informative reference to this spec from other specs.
 
 
 ## CSS Font Loading Module Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -623,7 +1039,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (6 May 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (9 May 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/)
@@ -768,10 +1184,6 @@ Normative references to this spec from:
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
-
 Informative references to this spec from:
 
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
@@ -804,7 +1216,7 @@ Although they do not, the following specs should also normatively reference this
 
 - [Console Standard](https://console.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 
 Informative references to this spec from:
 
@@ -900,9 +1312,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
@@ -979,7 +1389,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values/) (7 May 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values/) (9 May 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-values/](https://drafts.csswg.org/css-values/)
 - Latest published version: [https://www.w3.org/TR/css-values-3/](https://www.w3.org/TR/css-values-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -1017,7 +1427,6 @@ Normative references to this spec from:
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -1089,48 +1498,13 @@ Normative references to this spec from:
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 
 Informative references to this spec from:
 
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
-
-
-## Custom Elements {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/custom/) (16 March 2018)
-- Editor's Draft: [https://w3c.github.io/webcomponents/spec/custom/](https://w3c.github.io/webcomponents/spec/custom/)
-- Latest published version: [https://www.w3.org/TR/custom-elements/](https://www.w3.org/TR/custom-elements/)
-- Latest published status: [Retired](https://www.w3.org/TR/2018/NOTE-custom-elements-20180503/)
-- Repository: [GitHub w3c/webcomponents](https://github.com/w3c/webcomponents)
-- Shortname: custom-elements
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `Window`
-- Missing references for links: 
-     * [`https://w3c.github.io/aria/aria/aria.html`](https://w3c.github.io/aria/aria/aria.html)
-     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/)
-     * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-
-No informative reference to this spec from other specs.
 
 
 ## DeviceOrientation Event Specification {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -1157,15 +1531,14 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## DOM Parsing and Serialization {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/) (and similar APIs)
+- Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/)
 - Editor's Draft: [https://w3c.github.io/DOM-Parsing/](https://w3c.github.io/DOM-Parsing/)
 - Latest published version: [http://www.w3.org/TR/DOM-Parsing/](http://www.w3.org/TR/DOM-Parsing/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
@@ -1174,9 +1547,124 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020455.239628:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55ff4584fb0c base::debug::StackTrace::StackTrace()
+#1 0x55ff45868780 logging::LogMessage::~LogMessage()
+#2 0x55ff448f82b1 content::ZygoteHostImpl::Init()
+#3 0x55ff4456ac65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55ff44570a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55ff4969a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55ff4558aa00 content::RunNamedProcessTypeMain()
+#7 0x55ff4558b2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55ff45594f24 service_manager::Main()
+#9 0x55ff45589f14 content::ContentMain()
+#10 0x55ff496999b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55ff49699a42 headless::HeadlessBrowserMain()
+#12 0x55ff45591f9d headless::HeadlessShellMain()
+#13 0x55ff43bf01ac ChromeMain
+#14 0x7fcf9ef3a2e1 __libc_start_main
+#15 0x55ff43bf002a _start
+
+Received signal 6
+#0 0x55ff4584fb0c base::debug::StackTrace::StackTrace()
+#1 0x55ff4584f671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fcfa4e970c0 <unknown>
+#3 0x7fcf9ef4cfff gsignal
+#4 0x7fcf9ef4e42a abort
+#5 0x55ff4584e105 base::debug::BreakDebugger()
+#6 0x55ff45868bca logging::LogMessage::~LogMessage()
+#7 0x55ff448f82b1 content::ZygoteHostImpl::Init()
+#8 0x55ff4456ac65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55ff44570a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55ff4969a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55ff4558aa00 content::RunNamedProcessTypeMain()
+#12 0x55ff4558b2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55ff45594f24 service_manager::Main()
+#14 0x55ff45589f14 content::ContentMain()
+#15 0x55ff496999b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55ff49699a42 headless::HeadlessBrowserMain()
+#17 0x55ff45591f9d headless::HeadlessShellMain()
+#18 0x55ff43bf01ac ChromeMain
+#19 0x7fcf9ef3a2e1 __libc_start_main
+#20 0x55ff43bf002a _start
+  r8: 0000000000000000  r9: 00007ffedeb71680 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffedeb71d78 r13: 0000000000000161 r14: 00007ffedeb71d80 r15: 00007ffedeb71919
+  di: 0000000000000002  si: 00007ffedeb71680  bp: 00007ffedeb718c0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fcf9ef4cfff  sp: 00007ffedeb716f8
+  ip: 00007fcf9ef4cfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020455.239628:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55ff4584fb0c base::debug::StackTrace::StackTrace()
+#1 0x55ff45868780 logging::LogMessage::~LogMessage()
+#2 0x55ff448f82b1 content::ZygoteHostImpl::Init()
+#3 0x55ff4456ac65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55ff44570a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55ff4969a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55ff4558aa00 content::RunNamedProcessTypeMain()
+#7 0x55ff4558b2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55ff45594f24 service_manager::Main()
+#9 0x55ff45589f14 content::ContentMain()
+#10 0x55ff496999b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55ff49699a42 headless::HeadlessBrowserMain()
+#12 0x55ff45591f9d headless::HeadlessShellMain()
+#13 0x55ff43bf01ac ChromeMain
+#14 0x7fcf9ef3a2e1 __libc_start_main
+#15 0x55ff43bf002a _start
+
+Received signal 6
+#0 0x55ff4584fb0c base::debug::StackTrace::StackTrace()
+#1 0x55ff4584f671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fcfa4e970c0 <unknown>
+#3 0x7fcf9ef4cfff gsignal
+#4 0x7fcf9ef4e42a abort
+#5 0x55ff4584e105 base::debug::BreakDebugger()
+#6 0x55ff45868bca logging::LogMessage::~LogMessage()
+#7 0x55ff448f82b1 content::ZygoteHostImpl::Init()
+#8 0x55ff4456ac65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55ff44570a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55ff4969a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55ff4558aa00 content::RunNamedProcessTypeMain()
+#12 0x55ff4558b2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55ff45594f24 service_manager::Main()
+#14 0x55ff45589f14 content::ContentMain()
+#15 0x55ff496999b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55ff49699a42 headless::HeadlessBrowserMain()
+#17 0x55ff45591f9d headless::HeadlessShellMain()
+#18 0x55ff43bf01ac ChromeMain
+#19 0x7fcf9ef3a2e1 __libc_start_main
+#20 0x55ff43bf002a _start
+  r8: 0000000000000000  r9: 00007ffedeb71680 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffedeb71d78 r13: 0000000000000161 r14: 00007ffedeb71d80 r15: 00007ffedeb71919
+  di: 0000000000000002  si: 00007ffedeb71680  bp: 00007ffedeb718c0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fcf9ef4cfff  sp: 00007ffedeb716f8
+  ip: 00007fcf9ef4cfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1217,14 +1705,11 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML 5.3](https://w3c.github.io/html/)
-- [Push API](https://w3c.github.io/push-api/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web NFC API](https://w3c.github.io/web-nfc/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -1278,20 +1763,18 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 
 
 ## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (27 April 2018)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (9 May 2018)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -1306,7 +1789,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Beacon](https://w3c.github.io/beacon/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
@@ -1317,17 +1799,12 @@ Normative references to this spec from:
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -1337,8 +1814,6 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -1390,15 +1865,11 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Push API](https://w3c.github.io/push-api/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 
@@ -1456,22 +1927,19 @@ Normative references to this spec from:
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 Informative references to this spec from:
 
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## Gamepad {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Gamepad {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (08 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-gamepad-20180508/)
@@ -1480,7 +1948,124 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Navigator`, `Window`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020614.962064:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5653e79dcb0c base::debug::StackTrace::StackTrace()
+#1 0x5653e79f5780 logging::LogMessage::~LogMessage()
+#2 0x5653e6a852b1 content::ZygoteHostImpl::Init()
+#3 0x5653e66f7c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5653e66fda69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5653eb8279a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5653e7717a00 content::RunNamedProcessTypeMain()
+#7 0x5653e77182e8 content::ContentMainRunnerImpl::Run()
+#8 0x5653e7721f24 service_manager::Main()
+#9 0x5653e7716f14 content::ContentMain()
+#10 0x5653eb8269b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5653eb826a42 headless::HeadlessBrowserMain()
+#12 0x5653e771ef9d headless::HeadlessShellMain()
+#13 0x5653e5d7d1ac ChromeMain
+#14 0x7f70cb9c22e1 __libc_start_main
+#15 0x5653e5d7d02a _start
+
+Received signal 6
+#0 0x5653e79dcb0c base::debug::StackTrace::StackTrace()
+#1 0x5653e79dc671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f70d191f0c0 <unknown>
+#3 0x7f70cb9d4fff gsignal
+#4 0x7f70cb9d642a abort
+#5 0x5653e79db105 base::debug::BreakDebugger()
+#6 0x5653e79f5bca logging::LogMessage::~LogMessage()
+#7 0x5653e6a852b1 content::ZygoteHostImpl::Init()
+#8 0x5653e66f7c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5653e66fda69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5653eb8279a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5653e7717a00 content::RunNamedProcessTypeMain()
+#12 0x5653e77182e8 content::ContentMainRunnerImpl::Run()
+#13 0x5653e7721f24 service_manager::Main()
+#14 0x5653e7716f14 content::ContentMain()
+#15 0x5653eb8269b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5653eb826a42 headless::HeadlessBrowserMain()
+#17 0x5653e771ef9d headless::HeadlessShellMain()
+#18 0x5653e5d7d1ac ChromeMain
+#19 0x7f70cb9c22e1 __libc_start_main
+#20 0x5653e5d7d02a _start
+  r8: 0000000000000000  r9: 00007fff0445ddf0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff0445e4e8 r13: 0000000000000161 r14: 00007fff0445e4f0 r15: 00007fff0445e089
+  di: 0000000000000002  si: 00007fff0445ddf0  bp: 00007fff0445e030  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f70cb9d4fff  sp: 00007fff0445de68
+  ip: 00007f70cb9d4fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020614.962064:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5653e79dcb0c base::debug::StackTrace::StackTrace()
+#1 0x5653e79f5780 logging::LogMessage::~LogMessage()
+#2 0x5653e6a852b1 content::ZygoteHostImpl::Init()
+#3 0x5653e66f7c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5653e66fda69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5653eb8279a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5653e7717a00 content::RunNamedProcessTypeMain()
+#7 0x5653e77182e8 content::ContentMainRunnerImpl::Run()
+#8 0x5653e7721f24 service_manager::Main()
+#9 0x5653e7716f14 content::ContentMain()
+#10 0x5653eb8269b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5653eb826a42 headless::HeadlessBrowserMain()
+#12 0x5653e771ef9d headless::HeadlessShellMain()
+#13 0x5653e5d7d1ac ChromeMain
+#14 0x7f70cb9c22e1 __libc_start_main
+#15 0x5653e5d7d02a _start
+
+Received signal 6
+#0 0x5653e79dcb0c base::debug::StackTrace::StackTrace()
+#1 0x5653e79dc671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f70d191f0c0 <unknown>
+#3 0x7f70cb9d4fff gsignal
+#4 0x7f70cb9d642a abort
+#5 0x5653e79db105 base::debug::BreakDebugger()
+#6 0x5653e79f5bca logging::LogMessage::~LogMessage()
+#7 0x5653e6a852b1 content::ZygoteHostImpl::Init()
+#8 0x5653e66f7c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5653e66fda69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5653eb8279a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5653e7717a00 content::RunNamedProcessTypeMain()
+#12 0x5653e77182e8 content::ContentMainRunnerImpl::Run()
+#13 0x5653e7721f24 service_manager::Main()
+#14 0x5653e7716f14 content::ContentMain()
+#15 0x5653eb8269b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5653eb826a42 headless::HeadlessBrowserMain()
+#17 0x5653e771ef9d headless::HeadlessShellMain()
+#18 0x5653e5d7d1ac ChromeMain
+#19 0x7f70cb9c22e1 __libc_start_main
+#20 0x5653e5d7d02a _start
+  r8: 0000000000000000  r9: 00007fff0445ddf0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff0445e4e8 r13: 0000000000000161 r14: 00007fff0445e4f0 r15: 00007fff0445e089
+  di: 0000000000000002  si: 00007fff0445ddf0  bp: 00007fff0445e030  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f70cb9d4fff  sp: 00007fff0445de68
+  ip: 00007f70cb9d4fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1502,7 +2087,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `EventHandler`, `Window`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
      * [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/), related reference "PERMISSIONS" uses URL [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/)
@@ -1564,7 +2149,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AbortSignal`, `Window`
+- Unknown WebIDL names used: `AbortSignal`, `DOMHighResTimeStamp`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1635,11 +2220,11 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## High Resolution Time Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## High Resolution Time Level 3 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/) (03 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/)
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
 - Latest published version: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -1648,40 +2233,138 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`, `WindowOrWorkerGlobalScope`
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-- Missing references for links: 
-     * [`https://www.w3.org/TR/hr-time-1/`](https://www.w3.org/TR/hr-time-1/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020614.641172:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55f12fe77b0c base::debug::StackTrace::StackTrace()
+#1 0x55f12fe90780 logging::LogMessage::~LogMessage()
+#2 0x55f12ef202b1 content::ZygoteHostImpl::Init()
+#3 0x55f12eb92c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55f12eb98a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55f133cc29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55f12fbb2a00 content::RunNamedProcessTypeMain()
+#7 0x55f12fbb32e8 content::ContentMainRunnerImpl::Run()
+#8 0x55f12fbbcf24 service_manager::Main()
+#9 0x55f12fbb1f14 content::ContentMain()
+#10 0x55f133cc19b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55f133cc1a42 headless::HeadlessBrowserMain()
+#12 0x55f12fbb9f9d headless::HeadlessShellMain()
+#13 0x55f12e2181ac ChromeMain
+#14 0x7fb3c6c132e1 __libc_start_main
+#15 0x55f12e21802a _start
+
+Received signal 6
+#0 0x55f12fe77b0c base::debug::StackTrace::StackTrace()
+#1 0x55f12fe77671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fb3ccb700c0 <unknown>
+#3 0x7fb3c6c25fff gsignal
+#4 0x7fb3c6c2742a abort
+#5 0x55f12fe76105 base::debug::BreakDebugger()
+#6 0x55f12fe90bca logging::LogMessage::~LogMessage()
+#7 0x55f12ef202b1 content::ZygoteHostImpl::Init()
+#8 0x55f12eb92c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55f12eb98a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55f133cc29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55f12fbb2a00 content::RunNamedProcessTypeMain()
+#12 0x55f12fbb32e8 content::ContentMainRunnerImpl::Run()
+#13 0x55f12fbbcf24 service_manager::Main()
+#14 0x55f12fbb1f14 content::ContentMain()
+#15 0x55f133cc19b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55f133cc1a42 headless::HeadlessBrowserMain()
+#17 0x55f12fbb9f9d headless::HeadlessShellMain()
+#18 0x55f12e2181ac ChromeMain
+#19 0x7fb3c6c132e1 __libc_start_main
+#20 0x55f12e21802a _start
+  r8: 0000000000000000  r9: 00007fff70025a60 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff70026158 r13: 0000000000000161 r14: 00007fff70026160 r15: 00007fff70025cf9
+  di: 0000000000000002  si: 00007fff70025a60  bp: 00007fff70025ca0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fb3c6c25fff  sp: 00007fff70025ad8
+  ip: 00007fb3c6c25fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020614.641172:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55f12fe77b0c base::debug::StackTrace::StackTrace()
+#1 0x55f12fe90780 logging::LogMessage::~LogMessage()
+#2 0x55f12ef202b1 content::ZygoteHostImpl::Init()
+#3 0x55f12eb92c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55f12eb98a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55f133cc29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55f12fbb2a00 content::RunNamedProcessTypeMain()
+#7 0x55f12fbb32e8 content::ContentMainRunnerImpl::Run()
+#8 0x55f12fbbcf24 service_manager::Main()
+#9 0x55f12fbb1f14 content::ContentMain()
+#10 0x55f133cc19b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55f133cc1a42 headless::HeadlessBrowserMain()
+#12 0x55f12fbb9f9d headless::HeadlessShellMain()
+#13 0x55f12e2181ac ChromeMain
+#14 0x7fb3c6c132e1 __libc_start_main
+#15 0x55f12e21802a _start
+
+Received signal 6
+#0 0x55f12fe77b0c base::debug::StackTrace::StackTrace()
+#1 0x55f12fe77671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fb3ccb700c0 <unknown>
+#3 0x7fb3c6c25fff gsignal
+#4 0x7fb3c6c2742a abort
+#5 0x55f12fe76105 base::debug::BreakDebugger()
+#6 0x55f12fe90bca logging::LogMessage::~LogMessage()
+#7 0x55f12ef202b1 content::ZygoteHostImpl::Init()
+#8 0x55f12eb92c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55f12eb98a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55f133cc29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55f12fbb2a00 content::RunNamedProcessTypeMain()
+#12 0x55f12fbb32e8 content::ContentMainRunnerImpl::Run()
+#13 0x55f12fbbcf24 service_manager::Main()
+#14 0x55f12fbb1f14 content::ContentMain()
+#15 0x55f133cc19b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55f133cc1a42 headless::HeadlessBrowserMain()
+#17 0x55f12fbb9f9d headless::HeadlessShellMain()
+#18 0x55f12e2181ac ChromeMain
+#19 0x7fb3c6c132e1 __libc_start_main
+#20 0x55f12e21802a _start
+  r8: 0000000000000000  r9: 00007fff70025a60 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff70026158 r13: 0000000000000161 r14: 00007fff70026160 r15: 00007fff70025cf9
+  di: 0000000000000002  si: 00007fff70025a60  bp: 00007fff70025ca0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fb3c6c25fff  sp: 00007fff70025ad8
+  ip: 00007fb3c6c25fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
-- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [HTML 5.3](https://w3c.github.io/html/)
-- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
-- [Server Timing](https://w3c.github.io/server-timing/)
-- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
 
@@ -1735,16 +2418,12 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
-- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Battery Status API](https://w3c.github.io/battery/)
-- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
@@ -1760,9 +2439,7 @@ Normative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -1774,62 +2451,33 @@ Normative references to this spec from:
 - [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
-- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [Network Information API](https://wicg.github.io/netinfo/)
-- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Preload](https://w3c.github.io/preload/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Selection API](https://w3c.github.io/selection-api/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -1837,15 +2485,11 @@ Normative references to this spec from:
 - [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
-- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Notifications](https://www.w3.org/TR/notifications/)
-- [Web Share API](https://wicg.github.io/web-share/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -1854,27 +2498,18 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Battery Status API](https://w3c.github.io/battery/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
-- [Push API](https://w3c.github.io/push-api/)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 ## HTML Canvas 2D Context {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
@@ -1903,13 +2538,11 @@ Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
@@ -1923,7 +2556,6 @@ Normative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
@@ -1933,57 +2565,36 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [Network Information API](https://wicg.github.io/netinfo/)
-- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Selection API](https://w3c.github.io/selection-api/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
-- [Web Share API](https://wicg.github.io/web-share/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -1993,30 +2604,20 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Battery Status API](https://w3c.github.io/battery/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Push API](https://w3c.github.io/push-api/)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## HTML Media Capture {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## HTML Media Capture {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/) (01 February 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/)
 - Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
 - Latest published version: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
@@ -2025,7 +2626,124 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLInputElement`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020613.996030:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x562bd6030b0c base::debug::StackTrace::StackTrace()
+#1 0x562bd6049780 logging::LogMessage::~LogMessage()
+#2 0x562bd50d92b1 content::ZygoteHostImpl::Init()
+#3 0x562bd4d4bc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x562bd4d51a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x562bd9e7b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x562bd5d6ba00 content::RunNamedProcessTypeMain()
+#7 0x562bd5d6c2e8 content::ContentMainRunnerImpl::Run()
+#8 0x562bd5d75f24 service_manager::Main()
+#9 0x562bd5d6af14 content::ContentMain()
+#10 0x562bd9e7a9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x562bd9e7aa42 headless::HeadlessBrowserMain()
+#12 0x562bd5d72f9d headless::HeadlessShellMain()
+#13 0x562bd43d11ac ChromeMain
+#14 0x7fc9451622e1 __libc_start_main
+#15 0x562bd43d102a _start
+
+Received signal 6
+#0 0x562bd6030b0c base::debug::StackTrace::StackTrace()
+#1 0x562bd6030671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fc94b0bf0c0 <unknown>
+#3 0x7fc945174fff gsignal
+#4 0x7fc94517642a abort
+#5 0x562bd602f105 base::debug::BreakDebugger()
+#6 0x562bd6049bca logging::LogMessage::~LogMessage()
+#7 0x562bd50d92b1 content::ZygoteHostImpl::Init()
+#8 0x562bd4d4bc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x562bd4d51a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x562bd9e7b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x562bd5d6ba00 content::RunNamedProcessTypeMain()
+#12 0x562bd5d6c2e8 content::ContentMainRunnerImpl::Run()
+#13 0x562bd5d75f24 service_manager::Main()
+#14 0x562bd5d6af14 content::ContentMain()
+#15 0x562bd9e7a9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x562bd9e7aa42 headless::HeadlessBrowserMain()
+#17 0x562bd5d72f9d headless::HeadlessShellMain()
+#18 0x562bd43d11ac ChromeMain
+#19 0x7fc9451622e1 __libc_start_main
+#20 0x562bd43d102a _start
+  r8: 0000000000000000  r9: 00007fff419f8e60 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff419f9558 r13: 0000000000000161 r14: 00007fff419f9560 r15: 00007fff419f90f9
+  di: 0000000000000002  si: 00007fff419f8e60  bp: 00007fff419f90a0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fc945174fff  sp: 00007fff419f8ed8
+  ip: 00007fc945174fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020613.996030:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x562bd6030b0c base::debug::StackTrace::StackTrace()
+#1 0x562bd6049780 logging::LogMessage::~LogMessage()
+#2 0x562bd50d92b1 content::ZygoteHostImpl::Init()
+#3 0x562bd4d4bc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x562bd4d51a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x562bd9e7b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x562bd5d6ba00 content::RunNamedProcessTypeMain()
+#7 0x562bd5d6c2e8 content::ContentMainRunnerImpl::Run()
+#8 0x562bd5d75f24 service_manager::Main()
+#9 0x562bd5d6af14 content::ContentMain()
+#10 0x562bd9e7a9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x562bd9e7aa42 headless::HeadlessBrowserMain()
+#12 0x562bd5d72f9d headless::HeadlessShellMain()
+#13 0x562bd43d11ac ChromeMain
+#14 0x7fc9451622e1 __libc_start_main
+#15 0x562bd43d102a _start
+
+Received signal 6
+#0 0x562bd6030b0c base::debug::StackTrace::StackTrace()
+#1 0x562bd6030671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fc94b0bf0c0 <unknown>
+#3 0x7fc945174fff gsignal
+#4 0x7fc94517642a abort
+#5 0x562bd602f105 base::debug::BreakDebugger()
+#6 0x562bd6049bca logging::LogMessage::~LogMessage()
+#7 0x562bd50d92b1 content::ZygoteHostImpl::Init()
+#8 0x562bd4d4bc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x562bd4d51a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x562bd9e7b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x562bd5d6ba00 content::RunNamedProcessTypeMain()
+#12 0x562bd5d6c2e8 content::ContentMainRunnerImpl::Run()
+#13 0x562bd5d75f24 service_manager::Main()
+#14 0x562bd5d6af14 content::ContentMain()
+#15 0x562bd9e7a9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x562bd9e7aa42 headless::HeadlessBrowserMain()
+#17 0x562bd5d72f9d headless::HeadlessShellMain()
+#18 0x562bd43d11ac ChromeMain
+#19 0x7fc9451622e1 __libc_start_main
+#20 0x562bd43d102a _start
+  r8: 0000000000000000  r9: 00007fff419f8e60 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff419f9558 r13: 0000000000000161 r14: 00007fff419f9560 r15: 00007fff419f90f9
+  di: 0000000000000002  si: 00007fff419f8e60  bp: 00007fff419f90a0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fc945174fff  sp: 00007fff419f8ed8
+  ip: 00007fc945174fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2057,13 +2775,11 @@ Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
@@ -2077,7 +2793,6 @@ Normative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
@@ -2087,60 +2802,37 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [Network Information API](https://wicg.github.io/netinfo/)
-- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Preload](https://w3c.github.io/preload/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Selection API](https://w3c.github.io/selection-api/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
-- [Web Share API](https://wicg.github.io/web-share/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -2153,29 +2845,836 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
-- [Battery Status API](https://w3c.github.io/battery/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Push API](https://w3c.github.io/push-api/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-redefinedIdlNames=true data-inconsistentRef=true}
+## https://w3c.github.io/editing/contentEditable.html {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (28 March 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020712.380451:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55634f1d8b0c base::debug::StackTrace::StackTrace()
+#1 0x55634f1f1780 logging::LogMessage::~LogMessage()
+#2 0x55634e2812b1 content::ZygoteHostImpl::Init()
+#3 0x55634def3c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55634def9a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5563530239a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55634ef13a00 content::RunNamedProcessTypeMain()
+#7 0x55634ef142e8 content::ContentMainRunnerImpl::Run()
+#8 0x55634ef1df24 service_manager::Main()
+#9 0x55634ef12f14 content::ContentMain()
+#10 0x5563530229b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x556353022a42 headless::HeadlessBrowserMain()
+#12 0x55634ef1af9d headless::HeadlessShellMain()
+#13 0x55634d5791ac ChromeMain
+#14 0x7f5414b222e1 __libc_start_main
+#15 0x55634d57902a _start
+
+Received signal 6
+#0 0x55634f1d8b0c base::debug::StackTrace::StackTrace()
+#1 0x55634f1d8671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f541aa7f0c0 <unknown>
+#3 0x7f5414b34fff gsignal
+#4 0x7f5414b3642a abort
+#5 0x55634f1d7105 base::debug::BreakDebugger()
+#6 0x55634f1f1bca logging::LogMessage::~LogMessage()
+#7 0x55634e2812b1 content::ZygoteHostImpl::Init()
+#8 0x55634def3c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55634def9a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5563530239a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55634ef13a00 content::RunNamedProcessTypeMain()
+#12 0x55634ef142e8 content::ContentMainRunnerImpl::Run()
+#13 0x55634ef1df24 service_manager::Main()
+#14 0x55634ef12f14 content::ContentMain()
+#15 0x5563530229b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x556353022a42 headless::HeadlessBrowserMain()
+#17 0x55634ef1af9d headless::HeadlessShellMain()
+#18 0x55634d5791ac ChromeMain
+#19 0x7f5414b222e1 __libc_start_main
+#20 0x55634d57902a _start
+  r8: 0000000000000000  r9: 00007ffc4588e320 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc4588ea18 r13: 0000000000000161 r14: 00007ffc4588ea20 r15: 00007ffc4588e5b9
+  di: 0000000000000002  si: 00007ffc4588e320  bp: 00007ffc4588e560  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f5414b34fff  sp: 00007ffc4588e398
+  ip: 00007f5414b34fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020712.380451:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55634f1d8b0c base::debug::StackTrace::StackTrace()
+#1 0x55634f1f1780 logging::LogMessage::~LogMessage()
+#2 0x55634e2812b1 content::ZygoteHostImpl::Init()
+#3 0x55634def3c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55634def9a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5563530239a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55634ef13a00 content::RunNamedProcessTypeMain()
+#7 0x55634ef142e8 content::ContentMainRunnerImpl::Run()
+#8 0x55634ef1df24 service_manager::Main()
+#9 0x55634ef12f14 content::ContentMain()
+#10 0x5563530229b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x556353022a42 headless::HeadlessBrowserMain()
+#12 0x55634ef1af9d headless::HeadlessShellMain()
+#13 0x55634d5791ac ChromeMain
+#14 0x7f5414b222e1 __libc_start_main
+#15 0x55634d57902a _start
+
+Received signal 6
+#0 0x55634f1d8b0c base::debug::StackTrace::StackTrace()
+#1 0x55634f1d8671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f541aa7f0c0 <unknown>
+#3 0x7f5414b34fff gsignal
+#4 0x7f5414b3642a abort
+#5 0x55634f1d7105 base::debug::BreakDebugger()
+#6 0x55634f1f1bca logging::LogMessage::~LogMessage()
+#7 0x55634e2812b1 content::ZygoteHostImpl::Init()
+#8 0x55634def3c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55634def9a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5563530239a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55634ef13a00 content::RunNamedProcessTypeMain()
+#12 0x55634ef142e8 content::ContentMainRunnerImpl::Run()
+#13 0x55634ef1df24 service_manager::Main()
+#14 0x55634ef12f14 content::ContentMain()
+#15 0x5563530229b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x556353022a42 headless::HeadlessBrowserMain()
+#17 0x55634ef1af9d headless::HeadlessShellMain()
+#18 0x55634d5791ac ChromeMain
+#19 0x7f5414b222e1 __libc_start_main
+#20 0x55634d57902a _start
+  r8: 0000000000000000  r9: 00007ffc4588e320 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc4588ea18 r13: 0000000000000161 r14: 00007ffc4588ea20 r15: 00007ffc4588e5b9
+  di: 0000000000000002  si: 00007ffc4588e320  bp: 00007ffc4588e560  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f5414b34fff  sp: 00007ffc4588e398
+  ip: 00007f5414b34fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## https://w3c.github.io/web-nfc/ {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
+- Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020746.948485:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x562ed8e39b0c base::debug::StackTrace::StackTrace()
+#1 0x562ed8e52780 logging::LogMessage::~LogMessage()
+#2 0x562ed7ee22b1 content::ZygoteHostImpl::Init()
+#3 0x562ed7b54c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x562ed7b5aa69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x562edcc849a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x562ed8b74a00 content::RunNamedProcessTypeMain()
+#7 0x562ed8b752e8 content::ContentMainRunnerImpl::Run()
+#8 0x562ed8b7ef24 service_manager::Main()
+#9 0x562ed8b73f14 content::ContentMain()
+#10 0x562edcc839b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x562edcc83a42 headless::HeadlessBrowserMain()
+#12 0x562ed8b7bf9d headless::HeadlessShellMain()
+#13 0x562ed71da1ac ChromeMain
+#14 0x7fc0765972e1 __libc_start_main
+#15 0x562ed71da02a _start
+
+Received signal 6
+#0 0x562ed8e39b0c base::debug::StackTrace::StackTrace()
+#1 0x562ed8e39671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fc07c4f40c0 <unknown>
+#3 0x7fc0765a9fff gsignal
+#4 0x7fc0765ab42a abort
+#5 0x562ed8e38105 base::debug::BreakDebugger()
+#6 0x562ed8e52bca logging::LogMessage::~LogMessage()
+#7 0x562ed7ee22b1 content::ZygoteHostImpl::Init()
+#8 0x562ed7b54c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x562ed7b5aa69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x562edcc849a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x562ed8b74a00 content::RunNamedProcessTypeMain()
+#12 0x562ed8b752e8 content::ContentMainRunnerImpl::Run()
+#13 0x562ed8b7ef24 service_manager::Main()
+#14 0x562ed8b73f14 content::ContentMain()
+#15 0x562edcc839b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x562edcc83a42 headless::HeadlessBrowserMain()
+#17 0x562ed8b7bf9d headless::HeadlessShellMain()
+#18 0x562ed71da1ac ChromeMain
+#19 0x7fc0765972e1 __libc_start_main
+#20 0x562ed71da02a _start
+  r8: 0000000000000000  r9: 00007ffcc8289410 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffcc8289b08 r13: 0000000000000161 r14: 00007ffcc8289b10 r15: 00007ffcc82896a9
+  di: 0000000000000002  si: 00007ffcc8289410  bp: 00007ffcc8289650  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fc0765a9fff  sp: 00007ffcc8289488
+  ip: 00007fc0765a9fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020746.948485:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x562ed8e39b0c base::debug::StackTrace::StackTrace()
+#1 0x562ed8e52780 logging::LogMessage::~LogMessage()
+#2 0x562ed7ee22b1 content::ZygoteHostImpl::Init()
+#3 0x562ed7b54c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x562ed7b5aa69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x562edcc849a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x562ed8b74a00 content::RunNamedProcessTypeMain()
+#7 0x562ed8b752e8 content::ContentMainRunnerImpl::Run()
+#8 0x562ed8b7ef24 service_manager::Main()
+#9 0x562ed8b73f14 content::ContentMain()
+#10 0x562edcc839b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x562edcc83a42 headless::HeadlessBrowserMain()
+#12 0x562ed8b7bf9d headless::HeadlessShellMain()
+#13 0x562ed71da1ac ChromeMain
+#14 0x7fc0765972e1 __libc_start_main
+#15 0x562ed71da02a _start
+
+Received signal 6
+#0 0x562ed8e39b0c base::debug::StackTrace::StackTrace()
+#1 0x562ed8e39671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fc07c4f40c0 <unknown>
+#3 0x7fc0765a9fff gsignal
+#4 0x7fc0765ab42a abort
+#5 0x562ed8e38105 base::debug::BreakDebugger()
+#6 0x562ed8e52bca logging::LogMessage::~LogMessage()
+#7 0x562ed7ee22b1 content::ZygoteHostImpl::Init()
+#8 0x562ed7b54c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x562ed7b5aa69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x562edcc849a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x562ed8b74a00 content::RunNamedProcessTypeMain()
+#12 0x562ed8b752e8 content::ContentMainRunnerImpl::Run()
+#13 0x562ed8b7ef24 service_manager::Main()
+#14 0x562ed8b73f14 content::ContentMain()
+#15 0x562edcc839b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x562edcc83a42 headless::HeadlessBrowserMain()
+#17 0x562ed8b7bf9d headless::HeadlessShellMain()
+#18 0x562ed71da1ac ChromeMain
+#19 0x7fc0765972e1 __libc_start_main
+#20 0x562ed71da02a _start
+  r8: 0000000000000000  r9: 00007ffcc8289410 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffcc8289b08 r13: 0000000000000161 r14: 00007ffcc8289b10 r15: 00007ffcc82896a9
+  di: 0000000000000002  si: 00007ffcc8289410  bp: 00007ffcc8289650  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fc0765a9fff  sp: 00007ffcc8289488
+  ip: 00007fc0765a9fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## https://wicg.github.io/aom/spec/ {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/)
+- Repository: [GitHub wicg/aom](https://github.com/wicg/aom)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020734.962384:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x561cc1a25b0c base::debug::StackTrace::StackTrace()
+#1 0x561cc1a3e780 logging::LogMessage::~LogMessage()
+#2 0x561cc0ace2b1 content::ZygoteHostImpl::Init()
+#3 0x561cc0740c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x561cc0746a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x561cc58709a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x561cc1760a00 content::RunNamedProcessTypeMain()
+#7 0x561cc17612e8 content::ContentMainRunnerImpl::Run()
+#8 0x561cc176af24 service_manager::Main()
+#9 0x561cc175ff14 content::ContentMain()
+#10 0x561cc586f9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x561cc586fa42 headless::HeadlessBrowserMain()
+#12 0x561cc1767f9d headless::HeadlessShellMain()
+#13 0x561cbfdc61ac ChromeMain
+#14 0x7ff9b01752e1 __libc_start_main
+#15 0x561cbfdc602a _start
+
+Received signal 6
+#0 0x561cc1a25b0c base::debug::StackTrace::StackTrace()
+#1 0x561cc1a25671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7ff9b60d20c0 <unknown>
+#3 0x7ff9b0187fff gsignal
+#4 0x7ff9b018942a abort
+#5 0x561cc1a24105 base::debug::BreakDebugger()
+#6 0x561cc1a3ebca logging::LogMessage::~LogMessage()
+#7 0x561cc0ace2b1 content::ZygoteHostImpl::Init()
+#8 0x561cc0740c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x561cc0746a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x561cc58709a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x561cc1760a00 content::RunNamedProcessTypeMain()
+#12 0x561cc17612e8 content::ContentMainRunnerImpl::Run()
+#13 0x561cc176af24 service_manager::Main()
+#14 0x561cc175ff14 content::ContentMain()
+#15 0x561cc586f9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x561cc586fa42 headless::HeadlessBrowserMain()
+#17 0x561cc1767f9d headless::HeadlessShellMain()
+#18 0x561cbfdc61ac ChromeMain
+#19 0x7ff9b01752e1 __libc_start_main
+#20 0x561cbfdc602a _start
+  r8: 0000000000000000  r9: 00007ffc20f61160 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc20f61858 r13: 0000000000000161 r14: 00007ffc20f61860 r15: 00007ffc20f613f9
+  di: 0000000000000002  si: 00007ffc20f61160  bp: 00007ffc20f613a0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007ff9b0187fff  sp: 00007ffc20f611d8
+  ip: 00007ff9b0187fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020734.962384:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x561cc1a25b0c base::debug::StackTrace::StackTrace()
+#1 0x561cc1a3e780 logging::LogMessage::~LogMessage()
+#2 0x561cc0ace2b1 content::ZygoteHostImpl::Init()
+#3 0x561cc0740c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x561cc0746a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x561cc58709a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x561cc1760a00 content::RunNamedProcessTypeMain()
+#7 0x561cc17612e8 content::ContentMainRunnerImpl::Run()
+#8 0x561cc176af24 service_manager::Main()
+#9 0x561cc175ff14 content::ContentMain()
+#10 0x561cc586f9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x561cc586fa42 headless::HeadlessBrowserMain()
+#12 0x561cc1767f9d headless::HeadlessShellMain()
+#13 0x561cbfdc61ac ChromeMain
+#14 0x7ff9b01752e1 __libc_start_main
+#15 0x561cbfdc602a _start
+
+Received signal 6
+#0 0x561cc1a25b0c base::debug::StackTrace::StackTrace()
+#1 0x561cc1a25671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7ff9b60d20c0 <unknown>
+#3 0x7ff9b0187fff gsignal
+#4 0x7ff9b018942a abort
+#5 0x561cc1a24105 base::debug::BreakDebugger()
+#6 0x561cc1a3ebca logging::LogMessage::~LogMessage()
+#7 0x561cc0ace2b1 content::ZygoteHostImpl::Init()
+#8 0x561cc0740c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x561cc0746a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x561cc58709a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x561cc1760a00 content::RunNamedProcessTypeMain()
+#12 0x561cc17612e8 content::ContentMainRunnerImpl::Run()
+#13 0x561cc176af24 service_manager::Main()
+#14 0x561cc175ff14 content::ContentMain()
+#15 0x561cc586f9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x561cc586fa42 headless::HeadlessBrowserMain()
+#17 0x561cc1767f9d headless::HeadlessShellMain()
+#18 0x561cbfdc61ac ChromeMain
+#19 0x7ff9b01752e1 __libc_start_main
+#20 0x561cbfdc602a _start
+  r8: 0000000000000000  r9: 00007ffc20f61160 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc20f61858 r13: 0000000000000161 r14: 00007ffc20f61860 r15: 00007ffc20f613f9
+  di: 0000000000000002  si: 00007ffc20f61160  bp: 00007ffc20f613a0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007ff9b0187fff  sp: 00007ffc20f611d8
+  ip: 00007ff9b0187fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## https://wicg.github.io/InputDeviceCapabilities/ {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/)
+- Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020739.381434:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x557731fdfb0c base::debug::StackTrace::StackTrace()
+#1 0x557731ff8780 logging::LogMessage::~LogMessage()
+#2 0x5577310882b1 content::ZygoteHostImpl::Init()
+#3 0x557730cfac65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x557730d00a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x557735e2a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x557731d1aa00 content::RunNamedProcessTypeMain()
+#7 0x557731d1b2e8 content::ContentMainRunnerImpl::Run()
+#8 0x557731d24f24 service_manager::Main()
+#9 0x557731d19f14 content::ContentMain()
+#10 0x557735e299b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x557735e29a42 headless::HeadlessBrowserMain()
+#12 0x557731d21f9d headless::HeadlessShellMain()
+#13 0x5577303801ac ChromeMain
+#14 0x7f6e39e802e1 __libc_start_main
+#15 0x55773038002a _start
+
+Received signal 6
+#0 0x557731fdfb0c base::debug::StackTrace::StackTrace()
+#1 0x557731fdf671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6e3fddd0c0 <unknown>
+#3 0x7f6e39e92fff gsignal
+#4 0x7f6e39e9442a abort
+#5 0x557731fde105 base::debug::BreakDebugger()
+#6 0x557731ff8bca logging::LogMessage::~LogMessage()
+#7 0x5577310882b1 content::ZygoteHostImpl::Init()
+#8 0x557730cfac65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x557730d00a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x557735e2a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x557731d1aa00 content::RunNamedProcessTypeMain()
+#12 0x557731d1b2e8 content::ContentMainRunnerImpl::Run()
+#13 0x557731d24f24 service_manager::Main()
+#14 0x557731d19f14 content::ContentMain()
+#15 0x557735e299b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x557735e29a42 headless::HeadlessBrowserMain()
+#17 0x557731d21f9d headless::HeadlessShellMain()
+#18 0x5577303801ac ChromeMain
+#19 0x7f6e39e802e1 __libc_start_main
+#20 0x55773038002a _start
+  r8: 0000000000000000  r9: 00007ffd4ba017b0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd4ba01ea8 r13: 0000000000000161 r14: 00007ffd4ba01eb0 r15: 00007ffd4ba01a49
+  di: 0000000000000002  si: 00007ffd4ba017b0  bp: 00007ffd4ba019f0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f6e39e92fff  sp: 00007ffd4ba01828
+  ip: 00007f6e39e92fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020739.381434:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x557731fdfb0c base::debug::StackTrace::StackTrace()
+#1 0x557731ff8780 logging::LogMessage::~LogMessage()
+#2 0x5577310882b1 content::ZygoteHostImpl::Init()
+#3 0x557730cfac65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x557730d00a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x557735e2a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x557731d1aa00 content::RunNamedProcessTypeMain()
+#7 0x557731d1b2e8 content::ContentMainRunnerImpl::Run()
+#8 0x557731d24f24 service_manager::Main()
+#9 0x557731d19f14 content::ContentMain()
+#10 0x557735e299b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x557735e29a42 headless::HeadlessBrowserMain()
+#12 0x557731d21f9d headless::HeadlessShellMain()
+#13 0x5577303801ac ChromeMain
+#14 0x7f6e39e802e1 __libc_start_main
+#15 0x55773038002a _start
+
+Received signal 6
+#0 0x557731fdfb0c base::debug::StackTrace::StackTrace()
+#1 0x557731fdf671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6e3fddd0c0 <unknown>
+#3 0x7f6e39e92fff gsignal
+#4 0x7f6e39e9442a abort
+#5 0x557731fde105 base::debug::BreakDebugger()
+#6 0x557731ff8bca logging::LogMessage::~LogMessage()
+#7 0x5577310882b1 content::ZygoteHostImpl::Init()
+#8 0x557730cfac65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x557730d00a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x557735e2a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x557731d1aa00 content::RunNamedProcessTypeMain()
+#12 0x557731d1b2e8 content::ContentMainRunnerImpl::Run()
+#13 0x557731d24f24 service_manager::Main()
+#14 0x557731d19f14 content::ContentMain()
+#15 0x557735e299b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x557735e29a42 headless::HeadlessBrowserMain()
+#17 0x557731d21f9d headless::HeadlessShellMain()
+#18 0x5577303801ac ChromeMain
+#19 0x7f6e39e802e1 __libc_start_main
+#20 0x55773038002a _start
+  r8: 0000000000000000  r9: 00007ffd4ba017b0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd4ba01ea8 r13: 0000000000000161 r14: 00007ffd4ba01eb0 r15: 00007ffd4ba01a49
+  di: 0000000000000002  si: 00007ffd4ba017b0  bp: 00007ffd4ba019f0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f6e39e92fff  sp: 00007ffd4ba01828
+  ip: 00007f6e39e92fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## https://wicg.github.io/netinfo/ {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/)
+- Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020740.276687:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5654610fbb0c base::debug::StackTrace::StackTrace()
+#1 0x565461114780 logging::LogMessage::~LogMessage()
+#2 0x5654601a42b1 content::ZygoteHostImpl::Init()
+#3 0x56545fe16c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x56545fe1ca69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x565464f469a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x565460e36a00 content::RunNamedProcessTypeMain()
+#7 0x565460e372e8 content::ContentMainRunnerImpl::Run()
+#8 0x565460e40f24 service_manager::Main()
+#9 0x565460e35f14 content::ContentMain()
+#10 0x565464f459b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x565464f45a42 headless::HeadlessBrowserMain()
+#12 0x565460e3df9d headless::HeadlessShellMain()
+#13 0x56545f49c1ac ChromeMain
+#14 0x7fb906c312e1 __libc_start_main
+#15 0x56545f49c02a _start
+
+Received signal 6
+#0 0x5654610fbb0c base::debug::StackTrace::StackTrace()
+#1 0x5654610fb671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fb90cb8e0c0 <unknown>
+#3 0x7fb906c43fff gsignal
+#4 0x7fb906c4542a abort
+#5 0x5654610fa105 base::debug::BreakDebugger()
+#6 0x565461114bca logging::LogMessage::~LogMessage()
+#7 0x5654601a42b1 content::ZygoteHostImpl::Init()
+#8 0x56545fe16c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x56545fe1ca69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x565464f469a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x565460e36a00 content::RunNamedProcessTypeMain()
+#12 0x565460e372e8 content::ContentMainRunnerImpl::Run()
+#13 0x565460e40f24 service_manager::Main()
+#14 0x565460e35f14 content::ContentMain()
+#15 0x565464f459b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x565464f45a42 headless::HeadlessBrowserMain()
+#17 0x565460e3df9d headless::HeadlessShellMain()
+#18 0x56545f49c1ac ChromeMain
+#19 0x7fb906c312e1 __libc_start_main
+#20 0x56545f49c02a _start
+  r8: 0000000000000000  r9: 00007ffce9bc6640 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffce9bc6d38 r13: 0000000000000161 r14: 00007ffce9bc6d40 r15: 00007ffce9bc68d9
+  di: 0000000000000002  si: 00007ffce9bc6640  bp: 00007ffce9bc6880  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fb906c43fff  sp: 00007ffce9bc66b8
+  ip: 00007fb906c43fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020740.276687:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5654610fbb0c base::debug::StackTrace::StackTrace()
+#1 0x565461114780 logging::LogMessage::~LogMessage()
+#2 0x5654601a42b1 content::ZygoteHostImpl::Init()
+#3 0x56545fe16c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x56545fe1ca69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x565464f469a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x565460e36a00 content::RunNamedProcessTypeMain()
+#7 0x565460e372e8 content::ContentMainRunnerImpl::Run()
+#8 0x565460e40f24 service_manager::Main()
+#9 0x565460e35f14 content::ContentMain()
+#10 0x565464f459b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x565464f45a42 headless::HeadlessBrowserMain()
+#12 0x565460e3df9d headless::HeadlessShellMain()
+#13 0x56545f49c1ac ChromeMain
+#14 0x7fb906c312e1 __libc_start_main
+#15 0x56545f49c02a _start
+
+Received signal 6
+#0 0x5654610fbb0c base::debug::StackTrace::StackTrace()
+#1 0x5654610fb671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fb90cb8e0c0 <unknown>
+#3 0x7fb906c43fff gsignal
+#4 0x7fb906c4542a abort
+#5 0x5654610fa105 base::debug::BreakDebugger()
+#6 0x565461114bca logging::LogMessage::~LogMessage()
+#7 0x5654601a42b1 content::ZygoteHostImpl::Init()
+#8 0x56545fe16c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x56545fe1ca69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x565464f469a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x565460e36a00 content::RunNamedProcessTypeMain()
+#12 0x565460e372e8 content::ContentMainRunnerImpl::Run()
+#13 0x565460e40f24 service_manager::Main()
+#14 0x565460e35f14 content::ContentMain()
+#15 0x565464f459b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x565464f45a42 headless::HeadlessBrowserMain()
+#17 0x565460e3df9d headless::HeadlessShellMain()
+#18 0x56545f49c1ac ChromeMain
+#19 0x7fb906c312e1 __libc_start_main
+#20 0x56545f49c02a _start
+  r8: 0000000000000000  r9: 00007ffce9bc6640 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffce9bc6d38 r13: 0000000000000161 r14: 00007ffce9bc6d40 r15: 00007ffce9bc68d9
+  di: 0000000000000002  si: 00007ffce9bc6640  bp: 00007ffce9bc6880  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fb906c43fff  sp: 00007ffce9bc66b8
+  ip: 00007fb906c43fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## https://wicg.github.io/web-share/ {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/)
+- Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020745.834850:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55d18423cb0c base::debug::StackTrace::StackTrace()
+#1 0x55d184255780 logging::LogMessage::~LogMessage()
+#2 0x55d1832e52b1 content::ZygoteHostImpl::Init()
+#3 0x55d182f57c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55d182f5da69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55d1880879a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55d183f77a00 content::RunNamedProcessTypeMain()
+#7 0x55d183f782e8 content::ContentMainRunnerImpl::Run()
+#8 0x55d183f81f24 service_manager::Main()
+#9 0x55d183f76f14 content::ContentMain()
+#10 0x55d1880869b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55d188086a42 headless::HeadlessBrowserMain()
+#12 0x55d183f7ef9d headless::HeadlessShellMain()
+#13 0x55d1825dd1ac ChromeMain
+#14 0x7fe1024242e1 __libc_start_main
+#15 0x55d1825dd02a _start
+
+Received signal 6
+#0 0x55d18423cb0c base::debug::StackTrace::StackTrace()
+#1 0x55d18423c671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fe1083810c0 <unknown>
+#3 0x7fe102436fff gsignal
+#4 0x7fe10243842a abort
+#5 0x55d18423b105 base::debug::BreakDebugger()
+#6 0x55d184255bca logging::LogMessage::~LogMessage()
+#7 0x55d1832e52b1 content::ZygoteHostImpl::Init()
+#8 0x55d182f57c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55d182f5da69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55d1880879a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55d183f77a00 content::RunNamedProcessTypeMain()
+#12 0x55d183f782e8 content::ContentMainRunnerImpl::Run()
+#13 0x55d183f81f24 service_manager::Main()
+#14 0x55d183f76f14 content::ContentMain()
+#15 0x55d1880869b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55d188086a42 headless::HeadlessBrowserMain()
+#17 0x55d183f7ef9d headless::HeadlessShellMain()
+#18 0x55d1825dd1ac ChromeMain
+#19 0x7fe1024242e1 __libc_start_main
+#20 0x55d1825dd02a _start
+  r8: 0000000000000000  r9: 00007ffc807f5c80 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc807f6378 r13: 0000000000000161 r14: 00007ffc807f6380 r15: 00007ffc807f5f19
+  di: 0000000000000002  si: 00007ffc807f5c80  bp: 00007ffc807f5ec0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fe102436fff  sp: 00007ffc807f5cf8
+  ip: 00007fe102436fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020745.834850:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55d18423cb0c base::debug::StackTrace::StackTrace()
+#1 0x55d184255780 logging::LogMessage::~LogMessage()
+#2 0x55d1832e52b1 content::ZygoteHostImpl::Init()
+#3 0x55d182f57c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55d182f5da69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55d1880879a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55d183f77a00 content::RunNamedProcessTypeMain()
+#7 0x55d183f782e8 content::ContentMainRunnerImpl::Run()
+#8 0x55d183f81f24 service_manager::Main()
+#9 0x55d183f76f14 content::ContentMain()
+#10 0x55d1880869b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55d188086a42 headless::HeadlessBrowserMain()
+#12 0x55d183f7ef9d headless::HeadlessShellMain()
+#13 0x55d1825dd1ac ChromeMain
+#14 0x7fe1024242e1 __libc_start_main
+#15 0x55d1825dd02a _start
+
+Received signal 6
+#0 0x55d18423cb0c base::debug::StackTrace::StackTrace()
+#1 0x55d18423c671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fe1083810c0 <unknown>
+#3 0x7fe102436fff gsignal
+#4 0x7fe10243842a abort
+#5 0x55d18423b105 base::debug::BreakDebugger()
+#6 0x55d184255bca logging::LogMessage::~LogMessage()
+#7 0x55d1832e52b1 content::ZygoteHostImpl::Init()
+#8 0x55d182f57c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55d182f5da69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55d1880879a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55d183f77a00 content::RunNamedProcessTypeMain()
+#12 0x55d183f782e8 content::ContentMainRunnerImpl::Run()
+#13 0x55d183f81f24 service_manager::Main()
+#14 0x55d183f76f14 content::ContentMain()
+#15 0x55d1880869b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55d188086a42 headless::HeadlessBrowserMain()
+#17 0x55d183f7ef9d headless::HeadlessShellMain()
+#18 0x55d1825dd1ac ChromeMain
+#19 0x7fe1024242e1 __libc_start_main
+#20 0x55d1825dd02a _start
+  r8: 0000000000000000  r9: 00007ffc807f5c80 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc807f6378 r13: 0000000000000161 r14: 00007ffc807f6380 r15: 00007ffc807f5f19
+  di: 0000000000000002  si: 00007ffc807f5c80  bp: 00007ffc807f5ec0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fe102436fff  sp: 00007ffc807f5cf8
+  ip: 00007fe102436fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Identifiers for WebRTC's Statistics API {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webrtc-stats-20180328/)
@@ -2184,18 +3683,128 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `RTCRTPStreamStats`
-- WebIDL names also defined elsewhere: 
-    * `RTCStats` also defined in [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020656.306050:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55c26f8c2b0c base::debug::StackTrace::StackTrace()
+#1 0x55c26f8db780 logging::LogMessage::~LogMessage()
+#2 0x55c26e96b2b1 content::ZygoteHostImpl::Init()
+#3 0x55c26e5ddc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55c26e5e3a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55c27370d9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55c26f5fda00 content::RunNamedProcessTypeMain()
+#7 0x55c26f5fe2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55c26f607f24 service_manager::Main()
+#9 0x55c26f5fcf14 content::ContentMain()
+#10 0x55c27370c9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55c27370ca42 headless::HeadlessBrowserMain()
+#12 0x55c26f604f9d headless::HeadlessShellMain()
+#13 0x55c26dc631ac ChromeMain
+#14 0x7f50d03532e1 __libc_start_main
+#15 0x55c26dc6302a _start
+
+Received signal 6
+#0 0x55c26f8c2b0c base::debug::StackTrace::StackTrace()
+#1 0x55c26f8c2671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f50d62b00c0 <unknown>
+#3 0x7f50d0365fff gsignal
+#4 0x7f50d036742a abort
+#5 0x55c26f8c1105 base::debug::BreakDebugger()
+#6 0x55c26f8dbbca logging::LogMessage::~LogMessage()
+#7 0x55c26e96b2b1 content::ZygoteHostImpl::Init()
+#8 0x55c26e5ddc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55c26e5e3a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55c27370d9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55c26f5fda00 content::RunNamedProcessTypeMain()
+#12 0x55c26f5fe2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55c26f607f24 service_manager::Main()
+#14 0x55c26f5fcf14 content::ContentMain()
+#15 0x55c27370c9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55c27370ca42 headless::HeadlessBrowserMain()
+#17 0x55c26f604f9d headless::HeadlessShellMain()
+#18 0x55c26dc631ac ChromeMain
+#19 0x7f50d03532e1 __libc_start_main
+#20 0x55c26dc6302a _start
+  r8: 0000000000000000  r9: 00007ffd512b9500 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd512b9bf8 r13: 0000000000000161 r14: 00007ffd512b9c00 r15: 00007ffd512b9799
+  di: 0000000000000002  si: 00007ffd512b9500  bp: 00007ffd512b9740  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f50d0365fff  sp: 00007ffd512b9578
+  ip: 00007f50d0365fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020656.306050:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55c26f8c2b0c base::debug::StackTrace::StackTrace()
+#1 0x55c26f8db780 logging::LogMessage::~LogMessage()
+#2 0x55c26e96b2b1 content::ZygoteHostImpl::Init()
+#3 0x55c26e5ddc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55c26e5e3a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55c27370d9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55c26f5fda00 content::RunNamedProcessTypeMain()
+#7 0x55c26f5fe2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55c26f607f24 service_manager::Main()
+#9 0x55c26f5fcf14 content::ContentMain()
+#10 0x55c27370c9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55c27370ca42 headless::HeadlessBrowserMain()
+#12 0x55c26f604f9d headless::HeadlessShellMain()
+#13 0x55c26dc631ac ChromeMain
+#14 0x7f50d03532e1 __libc_start_main
+#15 0x55c26dc6302a _start
+
+Received signal 6
+#0 0x55c26f8c2b0c base::debug::StackTrace::StackTrace()
+#1 0x55c26f8c2671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f50d62b00c0 <unknown>
+#3 0x7f50d0365fff gsignal
+#4 0x7f50d036742a abort
+#5 0x55c26f8c1105 base::debug::BreakDebugger()
+#6 0x55c26f8dbbca logging::LogMessage::~LogMessage()
+#7 0x55c26e96b2b1 content::ZygoteHostImpl::Init()
+#8 0x55c26e5ddc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55c26e5e3a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55c27370d9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55c26f5fda00 content::RunNamedProcessTypeMain()
+#12 0x55c26f5fe2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55c26f607f24 service_manager::Main()
+#14 0x55c26f5fcf14 content::ContentMain()
+#15 0x55c27370c9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55c27370ca42 headless::HeadlessBrowserMain()
+#17 0x55c26f604f9d headless::HeadlessShellMain()
+#18 0x55c26dc631ac ChromeMain
+#19 0x7f50d03532e1 __libc_start_main
+#20 0x55c26dc6302a _start
+  r8: 0000000000000000  r9: 00007ffd512b9500 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd512b9bf8 r13: 0000000000000161 r14: 00007ffd512b9c00 r15: 00007ffd512b9799
+  di: 0000000000000002  si: 00007ffd512b9500  bp: 00007ffd512b9740  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f50d0365fff  sp: 00007ffd512b9578
+  ip: 00007f50d0365fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -2222,40 +3831,19 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
 
 Informative references to this spec from:
 
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## Input Device Capabilities {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (16 October 2017)
-- Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- Spec uses WebIDL but does not reference it normatively
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Input Events Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## Input Events Level 1 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (09 May 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -2264,23 +3852,133 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `DataTransfer`
-- Missing references for WebIDL names: 
-     * `StaticRange` defined in [Static Range](https://w3c.github.io/staticrange/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020613.859729:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x558fa6d75b0c base::debug::StackTrace::StackTrace()
+#1 0x558fa6d8e780 logging::LogMessage::~LogMessage()
+#2 0x558fa5e1e2b1 content::ZygoteHostImpl::Init()
+#3 0x558fa5a90c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x558fa5a96a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x558faabc09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x558fa6ab0a00 content::RunNamedProcessTypeMain()
+#7 0x558fa6ab12e8 content::ContentMainRunnerImpl::Run()
+#8 0x558fa6abaf24 service_manager::Main()
+#9 0x558fa6aaff14 content::ContentMain()
+#10 0x558faabbf9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x558faabbfa42 headless::HeadlessBrowserMain()
+#12 0x558fa6ab7f9d headless::HeadlessShellMain()
+#13 0x558fa51161ac ChromeMain
+#14 0x7f603010a2e1 __libc_start_main
+#15 0x558fa511602a _start
+
+Received signal 6
+#0 0x558fa6d75b0c base::debug::StackTrace::StackTrace()
+#1 0x558fa6d75671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f60360670c0 <unknown>
+#3 0x7f603011cfff gsignal
+#4 0x7f603011e42a abort
+#5 0x558fa6d74105 base::debug::BreakDebugger()
+#6 0x558fa6d8ebca logging::LogMessage::~LogMessage()
+#7 0x558fa5e1e2b1 content::ZygoteHostImpl::Init()
+#8 0x558fa5a90c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x558fa5a96a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x558faabc09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x558fa6ab0a00 content::RunNamedProcessTypeMain()
+#12 0x558fa6ab12e8 content::ContentMainRunnerImpl::Run()
+#13 0x558fa6abaf24 service_manager::Main()
+#14 0x558fa6aaff14 content::ContentMain()
+#15 0x558faabbf9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x558faabbfa42 headless::HeadlessBrowserMain()
+#17 0x558fa6ab7f9d headless::HeadlessShellMain()
+#18 0x558fa51161ac ChromeMain
+#19 0x7f603010a2e1 __libc_start_main
+#20 0x558fa511602a _start
+  r8: 0000000000000000  r9: 00007fff82a2eb50 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff82a2f248 r13: 0000000000000161 r14: 00007fff82a2f250 r15: 00007fff82a2ede9
+  di: 0000000000000002  si: 00007fff82a2eb50  bp: 00007fff82a2ed90  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f603011cfff  sp: 00007fff82a2ebc8
+  ip: 00007f603011cfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020613.859729:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x558fa6d75b0c base::debug::StackTrace::StackTrace()
+#1 0x558fa6d8e780 logging::LogMessage::~LogMessage()
+#2 0x558fa5e1e2b1 content::ZygoteHostImpl::Init()
+#3 0x558fa5a90c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x558fa5a96a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x558faabc09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x558fa6ab0a00 content::RunNamedProcessTypeMain()
+#7 0x558fa6ab12e8 content::ContentMainRunnerImpl::Run()
+#8 0x558fa6abaf24 service_manager::Main()
+#9 0x558fa6aaff14 content::ContentMain()
+#10 0x558faabbf9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x558faabbfa42 headless::HeadlessBrowserMain()
+#12 0x558fa6ab7f9d headless::HeadlessShellMain()
+#13 0x558fa51161ac ChromeMain
+#14 0x7f603010a2e1 __libc_start_main
+#15 0x558fa511602a _start
+
+Received signal 6
+#0 0x558fa6d75b0c base::debug::StackTrace::StackTrace()
+#1 0x558fa6d75671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f60360670c0 <unknown>
+#3 0x7f603011cfff gsignal
+#4 0x7f603011e42a abort
+#5 0x558fa6d74105 base::debug::BreakDebugger()
+#6 0x558fa6d8ebca logging::LogMessage::~LogMessage()
+#7 0x558fa5e1e2b1 content::ZygoteHostImpl::Init()
+#8 0x558fa5a90c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x558fa5a96a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x558faabc09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x558fa6ab0a00 content::RunNamedProcessTypeMain()
+#12 0x558fa6ab12e8 content::ContentMainRunnerImpl::Run()
+#13 0x558fa6abaf24 service_manager::Main()
+#14 0x558fa6aaff14 content::ContentMain()
+#15 0x558faabbf9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x558faabbfa42 headless::HeadlessBrowserMain()
+#17 0x558fa6ab7f9d headless::HeadlessShellMain()
+#18 0x558fa51161ac ChromeMain
+#19 0x7f603010a2e1 __libc_start_main
+#20 0x558fa511602a _start
+  r8: 0000000000000000  r9: 00007fff82a2eb50 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff82a2f248 r13: 0000000000000161 r14: 00007fff82a2f250 r15: 00007fff82a2ede9
+  di: 0000000000000002  si: 00007fff82a2eb50  bp: 00007fff82a2ed90  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f603011cfff  sp: 00007fff82a2ebc8
+  ip: 00007f603011cfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
 
-Informative references to this spec from:
-
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
+No informative reference to this spec from other specs.
 
 
-## Intersection Observer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## Intersection Observer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -2293,9 +3991,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
-- Missing references for WebIDL names: 
-     * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Window`
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
@@ -2312,7 +4008,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/keyboard-lock/) (7 May 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/keyboard-lock/) (9 May 2018)
 - Repository: [GitHub w3c/keyboard-lock](https://github.com/w3c/keyboard-lock)
 - Shortname: no shortname
 
@@ -2327,7 +4023,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Long Tasks API 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Long Tasks API 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2340,6 +4036,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `PerformanceEntry`
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -2408,11 +4105,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Media Capture and Streams {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## Media Capture and Streams {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (Draft27 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/)
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
@@ -2421,27 +4118,133 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `OverconstrainedError`, `Window`
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `Event` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `EventInit` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020632.731083:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55dfadc40b0c base::debug::StackTrace::StackTrace()
+#1 0x55dfadc59780 logging::LogMessage::~LogMessage()
+#2 0x55dfacce92b1 content::ZygoteHostImpl::Init()
+#3 0x55dfac95bc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55dfac961a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55dfb1a8b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55dfad97ba00 content::RunNamedProcessTypeMain()
+#7 0x55dfad97c2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55dfad985f24 service_manager::Main()
+#9 0x55dfad97af14 content::ContentMain()
+#10 0x55dfb1a8a9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55dfb1a8aa42 headless::HeadlessBrowserMain()
+#12 0x55dfad982f9d headless::HeadlessShellMain()
+#13 0x55dfabfe11ac ChromeMain
+#14 0x7f084b4432e1 __libc_start_main
+#15 0x55dfabfe102a _start
+
+Received signal 6
+#0 0x55dfadc40b0c base::debug::StackTrace::StackTrace()
+#1 0x55dfadc40671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f08513a00c0 <unknown>
+#3 0x7f084b455fff gsignal
+#4 0x7f084b45742a abort
+#5 0x55dfadc3f105 base::debug::BreakDebugger()
+#6 0x55dfadc59bca logging::LogMessage::~LogMessage()
+#7 0x55dfacce92b1 content::ZygoteHostImpl::Init()
+#8 0x55dfac95bc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55dfac961a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55dfb1a8b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55dfad97ba00 content::RunNamedProcessTypeMain()
+#12 0x55dfad97c2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55dfad985f24 service_manager::Main()
+#14 0x55dfad97af14 content::ContentMain()
+#15 0x55dfb1a8a9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55dfb1a8aa42 headless::HeadlessBrowserMain()
+#17 0x55dfad982f9d headless::HeadlessShellMain()
+#18 0x55dfabfe11ac ChromeMain
+#19 0x7f084b4432e1 __libc_start_main
+#20 0x55dfabfe102a _start
+  r8: 0000000000000000  r9: 00007ffe29902590 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffe29902c88 r13: 0000000000000161 r14: 00007ffe29902c90 r15: 00007ffe29902829
+  di: 0000000000000002  si: 00007ffe29902590  bp: 00007ffe299027d0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f084b455fff  sp: 00007ffe29902608
+  ip: 00007f084b455fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020632.731083:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55dfadc40b0c base::debug::StackTrace::StackTrace()
+#1 0x55dfadc59780 logging::LogMessage::~LogMessage()
+#2 0x55dfacce92b1 content::ZygoteHostImpl::Init()
+#3 0x55dfac95bc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55dfac961a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55dfb1a8b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55dfad97ba00 content::RunNamedProcessTypeMain()
+#7 0x55dfad97c2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55dfad985f24 service_manager::Main()
+#9 0x55dfad97af14 content::ContentMain()
+#10 0x55dfb1a8a9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55dfb1a8aa42 headless::HeadlessBrowserMain()
+#12 0x55dfad982f9d headless::HeadlessShellMain()
+#13 0x55dfabfe11ac ChromeMain
+#14 0x7f084b4432e1 __libc_start_main
+#15 0x55dfabfe102a _start
+
+Received signal 6
+#0 0x55dfadc40b0c base::debug::StackTrace::StackTrace()
+#1 0x55dfadc40671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f08513a00c0 <unknown>
+#3 0x7f084b455fff gsignal
+#4 0x7f084b45742a abort
+#5 0x55dfadc3f105 base::debug::BreakDebugger()
+#6 0x55dfadc59bca logging::LogMessage::~LogMessage()
+#7 0x55dfacce92b1 content::ZygoteHostImpl::Init()
+#8 0x55dfac95bc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55dfac961a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55dfb1a8b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55dfad97ba00 content::RunNamedProcessTypeMain()
+#12 0x55dfad97c2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55dfad985f24 service_manager::Main()
+#14 0x55dfad97af14 content::ContentMain()
+#15 0x55dfb1a8a9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55dfb1a8aa42 headless::HeadlessBrowserMain()
+#17 0x55dfad982f9d headless::HeadlessShellMain()
+#18 0x55dfabfe11ac ChromeMain
+#19 0x7f084b4432e1 __libc_start_main
+#20 0x55dfabfe102a _start
+  r8: 0000000000000000  r9: 00007ffe29902590 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffe29902c88 r13: 0000000000000161 r14: 00007ffe29902c90 r15: 00007ffe29902829
+  di: 0000000000000002  si: 00007ffe29902590  bp: 00007ffe299027d0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f084b455fff  sp: 00007ffe29902608
+  ip: 00007f084b455fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [HTML 5.3](https://w3c.github.io/html/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
 
@@ -2450,11 +4253,11 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## Media Capture Depth Stream Extensions {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Media Capture Depth Stream Extensions {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/) (16 October 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/)
 - Editor's Draft: [https://w3c.github.io/mediacapture-depth/](https://w3c.github.io/mediacapture-depth/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-depth/](https://www.w3.org/TR/mediacapture-depth/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -2463,23 +4266,137 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020630.789592:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5580d2f65b0c base::debug::StackTrace::StackTrace()
+#1 0x5580d2f7e780 logging::LogMessage::~LogMessage()
+#2 0x5580d200e2b1 content::ZygoteHostImpl::Init()
+#3 0x5580d1c80c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5580d1c86a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5580d6db09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5580d2ca0a00 content::RunNamedProcessTypeMain()
+#7 0x5580d2ca12e8 content::ContentMainRunnerImpl::Run()
+#8 0x5580d2caaf24 service_manager::Main()
+#9 0x5580d2c9ff14 content::ContentMain()
+#10 0x5580d6daf9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5580d6dafa42 headless::HeadlessBrowserMain()
+#12 0x5580d2ca7f9d headless::HeadlessShellMain()
+#13 0x5580d13061ac ChromeMain
+#14 0x7f43137922e1 __libc_start_main
+#15 0x5580d130602a _start
+
+Received signal 6
+#0 0x5580d2f65b0c base::debug::StackTrace::StackTrace()
+#1 0x5580d2f65671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f43196ef0c0 <unknown>
+#3 0x7f43137a4fff gsignal
+#4 0x7f43137a642a abort
+#5 0x5580d2f64105 base::debug::BreakDebugger()
+#6 0x5580d2f7ebca logging::LogMessage::~LogMessage()
+#7 0x5580d200e2b1 content::ZygoteHostImpl::Init()
+#8 0x5580d1c80c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5580d1c86a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5580d6db09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5580d2ca0a00 content::RunNamedProcessTypeMain()
+#12 0x5580d2ca12e8 content::ContentMainRunnerImpl::Run()
+#13 0x5580d2caaf24 service_manager::Main()
+#14 0x5580d2c9ff14 content::ContentMain()
+#15 0x5580d6daf9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5580d6dafa42 headless::HeadlessBrowserMain()
+#17 0x5580d2ca7f9d headless::HeadlessShellMain()
+#18 0x5580d13061ac ChromeMain
+#19 0x7f43137922e1 __libc_start_main
+#20 0x5580d130602a _start
+  r8: 0000000000000000  r9: 00007ffeb5cf54d0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffeb5cf5bc8 r13: 0000000000000161 r14: 00007ffeb5cf5bd0 r15: 00007ffeb5cf5769
+  di: 0000000000000002  si: 00007ffeb5cf54d0  bp: 00007ffeb5cf5710  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f43137a4fff  sp: 00007ffeb5cf5548
+  ip: 00007f43137a4fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020630.789592:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5580d2f65b0c base::debug::StackTrace::StackTrace()
+#1 0x5580d2f7e780 logging::LogMessage::~LogMessage()
+#2 0x5580d200e2b1 content::ZygoteHostImpl::Init()
+#3 0x5580d1c80c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5580d1c86a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5580d6db09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5580d2ca0a00 content::RunNamedProcessTypeMain()
+#7 0x5580d2ca12e8 content::ContentMainRunnerImpl::Run()
+#8 0x5580d2caaf24 service_manager::Main()
+#9 0x5580d2c9ff14 content::ContentMain()
+#10 0x5580d6daf9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5580d6dafa42 headless::HeadlessBrowserMain()
+#12 0x5580d2ca7f9d headless::HeadlessShellMain()
+#13 0x5580d13061ac ChromeMain
+#14 0x7f43137922e1 __libc_start_main
+#15 0x5580d130602a _start
+
+Received signal 6
+#0 0x5580d2f65b0c base::debug::StackTrace::StackTrace()
+#1 0x5580d2f65671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f43196ef0c0 <unknown>
+#3 0x7f43137a4fff gsignal
+#4 0x7f43137a642a abort
+#5 0x5580d2f64105 base::debug::BreakDebugger()
+#6 0x5580d2f7ebca logging::LogMessage::~LogMessage()
+#7 0x5580d200e2b1 content::ZygoteHostImpl::Init()
+#8 0x5580d1c80c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5580d1c86a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5580d6db09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5580d2ca0a00 content::RunNamedProcessTypeMain()
+#12 0x5580d2ca12e8 content::ContentMainRunnerImpl::Run()
+#13 0x5580d2caaf24 service_manager::Main()
+#14 0x5580d2c9ff14 content::ContentMain()
+#15 0x5580d6daf9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5580d6dafa42 headless::HeadlessBrowserMain()
+#17 0x5580d2ca7f9d headless::HeadlessShellMain()
+#18 0x5580d13061ac ChromeMain
+#19 0x7f43137922e1 __libc_start_main
+#20 0x5580d130602a _start
+  r8: 0000000000000000  r9: 00007ffeb5cf54d0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffeb5cf5bc8 r13: 0000000000000161 r14: 00007ffeb5cf5bd0 r15: 00007ffeb5cf5769
+  di: 0000000000000002  si: 00007ffeb5cf54d0  bp: 00007ffeb5cf5710  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f43137a4fff  sp: 00007ffeb5cf5548
+  ip: 00007f43137a4fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
 
-Informative references to this spec from:
-
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+No informative reference to this spec from other specs.
 
 
-## Media Capture from DOM Elements {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Media Capture from DOM Elements {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/) (23 February 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/)
 - Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -2488,18 +4405,130 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLMediaElement`, `Window`
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
-     * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/), related reference "2DCONTEXT" uses URL [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020628.169454:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55c06d165b0c base::debug::StackTrace::StackTrace()
+#1 0x55c06d17e780 logging::LogMessage::~LogMessage()
+#2 0x55c06c20e2b1 content::ZygoteHostImpl::Init()
+#3 0x55c06be80c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55c06be86a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55c070fb09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55c06cea0a00 content::RunNamedProcessTypeMain()
+#7 0x55c06cea12e8 content::ContentMainRunnerImpl::Run()
+#8 0x55c06ceaaf24 service_manager::Main()
+#9 0x55c06ce9ff14 content::ContentMain()
+#10 0x55c070faf9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55c070fafa42 headless::HeadlessBrowserMain()
+#12 0x55c06cea7f9d headless::HeadlessShellMain()
+#13 0x55c06b5061ac ChromeMain
+#14 0x7fa5a01002e1 __libc_start_main
+#15 0x55c06b50602a _start
+
+Received signal 6
+#0 0x55c06d165b0c base::debug::StackTrace::StackTrace()
+#1 0x55c06d165671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fa5a605d0c0 <unknown>
+#3 0x7fa5a0112fff gsignal
+#4 0x7fa5a011442a abort
+#5 0x55c06d164105 base::debug::BreakDebugger()
+#6 0x55c06d17ebca logging::LogMessage::~LogMessage()
+#7 0x55c06c20e2b1 content::ZygoteHostImpl::Init()
+#8 0x55c06be80c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55c06be86a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55c070fb09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55c06cea0a00 content::RunNamedProcessTypeMain()
+#12 0x55c06cea12e8 content::ContentMainRunnerImpl::Run()
+#13 0x55c06ceaaf24 service_manager::Main()
+#14 0x55c06ce9ff14 content::ContentMain()
+#15 0x55c070faf9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55c070fafa42 headless::HeadlessBrowserMain()
+#17 0x55c06cea7f9d headless::HeadlessShellMain()
+#18 0x55c06b5061ac ChromeMain
+#19 0x7fa5a01002e1 __libc_start_main
+#20 0x55c06b50602a _start
+  r8: 0000000000000000  r9: 00007ffdc95184f0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdc9518be8 r13: 0000000000000161 r14: 00007ffdc9518bf0 r15: 00007ffdc9518789
+  di: 0000000000000002  si: 00007ffdc95184f0  bp: 00007ffdc9518730  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fa5a0112fff  sp: 00007ffdc9518568
+  ip: 00007fa5a0112fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020628.169454:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55c06d165b0c base::debug::StackTrace::StackTrace()
+#1 0x55c06d17e780 logging::LogMessage::~LogMessage()
+#2 0x55c06c20e2b1 content::ZygoteHostImpl::Init()
+#3 0x55c06be80c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55c06be86a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55c070fb09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55c06cea0a00 content::RunNamedProcessTypeMain()
+#7 0x55c06cea12e8 content::ContentMainRunnerImpl::Run()
+#8 0x55c06ceaaf24 service_manager::Main()
+#9 0x55c06ce9ff14 content::ContentMain()
+#10 0x55c070faf9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55c070fafa42 headless::HeadlessBrowserMain()
+#12 0x55c06cea7f9d headless::HeadlessShellMain()
+#13 0x55c06b5061ac ChromeMain
+#14 0x7fa5a01002e1 __libc_start_main
+#15 0x55c06b50602a _start
+
+Received signal 6
+#0 0x55c06d165b0c base::debug::StackTrace::StackTrace()
+#1 0x55c06d165671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fa5a605d0c0 <unknown>
+#3 0x7fa5a0112fff gsignal
+#4 0x7fa5a011442a abort
+#5 0x55c06d164105 base::debug::BreakDebugger()
+#6 0x55c06d17ebca logging::LogMessage::~LogMessage()
+#7 0x55c06c20e2b1 content::ZygoteHostImpl::Init()
+#8 0x55c06be80c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55c06be86a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55c070fb09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55c06cea0a00 content::RunNamedProcessTypeMain()
+#12 0x55c06cea12e8 content::ContentMainRunnerImpl::Run()
+#13 0x55c06ceaaf24 service_manager::Main()
+#14 0x55c06ce9ff14 content::ContentMain()
+#15 0x55c070faf9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55c070fafa42 headless::HeadlessBrowserMain()
+#17 0x55c06cea7f9d headless::HeadlessShellMain()
+#18 0x55c06b5061ac ChromeMain
+#19 0x7fa5a01002e1 __libc_start_main
+#20 0x55c06b50602a _start
+  r8: 0000000000000000  r9: 00007ffdc95184f0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdc9518be8 r13: 0000000000000161 r14: 00007ffdc9518bf0 r15: 00007ffdc9518789
+  di: 0000000000000002  si: 00007ffdc95184f0  bp: 00007ffdc9518730  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fa5a0112fff  sp: 00007ffdc9518568
+  ip: 00007fa5a0112fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
 
-Informative references to this spec from:
-
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+No informative reference to this spec from other specs.
 
 
 ## Media Session Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -2569,7 +4598,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ImageBitmap`, `Window`
+- Unknown WebIDL names used: `ConstrainBoolean`, `ConstrainDOMString`, `ConstrainDouble`, `ImageBitmap`, `MediaStreamTrack`, `MediaTrackCapabilities`, `MediaTrackConstraintSet`, `MediaTrackSettings`, `MediaTrackSupportedConstraints`, `Window`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
@@ -2582,9 +4611,7 @@ Although they do not, the following specs should also normatively reference this
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 
-Informative references to this spec from:
-
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+No informative reference to this spec from other specs.
 
 
 ## MediaStream Recording {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -2600,7 +4627,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `EventHandler`, `MediaStream`, `Window`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
@@ -2612,7 +4639,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
@@ -2668,22 +4694,19 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [Preload](https://w3c.github.io/preload/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Navigation Timing Level 2 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/) (04 February 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/)
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
@@ -2692,41 +4715,124 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/), related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020635.273265:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5565f6a5fb0c base::debug::StackTrace::StackTrace()
+#1 0x5565f6a78780 logging::LogMessage::~LogMessage()
+#2 0x5565f5b082b1 content::ZygoteHostImpl::Init()
+#3 0x5565f577ac65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5565f5780a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5565fa8aa9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5565f679aa00 content::RunNamedProcessTypeMain()
+#7 0x5565f679b2e8 content::ContentMainRunnerImpl::Run()
+#8 0x5565f67a4f24 service_manager::Main()
+#9 0x5565f6799f14 content::ContentMain()
+#10 0x5565fa8a99b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5565fa8a9a42 headless::HeadlessBrowserMain()
+#12 0x5565f67a1f9d headless::HeadlessShellMain()
+#13 0x5565f4e001ac ChromeMain
+#14 0x7f6fc289d2e1 __libc_start_main
+#15 0x5565f4e0002a _start
 
-### Known dependencies on this specification {.dependencies}
+Received signal 6
+#0 0x5565f6a5fb0c base::debug::StackTrace::StackTrace()
+#1 0x5565f6a5f671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6fc87fa0c0 <unknown>
+#3 0x7f6fc28affff gsignal
+#4 0x7f6fc28b142a abort
+#5 0x5565f6a5e105 base::debug::BreakDebugger()
+#6 0x5565f6a78bca logging::LogMessage::~LogMessage()
+#7 0x5565f5b082b1 content::ZygoteHostImpl::Init()
+#8 0x5565f577ac65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5565f5780a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5565fa8aa9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5565f679aa00 content::RunNamedProcessTypeMain()
+#12 0x5565f679b2e8 content::ContentMainRunnerImpl::Run()
+#13 0x5565f67a4f24 service_manager::Main()
+#14 0x5565f6799f14 content::ContentMain()
+#15 0x5565fa8a99b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5565fa8a9a42 headless::HeadlessBrowserMain()
+#17 0x5565f67a1f9d headless::HeadlessShellMain()
+#18 0x5565f4e001ac ChromeMain
+#19 0x7f6fc289d2e1 __libc_start_main
+#20 0x5565f4e0002a _start
+  r8: 0000000000000000  r9: 00007ffc86a760e0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc86a767d8 r13: 0000000000000161 r14: 00007ffc86a767e0 r15: 00007ffc86a76379
+  di: 0000000000000002  si: 00007ffc86a760e0  bp: 00007ffc86a76320  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f6fc28affff  sp: 00007ffc86a76158
+  ip: 00007f6fc28affff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
 
-Normative references to this spec from:
 
-- [Gamepad](https://w3c.github.io/gamepad/)
-- [Server Timing](https://w3c.github.io/server-timing/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020635.273265:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5565f6a5fb0c base::debug::StackTrace::StackTrace()
+#1 0x5565f6a78780 logging::LogMessage::~LogMessage()
+#2 0x5565f5b082b1 content::ZygoteHostImpl::Init()
+#3 0x5565f577ac65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5565f5780a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5565fa8aa9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5565f679aa00 content::RunNamedProcessTypeMain()
+#7 0x5565f679b2e8 content::ContentMainRunnerImpl::Run()
+#8 0x5565f67a4f24 service_manager::Main()
+#9 0x5565f6799f14 content::ContentMain()
+#10 0x5565fa8a99b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5565fa8a9a42 headless::HeadlessBrowserMain()
+#12 0x5565f67a1f9d headless::HeadlessShellMain()
+#13 0x5565f4e001ac ChromeMain
+#14 0x7f6fc289d2e1 __libc_start_main
+#15 0x5565f4e0002a _start
 
-Informative references to this spec from:
+Received signal 6
+#0 0x5565f6a5fb0c base::debug::StackTrace::StackTrace()
+#1 0x5565f6a5f671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6fc87fa0c0 <unknown>
+#3 0x7f6fc28affff gsignal
+#4 0x7f6fc28b142a abort
+#5 0x5565f6a5e105 base::debug::BreakDebugger()
+#6 0x5565f6a78bca logging::LogMessage::~LogMessage()
+#7 0x5565f5b082b1 content::ZygoteHostImpl::Init()
+#8 0x5565f577ac65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5565f5780a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5565fa8aa9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5565f679aa00 content::RunNamedProcessTypeMain()
+#12 0x5565f679b2e8 content::ContentMainRunnerImpl::Run()
+#13 0x5565f67a4f24 service_manager::Main()
+#14 0x5565f6799f14 content::ContentMain()
+#15 0x5565fa8a99b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5565fa8a9a42 headless::HeadlessBrowserMain()
+#17 0x5565f67a1f9d headless::HeadlessShellMain()
+#18 0x5565f4e001ac ChromeMain
+#19 0x7f6fc289d2e1 __libc_start_main
+#20 0x5565f4e0002a _start
+  r8: 0000000000000000  r9: 00007ffc86a760e0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc86a767d8 r13: 0000000000000161 r14: 00007ffc86a767e0 r15: 00007ffc86a76379
+  di: 0000000000000002  si: 00007ffc86a760e0  bp: 00007ffc86a76320  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f6fc28affff  sp: 00007ffc86a76158
+  ip: 00007f6fc28affff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
 
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
 
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
 
-## Network Information API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true}
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
 
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Living Document)
-- Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `EventHandler`, `Window`
-- Missing references for links: 
-     * [`https://w3c.github.io/ServiceWorker/v1/`](https://w3c.github.io/ServiceWorker/v1/)
-     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2771,7 +4877,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (Wed May 09 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (Thu May 10 2018)
 - Editor's Draft: [https://w3c.github.io/webdriver/webdriver-spec.html](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2018/PR-webdriver1-20180426/)
@@ -2792,11 +4898,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Page Visibility Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true}
+## Page Visibility Level 2 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/) (15 December 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/)
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
 - Latest published version: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
@@ -2805,29 +4911,138 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `EventHandler`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020634.276009:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55821556cb0c base::debug::StackTrace::StackTrace()
+#1 0x558215585780 logging::LogMessage::~LogMessage()
+#2 0x5582146152b1 content::ZygoteHostImpl::Init()
+#3 0x558214287c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55821428da69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5582193b79a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5582152a7a00 content::RunNamedProcessTypeMain()
+#7 0x5582152a82e8 content::ContentMainRunnerImpl::Run()
+#8 0x5582152b1f24 service_manager::Main()
+#9 0x5582152a6f14 content::ContentMain()
+#10 0x5582193b69b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5582193b6a42 headless::HeadlessBrowserMain()
+#12 0x5582152aef9d headless::HeadlessShellMain()
+#13 0x55821390d1ac ChromeMain
+#14 0x7f8cd0ac22e1 __libc_start_main
+#15 0x55821390d02a _start
+
+Received signal 6
+#0 0x55821556cb0c base::debug::StackTrace::StackTrace()
+#1 0x55821556c671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f8cd6a1f0c0 <unknown>
+#3 0x7f8cd0ad4fff gsignal
+#4 0x7f8cd0ad642a abort
+#5 0x55821556b105 base::debug::BreakDebugger()
+#6 0x558215585bca logging::LogMessage::~LogMessage()
+#7 0x5582146152b1 content::ZygoteHostImpl::Init()
+#8 0x558214287c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55821428da69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5582193b79a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5582152a7a00 content::RunNamedProcessTypeMain()
+#12 0x5582152a82e8 content::ContentMainRunnerImpl::Run()
+#13 0x5582152b1f24 service_manager::Main()
+#14 0x5582152a6f14 content::ContentMain()
+#15 0x5582193b69b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5582193b6a42 headless::HeadlessBrowserMain()
+#17 0x5582152aef9d headless::HeadlessShellMain()
+#18 0x55821390d1ac ChromeMain
+#19 0x7f8cd0ac22e1 __libc_start_main
+#20 0x55821390d02a _start
+  r8: 0000000000000000  r9: 00007fff54983dc0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff549844b8 r13: 0000000000000161 r14: 00007fff549844c0 r15: 00007fff54984059
+  di: 0000000000000002  si: 00007fff54983dc0  bp: 00007fff54984000  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f8cd0ad4fff  sp: 00007fff54983e38
+  ip: 00007f8cd0ad4fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020634.276009:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55821556cb0c base::debug::StackTrace::StackTrace()
+#1 0x558215585780 logging::LogMessage::~LogMessage()
+#2 0x5582146152b1 content::ZygoteHostImpl::Init()
+#3 0x558214287c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55821428da69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5582193b79a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5582152a7a00 content::RunNamedProcessTypeMain()
+#7 0x5582152a82e8 content::ContentMainRunnerImpl::Run()
+#8 0x5582152b1f24 service_manager::Main()
+#9 0x5582152a6f14 content::ContentMain()
+#10 0x5582193b69b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5582193b6a42 headless::HeadlessBrowserMain()
+#12 0x5582152aef9d headless::HeadlessShellMain()
+#13 0x55821390d1ac ChromeMain
+#14 0x7f8cd0ac22e1 __libc_start_main
+#15 0x55821390d02a _start
+
+Received signal 6
+#0 0x55821556cb0c base::debug::StackTrace::StackTrace()
+#1 0x55821556c671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f8cd6a1f0c0 <unknown>
+#3 0x7f8cd0ad4fff gsignal
+#4 0x7f8cd0ad642a abort
+#5 0x55821556b105 base::debug::BreakDebugger()
+#6 0x558215585bca logging::LogMessage::~LogMessage()
+#7 0x5582146152b1 content::ZygoteHostImpl::Init()
+#8 0x558214287c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55821428da69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5582193b79a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5582152a7a00 content::RunNamedProcessTypeMain()
+#12 0x5582152a82e8 content::ContentMainRunnerImpl::Run()
+#13 0x5582152b1f24 service_manager::Main()
+#14 0x5582152a6f14 content::ContentMain()
+#15 0x5582193b69b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5582193b6a42 headless::HeadlessBrowserMain()
+#17 0x5582152aef9d headless::HeadlessShellMain()
+#18 0x55821390d1ac ChromeMain
+#19 0x7f8cd0ac22e1 __libc_start_main
+#20 0x55821390d02a _start
+  r8: 0000000000000000  r9: 00007fff54983dc0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff549844b8 r13: 0000000000000161 r14: 00007fff549844c0 r15: 00007fff54984059
+  di: 0000000000000002  si: 00007fff54983dc0  bp: 00007fff54984000  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f8cd0ad4fff  sp: 00007fff54983e38
+  ip: 00007f8cd0ad4fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Beacon](https://w3c.github.io/beacon/)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 
-Informative references to this spec from:
-
-- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
+No informative reference to this spec from other specs.
 
 
-## Paint Timing 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Paint Timing 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2840,6 +5055,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `PerformanceEntry`
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -2852,11 +5068,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Payment Handler API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (07 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -2865,26 +5081,137 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
-- Missing references for links: 
-     * [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/payment-handler/`](https://w3c.github.io/payment-handler/), related reference "payment-handler" uses URL [`https://www.w3.org/TR/payment-handler/`](https://www.w3.org/TR/payment-handler/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020635.353744:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55dd79375b0c base::debug::StackTrace::StackTrace()
+#1 0x55dd7938e780 logging::LogMessage::~LogMessage()
+#2 0x55dd7841e2b1 content::ZygoteHostImpl::Init()
+#3 0x55dd78090c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55dd78096a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55dd7d1c09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55dd790b0a00 content::RunNamedProcessTypeMain()
+#7 0x55dd790b12e8 content::ContentMainRunnerImpl::Run()
+#8 0x55dd790baf24 service_manager::Main()
+#9 0x55dd790aff14 content::ContentMain()
+#10 0x55dd7d1bf9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55dd7d1bfa42 headless::HeadlessBrowserMain()
+#12 0x55dd790b7f9d headless::HeadlessShellMain()
+#13 0x55dd777161ac ChromeMain
+#14 0x7f917bcdb2e1 __libc_start_main
+#15 0x55dd7771602a _start
+
+Received signal 6
+#0 0x55dd79375b0c base::debug::StackTrace::StackTrace()
+#1 0x55dd79375671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f9181c380c0 <unknown>
+#3 0x7f917bcedfff gsignal
+#4 0x7f917bcef42a abort
+#5 0x55dd79374105 base::debug::BreakDebugger()
+#6 0x55dd7938ebca logging::LogMessage::~LogMessage()
+#7 0x55dd7841e2b1 content::ZygoteHostImpl::Init()
+#8 0x55dd78090c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55dd78096a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55dd7d1c09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55dd790b0a00 content::RunNamedProcessTypeMain()
+#12 0x55dd790b12e8 content::ContentMainRunnerImpl::Run()
+#13 0x55dd790baf24 service_manager::Main()
+#14 0x55dd790aff14 content::ContentMain()
+#15 0x55dd7d1bf9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55dd7d1bfa42 headless::HeadlessBrowserMain()
+#17 0x55dd790b7f9d headless::HeadlessShellMain()
+#18 0x55dd777161ac ChromeMain
+#19 0x7f917bcdb2e1 __libc_start_main
+#20 0x55dd7771602a _start
+  r8: 0000000000000000  r9: 00007ffdb980d9d0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdb980e0c8 r13: 0000000000000161 r14: 00007ffdb980e0d0 r15: 00007ffdb980dc69
+  di: 0000000000000002  si: 00007ffdb980d9d0  bp: 00007ffdb980dc10  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f917bcedfff  sp: 00007ffdb980da48
+  ip: 00007f917bcedfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020635.353744:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55dd79375b0c base::debug::StackTrace::StackTrace()
+#1 0x55dd7938e780 logging::LogMessage::~LogMessage()
+#2 0x55dd7841e2b1 content::ZygoteHostImpl::Init()
+#3 0x55dd78090c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55dd78096a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55dd7d1c09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55dd790b0a00 content::RunNamedProcessTypeMain()
+#7 0x55dd790b12e8 content::ContentMainRunnerImpl::Run()
+#8 0x55dd790baf24 service_manager::Main()
+#9 0x55dd790aff14 content::ContentMain()
+#10 0x55dd7d1bf9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55dd7d1bfa42 headless::HeadlessBrowserMain()
+#12 0x55dd790b7f9d headless::HeadlessShellMain()
+#13 0x55dd777161ac ChromeMain
+#14 0x7f917bcdb2e1 __libc_start_main
+#15 0x55dd7771602a _start
+
+Received signal 6
+#0 0x55dd79375b0c base::debug::StackTrace::StackTrace()
+#1 0x55dd79375671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f9181c380c0 <unknown>
+#3 0x7f917bcedfff gsignal
+#4 0x7f917bcef42a abort
+#5 0x55dd79374105 base::debug::BreakDebugger()
+#6 0x55dd7938ebca logging::LogMessage::~LogMessage()
+#7 0x55dd7841e2b1 content::ZygoteHostImpl::Init()
+#8 0x55dd78090c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55dd78096a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55dd7d1c09a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55dd790b0a00 content::RunNamedProcessTypeMain()
+#12 0x55dd790b12e8 content::ContentMainRunnerImpl::Run()
+#13 0x55dd790baf24 service_manager::Main()
+#14 0x55dd790aff14 content::ContentMain()
+#15 0x55dd7d1bf9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55dd7d1bfa42 headless::HeadlessBrowserMain()
+#17 0x55dd790b7f9d headless::HeadlessShellMain()
+#18 0x55dd777161ac ChromeMain
+#19 0x7f917bcdb2e1 __libc_start_main
+#20 0x55dd7771602a _start
+  r8: 0000000000000000  r9: 00007ffdb980d9d0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdb980e0c8 r13: 0000000000000161 r14: 00007ffdb980e0d0 r15: 00007ffdb980dc69
+  di: 0000000000000002  si: 00007ffdb980d9d0  bp: 00007ffdb980dc10  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f917bcedfff  sp: 00007ffdb980da48
+  ip: 00007f917bcedfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
 
-Informative references to this spec from:
-
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
+No informative reference to this spec from other specs.
 
 
-## Payment Method: Basic Card {data-spec=true data-ok=true}
+## Payment Method: Basic Card {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/) (09 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180329/)
@@ -2893,24 +5220,132 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020634.346133:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55c97e65fb0c base::debug::StackTrace::StackTrace()
+#1 0x55c97e678780 logging::LogMessage::~LogMessage()
+#2 0x55c97d7082b1 content::ZygoteHostImpl::Init()
+#3 0x55c97d37ac65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55c97d380a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55c9824aa9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55c97e39aa00 content::RunNamedProcessTypeMain()
+#7 0x55c97e39b2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55c97e3a4f24 service_manager::Main()
+#9 0x55c97e399f14 content::ContentMain()
+#10 0x55c9824a99b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55c9824a9a42 headless::HeadlessBrowserMain()
+#12 0x55c97e3a1f9d headless::HeadlessShellMain()
+#13 0x55c97ca001ac ChromeMain
+#14 0x7f7d3995c2e1 __libc_start_main
+#15 0x55c97ca0002a _start
+
+Received signal 6
+#0 0x55c97e65fb0c base::debug::StackTrace::StackTrace()
+#1 0x55c97e65f671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f7d3f8b90c0 <unknown>
+#3 0x7f7d3996efff gsignal
+#4 0x7f7d3997042a abort
+#5 0x55c97e65e105 base::debug::BreakDebugger()
+#6 0x55c97e678bca logging::LogMessage::~LogMessage()
+#7 0x55c97d7082b1 content::ZygoteHostImpl::Init()
+#8 0x55c97d37ac65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55c97d380a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55c9824aa9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55c97e39aa00 content::RunNamedProcessTypeMain()
+#12 0x55c97e39b2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55c97e3a4f24 service_manager::Main()
+#14 0x55c97e399f14 content::ContentMain()
+#15 0x55c9824a99b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55c9824a9a42 headless::HeadlessBrowserMain()
+#17 0x55c97e3a1f9d headless::HeadlessShellMain()
+#18 0x55c97ca001ac ChromeMain
+#19 0x7f7d3995c2e1 __libc_start_main
+#20 0x55c97ca0002a _start
+  r8: 0000000000000000  r9: 00007ffdd23a24b0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdd23a2ba8 r13: 0000000000000161 r14: 00007ffdd23a2bb0 r15: 00007ffdd23a2749
+  di: 0000000000000002  si: 00007ffdd23a24b0  bp: 00007ffdd23a26f0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f7d3996efff  sp: 00007ffdd23a2528
+  ip: 00007f7d3996efff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020634.346133:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55c97e65fb0c base::debug::StackTrace::StackTrace()
+#1 0x55c97e678780 logging::LogMessage::~LogMessage()
+#2 0x55c97d7082b1 content::ZygoteHostImpl::Init()
+#3 0x55c97d37ac65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55c97d380a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55c9824aa9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55c97e39aa00 content::RunNamedProcessTypeMain()
+#7 0x55c97e39b2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55c97e3a4f24 service_manager::Main()
+#9 0x55c97e399f14 content::ContentMain()
+#10 0x55c9824a99b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55c9824a9a42 headless::HeadlessBrowserMain()
+#12 0x55c97e3a1f9d headless::HeadlessShellMain()
+#13 0x55c97ca001ac ChromeMain
+#14 0x7f7d3995c2e1 __libc_start_main
+#15 0x55c97ca0002a _start
+
+Received signal 6
+#0 0x55c97e65fb0c base::debug::StackTrace::StackTrace()
+#1 0x55c97e65f671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f7d3f8b90c0 <unknown>
+#3 0x7f7d3996efff gsignal
+#4 0x7f7d3997042a abort
+#5 0x55c97e65e105 base::debug::BreakDebugger()
+#6 0x55c97e678bca logging::LogMessage::~LogMessage()
+#7 0x55c97d7082b1 content::ZygoteHostImpl::Init()
+#8 0x55c97d37ac65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55c97d380a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55c9824aa9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55c97e39aa00 content::RunNamedProcessTypeMain()
+#12 0x55c97e39b2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55c97e3a4f24 service_manager::Main()
+#14 0x55c97e399f14 content::ContentMain()
+#15 0x55c9824a99b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55c9824a9a42 headless::HeadlessBrowserMain()
+#17 0x55c97e3a1f9d headless::HeadlessShellMain()
+#18 0x55c97ca001ac ChromeMain
+#19 0x7f7d3995c2e1 __libc_start_main
+#20 0x55c97ca0002a _start
+  r8: 0000000000000000  r9: 00007ffdd23a24b0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdd23a2ba8 r13: 0000000000000161 r14: 00007ffdd23a2bb0 r15: 00007ffdd23a2749
+  di: 0000000000000002  si: 00007ffdd23a24b0  bp: 00007ffdd23a26f0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f7d3996efff  sp: 00007ffdd23a2528
+  ip: 00007f7d3996efff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at ChildProcess.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:245:60)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
+No normative reference to this spec from other specs.
 
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-
-Informative references to this spec from:
-
-- [Payment Request API](https://w3c.github.io/payment-request/)
+No informative reference to this spec from other specs.
 
 
-## Payment Request API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Payment Request API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (09 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180503/)
@@ -2919,24 +5354,38 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at ChildProcess.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:245:60)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Performance Timeline Level 2 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (10 January 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/)
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
@@ -2945,23 +5394,133 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020635.427647:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5654c82a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5654c82c0780 logging::LogMessage::~LogMessage()
+#2 0x5654c73502b1 content::ZygoteHostImpl::Init()
+#3 0x5654c6fc2c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5654c6fc8a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5654cc0f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5654c7fe2a00 content::RunNamedProcessTypeMain()
+#7 0x5654c7fe32e8 content::ContentMainRunnerImpl::Run()
+#8 0x5654c7fecf24 service_manager::Main()
+#9 0x5654c7fe1f14 content::ContentMain()
+#10 0x5654cc0f19b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5654cc0f1a42 headless::HeadlessBrowserMain()
+#12 0x5654c7fe9f9d headless::HeadlessShellMain()
+#13 0x5654c66481ac ChromeMain
+#14 0x7f956936a2e1 __libc_start_main
+#15 0x5654c664802a _start
+
+Received signal 6
+#0 0x5654c82a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5654c82a7671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f956f2c70c0 <unknown>
+#3 0x7f956937cfff gsignal
+#4 0x7f956937e42a abort
+#5 0x5654c82a6105 base::debug::BreakDebugger()
+#6 0x5654c82c0bca logging::LogMessage::~LogMessage()
+#7 0x5654c73502b1 content::ZygoteHostImpl::Init()
+#8 0x5654c6fc2c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5654c6fc8a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5654cc0f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5654c7fe2a00 content::RunNamedProcessTypeMain()
+#12 0x5654c7fe32e8 content::ContentMainRunnerImpl::Run()
+#13 0x5654c7fecf24 service_manager::Main()
+#14 0x5654c7fe1f14 content::ContentMain()
+#15 0x5654cc0f19b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5654cc0f1a42 headless::HeadlessBrowserMain()
+#17 0x5654c7fe9f9d headless::HeadlessShellMain()
+#18 0x5654c66481ac ChromeMain
+#19 0x7f956936a2e1 __libc_start_main
+#20 0x5654c664802a _start
+  r8: 0000000000000000  r9: 00007fff03f08b20 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff03f09218 r13: 0000000000000161 r14: 00007fff03f09220 r15: 00007fff03f08db9
+  di: 0000000000000002  si: 00007fff03f08b20  bp: 00007fff03f08d60  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f956937cfff  sp: 00007fff03f08b98
+  ip: 00007f956937cfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020635.427647:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5654c82a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5654c82c0780 logging::LogMessage::~LogMessage()
+#2 0x5654c73502b1 content::ZygoteHostImpl::Init()
+#3 0x5654c6fc2c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5654c6fc8a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5654cc0f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5654c7fe2a00 content::RunNamedProcessTypeMain()
+#7 0x5654c7fe32e8 content::ContentMainRunnerImpl::Run()
+#8 0x5654c7fecf24 service_manager::Main()
+#9 0x5654c7fe1f14 content::ContentMain()
+#10 0x5654cc0f19b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5654cc0f1a42 headless::HeadlessBrowserMain()
+#12 0x5654c7fe9f9d headless::HeadlessShellMain()
+#13 0x5654c66481ac ChromeMain
+#14 0x7f956936a2e1 __libc_start_main
+#15 0x5654c664802a _start
+
+Received signal 6
+#0 0x5654c82a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5654c82a7671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f956f2c70c0 <unknown>
+#3 0x7f956937cfff gsignal
+#4 0x7f956937e42a abort
+#5 0x5654c82a6105 base::debug::BreakDebugger()
+#6 0x5654c82c0bca logging::LogMessage::~LogMessage()
+#7 0x5654c73502b1 content::ZygoteHostImpl::Init()
+#8 0x5654c6fc2c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5654c6fc8a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5654cc0f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5654c7fe2a00 content::RunNamedProcessTypeMain()
+#12 0x5654c7fe32e8 content::ContentMainRunnerImpl::Run()
+#13 0x5654c7fecf24 service_manager::Main()
+#14 0x5654c7fe1f14 content::ContentMain()
+#15 0x5654cc0f19b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5654cc0f1a42 headless::HeadlessBrowserMain()
+#17 0x5654c7fe9f9d headless::HeadlessShellMain()
+#18 0x5654c66481ac ChromeMain
+#19 0x7f956936a2e1 __libc_start_main
+#20 0x5654c664802a _start
+  r8: 0000000000000000  r9: 00007fff03f08b20 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff03f09218 r13: 0000000000000161 r14: 00007fff03f09220 r15: 00007fff03f08db9
+  di: 0000000000000002  si: 00007fff03f08b20  bp: 00007fff03f08d60  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f956937cfff  sp: 00007fff03f08b98
+  ip: 00007f956937cfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
 
-Informative references to this spec from:
-
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Server Timing](https://w3c.github.io/server-timing/)
+No informative reference to this spec from other specs.
 
 
 ## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2997,10 +5556,6 @@ Normative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [WebUSB API](https://wicg.github.io/webusb/)
@@ -3008,7 +5563,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Web Budget API](https://wicg.github.io/budget-api/)
-- [Web NFC API](https://w3c.github.io/web-nfc/)
 
 
 ## Picture-in-Picture {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -3032,11 +5586,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Pointer Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Pointer Events {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/) (Level 2)
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/)
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-pointerevents2-20180404/)
@@ -3045,10 +5599,124 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `Navigator`, `Window`
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020638.588569:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x556faea61b0c base::debug::StackTrace::StackTrace()
+#1 0x556faea7a780 logging::LogMessage::~LogMessage()
+#2 0x556fadb0a2b1 content::ZygoteHostImpl::Init()
+#3 0x556fad77cc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x556fad782a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x556fb28ac9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x556fae79ca00 content::RunNamedProcessTypeMain()
+#7 0x556fae79d2e8 content::ContentMainRunnerImpl::Run()
+#8 0x556fae7a6f24 service_manager::Main()
+#9 0x556fae79bf14 content::ContentMain()
+#10 0x556fb28ab9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x556fb28aba42 headless::HeadlessBrowserMain()
+#12 0x556fae7a3f9d headless::HeadlessShellMain()
+#13 0x556face021ac ChromeMain
+#14 0x7f45663992e1 __libc_start_main
+#15 0x556face0202a _start
+
+Received signal 6
+#0 0x556faea61b0c base::debug::StackTrace::StackTrace()
+#1 0x556faea61671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f456c2f60c0 <unknown>
+#3 0x7f45663abfff gsignal
+#4 0x7f45663ad42a abort
+#5 0x556faea60105 base::debug::BreakDebugger()
+#6 0x556faea7abca logging::LogMessage::~LogMessage()
+#7 0x556fadb0a2b1 content::ZygoteHostImpl::Init()
+#8 0x556fad77cc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x556fad782a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x556fb28ac9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x556fae79ca00 content::RunNamedProcessTypeMain()
+#12 0x556fae79d2e8 content::ContentMainRunnerImpl::Run()
+#13 0x556fae7a6f24 service_manager::Main()
+#14 0x556fae79bf14 content::ContentMain()
+#15 0x556fb28ab9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x556fb28aba42 headless::HeadlessBrowserMain()
+#17 0x556fae7a3f9d headless::HeadlessShellMain()
+#18 0x556face021ac ChromeMain
+#19 0x7f45663992e1 __libc_start_main
+#20 0x556face0202a _start
+  r8: 0000000000000000  r9: 00007ffc40033270 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc40033968 r13: 0000000000000161 r14: 00007ffc40033970 r15: 00007ffc40033509
+  di: 0000000000000002  si: 00007ffc40033270  bp: 00007ffc400334b0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f45663abfff  sp: 00007ffc400332e8
+  ip: 00007f45663abfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020638.588569:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x556faea61b0c base::debug::StackTrace::StackTrace()
+#1 0x556faea7a780 logging::LogMessage::~LogMessage()
+#2 0x556fadb0a2b1 content::ZygoteHostImpl::Init()
+#3 0x556fad77cc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x556fad782a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x556fb28ac9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x556fae79ca00 content::RunNamedProcessTypeMain()
+#7 0x556fae79d2e8 content::ContentMainRunnerImpl::Run()
+#8 0x556fae7a6f24 service_manager::Main()
+#9 0x556fae79bf14 content::ContentMain()
+#10 0x556fb28ab9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x556fb28aba42 headless::HeadlessBrowserMain()
+#12 0x556fae7a3f9d headless::HeadlessShellMain()
+#13 0x556face021ac ChromeMain
+#14 0x7f45663992e1 __libc_start_main
+#15 0x556face0202a _start
+
+Received signal 6
+#0 0x556faea61b0c base::debug::StackTrace::StackTrace()
+#1 0x556faea61671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f456c2f60c0 <unknown>
+#3 0x7f45663abfff gsignal
+#4 0x7f45663ad42a abort
+#5 0x556faea60105 base::debug::BreakDebugger()
+#6 0x556faea7abca logging::LogMessage::~LogMessage()
+#7 0x556fadb0a2b1 content::ZygoteHostImpl::Init()
+#8 0x556fad77cc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x556fad782a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x556fb28ac9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x556fae79ca00 content::RunNamedProcessTypeMain()
+#12 0x556fae79d2e8 content::ContentMainRunnerImpl::Run()
+#13 0x556fae7a6f24 service_manager::Main()
+#14 0x556fae79bf14 content::ContentMain()
+#15 0x556fb28ab9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x556fb28aba42 headless::HeadlessBrowserMain()
+#17 0x556fae7a3f9d headless::HeadlessShellMain()
+#18 0x556face021ac ChromeMain
+#19 0x7f45663992e1 __libc_start_main
+#20 0x556face0202a _start
+  r8: 0000000000000000  r9: 00007ffc40033270 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc40033968 r13: 0000000000000161 r14: 00007ffc40033970 r15: 00007ffc40033509
+  di: 0000000000000002  si: 00007ffc40033270  bp: 00007ffc400334b0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f45663abfff  sp: 00007ffc400332e8
+  ip: 00007f45663abfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3056,17 +5724,14 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 
-Informative references to this spec from:
-
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
+No informative reference to this spec from other specs.
 
 
-## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Pointer Lock 2.0 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/) (07 February 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/)
 - Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
 - Latest published version: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
@@ -3075,25 +5740,141 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020638.915813:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55654a522b0c base::debug::StackTrace::StackTrace()
+#1 0x55654a53b780 logging::LogMessage::~LogMessage()
+#2 0x5565495cb2b1 content::ZygoteHostImpl::Init()
+#3 0x55654923dc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x556549243a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55654e36d9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55654a25da00 content::RunNamedProcessTypeMain()
+#7 0x55654a25e2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55654a267f24 service_manager::Main()
+#9 0x55654a25cf14 content::ContentMain()
+#10 0x55654e36c9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55654e36ca42 headless::HeadlessBrowserMain()
+#12 0x55654a264f9d headless::HeadlessShellMain()
+#13 0x5565488c31ac ChromeMain
+#14 0x7fdf6aacc2e1 __libc_start_main
+#15 0x5565488c302a _start
+
+Received signal 6
+#0 0x55654a522b0c base::debug::StackTrace::StackTrace()
+#1 0x55654a522671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fdf70a290c0 <unknown>
+#3 0x7fdf6aadefff gsignal
+#4 0x7fdf6aae042a abort
+#5 0x55654a521105 base::debug::BreakDebugger()
+#6 0x55654a53bbca logging::LogMessage::~LogMessage()
+#7 0x5565495cb2b1 content::ZygoteHostImpl::Init()
+#8 0x55654923dc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x556549243a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55654e36d9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55654a25da00 content::RunNamedProcessTypeMain()
+#12 0x55654a25e2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55654a267f24 service_manager::Main()
+#14 0x55654a25cf14 content::ContentMain()
+#15 0x55654e36c9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55654e36ca42 headless::HeadlessBrowserMain()
+#17 0x55654a264f9d headless::HeadlessShellMain()
+#18 0x5565488c31ac ChromeMain
+#19 0x7fdf6aacc2e1 __libc_start_main
+#20 0x5565488c302a _start
+  r8: 0000000000000000  r9: 00007ffdb3a9c300 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdb3a9c9f8 r13: 0000000000000161 r14: 00007ffdb3a9ca00 r15: 00007ffdb3a9c599
+  di: 0000000000000002  si: 00007ffdb3a9c300  bp: 00007ffdb3a9c540  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fdf6aadefff  sp: 00007ffdb3a9c378
+  ip: 00007fdf6aadefff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020638.915813:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55654a522b0c base::debug::StackTrace::StackTrace()
+#1 0x55654a53b780 logging::LogMessage::~LogMessage()
+#2 0x5565495cb2b1 content::ZygoteHostImpl::Init()
+#3 0x55654923dc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x556549243a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55654e36d9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55654a25da00 content::RunNamedProcessTypeMain()
+#7 0x55654a25e2e8 content::ContentMainRunnerImpl::Run()
+#8 0x55654a267f24 service_manager::Main()
+#9 0x55654a25cf14 content::ContentMain()
+#10 0x55654e36c9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55654e36ca42 headless::HeadlessBrowserMain()
+#12 0x55654a264f9d headless::HeadlessShellMain()
+#13 0x5565488c31ac ChromeMain
+#14 0x7fdf6aacc2e1 __libc_start_main
+#15 0x5565488c302a _start
+
+Received signal 6
+#0 0x55654a522b0c base::debug::StackTrace::StackTrace()
+#1 0x55654a522671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fdf70a290c0 <unknown>
+#3 0x7fdf6aadefff gsignal
+#4 0x7fdf6aae042a abort
+#5 0x55654a521105 base::debug::BreakDebugger()
+#6 0x55654a53bbca logging::LogMessage::~LogMessage()
+#7 0x5565495cb2b1 content::ZygoteHostImpl::Init()
+#8 0x55654923dc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x556549243a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55654e36d9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55654a25da00 content::RunNamedProcessTypeMain()
+#12 0x55654a25e2e8 content::ContentMainRunnerImpl::Run()
+#13 0x55654a267f24 service_manager::Main()
+#14 0x55654a25cf14 content::ContentMain()
+#15 0x55654e36c9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55654e36ca42 headless::HeadlessBrowserMain()
+#17 0x55654a264f9d headless::HeadlessShellMain()
+#18 0x5565488c31ac ChromeMain
+#19 0x7fdf6aacc2e1 __libc_start_main
+#20 0x5565488c302a _start
+  r8: 0000000000000000  r9: 00007ffdb3a9c300 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdb3a9c9f8 r13: 0000000000000161 r14: 00007ffdb3a9ca00 r15: 00007ffdb3a9c599
+  di: 0000000000000002  si: 00007ffdb3a9c300  bp: 00007ffdb3a9c540  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fdf6aadefff  sp: 00007ffdb3a9c378
+  ip: 00007fdf6aadefff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
 
 Informative references to this spec from:
 
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 
 
-## Preload {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
+## Preload {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (09 January 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/preload/)
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
 - Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -3102,9 +5883,124 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020638.512471:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x56475959db0c base::debug::StackTrace::StackTrace()
+#1 0x5647595b6780 logging::LogMessage::~LogMessage()
+#2 0x5647586462b1 content::ZygoteHostImpl::Init()
+#3 0x5647582b8c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5647582bea69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x56475d3e89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5647592d8a00 content::RunNamedProcessTypeMain()
+#7 0x5647592d92e8 content::ContentMainRunnerImpl::Run()
+#8 0x5647592e2f24 service_manager::Main()
+#9 0x5647592d7f14 content::ContentMain()
+#10 0x56475d3e79b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x56475d3e7a42 headless::HeadlessBrowserMain()
+#12 0x5647592dff9d headless::HeadlessShellMain()
+#13 0x56475793e1ac ChromeMain
+#14 0x7fe9d51202e1 __libc_start_main
+#15 0x56475793e02a _start
+
+Received signal 6
+#0 0x56475959db0c base::debug::StackTrace::StackTrace()
+#1 0x56475959d671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fe9db07d0c0 <unknown>
+#3 0x7fe9d5132fff gsignal
+#4 0x7fe9d513442a abort
+#5 0x56475959c105 base::debug::BreakDebugger()
+#6 0x5647595b6bca logging::LogMessage::~LogMessage()
+#7 0x5647586462b1 content::ZygoteHostImpl::Init()
+#8 0x5647582b8c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5647582bea69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x56475d3e89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5647592d8a00 content::RunNamedProcessTypeMain()
+#12 0x5647592d92e8 content::ContentMainRunnerImpl::Run()
+#13 0x5647592e2f24 service_manager::Main()
+#14 0x5647592d7f14 content::ContentMain()
+#15 0x56475d3e79b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x56475d3e7a42 headless::HeadlessBrowserMain()
+#17 0x5647592dff9d headless::HeadlessShellMain()
+#18 0x56475793e1ac ChromeMain
+#19 0x7fe9d51202e1 __libc_start_main
+#20 0x56475793e02a _start
+  r8: 0000000000000000  r9: 00007ffd4b4fffc0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd4b5006b8 r13: 0000000000000161 r14: 00007ffd4b5006c0 r15: 00007ffd4b500259
+  di: 0000000000000002  si: 00007ffd4b4fffc0  bp: 00007ffd4b500200  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fe9d5132fff  sp: 00007ffd4b500038
+  ip: 00007fe9d5132fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020638.512471:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x56475959db0c base::debug::StackTrace::StackTrace()
+#1 0x5647595b6780 logging::LogMessage::~LogMessage()
+#2 0x5647586462b1 content::ZygoteHostImpl::Init()
+#3 0x5647582b8c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5647582bea69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x56475d3e89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5647592d8a00 content::RunNamedProcessTypeMain()
+#7 0x5647592d92e8 content::ContentMainRunnerImpl::Run()
+#8 0x5647592e2f24 service_manager::Main()
+#9 0x5647592d7f14 content::ContentMain()
+#10 0x56475d3e79b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x56475d3e7a42 headless::HeadlessBrowserMain()
+#12 0x5647592dff9d headless::HeadlessShellMain()
+#13 0x56475793e1ac ChromeMain
+#14 0x7fe9d51202e1 __libc_start_main
+#15 0x56475793e02a _start
+
+Received signal 6
+#0 0x56475959db0c base::debug::StackTrace::StackTrace()
+#1 0x56475959d671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fe9db07d0c0 <unknown>
+#3 0x7fe9d5132fff gsignal
+#4 0x7fe9d513442a abort
+#5 0x56475959c105 base::debug::BreakDebugger()
+#6 0x5647595b6bca logging::LogMessage::~LogMessage()
+#7 0x5647586462b1 content::ZygoteHostImpl::Init()
+#8 0x5647582b8c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5647582bea69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x56475d3e89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5647592d8a00 content::RunNamedProcessTypeMain()
+#12 0x5647592d92e8 content::ContentMainRunnerImpl::Run()
+#13 0x5647592e2f24 service_manager::Main()
+#14 0x5647592d7f14 content::ContentMain()
+#15 0x56475d3e79b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x56475d3e7a42 headless::HeadlessBrowserMain()
+#17 0x5647592dff9d headless::HeadlessShellMain()
+#18 0x56475793e1ac ChromeMain
+#19 0x7fe9d51202e1 __libc_start_main
+#20 0x56475793e02a _start
+  r8: 0000000000000000  r9: 00007ffd4b4fffc0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd4b5006b8 r13: 0000000000000161 r14: 00007ffd4b5006c0 r15: 00007ffd4b500259
+  di: 0000000000000002  si: 00007ffd4b4fffc0  bp: 00007ffd4b500200  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fe9d5132fff  sp: 00007ffd4b500038
+  ip: 00007fe9d5132fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3115,11 +6011,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Presentation API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Presentation API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/) (26 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/)
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Latest published version: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -3128,10 +6024,124 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020639.970038:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55911717bb0c base::debug::StackTrace::StackTrace()
+#1 0x559117194780 logging::LogMessage::~LogMessage()
+#2 0x5591162242b1 content::ZygoteHostImpl::Init()
+#3 0x559115e96c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x559115e9ca69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55911afc69a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x559116eb6a00 content::RunNamedProcessTypeMain()
+#7 0x559116eb72e8 content::ContentMainRunnerImpl::Run()
+#8 0x559116ec0f24 service_manager::Main()
+#9 0x559116eb5f14 content::ContentMain()
+#10 0x55911afc59b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55911afc5a42 headless::HeadlessBrowserMain()
+#12 0x559116ebdf9d headless::HeadlessShellMain()
+#13 0x55911551c1ac ChromeMain
+#14 0x7f90742a62e1 __libc_start_main
+#15 0x55911551c02a _start
+
+Received signal 6
+#0 0x55911717bb0c base::debug::StackTrace::StackTrace()
+#1 0x55911717b671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f907a2030c0 <unknown>
+#3 0x7f90742b8fff gsignal
+#4 0x7f90742ba42a abort
+#5 0x55911717a105 base::debug::BreakDebugger()
+#6 0x559117194bca logging::LogMessage::~LogMessage()
+#7 0x5591162242b1 content::ZygoteHostImpl::Init()
+#8 0x559115e96c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x559115e9ca69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55911afc69a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x559116eb6a00 content::RunNamedProcessTypeMain()
+#12 0x559116eb72e8 content::ContentMainRunnerImpl::Run()
+#13 0x559116ec0f24 service_manager::Main()
+#14 0x559116eb5f14 content::ContentMain()
+#15 0x55911afc59b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55911afc5a42 headless::HeadlessBrowserMain()
+#17 0x559116ebdf9d headless::HeadlessShellMain()
+#18 0x55911551c1ac ChromeMain
+#19 0x7f90742a62e1 __libc_start_main
+#20 0x55911551c02a _start
+  r8: 0000000000000000  r9: 00007fff0ea83500 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff0ea83bf8 r13: 0000000000000161 r14: 00007fff0ea83c00 r15: 00007fff0ea83799
+  di: 0000000000000002  si: 00007fff0ea83500  bp: 00007fff0ea83740  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f90742b8fff  sp: 00007fff0ea83578
+  ip: 00007f90742b8fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020639.970038:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55911717bb0c base::debug::StackTrace::StackTrace()
+#1 0x559117194780 logging::LogMessage::~LogMessage()
+#2 0x5591162242b1 content::ZygoteHostImpl::Init()
+#3 0x559115e96c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x559115e9ca69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55911afc69a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x559116eb6a00 content::RunNamedProcessTypeMain()
+#7 0x559116eb72e8 content::ContentMainRunnerImpl::Run()
+#8 0x559116ec0f24 service_manager::Main()
+#9 0x559116eb5f14 content::ContentMain()
+#10 0x55911afc59b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55911afc5a42 headless::HeadlessBrowserMain()
+#12 0x559116ebdf9d headless::HeadlessShellMain()
+#13 0x55911551c1ac ChromeMain
+#14 0x7f90742a62e1 __libc_start_main
+#15 0x55911551c02a _start
+
+Received signal 6
+#0 0x55911717bb0c base::debug::StackTrace::StackTrace()
+#1 0x55911717b671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f907a2030c0 <unknown>
+#3 0x7f90742b8fff gsignal
+#4 0x7f90742ba42a abort
+#5 0x55911717a105 base::debug::BreakDebugger()
+#6 0x559117194bca logging::LogMessage::~LogMessage()
+#7 0x5591162242b1 content::ZygoteHostImpl::Init()
+#8 0x559115e96c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x559115e9ca69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55911afc69a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x559116eb6a00 content::RunNamedProcessTypeMain()
+#12 0x559116eb72e8 content::ContentMainRunnerImpl::Run()
+#13 0x559116ec0f24 service_manager::Main()
+#14 0x559116eb5f14 content::ContentMain()
+#15 0x55911afc59b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55911afc5a42 headless::HeadlessBrowserMain()
+#17 0x559116ebdf9d headless::HeadlessShellMain()
+#18 0x55911551c1ac ChromeMain
+#19 0x7f90742a62e1 __libc_start_main
+#20 0x55911551c02a _start
+  r8: 0000000000000000  r9: 00007fff0ea83500 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fff0ea83bf8 r13: 0000000000000161 r14: 00007fff0ea83c00 r15: 00007fff0ea83799
+  di: 0000000000000002  si: 00007fff0ea83500  bp: 00007fff0ea83740  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f90742b8fff  sp: 00007fff0ea83578
+  ip: 00007f90742b8fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3139,9 +6149,7 @@ Normative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
 
-Informative references to this spec from:
-
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
+No informative reference to this spec from other specs.
 
 
 ## Progress Events {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
@@ -3194,11 +6202,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Push API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Push API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/) (01 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/)
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
 - Latest published version: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-push-api-20171215/)
@@ -3207,13 +6215,119 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
-- Missing references for links: 
-     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-     * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/), related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
-     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020639.356209:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x561f99effb0c base::debug::StackTrace::StackTrace()
+#1 0x561f99f18780 logging::LogMessage::~LogMessage()
+#2 0x561f98fa82b1 content::ZygoteHostImpl::Init()
+#3 0x561f98c1ac65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x561f98c20a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x561f9dd4a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x561f99c3aa00 content::RunNamedProcessTypeMain()
+#7 0x561f99c3b2e8 content::ContentMainRunnerImpl::Run()
+#8 0x561f99c44f24 service_manager::Main()
+#9 0x561f99c39f14 content::ContentMain()
+#10 0x561f9dd499b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x561f9dd49a42 headless::HeadlessBrowserMain()
+#12 0x561f99c41f9d headless::HeadlessShellMain()
+#13 0x561f982a01ac ChromeMain
+#14 0x7f065538a2e1 __libc_start_main
+#15 0x561f982a002a _start
+
+Received signal 6
+#0 0x561f99effb0c base::debug::StackTrace::StackTrace()
+#1 0x561f99eff671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f065b2e70c0 <unknown>
+#3 0x7f065539cfff gsignal
+#4 0x7f065539e42a abort
+#5 0x561f99efe105 base::debug::BreakDebugger()
+#6 0x561f99f18bca logging::LogMessage::~LogMessage()
+#7 0x561f98fa82b1 content::ZygoteHostImpl::Init()
+#8 0x561f98c1ac65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x561f98c20a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x561f9dd4a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x561f99c3aa00 content::RunNamedProcessTypeMain()
+#12 0x561f99c3b2e8 content::ContentMainRunnerImpl::Run()
+#13 0x561f99c44f24 service_manager::Main()
+#14 0x561f99c39f14 content::ContentMain()
+#15 0x561f9dd499b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x561f9dd49a42 headless::HeadlessBrowserMain()
+#17 0x561f99c41f9d headless::HeadlessShellMain()
+#18 0x561f982a01ac ChromeMain
+#19 0x7f065538a2e1 __libc_start_main
+#20 0x561f982a002a _start
+  r8: 0000000000000000  r9: 00007ffdef57d8d0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdef57dfc8 r13: 0000000000000161 r14: 00007ffdef57dfd0 r15: 00007ffdef57db69
+  di: 0000000000000002  si: 00007ffdef57d8d0  bp: 00007ffdef57db10  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f065539cfff  sp: 00007ffdef57d948
+  ip: 00007f065539cfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020639.356209:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x561f99effb0c base::debug::StackTrace::StackTrace()
+#1 0x561f99f18780 logging::LogMessage::~LogMessage()
+#2 0x561f98fa82b1 content::ZygoteHostImpl::Init()
+#3 0x561f98c1ac65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x561f98c20a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x561f9dd4a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x561f99c3aa00 content::RunNamedProcessTypeMain()
+#7 0x561f99c3b2e8 content::ContentMainRunnerImpl::Run()
+#8 0x561f99c44f24 service_manager::Main()
+#9 0x561f99c39f14 content::ContentMain()
+#10 0x561f9dd499b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x561f9dd49a42 headless::HeadlessBrowserMain()
+#12 0x561f99c41f9d headless::HeadlessShellMain()
+#13 0x561f982a01ac ChromeMain
+#14 0x7f065538a2e1 __libc_start_main
+#15 0x561f982a002a _start
+
+Received signal 6
+#0 0x561f99effb0c base::debug::StackTrace::StackTrace()
+#1 0x561f99eff671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f065b2e70c0 <unknown>
+#3 0x7f065539cfff gsignal
+#4 0x7f065539e42a abort
+#5 0x561f99efe105 base::debug::BreakDebugger()
+#6 0x561f99f18bca logging::LogMessage::~LogMessage()
+#7 0x561f98fa82b1 content::ZygoteHostImpl::Init()
+#8 0x561f98c1ac65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x561f98c20a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x561f9dd4a9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x561f99c3aa00 content::RunNamedProcessTypeMain()
+#12 0x561f99c3b2e8 content::ContentMainRunnerImpl::Run()
+#13 0x561f99c44f24 service_manager::Main()
+#14 0x561f99c39f14 content::ContentMain()
+#15 0x561f9dd499b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x561f9dd49a42 headless::HeadlessBrowserMain()
+#17 0x561f99c41f9d headless::HeadlessShellMain()
+#18 0x561f982a01ac ChromeMain
+#19 0x7f065538a2e1 __libc_start_main
+#20 0x561f982a002a _start
+  r8: 0000000000000000  r9: 00007ffdef57d8d0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdef57dfc8 r13: 0000000000000161 r14: 00007ffdef57dfd0 r15: 00007ffdef57db69
+  di: 0000000000000002  si: 00007ffdef57d8d0  bp: 00007ffdef57db10  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f065539cfff  sp: 00007ffdef57d948
+  ip: 00007f065539cfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at ChildProcess.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:245:60)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3250,17 +6364,16 @@ Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML 5.3](https://w3c.github.io/html/)
-- [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
 No informative reference to this spec from other specs.
 
 
-## Remote Playback API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## Remote Playback API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (09 March 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/)
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
 - Latest published version: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -3269,11 +6382,23 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `Window`
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at ChildProcess.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:245:60)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3306,11 +6431,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Resource Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Resource Timing Level 2 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/) (22 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/)
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-resource-timing-2-20180422/)
@@ -3319,27 +6444,132 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020639.280947:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x56252ef9db0c base::debug::StackTrace::StackTrace()
+#1 0x56252efb6780 logging::LogMessage::~LogMessage()
+#2 0x56252e0462b1 content::ZygoteHostImpl::Init()
+#3 0x56252dcb8c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x56252dcbea69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x562532de89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x56252ecd8a00 content::RunNamedProcessTypeMain()
+#7 0x56252ecd92e8 content::ContentMainRunnerImpl::Run()
+#8 0x56252ece2f24 service_manager::Main()
+#9 0x56252ecd7f14 content::ContentMain()
+#10 0x562532de79b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x562532de7a42 headless::HeadlessBrowserMain()
+#12 0x56252ecdff9d headless::HeadlessShellMain()
+#13 0x56252d33e1ac ChromeMain
+#14 0x7f9f8a1d02e1 __libc_start_main
+#15 0x56252d33e02a _start
+
+Received signal 6
+#0 0x56252ef9db0c base::debug::StackTrace::StackTrace()
+#1 0x56252ef9d671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f9f9012d0c0 <unknown>
+#3 0x7f9f8a1e2fff gsignal
+#4 0x7f9f8a1e442a abort
+#5 0x56252ef9c105 base::debug::BreakDebugger()
+#6 0x56252efb6bca logging::LogMessage::~LogMessage()
+#7 0x56252e0462b1 content::ZygoteHostImpl::Init()
+#8 0x56252dcb8c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x56252dcbea69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x562532de89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x56252ecd8a00 content::RunNamedProcessTypeMain()
+#12 0x56252ecd92e8 content::ContentMainRunnerImpl::Run()
+#13 0x56252ece2f24 service_manager::Main()
+#14 0x56252ecd7f14 content::ContentMain()
+#15 0x562532de79b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x562532de7a42 headless::HeadlessBrowserMain()
+#17 0x56252ecdff9d headless::HeadlessShellMain()
+#18 0x56252d33e1ac ChromeMain
+#19 0x7f9f8a1d02e1 __libc_start_main
+#20 0x56252d33e02a _start
+  r8: 0000000000000000  r9: 00007ffea8ddac60 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffea8ddb358 r13: 0000000000000161 r14: 00007ffea8ddb360 r15: 00007ffea8ddaef9
+  di: 0000000000000002  si: 00007ffea8ddac60  bp: 00007ffea8ddaea0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f9f8a1e2fff  sp: 00007ffea8ddacd8
+  ip: 00007f9f8a1e2fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020639.280947:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x56252ef9db0c base::debug::StackTrace::StackTrace()
+#1 0x56252efb6780 logging::LogMessage::~LogMessage()
+#2 0x56252e0462b1 content::ZygoteHostImpl::Init()
+#3 0x56252dcb8c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x56252dcbea69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x562532de89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x56252ecd8a00 content::RunNamedProcessTypeMain()
+#7 0x56252ecd92e8 content::ContentMainRunnerImpl::Run()
+#8 0x56252ece2f24 service_manager::Main()
+#9 0x56252ecd7f14 content::ContentMain()
+#10 0x562532de79b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x562532de7a42 headless::HeadlessBrowserMain()
+#12 0x56252ecdff9d headless::HeadlessShellMain()
+#13 0x56252d33e1ac ChromeMain
+#14 0x7f9f8a1d02e1 __libc_start_main
+#15 0x56252d33e02a _start
+
+Received signal 6
+#0 0x56252ef9db0c base::debug::StackTrace::StackTrace()
+#1 0x56252ef9d671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f9f9012d0c0 <unknown>
+#3 0x7f9f8a1e2fff gsignal
+#4 0x7f9f8a1e442a abort
+#5 0x56252ef9c105 base::debug::BreakDebugger()
+#6 0x56252efb6bca logging::LogMessage::~LogMessage()
+#7 0x56252e0462b1 content::ZygoteHostImpl::Init()
+#8 0x56252dcb8c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x56252dcbea69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x562532de89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x56252ecd8a00 content::RunNamedProcessTypeMain()
+#12 0x56252ecd92e8 content::ContentMainRunnerImpl::Run()
+#13 0x56252ece2f24 service_manager::Main()
+#14 0x56252ecd7f14 content::ContentMain()
+#15 0x562532de79b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x562532de7a42 headless::HeadlessBrowserMain()
+#17 0x56252ecdff9d headless::HeadlessShellMain()
+#18 0x56252d33e1ac ChromeMain
+#19 0x7f9f8a1d02e1 __libc_start_main
+#20 0x56252d33e02a _start
+  r8: 0000000000000000  r9: 00007ffea8ddac60 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffea8ddb358 r13: 0000000000000161 r14: 00007ffea8ddb360 r15: 00007ffea8ddaef9
+  di: 0000000000000002  si: 00007ffea8ddac60  bp: 00007ffea8ddaea0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f9f8a1e2fff  sp: 00007ffea8ddacd8
+  ip: 00007f9f8a1e2fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at ChildProcess.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:245:60)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
+No normative reference to this spec from other specs.
 
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Server Timing](https://w3c.github.io/server-timing/)
-
-Informative references to this spec from:
-
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+No informative reference to this spec from other specs.
 
 
 ## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (08 May 2018)
+- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (10 May 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
@@ -3379,6 +6609,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/)
      * [`https://www.w3.org/TR/accname-aam-1.1/`](https://www.w3.org/TR/accname-aam-1.1/)
      * [`https://w3c.github.io/aria/aria/graphics.html`](https://w3c.github.io/aria/aria/graphics.html)
+     * [`https://w3c.github.io/webcomponents/spec/shadow/`](https://w3c.github.io/webcomponents/spec/shadow/)
      * [`https://www.w3.org/TR/smil/`](https://www.w3.org/TR/smil/)
      * [`https://w3c.github.io/aria/svg-aam/svg-aam.html`](https://w3c.github.io/aria/svg-aam/svg-aam.html)
      * [`https://www.w3.org/TR/xsl/`](https://www.w3.org/TR/xsl/)
@@ -3410,7 +6641,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2012/WD-css3-animations-20120403/`](https://www.w3.org/TR/2012/WD-css3-animations-20120403/), related reference "css3-animations" uses URL [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/)
      * [`https://w3c.github.io/dom/`](https://w3c.github.io/dom/), related reference "dom" uses URL [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
      * [`https://w3c.github.io/html/`](https://w3c.github.io/html/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
-     * [`https://w3c.github.io/webcomponents/spec/shadow/`](https://w3c.github.io/webcomponents/spec/shadow/), related reference "shadow-dom" uses URL [`https://www.w3.org/TR/shadow-dom/`](https://www.w3.org/TR/shadow-dom/)
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
      * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/), related reference "web-animations-1" uses URL [`https://www.w3.org/TR/web-animations-1/`](https://www.w3.org/TR/web-animations-1/)
      * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/), related reference "UAAG20" uses URL [`https://www.w3.org/TR/UAAG20/`](https://www.w3.org/TR/UAAG20/)
@@ -3429,7 +6659,6 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML 5.3](https://w3c.github.io/html/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 
@@ -3440,16 +6669,15 @@ Informative references to this spec from:
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
 
 
-## Screen Capture {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Screen Capture {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/) (23 February 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/)
 - Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
 - Latest published version: [http://www.w3.org/TR/screen-capture/](http://www.w3.org/TR/screen-capture/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -3458,9 +6686,124 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `NavigatorUserMedia`
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020644.578001:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x56010c6b0b0c base::debug::StackTrace::StackTrace()
+#1 0x56010c6c9780 logging::LogMessage::~LogMessage()
+#2 0x56010b7592b1 content::ZygoteHostImpl::Init()
+#3 0x56010b3cbc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x56010b3d1a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5601104fb9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x56010c3eba00 content::RunNamedProcessTypeMain()
+#7 0x56010c3ec2e8 content::ContentMainRunnerImpl::Run()
+#8 0x56010c3f5f24 service_manager::Main()
+#9 0x56010c3eaf14 content::ContentMain()
+#10 0x5601104fa9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5601104faa42 headless::HeadlessBrowserMain()
+#12 0x56010c3f2f9d headless::HeadlessShellMain()
+#13 0x56010aa511ac ChromeMain
+#14 0x7f1df82ec2e1 __libc_start_main
+#15 0x56010aa5102a _start
+
+Received signal 6
+#0 0x56010c6b0b0c base::debug::StackTrace::StackTrace()
+#1 0x56010c6b0671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f1dfe2490c0 <unknown>
+#3 0x7f1df82fefff gsignal
+#4 0x7f1df830042a abort
+#5 0x56010c6af105 base::debug::BreakDebugger()
+#6 0x56010c6c9bca logging::LogMessage::~LogMessage()
+#7 0x56010b7592b1 content::ZygoteHostImpl::Init()
+#8 0x56010b3cbc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x56010b3d1a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5601104fb9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x56010c3eba00 content::RunNamedProcessTypeMain()
+#12 0x56010c3ec2e8 content::ContentMainRunnerImpl::Run()
+#13 0x56010c3f5f24 service_manager::Main()
+#14 0x56010c3eaf14 content::ContentMain()
+#15 0x5601104fa9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5601104faa42 headless::HeadlessBrowserMain()
+#17 0x56010c3f2f9d headless::HeadlessShellMain()
+#18 0x56010aa511ac ChromeMain
+#19 0x7f1df82ec2e1 __libc_start_main
+#20 0x56010aa5102a _start
+  r8: 0000000000000000  r9: 00007ffdf39e6950 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdf39e7048 r13: 0000000000000161 r14: 00007ffdf39e7050 r15: 00007ffdf39e6be9
+  di: 0000000000000002  si: 00007ffdf39e6950  bp: 00007ffdf39e6b90  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f1df82fefff  sp: 00007ffdf39e69c8
+  ip: 00007f1df82fefff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020644.578001:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x56010c6b0b0c base::debug::StackTrace::StackTrace()
+#1 0x56010c6c9780 logging::LogMessage::~LogMessage()
+#2 0x56010b7592b1 content::ZygoteHostImpl::Init()
+#3 0x56010b3cbc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x56010b3d1a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5601104fb9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x56010c3eba00 content::RunNamedProcessTypeMain()
+#7 0x56010c3ec2e8 content::ContentMainRunnerImpl::Run()
+#8 0x56010c3f5f24 service_manager::Main()
+#9 0x56010c3eaf14 content::ContentMain()
+#10 0x5601104fa9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5601104faa42 headless::HeadlessBrowserMain()
+#12 0x56010c3f2f9d headless::HeadlessShellMain()
+#13 0x56010aa511ac ChromeMain
+#14 0x7f1df82ec2e1 __libc_start_main
+#15 0x56010aa5102a _start
+
+Received signal 6
+#0 0x56010c6b0b0c base::debug::StackTrace::StackTrace()
+#1 0x56010c6b0671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f1dfe2490c0 <unknown>
+#3 0x7f1df82fefff gsignal
+#4 0x7f1df830042a abort
+#5 0x56010c6af105 base::debug::BreakDebugger()
+#6 0x56010c6c9bca logging::LogMessage::~LogMessage()
+#7 0x56010b7592b1 content::ZygoteHostImpl::Init()
+#8 0x56010b3cbc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x56010b3d1a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5601104fb9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x56010c3eba00 content::RunNamedProcessTypeMain()
+#12 0x56010c3ec2e8 content::ContentMainRunnerImpl::Run()
+#13 0x56010c3f5f24 service_manager::Main()
+#14 0x56010c3eaf14 content::ContentMain()
+#15 0x5601104fa9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5601104faa42 headless::HeadlessBrowserMain()
+#17 0x56010c3f2f9d headless::HeadlessShellMain()
+#18 0x56010aa511ac ChromeMain
+#19 0x7f1df82ec2e1 __libc_start_main
+#20 0x56010aa5102a _start
+  r8: 0000000000000000  r9: 00007ffdf39e6950 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffdf39e7048 r13: 0000000000000161 r14: 00007ffdf39e7050 r15: 00007ffdf39e6be9
+  di: 0000000000000002  si: 00007ffdf39e6950  bp: 00007ffdf39e6b90  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f1df82fefff  sp: 00007ffdf39e69c8
+  ip: 00007f1df82fefff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3510,7 +6853,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Battery Status API](https://w3c.github.io/battery/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
@@ -3519,12 +6861,9 @@ Normative references to this spec from:
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Permissions](https://w3c.github.io/permissions/)
-- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -3537,11 +6876,11 @@ Informative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 
 
-## Selection API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Selection API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/) (02 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/)
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-selection-api-20180402/)
@@ -3550,22 +6889,130 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `Window`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
-     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020642.431100:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5575e53a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5575e53c0780 logging::LogMessage::~LogMessage()
+#2 0x5575e44502b1 content::ZygoteHostImpl::Init()
+#3 0x5575e40c2c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5575e40c8a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5575e91f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5575e50e2a00 content::RunNamedProcessTypeMain()
+#7 0x5575e50e32e8 content::ContentMainRunnerImpl::Run()
+#8 0x5575e50ecf24 service_manager::Main()
+#9 0x5575e50e1f14 content::ContentMain()
+#10 0x5575e91f19b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5575e91f1a42 headless::HeadlessBrowserMain()
+#12 0x5575e50e9f9d headless::HeadlessShellMain()
+#13 0x5575e37481ac ChromeMain
+#14 0x7fc4ee5682e1 __libc_start_main
+#15 0x5575e374802a _start
+
+Received signal 6
+#0 0x5575e53a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5575e53a7671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fc4f44c50c0 <unknown>
+#3 0x7fc4ee57afff gsignal
+#4 0x7fc4ee57c42a abort
+#5 0x5575e53a6105 base::debug::BreakDebugger()
+#6 0x5575e53c0bca logging::LogMessage::~LogMessage()
+#7 0x5575e44502b1 content::ZygoteHostImpl::Init()
+#8 0x5575e40c2c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5575e40c8a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5575e91f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5575e50e2a00 content::RunNamedProcessTypeMain()
+#12 0x5575e50e32e8 content::ContentMainRunnerImpl::Run()
+#13 0x5575e50ecf24 service_manager::Main()
+#14 0x5575e50e1f14 content::ContentMain()
+#15 0x5575e91f19b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5575e91f1a42 headless::HeadlessBrowserMain()
+#17 0x5575e50e9f9d headless::HeadlessShellMain()
+#18 0x5575e37481ac ChromeMain
+#19 0x7fc4ee5682e1 __libc_start_main
+#20 0x5575e374802a _start
+  r8: 0000000000000000  r9: 00007ffeec562480 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffeec562b78 r13: 0000000000000161 r14: 00007ffeec562b80 r15: 00007ffeec562719
+  di: 0000000000000002  si: 00007ffeec562480  bp: 00007ffeec5626c0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fc4ee57afff  sp: 00007ffeec5624f8
+  ip: 00007fc4ee57afff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020642.431100:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5575e53a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5575e53c0780 logging::LogMessage::~LogMessage()
+#2 0x5575e44502b1 content::ZygoteHostImpl::Init()
+#3 0x5575e40c2c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5575e40c8a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5575e91f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5575e50e2a00 content::RunNamedProcessTypeMain()
+#7 0x5575e50e32e8 content::ContentMainRunnerImpl::Run()
+#8 0x5575e50ecf24 service_manager::Main()
+#9 0x5575e50e1f14 content::ContentMain()
+#10 0x5575e91f19b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5575e91f1a42 headless::HeadlessBrowserMain()
+#12 0x5575e50e9f9d headless::HeadlessShellMain()
+#13 0x5575e37481ac ChromeMain
+#14 0x7fc4ee5682e1 __libc_start_main
+#15 0x5575e374802a _start
+
+Received signal 6
+#0 0x5575e53a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5575e53a7671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fc4f44c50c0 <unknown>
+#3 0x7fc4ee57afff gsignal
+#4 0x7fc4ee57c42a abort
+#5 0x5575e53a6105 base::debug::BreakDebugger()
+#6 0x5575e53c0bca logging::LogMessage::~LogMessage()
+#7 0x5575e44502b1 content::ZygoteHostImpl::Init()
+#8 0x5575e40c2c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5575e40c8a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5575e91f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5575e50e2a00 content::RunNamedProcessTypeMain()
+#12 0x5575e50e32e8 content::ContentMainRunnerImpl::Run()
+#13 0x5575e50ecf24 service_manager::Main()
+#14 0x5575e50e1f14 content::ContentMain()
+#15 0x5575e91f19b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5575e91f1a42 headless::HeadlessBrowserMain()
+#17 0x5575e50e9f9d headless::HeadlessShellMain()
+#18 0x5575e37481ac ChromeMain
+#19 0x7fc4ee5682e1 __libc_start_main
+#20 0x5575e374802a _start
+  r8: 0000000000000000  r9: 00007ffeec562480 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffeec562b78 r13: 0000000000000161 r14: 00007ffeec562b80 r15: 00007ffeec562719
+  di: 0000000000000002  si: 00007ffeec562480  bp: 00007ffeec5626c0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fc4ee57afff  sp: 00007ffeec5624f8
+  ip: 00007fc4ee57afff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 
 No informative reference to this spec from other specs.
 
@@ -3624,11 +7071,11 @@ Informative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
-## Server Timing {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## Server Timing {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (07 February 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
@@ -3637,10 +7084,124 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-     * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020642.080687:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x555726deeb0c base::debug::StackTrace::StackTrace()
+#1 0x555726e07780 logging::LogMessage::~LogMessage()
+#2 0x555725e972b1 content::ZygoteHostImpl::Init()
+#3 0x555725b09c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x555725b0fa69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55572ac399a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x555726b29a00 content::RunNamedProcessTypeMain()
+#7 0x555726b2a2e8 content::ContentMainRunnerImpl::Run()
+#8 0x555726b33f24 service_manager::Main()
+#9 0x555726b28f14 content::ContentMain()
+#10 0x55572ac389b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55572ac38a42 headless::HeadlessBrowserMain()
+#12 0x555726b30f9d headless::HeadlessShellMain()
+#13 0x55572518f1ac ChromeMain
+#14 0x7f09222a72e1 __libc_start_main
+#15 0x55572518f02a _start
+
+Received signal 6
+#0 0x555726deeb0c base::debug::StackTrace::StackTrace()
+#1 0x555726dee671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f09282040c0 <unknown>
+#3 0x7f09222b9fff gsignal
+#4 0x7f09222bb42a abort
+#5 0x555726ded105 base::debug::BreakDebugger()
+#6 0x555726e07bca logging::LogMessage::~LogMessage()
+#7 0x555725e972b1 content::ZygoteHostImpl::Init()
+#8 0x555725b09c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x555725b0fa69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55572ac399a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x555726b29a00 content::RunNamedProcessTypeMain()
+#12 0x555726b2a2e8 content::ContentMainRunnerImpl::Run()
+#13 0x555726b33f24 service_manager::Main()
+#14 0x555726b28f14 content::ContentMain()
+#15 0x55572ac389b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55572ac38a42 headless::HeadlessBrowserMain()
+#17 0x555726b30f9d headless::HeadlessShellMain()
+#18 0x55572518f1ac ChromeMain
+#19 0x7f09222a72e1 __libc_start_main
+#20 0x55572518f02a _start
+  r8: 0000000000000000  r9: 00007ffea2cf9d40 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffea2cfa438 r13: 0000000000000161 r14: 00007ffea2cfa440 r15: 00007ffea2cf9fd9
+  di: 0000000000000002  si: 00007ffea2cf9d40  bp: 00007ffea2cf9f80  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f09222b9fff  sp: 00007ffea2cf9db8
+  ip: 00007f09222b9fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020642.080687:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x555726deeb0c base::debug::StackTrace::StackTrace()
+#1 0x555726e07780 logging::LogMessage::~LogMessage()
+#2 0x555725e972b1 content::ZygoteHostImpl::Init()
+#3 0x555725b09c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x555725b0fa69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55572ac399a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x555726b29a00 content::RunNamedProcessTypeMain()
+#7 0x555726b2a2e8 content::ContentMainRunnerImpl::Run()
+#8 0x555726b33f24 service_manager::Main()
+#9 0x555726b28f14 content::ContentMain()
+#10 0x55572ac389b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55572ac38a42 headless::HeadlessBrowserMain()
+#12 0x555726b30f9d headless::HeadlessShellMain()
+#13 0x55572518f1ac ChromeMain
+#14 0x7f09222a72e1 __libc_start_main
+#15 0x55572518f02a _start
+
+Received signal 6
+#0 0x555726deeb0c base::debug::StackTrace::StackTrace()
+#1 0x555726dee671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f09282040c0 <unknown>
+#3 0x7f09222b9fff gsignal
+#4 0x7f09222bb42a abort
+#5 0x555726ded105 base::debug::BreakDebugger()
+#6 0x555726e07bca logging::LogMessage::~LogMessage()
+#7 0x555725e972b1 content::ZygoteHostImpl::Init()
+#8 0x555725b09c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x555725b0fa69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55572ac399a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x555726b29a00 content::RunNamedProcessTypeMain()
+#12 0x555726b2a2e8 content::ContentMainRunnerImpl::Run()
+#13 0x555726b33f24 service_manager::Main()
+#14 0x555726b28f14 content::ContentMain()
+#15 0x55572ac389b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55572ac38a42 headless::HeadlessBrowserMain()
+#17 0x555726b30f9d headless::HeadlessShellMain()
+#18 0x55572518f1ac ChromeMain
+#19 0x7f09222a72e1 __libc_start_main
+#20 0x55572518f02a _start
+  r8: 0000000000000000  r9: 00007ffea2cf9d40 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffea2cfa438 r13: 0000000000000161 r14: 00007ffea2cfa440 r15: 00007ffea2cf9fd9
+  di: 0000000000000002  si: 00007ffea2cf9d40  bp: 00007ffea2cf9f80  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f09222b9fff  sp: 00007ffea2cf9db8
+  ip: 00007f09222b9fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3687,7 +7248,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`, `WindowOrWorkerGlobalScope`
+- Unknown WebIDL names used: `EventHandler`, `Navigator`, `VisibilityState`, `Window`, `WindowOrWorkerGlobalScope`
 - WebIDL names also defined elsewhere: 
     * `Worker` also defined in [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - Missing references for links: 
@@ -3704,13 +7265,7 @@ Normative references to this spec from:
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [HTML 5.3](https://w3c.github.io/html/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Push API](https://w3c.github.io/push-api/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -3718,54 +7273,12 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 Informative references to this spec from:
 
-- [Beacon](https://w3c.github.io/beacon/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-
-
-## Shadow DOM {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcomponents/spec/shadow/) (16 March 2018)
-- Editor's Draft: [https://w3c.github.io/webcomponents/spec/shadow/](https://w3c.github.io/webcomponents/spec/shadow/)
-- Latest published version: [https://www.w3.org/TR/shadow-dom/](https://www.w3.org/TR/shadow-dom/)
-- Latest published status: [Retired](https://www.w3.org/TR/2018/NOTE-shadow-dom-20180301/)
-- Repository: [GitHub w3c/webcomponents](https://github.com/w3c/webcomponents)
-- Shortname: shadow-dom
-
-### Potential issue(s) {.anomalies}
-
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `Window`
-- WebIDL names also defined elsewhere: 
-    * `ShadowRoot` also defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `ShadowRootMode` also defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-- Missing references for WebIDL names: 
-     * `DocumentOrShadowRoot` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `Selection` defined in [Selection API](https://w3c.github.io/selection-api/)
-     * `Element` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `CaretPosition` defined in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-     * `StyleSheetList` defined in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-     * `DocumentFragment` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
-     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-
-No informative reference to this spec from other specs.
 
 
 ## Static Range {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -3783,10 +7296,6 @@ No informative reference to this spec from other specs.
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 
 No informative reference to this spec from other specs.
 
@@ -3868,20 +7377,137 @@ Informative references to this spec from:
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 
 
-## The Screen Orientation API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## The Screen Orientation API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (08 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-screen-orientation-20180508/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-screen-orientation-20180509/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020644.721670:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5625342d0b0c base::debug::StackTrace::StackTrace()
+#1 0x5625342e9780 logging::LogMessage::~LogMessage()
+#2 0x5625333792b1 content::ZygoteHostImpl::Init()
+#3 0x562532febc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x562532ff1a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x56253811b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x56253400ba00 content::RunNamedProcessTypeMain()
+#7 0x56253400c2e8 content::ContentMainRunnerImpl::Run()
+#8 0x562534015f24 service_manager::Main()
+#9 0x56253400af14 content::ContentMain()
+#10 0x56253811a9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x56253811aa42 headless::HeadlessBrowserMain()
+#12 0x562534012f9d headless::HeadlessShellMain()
+#13 0x5625326711ac ChromeMain
+#14 0x7fcece6482e1 __libc_start_main
+#15 0x56253267102a _start
+
+Received signal 6
+#0 0x5625342d0b0c base::debug::StackTrace::StackTrace()
+#1 0x5625342d0671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fced45a50c0 <unknown>
+#3 0x7fcece65afff gsignal
+#4 0x7fcece65c42a abort
+#5 0x5625342cf105 base::debug::BreakDebugger()
+#6 0x5625342e9bca logging::LogMessage::~LogMessage()
+#7 0x5625333792b1 content::ZygoteHostImpl::Init()
+#8 0x562532febc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x562532ff1a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x56253811b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x56253400ba00 content::RunNamedProcessTypeMain()
+#12 0x56253400c2e8 content::ContentMainRunnerImpl::Run()
+#13 0x562534015f24 service_manager::Main()
+#14 0x56253400af14 content::ContentMain()
+#15 0x56253811a9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x56253811aa42 headless::HeadlessBrowserMain()
+#17 0x562534012f9d headless::HeadlessShellMain()
+#18 0x5625326711ac ChromeMain
+#19 0x7fcece6482e1 __libc_start_main
+#20 0x56253267102a _start
+  r8: 0000000000000000  r9: 00007ffed6466ea0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffed6467598 r13: 0000000000000161 r14: 00007ffed64675a0 r15: 00007ffed6467139
+  di: 0000000000000002  si: 00007ffed6466ea0  bp: 00007ffed64670e0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fcece65afff  sp: 00007ffed6466f18
+  ip: 00007fcece65afff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020644.721670:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5625342d0b0c base::debug::StackTrace::StackTrace()
+#1 0x5625342e9780 logging::LogMessage::~LogMessage()
+#2 0x5625333792b1 content::ZygoteHostImpl::Init()
+#3 0x562532febc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x562532ff1a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x56253811b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x56253400ba00 content::RunNamedProcessTypeMain()
+#7 0x56253400c2e8 content::ContentMainRunnerImpl::Run()
+#8 0x562534015f24 service_manager::Main()
+#9 0x56253400af14 content::ContentMain()
+#10 0x56253811a9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x56253811aa42 headless::HeadlessBrowserMain()
+#12 0x562534012f9d headless::HeadlessShellMain()
+#13 0x5625326711ac ChromeMain
+#14 0x7fcece6482e1 __libc_start_main
+#15 0x56253267102a _start
+
+Received signal 6
+#0 0x5625342d0b0c base::debug::StackTrace::StackTrace()
+#1 0x5625342d0671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fced45a50c0 <unknown>
+#3 0x7fcece65afff gsignal
+#4 0x7fcece65c42a abort
+#5 0x5625342cf105 base::debug::BreakDebugger()
+#6 0x5625342e9bca logging::LogMessage::~LogMessage()
+#7 0x5625333792b1 content::ZygoteHostImpl::Init()
+#8 0x562532febc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x562532ff1a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x56253811b9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x56253400ba00 content::RunNamedProcessTypeMain()
+#12 0x56253400c2e8 content::ContentMainRunnerImpl::Run()
+#13 0x562534015f24 service_manager::Main()
+#14 0x56253400af14 content::ContentMain()
+#15 0x56253811a9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x56253811aa42 headless::HeadlessBrowserMain()
+#17 0x562534012f9d headless::HeadlessShellMain()
+#18 0x5625326711ac ChromeMain
+#19 0x7fcece6482e1 __libc_start_main
+#20 0x56253267102a _start
+  r8: 0000000000000000  r9: 00007ffed6466ea0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffed6467598 r13: 0000000000000161 r14: 00007ffed64675a0 r15: 00007ffed6467139
+  di: 0000000000000002  si: 00007ffed6466ea0  bp: 00007ffed64670e0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fcece65afff  sp: 00007ffed6466f18
+  ip: 00007fcece65afff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3890,7 +7516,6 @@ Normative references to this spec from:
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [HTML 5.3](https://w3c.github.io/html/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
 
@@ -3917,14 +7542,13 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## Touch Events - Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## Touch Events {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/) (27 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/)
 - Editor's Draft: [https://w3c.github.io/touch-events/](https://w3c.github.io/touch-events/)
 - Latest published version: [http://www.w3.org/TR/touch-events/](http://www.w3.org/TR/touch-events/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
@@ -3933,9 +7557,124 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `Window`, `WindowProxy`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/touch-events-extensions/`](https://www.w3.org/TR/touch-events-extensions/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020643.582355:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55d3d617db0c base::debug::StackTrace::StackTrace()
+#1 0x55d3d6196780 logging::LogMessage::~LogMessage()
+#2 0x55d3d52262b1 content::ZygoteHostImpl::Init()
+#3 0x55d3d4e98c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55d3d4e9ea69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55d3d9fc89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55d3d5eb8a00 content::RunNamedProcessTypeMain()
+#7 0x55d3d5eb92e8 content::ContentMainRunnerImpl::Run()
+#8 0x55d3d5ec2f24 service_manager::Main()
+#9 0x55d3d5eb7f14 content::ContentMain()
+#10 0x55d3d9fc79b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55d3d9fc7a42 headless::HeadlessBrowserMain()
+#12 0x55d3d5ebff9d headless::HeadlessShellMain()
+#13 0x55d3d451e1ac ChromeMain
+#14 0x7f30d10952e1 __libc_start_main
+#15 0x55d3d451e02a _start
+
+Received signal 6
+#0 0x55d3d617db0c base::debug::StackTrace::StackTrace()
+#1 0x55d3d617d671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f30d6ff20c0 <unknown>
+#3 0x7f30d10a7fff gsignal
+#4 0x7f30d10a942a abort
+#5 0x55d3d617c105 base::debug::BreakDebugger()
+#6 0x55d3d6196bca logging::LogMessage::~LogMessage()
+#7 0x55d3d52262b1 content::ZygoteHostImpl::Init()
+#8 0x55d3d4e98c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55d3d4e9ea69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55d3d9fc89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55d3d5eb8a00 content::RunNamedProcessTypeMain()
+#12 0x55d3d5eb92e8 content::ContentMainRunnerImpl::Run()
+#13 0x55d3d5ec2f24 service_manager::Main()
+#14 0x55d3d5eb7f14 content::ContentMain()
+#15 0x55d3d9fc79b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55d3d9fc7a42 headless::HeadlessBrowserMain()
+#17 0x55d3d5ebff9d headless::HeadlessShellMain()
+#18 0x55d3d451e1ac ChromeMain
+#19 0x7f30d10952e1 __libc_start_main
+#20 0x55d3d451e02a _start
+  r8: 0000000000000000  r9: 00007ffd6ee7ad10 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd6ee7b408 r13: 0000000000000161 r14: 00007ffd6ee7b410 r15: 00007ffd6ee7afa9
+  di: 0000000000000002  si: 00007ffd6ee7ad10  bp: 00007ffd6ee7af50  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f30d10a7fff  sp: 00007ffd6ee7ad88
+  ip: 00007f30d10a7fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020643.582355:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55d3d617db0c base::debug::StackTrace::StackTrace()
+#1 0x55d3d6196780 logging::LogMessage::~LogMessage()
+#2 0x55d3d52262b1 content::ZygoteHostImpl::Init()
+#3 0x55d3d4e98c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55d3d4e9ea69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55d3d9fc89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55d3d5eb8a00 content::RunNamedProcessTypeMain()
+#7 0x55d3d5eb92e8 content::ContentMainRunnerImpl::Run()
+#8 0x55d3d5ec2f24 service_manager::Main()
+#9 0x55d3d5eb7f14 content::ContentMain()
+#10 0x55d3d9fc79b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55d3d9fc7a42 headless::HeadlessBrowserMain()
+#12 0x55d3d5ebff9d headless::HeadlessShellMain()
+#13 0x55d3d451e1ac ChromeMain
+#14 0x7f30d10952e1 __libc_start_main
+#15 0x55d3d451e02a _start
+
+Received signal 6
+#0 0x55d3d617db0c base::debug::StackTrace::StackTrace()
+#1 0x55d3d617d671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f30d6ff20c0 <unknown>
+#3 0x7f30d10a7fff gsignal
+#4 0x7f30d10a942a abort
+#5 0x55d3d617c105 base::debug::BreakDebugger()
+#6 0x55d3d6196bca logging::LogMessage::~LogMessage()
+#7 0x55d3d52262b1 content::ZygoteHostImpl::Init()
+#8 0x55d3d4e98c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55d3d4e9ea69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55d3d9fc89a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55d3d5eb8a00 content::RunNamedProcessTypeMain()
+#12 0x55d3d5eb92e8 content::ContentMainRunnerImpl::Run()
+#13 0x55d3d5ec2f24 service_manager::Main()
+#14 0x55d3d5eb7f14 content::ContentMain()
+#15 0x55d3d9fc79b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55d3d9fc7a42 headless::HeadlessBrowserMain()
+#17 0x55d3d5ebff9d headless::HeadlessShellMain()
+#18 0x55d3d451e1ac ChromeMain
+#19 0x7f30d10952e1 __libc_start_main
+#20 0x55d3d451e02a _start
+  r8: 0000000000000000  r9: 00007ffd6ee7ad10 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd6ee7b408 r13: 0000000000000161 r14: 00007ffd6ee7b410 r15: 00007ffd6ee7afa9
+  di: 0000000000000002  si: 00007ffd6ee7ad10  bp: 00007ffd6ee7af50  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f30d10a7fff  sp: 00007ffd6ee7ad88
+  ip: 00007f30d10a7fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3943,10 +7682,7 @@ Normative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
 
-Informative references to this spec from:
-
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
+No informative reference to this spec from other specs.
 
 
 ## UI Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3976,14 +7712,9 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Permissions](https://w3c.github.io/permissions/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
@@ -3993,9 +7724,7 @@ Although they do not, the following specs should also normatively reference this
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
 
-Informative references to this spec from:
-
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
+No informative reference to this spec from other specs.
 
 
 ## UI Events KeyboardEvent code Values {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
@@ -4066,7 +7795,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Beacon](https://w3c.github.io/beacon/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
@@ -4080,19 +7808,13 @@ Normative references to this spec from:
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
-- [Web NFC API](https://w3c.github.io/web-nfc/)
-- [Web Share API](https://wicg.github.io/web-share/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -4102,7 +7824,6 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -4136,11 +7857,11 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## User Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## User Timing Level 2 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/) (02 April 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-user-timing-2-20180402/)
@@ -4149,34 +7870,124 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020655.768124:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5643a89a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5643a89c0780 logging::LogMessage::~LogMessage()
+#2 0x5643a7a502b1 content::ZygoteHostImpl::Init()
+#3 0x5643a76c2c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5643a76c8a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5643ac7f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5643a86e2a00 content::RunNamedProcessTypeMain()
+#7 0x5643a86e32e8 content::ContentMainRunnerImpl::Run()
+#8 0x5643a86ecf24 service_manager::Main()
+#9 0x5643a86e1f14 content::ContentMain()
+#10 0x5643ac7f19b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5643ac7f1a42 headless::HeadlessBrowserMain()
+#12 0x5643a86e9f9d headless::HeadlessShellMain()
+#13 0x5643a6d481ac ChromeMain
+#14 0x7f0cff7932e1 __libc_start_main
+#15 0x5643a6d4802a _start
 
-### Known dependencies on this specification {.dependencies}
+Received signal 6
+#0 0x5643a89a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5643a89a7671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f0d056f00c0 <unknown>
+#3 0x7f0cff7a5fff gsignal
+#4 0x7f0cff7a742a abort
+#5 0x5643a89a6105 base::debug::BreakDebugger()
+#6 0x5643a89c0bca logging::LogMessage::~LogMessage()
+#7 0x5643a7a502b1 content::ZygoteHostImpl::Init()
+#8 0x5643a76c2c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5643a76c8a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5643ac7f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5643a86e2a00 content::RunNamedProcessTypeMain()
+#12 0x5643a86e32e8 content::ContentMainRunnerImpl::Run()
+#13 0x5643a86ecf24 service_manager::Main()
+#14 0x5643a86e1f14 content::ContentMain()
+#15 0x5643ac7f19b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5643ac7f1a42 headless::HeadlessBrowserMain()
+#17 0x5643a86e9f9d headless::HeadlessShellMain()
+#18 0x5643a6d481ac ChromeMain
+#19 0x7f0cff7932e1 __libc_start_main
+#20 0x5643a6d4802a _start
+  r8: 0000000000000000  r9: 00007ffc37affaa0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc37b00198 r13: 0000000000000161 r14: 00007ffc37b001a0 r15: 00007ffc37affd39
+  di: 0000000000000002  si: 00007ffc37affaa0  bp: 00007ffc37affce0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f0cff7a5fff  sp: 00007ffc37affb18
+  ip: 00007f0cff7a5fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
 
-No normative reference to this spec from other specs.
 
-Informative references to this spec from:
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020655.768124:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x5643a89a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5643a89c0780 logging::LogMessage::~LogMessage()
+#2 0x5643a7a502b1 content::ZygoteHostImpl::Init()
+#3 0x5643a76c2c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x5643a76c8a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x5643ac7f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x5643a86e2a00 content::RunNamedProcessTypeMain()
+#7 0x5643a86e32e8 content::ContentMainRunnerImpl::Run()
+#8 0x5643a86ecf24 service_manager::Main()
+#9 0x5643a86e1f14 content::ContentMain()
+#10 0x5643ac7f19b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x5643ac7f1a42 headless::HeadlessBrowserMain()
+#12 0x5643a86e9f9d headless::HeadlessShellMain()
+#13 0x5643a6d481ac ChromeMain
+#14 0x7f0cff7932e1 __libc_start_main
+#15 0x5643a6d4802a _start
 
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
+Received signal 6
+#0 0x5643a89a7b0c base::debug::StackTrace::StackTrace()
+#1 0x5643a89a7671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f0d056f00c0 <unknown>
+#3 0x7f0cff7a5fff gsignal
+#4 0x7f0cff7a742a abort
+#5 0x5643a89a6105 base::debug::BreakDebugger()
+#6 0x5643a89c0bca logging::LogMessage::~LogMessage()
+#7 0x5643a7a502b1 content::ZygoteHostImpl::Init()
+#8 0x5643a76c2c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x5643a76c8a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x5643ac7f29a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x5643a86e2a00 content::RunNamedProcessTypeMain()
+#12 0x5643a86e32e8 content::ContentMainRunnerImpl::Run()
+#13 0x5643a86ecf24 service_manager::Main()
+#14 0x5643a86e1f14 content::ContentMain()
+#15 0x5643ac7f19b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x5643ac7f1a42 headless::HeadlessBrowserMain()
+#17 0x5643a86e9f9d headless::HeadlessShellMain()
+#18 0x5643a6d481ac ChromeMain
+#19 0x7f0cff7932e1 __libc_start_main
+#20 0x5643a6d4802a _start
+  r8: 0000000000000000  r9: 00007ffc37affaa0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffc37b00198 r13: 0000000000000161 r14: 00007ffc37b001a0 r15: 00007ffc37affd39
+  di: 0000000000000002  si: 00007ffc37affaa0  bp: 00007ffc37affce0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f0cff7a5fff  sp: 00007ffc37affb18
+  ip: 00007f0cff7a5fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
 
 
-## Vibration API (Second Edition) {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
 
-### Spec info {.info}
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/) (23 October 2017)
-- Editor's Draft: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
-- Latest published version: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
-- Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-vibration-20161018/)
-- Repository: [GitHub w3c/vibration](https://github.com/w3c/vibration)
-- Shortname: vibration
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `Navigator`
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4185,7 +7996,146 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## W3C DOM 4.1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Vibration API (Second Edition) {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/)
+- Editor's Draft: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
+- Latest published version: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-vibration-20161018/)
+- Repository: [GitHub w3c/vibration](https://github.com/w3c/vibration)
+- Shortname: vibration
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020655.234625:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x557bd8337b0c base::debug::StackTrace::StackTrace()
+#1 0x557bd8350780 logging::LogMessage::~LogMessage()
+#2 0x557bd73e02b1 content::ZygoteHostImpl::Init()
+#3 0x557bd7052c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x557bd7058a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x557bdc1829a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x557bd8072a00 content::RunNamedProcessTypeMain()
+#7 0x557bd80732e8 content::ContentMainRunnerImpl::Run()
+#8 0x557bd807cf24 service_manager::Main()
+#9 0x557bd8071f14 content::ContentMain()
+#10 0x557bdc1819b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x557bdc181a42 headless::HeadlessBrowserMain()
+#12 0x557bd8079f9d headless::HeadlessShellMain()
+#13 0x557bd66d81ac ChromeMain
+#14 0x7f12d8c362e1 __libc_start_main
+#15 0x557bd66d802a _start
+
+Received signal 6
+#0 0x557bd8337b0c base::debug::StackTrace::StackTrace()
+#1 0x557bd8337671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f12deb930c0 <unknown>
+#3 0x7f12d8c48fff gsignal
+#4 0x7f12d8c4a42a abort
+#5 0x557bd8336105 base::debug::BreakDebugger()
+#6 0x557bd8350bca logging::LogMessage::~LogMessage()
+#7 0x557bd73e02b1 content::ZygoteHostImpl::Init()
+#8 0x557bd7052c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x557bd7058a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x557bdc1829a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x557bd8072a00 content::RunNamedProcessTypeMain()
+#12 0x557bd80732e8 content::ContentMainRunnerImpl::Run()
+#13 0x557bd807cf24 service_manager::Main()
+#14 0x557bd8071f14 content::ContentMain()
+#15 0x557bdc1819b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x557bdc181a42 headless::HeadlessBrowserMain()
+#17 0x557bd8079f9d headless::HeadlessShellMain()
+#18 0x557bd66d81ac ChromeMain
+#19 0x7f12d8c362e1 __libc_start_main
+#20 0x557bd66d802a _start
+  r8: 0000000000000000  r9: 00007ffea90013a0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffea9001a98 r13: 0000000000000161 r14: 00007ffea9001aa0 r15: 00007ffea9001639
+  di: 0000000000000002  si: 00007ffea90013a0  bp: 00007ffea90015e0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f12d8c48fff  sp: 00007ffea9001418
+  ip: 00007f12d8c48fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020655.234625:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x557bd8337b0c base::debug::StackTrace::StackTrace()
+#1 0x557bd8350780 logging::LogMessage::~LogMessage()
+#2 0x557bd73e02b1 content::ZygoteHostImpl::Init()
+#3 0x557bd7052c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x557bd7058a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x557bdc1829a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x557bd8072a00 content::RunNamedProcessTypeMain()
+#7 0x557bd80732e8 content::ContentMainRunnerImpl::Run()
+#8 0x557bd807cf24 service_manager::Main()
+#9 0x557bd8071f14 content::ContentMain()
+#10 0x557bdc1819b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x557bdc181a42 headless::HeadlessBrowserMain()
+#12 0x557bd8079f9d headless::HeadlessShellMain()
+#13 0x557bd66d81ac ChromeMain
+#14 0x7f12d8c362e1 __libc_start_main
+#15 0x557bd66d802a _start
+
+Received signal 6
+#0 0x557bd8337b0c base::debug::StackTrace::StackTrace()
+#1 0x557bd8337671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f12deb930c0 <unknown>
+#3 0x7f12d8c48fff gsignal
+#4 0x7f12d8c4a42a abort
+#5 0x557bd8336105 base::debug::BreakDebugger()
+#6 0x557bd8350bca logging::LogMessage::~LogMessage()
+#7 0x557bd73e02b1 content::ZygoteHostImpl::Init()
+#8 0x557bd7052c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x557bd7058a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x557bdc1829a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x557bd8072a00 content::RunNamedProcessTypeMain()
+#12 0x557bd80732e8 content::ContentMainRunnerImpl::Run()
+#13 0x557bd807cf24 service_manager::Main()
+#14 0x557bd8071f14 content::ContentMain()
+#15 0x557bdc1819b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x557bdc181a42 headless::HeadlessBrowserMain()
+#17 0x557bd8079f9d headless::HeadlessShellMain()
+#18 0x557bd66d81ac ChromeMain
+#19 0x7f12d8c362e1 __libc_start_main
+#20 0x557bd66d802a _start
+  r8: 0000000000000000  r9: 00007ffea90013a0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffea9001a98 r13: 0000000000000161 r14: 00007ffea9001aa0 r15: 00007ffea9001639
+  di: 0000000000000002  si: 00007ffea90013a0  bp: 00007ffea90015e0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f12d8c48fff  sp: 00007ffea9001418
+  ip: 00007f12d8c48fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## W3C DOM 4.1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -4198,10 +8148,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLSlotElement`, `Window`
-- WebIDL names also defined elsewhere: 
-    * `ShadowRoot` also defined in [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
-    * `ShadowRootMode` also defined in [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `HTMLSlotElement`, `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/)
 - Inconsistent references for links: 
@@ -4215,9 +8162,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Accessibility Object Model, Phase 1](https://wicg.github.io/aom/spec/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
@@ -4234,66 +8179,44 @@ Normative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Network Information API](https://wicg.github.io/netinfo/)
-- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [Preload](https://w3c.github.io/preload/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
-- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
-- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Notifications](https://www.w3.org/TR/notifications/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -4304,29 +8227,22 @@ Normative references to this spec from:
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
-- [Battery Status API](https://w3c.github.io/battery/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 
 
-## Wake Lock API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Wake Lock API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (13 December 2017)
+- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/)
 - Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
 - Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -4335,7 +8251,23 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at ChildProcess.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:245:60)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4357,7 +8289,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `EventHandler`, `Window`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 
@@ -4372,11 +8304,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Web App Manifest {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Web App Manifest {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/) (Living Document)
+- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-appmanifest-20180508/)
@@ -4385,21 +8317,134 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020537.350704:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55c03cb28b0c base::debug::StackTrace::StackTrace()
+#1 0x55c03cb41780 logging::LogMessage::~LogMessage()
+#2 0x55c03bbd12b1 content::ZygoteHostImpl::Init()
+#3 0x55c03b843c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55c03b849a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55c0409739a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55c03c863a00 content::RunNamedProcessTypeMain()
+#7 0x55c03c8642e8 content::ContentMainRunnerImpl::Run()
+#8 0x55c03c86df24 service_manager::Main()
+#9 0x55c03c862f14 content::ContentMain()
+#10 0x55c0409729b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55c040972a42 headless::HeadlessBrowserMain()
+#12 0x55c03c86af9d headless::HeadlessShellMain()
+#13 0x55c03aec91ac ChromeMain
+#14 0x7f2bfb8102e1 __libc_start_main
+#15 0x55c03aec902a _start
+
+Received signal 6
+#0 0x55c03cb28b0c base::debug::StackTrace::StackTrace()
+#1 0x55c03cb28671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f2c0176d0c0 <unknown>
+#3 0x7f2bfb822fff gsignal
+#4 0x7f2bfb82442a abort
+#5 0x55c03cb27105 base::debug::BreakDebugger()
+#6 0x55c03cb41bca logging::LogMessage::~LogMessage()
+#7 0x55c03bbd12b1 content::ZygoteHostImpl::Init()
+#8 0x55c03b843c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55c03b849a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55c0409739a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55c03c863a00 content::RunNamedProcessTypeMain()
+#12 0x55c03c8642e8 content::ContentMainRunnerImpl::Run()
+#13 0x55c03c86df24 service_manager::Main()
+#14 0x55c03c862f14 content::ContentMain()
+#15 0x55c0409729b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55c040972a42 headless::HeadlessBrowserMain()
+#17 0x55c03c86af9d headless::HeadlessShellMain()
+#18 0x55c03aec91ac ChromeMain
+#19 0x7f2bfb8102e1 __libc_start_main
+#20 0x55c03aec902a _start
+  r8: 0000000000000000  r9: 00007fffc3e36260 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fffc3e36958 r13: 0000000000000161 r14: 00007fffc3e36960 r15: 00007fffc3e364f9
+  di: 0000000000000002  si: 00007fffc3e36260  bp: 00007fffc3e364a0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f2bfb822fff  sp: 00007fffc3e362d8
+  ip: 00007f2bfb822fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020537.350704:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x55c03cb28b0c base::debug::StackTrace::StackTrace()
+#1 0x55c03cb41780 logging::LogMessage::~LogMessage()
+#2 0x55c03bbd12b1 content::ZygoteHostImpl::Init()
+#3 0x55c03b843c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x55c03b849a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x55c0409739a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x55c03c863a00 content::RunNamedProcessTypeMain()
+#7 0x55c03c8642e8 content::ContentMainRunnerImpl::Run()
+#8 0x55c03c86df24 service_manager::Main()
+#9 0x55c03c862f14 content::ContentMain()
+#10 0x55c0409729b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x55c040972a42 headless::HeadlessBrowserMain()
+#12 0x55c03c86af9d headless::HeadlessShellMain()
+#13 0x55c03aec91ac ChromeMain
+#14 0x7f2bfb8102e1 __libc_start_main
+#15 0x55c03aec902a _start
+
+Received signal 6
+#0 0x55c03cb28b0c base::debug::StackTrace::StackTrace()
+#1 0x55c03cb28671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f2c0176d0c0 <unknown>
+#3 0x7f2bfb822fff gsignal
+#4 0x7f2bfb82442a abort
+#5 0x55c03cb27105 base::debug::BreakDebugger()
+#6 0x55c03cb41bca logging::LogMessage::~LogMessage()
+#7 0x55c03bbd12b1 content::ZygoteHostImpl::Init()
+#8 0x55c03b843c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x55c03b849a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x55c0409739a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x55c03c863a00 content::RunNamedProcessTypeMain()
+#12 0x55c03c8642e8 content::ContentMainRunnerImpl::Run()
+#13 0x55c03c86df24 service_manager::Main()
+#14 0x55c03c862f14 content::ContentMain()
+#15 0x55c0409729b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x55c040972a42 headless::HeadlessBrowserMain()
+#17 0x55c03c86af9d headless::HeadlessShellMain()
+#18 0x55c03aec91ac ChromeMain
+#19 0x7f2bfb8102e1 __libc_start_main
+#20 0x55c03aec902a _start
+  r8: 0000000000000000  r9: 00007fffc3e36260 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007fffc3e36958 r13: 0000000000000161 r14: 00007fffc3e36960 r15: 00007fffc3e364f9
+  di: 0000000000000002  si: 00007fffc3e36260  bp: 00007fffc3e364a0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f2bfb822fff  sp: 00007fffc3e362d8
+  ip: 00007f2bfb822fff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Media Session Standard](https://wicg.github.io/mediasession/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
 ## Web Audio API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -4415,7 +8460,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `Window`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `EventHandler`, `HTMLMediaElement`, `MediaStream`, `MediaStreamTrack`, `Window`
 - WebIDL names also defined elsewhere: 
     * `Worklet` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - Missing references for links: 
@@ -4427,19 +8472,15 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+No normative reference to this spec from other specs.
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Console Standard](https://console.spec.whatwg.org/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 
 Informative references to this spec from:
 
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
@@ -4447,7 +8488,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (4 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (9 May 2018)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
@@ -4498,20 +8539,19 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
-- [Push API](https://w3c.github.io/push-api/)
 
 
-## Web Bluetooth {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Bluetooth {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/) (20 April 2018)
+- Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/) (9 May 2018)
 - Repository: [GitHub webbluetoothcg/web-bluetooth](https://github.com/webbluetoothcg/web-bluetooth)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `EventHandler`, `Map`, `Navigator`
 - Missing references for links: 
      * [`https://w3c.github.io/fingerprinting-guidance/`](https://w3c.github.io/fingerprinting-guidance/)
 - Inconsistent references for links: 
@@ -4567,10 +8607,7 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
@@ -4602,16 +8639,12 @@ Normative references to this spec from:
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
-- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Battery Status API](https://w3c.github.io/battery/)
-- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
@@ -4626,9 +8659,7 @@ Normative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
@@ -4637,78 +8668,49 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
-- [Push API](https://w3c.github.io/push-api/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Selection API](https://w3c.github.io/selection-api/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [The WebSocket API](https://www.w3.org/TR/websockets/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
-- [Web NFC API](https://w3c.github.io/web-nfc/)
-- [Web Share API](https://wicg.github.io/web-share/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -4717,29 +8719,14 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Accessibility Object Model, Phase 1](https://wicg.github.io/aom/spec/)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
-- [Network Information API](https://wicg.github.io/netinfo/)
-- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Selection API](https://w3c.github.io/selection-api/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## Web MIDI API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Web MIDI API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/) (04 May 2018)
+- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/)
 - Editor's Draft: [http://webaudio.github.io/web-midi-api/](http://webaudio.github.io/web-midi-api/)
 - Latest published version: [http://www.w3.org/TR/webmidi/](http://www.w3.org/TR/webmidi/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
@@ -4748,9 +8735,124 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020656.592824:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x559d941b0b0c base::debug::StackTrace::StackTrace()
+#1 0x559d941c9780 logging::LogMessage::~LogMessage()
+#2 0x559d932592b1 content::ZygoteHostImpl::Init()
+#3 0x559d92ecbc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x559d92ed1a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x559d97ffb9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x559d93eeba00 content::RunNamedProcessTypeMain()
+#7 0x559d93eec2e8 content::ContentMainRunnerImpl::Run()
+#8 0x559d93ef5f24 service_manager::Main()
+#9 0x559d93eeaf14 content::ContentMain()
+#10 0x559d97ffa9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x559d97ffaa42 headless::HeadlessBrowserMain()
+#12 0x559d93ef2f9d headless::HeadlessShellMain()
+#13 0x559d925511ac ChromeMain
+#14 0x7fde35ceb2e1 __libc_start_main
+#15 0x559d9255102a _start
+
+Received signal 6
+#0 0x559d941b0b0c base::debug::StackTrace::StackTrace()
+#1 0x559d941b0671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fde3bc480c0 <unknown>
+#3 0x7fde35cfdfff gsignal
+#4 0x7fde35cff42a abort
+#5 0x559d941af105 base::debug::BreakDebugger()
+#6 0x559d941c9bca logging::LogMessage::~LogMessage()
+#7 0x559d932592b1 content::ZygoteHostImpl::Init()
+#8 0x559d92ecbc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x559d92ed1a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x559d97ffb9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x559d93eeba00 content::RunNamedProcessTypeMain()
+#12 0x559d93eec2e8 content::ContentMainRunnerImpl::Run()
+#13 0x559d93ef5f24 service_manager::Main()
+#14 0x559d93eeaf14 content::ContentMain()
+#15 0x559d97ffa9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x559d97ffaa42 headless::HeadlessBrowserMain()
+#17 0x559d93ef2f9d headless::HeadlessShellMain()
+#18 0x559d925511ac ChromeMain
+#19 0x7fde35ceb2e1 __libc_start_main
+#20 0x559d9255102a _start
+  r8: 0000000000000000  r9: 00007ffd2474caa0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd2474d198 r13: 0000000000000161 r14: 00007ffd2474d1a0 r15: 00007ffd2474cd39
+  di: 0000000000000002  si: 00007ffd2474caa0  bp: 00007ffd2474cce0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fde35cfdfff  sp: 00007ffd2474cb18
+  ip: 00007fde35cfdfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020656.592824:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x559d941b0b0c base::debug::StackTrace::StackTrace()
+#1 0x559d941c9780 logging::LogMessage::~LogMessage()
+#2 0x559d932592b1 content::ZygoteHostImpl::Init()
+#3 0x559d92ecbc65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x559d92ed1a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x559d97ffb9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x559d93eeba00 content::RunNamedProcessTypeMain()
+#7 0x559d93eec2e8 content::ContentMainRunnerImpl::Run()
+#8 0x559d93ef5f24 service_manager::Main()
+#9 0x559d93eeaf14 content::ContentMain()
+#10 0x559d97ffa9b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x559d97ffaa42 headless::HeadlessBrowserMain()
+#12 0x559d93ef2f9d headless::HeadlessShellMain()
+#13 0x559d925511ac ChromeMain
+#14 0x7fde35ceb2e1 __libc_start_main
+#15 0x559d9255102a _start
+
+Received signal 6
+#0 0x559d941b0b0c base::debug::StackTrace::StackTrace()
+#1 0x559d941b0671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7fde3bc480c0 <unknown>
+#3 0x7fde35cfdfff gsignal
+#4 0x7fde35cff42a abort
+#5 0x559d941af105 base::debug::BreakDebugger()
+#6 0x559d941c9bca logging::LogMessage::~LogMessage()
+#7 0x559d932592b1 content::ZygoteHostImpl::Init()
+#8 0x559d92ecbc65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x559d92ed1a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x559d97ffb9a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x559d93eeba00 content::RunNamedProcessTypeMain()
+#12 0x559d93eec2e8 content::ContentMainRunnerImpl::Run()
+#13 0x559d93ef5f24 service_manager::Main()
+#14 0x559d93eeaf14 content::ContentMain()
+#15 0x559d97ffa9b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x559d97ffaa42 headless::HeadlessBrowserMain()
+#17 0x559d93ef2f9d headless::HeadlessShellMain()
+#18 0x559d925511ac ChromeMain
+#19 0x7fde35ceb2e1 __libc_start_main
+#20 0x559d9255102a _start
+  r8: 0000000000000000  r9: 00007ffd2474caa0 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffd2474d198 r13: 0000000000000161 r14: 00007ffd2474d1a0 r15: 00007ffd2474cd39
+  di: 0000000000000002  si: 00007ffd2474caa0  bp: 00007ffd2474cce0  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007fde35cfdfff  sp: 00007ffd2474cb18
+  ip: 00007fde35cfdfff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4759,36 +8861,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
-
-
-## Web NFC API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (06 April 2018)
-- Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `Dictionary`, `Navigator`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/url-1/`](https://www.w3.org/TR/url-1/)
-     * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/)
-     * [`https://streams.spec.whatwg.org/`](https://streams.spec.whatwg.org/)
-     * [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
-- Inconsistent references for links: 
-     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
-     * [`https://www.w3.org/TR/2011/WD-html5-20110113/`](https://www.w3.org/TR/2011/WD-html5-20110113/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
-     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
-     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "permissions" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ## Web Notifications {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -4816,31 +8888,8 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
-- [Push API](https://w3c.github.io/push-api/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [Web Budget API](https://wicg.github.io/budget-api/)
-
-
-## Web Share API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (15 March 2018)
-- Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `Navigator`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ## Web Storage (Second Edition) {data-spec=true data-ok=true}
@@ -4863,7 +8912,6 @@ This specification looks good!
 Normative references to this spec from:
 
 - [HTML 5.3](https://w3c.github.io/html/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
 
 Informative references to this spec from:
 
@@ -4911,13 +8959,11 @@ Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
@@ -4931,7 +8977,6 @@ Normative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Custom Elements](https://w3c.github.io/webcomponents/spec/custom/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
@@ -4941,61 +8986,38 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [Network Information API](https://wicg.github.io/netinfo/)
-- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Selection API](https://w3c.github.io/selection-api/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Shadow DOM](https://w3c.github.io/webcomponents/spec/shadow/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
-- [Web Share API](https://wicg.github.io/web-share/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -5007,37 +9029,30 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 Informative references to this spec from:
 
-- [Battery Status API](https://w3c.github.io/battery/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [File API](https://w3c.github.io/FileAPI/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Push API](https://w3c.github.io/push-api/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 ## WebAssembly JavaScript Interface {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webassembly.github.io/spec/js-api/index.html) (8 May 2018)
-- Shortname: no shortname
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (9 May 2018)
+- Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
+- Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/)
+- Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
+- Shortname: wasm-js-api-1
 
 ### Potential issue(s) {.anomalies}
 
@@ -5060,7 +9075,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed May 09 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu May 10 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -5080,7 +9095,6 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
@@ -5089,7 +9103,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed May 09 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu May 10 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -5112,16 +9126,15 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
+## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (03 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-webrtc-20171102/)
@@ -5130,29 +9143,133 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `RTCError`, `Window`
-- WebIDL names also defined elsewhere: 
-    * `RTCStats` also defined in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `Event` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-     * `EventInit` defined in [W3C DOM 4.1](https://w3c.github.io/dom/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/), related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+The following network or parsing error occurred:
+`Error: Failed to launch chrome!
+[0510/020719.028281:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x556fb92c6b0c base::debug::StackTrace::StackTrace()
+#1 0x556fb92df780 logging::LogMessage::~LogMessage()
+#2 0x556fb836f2b1 content::ZygoteHostImpl::Init()
+#3 0x556fb7fe1c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x556fb7fe7a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x556fbd1119a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x556fb9001a00 content::RunNamedProcessTypeMain()
+#7 0x556fb90022e8 content::ContentMainRunnerImpl::Run()
+#8 0x556fb900bf24 service_manager::Main()
+#9 0x556fb9000f14 content::ContentMain()
+#10 0x556fbd1109b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x556fbd110a42 headless::HeadlessBrowserMain()
+#12 0x556fb9008f9d headless::HeadlessShellMain()
+#13 0x556fb76671ac ChromeMain
+#14 0x7f92d6acc2e1 __libc_start_main
+#15 0x556fb766702a _start
+
+Received signal 6
+#0 0x556fb92c6b0c base::debug::StackTrace::StackTrace()
+#1 0x556fb92c6671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f92dca290c0 <unknown>
+#3 0x7f92d6adefff gsignal
+#4 0x7f92d6ae042a abort
+#5 0x556fb92c5105 base::debug::BreakDebugger()
+#6 0x556fb92dfbca logging::LogMessage::~LogMessage()
+#7 0x556fb836f2b1 content::ZygoteHostImpl::Init()
+#8 0x556fb7fe1c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x556fb7fe7a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x556fbd1119a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x556fb9001a00 content::RunNamedProcessTypeMain()
+#12 0x556fb90022e8 content::ContentMainRunnerImpl::Run()
+#13 0x556fb900bf24 service_manager::Main()
+#14 0x556fb9000f14 content::ContentMain()
+#15 0x556fbd1109b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x556fbd110a42 headless::HeadlessBrowserMain()
+#17 0x556fb9008f9d headless::HeadlessShellMain()
+#18 0x556fb76671ac ChromeMain
+#19 0x7f92d6acc2e1 __libc_start_main
+#20 0x556fb766702a _start
+  r8: 0000000000000000  r9: 00007ffe8b7c5e50 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffe8b7c6548 r13: 0000000000000161 r14: 00007ffe8b7c6550 r15: 00007ffe8b7c60e9
+  di: 0000000000000002  si: 00007ffe8b7c5e50  bp: 00007ffe8b7c6090  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f92d6adefff  sp: 00007ffe8b7c5ec8
+  ip: 00007f92d6adefff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch chrome!
+[0510/020719.028281:FATAL:zygote_host_impl_linux.cc(124)] No usable sandbox! Update your kernel or see https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md for more information on developing with the SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.
+#0 0x556fb92c6b0c base::debug::StackTrace::StackTrace()
+#1 0x556fb92df780 logging::LogMessage::~LogMessage()
+#2 0x556fb836f2b1 content::ZygoteHostImpl::Init()
+#3 0x556fb7fe1c65 content::BrowserMainLoop::EarlyInitialization()
+#4 0x556fb7fe7a69 content::BrowserMainRunnerImpl::Initialize()
+#5 0x556fbd1119a8 headless::HeadlessContentMainDelegate::RunProcess()
+#6 0x556fb9001a00 content::RunNamedProcessTypeMain()
+#7 0x556fb90022e8 content::ContentMainRunnerImpl::Run()
+#8 0x556fb900bf24 service_manager::Main()
+#9 0x556fb9000f14 content::ContentMain()
+#10 0x556fbd1109b9 headless::(anonymous namespace)::RunContentMain()
+#11 0x556fbd110a42 headless::HeadlessBrowserMain()
+#12 0x556fb9008f9d headless::HeadlessShellMain()
+#13 0x556fb76671ac ChromeMain
+#14 0x7f92d6acc2e1 __libc_start_main
+#15 0x556fb766702a _start
+
+Received signal 6
+#0 0x556fb92c6b0c base::debug::StackTrace::StackTrace()
+#1 0x556fb92c6671 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f92dca290c0 <unknown>
+#3 0x7f92d6adefff gsignal
+#4 0x7f92d6ae042a abort
+#5 0x556fb92c5105 base::debug::BreakDebugger()
+#6 0x556fb92dfbca logging::LogMessage::~LogMessage()
+#7 0x556fb836f2b1 content::ZygoteHostImpl::Init()
+#8 0x556fb7fe1c65 content::BrowserMainLoop::EarlyInitialization()
+#9 0x556fb7fe7a69 content::BrowserMainRunnerImpl::Initialize()
+#10 0x556fbd1119a8 headless::HeadlessContentMainDelegate::RunProcess()
+#11 0x556fb9001a00 content::RunNamedProcessTypeMain()
+#12 0x556fb90022e8 content::ContentMainRunnerImpl::Run()
+#13 0x556fb900bf24 service_manager::Main()
+#14 0x556fb9000f14 content::ContentMain()
+#15 0x556fbd1109b9 headless::(anonymous namespace)::RunContentMain()
+#16 0x556fbd110a42 headless::HeadlessBrowserMain()
+#17 0x556fb9008f9d headless::HeadlessShellMain()
+#18 0x556fb76671ac ChromeMain
+#19 0x7f92d6acc2e1 __libc_start_main
+#20 0x556fb766702a _start
+  r8: 0000000000000000  r9: 00007ffe8b7c5e50 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007ffe8b7c6548 r13: 0000000000000161 r14: 00007ffe8b7c6550 r15: 00007ffe8b7c60e9
+  di: 0000000000000002  si: 00007ffe8b7c5e50  bp: 00007ffe8b7c6090  bx: 0000000000000006
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f92d6adefff  sp: 00007ffe8b7c5ec8
+  ip: 00007f92d6adefff efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+
+
+TROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:255:14)
+    at Interface.helper.addEventListener (/home/dom/github.com/reffy/node_modules/puppeteer/lib/Launcher.js:244:50)
+    at emitNone (events.js:111:20)
+    at Interface.emit (events.js:208:7)
+    at Interface.close (readline.js:370:8)
+    at Socket.onend (readline.js:149:10)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 Informative references to this spec from:
 
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Web Budget API](https://wicg.github.io/budget-api/)
 
 
@@ -5212,9 +9329,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLCanvasElement`, `Navigator`, `Window`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `EventHandler`, `HTMLCanvasElement`, `Navigator`, `Window`
 - Missing references for WebIDL names: 
-     * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
      * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
      * `WebGL2RenderingContext` defined in [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
      * `WebGLFramebuffer` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -5263,7 +9379,7 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Console Standard](https://console.spec.whatwg.org/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/index.html)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 
 Informative references to this spec from:
 
@@ -5296,7 +9412,6 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML 5.3](https://w3c.github.io/html/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 
 Informative references to this spec from:
 
