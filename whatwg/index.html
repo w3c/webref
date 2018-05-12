@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (WHATWG perspective)</h1>
-            <h2 class="date">May 11, 2018</h2>
+            <h2 class="date">May 12, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -866,7 +866,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-masking-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="css-masking-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>CSS Masking Module Level 1</h2>
   <section id="spec-info-25" class="level3 info">
   <h3>Spec info</h3>
@@ -883,7 +883,6 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
-  <li>Unknown WebIDL names used: <code>SVGAnimatedEnumeration</code>, <code>SVGAnimatedLength</code>, <code>SVGAnimatedTransformList</code>, <code>SVGElement</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a></li>
@@ -1371,12 +1370,12 @@
   </ul>
   </section>
   </section>
-  <section id="dom-parsing-and-serialization" class="level2" data-spec="true" data-error="true">
+  <section id="dom-parsing-and-serialization" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>DOM Parsing and Serialization</h2>
   <section id="spec-info-37" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/DOM-Parsing/">Editor's Draft</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/DOM-Parsing/">Editor's Draft</a> (and similar APIs)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/DOM-Parsing/" class="uri">https://w3c.github.io/DOM-Parsing/</a></li>
   <li>Latest published version: <a href="http://www.w3.org/TR/DOM-Parsing/" class="uri">http://www.w3.org/TR/DOM-Parsing/</a></li>
   <li>Latest published status: <a href="http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/">Working Draft</a></li>
@@ -1386,8 +1385,12 @@
   </section>
   <section id="potential-issues-37" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Navigation Timeout Exceeded: 20000ms exceeded Error: Navigation Timeout Exceeded: 20000ms exceeded     at Promise.then (/home/dom/github.com/reffy/node_modules/puppeteer/lib/NavigatorWatcher.js:73:21)     at &lt;anonymous&gt;</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a>, related reference &quot;DOM4&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-37" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1454,6 +1457,7 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://wicg.github.io/feature-policy/">Feature Policy</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
@@ -1768,7 +1772,7 @@
   </ul>
   </section>
   </section>
-  <section id="filter-effects-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="filter-effects-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Filter Effects Module Level 1</h2>
   <section id="spec-info-45" class="level3 info">
   <h3>Spec info</h3>
@@ -1784,7 +1788,6 @@
   <section id="potential-issues-45" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>SVGAnimatedEnumeration</code>, <code>SVGAnimatedInteger</code>, <code>SVGAnimatedLength</code>, <code>SVGAnimatedNumber</code>, <code>SVGAnimatedNumberList</code>, <code>SVGAnimatedPreserveAspectRatio</code>, <code>SVGAnimatedString</code>, <code>SVGElement</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a></li>
@@ -1997,6 +2000,10 @@
   <li><a href="https://wicg.github.io/ResizeObserver/">Resize Observer 1</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
   </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
+  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
@@ -2126,14 +2133,14 @@
   <section id="spec-info-55" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://html.spec.whatwg.org/">Living Standard</a> (8 May 2018)</li>
+  <li>Crawled version: <a href="https://html.spec.whatwg.org/">Living Standard</a> (11 May 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
   <section id="potential-issues-55" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>SVGImageElement</code>, <code>SVGScriptElement</code>, <code>WindowProxy</code></li>
+  <li>Unknown WebIDL names used: <code>WindowProxy</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>BinaryType</code> also defined in <a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
@@ -2185,6 +2192,7 @@
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://wicg.github.io/feature-policy/">Feature Policy</a></li>
@@ -2287,6 +2295,7 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-values/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://wicg.github.io/feature-policy/">Feature Policy</a></li>
@@ -2410,7 +2419,7 @@
   <section id="spec-info-59" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (11 May 2018)</li>
+  <li>Crawled version: <a href="https://rawgit.com/w3c/input-events/v1/index.html">Editor's Draft</a> (12 May 2018)</li>
   <li>Editor's Draft: <a href="https://rawgit.com/w3c/input-events/v1/index.html" class="uri">https://rawgit.com/w3c/input-events/v1/index.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/input-events-1/" class="uri">https://www.w3.org/TR/input-events-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-input-events-1-20170905/">Working Draft</a></li>
@@ -3055,7 +3064,7 @@
   <section id="spec-info-78" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/webdriver/webdriver-spec.html">Editor's Draft</a> (Fri May 11 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/webdriver/webdriver-spec.html">Editor's Draft</a> (Sat May 12 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webdriver/webdriver-spec.html" class="uri">https://w3c.github.io/webdriver/webdriver-spec.html</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webdriver1/" class="uri">https://www.w3.org/TR/webdriver1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/PR-webdriver1-20180426/">Proposed Recommendation</a></li>
@@ -3693,7 +3702,7 @@
   </ul>
   </section>
   </section>
-  <section id="scalable-vector-graphics-svg-2" class="level2" data-spec="true" data-anomaly="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="scalable-vector-graphics-svg-2" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Scalable Vector Graphics (SVG) 2</h2>
   <section id="spec-info-97" class="level3 info">
   <h3>Spec info</h3>
@@ -3709,7 +3718,16 @@
   <section id="potential-issues-97" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Invalid WebIDL content found</li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>DOMRect</code> defined in <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMMatrix</code> defined in <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMPointInit</code> defined in <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMPoint</code> defined in <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMRectReadOnly</code> defined in <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMPointReadOnly</code> defined in <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
+  <li><code>DOMMatrixReadOnly</code> defined in <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/svg-integration/"><code>https://www.w3.org/TR/svg-integration/</code></a></li>
@@ -4633,7 +4651,7 @@
   <section id="spec-info-121" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://webaudio.github.io/web-audio-api/">Editor's Draft</a> (8 May 2018)</li>
+  <li>Crawled version: <a href="https://webaudio.github.io/web-audio-api/">Editor's Draft</a> (11 May 2018)</li>
   <li>Editor's Draft: <a href="https://webaudio.github.io/web-audio-api/" class="uri">https://webaudio.github.io/web-audio-api/</a></li>
   <li>Latest published version: <a href="http://www.w3.org/TR/webaudio/" class="uri">http://www.w3.org/TR/webaudio/</a></li>
   <li>Latest published status: <a href="http://www.w3.org/TR/2015/WD-webaudio-20151208/">Working Draft</a></li>
@@ -4899,6 +4917,7 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
@@ -5135,7 +5154,7 @@
   <section id="spec-info-132" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Fri May 11 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sat May 12 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -5164,7 +5183,7 @@
   <section id="spec-info-133" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Fri May 11 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sat May 12 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
