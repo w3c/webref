@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-05-12T06:11:29.502Z",
+  "date": "2018-05-13T06:10:38.008Z",
   "stats": {
     "crawled": 140,
-    "errors": 0,
+    "errors": 1,
     "studied": 140
   },
   "results": [
@@ -498,7 +498,7 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://drafts.fxtf.org/filter-effects/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -1026,7 +1026,7 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://drafts.fxtf.org/filter-effects/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             }
           ]
         },
@@ -1289,7 +1289,7 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://drafts.fxtf.org/filter-effects/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -1426,7 +1426,7 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://drafts.fxtf.org/filter-effects/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -2189,7 +2189,7 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://drafts.fxtf.org/filter-effects/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/geometry-1/",
@@ -2295,7 +2295,7 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://drafts.fxtf.org/filter-effects/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -2526,7 +2526,7 @@
     {
       "title": "DOM Parsing and Serialization",
       "shortname": "DOM-Parsing",
-      "date": "and similar APIs",
+      "date": "",
       "url": "https://www.w3.org/TR/DOM-Parsing/",
       "latest": "http://www.w3.org/TR/DOM-Parsing/",
       "datedUrl": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
@@ -2535,24 +2535,16 @@
       "crawled": "https://w3c.github.io/DOM-Parsing/",
       "repository": "https://github.com/w3c/DOM-Parsing",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Navigation Timeout Exceeded: 20000ms exceeded Error: Navigation Timeout Exceeded: 20000ms exceeded\n    at Promise.then (/home/dom/github.com/reffy/node_modules/puppeteer/lib/NavigatorWatcher.js:73:21)\n    at <anonymous>",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/dom/",
-            "ref": {
-              "name": "DOM4",
-              "url": "https://dom.spec.whatwg.org/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -2759,12 +2751,6 @@
               "date": "1 July 2016"
             },
             {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
-            },
-            {
               "url": "https://www.w3.org/TR/encrypted-media/",
               "title": "Encrypted Media Extensions",
               "crawled": "https://w3c.github.io/encrypted-media/",
@@ -2828,7 +2814,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "12 May 2018"
+              "date": "13 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -2900,7 +2886,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "7 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -3086,13 +3072,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat May 12 2018"
+              "date": "Sun May 13 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "10 May 2018"
+              "date": "11 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -3134,7 +3120,7 @@
     {
       "title": "Encoding Standard",
       "shortname": "encoding",
-      "date": "25 April 2018",
+      "date": "12 May 2018",
       "url": "https://www.w3.org/TR/encoding/",
       "latest": "https://www.w3.org/TR/encoding/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-encoding-20180327/",
@@ -3260,7 +3246,7 @@
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -3755,7 +3741,7 @@
     {
       "title": "Filter Effects Module Level 1",
       "shortname": "filter-effects-1",
-      "date": "10 May 2018",
+      "date": "12 May 2018",
       "url": "https://www.w3.org/TR/filter-effects-1/",
       "latest": "http://www.w3.org/TR/filter-effects-1/",
       "datedUrl": "http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/",
@@ -3876,7 +3862,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "7 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerlock-2/",
@@ -4685,12 +4671,6 @@
               "date": "1 July 2016"
             },
             {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
-            },
-            {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
@@ -4730,7 +4710,7 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://drafts.fxtf.org/filter-effects/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://fullscreen.spec.whatwg.org/",
@@ -4796,7 +4776,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "12 May 2018"
+              "date": "13 May 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -4916,7 +4896,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "7 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -5138,19 +5118,19 @@
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat May 12 2018"
+              "date": "Sun May 13 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat May 12 2018"
+              "date": "Sun May 13 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -5162,7 +5142,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "10 May 2018"
+              "date": "11 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -5245,16 +5225,10 @@
               "date": "20 April 2018"
             },
             {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
-            },
-            {
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
-              "date": "25 April 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -5523,7 +5497,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "12 May 2018",
+      "date": "13 May 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -5557,7 +5531,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "12 May 2018"
+              "date": "13 May 2018"
             }
           ]
         },
@@ -6057,7 +6031,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "7 May 2018"
+              "date": "12 May 2018"
             }
           ]
         },
@@ -6652,7 +6626,7 @@
     {
       "title": "Page not found · GitHub Pages",
       "shortname": "webdriver",
-      "date": "Sat May 12 2018",
+      "date": "Sun May 13 2018",
       "url": "https://www.w3.org/TR/webdriver/",
       "latest": "https://www.w3.org/TR/webdriver1/",
       "datedUrl": "https://www.w3.org/TR/2018/PR-webdriver1-20180426/",
@@ -7158,7 +7132,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "10 May 2018"
+              "date": "11 May 2018"
             }
           ],
           "informative": [
@@ -7181,7 +7155,7 @@
     },
     {
       "title": "Picture-in-Picture",
-      "date": "7 May 2018",
+      "date": "12 May 2018",
       "url": "https://wicg.github.io/picture-in-picture/",
       "crawled": "https://wicg.github.io/picture-in-picture/",
       "repository": "https://github.com/wicg/picture-in-picture",
@@ -7656,7 +7630,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "7 May 2018"
+              "date": "12 May 2018"
             }
           ],
           "informative": []
@@ -8121,7 +8095,7 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://drafts.fxtf.org/filter-effects/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://fullscreen.spec.whatwg.org/",
@@ -8443,7 +8417,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "10 May 2018"
+              "date": "11 May 2018"
             }
           ]
         },
@@ -9121,7 +9095,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "12 May 2018"
+              "date": "13 May 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -9458,7 +9432,7 @@
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -9472,7 +9446,7 @@
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
-              "date": "25 April 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -10325,12 +10299,6 @@
               "date": "1 July 2016"
             },
             {
-              "url": "https://www.w3.org/TR/DOM-Parsing/",
-              "title": "DOM Parsing and Serialization",
-              "crawled": "https://w3c.github.io/DOM-Parsing/",
-              "date": "and similar APIs"
-            },
-            {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/",
@@ -10340,7 +10308,7 @@
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
-              "date": "25 April 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -10376,7 +10344,7 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://drafts.fxtf.org/filter-effects/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://fullscreen.spec.whatwg.org/",
@@ -10568,7 +10536,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "7 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerlock-2/",
@@ -10778,19 +10746,19 @@
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://webassembly.github.io/spec/js-api/",
-              "date": "10 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat May 12 2018"
+              "date": "Sun May 13 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat May 12 2018"
+              "date": "Sun May 13 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -10802,7 +10770,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "10 May 2018"
+              "date": "11 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -10864,7 +10832,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "12 May 2018"
+              "date": "13 May 2018"
             },
             {
               "url": "https://wicg.github.io/netinfo/",
@@ -11065,7 +11033,7 @@
     {
       "title": "WebAssembly JavaScript Interface",
       "shortname": "wasm-js-api-1",
-      "date": "10 May 2018",
+      "date": "12 May 2018",
       "url": "https://www.w3.org/TR/wasm-js-api-1/",
       "latest": "https://www.w3.org/TR/wasm-js-api-1/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/",
@@ -11121,7 +11089,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sat May 12 2018",
+      "date": "Sun May 13 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -11164,7 +11132,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sat May 12 2018",
+      "date": "Sun May 13 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -11199,7 +11167,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat May 12 2018"
+              "date": "Sun May 13 2018"
             }
           ],
           "informative": [
@@ -11357,7 +11325,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "10 May 2018",
+      "date": "11 May 2018",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
@@ -11457,7 +11425,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat May 12 2018"
+                "date": "Sun May 13 2018"
               }
             ]
           },
@@ -11468,7 +11436,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Sat May 12 2018"
+                "date": "Sun May 13 2018"
               }
             ]
           },
@@ -11479,7 +11447,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat May 12 2018"
+                "date": "Sun May 13 2018"
               }
             ]
           },
@@ -11490,7 +11458,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat May 12 2018"
+                "date": "Sun May 13 2018"
               }
             ]
           },
@@ -11501,7 +11469,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat May 12 2018"
+                "date": "Sun May 13 2018"
               }
             ]
           }
