@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-05-13T06:10:38.008Z",
+  "date": "2018-05-14T06:12:28.547Z",
   "stats": {
     "crawled": 140,
-    "errors": 1,
+    "errors": 0,
     "studied": 140
   },
   "results": [
@@ -988,7 +988,7 @@
               "url": "https://www.w3.org/TR/css-transitions-1/",
               "title": "CSS Transitions",
               "crawled": "https://drafts.csswg.org/css-transitions/",
-              "date": "21 February 2018"
+              "date": "13 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -1522,7 +1522,7 @@
               "url": "https://www.w3.org/TR/css-transitions-1/",
               "title": "CSS Transitions",
               "crawled": "https://drafts.csswg.org/css-transitions/",
-              "date": "21 February 2018"
+              "date": "13 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -1902,7 +1902,7 @@
     {
       "title": "CSS Transitions",
       "shortname": "css-transitions-1",
-      "date": "21 February 2018",
+      "date": "13 May 2018",
       "url": "https://www.w3.org/TR/css-transitions-1/",
       "latest": "https://www.w3.org/TR/css-transitions-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/",
@@ -2165,7 +2165,7 @@
               "url": "https://www.w3.org/TR/css-transitions-1/",
               "title": "CSS Transitions",
               "crawled": "https://drafts.csswg.org/css-transitions/",
-              "date": "21 February 2018"
+              "date": "13 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -2526,7 +2526,7 @@
     {
       "title": "DOM Parsing and Serialization",
       "shortname": "DOM-Parsing",
-      "date": "",
+      "date": "and similar APIs",
       "url": "https://www.w3.org/TR/DOM-Parsing/",
       "latest": "http://www.w3.org/TR/DOM-Parsing/",
       "datedUrl": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
@@ -2535,16 +2535,24 @@
       "crawled": "https://w3c.github.io/DOM-Parsing/",
       "repository": "https://github.com/w3c/DOM-Parsing",
       "report": {
-        "error": "Error: Navigation Timeout Exceeded: 20000ms exceeded Error: Navigation Timeout Exceeded: 20000ms exceeded\n    at Promise.then (/home/dom/github.com/reffy/node_modules/puppeteer/lib/NavigatorWatcher.js:73:21)\n    at <anonymous>",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/dom/",
+            "ref": {
+              "name": "DOM4",
+              "url": "https://dom.spec.whatwg.org/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -2730,7 +2738,7 @@
               "url": "https://www.w3.org/TR/css-transitions-1/",
               "title": "CSS Transitions",
               "crawled": "https://drafts.csswg.org/css-transitions/",
-              "date": "21 February 2018"
+              "date": "13 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -2749,6 +2757,12 @@
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
               "date": "1 July 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/DOM-Parsing/",
+              "title": "DOM Parsing and Serialization",
+              "crawled": "https://w3c.github.io/DOM-Parsing/",
+              "date": "and similar APIs"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -2814,7 +2828,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "13 May 2018"
+              "date": "14 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -3072,13 +3086,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun May 13 2018"
+              "date": "Mon May 14 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "11 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -4650,7 +4664,7 @@
               "url": "https://www.w3.org/TR/css-transitions-1/",
               "title": "CSS Transitions",
               "crawled": "https://drafts.csswg.org/css-transitions/",
-              "date": "21 February 2018"
+              "date": "13 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
@@ -4669,6 +4683,12 @@
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
               "date": "1 July 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/DOM-Parsing/",
+              "title": "DOM Parsing and Serialization",
+              "crawled": "https://w3c.github.io/DOM-Parsing/",
+              "date": "and similar APIs"
             },
             {
               "url": "https://dom.spec.whatwg.org/",
@@ -4776,7 +4796,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "13 May 2018"
+              "date": "14 May 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -5124,13 +5144,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun May 13 2018"
+              "date": "Mon May 14 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun May 13 2018"
+              "date": "Mon May 14 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -5142,7 +5162,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "11 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -5223,6 +5243,12 @@
               "title": "CSS Writing Modes Level 3",
               "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
               "date": "20 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/DOM-Parsing/",
+              "title": "DOM Parsing and Serialization",
+              "crawled": "https://w3c.github.io/DOM-Parsing/",
+              "date": "and similar APIs"
             },
             {
               "url": "https://www.w3.org/TR/encoding/",
@@ -5497,7 +5523,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "13 May 2018",
+      "date": "14 May 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -5531,7 +5557,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "13 May 2018"
+              "date": "14 May 2018"
             }
           ]
         },
@@ -6626,7 +6652,7 @@
     {
       "title": "Page not found · GitHub Pages",
       "shortname": "webdriver",
-      "date": "Sun May 13 2018",
+      "date": "Mon May 14 2018",
       "url": "https://www.w3.org/TR/webdriver/",
       "latest": "https://www.w3.org/TR/webdriver1/",
       "datedUrl": "https://www.w3.org/TR/2018/PR-webdriver1-20180426/",
@@ -7132,7 +7158,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "11 May 2018"
+              "date": "12 May 2018"
             }
           ],
           "informative": [
@@ -8151,7 +8177,7 @@
               "url": "https://www.w3.org/TR/css-transitions-1/",
               "title": "CSS Transitions",
               "crawled": "https://drafts.csswg.org/css-transitions/",
-              "date": "21 February 2018"
+              "date": "13 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -8417,7 +8443,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "11 May 2018"
+              "date": "12 May 2018"
             }
           ]
         },
@@ -9095,7 +9121,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "13 May 2018"
+              "date": "14 May 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -10278,7 +10304,7 @@
               "url": "https://www.w3.org/TR/css-transitions-1/",
               "title": "CSS Transitions",
               "crawled": "https://drafts.csswg.org/css-transitions/",
-              "date": "21 February 2018"
+              "date": "13 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -10297,6 +10323,12 @@
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
               "date": "1 July 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/DOM-Parsing/",
+              "title": "DOM Parsing and Serialization",
+              "crawled": "https://w3c.github.io/DOM-Parsing/",
+              "date": "and similar APIs"
             },
             {
               "url": "https://dom.spec.whatwg.org/",
@@ -10752,13 +10784,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun May 13 2018"
+              "date": "Mon May 14 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun May 13 2018"
+              "date": "Mon May 14 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -10770,7 +10802,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "11 May 2018"
+              "date": "12 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -10832,7 +10864,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "13 May 2018"
+              "date": "14 May 2018"
             },
             {
               "url": "https://wicg.github.io/netinfo/",
@@ -11089,7 +11121,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sun May 13 2018",
+      "date": "Mon May 14 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -11132,7 +11164,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sun May 13 2018",
+      "date": "Mon May 14 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -11167,7 +11199,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun May 13 2018"
+              "date": "Mon May 14 2018"
             }
           ],
           "informative": [
@@ -11325,7 +11357,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "11 May 2018",
+      "date": "12 May 2018",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
@@ -11425,7 +11457,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun May 13 2018"
+                "date": "Mon May 14 2018"
               }
             ]
           },
@@ -11436,7 +11468,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Sun May 13 2018"
+                "date": "Mon May 14 2018"
               }
             ]
           },
@@ -11447,7 +11479,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun May 13 2018"
+                "date": "Mon May 14 2018"
               }
             ]
           },
@@ -11458,7 +11490,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun May 13 2018"
+                "date": "Mon May 14 2018"
               }
             ]
           },
@@ -11469,7 +11501,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun May 13 2018"
+                "date": "Mon May 14 2018"
               }
             ]
           }
