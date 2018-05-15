@@ -50,7 +50,8 @@ window.onload = function () {
       }
       if (spec.hasAttribute('data-noRefToWebIDL') ||
         spec.hasAttribute('data-missingWebIdlRef') ||
-        spec.hasAttribute('data-missingLinkRef')) {
+        spec.hasAttribute('data-missingLinkRef') ||
+        spec.hasAttribute('data-noEdDraft')) {
         flags.push('<i class="fa fa-chain-broken fa-lg error" ' +
           'title="Some references are missing"></i>');
       }
