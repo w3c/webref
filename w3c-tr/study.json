@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-05-15T06:05:21.098Z",
+  "date": "2018-05-16T06:06:34.009Z",
   "stats": {
     "crawled": 148,
     "errors": 0,
@@ -321,7 +321,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://wicg.github.io/media-capabilities/",
@@ -540,7 +540,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             }
           ],
           "informative": []
@@ -596,7 +596,7 @@
                 "url": "https://www.w3.org/TR/webaudio/",
                 "title": "Web Audio API",
                 "crawled": "https://webaudio.github.io/web-audio-api/",
-                "date": "11 May 2018"
+                "date": "15 May 2018"
               },
               {
                 "url": "https://www.w3.org/TR/worklets-1/",
@@ -691,7 +691,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -1040,6 +1040,12 @@
               "date": "8 January 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css3-conditional/",
+              "title": "CSS Conditional Rules Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-conditional-3/",
+              "date": "22 April 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
@@ -1087,7 +1093,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ]
         },
@@ -1098,36 +1104,49 @@
     {
       "title": "CSS Conditional Rules Module Level 3",
       "shortname": "css3-conditional",
-      "date": "4 April 2013",
+      "date": "22 April 2018",
       "url": "https://www.w3.org/TR/css3-conditional/",
       "latest": "http://www.w3.org/TR/css3-conditional/",
       "datedUrl": "http://www.w3.org/TR/2013/CR-css3-conditional-20130404/",
       "datedStatus": "Candidate Recommendation",
-      "crawled": "https://www.w3.org/TR/css3-conditional/",
+      "edDraft": "https://drafts.csswg.org/css-conditional-3/",
+      "crawled": "https://drafts.csswg.org/css-conditional-3/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": true,
+        "noRefToWebIDL": false,
         "noIdlContent": false,
-        "hasInvalidIdl": true,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/2008/REC-CSS1-20080411",
-          "https://www.w3.org/TR/2013/WD-css3-transitions-20130212/"
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownIdlNames": [
+          "Window"
         ],
-        "inconsistentRef": [
+        "redefinedIdlNames": [
           {
-            "link": "https://www.w3.org/TR/css3-mediaqueries/",
-            "ref": {
-              "name": "MEDIAQ",
-              "url": "http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/"
-            }
+            "name": "CSSGroupingRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/cssom-1/",
+                "title": "CSS Object Model (CSSOM)",
+                "crawled": "https://drafts.csswg.org/cssom/",
+                "date": "23 April 2018"
+              }
+            ]
           }
         ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css3-mediaqueries/"
+        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://compat.spec.whatwg.org/",
+              "title": "Compatibility Standard",
+              "crawled": "https://compat.spec.whatwg.org/",
+              "date": "8 January 2018"
+            },
             {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
               "title": "CSS Device Adaptation Module Level 1",
@@ -1153,10 +1172,16 @@
               "title": "CSS Syntax Module Level 3",
               "crawled": "https://drafts.csswg.org/css-syntax/",
               "date": "27 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/WebIDL-1/",
+              "title": "Web IDL",
+              "crawled": "https://heycam.github.io/webidl/",
+              "date": "29 April 2018"
             }
           ]
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -1249,7 +1274,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ],
           "informative": [
@@ -1304,8 +1329,8 @@
             {
               "url": "https://www.w3.org/TR/css3-conditional/",
               "title": "CSS Conditional Rules Module Level 3",
-              "crawled": "https://www.w3.org/TR/css3-conditional/",
-              "date": "4 April 2013"
+              "crawled": "https://drafts.csswg.org/css-conditional-3/",
+              "date": "22 April 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
@@ -1365,7 +1390,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/2dcontext/",
@@ -1377,7 +1402,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -1516,7 +1541,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             }
           ],
           "informative": []
@@ -1545,7 +1570,19 @@
         "unknownIdlNames": [
           "Window"
         ],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "CSSGroupingRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css3-conditional/",
+                "title": "CSS Conditional Rules Module Level 3",
+                "crawled": "https://drafts.csswg.org/css-conditional-3/",
+                "date": "22 April 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -1562,6 +1599,12 @@
               "title": "CSS Animations Level 1",
               "crawled": "https://drafts.csswg.org/css-animations/",
               "date": "10 May 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css3-conditional/",
+              "title": "CSS Conditional Rules Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-conditional-3/",
+              "date": "22 April 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
@@ -1633,7 +1676,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/referrer-policy/",
@@ -1704,7 +1747,7 @@
                 "url": "https://www.w3.org/TR/webaudio/",
                 "title": "Web Audio API",
                 "crawled": "https://webaudio.github.io/web-audio-api/",
-                "date": "11 May 2018"
+                "date": "15 May 2018"
               },
               {
                 "url": "https://www.w3.org/TR/worklets-1/",
@@ -1885,6 +1928,12 @@
               "date": "10 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css3-conditional/",
+              "title": "CSS Conditional Rules Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-conditional-3/",
+              "date": "22 April 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
               "title": "CSS Device Adaptation Module Level 1",
               "crawled": "https://drafts.csswg.org/css-device-adapt/",
@@ -1948,7 +1997,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -2055,7 +2104,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -2076,6 +2125,12 @@
               "title": "CSS Animations Level 1",
               "crawled": "https://drafts.csswg.org/css-animations/",
               "date": "10 May 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css3-conditional/",
+              "title": "CSS Conditional Rules Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-conditional-3/",
+              "date": "22 April 2018"
             }
           ]
         },
@@ -2303,7 +2358,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -2315,7 +2370,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -2404,13 +2459,13 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -2500,7 +2555,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -2668,7 +2723,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -2693,7 +2748,7 @@
     {
       "title": "Encoding Standard",
       "shortname": "encoding",
-      "date": "12 May 2018",
+      "date": "15 May 2018",
       "url": "https://www.w3.org/TR/encoding/",
       "latest": "https://www.w3.org/TR/encoding/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-encoding-20180327/",
@@ -2773,7 +2828,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/push-api/",
@@ -3056,7 +3111,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://wicg.github.io/mediasession/",
@@ -3098,7 +3153,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -3154,7 +3209,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
@@ -3259,7 +3314,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -3382,7 +3437,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             }
           ],
           "informative": []
@@ -3424,7 +3479,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -3770,7 +3825,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -3927,7 +3982,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
@@ -3993,7 +4048,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webmidi/",
@@ -4024,7 +4079,7 @@
     {
       "title": "HTML 5.3",
       "shortname": "html52",
-      "date": "13 May 2018",
+      "date": "16 May 2018",
       "url": "https://www.w3.org/TR/html52/",
       "latest": "https://www.w3.org/TR/html52/",
       "datedUrl": "https://www.w3.org/TR/2017/REC-html52-20171214/",
@@ -4387,7 +4442,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/2dcontext/",
@@ -4423,7 +4478,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -4519,7 +4574,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -4591,7 +4646,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -4711,7 +4766,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -4783,13 +4838,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue May 15 2018"
+              "date": "Wed May 16 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue May 15 2018"
+              "date": "Wed May 16 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -4881,7 +4936,7 @@
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
-              "date": "12 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -5232,7 +5287,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -5244,7 +5299,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -5322,7 +5377,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -5382,7 +5437,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -5472,7 +5527,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -5526,7 +5581,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue May 15 2018"
+              "date": "Wed May 16 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -5594,7 +5649,7 @@
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
-              "date": "12 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -5654,7 +5709,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -5698,7 +5753,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ],
           "informative": []
@@ -5931,7 +5986,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -5943,7 +5998,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -6021,7 +6076,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -6087,7 +6142,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -6183,7 +6238,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -6311,7 +6366,7 @@
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
-              "date": "12 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -6473,7 +6528,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -6535,7 +6590,7 @@
     {
       "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "15 May 2018",
+      "date": "16 May 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
       "latest": "https://www.w3.org/TR/input-events-1/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-input-events-1-20170905/",
@@ -6583,7 +6638,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             }
           ]
         },
@@ -6896,7 +6951,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/html-media-capture/",
@@ -6944,7 +6999,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -7174,7 +7229,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://wicg.github.io/media-capabilities/",
@@ -7328,7 +7383,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             }
           ]
         },
@@ -7671,7 +7726,7 @@
     {
       "title": "Page not found · GitHub Pages",
       "shortname": "WebCryptoAPI",
-      "date": "Tue May 15 2018",
+      "date": "Wed May 16 2018",
       "url": "https://www.w3.org/TR/WebCryptoAPI/",
       "latest": "https://www.w3.org/TR/WebCryptoAPI/",
       "datedUrl": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/",
@@ -7721,7 +7776,7 @@
     {
       "title": "Page not found · GitHub Pages",
       "shortname": "webdriver",
-      "date": "Tue May 15 2018",
+      "date": "Wed May 16 2018",
       "url": "https://www.w3.org/TR/webdriver/",
       "latest": "https://www.w3.org/TR/webdriver1/",
       "datedUrl": "https://www.w3.org/TR/2018/PR-webdriver1-20180426/",
@@ -7803,7 +7858,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -7975,7 +8030,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             }
           ]
         },
@@ -7986,7 +8041,7 @@
     {
       "title": "Payment Request API",
       "shortname": "payment-request",
-      "date": "15 May 2018",
+      "date": "16 May 2018",
       "url": "https://www.w3.org/TR/payment-request/",
       "latest": "https://www.w3.org/TR/payment-request/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-payment-request-20180503/",
@@ -8014,7 +8069,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -8404,7 +8459,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -8456,7 +8511,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ],
           "informative": []
@@ -8512,7 +8567,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ],
           "informative": [
@@ -8581,7 +8636,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ],
           "informative": []
@@ -8742,7 +8797,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -8919,7 +8974,7 @@
     {
       "title": "Scalable Vector Graphics (SVG) 2",
       "shortname": "SVG2",
-      "date": "11 May 2018",
+      "date": "15 May 2018",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2016/CR-SVG2-20160915/",
@@ -9306,7 +9361,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
@@ -9517,7 +9572,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -9672,7 +9727,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ],
           "informative": []
@@ -9784,7 +9839,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             }
           ]
         },
@@ -9882,7 +9937,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ],
           "informative": [
@@ -9979,7 +10034,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -10207,7 +10262,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ],
           "informative": [
@@ -10272,7 +10327,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -10369,7 +10424,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ],
           "informative": [
@@ -10432,7 +10487,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
@@ -10444,7 +10499,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -10474,7 +10529,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/touch-events/",
@@ -10702,7 +10757,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://wicg.github.io/mediasession/",
@@ -10806,7 +10861,7 @@
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
-              "date": "12 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -11202,7 +11257,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webmessaging/",
@@ -11220,7 +11275,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -11268,7 +11323,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -11346,7 +11401,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -11454,7 +11509,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -11502,7 +11557,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue May 15 2018"
+              "date": "Wed May 16 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -11534,7 +11589,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/css3-selectors/",
@@ -11627,7 +11682,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -11712,7 +11767,7 @@
     {
       "title": "Web Audio API",
       "shortname": "webaudio",
-      "date": "11 May 2018",
+      "date": "15 May 2018",
       "url": "https://www.w3.org/TR/webaudio/",
       "latest": "http://www.w3.org/TR/webaudio/",
       "datedUrl": "http://www.w3.org/TR/2015/WD-webaudio-20151208/",
@@ -12156,6 +12211,12 @@
               "date": "10 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css3-conditional/",
+              "title": "CSS Conditional Rules Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-conditional-3/",
+              "date": "22 April 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
               "title": "CSS Device Adaptation Module Level 1",
               "crawled": "https://drafts.csswg.org/css-device-adapt/",
@@ -12237,7 +12298,7 @@
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
-              "date": "12 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -12321,7 +12382,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/2dcontext/",
@@ -12447,7 +12508,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -12513,7 +12574,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/screen-capture/",
@@ -12639,7 +12700,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -12699,13 +12760,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue May 15 2018"
+              "date": "Wed May 16 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue May 15 2018"
+              "date": "Wed May 16 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -12779,7 +12840,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://wicg.github.io/netinfo/",
@@ -13092,7 +13153,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -13401,7 +13462,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webmessaging/",
@@ -13419,7 +13480,7 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 1",
               "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -13497,7 +13558,7 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/",
-              "date": "15 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -13557,7 +13618,7 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -13659,7 +13720,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/webauthn/",
@@ -13781,7 +13842,7 @@
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/",
-              "date": "12 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -13896,7 +13957,7 @@
                 "url": "https://www.w3.org/TR/webaudio/",
                 "title": "Web Audio API",
                 "crawled": "https://webaudio.github.io/web-audio-api/",
-                "date": "11 May 2018"
+                "date": "15 May 2018"
               },
               {
                 "url": "https://www.w3.org/TR/worklets-1/",
@@ -13923,7 +13984,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Tue May 15 2018",
+      "date": "Wed May 16 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -13944,7 +14005,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ],
           "informative": [
@@ -13958,7 +14019,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -13974,7 +14035,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Tue May 15 2018",
+      "date": "Wed May 16 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -14008,13 +14069,13 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue May 15 2018"
+              "date": "Wed May 16 2018"
             }
           ],
           "informative": [
@@ -14028,7 +14089,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -14135,7 +14196,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             }
           ],
           "informative": [
@@ -14246,7 +14307,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             }
           ]
         },
@@ -14291,7 +14352,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Tue May 15 2018"
+                "date": "Wed May 16 2018"
               }
             ]
           },
@@ -14302,7 +14363,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Tue May 15 2018"
+                "date": "Wed May 16 2018"
               }
             ]
           },
@@ -14313,7 +14374,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Tue May 15 2018"
+                "date": "Wed May 16 2018"
               }
             ]
           },
@@ -14324,7 +14385,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Tue May 15 2018"
+                "date": "Wed May 16 2018"
               }
             ]
           },
@@ -14335,7 +14396,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Tue May 15 2018"
+                "date": "Wed May 16 2018"
               }
             ]
           }
@@ -14398,7 +14459,7 @@
                 "url": "https://www.w3.org/TR/webaudio/",
                 "title": "Web Audio API",
                 "crawled": "https://webaudio.github.io/web-audio-api/",
-                "date": "11 May 2018"
+                "date": "15 May 2018"
               }
             ]
           }
@@ -14438,7 +14499,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             }
           ],
           "informative": [
@@ -14524,7 +14585,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML 5.3",
               "crawled": "https://w3c.github.io/html/",
-              "date": "13 May 2018"
+              "date": "16 May 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -14550,7 +14611,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "11 May 2018"
+              "date": "15 May 2018"
             }
           ]
         },

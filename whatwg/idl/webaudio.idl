@@ -46,7 +46,6 @@ interface BaseAudioContext : EventTarget {
   Promise<void> resume ();
 };
 
-[Exposed=Window]
 enum AudioContextLatencyCategory {
     "balanced",
     "interactive",
@@ -67,13 +66,11 @@ interface AudioContext : BaseAudioContext {
     MediaStreamAudioDestinationNode createMediaStreamDestination ();
 };
 
-[Exposed=Window]
 dictionary AudioContextOptions {
   (AudioContextLatencyCategory or double) latencyHint = "interactive";
   float sampleRate;
 };
 
-[Exposed=Window]
 dictionary AudioTimestamp {
   double contextTime;
   DOMHighResTimeStamp performanceTime;
@@ -89,7 +86,6 @@ interface OfflineAudioContext : BaseAudioContext {
   attribute EventHandler oncomplete;
 };
 
-[Exposed=Window]
 dictionary OfflineAudioContextOptions {
   unsigned long numberOfChannels = 1;
   required unsigned long length;
@@ -102,7 +98,6 @@ interface OfflineAudioCompletionEvent : Event {
   readonly attribute AudioBuffer renderedBuffer;
 };
 
-[Exposed=Window]
 dictionary OfflineAudioCompletionEventInit : EventInit {
   required AudioBuffer renderedBuffer;
 };
@@ -146,14 +141,12 @@ interface AudioNode : EventTarget {
   attribute ChannelInterpretation channelInterpretation;
 };
 
-[Exposed=Window]
 enum ChannelCountMode {
   "max",
   "clamped-max",
   "explicit"
 };
 
-[Exposed=Window]
 enum ChannelInterpretation {
   "speakers",
   "discrete"
