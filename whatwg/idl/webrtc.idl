@@ -259,6 +259,7 @@ interface RTCRtpSender {
     Promise<void>             setParameters(RTCRtpSendParameters parameters);
     RTCRtpSendParameters      getParameters();
     Promise<void>             replaceTrack(MediaStreamTrack? withTrack);
+    void                      setStreams(MediaStream... streams);
     Promise<RTCStatsReport>   getStats();
 };
 dictionary RTCRtpParameters {
@@ -449,6 +450,7 @@ interface RTCSctpTransport {
     readonly attribute RTCDtlsTransport      transport;
     readonly attribute RTCSctpTransportState state;
     readonly attribute unrestricted double   maxMessageSize;
+    readonly attribute unsigned short        maxChannels;
              attribute EventHandler          onstatechange;
 };
 enum RTCSctpTransportState {
