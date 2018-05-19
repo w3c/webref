@@ -173,6 +173,9 @@ interface XRWebGLLayer : XRLayer {
   // Methods
   XRViewport? getViewport(XRView view);
   void requestViewportScaling(double viewportScaleFactor);
+
+  // Static Methods
+  static double getNativeFramebufferScaleFactor(XRSession session);
 };
 
 partial dictionary WebGLContextAttributes {
