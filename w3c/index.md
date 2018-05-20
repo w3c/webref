@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% May 19, 2018
+% May 20, 2018
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -803,7 +803,6 @@ Although they do not, the following specs should also normatively reference this
 
 - [Console Standard](https://console.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 
 Informative references to this spec from:
 
@@ -947,7 +946,7 @@ Informative references to this spec from:
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 
 
-## CSS Typed OM Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## CSS Typed OM Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -963,6 +962,8 @@ Informative references to this spec from:
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
      * `PaintWorklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1191,7 +1192,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -1808,7 +1808,6 @@ Normative references to this spec from:
 - [Web Notifications](https://www.w3.org/TR/notifications/)
 - [Web Share API](https://wicg.github.io/web-share/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -1948,7 +1947,6 @@ Normative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web Share API](https://wicg.github.io/web-share/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -2102,7 +2100,6 @@ Normative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web Share API](https://wicg.github.io/web-share/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -2138,10 +2135,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (16 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (19 May 2018)
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webrtc-stats-20180516/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webrtc-stats-20180519/)
 - Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
 - Shortname: webrtc-stats
 
@@ -2217,7 +2214,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (19 May 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (20 May 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -2734,7 +2731,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcrypto/Overview.html) (Sat May 19 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webcrypto/Overview.html) (Sun May 20 2018)
 - Editor's Draft: [https://w3c.github.io/webcrypto/Overview.html](https://w3c.github.io/webcrypto/Overview.html)
 - Latest published version: [https://www.w3.org/TR/WebCryptoAPI/](https://www.w3.org/TR/WebCryptoAPI/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
@@ -2762,7 +2759,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (Sat May 19 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/webdriver-spec.html) (Sun May 20 2018)
 - Editor's Draft: [https://w3c.github.io/webdriver/webdriver-spec.html](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2018/PR-webdriver1-20180426/)
@@ -4045,7 +4042,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://wicg.github.io/web-share/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -4290,6 +4286,32 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## wasm-js-api-1 {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://www.w3.org/TR/wasm-js-api-1/)
+- Latest published version: [https://www.w3.org/TR/wasm-js-api-1](https://www.w3.org/TR/wasm-js-api-1)
+- Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
+- Shortname: wasm-js-api-1
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/crawl-specs.js:156:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Web Animations {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -4380,7 +4402,6 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Console Standard](https://console.spec.whatwg.org/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 
 Informative references to this spec from:
 
@@ -4622,7 +4643,6 @@ Normative references to this spec from:
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://wicg.github.io/web-share/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -4908,7 +4928,6 @@ Normative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web Share API](https://wicg.github.io/web-share/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -4945,39 +4964,11 @@ Informative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## WebAssembly JavaScript Interface {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (16 May 2018)
-- Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
-- Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/)
-- Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
-- Shortname: wasm-js-api-1
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `Window`
-- Missing references for WebIDL names: 
-     * `Worklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
-- Missing references for links: 
-     * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/)
-     * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/)
-     * [`https://www.w3.org/TR/wasm-web-api/`](https://www.w3.org/TR/wasm-web-api/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## WebGL 2.0 Specification {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat May 19 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun May 20 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -5006,7 +4997,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat May 19 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun May 20 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -5180,7 +5171,6 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Console Standard](https://console.spec.whatwg.org/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 
 Informative references to this spec from:
 
