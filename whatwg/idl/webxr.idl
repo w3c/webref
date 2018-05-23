@@ -1,3 +1,8 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content of this file was automatically extracted from the
+// "WebXR Device API" spec.
+// See: https://immersive-web.github.io/webxr/
+
 [SecureContext, Exposed=Window] interface XR : EventTarget {
   // Methods
   Promise<XRDevice?> requestDevice();
@@ -218,4 +223,3 @@ interface XRCoordinateSystemEvent : Event {
 dictionary XRCoordinateSystemEventInit : EventInit {
   required XRCoordinateSystem coordinateSystem;
 };
-

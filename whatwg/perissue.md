@@ -20,8 +20,9 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 
 - [Page not found · GitHub Pages](https://w3c.github.io/webdriver/webdriver-spec.html)
 - [Page not found · GitHub Pages](https://w3c.github.io/webcrypto/Overview.html)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 
-=> 2 specifications found
+=> 3 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -76,11 +77,12 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 
-=> 11 specifications found
+=> 12 specifications found
 
 
 
@@ -148,6 +150,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Media Source Extensions™](https://w3c.github.io/media-source/) uses:
     * `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `URL` but does not reference [URL Standard](https://url.spec.whatwg.org/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/) uses `PaymentAddress` but does not reference [Payment Request API](https://w3c.github.io/payment-request/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) uses `EventHandler` but does not reference [HTML Standard](https://html.spec.whatwg.org/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) uses:
@@ -172,7 +175,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 39 missing references for IDL definitions found in 20 specifications
+=> 40 missing references for IDL definitions found in 21 specifications
 
 
 ## Missing references based on document links

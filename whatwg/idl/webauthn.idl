@@ -1,3 +1,8 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content of this file was automatically extracted from the
+// "Web Authentication: An API for accessing Public Key Credentials - Level 1" spec.
+// See: https://w3c.github.io/webauthn/
+
 [SecureContext, Exposed=Window]
 interface PublicKeyCredential : Credential {
     [SameObject] readonly attribute ArrayBuffer              rawId;
@@ -221,4 +226,3 @@ dictionary authenticatorBiometricPerfBounds{
     float FAR;
     float FRR;
     };
-

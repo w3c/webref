@@ -1,3 +1,8 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content of this file was automatically extracted from the
+// "MediaStream Recording" spec.
+// See: https://w3c.github.io/mediacapture-record/
+
 [Exposed=Window,
  Constructor(MediaStream stream, optional MediaRecorderOptions options)]
 interface MediaRecorder : EventTarget {
@@ -54,4 +59,3 @@ dictionary MediaRecorderErrorEventInit : EventInit {
 interface MediaRecorderErrorEvent : Event {
   [SameObject] readonly attribute DOMException error;
 };
-

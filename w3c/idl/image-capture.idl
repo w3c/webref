@@ -1,3 +1,8 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content of this file was automatically extracted from the
+// "MediaStream Image Capture" spec.
+// See: https://w3c.github.io/mediacapture-image/
+
 [Exposed=Window, Constructor(MediaStreamTrack videoTrack)]
 interface ImageCapture {
    Promise<Blob>              takePhoto(optional PhotoSettings photoSettings);
@@ -144,4 +149,3 @@ dictionary Point2D {
   double x = 0.0;
   double y = 0.0;
 };
-
