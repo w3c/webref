@@ -1,3 +1,8 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content of this file was automatically extracted from the
+// "Service Workers 1" spec.
+// See: https://w3c.github.io/ServiceWorker/v1/
+
 [SecureContext, Exposed=(Window,Worker)]
 interface ServiceWorker : EventTarget {
   readonly attribute USVString scriptURL;
@@ -195,4 +200,3 @@ interface CacheStorage {
   [NewObject] Promise<boolean> delete(DOMString cacheName);
   [NewObject] Promise<sequence<DOMString>> keys();
 };
-

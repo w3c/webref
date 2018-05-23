@@ -1,3 +1,8 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content of this file was automatically extracted from the
+// "User Interface Security and the Visibility API" spec.
+// See: http://w3c.github.io/webappsec-uisecurity/index.html
+
 callback VisibilityObserverCallback = void(sequence<VisibilityObserverEntry> entries, VisibilityObserver observer)
 
 [Constructor(VisibilityObserverCallback callback, optional VisibilityObserverEntryInit visibilityObserverEntryInit), Exposed=Window]
@@ -30,4 +35,3 @@ dictionary VisibilityObserverInit {
 partial interface Event {
   readonly attribute boolean isUnsafe;
 };
-
