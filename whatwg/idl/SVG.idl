@@ -93,6 +93,21 @@ interface SVGAngle {
   void convertToSpecifiedUnits(unsigned short unitType);
 };
 
+interface SVGNameList {
+
+  readonly attribute unsigned long length;
+  readonly attribute unsigned long numberOfItems;
+
+  void clear();
+  Type initialize(Type newItem);
+  getter Type getItem(unsigned long index);
+  Type insertItemBefore(Type newItem, unsigned long index);
+  Type replaceItem(Type newItem, unsigned long index);
+  Type removeItem(unsigned long index);
+  Type appendItem(Type newItem);
+  setter void (unsigned long index, Type newItem);
+};
+
 [Exposed=Window]
 interface SVGNumberList {
 
@@ -235,6 +250,14 @@ interface mixin SVGURIReference {
 
 partial interface Document {
   readonly attribute SVGSVGElement? rootElement;
+};
+
+// must only be implemented in certain implementations
+partial interface Document {
+  readonly attribute DOMString title;
+  readonly attribute DOMString referrer;
+  readonly attribute DOMString domain;
+  readonly attribute Element? activeElement;
 };
 
 [Exposed=Window]
