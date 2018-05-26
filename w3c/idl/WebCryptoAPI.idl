@@ -1,13 +1,12 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content of this file was automatically extracted from the
+// "Web Cryptography API" spec.
+// See: https://w3c.github.io/webcrypto/Overview.html
 
-
-[NoInterfaceObject,Exposed=(Window,Worker)]
-interface GlobalCrypto {
+partial interface mixin WindowOrWorkerGlobalScope {
   readonly attribute Crypto crypto;
 };
 
-Window implements GlobalCrypto;
-WorkerGlobalScope implements GlobalCrypto;        
-        
 [Exposed=(Window,Worker)]
 interface Crypto {
   [SecureContext] readonly attribute SubtleCrypto subtle;
@@ -73,7 +72,7 @@ interface SubtleCrypto {
   Promise<ArrayBuffer> deriveBits(AlgorithmIdentifier algorithm,
                           CryptoKey baseKey,
                           unsigned long length);
-  
+
   Promise<CryptoKey> importKey(KeyFormat format,
                          (BufferSource or JsonWebKey) keyData,
                          AlgorithmIdentifier algorithm,
@@ -140,14 +139,14 @@ dictionary CryptoKeyPair {
 
 dictionary RsaKeyGenParams : Algorithm {
   // The length, in bits, of the RSA modulus
-  [EnforceRange] required unsigned long modulusLength;
+  required [EnforceRange] unsigned long modulusLength;
   // The RSA public exponent
   required BigInteger publicExponent;
 };
           
 
 dictionary RsaHashedKeyGenParams : RsaKeyGenParams {
-  // The hash algorithm to use 
+  // The hash algorithm to use
   required HashAlgorithmIdentifier hash;
 };
           
@@ -306,4 +305,3 @@ dictionary Pbkdf2Params : Algorithm {
   [EnforceRange] required unsigned long iterations;
   required HashAlgorithmIdentifier hash;
 };
-          
