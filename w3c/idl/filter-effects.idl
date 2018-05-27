@@ -144,6 +144,7 @@ interface SVGFEConvolveMatrixElement : SVGElement {
   readonly attribute SVGAnimatedEnumeration edgeMode;
   readonly attribute SVGAnimatedNumber kernelUnitLengthX;
   readonly attribute SVGAnimatedNumber kernelUnitLengthY;
+  readonly attribute SVGAnimatedBoolean preserveAlpha;
 };
 
 SVGFEConvolveMatrixElement includes SVGFilterPrimitiveStandardAttributes;
