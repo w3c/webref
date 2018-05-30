@@ -60,13 +60,12 @@
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
   <h2>List of specifications with invalid WebIDL content</h2>
   <ul>
-  <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/mediaont-api-1.0/">Metadata API for Media Resources 1.0</a></li>
   <li><a href="https://wicg.github.io/ResizeObserver/">Resize Observer 1</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
   </ul>
-  <p>=&gt; 5 specifications found</p>
+  <p>=&gt; 4 specifications found</p>
   <p>WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features</p>
   </section>
   <section id="list-of-specifications-with-obsolete-webidl-constructs" class="level2">
@@ -95,6 +94,7 @@
   <h2>List of WebIDL names not defined in the specifications crawled</h2>
   <ul>
   <li><code>AnimationEffectReadOnly</code> used in <a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
+  <li><code>CSSOMRGBColor</code> used in <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><code>Dictionary</code> used in <a href="https://w3c.github.io/web-nfc/">Web NFC API</a></li>
   <li><code>GroupEffectReadOnly</code> used in <a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
   <li><code>LayoutWorklet</code> used in <a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
@@ -109,7 +109,7 @@
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   <li><code>sequence</code> used in <a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
   </ul>
-  <p>=&gt; 14 WebIDL names found</p>
+  <p>=&gt; 15 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -458,6 +458,7 @@
   <ul>
   <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a></li>
   <li><a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a> but related reference &quot;UIEVENTS&quot; uses URL <a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a></li>
+  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but related reference &quot;DOM-Level-3-Core&quot; uses URL <a href="https://www.w3.org/TR/DOM-Level-3-Core/"><code>https://www.w3.org/TR/DOM-Level-3-Core/</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a> links to:
   <ul>
@@ -639,7 +640,7 @@
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 142 inconsistent references for links found in 73 specifications</p>
+  <p>=&gt; 143 inconsistent references for links found in 73 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
