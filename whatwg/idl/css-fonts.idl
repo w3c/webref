@@ -17,19 +17,19 @@ interface CSSFontFeatureValuesRule : CSSRule {  attribute CSSOMString fontFamily
   readonly attribute CSSFontFeatureValuesMap swash;
   readonly attribute CSSFontFeatureValuesMap characterVariant;
   readonly attribute CSSFontFeatureValuesMap styleset;
-}
+};
 
-[MapClass(CSSOMString, sequence<unsigned long>)]
 interface CSSFontFeatureValuesMap {
+  maplike<CSSOMString, sequence<unsigned long>>;
   void set(CSSOMString featureValueName,
            (unsigned long or sequence<unsigned long>) values);
-}
+};
 partial interface CSSRule {
   const unsigned short FONT_PALETTE_VALUES_RULE = 15;
-}
+};
 
 interface CSSFontPaletteValuesRule : CSSRule {
   maplike<unsigned long, (CSSOMString or CSSOMRGBColor)>;
   attribute CSSOMString fontFamily;
   attribute CSSOMString basePalette;
-}
+};
