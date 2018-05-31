@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% May 30, 2018
+% May 31, 2018
 
 140 specifications were crawled in this report.
 
@@ -27,6 +27,7 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## Specifications without WebIDL definitions
 
+- [Accessibility Object Model](https://wicg.github.io/aom/spec/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
@@ -39,7 +40,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 
-=> 11 specifications found
+=> 12 specifications found
 
 Not all specifications define IDL content, presence in this list may be completely normal. Reffy's current focus is on IDL specifications, the number of specifications listed here should remain minimal.
 
@@ -64,7 +65,6 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
-- [Accessibility Object Model, Phase 1](https://wicg.github.io/aom/spec/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
@@ -77,7 +77,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 
-=> 12 specifications found
+=> 11 specifications found
 
 
 
@@ -180,6 +180,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Accelerometer](https://w3c.github.io/accelerometer/) links to:
     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
     * [`https://w3c.github.io/sensors/usecases.html`](https://w3c.github.io/sensors/usecases.html) but does not list it in its references
+- [Accessibility Object Model](https://wicg.github.io/aom/spec/) links to:
+    * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/) but does not list it in its references
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
+    * [`https://w3c.github.io/html-aam/`](https://w3c.github.io/html-aam/) but does not list it in its references
 - [Background Fetch](https://wicg.github.io/background-fetch/) links to [`https://storage.spec.whatwg.org/`](https://storage.spec.whatwg.org/) but does not list it in its references
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/) links to:
@@ -334,7 +338,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 133 missing references for links found in 57 specifications
+=> 136 missing references for links found in 58 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
