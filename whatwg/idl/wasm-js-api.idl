@@ -82,6 +82,17 @@ interface Table {
   readonly attribute unsigned long length;
 };
 
+dictionary GlobalDescriptor {
+  required USVString value;
+  boolean mutable = false;
+};
+
+[LegacyNamespace=WebAssembly, Constructor(GlobalDescriptor descriptor, unrestricted double value = 0), Exposed=(Window,Worker,Worklet)]
+interface Global {
+  unrestricted double valueOf();
+  attribute unrestricted double value;
+};
+
 [LegacyNamespace=WebAssembly]
 interface CompileError { };
 
