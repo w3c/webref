@@ -1,14 +1,12 @@
-% Diff between report from "June 07, 2018" and reference report from "June 06, 2018"
+% Diff between report from "June 08, 2018" and reference report from "June 07, 2018"
 % Reffy
-% June 07, 2018
+% June 08, 2018
 
-## WebAssembly JavaScript Interface
+## DOM Standard
 
-- URL: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
-- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/)
-- Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
-- Invalid WebIDL content found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Missing references for WebIDL names: *DEL* Worklet
+- URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/)
+- Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
+- Inconsistent references for links: *DEL* https://dom.spec.whatwg.org/
 
 

@@ -16,7 +16,7 @@ partial interface Navigator {
   [SameObject] readonly attribute XR xr;
 };
 
-[SecureContext, Exposed=Window] interface XRDevice : EventTarget {
+[SecureContext, Exposed=Window] interface XRDevice {
   // Methods
   Promise<void> supportsSession(optional XRSessionCreationOptions options);
   Promise<XRSession> requestSession(optional XRSessionCreationOptions options);
@@ -140,8 +140,7 @@ interface XRInputSource {
 
 interface XRInputPose {
   readonly attribute boolean emulatedPosition;
-  readonly attribute Float32Array targetRayOrigin;
-  readonly attribute Float32Array targetRayDirection;
+  readonly attribute Float32Array targetRayMatrix;
   readonly attribute Float32Array? gripMatrix;
 };
 
@@ -156,7 +155,7 @@ dictionary XRWebGLLayerInit {
   boolean stencil = false;
   boolean alpha = true;
   boolean multiview = false;
-  double framebufferScaleFactor;
+  double framebufferScaleFactor = 1.0;
 };
 
 [SecureContext, Exposed=Window, Constructor(XRSession session,

@@ -41,6 +41,10 @@ dictionary EventInit {
   boolean composed = false;
 };
 
+partial interface Window {
+  [Replaceable] readonly attribute any event; // historical
+};
+
 [Constructor(DOMString type, optional CustomEventInit eventInitDict),
  Exposed=(Window,Worker)]
 interface CustomEvent : Event {
