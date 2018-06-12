@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% June 11, 2018
+% June 12, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -106,7 +106,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (June 11, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (June 12, 2018)
 - Repository: [GitHub wicg/aom](https://github.com/wicg/aom)
 - Shortname: no shortname
 
@@ -428,7 +428,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (June 11, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (June 12, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1448,7 +1448,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/entries-api/) (29 January 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/entries-api/) (11 June 2018)
 - Repository: [GitHub wicg/entries-api](https://github.com/wicg/entries-api)
 - Shortname: no shortname
 
@@ -2302,7 +2302,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (June 11, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (June 12, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -3049,7 +3049,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (4 June 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (11 June 2018)
 - Repository: [GitHub wicg/picture-in-picture](https://github.com/wicg/picture-in-picture)
 - Shortname: no shortname
 
@@ -3802,7 +3802,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (7 June 2018)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (11 June 2018)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -4572,7 +4572,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (June 11, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (June 12, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -4634,7 +4634,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (June 11, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (June 12, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -4868,7 +4868,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Jun 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Jun 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4893,7 +4893,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Jun 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Jun 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -5107,7 +5107,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (8 June 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (11 June 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -5162,7 +5162,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (7 June 2018)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (11 June 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
