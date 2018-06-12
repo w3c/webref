@@ -87,10 +87,10 @@ dictionary GlobalDescriptor {
   boolean mutable = false;
 };
 
-[LegacyNamespace=WebAssembly, Constructor(GlobalDescriptor descriptor, unrestricted double value = 0), Exposed=(Window,Worker,Worklet)]
+[LegacyNamespace=WebAssembly, Constructor(GlobalDescriptor descriptor, optional any value), Exposed=(Window,Worker,Worklet)]
 interface Global {
-  unrestricted double valueOf();
-  attribute unrestricted double value;
+  any valueOf();
+  attribute any value;
 };
 
 [LegacyNamespace=WebAssembly]
