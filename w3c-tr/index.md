@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% June 12, 2018
+% June 13, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -106,7 +106,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (June 12, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (June 13, 2018)
 - Repository: [GitHub wicg/aom](https://github.com/wicg/aom)
 - Shortname: no shortname
 
@@ -428,7 +428,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (June 12, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (June 13, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1931,7 +1931,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180402/)
+- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
@@ -2063,7 +2063,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180402/)
+- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -2191,7 +2191,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180402/)
+- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
@@ -2302,7 +2302,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (June 12, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (June 13, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -3571,10 +3571,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-selection-api-20180402/) (02 April 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-selection-api-20180612/) (12 June 2018)
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-selection-api-20180402/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - Repository: [GitHub w3c/selection-api](https://github.com/w3c/selection-api)
 - Shortname: selection-api
 
@@ -4244,7 +4244,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180402/)
+- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
@@ -4572,7 +4572,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (June 12, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (June 13, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -4634,7 +4634,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (June 12, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (June 13, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -4753,7 +4753,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180402/)
+- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
@@ -4868,7 +4868,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Jun 12 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Jun 13 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4893,7 +4893,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Jun 12 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Jun 13 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -5011,7 +5011,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180402/)
+- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
@@ -5059,6 +5059,7 @@ Informative references to this spec from:
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
+- [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
