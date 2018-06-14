@@ -57,9 +57,9 @@ dictionary XRSessionCreationOptions {
   attribute EventHandler onselectend;
 };
 
-callback XRFrameRequestCallback = void (DOMHighResTimeStamp time, XRPresentationFrame frame);
+callback XRFrameRequestCallback = void (DOMHighResTimeStamp time, XRFrame frame);
 
-[SecureContext, Exposed=Window] interface XRPresentationFrame {
+[SecureContext, Exposed=Window] interface XRFrame {
   readonly attribute XRSession session;
   readonly attribute FrozenArray<XRView> views;
 
@@ -72,8 +72,8 @@ callback XRFrameRequestCallback = void (DOMHighResTimeStamp time, XRPresentation
 };
 
 enum XRFrameOfReferenceType {
-  "headModel",
-  "eyeLevel",
+  "head-model",
+  "eye-level",
   "stage",
 };
 
@@ -206,12 +206,12 @@ dictionary XRSessionEventInit : EventInit {
 
 [SecureContext, Exposed=Window, Constructor(DOMString type, XRInputSourceEventInit eventInitDict)]
 interface XRInputSourceEvent : Event {
-  readonly attribute XRPresentationFrame frame;
+  readonly attribute XRFrame frame;
   readonly attribute XRInputSource inputSource;
 };
 
 dictionary XRInputSourceEventInit : EventInit {
-  required XRPresentationFrame frame;
+  required XRFrame frame;
   required XRInputSource inputSource;
 };
 

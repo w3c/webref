@@ -1,12 +1,12 @@
-% Diff between report from "June 13, 2018" and reference report from "June 12, 2018"
+% Diff between report from "June 14, 2018" and reference report from "June 13, 2018"
 % Reffy
-% June 13, 2018
+% June 14, 2018
 
-## Content Security Policy Level 3
+## CSS Fonts Module Level 4
 
-- URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-csp/)
-- Repository: [GitHub w3c/webappsec-csp](https://github.com/w3c/webappsec-csp)
-- Inconsistent references for links: *DEL* https://w3c.github.io/ServiceWorker/
+- URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *DEL* https://www.w3.org/TR/css-text-3/
 
 
