@@ -9,7 +9,7 @@
 [LegacyUnenumerableNamedProperties]
 interface HTMLAllCollection {
   readonly attribute unsigned long length;
-  getter Element? (unsigned long index);
+  getter Element (unsigned long index);
   getter (HTMLCollection or Element)? namedItem(DOMString name);
   legacycaller (HTMLCollection or Element)? item(optional DOMString nameOrItem);
 };
@@ -1312,13 +1312,8 @@ interface NavigatorLanguage {
 
 [NoInterfaceObject]
 interface NavigatorContentUtils {
-  // content handler registration
   void registerProtocolHandler(DOMString scheme, DOMString url, DOMString title);
-  void registerContentHandler(DOMString mimeType, DOMString url, DOMString title);
-  DOMString isProtocolHandlerRegistered(DOMString scheme, DOMString url);
-  DOMString isContentHandlerRegistered(DOMString mimeType, DOMString url);
   void unregisterProtocolHandler(DOMString scheme, DOMString url);
-  void unregisterContentHandler(DOMString mimeType, DOMString url);
 };
 
 [NoInterfaceObject]
@@ -1339,21 +1334,6 @@ typedef (HTMLImageElement or
         ImageData or
         CanvasRenderingContext2D or
         ImageBitmap) ImageBitmapSource;
-
-// Note: intentionally not [HTMLConstructor]
-interface HTMLAppletElement : HTMLElement {
-  attribute DOMString align;
-  attribute DOMString alt;
-  attribute DOMString archive;
-  attribute DOMString code;
-  attribute USVString codeBase;
-  attribute DOMString height;
-  attribute unsigned long hspace;
-  attribute DOMString name;
-  attribute USVString _object; // the underscore is not part of the identifier
-  attribute unsigned long vspace;
-  attribute DOMString width;
-};
 
 [HTMLConstructor]
 interface HTMLMarqueeElement : HTMLElement {
