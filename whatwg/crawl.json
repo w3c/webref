@@ -2,7 +2,7 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-06-21T06:43:30.072Z",
+  "date": "2018-06-22T06:07:21.387Z",
   "options": {},
   "stats": {
     "crawled": 50,
@@ -22,7 +22,7 @@
       "repository": "https://github.com/whatwg/dom",
       "title": "DOM Standard",
       "crawled": "https://dom.spec.whatwg.org/",
-      "date": "7 June 2018",
+      "date": "21 June 2018",
       "links": [
         "https://infra.spec.whatwg.org/",
         "https://drafts.csswg.org/selectors-4/",
@@ -6607,6 +6607,64 @@
                       "extAttrs": []
                     },
                     "name": "localName"
+                  }
+                ],
+                "extAttrs": [
+                  {
+                    "name": "CEReactions",
+                    "arguments": null,
+                    "type": "extended-attribute",
+                    "rhs": null
+                  }
+                ]
+              },
+              {
+                "type": "operation",
+                "getter": false,
+                "setter": false,
+                "deleter": false,
+                "static": false,
+                "stringifier": false,
+                "idlType": {
+                  "type": "return-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean",
+                  "extAttrs": []
+                },
+                "name": "toggleAttribute",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString",
+                      "extAttrs": []
+                    },
+                    "name": "qualifiedName"
+                  },
+                  {
+                    "optional": true,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "boolean",
+                      "extAttrs": []
+                    },
+                    "name": "force"
                   }
                 ],
                 "extAttrs": [
@@ -53010,7 +53068,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-output/",
       "repository": "https://github.com/w3c/mediacapture-output",
       "crawled": "https://w3c.github.io/mediacapture-output/",
-      "date": "June 21, 2018",
+      "date": "June 22, 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/2011/04/webrtc/",
@@ -53160,7 +53218,7 @@
       "edDraft": "https://w3c.github.io/battery/",
       "repository": "https://github.com/w3c/battery",
       "crawled": "https://w3c.github.io/battery/",
-      "date": "June 21, 2018",
+      "date": "June 22, 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/TR/2014/CR-battery-status-20141209/",
@@ -53483,7 +53541,7 @@
       "edDraft": "https://w3c.github.io/beacon/",
       "repository": "https://github.com/w3c/beacon",
       "crawled": "https://w3c.github.io/beacon/",
-      "date": "June 21, 2018",
+      "date": "June 22, 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/webperf/",
@@ -60050,7 +60108,7 @@
       "datedStatus": "Working Draft",
       "edDraft": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
-      "date": "6 June 2018",
+      "date": "21 June 2018",
       "links": [
         "https://www.battleforthenet.com/",
         "https://drafts.csswg.org/css-images-3/",
@@ -67574,7 +67632,7 @@
       "edDraft": "https://drafts.csswg.org/css-values/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "crawled": "https://drafts.csswg.org/css-values/",
-      "date": "16 June 2018",
+      "date": "21 June 2018",
       "links": [
         "https://www.battleforthenet.com/",
         "https://www.w3.org/TR/CSS/",
@@ -67613,7 +67671,6 @@
         "https://drafts.csswg.org/css-writing-modes-4/",
         "https://www.w3.org/TR/css3-fonts/",
         "https://unicode.org/reports/tr11/",
-        "https://www.w3.org/TR/CSS2//visudet",
         "https://drafts.csswg.org/css-overflow-4/",
         "https://drafts.csswg.org/mediaqueries-4/",
         "https://drafts.csswg.org/css-overflow-3/",
@@ -67861,7 +67918,7 @@
       "edDraft": "https://drafts.csswg.org/css-writing-modes-3/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
-      "date": "14 June 2018",
+      "date": "21 June 2018",
       "links": [
         "https://www.battleforthenet.com/",
         "https://www.w3.org/TR/CSS/",
@@ -67884,6 +67941,7 @@
         "https://drafts.csswg.org/css-cascade/",
         "https://drafts.csswg.org/css-pseudo/",
         "https://drafts.csswg.org/css-transitions/",
+        "https://drafts.csswg.org/css2/visuren.html",
         "https://drafts.csswg.org/css-inline-3/",
         "https://drafts.csswg.org/css-display-3/",
         "https://drafts.csswg.org/css-break-3/",
@@ -67903,6 +67961,7 @@
         "https://www.w3.org/TR/css3-multicol/",
         "https://drafts.csswg.org/css-text-decor-3/",
         "https://drafts.fxtf.org/css-masking-1/",
+        "https://drafts.csswg.org/css2/visufx.html",
         "https://drafts.csswg.org/css-backgrounds-3/",
         "https://drafts.csswg.org/css-page-3/",
         "https://html.spec.whatwg.org/",
@@ -75062,7 +75121,7 @@
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://encoding.spec.whatwg.org/",
       "crawled": "https://encoding.spec.whatwg.org/",
-      "date": "29 May 2018",
+      "date": "21 June 2018",
       "links": [
         "https://www.iana.org/assignments/character-sets/character-sets.xhtml",
         "https://infra.spec.whatwg.org/",
@@ -82426,7 +82485,7 @@
       "edDraft": "https://w3c.github.io/gamepad/",
       "repository": "https://github.com/w3c/gamepad",
       "crawled": "https://w3c.github.io/gamepad/",
-      "date": "June 21, 2018",
+      "date": "June 22, 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/Bugs/Public/buglist.cgi?product=WebAppsWG&component=Gamepad&resolution=---",
@@ -89770,7 +89829,7 @@
       "edDraft": "https://w3c.github.io/hr-time/",
       "repository": "https://github.com/w3c/hr-time",
       "crawled": "https://w3c.github.io/hr-time/",
-      "date": "June 21, 2018",
+      "date": "June 22, 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/TR/hr-time-1/",
