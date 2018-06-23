@@ -360,6 +360,7 @@ interface HTMLIFrameElement : HTMLElement {
   [CEReactions] attribute DOMString srcdoc;
   [CEReactions] attribute DOMString name;
   [SameObject, PutForwards=value] readonly attribute DOMTokenList sandbox;
+  [CEReactions] attribute DOMString allow;
   [CEReactions] attribute boolean allowFullscreen;
   [CEReactions] attribute boolean allowPaymentRequest;
   [CEReactions] attribute boolean allowUserMedia;
