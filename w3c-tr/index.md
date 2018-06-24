@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% June 23, 2018
+% June 24, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -106,7 +106,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (June 23, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (June 24, 2018)
 - Repository: [GitHub wicg/aom](https://github.com/wicg/aom)
 - Shortname: no shortname
 
@@ -428,7 +428,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (June 23, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (June 24, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1652,6 +1652,35 @@ Informative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 
 
+## Geolocation API Specification 2nd Edition {data-spec=true data-anomaly=true data-unknownIdlNames=true data-noEdDraft=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/) (31 January 2018))
+- Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
+- Shortname: geolocation-API
+
+### Potential issue(s) {.anomalies}
+
+- Link to an Editor's Draft not found
+- Unknown WebIDL names used: `Navigator`
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
+
+Informative references to this spec from:
+
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
+- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
+- [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
+- [Web Budget API](https://wicg.github.io/budget-api/)
+
+
 ## Geolocation Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
@@ -1669,39 +1698,6 @@ Informative references to this spec from:
 No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
-
-
-## geolocation-API {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](https://www.w3.org/TR/geolocation-API)
-- Latest published version: [https://www.w3.org/TR/geolocation-API](https://www.w3.org/TR/geolocation-API)
-- Shortname: geolocation-API
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/cli/crawl-specs.js:156:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
-
-Informative references to this spec from:
-
-- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
-- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
-- [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 
 
 ## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1898,6 +1894,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
+- [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -2306,7 +2303,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (June 23, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (June 24, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -4437,7 +4434,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Coordinates`, `Window`
+- Unknown WebIDL names used: `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html)
 - Inconsistent references for links: 
@@ -4585,7 +4582,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (June 23, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (June 24, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -4647,7 +4644,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (June 23, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (June 24, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -4881,7 +4878,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Jun 23 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Jun 24 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4908,7 +4905,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Jun 23 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Jun 24 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 

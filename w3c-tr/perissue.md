@@ -1,24 +1,13 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% June 23, 2018
+% June 24, 2018
 
 148 specifications were crawled in this report.
 
 
-## Specifications that could not be rendered
-
-Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
-
-- [geolocation-API](https://www.w3.org/TR/geolocation-API): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/cli/crawl-specs.js:156:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-=> 1 specification found
-
-
 ## Specifications that do not link to an Editor's Draft
 
+- [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
@@ -26,7 +15,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 
-=> 6 specifications found
+=> 7 specifications found
 
 It is good practice to link to Editor's Draft for W3C specifications even for specifications published as Recommendations. Reffy (or rather the W3C API) could not find a link to an Editor's Draft for the specifications mentioned above.
 
@@ -134,7 +123,6 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `AudioTrackList` used in [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - `CSSOMString` used in [CSS Animations Level 1](https://www.w3.org/TR/2017/WD-css-animations-1-20171130/), [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
 - `Console` used in [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
-- `Coordinates` used in [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180320/)
 - `DOMMatrix` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/), [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - `DOMMatrixReadOnly` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - `DOMPoint` used in [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
@@ -166,7 +154,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `ImageBitmapSource` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - `LayoutWorklet` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - `Map` used in [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- `Navigator` used in [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/), [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/), [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/), [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180508/), [Keyboard Lock](https://w3c.github.io/keyboard-lock/), [Media Capabilities](https://wicg.github.io/media-capabilities/), [Media Session Standard](https://wicg.github.io/mediasession/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/), [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/), [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/), [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/), [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web Budget API](https://wicg.github.io/budget-api/), [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Share API](https://wicg.github.io/web-share/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/)
+- `Navigator` used in [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/), [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/), [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/), [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180508/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/), [Keyboard Lock](https://w3c.github.io/keyboard-lock/), [Media Capabilities](https://wicg.github.io/media-capabilities/), [Media Session Standard](https://wicg.github.io/mediasession/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/), [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/), [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/), [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/), [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web Budget API](https://wicg.github.io/budget-api/), [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Share API](https://wicg.github.io/web-share/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/)
 - `OnErrorEventHandler` used in [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - `OverconstrainedError` used in [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - `PermissionName` used in [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -192,7 +180,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `WorkerType` used in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/), [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180622/)
 - `sequence` used in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 
-=> 63 WebIDL names found
+=> 62 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
