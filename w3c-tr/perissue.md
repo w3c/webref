@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% June 25, 2018
+% June 26, 2018
 
 148 specifications were crawled in this report.
 
@@ -62,6 +62,7 @@ Not all specifications define IDL content, presence in this list may be complete
 - [Filter Effects Module Level 1](http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
@@ -70,7 +71,7 @@ Not all specifications define IDL content, presence in this list may be complete
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
-=> 14 specifications found
+=> 15 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
