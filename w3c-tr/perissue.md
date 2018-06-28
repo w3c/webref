@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% June 27, 2018
+% June 28, 2018
 
 148 specifications were crawled in this report.
 
@@ -99,7 +99,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [Filter Effects Module Level 1](http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
-- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180519/)
+- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180627/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [Network Information API](https://wicg.github.io/netinfo/)
@@ -160,7 +160,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `OverconstrainedError` used in [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - `PermissionName` used in [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - `RTCError` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180621/)
-- `RTCRTPStreamStats` used in [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180519/)
+- `RTCRTPStreamStats` used in [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180627/)
 - `ReadableStream` used in [Fetch Standard](https://fetch.spec.whatwg.org/)
 - `SVGAnimatedEnumeration` used in [CSS Masking Module Level 1](http://www.w3.org/TR/2014/CR-css-masking-1-20140826/)
 - `SVGAnimatedLength` used in [CSS Masking Module Level 1](http://www.w3.org/TR/2014/CR-css-masking-1-20140826/)
@@ -191,7 +191,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 - `ProgressEvent` defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `ProgressEventInit` defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
-- `RTCStats` defined in [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180519/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180621/)
+- `RTCStats` defined in [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180627/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180621/)
 - `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) and [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/) and [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 
@@ -680,7 +680,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) links to:
     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
-- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180519/) links to [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/WD-webrtc-stats-20180627/) links to [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/) links to:
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "HTML52" uses URL [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/)
