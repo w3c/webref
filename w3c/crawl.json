@@ -2,7 +2,7 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-06-28T06:01:13.441Z",
+  "date": "2018-06-29T06:01:13.505Z",
   "options": {},
   "stats": {
     "crawled": 60,
@@ -5313,7 +5313,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-output/",
       "repository": "https://github.com/w3c/mediacapture-output",
       "crawled": "https://w3c.github.io/mediacapture-output/",
-      "date": "June 28, 2018",
+      "date": "June 29, 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/2011/04/webrtc/",
@@ -5463,7 +5463,7 @@
       "edDraft": "https://w3c.github.io/battery/",
       "repository": "https://github.com/w3c/battery",
       "crawled": "https://w3c.github.io/battery/",
-      "date": "June 28, 2018",
+      "date": "June 29, 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/TR/2014/CR-battery-status-20141209/",
@@ -5786,7 +5786,7 @@
       "edDraft": "https://w3c.github.io/beacon/",
       "repository": "https://github.com/w3c/beacon",
       "crawled": "https://w3c.github.io/beacon/",
-      "date": "June 28, 2018",
+      "date": "June 29, 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/webperf/",
@@ -45444,7 +45444,7 @@
       "edDraft": "https://w3c.github.io/gamepad/",
       "repository": "https://github.com/w3c/gamepad",
       "crawled": "https://w3c.github.io/gamepad/",
-      "date": "June 28, 2018",
+      "date": "June 29, 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/Bugs/Public/buglist.cgi?product=WebAppsWG&component=Gamepad&resolution=---",
@@ -45494,31 +45494,459 @@
         ]
       },
       "idl": {
-        "message": "Got an error during or right after parsing `enum GamepadMappingType`: Stray extended attributes",
-        "line": 22,
-        "input": "<span class=",
-        "tokens": [
-          {
-            "type": "other",
-            "value": "<"
+        "jsNames": {
+          "constructors": {
+            "Window": [
+              "GamepadEvent"
+            ]
           },
-          {
-            "type": "identifier",
-            "value": "span"
+          "functions": {
+            "Window": [
+              "Gamepad",
+              "GamepadButton"
+            ]
           },
-          {
-            "type": "whitespace",
-            "value": " "
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {
+            "Gamepad": [
+              "Window",
+              "DOMHighResTimeStamp",
+              "GamepadMappingType",
+              "GamepadButton"
+            ],
+            "GamepadButton": [
+              "Window"
+            ],
+            "Navigator": [
+              "Gamepad"
+            ],
+            "GamepadEvent": [
+              "Event",
+              "Window",
+              "GamepadEventInit",
+              "Gamepad"
+            ],
+            "GamepadEventInit": [
+              "EventInit",
+              "Gamepad"
+            ]
           },
-          {
-            "type": "identifier",
-            "value": "class"
+          "_reallyDependsOnWindow": false,
+          "Gamepad": {
+            "type": "interface",
+            "name": "Gamepad",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString",
+                  "extAttrs": []
+                },
+                "name": "id",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "long",
+                  "extAttrs": []
+                },
+                "name": "index",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean",
+                  "extAttrs": []
+                },
+                "name": "connected",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMHighResTimeStamp",
+                  "extAttrs": []
+                },
+                "name": "timestamp",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GamepadMappingType",
+                  "extAttrs": []
+                },
+                "name": "mapping",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": "FrozenArray",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double",
+                    "extAttrs": []
+                  },
+                  "extAttrs": []
+                },
+                "name": "axes",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": "FrozenArray",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "GamepadButton",
+                    "extAttrs": []
+                  },
+                  "extAttrs": []
+                },
+                "name": "buttons",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                }
+              }
+            ]
           },
-          {
-            "type": "other",
-            "value": "="
+          "GamepadButton": {
+            "type": "interface",
+            "name": "GamepadButton",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean",
+                  "extAttrs": []
+                },
+                "name": "pressed",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean",
+                  "extAttrs": []
+                },
+                "name": "touched",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "value",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": [
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                }
+              }
+            ]
+          },
+          "GamepadMappingType": {
+            "type": "enum",
+            "name": "GamepadMappingType",
+            "values": [
+              {
+                "type": "string",
+                "value": ""
+              },
+              {
+                "type": "string",
+                "value": "standard"
+              }
+            ],
+            "extAttrs": []
+          },
+          "GamepadEvent": {
+            "type": "interface",
+            "name": "GamepadEvent",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Gamepad",
+                  "extAttrs": []
+                },
+                "name": "gamepad",
+                "extAttrs": [
+                  {
+                    "name": "SameObject",
+                    "arguments": null,
+                    "type": "extended-attribute",
+                    "rhs": null
+                  }
+                ]
+              }
+            ],
+            "inheritance": "Event",
+            "extAttrs": [
+              {
+                "name": "Constructor",
+                "arguments": [
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString",
+                      "extAttrs": []
+                    },
+                    "name": "type"
+                  },
+                  {
+                    "optional": false,
+                    "variadic": false,
+                    "extAttrs": [],
+                    "idlType": {
+                      "type": "argument-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "GamepadEventInit",
+                      "extAttrs": []
+                    },
+                    "name": "eventInitDict"
+                  }
+                ],
+                "type": "extended-attribute",
+                "rhs": null
+              },
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                }
+              }
+            ]
+          },
+          "GamepadEventInit": {
+            "type": "dictionary",
+            "name": "GamepadEventInit",
+            "partial": false,
+            "members": [
+              {
+                "type": "field",
+                "name": "gamepad",
+                "required": true,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Gamepad",
+                  "extAttrs": []
+                },
+                "extAttrs": []
+              }
+            ],
+            "inheritance": "EventInit",
+            "extAttrs": []
           }
-        ]
+        },
+        "idlExtendedNames": {
+          "Navigator": [
+            {
+              "type": "interface",
+              "name": "Navigator",
+              "partial": true,
+              "members": [
+                {
+                  "type": "operation",
+                  "getter": false,
+                  "setter": false,
+                  "deleter": false,
+                  "static": false,
+                  "stringifier": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": true,
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": {
+                      "type": "return-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": true,
+                      "union": false,
+                      "idlType": "Gamepad",
+                      "extAttrs": []
+                    },
+                    "extAttrs": []
+                  },
+                  "name": "getGamepads",
+                  "arguments": [],
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": [
+                {
+                  "name": "Exposed",
+                  "arguments": null,
+                  "type": "extended-attribute",
+                  "rhs": {
+                    "type": "identifier",
+                    "value": "Window"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "externalDependencies": [
+          "Window",
+          "DOMHighResTimeStamp",
+          "Navigator",
+          "Event",
+          "EventInit"
+        ],
+        "hasObsoleteIdl": false
       }
     },
     {
@@ -52360,7 +52788,7 @@
       "edDraft": "https://w3c.github.io/hr-time/",
       "repository": "https://github.com/w3c/hr-time",
       "crawled": "https://w3c.github.io/hr-time/",
-      "date": "June 28, 2018",
+      "date": "June 29, 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/TR/hr-time-1/",
@@ -59481,7 +59909,7 @@
       "edDraft": "https://rawgit.com/w3c/input-events/v1/index.html",
       "repository": "https://github.com/w3c/input-events",
       "crawled": "https://rawgit.com/w3c/input-events/v1/index.html",
-      "date": "June 28, 2018",
+      "date": "June 29, 2018",
       "links": [
         "https://www.w3.org/TR/",
         "https://github.com/web-platform-tests/wpt/tree/master/input-events",
@@ -59536,31 +59964,181 @@
         ]
       },
       "idl": {
-        "message": "Got an error during or right after parsing `partial interface InputEvent`: Unrecognised tokens",
-        "line": 6,
-        "input": "<span class=",
-        "tokens": [
-          {
-            "type": "other",
-            "value": "<"
+        "jsNames": {
+          "constructors": {},
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {
+            "InputEvent": [
+              "DataTransfer",
+              "StaticRange"
+            ],
+            "InputEventInit": [
+              "DataTransfer",
+              "StaticRange"
+            ]
           },
-          {
-            "type": "identifier",
-            "value": "span"
-          },
-          {
-            "type": "whitespace",
-            "value": " "
-          },
-          {
-            "type": "identifier",
-            "value": "class"
-          },
-          {
-            "type": "other",
-            "value": "="
-          }
-        ]
+          "_reallyDependsOnWindow": false
+        },
+        "idlExtendedNames": {
+          "InputEvent": [
+            {
+              "type": "interface",
+              "name": "InputEvent",
+              "partial": true,
+              "members": [
+                {
+                  "type": "attribute",
+                  "static": false,
+                  "stringifier": false,
+                  "inherit": false,
+                  "readonly": true,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString",
+                    "extAttrs": []
+                  },
+                  "name": "inputType",
+                  "extAttrs": []
+                },
+                {
+                  "type": "attribute",
+                  "static": false,
+                  "stringifier": false,
+                  "inherit": false,
+                  "readonly": true,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": true,
+                    "union": false,
+                    "idlType": "DataTransfer",
+                    "extAttrs": []
+                  },
+                  "name": "dataTransfer",
+                  "extAttrs": []
+                },
+                {
+                  "type": "operation",
+                  "getter": false,
+                  "setter": false,
+                  "deleter": false,
+                  "static": false,
+                  "stringifier": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": true,
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": {
+                      "type": "return-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "StaticRange",
+                      "extAttrs": []
+                    },
+                    "extAttrs": []
+                  },
+                  "name": "getTargetRanges",
+                  "arguments": [],
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            }
+          ],
+          "InputEventInit": [
+            {
+              "type": "dictionary",
+              "name": "InputEventInit",
+              "partial": true,
+              "members": [
+                {
+                  "type": "field",
+                  "name": "inputType",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString",
+                    "extAttrs": []
+                  },
+                  "extAttrs": [],
+                  "default": {
+                    "type": "string",
+                    "value": ""
+                  }
+                },
+                {
+                  "type": "field",
+                  "name": "dataTransfer",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": true,
+                    "union": false,
+                    "idlType": "DataTransfer",
+                    "extAttrs": []
+                  },
+                  "extAttrs": [],
+                  "default": {
+                    "type": "null"
+                  }
+                },
+                {
+                  "type": "field",
+                  "name": "targetRanges",
+                  "required": false,
+                  "idlType": {
+                    "type": "dictionary-type",
+                    "sequence": true,
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": {
+                      "type": "dictionary-type",
+                      "sequence": false,
+                      "generic": null,
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "StaticRange",
+                      "extAttrs": []
+                    },
+                    "extAttrs": []
+                  },
+                  "extAttrs": [],
+                  "default": {
+                    "type": "sequence",
+                    "value": []
+                  }
+                }
+              ],
+              "extAttrs": []
+            }
+          ]
+        },
+        "externalDependencies": [
+          "InputEvent",
+          "DataTransfer",
+          "StaticRange",
+          "InputEventInit"
+        ],
+        "hasObsoleteIdl": false
       }
     },
     {
@@ -77108,7 +77686,7 @@
       "edDraft": "https://html.spec.whatwg.org/multipage/workers.html",
       "repository": "https://github.com/whatwg/html",
       "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-      "date": "27 June 2018",
+      "date": "28 June 2018",
       "links": [
         "https://fetch.spec.whatwg.org/",
         "https://caniuse.com/",
