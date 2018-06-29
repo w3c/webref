@@ -23,8 +23,8 @@ enum GamepadMappingType {
   "",
   "standard",
 };
-[Exposed=Window]<span class='idlSectionComment'>
-</span>partial interface Navigator {
+[Exposed=Window]
+partial interface Navigator {
   sequence<Gamepad?> getGamepads();
 };
 [Constructor(DOMString type, GamepadEventInit eventInitDict), Exposed=Window]

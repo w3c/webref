@@ -7,9 +7,9 @@ partial interface InputEvent {
     readonly attribute DOMString inputType;
     readonly attribute DataTransfer? dataTransfer;
     sequence<StaticRange> getTargetRanges();
-};<span class='idlSectionComment'>
+};
 
-</span>partial dictionary InputEventInit {
+partial dictionary InputEventInit {
     DOMString inputType = "";
     DataTransfer? dataTransfer = null;
     sequence<StaticRange> targetRanges = [];
