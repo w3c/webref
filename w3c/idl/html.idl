@@ -3,9 +3,6 @@
 // "HTML 5.3" spec.
 // See: https://w3c.github.io/html/
 
-[NoInterfaceObject]interface NoncedElement {
-  attribute DOMString nonce;
-};
 [LegacyUnenumerableNamedProperties]
 interface HTMLAllCollection {
   readonly attribute unsigned long length;
@@ -99,14 +96,10 @@ interface HTMLElement : Element {
   [CEReactions] attribute DOMString lang;
   [CEReactions] attribute boolean translate;
   [CEReactions] attribute DOMString dir;
-  [SameObject] readonly attribute DOMStringMap dataset;
 
   // user interaction
   [CEReactions] attribute boolean hidden;
   void click();
-  [CEReactions] attribute long tabIndex;
-  void focus();
-  void blur();
   [CEReactions] attribute DOMString accessKey;
   [CEReactions] attribute boolean draggable;
   [CEReactions] attribute boolean spellcheck;
@@ -116,10 +109,21 @@ interface HTMLElement : Element {
 HTMLElement implements GlobalEventHandlers;
 HTMLElement implements DocumentAndElementEventHandlers;
 HTMLElement implements ElementContentEditable;
-HTMLElement implements NoncedElement;
 
 // Note: intentionally not [HTMLConstructor]
 interface HTMLUnknownElement : HTMLElement { };
+
+interface mixin HTMLOrSVGElement {
+  [SameObject] readonly attribute DOMStringMap dataset;
+  attribute DOMString nonce;
+
+  [CEReactions] attribute long tabIndex;
+  void focus(optional FocusOptions options);
+  void blur();
+};
+
+HTMLElement includes HTMLOrSVGElement;
+SVGElement includes HTMLOrSVGElement;
 
 interface CustomElementRegistry {
 [CEReactions] void define(DOMString name, Function constructor, optional ElementDefinitionOptions options);
