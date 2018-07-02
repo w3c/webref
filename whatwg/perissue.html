@@ -21,6 +21,15 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>140 specifications were crawled in this report.</p>
+  <section id="specifications-that-could-not-be-rendered" class="level2">
+  <h2>Specifications that could not be rendered</h2>
+  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
+  <ul>
+  <li><a href="http://www.w3.org/TR/css-device-adapt-1/">CSS Device Adaptation Module Level 1</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:396:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a>: <code>Error: Crawl took too long Error: Crawl took too long at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:402:29) at ontimeout (timers.js:498:11) at tryOnTimeout (timers.js:323:5) at Timer.listOnTimeout (timers.js:290:5)</code></li>
+  </ul>
+  <p>=&gt; 2 specifications found</p>
+  </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
   <ul>
@@ -65,8 +74,10 @@
   <li><a href="https://www.w3.org/TR/mediaont-api-1.0/">Metadata API for Media Resources 1.0</a></li>
   <li><a href="https://wicg.github.io/ResizeObserver/">Resize Observer 1</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
+  <li><a href="http://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
+  <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   </ul>
-  <p>=&gt; 4 specifications found</p>
+  <p>=&gt; 6 specifications found</p>
   <p>WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features</p>
   </section>
   <section id="list-of-specifications-with-obsolete-webidl-constructs" class="level2">
@@ -95,20 +106,34 @@
   <ul>
   <li><code>AnimationEffectReadOnly</code> used in <a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
   <li><code>CSSOMRGBColor</code> used in <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
+  <li><code>ConstrainBoolean</code> used in <a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a>, <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a>, <a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
+  <li><code>ConstrainDOMString</code> used in <a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a>, <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a>, <a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
+  <li><code>ConstrainDouble</code> used in <a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a>, <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><code>Dictionary</code> used in <a href="https://w3c.github.io/web-nfc/">Web NFC API</a></li>
+  <li><code>DoubleRange</code> used in <a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><code>GroupEffectReadOnly</code> used in <a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
   <li><code>LayoutWorklet</code> used in <a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><code>Map</code> used in <a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
+  <li><code>MediaStream</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a>, <a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a>, <a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a>, <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
+  <li><code>MediaStreamConstraints</code> used in <a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
+  <li><code>MediaStreamTrack</code> used in <a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a>, <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a>, <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
+  <li><code>MediaTrackCapabilities</code> used in <a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a>, <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
+  <li><code>MediaTrackConstraintSet</code> used in <a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a>, <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a>, <a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
+  <li><code>MediaTrackSettings</code> used in <a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a>, <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
+  <li><code>MediaTrackSupportedConstraints</code> used in <a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a>, <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><code>NavigatorUserMedia</code> used in <a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
-  <li><code>OverconstrainedError</code> used in <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><code>PermissionName</code> used in <a href="https://w3c.github.io/permissions/">Permissions</a></li>
-  <li><code>RTCError</code> used in <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
+  <li><code>RTCDataChannelState</code> used in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
+  <li><code>RTCDtlsTransportState</code> used in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
+  <li><code>RTCIceCandidateType</code> used in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
+  <li><code>RTCIceRole</code> used in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
+  <li><code>RTCPriorityType</code> used in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><code>RTCRTPStreamStats</code> used in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><code>ReadableStream</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   <li><code>sequence</code> used in <a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
   </ul>
-  <p>=&gt; 14 WebIDL names found</p>
+  <p>=&gt; 28 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -116,13 +141,12 @@
   <ul>
   <li><code>BinaryType</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><code>CSSGroupingRule</code> defined in <a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a> and <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
-  <li><code>RTCStats</code> defined in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> and <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>StaticRange</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a> and <a href="https://w3c.github.io/staticrange/">Static Range</a></li>
   <li><code>VoidFunction</code> defined in <a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a> and <a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
-  <p>=&gt; 7 WebIDL names found</p>
+  <p>=&gt; 6 WebIDL names found</p>
   <p>&quot;There can be only one&quot;...</p>
   </section>
   <section id="missing-references-for-webidl-names" class="level2">
@@ -151,12 +175,6 @@
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a> uses <code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a> uses <code>AudioWorklet</code> but does not reference <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a> uses:
-  <ul>
-  <li><code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
-  <li><code>Event</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
-  <li><code>EventInit</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
-  </ul></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a> uses:
   <ul>
   <li><code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
@@ -177,12 +195,6 @@
   </ul></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a> uses <code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
-  <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> uses:
-  <ul>
-  <li><code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
-  <li><code>Event</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
-  <li><code>EventInit</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
-  </ul></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> uses:
   <ul>
   <li><code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
@@ -193,7 +205,7 @@
   <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 40 missing references for IDL definitions found in 21 specifications</p>
+  <p>=&gt; 34 missing references for IDL definitions found in 19 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -225,12 +237,6 @@
   <li><a href="https://w3c.github.io/html/infrastructure.html"><code>https://w3c.github.io/html/infrastructure.html</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-mediaqueries/"><code>https://www.w3.org/TR/css3-mediaqueries/</code></a> but does not list it in its references</li>
-  <li><a href="https://drafts.csswg.org/css-device-adapt/">CSS Device Adaptation Module Level 1</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/css3-syntax/"><code>https://www.w3.org/TR/css3-syntax/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-mediaqueries/"><code>https://www.w3.org/TR/css3-mediaqueries/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/"><code>https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/</code></a> but does not list it in its references</li>
-  </ul></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-syntax/"><code>https://www.w3.org/TR/css3-syntax/</code></a> but does not list it in its references</li>
@@ -412,7 +418,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 135 missing references for links found in 59 specifications</p>
+  <p>=&gt; 132 missing references for links found in 58 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -636,7 +642,7 @@
   <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UI-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
   </ul></li>
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but related reference &quot;CANVAS&quot; uses URL <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element"><code>https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element</code></a></li>
-  <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> links to <a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
+  <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> links to <a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a> links to <a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> links to:
   <ul>

@@ -7,9 +7,9 @@ partial interface Navigator {
    readonly attribute Geolocation geolocation;
  };
 
-  
- [NoInterfaceObject]
- interface Geolocation { 
+[NoInterfaceObject]
+ interface Geolocation {
+
    void getCurrentPosition(PositionCallback successCallback,
                            optional PositionErrorCallback errorCallback,
                            optional PositionOptions options);
@@ -24,21 +24,20 @@ partial interface Navigator {
  callback PositionCallback = void (Position position);
 
  callback PositionErrorCallback = void (PositionError positionError);
- 
-  dictionary PositionOptions {
+
+dictionary PositionOptions {
     boolean enableHighAccuracy = false;
     [Clamp] unsigned long timeout = 0xFFFFFFFF;
     [Clamp] unsigned long maximumAge = 0;
   };
 
-  
-  [NoInterfaceObject]
+[NoInterfaceObject]
   interface Position {
     readonly attribute Coordinates coords;
     readonly attribute DOMTimeStamp timestamp;
   };
-  
-  [NoInterfaceObject]
+
+[NoInterfaceObject]
   interface Coordinates {
     readonly attribute double latitude;
     readonly attribute double longitude;
@@ -48,8 +47,8 @@ partial interface Navigator {
     readonly attribute double? heading;
     readonly attribute double? speed;
   };
-  
-  [NoInterfaceObject]
+
+[NoInterfaceObject]
   interface PositionError {
     const unsigned short PERMISSION_DENIED = 1;
     const unsigned short POSITION_UNAVAILABLE = 2;

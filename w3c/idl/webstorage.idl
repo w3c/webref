@@ -11,16 +11,19 @@ interface Storage {
   deleter void removeItem(DOMString key);
   void clear();
 };
+
 [NoInterfaceObject]
 interface WindowSessionStorage {
   readonly attribute Storage sessionStorage;
 };
 Window implements WindowSessionStorage;
+
 [NoInterfaceObject]
 interface WindowLocalStorage {
   readonly attribute Storage localStorage;
 };
 Window implements WindowLocalStorage;
+
 [Constructor(DOMString type, optional StorageEventInit eventInitDict)]
 interface StorageEvent : Event {
   readonly attribute DOMString? key;

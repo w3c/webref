@@ -31,6 +31,7 @@ interface WebSocket : EventTarget {
   void send(ArrayBuffer data);
   void send(ArrayBufferView data);
 };
+
 [Constructor(DOMString type, optional CloseEventInit eventInitDict)]
 interface CloseEvent : Event {
   readonly attribute boolean wasClean;

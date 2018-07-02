@@ -17,6 +17,7 @@ interface WorkerGlobalScope : EventTarget {
   attribute EventHandler onrejectionhandled;
   attribute EventHandler onunhandledrejection;
 };
+
 [Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]
 interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
   [Replaceable] readonly attribute DOMString name;
@@ -28,6 +29,7 @@ interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
   attribute EventHandler onmessage;
   attribute EventHandler onmessageerror;
 };
+
 [Global=(Worker,SharedWorker),Exposed=SharedWorker]
 interface SharedWorkerGlobalScope : WorkerGlobalScope {
   [Replaceable] readonly attribute DOMString name;
@@ -36,9 +38,11 @@ interface SharedWorkerGlobalScope : WorkerGlobalScope {
 
   attribute EventHandler onconnect;
 };
+
 interface mixin AbstractWorker {
   attribute EventHandler onerror;
 };
+
 [Constructor(USVString scriptURL, optional WorkerOptions options), Exposed=(Window,Worker)]
 interface Worker : EventTarget {
   void terminate();
@@ -57,21 +61,25 @@ dictionary WorkerOptions {
 enum WorkerType { "classic", "module" };
 
 Worker includes AbstractWorker;
+
 [Constructor(USVString scriptURL, optional (DOMString or WorkerOptions) options),
  Exposed=(Window,Worker)]
 interface SharedWorker : EventTarget {
   readonly attribute MessagePort port;
 };
 SharedWorker includes AbstractWorker;
+
 interface mixin NavigatorConcurrentHardware {
   readonly attribute unsigned long long hardwareConcurrency;
 };
+
 [Exposed=Worker]
 interface WorkerNavigator {};
 WorkerNavigator includes NavigatorID;
 WorkerNavigator includes NavigatorLanguage;
 WorkerNavigator includes NavigatorOnLine;
 WorkerNavigator includes NavigatorConcurrentHardware;
+
 [Exposed=Worker]
 interface WorkerLocation {
   stringifier readonly attribute USVString href;
