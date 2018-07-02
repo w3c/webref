@@ -91,7 +91,6 @@ interface CanvasDrawingStyles {
   sequence<unrestricted double> getLineDash();
            attribute unrestricted double lineDashOffset;
 
-
   // text
            attribute DOMString font; // (default: "10px sans-serif")
            attribute DOMString textAlign; // "start", "end", "left", "right", "center" (default: "start")
@@ -106,9 +105,10 @@ interface CanvasPathMethods {
   void lineTo(unrestricted double x, unrestricted double y);
   void quadraticCurveTo(unrestricted double cpx, unrestricted double cpy, unrestricted double x, unrestricted double y);
   void bezierCurveTo(unrestricted double cp1x, unrestricted double cp1y, unrestricted double cp2x, unrestricted double cp2y, unrestricted double x, unrestricted double y);
-  void arcTo(unrestricted double x1, unrestricted double y1, unrestricted double x2, unrestricted double y2, unrestricted double radius); 
+  void arcTo(unrestricted double x1, unrestricted double y1, unrestricted double x2, unrestricted double y2, unrestricted double radius);
+
   void rect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h);
-  void arc(unrestricted double x, unrestricted double y, unrestricted double radius, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false); 
+  void arc(unrestricted double x, unrestricted double y, unrestricted double radius, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);
 
   };
 
@@ -137,7 +137,6 @@ interface ImageData {
   readonly attribute unsigned long height;
   readonly attribute Uint8ClampedArray data;
 };
-
 
 partial interface MouseEvent {
   readonly attribute DOMString? region;

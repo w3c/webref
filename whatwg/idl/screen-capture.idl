@@ -4,12 +4,14 @@
 // See: https://w3c.github.io/mediacapture-screen-share/
 
 partial interface NavigatorUserMedia {
-    Promise<MediaStream> getDisplayMedia(optional MediaStreamConstraints constraints);
+    Promise<MediaStream> getDisplayMedia(optional  MediaStreamConstraints constraints);
 };
+
 partial dictionary MediaTrackConstraintSet {
-    ConstrainDOMString displaySurface;
-    ConstrainBoolean   logicalSurface;
+             ConstrainDOMString displaySurface;
+             ConstrainBoolean logicalSurface;
 };
+
 enum DisplayCaptureSurfaceType {
     "monitor",
     "window",

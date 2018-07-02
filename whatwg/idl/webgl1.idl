@@ -33,32 +33,43 @@ dictionary WebGLContextAttributes {
     WebGLPowerPreference powerPreference = "default";
     GLboolean failIfMajorPerformanceCaveat = false;
 };
+
 interface WebGLObject {
 };
+
 interface WebGLBuffer : WebGLObject {
 };
+
 interface WebGLFramebuffer : WebGLObject {
 };
+
 interface WebGLProgram : WebGLObject {
 };
+
 interface WebGLRenderbuffer : WebGLObject {
 };
+
 interface WebGLShader : WebGLObject {
 };
+
 interface WebGLTexture : WebGLObject {
 };
+
 interface WebGLUniformLocation {
 };
+
 interface WebGLActiveInfo {
     readonly attribute GLint size;
     readonly attribute GLenum type;
     readonly attribute DOMString name;
 };
+
 interface WebGLShaderPrecisionFormat {
     readonly attribute GLint rangeMin;
     readonly attribute GLint rangeMax;
     readonly attribute GLint precision;
 };
+
 typedef (ImageBitmap or
          ImageData or
          HTMLImageElement or
