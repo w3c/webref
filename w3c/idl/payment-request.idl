@@ -125,7 +125,7 @@ enum PaymentComplete {
   "unknown"
 };
 [SecureContext, Exposed=Window]
-interface PaymentResponse {
+interface PaymentResponse : EventTarget {
   [Default] object toJSON();
 
   readonly attribute DOMString requestId;
@@ -139,6 +139,8 @@ interface PaymentResponse {
 
   Promise<void> complete(optional  PaymentComplete result = "unknown");
   Promise<void> retry(PaymentValidationErrors errorFields);
+
+  attribute EventHandler onpayerdetailchange;
 };
 dictionary PaymentValidationErrors {
   PayerErrorFields payerErrors;
