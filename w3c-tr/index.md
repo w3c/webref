@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 04, 2018
+% July 06, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -106,7 +106,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (July 04, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (July 06, 2018)
 - Repository: [GitHub wicg/aom](https://github.com/wicg/aom)
 - Shortname: no shortname
 
@@ -426,7 +426,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (July 04, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (July 06, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1358,7 +1358,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (27 June 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (4 July 2018)
 - Repository: [GitHub wicg/feature-policy](https://github.com/wicg/feature-policy)
 - Shortname: no shortname
 
@@ -2266,7 +2266,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (July 04, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (July 06, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -3010,7 +3010,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (3 July 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (4 July 2018)
 - Repository: [GitHub wicg/picture-in-picture](https://github.com/wicg/picture-in-picture)
 - Shortname: no shortname
 
@@ -4524,7 +4524,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (July 04, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (July 06, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -4586,7 +4586,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (July 04, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (July 06, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -4817,7 +4817,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Jul 04 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Jul 06 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4842,7 +4842,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Jul 04 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Jul 06 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -5055,7 +5055,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (3 July 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (5 July 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
