@@ -4,7 +4,7 @@
 // See: http://webaudio.github.io/web-midi-api/
 
 partial interface Navigator {
-  Promise<MIDIAccess> requestMIDIAccess(optional  MIDIOptions options);
+  Promise<MIDIAccess> requestMIDIAccess(optional MIDIOptions options);
 };
 
 dictionary MIDIOptions {
@@ -47,7 +47,7 @@ interface MIDIInput : MIDIPort {
 };
 
 interface MIDIOutput : MIDIPort {
-  void send(sequence<octet> data,optional  DOMHighResTimeStamp timestamp = 0);
+  void send(sequence<octet> data, optional DOMHighResTimeStamp timestamp = 0);
   void clear();
 };
 
@@ -67,7 +67,7 @@ enum MIDIPortConnectionState {
   "pending",
 };
 
-[Constructor(DOMString type,optional  MIDIMessageEventInit eventInitDict)]
+[Constructor(DOMString type, optional MIDIMessageEventInit eventInitDict)]
 interface MIDIMessageEvent : Event {
   readonly attribute Uint8Array data;
 };
@@ -76,7 +76,7 @@ dictionary MIDIMessageEventInit : EventInit {
   Uint8Array data;
 };
 
-[Constructor(DOMString type,optional  MIDIConnectionEventInit eventInitDict)]
+[Constructor(DOMString type, optional MIDIConnectionEventInit eventInitDict)]
 interface MIDIConnectionEvent : Event {
   readonly attribute MIDIPort port;
 };

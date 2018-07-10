@@ -32,10 +32,10 @@ typedef (DOMString or ArrayBuffer or NFCMessage) NFCPushMessage;
 
 [SecureContext]
 interface NFC {
-  Promise<void> push(NFCPushMessage message,optional  NFCPushOptions options);
-  Promise<void> cancelPush(optional  NFCPushTarget target = "any");
-  Promise<long> watch(MessageCallback callback,optional  NFCWatchOptions options);
-  Promise<void> cancelWatch(optional  long id);
+  Promise<void> push(NFCPushMessage message, optional NFCPushOptions options);
+  Promise<void> cancelPush(optional NFCPushTarget target = "any");
+  Promise<long> watch(MessageCallback callback, optional NFCWatchOptions options);
+  Promise<void> cancelWatch(optional long id);
 };
 
 callback MessageCallback = void (NFCMessage message);
