@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 09, 2018
+% July 10, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -106,7 +106,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (July 09, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/aom/spec/) (July 10, 2018)
 - Repository: [GitHub wicg/aom](https://github.com/wicg/aom)
 - Shortname: no shortname
 
@@ -426,7 +426,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (July 09, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (July 10, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1358,7 +1358,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (4 July 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (9 July 2018)
 - Repository: [GitHub wicg/feature-policy](https://github.com/wicg/feature-policy)
 - Shortname: no shortname
 
@@ -1426,7 +1426,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180607/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180710/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
@@ -1784,7 +1784,7 @@ Normative references to this spec from:
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
-- [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180706/)
+- [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180621/)
@@ -1886,7 +1886,7 @@ Normative references to this spec from:
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180510/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180607/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180710/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
@@ -1910,7 +1910,7 @@ Normative references to this spec from:
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180706/)
+- [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -2021,7 +2021,7 @@ Normative references to this spec from:
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180510/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180607/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180710/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
@@ -2147,7 +2147,7 @@ Normative references to this spec from:
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180510/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180607/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180710/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
@@ -2266,7 +2266,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (July 09, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (July 10, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -2713,7 +2713,7 @@ Normative references to this spec from:
 
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180508/)
 - [Server Timing](https://www.w3.org/TR/2017/WD-server-timing-20171229/)
-- [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180706/)
+- [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 
 Informative references to this spec from:
@@ -2892,17 +2892,17 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180607/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180710/)
 
 
 ## Payment Request API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-payment-request-20180607/) (07 June 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-payment-request-20180710/) (10 July 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180607/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180710/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
 - Shortname: payment-request
 
@@ -2949,7 +2949,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
-- [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180706/)
+- [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 
 Informative references to this spec from:
 
@@ -3502,6 +3502,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180710/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -4067,10 +4068,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-user-timing-2-20180706/) (06 July 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/) (09 July 2018)
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-user-timing-2-20180706/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - Repository: [GitHub w3c/user-timing](https://github.com/w3c/user-timing)
 - Shortname: user-timing-2
 
@@ -4085,7 +4086,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180706/)
+- [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 
 
 ## Vibration API (Second Edition) {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -4173,7 +4174,7 @@ Normative references to this spec from:
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180607/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180710/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
@@ -4523,7 +4524,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (July 09, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (July 10, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -4585,7 +4586,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (July 09, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (July 10, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -4693,7 +4694,7 @@ Normative references to this spec from:
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180510/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180607/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180710/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
@@ -4710,7 +4711,7 @@ Normative references to this spec from:
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180706/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180706/)
+- [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180704/)
@@ -4816,7 +4817,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Jul 09 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Jul 10 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4841,7 +4842,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Jul 09 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Jul 10 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -4944,7 +4945,7 @@ Normative references to this spec from:
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180510/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180607/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180710/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
@@ -4966,7 +4967,7 @@ Normative references to this spec from:
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
-- [User Timing Level 2](https://www.w3.org/TR/2018/WD-user-timing-2-20180706/)
+- [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -5054,7 +5055,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (8 July 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (9 July 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 

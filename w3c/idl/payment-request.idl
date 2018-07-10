@@ -3,11 +3,14 @@
 // "Payment Request API" spec.
 // See: https://w3c.github.io/payment-request/
 
-[Constructor(sequence<PaymentMethodData> methodData, PaymentDetailsInit details,optional  PaymentOptions options),
+[Constructor(sequence<PaymentMethodData> methodData, PaymentDetailsInit details, optional PaymentOptions options),
 SecureContext, Exposed=Window]
 interface PaymentRequest : EventTarget {
-  Promise<PaymentResponse> show(optional  Promise<PaymentDetailsUpdate> detailsPromise);
+  [NewObject]
+  Promise<PaymentResponse> show(optional Promise<PaymentDetailsUpdate> detailsPromise);
+  [NewObject]
   Promise<void> abort();
+  [NewObject]
   Promise<boolean> canMakePayment();
 
   readonly attribute DOMString id;
@@ -100,18 +103,18 @@ dictionary AddressInit {
   DOMString phone;
 };
 dictionary AddressErrorFields {
-  DOMString addressLineError;
-  DOMString cityError;
-  DOMString countryError;
-  DOMString dependentLocalityError;
-  DOMString languageCodeError;
-  DOMString organizationError;
-  DOMString phoneError;
-  DOMString postalCodeError;
-  DOMString recipientError;
-  DOMString regionError;
-  DOMString regionCodeError;
-  DOMString sortingCodeError;
+  DOMString addressLine;
+  DOMString city;
+  DOMString country;
+  DOMString dependentLocality;
+  DOMString languageCode;
+  DOMString organization;
+  DOMString phone;
+  DOMString postalCode;
+  DOMString recipient;
+  DOMString region;
+  DOMString regionCode;
+  DOMString sortingCode;
 };
 dictionary PaymentShippingOption {
   required DOMString id;
@@ -137,21 +140,23 @@ interface PaymentResponse : EventTarget {
   readonly attribute DOMString? payerEmail;
   readonly attribute DOMString? payerPhone;
 
-  Promise<void> complete(optional  PaymentComplete result = "unknown");
+  [NewObject]
+  Promise<void> complete(optional PaymentComplete result = "unknown");
+  [NewObject]
   Promise<void> retry(PaymentValidationErrors errorFields);
 
   attribute EventHandler onpayerdetailchange;
 };
 dictionary PaymentValidationErrors {
-  PayerErrorFields payerErrors;
-  AddressErrorFields shippingAddressErrors;
+  PayerErrorFields payer;
+  AddressErrorFields shippingAddress;
 };
 dictionary PayerErrorFields {
-  DOMString payerEmailError;
-  DOMString payerNameError;
-  DOMString payerPhoneError;
+  DOMString email;
+  DOMString name;
+  DOMString phone;
 };
-[Constructor(DOMString type,optional  PaymentMethodChangeEventInit eventInitDict), SecureContext, Exposed=Window]
+[Constructor(DOMString type, optional PaymentMethodChangeEventInit eventInitDict), SecureContext, Exposed=Window]
 interface PaymentMethodChangeEvent : PaymentRequestUpdateEvent {
   readonly attribute DOMString methodName;
   readonly attribute object? methodDetails;
@@ -160,7 +165,7 @@ dictionary PaymentMethodChangeEventInit : PaymentRequestUpdateEventInit {
   required DOMString methodName;
   object? methodDetails;
 };
-[Constructor(DOMString type,optional  PaymentRequestUpdateEventInit eventInitDict), SecureContext, Exposed=Window]
+[Constructor(DOMString type, optional PaymentRequestUpdateEventInit eventInitDict), SecureContext, Exposed=Window]
 interface PaymentRequestUpdateEvent : Event {
   void updateWith(Promise<PaymentDetailsUpdate> detailsPromise);
 };

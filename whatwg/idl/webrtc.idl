@@ -93,10 +93,10 @@ enum RTCIceConnectionState {
     "closed"
 };
 
-[ Constructor(optional  RTCConfiguration configuration), Exposed=Window]
+[ Constructor(optional RTCConfiguration configuration), Exposed=Window]
 interface RTCPeerConnection : EventTarget {
-    Promise<RTCSessionDescriptionInit> createOffer(optional  RTCOfferOptions options);
-    Promise<RTCSessionDescriptionInit> createAnswer(optional  RTCAnswerOptions options);
+    Promise<RTCSessionDescriptionInit> createOffer(optional RTCOfferOptions options);
+    Promise<RTCSessionDescriptionInit> createAnswer(optional RTCAnswerOptions options);
     Promise<void> setLocalDescription(RTCSessionDescriptionInit description);
     readonly        attribute RTCSessionDescription? localDescription;
     readonly        attribute RTCSessionDescription? currentLocalDescription;
@@ -125,7 +125,7 @@ interface RTCPeerConnection : EventTarget {
 };
 
 partial interface RTCPeerConnection {
-    Promise<void> createOffer(RTCSessionDescriptionCallback successCallback, RTCPeerConnectionErrorCallback failureCallback,optional  RTCOfferOptions options);
+    Promise<void> createOffer(RTCSessionDescriptionCallback successCallback, RTCPeerConnectionErrorCallback failureCallback, optional RTCOfferOptions options);
     Promise<void> setLocalDescription(RTCSessionDescriptionInit description, VoidFunction successCallback, RTCPeerConnectionErrorCallback failureCallback);
     Promise<void> createAnswer(RTCSessionDescriptionCallback successCallback, RTCPeerConnectionErrorCallback failureCallback);
     Promise<void> setRemoteDescription(RTCSessionDescriptionInit description, VoidFunction successCallback, RTCPeerConnectionErrorCallback failureCallback);
@@ -160,7 +160,7 @@ dictionary RTCSessionDescriptionInit {
              DOMString sdp = "";
 };
 
-[ Constructor(optional  RTCIceCandidateInit candidateInitDict), Exposed=Window]
+[ Constructor(optional RTCIceCandidateInit candidateInitDict), Exposed=Window]
 interface RTCIceCandidate {
     readonly        attribute DOMString candidate;
     readonly        attribute DOMString? sdpMid;
@@ -204,7 +204,7 @@ enum RTCIceCandidateType {
     "relay"
 };
 
-[ Constructor(DOMString type,optional  RTCPeerConnectionIceEventInit eventInitDict), Exposed=Window]
+[ Constructor(DOMString type, optional RTCPeerConnectionIceEventInit eventInitDict), Exposed=Window]
 interface RTCPeerConnectionIceEvent : Event {
     readonly        attribute RTCIceCandidate? candidate;
     readonly        attribute DOMString? url;
@@ -258,7 +258,7 @@ partial interface RTCPeerConnection {
     sequence<RTCRtpTransceiver> getTransceivers();
     RTCRtpSender addTrack(MediaStreamTrack track, MediaStream... streams);
     void removeTrack(RTCRtpSender sender);
-    RTCRtpTransceiver addTransceiver((MediaStreamTrack or DOMString) trackOrKind,optional  RTCRtpTransceiverInit init);
+    RTCRtpTransceiver addTransceiver((MediaStreamTrack or DOMString) trackOrKind, optional RTCRtpTransceiverInit init);
                     attribute EventHandler ontrack;
 };
 
@@ -491,7 +491,7 @@ dictionary RTCTrackEventInit : EventInit {
 
 partial interface RTCPeerConnection {
     readonly        attribute RTCSctpTransport? sctp;
-    RTCDataChannel createDataChannel(USVString label,optional  RTCDataChannelInit dataChannelDict);
+    RTCDataChannel createDataChannel(USVString label, optional RTCDataChannelInit dataChannelDict);
                     attribute EventHandler ondatachannel;
 };
 
@@ -567,7 +567,7 @@ partial interface RTCRtpSender {
 };
 
 [Exposed=Window] interface RTCDTMFSender : EventTarget {
-    void insertDTMF(DOMString tones,optional  unsigned long duration = 100,optional  unsigned long interToneGap = 70);
+    void insertDTMF(DOMString tones, optional unsigned long duration = 100, optional unsigned long interToneGap = 70);
                     attribute EventHandler ontonechange;
     readonly        attribute boolean canInsertDTMF;
     readonly        attribute DOMString toneBuffer;
@@ -583,7 +583,7 @@ dictionary RTCDTMFToneChangeEventInit : EventInit {
 };
 
 partial interface RTCPeerConnection {
-    Promise<RTCStatsReport> getStats(optional  MediaStreamTrack? selector = null);
+    Promise<RTCStatsReport> getStats(optional MediaStreamTrack? selector = null);
     attribute EventHandler onstatsended;
           };
 
@@ -642,7 +642,7 @@ dictionary RTCIdentityValidationResult {
 };
 
 partial interface RTCPeerConnection {
-    void setIdentityProvider(DOMString provider,optional  RTCIdentityProviderOptions options);
+    void setIdentityProvider(DOMString provider, optional RTCIdentityProviderOptions options);
     Promise<DOMString> getIdentityAssertion();
     readonly        attribute Promise<RTCIdentityAssertion> peerIdentity;
     readonly        attribute DOMString? idpLoginUrl;

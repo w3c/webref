@@ -6,7 +6,7 @@
 [Exposed=Window]
 interface RemotePlayback : EventTarget {
   Promise<long> watchAvailability(RemotePlaybackAvailabilityCallback callback);
-  Promise<void> cancelWatchAvailability(optional  long id);
+  Promise<void> cancelWatchAvailability(optional long id);
 
   readonly attribute RemotePlaybackState state;
 

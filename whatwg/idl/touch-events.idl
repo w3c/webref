@@ -56,7 +56,7 @@ dictionary TouchEventInit : EventModifierInit {
              sequence<Touch> changedTouches = [];
 };
 
-[Constructor(DOMString type,optional  TouchEventInit eventInitDict), Exposed=Window]
+[Constructor(DOMString type, optional TouchEventInit eventInitDict), Exposed=Window]
 interface TouchEvent : UIEvent {
     readonly        attribute TouchList touches;
     readonly        attribute TouchList targetTouches;
