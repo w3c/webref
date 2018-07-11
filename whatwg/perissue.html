@@ -25,9 +25,11 @@
   <h2>Specifications that could not be rendered</h2>
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
+  <li><a href="https://www.w3.org/TR/css-animations-1/">css-animations-1</a>: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/cli/crawl-specs.js:160:41) at &lt;anonymous&gt; at process._tickCallback (internal/process/next_tick.js:188:7)</code></li>
   <li><a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a>: <code>Error: Crawl took too long Error: Crawl took too long at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:402:29) at ontimeout (timers.js:498:11) at tryOnTimeout (timers.js:323:5) at Timer.listOnTimeout (timers.js:290:5)</code></li>
+  <li><a href="https://www.w3.org/TR/webrtc/">webrtc</a>: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined at fetch.then.then.s (/home/dom/github.com/reffy/src/cli/crawl-specs.js:157:34) at &lt;anonymous&gt; at process._tickCallback (internal/process/next_tick.js:188:7)</code></li>
   </ul>
-  <p>=&gt; 1 specification found</p>
+  <p>=&gt; 3 specifications found</p>
   </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
@@ -74,9 +76,8 @@
   <li><a href="https://wicg.github.io/ResizeObserver/">Resize Observer 1</a></li>
   <li><a href="http://w3c.github.io/webappsec-uisecurity/index.html">User Interface Security and the Visibility API</a></li>
   <li><a href="http://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
-  <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   </ul>
-  <p>=&gt; 6 specifications found</p>
+  <p>=&gt; 5 specifications found</p>
   <p>WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features</p>
   </section>
   <section id="list-of-specifications-with-obsolete-webidl-constructs" class="level2">
@@ -647,7 +648,6 @@
   <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UI-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
   </ul></li>
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but related reference &quot;CANVAS&quot; uses URL <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element"><code>https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element</code></a></li>
-  <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a> links to <a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a> links to <a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> links to:
   <ul>
@@ -655,7 +655,7 @@
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 140 inconsistent references for links found in 71 specifications</p>
+  <p>=&gt; 139 inconsistent references for links found in 70 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
