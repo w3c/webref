@@ -504,7 +504,6 @@ partial interface RTCPeerConnection {
 };
 
 enum RTCSctpTransportState {
-    "new",
     "connecting",
     "connected",
     "closed"
@@ -606,60 +605,6 @@ dictionary RTCStats {
 dictionary RTCStatsEventInit : EventInit {
             required RTCStatsReport report;
           };
-
-[Global, Exposed=RTCIdentityProviderGlobalScope]
-interface RTCIdentityProviderGlobalScope : WorkerGlobalScope {
-    readonly        attribute RTCIdentityProviderRegistrar rtcIdentityProvider;
-};
-
-[Exposed=RTCIdentityProviderGlobalScope]
-interface RTCIdentityProviderRegistrar {
-    void register(RTCIdentityProvider idp);
-};
-
-dictionary RTCIdentityProvider {
-    required GenerateAssertionCallback generateAssertion;
-    required ValidateAssertionCallback validateAssertion;
-};
-
-callback GenerateAssertionCallback = Promise<RTCIdentityAssertionResult> (DOMString contents, DOMString origin, RTCIdentityProviderOptions options);
-
-callback ValidateAssertionCallback = Promise<RTCIdentityValidationResult> (DOMString assertion, DOMString origin);
-
-dictionary RTCIdentityAssertionResult {
-    required RTCIdentityProviderDetails idp;
-    required DOMString assertion;
-};
-
-dictionary RTCIdentityProviderDetails {
-    required DOMString domain;
-             DOMString protocol = "default";
-};
-
-dictionary RTCIdentityValidationResult {
-    required DOMString identity;
-    required DOMString contents;
-};
-
-partial interface RTCPeerConnection {
-    void setIdentityProvider(DOMString provider, optional RTCIdentityProviderOptions options);
-    Promise<DOMString> getIdentityAssertion();
-    readonly        attribute Promise<RTCIdentityAssertion> peerIdentity;
-    readonly        attribute DOMString? idpLoginUrl;
-    readonly        attribute DOMString? idpErrorInfo;
-};
-
-dictionary RTCIdentityProviderOptions {
-    DOMString protocol = "default";
-    DOMString usernameHint;
-    DOMString peerIdentity;
-};
-
-[Constructor(DOMString idp, DOMString name), Exposed=Window]
-interface RTCIdentityAssertion {
-    attribute DOMString idp;
-    attribute DOMString name;
-};
 
 partial dictionary MediaStreamConstraints {
              DOMString peerIdentity;

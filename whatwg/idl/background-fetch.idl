@@ -43,15 +43,10 @@ interface BackgroundFetchRegistration : EventTarget {
   readonly attribute unsigned long long uploaded;
   readonly attribute unsigned long long downloadTotal;
   readonly attribute unsigned long long downloaded;
-  readonly attribute BackgroundFetchActiveFetches activeFetches;
 
   attribute EventHandler onprogress;
 
   Promise<boolean> abort();
-};
-
-[Exposed=(Window,Worker)]
-interface BackgroundFetchActiveFetches {
   Promise<BackgroundFetchActiveFetch> match(RequestInfo request, optional CacheQueryOptions options);
   Promise<sequence<BackgroundFetchActiveFetch>> matchAll(RequestInfo request, optional CacheQueryOptions options);
   Promise<sequence<BackgroundFetchActiveFetch>> values();
@@ -77,17 +72,8 @@ dictionary BackgroundFetchEventInit : ExtendableEventInit {
   required DOMString id;
 };
 
-[Constructor(DOMString type, BackgroundFetchSettledEventInit init), Exposed=ServiceWorker]
+[Constructor(DOMString type, BackgroundFetchEventInit init), Exposed=ServiceWorker]
 interface BackgroundFetchSettledEvent : BackgroundFetchEvent {
-  readonly attribute BackgroundFetchSettledFetches fetches;
-};
-
-dictionary BackgroundFetchSettledEventInit : BackgroundFetchEventInit {
-  required BackgroundFetchSettledFetches fetches;
-};
-
-[Exposed=ServiceWorker]
-interface BackgroundFetchSettledFetches {
   Promise<BackgroundFetchSettledFetch> match(RequestInfo request, optional CacheQueryOptions options);
   Promise<sequence<BackgroundFetchSettledFetch>> matchAll(RequestInfo request, optional CacheQueryOptions options);
   Promise<sequence<BackgroundFetchSettledFetch>> values();
@@ -98,7 +84,7 @@ interface BackgroundFetchSettledFetch : BackgroundFetchFetch {
   readonly attribute Response? response;
 };
 
-[Constructor(DOMString type, BackgroundFetchSettledEventInit init), Exposed=ServiceWorker]
+[Constructor(DOMString type, BackgroundFetchEventInit init), Exposed=ServiceWorker]
 interface BackgroundFetchUpdateEvent : BackgroundFetchSettledEvent {
   Promise<void> updateUI(DOMString title);
 };

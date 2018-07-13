@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 12, 2018
+% July 13, 2018
 
 148 specifications were crawled in this report.
 
@@ -29,11 +29,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
 - [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
-- [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
 - [The WebSocket API](https://www.w3.org/TR/websockets/)
 - [Web Notifications](https://www.w3.org/TR/notifications/)
 
-=> 7 specifications found
+=> 6 specifications found
 
 It is good practice to link to Editor's Draft for W3C specifications even for specifications published as Recommendations. Reffy (or rather the W3C API) could not find a link to an Editor's Draft for the specifications mentioned above.
 
@@ -58,7 +57,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Preload](https://w3c.github.io/preload/)
-- [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
+- [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
@@ -377,7 +376,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/) but does not list it in its references
     * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/) but does not list it in its references
 - [Selection API](https://w3c.github.io/selection-api/) links to [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/) but does not list it in its references
-- [Selectors Level 3](https://www.w3.org/TR/css3-selectors/) links to [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/) but does not list it in its references
+- [Selectors Level 3](https://drafts.csswg.org/selectors-3/) links to [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/) but does not list it in its references
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) links to:
     * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/) but does not list it in its references
     * [`https://w3c.github.io/payment-handler/`](https://w3c.github.io/payment-handler/) but does not list it in its references
