@@ -2,7 +2,7 @@
 % Reffy
 % July 13, 2018
 
-223 specifications were crawled in this report.
+224 specifications were crawled in this report.
 
 
 ## Specifications that could not be rendered
@@ -10,7 +10,7 @@
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
 - [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/): `Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:334:29)
+    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:338:29)
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
@@ -126,10 +126,11 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 
-=> 12 specifications found
+=> 13 specifications found
 
 
 
@@ -538,6 +539,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Permissions](https://w3c.github.io/permissions/) links to:
     * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/) but does not list it in its references
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but does not list it in its references
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html) links to [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/) but does not list it in its references
 - [Preload](https://w3c.github.io/preload/) links to [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
 - [Push API](https://w3c.github.io/push-api/) links to [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/) links to:
@@ -633,7 +635,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 324 missing references for links found in 113 specifications
+=> 325 missing references for links found in 114 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -787,6 +789,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webdriver/webdriver-spec.html`](https://w3c.github.io/webdriver/webdriver-spec.html) but related reference "WebDriver" uses URL [`https://www.w3.org/TR/webdriver/`](https://www.w3.org/TR/webdriver/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/) links to [`https://w3c.github.io/remote-playback/`](https://w3c.github.io/remote-playback/) but related reference "Remote-Playback" uses URL [`https://www.w3.org/TR/remote-playback/`](https://www.w3.org/TR/remote-playback/)
 - [Pointer Events](https://w3c.github.io/pointerevents/) links to [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html) links to [`https://w3c.github.io/pointerevents/`](https://w3c.github.io/pointerevents/) but related reference "pointerevents2" uses URL [`https://www.w3.org/TR/pointerevents2/`](https://www.w3.org/TR/pointerevents2/)
 - [Presentation API](https://w3c.github.io/presentation-api/) links to:
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
@@ -872,6 +875,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/) but related reference "ORIENTATION-SENSOR" uses URL [`https://www.w3.org/TR/orientation-sensor/`](https://www.w3.org/TR/orientation-sensor/)
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
-=> 188 inconsistent references for links found in 99 specifications
+=> 189 inconsistent references for links found in 100 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

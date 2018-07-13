@@ -223,6 +223,34 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css2/) (27 April 2018)
+- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Latest published version: [http://www.w3.org/TR/CSS22/](http://www.w3.org/TR/CSS22/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: CSS22
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/), related reference "CSS3COLOR" uses URL [`http://www.w3.org/TR/2010/PR-css3-color-20101028/`](http://www.w3.org/TR/2010/PR-css3-color-20101028/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+
+No informative reference to this spec from other specs.
+
+
 ## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true}
 
 ### Spec info {.info}
@@ -329,34 +357,6 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [UI Events](https://w3c.github.io/uievents/)
-
-
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css2/) (27 April 2018)
-- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Latest published version: [http://www.w3.org/TR/CSS22/](http://www.w3.org/TR/CSS22/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: CSS22
-
-### Potential issue(s) {.anomalies}
-
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/), related reference "CSS3COLOR" uses URL [`http://www.w3.org/TR/2010/PR-css3-color-20101028/`](http://www.w3.org/TR/2010/PR-css3-color-20101028/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
-- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-
-No informative reference to this spec from other specs.
 
 
 ## Clipboard API and events {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -4185,6 +4185,7 @@ Normative references to this spec from:
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -4337,6 +4338,7 @@ Normative references to this spec from:
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
@@ -5400,7 +5402,7 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:334:29)
+    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:338:29)
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
@@ -6158,6 +6160,7 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
@@ -6188,10 +6191,33 @@ Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 
 Informative references to this spec from:
 
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
+
+
+## PointerEvents - Level 2 - Extensions {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (July 13, 2018)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Spec uses WebIDL but does not reference it normatively
+- Missing references for links: 
+     * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/pointerevents/`](https://w3c.github.io/pointerevents/), related reference "pointerevents2" uses URL [`https://www.w3.org/TR/pointerevents2/`](https://www.w3.org/TR/pointerevents2/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Preload {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -7702,6 +7728,7 @@ Informative references to this spec from:
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
