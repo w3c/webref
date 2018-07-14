@@ -53,14 +53,14 @@ interface BackgroundFetchRegistration : EventTarget {
 };
 
 [Exposed=(Window,Worker)]
-interface BackgroundFetchActiveFetch : BackgroundFetchFetch {
-  readonly attribute Promise<Response> responseReady;
-  // In future this will include a fetch observer
+interface BackgroundFetchFetch {
+  readonly attribute Request request;
 };
 
 [Exposed=(Window,Worker)]
-interface BackgroundFetchFetch {
-  readonly attribute Request request;
+interface BackgroundFetchActiveFetch : BackgroundFetchFetch {
+  readonly attribute Promise<Response> responseReady;
+  // TODO: In future this will include a fetch observer
 };
 
 [Constructor(DOMString type, BackgroundFetchEventInit init), Exposed=ServiceWorker]
