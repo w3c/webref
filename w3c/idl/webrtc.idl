@@ -279,7 +279,7 @@ enum RTCRtpTransceiverDirection {
     readonly        attribute MediaStreamTrack? track;
     readonly        attribute RTCDtlsTransport? transport;
     readonly        attribute RTCDtlsTransport? rtcpTransport;
-    static RTCRtpCapabilities getCapabilities(DOMString kind);
+    static RTCRtpCapabilities? getCapabilities(DOMString kind);
     Promise<void> setParameters(RTCRtpSendParameters parameters);
     RTCRtpSendParameters getParameters();
     Promise<void> replaceTrack(MediaStreamTrack? withTrack);
@@ -371,7 +371,7 @@ dictionary RTCRtpHeaderExtensionCapability {
     readonly        attribute MediaStreamTrack track;
     readonly        attribute RTCDtlsTransport? transport;
     readonly        attribute RTCDtlsTransport? rtcpTransport;
-    static RTCRtpCapabilities getCapabilities(DOMString kind);
+    static RTCRtpCapabilities? getCapabilities(DOMString kind);
     RTCRtpReceiveParameters getParameters();
     sequence<RTCRtpContributingSource> getContributingSources();
     sequence<RTCRtpSynchronizationSource> getSynchronizationSources();
@@ -605,15 +605,6 @@ dictionary RTCStats {
 dictionary RTCStatsEventInit : EventInit {
             required RTCStatsReport report;
           };
-
-partial dictionary MediaStreamConstraints {
-             DOMString peerIdentity;
-};
-
-partial interface MediaStreamTrack {
-    readonly        attribute boolean isolated;
-                    attribute EventHandler onisolationchange;
-};
 
 enum RTCErrorDetailType {
               "data-channel-failure",
