@@ -1,30 +1,14 @@
-% Diff between report from "July 16, 2018" and reference report from "July 15, 2018"
+% Diff between report from "July 17, 2018" and reference report from "July 16, 2018"
 % Reffy
-% July 16, 2018
+% July 17, 2018
 
-## CSS Cascading and Inheritance Level 4
+## CSS Regions Module Level 1
 
-- URL: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-cascade/)
+- URL: [https://www.w3.org/TR/css-regions-1/](https://www.w3.org/TR/css-regions-1/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-regions/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
-
-
-## CSS Color Module Level 3
-
-- URL: [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color-3/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+- Invalid WebIDL content found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* Window
 
 
