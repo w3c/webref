@@ -1,0 +1,16 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content of this file was automatically extracted from the
+// "Keyboard Map" spec.
+// See: https://wicg.github.io/keyboard-map/
+
+partial interface Navigator : EventTarget {
+  [SecureContext, SameObject] readonly attribute Keyboard keyboard;
+};
+
+interface KeyboardLayoutMap {
+  readonly maplike<DOMString, DOMString>;
+};
+
+[SecureContext, Exposed=Window] interface Keyboard {
+  Promise<KeyboardLayoutMap> getLayoutMap();
+};
