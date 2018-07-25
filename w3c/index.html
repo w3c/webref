@@ -78,12 +78,12 @@
   </ul>
   </section>
   </section>
-  <section id="accelerometer" class="level2" data-spec="true" data-error="true">
+  <section id="accelerometer" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Accelerometer</h2>
   <section id="spec-info-1" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/accelerometer/">Latest published version</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/accelerometer/">Editor's Draft</a> (14 March 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/accelerometer/" class="uri">https://w3c.github.io/accelerometer/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/accelerometer/" class="uri">https://www.w3.org/TR/accelerometer/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/CR-accelerometer-20180320/">Candidate Recommendation</a></li>
@@ -93,8 +93,18 @@
   </section>
   <section id="potential-issues-1" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)     at Object.onceWrapper (events.js:317:30)     at emitTwo (events.js:126:13)     at ChildProcess.emit (events.js:214:7)     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>Window</code></li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a></li>
+  <li><a href="https://w3c.github.io/sensors/usecases.html"><code>https://w3c.github.io/sensors/usecases.html</code></a></li>
+  </ul></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/screen-orientation/"><code>https://www.w3.org/TR/screen-orientation/</code></a>, related reference &quot;SCREEN-ORIENTATION&quot; uses URL <a href="https://w3c.github.io/screen-orientation/"><code>https://w3c.github.io/screen-orientation/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-1" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -386,6 +396,7 @@
   <li><a href="https://drafts.csswg.org/css-line-grid/">CSS Line Grid Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-lists-3/">CSS Lists Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-logical/">CSS Logical Properties and Values Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-size-adjust-1/">CSS Mobile Text Size Adjustment Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-namespaces/">CSS Namespaces Module Level 3</a></li>
@@ -571,6 +582,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/css-color/">CSS Color Module Level 4</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.fxtf.org/filter-effects/">Filter Effects Module Level 1</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   </ul>
@@ -1004,6 +1016,7 @@
   <li><a href="https://drafts.csswg.org/css-images-4/">CSS Images Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-sizing-4/">CSS Intrinsic &amp; Extrinsic Sizing Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-logical/">CSS Logical Properties and Values Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="http://drafts.csswg.org/css-overflow/">CSS Overflow Module Level 3</a></li>
@@ -1128,6 +1141,7 @@
   <ul>
   <li><a href="https://drafts.csswg.org/css-images-3/">CSS Images Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-images-4/">CSS Images Module Level 4</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
@@ -1362,6 +1376,7 @@
   <li><a href="https://drafts.csswg.org/css-sizing-3/">CSS Intrinsic &amp; Extrinsic Sizing Module Level 3</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-logical/">CSS Logical Properties and Values Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="http://drafts.csswg.org/css-overflow/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-overflow-4/">CSS Overflow Module Level 4</a></li>
@@ -1463,6 +1478,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   </ul>
   </section>
   </section>
@@ -1499,6 +1515,7 @@
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-images-3/">CSS Images Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-images-4/">CSS Images Module Level 4</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.csswg.org/css-position/">CSS Positioned Layout Module Level 3</a></li>
@@ -1781,6 +1798,7 @@
   <li><a href="https://drafts.csswg.org/css-line-grid/">CSS Line Grid Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-lists-3/">CSS Lists Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-logical/">CSS Logical Properties and Values Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-size-adjust-1/">CSS Mobile Text Size Adjustment Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
@@ -1902,6 +1920,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/css-images-3/">CSS Images Module Level 3</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-text-decor-4/">CSS Text Decoration Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   </ul>
@@ -2064,6 +2083,7 @@
   <li><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-inline/">CSS Inline Layout Module Level 3</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-size-adjust-1/">CSS Mobile Text Size Adjustment Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-page-3/">CSS Paged Media Module Level 3</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
@@ -2128,6 +2148,7 @@
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-content/">CSS Generated Content Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-inline/">CSS Inline Layout Module Level 3</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-size-adjust-1/">CSS Mobile Text Size Adjustment Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.csswg.org/css-page-3/">CSS Paged Media Module Level 3</a></li>
@@ -2200,6 +2221,7 @@
   <li><a href="https://drafts.csswg.org/css-inline/">CSS Inline Layout Module Level 3</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-logical/">CSS Logical Properties and Values Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol-2/">CSS Multi-column Layout Module Level 2</a></li>
   <li><a href="http://drafts.csswg.org/css-overflow/">CSS Overflow Module Level 3</a></li>
@@ -2455,6 +2477,7 @@
   <li><a href="https://drafts.csswg.org/css-images-4/">CSS Images Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-sizing-4/">CSS Intrinsic &amp; Extrinsic Sizing Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-lists-3/">CSS Lists Module Level 3</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-round-display/">CSS Round Display Level 1</a></li>
@@ -2556,6 +2579,7 @@
   <li><a href="https://drafts.csswg.org/css-flexbox/">CSS Flexible Box Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-grid/">CSS Grid Layout Module Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="http://drafts.csswg.org/css-overflow/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-page-3/">CSS Paged Media Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-rhythm/">CSS Rhythmic Sizing</a></li>
@@ -2810,12 +2834,12 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-masking-module-level-1" class="level2" data-spec="true" data-error="true">
+  <section id="css-masking-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>CSS Masking Module Level 1</h2>
   <section id="spec-info-63" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="http://www.w3.org/TR/css-masking-1/">Latest published version</a></li>
+  <li>Crawled version: <a href="https://drafts.fxtf.org/css-masking-1/">Editor's Draft</a> (22 July 2018)</li>
   <li>Editor's Draft: <a href="https://drafts.fxtf.org/css-masking-1/" class="uri">https://drafts.fxtf.org/css-masking-1/</a></li>
   <li>Latest published version: <a href="http://www.w3.org/TR/css-masking-1/" class="uri">http://www.w3.org/TR/css-masking-1/</a></li>
   <li>Latest published status: <a href="http://www.w3.org/TR/2014/CR-css-masking-1-20140826/">Candidate Recommendation</a></li>
@@ -2825,8 +2849,21 @@
   </section>
   <section id="potential-issues-63" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)     at Object.onceWrapper (events.js:317:30)     at emitTwo (events.js:126:13)     at ChildProcess.emit (events.js:214:7)     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-shapes/"><code>https://www.w3.org/TR/css-shapes/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-transitions/"><code>https://www.w3.org/TR/css3-transitions/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2013/WD-css-masking-20130620/"><code>https://www.w3.org/TR/2013/WD-css-masking-20130620/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2012/WD-css-masking-20121115/"><code>https://www.w3.org/TR/2012/WD-css-masking-20121115/</code></a></li>
+  </ul></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2011/REC-SVG11-20110816/"><code>https://www.w3.org/TR/2011/REC-SVG11-20110816/</code></a>, related reference &quot;SVG11&quot; uses URL <a href="https://www.w3.org/TR/SVG11/"><code>https://www.w3.org/TR/SVG11/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-63" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3102,6 +3139,7 @@
   <li><a href="https://drafts.csswg.org/css-grid/">CSS Grid Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-grid-2/">CSS Grid Layout Module Level 2</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.csswg.org/css-overflow-4/">CSS Overflow Module Level 4</a></li>
@@ -3387,6 +3425,7 @@
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-lists-3/">CSS Lists Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-logical/">CSS Logical Properties and Values Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.csswg.org/css-overflow-4/">CSS Overflow Module Level 4</a></li>
@@ -3812,6 +3851,7 @@
   <li><a href="https://drafts.csswg.org/css-box-3/">CSS basic box model</a></li>
   <li><a href="https://drafts.csswg.org/css-break/">CSS Fragmentation Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-line-grid/">CSS Line Grid Module Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-round-display/">CSS Round Display Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-shapes-2/">CSS Shapes Module Level 2</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
@@ -3847,6 +3887,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
@@ -4023,6 +4064,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.fxtf.org/fill-stroke/">CSS Fill and Stroke Module Level 3</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="http://drafts.csswg.org/css-overflow/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-ruby-1/">CSS Ruby Layout Module Level 1</a></li>
@@ -4126,6 +4168,7 @@
   <li><a href="https://drafts.csswg.org/css-inline/">CSS Inline Layout Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-sizing-3/">CSS Intrinsic &amp; Extrinsic Sizing Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-logical/">CSS Logical Properties and Values Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-size-adjust-1/">CSS Mobile Text Size Adjustment Module Level 1</a></li>
   <li><a href="http://drafts.csswg.org/css-overflow/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-page-3/">CSS Paged Media Module Level 3</a></li>
@@ -4264,6 +4307,7 @@
   <li><a href="https://drafts.csswg.org/css-ui/">CSS Basic User Interface Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-break/">CSS Fragmentation Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-images-4/">CSS Images Module Level 4</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="http://drafts.csswg.org/css-overflow/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-position/">CSS Positioned Layout Module Level 3</a></li>
   <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
@@ -4529,6 +4573,7 @@
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-line-grid/">CSS Line Grid Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-lists-3/">CSS Lists Module Level 3</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-size-adjust-1/">CSS Mobile Text Size Adjustment Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol-2/">CSS Multi-column Layout Module Level 2</a></li>
@@ -4642,6 +4687,7 @@
   <li><a href="https://drafts.csswg.org/css-line-grid/">CSS Line Grid Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-lists-3/">CSS Lists Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-logical/">CSS Logical Properties and Values Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-size-adjust-1/">CSS Mobile Text Size Adjustment Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-multicol-2/">CSS Multi-column Layout Module Level 2</a></li>
@@ -4759,6 +4805,7 @@
   <li><a href="https://drafts.csswg.org/css-break/">CSS Fragmentation Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-grid/">CSS Grid Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-logical/">CSS Logical Properties and Values Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="http://drafts.csswg.org/css-overflow/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-overflow-4/">CSS Overflow Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-page-floats/">CSS Page Floats</a></li>
@@ -4826,6 +4873,7 @@
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-line-grid/">CSS Line Grid Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-logical/">CSS Logical Properties and Values Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="http://drafts.csswg.org/css-overflow/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-overflow-4/">CSS Overflow Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-page-floats/">CSS Page Floats</a></li>
@@ -5263,6 +5311,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-tables-3/">CSS Table Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-transforms-2/">CSS Transforms Module Level 2</a></li>
   <li><a href="https://drafts.fxtf.org/filter-effects-2/">Filter Effects Module Level 2</a></li>
@@ -5407,6 +5456,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="https://wicg.github.io/geolocation-sensor/">Geolocation Sensor</a></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></li>
@@ -5672,6 +5722,7 @@
   <li><a href="https://drafts.csswg.org/css-images-4/">CSS Images Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-sizing-3/">CSS Intrinsic &amp; Extrinsic Sizing Module Level 3</a></li>
   <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="http://drafts.csswg.org/css-overflow/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
@@ -5710,6 +5761,7 @@
   <li><a href="https://w3c.github.io/keyboard-lock/">Keyboard Lock</a></li>
   <li><a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
   <li><a href="https://wicg.github.io/media-capabilities/">Media Capabilities</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
@@ -6499,12 +6551,12 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="media-capture-and-streams" class="level2" data-spec="true" data-error="true">
+  <section id="media-capture-and-streams" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Media Capture and Streams</h2>
   <section id="spec-info-143" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/mediacapture-streams/">Latest published version</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/mediacapture-main/">Editor's Draft</a> (July 25, 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/mediacapture-main/" class="uri">https://w3c.github.io/mediacapture-main/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/mediacapture-streams/" class="uri">https://www.w3.org/TR/mediacapture-streams/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Candidate Recommendation</a></li>
@@ -6514,8 +6566,15 @@
   </section>
   <section id="potential-issues-143" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Crawl took too long Error: Crawl took too long     at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:338:29)     at ontimeout (timers.js:498:11)     at tryOnTimeout (timers.js:323:5)     at Timer.listOnTimeout (timers.js:290:5)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>Navigator</code>, <code>OverconstrainedError</code>, <code>Window</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
+  <li><code>Event</code> defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
+  <li><code>EventInit</code> defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-143" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -6540,7 +6599,7 @@
   </ul>
   </section>
   </section>
-  <section id="media-capture-depth-stream-extensions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="media-capture-depth-stream-extensions" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Media Capture Depth Stream Extensions</h2>
   <section id="spec-info-144" class="level3 info">
   <h3>Spec info</h3>
@@ -6556,7 +6615,6 @@
   <section id="potential-issues-144" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>ConstrainBoolean</code>, <code>ConstrainDOMString</code>, <code>ConstrainDouble</code>, <code>DoubleRange</code>, <code>MediaTrackCapabilities</code>, <code>MediaTrackConstraintSet</code>, <code>MediaTrackSettings</code>, <code>MediaTrackSupportedConstraints</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
@@ -6588,7 +6646,7 @@
   <section id="potential-issues-145" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>HTMLCanvasElement</code>, <code>HTMLMediaElement</code>, <code>MediaStream</code>, <code>MediaStreamTrack</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>HTMLCanvasElement</code>, <code>HTMLMediaElement</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
@@ -6599,7 +6657,10 @@
   <section id="known-dependencies-on-this-specification-145" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  </ul>
   </section>
   </section>
   <section id="media-queries-level-3" class="level2" data-spec="true" data-anomaly="true" data-noCssDefinitions="true" data-missingLinkRef="true">
@@ -6800,7 +6861,7 @@
   <section id="potential-issues-151" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>ConstrainBoolean</code>, <code>ConstrainDOMString</code>, <code>ConstrainDouble</code>, <code>ImageBitmap</code>, <code>MediaStreamTrack</code>, <code>MediaTrackCapabilities</code>, <code>MediaTrackConstraintSet</code>, <code>MediaTrackSettings</code>, <code>MediaTrackSupportedConstraints</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>ImageBitmap</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -6815,7 +6876,10 @@
   <ul>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  </ul>
   </section>
   </section>
   <section id="mediastream-recording" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
@@ -6834,7 +6898,7 @@
   <section id="potential-issues-152" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>MediaStream</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -6848,6 +6912,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://wicg.github.io/media-capabilities/">Media Capabilities</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   </ul>
   </section>
@@ -6925,6 +6990,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   </ul>
   </section>
@@ -7365,12 +7431,14 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://wicg.github.io/geolocation-sensor/">Geolocation Sensor</a></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
@@ -7918,6 +7986,7 @@
   <li><a href="https://drafts.fxtf.org/fill-stroke/">CSS Fill and Stroke Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-images-4/">CSS Images Module Level 4</a></li>
+  <li><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://drafts.csswg.org/css-transforms/">CSS Transforms Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-transforms-2/">CSS Transforms Module Level 2</a></li>
@@ -7970,7 +8039,7 @@
   <section id="potential-issues-181" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>ConstrainBoolean</code>, <code>ConstrainDOMString</code>, <code>MediaStream</code>, <code>MediaStreamConstraints</code>, <code>MediaTrackConstraintSet</code>, <code>NavigatorUserMedia</code></li>
+  <li>Unknown WebIDL names used: <code>NavigatorUserMedia</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
@@ -8596,6 +8665,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a></li>
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   </ul>
@@ -9090,6 +9160,7 @@
   <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2dcontext/">HTML Canvas 2D Context</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
   </ul>
@@ -9215,7 +9286,7 @@
   <section id="potential-issues-211" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>HTMLMediaElement</code>, <code>MediaStream</code>, <code>MediaStreamTrack</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>HTMLMediaElement</code>, <code>Window</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
@@ -9245,6 +9316,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
@@ -9463,6 +9535,7 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a></li>
+  <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
@@ -9520,6 +9593,7 @@
   <li><a href="https://w3c.github.io/longtasks/">Long Tasks API 1</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   <li><a href="https://wicg.github.io/media-capabilities/">Media Capabilities</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
@@ -10137,6 +10211,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>

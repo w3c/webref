@@ -5181,6 +5181,7 @@
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
   </ul>
@@ -5969,6 +5970,7 @@
   <li><a href="https://w3c.github.io/keyboard-lock/">Keyboard Lock</a></li>
   <li><a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
   <li><a href="https://wicg.github.io/media-capabilities/">Media Capabilities</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
@@ -6409,12 +6411,12 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="media-capture-and-streams" class="level2" data-spec="true" data-error="true">
+  <section id="media-capture-and-streams" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Media Capture and Streams</h2>
   <section id="spec-info-142" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/mediacapture-streams/">Latest published version</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/mediacapture-main/">Editor's Draft</a> (July 25, 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/mediacapture-main/" class="uri">https://w3c.github.io/mediacapture-main/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/mediacapture-streams/" class="uri">https://www.w3.org/TR/mediacapture-streams/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/">Candidate Recommendation</a></li>
@@ -6424,8 +6426,15 @@
   </section>
   <section id="potential-issues-142" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Crawl took too long Error: Crawl took too long     at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:338:29)     at ontimeout (timers.js:498:11)     at tryOnTimeout (timers.js:323:5)     at Timer.listOnTimeout (timers.js:290:5)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>Navigator</code>, <code>OverconstrainedError</code>, <code>Window</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>Event</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>EventInit</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-142" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -6451,7 +6460,7 @@
   </ul>
   </section>
   </section>
-  <section id="media-capture-depth-stream-extensions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="media-capture-depth-stream-extensions" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Media Capture Depth Stream Extensions</h2>
   <section id="spec-info-143" class="level3 info">
   <h3>Spec info</h3>
@@ -6467,7 +6476,6 @@
   <section id="potential-issues-143" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>ConstrainBoolean</code>, <code>ConstrainDOMString</code>, <code>ConstrainDouble</code>, <code>DoubleRange</code>, <code>MediaTrackCapabilities</code>, <code>MediaTrackConstraintSet</code>, <code>MediaTrackSettings</code>, <code>MediaTrackSupportedConstraints</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
@@ -6499,7 +6507,7 @@
   <section id="potential-issues-144" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>HTMLCanvasElement</code>, <code>HTMLMediaElement</code>, <code>MediaStream</code>, <code>MediaStreamTrack</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>HTMLCanvasElement</code>, <code>HTMLMediaElement</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
@@ -6510,7 +6518,10 @@
   <section id="known-dependencies-on-this-specification-144" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  </ul>
   </section>
   </section>
   <section id="media-queries-level-3" class="level2" data-spec="true" data-anomaly="true" data-noCssDefinitions="true" data-missingLinkRef="true">
@@ -6712,7 +6723,7 @@
   <section id="potential-issues-150" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>ConstrainBoolean</code>, <code>ConstrainDOMString</code>, <code>ConstrainDouble</code>, <code>ImageBitmap</code>, <code>MediaStreamTrack</code>, <code>MediaTrackCapabilities</code>, <code>MediaTrackConstraintSet</code>, <code>MediaTrackSettings</code>, <code>MediaTrackSupportedConstraints</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>ImageBitmap</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -6727,7 +6738,10 @@
   <ul>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  </ul>
   </section>
   </section>
   <section id="mediastream-recording" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
@@ -6746,7 +6760,7 @@
   <section id="potential-issues-151" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>MediaStream</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>Window</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -6760,6 +6774,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://wicg.github.io/media-capabilities/">Media Capabilities</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   </ul>
   </section>
@@ -6804,6 +6819,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   </ul>
   </section>
@@ -7281,6 +7297,7 @@
   <li><a href="https://wicg.github.io/geolocation-sensor/">Geolocation Sensor</a></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
@@ -7858,7 +7875,7 @@
   <section id="potential-issues-179" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>ConstrainBoolean</code>, <code>ConstrainDOMString</code>, <code>MediaStream</code>, <code>MediaStreamConstraints</code>, <code>MediaTrackConstraintSet</code>, <code>NavigatorUserMedia</code></li>
+  <li>Unknown WebIDL names used: <code>NavigatorUserMedia</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
@@ -8881,7 +8898,7 @@
   <section id="potential-issues-205" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>HTMLMediaElement</code>, <code>MediaStream</code>, <code>MediaStreamTrack</code>, <code>MessagePort</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>HTMLMediaElement</code>, <code>MessagePort</code>, <code>Window</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>Worklet</code> also defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
@@ -8912,6 +8929,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
@@ -9190,6 +9208,7 @@
   <li><a href="https://w3c.github.io/longtasks/">Long Tasks API 1</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   <li><a href="https://wicg.github.io/media-capabilities/">Media Capabilities</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></li>
@@ -9563,6 +9582,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
