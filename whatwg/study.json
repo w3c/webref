@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2018-07-25T09:45:09.494Z",
+  "date": "2018-07-25T12:18:57.970Z",
   "stats": {
     "crawled": 226,
-    "errors": 1,
+    "errors": 0,
     "studied": 226
   },
   "results": [
@@ -15854,6 +15854,12 @@
               "date": "19 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/",
+              "date": "July 25, 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
               "title": "Media Capture Depth Stream Extensions",
               "crawled": "https://w3c.github.io/mediacapture-depth/",
@@ -17027,25 +17033,65 @@
     {
       "title": "Media Capture and Streams",
       "shortname": "mediacapture-streams",
+      "date": "July 25, 2018",
       "url": "https://www.w3.org/TR/mediacapture-streams/",
       "latest": "https://www.w3.org/TR/mediacapture-streams/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/mediacapture-main/",
-      "crawled": "https://www.w3.org/TR/mediacapture-streams/",
+      "crawled": "https://w3c.github.io/mediacapture-main/",
       "repository": "https://github.com/w3c/mediacapture-main",
       "report": {
-        "error": "Error: Crawl took too long Error: Crawl took too long\n    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:338:29)\n    at ontimeout (timers.js:498:11)\n    at tryOnTimeout (timers.js:323:5)\n    at Timer.listOnTimeout (timers.js:290:5)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          "OverconstrainedError",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/",
+                "date": "21 June 2018"
+              }
+            ]
+          },
+          {
+            "name": "Event",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/",
+                "date": "21 June 2018"
+              }
+            ]
+          },
+          {
+            "name": "EventInit",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/",
+                "date": "21 June 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -17162,16 +17208,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "ConstrainBoolean",
-          "ConstrainDOMString",
-          "ConstrainDouble",
-          "DoubleRange",
-          "MediaTrackCapabilities",
-          "MediaTrackConstraintSet",
-          "MediaTrackSettings",
-          "MediaTrackSupportedConstraints"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17222,8 +17259,6 @@
         "unknownIdlNames": [
           "HTMLCanvasElement",
           "HTMLMediaElement",
-          "MediaStream",
-          "MediaStreamTrack",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -17247,7 +17282,14 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/",
+              "date": "July 25, 2018"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -17674,15 +17716,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "ConstrainBoolean",
-          "ConstrainDOMString",
-          "ConstrainDouble",
           "ImageBitmap",
-          "MediaStreamTrack",
-          "MediaTrackCapabilities",
-          "MediaTrackConstraintSet",
-          "MediaTrackSettings",
-          "MediaTrackSupportedConstraints",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -17706,7 +17740,14 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/",
+              "date": "July 25, 2018"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -17734,7 +17775,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "MediaStream",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -17764,6 +17804,12 @@
               "title": "Media Capabilities",
               "crawled": "https://wicg.github.io/media-capabilities/",
               "date": "19 July 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/",
+              "date": "July 25, 2018"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -17881,6 +17927,12 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/",
               "date": "10 July 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/",
+              "date": "July 25, 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -18777,6 +18829,12 @@
               "title": "Magnetometer",
               "crawled": "https://w3c.github.io/magnetometer/",
               "date": "15 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/",
+              "date": "July 25, 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -20127,11 +20185,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "ConstrainBoolean",
-          "ConstrainDOMString",
-          "MediaStream",
-          "MediaStreamConstraints",
-          "MediaTrackConstraintSet",
           "NavigatorUserMedia"
         ],
         "redefinedIdlNames": [],
@@ -22356,8 +22409,6 @@
         "unknownIdlNames": [
           "EventHandler",
           "HTMLMediaElement",
-          "MediaStream",
-          "MediaStreamTrack",
           "MessagePort",
           "Window"
         ],
@@ -22411,6 +22462,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/",
+              "date": "July 25, 2018"
+            },
             {
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
@@ -23164,6 +23221,12 @@
               "title": "Media Capabilities",
               "crawled": "https://wicg.github.io/media-capabilities/",
               "date": "19 July 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/",
+              "date": "July 25, 2018"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -24124,6 +24187,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/",
+              "date": "July 25, 2018"
+            },
             {
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
