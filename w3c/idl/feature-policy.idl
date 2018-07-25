@@ -3,6 +3,17 @@
 // "Feature Policy" spec.
 // See: https://wicg.github.io/feature-policy/
 
+[NoInterfaceObject]
+interface Policy {
+  boolean allowsFeature(DOMString feature, optional DOMString origin);
+  sequence<DOMString> allowedFeatures();
+  sequence<DOMString> getAllowlistForFeature(DOMString feature);
+};
+
+partial interface Document {
+    [SameObject] readonly attribute Policy policy;
+};
+
 partial interface HTMLIFrameElement {
-    [CEReactions] attribute DOMString allow;
+    [SameObject] readonly attribute Policy policy;
 };
