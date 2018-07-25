@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-07-25T06:02:28.507Z",
+  "date": "2018-07-25T09:39:07.053Z",
   "stats": {
     "crawled": 235,
-    "errors": 2,
+    "errors": 4,
     "studied": 235
   },
   "results": [
@@ -83,41 +83,27 @@
     {
       "title": "Accelerometer",
       "shortname": "accelerometer",
-      "date": "14 March 2018",
       "url": "https://www.w3.org/TR/accelerometer/",
       "latest": "https://www.w3.org/TR/accelerometer/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-accelerometer-20180320/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/accelerometer/",
-      "crawled": "https://w3c.github.io/accelerometer/",
+      "crawled": "https://www.w3.org/TR/accelerometer/",
       "repository": "https://github.com/w3c/accelerometer",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/motion-sensors/",
-          "https://w3c.github.io/sensors/usecases.html"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/screen-orientation/",
-            "ref": {
-              "name": "SCREEN-ORIENTATION",
-              "url": "https://w3c.github.io/screen-orientation/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -801,12 +787,6 @@
               "date": "5 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -1271,12 +1251,6 @@
               "title": "CSS Color Module Level 4",
               "crawled": "https://drafts.csswg.org/css-color/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -2196,12 +2170,6 @@
               "date": "5 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-multicol-1/",
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-multicol/",
@@ -2523,12 +2491,6 @@
               "title": "CSS Images Module Level 4",
               "crawled": "https://drafts.csswg.org/css-images-4/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -3175,12 +3137,6 @@
               "date": "5 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/",
@@ -3575,12 +3531,6 @@
               "title": "CSS Conditional Rules Module Level 3",
               "crawled": "https://drafts.csswg.org/css-conditional-3/",
               "date": "1 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             }
           ]
         },
@@ -3664,12 +3614,6 @@
               "title": "CSS Images Module Level 4",
               "crawled": "https://drafts.csswg.org/css-images-4/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -4443,12 +4387,6 @@
               "date": "5 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -4763,12 +4701,6 @@
               "title": "CSS Images Module Level 3",
               "crawled": "https://drafts.csswg.org/css-images-3/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -5158,12 +5090,6 @@
               "date": "5 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -5371,12 +5297,6 @@
               "title": "CSS Inline Layout Module Level 3",
               "crawled": "https://drafts.csswg.org/css-inline/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -5624,12 +5544,6 @@
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -6260,12 +6174,6 @@
               "date": "5 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
@@ -6544,12 +6452,6 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
               "date": "23 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -7174,42 +7076,27 @@
     {
       "title": "CSS Masking Module Level 1",
       "shortname": "css-masking-1",
-      "date": "22 July 2018",
       "url": "https://www.w3.org/TR/css-masking-1/",
       "latest": "http://www.w3.org/TR/css-masking-1/",
       "datedUrl": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://drafts.fxtf.org/css-masking-1/",
-      "crawled": "https://drafts.fxtf.org/css-masking-1/",
+      "crawled": "http://www.w3.org/TR/css-masking-1/",
       "repository": "https://github.com/w3c/fxtf-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
+        "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css-shapes/",
-          "https://www.w3.org/TR/css3-transitions/",
-          "https://www.w3.org/TR/css3-background/",
-          "https://www.w3.org/TR/2013/WD-css-masking-20130620/",
-          "https://www.w3.org/TR/2012/WD-css-masking-20121115/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/2011/REC-SVG11-20110816/",
-            "ref": {
-              "name": "SVG11",
-              "url": "https://www.w3.org/TR/SVG11/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -7956,12 +7843,6 @@
               "date": "23 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-multicol-1/",
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-multicol/",
@@ -8651,12 +8532,6 @@
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -9544,12 +9419,6 @@
               "date": "5 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-round-display-1/",
               "title": "CSS Round Display Level 1",
               "crawled": "https://drafts.csswg.org/css-round-display/",
@@ -9617,12 +9486,6 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
@@ -10036,12 +9899,6 @@
               "date": "4 April 2017"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "http://drafts.csswg.org/css-overflow/",
@@ -10323,12 +10180,6 @@
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -10662,12 +10513,6 @@
               "title": "CSS Images Module Level 4",
               "crawled": "https://drafts.csswg.org/css-images-4/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -11427,12 +11272,6 @@
               "date": "5 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -11946,12 +11785,6 @@
               "date": "5 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -12373,12 +12206,6 @@
               "date": "5 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "http://drafts.csswg.org/css-overflow/",
@@ -12599,12 +12426,6 @@
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -13789,12 +13610,6 @@
               "date": "21 June 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-tables-3/",
               "title": "CSS Table Module Level 3",
               "crawled": "https://drafts.csswg.org/css-tables-3/",
@@ -14061,12 +13876,6 @@
         ],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/accelerometer/",
-              "title": "Accelerometer",
-              "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "14 March 2018"
-            },
             {
               "url": "https://www.w3.org/TR/ambient-light/",
               "title": "Ambient Light Sensor",
@@ -14749,12 +14558,6 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
               "date": "23 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -19507,12 +19310,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/accelerometer/",
-              "title": "Accelerometer",
-              "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "14 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/ambient-light/",
               "title": "Ambient Light Sensor",
               "crawled": "https://w3c.github.io/ambient-light/",
@@ -20701,12 +20498,6 @@
               "title": "CSS Images Module Level 4",
               "crawled": "https://drafts.csswg.org/css-images-4/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-masking-1/",
-              "title": "CSS Masking Module Level 1",
-              "crawled": "https://drafts.fxtf.org/css-masking-1/",
-              "date": "22 July 2018"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -22188,12 +21979,6 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/accelerometer/",
-              "title": "Accelerometer",
-              "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "14 March 2018"
-            },
             {
               "url": "https://compat.spec.whatwg.org/",
               "title": "Compatibility Standard",
@@ -24318,12 +24103,6 @@
               "title": "Accelerated Shape Detection in Images",
               "crawled": "https://wicg.github.io/shape-detection-api/",
               "date": "4 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/accelerometer/",
-              "title": "Accelerometer",
-              "crawled": "https://w3c.github.io/accelerometer/",
-              "date": "14 March 2018"
             },
             {
               "url": "https://www.w3.org/TR/ambient-light/",

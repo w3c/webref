@@ -2,206 +2,6 @@
 % Reffy
 % July 25, 2018
 
-## https://html.spec.whatwg.org/ {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](undefined)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:338:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
-- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
-- [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Battery Status API](https://w3c.github.io/battery/)
-- [Beacon](https://w3c.github.io/beacon/)
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
-- [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
-- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
-- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
-- [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
-- [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
-- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
-- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Overflow Module Level 3](http://drafts.csswg.org/css-overflow/)
-- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
-- [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
-- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-- [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
-- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
-- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
-- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
-- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
-- [DOM Standard](https://dom.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
-- [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [File and Directory Entries API](https://wicg.github.io/entries-api/)
-- [File API](https://w3c.github.io/FileAPI/)
-- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://w3c.github.io/gamepad/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/)
-- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
-- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
-- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
-- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
-- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
-- [Keyboard Map](https://wicg.github.io/keyboard-map/)
-- [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
-- [Media Session Standard](https://wicg.github.io/mediasession/)
-- [Media Source Extensions™](https://w3c.github.io/media-source/)
-- [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
-- [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [Network Information API](https://wicg.github.io/netinfo/)
-- [Notifications API Standard](https://notifications.spec.whatwg.org/)
-- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Permissions](https://w3c.github.io/permissions/)
-- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Preload](https://w3c.github.io/preload/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Push API](https://w3c.github.io/push-api/)
-- [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
-- [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Selection API](https://w3c.github.io/selection-api/)
-- [Selectors Level 4](https://drafts.csswg.org/selectors)
-- [Server Timing](https://w3c.github.io/server-timing/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Storage Standard](https://storage.spec.whatwg.org/)
-- [Streams Standard](https://streams.spec.whatwg.org/)
-- [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
-- [UI Events](https://w3c.github.io/uievents/)
-- [URL Standard](https://url.spec.whatwg.org/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/)
-- [Web Animations](https://w3c.github.io/web-animations/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
-- [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
-- [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
-- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
-- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
-- [Web IDL](https://heycam.github.io/webidl/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
-- [Web NFC API](https://w3c.github.io/web-nfc/)
-- [Web Share API](https://wicg.github.io/web-share/)
-- [Web Speech API](https://w3c.github.io/speech-api/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
-- [WebDriver](https://w3c.github.io/webdriver/)
-- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- [WebUSB API](https://wicg.github.io/webusb/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-- [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
-- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
-
-Informative references to this spec from:
-
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
-- [Battery Status API](https://w3c.github.io/battery/)
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox/)
-- [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content/)
-- [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
-- [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
-- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
-- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
-- [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
-- [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
-- [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
-- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
-- [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
-- [File API](https://w3c.github.io/FileAPI/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
-- [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Push API](https://w3c.github.io/push-api/)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
-- [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
-- [Selectors Level 4](https://drafts.csswg.org/selectors)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
-- [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-
-
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -300,7 +100,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -399,6 +201,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 
 
@@ -446,6 +249,34 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css2/) (27 April 2018)
+- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Latest published version: [http://www.w3.org/TR/CSS22/](http://www.w3.org/TR/CSS22/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: CSS22
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/), related reference "CSS3COLOR" uses URL [`http://www.w3.org/TR/2010/PR-css3-color-20101028/`](http://www.w3.org/TR/2010/PR-css3-color-20101028/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+
+No informative reference to this spec from other specs.
+
+
 ## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true}
 
 ### Spec info {.info}
@@ -472,8 +303,8 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS basic box model](https://drafts.csswg.org/css-box-3/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -552,33 +383,6 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [UI Events](https://w3c.github.io/uievents/)
-
-
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css2/) (27 April 2018)
-- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Latest published version: [http://www.w3.org/TR/CSS22/](http://www.w3.org/TR/CSS22/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: CSS22
-
-### Potential issue(s) {.anomalies}
-
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/), related reference "CSS3COLOR" uses URL [`http://www.w3.org/TR/2010/PR-css3-color-20101028/`](http://www.w3.org/TR/2010/PR-css3-color-20101028/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-
-No informative reference to this spec from other specs.
 
 
 ## Clipboard API and events {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -744,6 +548,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
@@ -930,6 +735,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 
 Informative references to this spec from:
@@ -1005,8 +811,8 @@ Normative references to this spec from:
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Containment Module Level 1](https://drafts.csswg.org/css-contain/)
@@ -1040,6 +846,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -1101,6 +908,50 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/) (5 July 2018)
+- Editor's Draft: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
+- Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: css-ui-3
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
+     * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
+     * [`https://www.w3.org/TR/2017/WD-css-ui-4-20171222/`](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
+     * [`https://www.w3.org/TR/2015/WD-css-ui-4-20150922/`](https://www.w3.org/TR/2015/WD-css-ui-4-20150922/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical/)
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+
+Informative references to this spec from:
+
+- [CSS Containment Module Level 1](https://drafts.csswg.org/css-contain/)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
+- [CSS Overflow Module Level 3](http://drafts.csswg.org/css-overflow/)
+- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
+- [Selectors Level 4](https://drafts.csswg.org/selectors)
+
+
+## CSS Basic User Interface Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/) (5 July 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
@@ -1137,49 +988,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Containment Module Level 1](https://drafts.csswg.org/css-contain/)
-
-
-## CSS Basic User Interface Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/) (5 July 2018)
-- Editor's Draft: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
-- Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
-- Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: css-ui-3
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216)
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
-     * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
-     * [`https://www.w3.org/TR/2017/WD-css-ui-4-20171222/`](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
-     * [`https://www.w3.org/TR/2015/WD-css-ui-4-20150922/`](https://www.w3.org/TR/2015/WD-css-ui-4-20150922/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
-- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-
-Informative references to this spec from:
-
-- [CSS Containment Module Level 1](https://drafts.csswg.org/css-contain/)
-- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
-- [CSS Overflow Module Level 3](http://drafts.csswg.org/css-overflow/)
-- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
-- [Selectors Level 4](https://drafts.csswg.org/selectors)
 
 
 ## CSS Box Alignment Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1304,8 +1112,8 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS basic box model](https://drafts.csswg.org/css-box-3/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
@@ -1347,6 +1155,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -1392,8 +1201,8 @@ Normative references to this spec from:
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
@@ -1441,8 +1250,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
@@ -1460,6 +1269,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -1672,8 +1482,8 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS basic box model](https://drafts.csswg.org/css-box-3/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Containment Module Level 1](https://drafts.csswg.org/css-contain/)
@@ -1719,6 +1529,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -1879,7 +1690,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -1939,6 +1752,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -1999,6 +1813,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -2156,6 +1971,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -2264,8 +2080,8 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox/)
@@ -2331,8 +2147,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 
 
 ## CSS Inline Layout Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -2404,8 +2220,8 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS basic box model](https://drafts.csswg.org/css-box-3/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
@@ -2577,6 +2393,7 @@ Normative references to this spec from:
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 
 No informative reference to this spec from other specs.
@@ -2791,6 +2608,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -2834,8 +2652,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Containment Module Level 1](https://drafts.csswg.org/css-contain/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -2894,8 +2712,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS basic box model](https://drafts.csswg.org/css-box-3/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 
 Informative references to this spec from:
@@ -2978,8 +2796,8 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS basic box model](https://drafts.csswg.org/css-box-3/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
@@ -3077,8 +2895,8 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS basic box model](https://drafts.csswg.org/css-box-3/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -3102,6 +2920,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Web Animations](https://w3c.github.io/web-animations/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -3161,8 +2980,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content/)
@@ -3507,6 +3326,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -3563,6 +3383,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
@@ -3831,8 +3652,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
@@ -3929,6 +3750,7 @@ Informative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 
 ## CSS Transitions Level 2 {data-spec=true data-anomaly=true data-hasUnexpectedIdl=true data-noCssDefinitions=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -4034,8 +3856,8 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS basic box model](https://drafts.csswg.org/css-box-3/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -4092,6 +3914,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
@@ -4137,8 +3960,8 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -4267,8 +4090,8 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS basic box model](https://drafts.csswg.org/css-box-3/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -4324,8 +4147,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox/)
@@ -4393,6 +4216,7 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
@@ -4465,6 +4289,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -4534,6 +4359,7 @@ Normative references to this spec from:
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
@@ -4632,6 +4458,7 @@ Normative references to this spec from:
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Push API](https://w3c.github.io/push-api/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
@@ -4693,6 +4520,7 @@ Normative references to this spec from:
 
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -4732,6 +4560,7 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
@@ -4801,6 +4630,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
@@ -4847,6 +4677,7 @@ Normative references to this spec from:
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 No informative reference to this spec from other specs.
@@ -4909,6 +4740,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Feature Policy](https://wicg.github.io/feature-policy/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -5055,6 +4887,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
@@ -5128,6 +4961,7 @@ Normative references to this spec from:
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
@@ -5172,6 +5006,204 @@ Informative references to this spec from:
 No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
+
+
+## HTML Standard {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (24 July 2018)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://spec.whatwg.org/`](https://spec.whatwg.org/)
+     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/), related reference "PAYMENTREQUEST" uses URL [`https://w3c.github.io/browser-payment-api/`](https://w3c.github.io/browser-payment-api/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
+- [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-csp/embedded/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
+- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
+- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
+- [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
+- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
+- [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
+- [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Overflow Module Level 3](http://drafts.csswg.org/css-overflow/)
+- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+- [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
+- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
+- [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
+- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
+- [DOM Standard](https://dom.spec.whatwg.org/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Feature Policy](https://wicg.github.io/feature-policy/)
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [File and Directory Entries API](https://wicg.github.io/entries-api/)
+- [File API](https://w3c.github.io/FileAPI/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
+- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
+- [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/)
+- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
+- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
+- [Keyboard Map](https://wicg.github.io/keyboard-map/)
+- [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [Media Session Standard](https://wicg.github.io/mediasession/)
+- [Media Source Extensions™](https://w3c.github.io/media-source/)
+- [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
+- [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Information API](https://wicg.github.io/netinfo/)
+- [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Permissions](https://w3c.github.io/permissions/)
+- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Preload](https://w3c.github.io/preload/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
+- [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
+- [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
+- [Selectors Level 4](https://drafts.csswg.org/selectors)
+- [Server Timing](https://w3c.github.io/server-timing/)
+- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Storage Standard](https://storage.spec.whatwg.org/)
+- [Streams Standard](https://streams.spec.whatwg.org/)
+- [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [UI Events](https://w3c.github.io/uievents/)
+- [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
+- [Web Animations](https://w3c.github.io/web-animations/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
+- [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web Budget API](https://wicg.github.io/budget-api/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
+- [Web IDL](https://heycam.github.io/webidl/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
+- [Web Share API](https://wicg.github.io/web-share/)
+- [Web Speech API](https://w3c.github.io/speech-api/)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+- [WebUSB API](https://wicg.github.io/webusb/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
+- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+
+Informative references to this spec from:
+
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox/)
+- [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content/)
+- [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
+- [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
+- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
+- [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
+- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
+- [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Feature Policy](https://wicg.github.io/feature-policy/)
+- [File API](https://w3c.github.io/FileAPI/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
+- [Selectors Level 4](https://drafts.csswg.org/selectors)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 ## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -5224,6 +5256,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 
 Informative references to this spec from:
@@ -5302,7 +5335,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -5460,6 +5495,7 @@ Normative references to this spec from:
 
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
@@ -5670,6 +5706,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [URL Standard](https://url.spec.whatwg.org/)
 
@@ -5763,6 +5800,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
@@ -6080,6 +6118,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -6215,6 +6254,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
@@ -6243,6 +6283,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 
@@ -6291,7 +6332,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -6316,7 +6359,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -6400,6 +6445,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Preload](https://w3c.github.io/preload/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
@@ -6580,8 +6626,8 @@ Normative references to this spec from:
 
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Color Module Level 3](https://drafts.csswg.org/css-color-3/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -6599,6 +6645,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors)
@@ -6694,6 +6741,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
@@ -6739,7 +6787,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -6785,8 +6835,8 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
@@ -6817,8 +6867,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content/)
@@ -6836,6 +6886,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -6898,6 +6949,7 @@ Normative references to this spec from:
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
@@ -7033,6 +7085,7 @@ Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -7118,6 +7171,7 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
@@ -7145,6 +7199,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -7178,6 +7233,7 @@ Normative references to this spec from:
 
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
@@ -7287,6 +7343,7 @@ Normative references to this spec from:
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
@@ -7658,6 +7715,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
@@ -7737,6 +7795,7 @@ Normative references to this spec from:
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
@@ -8024,6 +8083,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -8110,7 +8170,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -8170,6 +8232,7 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -8205,6 +8268,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 
