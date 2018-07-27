@@ -48,7 +48,7 @@ interface BackgroundFetchRegistration : EventTarget {
 
   Promise<boolean> abort();
   Promise<BackgroundFetchActiveFetch> match(RequestInfo request, optional CacheQueryOptions options);
-  Promise<sequence<BackgroundFetchActiveFetch>> matchAll(RequestInfo request, optional CacheQueryOptions options);
+  Promise<sequence<BackgroundFetchActiveFetch>> matchAll(optional RequestInfo request, optional CacheQueryOptions options);
   Promise<sequence<BackgroundFetchActiveFetch>> values();
 };
 
@@ -75,7 +75,7 @@ dictionary BackgroundFetchEventInit : ExtendableEventInit {
 [Constructor(DOMString type, BackgroundFetchEventInit init), Exposed=ServiceWorker]
 interface BackgroundFetchSettledEvent : BackgroundFetchEvent {
   Promise<BackgroundFetchSettledFetch> match(RequestInfo request, optional CacheQueryOptions options);
-  Promise<sequence<BackgroundFetchSettledFetch>> matchAll(RequestInfo request, optional CacheQueryOptions options);
+  Promise<sequence<BackgroundFetchSettledFetch>> matchAll(optional RequestInfo request, optional CacheQueryOptions options);
   Promise<sequence<BackgroundFetchSettledFetch>> values();
 };
 
