@@ -6,18 +6,23 @@
 typedef long long GLint64;
 typedef unsigned long long GLuint64;
 
+[Exposed=(Window,Worker)]
 interface WebGLQuery : WebGLObject {
 };
 
+[Exposed=(Window,Worker)]
 interface WebGLSampler : WebGLObject {
 };
 
+[Exposed=(Window,Worker)]
 interface WebGLSync : WebGLObject {
 };
 
+[Exposed=(Window,Worker)]
 interface WebGLTransformFeedback : WebGLObject {
 };
 
+[Exposed=(Window,Worker)]
 interface WebGLVertexArrayObject : WebGLObject {
 };
 
@@ -567,6 +572,7 @@ interface mixin WebGL2RenderingContextBase
   void bindVertexArray(WebGLVertexArrayObject? array);
 };
 
+[Exposed=(Window,Worker)]
 interface WebGL2RenderingContext
 {
 };

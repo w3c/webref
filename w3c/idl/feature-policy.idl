@@ -17,3 +17,11 @@ partial interface Document {
 partial interface HTMLIFrameElement {
     [SameObject] readonly attribute Policy policy;
 };
+interface FeaturePolicyViolationReportBody : ReportBody {
+  readonly attribute DOMString featureId;
+  readonly attribute DOMString message;
+  readonly attribute DOMString? sourceFile;
+  readonly attribute long? lineNumber;
+  readonly attribute long? columnNumber;
+  readonly attribute DOMString disposition;
+};
