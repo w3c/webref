@@ -1,41 +1,41 @@
-% Diff between report from "July 27, 2018" and reference report from "July 26, 2018"
+% Diff between report from "July 28, 2018" and reference report from "July 27, 2018"
 % Reffy
-% July 27, 2018
+% July 28, 2018
+
+## CSS Inline Layout Module Level 3
+
+- URL: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-inline/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *INS* https://www.w3.org/TR/css3-align/
+
 
 ## Feature Policy
 
 - URL: [https://wicg.github.io/feature-policy/](https://wicg.github.io/feature-policy/)
 - Crawled version: [Initial URL](https://wicg.github.io/feature-policy/)
 - Repository: [GitHub wicg/feature-policy](https://github.com/wicg/feature-policy)
-- Unknown WebIDL names used: *INS* ReportBody
-- Missing references for links: *INS* https://w3c.github.io/reporting/
+- Missing references for WebIDL names: *INS* ReportBody
 
 
-## Filter Effects Module Level 1
+## Reporting API 1
 
-- URL: [https://www.w3.org/TR/filter-effects-1/](https://www.w3.org/TR/filter-effects-1/)
-- Crawled version: [Editor's Draft](https://drafts.fxtf.org/filter-effects/)
-- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
-- No WebIDL definitions found: *INS* false / *DEL* true
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
-## WebGL 2.0 Specification
-
-- URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* Window
-- Missing references for WebIDL names: *INS* Worker
+- URL: [https://w3c.github.io/reporting/](https://w3c.github.io/reporting/)
+- Crawled version: [Initial URL](https://w3c.github.io/reporting/)
+- Repository: [GitHub w3c/reporting](https://github.com/w3c/reporting)
+- This specification was not in the reference crawl report.
 
 
-## WebGL Specification
+## Web Share API
 
-- URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
-- Unknown WebIDL names used: *INS* Window
-- Missing references for WebIDL names: *INS* Worker
+- URL: [https://wicg.github.io/web-share/](https://wicg.github.io/web-share/)
+- Crawled version: [Latest published version](undefined)
+- Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
