@@ -4,7 +4,7 @@
 // See: https://wicg.github.io/background-fetch/
 
 partial interface ServiceWorkerGlobalScope {
-  attribute EventHandler onbackgroundfetched;
+  attribute EventHandler onbackgroundfetchsuccess;
   attribute EventHandler onbackgroundfetchfail;
   attribute EventHandler onbackgroundfetchabort;
   attribute EventHandler onbackgroundfetchclick;
@@ -49,7 +49,6 @@ interface BackgroundFetchRegistration : EventTarget {
   Promise<boolean> abort();
   Promise<BackgroundFetchActiveFetch> match(RequestInfo request, optional CacheQueryOptions options);
   Promise<sequence<BackgroundFetchActiveFetch>> matchAll(optional RequestInfo request, optional CacheQueryOptions options);
-  Promise<sequence<BackgroundFetchActiveFetch>> values();
 };
 
 [Exposed=(Window,Worker)]
@@ -63,6 +62,16 @@ interface BackgroundFetchActiveFetch : BackgroundFetchFetch {
   // TODO: In future this will include a fetch observer
 };
 
+[Exposed=ServiceWorker]
+interface BackgroundFetchSettledFetch : BackgroundFetchFetch {
+  readonly attribute Response? response;
+};
+
+[Exposed=ServiceWorker]
+interface BackgroundFetchSuccessfulFetch : BackgroundFetchFetch {
+  readonly attribute Response response;
+};
+
 [Constructor(DOMString type, BackgroundFetchEventInit init), Exposed=ServiceWorker]
 interface BackgroundFetchEvent : ExtendableEvent {
   readonly attribute DOMString id;
@@ -73,20 +82,27 @@ dictionary BackgroundFetchEventInit : ExtendableEventInit {
 };
 
 [Constructor(DOMString type, BackgroundFetchEventInit init), Exposed=ServiceWorker]
-interface BackgroundFetchSettledEvent : BackgroundFetchEvent {
-  Promise<BackgroundFetchSettledFetch> match(RequestInfo request, optional CacheQueryOptions options);
-  Promise<sequence<BackgroundFetchSettledFetch>> matchAll(optional RequestInfo request, optional CacheQueryOptions options);
-  Promise<sequence<BackgroundFetchSettledFetch>> values();
+interface BackgroundFetchUpdateEvent : BackgroundFetchEvent {
+  Promise<void> updateUI(DOMString title);
 };
 
-[Exposed=ServiceWorker]
-interface BackgroundFetchSettledFetch : BackgroundFetchFetch {
-  readonly attribute Response? response;
+interface mixin BackgroundFetchSettledMatching {
+  Promise<BackgroundFetchSettledFetch> match(RequestInfo request, optional CacheQueryOptions options);
+  Promise<sequence<BackgroundFetchSettledFetch>> matchAll(optional RequestInfo request, optional CacheQueryOptions options);
 };
 
 [Constructor(DOMString type, BackgroundFetchEventInit init), Exposed=ServiceWorker]
-interface BackgroundFetchUpdateEvent : BackgroundFetchSettledEvent {
-  Promise<void> updateUI(DOMString title);
+interface BackgroundFetchAbortEvent : BackgroundFetchEvent {};
+BackgroundFetchAbortEvent includes BackgroundFetchSettledMatching;
+
+[Constructor(DOMString type, BackgroundFetchEventInit init), Exposed=ServiceWorker]
+interface BackgroundFetchFailEvent : BackgroundFetchUpdateEvent {};
+BackgroundFetchAbortEvent includes BackgroundFetchSettledMatching;
+
+[Constructor(DOMString type, BackgroundFetchEventInit init), Exposed=ServiceWorker]
+interface BackgroundFetchSuccessEvent : BackgroundFetchUpdateEvent {
+  Promise<BackgroundFetchSuccessfulFetch> match(RequestInfo request, optional CacheQueryOptions options);
+    Promise<sequence<BackgroundFetchSuccessfulFetch>> matchAll(optional RequestInfo request, optional CacheQueryOptions options);
 };
 
 [Constructor(DOMString type, BackgroundFetchClickEventInit init), Exposed=ServiceWorker]
