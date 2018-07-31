@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 30, 2018
+% July 31, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -194,7 +194,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/background-fetch/) (27 July 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/background-fetch/) (30 July 2018)
 - Repository: [GitHub wicg/background-fetch](https://github.com/wicg/background-fetch)
 - Shortname: no shortname
 
@@ -312,7 +312,7 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://www.w3.org/TR/2017/WD-css-animations-1-20171130/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
@@ -345,7 +345,6 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
 - [CSS Paged Media Module Level 3](http://www.w3.org/TR/2013/WD-css3-page-20130314/)
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
@@ -642,7 +641,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (July 30, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (July 31, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -849,6 +848,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20180524/)
@@ -871,7 +871,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Animations Level 1](https://www.w3.org/TR/2017/WD-css-animations-1-20171130/)
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
@@ -897,16 +896,18 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS basic box model {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## CSS Basic Box Model Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-box-3/) (7 September 2016)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-box-3/) (30 July 2018)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
      * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -943,14 +944,12 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20180524/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
@@ -993,7 +992,9 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 
 
 ## CSS Box Alignment Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1027,7 +1028,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180420/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
@@ -1075,12 +1075,10 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Animations Level 1](https://www.w3.org/TR/2017/WD-css-animations-1-20171130/)
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
 - [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180420/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
@@ -1120,7 +1118,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
@@ -1421,7 +1419,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -1464,7 +1462,7 @@ Normative references to this spec from:
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2017/WD-css-animations-1-20171130/)
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20180524/)
@@ -1502,9 +1500,7 @@ Normative references to this spec from:
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 
-Informative references to this spec from:
-
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
+No informative reference to this spec from other specs.
 
 
 ## CSS Environment Variables Module Level 1 {data-spec=true data-anomaly=true data-noCssDefinitions=true}
@@ -1539,9 +1535,7 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -1571,7 +1565,9 @@ Normative references to this spec from:
 
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 
 
 ## CSS Flexible Box Layout Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1608,7 +1604,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180420/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
@@ -1715,7 +1711,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](http://www.w3.org/TR/2016/CR-css-cascade-4-20160114/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
@@ -1769,7 +1764,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](http://www.w3.org/TR/2016/CR-css-cascade-4-20160114/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
@@ -1822,7 +1816,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
@@ -1859,6 +1853,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
 Informative references to this spec from:
@@ -1913,7 +1908,6 @@ Normative references to this spec from:
 
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
 Informative references to this spec from:
@@ -1957,7 +1951,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180420/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180628/)
@@ -2055,7 +2049,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
 - [CSS Paged Media Module Level 3](http://www.w3.org/TR/2013/WD-css3-page-20130314/)
 - [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
@@ -2094,6 +2087,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 
@@ -2138,7 +2132,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 
 
 ## CSS Intrinsic & Extrinsic Sizing Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2168,7 +2162,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
@@ -2209,7 +2203,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
 
 No informative reference to this spec from other specs.
@@ -2311,7 +2304,6 @@ Normative references to this spec from:
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Generated Content Module Level 3](http://www.w3.org/TR/2016/WD-css-content-3-20160602/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
 Informative references to this spec from:
@@ -2469,6 +2461,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180628/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/)
@@ -2553,12 +2546,12 @@ No informative reference to this spec from other specs.
 - Spec uses WebIDL but does not reference it normatively
 - Unknown WebIDL names used: `Window`
 - Missing references for links: 
+     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/)
      * [`https://www.w3.org/TR/css-namespaces-3/`](https://www.w3.org/TR/css-namespaces-3/)
      * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/), related reference "CSS-PSEUDO-4" uses URL [`http://dev.w3.org/csswg/css-pseudo-4/`](http://dev.w3.org/csswg/css-pseudo-4/)
      * [`https://www.w3.org/TR/mediaqueries-4/`](https://www.w3.org/TR/mediaqueries-4/), related reference "MEDIAQUERIES-4" uses URL [`http://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/`](http://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/)
      * [`https://www.w3.org/TR/css-display-3/`](https://www.w3.org/TR/css-display-3/), related reference "CSS-DISPLAY-3" uses URL [`http://dev.w3.org/csswg/css-display/`](http://dev.w3.org/csswg/css-display/)
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES" uses URL [`http://dev.w3.org/csswg/css-values/`](http://dev.w3.org/csswg/css-values/)
@@ -2581,7 +2574,6 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2017/WD-css-transforms-1-20171130/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
@@ -2628,6 +2620,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20180524/)
@@ -2681,7 +2674,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -2734,6 +2726,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
@@ -2766,7 +2759,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180420/)
@@ -2780,7 +2773,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
 - [CSS Cascading and Inheritance Level 3](http://www.w3.org/TR/2016/CR-css-cascade-3-20160519/)
 - [CSS Cascading and Inheritance Level 4](http://www.w3.org/TR/2016/CR-css-cascade-4-20160114/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
@@ -2866,7 +2858,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
 - [CSS Color Module Level 4](http://www.w3.org/TR/2016/WD-css-color-4-20160705/)
@@ -2923,26 +2915,24 @@ Informative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
 
-## CSS Pseudo-Elements Module Level 4 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noCssDefinitions=true data-unknownIdlNames=true data-missingLinkRef=true}
+## CSS Pseudo-Elements Module Level 4 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/) (7 June 2016)
-- Editor's Draft: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
-- Latest published version: [http://www.w3.org/TR/css-pseudo-4/](http://www.w3.org/TR/css-pseudo-4/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/css-pseudo-4)
+- Latest published version: [https://www.w3.org/TR/css-pseudo-4](https://www.w3.org/TR/css-pseudo-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-pseudo-4
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `Window`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css3-lists/`](https://www.w3.org/TR/css3-lists/)
-     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
-     * [`https://www.w3.org/TR/css-color/`](https://www.w3.org/TR/css-color/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2954,10 +2944,8 @@ Normative references to this spec from:
 - [CSS Generated Content Module Level 3](http://www.w3.org/TR/2016/WD-css-content-3-20160602/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
-- [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
-- [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 
@@ -3002,6 +2990,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
@@ -3102,6 +3091,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180420/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
@@ -3204,7 +3194,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
@@ -3215,7 +3205,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-scrollbars-1/) (5 July 2018)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-scrollbars-1/) (30 July 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3286,7 +3276,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
@@ -3479,7 +3469,6 @@ Normative references to this spec from:
 
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Overflow Module Level 3](http://www.w3.org/TR/2016/WD-css-overflow-3-20160531/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
 - [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -3551,7 +3540,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
 - [CSS Cascading and Inheritance Level 3](http://www.w3.org/TR/2016/CR-css-cascade-3-20160519/)
 - [CSS Cascading and Inheritance Level 4](http://www.w3.org/TR/2016/CR-css-cascade-4-20160114/)
@@ -3565,7 +3554,6 @@ Normative references to this spec from:
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -3679,6 +3667,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
@@ -3717,6 +3706,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2017/WD-motion-1-20170711/)
@@ -3879,7 +3869,6 @@ Normative references to this spec from:
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2017/WD-css-animations-1-20171130/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
@@ -3979,6 +3968,7 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
@@ -4055,7 +4045,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
@@ -4074,7 +4064,6 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 3](http://www.w3.org/TR/2016/WD-css-overflow-3-20160531/)
 - [CSS Page Floats](http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/)
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
@@ -4123,6 +4112,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
@@ -4153,7 +4143,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMPoint`, `DOMPointInit`, `DOMQuad`, `DOMQuadInit`, `DOMRect`, `DOMRectReadOnly`, `EventHandler`, `HTMLElement`, `HTMLImageElement`, `Window`
+- Unknown WebIDL names used: `CSSPseudoElement`, `DOMPoint`, `DOMPointInit`, `DOMQuad`, `DOMQuadInit`, `DOMRect`, `DOMRectReadOnly`, `EventHandler`, `HTMLElement`, `HTMLImageElement`, `Window`
 - Missing references for WebIDL names: 
      * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
      * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
@@ -4163,10 +4153,10 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
+     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/), related reference "CSS-WRITING-MODES-3" uses URL [`http://dev.w3.org/csswg/css-writing-modes-3/`](http://dev.w3.org/csswg/css-writing-modes-3/)
      * [`https://www.w3.org/TR/css-display-3/`](https://www.w3.org/TR/css-display-3/), related reference "CSS-DISPLAY-3" uses URL [`http://dev.w3.org/csswg/css-display/`](http://dev.w3.org/csswg/css-display/)
-     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/), related reference "CSS-PSEUDO-4" uses URL [`http://dev.w3.org/csswg/css-pseudo-4/`](http://dev.w3.org/csswg/css-pseudo-4/)
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES" uses URL [`http://dev.w3.org/csswg/css-values/`](http://dev.w3.org/csswg/css-values/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -4739,6 +4729,7 @@ Normative references to this spec from:
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 No informative reference to this spec from other specs.
 
@@ -4877,7 +4868,6 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -4937,6 +4927,7 @@ Normative references to this spec from:
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20180717/)
+- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -4983,7 +4974,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](http://www.w3.org/TR/2016/CR-css-cascade-4-20160114/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2017/WD-css-text-3-20170822/)
@@ -5054,7 +5044,6 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -5197,7 +5186,6 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -5235,6 +5223,7 @@ Normative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
+- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -5345,7 +5334,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (July 30, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (July 31, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5670,7 +5659,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 
 
@@ -5700,7 +5688,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS basic box model](https://drafts.csswg.org/css-box-3/)
+- [CSS Basic Box Model Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Cascading and Inheritance Level 3](http://www.w3.org/TR/2016/CR-css-cascade-3-20160519/)
 - [CSS Cascading and Inheritance Level 4](http://www.w3.org/TR/2016/CR-css-cascade-4-20160114/)
 - [CSS Color Module Level 4](http://www.w3.org/TR/2016/WD-css-color-4-20160705/)
@@ -6356,7 +6344,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (July 30, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (July 31, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7000,11 +6988,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Server-Sent Events {data-spec=true data-error=true}
+## Server-Sent Events {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/eventsource/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-eventsource-20150203/) (03 February 2015)
 - Editor's Draft: [http://dev.w3.org/html5/eventsource/](http://dev.w3.org/html5/eventsource/)
 - Latest published version: [http://www.w3.org/TR/eventsource/](http://www.w3.org/TR/eventsource/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
@@ -7012,15 +7000,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `EventHandler`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7135,7 +7115,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (17 July 2018)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (30 July 2018)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -7608,7 +7588,6 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/)
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
@@ -7653,6 +7632,7 @@ Normative references to this spec from:
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
+- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
@@ -7990,7 +7970,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (July 30, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (July 31, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8052,7 +8032,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (July 30, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (July 31, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8163,7 +8143,6 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
-- [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
@@ -8202,6 +8181,7 @@ Normative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
+- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -8321,7 +8301,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Jul 30 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Jul 31 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8348,7 +8328,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Jul 30 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Jul 31 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8628,12 +8608,12 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (25 July 2018)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (30 July 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLCanvasElement`, `Navigator`, `Window`
+- Unknown WebIDL names used: `DOMPointReadOnly`, `EventHandler`, `HTMLCanvasElement`, `Navigator`, `Window`
 - Missing references for WebIDL names: 
      * `DOMHighResTimeStamp` defined in [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
      * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -8645,6 +8625,7 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/), related reference "ORIENTATION-SENSOR" uses URL [`https://www.w3.org/TR/orientation-sensor/`](https://www.w3.org/TR/orientation-sensor/)
+     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
 ### Known dependencies on this specification {.dependencies}
