@@ -140,14 +140,23 @@ enum XRTargetRayMode {
   "screen"
 };
 
+[SecureContext, Exposed=Window]
 interface XRInputSource {
   readonly attribute XRHandedness handedness;
   readonly attribute XRTargetRayMode targetRayMode;
 };
 
+[SecureContext, Exposed=Window]
+interface XRRay {
+  readonly attribute DOMPointReadOnly origin;
+  readonly attribute DOMPointReadOnly direction;
+  readonly attribute Float32Array transformMatrix;
+};
+
+[SecureContext, Exposed=Window]
 interface XRInputPose {
   readonly attribute boolean emulatedPosition;
-  readonly attribute Float32Array targetRayMatrix;
+  readonly attribute XRRay targetRay;
   readonly attribute Float32Array? gripMatrix;
 };
 
