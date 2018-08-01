@@ -22,9 +22,12 @@ interface BackgroundFetchManager {
   // TODO: in future this should become an async iterator for BackgroundFetchRegistration objects
 };
 
-dictionary BackgroundFetchOptions {
+dictionary BackgroundFetchUIOptions {
   sequence<IconDefinition> icons = [];
   DOMString title = "";
+};
+
+dictionary BackgroundFetchOptions : BackgroundFetchUIOptions {
   unsigned long long downloadTotal = 0;
 };
 
@@ -72,5 +75,5 @@ dictionary BackgroundFetchEventInit : ExtendableEventInit {
 
 [Constructor(DOMString type, BackgroundFetchEventInit init), Exposed=ServiceWorker]
 interface BackgroundFetchUpdateUIEvent : BackgroundFetchEvent {
-  Promise<void> updateUI(DOMString title);
+  Promise<void> updateUI(optional BackgroundFetchUIOptions options);
 };
