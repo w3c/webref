@@ -55,7 +55,7 @@ interface BackgroundFetchRegistration : EventTarget {
   Promise<sequence<BackgroundFetchRecord>> matchAll(optional RequestInfo request, optional CacheQueryOptions options);
 };
 
-enum BackgroundFetchState { "pending", "succeeded", "failed" };
+enum BackgroundFetchState { "pending", "success", "failure" };
 
 [Exposed=(Window,Worker)]
 interface BackgroundFetchRecord {
