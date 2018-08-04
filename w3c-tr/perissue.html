@@ -26,8 +26,9 @@
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
   <li><a href="https://www.w3.org/TR/html52/">HTML 5.2</a>: <code>Error: Crawl took too long Error: Crawl took too long at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:338:29) at ontimeout (timers.js:498:11) at tryOnTimeout (timers.js:323:5) at Timer.listOnTimeout (timers.js:290:5)</code></li>
+  <li><a href="https://www.w3.org/TR/referrer-policy">Referrer Policy</a>: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41) at &lt;anonymous&gt; at process._tickCallback (internal/process/next_tick.js:188:7)</code></li>
   </ul>
-  <p>=&gt; 1 specification found</p>
+  <p>=&gt; 2 specifications found</p>
   </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
@@ -171,13 +172,12 @@
   <li><a href="https://www.w3.org/TR/2018/CR-pointerevents2-20180522/">Pointer Events</a></li>
   <li><a href="https://w3c.github.io/pointerevents/extension.html">PointerEvents - Level 2 - Extensions</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-proximity-20160719/">Proximity Sensor</a></li>
-  <li><a href="https://www.w3.org/TR/2017/CR-referrer-policy-20170126/">Referrer Policy</a></li>
   <li><a href="https://www.w3.org/TR/2016/CR-secure-contexts-20160915/">Secure Contexts</a></li>
   <li><a href="http://www.w3.org/TR/2013/REC-selectors-api-20130221/">Selectors API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/REC-SRI-20160623/">Subresource Integrity</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   </ul>
-  <p>=&gt; 25 specifications found</p>
+  <p>=&gt; 24 specifications found</p>
   </section>
   <section id="list-of-webidl-names-not-defined-in-the-specifications-crawled" class="level2">
   <h2>List of WebIDL names not defined in the specifications crawled</h2>
@@ -228,6 +228,7 @@
   <li><code>RTCError</code> used in <a href="https://www.w3.org/TR/2018/CR-webrtc-20180621/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>RTCRTPStreamStats</code> used in <a href="https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/">Identifiers for WebRTC's Statistics API</a></li>
   <li><code>ReadableStream</code> used in <a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a>, <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
+  <li><code>ReferrerPolicy</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><code>SVGAngle</code> used in <a href="http://www.w3.org/TR/2015/WD-svg-markers-20150409/">SVG Markers</a></li>
   <li><code>SVGAnimatedAngle</code> used in <a href="http://www.w3.org/TR/2015/WD-svg-markers-20150409/">SVG Markers</a></li>
   <li><code>SVGAnimatedEnumeration</code> used in <a href="http://www.w3.org/TR/2014/CR-css-masking-1-20140826/">CSS Masking Module Level 1</a>, <a href="http://www.w3.org/TR/2015/WD-svg-markers-20150409/">SVG Markers</a></li>
@@ -249,7 +250,7 @@
   <li><code>WorkerType</code> used in <a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a>, <a href="https://www.w3.org/TR/2018/WD-appmanifest-20180719/">Web App Manifest</a></li>
   <li><code>sequence</code> used in <a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
   </ul>
-  <p>=&gt; 66 WebIDL names found</p>
+  <p>=&gt; 67 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -611,7 +612,7 @@
   <li><a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-break/"><code>https://www.w3.org/TR/css-break/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/2018/WD-css-grid-2-20180628/">CSS Grid Layout Module Level 2</a> links to:
+  <li><a href="https://www.w3.org/TR/2018/WD-css-grid-2-20180804/">CSS Grid Layout Module Level 2</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-align/"><code>https://www.w3.org/TR/css3-align/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a> but does not list it in its references</li>
@@ -1172,7 +1173,11 @@
   <li><a href="https://www.w3.org/TR/2013/WD-selectors4-20130502/"><code>https://www.w3.org/TR/2013/WD-selectors4-20130502/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/selectors4/"><code>https://www.w3.org/TR/selectors4/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a> links to <a href="https://w3c.github.io/push-api/"><code>https://w3c.github.io/push-api/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/push-api/"><code>https://w3c.github.io/push-api/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/webappsec-referrer-policy/"><code>https://w3c.github.io/webappsec-referrer-policy/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="http://www.w3.org/TR/2016/REC-SRI-20160623/">Subresource Integrity</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but does not list it in its references</li>
@@ -1242,7 +1247,7 @@
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> links to <a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 584 missing references for links found in 141 specifications</p>
+  <p>=&gt; 585 missing references for links found in 141 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -1376,7 +1381,7 @@
   <li><a href="https://www.w3.org/TR/css3-writing-modes/"><code>https://www.w3.org/TR/css3-writing-modes/</code></a> but related reference &quot;CSS3-WRITING-MODES&quot; uses URL <a href="https://www.w3.org/TR/css-writing-modes-3/"><code>https://www.w3.org/TR/css-writing-modes-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS3VAL&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/2018/WD-css-grid-2-20180628/">CSS Grid Layout Module Level 2</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2018/WD-css-grid-2-20180804/">CSS Grid Layout Module Level 2</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="http://www.w3.org/TR/2012/CR-css3-images-20120417/">CSS Image Values and Replaced Content Module Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/media-frags/"><code>https://www.w3.org/TR/media-frags/</code></a> but related reference &quot;MEDIA-FRAGS&quot; uses URL <a href="http://www.w3.org/TR/2012/PR-media-frags-20120315/"><code>http://www.w3.org/TR/2012/PR-media-frags-20120315/</code></a></li>
@@ -1613,12 +1618,6 @@
   <li><a href="https://www.w3.org/TR/service-workers/"><code>https://www.w3.org/TR/service-workers/</code></a> but related reference &quot;SERVICE-WORKERS&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   <li><a href="https://www.w3.org/TR/encoding/"><code>https://www.w3.org/TR/encoding/</code></a> but related reference &quot;ENCODING&quot; uses URL <a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/2017/CR-referrer-policy-20170126/">Referrer Policy</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/2010/REC-wsc-ui-20100812/"><code>https://www.w3.org/TR/2010/REC-wsc-ui-20100812/</code></a> but related reference &quot;WSC-UI&quot; uses URL <a href="https://www.w3.org/TR/wsc-ui/"><code>https://www.w3.org/TR/wsc-ui/</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
-  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but related reference &quot;DOM4&quot; uses URL <a href="https://www.w3.org/TR/dom"><code>https://www.w3.org/TR/dom</code></a></li>
-  </ul></li>
   <li><a href="https://w3c.github.io/reporting/">Reporting API 1</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
@@ -1669,11 +1668,7 @@
   </ul></li>
   <li><a href="http://www.w3.org/TR/2013/REC-selectors-api-20130221/">Selectors API Level 1</a> links to <a href="https://www.w3.org/TR/css3-selectors/"><code>https://www.w3.org/TR/css3-selectors/</code></a> but related reference &quot;SELECT&quot; uses URL <a href="http://www.w3.org/TR/2011/REC-css3-selectors-20110929/"><code>http://www.w3.org/TR/2011/REC-css3-selectors-20110929/</code></a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-selectors-4-20180202/">Selectors Level 4</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a> links to:
-  <ul>
-  <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-referrer-policy/"><code>https://w3c.github.io/webappsec-referrer-policy/</code></a> but related reference &quot;REFERRER-POLICY&quot; uses URL <a href="https://www.w3.org/TR/referrer-policy/"><code>https://www.w3.org/TR/referrer-policy/</code></a></li>
-  </ul></li>
+  <li><a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a> links to <a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a> links to:
   <ul>
   <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but related reference &quot;DOM-Level-3-Core&quot; uses URL <a href="http://www.w3.org/TR/DOM-Level-3-Core/"><code>http://www.w3.org/TR/DOM-Level-3-Core/</code></a></li>
@@ -1760,7 +1755,7 @@
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 297 inconsistent references for links found in 138 specifications</p>
+  <p>=&gt; 293 inconsistent references for links found in 137 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
