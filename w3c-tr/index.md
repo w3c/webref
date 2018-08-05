@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 04, 2018
+% August 05, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -642,7 +642,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (August 04, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (August 05, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -2606,6 +2606,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
@@ -4392,7 +4393,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AbortSignal`, `ReadableStream`, `ReferrerPolicy`, `Window`, `WindowOrWorkerGlobalScope`
+- Unknown WebIDL names used: `AbortSignal`, `ReadableStream`, `Window`, `WindowOrWorkerGlobalScope`
 - Missing references for links: 
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
 
@@ -4414,6 +4415,7 @@ Normative references to this spec from:
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
+- [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
@@ -4950,6 +4952,7 @@ Normative references to this spec from:
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
+- [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
@@ -5107,6 +5110,7 @@ Normative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
@@ -5250,6 +5254,7 @@ Normative references to this spec from:
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
+- [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
@@ -5368,7 +5373,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (August 04, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (August 05, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6377,7 +6382,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (August 04, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (August 05, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6531,29 +6536,30 @@ Informative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 
 
-## Referrer Policy {data-spec=true data-error=true}
+## Referrer Policy {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/referrer-policy)
-- Latest published version: [https://www.w3.org/TR/referrer-policy](https://www.w3.org/TR/referrer-policy)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/) (26 January 2017)
+- Editor's Draft: [https://w3c.github.io/webappsec-referrer-policy/](https://w3c.github.io/webappsec-referrer-policy/)
+- Latest published version: [https://www.w3.org/TR/referrer-policy/](https://www.w3.org/TR/referrer-policy/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - Repository: [GitHub w3c/webappsec-referrer-policy](https://github.com/w3c/webappsec-referrer-policy)
 - Shortname: referrer-policy
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Spec uses WebIDL but does not reference it normatively
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2010/REC-wsc-ui-20100812/`](https://www.w3.org/TR/2010/REC-wsc-ui-20100812/), related reference "WSC-UI" uses URL [`https://www.w3.org/TR/wsc-ui/`](https://www.w3.org/TR/wsc-ui/)
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "DOM4" uses URL [`https://www.w3.org/TR/dom`](https://www.w3.org/TR/dom)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 
@@ -6771,7 +6777,6 @@ Normative references to this spec from:
 - [Motion Path Module Level 1](https://www.w3.org/TR/2017/WD-motion-1-20170711/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
-- [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
 - [SVG Strokes](http://www.w3.org/TR/2015/WD-svg-strokes-20150409/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
@@ -6864,6 +6869,7 @@ Normative references to this spec from:
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180718/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
+- [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
@@ -7063,9 +7069,9 @@ Informative references to this spec from:
     * `Worker` also defined in [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - Missing references for links: 
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
-     * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+     * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/), related reference "REFERRER-POLICY" uses URL [`https://www.w3.org/TR/referrer-policy/`](https://www.w3.org/TR/referrer-policy/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7200,29 +7206,24 @@ Informative references to this spec from:
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 
 
-## SVG Markers {data-spec=true data-anomaly=true data-hasUnexpectedIdl=true data-unknownIdlNames=true data-missingLinkRef=true}
+## SVG Markers {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2015/WD-svg-markers-20150409/) (09 April 2015)
-- Editor's Draft: [https://svgwg.org/specs/markers/](https://svgwg.org/specs/markers/)
-- Latest published version: [http://www.w3.org/TR/svg-markers/](http://www.w3.org/TR/svg-markers/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/svg-markers)
+- Latest published version: [https://www.w3.org/TR/svg-markers](https://www.w3.org/TR/svg-markers)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
 - Shortname: svg-markers
 
 ### Potential issue(s) {.anomalies}
 
-- Unexpected WebIDL definitions found
-- Unknown WebIDL names used: `DOMPoint`, `DOMPointReadOnly`, `SVGAngle`, `SVGAnimatedAngle`, `SVGAnimatedEnumeration`, `SVGAnimatedLength`, `SVGElement`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/2014/CR-css-masking-1-20140826/`](https://www.w3.org/TR/2014/CR-css-masking-1-20140826/)
-     * [`https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/`](https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
-     * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/)
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/)
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/2012/WD-css3-values-20120308/`](https://www.w3.org/TR/2012/WD-css3-values-20120308/)
-     * [`https://www.w3.org/TR/2014/WD-geometry-1-20140522/`](https://www.w3.org/TR/2014/WD-geometry-1-20140522/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7470,6 +7471,7 @@ Normative references to this spec from:
 - [Motion Path Module Level 1](https://www.w3.org/TR/2017/WD-motion-1-20170711/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
+- [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
@@ -7658,6 +7660,7 @@ Normative references to this spec from:
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
+- [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
@@ -8004,7 +8007,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (August 04, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (August 05, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8066,7 +8069,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (August 04, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (August 05, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8208,6 +8211,7 @@ Normative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
@@ -8335,7 +8339,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Aug 04 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Aug 05 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8362,7 +8366,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Aug 04 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Aug 05 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8589,7 +8593,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (3 August 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (4 August 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
