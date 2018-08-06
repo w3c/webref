@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 05, 2018
+% August 06, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -642,7 +642,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (August 05, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (August 06, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5373,7 +5373,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (August 05, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (August 06, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5445,7 +5445,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Keyboard Lock {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Keyboard Lock {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true}
 
 ### Spec info {.info}
 
@@ -5456,6 +5456,8 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Navigator`, `Window`
+- WebIDL names also defined elsewhere: 
+    * `Keyboard` also defined in [Keyboard Map](https://wicg.github.io/keyboard-map/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5464,17 +5466,19 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Keyboard Map {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## Keyboard Map {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/keyboard-map/) (20 July 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/keyboard-map/) (5 August 2018)
 - Repository: [GitHub wicg/keyboard-map](https://github.com/wicg/keyboard-map)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- Unknown WebIDL names used: `Navigator`, `Window`
+- WebIDL names also defined elsewhere: 
+    * `Keyboard` also defined in [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - Missing references for links: 
      * [`https://w3c.github.io/keyboard-lock/`](https://w3c.github.io/keyboard-lock/)
 - Inconsistent references for links: 
@@ -6382,7 +6386,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (August 05, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (August 06, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6777,6 +6781,7 @@ Normative references to this spec from:
 - [Motion Path Module Level 1](https://www.w3.org/TR/2017/WD-motion-1-20170711/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
+- [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
 - [SVG Strokes](http://www.w3.org/TR/2015/WD-svg-strokes-20150409/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
@@ -7206,24 +7211,29 @@ Informative references to this spec from:
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 
 
-## SVG Markers {data-spec=true data-error=true}
+## SVG Markers {data-spec=true data-anomaly=true data-hasUnexpectedIdl=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/svg-markers)
-- Latest published version: [https://www.w3.org/TR/svg-markers](https://www.w3.org/TR/svg-markers)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2015/WD-svg-markers-20150409/) (09 April 2015)
+- Editor's Draft: [https://svgwg.org/specs/markers/](https://svgwg.org/specs/markers/)
+- Latest published version: [http://www.w3.org/TR/svg-markers/](http://www.w3.org/TR/svg-markers/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
 - Shortname: svg-markers
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unexpected WebIDL definitions found
+- Unknown WebIDL names used: `DOMPoint`, `DOMPointReadOnly`, `SVGAngle`, `SVGAnimatedAngle`, `SVGAnimatedEnumeration`, `SVGAnimatedLength`, `SVGElement`
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2014/CR-css-masking-1-20140826/`](https://www.w3.org/TR/2014/CR-css-masking-1-20140826/)
+     * [`https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/`](https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
+     * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+     * [`https://www.w3.org/TR/2012/WD-css3-values-20120308/`](https://www.w3.org/TR/2012/WD-css3-values-20120308/)
+     * [`https://www.w3.org/TR/2014/WD-geometry-1-20140522/`](https://www.w3.org/TR/2014/WD-geometry-1-20140522/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7644,7 +7654,6 @@ Normative references to this spec from:
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
-- [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Network Information API](https://wicg.github.io/netinfo/)
@@ -8007,7 +8016,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (August 05, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (August 06, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8069,7 +8078,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (August 05, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (August 06, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8339,7 +8348,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Aug 05 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Aug 06 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8366,7 +8375,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Aug 05 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Aug 06 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8593,7 +8602,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (4 August 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (5 August 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
