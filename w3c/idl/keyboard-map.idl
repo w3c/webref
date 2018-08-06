@@ -3,7 +3,8 @@
 // "Keyboard Map" spec.
 // See: https://wicg.github.io/keyboard-map/
 
-partial interface Navigator : EventTarget {
+[Exposed=Window]
+partial interface Navigator {
   [SecureContext, SameObject] readonly attribute Keyboard keyboard;
 };
 
