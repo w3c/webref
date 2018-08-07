@@ -13,13 +13,11 @@ dictionary MIDIOptions {
 };
 
 interface MIDIInputMap {
-
-  readonlymaplike<DOMString, MIDIInput>;
+  readonly maplike<DOMString, MIDIInput>;
 };
 
 interface MIDIOutputMap {
-
-  readonlymaplike<DOMString, MIDIOutput>;
+  readonly maplike<DOMString, MIDIOutput>;
 };
 
 interface MIDIAccess : EventTarget {
