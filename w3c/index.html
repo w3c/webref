@@ -254,12 +254,12 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="battery-status-api" class="level2" data-spec="true" data-error="true">
+  <section id="battery-status-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Battery Status API</h2>
   <section id="spec-info-6" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="http://www.w3.org/TR/battery-status/">Latest published version</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/battery/">Editor's Draft</a> (August 10, 2018)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/battery/" class="uri">https://w3c.github.io/battery/</a></li>
   <li>Latest published version: <a href="http://www.w3.org/TR/battery-status/" class="uri">http://www.w3.org/TR/battery-status/</a></li>
   <li>Latest published status: <a href="http://www.w3.org/TR/2016/CR-battery-status-20160707/">Candidate Recommendation</a></li>
@@ -269,8 +269,13 @@
   </section>
   <section id="potential-issues-6" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)     at Object.onceWrapper (events.js:317:30)     at emitTwo (events.js:126:13)     at ChildProcess.emit (events.js:214:7)     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>Navigator</code>, <code>Window</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://w3c.github.io/dom/">W3C DOM 4.1</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-6" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -5179,7 +5184,7 @@
   <section id="spec-info-115" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://fetch.spec.whatwg.org/">Living Standard</a> (31 July 2018)</li>
+  <li>Crawled version: <a href="https://fetch.spec.whatwg.org/">Living Standard</a> (10 August 2018)</li>
   <li>Repository: <a href="https://github.com/whatwg/fetch">GitHub whatwg/fetch</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -5724,6 +5729,7 @@
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a></li>
   <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a></li>
@@ -5863,6 +5869,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a></li>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://drafts.csswg.org/css-ui-4/">CSS Basic User Interface Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-ui/">CSS Basic User Interface Module Level 4</a></li>
@@ -6045,6 +6052,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://drafts.csswg.org/css-content/">CSS Generated Content Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-lists-3/">CSS Lists Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-scroll-snap-1/">CSS Scroll Snap Module Level 1</a></li>
@@ -6235,6 +6243,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-content/">CSS Generated Content Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-lists-3/">CSS Lists Module Level 3</a></li>
@@ -8150,6 +8159,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
@@ -9179,6 +9189,7 @@
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2dcontext/">HTML Canvas 2D Context</a></li>
@@ -9551,6 +9562,7 @@
   <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
   <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://drafts.css-houdini.org/box-tree-api/">Box Tree API Level 1</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
@@ -10050,6 +10062,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://drafts.csswg.org/css-content/">CSS Generated Content Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-lists-3/">CSS Lists Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-scroll-snap-1/">CSS Scroll Snap Module Level 1</a></li>
@@ -10281,7 +10294,7 @@
   <section id="spec-info-231" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/webusb/">Initial URL</a> (9 August 2018)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/webusb/">Initial URL</a> (10 August 2018)</li>
   <li>Repository: <a href="https://github.com/wicg/webusb">GitHub wicg/webusb</a></li>
   <li>Shortname: no shortname</li>
   </ul>

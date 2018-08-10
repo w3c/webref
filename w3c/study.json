@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-08-10T06:02:19.835Z",
+  "date": "2018-08-10T08:48:27.135Z",
   "stats": {
     "crawled": 236,
-    "errors": 2,
+    "errors": 1,
     "studied": 236
   },
   "results": [
@@ -376,25 +376,42 @@
     {
       "title": "Battery Status API",
       "shortname": "battery-status",
+      "date": "August 10, 2018",
       "url": "https://www.w3.org/TR/battery-status/",
       "latest": "http://www.w3.org/TR/battery-status/",
       "datedUrl": "http://www.w3.org/TR/2016/CR-battery-status-20160707/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/battery/",
-      "crawled": "http://www.w3.org/TR/battery-status/",
+      "crawled": "https://w3c.github.io/battery/",
       "repository": "https://github.com/w3c/battery",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://w3c.github.io/dom/",
+                "date": "23 April 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -1476,7 +1493,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -13207,7 +13224,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -13440,7 +13457,7 @@
     },
     {
       "title": "Fetch Standard",
-      "date": "31 July 2018",
+      "date": "10 August 2018",
       "url": "https://fetch.spec.whatwg.org/",
       "crawled": "https://fetch.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/fetch",
@@ -13746,7 +13763,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -14669,6 +14686,12 @@
               "date": "9 August 2018"
             },
             {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/",
+              "date": "August 10, 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://w3c.github.io/beacon/",
@@ -14942,7 +14965,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -15452,7 +15475,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -15485,6 +15508,12 @@
               "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
               "crawled": "https://w3c.github.io/aria/",
               "date": "31 July 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/",
+              "date": "August 10, 2018"
             },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
@@ -16012,7 +16041,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -16402,7 +16431,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -16430,6 +16459,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/",
+              "date": "August 10, 2018"
+            },
             {
               "url": "https://www.w3.org/TR/css-content-3/",
               "title": "CSS Generated Content Module Level 3",
@@ -16872,7 +16907,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -17268,7 +17303,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -17296,6 +17331,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/",
+              "date": "August 10, 2018"
+            },
             {
               "url": "https://www.w3.org/TR/credential-management-1/",
               "title": "Credential Management Level 1",
@@ -18838,7 +18879,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -19701,7 +19742,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             }
           ],
           "informative": [
@@ -20239,7 +20280,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -21177,6 +21218,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/",
+              "date": "August 10, 2018"
+            },
+            {
               "url": "https://wicg.github.io/cors-rfc1918/",
               "title": "CORS and RFC1918",
               "crawled": "https://wicg.github.io/cors-rfc1918/",
@@ -21314,7 +21361,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             }
           ]
         },
@@ -22123,7 +22170,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -22188,7 +22235,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             }
           ],
           "informative": [
@@ -22831,7 +22878,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -23385,7 +23432,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -23769,7 +23816,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -24472,6 +24519,12 @@
               "date": "9 August 2018"
             },
             {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/",
+              "date": "August 10, 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://w3c.github.io/beacon/",
@@ -24673,7 +24726,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -25159,7 +25212,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -25664,7 +25717,7 @@
                 "url": "https://fetch.spec.whatwg.org/",
                 "title": "Fetch Standard",
                 "crawled": "https://fetch.spec.whatwg.org/",
-                "date": "31 July 2018"
+                "date": "10 August 2018"
               }
             ]
           },
@@ -25945,7 +25998,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -26347,7 +26400,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -26375,6 +26428,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/",
+              "date": "August 10, 2018"
+            },
             {
               "url": "https://www.w3.org/TR/css-content-3/",
               "title": "CSS Generated Content Module Level 3",
@@ -26943,7 +27002,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "9 August 2018",
+      "date": "10 August 2018",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
@@ -27299,7 +27358,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
