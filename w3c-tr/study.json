@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-08-10T06:05:29.559Z",
+  "date": "2018-08-10T08:51:04.280Z",
   "stats": {
     "crawled": 236,
-    "errors": 5,
+    "errors": 2,
     "studied": 236
   },
   "results": [
@@ -444,26 +444,23 @@
     {
       "title": "Audio Output Devices API",
       "shortname": "audio-output",
-      "date": "03 October 2017",
       "url": "https://www.w3.org/TR/audio-output/",
       "latest": "https://www.w3.org/TR/audio-output/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/mediacapture-output/",
-      "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
+      "crawled": "https://www.w3.org/TR/audio-output/",
       "repository": "https://github.com/w3c/mediacapture-output",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "HTMLMediaElement"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -872,6 +869,12 @@
               "date": "12 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
+            },
+            {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -1092,6 +1095,12 @@
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
               "date": "13 September 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -1106,6 +1115,12 @@
               "title": "Pointer Events",
               "crawled": "https://www.w3.org/TR/2018/CR-pointerevents2-20180522/",
               "date": "Level 2"
+            },
+            {
+              "url": "https://www.w3.org/TR/selectors-api/",
+              "title": "Selectors API Level 1",
+              "crawled": "http://www.w3.org/TR/2013/REC-selectors-api-20130221/",
+              "date": "21 February 2013"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -1205,6 +1220,12 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -1602,6 +1623,12 @@
             "name": "Worklet",
             "refs": [
               {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+                "date": "9 August 2018"
+              },
+              {
                 "url": "https://www.w3.org/TR/webaudio/",
                 "title": "Web Audio API",
                 "crawled": "https://www.w3.org/TR/2018/WD-webaudio-20180619/",
@@ -1691,7 +1718,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -1716,6 +1743,12 @@
               "title": "Web App Manifest",
               "crawled": "https://www.w3.org/TR/2018/WD-appmanifest-20180719/",
               "date": "Living Document"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -2257,6 +2290,12 @@
               "date": "31 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
@@ -2445,6 +2484,12 @@
               "date": "13 April 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-pseudo-4/",
               "title": "CSS Pseudo-Elements Module Level 4",
               "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
@@ -2543,6 +2588,12 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
@@ -2832,6 +2883,12 @@
               "date": "9 August 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
@@ -3044,6 +3101,12 @@
               "date": "12 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
@@ -3060,6 +3123,12 @@
               "title": "CSS Overflow Module Level 4",
               "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
               "date": "13 June 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -3168,6 +3237,12 @@
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
               "date": "07 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -3791,6 +3866,12 @@
               "date": "3 August 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
@@ -3905,6 +3986,12 @@
               "title": "CSSOM View Module",
               "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
               "date": "17 March 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -4066,6 +4153,12 @@
               "date": "12 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
+            },
+            {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -4094,6 +4187,12 @@
               "title": "CSS Overflow Module Level 4",
               "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
               "date": "13 June 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-position-3/",
@@ -4184,6 +4283,12 @@
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
               "date": "2 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -5039,6 +5144,12 @@
               "date": "12 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-multicol-1/",
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/",
@@ -5609,6 +5720,12 @@
               "date": "21 June 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
@@ -5752,6 +5869,12 @@
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/",
               "date": "21 June 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -6346,24 +6469,31 @@
     {
       "title": "CSS Logical Properties and Values Level 1",
       "shortname": "css-logical-1",
-      "date": "",
+      "date": "18 May 2017",
       "url": "https://www.w3.org/TR/css-logical-1/",
-      "latest": "https://www.w3.org/TR/css-logical-1",
-      "crawled": "https://www.w3.org/TR/css-logical-1",
+      "latest": "https://www.w3.org/TR/css-logical-1/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://drafts.csswg.org/css-logical/",
+      "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css-writing-modes/",
+          "https://www.w3.org/TR/css3-positioning/",
+          "https://www.w3.org/TR/css3-ui/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -6395,7 +6525,7 @@
             }
           ]
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -6982,6 +7112,12 @@
               "date": "12 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://wicg.github.io/CSS-Parser-API/",
               "title": "CSS Parser API",
               "crawled": "https://wicg.github.io/CSS-Parser-API/",
@@ -7052,6 +7188,12 @@
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
               "date": "13 September 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -7606,29 +7748,76 @@
     {
       "title": "CSS Painting API Level 1",
       "shortname": "css-paint-api-1",
-      "date": "",
+      "date": "9 August 2018",
       "url": "https://www.w3.org/TR/css-paint-api-1/",
-      "latest": "https://www.w3.org/TR/css-paint-api-1",
-      "crawled": "https://www.w3.org/TR/css-paint-api-1",
+      "latest": "https://www.w3.org/TR/css-paint-api-1/",
+      "datedUrl": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://drafts.css-houdini.org/css-paint-api-1/",
+      "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://www.w3.org/TR/2018/WD-webaudio-20180619/",
+                "date": "19 June 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "http://www.w3.org/TR/2016/WD-worklets-1-20160607/",
+                "date": "07 June 2016"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css-properties-values-api-1/",
+          "https://www.w3.org/TR/css4-images/",
+          "https://www.w3.org/TR/css3-background/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/cssom-view/",
+            "ref": {
+              "name": "CSSOM-VIEW-1",
+              "url": "https://www.w3.org/TR/cssom-view-1/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/css3-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/worklets-1/",
+              "title": "Worklets Level 1",
+              "crawled": "http://www.w3.org/TR/2016/WD-worklets-1-20160607/",
+              "date": "07 June 2016"
+            }
+          ]
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -7746,6 +7935,12 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -8347,6 +8542,12 @@
               "date": "12 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
@@ -8927,6 +9128,12 @@
               "date": "31 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://wicg.github.io/CSS-Parser-API/",
               "title": "CSS Parser API",
               "crawled": "https://wicg.github.io/CSS-Parser-API/",
@@ -9361,6 +9568,12 @@
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/",
               "date": "4 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
             },
             {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -10037,7 +10250,6 @@
           "DOMMatrix",
           "DOMMatrixReadOnly",
           "LayoutWorklet",
-          "PaintWorklet",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -10056,6 +10268,17 @@
                 "title": "Web Workers",
                 "crawled": "http://www.w3.org/TR/2015/WD-workers-20150924/",
                 "date": "24 September 2015"
+              }
+            ]
+          },
+          {
+            "name": "PaintWorklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+                "date": "9 August 2018"
               }
             ]
           }
@@ -10097,6 +10320,12 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://wicg.github.io/CSS-Parser-API/",
@@ -10355,6 +10584,12 @@
               "date": "12 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
+            },
+            {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -10395,6 +10630,12 @@
               "title": "CSS Page Floats",
               "crawled": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/",
               "date": "15 September 2015"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-position-3/",
@@ -10575,6 +10816,12 @@
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/",
               "date": "15 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -10947,6 +11194,12 @@
               "date": "12 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
@@ -11150,6 +11403,12 @@
               "date": "21 June 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-logical-1/",
+              "title": "CSS Logical Properties and Values Level 1",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+              "date": "18 May 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
@@ -11301,6 +11560,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://drafts.csswg.org/css-scroll-anchoring-1/",
               "title": "CSS Scroll Anchoring Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scroll-anchoring-1/",
@@ -11371,6 +11636,12 @@
               "title": "User Interface Security and the Visibility API",
               "crawled": "http://www.w3.org/TR/2016/WD-UISecurity-20160607/",
               "date": "7 June 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -11552,6 +11823,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
+            },
+            {
               "url": "https://xhr.spec.whatwg.org/",
               "title": "XMLHttpRequest Standard",
               "crawled": "https://xhr.spec.whatwg.org/",
@@ -11633,7 +11910,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -11853,7 +12130,7 @@
     },
     {
       "title": "Fetch Standard",
-      "date": "31 July 2018",
+      "date": "10 August 2018",
       "url": "https://fetch.spec.whatwg.org/",
       "crawled": "https://fetch.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/fetch",
@@ -12017,6 +12294,12 @@
               "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
               "date": "7 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -12209,7 +12492,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -12509,6 +12792,12 @@
               "title": "The Screen Orientation API",
               "crawled": "https://www.w3.org/TR/2018/WD-screen-orientation-20180706/",
               "date": "06 July 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -12869,6 +13158,12 @@
               "date": "7 June 2016"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
+            },
+            {
               "url": "https://immersive-web.github.io/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/",
@@ -13118,12 +13413,6 @@
               "date": "4 April 2018"
             },
             {
-              "url": "https://www.w3.org/TR/audio-output/",
-              "title": "Audio Output Devices API",
-              "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
-              "date": "03 October 2017"
-            },
-            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/",
@@ -13256,6 +13545,12 @@
               "date": "31 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://wicg.github.io/CSS-Parser-API/",
               "title": "CSS Parser API",
               "crawled": "https://wicg.github.io/CSS-Parser-API/",
@@ -13337,7 +13632,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -13796,6 +14091,12 @@
               "date": "15 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
+            },
+            {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
@@ -13817,7 +14118,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -14218,6 +14519,12 @@
               "date": "31 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://wicg.github.io/CSS-Parser-API/",
               "title": "CSS Parser API",
               "crawled": "https://wicg.github.io/CSS-Parser-API/",
@@ -14287,7 +14594,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -14560,6 +14867,12 @@
               "date": "15 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
+            },
+            {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
@@ -14569,7 +14882,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -14868,6 +15181,12 @@
               "date": "31 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://wicg.github.io/CSS-Parser-API/",
               "title": "CSS Parser API",
               "crawled": "https://wicg.github.io/CSS-Parser-API/",
@@ -14937,7 +15256,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -15228,6 +15547,12 @@
               "date": "15 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
@@ -15237,7 +15562,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -15972,12 +16297,6 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/audio-output/",
-              "title": "Audio Output Devices API",
-              "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
-              "date": "03 October 2017"
-            },
             {
               "url": "https://www.w3.org/TR/html-media-capture/",
               "title": "HTML Media Capture",
@@ -16733,7 +17052,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -17181,6 +17500,12 @@
               "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
               "date": "7 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -17625,7 +17950,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             }
           ],
           "informative": [
@@ -17737,6 +18062,12 @@
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
               "date": "August 10, 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -18186,7 +18517,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -18283,15 +18614,20 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/webdriver/webdriver-spec.html"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
           {
             "link": "https://w3c.github.io/webappsec-csp/",
             "ref": {
               "name": "CSP3",
               "url": "https://www.w3.org/TR/CSP3/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webdriver/webdriver-spec.html",
+            "ref": {
+              "name": "WebDriver",
+              "url": "https://www.w3.org/TR/webdriver1/"
             }
           }
         ],
@@ -19122,7 +19458,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             }
           ]
         },
@@ -19187,24 +19523,34 @@
     {
       "title": "Selectors API Level 1",
       "shortname": "selectors-api",
-      "date": "",
+      "date": "21 February 2013",
       "url": "https://www.w3.org/TR/selectors-api/",
-      "latest": "https://www.w3.org/TR/selectors-api",
-      "crawled": "https://www.w3.org/TR/selectors-api",
+      "latest": "http://www.w3.org/TR/selectors-api/",
+      "datedUrl": "http://www.w3.org/TR/2013/REC-selectors-api-20130221/",
+      "datedStatus": "Recommendation",
+      "crawled": "http://www.w3.org/TR/2013/REC-selectors-api-20130221/",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css3-selectors/",
+            "ref": {
+              "name": "SELECT",
+              "url": "http://www.w3.org/TR/2011/REC-css3-selectors-20110929/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -19724,7 +20070,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -19782,7 +20128,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             }
           ],
           "informative": [
@@ -20172,6 +20518,12 @@
               "title": "W3C DOM 4.1",
               "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
               "date": "1 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             }
           ],
           "informative": []
@@ -20230,6 +20582,12 @@
               "title": "UI Events KeyboardEvent key Values",
               "crawled": "https://www.w3.org/TR/2017/CR-uievents-key-20170601/",
               "date": "01 June 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             }
           ],
           "informative": []
@@ -20288,6 +20646,12 @@
               "title": "UI Events KeyboardEvent code Values",
               "crawled": "https://www.w3.org/TR/2017/CR-uievents-code-20170601/",
               "date": "01 June 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             }
           ],
           "informative": []
@@ -20390,7 +20754,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -20505,6 +20869,12 @@
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/",
               "date": "15 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -20846,6 +21216,12 @@
               "date": "17 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-position-3/",
               "title": "CSS Positioned Layout Module Level 3",
               "crawled": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/",
@@ -20921,7 +21297,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -21110,6 +21486,12 @@
               "date": "12 June 2018"
             },
             {
+              "url": "https://www.w3.org/TR/selectors-api/",
+              "title": "Selectors API Level 1",
+              "crawled": "http://www.w3.org/TR/2013/REC-selectors-api-20130221/",
+              "date": "21 February 2013"
+            },
+            {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
@@ -21254,6 +21636,12 @@
               "date": "24 September 2015"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
+            },
+            {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
@@ -21263,7 +21651,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -21547,6 +21935,12 @@
           {
             "name": "Worklet",
             "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+                "date": "9 August 2018"
+              },
               {
                 "url": "https://www.w3.org/TR/worklets-1/",
                 "title": "Worklets Level 1",
@@ -22399,6 +22793,12 @@
               "date": "31 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://wicg.github.io/CSS-Parser-API/",
               "title": "CSS Parser API",
               "crawled": "https://wicg.github.io/CSS-Parser-API/",
@@ -22468,7 +22868,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -22765,6 +23165,12 @@
               "date": "15 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
@@ -22774,7 +23180,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -22909,6 +23315,12 @@
             "name": "Worklet",
             "refs": [
               {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+                "date": "9 August 2018"
+              },
+              {
                 "url": "https://www.w3.org/TR/webaudio/",
                 "title": "Web Audio API",
                 "crawled": "https://www.w3.org/TR/2018/WD-webaudio-20180619/",
@@ -22946,26 +23358,55 @@
       }
     },
     {
-      "title": "webdriver",
+      "title": "WebDriver",
       "shortname": "webdriver",
-      "date": "",
+      "date": "05 June 2018",
       "url": "https://www.w3.org/TR/webdriver/",
-      "latest": "https://www.w3.org/TR/webdriver",
-      "crawled": "https://www.w3.org/TR/webdriver",
+      "latest": "https://www.w3.org/TR/webdriver1/",
+      "datedUrl": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+      "datedStatus": "Recommendation",
+      "edDraft": "https://w3c.github.io/webdriver/",
+      "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+      "repository": "https://github.com/w3c/webdriver",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/editing/contentEditable.html",
+          "https://w3c.github.io/editing/execCommand.html"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP3",
+              "url": "https://www.w3.org/TR/CSP3/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/DOM-Parsing/",
+            "ref": {
+              "name": "DOM-PARSING",
+              "url": "https://www.w3.org/TR/DOM-Parsing/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/uievents/",
+            "ref": {
+              "name": "UI-EVENTS",
+              "url": "https://www.w3.org/TR/uievents/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -22977,7 +23418,7 @@
           ],
           "informative": []
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -23195,12 +23636,6 @@
               "date": "20 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/audio-output/",
-              "title": "Audio Output Devices API",
-              "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
-              "date": "03 October 2017"
-            },
-            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/",
@@ -23297,6 +23732,12 @@
               "date": "12 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://wicg.github.io/CSS-Parser-API/",
               "title": "CSS Parser API",
               "crawled": "https://wicg.github.io/CSS-Parser-API/",
@@ -23360,7 +23801,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -23783,6 +24224,12 @@
               "date": "15 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
+              "date": "05 June 2018"
+            },
+            {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
@@ -23804,7 +24251,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "9 August 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -24071,7 +24518,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "9 August 2018",
+      "date": "10 August 2018",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
@@ -24319,6 +24766,12 @@
             "name": "Worklet",
             "refs": [
               {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+                "date": "9 August 2018"
+              },
+              {
                 "url": "https://www.w3.org/TR/webaudio/",
                 "title": "Web Audio API",
                 "crawled": "https://www.w3.org/TR/2018/WD-webaudio-20180619/",
@@ -24343,6 +24796,12 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-paint-api-1/",
+              "title": "CSS Painting API Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -24418,7 +24877,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "31 July 2018"
+              "date": "10 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
