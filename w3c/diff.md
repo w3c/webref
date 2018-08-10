@@ -1,6 +1,6 @@
-% Diff between report from "August 09, 2018" and reference report from "August 08, 2018"
+% Diff between report from "August 10, 2018" and reference report from "August 08, 2018"
 % Reffy
-% August 09, 2018
+% August 10, 2018
 
 ## Accelerated Shape Detection in Images
 
@@ -10,12 +10,33 @@
 - Missing references for WebIDL names: *DEL* Worker
 
 
+## Battery Status API
+
+- URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/battery-status/)
+- Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
+- Repository: [GitHub w3c/battery](https://github.com/w3c/battery)
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+
+
 ## CORS and RFC1918
 
 - URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
 - Crawled version: [Initial URL](https://wicg.github.io/cors-rfc1918/)
 - Repository: [GitHub wicg/cors-rfc1918](https://github.com/wicg/cors-rfc1918)
 - Unknown WebIDL names used: *DEL* WorkerGlobalScope
+
+
+## CSS Exclusions Module Level 1
+
+- URL: [https://drafts.csswg.org/css-exclusions-1/](https://drafts.csswg.org/css-exclusions-1/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-exclusions-1/)
+- Missing references for links: *INS* https://www.w3.org/TR/css3-box/
 
 
 ## CSS Font Loading Module Level 3
@@ -90,6 +111,14 @@
 - Crawled version: [Initial URL](https://wicg.github.io/netinfo/)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Missing references for WebIDL names: *DEL* Worker
+
+
+## Payment Handler API
+
+- URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
+- Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
+- Missing references for links: *DEL* https://w3c.github.io/payment-method-manifest/
 
 
 ## Performance Timeline Level 2
