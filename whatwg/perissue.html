@@ -21,14 +21,6 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>226 specifications were crawled in this report.</p>
-  <section id="specifications-that-could-not-be-rendered" class="level2">
-  <h2>Specifications that could not be rendered</h2>
-  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
-  <ul>
-  <li><a href="https://www.w3.org/TR/css-overflow-3/">CSS Overflow Module Level 3</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
-  </ul>
-  <p>=&gt; 1 specification found</p>
-  </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
   <ul>
@@ -130,6 +122,7 @@
   <h2>List of WebIDL names not defined in the specifications crawled</h2>
   <ul>
   <li><code>CSSOMRGBColor</code> used in <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
+  <li><code>CSSOMString</code> used in <a href="https://drafts.csswg.org/css-animations/">CSS Animations Level 1</a>, <a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a>, <a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a>, <a href="https://drafts.csswg.org/css-counter-styles/">CSS Counter Styles Level 3</a>, <a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a>, <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a>, <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a>, <a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a>, <a href="https://drafts.csswg.org/css-regions/">CSS Regions Module Level 1</a>, <a href="https://drafts.csswg.org/css-transitions/">CSS Transitions</a>, <a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a>, <a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><code>Date</code> used in <a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
   <li><code>Dictionary</code> used in <a href="https://w3c.github.io/web-nfc/">Web NFC API</a></li>
   <li><code>KeyframeEffectReadOnly</code> used in <a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a></li>
@@ -141,7 +134,7 @@
   <li><code>ReadableStream</code> used in <a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a>, <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   </ul>
-  <p>=&gt; 11 WebIDL names found</p>
+  <p>=&gt; 12 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -494,6 +487,14 @@
   <li><a href="https://drafts.csswg.org/css-multicol/">CSS Multi-column Layout Module Level 1</a> links to <a href="https://www.w3.org/TR/2011/CR-css3-multicol-20110412/"><code>https://www.w3.org/TR/2011/CR-css3-multicol-20110412/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/css-multicol-2/">CSS Multi-column Layout Module Level 2</a> links to <a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/css-namespaces/">CSS Namespaces Module Level 3</a> links to <a href="https://www.w3.org/TR/2011/REC-css3-namespace-20110929/"><code>https://www.w3.org/TR/2011/REC-css3-namespace-20110929/</code></a> but does not list it in its references</li>
+  <li><a href="https://drafts.csswg.org/css-overflow-3/">CSS Overflow Module Level 3</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-backgrounds/"><code>https://www.w3.org/TR/css-backgrounds/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-align/"><code>https://www.w3.org/TR/css3-align/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-logical-1/"><code>https://www.w3.org/TR/css-logical-1/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-overflow-4/"><code>https://www.w3.org/TR/css-overflow-4/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-break/"><code>https://www.w3.org/TR/css3-break/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://drafts.csswg.org/css-overflow-4/">CSS Overflow Module Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-transitions/"><code>https://www.w3.org/TR/css3-transitions/</code></a> but does not list it in its references</li>
@@ -788,7 +789,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 338 missing references for links found in 113 specifications</p>
+  <p>=&gt; 343 missing references for links found in 114 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
