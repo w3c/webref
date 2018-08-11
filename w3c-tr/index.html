@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">August 10, 2018</h2>
+            <h2 class="date">August 11, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -242,12 +242,12 @@
   </ul>
   </section>
   </section>
-  <section id="audio-output-devices-api" class="level2" data-spec="true" data-error="true">
+  <section id="audio-output-devices-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Audio Output Devices API</h2>
   <section id="spec-info-5" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/audio-output/">Latest published version</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/2017/CR-audio-output-20171003/">Latest published version</a> (03 October 2017)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/mediacapture-output/" class="uri">https://w3c.github.io/mediacapture-output/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/audio-output/" class="uri">https://www.w3.org/TR/audio-output/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/CR-audio-output-20171003/">Candidate Recommendation</a></li>
@@ -257,8 +257,9 @@
   </section>
   <section id="potential-issues-5" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)     at Object.onceWrapper (events.js:317:30)     at emitTwo (events.js:126:13)     at ChildProcess.emit (events.js:214:7)     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>HTMLMediaElement</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-5" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -707,7 +708,7 @@
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Worker</code> defined in <a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a> or <a href="http://www.w3.org/TR/2015/WD-workers-20150924/">Web Workers</a></li>
-  <li><code>Worklet</code> defined in <a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a> or <a href="https://www.w3.org/TR/2018/WD-webaudio-20180619/">Web Audio API</a> or <a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> defined in <a href="https://www.w3.org/TR/2018/WD-webaudio-20180619/">Web Audio API</a> or <a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Worklets Level 1</a></li>
   </ul></li>
   </ul>
   </section>
@@ -801,7 +802,7 @@
   <section id="spec-info-19" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/editing/contentEditable.html">Initial URL</a> (August 10, 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/editing/contentEditable.html">Initial URL</a> (August 11, 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -1066,7 +1067,6 @@
   <li><a href="https://drafts.csswg.org/css-sizing-4/">CSS Intrinsic &amp; Extrinsic Sizing Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/">CSS Text Decoration Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/">CSS Text Decoration Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-transforms-1-20171130/">CSS Transforms Module Level 1</a></li>
@@ -1201,7 +1201,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-webvtt1-20180510/">WebVTT: The Web Video Text Tracks Format</a></li>
@@ -1414,7 +1413,6 @@
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/">CSS Overflow Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/">CSS Rhythmic Sizing</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/">CSS Scroll Snap Module Level 1</a></li>
@@ -1709,7 +1707,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/css-env-1/">CSS Environment Variables Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-shadow-parts-1/">CSS Shadow Parts</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/">CSS Typed OM Level 1</a></li>
@@ -1826,7 +1823,6 @@
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/">CSS Overflow Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-position-3-20160517/">CSS Positioned Layout Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-scroll-anchoring-1/">CSS Scroll Anchoring Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/">CSS Scroll Snap Module Level 1</a></li>
@@ -2491,7 +2487,6 @@
   <li><a href="http://www.w3.org/TR/2016/WD-css-content-3-20160602/">CSS Generated Content Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-images-4-20170413/">CSS Image Values and Replaced Content Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-sizing-4/">CSS Intrinsic &amp; Extrinsic Sizing Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/">CSS Round Display Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-shapes-2/">CSS Shapes Module Level 2</a></li>
@@ -2546,7 +2541,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/css-sizing-4/">CSS Intrinsic &amp; Extrinsic Sizing Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-values-4/">CSS Values and Units Module Level 4</a></li>
   </ul>
@@ -3141,7 +3135,6 @@
   <li><a href="https://www.w3.org/TR/2017/WD-css-images-4-20170413/">CSS Image Values and Replaced Content Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/">CSS Intrinsic &amp; Extrinsic Sizing Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/">CSS Pseudo-Elements Module Level 4</a></li>
@@ -3395,51 +3388,25 @@
   </ul>
   </section>
   </section>
-  <section id="css-painting-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="css-painting-api-level-1" class="level2" data-spec="true" data-error="true">
   <h2>CSS Painting API Level 1</h2>
   <section id="spec-info-75" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">Latest published version</a> (9 August 2018)</li>
-  <li>Editor's Draft: <a href="https://drafts.css-houdini.org/css-paint-api-1/" class="uri">https://drafts.css-houdini.org/css-paint-api-1/</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/css-paint-api-1/" class="uri">https://www.w3.org/TR/css-paint-api-1/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">Candidate Recommendation</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/css-paint-api-1">Latest published version</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/css-paint-api-1" class="uri">https://www.w3.org/TR/css-paint-api-1</a></li>
   <li>Shortname: css-paint-api-1</li>
   </ul>
   </section>
   <section id="potential-issues-75" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>WebIDL names also defined elsewhere:
-  <ul>
-  <li><code>Worklet</code> also defined in <a href="https://www.w3.org/TR/2018/WD-webaudio-20180619/">Web Audio API</a> and <a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Worklets Level 1</a></li>
-  </ul></li>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://www.w3.org/TR/css-properties-values-api-1/"><code>https://www.w3.org/TR/css-properties-values-api-1/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css4-images/"><code>https://www.w3.org/TR/css4-images/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a></li>
-  </ul></li>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a>, related reference &quot;CSSOM-VIEW-1&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a>, related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)     at &lt;anonymous&gt;     at process._tickCallback (internal/process/next_tick.js:188:7)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-75" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
-  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
-  <ul>
-  <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
-  <li><a href="https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/">CSS Typed OM Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/">WebAssembly JavaScript Interface</a></li>
-  </ul>
-  <p>Informative references to this spec from:</p>
-  <ul>
-  <li><a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Worklets Level 1</a></li>
-  </ul>
+  <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
   <section id="css-parser-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
@@ -4132,7 +4099,6 @@
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/">CSS Typed OM Level 1</a></li>
@@ -4626,11 +4592,10 @@
   <section id="potential-issues-104" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DOMMatrix</code>, <code>DOMMatrixReadOnly</code>, <code>LayoutWorklet</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>DOMMatrix</code>, <code>DOMMatrixReadOnly</code>, <code>LayoutWorklet</code>, <code>PaintWorklet</code>, <code>Window</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Worker</code> defined in <a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a> or <a href="http://www.w3.org/TR/2015/WD-workers-20150924/">Web Workers</a></li>
-  <li><code>PaintWorklet</code> defined in <a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -4659,7 +4624,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://drafts.csswg.org/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/font-metrics-api/">Font Metrics API Level 1</a></li>
@@ -4739,7 +4703,6 @@
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/">CSS Overflow Module Level 4</a></li>
   <li><a href="http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/">CSS Page Floats</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-position-3-20160517/">CSS Positioned Layout Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/">CSS Rhythmic Sizing</a></li>
@@ -5044,7 +5007,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-scroll-anchoring-1/">CSS Scroll Anchoring Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/">CSS Scroll Snap Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/">CSS Typed OM Level 1</a></li>
@@ -5070,36 +5032,27 @@
   </ul>
   </section>
   </section>
-  <section id="deviceorientation-event-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-missingLinkRef="true">
+  <section id="deviceorientation-event-specification" class="level2" data-spec="true" data-error="true">
   <h2>DeviceOrientation Event Specification</h2>
   <section id="spec-info-111" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/">Latest published version</a> (30 May 2017)</li>
-  <li>Editor's Draft: <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html" class="uri">https://w3c.github.io/deviceorientation/spec-source-orientation.html</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/orientation-event/" class="uri">https://www.w3.org/TR/orientation-event/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/">Retired</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/orientation-event">Latest published version</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/orientation-event" class="uri">https://www.w3.org/TR/orientation-event</a></li>
   <li>Repository: <a href="https://github.com/w3c/deviceorientation">GitHub w3c/deviceorientation</a></li>
   <li>Shortname: orientation-event</li>
   </ul>
   </section>
   <section id="potential-issues-111" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>No normative references found</li>
-  <li>No WebIDL definitions found</li>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://www.w3.org/TR/2016/REC-geolocation-API-20161108/"><code>https://www.w3.org/TR/2016/REC-geolocation-API-20161108/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)     at &lt;anonymous&gt;     at process._tickCallback (internal/process/next_tick.js:188:7)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-111" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
   <p>Informative references to this spec from:</p>
   <ul>
-  <li><a href="https://www.w3.org/TR/2018/CR-generic-sensor-20180320/">Generic Sensor API</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-screen-orientation-20180706/">The Screen Orientation API</a></li>
   </ul>
   </section>
@@ -5175,7 +5128,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
-  <li><a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-FileAPI-20171026/">File API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-push-api-20171215/">Push API</a></li>
@@ -5192,29 +5144,21 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="encrypted-media-extensions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="encrypted-media-extensions" class="level2" data-spec="true" data-error="true">
   <h2>Encrypted Media Extensions</h2>
   <section id="spec-info-114" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Latest published version</a> (18 September 2017)</li>
-  <li>Editor's Draft: <a href="https://w3c.github.io/encrypted-media/" class="uri">https://w3c.github.io/encrypted-media/</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/encrypted-media/" class="uri">https://www.w3.org/TR/encrypted-media/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Recommendation</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/encrypted-media">Latest published version</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/encrypted-media" class="uri">https://www.w3.org/TR/encrypted-media</a></li>
   <li>Repository: <a href="https://github.com/w3c/encrypted-media">GitHub w3c/encrypted-media</a></li>
   <li>Shortname: encrypted-media</li>
   </ul>
   </section>
   <section id="potential-issues-114" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>HTMLMediaElement</code>, <code>Navigator</code></li>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a>, related reference &quot;DOM&quot; uses URL <a href="https://www.w3.org/TR/2015/REC-dom-20151119/"><code>https://www.w3.org/TR/2015/REC-dom-20151119/</code></a></li>
-  <li><a href="https://www.w3.org/TR/encoding/"><code>https://www.w3.org/TR/encoding/</code></a>, related reference &quot;ENCODING&quot; uses URL <a href="https://www.w3.org/TR/2017/CR-encoding-20170413/"><code>https://www.w3.org/TR/2017/CR-encoding-20170413/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)     at &lt;anonymous&gt;     at process._tickCallback (internal/process/next_tick.js:188:7)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-114" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -5841,6 +5785,7 @@
   <ul>
   <li><a href="https://www.w3.org/TR/2017/WD-image-capture-20170621/">&quot;MediaStream Image Capture&quot;</a></li>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a></li>
+  <li><a href="https://www.w3.org/TR/2017/CR-audio-output-20171003/">Audio Output Devices API</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
   <li><a href="http://www.w3.org/TR/2016/CR-battery-status-20160707/">Battery Status API</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-beacon-20170413/">Beacon</a></li>
@@ -5863,7 +5808,6 @@
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/">CSS Pseudo-Elements Module Level 4</a></li>
@@ -5875,7 +5819,6 @@
   <li><a href="https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/">CSS Writing Modes Level 4</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">CSSOM View Module</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/">DOM Parsing and Serialization</a></li>
-  <li><a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a></li>
   <li><a href="https://wicg.github.io/feature-policy/">Feature Policy</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
@@ -6050,7 +5993,6 @@
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/">CSS Pseudo-Elements Module Level 4</a></li>
@@ -6202,7 +6144,6 @@
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/">CSS Pseudo-Elements Module Level 4</a></li>
@@ -6374,7 +6315,7 @@
   <section id="spec-info-136" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/InputDeviceCapabilities/">Initial URL</a> (August 10, 2018)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/InputDeviceCapabilities/">Initial URL</a> (August 11, 2018)</li>
   <li>Repository: <a href="https://github.com/wicg/InputDeviceCapabilities">GitHub wicg/InputDeviceCapabilities</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -6654,6 +6595,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://www.w3.org/TR/2017/CR-audio-output-20171003/">Audio Output Devices API</a></li>
   <li><a href="https://www.w3.org/TR/2018/REC-html-media-capture-20180201/">HTML Media Capture</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/">Media Capture Depth Stream Extensions</a></li>
@@ -6917,10 +6859,7 @@
   <li><a href="https://wicg.github.io/media-capabilities/">Media Capabilities</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   </ul>
-  <p>Informative references to this spec from:</p>
-  <ul>
-  <li><a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a></li>
-  </ul>
+  <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
   <section id="mediastream-recording" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
@@ -7037,7 +6976,6 @@
   <ul>
   <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-credential-management-1-20170804/">Credential Management Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-preload-20171026/">Preload</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-presentation-api-20170601/">Presentation API</a></li>
@@ -7612,7 +7550,7 @@
   <section id="spec-info-170" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/pointerevents/extension.html">Initial URL</a> (August 10, 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/pointerevents/extension.html">Initial URL</a> (August 11, 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -7877,7 +7815,7 @@
   <section id="spec-info-178" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/reporting/">Initial URL</a> (24 July 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/reporting/">Initial URL</a> (10 August 2018)</li>
   <li>Repository: <a href="https://github.com/w3c/reporting">GitHub w3c/reporting</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -8204,7 +8142,6 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
-  <li><a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a></li>
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a></li>
   </ul>
   </section>
@@ -9085,7 +9022,6 @@
   <li><a href="https://drafts.csswg.org/css-env-1/">CSS Environment Variables Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-position-3-20160517/">CSS Positioned Layout Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/">CSS Pseudo-Elements Module Level 4</a></li>
@@ -9096,7 +9032,6 @@
   <li><a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/">CSS Typed OM Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">CSSOM View Module</a></li>
-  <li><a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a></li>
   <li><a href="https://wicg.github.io/feature-policy/">Feature Policy</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-FileAPI-20171026/">File API</a></li>
@@ -9309,7 +9244,7 @@
   <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>HTMLMediaElement</code>, <code>Window</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
-  <li><code>Worklet</code> also defined in <a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a> and <a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> also defined in <a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Worklets Level 1</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -9545,7 +9480,7 @@
   <section id="spec-info-219" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/web-nfc/">Initial URL</a> (August 10, 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/web-nfc/">Initial URL</a> (August 11, 2018)</li>
   <li>Repository: <a href="https://github.com/w3c/web-nfc">GitHub w3c/web-nfc</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -9621,7 +9556,7 @@
   <section id="spec-info-221" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/web-share/">Initial URL</a> (August 10, 2018)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/web-share/">Initial URL</a> (August 11, 2018)</li>
   <li>Repository: <a href="https://github.com/wicg/web-share">GitHub wicg/web-share</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -9749,7 +9684,6 @@
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/">CSS Pseudo-Elements Module Level 4</a></li>
@@ -9868,7 +9802,7 @@
   <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for WebIDL names:
   <ul>
-  <li><code>Worklet</code> defined in <a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a> or <a href="https://www.w3.org/TR/2018/WD-webaudio-20180619/">Web Audio API</a> or <a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> defined in <a href="https://www.w3.org/TR/2018/WD-webaudio-20180619/">Web Audio API</a> or <a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Worklets Level 1</a></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -9931,7 +9865,7 @@
   <section id="spec-info-227" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Fri Aug 10 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sat Aug 11 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -9964,7 +9898,7 @@
   <section id="spec-info-228" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Fri Aug 10 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sat Aug 11 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -10033,6 +9967,7 @@
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-accelerometer-20180320/">Accelerometer</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-ambient-light-20180320/">Ambient Light Sensor</a></li>
+  <li><a href="https://www.w3.org/TR/2017/CR-audio-output-20171003/">Audio Output Devices API</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
   <li><a href="http://www.w3.org/TR/2016/CR-battery-status-20160707/">Battery Status API</a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-beacon-20170413/">Beacon</a></li>
@@ -10049,7 +9984,6 @@
   <li><a href="https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-images-4-20170413/">CSS Image Values and Replaced Content Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/">CSS Transitions</a></li>
@@ -10058,7 +9992,6 @@
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/">CSSOM View Module</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/">DOM Parsing and Serialization</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-encoding-20180327/">Encoding</a></li>
-  <li><a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a></li>
   <li><a href="https://wicg.github.io/feature-policy/">Feature Policy</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
@@ -10282,7 +10215,7 @@
   <section id="spec-info-233" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://immersive-web.github.io/webxr/">Initial URL</a> (3 August 2018)</li>
+  <li>Crawled version: <a href="https://immersive-web.github.io/webxr/">Initial URL</a> (10 August 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -10335,7 +10268,7 @@
   <li>Unknown WebIDL names used: <code>Console</code>, <code>Window</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
-  <li><code>Worklet</code> also defined in <a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a> and <a href="https://www.w3.org/TR/2018/WD-webaudio-20180619/">Web Audio API</a></li>
+  <li><code>Worklet</code> also defined in <a href="https://www.w3.org/TR/2018/WD-webaudio-20180619/">Web Audio API</a></li>
   </ul></li>
   </ul>
   </section>
@@ -10345,7 +10278,6 @@
   <ul>
   <li><a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-webaudio-20180619/">Web Audio API</a></li>
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
