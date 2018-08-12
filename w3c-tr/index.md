@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 11, 2018
+% August 12, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -94,7 +94,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
-- [Magnetometer](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 
 Informative references to this spec from:
@@ -330,7 +329,6 @@ Normative references to this spec from:
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
 - [CSS Generated Content Module Level 3](http://www.w3.org/TR/2016/WD-css-content-3-20160602/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Image Values and Replaced Content Module Level 3](http://www.w3.org/TR/2012/CR-css3-images-20120417/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
@@ -349,7 +347,6 @@ Normative references to this spec from:
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 - [CSS Style Attributes](http://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
@@ -413,13 +410,11 @@ Normative references to this spec from:
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2017/WD-css-text-3-20170822/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2017/WD-css-transforms-1-20171130/)
@@ -561,7 +556,7 @@ No informative reference to this spec from other specs.
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
-     * `Worklet` defined in [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+     * `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -640,7 +635,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (August 11, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (August 12, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -856,6 +851,7 @@ Normative references to this spec from:
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2017/WD-css-transforms-1-20171130/)
@@ -967,6 +963,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
@@ -1007,12 +1004,10 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180809/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 
@@ -1139,7 +1134,6 @@ Normative references to this spec from:
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
@@ -1147,9 +1141,9 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2017/WD-css-text-3-20170822/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2017/WD-css-transforms-1-20171130/)
@@ -1393,6 +1387,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -1479,7 +1474,6 @@ Normative references to this spec from:
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/)
@@ -1491,9 +1485,9 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
@@ -1617,7 +1611,6 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180809/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
@@ -1766,7 +1759,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2016/CR-css-values-3-20160929/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2018/CR-SVG2-20180807/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 
@@ -1814,7 +1806,6 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180809/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/)
@@ -1930,35 +1921,24 @@ Informative references to this spec from:
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
 
 
-## CSS Grid Layout Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Grid Layout Module Level 1 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/) (14 December 2017)
-- Editor's Draft: [https://drafts.csswg.org/css-grid/](https://drafts.csswg.org/css-grid/)
-- Latest published version: [https://www.w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/css-grid-1)
+- Latest published version: [https://www.w3.org/TR/css-grid-1](https://www.w3.org/TR/css-grid-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-grid-1
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-flexbox/`](https://www.w3.org/TR/css-flexbox/)
-     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
-     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/)
-     * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/)
-     * [`https://www.w3.org/TR/css3-speech/`](https://www.w3.org/TR/css3-speech/)
-     * [`https://www.w3.org/TR/css-display/`](https://www.w3.org/TR/css-display/)
-     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
-     * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/)
-     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
-     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
-     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
-     * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2003,7 +1983,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180809/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 
 No informative reference to this spec from other specs.
 
@@ -2049,6 +2028,7 @@ Normative references to this spec from:
 - [CSS Generated Content Module Level 3](http://www.w3.org/TR/2016/WD-css-content-3-20160602/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
@@ -2057,7 +2037,6 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
-- [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2018/CR-SVG2-20180807/)
 
 Informative references to this spec from:
@@ -2094,6 +2073,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 
@@ -2131,7 +2111,6 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180423/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180809/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
@@ -2179,7 +2158,6 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -2351,7 +2329,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
 Informative references to this spec from:
@@ -2496,7 +2473,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 
@@ -2592,10 +2568,10 @@ Normative references to this spec from:
 - [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180809/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
@@ -2654,14 +2630,12 @@ Normative references to this spec from:
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20180524/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180809/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/)
 - [CSS Overscroll Behavior Module Level 1](https://wicg.github.io/overscroll-behavior/)
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2017/WD-css-transforms-1-20171130/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -2809,29 +2783,41 @@ Informative references to this spec from:
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 
 
-## CSS Painting API Level 1 {data-spec=true data-error=true}
+## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-paint-api-1)
-- Latest published version: [https://www.w3.org/TR/css-paint-api-1](https://www.w3.org/TR/css-paint-api-1)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) (9 August 2018)
+- Editor's Draft: [https://drafts.css-houdini.org/css-paint-api-1/](https://drafts.css-houdini.org/css-paint-api-1/)
+- Latest published version: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - Shortname: css-paint-api-1
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- WebIDL names also defined elsewhere: 
+    * `Worklet` also defined in [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
+     * [`https://www.w3.org/TR/css4-images/`](https://www.w3.org/TR/css4-images/)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/), related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Console Standard](https://console.spec.whatwg.org/)
+- [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
+- [WebAssembly JavaScript Interface](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/)
+
+Informative references to this spec from:
+
+- [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 
 
 ## CSS Parser API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -2881,7 +2867,6 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180809/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/)
@@ -2961,13 +2946,11 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180809/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Generated Content Module Level 3](http://www.w3.org/TR/2016/WD-css-content-3-20160602/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
@@ -3116,7 +3099,6 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/WD-css-display-3-20180809/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
@@ -3193,24 +3175,24 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS Scroll Snap Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Scroll Snap Module Level 1 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/) (14 December 2017)
-- Editor's Draft: [https://drafts.csswg.org/css-scroll-snap-1/](https://drafts.csswg.org/css-scroll-snap-1/)
-- Latest published version: [https://www.w3.org/TR/css-scroll-snap-1/](https://www.w3.org/TR/css-scroll-snap-1/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/css-scroll-snap-1)
+- Latest published version: [https://www.w3.org/TR/css-scroll-snap-1](https://www.w3.org/TR/css-scroll-snap-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-scroll-snap-1
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/), related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3412,10 +3394,10 @@ Normative references to this spec from:
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -3569,7 +3551,6 @@ Normative references to this spec from:
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/)
 - [CSS Generated Content Module Level 3](http://www.w3.org/TR/2016/WD-css-content-3-20160602/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/)
@@ -3826,9 +3807,10 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMMatrix`, `DOMMatrixReadOnly`, `LayoutWorklet`, `PaintWorklet`, `Window`
+- Unknown WebIDL names used: `DOMMatrix`, `DOMMatrixReadOnly`, `LayoutWorklet`, `Window`
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
+     * `PaintWorklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
      * [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/)
@@ -3851,6 +3833,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
@@ -3906,7 +3889,6 @@ Normative references to this spec from:
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
 - [CSS Generated Content Module Level 3](http://www.w3.org/TR/2016/WD-css-content-3-20160602/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
 - [CSS Image Values and Replaced Content Module Level 3](http://www.w3.org/TR/2012/CR-css3-images-20120417/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
@@ -3922,11 +3904,11 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
 - [CSS Page Floats](http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
@@ -4072,7 +4054,6 @@ Normative references to this spec from:
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/)
@@ -4081,7 +4062,6 @@ Normative references to this spec from:
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2017/WD-css-text-3-20170822/)
 - [CSS Text Module Level 4](http://www.w3.org/TR/2015/WD-css-text-4-20150922/)
@@ -4182,8 +4162,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
@@ -4206,24 +4186,23 @@ Informative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180719/)
 
 
-## DeviceOrientation Event Specification {data-spec=true data-error=true}
+## DeviceOrientation Event Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/orientation-event)
-- Latest published version: [https://www.w3.org/TR/orientation-event](https://www.w3.org/TR/orientation-event)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/) (30 May 2017)
+- Editor's Draft: [https://w3c.github.io/deviceorientation/spec-source-orientation.html](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- Latest published version: [https://www.w3.org/TR/orientation-event/](https://www.w3.org/TR/orientation-event/)
+- Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/)
 - Repository: [GitHub w3c/deviceorientation](https://github.com/w3c/deviceorientation)
 - Shortname: orientation-event
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No normative references found
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2016/REC-geolocation-API-20161108/`](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4231,6 +4210,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180706/)
 
 
@@ -4290,6 +4270,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
+- [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
@@ -4306,24 +4287,23 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Encrypted Media Extensions {data-spec=true data-error=true}
+## Encrypted Media Extensions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/encrypted-media)
-- Latest published version: [https://www.w3.org/TR/encrypted-media](https://www.w3.org/TR/encrypted-media)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/) (18 September 2017)
+- Editor's Draft: [https://w3c.github.io/encrypted-media/](https://w3c.github.io/encrypted-media/)
+- Latest published version: [https://www.w3.org/TR/encrypted-media/](https://www.w3.org/TR/encrypted-media/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - Repository: [GitHub w3c/encrypted-media](https://github.com/w3c/encrypted-media)
 - Shortname: encrypted-media
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `Navigator`
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
+     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4657,7 +4637,6 @@ Normative references to this spec from:
 - [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
-- [Magnetometer](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Proximity Sensor](http://www.w3.org/TR/2016/WD-proximity-20160719/)
 
@@ -4883,6 +4862,7 @@ Normative references to this spec from:
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
@@ -4894,6 +4874,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
+- [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
@@ -4905,7 +4886,6 @@ Normative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
-- [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
@@ -4990,9 +4970,7 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](http://www.w3.org/TR/2016/CR-css-cascade-3-20160519/)
 - [CSS Cascading and Inheritance Level 4](http://www.w3.org/TR/2016/CR-css-cascade-4-20160114/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2017/WD-css-text-3-20170822/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -5013,26 +4991,23 @@ Informative references to this spec from:
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
 
-## HTML Canvas 2D Context {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true data-noEdDraft=true}
+## HTML Canvas 2D Context {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-2dcontext-20151119/) (19 November 2015)
-- Latest published version: [http://www.w3.org/TR/2dcontext/](http://www.w3.org/TR/2dcontext/)
-- Latest published status: [Recommendation](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2dcontext)
+- Latest published version: [https://www.w3.org/TR/2dcontext](https://www.w3.org/TR/2dcontext)
 - Shortname: 2dcontext
 
 ### Potential issue(s) {.anomalies}
 
-- Link to an Editor's Draft not found
-- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`
-- Missing references for WebIDL names: 
-     * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-     * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-     * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-- Inconsistent references for links: 
-     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
-     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5059,6 +5034,7 @@ Normative references to this spec from:
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
@@ -5126,7 +5102,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
@@ -5202,6 +5177,7 @@ Normative references to this spec from:
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
@@ -5273,7 +5249,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
@@ -5354,7 +5329,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (August 11, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (August 12, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5498,26 +5473,24 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Magnetometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Magnetometer {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-magnetometer-20180320/) (20 March 2018)
-- Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
-- Latest published version: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/magnetometer)
+- Latest published version: [https://www.w3.org/TR/magnetometer](https://www.w3.org/TR/magnetometer)
 - Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
 - Shortname: magnetometer
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
-- Missing references for links: 
-     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
-     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-     * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/), related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5716,7 +5689,6 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](http://www.w3.org/TR/2016/CR-css-cascade-4-20160114/)
 - [CSS Color Module Level 4](http://www.w3.org/TR/2016/WD-css-color-4-20160705/)
 - [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
@@ -5797,7 +5769,9 @@ Normative references to this spec from:
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [URL Standard](https://url.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 
 
 ## MediaStream Recording {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -5889,6 +5863,7 @@ Normative references to this spec from:
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -6038,11 +6013,11 @@ No informative reference to this spec from other specs.
 - Missing references for links: 
      * [`https://www.w3.org/TR/2016/CR-orientation-event-20160818/`](https://www.w3.org/TR/2016/CR-orientation-event-20160818/)
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
+     * [`https://w3c.github.io/magnetometer/`](https://w3c.github.io/magnetometer/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
      * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/), related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
      * [`https://w3c.github.io/gyroscope/`](https://w3c.github.io/gyroscope/), related reference "GYROSCOPE" uses URL [`https://www.w3.org/TR/gyroscope/`](https://www.w3.org/TR/gyroscope/)
-     * [`https://w3c.github.io/magnetometer/`](https://w3c.github.io/magnetometer/), related reference "MAGNETOMETER" uses URL [`https://www.w3.org/TR/magnetometer/`](https://www.w3.org/TR/magnetometer/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6263,7 +6238,6 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
-- [Magnetometer](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -6364,7 +6338,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (August 11, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (August 12, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6864,6 +6838,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 
 
@@ -7365,7 +7340,6 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
-- [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 
 No informative reference to this spec from other specs.
@@ -7610,6 +7584,7 @@ Normative references to this spec from:
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
@@ -7620,6 +7595,7 @@ Normative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
+- [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
@@ -7691,7 +7667,6 @@ Although they do not, the following specs should also normatively reference this
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
-- [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -7807,7 +7782,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `Window`
 - WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+    * `Worklet` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
      * [`https://w3c.github.io/mediacapture-fromelement/`](https://w3c.github.io/mediacapture-fromelement/)
      * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
@@ -7994,7 +7969,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (August 11, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (August 12, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8056,7 +8031,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (August 11, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (August 12, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8164,6 +8139,7 @@ Normative references to this spec from:
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
@@ -8248,7 +8224,6 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
-- [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
@@ -8277,7 +8252,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worklet` defined in [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+     * `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/)
      * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/)
@@ -8326,7 +8301,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Aug 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Aug 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8353,13 +8328,13 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Aug 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Aug 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`, `ImageBitmap`, `Window`
+- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`, `ImageBitmap`, `ImageData`, `Window`
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - Inconsistent references for links: 
@@ -8425,6 +8400,7 @@ Normative references to this spec from:
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
@@ -8433,6 +8409,7 @@ Normative references to this spec from:
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
+- [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
@@ -8444,14 +8421,12 @@ Normative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
-- [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
-- [Magnetometer](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -8578,7 +8553,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (10 August 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (11 August 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -8672,7 +8647,7 @@ No informative reference to this spec from other specs.
 
 - Unknown WebIDL names used: `Console`, `Window`
 - WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+    * `Worklet` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8680,6 +8655,7 @@ Normative references to this spec from:
 
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
+- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:

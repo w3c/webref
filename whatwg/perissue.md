@@ -1,8 +1,22 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 11, 2018
+% August 12, 2018
 
 226 specifications were crawled in this report.
+
+
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [https://drafts.css-houdini.org/box-tree-api/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+=> 1 specification found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -78,11 +92,10 @@ Reffy was not expecting to find IDL content in the specifications listed here bu
 
 ## List of specifications with invalid WebIDL content
 
-- [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 
-=> 3 specifications found
+=> 2 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
