@@ -1,0 +1,88 @@
+{
+  "properties": {
+    "offset-path": {
+      "name": "offset-path",
+      "value": "none | ray() | path() | <url> | [ <basic-shape> || <geometry-box> ]",
+      "initial": "none",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as <angle>, <basic-shape> or path()"
+    },
+    "offset-distance": {
+      "name": "offset-distance",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "refer to the total path length",
+      "computedValue": "For <length> the absolute value, otherwise a percentage.",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "yes"
+    },
+    "offset-position": {
+      "name": "offset-position",
+      "value": "auto | <position>",
+      "initial": "auto",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "Refer to the size of containing block",
+      "computedValue": "For <length> the absolute value, otherwise a percentage.",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as position"
+    },
+    "offset-anchor": {
+      "name": "offset-anchor",
+      "value": "auto | <position>",
+      "initial": "auto",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "Relative to the width and the height of a box",
+      "computedValue": "For <length> the absolute value, otherwise a percentage.",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as <position>"
+    },
+    "offset-rotate": {
+      "name": "offset-rotate",
+      "value": "[ auto | reverse ] || <angle>",
+      "initial": "auto",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "yes"
+    },
+    "offset": {
+      "name": "offset",
+      "value": "[ offset-position? [ offset-path [ offset-distance || offset-rotate ]? ]? ]! [ / offset-anchor ]?",
+      "initial": "see individual properties",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "see individual properties"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<ray()>": {
+      "value": "ray( [ <angle> && <size> && contain? ] )"
+    },
+    "<path()>": {
+      "value": "path(<string>)"
+    },
+    "<size>": {
+      "prose": "Decides the path length used when offset-distance is expressed as a percentage, using the distance to the containing box. For <size> values other than sides, the path length is independent of <angle>. It is defined as <size> = [ closest-side | closest-corner | farthest-side | farthest-corner | sides ] closest-side The perpendicular distance is measured between the initial position and the closest side of the box from it. closest-corner The distance is measured between the initial position and the closest corner of the box from it. farthest-side The perpendicular distance is measured between the initial position and the farthest side of the box from it. farthest-corner The distance is measured between the initial position and the farthest corner of the box from it. sides The distance is measured between the initial position and the intersection of the ray with the box. If the initial position is not within the box, the distance is 0. Note: When the initial position is on one of the edges of the containing block, the closest side takes the edge that the initial position is on, and thus the path length used for percentage offset-distance values is 0. Note: When closest-side or farthest-side are used, and the initial position is outside the box, the sides are considered to extend indefinitely."
+    }
+  }
+}

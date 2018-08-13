@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "animation-timeline": {
+      "name": "animation-timeline",
+      "value": "<single-animation-timeline>#",
+      "initial": "auto",
+      "appliesTo": "all elements, ::before and ::after pseudo-elements",
+      "inherited": "none",
+      "percentages": "N/A",
+      "media": "interactive",
+      "computedValue": "As specified",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<single-animation-timeline>": {
+      "value": "auto | scroll([element(<id-selector>)[, <scroll-direction>[, <scroll-offset>[, <scroll-offset>[, <time>[, <single-animation-fill-mode>]]]]]])"
+    },
+    "<scroll-direction>": {
+      "value": "auto | block | inline | horizontal | vertical"
+    },
+    "<scroll-offset>": {
+      "value": "<length> | <percentage> | auto"
+    }
+  }
+}

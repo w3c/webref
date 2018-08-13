@@ -1,0 +1,106 @@
+{
+  "properties": {
+    "list-style-image": {
+      "name": "list-style-image",
+      "value": "<image> | none",
+      "initial": "none",
+      "appliesTo": "list items",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "computed value of the <image>, or none",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "list-style-type": {
+      "name": "list-style-type",
+      "value": "<counter-style> | <string> | none",
+      "initial": "disc",
+      "appliesTo": "list items",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "list-style-position": {
+      "name": "list-style-position",
+      "value": "inside | outside",
+      "initial": "outside",
+      "appliesTo": "list items",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified value (but see prose)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "list-style": {
+      "name": "list-style",
+      "value": "<‘list-style-type’> || <‘list-style-position’> || <‘list-style-image’>",
+      "initial": "see individual properties",
+      "appliesTo": "list items",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "position": {
+      "name": "position",
+      "newValues": "marker",
+      "computedValue": "see prose, otherwise same as normal"
+    },
+    "marker-side": {
+      "name": "marker-side",
+      "value": "list-item | list-container",
+      "initial": "list-item",
+      "appliesTo": "list items",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "counter-reset": {
+      "name": "counter-reset",
+      "value": "[ <custom-ident> <integer>? ]+ | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "counter-set": {
+      "name": "counter-set",
+      "value": "[ <custom-ident> <integer>? ]+ | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "counter-increment": {
+      "name": "counter-increment",
+      "value": "[ <custom-ident> <integer>? ]+ | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<counter()>": {
+      "value": "counter( <custom-ident>, [ <counter-style> | none ]? )"
+    },
+    "<counters()>": {
+      "value": "counters( <custom-ident>, <string>, [ <counter-style> | none ]? )"
+    }
+  }
+}

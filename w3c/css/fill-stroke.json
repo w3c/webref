@@ -1,0 +1,352 @@
+{
+  "properties": {
+    "fill-rule": {
+      "name": "fill-rule",
+      "value": "nonzero | evenodd",
+      "initial": "nonzero",
+      "appliesTo": "SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "no"
+    },
+    "fill-break": {
+      "name": "fill-break",
+      "value": "bounding-box | slice | clone",
+      "initial": "bounding-box",
+      "appliesTo": "all elements",
+      "inherited": "yes?",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "No"
+    },
+    "fill-color": {
+      "name": "fill-color",
+      "value": "<color>",
+      "initial": "currentcolor",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "the computed color",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as color"
+    },
+    "fill-image": {
+      "name": "fill-image",
+      "value": "<paint>#",
+      "initial": "none",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified, with URLs made absolute",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as repeatable list of images"
+    },
+    "fill-origin": {
+      "name": "fill-origin",
+      "value": "match-parent | fill-box | stroke-box | content-box | padding-box | border-box",
+      "initial": "match-parent",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "no"
+    },
+    "fill-position": {
+      "name": "fill-position",
+      "value": "<position>#",
+      "initial": "0% 0%",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "A list, each item consisting of: a pair of offsets (horizontal and vertical) from the top left origin each given as a combination of an absolute length and a percentage",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as repeatable list of simple list of length, percentage, or calc"
+    },
+    "fill-size": {
+      "name": "fill-size",
+      "value": "<bg-size>#",
+      "initial": "auto",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified, but with lengths made absolute and omitted auto keywords filled in",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as repeatable list of simple list of length, percentage, or calc"
+    },
+    "fill-repeat": {
+      "name": "fill-repeat",
+      "value": "<repeat-style>#",
+      "initial": "repeat",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "A list, each item consisting of: two keywords, one per dimension",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "no"
+    },
+    "fill": {
+      "name": "fill",
+      "value": "<‘background’> with modifications",
+      "initial": "See individual properties",
+      "appliesTo": "See individual properties",
+      "inherited": "See individual properties",
+      "percentages": "N/A",
+      "computedValue": "See individual properties",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "See individual properties"
+    },
+    "fill-opacity": {
+      "name": "fill-opacity",
+      "value": "<‘opacity’>",
+      "initial": "1",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "the specified value converted to a <number>, clamped to the range [0,1]",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as number"
+    },
+    "stroke-width": {
+      "name": "stroke-width",
+      "value": "<length-percentage>#",
+      "initial": "1px",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "relative to the scaled viewport size",
+      "computedValue": "the absolute length, or percentage",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as <length-percentage>"
+    },
+    "stroke-align": {
+      "name": "stroke-align",
+      "value": "center | inset | outset",
+      "initial": "center",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "no"
+    },
+    "stroke-linecap": {
+      "name": "stroke-linecap",
+      "value": "butt | round | square",
+      "initial": "butt",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "no"
+    },
+    "stroke-linejoin": {
+      "name": "stroke-linejoin",
+      "value": "[ crop | arcs | miter ] || [ bevel | round | stupid ]",
+      "initial": "miter",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "no"
+    },
+    "stroke-miterlimit": {
+      "name": "stroke-miterlimit",
+      "value": "<number>",
+      "initial": "4",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "a number",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "no"
+    },
+    "stroke-break": {
+      "name": "stroke-break",
+      "value": "bounding-box | slice | clone",
+      "initial": "bounding-box",
+      "appliesTo": "all elements",
+      "inherited": "?",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "No"
+    },
+    "stroke-dasharray": {
+      "name": "stroke-dasharray",
+      "value": "none | <length-percentage>+#",
+      "initial": "none",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "relative to the scaled viewport size",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as repeated list of length, percentage or calc"
+    },
+    "stroke-dashoffset": {
+      "name": "stroke-dashoffset",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "relative to the scaled viewport size",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as repeated list of integers"
+    },
+    "stroke-dash-corner": {
+      "name": "stroke-dash-corner",
+      "value": "none | <length>",
+      "initial": "none",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified value, with lengths made absolute",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "yes, if <length>"
+    },
+    "stroke-dash-justify": {
+      "name": "stroke-dash-justify",
+      "value": "none | [ stretch | compress ] || [ dashes || gaps ]",
+      "initial": "none",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified value, with lengths made absolute",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "no"
+    },
+    "stroke-color": {
+      "name": "stroke-color",
+      "value": "<color>#",
+      "initial": "transparent",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "the computed color",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as color"
+    },
+    "stroke-image": {
+      "name": "stroke-image",
+      "value": "<paint>#",
+      "initial": "none",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified, with URLs made absolute",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as repeatable list of images"
+    },
+    "stroke-origin": {
+      "name": "stroke-origin",
+      "value": "match-parent | fill-box | stroke-box | content-box | padding-box | border-box",
+      "initial": "match-parent",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "no"
+    },
+    "stroke-position": {
+      "name": "stroke-position",
+      "value": "<position>#",
+      "initial": "0% 0%",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "A list, each item consisting of: a pair of offsets (horizontal and vertical) from the top left origin each given as a combination of an absolute length and a percentage",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as repeatable list of simple list of length, percentage, or calc"
+    },
+    "stroke-size": {
+      "name": "stroke-size",
+      "value": "<bg-size>#",
+      "initial": "auto",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified, but with lengths made absolute and omitted auto keywords filled in",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as repeatable list of simple list of length, percentage, or calc"
+    },
+    "stroke-repeat": {
+      "name": "stroke-repeat",
+      "value": "<repeat-style>#",
+      "initial": "repeat",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "A list, each item consisting of: two keywords, one per dimension",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "no"
+    },
+    "stroke": {
+      "name": "stroke",
+      "value": "<‘background’> with modifications",
+      "initial": "See individual properties",
+      "appliesTo": "See individual properties",
+      "inherited": "See individual properties",
+      "percentages": "N/A",
+      "computedValue": "See individual properties",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "See individual properties"
+    },
+    "stroke-opacity": {
+      "name": "stroke-opacity",
+      "value": "<‘opacity’>",
+      "initial": "1",
+      "appliesTo": "inline boxes and SVG shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "the specified value converted to a <number>, clamped to the range [0,1]",
+      "canonicalOrder": "per grammar",
+      "media": "visual",
+      "animatable": "as number"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<paint>": {
+      "value": "none | <image> | <svg-paint>"
+    },
+    "<svg-paint>": {
+      "value": "child | child( <integer> )"
+    },
+    "<child()>": {
+      "value": "child(<integer>)"
+    }
+  }
+}
