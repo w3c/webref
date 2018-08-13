@@ -1,0 +1,61 @@
+fill-rule = nonzero | evenodd
+
+fill-break = bounding-box | slice | clone
+
+fill-color = <color>
+
+fill-image = <paint>#
+
+fill-origin = match-parent | fill-box | stroke-box | content-box | padding-box | border-box
+
+fill-position = <position>#
+
+fill-size = <bg-size>#
+
+fill-repeat = <repeat-style>#
+
+fill = <‘background’> with modifications
+
+fill-opacity = <‘opacity’>
+
+stroke-width = <length-percentage>#
+
+stroke-align = center | inset | outset
+
+stroke-linecap = butt | round | square
+
+stroke-linejoin = [ crop | arcs | miter ] || [ bevel | round | stupid ]
+
+stroke-miterlimit = <number>
+
+stroke-break = bounding-box | slice | clone
+
+stroke-dasharray = none | <length-percentage>+#
+
+stroke-dashoffset = <length-percentage>
+
+stroke-dash-corner = none | <length>
+
+stroke-dash-justify = none | [ stretch | compress ] || [ dashes || gaps ]
+
+stroke-color = <color>#
+
+stroke-image = <paint>#
+
+stroke-origin = match-parent | fill-box | stroke-box | content-box | padding-box | border-box
+
+stroke-position = <position>#
+
+stroke-size = <bg-size>#
+
+stroke-repeat = <repeat-style>#
+
+stroke = <‘background’> with modifications
+
+stroke-opacity = <‘opacity’>
+
+<paint> = none | <image> | <svg-paint>
+
+<svg-paint> = child | child( <integer> )
+
+<child()> = child(<integer>)

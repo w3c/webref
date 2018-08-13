@@ -1,0 +1,81 @@
+cx = <length-percentage>
+
+cy = <length-percentage>
+
+r = <length-percentage>
+
+rx = <length-percentage> | auto
+
+ry = <length-percentage> | auto
+
+x = <length-percentage>
+
+y = <length-percentage>
+
+vector-effect = none | [ non-scaling-stroke | non-scaling-size | non-rotation | fixed-position ]+ [ viewport | screen ]?
+
+d = none | <string>
+
+inline-size = <length-percentage>
+
+shape-inside = auto | [ <basic-shape> | <uri> ]+
+
+shape-subtract = none | [ <basic-shape>| <uri> ]+
+
+shape-margin = <length-percentage>
+
+text-anchor = start | middle | end
+
+text-decoration-fill = <paint>
+
+text-decoration-stroke = <paint>
+
+fill = <paint>
+
+fill-rule = nonzero | evenodd
+
+fill-opacity = <alpha-value>
+
+stroke = <paint>
+
+stroke-opacity = <alpha-value>
+
+stroke-width = <length-percentage>
+
+stroke-linecap = butt | round | square
+
+stroke-linejoin = miter | miter-clip | round | bevel | arcs
+
+stroke-miterlimit = <number>
+
+stroke-dasharray = none | <dasharray>
+
+stroke-dashoffset = <length-percentage>
+
+marker-start = none | <marker-ref>
+
+marker-mid = none | <marker-ref>
+
+marker-end = none | <marker-ref>
+
+marker = none | <marker-ref>
+
+paint-order = normal | [ fill || stroke || markers ]
+
+color-interpolation = auto | sRGB | linearRGB
+
+color-rendering = auto | optimizeSpeed | optimizeQuality
+
+shape-rendering = auto | optimizeSpeed | crispEdges | geometricPrecision
+
+text-rendering = auto | optimizeSpeed | optimizeLegibility | geometricPrecision
+
+image-rendering = auto | optimizeQuality | optimizeSpeed
+
+pointer-events = bounding-box | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | none
+
+<points> = [ <number>+ ]#
+
+<dasharray> = [ <length-percentage> | <number> ]#*
+
+<marker-ref> = <url>

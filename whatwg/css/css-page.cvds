@@ -1,0 +1,13 @@
+page = auto | <custom-ident>
+
+size = <length>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ]
+
+marks = none | [ crop || cross ]
+
+bleed = auto | <length>
+
+<page-selector-list> = <page-selector>#
+
+<page-selector> = [ <ident-token>? <pseudo-page>* ]!
+
+<pseudo-page> = ':' [ left | right | first | blank ] /* Margin rules */

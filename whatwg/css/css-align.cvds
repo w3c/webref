@@ -1,0 +1,33 @@
+align-content = normal | <baseline-position> | <content-distribution> | <overflow-position>? <content-position>
+
+justify-content = normal | <content-distribution> | <overflow-position>? [ <content-position> | left | right ]
+
+place-content = <‘align-content’> <‘justify-content’>?
+
+justify-self = auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ]
+
+align-self = auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position>
+
+place-self = <‘align-self’> <‘justify-self’>?
+
+justify-items = normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ]
+
+align-items = normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]
+
+place-items = <‘align-items’> <‘justify-items’>?
+
+row-gap = normal | <length-percentage>
+
+column-gap = normal | <length-percentage>
+
+gap = <‘row-gap’> <‘column-gap’>?
+
+<self-position> = center | start | end | self-start | self-end | flex-start | flex-end;
+
+<content-position> = center | start | end | flex-start | flex-end;
+
+<baseline-position> = [ first | last ]? baseline
+
+<content-distribution> = space-between | space-around | space-evenly | stretch
+
+<overflow-position> = unsafe | safe

@@ -1,0 +1,154 @@
+{
+  "properties": {
+    "align-content": {
+      "name": "align-content",
+      "value": "normal | <baseline-position> | <content-distribution> | <overflow-position>? <content-position>",
+      "initial": "normal",
+      "appliesTo": "block containers, multicol containers, flex containers, and grid containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "justify-content": {
+      "name": "justify-content",
+      "value": "normal | <content-distribution> | <overflow-position>? [ <content-position> | left | right ]",
+      "initial": "normal",
+      "appliesTo": "multicol containers, flex containers, and grid containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "place-content": {
+      "name": "place-content",
+      "value": "<‘align-content’> <‘justify-content’>?",
+      "initial": "normal",
+      "appliesTo": "block containers, flex containers, and grid containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "justify-self": {
+      "name": "justify-self",
+      "value": "auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ]",
+      "initial": "auto",
+      "appliesTo": "block-level boxes, absolutely-positioned boxes, and grid items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "align-self": {
+      "name": "align-self",
+      "value": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position>",
+      "initial": "auto",
+      "appliesTo": "flex items, grid items, and absolutely-positioned boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "place-self": {
+      "name": "place-self",
+      "value": "<‘align-self’> <‘justify-self’>?",
+      "initial": "auto",
+      "appliesTo": "block-level boxes, absolutely-positioned boxes, and grid items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "justify-items": {
+      "name": "justify-items",
+      "value": "normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ]",
+      "initial": "legacy",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value, except for legacy (see prose)",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "align-items": {
+      "name": "align-items",
+      "value": "normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "place-items": {
+      "name": "place-items",
+      "value": "<‘align-items’> <‘justify-items’>?",
+      "initial": "see individual properties",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "row-gap": {
+      "name": "row-gap",
+      "value": "normal | <length-percentage>",
+      "initial": "normal",
+      "appliesTo": "multi-column containers, flex containers, grid containers",
+      "inherited": "no",
+      "percentages": "refer to corresponding dimension of the content area",
+      "computedValue": "as specified, with <length>s made absolute",
+      "canonicalOrder": "per grammar",
+      "animatable": "as length, percentage, or calc"
+    },
+    "column-gap": {
+      "name": "column-gap",
+      "value": "normal | <length-percentage>",
+      "initial": "normal",
+      "appliesTo": "multi-column containers, flex containers, grid containers",
+      "inherited": "no",
+      "percentages": "refer to corresponding dimension of the content area",
+      "computedValue": "as specified, with <length>s made absolute",
+      "canonicalOrder": "per grammar",
+      "animatable": "as length, percentage, or calc"
+    },
+    "gap": {
+      "name": "gap",
+      "value": "<‘row-gap’> <‘column-gap’>?",
+      "initial": "see individual properties",
+      "appliesTo": "multi-column containers, flex containers, grid containers",
+      "inherited": "no",
+      "percentages": "refer to corresponding dimension of the content area",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animatable": "as length, percentage, or calc"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<self-position>": {
+      "value": "center | start | end | self-start | self-end | flex-start | flex-end;"
+    },
+    "<content-position>": {
+      "value": "center | start | end | flex-start | flex-end;"
+    },
+    "<baseline-position>": {
+      "value": "[ first | last ]? baseline"
+    },
+    "<content-distribution>": {
+      "value": "space-between | space-around | space-evenly | stretch"
+    },
+    "<overflow-position>": {
+      "value": "unsafe | safe"
+    }
+  }
+}

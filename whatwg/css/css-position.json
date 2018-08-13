@@ -1,0 +1,126 @@
+{
+  "properties": {
+    "position": {
+      "name": "position",
+      "value": "static | relative | absolute | sticky | fixed",
+      "initial": "static",
+      "appliesTo": "all elements except table-column-group and table-column",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "top": {
+      "name": "top",
+      "value": "auto | <length-percentage>",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "refer to height of containing block",
+      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a '<length>', the corresponding absolute length; if specified as a '<percentage>', the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "length or percentage"
+    },
+    "right": {
+      "name": "right",
+      "value": "auto | <length-percentage>",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "refer to height of containing block",
+      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a '<length>', the corresponding absolute length; if specified as a '<percentage>', the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "length or percentage"
+    },
+    "bottom": {
+      "name": "bottom",
+      "value": "auto | <length-percentage>",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "refer to height of containing block",
+      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a '<length>', the corresponding absolute length; if specified as a '<percentage>', the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "length or percentage"
+    },
+    "left": {
+      "name": "left",
+      "value": "auto | <length-percentage>",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "refer to height of containing block",
+      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a '<length>', the corresponding absolute length; if specified as a '<percentage>', the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "length or percentage"
+    },
+    "offset-before": {
+      "name": "offset-before",
+      "value": "auto | <length-percentage>",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "refer to height of containing block",
+      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a <length>, the corresponding absolute length; if specified as a <percentage>, the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "length or percentage"
+    },
+    "offset-after": {
+      "name": "offset-after",
+      "value": "auto | <length-percentage>",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "refer to height of containing block",
+      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a <length>, the corresponding absolute length; if specified as a <percentage>, the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "length or percentage"
+    },
+    "offset-start": {
+      "name": "offset-start",
+      "value": "auto | <length-percentage>",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "refer to height of containing block",
+      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a <length>, the corresponding absolute length; if specified as a <percentage>, the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "length or percentage"
+    },
+    "offset-end": {
+      "name": "offset-end",
+      "value": "auto | <length-percentage>",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "refer to height of containing block",
+      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a <length>, the corresponding absolute length; if specified as a <percentage>, the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "length or percentage"
+    },
+    "z-index": {
+      "name": "z-index",
+      "value": "auto | <integer>",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animatable": "<integer>"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<length>": {
+      "prose": "The offset is a fixed distance from the reference edge. Negative values are allowed."
+    },
+    "<percentage>": {
+      "prose": "The offset is a percentage of the containing block’s width (for left or right) or height (for top and bottom). For stickily positioned elements, the offset is a percentage of the flow root’s width (for left or right) or height (for top or bottom). Negative values are allowed."
+    },
+    "<integer>": {
+      "prose": "This integer is the stack level of the generated box in the current stacking context. The box also establishes a new stacking context."
+    }
+  }
+}
