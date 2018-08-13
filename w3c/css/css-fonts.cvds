@@ -1,0 +1,97 @@
+font-family = [ <family-name> | <generic-family> ] #
+
+font-weight = <font-weight-absolute> | bolder | lighter
+
+font-stretch = normal | <percentage> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded
+
+font-style = normal | italic | oblique <angle>?
+
+font-size = <absolute-size> | <relative-size> | <length-percentage>
+
+font-min-size = <absolute-size> | <relative-size> | <length-percentage>
+
+font-max-size = <absolute-size> | <relative-size> | <length-percentage> | infinity
+
+font-size-adjust = none | <number>
+
+font = [ [ <‘font-style’> || <font-variant-css2> || <‘font-weight’> || <font-stretch-css3> ]? <‘font-size’> [ / <‘line-height’> ]? <‘font-family’> ] | caption | icon | menu | message-box | small-caption | status-bar
+
+font-synthesis-weight = auto | none
+
+font-synthesis-style = auto | none
+
+font-synthesis-small-caps = auto | none
+
+font-synthesis = none | [ weight || style ]
+
+font-variant-alternates = normal | [ stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) ]
+
+font-language-override = normal | <string>
+
+font-optical-sizing = auto | none
+
+font-variation-settings = normal | [ <string> <number>] #
+
+font-palette = normal | light | dark | <palette-identifier>
+
+font-variant-emoji = auto | text | emoji
+
+font-family = <‘font-family’>
+
+src = see prose
+
+font-style = auto | normal | italic | oblique [ <angle> | <angle> <angle> ] ?
+
+font-weight = auto | <font-weight-absolute> <font-weight-absolute>?
+
+font-stretch = auto | <‘font-stretch’> <‘font-stretch’>?
+
+unicode-range = <urange> #
+
+font-variant = normal | none | [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> || stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero || <east-asian-variant-values> || <east-asian-width-values> || ruby || [ sub | super ] ]
+
+font-feature-settings = normal | <feature-tag-value> #
+
+font-variation-settings = normal | [ <string> <number>] #
+
+font-named-instance = auto | <string>
+
+font-display = auto | block | swap | fallback | optional
+
+font-language-override = normal | <string>
+
+base-palette = <integer> | <string>
+
+override-color = [ [ <string> | <integer> ] <color> ]#
+
+<font-weight-absolute> = [normal | bold | <number>]
+
+<font-variant-css2> = [normal | small-caps]
+
+<font-stretch-css3> = [normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]
+
+<font-format> = [<string> | woff | truetype | opentype | woff2 | embedded-opentype | svg]
+
+<font-technology> = [features | variations | color(<color-font-technology>) | palettes]
+
+<color-font-technology> = [COLR | SVG | sbix]
+
+<feature-value-name> = <ident>
+
+<feature-value-block> = <feature-type> { <declaration-list> }
+
+<feature-type> = @stylistic | @historical-forms | @styleset | @character-variant | @swash | @ornaments | @annotation
+
+<feature-value> = <integer>+
+
+<stylistic()> = stylistic(<feature-value-name>)
+
+<styleset()> = styleset(<feature-value-name>#)
+
+<character-variant()> = character-variant(<feature-value-name>#)
+
+<swash()> = swash(<feature-value-name>)
+
+<ornaments()> = ornaments(<feature-value-name>)
+
+<annotation()> = annotation(<feature-value-name>)

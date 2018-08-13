@@ -4257,11 +4257,11 @@ Informative references to this spec from:
 - [Web App Manifest](https://w3c.github.io/manifest/)
 
 
-## DeviceOrientation Event Specification {data-spec=true data-error=true}
+## DeviceOrientation Event Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/orientation-event/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/deviceorientation/spec-source-orientation.html) (1 July 2016)
 - Editor's Draft: [https://w3c.github.io/deviceorientation/spec-source-orientation.html](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - Latest published version: [https://www.w3.org/TR/orientation-event/](https://www.w3.org/TR/orientation-event/)
 - Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/)
@@ -4270,15 +4270,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML51" uses URL [`https://www.w3.org/TR/2016/REC-html51-20161101/`](https://www.w3.org/TR/2016/REC-html51-20161101/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4370,6 +4363,7 @@ Normative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Feature Policy](https://wicg.github.io/feature-policy/)
@@ -5093,6 +5087,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -5118,6 +5113,7 @@ Normative references to this spec from:
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
@@ -5222,6 +5218,7 @@ Informative references to this spec from:
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
@@ -5517,6 +5514,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
@@ -5555,11 +5553,11 @@ Informative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
-## Media Capture from DOM Elements {data-spec=true data-error=true}
+## Media Capture from DOM Elements {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/mediacapture-fromelement/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/) (August 13, 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -5568,15 +5566,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+     * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6770,6 +6762,7 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
@@ -7555,6 +7548,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
@@ -7743,6 +7737,7 @@ Normative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -7771,6 +7766,7 @@ Normative references to this spec from:
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
@@ -8093,6 +8089,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Web Budget API](https://wicg.github.io/budget-api/)

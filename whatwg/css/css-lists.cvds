@@ -1,0 +1,21 @@
+list-style-image = <image> | none
+
+list-style-type = <counter-style> | <string> | none
+
+list-style-position = inside | outside
+
+list-style = <‘list-style-type’> || <‘list-style-position’> || <‘list-style-image’>
+
+position |= marker
+
+marker-side = list-item | list-container
+
+counter-reset = [ <custom-ident> <integer>? ]+ | none
+
+counter-set = [ <custom-ident> <integer>? ]+ | none
+
+counter-increment = [ <custom-ident> <integer>? ]+ | none
+
+<counter()> = counter( <custom-ident>, [ <counter-style> | none ]? )
+
+<counters()> = counters( <custom-ident>, <string>, [ <counter-style> | none ]? )

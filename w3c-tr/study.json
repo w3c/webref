@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-08-13T09:49:02.204Z",
+  "date": "2018-08-13T12:31:16.387Z",
   "stats": {
     "crawled": 236,
     "errors": 2,
@@ -444,23 +444,26 @@
     {
       "title": "Audio Output Devices API",
       "shortname": "audio-output",
+      "date": "03 October 2017",
       "url": "https://www.w3.org/TR/audio-output/",
       "latest": "https://www.w3.org/TR/audio-output/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/mediacapture-output/",
-      "crawled": "https://www.w3.org/TR/audio-output/",
+      "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
       "repository": "https://github.com/w3c/mediacapture-output",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "HTMLMediaElement"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1843,26 +1846,23 @@
     {
       "title": "Cooperative Scheduling of Background Tasks",
       "shortname": "requestidlecallback",
-      "date": "10 October 2017",
       "url": "https://www.w3.org/TR/requestidlecallback/",
       "latest": "https://www.w3.org/TR/requestidlecallback/",
       "datedUrl": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
       "datedStatus": "Proposed Recommendation",
       "edDraft": "https://w3c.github.io/requestidlecallback/",
-      "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
+      "crawled": "https://www.w3.org/TR/requestidlecallback/",
       "repository": "https://github.com/w3c/requestidlecallback",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -13271,12 +13271,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/requestidlecallback/",
-              "title": "Cooperative Scheduling of Background Tasks",
-              "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
-              "date": "10 October 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
               "crawled": "https://www.w3.org/TR/2018/WD-gamepad-20180716/",
@@ -13413,6 +13407,12 @@
               "date": "4 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/audio-output/",
+              "title": "Audio Output Devices API",
+              "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
+              "date": "03 October 2017"
+            },
+            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/",
@@ -13459,12 +13459,6 @@
               "title": "Content Security Policy: Embedded Enforcement",
               "crawled": "https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/",
               "date": "9 September 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/requestidlecallback/",
-              "title": "Cooperative Scheduling of Background Tasks",
-              "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
-              "date": "10 October 2017"
             },
             {
               "url": "https://wicg.github.io/cors-rfc1918/",
@@ -16298,6 +16292,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/audio-output/",
+              "title": "Audio Output Devices API",
+              "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
+              "date": "03 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/html-media-capture/",
               "title": "HTML Media Capture",
               "crawled": "https://www.w3.org/TR/2018/REC-html-media-capture-20180201/",
@@ -17458,12 +17458,6 @@
               "title": "Beacon",
               "crawled": "https://www.w3.org/TR/2017/CR-beacon-20170413/",
               "date": "13 April 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/requestidlecallback/",
-              "title": "Cooperative Scheduling of Background Tasks",
-              "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
-              "date": "10 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -23636,6 +23630,12 @@
               "date": "20 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/audio-output/",
+              "title": "Audio Output Devices API",
+              "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
+              "date": "03 October 2017"
+            },
+            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/",
@@ -23676,12 +23676,6 @@
               "title": "Console Standard",
               "crawled": "https://console.spec.whatwg.org/",
               "date": "21 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/requestidlecallback/",
-              "title": "Cooperative Scheduling of Background Tasks",
-              "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
-              "date": "10 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/credential-management-1/",
@@ -24290,12 +24284,6 @@
               "title": "Beacon",
               "crawled": "https://www.w3.org/TR/2017/CR-beacon-20170413/",
               "date": "13 April 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/requestidlecallback/",
-              "title": "Cooperative Scheduling of Background Tasks",
-              "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
-              "date": "10 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/html-media-capture/",
