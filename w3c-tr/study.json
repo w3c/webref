@@ -2,70 +2,13 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-08-13T06:05:07.399Z",
+  "date": "2018-08-13T09:49:02.204Z",
   "stats": {
     "crawled": 236,
-    "errors": 5,
+    "errors": 2,
     "studied": 236
   },
   "results": [
-    {
-      "title": "https://drafts.csswg.org/css-transitions-2/",
-      "url": "https://drafts.csswg.org/css-transitions-2/",
-      "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
-        "noCssDefinitions": true,
-        "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "noEdDraft": null,
-        "ok": false
-      }
-    },
-    {
-      "title": "https://drafts.csswg.org/css-shapes-2/",
-      "url": "https://drafts.csswg.org/css-shapes-2/",
-      "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
-        "noCssDefinitions": true,
-        "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/css-typed-om-1/",
-              "title": "CSS Typed OM Level 1",
-              "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
-              "date": "10 April 2018"
-            }
-          ],
-          "informative": []
-        },
-        "noEdDraft": null,
-        "ok": false
-      }
-    },
     {
       "title": "\"MediaStream Image Capture\"",
       "shortname": "image-capture",
@@ -501,26 +444,23 @@
     {
       "title": "Audio Output Devices API",
       "shortname": "audio-output",
-      "date": "03 October 2017",
       "url": "https://www.w3.org/TR/audio-output/",
       "latest": "https://www.w3.org/TR/audio-output/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/mediacapture-output/",
-      "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
+      "crawled": "https://www.w3.org/TR/audio-output/",
       "repository": "https://github.com/w3c/mediacapture-output",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "HTMLMediaElement"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1127,6 +1067,12 @@
               "date": "11 July 2017"
             },
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/selectors-3/",
               "title": "Selectors Level 3",
               "crawled": "https://www.w3.org/TR/2018/CR-selectors-3-20180130/",
@@ -1554,6 +1500,12 @@
               "title": "Filter Effects Module Level 1",
               "crawled": "http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/",
               "date": "25 November 2014"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             }
           ],
           "informative": []
@@ -2150,6 +2102,12 @@
               "date": "03 July 2018"
             },
             {
+              "url": "https://drafts.csswg.org/css-transitions-2/",
+              "title": "CSS Transitions Level 2",
+              "crawled": "https://drafts.csswg.org/css-transitions-2/",
+              "date": "25 October 2017"
+            },
+            {
               "url": "https://drafts.csswg.org/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://drafts.csswg.org/css-values-4/",
@@ -2356,6 +2314,12 @@
               "date": "30 November 2017"
             },
             {
+              "url": "https://drafts.csswg.org/css-transitions-2/",
+              "title": "CSS Transitions Level 2",
+              "crawled": "https://drafts.csswg.org/css-transitions-2/",
+              "date": "25 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
@@ -2542,6 +2506,12 @@
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
               "date": "10 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             }
           ],
           "informative": [
@@ -3209,6 +3179,12 @@
               "date": "30 November 2017"
             },
             {
+              "url": "https://drafts.csswg.org/css-transitions-2/",
+              "title": "CSS Transitions Level 2",
+              "crawled": "https://drafts.csswg.org/css-transitions-2/",
+              "date": "25 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
@@ -3255,6 +3231,12 @@
               "title": "Motion Path Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-motion-1-20170711/",
               "date": "11 July 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -3566,6 +3548,12 @@
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
               "date": "9 November 2017"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-transitions-2/",
+              "title": "CSS Transitions Level 2",
+              "crawled": "https://drafts.csswg.org/css-transitions-2/",
+              "date": "25 October 2017"
             }
           ]
         },
@@ -4225,6 +4213,12 @@
               "date": "14 December 2017"
             },
             {
+              "url": "https://drafts.csswg.org/css-shapes-2/",
+              "title": "CSS Shapes Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-shapes-2/",
+              "date": "5 July 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-tables-3/",
               "title": "CSS Table Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/WD-css-tables-3-20170307/",
@@ -4790,6 +4784,12 @@
               "date": "3 August 2018"
             },
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://www.w3.org/TR/2018/CR-webvtt1-20180510/",
@@ -4967,6 +4967,12 @@
               "title": "HTML Canvas 2D Context",
               "crawled": "http://www.w3.org/TR/2015/REC-2dcontext-20151119/",
               "date": "19 November 2015"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -5732,6 +5738,12 @@
               "date": "22 December 2016"
             },
             {
+              "url": "https://drafts.csswg.org/css-shapes-2/",
+              "title": "CSS Shapes Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-shapes-2/",
+              "date": "5 July 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
@@ -5766,6 +5778,12 @@
               "title": "HTML Canvas 2D Context",
               "crawled": "http://www.w3.org/TR/2015/REC-2dcontext-20151119/",
               "date": "19 November 2015"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             }
           ],
           "informative": [
@@ -6007,6 +6025,12 @@
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/",
               "date": "24 May 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             }
           ],
           "informative": [
@@ -6525,14 +6549,54 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "SVGAnimatedEnumeration",
-          "SVGAnimatedLength",
-          "SVGAnimatedTransformList",
-          "SVGElement"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "SVGElement",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/SVG2/",
+                "title": "Scalable Vector Graphics (SVG) 2",
+                "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+                "date": "07 August 2018"
+              }
+            ]
+          },
+          {
+            "name": "SVGAnimatedEnumeration",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/SVG2/",
+                "title": "Scalable Vector Graphics (SVG) 2",
+                "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+                "date": "07 August 2018"
+              }
+            ]
+          },
+          {
+            "name": "SVGAnimatedTransformList",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/SVG2/",
+                "title": "Scalable Vector Graphics (SVG) 2",
+                "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+                "date": "07 August 2018"
+              }
+            ]
+          },
+          {
+            "name": "SVGAnimatedLength",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/SVG2/",
+                "title": "Scalable Vector Graphics (SVG) 2",
+                "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+                "date": "07 August 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/2011/REC-SVG11-20110816/",
           "https://www.w3.org/TR/css3-background/",
@@ -6596,6 +6660,12 @@
               "date": "31 July 2018"
             },
             {
+              "url": "https://drafts.csswg.org/css-shapes-2/",
+              "title": "CSS Shapes Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-shapes-2/",
+              "date": "5 July 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-tables-3/",
               "title": "CSS Table Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/WD-css-tables-3-20170307/",
@@ -6636,6 +6706,12 @@
               "title": "Motion Path Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-motion-1-20170711/",
               "date": "11 July 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             }
           ],
           "informative": [
@@ -7076,6 +7152,12 @@
               "title": "CSS Transitions",
               "crawled": "https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/",
               "date": "30 November 2017"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-transitions-2/",
+              "title": "CSS Transitions Level 2",
+              "crawled": "https://drafts.csswg.org/css-transitions-2/",
+              "date": "25 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -8548,6 +8630,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
@@ -8778,6 +8866,12 @@
               "date": "22 December 2016"
             },
             {
+              "url": "https://drafts.csswg.org/css-shapes-2/",
+              "title": "CSS Shapes Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-shapes-2/",
+              "date": "5 July 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
@@ -8788,6 +8882,12 @@
               "title": "Motion Path Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-motion-1-20170711/",
               "date": "11 July 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             }
           ],
           "informative": [
@@ -8800,6 +8900,43 @@
           ]
         },
         "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
+      "title": "CSS Shapes Module Level 2",
+      "date": "5 July 2018",
+      "url": "https://drafts.csswg.org/css-shapes-2/",
+      "crawled": "https://drafts.csswg.org/css-shapes-2/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css-shapes/",
+          "https://www.w3.org/TR/css3-transitions/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-typed-om-1/",
+              "title": "CSS Typed OM Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
+              "date": "10 April 2018"
+            }
+          ],
+          "informative": []
+        },
+        "noEdDraft": null,
         "ok": false
       }
     },
@@ -9224,6 +9361,12 @@
               "date": "24 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://www.w3.org/TR/2018/CR-webvtt1-20180510/",
@@ -9481,6 +9624,12 @@
               "date": "24 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
@@ -9579,6 +9728,12 @@
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
               "date": "5 July 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -9811,6 +9966,12 @@
               "date": "11 July 2017"
             },
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
@@ -9964,6 +10125,12 @@
               "date": "8 August 2018"
             },
             {
+              "url": "https://drafts.csswg.org/css-transitions-2/",
+              "title": "CSS Transitions Level 2",
+              "crawled": "https://drafts.csswg.org/css-transitions-2/",
+              "date": "25 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
@@ -9992,6 +10159,44 @@
           ]
         },
         "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
+      "title": "CSS Transitions Level 2",
+      "date": "25 October 2017",
+      "url": "https://drafts.csswg.org/css-transitions-2/",
+      "crawled": "https://drafts.csswg.org/css-transitions-2/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": true,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Window"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/web-animations/",
+            "ref": {
+              "name": "WEB-ANIMATIONS",
+              "url": "https://www.w3.org/TR/web-animations-1/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
         "ok": false
       }
     },
@@ -10469,6 +10674,12 @@
               "date": "3 August 2018"
             },
             {
+              "url": "https://drafts.csswg.org/css-shapes-2/",
+              "title": "CSS Shapes Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-shapes-2/",
+              "date": "5 July 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-tables-3/",
               "title": "CSS Table Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/WD-css-tables-3-20170307/",
@@ -10575,6 +10786,12 @@
               "title": "Motion Path Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-motion-1-20170711/",
               "date": "11 July 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -10743,6 +10960,12 @@
               "title": "CSS Shadow Parts",
               "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
               "date": "7 August 2018"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-shapes-2/",
+              "title": "CSS Shapes Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-shapes-2/",
+              "date": "5 July 2018"
             },
             {
               "url": "https://drafts.csswg.org/css-transforms-2/",
@@ -11053,6 +11276,12 @@
               "title": "Media Queries Level 4",
               "crawled": "https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/",
               "date": "5 September 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/selectors-4/",
@@ -12031,6 +12260,12 @@
               "date": "18 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
@@ -12440,6 +12675,12 @@
               "title": "Filter Effects Module Level 2",
               "crawled": "https://drafts.fxtf.org/filter-effects-2/",
               "date": "9 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             }
           ],
           "informative": []
@@ -12839,25 +13080,39 @@
     {
       "title": "Geometry Interfaces Module Level 1",
       "shortname": "geometry-1",
-      "date": "",
+      "date": "25 November 2014",
       "url": "https://www.w3.org/TR/geometry-1/",
-      "latest": "https://www.w3.org/TR/geometry-1",
-      "crawled": "https://www.w3.org/TR/geometry-1",
+      "latest": "http://www.w3.org/TR/geometry-1/",
+      "datedUrl": "http://www.w3.org/TR/2014/CR-geometry-1-20141125/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://drafts.fxtf.org/geometry/",
+      "crawled": "http://www.w3.org/TR/2014/CR-geometry-1-20141125/",
       "repository": "https://github.com/w3c/fxtf-drafts",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
+        "hasInvalidIdl": true,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css-writing-modes-3/",
+          "https://www.w3.org/TR/css-transforms-1/",
+          "https://www.w3.org/TR/css3-values/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://html.spec.whatwg.org/",
+            "ref": {
+              "name": "html5",
+              "url": "http://www.w3.org/TR/html5/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -12917,7 +13172,7 @@
           ],
           "informative": []
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -13156,12 +13411,6 @@
               "title": "Accelerated Shape Detection in Images",
               "crawled": "https://wicg.github.io/shape-detection-api/",
               "date": "4 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/audio-output/",
-              "title": "Audio Output Devices API",
-              "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
-              "date": "03 October 2017"
             },
             {
               "url": "https://wicg.github.io/background-fetch/",
@@ -13428,6 +13677,12 @@
               "date": "18 June 2018"
             },
             {
+              "url": "https://www.w3.org/TR/geometry-1/",
+              "title": "Geometry Interfaces Module Level 1",
+              "crawled": "http://www.w3.org/TR/2014/CR-geometry-1-20141125/",
+              "date": "25 November 2014"
+            },
+            {
               "url": "https://www.w3.org/TR/hr-time-3/",
               "title": "High Resolution Time Level 3",
               "crawled": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
@@ -13630,6 +13885,12 @@
               "title": "Resource Timing Level 2",
               "crawled": "https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/",
               "date": "18 May 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -13857,7 +14118,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -14474,6 +14735,12 @@
               "date": "18 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
@@ -14615,7 +14882,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -14660,6 +14927,12 @@
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
               "date": "10 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/geometry-1/",
+              "title": "Geometry Interfaces Module Level 1",
+              "crawled": "http://www.w3.org/TR/2014/CR-geometry-1-20141125/",
+              "date": "25 November 2014"
             },
             {
               "url": "https://www.w3.org/TR/html-media-capture/",
@@ -15130,6 +15403,12 @@
               "date": "18 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
@@ -15283,7 +15562,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -16018,12 +16297,6 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/audio-output/",
-              "title": "Audio Output Devices API",
-              "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
-              "date": "03 October 2017"
-            },
             {
               "url": "https://www.w3.org/TR/html-media-capture/",
               "title": "HTML Media Capture",
@@ -17677,7 +17950,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 August 2018"
+              "date": "13 August 2018"
             }
           ],
           "informative": [
@@ -18465,25 +18738,260 @@
     {
       "title": "Scalable Vector Graphics (SVG) 2",
       "shortname": "SVG2",
-      "date": "",
+      "date": "07 August 2018",
       "url": "https://www.w3.org/TR/SVG2/",
-      "latest": "https://www.w3.org/TR/SVG2",
-      "crawled": "https://www.w3.org/TR/SVG2",
+      "latest": "https://www.w3.org/TR/SVG2/",
+      "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://svgwg.org/svg2-draft/",
+      "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
       "repository": "https://github.com/w3c/svgwg",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "DOMMatrix",
+          "DOMMatrixReadOnly",
+          "DOMPoint",
+          "DOMPointInit",
+          "DOMPointReadOnly",
+          "DOMRect",
+          "DOMRectReadOnly",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "SVGMarkerElement",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/svg-markers/",
+                "title": "SVG Markers",
+                "crawled": "http://www.w3.org/TR/2015/WD-svg-markers-20150409/",
+                "date": "09 April 2015"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/svg-integration/",
+          "https://www.w3.org/TR/2012/CR-WebIDL-20120419/",
+          "https://www.w3.org/TR/filter-effects/",
+          "https://url.spec.whatwg.org/",
+          "https://www.w3.org/TR/2014/WD-geometry-1-20140522/",
+          "https://www.w3.org/TR/geometry-1/",
+          "https://www.w3.org/TR/wai-aria-1.1/",
+          "https://www.w3.org/TR/css3-background/",
+          "https://www.w3.org/TR/css-cascade-3/",
+          "https://w3c.github.io/html-aam/",
+          "https://w3c.github.io/svg-aam/",
+          "https://w3c.github.io/selection-api/",
+          "https://www.w3.org/TR/css3-mediaqueries/",
+          "https://www.w3.org/TR/2013/REC-css-style-attr-20131107/",
+          "https://www.w3.org/TR/cssom-1/",
+          "https://www.w3.org/TR/css-position-3/",
+          "https://www.w3.org/TR/css3-exclusions/",
+          "https://www.w3.org/TR/css-shapes/",
+          "https://www.w3.org/TR/resource-hints/",
+          "https://www.w3.org/TR/2003/REC-MathML2-20031021/",
+          "https://www.w3.org/TR/css-color/",
+          "https://www.w3.org/TR/html51/full",
+          "https://www.w3.org/TR/orientation-event/",
+          "https://www.w3.org/TR/css3-transforms/",
+          "https://www.w3.org/TR/cssom/",
+          "https://www.w3.org/TR/core-aam-1.1/",
+          "https://www.w3.org/TR/accname-aam-1.1/",
+          "https://w3c.github.io/aria/aria/graphics.html",
+          "https://www.w3.org/TR/smil/",
+          "https://w3c.github.io/aria/svg-aam/svg-aam.html",
+          "https://www.w3.org/TR/xsl/",
+          "https://www.w3.org/TR/security-privacy-questionnaire/",
+          "https://www.w3.org/TR/2015/WD-svg-markers-20150407/",
+          "https://www.w3.org/TR/2015/WD-svg-strokes-20150407/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/2008/REC-xml-20081126/",
+            "ref": {
+              "name": "xml",
+              "url": "https://www.w3.org/TR/xml"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2006/REC-xml-names-20060816/",
+            "ref": {
+              "name": "xml-names",
+              "url": "https://www.w3.org/TR/xml-names"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/dom/",
+            "ref": {
+              "name": "dom",
+              "url": "https://dom.spec.whatwg.org/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/css3-values/",
+            "ref": {
+              "name": "css-values",
+              "url": "https://www.w3.org/TR/css-values/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/html/",
+            "ref": {
+              "name": "HTML",
+              "url": "https://html.spec.whatwg.org/multipage/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2011/REC-CSS2-20110607/",
+            "ref": {
+              "name": "CSS2",
+              "url": "https://www.w3.org/TR/CSS2"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/compositing/",
+            "ref": {
+              "name": "compositing-1",
+              "url": "https://www.w3.org/TR/compositing-1/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2015/CR-compositing-1-20150113/",
+            "ref": {
+              "name": "compositing-1",
+              "url": "https://www.w3.org/TR/compositing-1/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2015/CR-compositing-1-20150113",
+            "ref": {
+              "name": "compositing-1",
+              "url": "https://www.w3.org/TR/compositing-1/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2012/WD-css3-values-20120308/",
+            "ref": {
+              "name": "css-values",
+              "url": "https://www.w3.org/TR/css-values/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2014/CR-html5-20140204/",
+            "ref": {
+              "name": "HTML",
+              "url": "https://html.spec.whatwg.org/multipage/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2014/WD-dom-20140204/",
+            "ref": {
+              "name": "dom",
+              "url": "https://dom.spec.whatwg.org/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/css3-writing-modes/",
+            "ref": {
+              "name": "css-writing-modes-3",
+              "url": "https://www.w3.org/TR/css-writing-modes-3/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2011/WD-css3-fonts-20111004/",
+            "ref": {
+              "name": "css-fonts-3",
+              "url": "https://www.w3.org/TR/css-fonts-3/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2015/CR-css-ui-3-20150707/",
+            "ref": {
+              "name": "css-ui-3",
+              "url": "https://www.w3.org/TR/css-ui-3/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2001/REC-smil-animation-20010904/",
+            "ref": {
+              "name": "smil-animation",
+              "url": "https://www.w3.org/TR/smil-animation/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2001/REC-xlink-20010627/",
+            "ref": {
+              "name": "xlink",
+              "url": "https://www.w3.org/TR/xlink/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/",
+            "ref": {
+              "name": "DOM-Level-2-Views",
+              "url": "https://www.w3.org/TR/DOM-Level-2-Views"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/",
+            "ref": {
+              "name": "DOM-Level-2-Style",
+              "url": "https://www.w3.org/TR/DOM-Level-2-Style/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2012/WD-css3-animations-20120403/",
+            "ref": {
+              "name": "css3-animations",
+              "url": "https://www.w3.org/TR/css3-animations/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/html/",
+            "ref": {
+              "name": "HTML",
+              "url": "https://html.spec.whatwg.org/multipage/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/uievents/",
+            "ref": {
+              "name": "uievents",
+              "url": "https://www.w3.org/TR/uievents/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/web-animations/",
+            "ref": {
+              "name": "web-animations-1",
+              "url": "https://www.w3.org/TR/web-animations-1/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/",
+            "ref": {
+              "name": "UAAG20",
+              "url": "https://www.w3.org/TR/UAAG20/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2008/REC-CSS2-20080411/",
+            "ref": {
+              "name": "CSS2",
+              "url": "https://www.w3.org/TR/CSS2"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -18545,6 +19053,12 @@
               "title": "CSS Image Values and Replaced Content Module Level 4",
               "crawled": "https://www.w3.org/TR/2017/WD-css-images-4-20170413/",
               "date": "13 April 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/cssom-1/",
+              "title": "CSS Object Model (CSSOM)",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
+              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-transforms-1/",
@@ -18631,6 +19145,12 @@
               "date": "09 April 2015"
             },
             {
+              "url": "https://www.w3.org/TR/uievents/",
+              "title": "UI Events",
+              "crawled": "https://www.w3.org/TR/2016/WD-uievents-20160804/",
+              "date": "04 August 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
@@ -18687,6 +19207,12 @@
               "date": "17 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/geometry-1/",
+              "title": "Geometry Interfaces Module Level 1",
+              "crawled": "http://www.w3.org/TR/2014/CR-geometry-1-20141125/",
+              "date": "25 November 2014"
+            },
+            {
               "url": "https://www.w3.org/TR/selectors-3/",
               "title": "Selectors Level 3",
               "crawled": "https://www.w3.org/TR/2018/CR-selectors-3-20180130/",
@@ -18700,7 +19226,7 @@
             }
           ]
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -18932,7 +19458,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 August 2018"
+              "date": "13 August 2018"
             }
           ]
         },
@@ -19646,14 +20172,21 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "DOMPoint",
-          "DOMPointReadOnly",
-          "SVGAngle",
-          "SVGAnimatedAngle",
-          "SVGAnimatedEnumeration",
-          "SVGAnimatedLength",
-          "SVGElement"
+          "DOMPointReadOnly"
         ],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "SVGMarkerElement",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/SVG2/",
+                "title": "Scalable Vector Graphics (SVG) 2",
+                "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+                "date": "07 August 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/2014/CR-css-masking-1-20140826/",
@@ -19961,6 +20494,12 @@
               "title": "Pointer Lock 2.0",
               "crawled": "https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/",
               "date": "08 February 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/uievents-code/",
@@ -20725,6 +21264,12 @@
               "date": "30 November 2017"
             },
             {
+              "url": "https://drafts.csswg.org/css-transitions-2/",
+              "title": "CSS Transitions Level 2",
+              "crawled": "https://drafts.csswg.org/css-transitions-2/",
+              "date": "25 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
@@ -20923,6 +21468,12 @@
               "date": "18 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
@@ -21100,7 +21651,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -21258,6 +21809,18 @@
               "title": "CSS Animations Level 2",
               "crawled": "https://drafts.csswg.org/css-animations-2/",
               "date": "5 July 2018"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-transitions-2/",
+              "title": "CSS Transitions Level 2",
+              "crawled": "https://drafts.csswg.org/css-transitions-2/",
+              "date": "25 October 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -22458,6 +23021,12 @@
               "date": "18 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
@@ -22611,7 +23180,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -23067,12 +23636,6 @@
               "date": "20 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/audio-output/",
-              "title": "Audio Output Devices API",
-              "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
-              "date": "03 October 2017"
-            },
-            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/",
@@ -23191,6 +23754,12 @@
               "title": "CSS Transitions",
               "crawled": "https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/",
               "date": "30 November 2017"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-transitions-2/",
+              "title": "CSS Transitions Level 2",
+              "crawled": "https://drafts.csswg.org/css-transitions-2/",
+              "date": "25 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -23475,6 +24044,12 @@
               "date": "18 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
+              "date": "07 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/screen-capture/",
               "title": "Screen Capture",
               "crawled": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
@@ -23676,7 +24251,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -23943,7 +24518,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "12 August 2018",
+      "date": "13 August 2018",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
