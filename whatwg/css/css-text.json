@@ -1,0 +1,151 @@
+{
+  "properties": {
+    "text-space-collapse": {
+      "name": "text-space-collapse",
+      "value": "collapse | discard | preserve | preserve-breaks | preserve-spaces",
+      "initial": "collapse",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "text-space-trim": {
+      "name": "text-space-trim",
+      "value": "none | trim-inner || discard-before || discard-after",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "text-wrap": {
+      "name": "text-wrap",
+      "value": "wrap | nowrap | balance | multi-line",
+      "initial": "wrap",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "wrap-before": {
+      "name": "wrap-before",
+      "value": "auto | avoid | avoid-line | avoid-flex | line | flex",
+      "initial": "auto",
+      "appliesTo": "inline-level boxes and flex items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "wrap-after": {
+      "name": "wrap-after",
+      "value": "auto | avoid | avoid-line | avoid-flex | line | flex",
+      "initial": "auto",
+      "appliesTo": "inline-level boxes and flex items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "wrap-inside": {
+      "name": "wrap-inside",
+      "value": "auto | avoid",
+      "initial": "auto",
+      "appliesTo": "inline boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "white-space": {
+      "name": "white-space",
+      "value": "normal | pre | nowrap | pre-wrap | pre-line",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "hyphenate-character": {
+      "name": "hyphenate-character",
+      "value": "auto | <string>",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "hyphenate-limit-zone": {
+      "name": "hyphenate-limit-zone",
+      "value": "<percentage> | <length>",
+      "initial": "0",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "refers to width of the line box",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "hyphenate-limit-chars": {
+      "name": "hyphenate-limit-chars",
+      "value": "[ auto | <integer> ]{1,3}",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "hyphenate-limit-lines": {
+      "name": "hyphenate-limit-lines",
+      "value": "no-limit | <integer>",
+      "initial": "no-limit",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "hyphenate-limit-last": {
+      "name": "hyphenate-limit-last",
+      "value": "none | always | column | page | spread",
+      "initial": "none",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "text-spacing": {
+      "name": "text-spacing",
+      "value": "normal | none | [ trim-start | space-start ] || [ trim-end | space-end | allow-end ] || [ trim-adjacent | space-adjacent ] || no-compress || ideograph-alpha || ideograph-numeric || punctuation",
+      "initial": "normal",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computed value": "specified value"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<string>": {
+      "prose": "The string must be a single character; otherwise the declaration must be ignored. When applied to a table cell, specifies the alignment character around which the cell’s contents will align. See below for further details and how this value combines with keywords."
+    }
+  }
+}

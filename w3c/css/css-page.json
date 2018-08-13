@@ -1,0 +1,52 @@
+{
+  "properties": {
+    "page": {
+      "name": "page",
+      "value": "auto | <custom-ident>",
+      "initial": "auto",
+      "appliesTo": "boxes that create class A break points",
+      "inherited": "no (but see prose)",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    }
+  },
+  "descriptors": {
+    "size": {
+      "name": "size",
+      "for": "@page",
+      "value": "<length>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ]",
+      "initial": "auto",
+      "computedValue": "specified value, with <length>s made absolute."
+    },
+    "marks": {
+      "name": "marks",
+      "for": "@page",
+      "value": "none | [ crop || cross ]",
+      "initial": "none",
+      "computedValue": "as specified"
+    },
+    "bleed": {
+      "name": "bleed",
+      "for": "@page",
+      "value": "auto | <length>",
+      "initial": "auto",
+      "computedValue": "as specified"
+    }
+  },
+  "valuespaces": {
+    "<page-selector-list>": {
+      "value": "<page-selector>#"
+    },
+    "<page-selector>": {
+      "value": "[ <ident-token>? <pseudo-page>* ]!"
+    },
+    "<pseudo-page>": {
+      "value": "':' [ left | right | first | blank ] /* Margin rules */"
+    },
+    "<page-size>": {
+      "prose": "A page size can be specified using one of the following media names. This is the equivalent of specifying size using length values. The definition of the the media names comes from Media Standardized Names [PWGMSN]. A5 Equivalent to the size of ISO A5 media: 148mm wide and 210 mm high. A4 Equivalent to the size of ISO A4 media: 210 mm wide and 297 mm high. A3 Equivalent to the size of ISO A3 media: 297mm wide and 420mm high. B5 Equivalent to the size of ISO B5 media: 176mm wide by 250mm high. B4 Equivalent to the size of ISO B4 media: 250mm wide by 353mm high. JIS-B5 Equivalent to the size of JIS B5 media: 182mm wide by 257mm high. JIS-B4 Equivalent to the size of JIS B4 media: 257mm wide by 364mm high. letter Equivalent to the size of North American letter media: 8.5 inches wide and 11 inches high legal Equivalent to the size of North American legal: 8.5 inches wide by 14 inches high. ledger Equivalent to the size of North American ledger: 11 inches wide by 17 inches high."
+    }
+  }
+}

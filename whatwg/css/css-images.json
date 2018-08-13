@@ -1,0 +1,81 @@
+{
+  "properties": {
+    "object-fit": {
+      "name": "object-fit",
+      "value": "fill | contain | cover | none | scale-down",
+      "initial": "fill",
+      "appliesTo": "replaced elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "object-position": {
+      "name": "object-position",
+      "value": "<position>",
+      "initial": "50% 50%",
+      "appliesTo": "replaced elements",
+      "inherited": "no",
+      "percentages": "refer to width and height of element itself",
+      "computedValue": "specified value",
+      "canonicalOrder": "the horizontal component of the <position>, followed by the vertical component",
+      "animatable": "yes"
+    },
+    "image-orientation": {
+      "name": "image-orientation",
+      "value": "none | from-image | <angle> | [ <angle>? flip ]",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "the specified keyword, or an <angle>, rounded and normalized (see text), plus optionally a flip keyword",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "image-rendering": {
+      "name": "image-rendering",
+      "value": "auto | smooth | high-quality | crisp-edges | pixelated",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<image>": {
+      "value": "<url> | <cross-fade()> | <gradient>"
+    },
+    "<gradient>": {
+      "value": "<linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>"
+    },
+    "<linear-gradient()>": {
+      "value": "linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )"
+    },
+    "<side-or-corner>": {
+      "value": "[left | right] || [top | bottom]"
+    },
+    "<color-stop-list>": {
+      "value": "<color-stop>#{2,}"
+    },
+    "<color-stop>": {
+      "value": "<color> <length-percentage>?"
+    },
+    "<radial-gradient()>": {
+      "value": "radial-gradient( [ [ circle || <length> ] [ at <position> ]? , | [ ellipse || <length-percentage>{2} ] [ at <position> ]? , | [ [ circle | ellipse ] || <extent-keyword> ] [ at <position> ]? , | at <position> , ]? <color-stop> [ , <color-stop> ]+ )"
+    },
+    "<extent-keyword>": {
+      "value": "closest-corner | closest-side | farthest-corner | farthest-side"
+    },
+    "<ending-shape>": {
+      "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <ending-shape> is omitted, the ending shape defaults to a circle if the <size> is a single <length>, and to an ellipse otherwise."
+    },
+    "<length>": {
+      "prose": "Gives the radius of the circle explicitly. Negative values are invalid. Note: Percentages are not allowed here; they can only be used to specify the size of an elliptical gradient, not a circular one. This restriction exists because there is are multiple reasonable answers as to which dimension the percentage should be relative to. A future level of this module may provide the ability to size circles with percentages, perhaps with more explicit controls over which dimension is used."
+    }
+  }
+}
