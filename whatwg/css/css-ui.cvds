@@ -1,0 +1,31 @@
+outline = [ <‘outline-color’> || <‘outline-style’> || <‘outline-width’> ]
+
+outline-width = <line-width>
+
+outline-style = auto | <outline-line-style>
+
+outline-color = <color> | invert
+
+outline-offset = <length>
+
+resize = none | both | horizontal | vertical
+
+cursor = [ [<url> [<x> <y>]?,]* [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out ] ]
+
+caret-color = auto | <color>
+
+caret-shape = auto | bar | block | underscore
+
+caret = <‘caret-color’> || <‘caret-shape’>
+
+nav-up = auto | <id> [ current | root | <target-name> ]?
+
+nav-right = auto | <id> [ current | root | <target-name> ]?
+
+nav-down = auto | <id> [ current | root | <target-name> ]?
+
+nav-left = auto | <id> [ current | root | <target-name> ]?
+
+user-select = auto | text | none | contain | all
+
+appearance = auto | none

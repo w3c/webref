@@ -1,0 +1,37 @@
+filter = none | <filter-value-list>
+
+flood-color = <color>
+
+flood-opacity = <alpha-value>
+
+color-interpolation-filters = auto | sRGB | linearRGB
+
+lighting-color = <color>
+
+<filter-value-list> = [ <filter-function> | <url> ]+
+
+<filter-function> = <blur()> | <brightness()> | <contrast()> | <drop-shadow()> | <grayscale()> | <hue-rotate()> | <invert()> | <opacity()> | <sepia()> | <saturate()>
+
+<blur()> = blur( <length>? )
+
+<brightness()> = brightness( <number-percentage>? )
+
+<contrast()> = contrast( <number-percentage>? )
+
+<drop-shadow()> = drop-shadow( <color>? && <length>{2,3} )
+
+<grayscale()> = grayscale( <number-percentage>? )
+
+<hue-rotate()> = hue-rotate( [ <angle> | <zero> ]? )
+
+<invert()> = invert( <number-percentage>? )
+
+<opacity()> = opacity( <number-percentage>? )
+
+<saturate()> = saturate( <number-percentage>? )
+
+<sepia()> = sepia( <number-percentage>? )
+
+<filter()> = filter( [ <image> | <string> ], <filter-value-list> )
+
+<number-optional-number> = <number> <number>?

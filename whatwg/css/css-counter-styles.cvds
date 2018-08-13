@@ -1,0 +1,27 @@
+system = cyclic | numeric | alphabetic | symbolic | additive | [fixed <integer>?] | [ extends <counter-style-name> ]
+
+negative = <symbol> <symbol>?
+
+prefix = <symbol>
+
+suffix = <symbol>
+
+range = [ [ <integer> | infinite ]{2} ]# | auto
+
+pad = <integer> && <symbol>
+
+fallback = <counter-style-name>
+
+symbols = <symbol>+
+
+additive-symbols = [ <integer> && <symbol> ]#
+
+speak-as = auto | bullets | numbers | words | spell-out | <counter-style-name>
+
+<symbol> = <string> | <image> | <custom-ident>
+
+<symbols()> = symbols( <symbols-type>? [ <string> | <image> ]+ );
+
+<symbols-type> = cyclic | numeric | alphabetic | symbolic | fixed;
+
+<counter-style> = <counter-style-name> | symbols();

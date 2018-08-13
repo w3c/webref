@@ -1,0 +1,229 @@
+margin-top = <margin-width> | inherit
+
+margin-bottom = <margin-width> | inherit
+
+margin-right = <margin-width> | inherit
+
+margin-left = <margin-width> | inherit
+
+margin = <margin-width>{1,4} | inherit
+
+padding-top = <padding-width> | inherit
+
+padding-right = <padding-width> | inherit
+
+padding-bottom = <padding-width> | inherit
+
+padding-left = <padding-width> | inherit
+
+padding = <padding-width>{1,4} | inherit
+
+border-top-width = <border-width> | inherit
+
+border-right-width = <border-width> | inherit
+
+border-bottom-width = <border-width> | inherit
+
+border-left-width = <border-width> | inherit
+
+border-width = <border-width>{1,4} | inherit
+
+border-top-color = <color> | transparent | inherit
+
+border-right-color = <color> | transparent | inherit
+
+border-bottom-color = <color> | transparent | inherit
+
+border-left-color = <color> | transparent | inherit
+
+border-color = [ <color> | transparent ]{1,4} | inherit
+
+border-top-style = <border-style> | inherit
+
+border-right-style = <border-style> | inherit
+
+border-bottom-style = <border-style> | inherit
+
+border-left-style = <border-style> | inherit
+
+border-style = <border-style>{1,4} | inherit
+
+border-top = [ <border-width> || <border-style> || <'border-top-color'> ] | inherit
+
+border-right = [ <border-width> || <border-style> || <'border-top-color'> ] | inherit
+
+border-bottom = [ <border-width> || <border-style> || <'border-top-color'> ] | inherit
+
+border-left = [ <border-width> || <border-style> || <'border-top-color'> ] | inherit
+
+border = [ <border-width> || <border-style> || <'border-top-color'> ] | inherit
+
+display = inline | block | list-item | inline-block | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | none | inherit
+
+position = static | relative | absolute | fixed | inherit
+
+top = <length> | <percentage> | auto | inherit
+
+right = <length> | <percentage> | auto | inherit
+
+bottom = <length> | <percentage> | auto | inherit
+
+left = <length> | <percentage> | auto | inherit
+
+float = left | right | none | inherit
+
+clear = none | left | right | both | inherit
+
+z-index = auto | <integer> | inherit
+
+direction = ltr | rtl | inherit
+
+unicode-bidi = normal | embed | bidi-override | inherit
+
+width = <length> | <percentage> | auto | inherit
+
+min-width = <length> | <percentage> | inherit
+
+max-width = <length> | <percentage> | none | inherit
+
+height = <length> | <percentage> | auto | inherit
+
+min-height = <length> | <percentage> | inherit
+
+max-height = <length> | <percentage> | none | inherit
+
+line-height = normal | <number> | <length> | <percentage> | inherit
+
+vertical-align = baseline | sub | super | top | text-top | middle | bottom | text-bottom | <percentage> | <length> | inherit
+
+overflow = visible | hidden | scroll | auto | inherit
+
+clip = <shape> | auto | inherit
+
+visibility = visible | hidden | collapse | inherit
+
+content = normal | none | [ <string> | <uri> | <counter> | attr(<identifier>) | open-quote | close-quote | no-open-quote | no-close-quote ]+ | inherit
+
+quotes = [<string> <string>]+ | none | inherit
+
+counter-reset = [ <identifier> <integer>? ]+ | none | inherit
+
+counter-increment = [ <identifier> <integer>? ]+ | none | inherit
+
+list-style-type = disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none | inherit
+
+list-style-image = <uri> | none | inherit
+
+list-style-position = inside | outside | inherit
+
+list-style = [ <'list-style-type'> || <'list-style-position'> || <'list-style-image'> ] | inherit
+
+page-break-before = auto | always | avoid | left | right | inherit
+
+page-break-after = auto | always | avoid | left | right | inherit
+
+page-break-inside = avoid | auto | inherit
+
+orphans = <integer> | inherit
+
+widows = <integer> | inherit
+
+color = <color> | inherit
+
+background-color = <color> | transparent | inherit
+
+background-image = <uri> | none | inherit
+
+background-repeat = repeat | repeat-x | repeat-y | no-repeat | inherit
+
+background-attachment = scroll | fixed | inherit
+
+background-position = [ [ <percentage> | <length> | left | center | right ] [ <percentage> | <length> | top | center | bottom ]? ] | [ [ left | center | right ] || [ top | center | bottom ] ] | inherit
+
+background = [<'background-color'> || <'background-image'> || <'background-repeat'> || <'background-attachment'> || <'background-position'>] | inherit
+
+font-family = [[ <family-name> | <generic-family> ] [, <family-name>| <generic-family>]* ] | inherit
+
+font-style = normal | italic | oblique | inherit
+
+font-variant = normal | small-caps | inherit
+
+font-weight = normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | inherit
+
+font-size = <absolute-size> | <relative-size> | <length> | <percentage> | inherit
+
+font = [ [ <'font-style'> || <'font-variant'> || <'font-weight'> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar | inherit
+
+text-indent = <length> | <percentage> | inherit
+
+text-align = left | right | center | justify | inherit
+
+text-decoration = none | [ underline || overline || line-through || blink ] | inherit
+
+letter-spacing = normal | <length> | inherit
+
+word-spacing = normal | <length> | inherit
+
+text-transform = capitalize | uppercase | lowercase | none | inherit
+
+white-space = normal | pre | nowrap | pre-wrap | pre-line | inherit
+
+caption-side = top | bottom | inherit
+
+table-layout = auto | fixed | inherit
+
+border-collapse = collapse | separate | inherit
+
+border-spacing = <length> <length>? | inherit
+
+empty-cells = show | hide | inherit
+
+cursor = [ [<uri> ,]* [ auto | crosshair | default | pointer | move | e-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize | text | wait | help | progress ] ] | inherit
+
+outline = [ <'outline-color'> || <'outline-style'> || <'outline-width'> ] | inherit
+
+outline-width = <border-width> | inherit
+
+outline-style = <border-style> | inherit
+
+outline-color = <color> | invert | inherit
+
+volume = <number> | <percentage> | silent | x-soft | soft | medium | loud | x-loud | inherit
+
+speak = normal | none | spell-out | inherit
+
+pause-before = <time> | <percentage> | inherit
+
+pause-after = <time> | <percentage> | inherit
+
+pause = [ [<time> | <percentage>]{1,2} ] | inherit
+
+cue-before = <uri> | none | inherit
+
+cue-after = <uri> | none | inherit
+
+cue = [ <'cue-before'> || <'cue-after'> ] | inherit
+
+play-during = <uri> [ mix || repeat ]? | auto | none | inherit
+
+azimuth = <angle> | [[ left-side | far-left | left | center-left | center | center-right | right | far-right | right-side ] || behind ] | leftwards | rightwards | inherit
+
+elevation = <angle> | below | level | above | higher | lower | inherit
+
+speech-rate = <number> | x-slow | slow | medium | fast | x-fast | faster | slower | inherit
+
+voice-family = [[<specific-voice> | <generic-voice> ],]* [<specific-voice> | <generic-voice> ] | inherit
+
+pitch = <frequency> | x-low | low | medium | high | x-high | inherit
+
+pitch-range = <number> | inherit
+
+stress = <number> | inherit
+
+richness = <number> | inherit
+
+speak-punctuation = code | none | inherit
+
+speak-numeral = digits | continuous | inherit
+
+speak-header = once | always | inherit
