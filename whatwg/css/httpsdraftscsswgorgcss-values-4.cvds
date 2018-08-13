@@ -1,0 +1,25 @@
+<url> = url( <string> <url-modifier>* )
+
+<position> = [ [ left | center | right ] || [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ]? | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]
+
+<calc()> = calc( <calc-sum> )
+
+<min()> = min( <calc-sum># )
+
+<max()> = max( <calc-sum># )
+
+<clamp()> = clamp( <calc-sum>#{3} )
+
+<calc-sum> = <calc-product> [ [ '+' | '-' ] <calc-product> ]*
+
+<calc-product> = <calc-value> [ [ '*' | '/' ] <calc-value> ]*
+
+<calc-value> = <number> | <dimension> | <percentage> | ( <calc-sum> )
+
+<length-percentage> = [ <length> | <percentage> ]
+
+<frequency-percentage> = [ <frequency> | <percentage> ]
+
+<angle-percentage> = [ <angle> | <percentage> ]
+
+<time-percentage> = [ <time> | <percentage> ]

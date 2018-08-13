@@ -1,0 +1,43 @@
+background-position = <position>#
+
+background-position-x = [ center | [ left | right | x-start | x-end ]? <length-percentage>? ]#
+
+background-position-y = [ center | [ top | bottom | y-start | y-end ]? <length-percentage>? ]#
+
+background-position-inline = [ center | [ start | end ]? <length-percentage>? ]#
+
+background-position-block = [ center | [ start | end ]? <length-percentage>? ]#
+
+background-clip = <bg-clip>#
+
+border-top-color = <color>#
+
+border-right-color = <color>#
+
+border-bottom-color = <color>#
+
+border-left-color = <color>#
+
+border-color = <color>{1,4}#
+
+border-radius = <length-percentage>{1,4} [ / <length-percentage>{1,4} ]?
+
+corner-shape = [ round | bevel | scoop | notch ]{1,4}
+
+corners = <‘corner-shape’> || <‘border-radius’>
+
+border-limit = all | [ sides | corners ] <length-percentage>? | [ top | right | bottom | left ] <length-percentage>
+
+border-clip = normal | [ <length-percentage> | <flex> ]+
+
+border-clip-top = normal | [ <length-percentage> | <flex> ]+
+
+border-clip-right = normal | [ <length-percentage> | <flex> ]+
+
+border-clip-bottom = normal | [ <length-percentage> | <flex> ]+
+
+border-clip-left = normal | [ <length-percentage> | <flex> ]+
+
+<position> = [ [ left | center | right | top | bottom | start | end | <length-percentage> ] | [ left | center | right | x-start | x-end | <length-percentage> ] [ top | center | bottom | y-start | y-end | <length-percentage> ] | [ center | [ left | right | x-start | x-end ] <length-percentage>? ] && [ center | [ top | bottom | y-start | y-end ] <length-percentage>? ] | [ center | [ start | end ] <length-percentage>? ] [ center | [ start | end ] <length-percentage>? ] ]
+
+<bg-clip> = <box> | border | text

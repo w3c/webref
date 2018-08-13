@@ -1,0 +1,89 @@
+{
+  "properties": {
+    "color": {
+      "name": "color",
+      "value": "<color>",
+      "initial": "UA-defined, see prose",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "See resolving color values",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "opacity": {
+      "name": "opacity",
+      "value": "<alpha-value>",
+      "initial": "1",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the specified value converted to a number, clamped to the range [0,1]",
+      "canonicalOrder": "per grammar",
+      "animationType": "as number"
+    },
+    "color-adjust": {
+      "name": "color-adjust",
+      "value": "economy | exact",
+      "initial": "economy",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    }
+  },
+  "descriptors": {
+    "src": {
+      "name": "src",
+      "for": "@color-profile",
+      "value": "<url>",
+      "initial": "n/a"
+    },
+    "rendering-intent": {
+      "name": "rendering-intent",
+      "for": "@color-profile",
+      "value": "relative-colorimetric | absolute-colorimetric | perceptual | saturation",
+      "initial": "relative-colorimetric"
+    }
+  },
+  "valuespaces": {
+    "<color>": {
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <gray()> | <device-cmyk()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>"
+    },
+    "<rgb()>": {
+      "value": "rgb( <percentage>{3} [ / <alpha-value> ]? ) | rgb( <number>{3} [ / <alpha-value> ]? )"
+    },
+    "<alpha-value>": {
+      "value": "<number> | <percentage>"
+    },
+    "<hsl()>": {
+      "value": "hsl( <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+    },
+    "<hue>": {
+      "value": "<number> | <angle>"
+    },
+    "<hwb()>": {
+      "value": "hwb( <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+    },
+    "<lab()>": {
+      "value": "lab( <number> <number> <number> [ / <alpha-value> ]? )"
+    },
+    "<lch()>": {
+      "value": "lch( <number> <number> <hue> [ / <alpha-value> ]? )"
+    },
+    "<gray()>": {
+      "value": "gray( <number> [ / <alpha-value> ]? )"
+    },
+    "<color()>": {
+      "value": "color( [ <ident>? [ <number>+ | <string> ] [ / <alpha-value> ]? ]# , <color>? )"
+    },
+    "<device-cmyk()>": {
+      "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? , <color>? )"
+    },
+    "<cmyk-component>": {
+      "value": "<number> | <percentage>"
+    }
+  }
+}

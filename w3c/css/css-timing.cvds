@@ -1,0 +1,11 @@
+<cubic-bezier()> = cubic-bezier(<number>, <number>, <number>, <number>)
+
+<steps()> = steps(<integer>[, [ start | end ] ]?)
+
+<timing-function> = linear | <cubic-bezier-timing-function> | <step-timing-function> | <frames-timing-function>
+
+<cubic-bezier-timing-function> = ease | ease-in | ease-out | ease-in-out | cubic-bezier(<number>, <number>, <number>, <number>)
+
+<step-timing-function> = step-start | step-end | steps(<integer>[, [ start | end ] ]?)
+
+<frames-timing-function> = frames(<integer>)

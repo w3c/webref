@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "shape-inside": {
+      "name": "shape-inside",
+      "value": "auto | outside-shape | [ <basic-shape> || shape-box ] | <image> | display",
+      "initial": "auto",
+      "appliesTo": "block-level elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "computed lengths for <basic-shape>, the absolute URI for <uri>, otherwise as specified",
+      "canonicalOrder": "per grammar",
+      "animatable": "as specified for <basic-shape>, otherwise no"
+    },
+    "shape-padding": {
+      "name": "shape-padding",
+      "value": "<length>",
+      "initial": "none",
+      "appliesTo": "block-level elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the absolute length",
+      "canonicalOrder": "per grammar",
+      "animatable": "as length, percentage, or calc"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<path()>": {
+      "value": "path( [<fill-rule>,]? <string> )"
+    },
+    "<basic-shape>": {
+      "prose": "The shape is computed based on the values of one of inset(), circle(), ellipse() or polygon()."
+    },
+    "<uri>": {
+      "prose": "If the <uri> references an SVG shape element, that element defines the shape. Otherwise, if the <uri> references an image, the shape is extracted and computed based on the alpha channel of the specified image. If the <uri> does not reference an SVG shape element or an image, the effect is as if the value auto had been specified."
+    }
+  }
+}

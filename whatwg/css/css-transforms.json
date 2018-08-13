@@ -1,0 +1,114 @@
+{
+  "properties": {
+    "translate": {
+      "name": "translate",
+      "value": "none | <length-percentage> [ <length-percentage> <length>? ]?",
+      "initial": "none",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "relative to the width of the containing block (for the first value) or the height (for the second value)",
+      "computedValue": "as specified, with lengths made absolute",
+      "canonicalOrder": "per grammar",
+      "animatable": "as <length> or <percentage> list"
+    },
+    "rotate": {
+      "name": "rotate",
+      "value": "none | [ x | y | z | <number>{3} ]? && <angle>",
+      "initial": "none",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animatable": "as SLERP"
+    },
+    "scale": {
+      "name": "scale",
+      "value": "none | <number>{1,3}",
+      "initial": "none",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animatable": "as <number> list"
+    },
+    "transform-style": {
+      "name": "transform-style",
+      "value": "auto | flat | preserve-3d",
+      "initial": "auto",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "Same as specified value.",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "perspective": {
+      "name": "perspective",
+      "value": "none | <length>",
+      "initial": "none",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "Absolute length or \"none\".",
+      "canonicalOrder": "per grammar",
+      "animatable": "as length"
+    },
+    "perspective-origin": {
+      "name": "perspective-origin",
+      "value": "<position>",
+      "initial": "50% 50%",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "refer to the size of the reference box",
+      "computedValue": "For <length> the absolute value, otherwise a percentage.",
+      "canonicalOrder": "per grammar",
+      "animatable": "as simple list of length, percentage, or calc"
+    },
+    "backface-visibility": {
+      "name": "backface-visibility",
+      "value": "visible | hidden",
+      "initial": "visible",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "Same as specified value.",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<matrix3d()>": {
+      "value": "matrix3d( <number> [, <number> ]{15,15} )"
+    },
+    "<translate3d()>": {
+      "value": "translate3d( <length-percentage> , <length-percentage> , <length> )"
+    },
+    "<translateZ()>": {
+      "value": "translateZ( <length> )"
+    },
+    "<scale3d()>": {
+      "value": "scale3d( <number> , <number>, <number> )"
+    },
+    "<scaleZ()>": {
+      "value": "scaleZ( <number> )"
+    },
+    "<rotate3d()>": {
+      "value": "rotate3d( <number> , <number> , <number> , [ <angle> | <zero> ] )"
+    },
+    "<rotateX()>": {
+      "value": "rotateX( [ <angle> | <zero> ] )"
+    },
+    "<rotateY()>": {
+      "value": "rotateY( [ <angle> | <zero> ] )"
+    },
+    "<rotateZ()>": {
+      "value": "rotateZ( [ <angle> | <zero> ] )"
+    },
+    "<perspective()>": {
+      "value": "perspective( <length> )"
+    }
+  }
+}

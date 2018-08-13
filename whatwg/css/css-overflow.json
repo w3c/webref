@@ -1,0 +1,54 @@
+{
+  "properties": {
+    "scrollbar-gutter": {
+      "name": "scrollbar-gutter",
+      "value": "auto | [ stable | always ] && both? && force?",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "text-overflow": {
+      "name": "text-overflow",
+      "value": "[ clip | ellipsis | <string> | fade | <fade()> ]{1,2}",
+      "initial": "clip",
+      "appliesTo": "block containers",
+      "inherited": "no",
+      "percentages": "refer to the width of the line box",
+      "computedValue": "As specified, with <length> converted to absolute units",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "continue": {
+      "name": "continue",
+      "value": "auto | overflow | paginate | fragments | discard",
+      "initial": "auto",
+      "appliesTo": "block containers [CSS21], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see below",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "max-lines": {
+      "name": "max-lines",
+      "value": "none | <integer>",
+      "initial": "none",
+      "appliesTo": "fragment boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animatable": "as integer"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<fade()>": {
+      "value": "fade( <length> | <percentage> )"
+    }
+  }
+}

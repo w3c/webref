@@ -1,0 +1,29 @@
+transform = none | <transform-list>
+
+transform-origin = [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] <length>? | [[ center | left | right ] && [ center | top | bottom ]] <length>?
+
+transform-box = content-box | border-box | fill-box | stroke-box | view-box
+
+<transform-list> = <transform-function>+
+
+<matrix()> = matrix( <number> [, <number> ]{5,5} )
+
+<translate()> = translate( <length-percentage> [, <length-percentage> ]? )
+
+<translateX()> = translateX( <length-percentage> )
+
+<translateY()> = translateY( <length-percentage> )
+
+<scale()> = scale( <number> [, <number> ]? )
+
+<scaleX()> = scaleX( <number> )
+
+<scaleY()> = scaleY( <number> )
+
+<rotate()> = rotate( [ <angle> | <zero> ] )
+
+<skew()> = skew( [ <angle> | <zero> ] [, [ <angle> | <zero> ] ]? )
+
+<skewX()> = skewX( [ <angle> | <zero> ] )
+
+<skewY()> = skewY( [ <angle> | <zero> ] )

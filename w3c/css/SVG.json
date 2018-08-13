@@ -1,0 +1,434 @@
+{
+  "properties": {
+    "cx": {
+      "name": "cx",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘circle’ and ‘ellipse’",
+      "inherited": "no",
+      "percentages": "refer to the size of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "absolute length or percentage",
+      "animatable": "yes"
+    },
+    "cy": {
+      "name": "cy",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘circle’ and ‘ellipse’",
+      "inherited": "no",
+      "percentages": "refer to the size of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "absolute length or percentage",
+      "animatable": "yes"
+    },
+    "r": {
+      "name": "r",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘circle’",
+      "inherited": "no",
+      "percentages": "refer to the size of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "absolute length or percentage",
+      "animatable": "yes"
+    },
+    "rx": {
+      "name": "rx",
+      "value": "<length-percentage> | auto",
+      "initial": "auto",
+      "appliesTo": "‘ellipse’, ‘rect’",
+      "inherited": "no",
+      "percentages": "refer to the size of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "absolute length or percentage",
+      "animatable": "yes"
+    },
+    "ry": {
+      "name": "ry",
+      "value": "<length-percentage> | auto",
+      "initial": "auto",
+      "appliesTo": "‘ellipse’, ‘rect’",
+      "inherited": "no",
+      "percentages": "refer to the size of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "absolute length or percentage",
+      "animatable": "yes"
+    },
+    "x": {
+      "name": "x",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘svg’, ‘rect’, ‘image’, ‘foreignObject’",
+      "inherited": "no",
+      "percentages": "refer to the size of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "absolute length or percentage",
+      "animatable": "yes"
+    },
+    "y": {
+      "name": "y",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘svg’, ‘rect’, ‘image’, ‘foreignObject’",
+      "inherited": "no",
+      "percentages": "refer to the size of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "absolute length or percentage",
+      "animatable": "yes"
+    },
+    "vector-effect": {
+      "name": "vector-effect",
+      "value": "none | [ non-scaling-stroke | non-scaling-size | non-rotation | fixed-position ]+ [ viewport | screen ]?",
+      "initial": "none",
+      "appliesTo": "graphics elements and ‘use’",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "d": {
+      "name": "d",
+      "value": "none | <string>",
+      "initial": "none",
+      "appliesTo": "‘path’",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "inline-size": {
+      "name": "inline-size",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘text’ elements",
+      "inherited": "no",
+      "percentages": "Refer to the width (for horizontal text) or height (for vertical text) of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computed value": "absolute length or percentage",
+      "animatable": "yes"
+    },
+    "shape-inside": {
+      "name": "shape-inside",
+      "value": "auto | [ <basic-shape> | <uri> ]+",
+      "initial": "auto",
+      "appliesTo": "‘text’ elements",
+      "inherited": "no",
+      "percentages": "Relative to the ‘viewBox’",
+      "media": "visual",
+      "computed value": "computed lengths for <shape>, the absolute URI for <uri>, otherwise as specified",
+      "animatable": "yes, see Interpolation of Basic Shapes"
+    },
+    "shape-subtract": {
+      "name": "shape-subtract",
+      "value": "none | [ <basic-shape>| <uri> ]+",
+      "initial": "none",
+      "appliesTo": "‘text’ elements",
+      "inherited": "no",
+      "percentages": "Relative to the ‘viewBox’",
+      "media": "visual",
+      "computed value": "computed lengths for any <basic-shape>, the absolute URI for <uri>, otherwise as specified",
+      "animatable": "yes, see Interpolation of Basic Shapes"
+    },
+    "shape-margin": {
+      "name": "shape-margin",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘text’ elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "the absolute length",
+      "animatable": "yes"
+    },
+    "text-anchor": {
+      "name": "text-anchor",
+      "value": "start | middle | end",
+      "initial": "start",
+      "appliesTo": "text content elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "text-decoration-fill": {
+      "name": "text-decoration-fill",
+      "value": "<paint>",
+      "initial": "See prose.",
+      "appliesTo": "text content elements",
+      "inherited": "See prose.",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified, but with <color> values computed and <url> values made absolute.",
+      "animatable": "yes"
+    },
+    "text-decoration-stroke": {
+      "name": "text-decoration-stroke",
+      "value": "<paint>",
+      "initial": "See prose.",
+      "appliesTo": "text content elements",
+      "inherited": "See prose.",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified, but with <color> values computed and <url> values made absolute.",
+      "animatable": "yes"
+    },
+    "fill": {
+      "name": "fill",
+      "value": "<paint>",
+      "initial": "black",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified, but with <color> values computed and <url> values made absolute",
+      "animatable": "yes"
+    },
+    "fill-rule": {
+      "name": "fill-rule",
+      "value": "nonzero | evenodd",
+      "initial": "nonzero",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "fill-opacity": {
+      "name": "fill-opacity",
+      "value": "<alpha-value>",
+      "initial": "1",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "the specified value converted to a number, clamped to the range [0,1]",
+      "animatable": "yes"
+    },
+    "stroke": {
+      "name": "stroke",
+      "value": "<paint>",
+      "initial": "none",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified, but with <color> values computed and <url> values made absolute",
+      "animatable": "yes"
+    },
+    "stroke-opacity": {
+      "name": "stroke-opacity",
+      "value": "<alpha-value>",
+      "initial": "1",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "the specified value converted to a number, clamped to the range [0,1]",
+      "animatable": "yes"
+    },
+    "stroke-width": {
+      "name": "stroke-width",
+      "value": "<length-percentage>",
+      "initial": "1",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "refer to the size of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computed value": "absolute length or percentage",
+      "animatable": "yes"
+    },
+    "stroke-linecap": {
+      "name": "stroke-linecap",
+      "value": "butt | round | square",
+      "initial": "butt",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "stroke-linejoin": {
+      "name": "stroke-linejoin",
+      "value": "miter | miter-clip | round | bevel | arcs",
+      "initial": "miter",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "stroke-miterlimit": {
+      "name": "stroke-miterlimit",
+      "value": "<number>",
+      "initial": "4",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "stroke-dasharray": {
+      "name": "stroke-dasharray",
+      "value": "none | <dasharray>",
+      "initial": "none",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "refer to the size of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computed value": "absolute lengths or percentages for <dasharray>, or keyword specified",
+      "animatable": "yes (non-additive)"
+    },
+    "stroke-dashoffset": {
+      "name": "stroke-dashoffset",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "refer to the size of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computed value": "absolute length or percentage",
+      "animatable": "yes"
+    },
+    "marker-start": {
+      "name": "marker-start",
+      "value": "none | <marker-ref>",
+      "initial": "none",
+      "appliesTo": "shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
+      "animatable": "yes"
+    },
+    "marker-mid": {
+      "name": "marker-mid",
+      "value": "none | <marker-ref>",
+      "initial": "none",
+      "appliesTo": "shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
+      "animatable": "yes"
+    },
+    "marker-end": {
+      "name": "marker-end",
+      "value": "none | <marker-ref>",
+      "initial": "none",
+      "appliesTo": "shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
+      "animatable": "yes"
+    },
+    "marker": {
+      "name": "marker",
+      "value": "none | <marker-ref>",
+      "initial": "not defined for shorthand properties",
+      "appliesTo": "shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "see individual properties",
+      "animatable": "yes"
+    },
+    "paint-order": {
+      "name": "paint-order",
+      "value": "normal | [ fill || stroke || markers ]",
+      "initial": "normal",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "color-interpolation": {
+      "name": "color-interpolation",
+      "value": "auto | sRGB | linearRGB",
+      "initial": "sRGB",
+      "appliesTo": "container elements, graphics elements, gradient elements, ‘use’ and ‘animate’",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "color-rendering": {
+      "name": "color-rendering",
+      "value": "auto | optimizeSpeed | optimizeQuality",
+      "initial": "auto",
+      "appliesTo": "container elements, graphics elements, gradient elements, ‘use’ and ‘animate’",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "shape-rendering": {
+      "name": "shape-rendering",
+      "value": "auto | optimizeSpeed | crispEdges | geometricPrecision",
+      "initial": "auto",
+      "appliesTo": "shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "text-rendering": {
+      "name": "text-rendering",
+      "value": "auto | optimizeSpeed | optimizeLegibility | geometricPrecision",
+      "initial": "auto",
+      "appliesTo": "‘text’",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "image-rendering": {
+      "name": "image-rendering",
+      "value": "auto | optimizeQuality | optimizeSpeed",
+      "initial": "auto",
+      "appliesTo": "images",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    },
+    "pointer-events": {
+      "name": "pointer-events",
+      "value": "bounding-box | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | none",
+      "initial": "visiblePainted",
+      "appliesTo": "container elements, graphics elements and ‘use’",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computed value": "as specified",
+      "animatable": "yes"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<points>": {
+      "value": "[ <number>+ ]#"
+    },
+    "<dasharray>": {
+      "value": "[ <length-percentage> | <number> ]#*"
+    },
+    "<marker-ref>": {
+      "value": "<url>"
+    }
+  }
+}

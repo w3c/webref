@@ -1,0 +1,55 @@
+clip-path = <clip-source> | [ <basic-shape> || <geometry-box> ] | none
+
+clip-rule = nonzero | evenodd
+
+mask-image = <mask-reference>#
+
+mask-mode = <masking-mode>#
+
+mask-repeat = <repeat-style>#
+
+mask-position = <position>#
+
+mask-clip = [ <geometry-box> | no-clip ]#
+
+mask-origin = <geometry-box>#
+
+mask-size = <bg-size>#
+
+mask-composite = <compositing-operator>#
+
+mask = <mask-layer>#
+
+mask-border-source = none | <image>
+
+mask-border-mode = luminance | alpha
+
+mask-border-slice = <number-percentage>{1,4} fill?
+
+mask-border-width = [ <length-percentage> | <number> | auto ]{1,4}
+
+mask-border-outset = [ <length> | <number> ]{1,4}
+
+mask-border-repeat = [ stretch | repeat | round | space ]{1,2}
+
+mask-border = <‘mask-border-source’> || <‘mask-border-slice’> [ / <‘mask-border-width’>? [ / <‘mask-border-outset’> ]? ]? || <‘mask-border-repeat’> || <‘mask-border-mode’>
+
+mask-type = luminance | alpha
+
+clip = rect() | auto
+
+<clip-source> = <url>
+
+<geometry-box> = <shape-box> | fill-box | stroke-box | view-box
+
+<mask-reference> = none | <image> | <mask-source>
+
+<mask-source> = <url>
+
+<masking-mode> = alpha | luminance | match-source
+
+<compositing-operator> = add | subtract | intersect | exclude
+
+<mask-layer> = <mask-reference> || <position> [ / <bg-size> ]? ||<repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode>
+
+<rect()> = rect( <top>, <right>, <bottom>, <left> )

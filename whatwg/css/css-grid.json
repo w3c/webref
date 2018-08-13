@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "grid-template-rows": {
+      "name": "grid-template-rows",
+      "newValues": "subgrid <line-name-list>?"
+    },
+    "grid-template-columns": {
+      "name": "grid-template-columns",
+      "newValues": "subgrid <line-name-list>?"
+    },
+    "align-content": {
+      "name": "align-content",
+      "newValues": "[ <aspect-ratio> <content-distribution>? ]"
+    },
+    "justify-content": {
+      "name": "justify-content",
+      "newValues": "[ <aspect-ratio> <content-distribution>? ]"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<line-name-list>": {
+      "value": "[ <line-names> | <name-repeat> ]+"
+    },
+    "<line-names>": {
+      "value": "'[' <custom-ident>* ']'"
+    },
+    "<name-repeat>": {
+      "value": "repeat( [ <positive-integer> | auto-fill ], <line-names>+)"
+    },
+    "<aspect-ratio>": {
+      "prose": "A dimension with the unit ar, representing a multiplier against the analogous quantity in the other dimension. If that quantity cannot be determined (e.g. is itself specified as a <aspect-ratio>, or otherwise can’t be referenced), then it is assumed to be zero. Note: This value can expand gutters even when there is no free space left, causing overflow. Specifically, an align-content value of 1ar represents the amount of space (which may be zero) allocated between two adjacent alignment subjects (grid tracks / flex lines / column boxes) by the justify-content property. Unless a different <content-distribution> value is specified, space is distributed according to the same <content-distribution> rules as for justify-content. The behavior of <number> values for justify-content is analogous. Note: The space allocated by align-content: 1ar will be zero if justify-content does not allocate space between adjacent alignment subjects: either due to not having a <content-distribution> value or due to there being fewer than two alignment subjects. If both align-content and justify-content have <number> values, then justify-content’s <number> value is ignored and its <content-distribution> value honored as if specified alone. fIf no <content-distribution> value was specified, then justify-content takes align-content’s <content-distribution> value (if one was specified) and otherwise falls back to space-between."
+    }
+  }
+}
