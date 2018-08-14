@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-08-13T12:31:16.387Z",
+  "date": "2018-08-14T06:05:15.623Z",
   "stats": {
     "crawled": 236,
-    "errors": 2,
+    "errors": 1,
     "studied": 236
   },
   "results": [
@@ -1818,7 +1818,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "August 13, 2018",
+      "date": "August 14, 2018",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -1846,23 +1846,26 @@
     {
       "title": "Cooperative Scheduling of Background Tasks",
       "shortname": "requestidlecallback",
+      "date": "10 October 2017",
       "url": "https://www.w3.org/TR/requestidlecallback/",
       "latest": "https://www.w3.org/TR/requestidlecallback/",
       "datedUrl": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
       "datedStatus": "Proposed Recommendation",
       "edDraft": "https://w3c.github.io/requestidlecallback/",
-      "crawled": "https://www.w3.org/TR/requestidlecallback/",
+      "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
       "repository": "https://github.com/w3c/requestidlecallback",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1986,7 +1989,7 @@
     },
     {
       "title": "CSS Animation Worklet API",
-      "date": "8 August 2018",
+      "date": "13 August 2018",
       "url": "https://wicg.github.io/animation-worklet/",
       "crawled": "https://wicg.github.io/animation-worklet/",
       "repository": "https://github.com/wicg/animation-worklet",
@@ -2862,7 +2865,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -7049,7 +7052,7 @@
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
-              "date": "8 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -10122,7 +10125,7 @@
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
-              "date": "8 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://drafts.csswg.org/css-transitions-2/",
@@ -10893,7 +10896,7 @@
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
-              "date": "8 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://drafts.csswg.org/css-animations-2/",
@@ -11605,7 +11608,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://wicg.github.io/ResizeObserver/",
@@ -11958,7 +11961,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -13271,6 +13274,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/requestidlecallback/",
+              "title": "Cooperative Scheduling of Background Tasks",
+              "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
+              "date": "10 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
               "crawled": "https://www.w3.org/TR/2018/WD-gamepad-20180716/",
@@ -13461,6 +13470,12 @@
               "date": "9 September 2016"
             },
             {
+              "url": "https://www.w3.org/TR/requestidlecallback/",
+              "title": "Cooperative Scheduling of Background Tasks",
+              "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
+              "date": "10 October 2017"
+            },
+            {
               "url": "https://wicg.github.io/cors-rfc1918/",
               "title": "CORS and RFC1918",
               "crawled": "https://wicg.github.io/cors-rfc1918/",
@@ -13476,7 +13491,7 @@
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
-              "date": "8 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -14046,7 +14061,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -14058,7 +14073,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14094,13 +14109,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Aug 13 2018"
+              "date": "Tue Aug 14 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Aug 13 2018"
+              "date": "Tue Aug 14 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -14456,7 +14471,7 @@
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
-              "date": "8 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -14846,7 +14861,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14870,7 +14885,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Aug 13 2018"
+              "date": "Tue Aug 14 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -15118,7 +15133,7 @@
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
-              "date": "8 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -15520,7 +15535,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -15837,7 +15852,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "August 13, 2018",
+      "date": "August 14, 2018",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -17460,6 +17475,12 @@
               "date": "13 April 2017"
             },
             {
+              "url": "https://www.w3.org/TR/requestidlecallback/",
+              "title": "Cooperative Scheduling of Background Tasks",
+              "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
+              "date": "10 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://www.w3.org/TR/2018/CR-generic-sensor-20180320/",
@@ -17958,7 +17979,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             }
           ]
         },
@@ -18055,7 +18076,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -18069,7 +18090,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -18122,7 +18143,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             }
           ],
           "informative": [
@@ -18140,7 +18161,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "August 13, 2018",
+      "date": "August 14, 2018",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -20386,7 +20407,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -20451,7 +20472,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -20844,13 +20865,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -21165,7 +21186,7 @@
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
-              "date": "8 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -21411,7 +21432,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -21603,7 +21624,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -21639,7 +21660,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Aug 13 2018"
+              "date": "Tue Aug 14 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -21796,7 +21817,7 @@
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
-              "date": "8 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://drafts.csswg.org/css-animations-2/",
@@ -22333,7 +22354,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "August 13, 2018",
+      "date": "August 14, 2018",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -22491,7 +22512,7 @@
     },
     {
       "title": "Web Share API",
-      "date": "August 13, 2018",
+      "date": "August 14, 2018",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "repository": "https://github.com/wicg/web-share",
@@ -22730,7 +22751,7 @@
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
-              "date": "8 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -23144,7 +23165,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -23418,7 +23439,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Mon Aug 13 2018",
+      "date": "Tue Aug 14 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23473,7 +23494,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Mon Aug 13 2018",
+      "date": "Tue Aug 14 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23529,7 +23550,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Aug 13 2018"
+              "date": "Tue Aug 14 2018"
             }
           ],
           "informative": [
@@ -23678,6 +23699,12 @@
               "date": "21 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/requestidlecallback/",
+              "title": "Cooperative Scheduling of Background Tasks",
+              "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
+              "date": "10 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/credential-management-1/",
               "title": "Credential Management Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-credential-management-1-20170804/",
@@ -23687,7 +23714,7 @@
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
-              "date": "8 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -24185,13 +24212,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -24227,13 +24254,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Aug 13 2018"
+              "date": "Tue Aug 14 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Aug 13 2018"
+              "date": "Tue Aug 14 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -24286,6 +24313,12 @@
               "date": "13 April 2017"
             },
             {
+              "url": "https://www.w3.org/TR/requestidlecallback/",
+              "title": "Cooperative Scheduling of Background Tasks",
+              "crawled": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/",
+              "date": "10 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/html-media-capture/",
               "title": "HTML Media Capture",
               "crawled": "https://www.w3.org/TR/2018/REC-html-media-capture-20180201/",
@@ -24301,7 +24334,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -24331,7 +24364,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 13, 2018"
+              "date": "August 14, 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -24643,7 +24676,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Mon Aug 13 2018"
+                "date": "Tue Aug 14 2018"
               }
             ]
           },
@@ -24654,7 +24687,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Mon Aug 13 2018"
+                "date": "Tue Aug 14 2018"
               }
             ]
           },
@@ -24665,7 +24698,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Mon Aug 13 2018"
+                "date": "Tue Aug 14 2018"
               }
             ]
           },
@@ -24676,7 +24709,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Mon Aug 13 2018"
+                "date": "Tue Aug 14 2018"
               }
             ]
           },
@@ -24687,7 +24720,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Mon Aug 13 2018"
+                "date": "Tue Aug 14 2018"
               }
             ]
           }
@@ -24777,7 +24810,7 @@
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
-              "date": "8 August 2018"
+              "date": "13 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
