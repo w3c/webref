@@ -10,7 +10,7 @@ interface DeadFragmentInformation {
   readonly attribute double top;
   readonly attribute double left;
   readonly attribute boolean isOverflowed;
-  readonly attribute sequence<DeadFragmentInformation>? children;
+  readonly attribute FrozenArray<DeadFragmentInformation>? children;
   readonly attribute DeadFragmentInformation? nextSibling;
   readonly attribute DeadFragmentInformation? previousSibling;
   readonly attribute DeadFragmentInformation? nextInBox;
