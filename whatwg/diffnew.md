@@ -1,37 +1,11 @@
-% Diff between report from "August 16, 2018" and reference report from "August 15, 2018"
+% Diff between report from "August 17, 2018" and reference report from "August 16, 2018"
 % Reffy
-% August 16, 2018
+% August 17, 2018
 
-## CSS Values and Units Module Level 4
+## HTML Standard
 
-- URL: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- This specification was not in the reference crawl report.
-
-
-## DSCP Control API
-
-- URL: [https://www.w3.org/TR/webrtc-dscp/](https://www.w3.org/TR/webrtc-dscp/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-dscp-exp/)
-- Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
-- This specification was not in the reference crawl report.
-
-
-## MediaStreamTrack Content Hints
-
-- URL: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/)
-- Repository: [GitHub w3c/mst-content-hint](https://github.com/w3c/mst-content-hint)
-- This specification was not in the reference crawl report.
-
-
-## Web Budget API
-
-- URL: [https://wicg.github.io/budget-api/](https://wicg.github.io/budget-api/)
-- Crawled version: [Initial URL](https://wicg.github.io/budget-api/)
-- Repository: [GitHub wicg/budget-api](https://github.com/wicg/budget-api)
-- Spec is OK: *INS* false / *DEL* true
-- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-secure-contexts/, https://w3c.github.io/push-api/
+- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/)
+- Missing references for links: *INS* https://w3c.github.io/paint-timing/
 
 
