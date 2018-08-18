@@ -2,11 +2,11 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-08-17T06:05:09.996Z",
+  "date": "2018-08-18T06:05:20.837Z",
   "stats": {
-    "crawled": 238,
-    "errors": 4,
-    "studied": 238
+    "crawled": 237,
+    "errors": 3,
+    "studied": 237
   },
   "results": [
     {
@@ -402,23 +402,26 @@
     {
       "title": "Ambient Light Sensor",
       "shortname": "ambient-light",
+      "date": "20 March 2018",
       "url": "https://www.w3.org/TR/ambient-light/",
       "latest": "https://www.w3.org/TR/ambient-light/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/ambient-light/",
-      "crawled": "https://www.w3.org/TR/ambient-light/",
+      "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
       "repository": "https://github.com/w3c/ambient-light",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -930,6 +933,12 @@
               "date": "9 October 2014"
             },
             {
+              "url": "https://www.w3.org/TR/css-rhythm-1/",
+              "title": "CSS Rhythmic Sizing",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/",
+              "date": "2 March 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-round-display-1/",
               "title": "CSS Round Display Level 1",
               "crawled": "https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/",
@@ -1233,6 +1242,12 @@
               "title": "CSS Overflow Module Level 4",
               "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
               "date": "13 June 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-rhythm-1/",
+              "title": "CSS Rhythmic Sizing",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/",
+              "date": "2 March 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-tables-3/",
@@ -1701,7 +1716,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -1798,7 +1813,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "August 17, 2018",
+      "date": "August 18, 2018",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -1946,14 +1961,7 @@
           }
         ],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            }
-          ],
+          "normative": [],
           "informative": [
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -2702,6 +2710,12 @@
               "date": "31 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-rhythm-1/",
+              "title": "CSS Rhythmic Sizing",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/",
+              "date": "2 March 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-scroll-snap-1/",
               "title": "CSS Scroll Snap Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/",
@@ -2837,7 +2851,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -3110,6 +3124,12 @@
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
               "date": "9 November 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-rhythm-1/",
+              "title": "CSS Rhythmic Sizing",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/",
+              "date": "2 March 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-scroll-snap-1/",
@@ -3865,7 +3885,14 @@
               "date": "13 September 2016"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-rhythm-1/",
+              "title": "CSS Rhythmic Sizing",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/",
+              "date": "2 March 2017"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -7184,6 +7211,12 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
+              "date": "20 March 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-timing-1/",
               "title": "CSS Timing Functions Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-timing-1-20170221/",
@@ -7383,12 +7416,6 @@
               "title": "CSS Overflow Module Level 4",
               "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
               "date": "13 June 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
             }
           ]
         },
@@ -8335,25 +8362,38 @@
     {
       "title": "CSS Rhythmic Sizing",
       "shortname": "css-rhythm-1",
-      "date": "",
+      "date": "2 March 2017",
       "url": "https://www.w3.org/TR/css-rhythm-1/",
-      "latest": "https://www.w3.org/TR/css-rhythm-1",
-      "crawled": "https://www.w3.org/TR/css-rhythm-1",
+      "latest": "https://www.w3.org/TR/css-rhythm-1/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://drafts.csswg.org/css-rhythm/",
+      "crawled": "https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css3-align/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css3-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -8365,7 +8405,7 @@
           ],
           "informative": []
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -10679,6 +10719,12 @@
               "date": "9 November 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-rhythm-1/",
+              "title": "CSS Rhythmic Sizing",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/",
+              "date": "2 March 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/css-round-display-1/",
               "title": "CSS Round Display Level 1",
               "crawled": "https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/",
@@ -11434,6 +11480,12 @@
               "date": "31 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-rhythm-1/",
+              "title": "CSS Rhythmic Sizing",
+              "crawled": "https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/",
+              "date": "2 March 2017"
+            },
+            {
               "url": "https://drafts.csswg.org/css-scroll-anchoring-1/",
               "title": "CSS Scroll Anchoring Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scroll-anchoring-1/",
@@ -11630,7 +11682,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://wicg.github.io/ResizeObserver/",
@@ -11935,7 +11987,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -11968,12 +12020,6 @@
               "date": "Living Document"
             },
             {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            },
-            {
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -11983,7 +12029,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -12140,14 +12186,7 @@
               "date": "15 June 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            }
-          ]
+          "informative": []
         },
         "noEdDraft": null,
         "ok": false
@@ -12155,7 +12194,7 @@
     },
     {
       "title": "Fetch Standard",
-      "date": "16 August 2018",
+      "date": "17 August 2018",
       "url": "https://fetch.spec.whatwg.org/",
       "crawled": "https://fetch.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/fetch",
@@ -12315,12 +12354,6 @@
               "date": "Living Document"
             },
             {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/webdriver/",
               "title": "WebDriver",
               "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
@@ -12343,8 +12376,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180810/",
-              "date": "10 August 2018"
+              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180817/",
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
@@ -12517,7 +12550,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -12951,6 +12984,12 @@
               "date": "20 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
+              "date": "20 March 2018"
+            },
+            {
               "url": "https://wicg.github.io/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://wicg.github.io/geolocation-sensor/",
@@ -13020,14 +13059,7 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            }
-          ],
+          "normative": [],
           "informative": [
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -13052,12 +13084,6 @@
               "title": "Secure Contexts",
               "crawled": "https://www.w3.org/TR/2016/CR-secure-contexts-20160915/",
               "date": "15 September 2016"
-            },
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
             }
           ]
         },
@@ -13336,12 +13362,6 @@
               "title": "Paint Timing 1",
               "crawled": "https://www.w3.org/TR/2017/WD-paint-timing-20170907/",
               "date": "7 September 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/",
-              "date": "08 December 2016"
             },
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
@@ -13651,7 +13671,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -13836,8 +13856,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180810/",
-              "date": "10 August 2018"
+              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180817/",
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -14032,12 +14052,6 @@
               "date": "19 June 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            },
-            {
               "url": "https://wicg.github.io/BackgroundSync/spec/",
               "title": "Web Background Synchronization",
               "crawled": "https://wicg.github.io/BackgroundSync/spec/",
@@ -14048,12 +14062,6 @@
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/",
               "date": "31 July 2018"
-            },
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
@@ -14071,7 +14079,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -14083,7 +14091,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14119,13 +14127,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Aug 17 2018"
+              "date": "Sat Aug 18 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Aug 17 2018"
+              "date": "Sat Aug 18 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -14137,7 +14145,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -14613,7 +14621,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -14708,8 +14716,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180810/",
-              "date": "10 August 2018"
+              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180817/",
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -14844,12 +14852,6 @@
               "date": "19 June 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            },
-            {
               "url": "https://wicg.github.io/BackgroundSync/spec/",
               "title": "Web Background Synchronization",
               "crawled": "https://wicg.github.io/BackgroundSync/spec/",
@@ -14862,16 +14864,10 @@
               "date": "31 July 2018"
             },
             {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
-            },
-            {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14895,13 +14891,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Aug 17 2018"
+              "date": "Sat Aug 18 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -15275,7 +15271,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -15370,8 +15366,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180810/",
-              "date": "10 August 2018"
+              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180817/",
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -15518,12 +15514,6 @@
               "date": "19 June 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            },
-            {
               "url": "https://wicg.github.io/BackgroundSync/spec/",
               "title": "Web Background Synchronization",
               "crawled": "https://wicg.github.io/BackgroundSync/spec/",
@@ -15536,16 +15526,10 @@
               "date": "31 July 2018"
             },
             {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
-            },
-            {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -15581,7 +15565,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -15868,7 +15852,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "August 17, 2018",
+      "date": "August 18, 2018",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -16112,20 +16096,16 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "PerformanceEntry"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
+          "https://w3c.github.io/performance-timeline/",
           "https://html.spec.whatwg.org/"
         ],
         "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/performance-timeline/",
-            "ref": {
-              "name": "PERFORMANCE-TIMELINE-2",
-              "url": "https://www.w3.org/TR/performance-timeline-2/"
-            }
-          },
           {
             "link": "https://w3c.github.io/hr-time/",
             "ref": {
@@ -16744,7 +16724,14 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
+              "date": "20 March 2018"
+            }
+          ]
         },
         "noEdDraft": null,
         "ok": true
@@ -17007,24 +16994,37 @@
     {
       "title": "Metadata API for Media Resources 1.0",
       "shortname": "mediaont-api-1.0",
-      "date": "",
+      "date": "13 March 2014",
       "url": "https://www.w3.org/TR/mediaont-api-1.0/",
-      "latest": "https://www.w3.org/TR/mediaont-api-1.0",
-      "crawled": "https://www.w3.org/TR/mediaont-api-1.0",
+      "latest": "http://www.w3.org/TR/mediaont-api-1.0/",
+      "datedUrl": "http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/",
+      "datedStatus": "Recommendation",
+      "crawled": "http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
+        "hasInvalidIdl": true,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/mediaont-10/",
+          "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/",
+          "https://www.w3.org/TR/2011/NOTE-dap-policy-reqs-20110317/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/2012/REC-media-frags-20120925/",
+            "ref": {
+              "name": "MEDIA-FRAGMENTS",
+              "url": "http://www.w3.org/TR/media-frags/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -17108,7 +17108,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -17121,12 +17121,6 @@
               "title": "Presentation API",
               "crawled": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/",
               "date": "01 June 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
             }
           ],
           "informative": [
@@ -17294,12 +17288,6 @@
               "title": "Navigation Timing Level 2",
               "crawled": "https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/",
               "date": "05 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/",
-              "date": "08 December 2016"
             },
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
@@ -17552,12 +17540,6 @@
               "date": "14 December 2017"
             },
             {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/webdriver/",
               "title": "WebDriver",
               "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
@@ -17597,21 +17579,16 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "PerformanceEntry"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://html.spec.whatwg.org/"
+          "https://html.spec.whatwg.org/",
+          "https://w3c.github.io/performance-timeline/"
         ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/performance-timeline/",
-            "ref": {
-              "name": "PERFORMANCE-TIMELINE-2",
-              "url": "https://www.w3.org/TR/performance-timeline-2/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -17703,8 +17680,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180810/",
-              "date": "10 August 2018"
+              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180817/",
+              "date": "17 August 2018"
             }
           ]
         },
@@ -17715,13 +17692,13 @@
     {
       "title": "Payment Request API",
       "shortname": "payment-request",
-      "date": "10 August 2018",
+      "date": "17 August 2018",
       "url": "https://www.w3.org/TR/payment-request/",
       "latest": "https://www.w3.org/TR/payment-request/",
-      "datedUrl": "https://www.w3.org/TR/2018/CR-payment-request-20180810/",
+      "datedUrl": "https://www.w3.org/TR/2018/CR-payment-request-20180817/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/payment-request/",
-      "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180810/",
+      "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180817/",
       "repository": "https://github.com/w3c/payment-request",
       "report": {
         "noNormativeRefs": false,
@@ -17764,50 +17741,24 @@
     {
       "title": "Performance Timeline Level 2",
       "shortname": "performance-timeline-2",
-      "date": "08 December 2016",
+      "date": "",
       "url": "https://www.w3.org/TR/performance-timeline-2/",
-      "latest": "https://www.w3.org/TR/performance-timeline-2/",
-      "datedUrl": "https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://w3c.github.io/performance-timeline/",
-      "crawled": "https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/",
+      "latest": "https://www.w3.org/TR/performance-timeline-2",
+      "crawled": "https://www.w3.org/TR/performance-timeline-2",
       "repository": "https://github.com/w3c/performance-timeline",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": true,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "Worker",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/service-workers-1/",
-                "title": "Service Workers 1",
-                "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-                "date": "2 November 2017"
-              },
-              {
-                "url": "https://www.w3.org/TR/workers/",
-                "title": "Web Workers",
-                "crawled": "http://www.w3.org/TR/2015/WD-workers-20150924/",
-                "date": "24 September 2015"
-              }
-            ]
-          }
-        ],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/html51/",
-          "https://www.w3.org/TR/dom/"
-        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -17844,12 +17795,6 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/",
-              "date": "08 December 2016"
-            },
-            {
               "url": "https://www.w3.org/TR/server-timing/",
               "title": "Server Timing",
               "crawled": "https://www.w3.org/TR/2018/WD-server-timing-20180717/",
@@ -17857,7 +17802,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -17922,6 +17867,12 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://www.w3.org/TR/2018/CR-accelerometer-20180320/",
+              "date": "20 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
               "date": "20 March 2018"
             },
             {
@@ -18000,21 +17951,15 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             }
           ],
           "informative": [
             {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
-            },
-            {
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             }
           ]
         },
@@ -18111,7 +18056,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -18125,7 +18070,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -18178,7 +18123,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             }
           ],
           "informative": [
@@ -18196,7 +18141,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "August 17, 2018",
+      "date": "August 18, 2018",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -18493,14 +18438,7 @@
           }
         ],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
-            }
-          ],
+          "normative": [],
           "informative": [
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -18567,7 +18505,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -18745,6 +18683,7 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
+          "PerformanceEntry",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -18772,12 +18711,6 @@
               "title": "Navigation Timing Level 2",
               "crawled": "https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/",
               "date": "05 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/",
-              "date": "08 December 2016"
             }
           ]
         },
@@ -19427,8 +19360,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180810/",
-              "date": "10 August 2018"
+              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180817/",
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -19473,12 +19406,6 @@
               "date": "Living Document"
             },
             {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            },
-            {
               "url": "https://wicg.github.io/BackgroundSync/spec/",
               "title": "Web Background Synchronization",
               "crawled": "https://wicg.github.io/BackgroundSync/spec/",
@@ -19489,12 +19416,6 @@
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/",
               "date": "31 July 2018"
-            },
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
             }
           ],
           "informative": [
@@ -19508,7 +19429,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             }
           ]
         },
@@ -20132,7 +20053,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -20190,7 +20111,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             }
           ],
           "informative": [
@@ -20454,7 +20375,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -20519,7 +20440,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -20816,7 +20737,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -20903,22 +20824,16 @@
               "date": "Living Document"
             },
             {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            },
-            {
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -21036,6 +20951,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "PerformanceEntry",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -21045,12 +20961,6 @@
         "referencedBy": {
           "normative": [],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/",
-              "date": "08 December 2016"
-            },
             {
               "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 2",
@@ -21359,7 +21269,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -21448,8 +21358,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180810/",
-              "date": "10 August 2018"
+              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180817/",
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -21479,7 +21389,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -21644,12 +21554,6 @@
               "date": "19 June 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            },
-            {
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -21671,7 +21575,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -21707,13 +21611,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Aug 17 2018"
+              "date": "Sat Aug 18 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -22064,54 +21968,25 @@
     {
       "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
       "shortname": "webauthn",
-      "date": "7 August 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/webauthn/",
-      "latest": "https://www.w3.org/TR/webauthn/",
-      "datedUrl": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://w3c.github.io/webauthn/",
-      "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
+      "latest": "https://www.w3.org/TR/webauthn",
+      "crawled": "https://www.w3.org/TR/webauthn",
       "repository": "https://github.com/w3c/webauthn",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/html/browsers.html"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/webappsec-credential-management/",
-            "ref": {
-              "name": "CREDENTIAL-MANAGEMENT-1",
-              "url": "https://www.w3.org/TR/credential-management-1/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/webappsec-secure-contexts/",
-            "ref": {
-              "name": "SECURE-CONTEXTS",
-              "url": "https://www.w3.org/TR/secure-contexts/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/webappsec-mixed-content/",
-            "ref": {
-              "name": "MIXED-CONTENT",
-              "url": "https://www.w3.org/TR/mixed-content/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": [
@@ -22123,7 +21998,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -22161,14 +22036,7 @@
           }
         ],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
-            }
-          ],
+          "normative": [],
           "informative": [
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -22239,52 +22107,6 @@
               "date": "15 September 2016"
             }
           ]
-        },
-        "noEdDraft": null,
-        "ok": false
-      }
-    },
-    {
-      "title": "Web Budget API",
-      "date": "15 August 2018",
-      "url": "https://wicg.github.io/budget-api/",
-      "crawled": "https://wicg.github.io/budget-api/",
-      "repository": "https://github.com/wicg/budget-api",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
-        "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Navigator",
-          "Window"
-        ],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/webappsec-secure-contexts/",
-            "ref": {
-              "name": "SECURE-CONTEXTS",
-              "url": "https://www.w3.org/TR/secure-contexts/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/push-api/",
-            "ref": {
-              "name": "PUSH-API",
-              "url": "https://www.w3.org/TR/push-api/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
         },
         "noEdDraft": null,
         "ok": false
@@ -22416,7 +22238,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "August 17, 2018",
+      "date": "August 18, 2018",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -22559,12 +22381,6 @@
               "title": "Vibration API (Second Edition)",
               "crawled": "https://www.w3.org/TR/2016/REC-vibration-20161018/",
               "date": "18 October 2016"
-            },
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
             }
           ]
         },
@@ -22574,7 +22390,7 @@
     },
     {
       "title": "Web Share API",
-      "date": "August 17, 2018",
+      "date": "August 18, 2018",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "repository": "https://github.com/wicg/web-share",
@@ -22939,7 +22755,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -23046,8 +22862,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180810/",
-              "date": "10 August 2018"
+              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180817/",
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -23194,12 +23010,6 @@
               "date": "19 June 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            },
-            {
               "url": "https://wicg.github.io/BackgroundSync/spec/",
               "title": "Web Background Synchronization",
               "crawled": "https://wicg.github.io/BackgroundSync/spec/",
@@ -23212,16 +23022,10 @@
               "date": "31 July 2018"
             },
             {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
-            },
-            {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -23251,7 +23055,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -23316,16 +23120,16 @@
               "date": "01 February 2018"
             },
             {
+              "url": "https://www.w3.org/TR/mediaont-api-1.0/",
+              "title": "Metadata API for Media Resources 1.0",
+              "crawled": "http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/",
+              "date": "13 March 2014"
+            },
+            {
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/",
               "date": "20 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/",
-              "date": "08 December 2016"
             },
             {
               "url": "https://www.w3.org/TR/pointerlock-2/",
@@ -23495,7 +23299,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Fri Aug 17 2018",
+      "date": "Sat Aug 18 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23550,7 +23354,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Fri Aug 17 2018",
+      "date": "Sat Aug 18 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23606,7 +23410,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Aug 17 2018"
+              "date": "Sat Aug 18 2018"
             }
           ],
           "informative": [
@@ -23698,6 +23502,12 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://www.w3.org/TR/2018/CR-accelerometer-20180320/",
+              "date": "20 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
               "date": "20 March 2018"
             },
             {
@@ -23872,7 +23682,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -24051,14 +23861,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180810/",
-              "date": "10 August 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/",
-              "date": "08 December 2016"
+              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180817/",
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -24229,12 +24033,6 @@
               "date": "19 June 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webauthn/",
-              "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
-              "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
-              "date": "7 August 2018"
-            },
-            {
               "url": "https://wicg.github.io/BackgroundSync/spec/",
               "title": "Web Background Synchronization",
               "crawled": "https://wicg.github.io/BackgroundSync/spec/",
@@ -24247,12 +24045,6 @@
               "date": "31 July 2018"
             },
             {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
               "crawled": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/",
@@ -24262,13 +24054,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -24304,13 +24096,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Aug 17 2018"
+              "date": "Sat Aug 18 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Aug 17 2018"
+              "date": "Sat Aug 18 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -24322,7 +24114,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -24384,7 +24176,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -24420,7 +24212,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 17, 2018"
+              "date": "August 18, 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -24592,12 +24384,6 @@
               "title": "Screen Capture",
               "crawled": "http://www.w3.org/TR/2016/WD-screen-capture-20160714/",
               "date": "14 July 2016"
-            },
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/",
-              "date": "15 August 2018"
             }
           ]
         },
@@ -24648,7 +24434,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "16 August 2018",
+      "date": "17 August 2018",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
@@ -24785,7 +24571,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Fri Aug 17 2018"
+                "date": "Sat Aug 18 2018"
               }
             ]
           },
@@ -24796,7 +24582,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Fri Aug 17 2018"
+                "date": "Sat Aug 18 2018"
               }
             ]
           },
@@ -24807,7 +24593,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Fri Aug 17 2018"
+                "date": "Sat Aug 18 2018"
               }
             ]
           },
@@ -24818,7 +24604,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Fri Aug 17 2018"
+                "date": "Sat Aug 18 2018"
               }
             ]
           },
@@ -24829,7 +24615,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Fri Aug 17 2018"
+                "date": "Sat Aug 18 2018"
               }
             ]
           }
@@ -25007,7 +24793,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "16 August 2018"
+              "date": "17 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
