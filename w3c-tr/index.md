@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 17, 2018
+% August 18, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -142,11 +142,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Ambient Light Sensor {data-spec=true data-error=true}
+## Ambient Light Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/ambient-light/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-ambient-light-20180320/) (20 March 2018)
 - Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
 - Latest published version: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
@@ -155,15 +155,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -355,6 +347,7 @@ Normative references to this spec from:
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
+- [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
@@ -425,6 +418,7 @@ Normative references to this spec from:
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
+- [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2017/WD-css-text-3-20170822/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2017/WD-css-transforms-1-20171130/)
@@ -645,7 +639,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (August 17, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (August 18, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -725,9 +719,7 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
@@ -1019,6 +1011,7 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
+- [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
@@ -1154,6 +1147,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
+- [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2017/WD-css-text-3-20170822/)
@@ -1404,7 +1398,9 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 
 
 ## CSS Device Adaptation Module Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2628,6 +2624,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
+- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [CSS Timing Functions Level 1](https://www.w3.org/TR/2017/WD-css-timing-1-20170221/)
 
 
@@ -2686,7 +2683,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 
 
 ## CSS Overflow Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3047,24 +3043,23 @@ Informative references to this spec from:
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 
 
-## CSS Rhythmic Sizing {data-spec=true data-error=true}
+## CSS Rhythmic Sizing {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-rhythm-1)
-- Latest published version: [https://www.w3.org/TR/css-rhythm-1](https://www.w3.org/TR/css-rhythm-1)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/) (2 March 2017)
+- Editor's Draft: [https://drafts.csswg.org/css-rhythm/](https://drafts.csswg.org/css-rhythm/)
+- Latest published version: [https://www.w3.org/TR/css-rhythm-1/](https://www.w3.org/TR/css-rhythm-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-rhythm-1
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3968,6 +3963,7 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
+- [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
@@ -4190,6 +4186,7 @@ Normative references to this spec from:
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
+- [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
@@ -4351,7 +4348,6 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180719/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/)
@@ -4415,16 +4411,14 @@ Normative references to this spec from:
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-Informative references to this spec from:
-
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+No informative reference to this spec from other specs.
 
 
 ## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (16 August 2018)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (17 August 2018)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -4460,14 +4454,13 @@ Normative references to this spec from:
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180719/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180621/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180810/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180817/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20180717/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
@@ -4708,6 +4701,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
 - [Magnetometer](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
@@ -4735,9 +4729,7 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
@@ -4745,7 +4737,6 @@ Informative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 
 
 ## Geolocation Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -4865,7 +4856,6 @@ Normative references to this spec from:
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -4980,7 +4970,7 @@ Normative references to this spec from:
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180510/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180810/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180817/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
@@ -5013,10 +5003,8 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180719/)
 - [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
@@ -5141,7 +5129,7 @@ Normative references to this spec from:
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180510/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180810/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180817/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
@@ -5164,10 +5152,8 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180719/)
 - [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web Share API](https://wicg.github.io/web-share/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/)
@@ -5285,7 +5271,7 @@ Normative references to this spec from:
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180510/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180810/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180817/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
@@ -5310,10 +5296,8 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180719/)
 - [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web Share API](https://wicg.github.io/web-share/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -5411,7 +5395,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (August 17, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (August 18, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5529,7 +5513,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Long Tasks API 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Long Tasks API 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -5542,10 +5526,11 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `PerformanceEntry`
 - Missing references for links: 
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/)
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -5801,7 +5786,9 @@ This specification looks good!
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 
 
 ## Media Session Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -5915,23 +5902,25 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Metadata API for Media Resources 1.0 {data-spec=true data-error=true}
+## Metadata API for Media Resources 1.0 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true data-noEdDraft=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/mediaont-api-1.0)
-- Latest published version: [https://www.w3.org/TR/mediaont-api-1.0](https://www.w3.org/TR/mediaont-api-1.0)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/) (13 March 2014)
+- Latest published version: [http://www.w3.org/TR/mediaont-api-1.0/](http://www.w3.org/TR/mediaont-api-1.0/)
+- Latest published status: [Recommendation](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - Shortname: mediaont-api-1.0
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Link to an Editor's Draft not found
+- Invalid WebIDL content found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/mediaont-10/`](https://www.w3.org/TR/mediaont-10/)
+     * [`https://www.w3.org/TR/2012/REC-mediaont-10-20120209/`](https://www.w3.org/TR/2012/REC-mediaont-10-20120209/)
+     * [`https://www.w3.org/TR/2011/NOTE-dap-policy-reqs-20110317/`](https://www.w3.org/TR/2011/NOTE-dap-policy-reqs-20110317/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2012/REC-media-frags-20120925/`](https://www.w3.org/TR/2012/REC-media-frags-20120925/), related reference "MEDIA-FRAGMENTS" uses URL [`http://www.w3.org/TR/media-frags/`](http://www.w3.org/TR/media-frags/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5972,7 +5961,6 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 
 Informative references to this spec from:
 
@@ -6043,7 +6031,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
 
 
@@ -6165,7 +6152,6 @@ Normative references to this spec from:
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180706/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -6173,7 +6159,7 @@ Informative references to this spec from:
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 
 
-## Paint Timing 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Paint Timing 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -6186,10 +6172,10 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `PerformanceEntry`
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6247,17 +6233,17 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180810/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180817/)
 
 
 ## Payment Request API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-payment-request-20180810/) (10 August 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-payment-request-20180817/) (17 August 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180810/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180817/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
 - Shortname: payment-request
 
@@ -6275,26 +6261,24 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## Performance Timeline Level 2 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/) (08 December 2016)
-- Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
-- Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/performance-timeline-2)
+- Latest published version: [https://www.w3.org/TR/performance-timeline-2](https://www.w3.org/TR/performance-timeline-2)
 - Repository: [GitHub w3c/performance-timeline](https://github.com/w3c/performance-timeline)
 - Shortname: performance-timeline-2
 
 ### Potential issue(s) {.anomalies}
 
-- Obsolete WebIDL constructs found
-- Unknown WebIDL names used: `Window`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
-- Missing references for links: 
-     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
-     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6308,7 +6292,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20180717/)
 
 
@@ -6339,6 +6322,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
@@ -6355,7 +6339,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 
 
@@ -6443,7 +6426,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (August 17, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (August 18, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6588,9 +6571,7 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Web Budget API](https://wicg.github.io/budget-api/)
+No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
@@ -6714,7 +6695,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `PerformanceEntry`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6726,7 +6707,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Navigation Timing Level 2](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 
 
 ## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -6928,7 +6908,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180810/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180817/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -6936,10 +6916,8 @@ Normative references to this spec from:
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180719/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 
 Informative references to this spec from:
 
@@ -7159,7 +7137,6 @@ Although they do not, the following specs should also normatively reference this
 - [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20180717/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
@@ -7551,7 +7528,6 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180719/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://wicg.github.io/web-share/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -7612,7 +7588,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
+- Unknown WebIDL names used: `PerformanceEntry`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7620,7 +7596,6 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 
 
@@ -7720,7 +7695,7 @@ Normative references to this spec from:
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180810/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180817/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
@@ -7753,7 +7728,6 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180719/)
 - [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
@@ -7916,26 +7890,24 @@ Informative references to this spec from:
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 
 
-## Web Authentication: An API for accessing Public Key Credentials Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Authentication: An API for accessing Public Key Credentials Level 1 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-webauthn-20180807/) (7 August 2018)
-- Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/webauthn)
+- Latest published version: [https://www.w3.org/TR/webauthn](https://www.w3.org/TR/webauthn)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Shortname: webauthn
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
-- Missing references for links: 
-     * [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/), related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
-     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7964,9 +7936,7 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Web Budget API](https://wicg.github.io/budget-api/)
+No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
@@ -7998,28 +7968,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-
-
-## Web Budget API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://wicg.github.io/budget-api/) (15 August 2018)
-- Repository: [GitHub wicg/budget-api](https://github.com/wicg/budget-api)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `Navigator`, `Window`
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
-     * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/), related reference "PUSH-API" uses URL [`https://www.w3.org/TR/push-api/`](https://www.w3.org/TR/push-api/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ## Web Cryptography API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
@@ -8081,7 +8029,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (August 17, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (August 18, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8136,14 +8084,13 @@ Informative references to this spec from:
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 
 
 ## Web Share API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (August 17, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (August 18, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8280,7 +8227,7 @@ Normative references to this spec from:
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180510/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180810/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180817/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
@@ -8305,10 +8252,8 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180719/)
 - [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web Share API](https://wicg.github.io/web-share/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/)
@@ -8327,7 +8272,6 @@ Although they do not, the following specs should also normatively reference this
 - [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20180717/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
@@ -8341,8 +8285,8 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
+- [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
@@ -8413,7 +8357,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Aug 17 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Aug 18 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8440,7 +8384,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Aug 17 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Aug 18 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8494,6 +8438,7 @@ Normative references to this spec from:
 - ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
+- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
@@ -8552,8 +8497,7 @@ Normative references to this spec from:
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180510/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180810/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180817/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
@@ -8582,10 +8526,8 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180719/)
 - [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://wicg.github.io/web-share/)
@@ -8662,7 +8604,6 @@ Informative references to this spec from:
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 
 
 ## WebRTC DSCP Control API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
@@ -8693,7 +8634,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (16 August 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (17 August 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 

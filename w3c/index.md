@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 17, 2018
+% August 18, 2018
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -132,7 +132,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
 - Latest published version: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
@@ -179,7 +179,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/battery/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/battery/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
 - Latest published version: [http://www.w3.org/TR/battery-status/](http://www.w3.org/TR/battery-status/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
@@ -205,7 +205,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
 - Latest published version: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-beacon-20170413/)
@@ -519,7 +519,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-csp/) (10 July 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-csp/) (17 August 2018)
 - Editor's Draft: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
 - Latest published version: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
@@ -581,7 +581,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (August 17, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (August 18, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -599,7 +599,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
 - Latest published version: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
@@ -901,7 +901,6 @@ Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
@@ -941,6 +940,7 @@ Normative references to this spec from:
 
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
+- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
@@ -1032,7 +1032,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-cascade-3/) (3 August 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-cascade-3/) (17 August 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-cascade-3/](https://drafts.csswg.org/css-cascade-3/)
 - Latest published version: [http://www.w3.org/TR/css-cascade-3/](http://www.w3.org/TR/css-cascade-3/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2016/CR-css-cascade-3-20160519/)
@@ -1048,8 +1048,8 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
      * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1078,7 +1078,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-cascade/) (3 August 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-cascade/) (17 August 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
 - Latest published version: [http://www.w3.org/TR/css-cascade-4/](http://www.w3.org/TR/css-cascade-4/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2016/CR-css-cascade-4-20160114/)
@@ -1096,9 +1096,8 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/)
      * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/)
 - Inconsistent references for links: 
-     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1226,7 +1225,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/) (5 July 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/) (17 August 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [http://www.w3.org/TR/css-color-4/](http://www.w3.org/TR/css-color-4/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-css-color-4-20160705/)
@@ -1756,7 +1755,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (17 July 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (17 August 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/)
@@ -2358,7 +2357,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-logical/) (5 July 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-logical/) (17 August 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-logical/](https://drafts.csswg.org/css-logical/)
 - Latest published version: [https://www.w3.org/TR/css-logical-1/](https://www.w3.org/TR/css-logical-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/)
@@ -2369,10 +2368,6 @@ Informative references to this spec from:
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-writing-modes/`](https://www.w3.org/TR/css-writing-modes/)
-     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
-     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2556,7 +2551,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/cssom/) (10 August 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/cssom/) (17 August 2018)
 - Editor's Draft: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
 - Latest published version: [http://www.w3.org/TR/cssom-1/](http://www.w3.org/TR/cssom-1/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
@@ -2589,6 +2584,7 @@ Normative references to this spec from:
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
+- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -2666,6 +2662,7 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
+- [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -3115,7 +3112,6 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
-- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -3396,7 +3392,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-tables-3/) (5 July 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-tables-3/) (17 August 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-tables-3/](https://drafts.csswg.org/css-tables-3/)
 - Latest published version: [https://www.w3.org/TR/css-tables-3/](https://www.w3.org/TR/css-tables-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
@@ -3583,6 +3579,7 @@ Normative references to this spec from:
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
+- [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors)
@@ -4076,7 +4073,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (23 July 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (17 August 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
@@ -4131,7 +4128,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-4/) (27 June 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-4/) (17 August 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-4/](https://drafts.csswg.org/css-writing-modes-4/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-4/](https://www.w3.org/TR/css-writing-modes-4/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
@@ -4248,7 +4245,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/deviceorientation/spec-source-orientation.html) (Fri Aug 17 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/deviceorientation/spec-source-orientation.html) (Sat Aug 18 2018)
 - Editor's Draft: [https://w3c.github.io/deviceorientation/spec-source-orientation.html](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - Latest published version: [https://www.w3.org/TR/orientation-event/](https://www.w3.org/TR/orientation-event/)
 - Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/)
@@ -4431,7 +4428,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (16 August 2018)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (17 August 2018)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -4653,7 +4650,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-gamepad-20180716/)
@@ -4733,7 +4730,6 @@ Informative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -4828,7 +4824,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
 - Latest published version: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -4922,6 +4918,7 @@ Normative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
@@ -5021,7 +5018,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
@@ -5048,8 +5044,6 @@ Informative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
@@ -5123,6 +5117,7 @@ Normative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
@@ -5202,7 +5197,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web Share API](https://wicg.github.io/web-share/)
@@ -5302,6 +5296,7 @@ Normative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
@@ -5383,7 +5378,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web Share API](https://wicg.github.io/web-share/)
@@ -5430,7 +5424,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
@@ -5490,7 +5484,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (August 17, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (August 18, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5509,7 +5503,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/input-events/v1/index.html) (August 18, 2018)
 - Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -5691,7 +5685,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
@@ -5733,7 +5727,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-depth/](https://w3c.github.io/mediacapture-depth/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-depth/](https://www.w3.org/TR/mediacapture-depth/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -5758,7 +5752,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -5998,7 +5992,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/mst-content-hint/](https://w3c.github.io/mst-content-hint/)
 - Latest published version: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
@@ -6116,7 +6110,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-navigation-timing-2-20171205/)
@@ -6228,7 +6222,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
 - Latest published version: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
@@ -6288,7 +6282,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -6314,7 +6308,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/) (Fri Aug 17 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/) (Sat Aug 18 2018)
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20180510/)
@@ -6343,10 +6337,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180810/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180817/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
 - Shortname: payment-request
 
@@ -6371,7 +6365,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
@@ -6442,7 +6436,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 
 
@@ -6503,7 +6496,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
 - Latest published version: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
@@ -6530,7 +6523,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (August 17, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (August 18, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6552,7 +6545,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
 - Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -6575,7 +6568,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Latest published version: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -6650,7 +6643,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
 - Latest published version: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-push-api-20171215/)
@@ -6669,9 +6662,7 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Web Budget API](https://wicg.github.io/budget-api/)
+No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
@@ -6712,7 +6703,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
 - Latest published version: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -6788,7 +6779,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
@@ -6817,7 +6808,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (14 August 2018)
+- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (17 August 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20180807/)
@@ -6905,6 +6896,7 @@ Normative references to this spec from:
 
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
@@ -6954,7 +6946,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
 - Latest published version: [http://www.w3.org/TR/screen-capture/](http://www.w3.org/TR/screen-capture/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -7034,7 +7026,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 Informative references to this spec from:
@@ -7047,7 +7038,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-selection-api-20180612/)
@@ -7199,7 +7190,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-server-timing-20180717/)
@@ -7404,7 +7395,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/specs/markers/) (14 August 2018)
+- Crawled version: [Editor's Draft](https://svgwg.org/specs/markers/) (17 August 2018)
 - Editor's Draft: [https://svgwg.org/specs/markers/](https://svgwg.org/specs/markers/)
 - Latest published version: [http://www.w3.org/TR/svg-markers/](http://www.w3.org/TR/svg-markers/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
@@ -7438,7 +7429,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/specs/strokes/) (14 August 2018)
+- Crawled version: [Editor's Draft](https://svgwg.org/specs/strokes/) (17 August 2018)
 - Editor's Draft: [https://svgwg.org/specs/strokes/](https://svgwg.org/specs/strokes/)
 - Latest published version: [http://www.w3.org/TR/svg-strokes/](http://www.w3.org/TR/svg-strokes/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-svg-strokes-20150409/)
@@ -7461,7 +7452,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-screen-orientation-20180706/)
@@ -7513,7 +7504,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/touch-events/](https://w3c.github.io/touch-events/)
 - Latest published version: [http://www.w3.org/TR/touch-events/](http://www.w3.org/TR/touch-events/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
@@ -7733,7 +7724,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
@@ -7758,7 +7749,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
 - Latest published version: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-vibration-20161018/)
@@ -7928,7 +7919,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
 - Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -8010,7 +8001,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (16 August 2018)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (17 August 2018)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
@@ -8095,9 +8086,7 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Web Budget API](https://wicg.github.io/budget-api/)
+No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
@@ -8131,28 +8120,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-
-
-## Web Budget API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://wicg.github.io/budget-api/) (15 August 2018)
-- Repository: [GitHub wicg/budget-api](https://github.com/wicg/budget-api)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `Navigator`, `Window`
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
-     * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/), related reference "PUSH-API" uses URL [`https://www.w3.org/TR/push-api/`](https://www.w3.org/TR/push-api/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ## Web Cryptography API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
@@ -8313,7 +8280,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
@@ -8354,7 +8320,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/) (August 17, 2018)
+- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/) (August 18, 2018)
 - Editor's Draft: [http://webaudio.github.io/web-midi-api/](http://webaudio.github.io/web-midi-api/)
 - Latest published version: [http://www.w3.org/TR/webmidi/](http://www.w3.org/TR/webmidi/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
@@ -8380,7 +8346,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (August 17, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (August 18, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8434,14 +8400,13 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 
 
 ## Web Share API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (August 17, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (August 18, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8507,7 +8472,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (16 August 2018)
+- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (17 August 2018)
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/workers.html](https://html.spec.whatwg.org/multipage/workers.html)
 - Latest published version: [http://www.w3.org/TR/workers/](http://www.w3.org/TR/workers/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -8559,6 +8524,7 @@ Normative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
@@ -8641,7 +8607,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web Share API](https://wicg.github.io/web-share/)
@@ -8696,7 +8661,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (16 August 2018)
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (17 August 2018)
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/)
@@ -8724,7 +8689,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
 - Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -8755,7 +8720,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Aug 17 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Aug 18 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8784,7 +8749,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Aug 17 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Aug 18 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8817,7 +8782,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (August 17, 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (August 18, 2018)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-20180621/)
@@ -8852,14 +8817,13 @@ Informative references to this spec from:
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
-- [Web Budget API](https://wicg.github.io/budget-api/)
 
 
 ## WebUSB API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (16 August 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (17 August 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
