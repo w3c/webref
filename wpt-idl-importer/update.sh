@@ -14,18 +14,19 @@ cd wpt
 git remote add fork https://autofoolip:$GH_TOKEN@github.com/autofoolip/wpt.git
 git push fork master
 
-# First handle added (untracked, --other) and modified files.
+# Handle added (untracked, --other) and modified files.
 # A temp file is needed because `git ls-files` holds index.lock.
 tmpfile=`mktemp`
-git ls-files --modified --others --exclude-standard > "$tmpfile"
-cat "$tmpfile" | while read path; do
+git ls-files --others --exclude-standard | sed 's/^/Add /' > "$tmpfile"
+git ls-files --modified | sed 's/^/Update /' >> "$tmpfile"
+cat "$tmpfile" | while read action path; do
     echo "Handling $path"
     shortname=`basename $path .idl`
     branchname="reffy-reports/$shortname"
     git checkout -b $branchname origin/master
     git add "$path"
     git commit -F - << EOM
-Update $path
+$action $path
 
 Source: https://github.com/tidoust/reffy-reports/blob/$reffy_sha/whatwg/idl/$shortname.idl
 Build: https://travis-ci.org/tidoust/reffy-reports/builds/$TRAVIS_BUILD_ID
