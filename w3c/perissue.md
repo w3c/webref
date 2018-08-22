@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 21, 2018
+% August 22, 2018
 
 237 specifications were crawled in this report.
 
@@ -219,6 +219,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 ## Missing references for WebIDL names
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/) uses `Point2D` but does not reference [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
+- [Background Fetch](https://wicg.github.io/background-fetch/) uses `ImageResource` but does not reference [Web App Manifest](https://w3c.github.io/manifest/)
 - [Battery Status API](https://w3c.github.io/battery/) uses `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Console Standard](https://console.spec.whatwg.org/) uses:
     * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
@@ -286,7 +287,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 54 missing references for IDL definitions found in 27 specifications
+=> 55 missing references for IDL definitions found in 28 specifications
 
 
 ## Missing references based on document links
