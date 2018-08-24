@@ -76,7 +76,7 @@ partial interface Document {
   readonly attribute HTMLOrSVGScriptElement? currentScript; // classic scripts in a document tree only
 
   // dynamic markup insertion
-  [CEReactions] Document open(optional DOMString type, optional DOMString replace = ""); // type is ignored
+  [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored
   WindowProxy open(USVString url, DOMString name, DOMString features);
   [CEReactions] void close();
   [CEReactions] void write(DOMString... text);
