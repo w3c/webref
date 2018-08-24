@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-08-23T06:05:13.166Z",
+  "date": "2018-08-24T06:05:16.907Z",
   "stats": {
     "crawled": 237,
-    "errors": 4,
+    "errors": 2,
     "studied": 237
   },
   "results": [
@@ -637,7 +637,14 @@
               "date": "18 May 2018"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -830,6 +837,12 @@
               "date": "9 February 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-content-3/",
+              "title": "CSS Generated Content Module Level 3",
+              "crawled": "http://www.w3.org/TR/2016/WD-css-content-3-20160602/",
+              "date": "2 June 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/css-grid-1/",
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-grid-1-20171214/",
@@ -900,12 +913,6 @@
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
               "date": "31 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
             },
             {
               "url": "https://www.w3.org/TR/css3-page/",
@@ -1171,6 +1178,12 @@
               "date": "21 June 2018"
             },
             {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/css-animations-1/",
               "title": "CSS Animations Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-animations-1-20171130/",
@@ -1229,12 +1242,6 @@
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/",
               "date": "28 May 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-rhythm-1/",
@@ -1654,24 +1661,30 @@
     {
       "title": "Content Security Policy Level 3",
       "shortname": "CSP3",
-      "date": "",
+      "date": "13 September 2016",
       "url": "https://www.w3.org/TR/CSP3/",
-      "latest": "https://www.w3.org/TR/CSP3",
-      "crawled": "https://www.w3.org/TR/CSP3",
+      "latest": "https://www.w3.org/TR/CSP3/",
+      "datedUrl": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/webappsec-csp/",
+      "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
       "repository": "https://github.com/w3c/webappsec-csp",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/reporting/",
+          "https://www.w3.org/TR/cssom/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -1698,6 +1711,12 @@
               "title": "Feature Policy",
               "crawled": "https://wicg.github.io/feature-policy/",
               "date": "14 August 2018"
+            },
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/",
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -1745,7 +1764,7 @@
             }
           ]
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -1774,10 +1793,16 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/webappsec-csp/"
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP3",
+              "url": "https://www.w3.org/TR/CSP3/"
+            }
+          }
         ],
-        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -1788,7 +1813,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "August 23, 2018",
+      "date": "August 24, 2018",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -1878,10 +1903,16 @@
             ]
           }
         ],
-        "missingLinkRef": [
-          "https://w3c.github.io/webappsec-csp/"
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP3",
+              "url": "https://www.w3.org/TR/CSP3/"
+            }
+          }
         ],
-        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -2827,7 +2858,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -3082,12 +3113,6 @@
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
               "date": "31 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
@@ -3689,12 +3714,6 @@
               "date": "31 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
@@ -3750,6 +3769,12 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-content-3/",
+              "title": "CSS Generated Content Module Level 3",
+              "crawled": "http://www.w3.org/TR/2016/WD-css-content-3-20160602/",
+              "date": "2 June 2016"
+            },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
               "title": "CSS Values and Units Module Level 3",
@@ -4142,12 +4167,6 @@
               "date": "31 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
@@ -4485,12 +4504,6 @@
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
               "date": "31 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-text-4/",
@@ -5127,12 +5140,6 @@
               "date": "31 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/css-tables-3/",
               "title": "CSS Table Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/WD-css-tables-3-20170307/",
@@ -5253,10 +5260,10 @@
               "date": "5 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
+              "url": "https://www.w3.org/TR/css-content-3/",
+              "title": "CSS Generated Content Module Level 3",
+              "crawled": "http://www.w3.org/TR/2016/WD-css-content-3-20160602/",
+              "date": "2 June 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-page-floats-3/",
@@ -5307,25 +5314,38 @@
     {
       "title": "CSS Generated Content Module Level 3",
       "shortname": "css-content-3",
-      "date": "",
+      "date": "2 June 2016",
       "url": "https://www.w3.org/TR/css-content-3/",
-      "latest": "https://www.w3.org/TR/css-content-3",
-      "crawled": "https://www.w3.org/TR/css-content-3",
+      "latest": "http://www.w3.org/TR/css-content-3/",
+      "datedUrl": "http://www.w3.org/TR/2016/WD-css-content-3-20160602/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://drafts.csswg.org/css-content/",
+      "crawled": "http://www.w3.org/TR/2016/WD-css-content-3-20160602/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css3-lists/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css3-values/",
+            "ref": {
+              "name": "CSS-VALUES",
+              "url": "http://www.w3.org/TR/css-values/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -5333,12 +5353,6 @@
               "title": "CSS Generated Content for Paged Media Module Level 4",
               "crawled": "https://drafts.csswg.org/css-gcpm-4/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -5368,7 +5382,7 @@
             }
           ]
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -5462,12 +5476,6 @@
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
               "date": "31 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -5640,6 +5648,12 @@
               "title": "CSS Fill and Stroke Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/",
               "date": "13 April 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-content-3/",
+              "title": "CSS Generated Content Module Level 3",
+              "crawled": "http://www.w3.org/TR/2016/WD-css-content-3-20160602/",
+              "date": "2 June 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-images-4/",
@@ -6369,6 +6383,12 @@
               "date": "5 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-content-3/",
+              "title": "CSS Generated Content Module Level 3",
+              "crawled": "http://www.w3.org/TR/2016/WD-css-content-3-20160602/",
+              "date": "2 June 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/css-images-4/",
               "title": "CSS Image Values and Replaced Content Module Level 4",
               "crawled": "https://www.w3.org/TR/2017/WD-css-images-4-20170413/",
@@ -6986,6 +7006,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
+            {
               "url": "https://wicg.github.io/animation-worklet/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
@@ -7345,12 +7371,6 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/webauthn/",
               "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
@@ -7365,61 +7385,32 @@
     {
       "title": "CSS Overflow Module Level 4",
       "shortname": "css-overflow-4",
-      "date": "13 June 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/css-overflow-4/",
-      "latest": "https://www.w3.org/TR/css-overflow-4/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://drafts.csswg.org/css-overflow-4/",
-      "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
+      "latest": "https://www.w3.org/TR/css-overflow-4",
+      "crawled": "https://www.w3.org/TR/css-overflow-4",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
+        "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-regions/",
-          "https://www.w3.org/TR/css3-break/",
-          "https://www.w3.org/TR/css3-positioning/",
-          "https://www.w3.org/TR/css3-transitions/",
-          "https://www.w3.org/TR/security-privacy-questionnaire/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css3-values/",
-            "ref": {
-              "name": "CSS-VALUES-3",
-              "url": "https://www.w3.org/TR/css-values-3/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/css-break-3/",
-              "title": "CSS Fragmentation Module Level 3",
-              "crawled": "https://www.w3.org/TR/2017/CR-css-break-3-20170209/",
-              "date": "9 February 2017"
-            },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
               "date": "10 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-view-1/",
-              "title": "CSSOM View Module",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
-              "date": "17 March 2016"
             }
           ],
           "informative": [
@@ -7431,7 +7422,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -7889,12 +7880,6 @@
               "date": "28 May 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
-            },
-            {
               "url": "https://drafts.csswg.org/css-scroll-anchoring-1/",
               "title": "CSS Scroll Anchoring Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scroll-anchoring-1/",
@@ -8098,6 +8083,12 @@
               "date": "19 October 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-content-3/",
+              "title": "CSS Generated Content Module Level 3",
+              "crawled": "http://www.w3.org/TR/2016/WD-css-content-3-20160602/",
+              "date": "2 June 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/css-grid-1/",
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-grid-1-20171214/",
@@ -8126,12 +8117,6 @@
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
               "date": "31 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-scroll-snap-1/",
@@ -8259,12 +8244,6 @@
               "title": "CSS Multi-column Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-multicol-2/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -9487,6 +9466,12 @@
               "date": "10 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-content-3/",
+              "title": "CSS Generated Content Module Level 3",
+              "crawled": "http://www.w3.org/TR/2016/WD-css-content-3-20160602/",
+              "date": "2 June 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/css-grid-1/",
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-grid-1-20171214/",
@@ -10526,6 +10511,12 @@
               "date": "9 February 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-content-3/",
+              "title": "CSS Generated Content Module Level 3",
+              "crawled": "http://www.w3.org/TR/2016/WD-css-content-3-20160602/",
+              "date": "2 June 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/css-grid-1/",
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-grid-1-20171214/",
@@ -10608,12 +10599,6 @@
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
               "date": "31 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
-              "date": "13 June 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-page-floats-3/",
@@ -11603,7 +11588,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://wicg.github.io/ResizeObserver/",
@@ -11908,7 +11893,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -11956,7 +11941,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -12075,10 +12060,17 @@
           }
         ],
         "missingLinkRef": [
-          "https://w3c.github.io/webappsec-csp/",
           "https://w3c.github.io/reporting/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP-3",
+              "url": "https://www.w3.org/TR/CSP3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -12121,7 +12113,7 @@
     },
     {
       "title": "Fetch Standard",
-      "date": "21 August 2018",
+      "date": "23 August 2018",
       "url": "https://fetch.spec.whatwg.org/",
       "crawled": "https://fetch.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/fetch",
@@ -12159,6 +12151,12 @@
               "title": "Beacon",
               "crawled": "https://www.w3.org/TR/2017/CR-beacon-20170413/",
               "date": "13 April 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
             },
             {
               "url": "https://www.w3.org/TR/csp-embedded-enforcement/",
@@ -12285,6 +12283,12 @@
               "title": "WebDriver",
               "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
               "date": "05 June 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -12471,7 +12475,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -12514,6 +12518,12 @@
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/",
               "date": "21 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -12908,7 +12918,7 @@
               "url": "https://wicg.github.io/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://wicg.github.io/geolocation-sensor/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/gyroscope/",
@@ -12993,7 +13003,7 @@
               "url": "https://wicg.github.io/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://wicg.github.io/geolocation-sensor/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -13015,7 +13025,7 @@
     },
     {
       "title": "Geolocation Sensor",
-      "date": "22 August 2018",
+      "date": "23 August 2018",
       "url": "https://wicg.github.io/geolocation-sensor/",
       "crawled": "https://wicg.github.io/geolocation-sensor/",
       "repository": "https://github.com/wicg/geolocation-sensor",
@@ -13259,7 +13269,7 @@
               "url": "https://wicg.github.io/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://wicg.github.io/geolocation-sensor/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
@@ -13314,6 +13324,12 @@
               "title": "Web Audio API",
               "crawled": "https://www.w3.org/TR/2018/WD-webaudio-20180619/",
               "date": "19 June 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
             }
           ],
           "informative": [
@@ -13414,6 +13430,12 @@
               "title": "Compositing and Blending Level 2",
               "crawled": "https://drafts.fxtf.org/compositing-2/",
               "date": "28 October 2015"
+            },
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
             },
             {
               "url": "https://www.w3.org/TR/csp-embedded-enforcement/",
@@ -13587,7 +13609,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -13629,7 +13651,7 @@
               "url": "https://wicg.github.io/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://wicg.github.io/geolocation-sensor/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/geometry-1/",
@@ -14001,7 +14023,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -14013,7 +14035,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14049,19 +14071,25 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Thu Aug 23 2018"
+              "date": "Fri Aug 24 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Thu Aug 23 2018"
+              "date": "Fri Aug 24 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -14384,6 +14412,12 @@
               "date": "28 October 2015"
             },
             {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/csp-embedded-enforcement/",
               "title": "Content Security Policy: Embedded Enforcement",
               "crawled": "https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/",
@@ -14531,7 +14565,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -14555,7 +14589,7 @@
               "url": "https://wicg.github.io/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://wicg.github.io/geolocation-sensor/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -14783,7 +14817,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14807,13 +14841,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Thu Aug 23 2018"
+              "date": "Fri Aug 24 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -15034,6 +15068,12 @@
               "date": "28 October 2015"
             },
             {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/csp-embedded-enforcement/",
               "title": "Content Security Policy: Embedded Enforcement",
               "crawled": "https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/",
@@ -15181,7 +15221,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -15205,7 +15245,7 @@
               "url": "https://wicg.github.io/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://wicg.github.io/geolocation-sensor/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -15445,7 +15485,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -15472,10 +15512,16 @@
               "date": "05 June 2018"
             },
             {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
+            },
+            {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -15602,14 +15648,21 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "RTCDataChannelState",
-          "RTCDtlsTransportState",
-          "RTCIceCandidateType",
-          "RTCIceRole",
-          "RTCPriorityType",
           "RTCRTPStreamStats"
         ],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "RTCStats",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webrtc/",
+                "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+                "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+                "date": "21 June 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [
@@ -15622,7 +15675,14 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": false,
@@ -15733,6 +15793,12 @@
               "title": "Web Cryptography API",
               "crawled": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/",
               "date": "26 January 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
             }
           ]
         },
@@ -15742,7 +15808,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "August 23, 2018",
+      "date": "August 24, 2018",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -16243,6 +16309,12 @@
               "title": "Web Audio API",
               "crawled": "https://www.w3.org/TR/2018/WD-webaudio-20180619/",
               "date": "19 June 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
             }
           ],
           "informative": [
@@ -16946,7 +17018,6 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://url.spec.whatwg.org/",
-          "https://w3c.github.io/webappsec-csp/",
           "https://www.w3.org/TR/service-workers/",
           "https://www.w3.org/TR/eventsource/"
         ],
@@ -16963,6 +17034,13 @@
             "ref": {
               "name": "HTML51",
               "url": "https://www.w3.org/TR/html51/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP3",
+              "url": "https://www.w3.org/TR/CSP3/"
             }
           }
         ],
@@ -16990,7 +17068,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -17012,6 +17090,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
               "title": "Media Capture and Streams",
@@ -17816,7 +17900,7 @@
               "url": "https://wicg.github.io/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://wicg.github.io/geolocation-sensor/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/gyroscope/",
@@ -17882,7 +17966,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             }
           ],
           "informative": [
@@ -17890,7 +17974,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             }
           ]
         },
@@ -17987,7 +18071,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -18001,7 +18085,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -18054,7 +18138,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             }
           ],
           "informative": [
@@ -18072,7 +18156,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "August 23, 2018",
+      "date": "August 24, 2018",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -18436,7 +18520,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -18533,10 +18617,15 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/webappsec-csp/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP3",
+              "url": "https://www.w3.org/TR/CSP3/"
+            }
+          },
           {
             "link": "https://w3c.github.io/webdriver/webdriver-spec.html",
             "ref": {
@@ -19366,7 +19455,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             }
           ]
         },
@@ -19717,7 +19806,14 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -19790,6 +19886,12 @@
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/",
               "date": "21 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -19977,7 +20079,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -20026,10 +20128,16 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
+            {
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             }
           ],
           "informative": [
@@ -20228,7 +20336,20 @@
               "date": "2 August 2016"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
+            }
+          ]
         },
         "noEdDraft": true,
         "ok": false
@@ -20280,7 +20401,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -20345,7 +20466,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -20585,6 +20706,12 @@
               "date": "13 April 2017"
             },
             {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/csp-embedded-enforcement/",
               "title": "Content Security Policy: Embedded Enforcement",
               "crawled": "https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/",
@@ -20636,7 +20763,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -20732,13 +20859,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -20822,7 +20949,14 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -21025,6 +21159,12 @@
               "date": "21 June 2018"
             },
             {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/csp-embedded-enforcement/",
               "title": "Content Security Policy: Embedded Enforcement",
               "crawled": "https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/",
@@ -21166,7 +21306,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -21202,7 +21342,7 @@
               "url": "https://wicg.github.io/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://wicg.github.io/geolocation-sensor/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webmessaging/",
@@ -21286,7 +21426,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -21478,7 +21618,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -21514,13 +21654,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Thu Aug 23 2018"
+              "date": "Fri Aug 24 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -21757,6 +21897,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
@@ -22090,6 +22236,12 @@
               "title": "Payment Handler API",
               "crawled": "https://www.w3.org/TR/2018/WD-payment-handler-20180108/",
               "date": "08 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
             }
           ],
           "informative": [
@@ -22158,7 +22310,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "August 23, 2018",
+      "date": "August 24, 2018",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -22310,7 +22462,7 @@
     },
     {
       "title": "Web Share API",
-      "date": "August 23, 2018",
+      "date": "August 24, 2018",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "repository": "https://github.com/wicg/web-share",
@@ -22522,6 +22674,12 @@
               "date": "28 October 2015"
             },
             {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/csp-embedded-enforcement/",
               "title": "Content Security Policy: Embedded Enforcement",
               "crawled": "https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/",
@@ -22669,7 +22827,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -22693,7 +22851,7 @@
               "url": "https://wicg.github.io/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://wicg.github.io/geolocation-sensor/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/hr-time-3/",
@@ -22945,7 +23103,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -22966,10 +23124,16 @@
               "date": "05 June 2018"
             },
             {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
+            },
+            {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -23176,11 +23340,17 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/webappsec-csp/",
           "https://w3c.github.io/editing/contentEditable.html",
           "https://w3c.github.io/editing/execCommand.html"
         ],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP3",
+              "url": "https://www.w3.org/TR/CSP3/"
+            }
+          },
           {
             "link": "https://w3c.github.io/DOM-Parsing/",
             "ref": {
@@ -23213,7 +23383,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Thu Aug 23 2018",
+      "date": "Fri Aug 24 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23268,7 +23438,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Thu Aug 23 2018",
+      "date": "Fri Aug 24 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23324,7 +23494,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Thu Aug 23 2018"
+              "date": "Fri Aug 24 2018"
             }
           ],
           "informative": [
@@ -23596,7 +23766,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -23638,7 +23808,7 @@
               "url": "https://wicg.github.io/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://wicg.github.io/geolocation-sensor/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/gyroscope/",
@@ -23980,13 +24150,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -24022,19 +24192,25 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Thu Aug 23 2018"
+              "date": "Fri Aug 24 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Thu Aug 23 2018"
+              "date": "Fri Aug 24 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc/",
+              "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+              "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+              "date": "21 June 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "22 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -24096,7 +24272,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -24132,7 +24308,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 23, 2018"
+              "date": "August 24, 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -24167,25 +24343,86 @@
     {
       "title": "WebRTC 1.0: Real-time Communication Between Browsers",
       "shortname": "webrtc",
-      "date": "",
+      "date": "21 June 2018",
       "url": "https://www.w3.org/TR/webrtc/",
-      "latest": "https://www.w3.org/TR/webrtc",
-      "crawled": "https://www.w3.org/TR/webrtc",
+      "latest": "https://www.w3.org/TR/webrtc/",
+      "datedUrl": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://w3c.github.io/webrtc-pc/",
+      "crawled": "https://www.w3.org/TR/2018/CR-webrtc-20180621/",
       "repository": "https://github.com/w3c/webrtc-pc",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "RTCError",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "RTCStats",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webrtc-stats/",
+                "title": "Identifiers for WebRTC's Statistics API",
+                "crawled": "https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/",
+                "date": "03 July 2018"
+              }
+            ]
+          }
+        ],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Event",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "EventInit",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/html52/",
+            "ref": {
+              "name": "HTML51",
+              "url": "https://www.w3.org/TR/html51/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -24246,7 +24483,7 @@
             }
           ]
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -24270,16 +24507,19 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "RTCPriorityType",
-          "RTCRtpEncodingParameters"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/webrtc-pc/"
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webrtc-pc/",
+            "ref": {
+              "name": "WEBRTC",
+              "url": "https://www.w3.org/TR/webrtc/"
+            }
+          }
         ],
-        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -24290,7 +24530,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "22 August 2018",
+      "date": "23 August 2018",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
@@ -24427,7 +24667,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Thu Aug 23 2018"
+                "date": "Fri Aug 24 2018"
               }
             ]
           },
@@ -24438,7 +24678,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Thu Aug 23 2018"
+                "date": "Fri Aug 24 2018"
               }
             ]
           },
@@ -24449,7 +24689,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Thu Aug 23 2018"
+                "date": "Fri Aug 24 2018"
               }
             ]
           },
@@ -24460,7 +24700,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Thu Aug 23 2018"
+                "date": "Fri Aug 24 2018"
               }
             ]
           },
@@ -24471,7 +24711,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Thu Aug 23 2018"
+                "date": "Fri Aug 24 2018"
               }
             ]
           }
@@ -24649,7 +24889,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "21 August 2018"
+              "date": "23 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -24665,6 +24905,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2016/WD-CSP3-20160913/",
+              "date": "13 September 2016"
+            },
             {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
