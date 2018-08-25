@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 24, 2018
+% August 25, 2018
 
 237 specifications were crawled in this report.
 
@@ -468,7 +468,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/) but does not list it in its references
-- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical/) links to [`https://www.w3.org/TR/css-writing-modes/`](https://www.w3.org/TR/css-writing-modes/) but does not list it in its references
+- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical/) links to:
+    * [`https://www.w3.org/TR/css-writing-modes/`](https://www.w3.org/TR/css-writing-modes/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-writing-modes-3/CSS%20Writing%20Modes%3C/a%3E%20on%20the%20Web%20%20(in%20order%20to%20correctly%20implement%20the%20default%20HTML%20styles),%20%20The%20CSSWG%20resolved%20that%20although%20the%20draft%20is%20not%20very%20stable%20overall,%20%20the%20requisite%20features%20in%20%20%3Ca%20href=`](https://www.w3.org/TR/css-writing-modes-3/CSS%20Writing%20Modes%3C/a%3E%20on%20the%20Web%20%20(in%20order%20to%20correctly%20implement%20the%20default%20HTML%20styles),%20%20The%20CSSWG%20resolved%20that%20although%20the%20draft%20is%20not%20very%20stable%20overall,%20%20the%20requisite%20features%20in%20%20%3Ca%20href=) but does not list it in its references
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/) links to:
     * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
@@ -716,7 +718,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 353 missing references for links found in 118 specifications
+=> 354 missing references for links found in 118 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
