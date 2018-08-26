@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-08-25T06:05:13.433Z",
+  "date": "2018-08-26T06:05:08.690Z",
   "stats": {
     "crawled": 237,
-    "errors": 3,
+    "errors": 11,
     "studied": 237
   },
   "results": [
@@ -263,12 +263,6 @@
               "date": "20 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/magnetometer/",
-              "title": "Magnetometer",
-              "crawled": "https://www.w3.org/TR/2018/CR-magnetometer-20180320/",
-              "date": "20 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/",
@@ -500,7 +494,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "EventTarget",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -559,11 +552,22 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "EventTarget",
           "Navigator"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -654,11 +658,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Document",
-          "Element",
-          "Node"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -668,7 +668,7 @@
           "informative": []
         },
         "noEdDraft": null,
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -777,12 +777,6 @@
               "date": "05 July 2016"
             },
             {
-              "url": "https://www.w3.org/TR/css3-conditional/",
-              "title": "CSS Conditional Rules Module Level 3",
-              "crawled": "http://www.w3.org/TR/2013/CR-css3-conditional-20130404/",
-              "date": "4 April 2013"
-            },
-            {
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-css-contain-1-20180524/",
@@ -805,6 +799,12 @@
               "title": "CSS Device Adaptation Module Level 1",
               "crawled": "http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/",
               "date": "29 March 2016"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://drafts.csswg.org/css-exclusions-1/",
@@ -873,12 +873,6 @@
               "date": "12 April 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
-            },
-            {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -889,12 +883,6 @@
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/",
               "date": "28 May 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -919,12 +907,6 @@
               "title": "CSS Positioned Layout Module Level 3",
               "crawled": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/",
               "date": "17 May 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-regions-1/",
@@ -1099,12 +1081,6 @@
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
               "date": "13 September 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -1226,12 +1202,6 @@
               "date": "12 April 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/css-multicol-1/",
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/",
@@ -1345,9 +1315,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "DataTransfer",
-          "Event",
-          "EventInit",
-          "EventTarget",
           "Navigator",
           "Window"
         ],
@@ -1681,10 +1648,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Event",
-          "EventInit"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -1747,12 +1711,6 @@
               "title": "Web App Manifest",
               "crawled": "https://www.w3.org/TR/2018/WD-appmanifest-20180719/",
               "date": "Living Document"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -1819,7 +1777,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "August 25, 2018",
+      "date": "August 26, 2018",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -1894,11 +1852,21 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Document"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Document",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -1994,7 +1962,8 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "AnimationEffect"
+          "AnimationEffect",
+          "CSS"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -2041,9 +2010,10 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "CSSOMString",
-          "Event",
+          "CSSRule",
+          "CSSRuleList",
+          "CSSStyleDeclaration",
           "EventHandler",
-          "EventInit",
           "GlobalEventHandlers",
           "Window"
         ],
@@ -2051,8 +2021,7 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css3-positioning/",
-          "https://www.w3.org/TR/css3-background/",
-          "https://w3c.github.io/dom/"
+          "https://www.w3.org/TR/css3-background/"
         ],
         "inconsistentRef": [
           {
@@ -2060,6 +2029,13 @@
             "ref": {
               "name": "CSS-VALUES-3",
               "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/dom/",
+            "ref": {
+              "name": "DOM",
+              "url": "https://dom.spec.whatwg.org/"
             }
           }
         ],
@@ -2254,6 +2230,12 @@
               "title": "CSS Containment Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-css-contain-1-20180524/",
               "date": "24 May 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -2474,18 +2456,6 @@
               "date": "13 April 2017"
             },
             {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
-            },
-            {
               "url": "https://www.w3.org/TR/css-tables-3/",
               "title": "CSS Table Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/WD-css-tables-3-20170307/",
@@ -2667,6 +2637,12 @@
               "date": "21 June 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/",
@@ -2838,7 +2814,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -2853,22 +2829,10 @@
               "date": "29 March 2016"
             },
             {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-transitions-1/",
@@ -3011,6 +2975,12 @@
               "date": "29 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://drafts.csswg.org/css-env-1/",
               "title": "CSS Environment Variables Module Level 1",
               "crawled": "https://drafts.csswg.org/css-env-1/",
@@ -3063,18 +3033,6 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -3203,12 +3161,6 @@
               "date": "07 August 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://www.w3.org/TR/2018/CR-webvtt1-20180510/",
@@ -3313,12 +3265,6 @@
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/",
               "date": "28 May 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://drafts.csswg.org/css-scrollbars-1/",
@@ -3528,46 +3474,27 @@
     {
       "title": "CSS Conditional Rules Module Level 3",
       "shortname": "css3-conditional",
-      "date": "4 April 2013",
+      "date": "",
       "url": "https://www.w3.org/TR/css3-conditional/",
-      "latest": "http://www.w3.org/TR/css3-conditional/",
-      "datedUrl": "http://www.w3.org/TR/2013/CR-css3-conditional-20130404/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://drafts.csswg.org/css-conditional-3/",
-      "crawled": "http://www.w3.org/TR/2013/CR-css3-conditional-20130404/",
+      "latest": "https://www.w3.org/TR/css3-conditional",
+      "crawled": "https://www.w3.org/TR/css3-conditional",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
-        "hasInvalidIdl": true,
+        "hasInvalidIdl": false,
         "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/2008/REC-CSS1-20080411",
-          "https://www.w3.org/TR/2013/WD-css3-transitions-20130212/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css3-mediaqueries/",
-            "ref": {
-              "name": "MEDIAQ",
-              "url": "http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://compat.spec.whatwg.org/",
-              "title": "Compatibility Standard",
-              "crawled": "https://compat.spec.whatwg.org/",
-              "date": "21 June 2018"
-            },
             {
               "url": "https://www.w3.org/TR/css-cascade-3/",
               "title": "CSS Cascading and Inheritance Level 3",
@@ -3626,7 +3553,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -3669,6 +3596,12 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
@@ -3727,7 +3660,8 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "CSSOMString"
+          "CSSOMString",
+          "CSSRule"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -3887,11 +3821,15 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSRule",
+          "CSSStyleDeclaration"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css3-syntax/",
+          "https://www.w3.org/TR/cssom-1/",
           "https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/"
         ],
         "inconsistentRef": [
@@ -3922,13 +3860,6 @@
               "name": "MEDIAQUERIES-4",
               "url": "http://dev.w3.org/csswg/mediaqueries4/"
             }
-          },
-          {
-            "link": "https://www.w3.org/TR/cssom-1/",
-            "ref": {
-              "name": "CSSOM-1",
-              "url": "https://drafts.csswg.org/cssom/"
-            }
           }
         ],
         "referencedBy": {
@@ -3944,12 +3875,6 @@
               "title": "CSSOM View Module",
               "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
               "date": "17 March 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -3974,25 +3899,44 @@
     {
       "title": "CSS Display Module Level 3",
       "shortname": "css-display-3",
-      "date": "",
+      "date": "9 August 2018",
       "url": "https://www.w3.org/TR/css-display-3/",
-      "latest": "https://www.w3.org/TR/css-display-3",
-      "crawled": "https://www.w3.org/TR/css-display-3",
+      "latest": "https://www.w3.org/TR/css-display-3/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://drafts.csswg.org/css-display/",
+      "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/selectors4/",
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/css3-background/",
+          "https://www.w3.org/TR/css3-break/",
+          "https://www.w3.org/TR/css3-positioning/",
+          "https://www.w3.org/TR/css3-align/",
+          "https://www.w3.org/TR/svg2/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css3-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -4000,6 +3944,12 @@
               "title": "Box Tree API Level 1",
               "crawled": "https://drafts.css-houdini.org/box-tree-api/",
               "date": "14 August 2018"
+            },
+            {
+              "url": "https://compat.spec.whatwg.org/",
+              "title": "Compatibility Standard",
+              "crawled": "https://compat.spec.whatwg.org/",
+              "date": "21 June 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -4084,12 +4034,6 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
             },
             {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -4200,16 +4144,16 @@
               "date": "24 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/cssom-view-1/",
+              "title": "CSSOM View Module",
+              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
+              "date": "17 March 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
               "date": "2 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -4218,16 +4162,9 @@
               "date": "10 May 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
-            }
-          ]
+          "informative": []
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -4413,6 +4350,12 @@
               "date": "23 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-grid-1/",
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-grid-1-20171214/",
@@ -4580,32 +4523,12 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "CSSRule",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/cssom-1/",
-                "title": "CSS Object Model (CSSOM)",
-                "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-                "date": "17 March 2016"
-              }
-            ]
-          },
-          {
-            "name": "CSSStyleDeclaration",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/cssom-1/",
-                "title": "CSS Object Model (CSSOM)",
-                "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-                "date": "17 March 2016"
-              }
-            ]
-          }
+        "unknownIdlNames": [
+          "CSSRule",
+          "CSSStyleDeclaration"
         ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/2002/WD-css3-fonts-20020802/",
           "https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/",
@@ -4719,22 +4642,10 @@
               "date": "14 January 2016"
             },
             {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
-            },
-            {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
               "date": "9 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
@@ -4810,12 +4721,6 @@
               "title": "CSS Cascading and Inheritance Level 3",
               "crawled": "http://www.w3.org/TR/2016/CR-css-cascade-3-20160519/",
               "date": "19 May 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/css3-conditional/",
-              "title": "CSS Conditional Rules Module Level 3",
-              "crawled": "http://www.w3.org/TR/2013/CR-css3-conditional-20130404/",
-              "date": "4 April 2013"
             },
             {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
@@ -4904,22 +4809,10 @@
               "date": "14 January 2016"
             },
             {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
-            },
-            {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
               "date": "9 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-3/",
@@ -5023,6 +4916,12 @@
               "date": "24 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/fill-stroke-3/",
               "title": "CSS Fill and Stroke Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/",
@@ -5051,12 +4950,6 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -5310,12 +5203,6 @@
               "date": "13 June 2017"
             },
             {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
-            },
-            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
@@ -5409,6 +5296,12 @@
               "date": "23 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/2018/WD-css-grid-2-20180804/",
@@ -5496,6 +5389,12 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
             {
               "url": "https://www.w3.org/TR/css-grid-1/",
               "title": "CSS Grid Layout Module Level 1",
@@ -5735,6 +5634,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "CSS",
           "Map"
         ],
         "redefinedIdlNames": [],
@@ -5858,6 +5758,12 @@
               "date": "23 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/",
@@ -5930,14 +5836,7 @@
               "date": "07 August 2018"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
-            }
-          ]
+          "informative": []
         },
         "noEdDraft": false,
         "ok": false
@@ -6344,12 +6243,6 @@
               "date": "8 August 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
-            },
-            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
@@ -6372,31 +6265,24 @@
     {
       "title": "CSS Logical Properties and Values Level 1",
       "shortname": "css-logical-1",
-      "date": "18 May 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/css-logical-1/",
-      "latest": "https://www.w3.org/TR/css-logical-1/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://drafts.csswg.org/css-logical/",
-      "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
+      "latest": "https://www.w3.org/TR/css-logical-1",
+      "crawled": "https://www.w3.org/TR/css-logical-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
+        "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css-writing-modes/",
-          "https://www.w3.org/TR/css3-positioning/",
-          "https://www.w3.org/TR/css3-ui/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -6428,7 +6314,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -6888,61 +6774,25 @@
     {
       "title": "CSS Object Model (CSSOM)",
       "shortname": "cssom-1",
-      "date": "17 March 2016",
+      "date": "",
       "url": "https://www.w3.org/TR/cssom-1/",
-      "latest": "http://www.w3.org/TR/cssom-1/",
-      "datedUrl": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://drafts.csswg.org/cssom/",
-      "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
+      "latest": "https://www.w3.org/TR/cssom-1",
+      "crawled": "https://www.w3.org/TR/cssom-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Document",
-          "Element",
-          "ProcessingInstruction",
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css-namespaces-3/",
-          "https://www.w3.org/TR/svg2/",
-          "https://www.w3.org/TR/css-display-3/",
-          "https://www.w3.org/TR/css3-positioning/",
-          "https://www.w3.org/TR/css3-color/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css-pseudo-4/",
-            "ref": {
-              "name": "CSS-PSEUDO-4",
-              "url": "http://dev.w3.org/csswg/css-pseudo-4/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/mediaqueries-4/",
-            "ref": {
-              "name": "MEDIAQUERIES-4",
-              "url": "http://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/css3-values/",
-            "ref": {
-              "name": "CSS-VALUES",
-              "url": "http://dev.w3.org/csswg/css-values/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -6976,10 +6826,10 @@
               "date": "14 December 2017"
             },
             {
-              "url": "https://www.w3.org/TR/css-device-adapt-1/",
-              "title": "CSS Device Adaptation Module Level 1",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/",
-              "date": "29 March 2016"
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -7028,12 +6878,6 @@
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
               "date": "9 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-transforms-1/",
@@ -7090,12 +6934,6 @@
               "date": "13 September 2016"
             },
             {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://www.w3.org/TR/2018/CR-webvtt1-20180510/",
@@ -7104,12 +6942,6 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/ambient-light/",
-              "title": "Ambient Light Sensor",
-              "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
-              "date": "20 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-timing-1/",
               "title": "CSS Timing Functions Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-timing-1-20170221/",
@@ -7117,7 +6949,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -7181,6 +7013,12 @@
               "title": "CSS Containment Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-css-contain-1-20180524/",
               "date": "24 May 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -7560,16 +7398,16 @@
               "date": "29 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-break-3/",
               "title": "CSS Fragmentation Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/CR-css-break-3-20170209/",
               "date": "9 February 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -7652,7 +7490,9 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSS"
+        ],
         "redefinedIdlNames": [
           {
             "name": "Worklet",
@@ -7725,6 +7565,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "CSS",
           "ReadableStream"
         ],
         "redefinedIdlNames": [],
@@ -7795,6 +7636,12 @@
               "date": "05 July 2016"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://drafts.csswg.org/css-exclusions-1/",
               "title": "CSS Exclusions Module Level 1",
               "crawled": "https://drafts.csswg.org/css-exclusions-1/",
@@ -7817,12 +7664,6 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -7947,7 +7788,9 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSS"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -7985,34 +7828,24 @@
     {
       "title": "CSS Pseudo-Elements Module Level 4",
       "shortname": "css-pseudo-4",
-      "date": "7 June 2016",
+      "date": "",
       "url": "https://www.w3.org/TR/css-pseudo-4/",
-      "latest": "http://www.w3.org/TR/css-pseudo-4/",
-      "datedUrl": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://drafts.csswg.org/css-pseudo-4/",
-      "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
+      "latest": "https://www.w3.org/TR/css-pseudo-4",
+      "crawled": "https://www.w3.org/TR/css-pseudo-4",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Element",
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-lists/",
-          "https://www.w3.org/TR/css3-ui/",
-          "https://www.w3.org/TR/css-color/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -8027,6 +7860,12 @@
               "title": "CSS Box Model Module Level 3",
               "crawled": "https://drafts.csswg.org/css-box-3/",
               "date": "2 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -8059,12 +7898,6 @@
               "date": "12 April 2018"
             },
             {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
-            },
-            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
@@ -8081,12 +7914,6 @@
               "title": "CSS Scroll Snap Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/",
               "date": "14 August 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-view-1/",
-              "title": "CSSOM View Module",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/selectors-4/",
@@ -8116,7 +7943,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -8383,6 +8210,12 @@
               "date": "19 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/",
@@ -8411,12 +8244,6 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
@@ -8679,43 +8506,24 @@
     {
       "title": "CSS Shapes Module Level 1",
       "shortname": "css-shapes-1",
-      "date": "20 March 2014",
+      "date": "",
       "url": "https://www.w3.org/TR/css-shapes-1/",
-      "latest": "http://www.w3.org/TR/css-shapes-1/",
-      "datedUrl": "http://www.w3.org/TR/2014/CR-css-shapes-1-20140320/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://drafts.csswg.org/css-shapes/",
-      "crawled": "http://www.w3.org/TR/2014/CR-css-shapes-1-20140320/",
+      "latest": "https://www.w3.org/TR/css-shapes-1",
+      "crawled": "https://www.w3.org/TR/css-shapes-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
         "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
+        "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-transitions/",
-          "https://www.w3.org/TR/css3-values/",
-          "https://www.w3.org/TR/css3-background/",
-          "https://www.w3.org/TR/css3-images/",
-          "https://www.w3.org/TR/html5/",
-          "https://www.w3.org/TR/2012/WD-css3-exclusions-20120503/",
-          "https://www.w3.org/TR/2011/WD-css3-exclusions-20111213/",
-          "https://www.w3.org/TR/2011/REC-CSS2-20110607",
-          "https://www.w3.org/TR/2012/CR-css3-background-20120724/",
-          "https://www.w3.org/TR/2007/WD-css3-box-20070809",
-          "https://www.w3.org/TR/2013/CR-css3-values-20130730/",
-          "https://www.w3.org/TR/2013/CR-html5-20130806/",
-          "https://www.w3.org/TR/2013/WD-css-masking-20130620/",
-          "https://www.w3.org/TR/2013/WD-css3-exclusions-20130528/",
-          "https://www.w3.org/TR/2013/WD-css3-transitions-20130212/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -8771,7 +8579,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -8988,12 +8796,6 @@
               "date": "12 April 2018"
             },
             {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
-            },
-            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
@@ -9195,12 +8997,6 @@
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
               "date": "31 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -9406,6 +9202,12 @@
               "date": "14 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/",
@@ -9442,12 +9244,6 @@
               "date": "4 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
-            },
-            {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -9458,12 +9254,6 @@
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
               "date": "31 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
@@ -9968,16 +9758,13 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "CSSOMString",
-          "Event",
           "EventHandler",
-          "EventInit",
           "GlobalEventHandlers"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css3-background/",
-          "https://w3c.github.io/dom/",
           "https://www.w3.org/TR/2013/WD-css3-transitions-20131119/",
           "https://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog"
         ],
@@ -9987,6 +9774,13 @@
             "ref": {
               "name": "CSS-VALUES-3",
               "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/dom/",
+            "ref": {
+              "name": "DOM",
+              "url": "https://dom.spec.whatwg.org/"
             }
           }
         ],
@@ -10127,9 +9921,11 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "CSS",
+          "CSSStyleRule",
           "DOMMatrix",
           "DOMMatrixReadOnly",
-          "Element",
+          "ElementCSSInlineStyle",
           "LayoutWorklet",
           "Window"
         ],
@@ -10418,6 +10214,12 @@
               "date": "29 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://drafts.csswg.org/css-env-1/",
               "title": "CSS Environment Variables Module Level 1",
               "crawled": "https://drafts.csswg.org/css-env-1/",
@@ -10508,12 +10310,6 @@
               "date": "12 April 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
-            },
-            {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -10530,12 +10326,6 @@
               "title": "CSS Multi-column Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-multicol-2/",
               "date": "5 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -10746,12 +10536,6 @@
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/",
               "date": "15 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -11132,12 +10916,6 @@
               "date": "12 April 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
@@ -11154,12 +10932,6 @@
               "title": "CSS Positioned Layout Module Level 3",
               "crawled": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/",
               "date": "17 May 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-regions-1/",
@@ -11329,12 +11101,6 @@
               "date": "21 June 2018"
             },
             {
-              "url": "https://www.w3.org/TR/css-logical-1/",
-              "title": "CSS Logical Properties and Values Level 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-              "date": "18 May 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/",
@@ -11422,24 +11188,16 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "CSSPseudoElement",
           "DOMPoint",
           "DOMPointInit",
           "DOMQuad",
           "DOMQuadInit",
           "DOMRect",
           "DOMRectReadOnly",
-          "Document",
-          "Element",
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventListener",
-          "EventTarget",
           "HTMLElement",
           "HTMLImageElement",
-          "Node",
-          "Range",
-          "Text",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -11468,12 +11226,12 @@
           }
         ],
         "missingLinkRef": [
-          "https://www.w3.org/TR/css-display-3/",
           "https://www.w3.org/TR/svg2/",
           "https://www.w3.org/TR/geometry-1/",
           "https://www.w3.org/TR/css3-break/",
           "https://www.w3.org/TR/css3-background/",
-          "https://www.w3.org/TR/css3-positioning/"
+          "https://www.w3.org/TR/css3-positioning/",
+          "https://www.w3.org/TR/css-pseudo-4/"
         ],
         "inconsistentRef": [
           {
@@ -11484,10 +11242,10 @@
             }
           },
           {
-            "link": "https://www.w3.org/TR/css-pseudo-4/",
+            "link": "https://www.w3.org/TR/css-display-3/",
             "ref": {
-              "name": "CSS-PSEUDO-4",
-              "url": "http://dev.w3.org/csswg/css-pseudo-4/"
+              "name": "CSS-DISPLAY-3",
+              "url": "http://dev.w3.org/csswg/css-display/"
             }
           },
           {
@@ -11546,7 +11304,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://wicg.github.io/ResizeObserver/",
@@ -11577,12 +11335,6 @@
               "title": "User Interface Security and the Visibility API",
               "crawled": "http://www.w3.org/TR/2016/WD-UISecurity-20160607/",
               "date": "7 June 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -11609,6 +11361,12 @@
               "title": "Pointer Events",
               "crawled": "https://www.w3.org/TR/2018/CR-pointerevents2-20180522/",
               "date": "Level 2"
+            },
+            {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -11691,15 +11449,66 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Document",
-          "DocumentFragment",
-          "Element",
-          "Node",
-          "Range",
           "SupportedType"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Document",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Node",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Element",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Range",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "DocumentFragment",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://domparsing.spec.whatwg.org/"
         ],
@@ -11707,19 +11516,20 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
-            },
-            {
               "url": "https://xhr.spec.whatwg.org/",
               "title": "XMLHttpRequest Standard",
               "crawled": "https://xhr.spec.whatwg.org/",
               "date": "21 August 2018"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -11772,12 +11582,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
-            },
-            {
               "url": "https://www.w3.org/TR/encrypted-media/",
               "title": "Encrypted Media Extensions",
               "crawled": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/",
@@ -11808,6 +11612,12 @@
               "date": "21 August 2018"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://www.w3.org/TR/2018/WD-appmanifest-20180719/",
@@ -11829,7 +11639,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -11877,10 +11687,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "HTMLMediaElement",
           "Navigator"
         ],
@@ -11934,7 +11741,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Document",
           "HTMLIFrameElement"
         ],
         "redefinedIdlNames": [],
@@ -12075,12 +11881,6 @@
               "date": "14 August 2018"
             },
             {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
-            },
-            {
               "url": "https://wicg.github.io/feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://wicg.github.io/feature-policy/",
@@ -12153,6 +11953,12 @@
               "date": "23 June 2016"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://www.w3.org/TR/2018/WD-appmanifest-20180719/",
@@ -12163,12 +11969,6 @@
               "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
               "date": "7 August 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -12189,12 +11989,6 @@
               "title": "Payment Request API",
               "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180820/",
               "date": "20 August 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://www.w3.org/TR/2018/WD-server-timing-20180717/",
-              "date": "17 July 2018"
             },
             {
               "url": "https://streams.spec.whatwg.org/",
@@ -12269,7 +12063,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "EventTarget",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -12314,10 +12107,15 @@
             ]
           }
         ],
-        "missingLinkRef": [
-          "https://w3c.github.io/dom/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/dom/",
+            "ref": {
+              "name": "DOM",
+              "url": "https://www.w3.org/TR/dom41/"
+            }
+          },
           {
             "link": "https://encoding.spec.whatwg.org/",
             "ref": {
@@ -12630,9 +12428,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Document",
-          "DocumentOrShadowRoot",
-          "Element",
           "EventHandler"
         ],
         "redefinedIdlNames": [],
@@ -12660,12 +12455,6 @@
               "title": "The Screen Orientation API",
               "crawled": "https://www.w3.org/TR/2018/WD-screen-orientation-20180706/",
               "date": "06 July 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -12720,8 +12509,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
-          "EventInit",
           "Navigator",
           "Window"
         ],
@@ -12758,10 +12545,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -12814,12 +12598,6 @@
               "url": "https://www.w3.org/TR/gyroscope/",
               "title": "Gyroscope",
               "crawled": "https://www.w3.org/TR/2018/CR-gyroscope-20180320/",
-              "date": "20 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/magnetometer/",
-              "title": "Magnetometer",
-              "crawled": "https://www.w3.org/TR/2018/CR-magnetometer-20180320/",
               "date": "20 March 2018"
             },
             {
@@ -13025,12 +12803,6 @@
               "date": "7 June 2016"
             },
             {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
-            },
-            {
               "url": "https://immersive-web.github.io/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/",
@@ -13115,11 +12887,22 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "EventTarget",
           "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/workers/"
         ],
@@ -13191,6 +12974,12 @@
               "title": "User Timing Level 2",
               "crawled": "https://www.w3.org/TR/2018/CR-user-timing-2-20180709/",
               "date": "09 July 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -13365,6 +13154,12 @@
               "date": "22 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/",
@@ -13381,12 +13176,6 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -13411,12 +13200,6 @@
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
               "date": "9 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://drafts.csswg.org/css-transforms-2/",
@@ -13599,12 +13382,6 @@
               "date": "18 April 2017"
             },
             {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/",
-              "date": "06 September 2017"
-            },
-            {
               "url": "https://wicg.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
@@ -13761,12 +13538,6 @@
               "date": "2 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://www.w3.org/TR/2018/WD-server-timing-20180717/",
-              "date": "17 July 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/eventsource/",
               "title": "Server-Sent Events",
               "crawled": "http://www.w3.org/TR/2015/REC-eventsource-20150203/",
@@ -13827,6 +13598,12 @@
               "date": "18 October 2016"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/wake-lock/",
               "title": "Wake Lock API",
               "crawled": "https://www.w3.org/TR/2017/CR-wake-lock-20171214/",
@@ -13884,7 +13661,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -13896,7 +13673,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -13923,22 +13700,16 @@
               "date": "15 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
-            },
-            {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Aug 25 2018"
+              "date": "Sun Aug 26 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Aug 25 2018"
+              "date": "Sun Aug 26 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -14019,12 +13790,6 @@
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-grid-1-20171214/",
               "date": "14 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-scroll-snap-1/",
@@ -14171,13 +13936,23 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Element",
           "HTMLCanvasElement",
           "HTMLImageElement",
           "HTMLVideoElement"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
+          {
+            "name": "Element",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
           {
             "name": "MouseEvent",
             "refs": [
@@ -14317,6 +14092,12 @@
               "date": "22 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-sizing-3/",
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/",
@@ -14327,12 +14108,6 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -14357,12 +14132,6 @@
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
               "date": "9 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://drafts.csswg.org/css-transforms-2/",
@@ -14617,6 +14386,12 @@
               "date": "21 August 2018"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
@@ -14656,7 +14431,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14671,16 +14446,10 @@
               "date": "15 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
-            },
-            {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Aug 25 2018"
+              "date": "Sun Aug 26 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -14749,12 +14518,6 @@
               "title": "HTML Media Capture",
               "crawled": "https://www.w3.org/TR/2018/REC-html-media-capture-20180201/",
               "date": "01 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/",
-              "date": "06 September 2017"
             },
             {
               "url": "https://www.w3.org/TR/orientation-sensor/",
@@ -14859,10 +14622,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "Transferable",
           "Window",
           "WindowProxy"
@@ -14964,6 +14724,12 @@
               "date": "22 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-sizing-3/",
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/",
@@ -14974,12 +14740,6 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -15004,12 +14764,6 @@
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
               "date": "9 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://drafts.csswg.org/css-transforms-2/",
@@ -15276,6 +15030,12 @@
               "date": "21 August 2018"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
@@ -15315,7 +15075,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -15334,12 +15094,6 @@
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/",
               "date": "15 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -15440,6 +15194,12 @@
               "date": "15 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/wake-lock/",
               "title": "Wake Lock API",
               "crawled": "https://www.w3.org/TR/2017/CR-wake-lock-20171214/",
@@ -15535,10 +15295,7 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "DOMStringList",
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "Window",
           "WindowOrWorkerGlobalScope"
         ],
@@ -15610,6 +15367,12 @@
               "date": "15 September 2016"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
               "crawled": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/",
@@ -15629,7 +15392,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "August 25, 2018",
+      "date": "August 26, 2018",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -15906,54 +15669,25 @@
     {
       "title": "Magnetometer",
       "shortname": "magnetometer",
-      "date": "20 March 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/magnetometer/",
-      "latest": "https://www.w3.org/TR/magnetometer/",
-      "datedUrl": "https://www.w3.org/TR/2018/CR-magnetometer-20180320/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://w3c.github.io/magnetometer/",
-      "crawled": "https://www.w3.org/TR/2018/CR-magnetometer-20180320/",
+      "latest": "https://www.w3.org/TR/magnetometer",
+      "crawled": "https://www.w3.org/TR/magnetometer",
       "repository": "https://github.com/w3c/magnetometer",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/motion-sensors/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/sensors/",
-            "ref": {
-              "name": "GENERIC-SENSOR",
-              "url": "https://www.w3.org/TR/generic-sensor/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/permissions/",
-            "ref": {
-              "name": "PERMISSIONS",
-              "url": "https://www.w3.org/TR/permissions/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/accelerometer/",
-            "ref": {
-              "name": "ACCELEROMETER",
-              "url": "https://www.w3.org/TR/accelerometer/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -15972,7 +15706,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -16039,15 +15773,46 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "OverconstrainedError",
           "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Event",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "EventInit",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -16075,12 +15840,6 @@
               "title": "Media Capture Depth Stream Extensions",
               "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/",
               "date": "18 April 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/",
-              "date": "06 September 2017"
             },
             {
               "url": "https://www.w3.org/TR/mst-content-hint/",
@@ -16183,47 +15942,25 @@
     {
       "title": "Media Capture from DOM Elements",
       "shortname": "mediacapture-fromelement",
-      "date": "06 September 2017",
+      "date": "",
       "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-      "latest": "https://www.w3.org/TR/mediacapture-fromelement/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/mediacapture-fromelement/",
-      "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/",
+      "latest": "https://www.w3.org/TR/mediacapture-fromelement",
+      "crawled": "https://www.w3.org/TR/mediacapture-fromelement",
       "repository": "https://github.com/w3c/mediacapture-fromelement",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "HTMLCanvasElement",
-          "HTMLMediaElement",
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/mediacapture-main/",
-            "ref": {
-              "name": "GETUSERMEDIA",
-              "url": "https://www.w3.org/TR/mediacapture-streams/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/2dcontext2/",
-            "ref": {
-              "name": "2DCONTEXT",
-              "url": "https://www.w3.org/TR/2dcontext/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": [
@@ -16235,7 +15972,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -16283,12 +16020,6 @@
               "title": "CSS Cascading and Inheritance Level 4",
               "crawled": "http://www.w3.org/TR/2016/CR-css-cascade-4-20160114/",
               "date": "14 January 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/css3-conditional/",
-              "title": "CSS Conditional Rules Module Level 3",
-              "crawled": "http://www.w3.org/TR/2013/CR-css3-conditional-20130404/",
-              "date": "4 April 2013"
             },
             {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
@@ -16396,12 +16127,6 @@
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-grid-1-20171214/",
               "date": "14 December 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -16549,7 +16274,6 @@
           "AudioTrack",
           "AudioTrackList",
           "EventHandler",
-          "EventTarget",
           "TextTrack",
           "TextTrackList",
           "TimeRanges",
@@ -16558,6 +16282,17 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
           {
             "name": "URL",
             "refs": [
@@ -16623,10 +16358,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -17013,12 +16745,6 @@
               "date": "16 July 2018"
             },
             {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://www.w3.org/TR/2018/WD-server-timing-20180717/",
-              "date": "17 July 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 2",
               "crawled": "https://www.w3.org/TR/2018/CR-user-timing-2-20180709/",
@@ -17073,7 +16799,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "EventTarget",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -17160,7 +16885,8 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/2016/CR-orientation-event-20160818/",
-          "https://w3c.github.io/motion-sensors/"
+          "https://w3c.github.io/motion-sensors/",
+          "https://w3c.github.io/magnetometer/"
         ],
         "inconsistentRef": [
           {
@@ -17182,13 +16908,6 @@
             "ref": {
               "name": "GYROSCOPE",
               "url": "https://www.w3.org/TR/gyroscope/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/magnetometer/",
-            "ref": {
-              "name": "MAGNETOMETER",
-              "url": "https://www.w3.org/TR/magnetometer/"
             }
           }
         ],
@@ -17228,7 +16947,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Document",
           "EventHandler"
         ],
         "redefinedIdlNames": [],
@@ -17301,12 +17019,6 @@
               "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-webauthn-20180807/",
               "date": "7 August 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             }
           ],
           "informative": [
@@ -17478,10 +17190,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -17596,12 +17305,6 @@
               "title": "Performance Timeline Level 2",
               "crawled": "https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/",
               "date": "08 December 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://www.w3.org/TR/2018/WD-server-timing-20180717/",
-              "date": "17 July 2018"
             }
           ]
         },
@@ -17631,7 +17334,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "EventTarget",
           "Navigator",
           "PermissionName",
           "Window"
@@ -17698,12 +17400,6 @@
               "date": "20 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/magnetometer/",
-              "title": "Magnetometer",
-              "crawled": "https://www.w3.org/TR/2018/CR-magnetometer-20180320/",
-              "date": "20 March 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
               "title": "Media Capture and Streams",
               "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
@@ -17763,7 +17459,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             }
           ]
         },
@@ -17787,11 +17483,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Document",
-          "DocumentOrShadowRoot",
-          "Element",
           "EventHandler",
-          "EventTarget",
           "HTMLVideoElement"
         ],
         "redefinedIdlNames": [],
@@ -17835,7 +17527,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Element",
           "EventHandler",
           "GlobalEventHandlers",
           "Navigator",
@@ -17865,13 +17556,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 25, 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
+              "date": "August 26, 2018"
             }
           ],
           "informative": [
@@ -17879,7 +17564,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -17914,9 +17599,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Document",
-          "DocumentOrShadowRoot",
-          "Element",
           "EventHandler"
         ],
         "redefinedIdlNames": [],
@@ -17935,7 +17617,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             }
           ],
           "informative": [
@@ -17953,7 +17635,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "August 25, 2018",
+      "date": "August 26, 2018",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -18045,10 +17727,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "Navigator"
         ],
         "redefinedIdlNames": [],
@@ -18111,10 +17790,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Event",
-          "EventInit"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [
           {
             "name": "ProgressEvent",
@@ -18366,12 +18042,23 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "EventTarget",
           "HTMLMediaElement",
           "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -18409,20 +18096,15 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/webdriver/webdriver-spec.html"
+        ],
         "inconsistentRef": [
           {
             "link": "https://w3c.github.io/webappsec-csp/",
             "ref": {
               "name": "CSP3",
               "url": "https://www.w3.org/TR/CSP3/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/webdriver/webdriver-spec.html",
-            "ref": {
-              "name": "WebDriver",
-              "url": "https://www.w3.org/TR/webdriver1/"
             }
           }
         ],
@@ -18451,7 +18133,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "DOMRectReadOnly",
-          "Element",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -18504,12 +18185,6 @@
               "title": "Navigation Timing Level 2",
               "crawled": "https://www.w3.org/TR/2018/WD-navigation-timing-2-20180820/",
               "date": "20 August 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://www.w3.org/TR/2018/WD-server-timing-20180717/",
-              "date": "17 July 2018"
             }
           ],
           "informative": [
@@ -18559,25 +18234,9 @@
           "DOMPointReadOnly",
           "DOMRect",
           "DOMRectReadOnly",
-          "Document",
-          "Element",
-          "NodeList",
-          "ShadowRoot",
           "Window"
         ],
-        "redefinedIdlNames": [
-          {
-            "name": "SVGMarkerElement",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/svg-markers/",
-                "title": "SVG Markers",
-                "crawled": "http://www.w3.org/TR/2015/WD-svg-markers-20150409/",
-                "date": "09 April 2015"
-              }
-            ]
-          }
-        ],
+        "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/svg-integration/",
@@ -18837,6 +18496,12 @@
               "date": "05 July 2016"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/fill-stroke-3/",
               "title": "CSS Fill and Stroke Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/",
@@ -18847,12 +18512,6 @@
               "title": "CSS Image Values and Replaced Content Module Level 4",
               "crawled": "https://www.w3.org/TR/2017/WD-css-images-4-20170413/",
               "date": "13 April 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-transforms-1/",
@@ -18927,12 +18586,6 @@
               "date": "2 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/svg-markers/",
-              "title": "SVG Markers",
-              "crawled": "http://www.w3.org/TR/2015/WD-svg-markers-20150409/",
-              "date": "09 April 2015"
-            },
-            {
               "url": "https://www.w3.org/TR/svg-strokes/",
               "title": "SVG Strokes",
               "crawled": "http://www.w3.org/TR/2015/WD-svg-strokes-20150409/",
@@ -18975,12 +18628,6 @@
               "title": "CSS Cascading and Inheritance Level 4",
               "crawled": "http://www.w3.org/TR/2016/CR-css-cascade-4-20160114/",
               "date": "14 January 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-style-attr/",
@@ -19080,9 +18727,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Element"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -19277,11 +18922,8 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Document",
           "EventHandler",
           "GlobalEventHandlers",
-          "Node",
-          "Range",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -19331,12 +18973,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Document",
-          "DocumentFragment",
-          "Element",
-          "NodeList"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -19467,10 +19104,10 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-scroll-snap-1/",
@@ -19512,64 +19149,30 @@
     {
       "title": "Server Timing",
       "shortname": "server-timing",
-      "date": "17 July 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/server-timing/",
-      "latest": "https://www.w3.org/TR/server-timing/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-server-timing-20180717/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/server-timing/",
-      "crawled": "https://www.w3.org/TR/2018/WD-server-timing-20180717/",
+      "latest": "https://www.w3.org/TR/server-timing",
+      "crawled": "https://www.w3.org/TR/server-timing",
       "repository": "https://github.com/w3c/server-timing",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "Worker",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/service-workers-1/",
-                "title": "Service Workers 1",
-                "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-                "date": "2 November 2017"
-              },
-              {
-                "url": "https://www.w3.org/TR/workers/",
-                "title": "Web Workers",
-                "crawled": "http://www.w3.org/TR/2015/WD-workers-20150924/",
-                "date": "24 September 2015"
-              }
-            ]
-          },
-          {
-            "name": "DOMHighResTimeStamp",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/hr-time-3/",
-                "title": "High Resolution Time Level 3",
-                "crawled": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
-                "date": "03 August 2017"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -19593,8 +19196,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "EventHandler",
-          "EventTarget"
+          "EventHandler"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -19636,10 +19238,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "Navigator",
           "Window",
           "WindowOrWorkerGlobalScope",
@@ -19723,6 +19322,12 @@
               "date": "18 May 2018"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://www.w3.org/TR/2018/WD-appmanifest-20180719/",
@@ -19782,8 +19387,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Node",
-          "Range",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -19957,56 +19560,30 @@
     {
       "title": "SVG Markers",
       "shortname": "svg-markers",
-      "date": "09 April 2015",
+      "date": "",
       "url": "https://www.w3.org/TR/svg-markers/",
-      "latest": "http://www.w3.org/TR/svg-markers/",
-      "datedUrl": "http://www.w3.org/TR/2015/WD-svg-markers-20150409/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://svgwg.org/specs/markers/",
-      "crawled": "http://www.w3.org/TR/2015/WD-svg-markers-20150409/",
+      "latest": "https://www.w3.org/TR/svg-markers",
+      "crawled": "https://www.w3.org/TR/svg-markers",
       "repository": "https://github.com/w3c/svgwg",
       "report": {
-        "noNormativeRefs": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
-        "hasUnexpectedIdl": true,
+        "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
+        "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "DOMPoint",
-          "DOMPointReadOnly"
-        ],
-        "redefinedIdlNames": [
-          {
-            "name": "SVGMarkerElement",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/SVG2/",
-                "title": "Scalable Vector Graphics (SVG) 2",
-                "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20180807/",
-                "date": "07 August 2018"
-              }
-            ]
-          }
-        ],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/2014/CR-css-masking-1-20140826/",
-          "https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/",
-          "https://www.w3.org/TR/2014/CR-html5-20140204/",
-          "https://www.w3.org/TR/css3-values/",
-          "https://www.w3.org/TR/css3-background/",
-          "https://www.w3.org/TR/2012/WD-css3-values-20120308/",
-          "https://www.w3.org/TR/2014/WD-geometry-1-20140522/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -20067,7 +19644,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "EventTarget",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -20172,8 +19748,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Document",
-          "EventTarget",
           "WindowProxy"
         ],
         "redefinedIdlNames": [],
@@ -20199,7 +19773,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -20234,9 +19808,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
-          "EventInit",
-          "EventTarget",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -20267,7 +19838,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -20324,10 +19895,10 @@
               "date": "01 June 2017"
             },
             {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
             }
           ],
           "informative": []
@@ -20386,12 +19957,6 @@
               "title": "UI Events KeyboardEvent key Values",
               "crawled": "https://www.w3.org/TR/2017/CR-uievents-key-20170601/",
               "date": "01 June 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             }
           ],
           "informative": []
@@ -20450,12 +20015,6 @@
               "title": "UI Events KeyboardEvent code Values",
               "crawled": "https://www.w3.org/TR/2017/CR-uievents-code-20170601/",
               "date": "01 June 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             }
           ],
           "informative": []
@@ -20523,12 +20082,6 @@
               "title": "Credential Management Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-credential-management-1-20170804/",
               "date": "4 August 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-values-3/",
@@ -20633,6 +20186,12 @@
               "date": "21 August 2018"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://www.w3.org/TR/2018/WD-appmanifest-20180719/",
@@ -20648,13 +20207,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -20667,12 +20226,6 @@
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/",
               "date": "15 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -20845,25 +20398,76 @@
     {
       "title": "W3C DOM 4.1",
       "shortname": "dom41",
-      "date": "",
+      "date": "1 February 2018",
       "url": "https://www.w3.org/TR/dom41/",
-      "latest": "https://www.w3.org/TR/dom41",
-      "crawled": "https://www.w3.org/TR/dom41",
+      "latest": "https://www.w3.org/TR/dom41/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/dom/",
+      "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
       "repository": "https://github.com/w3c/dom",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "HTMLSlotElement",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/touch-events/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/encoding/",
+            "ref": {
+              "name": "ENCODING",
+              "url": "https://encoding.spec.whatwg.org/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/hr-time/",
+            "ref": {
+              "name": "HR-TIME",
+              "url": "https://www.w3.org/TR/hr-time/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2017/WD-dom41-20170420/",
+            "ref": {
+              "name": "DOM",
+              "url": "https://dom.spec.whatwg.org/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2017/WD-dom41-20170321/",
+            "ref": {
+              "name": "DOM",
+              "url": "https://dom.spec.whatwg.org/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2015/REC-dom-20151119/",
+            "ref": {
+              "name": "DOM",
+              "url": "https://dom.spec.whatwg.org/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -20957,12 +20561,6 @@
               "date": "12 April 2018"
             },
             {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
-            },
-            {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
@@ -20979,12 +20577,6 @@
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
               "date": "9 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-regions-1/",
@@ -21164,7 +20756,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -21299,6 +20891,12 @@
               "date": "7 June 2016"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/wake-lock/",
               "title": "Wake Lock API",
               "crawled": "https://www.w3.org/TR/2017/CR-wake-lock-20171214/",
@@ -21350,7 +20948,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -21377,16 +20975,10 @@
               "date": "24 September 2015"
             },
             {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
-            },
-            {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Aug 25 2018"
+              "date": "Sun Aug 26 2018"
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -21440,7 +21032,7 @@
             }
           ]
         },
-        "noEdDraft": true,
+        "noEdDraft": false,
         "ok": false
       }
     },
@@ -21466,7 +21058,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "EventTarget",
           "Navigator",
           "Window"
         ],
@@ -21503,11 +21094,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Document",
-          "Event",
-          "EventHandler",
-          "EventInit",
-          "EventTarget"
+          "EventHandler"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
@@ -21602,9 +21189,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
           "Window",
           "WorkerType"
         ],
@@ -21675,10 +21260,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "HTMLMediaElement",
           "Window"
         ],
@@ -21737,12 +21319,6 @@
               "title": "Media Capture and Streams",
               "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
               "date": "3 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/",
-              "date": "06 September 2017"
             }
           ]
         },
@@ -21886,10 +21462,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "Map",
           "Navigator"
         ],
@@ -22023,10 +21596,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "Navigator"
         ],
         "redefinedIdlNames": [],
@@ -22058,7 +21628,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "August 25, 2018",
+      "date": "August 26, 2018",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -22147,8 +21717,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "EventHandler",
-          "EventTarget"
+          "EventHandler"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -22211,7 +21780,7 @@
     },
     {
       "title": "Web Share API",
-      "date": "August 25, 2018",
+      "date": "August 26, 2018",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "repository": "https://github.com/wicg/web-share",
@@ -22256,10 +21825,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Document",
-          "Event",
           "EventHandler",
-          "EventTarget",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -22294,10 +21860,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Event",
-          "EventInit"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -22317,11 +21880,17 @@
               "title": "Indexed Database API 2.0",
               "crawled": "https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/",
               "date": "30 January 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
             }
           ]
         },
         "noEdDraft": false,
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -22347,7 +21916,6 @@
         "unknownIdlNames": [
           "ApplicationCache",
           "EventHandler",
-          "EventTarget",
           "OnErrorEventHandler",
           "Transferable",
           "Window"
@@ -22478,6 +22046,12 @@
               "date": "22 December 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-display-3/",
+              "title": "CSS Display Module Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-display-3-20180809/",
+              "date": "9 August 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-sizing-3/",
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/",
@@ -22488,12 +22062,6 @@
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
               "date": "12 April 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/cssom-1/",
-              "title": "CSS Object Model (CSSOM)",
-              "crawled": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/",
-              "date": "17 March 2016"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -22518,12 +22086,6 @@
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/",
               "date": "9 November 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-pseudo-4/",
-              "title": "CSS Pseudo-Elements Module Level 4",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
-              "date": "7 June 2016"
             },
             {
               "url": "https://drafts.csswg.org/css-transforms-2/",
@@ -22802,6 +22364,12 @@
               "date": "09 July 2018"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/",
@@ -22841,7 +22409,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -22854,12 +22422,6 @@
               "title": "WebAssembly JavaScript Interface",
               "crawled": "https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/",
               "date": "15 February 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -23055,55 +22617,26 @@
       }
     },
     {
-      "title": "WebDriver",
+      "title": "webdriver",
       "shortname": "webdriver",
-      "date": "05 June 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/webdriver/",
-      "latest": "https://www.w3.org/TR/webdriver1/",
-      "datedUrl": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-      "datedStatus": "Recommendation",
-      "edDraft": "https://w3c.github.io/webdriver/",
-      "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-      "repository": "https://github.com/w3c/webdriver",
+      "latest": "https://www.w3.org/TR/webdriver",
+      "crawled": "https://www.w3.org/TR/webdriver",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/editing/contentEditable.html",
-          "https://w3c.github.io/editing/execCommand.html"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/webappsec-csp/",
-            "ref": {
-              "name": "CSP3",
-              "url": "https://www.w3.org/TR/CSP3/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/DOM-Parsing/",
-            "ref": {
-              "name": "DOM-PARSING",
-              "url": "https://www.w3.org/TR/DOM-Parsing/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/uievents/",
-            "ref": {
-              "name": "UI-EVENTS",
-              "url": "https://www.w3.org/TR/uievents/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -23115,13 +22648,13 @@
           ],
           "informative": []
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sat Aug 25 2018",
+      "date": "Sun Aug 26 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23176,7 +22709,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sat Aug 25 2018",
+      "date": "Sun Aug 26 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23190,8 +22723,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
-          "EventInit",
           "HTMLCanvasElement",
           "HTMLImageElement",
           "HTMLVideoElement",
@@ -23234,7 +22765,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Aug 25 2018"
+              "date": "Sun Aug 26 2018"
             }
           ],
           "informative": [
@@ -23605,12 +23136,6 @@
               "date": "7 September 2017"
             },
             {
-              "url": "https://www.w3.org/TR/magnetometer/",
-              "title": "Magnetometer",
-              "crawled": "https://www.w3.org/TR/2018/CR-magnetometer-20180320/",
-              "date": "20 March 2018"
-            },
-            {
               "url": "https://wicg.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://wicg.github.io/media-capabilities/",
@@ -23627,12 +23152,6 @@
               "title": "Media Capture Depth Stream Extensions",
               "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/",
               "date": "18 April 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/",
-              "date": "06 September 2017"
             },
             {
               "url": "https://wicg.github.io/mediasession/",
@@ -23773,12 +23292,6 @@
               "date": "12 June 2018"
             },
             {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://www.w3.org/TR/2018/WD-server-timing-20180717/",
-              "date": "17 July 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
               "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
@@ -23833,6 +23346,12 @@
               "date": "18 October 2016"
             },
             {
+              "url": "https://www.w3.org/TR/dom41/",
+              "title": "W3C DOM 4.1",
+              "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+              "date": "1 February 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/wake-lock/",
               "title": "Wake Lock API",
               "crawled": "https://www.w3.org/TR/2017/CR-wake-lock-20171214/",
@@ -23884,13 +23403,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -23917,22 +23436,16 @@
               "date": "15 February 2018"
             },
             {
-              "url": "https://www.w3.org/TR/webdriver/",
-              "title": "WebDriver",
-              "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
-              "date": "05 June 2018"
-            },
-            {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Aug 25 2018"
+              "date": "Sun Aug 26 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Aug 25 2018"
+              "date": "Sun Aug 26 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -24006,7 +23519,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -24042,7 +23555,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "August 25, 2018"
+              "date": "August 26, 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -24095,10 +23608,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "RTCError",
           "Window"
         ],
@@ -24115,7 +23625,41 @@
             ]
           }
         ],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Event",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "EventInit",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -24165,12 +23709,6 @@
               "title": "Media Capture and Streams",
               "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
               "date": "3 October 2017"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
-              "title": "Media Capture from DOM Elements",
-              "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/",
-              "date": "06 September 2017"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -24247,10 +23785,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "Navigator",
           "Window"
         ],
@@ -24295,7 +23830,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "DocumentFragment",
           "TextTrackCue",
           "Window"
         ],
@@ -24349,10 +23883,7 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "DOMPointReadOnly",
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "HTMLCanvasElement",
           "Navigator",
           "Window"
@@ -24377,7 +23908,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat Aug 25 2018"
+                "date": "Sun Aug 26 2018"
               }
             ]
           },
@@ -24388,7 +23919,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Sat Aug 25 2018"
+                "date": "Sun Aug 26 2018"
               }
             ]
           },
@@ -24399,7 +23930,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat Aug 25 2018"
+                "date": "Sun Aug 26 2018"
               }
             ]
           },
@@ -24410,7 +23941,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat Aug 25 2018"
+                "date": "Sun Aug 26 2018"
               }
             ]
           },
@@ -24421,7 +23952,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat Aug 25 2018"
+                "date": "Sun Aug 26 2018"
               }
             ]
           }
@@ -24554,11 +24085,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Document",
-          "Event",
           "EventHandler",
-          "EventInit",
-          "EventTarget",
           "HTMLFormElement",
           "Window"
         ],
