@@ -1,22 +1,8 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 28, 2018
+% August 29, 2018
 
 227 specifications were crawled in this report.
-
-
-## Specifications that could not be rendered
-
-Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
-
-- [CSS Scoping Module Level 1](http://www.w3.org/TR/css-scoping-1/): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-=> 1 specification found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -57,6 +43,7 @@ Reffy was expecting to find IDL content in the specifications  listed here but c
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
 - [CSS Style Attributes](https://drafts.csswg.org/css-style-attr/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
@@ -70,7 +57,7 @@ Reffy was expecting to find IDL content in the specifications  listed here but c
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors)
 
-=> 19 specifications found
+=> 20 specifications found
 
 Reffy was expecting to find CSS definitions in the specifications  listed here but could not extract any.
 
@@ -136,6 +123,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 - `AudioTrack` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
 - `AudioTrackList` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
+- `BinaryType` used in [Presentation API](https://w3c.github.io/presentation-api/)
 - `CSSOMRGBColor` used in [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - `DOMStringList` used in [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
@@ -184,7 +172,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `WorkerNavigator` used in [Media Capabilities](https://wicg.github.io/media-capabilities/), [Permissions](https://w3c.github.io/permissions/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [WebUSB API](https://wicg.github.io/webusb/)
 - `WorkerType` used in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Web App Manifest](https://w3c.github.io/manifest/)
 
-=> 49 WebIDL names found
+=> 50 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
