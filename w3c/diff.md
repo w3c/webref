@@ -1,12 +1,11 @@
-% Diff between report from "August 29, 2018" and reference report from "August 28, 2018"
+% Diff between report from "August 30, 2018" and reference report from "August 29, 2018"
 % Reffy
-% August 29, 2018
+% August 30, 2018
 
-## Presentation API
+## Encoding Standard
 
-- URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/)
-- Repository: [GitHub w3c/presentation-api](https://github.com/w3c/presentation-api)
-- Unknown WebIDL names used: *INS* BinaryType
+- URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
+- Crawled version: [Editor's Draft](https://encoding.spec.whatwg.org/)
+- Unknown WebIDL names used: *INS* ReadableStream, WritableStream
 
 
