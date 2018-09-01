@@ -1,24 +1,27 @@
-% Diff between report from "August 31, 2018" and reference report from "August 30, 2018"
+% Diff between report from "September 01, 2018" and reference report from "August 31, 2018"
 % Reffy
-% August 31, 2018
+% September 01, 2018
 
 ## CSS Scroll Snap Module Level 1
 
 - URL: [https://www.w3.org/TR/css-scroll-snap-1/](https://www.w3.org/TR/css-scroll-snap-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-scroll-snap-1)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
+- Editor's Draft: [https://drafts.csswg.org/css-scroll-snap-1/](https://drafts.csswg.org/css-scroll-snap-1/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
 
-## Geolocation API Specification 2nd Edition
+## Indexed Database API 2.0
 
-- URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
+- URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
+- Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
+- Repository: [GitHub w3c/IndexedDB](https://github.com/w3c/IndexedDB)
 - Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:329:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
 
@@ -26,9 +29,10 @@
 ## Mixed Content
 
 - URL: [https://www.w3.org/TR/mixed-content/](https://www.w3.org/TR/mixed-content/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/mixed-content)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
+- Editor's Draft: [https://w3c.github.io/webappsec-mixed-content/](https://w3c.github.io/webappsec-mixed-content/)
 - Repository: [GitHub w3c/webappsec-mixed-content](https://github.com/w3c/webappsec-mixed-content)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
@@ -40,18 +44,7 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Repository: [GitHub w3c/presentation-api](https://github.com/w3c/presentation-api)
-- Missing references for links: *INS* https://w3c.github.io/webappsec-mixed-content/
-
-
-## Progress Events
-
-- URL: [https://www.w3.org/TR/progress-events/](https://www.w3.org/TR/progress-events/)
-- Crawled version: [Latest published version](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
-- Editor's Draft: [http://dvcs.w3.org/hg/progress/raw-file/tip/Overview.html](http://dvcs.w3.org/hg/progress/raw-file/tip/Overview.html)
-- Spec could not be rendered: *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:326:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)
+- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-mixed-content/
 
 
 ## Secure Contexts
@@ -60,7 +53,7 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - Editor's Draft: [https://w3c.github.io/webappsec-secure-contexts/](https://w3c.github.io/webappsec-secure-contexts/)
 - Repository: [GitHub w3c/webappsec-secure-contexts](https://github.com/w3c/webappsec-secure-contexts)
-- Missing references for links: *INS* https://w3c.github.io/webappsec-mixed-content/
+- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-mixed-content/
 
 
 ## Web Authentication: An API for accessing Public Key Credentials Level 1
@@ -69,22 +62,6 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
-- Missing references for links: *INS* https://w3c.github.io/webappsec-mixed-content/
-
-
-## WebGL Specification
-
-- URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
-- Unknown WebIDL names used: *INS* OffscreenCanvas
-
-
-## XMLHttpRequest Standard
-
-- URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/)
-- Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
-- WebIDL names also defined elsewhere: *INS* ProgressEvent, ProgressEventInit
+- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-mixed-content/
 
 
