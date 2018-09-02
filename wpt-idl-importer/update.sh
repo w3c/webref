@@ -8,7 +8,7 @@ reffy_sha=`git rev-parse --short HEAD`
 git clone --single-branch https://github.com/web-platform-tests/wpt.git
 
 rm wpt/interfaces/*.idl
-cp whatwg/idl/*.idl wpt/interfaces/
+cp ../whatwg/idl/*.idl wpt/interfaces/
 
 cd wpt
 git config user.email "auto@foolip.org"

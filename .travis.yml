@@ -2,5 +2,8 @@ branches:
   only:
     - wpt-idl-importer
 language: node_js
+install:
+  - cd wpt-idl-importer
+  - npm install
 script:
-  - bash wpt-idl-importer/update.sh
+  - bash update.sh
