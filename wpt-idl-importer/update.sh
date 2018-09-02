@@ -11,6 +11,8 @@ rm wpt/interfaces/*.idl
 cp whatwg/idl/*.idl wpt/interfaces/
 
 cd wpt
+git config user.email "auto@foolip.org"
+git config user.name "Automat af Gränssnitt"
 
 echo "Status after syncing IDL files:"
 git status --short
