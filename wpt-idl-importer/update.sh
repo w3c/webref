@@ -14,6 +14,7 @@ cd wpt
 
 echo "Status after syncing IDL files:"
 git status --short
+echo
 
 git remote add fork https://autofoolip:$GH_TOKEN@github.com/autofoolip/wpt.git
 git push -q fork master
