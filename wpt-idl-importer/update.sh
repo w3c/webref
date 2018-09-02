@@ -7,6 +7,7 @@ reffy_sha=`git rev-parse --short HEAD`
 
 git clone --single-branch https://github.com/web-platform-tests/wpt.git
 
+rm wpt/interfaces/*.idl
 cp whatwg/idl/*.idl wpt/interfaces/
 
 cd wpt
@@ -14,10 +15,11 @@ cd wpt
 git remote add fork https://autofoolip:$GH_TOKEN@github.com/autofoolip/wpt.git
 git push fork master
 
-# Handle added (untracked, --other) and modified files.
+# Handle added (untracked, --other), removed and modified files.
 # A temp file is needed because `git ls-files` holds index.lock.
 tmpfile=`mktemp`
 git ls-files --others --exclude-standard | sed 's/^/Add /' > "$tmpfile"
+git ls-files --deleted | sed 's/^/Remove /' >> "$tmpfile"
 git ls-files --modified | sed 's/^/Update /' >> "$tmpfile"
 cat "$tmpfile" | while read action path; do
     echo "Handling $path"
