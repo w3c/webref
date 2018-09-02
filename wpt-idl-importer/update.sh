@@ -11,9 +11,11 @@ rm wpt/interfaces/*.idl
 cp whatwg/idl/*.idl wpt/interfaces/
 
 cd wpt
+echo "Status:"
+git status --short
 
 git remote add fork https://autofoolip:$GH_TOKEN@github.com/autofoolip/wpt.git
-git push fork master
+git push -q fork master
 
 # Handle added (untracked, --other), removed and modified files.
 # A temp file is needed because `git status` holds index.lock.
@@ -33,7 +35,7 @@ cat "$statusfile" | while read status path; do
     esac
     shortname=`basename $path .idl`
     branchname="reffy-reports/$shortname"
-    git checkout -b $branchname origin/master
+    git checkout -q -b "$branchname" origin/master
     git add "$path"
     git commit -F - << EOM
 $action $path
@@ -41,8 +43,9 @@ $action $path
 Source: https://github.com/tidoust/reffy-reports/blob/$reffy_sha/whatwg/idl/$shortname.idl
 Build: https://travis-ci.org/tidoust/reffy-reports/builds/$TRAVIS_BUILD_ID
 EOM
-    git push -f fork $branchname
+    git push -q -f fork "$branchname"
+    # show what was pushed
+    git log --decorate --no-walk
+    echo
 done
 rm "$statusfile"
-
-# TODO: Check if wpt has IDL files not in reffy-reports and list them.
