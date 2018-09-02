@@ -23,7 +23,7 @@ git push -q fork master
 statusfile=`mktemp`
 git status --porcelain > "$statusfile"
 # Each branch pushed is appended to this file, so that PRs can be created.
-branchfile=`mktmp`
+branchfile=`mktemp`
 cat "$statusfile" | while read status path; do
     echo "Handling $path"
     case "$status" in
@@ -46,6 +46,7 @@ $action $path
 Source: https://github.com/tidoust/reffy-reports/blob/$reffy_sha/whatwg/idl/$shortname.idl
 Build: https://travis-ci.org/tidoust/reffy-reports/builds/$TRAVIS_BUILD_ID
 EOM
+    # TODO: check if fork/$branchname already exists and if so don't push.
     git push -q -f fork "$branchname"
     echo "$branchname" >> "$branchfile"
     # show what was pushed
