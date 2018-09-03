@@ -70,8 +70,9 @@ EOM
         git push -q fork "$branchname"
     fi
     echo "$branchname" >> "$branchfile"
-    # Show the tip of the remote branch
-    git log --no-walk "fork/$branchname"
+
+    # Create or update PR.
+    node create-pr.js "$branchname"
     echo
 done
 
