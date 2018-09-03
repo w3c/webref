@@ -16,22 +16,23 @@ function splitCommitMessage(message) {
 }
 
 async function main() {
+    const owner = process.env.GH_USER;
+    const branch = process.argv[2];
+
     octokit.authenticate({
         type: 'token',
         token: process.env.GH_TOKEN,
     });
 
-    const branch = process.argv[2];
-
     // Get the commit to base the PR title/body on.
     const commit_sha = (await octokit.gitdata.getReference({
-        owner: 'autofoolip',
+        owner: owner,
         repo: 'wpt',
         ref: `heads/${branch}`,
     })).data.object.sha;
 
     const commit = (await octokit.gitdata.getCommit({
-        owner: 'autofoolip',
+        owner: owner,
         repo: 'wpt',
         commit_sha: commit_sha,
     })).data;
@@ -44,7 +45,7 @@ async function main() {
         owner: 'web-platform-tests',
         repo: 'wpt',
         state: 'open',
-        head: `autofoolip:${branch}`,
+        head: `${owner}:${branch}`,
     })).data;
 
     if (open_prs.length) {
@@ -65,7 +66,7 @@ async function main() {
         const created_pr = (await octokit.pullRequests.create({
             owner: 'web-platform-tests',
             repo: 'wpt',
-            head: `autofoolip:${branch}`,
+            head: `${owner}:${branch}`,
             base: 'master',
             title: pr_title,
             body: pr_body,

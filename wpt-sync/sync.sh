@@ -3,6 +3,8 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
+export GH_USER=autofoolip
+
 reffy_sha=`git rev-parse --short HEAD`
 
 git clone --single-branch https://github.com/web-platform-tests/wpt.git
@@ -18,7 +20,7 @@ echo "Status after syncing IDL files:"
 git status --short
 echo
 
-git remote add fork https://autofoolip:$GH_TOKEN@github.com/autofoolip/wpt.git
+git remote add fork https://$GH_USER:$GH_TOKEN@github.com/$GH_USER/wpt.git
 git fetch -q fork
 git push -q fork master
 
