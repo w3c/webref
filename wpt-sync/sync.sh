@@ -5,6 +5,11 @@ set -o pipefail
 
 export GH_USER=autofoolip
 
+# Limit the number of PRs created/updated for a single run of this script.
+# This is in order to not create 100+ PRs in the event of reformatting.
+PR_LIMIT=5
+prs_created=0
+
 reffy_sha=`git rev-parse --short HEAD`
 
 git clone --single-branch https://github.com/web-platform-tests/wpt.git
@@ -65,6 +70,11 @@ EOM
     fi
 
     # Create or update PR.
-    node ../create-pr.js "$branchname"
+    if (( $prs_created < $PR_LIMIT )); then
+        node ../create-pr.js "$branchname"
+        ((prs_created++))
+    else
+        echo "WARNING: PR not created because limit ($PR_LIMIT) was exceeded"
+    fi
     echo
 done
