@@ -72,7 +72,7 @@ EOM
     # Create or update PR.
     if (( $prs_created < $PR_LIMIT )); then
         node ../create-pr.js "$branchname"
-        ((prs_created++))
+        prs_created=$((prs_created + 1))
     else
         echo "WARNING: PR not created because limit ($PR_LIMIT) was exceeded"
     fi
