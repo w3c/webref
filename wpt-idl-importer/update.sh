@@ -19,7 +19,14 @@ git status --short
 echo
 
 git remote add fork https://autofoolip:$GH_TOKEN@github.com/autofoolip/wpt.git
+git fetch -q fork
 git push -q fork master
+
+# Store a list of the remote reffy-reports/* branches so that ones which are no
+# longer needed can be removed.
+remotebranchfile=`mktemp`
+git for-each-ref 'refs/remotes/fork/reffy-reports/*' \
+    --format="%(refname:lstrip=3)" > "$remotebranchfile"
 
 # Use `git status` to list added, removed and modified files.
 # A temp file is needed because `git status` holds index.lock.
@@ -28,7 +35,7 @@ git status --porcelain > "$statusfile"
 # Each branch pushed is appended to this file, so that PRs can be created.
 branchfile=`mktemp`
 cat "$statusfile" | while read status path; do
-    echo "Handling $path"
+    echo "Handling $path:"
     case "$status" in
         M)
             action="Update"
@@ -49,13 +56,29 @@ $action $path
 Source: https://github.com/tidoust/reffy-reports/blob/$reffy_sha/whatwg/idl/$shortname.idl
 Build: https://travis-ci.org/tidoust/reffy-reports/builds/$TRAVIS_BUILD_ID
 EOM
-    # TODO: check if fork/$branchname already exists and if so don't push.
-    git push -q -f fork "$branchname"
+    # Check if the remote branch already exists and if there are differences
+    # for $path. Only push/update the branch if necessary.
+    if git show-ref -q "fork/$branchname"; then
+        if git diff --quiet "fork/$branchname" -- "$path"; then
+            echo "Existing branch $branchname is up to date."
+        else
+            echo "Updating existing branch $branchname."
+            git push -q --force-with-lease fork "$branchname"
+        fi
+    else
+        echo "Pushing new branch $branchname."
+        git push -q fork "$branchname"
+    fi
     echo "$branchname" >> "$branchfile"
-    # show what was pushed
-    git log --no-walk
+    # Show the tip of the remote branch
+    git log --no-walk "fork/$branchname"
     echo
 done
 
-echo "Branches updated:"
-cat "$branchfile"
+# Delete branches which weren't handled.
+echo "Deleting stale branches:"
+comm -23 <(sort "$remotebranchfile") <(sort "$branchfile") | while read branch;
+do
+    echo "$branch"
+    git push -q fork ":$branch"
+done
