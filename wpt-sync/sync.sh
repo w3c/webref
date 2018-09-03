@@ -74,7 +74,7 @@ EOM
     echo "$branchname" >> "$branchfile"
 
     # Create or update PR.
-    node create-pr.js "$branchname"
+    node ../create-pr.js "$branchname"
     echo
 done
 
