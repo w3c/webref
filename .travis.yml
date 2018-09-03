@@ -3,7 +3,7 @@ branches:
     - wpt-idl-importer
 language: node_js
 install:
-  - cd wpt-idl-importer
+  - cd wpt-sync
   - npm install
 script:
-  - bash update.sh
+  - bash sync.sh
