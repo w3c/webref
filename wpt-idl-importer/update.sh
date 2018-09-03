@@ -59,7 +59,7 @@ EOM
     # Check if the remote branch already exists and if there are differences
     # for $path. Only push/update the branch if necessary.
     if git show-ref -q "fork/$branchname"; then
-        if git diff --quiet "fork/$branchname" -- "$path"; then
+        if git diff --quiet "fork/$branchname"; then
             echo "Existing branch $branchname is up to date."
         else
             echo "Updating existing branch $branchname."
