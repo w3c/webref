@@ -24,18 +24,10 @@ git remote add fork https://$GH_USER:$GH_TOKEN@github.com/$GH_USER/wpt.git
 git fetch -q fork
 git push -q fork master
 
-# Store a list of the remote reffy-reports/* branches so that ones which are no
-# longer needed can be removed.
-remotebranchfile=`mktemp`
-git for-each-ref 'refs/remotes/fork/reffy-reports/*' \
-    --format="%(refname:lstrip=3)" > "$remotebranchfile"
-
 # Use `git status` to list added, removed and modified files.
 # A temp file is needed because `git status` holds index.lock.
 statusfile=`mktemp`
 git status --porcelain > "$statusfile"
-# Each branch pushed is appended to this file, so that PRs can be created.
-branchfile=`mktemp`
 cat "$statusfile" | while read status path; do
     echo "Handling $path:"
     case "$status" in
@@ -71,17 +63,8 @@ EOM
         echo "Pushing new branch $branchname."
         git push -q fork "$branchname"
     fi
-    echo "$branchname" >> "$branchfile"
 
     # Create or update PR.
     node ../create-pr.js "$branchname"
     echo
-done
-
-# Delete branches which weren't handled.
-echo "Deleting stale branches:"
-comm -23 <(sort "$remotebranchfile") <(sort "$branchfile") | while read branch;
-do
-    echo "$branch"
-    git push -q fork ":$branch"
 done
