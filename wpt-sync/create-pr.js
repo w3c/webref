@@ -63,7 +63,7 @@ async function main() {
         console.log("Existing PR updated:", existing_pr.html_url);
     } else {
         // Otherwise create a new PR.
-        if (Math.random() < 0.9) {
+        if (Math.random() < 0.8) {
             console.log("Would create PR, but won't");
             return;
         }
