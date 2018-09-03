@@ -63,6 +63,8 @@ async function main() {
         console.log("Existing PR updated:", existing_pr.html_url);
     } else {
         // Otherwise create a new PR.
+        console.log("Would create PR, but won't");
+        return;
         const created_pr = (await octokit.pullRequests.create({
             owner: 'web-platform-tests',
             repo: 'wpt',
