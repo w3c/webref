@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 06, 2018
+% September 07, 2018
 
 238 specifications were crawled in this report.
 
@@ -14,14 +14,8 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
-- [Web NFC API](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
-=> 2 specifications found
+=> 1 specification found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -162,6 +156,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `DataTransfer` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - `DataTransferItem` used in [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
+- `Dictionary` used in [Web NFC API](https://w3c.github.io/web-nfc/)
 - `EventHandler` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Battery Status API](https://w3c.github.io/battery/), [Compatibility Standard](https://compat.spec.whatwg.org/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [File API](https://w3c.github.io/FileAPI/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Generic Sensor API](https://w3c.github.io/sensors/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/), [Media Capabilities](https://wicg.github.io/media-capabilities/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Source Extensions™](https://w3c.github.io/media-source/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Network Information API](https://wicg.github.io/netinfo/), [Page Visibility Level 2](https://w3c.github.io/page-visibility/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Payment Request API](https://w3c.github.io/payment-request/), [Permissions](https://w3c.github.io/permissions/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Pointer Events](https://w3c.github.io/pointerevents/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/), [Presentation API](https://w3c.github.io/presentation-api/), [Push API](https://w3c.github.io/push-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Resource Timing Level 2](https://w3c.github.io/resource-timing/), [Selection API](https://w3c.github.io/selection-api/), [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web Animations](https://w3c.github.io/web-animations/), [Web App Manifest](https://w3c.github.io/manifest/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://webaudio.github.io/web-midi-api/), [Web Notifications](https://www.w3.org/TR/notifications/), [Web Speech API](https://w3c.github.io/speech-api/), [Web Workers](https://html.spec.whatwg.org/multipage/workers.html), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `GlobalEventHandlers` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [Pointer Events](https://w3c.github.io/pointerevents/), [Selection API](https://w3c.github.io/selection-api/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - `HTMLBodyElement` used in [Compatibility Standard](https://compat.spec.whatwg.org/)
@@ -180,7 +175,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `ImageBitmapSource` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - `KeyframeEffectReadOnly` used in [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - `Map` used in [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- `Navigator` used in [Battery Status API](https://w3c.github.io/battery/), [Beacon](https://w3c.github.io/beacon/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Keyboard Lock](https://w3c.github.io/keyboard-lock/), [Keyboard Map](https://wicg.github.io/keyboard-map/), [Media Capabilities](https://wicg.github.io/media-capabilities/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Session Standard](https://wicg.github.io/mediasession/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Screen Capture](https://w3c.github.io/mediacapture-screen-share/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Vibration API (Second Edition)](https://w3c.github.io/vibration/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://webaudio.github.io/web-midi-api/), [Web Share API](https://wicg.github.io/web-share/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/)
+- `Navigator` used in [Battery Status API](https://w3c.github.io/battery/), [Beacon](https://w3c.github.io/beacon/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Keyboard Lock](https://w3c.github.io/keyboard-lock/), [Keyboard Map](https://wicg.github.io/keyboard-map/), [Media Capabilities](https://wicg.github.io/media-capabilities/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Session Standard](https://wicg.github.io/mediasession/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Screen Capture](https://w3c.github.io/mediacapture-screen-share/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Vibration API (Second Edition)](https://w3c.github.io/vibration/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://webaudio.github.io/web-midi-api/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Share API](https://wicg.github.io/web-share/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/)
 - `OffscreenCanvas` used in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - `OnErrorEventHandler` used in [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - `OverconstrainedError` used in [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -200,7 +195,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `WindowProxy` used in [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - `WritableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/)
 
-=> 46 WebIDL names found
+=> 47 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -280,10 +275,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `RequestCredentials` but does not reference [Fetch Standard](https://fetch.spec.whatwg.org/)
     * `MessagePort` but does not reference [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/) uses `Worklet` but does not reference [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) or [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) uses:
-    * `EventTarget` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `Event` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
-    * `EventInit` but does not reference [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/) uses:
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
     * `WebGLRenderingContext` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -292,7 +283,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 53 missing references for IDL definitions found in 26 specifications
+=> 50 missing references for IDL definitions found in 25 specifications
 
 
 ## Missing references based on document links
@@ -693,6 +684,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/) links to [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html) but does not list it in its references
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/) links to [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/) but does not list it in its references
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) links to [`https://w3c.github.io/fingerprinting-guidance/`](https://w3c.github.io/fingerprinting-guidance/) but does not list it in its references
+- [Web NFC API](https://w3c.github.io/web-nfc/) links to:
+    * [`https://www.w3.org/TR/url-1/`](https://www.w3.org/TR/url-1/) but does not list it in its references
+    * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/) but does not list it in its references
+    * [`https://streams.spec.whatwg.org/`](https://streams.spec.whatwg.org/) but does not list it in its references
+    * [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/) but does not list it in its references
 - [Web Share API](https://wicg.github.io/web-share/) links to [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/) but does not list it in its references
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html) links to:
     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
@@ -717,7 +713,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 351 missing references for links found in 117 specifications
+=> 355 missing references for links found in 118 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -959,6 +955,12 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html) links to [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 - [Web IDL](https://heycam.github.io/webidl/) links to [`https://www.w3.org/TR/geolocation-API/`](https://www.w3.org/TR/geolocation-API/) but related reference "GEOLOCATION-API" uses URL [`http://dev.w3.org/geo/api/spec-source.html`](http://dev.w3.org/geo/api/spec-source.html)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/) links to [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- [Web NFC API](https://w3c.github.io/web-nfc/) links to:
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+    * [`https://www.w3.org/TR/2011/WD-html5-20110113/`](https://www.w3.org/TR/2011/WD-html5-20110113/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+    * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+    * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
+    * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "permissions" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 - [Web Notifications](https://www.w3.org/TR/notifications/) links to:
     * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/) but related reference "WEBIDL" uses URL [`https://www.w3.org/TR/2015/PR-notifications-20150910/`](https://www.w3.org/TR/2015/PR-notifications-20150910/)
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/)
@@ -973,6 +975,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
-=> 202 inconsistent references for links found in 105 specifications
+=> 207 inconsistent references for links found in 106 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
