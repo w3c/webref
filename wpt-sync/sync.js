@@ -208,6 +208,11 @@ function isDir(path) {
 }
 
 function main() {
+    if (!process.env.GH_USER || !process.env.GH_TOKEN) {
+        console.error(`GH_USER and GH_TOKEN must be set, see README.md`);
+        process.exit(1);
+    }
+
     flags.defineString('wpt-dir', undefined, 'Path to wpt checkout (required)');
     flags.defineString('wpt-remote', 'fork', 'Git remote to push branches to');
     flags.defineString('build-url', undefined, 'Build URL to include in commit message (optional)');
