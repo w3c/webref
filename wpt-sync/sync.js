@@ -125,7 +125,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
                 git(`push -f ${remote} ${branch}`);
                 console.log(`  Updated remote branch: ${branch}`);
             } else {
-                console.log(`  Existing remote branch already up to date: ${branch}`);
+                console.log(`  Remote branch is up to date: ${branch}`);
             }
         } else {
             git(`push ${remote} ${branch}`);
@@ -160,7 +160,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
                 body: pr_body,
             });
 
-            console.log(`  Existing PR updated: ${existing_pr.html_url}`);
+            console.log(`  PR title/body updated: ${existing_pr.html_url}`);
         } else {
             if (pr_counter < PR_LIMIT) {
                 // Create a new PR.
