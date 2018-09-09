@@ -15,5 +15,5 @@ install:
   - git config user.email "auto@foolip.org"
   - git config user.name "Automat af Gränssnitt"
   - cd ..
-  script:
+script:
   - GH_USER=autofoolip node sync.js --wpt-dir wpt --build-url https://travis-ci.org/tidoust/reffy-reports/builds/$TRAVIS_BUILD_ID
