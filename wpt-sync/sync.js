@@ -160,7 +160,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
                 body: pr_body,
             });
 
-            console.log(`  PR title/body updated: ${existing_pr.html_url}`);
+            console.log(`  Updated PR title/body: ${existing_pr.html_url}`);
         } else {
             if (pr_counter < PR_LIMIT) {
                 // Create a new PR.
