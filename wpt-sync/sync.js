@@ -136,7 +136,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
         // commit message to create the PR title/body, so that they cannot
         // get out of sync. Note that this will also update the boilerplate of
         // existing PRs even if the branch was not updated. This is intentional.
-        const pr_title = git(`show --format=%s --no-patch ${remote}/${branch}`);
+        const pr_title = git(`show --format=%s --no-patch ${remote}/${branch}`).trim();
         const commit_body = git(`show --format=%b --no-patch ${remote}/${branch}`);
         const pr_body = `${PR_BOILERPLATE}\n\n<hr>\n\n${commit_body}`;
 
