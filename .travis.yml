@@ -1,0 +1,19 @@
+branches:
+  only:
+    - master
+language: node_js
+node_js:
+  - "8"
+install:
+  - cd wpt-sync
+  - npm install
+  - git clone --single-branch https://github.com/web-platform-tests/wpt.git
+  - cd wpt
+  - git remote add fork https://autofoolip:$GH_TOKEN@github.com/autofoolip/wpt.git
+  - git fetch -q fork
+  - git push -q fork master
+  - git config user.email "auto@foolip.org"
+  - git config user.name "Automat af Gränssnitt"
+  - cd ..
+script:
+  - GH_USER=autofoolip node sync.js --wpt-dir wpt --build-url https://travis-ci.org/tidoust/reffy-reports/builds/$TRAVIS_BUILD_ID
