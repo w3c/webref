@@ -1,12 +1,12 @@
-% Diff between report from "September 10, 2018" and reference report from "September 09, 2018"
+% Diff between report from "September 11, 2018" and reference report from "September 10, 2018"
 % Reffy
-% September 10, 2018
+% September 11, 2018
 
-## Push API
+## User Interface Security and the Visibility API
 
-- URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/)
-- Repository: [GitHub w3c/push-api](https://github.com/w3c/push-api)
-- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/
+- URL: [https://www.w3.org/TR/UISecurity/](https://www.w3.org/TR/UISecurity/)
+- Crawled version: [Editor's Draft](http://w3c.github.io/webappsec-uisecurity/index.html)
+- Repository: [GitHub w3c/webappsec-uisecurity](https://github.com/w3c/webappsec-uisecurity)
+- This specification is not in the new crawl report.
 
 
