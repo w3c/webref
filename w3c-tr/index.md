@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 11, 2018
+% September 12, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -373,7 +373,7 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2017/WD-motion-1-20170711/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2018/CR-SVG2-20180807/)
-- [Selectors Level 3](https://www.w3.org/TR/2018/CR-selectors-3-20180130/)
+- [Selectors Level 3](https://www.w3.org/TR/2018/PR-selectors-3-20180911/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
@@ -639,7 +639,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (September 11, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (September 12, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -2586,7 +2586,7 @@ Normative references to this spec from:
 
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20180814/)
-- [Selectors Level 3](https://www.w3.org/TR/2018/CR-selectors-3-20180130/)
+- [Selectors Level 3](https://www.w3.org/TR/2018/PR-selectors-3-20180911/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
 
 No informative reference to this spec from other specs.
@@ -4676,7 +4676,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fullscreen.spec.whatwg.org/) (29 August 2018)
+- Crawled version: [Living Standard](https://fullscreen.spec.whatwg.org/) (11 September 2018)
 - Repository: [GitHub whatwg/fullscreen](https://github.com/whatwg/fullscreen)
 - Shortname: no shortname
 
@@ -5103,7 +5103,7 @@ Informative references to this spec from:
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
-- [Selectors Level 3](https://www.w3.org/TR/2018/CR-selectors-3-20180130/)
+- [Selectors Level 3](https://www.w3.org/TR/2018/PR-selectors-3-20180911/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
@@ -5459,7 +5459,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (September 11, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (September 12, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6493,7 +6493,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (September 11, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (September 12, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6902,7 +6902,7 @@ Informative references to this spec from:
 - [CSS Transitions](https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Geometry Interfaces Module Level 1](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
-- [Selectors Level 3](https://www.w3.org/TR/2018/CR-selectors-3-20180130/)
+- [Selectors Level 3](https://www.w3.org/TR/2018/PR-selectors-3-20180911/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
 
 
@@ -7048,10 +7048,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-selectors-3-20180130/) (30 January 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/PR-selectors-3-20180911/) (11 September 2018)
 - Editor's Draft: [https://drafts.csswg.org/selectors-3/](https://drafts.csswg.org/selectors-3/)
 - Latest published version: [https://www.w3.org/TR/selectors-3/](https://www.w3.org/TR/selectors-3/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-selectors-3-20180130/)
+- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2018/PR-selectors-3-20180911/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: selectors-3
 
@@ -7059,7 +7059,6 @@ No informative reference to this spec from other specs.
 
 - No CSS definitions found
 - Missing references for links: 
-     * [`https://www.w3.org/TR/2011/REC-css3-selectors-20110929/`](https://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
      * [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -7836,7 +7835,7 @@ Informative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20180719/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
-- [Selectors Level 3](https://www.w3.org/TR/2018/CR-selectors-3-20180130/)
+- [Selectors Level 3](https://www.w3.org/TR/2018/PR-selectors-3-20180911/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
 
@@ -8112,7 +8111,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (September 11, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (September 12, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8173,7 +8172,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (September 11, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (September 12, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8444,7 +8443,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Sep 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Sep 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8469,7 +8468,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Sep 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Sep 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8718,7 +8717,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (10 September 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (11 September 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 

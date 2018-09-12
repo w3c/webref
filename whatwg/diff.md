@@ -1,12 +1,12 @@
-% Diff between report from "September 11, 2018" and reference report from "September 10, 2018"
+% Diff between report from "September 12, 2018" and reference report from "September 11, 2018"
 % Reffy
-% September 11, 2018
+% September 12, 2018
 
-## User Interface Security and the Visibility API
+## CSS Display Module Level 3
 
-- URL: [https://www.w3.org/TR/UISecurity/](https://www.w3.org/TR/UISecurity/)
-- Crawled version: [Editor's Draft](http://w3c.github.io/webappsec-uisecurity/index.html)
-- Repository: [GitHub w3c/webappsec-uisecurity](https://github.com/w3c/webappsec-uisecurity)
-- This specification is not in the new crawl report.
+- URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-display/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *INS* https://www.w3.org/TR/css-writing-modes-3/, https://www.w3.org/TR/css-multicol-1/
 
 
