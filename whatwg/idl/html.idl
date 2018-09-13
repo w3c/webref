@@ -1414,6 +1414,7 @@ dictionary FocusOptions {
 
 interface mixin ElementContentEditable {
   [CEReactions] attribute DOMString contentEditable;
+  [CEReactions] attribute DOMString enterKeyHint;
   readonly attribute boolean isContentEditable;
   [CEReactions] attribute DOMString inputMode;
 };
@@ -1775,7 +1776,7 @@ interface mixin WindowOrWorkerGlobalScope {
   void clearInterval(optional long handle = 0);
 
   // microtask queuing
-  void queueMicrotask(Function callback);
+  void queueMicrotask(VoidFunction callback);
 
   // ImageBitmap
   Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, optional ImageBitmapOptions options);
