@@ -30,7 +30,7 @@
       "name": "text-wrap",
       "value": "wrap | nowrap | balance | multi-line",
       "initial": "wrap",
-      "appliesTo": "all elements",
+      "appliesTo": "inline boxes and block containers",
       "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -133,6 +133,17 @@
       "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "line-padding": {
+      "name": "line-padding",
+      "value": "<length>",
+      "initial": "0",
+      "appliesTo": "inline boxes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "absolute length",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
