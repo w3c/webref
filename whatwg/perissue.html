@@ -139,8 +139,9 @@
   <li><code>ReadableStream</code> used in <a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a>, <a href="https://encoding.spec.whatwg.org/">Encoding Standard</a>, <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   <li><code>WritableStream</code> used in <a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
+  <li><code>bool</code> used in <a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   </ul>
-  <p>=&gt; 13 WebIDL names found</p>
+  <p>=&gt; 14 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -803,7 +804,11 @@
   <li><a href="https://www.w3.org/TR/2006/REC-xml-names-20060816/"><code>https://www.w3.org/TR/2006/REC-xml-names-20060816/</code></a> but related reference &quot;XML-NAMES&quot; uses URL <a href="https://www.w3.org/TR/xml-names/"><code>https://www.w3.org/TR/xml-names/</code></a></li>
   <li><a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a> but related reference &quot;HTML5&quot; uses URL <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
   </ul></li>
-  <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a> links to <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a> but related reference &quot;SERVICE-WORKERS-2&quot; uses URL <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a></li>
+  <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a> but related reference &quot;SERVICE-WORKERS-2&quot; uses URL <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a></li>
+  <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
+  </ul></li>
   <li><a href="https://drafts.csswg.org/css2/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a> links to <a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a> but related reference &quot;CSS3COLOR&quot; uses URL <a href="http://www.w3.org/TR/2010/PR-css3-color-20101028/"><code>http://www.w3.org/TR/2010/PR-css3-color-20101028/</code></a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a> links to:
   <ul>
@@ -1117,7 +1122,7 @@
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 198 inconsistent references for links found in 101 specifications</p>
+  <p>=&gt; 199 inconsistent references for links found in 101 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
