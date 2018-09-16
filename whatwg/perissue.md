@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% September 15, 2018
+% September 16, 2018
 
 227 specifications were crawled in this report.
 
@@ -133,9 +133,8 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `ReadableStream` used in [CSS Parser API](https://wicg.github.io/CSS-Parser-API/), [Encoding Standard](https://encoding.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - `WritableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/)
-- `bool` used in [Payment Handler API](https://w3c.github.io/payment-handler/)
 
-=> 14 WebIDL names found
+=> 13 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.

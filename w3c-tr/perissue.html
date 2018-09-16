@@ -25,11 +25,9 @@
   <h2>Specifications that could not be rendered</h2>
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
-  <li><a href="http://www.w3.org/TR/css-gcpm-3/">CSS Generated Content for Paged Media Module</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
   <li><a href="https://www.w3.org/TR/html52/">HTML 5.2</a>: <code>Error: Crawl took too long Error: Crawl took too long at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:338:29) at ontimeout (timers.js:498:11) at tryOnTimeout (timers.js:323:5) at Timer.listOnTimeout (timers.js:290:5)</code></li>
-  <li><a href="http://www.w3.org/TR/websockets/">The WebSocket API</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
   </ul>
-  <p>=&gt; 3 specifications found</p>
+  <p>=&gt; 1 specification found</p>
   </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
@@ -38,9 +36,10 @@
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
   <li><a href="http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/">Metadata API for Media Resources 1.0</a></li>
   <li><a href="http://www.w3.org/TR/2013/REC-selectors-api-20130221/">Selectors API Level 1</a></li>
+  <li><a href="http://www.w3.org/TR/2012/CR-websockets-20120920/">The WebSocket API</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-notifications-20151022/">Web Notifications</a></li>
   </ul>
-  <p>=&gt; 5 specifications found</p>
+  <p>=&gt; 6 specifications found</p>
   <p>It is good practice to link to Editor's Draft for W3C specifications even for specifications published as Recommendations. Reffy (or rather the W3C API) could not find a link to an Editor's Draft for the specifications mentioned above.</p>
   </section>
   <section id="specifications-without-normative-dependencies" class="level2">
@@ -49,6 +48,7 @@
   <li><a href="http://www.w3.org/TR/2011/REC-CSS2-20110607/">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-CSS22-20160412/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
   <li><a href="http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/">CSS Font Loading Module Level 3</a></li>
+  <li><a href="http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/">CSS Generated Content for Paged Media Module</a></li>
   <li><a href="http://www.w3.org/TR/2014/WD-css-line-grid-1-20140916/">CSS Line Grid Module Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2014/WD-css-lists-3-20140320/">CSS Lists and Counters Module Level 3</a></li>
   <li><a href="http://www.w3.org/TR/2014/CR-css-masking-1-20140826/">CSS Masking Module Level 1</a></li>
@@ -60,7 +60,7 @@
   <li><a href="https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/">DeviceOrientation Event Specification</a></li>
   <li><a href="http://www.w3.org/TR/2014/WD-selectors-nonelement-1-20140603/">Non-element Selectors Module Level 1</a></li>
   </ul>
-  <p>=&gt; 13 specifications found</p>
+  <p>=&gt; 14 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="specifications-without-webidl-definitions" class="level2">
@@ -127,10 +127,11 @@
   <li><a href="http://www.w3.org/TR/2014/CR-geometry-1-20141125/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-intersection-observer-20170914/">Intersection Observer</a></li>
   <li><a href="http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/">Metadata API for Media Resources 1.0</a></li>
+  <li><a href="http://www.w3.org/TR/2012/CR-websockets-20120920/">The WebSocket API</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-UISecurity-20160607/">User Interface Security and the Visibility API</a></li>
   <li><a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a></li>
   </ul>
-  <p>=&gt; 12 specifications found</p>
+  <p>=&gt; 13 specifications found</p>
   <p>WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features</p>
   </section>
   <section id="list-of-specifications-with-obsolete-webidl-constructs" class="level2">
@@ -586,6 +587,19 @@
   <li><a href="https://www.w3.org/TR/css3-regions/"><code>https://www.w3.org/TR/css3-regions/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2015/WD-css3-break-20150129/"><code>https://www.w3.org/TR/2015/WD-css3-break-20150129/</code></a> but does not list it in its references</li>
+  </ul></li>
+  <li><a href="http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/">CSS Generated Content for Paged Media Module</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/dpub-pagination/"><code>https://w3c.github.io/dpub-pagination/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-selectors/"><code>https://www.w3.org/TR/css3-selectors/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/"><code>https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2011/WD-css3-gcpm-20111129/"><code>https://www.w3.org/TR/2011/WD-css3-gcpm-20111129/</code></a> but does not list it in its references</li>
+  <li><a href="https://books.spec.whatwg.org/"><code>https://books.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2011/REC-CSS2-20110607"><code>https://www.w3.org/TR/2011/REC-CSS2-20110607</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2011/WD-css3-lists-20110524"><code>https://www.w3.org/TR/2011/WD-css3-lists-20110524</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2013/WD-css3-page-20130314/"><code>https://www.w3.org/TR/2013/WD-css3-page-20130314/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2013/WD-css-syntax-3-20131105/"><code>https://www.w3.org/TR/2013/WD-css-syntax-3-20131105/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2013/CR-css3-values-20130730/"><code>https://www.w3.org/TR/2013/CR-css3-values-20130730/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-content-3-20160602/">CSS Generated Content Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-lists/"><code>https://www.w3.org/TR/css3-lists/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2017/CR-css-grid-1-20171214/">CSS Grid Layout Module Level 1</a> links to:
@@ -1251,7 +1265,7 @@
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> links to <a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 597 missing references for links found in 141 specifications</p>
+  <p>=&gt; 607 missing references for links found in 142 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
