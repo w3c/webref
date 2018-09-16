@@ -75,7 +75,7 @@ interface PaymentRequestEvent : ExtendableEvent {
   readonly attribute object total;
   readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;
   readonly attribute DOMString instrumentKey;
-  readonly attribute bool requestBillingAddress;
+  readonly attribute boolean requestBillingAddress;
   Promise<WindowClient?> openWindow(USVString url);
   Promise<PaymentMethodChangeResponse?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);
   void respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);
