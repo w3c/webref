@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% September 18, 2018
+% September 19, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -561,7 +561,7 @@ No informative reference to this spec from other specs.
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
-     * `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+     * `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -640,7 +640,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (September 18, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (September 19, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -2864,7 +2864,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+    * `Worklet` also defined in [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
      * [`https://www.w3.org/TR/css4-images/`](https://www.w3.org/TR/css4-images/)
@@ -4431,7 +4431,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (13 September 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (18 September 2018)
 - Repository: [GitHub wicg/feature-policy](https://github.com/wicg/feature-policy)
 - Shortname: no shortname
 
@@ -4502,6 +4502,7 @@ Normative references to this spec from:
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180906/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180621/)
@@ -4911,7 +4912,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180621/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -5057,7 +5058,7 @@ Normative references to this spec from:
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180906/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -5208,7 +5209,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180906/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -5239,7 +5240,7 @@ Informative references to this spec from:
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 
 
 ## HTML Media Capture {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -5357,7 +5358,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180906/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -5460,7 +5461,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (September 18, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (September 19, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5689,7 +5690,7 @@ Normative references to this spec from:
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180621/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -5939,7 +5940,7 @@ Informative references to this spec from:
 
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 
 
 ## MediaStreamTrack Content Hints {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
@@ -6495,7 +6496,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (September 18, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (September 19, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7804,7 +7805,7 @@ Normative references to this spec from:
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180906/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
@@ -7936,10 +7937,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-webaudio-20180619/) (19 June 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-webaudio-20180918/) (18 September 2018)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - Repository: [GitHub webaudio/web-audio-api](https://github.com/webaudio/web-audio-api)
 - Shortname: webaudio
 
@@ -7950,7 +7951,6 @@ Informative references to this spec from:
     * `Worklet` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
      * [`https://w3c.github.io/mediacapture-fromelement/`](https://w3c.github.io/mediacapture-fromelement/)
-     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "MEDIACAPTURE-STREAMS" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
@@ -8113,7 +8113,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (September 18, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (September 19, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8174,7 +8174,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (September 18, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (September 19, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8338,7 +8338,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180906/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -8398,7 +8398,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+     * `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/)
      * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/)
@@ -8445,7 +8445,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Sep 18 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Sep 19 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8463,14 +8463,14 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 
 
 ## WebGL Specification {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Sep 18 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Sep 19 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8491,7 +8491,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 
 
 ## WebIDL Level 1 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-inconsistentRef=true}
@@ -8609,7 +8609,7 @@ Normative references to this spec from:
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2016/WD-web-animations-1-20160913/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180906/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -8679,7 +8679,7 @@ Normative references to this spec from:
 
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [WebRTC DSCP Control API](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
 
 Informative references to this spec from:
@@ -8719,7 +8719,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (15 September 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (18 September 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -8813,7 +8813,7 @@ No informative reference to this spec from other specs.
 
 - Unknown WebIDL names used: `Console`, `Window`
 - WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+    * `Worklet` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8822,7 +8822,7 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -8861,7 +8861,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
-- [Web Audio API](https://www.w3.org/TR/2018/WD-webaudio-20180619/)
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 
 
