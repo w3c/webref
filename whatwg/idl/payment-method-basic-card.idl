@@ -8,6 +8,10 @@ dictionary BasicCardRequest {
         sequence<BasicCardType> supportedTypes;
       };
 
+dictionary BasicCardChangeDetails {
+              PaymentAddress? billingAddress;
+            };
+
 enum BasicCardType { "credit", "debit", "prepaid" };
 
 dictionary BasicCardResponse {
@@ -17,4 +21,13 @@ dictionary BasicCardResponse {
           DOMString expiryMonth;
           DOMString expiryYear;
           PaymentAddress? billingAddress;
+        };
+
+dictionary BasicCardErrors {
+          DOMString cardNumber;
+          DOMString cardholderName;
+          DOMString cardSecurityCode;
+          DOMString expiryMonth;
+          DOMString expiryYear;
+          AddressErrors billingAddress;
         };
