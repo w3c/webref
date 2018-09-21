@@ -25,7 +25,7 @@
   <h2>Specifications that could not be rendered</h2>
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
-  <li><a href="https://www.w3.org/TR/beacon/">Beacon</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
+  <li><a href="undefined">Keyboard Map</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
   </ul>
   <p>=&gt; 1 specification found</p>
   </section>
@@ -42,9 +42,8 @@
   <ul>
   <li><a href="http://dev.w3.org/csswg/css2/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
-  <li><a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a></li>
   </ul>
-  <p>=&gt; 3 specifications found</p>
+  <p>=&gt; 2 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="specifications-without-webidl-definitions" class="level2">
@@ -123,13 +122,12 @@
   <li><a href="https://w3c.github.io/mst-content-hint/">MediaStreamTrack Content Hints</a></li>
   <li><a href="https://wicg.github.io/netinfo/">Network Information API</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
-  <li><a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events</a></li>
   <li><a href="https://w3c.github.io/pointerevents/extension.html">PointerEvents - Level 2 - Extensions</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
   <li><a href="https://w3c.github.io/webappsec-subresource-integrity/">Subresource Integrity</a></li>
   </ul>
-  <p>=&gt; 16 specifications found</p>
+  <p>=&gt; 15 specifications found</p>
   </section>
   <section id="list-of-webidl-names-not-defined-in-the-specifications-crawled" class="level2">
   <h2>List of WebIDL names not defined in the specifications crawled</h2>
@@ -157,13 +155,12 @@
   <li><code>BinaryType</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><code>CSSFontFaceRule</code> defined in <a href="https://drafts.csswg.org/css-fonts/">CSS Fonts Module Level 3</a> and <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><code>CSSGroupingRule</code> defined in <a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a> and <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a></li>
-  <li><code>Keyboard</code> defined in <a href="https://w3c.github.io/keyboard-lock/">Keyboard Lock</a> and <a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
   <li><code>RTCStats</code> defined in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> and <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>SVGMarkerElement</code> defined in <a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a> and <a href="https://svgwg.org/specs/markers/">SVG Markers</a></li>
   <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a> and <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
-  <p>=&gt; 8 WebIDL names found</p>
+  <p>=&gt; 7 WebIDL names found</p>
   <p>&quot;There can be only one&quot;...</p>
   </section>
   <section id="missing-references-for-webidl-names" class="level2">
@@ -215,11 +212,6 @@
   <li><code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><code>URL</code> but does not reference <a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a> uses:
-  <ul>
-  <li><code>PaymentAddress</code> but does not reference <a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
-  <li><code>AddressErrors</code> but does not reference <a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
-  </ul></li>
   <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a> uses <code>EventHandler</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a> uses <code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a> uses:
@@ -249,7 +241,7 @@
   <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 46 missing references for IDL definitions found in 24 specifications</p>
+  <p>=&gt; 44 missing references for IDL definitions found in 23 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -649,7 +641,6 @@
   <li><a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-masking-1/"><code>https://www.w3.org/TR/css-masking-1/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a> links to <a href="https://w3c.github.io/keyboard-lock/"><code>https://w3c.github.io/keyboard-lock/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a> links to <a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a> but does not list it in its references</li>
   <li><a href="https://wicg.github.io/media-capabilities/">Media Capabilities</a> links to <a href="https://www.w3.org/TR/webrtc/"><code>https://www.w3.org/TR/webrtc/</code></a> but does not list it in its references</li>
   <li><a href="http://dev.w3.org/csswg/css3-mediaqueries/">Media Queries Level 3</a> links to:
@@ -794,7 +785,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 341 missing references for links found in 114 specifications</p>
+  <p>=&gt; 340 missing references for links found in 113 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -961,7 +952,6 @@
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> links to <a href="https://www.w3.org/TR/2014/REC-html5-20141028/"><code>https://www.w3.org/TR/2014/REC-html5-20141028/</code></a> but related reference &quot;HTML5&quot; uses URL <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 3.0</a> links to <a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
   <li><a href="https://rawgit.com/w3c/input-events/v1/index.html">Input Events Level 1</a> links to <a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UI-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
-  <li><a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a> links to <a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
   <li><a href="https://w3c.github.io/longtasks/">Long Tasks API 1</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/performance-timeline/"><code>https://w3c.github.io/performance-timeline/</code></a> but related reference &quot;PERFORMANCE-TIMELINE-2&quot; uses URL <a href="https://www.w3.org/TR/performance-timeline-2/"><code>https://www.w3.org/TR/performance-timeline-2/</code></a></li>
@@ -1134,7 +1124,7 @@
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 200 inconsistent references for links found in 102 specifications</p>
+  <p>=&gt; 199 inconsistent references for links found in 101 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
