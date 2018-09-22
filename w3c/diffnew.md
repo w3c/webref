@@ -1,22 +1,20 @@
-% Diff between report from "September 21, 2018" and reference report from "September 20, 2018"
+% Diff between report from "September 22, 2018" and reference report from "September 21, 2018"
 % Reffy
-% September 21, 2018
+% September 22, 2018
 
-## Content Security Policy Level 3
+## Picture-in-Picture
 
-- URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-csp/)
-- Repository: [GitHub w3c/webappsec-csp](https://github.com/w3c/webappsec-csp)
+- URL: [https://wicg.github.io/picture-in-picture/](https://wicg.github.io/picture-in-picture/)
+- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/)
+- Repository: [GitHub wicg/picture-in-picture](https://github.com/wicg/picture-in-picture)
 - Unknown WebIDL names used: *INS* Window
 
 
-## Payment Method: Basic Card
+## WebAssembly Web API
 
-- URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
-- Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
-- Spec is OK: *INS* true / *DEL* false
-- No normative references found: *INS* false / *DEL* true
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- URL: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/web-api/)
+- Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
+- This specification was not in the reference crawl report.
 
 
