@@ -115,6 +115,8 @@ function listRemoteBranches(dir, remote) {
 // (if any) doesn't have the same changes as the local branch. Then remove
 // remote-only branches to close pull requests that are now no-ops.
 async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
+    const dryRun = flags.get('dry-run');
+
     function git(args) {
         return child.execSync(`git ${args}`, { cwd: dir, encoding: 'utf-8' });
     }
@@ -142,20 +144,29 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
             const affectedFiles = git(`diff --name-only ${branch} ${branch}^`).replace(/\n/g, ' ');
             const diff = git(`diff ${branch} ${remote}/${branch} -- ${affectedFiles}`).trim();
             if (diff) {
-                git(`push -f ${remote} ${branch}`);
-                console.log(`  Updated remote branch: ${branch}`);
+                if (dryRun) {
+                    console.log(`  Would updated remote branch: ${branch} (skipped in dry run)`);
+                } else {
+                    git(`push -f ${remote} ${branch}`);
+                    console.log(`  Updated remote branch: ${branch}`);
+                }
             } else {
                 console.log(`  Remote branch is up to date: ${branch}`);
             }
         } else {
-            git(`push ${remote} ${branch}`);
-            console.log(`  Created new remote branch: ${branch}`);
+            if (dryRun) {
+                console.log(`  Would create new remote branch: ${branch} (skipped in dry run)`);
+            } else {
+                git(`push ${remote} ${branch}`);
+                console.log(`  Created new remote branch: ${branch}`);
+            }
         }
 
         // Next create or update a PR for the branch. Use the remote branch's
         // commit message to create the PR title/body, so that they cannot
         // get out of sync. Note that this will also update the boilerplate of
         // existing PRs even if the branch was not updated. This is intentional.
+        // FIXME: this doesn't work with dry run!
         const pr_title = git(`show --format=%s --no-patch ${remote}/${branch}`).trim();
         const commit_body = git(`show --format=%b --no-patch ${remote}/${branch}`);
         const pr_body = `${PR_BOILERPLATE}\n\n<hr>\n\n${commit_body}`;
@@ -172,30 +183,35 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
             // If there is an existing PR, just update its title/body.
             const existing_pr = open_prs[0];
 
-            await octokit.pullRequests.update({
-                owner: 'web-platform-tests',
-                repo: 'wpt',
-                number: existing_pr.number,
-                title: pr_title,
-                body: pr_body,
-            });
-
-            console.log(`  Updated PR title/body: ${existing_pr.html_url}`);
-        } else {
-            if (pr_counter < PR_LIMIT) {
-                // Create a new PR.
-                const created_pr = (await octokit.pullRequests.create({
+            if (dryRun) {
+                console.log(`  Would updated PR title/body: ${existing_pr.html_url} (skipped in dry run)`);
+            } else {
+                await octokit.pullRequests.update({
                     owner: 'web-platform-tests',
                     repo: 'wpt',
-                    head: `${owner}:${branch}`,
-                    base: 'master',
+                    number: existing_pr.number,
                     title: pr_title,
                     body: pr_body,
-                    // Disallow edits as they would be overwritten automatically.
-                    maintainer_can_modify: false,
-                })).data;
-
-                console.log(`  Created PR: ${created_pr.html_url}`);
+                });
+                console.log(`  Updated PR title/body: ${existing_pr.html_url}`);
+            }
+        } else {
+            if (pr_counter < PR_LIMIT) {
+                if (dryRun) {
+                    console.log(`  Would create PR (skipped in dry run)`);
+                } else {
+                    const created_pr = (await octokit.pullRequests.create({
+                        owner: 'web-platform-tests',
+                        repo: 'wpt',
+                        head: `${owner}:${branch}`,
+                        base: 'master',
+                        title: pr_title,
+                        body: pr_body,
+                        // Disallow edits as they would be overwritten automatically.
+                        maintainer_can_modify: false,
+                    })).data;
+                    console.log(`  Created PR: ${created_pr.html_url}`);
+                }
                 pr_counter++;
             } else {
                 console.warn(`  No PR created as limit (${PR_LIMIT}) was reached`);
@@ -206,12 +222,16 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
     console.log('Removing remote-only branches:');
     for (const branch of remoteBranches) {
         if (!localBranches.has(branch)) {
-            await octokit.gitdata.deleteReference({
-                owner: 'autofoolip',
-                repo: 'wpt',
-                ref: `heads/${branch}`,
-            });
-            console.log(`  Deleted ${branch}`);
+            if (dryRun) {
+                console.log(`  Would delete ${branch} (skipped in dry run)`);
+            } else {
+                await octokit.gitdata.deleteReference({
+                    owner: 'autofoolip',
+                    repo: 'wpt',
+                    ref: `heads/${branch}`,
+                });
+                console.log(`  Deleted ${branch}`);
+            }
         }
     }
 
@@ -233,10 +253,11 @@ function main() {
         process.exit(1);
     }
 
+    flags.defineBoolean('dry-run', false, 'Print the changes that would be made without applying them');
     flags.defineString('wpt-dir', undefined, 'Path to wpt checkout (required)');
     flags.defineString('wpt-remote', 'fork', 'Git remote to push branches to');
     flags.defineString('build-url', undefined, 'Build URL to include in commit message (optional)');
-    flags.defineString('pr-limit', 5, 'Maxium number of new PRs to create');
+    flags.defineNumber('pr-limit', 5, 'Maxium number of new PRs to create');
     flags.parse();
 
     const srcDir = `${__dirname}/../whatwg/idl`;
