@@ -67,7 +67,7 @@ function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
         } else {
             console.log(`  ${file} is added`);
             fs.writeFileSync(`${dstDir}/${file}`, reffyBytes);
-            commitToBranch('Update', file);
+            commitToBranch('Add', file);
         }
     }
 
