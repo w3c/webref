@@ -11,9 +11,10 @@
       "appliesTo": "all elements except table-column-group and table-column",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animatable": "no",
+      "animationType": "discrete"
     },
     "top": {
       "name": "top",
@@ -22,9 +23,9 @@
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to height of containing block",
-      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a '<length>', the corresponding absolute length; if specified as a '<percentage>', the specified value; otherwise, auto.",
+      "computedValue": "the keyword auto or an absolute length and/or percentage expression",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage"
+      "animationType": "length or percentage by computed value"
     },
     "right": {
       "name": "right",
@@ -33,9 +34,9 @@
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to height of containing block",
-      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a '<length>', the corresponding absolute length; if specified as a '<percentage>', the specified value; otherwise, auto.",
+      "computedValue": "the keyword auto or an absolute length and/or percentage expression",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage"
+      "animationType": "length or percentage by computed value"
     },
     "bottom": {
       "name": "bottom",
@@ -44,9 +45,9 @@
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to height of containing block",
-      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a '<length>', the corresponding absolute length; if specified as a '<percentage>', the specified value; otherwise, auto.",
+      "computedValue": "the keyword auto or an absolute length and/or percentage expression",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage"
+      "animationType": "length or percentage by computed value"
     },
     "left": {
       "name": "left",
@@ -55,53 +56,53 @@
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to height of containing block",
-      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a '<length>', the corresponding absolute length; if specified as a '<percentage>', the specified value; otherwise, auto.",
+      "computedValue": "the keyword auto or an absolute length and/or percentage expression",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage"
+      "animationType": "length or percentage by computed value"
     },
-    "offset-before": {
-      "name": "offset-before",
+    "inset-before": {
+      "name": "inset-before",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to height of containing block",
-      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a <length>, the corresponding absolute length; if specified as a <percentage>, the specified value; otherwise, auto.",
+      "computedValue": "the keyword auto or an absolute length and/or percentage expression",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage"
+      "animationType": "length or percentage by computed value"
     },
-    "offset-after": {
-      "name": "offset-after",
+    "inset-after": {
+      "name": "inset-after",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to height of containing block",
-      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a <length>, the corresponding absolute length; if specified as a <percentage>, the specified value; otherwise, auto.",
+      "computedValue": "the keyword auto or an absolute length and/or percentage expression",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage"
+      "animationType": "length or percentage by computed value"
     },
-    "offset-start": {
-      "name": "offset-start",
+    "inset-start": {
+      "name": "inset-start",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to height of containing block",
-      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a <length>, the corresponding absolute length; if specified as a <percentage>, the specified value; otherwise, auto.",
+      "computedValue": "the keyword auto or an absolute length and/or percentage expression",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage"
+      "animationType": "length or percentage by computed value"
     },
-    "offset-end": {
-      "name": "offset-end",
+    "inset-end": {
+      "name": "inset-end",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to height of containing block",
-      "computedValue": "For position: relative, see Relative positioning. For position: sticky, see Sticky positioning. For position: static, auto. Otherwise: if specified as a <length>, the corresponding absolute length; if specified as a <percentage>, the specified value; otherwise, auto.",
+      "computedValue": "the keyword auto or an absolute length and/or percentage expression",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage"
+      "animationType": "length or percentage by computed value"
     },
     "z-index": {
       "name": "z-index",
@@ -110,9 +111,10 @@
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "the keyword auto or an integer",
       "canonicalOrder": "per grammar",
-      "animatable": "<integer>"
+      "animatable": "<integer>",
+      "animationType": "per computed value"
     }
   },
   "descriptors": {},

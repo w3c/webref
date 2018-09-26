@@ -8,10 +8,10 @@
       "name": "table-layout",
       "value": "auto | fixed",
       "initial": "auto",
-      "appliesTo": "table-root boxes",
-      "inherited": "yes",
+      "appliesTo": "table grid boxes",
+      "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -19,10 +19,10 @@
       "name": "border-collapse",
       "value": "separate | collapse",
       "initial": "separate",
-      "appliesTo": "table-root boxes",
+      "appliesTo": "table grid boxes",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -30,12 +30,12 @@
       "name": "border-spacing",
       "value": "<​length​>{1,2}",
       "initial": "0px 0px",
-      "appliesTo": "table-root boxes when border-collapse is separate",
+      "appliesTo": "table grid boxes when border-collapse is separate",
       "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "two absolute lengths",
       "canonicalOrder": "per grammar",
-      "animatable": "yes"
+      "animationType": "per computed value"
     },
     "caption-side": {
       "name": "caption-side",
@@ -44,7 +44,7 @@
       "appliesTo": "table-caption boxes",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -55,7 +55,7 @@
       "appliesTo": "table-cell boxes",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     }

@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">September 25, 2018</h2>
+            <h2 class="date">September 26, 2018</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -748,7 +748,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/">Content Security Policy: Embedded Enforcement</a></li>
-  <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-credential-management-1-20170804/">Credential Management Level 1</a></li>
   <li><a href="https://wicg.github.io/feature-policy/">Feature Policy</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
@@ -800,7 +799,7 @@
   <section id="spec-info-19" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/editing/contentEditable.html">Initial URL</a> (September 25, 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/editing/contentEditable.html">Initial URL</a> (September 26, 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -861,29 +860,20 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="cors-and-rfc1918" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true" data-inconsistentRef="true">
+  <section id="cors-and-rfc1918" class="level2" data-spec="true" data-error="true">
   <h2>CORS and RFC1918</h2>
   <section id="spec-info-22" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/cors-rfc1918/">Initial URL</a> (8 August 2017)</li>
+  <li>Crawled version: <a href="undefined">Latest published version</a></li>
   <li>Repository: <a href="https://github.com/wicg/cors-rfc1918">GitHub wicg/cors-rfc1918</a></li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
   <section id="potential-issues-22" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Spec uses WebIDL but does not reference it normatively</li>
-  <li>Missing references for WebIDL names:
-  <ul>
-  <li><code>Document</code> defined in <a href="https://www.w3.org/TR/2018/WD-dom41-20180201/">W3C DOM 4.1</a></li>
-  </ul></li>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a>, related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)     at Object.onceWrapper (events.js:317:30)     at emitTwo (events.js:126:13)     at ChildProcess.emit (events.js:214:7)     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-22" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3181,7 +3171,6 @@
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-logical-1-20180827/">CSS Logical Properties and Values Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
-  <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-text-3-20180920/">CSS Text Module Level 3</a></li>
@@ -3205,7 +3194,7 @@
   <ul>
   <li><a href="https://www.w3.org/TR/2018/CR-ambient-light-20180320/">Ambient Light Sensor</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/">CSS Cascading and Inheritance Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-css-timing-1-20170221/">CSS Timing Functions Level 1</a></li>
+  <li><a href="https://www.w3.org/TR/2018/WD-css-timing-1-20180926/">CSS Timing Functions Level 1</a></li>
   </ul>
   </section>
   </section>
@@ -3485,21 +3474,20 @@
   </ul>
   </section>
   </section>
-  <section id="css-parser-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="css-parser-api" class="level2" data-spec="true" data-error="true">
   <h2>CSS Parser API</h2>
   <section id="spec-info-77" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/CSS-Parser-API/">Initial URL</a> (27 July 2018)</li>
+  <li>Crawled version: <a href="undefined">Latest published version</a></li>
   <li>Repository: <a href="https://github.com/wicg/CSS-Parser-API">GitHub wicg/CSS-Parser-API</a></li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
   <section id="potential-issues-77" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>ReadableStream</code></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)     at Object.onceWrapper (events.js:317:30)     at emitTwo (events.js:126:13)     at ChildProcess.emit (events.js:214:7)     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-77" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -3942,6 +3930,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://drafts.csswg.org/css-box-3/">CSS Box Model Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-logical-1-20180827/">CSS Logical Properties and Values Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-scroll-anchoring-1/">CSS Scroll Anchoring Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/">CSS Typed OM Level 1</a></li>
@@ -3954,7 +3943,7 @@
   <section id="spec-info-88" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://drafts.csswg.org/css-scrollbars-1/">Initial URL</a> (19 September 2018)</li>
+  <li>Crawled version: <a href="https://drafts.csswg.org/css-scrollbars-1/">Initial URL</a> (25 September 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -4176,7 +4165,6 @@
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
-  <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/">CSS Typed OM Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-values-3-20180814/">CSS Values and Units Module Level 3</a></li>
@@ -4433,10 +4421,10 @@
   <section id="spec-info-99" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/2017/WD-css-timing-1-20170221/">Latest published version</a> (21 February 2017)</li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/2018/WD-css-timing-1-20180926/">Latest published version</a> (26 September 2018)</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-timing/" class="uri">https://drafts.csswg.org/css-timing/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-timing-1/" class="uri">https://www.w3.org/TR/css-timing-1/</a></li>
-  <li>Latest published status: <a href="https://www.w3.org/TR/2017/WD-css-timing-1-20170221/">Working Draft</a></li>
+  <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-css-timing-1-20180926/">Working Draft</a></li>
   <li>Repository: <a href="https://github.com/w3c/csswg-drafts">GitHub w3c/csswg-drafts</a></li>
   <li>Shortname: css-timing-1</li>
   </ul>
@@ -4709,7 +4697,6 @@
   <ul>
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
-  <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-values-4-20180814/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://drafts.css-houdini.org/font-metrics-api/">Font Metrics API Level 1</a></li>
   </ul>
@@ -4813,7 +4800,7 @@
   <li><a href="https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/">CSS Text Decoration Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-text-3-20180920/">CSS Text Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-text-4-20180920/">CSS Text Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-css-timing-1-20170221/">CSS Timing Functions Level 1</a></li>
+  <li><a href="https://www.w3.org/TR/2018/WD-css-timing-1-20180926/">CSS Timing Functions Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-transforms-1-20171130/">CSS Transforms Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-transforms-2/">CSS Transforms Module Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/">CSS Transitions</a></li>
@@ -4902,6 +4889,7 @@
   <li><a href="https://drafts.csswg.org/css-shapes-2/">CSS Shapes Module Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-text-3-20180920/">CSS Text Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-text-4-20180920/">CSS Text Module Level 4</a></li>
+  <li><a href="https://www.w3.org/TR/2018/WD-css-timing-1-20180926/">CSS Timing Functions Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-transforms-2/">CSS Transforms Module Level 2</a></li>
   <li><a href="https://drafts.fxtf.org/filter-effects-2/">Filter Effects Module Level 2</a></li>
   <li><a href="https://drafts.csswg.org/mediaqueries-5/">Media Queries Level 5</a></li>
@@ -5378,7 +5366,6 @@
   <li><a href="https://www.w3.org/TR/2016/WD-CSP3-20160913/">Content Security Policy Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/">Content Security Policy: Embedded Enforcement</a></li>
   <li><a href="https://wicg.github.io/cookie-store/">Cookie Store API</a></li>
-  <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-credential-management-1-20170804/">Credential Management Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/">CSS Cascading and Inheritance Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/">CSS Cascading and Inheritance Level 4</a></li>
@@ -5743,7 +5730,7 @@
   <section id="spec-info-127" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/geolocation-sensor/">Initial URL</a> (30 August 2018)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/geolocation-sensor/">Initial URL</a> (26 September 2018)</li>
   <li>Repository: <a href="https://github.com/wicg/geolocation-sensor">GitHub wicg/geolocation-sensor</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -5937,7 +5924,6 @@
   <li><a href="https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/">Content Security Policy: Embedded Enforcement</a></li>
   <li><a href="https://wicg.github.io/cookie-store/">Cookie Store API</a></li>
   <li><a href="https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/">Cooperative Scheduling of Background Tasks</a></li>
-  <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-credential-management-1-20170804/">Credential Management Level 1</a></li>
   <li><a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-animations-1-20171130/">CSS Animations Level 1</a></li>
@@ -5953,7 +5939,6 @@
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
-  <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-transforms-2/">CSS Transforms Module Level 2</a></li>
@@ -6011,7 +5996,6 @@
   <li><a href="https://www.w3.org/TR/2018/CR-SVG2-20180807/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="https://wicg.github.io/scroll-animations/">Scroll-linked Animations</a></li>
   <li><a href="https://www.w3.org/TR/2016/CR-secure-contexts-20160915/">Secure Contexts</a></li>
-  <li><a href="https://www.w3.org/TR/2018/WD-selection-api-20180612/">Selection API</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-selectors-4-20180202/">Selectors Level 4</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-server-timing-20180717/">Server Timing</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-eventsource-20150203/">Server-Sent Events</a></li>
@@ -6126,7 +6110,6 @@
   <li><a href="https://www.w3.org/TR/2016/WD-CSP3-20160913/">Content Security Policy Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/">Content Security Policy: Embedded Enforcement</a></li>
   <li><a href="https://wicg.github.io/cookie-store/">Cookie Store API</a></li>
-  <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-credential-management-1-20170804/">Credential Management Level 1</a></li>
   <li><a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-animations-1-20171130/">CSS Animations Level 1</a></li>
@@ -6141,7 +6124,6 @@
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
-  <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-transforms-2/">CSS Transforms Module Level 2</a></li>
@@ -6178,7 +6160,6 @@
   <li><a href="https://www.w3.org/TR/2018/CR-SVG2-20180807/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="https://wicg.github.io/scroll-animations/">Scroll-linked Animations</a></li>
   <li><a href="https://www.w3.org/TR/2016/CR-secure-contexts-20160915/">Secure Contexts</a></li>
-  <li><a href="https://www.w3.org/TR/2018/WD-selection-api-20180612/">Selection API</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-selectors-4-20180202/">Selectors Level 4</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a></li>
   <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
@@ -6283,7 +6264,6 @@
   <li><a href="https://www.w3.org/TR/2016/WD-CSP3-20160913/">Content Security Policy Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/">Content Security Policy: Embedded Enforcement</a></li>
   <li><a href="https://wicg.github.io/cookie-store/">Cookie Store API</a></li>
-  <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-credential-management-1-20170804/">Credential Management Level 1</a></li>
   <li><a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-animations-1-20171130/">CSS Animations Level 1</a></li>
@@ -6298,7 +6278,6 @@
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
-  <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-transforms-2/">CSS Transforms Module Level 2</a></li>
@@ -6336,7 +6315,6 @@
   <li><a href="https://www.w3.org/TR/2018/CR-SVG2-20180807/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="https://wicg.github.io/scroll-animations/">Scroll-linked Animations</a></li>
   <li><a href="https://www.w3.org/TR/2016/CR-secure-contexts-20160915/">Secure Contexts</a></li>
-  <li><a href="https://www.w3.org/TR/2018/WD-selection-api-20180612/">Selection API</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-selectors-4-20180202/">Selectors Level 4</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-eventsource-20150203/">Server-Sent Events</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a></li>
@@ -6472,7 +6450,7 @@
   <section id="spec-info-137" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/InputDeviceCapabilities/">Initial URL</a> (September 25, 2018)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/InputDeviceCapabilities/">Initial URL</a> (September 26, 2018)</li>
   <li>Repository: <a href="https://github.com/wicg/InputDeviceCapabilities">GitHub wicg/InputDeviceCapabilities</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -7159,7 +7137,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-credential-management-1-20170804/">Credential Management Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
@@ -7639,7 +7616,7 @@
   <section id="spec-info-169" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/picture-in-picture/">Initial URL</a> (24 September 2018)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/picture-in-picture/">Initial URL</a> (25 September 2018)</li>
   <li>Repository: <a href="https://github.com/wicg/picture-in-picture">GitHub wicg/picture-in-picture</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -7736,7 +7713,7 @@
   <section id="spec-info-172" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/pointerevents/extension.html">Initial URL</a> (September 25, 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/pointerevents/extension.html">Initial URL</a> (September 26, 2018)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -8305,7 +8282,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-credential-management-1-20170804/">Credential Management Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-generic-sensor-20180320/">Generic Sensor API</a></li>
   <li><a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
@@ -8329,12 +8305,12 @@
   </ul>
   </section>
   </section>
-  <section id="selection-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="selection-api" class="level2" data-spec="true" data-error="true">
   <h2>Selection API</h2>
   <section id="spec-info-187" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/2018/WD-selection-api-20180612/">Latest published version</a> (12 June 2018)</li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/selection-api/">Latest published version</a></li>
   <li>Editor's Draft: <a href="https://w3c.github.io/selection-api/" class="uri">https://w3c.github.io/selection-api/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/selection-api/" class="uri">https://www.w3.org/TR/selection-api/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/WD-selection-api-20180612/">Working Draft</a></li>
@@ -8344,18 +8320,8 @@
   </section>
   <section id="potential-issues-187" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>EventHandler</code>, <code>GlobalEventHandlers</code>, <code>Window</code></li>
-  <li>Missing references for links:
-  <ul>
-  <li><a href="https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/"><code>https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/</code></a></li>
-  </ul></li>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a>, related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
-  <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a>, related reference &quot;DOM&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)     at Object.onceWrapper (events.js:317:30)     at emitTwo (events.js:126:13)     at ChildProcess.emit (events.js:214:7)     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-187" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -8672,7 +8638,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-FileAPI-20171026/">File API</a></li>
   </ul>
@@ -9021,7 +8986,6 @@
   <li><a href="https://www.w3.org/TR/2016/WD-CSP3-20160913/">Content Security Policy Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/">Content Security Policy: Embedded Enforcement</a></li>
   <li><a href="https://wicg.github.io/cookie-store/">Cookie Store API</a></li>
-  <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-credential-management-1-20170804/">Credential Management Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-values-3-20180814/">CSS Values and Units Module Level 3</a></li>
@@ -9255,7 +9219,6 @@
   <li><a href="https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/">Resource Timing Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-SVG2-20180807/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="https://wicg.github.io/scroll-animations/">Scroll-linked Animations</a></li>
-  <li><a href="https://www.w3.org/TR/2018/WD-selection-api-20180612/">Selection API</a></li>
   <li><a href="http://www.w3.org/TR/2013/REC-selectors-api-20130221/">Selectors API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-selectors-4-20180202/">Selectors Level 4</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-eventsource-20150203/">Server-Sent Events</a></li>
@@ -9291,7 +9254,6 @@
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="http://www.w3.org/TR/2016/CR-battery-status-20160707/">Battery Status API</a></li>
-  <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/">DOM Parsing and Serialization</a></li>
   <li><a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">High Resolution Time Level 3</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
@@ -9649,7 +9611,7 @@
   <section id="spec-info-220" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/web-nfc/">Initial URL</a> (September 25, 2018)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/web-nfc/">Initial URL</a> (September 26, 2018)</li>
   <li>Repository: <a href="https://github.com/w3c/web-nfc">GitHub w3c/web-nfc</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -9724,7 +9686,7 @@
   <section id="spec-info-222" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/web-share/">Initial URL</a> (September 25, 2018)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/web-share/">Initial URL</a> (September 26, 2018)</li>
   <li>Repository: <a href="https://github.com/wicg/web-share">GitHub wicg/web-share</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -9841,7 +9803,6 @@
   <li><a href="https://www.w3.org/TR/2016/WD-CSP3-20160913/">Content Security Policy Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/">Content Security Policy: Embedded Enforcement</a></li>
   <li><a href="https://wicg.github.io/cookie-store/">Cookie Store API</a></li>
-  <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-credential-management-1-20170804/">Credential Management Level 1</a></li>
   <li><a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-animations-1-20171130/">CSS Animations Level 1</a></li>
@@ -9856,7 +9817,6 @@
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
-  <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-transforms-2/">CSS Transforms Module Level 2</a></li>
@@ -9895,7 +9855,6 @@
   <li><a href="https://www.w3.org/TR/2018/CR-SVG2-20180807/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="https://wicg.github.io/scroll-animations/">Scroll-linked Animations</a></li>
   <li><a href="https://www.w3.org/TR/2016/CR-secure-contexts-20160915/">Secure Contexts</a></li>
-  <li><a href="https://www.w3.org/TR/2018/WD-selection-api-20180612/">Selection API</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-selectors-4-20180202/">Selectors Level 4</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-eventsource-20150203/">Server-Sent Events</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a></li>
@@ -10067,7 +10026,7 @@
   <section id="spec-info-229" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Tue Sep 25 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Wed Sep 26 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -10096,7 +10055,7 @@
   <section id="spec-info-230" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Tue Sep 25 2018)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Wed Sep 26 2018)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -10176,7 +10135,6 @@
   <li><a href="https://www.w3.org/TR/2017/WD-css-images-4-20170413/">CSS Image Values and Replaced Content Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
-  <li><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-shadow-parts-1/">CSS Shadow Parts</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-transitions-1-20171130/">CSS Transitions</a></li>
@@ -10231,7 +10189,6 @@
   <li><a href="https://www.w3.org/TR/2018/CR-SVG2-20180807/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-screen-capture-20160714/">Screen Capture</a></li>
   <li><a href="https://wicg.github.io/scroll-animations/">Scroll-linked Animations</a></li>
-  <li><a href="https://www.w3.org/TR/2018/WD-selection-api-20180612/">Selection API</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-server-timing-20180717/">Server Timing</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-service-workers-1-20171102/">Service Workers 1</a></li>
   <li><a href="https://w3c.github.io/staticrange/">Static Range</a></li>
@@ -10283,7 +10240,6 @@
   <li><a href="https://www.w3.org/TR/2018/CR-pointerevents2-20180522/">Pointer Events</a></li>
   <li><a href="https://w3c.github.io/pointerevents/extension.html">PointerEvents - Level 2 - Extensions</a></li>
   <li><a href="https://www.w3.org/TR/2016/CR-secure-contexts-20160915/">Secure Contexts</a></li>
-  <li><a href="https://www.w3.org/TR/2018/WD-selection-api-20180612/">Selection API</a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-uievents-20160804/">UI Events</a></li>
   <li><a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a></li>
   </ul>
@@ -10375,7 +10331,7 @@
   <section id="spec-info-234" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/webusb/">Initial URL</a> (24 September 2018)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/webusb/">Initial URL</a> (25 September 2018)</li>
   <li>Repository: <a href="https://github.com/wicg/webusb">GitHub wicg/webusb</a></li>
   <li>Shortname: no shortname</li>
   </ul>
