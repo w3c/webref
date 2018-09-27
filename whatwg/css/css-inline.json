@@ -11,7 +11,7 @@
       "appliesTo": "block containers, inline boxes, table rows, table columns, grid containers, and flex containers",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -22,9 +22,9 @@
       "appliesTo": "inline-level boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
     },
     "alignment-baseline": {
       "name": "alignment-baseline",
@@ -33,18 +33,18 @@
       "appliesTo": "inline-level boxes, flex items, grid items, table cells",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
     "baseline-shift": {
       "name": "baseline-shift",
-      "value": "<length> | <percentage> | sub | super",
+      "value": "<length-percentage> | sub | super",
       "initial": "0",
       "appliesTo": "inline-level boxes, flex items, grid items",
       "inherited": "no",
       "percentages": "refer to the used value of line-height",
-      "computedValue": "absolute length, percentage, or keyword specified",
+      "computedValue": "the specified keyword and/or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -55,7 +55,7 @@
       "appliesTo": "inline boxes",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -66,9 +66,9 @@
       "appliesTo": "certain inline-level boxes and ::first-letter and inside ::marker boxes (see prose)",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "the keyword normal or a number paired with an integer",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "initial-letters-align": {
       "name": "initial-letters-align",
@@ -77,20 +77,20 @@
       "appliesTo": "certain inline-level boxes and ::first-letter and inside ::marker boxes (see prose)",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
     "initial-letters-wrap": {
       "name": "initial-letters-wrap",
-      "value": "none | first | all | grid | <length> | <percentage>",
+      "value": "none | first | all | grid | <length-percentage>",
       "initial": "none",
       "appliesTo": "certain inline-level boxes and ::first-letter and inside ::marker boxes (see prose)",
       "inherited": "yes",
       "percentages": "relative to logical width of (last fragment of) initial letter",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword or computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     }
   },
   "descriptors": {},

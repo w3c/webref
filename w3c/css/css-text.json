@@ -11,7 +11,7 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -22,7 +22,7 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -33,7 +33,7 @@
       "appliesTo": "inline boxes and block containers",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -44,7 +44,7 @@
       "appliesTo": "inline-level boxes and flex items",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -55,7 +55,7 @@
       "appliesTo": "inline-level boxes and flex items",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -66,7 +66,7 @@
       "appliesTo": "inline boxes",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -77,9 +77,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "computedValue": "see individual properties",
+      "animationType": "discrete",
+      "canonicalOrder": "per grammar"
     },
     "hyphenate-character": {
       "name": "hyphenate-character",
@@ -88,20 +88,20 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
     "hyphenate-limit-zone": {
       "name": "hyphenate-limit-zone",
-      "value": "<percentage> | <length>",
+      "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "block containers",
       "inherited": "yes",
-      "percentages": "refers to width of the line box",
-      "computedValue": "as specified",
+      "percentages": "refers to length of the line box",
+      "computedValue": "computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "hyphenate-limit-chars": {
       "name": "hyphenate-limit-chars",
@@ -110,9 +110,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "three values, each either the auto keyword or an integer",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "hyphenate-limit-lines": {
       "name": "hyphenate-limit-lines",
@@ -121,9 +121,9 @@
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword or integer",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "hyphenate-limit-last": {
       "name": "hyphenate-limit-last",
@@ -132,7 +132,7 @@
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -143,7 +143,7 @@
       "appliesTo": "block containers",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -156,7 +156,7 @@
       "percentages": "N/A",
       "computedValue": "absolute length",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "text-spacing": {
       "name": "text-spacing",
@@ -165,7 +165,9 @@
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "N/A",
-      "computed value": "specified value"
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
     }
   },
   "descriptors": {},

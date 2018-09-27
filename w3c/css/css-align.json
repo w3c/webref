@@ -11,9 +11,9 @@
       "appliesTo": "block containers, multicol containers, flex containers, and grid containers",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "justify-content": {
       "name": "justify-content",
@@ -22,9 +22,9 @@
       "appliesTo": "multicol containers, flex containers, and grid containers",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "place-content": {
       "name": "place-content",
@@ -35,7 +35,7 @@
       "percentages": "n/a",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "justify-self": {
       "name": "justify-self",
@@ -44,9 +44,9 @@
       "appliesTo": "block-level boxes, absolutely-positioned boxes, and grid items",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "align-self": {
       "name": "align-self",
@@ -55,9 +55,9 @@
       "appliesTo": "flex items, grid items, and absolutely-positioned boxes",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "place-self": {
       "name": "place-self",
@@ -68,7 +68,7 @@
       "percentages": "n/a",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "justify-items": {
       "name": "justify-items",
@@ -77,9 +77,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "specified value, except for legacy (see prose)",
+      "computedValue": "specified keyword(s), except for legacy (see prose)",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "align-items": {
       "name": "align-items",
@@ -88,9 +88,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "place-items": {
       "name": "place-items",
@@ -101,7 +101,7 @@
       "percentages": "n/a",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "row-gap": {
       "name": "row-gap",
@@ -110,9 +110,9 @@
       "appliesTo": "multi-column containers, flex containers, grid containers",
       "inherited": "no",
       "percentages": "refer to corresponding dimension of the content area",
-      "computedValue": "as specified, with <length>s made absolute",
+      "computedValue": "specified keyword, else a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "animationType": "by computed value type"
     },
     "column-gap": {
       "name": "column-gap",
@@ -121,9 +121,9 @@
       "appliesTo": "multi-column containers, flex containers, grid containers",
       "inherited": "no",
       "percentages": "refer to corresponding dimension of the content area",
-      "computedValue": "as specified, with <length>s made absolute",
+      "computedValue": "specified keyword, else a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "animationType": "by computed value type"
     },
     "gap": {
       "name": "gap",
@@ -134,7 +134,7 @@
       "percentages": "refer to corresponding dimension of the content area",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "animationType": "by computed value type"
     }
   },
   "descriptors": {},
