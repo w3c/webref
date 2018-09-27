@@ -11,9 +11,10 @@
       "appliesTo": "block-level boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "keyword or absolute length",
+      "computedValue": "specified keyword or absolute length",
       "canonicalOrder": "per grammar",
-      "animatable": "???"
+      "animatable": "???",
+      "animationType": "by computed value type"
     },
     "block-step-insert": {
       "name": "block-step-insert",
@@ -22,9 +23,10 @@
       "appliesTo": "block-level boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animatable": "no",
+      "animationType": "discrete"
     },
     "block-step-align": {
       "name": "block-step-align",
@@ -33,9 +35,10 @@
       "appliesTo": "block-level boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animatable": "no",
+      "animationType": "discrete"
     },
     "block-step-round": {
       "name": "block-step-round",
@@ -44,20 +47,21 @@
       "appliesTo": "block-level boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animatable": "no",
+      "animationType": "discrete"
     },
     "block-step": {
       "name": "block-step",
       "value": "<‘block-step-size’> || <‘block-step-insert’> || <‘block-step-align’> || <‘block-step-round’>",
-      "initial": "See individual properties",
+      "initial": "see individual properties",
       "appliesTo": "block-level boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "See individual properties",
-      "canonicalOrder": "per grammar",
-      "animatable": "See individual properties"
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
     },
     "line-height-step": {
       "name": "line-height-step",
@@ -66,9 +70,10 @@
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "the absolute length",
+      "computedValue": "absolute length",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animatable": "no",
+      "animationType": "by computed value type"
     }
   },
   "descriptors": {},

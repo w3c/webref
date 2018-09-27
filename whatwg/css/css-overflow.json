@@ -11,7 +11,7 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -22,9 +22,9 @@
       "appliesTo": "block containers",
       "inherited": "no",
       "percentages": "refer to the width of the line box",
-      "computedValue": "As specified, with <length> converted to absolute units",
+      "computedValue": "as specified, with lengths made absolute",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "continue": {
       "name": "continue",
@@ -35,7 +35,7 @@
       "percentages": "N/A",
       "computedValue": "see below",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "max-lines": {
       "name": "max-lines",
@@ -44,9 +44,10 @@
       "appliesTo": "fragment boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "specified value",
+      "computedValue": "the keyword none or an integer",
       "canonicalOrder": "per grammar",
-      "animatable": "as integer"
+      "animatable": "as integer",
+      "animationType": "by computed value type"
     }
   },
   "descriptors": {},

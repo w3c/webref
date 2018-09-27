@@ -11,9 +11,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "scroll-padding": {
       "name": "scroll-padding",
@@ -22,9 +22,9 @@
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "relative to the corresponding dimension of the scroll container’s scrollport",
-      "computedValue": "as specified, with lengths made absolute",
-      "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "computedValue": "per side, either the keyword auto or a computed <length-percentage> value",
+      "animationType": "by computed value type",
+      "canonicalOrder": "per grammar"
     },
     "scroll-margin": {
       "name": "scroll-margin",
@@ -33,9 +33,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "per side, a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "animationType": "by computed value type"
     },
     "scroll-snap-align": {
       "name": "scroll-snap-align",
@@ -46,7 +46,7 @@
       "percentages": "n/a",
       "computedValue": "two keywords",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "scroll-snap-stop": {
       "name": "scroll-snap-stop",
@@ -55,9 +55,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "scroll-padding-top": {
       "name": "scroll-padding-top",
@@ -66,9 +66,9 @@
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "relative to the scroll container’s scrollport",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "animationType": "by computed value type"
     },
     "scroll-padding-right": {
       "name": "scroll-padding-right",
@@ -77,9 +77,9 @@
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "relative to the scroll container’s scrollport",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "animationType": "by computed value type"
     },
     "scroll-padding-bottom": {
       "name": "scroll-padding-bottom",
@@ -88,9 +88,9 @@
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "relative to the scroll container’s scrollport",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "animationType": "by computed value type"
     },
     "scroll-padding-left": {
       "name": "scroll-padding-left",
@@ -99,75 +99,75 @@
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "relative to the scroll container’s scrollport",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "animationType": "by computed value type"
     },
     "scroll-padding-inline-start": {
       "name": "scroll-padding-inline-start",
       "value": "<length-percentage>",
-      "initial": "0",
+      "initial": "auto",
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "relative to the scroll container’s scrollport",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "animationType": "by computed value type"
     },
     "scroll-padding-block-start": {
       "name": "scroll-padding-block-start",
       "value": "<length-percentage>",
-      "initial": "0",
+      "initial": "auto",
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "relative to the scroll container’s scrollport",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "animationType": "by computed value type"
     },
     "scroll-padding-inline-end": {
       "name": "scroll-padding-inline-end",
       "value": "<length-percentage>",
-      "initial": "0",
+      "initial": "auto",
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "relative to the scroll container’s scrollport",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "animationType": "by computed value type"
     },
     "scroll-padding-block-end": {
       "name": "scroll-padding-block-end",
       "value": "<length-percentage>",
-      "initial": "0",
+      "initial": "auto",
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "relative to the scroll container’s scrollport",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "animationType": "by computed value type"
     },
     "scroll-padding-block": {
       "name": "scroll-padding-block",
       "value": "<length-percentage>{1,2}",
-      "initial": "0",
+      "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "relative to the scroll container’s scrollport",
-      "computedValue": "as specified, with lengths made absolute",
-      "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "computedValue": "see individual properties",
+      "animationType": "by computed value",
+      "canonicalOrder": "per grammar"
     },
     "scroll-padding-inline": {
       "name": "scroll-padding-inline",
       "value": "<length-percentage>{1,2}",
-      "initial": "0",
+      "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "relative to the scroll container’s scrollport",
-      "computedValue": "as specified, with lengths made absolute",
-      "canonicalOrder": "per grammar",
-      "animatable": "as length, percentage, or calc"
+      "computedValue": "see individual properties",
+      "animationType": "by computed value",
+      "canonicalOrder": "per grammar"
     },
     "scroll-margin-top": {
       "name": "scroll-margin-top",
@@ -176,9 +176,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "animationType": "by computed value type"
     },
     "scroll-margin-right": {
       "name": "scroll-margin-right",
@@ -187,9 +187,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "animationType": "by computed value type"
     },
     "scroll-margin-bottom": {
       "name": "scroll-margin-bottom",
@@ -198,9 +198,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "animationType": "by computed value type"
     },
     "scroll-margin-left": {
       "name": "scroll-margin-left",
@@ -209,9 +209,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "animationType": "by computed value type"
     },
     "scroll-margin-block-start": {
       "name": "scroll-margin-block-start",
@@ -220,9 +220,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "animationType": "by computed value type"
     },
     "scroll-margin-inline-start": {
       "name": "scroll-margin-inline-start",
@@ -231,9 +231,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "animationType": "by computed value type"
     },
     "scroll-margin-block-end": {
       "name": "scroll-margin-block-end",
@@ -242,9 +242,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "animationType": "by computed value type"
     },
     "scroll-margin-inline-end": {
       "name": "scroll-margin-inline-end",
@@ -253,9 +253,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "animationType": "by computed value type"
     },
     "scroll-margin-block": {
       "name": "scroll-margin-block",
@@ -264,9 +264,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified, with lengths made absolute",
-      "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "computedValue": "see individual properties",
+      "animationType": "by computed value type",
+      "canonicalOrder": "per grammar"
     },
     "scroll-margin-inline": {
       "name": "scroll-margin-inline",
@@ -275,9 +275,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified, with lengths made absolute",
-      "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "computedValue": "see individual properties",
+      "animationType": "by computed value type",
+      "canonicalOrder": "per grammar"
     }
   },
   "descriptors": {},
