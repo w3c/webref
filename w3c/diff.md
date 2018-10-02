@@ -1,17 +1,12 @@
-% Diff between report from "October 01, 2018" and reference report from "September 30, 2018"
+% Diff between report from "October 02, 2018" and reference report from "October 01, 2018"
 % Reffy
-% October 01, 2018
+% October 02, 2018
 
-## CSS Text Decoration Module Level 4
+## Background Fetch
 
-- URL: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-decor-4/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+- URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
+- Crawled version: [Initial URL](https://wicg.github.io/background-fetch/)
+- Repository: [GitHub wicg/background-fetch](https://github.com/wicg/background-fetch)
+- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/, https://w3c.github.io/webdriver/webdriver-spec.html / *DEL* https://www.w3.org/TR/service-workers-1/
 
 
