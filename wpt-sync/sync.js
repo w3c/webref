@@ -27,15 +27,34 @@ function findIDLFiles(dir) {
 // The `makeCommitMessage` callback is used to create the commit message.
 // Returns the created branch names.
 function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
+    function git(args, options) {
+        return child.execSync(`git ${args}`, Object.assign({ cwd: dstDir, encoding: 'utf-8' }, options));
+    }
+
+    // Returns the sha of any commit not mentioning reffy-reports touching
+    // `file` in `dstDir` since `since`, if any, and a falsy value otherwise.
+    // See https://github.com/tidoust/reffy-reports/issues/25 for background.
+    function lastManualCommitSince(file, since) {
+        return git(`log -1 --since=${since} --grep reffy-reports --invert-grep --format=%h -- ${file}`).trim();
+    }
+
+    // Returns any extra lines to put in the commit messages as an array.
+    function commitMessageExtras(file) {
+        const SINCE_MS = 7 * 24 * 3600 * 1000; // 1 week
+        const since = new Date(Date.now() - SINCE_MS).toISOString();
+        const sha = lastManualCommitSince(file, since);
+        if (!sha) {
+            return [];
+        }
+        return [`Note: This file was recently manually updated in commit ${sha}.`,
+                `      This commit may revert some of those changes.`];
+    }
+
     const branches = new Set;
 
     // Commits changes to `file` in `dstDir` on a new branch and adds the
     // branch name to `branches`.
     function commitToBranch(verb, file) {
-        function git(args, options) {
-            return child.execSync(`git ${args}`, Object.assign({ cwd: dstDir }, options));
-        }
-
         assert(file.endsWith('.idl'));
         const shortName = file.substr(0, file.length - 4);
         const branch = `reffy-reports/${shortName}`;
@@ -43,7 +62,8 @@ function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
         git(`checkout -q -b ${branch} origin/master`);
         git(`add ${file}`);
 
-        const message = makeCommitMessage(verb, file);
+        const extras = commitMessageExtras(file);
+        const message = makeCommitMessage(verb, file, extras);
         git(`commit -q -F -`, { input: message });
 
         branches.add(branch);
@@ -234,8 +254,11 @@ function main() {
 
     const buildUrl = flags.get('build-url');
 
-    function makeCommitMessage(verb, file) {
+    function makeCommitMessage(verb, file, extras) {
         let message = `${verb} interfaces/${file}\n\n`;
+        if (extras && extras.length) {
+            message += extras.join('\n') + '\n\n';
+        }
         message += `Source: https://github.com/tidoust/reffy-reports/blob/${buildSha}/whatwg/idl/${file}\n`;
         if (buildUrl) {
             message += `Build: ${buildUrl}\n`;
