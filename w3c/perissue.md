@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 02, 2018
+% October 03, 2018
 
 239 specifications were crawled in this report.
 
@@ -126,7 +126,6 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
-- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 1](https://rawgit.com/w3c/input-events/v1/index.html)
 - [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
@@ -139,7 +138,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 17 specifications found
+=> 16 specifications found
 
 
 
