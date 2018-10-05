@@ -34,8 +34,8 @@ enum LayoutSizingMode {
 interface LayoutChild {
     readonly attribute StylePropertyMapReadOnly styleMap;
 
-    IntrinsicSizesRequest intrinsicSizes();
-    LayoutFragmentRequest layoutNextFragment(LayoutConstraints constraints, ChildBreakToken breakToken);
+    Promise<IntrinsicSizes> intrinsicSizes();
+    Promise<LayoutFragment> layoutNextFragment(LayoutConstraintsOptions constraints, ChildBreakToken breakToken);
 };
 
 [Exposed=LayoutWorklet]
@@ -57,7 +57,7 @@ interface IntrinsicSizes {
   readonly attribute double maxContentSize;
 };
 
-[Constructor(optional LayoutConstraintsOptions options),Exposed=LayoutWorklet]
+[Exposed=LayoutWorklet]
 interface LayoutConstraints {
     readonly attribute double availableInlineSize;
     readonly attribute double availableBlockSize;
@@ -132,17 +132,6 @@ interface LayoutEdges {
 
   readonly attribute LayoutEdgeSizes all;
 };
-
-[Exposed=LayoutWorklet]
-interface IntrinsicSizesRequest {
-};
-
-[Exposed=LayoutWorklet]
-interface LayoutFragmentRequest {
-};
-
-typedef (IntrinsicSizesRequest or LayoutFragmentRequest)
-    LayoutFragmentRequestOrIntrinsicSizesRequest;
 
 // This is the final return value from the author defined layout() method.
 dictionary FragmentResultOptions {
