@@ -74,6 +74,8 @@ interface LayoutConstraints {
     readonly attribute any data;
 };
 
+enum BlockFragmentationType { "none", "page", "column", "region" };
+
 dictionary LayoutConstraintsOptions {
     double availableInlineSize = 0;
     double availableBlockSize = 0;
@@ -89,8 +91,6 @@ dictionary LayoutConstraintsOptions {
 
     any data;
 };
-
-enum BlockFragmentationType { "none", "page", "column", "region" };
 
 [Exposed=LayoutWorklet]
 interface ChildBreakToken {
