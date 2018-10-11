@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% October 10, 2018
+% October 11, 2018
 
 228 specifications were crawled in this report.
 
@@ -54,7 +54,7 @@ Reffy was expecting to find IDL content in the specifications  listed here but c
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS TV Profile 1.0](https://drafts.csswg.org/css-tv/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Media Queries Level 3](http://dev.w3.org/csswg/css3-mediaqueries/)
 - [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/)
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
@@ -476,7 +476,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog`](https://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog) but does not list it in its references
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/) links to [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/) links to [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/) links to:
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/) links to:
     * [`https://www.w3.org/TR/css-transitions/`](https://www.w3.org/TR/css-transitions/) but does not list it in its references
     * [`https://www.w3.org/TR/css-animations/`](https://www.w3.org/TR/css-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
@@ -577,7 +577,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/) but does not list it in its references
     * [`https://streams.spec.whatwg.org/`](https://streams.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/) but does not list it in its references
-- [Web Share API](https://wicg.github.io/web-share/) links to [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/) but does not list it in its references
+- [Web Share API - Level 1](https://wicg.github.io/web-share/) links to [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/) but does not list it in its references
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/) links to:
     * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/) but does not list it in its references
     * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/) but does not list it in its references
@@ -696,7 +696,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/) links to:
     * [`https://www.w3.org/TR/css-syntax/`](https://www.w3.org/TR/css-syntax/) but related reference "CSS3SYN" uses URL [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/)
     * [`https://www.w3.org/TR/css3-fonts/`](https://www.w3.org/TR/css3-fonts/) but related reference "CSS3-FONTS" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values/) links to:
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/) links to:
     * [`https://www.w3.org/TR/css-syntax/`](https://www.w3.org/TR/css-syntax/) but related reference "CSS3SYN" uses URL [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/)
     * [`https://www.w3.org/TR/css3-fonts/`](https://www.w3.org/TR/css3-fonts/) but related reference "CSS3-FONTS" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/) links to [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
@@ -787,7 +787,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [UI Events](https://w3c.github.io/uievents/) links to [`https://www.w3.org/TR/2014/WD-uievents-20140612/`](https://www.w3.org/TR/2014/WD-uievents-20140612/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/) links to [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
-- [Web Animations](https://w3c.github.io/web-animations/) links to [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+- [Web Animations](https://drafts.csswg.org/web-animations-1/) links to [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 - [Web App Manifest](https://w3c.github.io/manifest/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/) links to:
     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "MEDIACAPTURE-STREAMS" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
