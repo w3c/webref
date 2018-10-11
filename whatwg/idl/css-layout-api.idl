@@ -112,7 +112,7 @@ dictionary BreakTokenOptions {
 enum BreakType { "none", "line", "column", "page", "region" };
 
 [Exposed=LayoutWorklet]
-interface LayoutEdgeSizes {
+interface LayoutEdges {
   readonly attribute double inlineStart;
   readonly attribute double inlineEnd;
 
@@ -122,15 +122,6 @@ interface LayoutEdgeSizes {
   // Convenience attributes for the sum in one direction.
   readonly attribute double inline;
   readonly attribute double block;
-};
-
-[Exposed=LayoutWorklet]
-interface LayoutEdges {
-  readonly attribute LayoutEdgeSizes border;
-  readonly attribute LayoutEdgeSizes scrollbar;
-  readonly attribute LayoutEdgeSizes padding;
-
-  readonly attribute LayoutEdgeSizes all;
 };
 
 // This is the final return value from the author defined layout() method.
