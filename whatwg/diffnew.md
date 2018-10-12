@@ -1,12 +1,12 @@
-% Diff between report from "October 11, 2018" and reference report from "October 10, 2018"
+% Diff between report from "October 12, 2018" and reference report from "October 11, 2018"
 % Reffy
-% October 11, 2018
+% October 12, 2018
 
-## Web Share API - Level 1
+## Identifiers for WebRTC's Statistics API
 
-- URL: [https://wicg.github.io/web-share/](https://wicg.github.io/web-share/)
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/)
-- Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
-- Spec title: *INS* Web Share API - Level 1 / *DEL* Web Share API
+- URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
+- Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
+- Inconsistent references for links: *INS* https://w3c.github.io/webrtc-pc/
 
 
