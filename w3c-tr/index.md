@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 11, 2018
+% October 12, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Thu Oct 11 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Fri Oct 12 2018)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
@@ -84,7 +84,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2017/WD-motion-1-20170711/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
 - [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
 - [SVG Strokes](http://www.w3.org/TR/2015/WD-svg-strokes-20150409/)
@@ -330,7 +330,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 
 Informative references to this spec from:
 
@@ -699,7 +699,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 11, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 12, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1532,7 +1532,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 
 
 ## CSS Display Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -3575,7 +3575,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
 - [Intersection Observer](https://www.w3.org/TR/2017/WD-intersection-observer-20170914/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180906/)
@@ -4358,7 +4358,7 @@ Normative references to this spec from:
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -4398,7 +4398,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 
 
 ## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -4571,7 +4571,7 @@ Normative references to this spec from:
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -4768,7 +4768,7 @@ Normative references to this spec from:
 
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -4983,7 +4983,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20180926/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -5112,7 +5112,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180926/)
@@ -5122,7 +5122,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -5270,7 +5270,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180926/)
@@ -5278,7 +5278,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -5422,7 +5422,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180926/)
@@ -5431,7 +5431,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -5543,7 +5543,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 11, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 12, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6171,6 +6171,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180926/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20180926/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 
@@ -6178,7 +6179,6 @@ Informative references to this spec from:
 
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20180926/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
 
 
 ## Network Information API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
@@ -6295,7 +6295,7 @@ Normative references to this spec from:
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
@@ -6436,7 +6436,7 @@ Normative references to this spec from:
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20180926/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 
 Informative references to this spec from:
@@ -6577,7 +6577,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 11, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 12, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6836,10 +6836,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/) (18 May 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/) (11 October 2018)
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
 - Shortname: resource-timing-2
 
@@ -7152,7 +7152,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180906/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -7332,10 +7332,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/) (26 September 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/) (12 October 2018)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
@@ -7737,7 +7737,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180926/)
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
@@ -7746,7 +7746,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -7879,7 +7879,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 
 
 ## Web Audio API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -8062,7 +8062,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 11, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 12, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8119,7 +8119,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 11, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 12, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8267,7 +8267,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180926/)
@@ -8276,7 +8276,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
@@ -8421,7 +8421,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Oct 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Oct 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8446,7 +8446,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Oct 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Oct 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8569,7 +8569,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180926/)
@@ -8577,7 +8577,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20180926/)
+- [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
@@ -8830,7 +8830,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20180518/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 
 Informative references to this spec from:
 
