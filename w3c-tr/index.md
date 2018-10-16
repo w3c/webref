@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 15, 2018
+% October 16, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Mon Oct 15 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Tue Oct 16 2018)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
@@ -334,7 +334,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 
 
 ## Box Tree API Level 1 {data-spec=true data-ok=true}
@@ -473,7 +473,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
@@ -631,28 +630,28 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Content Security Policy Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true}
+## Content Security Policy Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/WD-CSP3-20160913/) (13 September 2016)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-CSP3-20181015/) (15 October 2018)
 - Editor's Draft: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
 - Latest published version: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - Repository: [GitHub w3c/webappsec-csp](https://github.com/w3c/webappsec-csp)
 - Shortname: CSP3
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/)
-     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
@@ -699,7 +698,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 15, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 16, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1213,6 +1212,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180830/)
@@ -2718,7 +2718,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
@@ -4456,6 +4456,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
@@ -4554,7 +4555,7 @@ Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
@@ -5037,7 +5038,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
@@ -5218,7 +5219,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
@@ -5369,7 +5370,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
@@ -5543,7 +5544,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 15, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 16, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5723,7 +5724,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/media-capabilities/) (19 July 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/media-capabilities/) (15 October 2018)
 - Repository: [GitHub wicg/media-capabilities](https://github.com/wicg/media-capabilities)
 - Shortname: no shortname
 
@@ -6110,7 +6111,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
@@ -6577,7 +6578,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 15, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 16, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7116,7 +7117,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 
 
 ## Service Workers 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -7146,7 +7147,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20180926/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -7265,7 +7266,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -7376,7 +7377,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 
 
@@ -7529,7 +7530,7 @@ Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
@@ -7599,7 +7600,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 
 
 ## User Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -7684,7 +7685,7 @@ Normative references to this spec from:
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
@@ -7878,7 +7879,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 
 
@@ -8062,7 +8063,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 15, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 16, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8119,7 +8120,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 15, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 16, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8213,7 +8214,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
@@ -8421,7 +8422,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Oct 15 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Oct 16 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8446,7 +8447,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Oct 15 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Oct 16 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8505,6 +8506,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Console Standard](https://console.spec.whatwg.org/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
@@ -8693,7 +8695,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (14 October 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (15 October 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -8793,6 +8795,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
@@ -8834,7 +8837,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Content Security Policy Level 3](https://www.w3.org/TR/2016/WD-CSP3-20160913/)
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 

@@ -77,8 +77,8 @@ interface LayoutConstraints {
 enum BlockFragmentationType { "none", "page", "column", "region" };
 
 dictionary LayoutConstraintsOptions {
-    double availableInlineSize = 0;
-    double availableBlockSize = 0;
+    double availableInlineSize;
+    double availableBlockSize;
 
     double fixedInlineSize;
     double fixedBlockSize;
