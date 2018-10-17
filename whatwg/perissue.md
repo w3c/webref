@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% October 16, 2018
+% October 17, 2018
 
 228 specifications were crawled in this report.
 
@@ -140,7 +140,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `SVGElement` used in [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects/), [SVG Markers](https://svgwg.org/specs/markers/)
 - `SVGImageElement` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `SVGScriptElement` used in [HTML Standard](https://html.spec.whatwg.org/)
-- `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `WritableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/)
 
 => 27 WebIDL names found
@@ -387,10 +387,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2011/CR-css3-background-20110215/`](https://www.w3.org/TR/2011/CR-css3-background-20110215/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/WD-css4-images-20120911/`](https://www.w3.org/TR/2012/WD-css4-images-20120911/) but does not list it in its references
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/) links to:
-    * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
     * [`https://www.w3.org/TR/2002/WD-css3-linebox-20020515/`](https://www.w3.org/TR/2002/WD-css3-linebox-20020515/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/) links to:
     * [`https://www.w3.org/TR/css2/`](https://www.w3.org/TR/css2/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
@@ -598,7 +596,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 311 missing references for links found in 115 specifications
+=> 309 missing references for links found in 115 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -672,7 +670,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/) links to [`https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/`](https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/) but related reference "DPUB-LATINREQ" uses URL [`https://www.w3.org/TR/dpub-latinreq/`](https://www.w3.org/TR/dpub-latinreq/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/) links to [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
-- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/) links to [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/) links to:
     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
@@ -823,6 +820,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
-=> 172 inconsistent references for links found in 100 specifications
+=> 171 inconsistent references for links found in 99 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

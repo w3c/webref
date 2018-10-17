@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 16, 2018
+% October 17, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Tue Oct 16 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Wed Oct 17 2018)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
@@ -133,11 +133,11 @@ Informative references to this spec from:
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 
 
-## Accelerometer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Accelerometer {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-accelerometer-20180320/) (20 March 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/accelerometer/)
 - Editor's Draft: [https://w3c.github.io/accelerometer/](https://w3c.github.io/accelerometer/)
 - Latest published version: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
@@ -146,12 +146,15 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
-- Missing references for links: 
-     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
-     * [`https://w3c.github.io/sensors/usecases.html`](https://w3c.github.io/sensors/usecases.html)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/screen-orientation/`](https://www.w3.org/TR/screen-orientation/), related reference "SCREEN-ORIENTATION" uses URL [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/)
+The following network or parsing error occurred:
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -439,6 +442,7 @@ Normative references to this spec from:
 - [Media Queries](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2017/WD-motion-1-20170711/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/PR-selectors-3-20180911/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
@@ -447,7 +451,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 
@@ -539,7 +542,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 
 No informative reference to this spec from other specs.
 
@@ -698,7 +701,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 16, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 17, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -2858,7 +2861,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/overscroll-behavior/) (24 October 2017)
+- Crawled version: [Initial URL](https://wicg.github.io/overscroll-behavior/) (9 October 2018)
 - Repository: [GitHub wicg/overscroll-behavior](https://github.com/wicg/overscroll-behavior)
 - Shortname: no shortname
 
@@ -4151,6 +4154,7 @@ Normative references to this spec from:
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2018/WD-css-logical-1-20180827/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
+- [CSS Overscroll Behavior Module Level 1](https://wicg.github.io/overscroll-behavior/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
@@ -4368,7 +4372,7 @@ Informative references to this spec from:
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2017/WD-css-transforms-1-20171130/)
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180906/)
 
@@ -4507,7 +4511,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (12 October 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (16 October 2018)
 - Repository: [GitHub wicg/feature-policy](https://github.com/wicg/feature-policy)
 - Shortname: no shortname
 
@@ -4784,10 +4788,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-gamepad-20180926/) (26 September 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-gamepad-20181017/) (17 October 2018)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-gamepad-20180926/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-gamepad-20181017/)
 - Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
 - Shortname: gamepad
 
@@ -4825,7 +4829,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
 - [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
@@ -4976,7 +4979,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180926/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181017/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
@@ -5075,7 +5078,7 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Filter Effects Module Level 1](http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180926/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181017/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
@@ -5105,7 +5108,7 @@ Normative references to this spec from:
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2017/WD-push-api-20171215/)
@@ -5250,7 +5253,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180926/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181017/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -5267,7 +5270,7 @@ Normative references to this spec from:
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
@@ -5401,7 +5404,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180926/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181017/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
@@ -5418,7 +5421,7 @@ Normative references to this spec from:
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
@@ -5544,7 +5547,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 16, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 17, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6171,7 +6174,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180926/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181017/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181011/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20180926/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
@@ -6472,7 +6475,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
 - [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
@@ -6515,20 +6517,19 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Pointer Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Pointer Events {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/) (Level 2)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/) (Level 2)
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
 - Shortname: pointerevents2
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
 - Unknown WebIDL names used: `EventHandler`, `GlobalEventHandlers`, `Navigator`, `Window`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
@@ -6538,13 +6539,13 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
 
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
 
 
 ## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -6566,7 +6567,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 
 Informative references to this spec from:
@@ -6578,7 +6579,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 16, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 17, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6789,7 +6790,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/reporting/) (5 September 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/reporting/) (16 October 2018)
 - Repository: [GitHub w3c/reporting](https://github.com/w3c/reporting)
 - Shortname: no shortname
 
@@ -7348,7 +7349,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20180906/)
 
@@ -7406,7 +7406,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 
 
 ## UI Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -7440,7 +7440,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
 - [UI Events KeyboardEvent key Values](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
@@ -7714,7 +7714,7 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180926/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181017/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
@@ -7728,7 +7728,7 @@ Normative references to this spec from:
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -8063,7 +8063,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 16, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 17, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8120,7 +8120,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 16, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 17, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8245,7 +8245,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180926/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181017/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -8264,7 +8264,7 @@ Normative references to this spec from:
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
@@ -8422,7 +8422,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Oct 16 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Oct 17 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8447,7 +8447,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Oct 16 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Oct 17 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8496,7 +8496,6 @@ Normative references to this spec from:
 
 - ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
-- [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
 - [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
@@ -8533,7 +8532,7 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20180926/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181017/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
@@ -8564,6 +8563,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -8621,7 +8621,6 @@ Informative references to this spec from:
 - [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
-- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20180522/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20180926/)
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
@@ -8695,7 +8694,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (15 October 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (16 October 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 

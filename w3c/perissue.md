@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 16, 2018
+% October 17, 2018
 
 239 specifications were crawled in this report.
 
@@ -14,14 +14,8 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
-- [The WebSocket API](http://www.w3.org/TR/websockets/): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
-=> 2 specifications found
+=> 1 specification found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -31,9 +25,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
 - [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
+- [The WebSocket API](https://www.w3.org/TR/websockets/)
 - [Web Notifications](https://www.w3.org/TR/notifications/)
 
-=> 6 specifications found
+=> 7 specifications found
 
 It is good practice to link to Editor's Draft for W3C specifications even for specifications published as Recommendations. Reffy (or rather the W3C API) could not find a link to an Editor's Draft for the specifications mentioned above.
 
@@ -113,9 +108,10 @@ Reffy was not expecting to find IDL content in the specifications listed here bu
 
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
+- [The WebSocket API](https://www.w3.org/TR/websockets/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 
-=> 3 specifications found
+=> 4 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -203,7 +199,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `VideoTrackList` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
 - `Window` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/), [Accelerometer](https://w3c.github.io/accelerometer/), [Ambient Light Sensor](https://w3c.github.io/ambient-light/), [Background Fetch](https://wicg.github.io/background-fetch/), [Battery Status API](https://w3c.github.io/battery/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Compatibility Standard](https://compat.spec.whatwg.org/), [Console Standard](https://console.spec.whatwg.org/), [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/), [Cookie Store API](https://wicg.github.io/cookie-store/), [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Encoding Standard](https://encoding.spec.whatwg.org/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/), [Gamepad](https://w3c.github.io/gamepad/), [Generic Sensor API](https://w3c.github.io/sensors/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/), [Gyroscope](https://w3c.github.io/gyroscope/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/), [Intersection Observer](https://w3c.github.io/IntersectionObserver/), [Keyboard Lock](https://w3c.github.io/keyboard-lock/), [Keyboard Map](https://wicg.github.io/keyboard-map/), [Magnetometer](https://w3c.github.io/magnetometer/), [Media Capabilities](https://wicg.github.io/media-capabilities/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/), [Media Session Standard](https://wicg.github.io/mediasession/), [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/), [Network Information API](https://wicg.github.io/netinfo/), [Orientation Sensor](https://w3c.github.io/orientation-sensor/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Payment Request API](https://w3c.github.io/payment-request/), [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/), [Permissions](https://w3c.github.io/permissions/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Pointer Events](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Proximity Sensor](https://w3c.github.io/proximity/), [Push API](https://w3c.github.io/push-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Resize Observer 1](https://wicg.github.io/ResizeObserver/), [Resource Timing Level 2](https://w3c.github.io/resource-timing/), [Selection API](https://w3c.github.io/selection-api/), [Server Timing](https://w3c.github.io/server-timing/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Static Range](https://w3c.github.io/staticrange/), [Storage Standard](https://storage.spec.whatwg.org/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [UI Events](https://w3c.github.io/uievents/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 2](https://w3c.github.io/user-timing/), [W3C DOM 4.1](https://w3c.github.io/dom/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web Animations](https://drafts.csswg.org/web-animations-1/), [Web App Manifest](https://w3c.github.io/manifest/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [Web Authentication: An API for accessing Public Key Credentials - Level 1](https://w3c.github.io/webauthn/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/), [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html), [Web IDL](https://heycam.github.io/webidl/), [Web Speech API](https://w3c.github.io/speech-api/), [Web Workers](https://html.spec.whatwg.org/multipage/workers.html), [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/), [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [WebUSB API](https://wicg.github.io/webusb/), [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `WindowOrWorkerGlobalScope` used in [Fetch Standard](https://fetch.spec.whatwg.org/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/), [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
-- `WindowProxy` used in [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- `WindowProxy` used in [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - `WritableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/)
 
 => 59 WebIDL names found
@@ -457,10 +453,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2011/CR-css3-background-20110215/`](https://www.w3.org/TR/2011/CR-css3-background-20110215/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/WD-css4-images-20120911/`](https://www.w3.org/TR/2012/WD-css4-images-20120911/) but does not list it in its references
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/) links to:
-    * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
     * [`https://www.w3.org/TR/2002/WD-css3-linebox-20020515/`](https://www.w3.org/TR/2002/WD-css3-linebox-20020515/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/) links to:
     * [`https://www.w3.org/TR/css2/`](https://www.w3.org/TR/css2/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
@@ -686,7 +680,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 326 missing references for links found in 119 specifications
+=> 324 missing references for links found in 119 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -760,7 +754,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/) links to [`https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/`](https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/) but related reference "DPUB-LATINREQ" uses URL [`https://www.w3.org/TR/dpub-latinreq/`](https://www.w3.org/TR/dpub-latinreq/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/) links to [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
-- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/) links to [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/) links to:
     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
@@ -924,6 +917,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
-=> 183 inconsistent references for links found in 105 specifications
+=> 182 inconsistent references for links found in 104 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
