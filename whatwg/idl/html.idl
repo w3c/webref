@@ -77,7 +77,7 @@ partial interface Document {
 
   // dynamic markup insertion
   [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored
-  WindowProxy open(USVString url, DOMString name, DOMString features);
+  WindowProxy? open(USVString url, DOMString name, DOMString features);
   [CEReactions] void close();
   [CEReactions] void write(DOMString... text);
   [CEReactions] void writeln(DOMString... text);
