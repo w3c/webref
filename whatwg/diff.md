@@ -1,21 +1,22 @@
-% Diff between report from "October 17, 2018" and reference report from "October 16, 2018"
+% Diff between report from "October 18, 2018" and reference report from "October 17, 2018"
 % Reffy
-% October 17, 2018
+% October 18, 2018
 
-## CSS Inline Layout Module Level 3
+## CSS Paged Media Module Level 3
 
-- URL: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-inline-3/)
+- URL: [https://www.w3.org/TR/css3-page/](https://www.w3.org/TR/css3-page/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-page-3/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *DEL* https://www.w3.org/TR/css3-break/, https://www.w3.org/TR/css3-positioning/
-- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-values/
+- Missing references for links: *INS* https://www.w3.org/TR/css3-background/, https://www.w3.org/TR/css3-positioning/, https://www.w3.org/TR/selectors4/, https://www.w3.org/TR/css-device-adapt/, https://www.w3.org/TR/css-cascade/, https://www.w3.org/TR/web-animations-1/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css-values/
 
 
-## Touch Events - Level 2
+## Web MIDI API
 
-- URL: [https://www.w3.org/TR/touch-events/](https://www.w3.org/TR/touch-events/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/)
-- Repository: [GitHub w3c/touch-events](https://github.com/w3c/touch-events)
-- Unknown WebIDL names used: *DEL* WindowProxy
+- URL: [https://www.w3.org/TR/webmidi/](https://www.w3.org/TR/webmidi/)
+- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/)
+- Repository: [GitHub webaudio/web-midi-api](https://github.com/webaudio/web-midi-api)
+- Invalid WebIDL content found: *INS* true / *DEL* false
+- Obsolete WebIDL constructs found: *DEL* false
 
 
