@@ -65,19 +65,19 @@ enum MIDIPortConnectionState {
   "pending",
 };
 
-[SecureContext], [Constructor(DOMString type, optional MIDIMessageEventInit eventInitDict)]
-        interface MIDIMessageEvent: Event {
-          readonly attribute Uint8Array data;
-        };
+[SecureContext, Constructor(DOMString type, optional MIDIMessageEventInit eventInitDict)]
+interface MIDIMessageEvent : Event {
+  readonly attribute Uint8Array data;
+};
 
 dictionary MIDIMessageEventInit : EventInit {
   Uint8Array data;
 };
 
-[SecureContext], [Constructor(DOMString type, optional MIDIConnectionEventInit eventInitDict)]
-        interface MIDIConnectionEvent: Event {
-          readonly attribute MIDIPort port;
-        };
+[SecureContext, Constructor(DOMString type, optional MIDIConnectionEventInit eventInitDict)]
+interface MIDIConnectionEvent : Event {
+  readonly attribute MIDIPort port;
+};
 
 dictionary MIDIConnectionEventInit : EventInit {
   MIDIPort port;
