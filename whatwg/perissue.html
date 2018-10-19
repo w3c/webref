@@ -33,22 +33,20 @@
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
-  <li><a href="https://w3c.github.io/webappsec-csp/embedded/">[No title found for https://w3c.github.io/webappsec-csp/embedded/]</a></li>
   <li><a href="https://www.w3.org/TR/SVG2/">404 not found</a></li>
   <li><a href="http://dev.w3.org/csswg/css2/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   </ul>
-  <p>=&gt; 4 specifications found</p>
+  <p>=&gt; 3 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="specifications-without-webidl-definitions" class="level2">
   <h2>Specifications without WebIDL definitions</h2>
   <ul>
-  <li><a href="https://w3c.github.io/webappsec-csp/embedded/">[No title found for https://w3c.github.io/webappsec-csp/embedded/]</a></li>
   <li><a href="https://www.w3.org/TR/SVG2/">404 not found</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   </ul>
-  <p>=&gt; 3 specifications found</p>
+  <p>=&gt; 2 specifications found</p>
   <p>Reffy was expecting to find IDL content in the specifications listed here but could not extract any.</p>
   </section>
   <section id="specifications-without-css-definitions" class="level2">
@@ -60,7 +58,6 @@
   <li><a href="https://drafts.csswg.org/css-variables/">CSS Custom Properties for Cascading Variables Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-easing/">CSS Easing Functions Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-env-1/">CSS Environment Variables Module Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/css-sizing-4/">CSS Intrinsic &amp; Extrinsic Sizing Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-namespaces/">CSS Namespaces Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-scoping/">CSS Scoping Module Level 1</a></li>
@@ -76,7 +73,7 @@
   <li><a href="https://drafts.csswg.org/selectors-3/">Selectors Level 3</a></li>
   <li><a href="https://drafts.csswg.org/selectors">Selectors Level 4</a></li>
   </ul>
-  <p>=&gt; 21 specifications found</p>
+  <p>=&gt; 20 specifications found</p>
   <p>Reffy was expecting to find CSS definitions in the specifications listed here but could not extract any.</p>
   </section>
   <section id="specifications-with-unexpected-webidl-definitions" class="level2">
@@ -97,8 +94,8 @@
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
   <h2>List of specifications with invalid WebIDL content</h2>
   <ul>
+  <li><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://drafts.css-houdini.org/font-metrics-api/">Font Metrics API Level 1</a></li>
-  <li><a href="http://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
   </ul>
   <p>=&gt; 2 specifications found</p>
   <p>WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features</p>
@@ -127,6 +124,7 @@
   <li><code>Date</code> used in <a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
   <li><code>Dictionary</code> used in <a href="https://w3c.github.io/web-nfc/">Web NFC API</a></li>
   <li><code>KeyframeEffectReadOnly</code> used in <a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a></li>
+  <li><code>LayoutWorklet</code> used in <a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><code>Map</code> used in <a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
   <li><code>OverconstrainedError</code> used in <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><code>PermissionName</code> used in <a href="https://w3c.github.io/permissions/">Permissions</a></li>
@@ -150,7 +148,7 @@
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><code>WritableStream</code> used in <a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   </ul>
-  <p>=&gt; 27 WebIDL names found</p>
+  <p>=&gt; 28 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -162,7 +160,7 @@
   <li><code>Keyboard</code> defined in <a href="https://w3c.github.io/keyboard-lock/">Keyboard Lock</a> and <a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
   <li><code>RTCStats</code> defined in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> and <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>Worker</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a> and <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a> and <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> defined in <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> and <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> and <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul>
   <p>=&gt; 7 WebIDL names found</p>
   <p>&quot;There can be only one&quot;...</p>
@@ -176,7 +174,7 @@
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a> uses:
   <ul>
   <li><code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
-  <li><code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a> or <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  <li><code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a> uses <code>Document</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts/">CSS Fonts Module Level 3</a> uses:
@@ -188,7 +186,6 @@
   <ul>
   <li><code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><code>PaintWorklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></li>
-  <li><code>LayoutWorklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a> uses:
   <ul>
@@ -227,7 +224,7 @@
   <li><code>DOMPoint</code> but does not reference <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><code>DOMPointReadOnly</code> but does not reference <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   </ul></li>
-  <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a> uses <code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a> or <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
+  <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a> uses <code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> uses:
   <ul>
   <li><code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
@@ -238,7 +235,7 @@
   <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 37 missing references for IDL definitions found in 21 specifications</p>
+  <p>=&gt; 36 missing references for IDL definitions found in 21 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -806,6 +803,7 @@
   <li><a href="https://www.w3.org/TR/2dcontext/"><code>https://www.w3.org/TR/2dcontext/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-cspee/">Content Security Policy: Embedded Enforcement</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
   <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a> links to:
   <ul>
@@ -1047,7 +1045,6 @@
   </ul></li>
   <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a> links to <a href="https://www.w3.org/TR/html/"><code>https://www.w3.org/TR/html/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a> links to <a href="https://www.w3.org/TR/geolocation-API/"><code>https://www.w3.org/TR/geolocation-API/</code></a> but related reference &quot;GEOLOCATION-API&quot; uses URL <a href="http://dev.w3.org/geo/api/spec-source.html"><code>http://dev.w3.org/geo/api/spec-source.html</code></a></li>
-  <li><a href="http://webaudio.github.io/web-midi-api/">Web MIDI API</a> links to <a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
   <li><a href="https://w3c.github.io/web-nfc/">Web NFC API</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;permissions&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>

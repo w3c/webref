@@ -134,6 +134,12 @@ dictionary FragmentResultOptions {
     BreakTokenOptions breakToken = null;
 };
 
+[Constructor(FragmentResultOptions)]
+interface FragmentResult {
+    readonly attribute double inlineSize;
+    readonly attribute double blockSize;
+};
+
 dictionary IntrinsicSizesResultOptions {
     double maxContentSize;
     double minContentSize;
