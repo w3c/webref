@@ -1,20 +1,38 @@
-% Diff between report from "October 19, 2018" and reference report from "October 18, 2018"
+% Diff between report from "October 20, 2018" and reference report from "October 19, 2018"
 % Reffy
-% October 19, 2018
+% October 20, 2018
 
-## CSS Intrinsic & Extrinsic Sizing Module Level 4
+## 404 not found
 
-- URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-sizing-4/)
-- No CSS definitions found: *INS* false / *DEL* true
+- URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
+- Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
+- Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
+- Link to an Editor's Draft not found: *INS* false / *DEL* true
 
 
-## CSS Paged Media Module Level 3
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
 
-- URL: [https://www.w3.org/TR/css3-page/](https://www.w3.org/TR/css3-page/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
-- Editor's Draft: [https://drafts.csswg.org/css-page-3/](https://drafts.csswg.org/css-page-3/)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-background/, https://www.w3.org/TR/css3-positioning/, https://www.w3.org/TR/css3-break/, https://www.w3.org/TR/selectors4/, https://www.w3.org/TR/css-device-adapt/, https://www.w3.org/TR/css-cascade/, https://www.w3.org/TR/web-animations-1/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-values/ / *DEL* https://www.w3.org/TR/css3-background/, https://www.w3.org/TR/css3-break/, https://www.w3.org/TR/css3-sizing/
+- URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/CSS22/)
+- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec title: *INS* Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification / *DEL* Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+
+
+## Server Timing
+
+- URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
+- Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
+- Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
+- Missing references for links: *INS* https://w3c.github.io/webappsec-secure-contexts/
+- Inconsistent references for links: *INS* https://w3c.github.io/resource-timing/, https://html.spec.whatwg.org/
 
 

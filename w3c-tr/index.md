@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 19, 2018
+% October 20, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -42,11 +42,12 @@ Informative references to this spec from:
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 
 
-## 404 not found {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true data-noCssDefinitions=true data-noEdDraft=true}
+## 404 not found {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true data-noCssDefinitions=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Fri Oct 19 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Sat Oct 20 2018)
+- Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
@@ -54,7 +55,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Link to an Editor's Draft not found
 - No normative references found
 - No WebIDL definitions found
 - No CSS definitions found
@@ -452,11 +452,11 @@ Informative references to this spec from:
 - [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 
 
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true}
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-CSS22-20160412/) (12 April 2016)
+- Crawled version: [Latest published version](http://www.w3.org/TR/CSS22/)
 - Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Latest published version: [http://www.w3.org/TR/CSS22/](http://www.w3.org/TR/CSS22/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
@@ -465,8 +465,15 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No normative references found
-- No CSS definitions found
+The following network or parsing error occurred:
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -698,7 +705,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 19, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 20, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4592,7 +4599,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181017/)
-- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181017/)
+- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -5013,7 +5020,7 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181017/)
+- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
@@ -5202,7 +5209,7 @@ Informative references to this spec from:
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/PR-selectors-3-20180911/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
-- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181017/)
+- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
@@ -5566,7 +5573,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 19, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 20, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6197,7 +6204,7 @@ Normative references to this spec from:
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181018/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20181017/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181017/)
-- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181017/)
+- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 
 Informative references to this spec from:
@@ -6466,7 +6473,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181017/)
+- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 
 
 ## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -6600,7 +6607,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 19, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 20, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6875,7 +6882,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20181017/)
-- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181017/)
+- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 
 Informative references to this spec from:
 
@@ -7095,14 +7102,14 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Server Timing {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## Server Timing {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-server-timing-20181017/) (17 October 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-server-timing-20181019/) (19 October 2018)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-server-timing-20181017/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 - Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
 - Shortname: server-timing
 
@@ -7112,6 +7119,11 @@ No informative reference to this spec from other specs.
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
      * `DOMHighResTimeStamp` defined in [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/), related reference "RESOURCE-TIMING-2" uses URL [`https://www.w3.org/TR/resource-timing-2/`](https://www.w3.org/TR/resource-timing-2/)
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7189,7 +7201,7 @@ Although they do not, the following specs should also normatively reference this
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181017/)
+- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 
 Informative references to this spec from:
@@ -8086,7 +8098,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 19, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 20, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8143,7 +8155,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 19, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 20, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8334,7 +8346,7 @@ Although they do not, the following specs should also normatively reference this
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
-- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181017/)
+- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 
 Informative references to this spec from:
@@ -8446,7 +8458,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Oct 19 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Oct 20 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8471,7 +8483,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Oct 19 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Oct 20 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8600,7 +8612,7 @@ Normative references to this spec from:
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20181018/)
-- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181017/)
+- [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
@@ -8718,7 +8730,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (18 October 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (19 October 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
