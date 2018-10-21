@@ -20,14 +20,14 @@ dictionary LayoutOptions {
 
 [Exposed=LayoutWorklet]
 enum ChildDisplayType {
-    "block",
+    "block", // default - "blockifies" the child boxes.
     "normal",
 };
 
 [Exposed=LayoutWorklet]
 enum LayoutSizingMode {
-    "block-like",
-    "manual",
+    "block-like", // default - Sizing behaves like block containers.
+    "manual", // Sizing is specified by the web developer.
 };
 
 [Exposed=LayoutWorklet]

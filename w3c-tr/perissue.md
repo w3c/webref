@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 20, 2018
+% October 21, 2018
 
 239 specifications were crawled in this report.
 
@@ -9,7 +9,7 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://www.w3.org/TR/CSS22/): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+- [https://drafts.csswg.org/css-tv/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -20,8 +20,14 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
+- [Web Storage (Second Edition)](http://www.w3.org/TR/webstorage/): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
-=> 2 specifications found
+=> 3 specifications found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -42,6 +48,7 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 
 - [404 not found](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
 - [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](http://www.w3.org/TR/2011/REC-CSS2-20110607/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
 - [CSS Font Loading Module Level 3](http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/)
 - [CSS Generated Content for Paged Media Module](http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/)
 - [CSS Line Grid Module Level 1](http://www.w3.org/TR/2014/WD-css-line-grid-1-20140916/)
@@ -55,7 +62,7 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/)
 - [Non-element Selectors Module Level 1](http://www.w3.org/TR/2014/WD-selectors-nonelement-1-20140603/)
 
-=> 14 specifications found
+=> 15 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -74,6 +81,7 @@ Reffy was expecting to find IDL content in the specifications  listed here but c
 
 - [404 not found](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
 - [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](http://www.w3.org/TR/2011/REC-CSS2-20110607/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
 - [CSS Conditional Rules Module Level 3](http://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](http://www.w3.org/TR/2015/CR-css-variables-1-20151203/)
 - [CSS Easing Functions Level 1](https://www.w3.org/TR/2018/WD-css-easing-1-20181009/)
@@ -85,7 +93,6 @@ Reffy was expecting to find IDL content in the specifications  listed here but c
 - [CSS Style Attributes](http://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
 - [CSS Syntax Module Level 3](http://www.w3.org/TR/2014/CR-css-syntax-3-20140220/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
-- [CSS TV Profile 1.0](https://drafts.csswg.org/css-tv/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
 - [Media Queries](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
