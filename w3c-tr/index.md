@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 22, 2018
+% October 23, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Mon Oct 22 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Tue Oct 23 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -698,7 +698,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 22, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 23, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -859,6 +859,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
+- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 
 Informative references to this spec from:
@@ -4181,6 +4182,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180904/)
 
@@ -4328,6 +4330,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
+- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 
@@ -5566,7 +5569,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 22, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 23, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6521,7 +6524,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (18 October 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (22 October 2018)
 - Repository: [GitHub wicg/picture-in-picture](https://github.com/wicg/picture-in-picture)
 - Shortname: no shortname
 
@@ -6600,7 +6603,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 22, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 23, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6811,7 +6814,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/reporting/) (17 October 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/reporting/) (22 October 2018)
 - Repository: [GitHub w3c/reporting](https://github.com/w3c/reporting)
 - Shortname: no shortname
 
@@ -6905,16 +6908,18 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Scroll-linked Animations {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Scroll-linked Animations {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/scroll-animations/) (21 September 2017)
+- Crawled version: [Initial URL](https://wicg.github.io/scroll-animations/) (23 October 2018)
 - Repository: [GitHub wicg/scroll-animations](https://github.com/wicg/scroll-animations)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/), related reference "WEB-ANIMATIONS-1" uses URL [`https://www.w3.org/TR/web-animations-1/`](https://www.w3.org/TR/web-animations-1/)
 
@@ -7090,6 +7095,7 @@ Normative references to this spec from:
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20180920/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
+- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 
 No informative reference to this spec from other specs.
@@ -8091,7 +8097,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 22, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 23, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8148,7 +8154,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 22, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 23, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8451,7 +8457,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Oct 22 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Oct 23 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8476,7 +8482,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Oct 22 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Oct 23 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
