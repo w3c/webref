@@ -1,13 +1,14 @@
-% Diff between report from "October 23, 2018" and reference report from "October 22, 2018"
+% Diff between report from "October 24, 2018" and reference report from "October 23, 2018"
 % Reffy
-% October 23, 2018
+% October 24, 2018
 
-## Scroll-linked Animations
+## Selection API
 
-- URL: [https://wicg.github.io/scroll-animations/](https://wicg.github.io/scroll-animations/)
-- Crawled version: [Initial URL](https://wicg.github.io/scroll-animations/)
-- Repository: [GitHub wicg/scroll-animations](https://github.com/wicg/scroll-animations)
-- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/selection-api/)
+- Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
+- Repository: [GitHub w3c/selection-api](https://github.com/w3c/selection-api)
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
