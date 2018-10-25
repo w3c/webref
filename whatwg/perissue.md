@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% October 24, 2018
+% October 25, 2018
 
 228 specifications were crawled in this report.
 
@@ -631,11 +631,11 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/) links to:
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
     * [`https://www.w3.org/TR/2004/REC-owl-features-20040210/`](https://www.w3.org/TR/2004/REC-owl-features-20040210/) but related reference "OWL-FEATURES" uses URL [`https://www.w3.org/TR/owl-features/`](https://www.w3.org/TR/owl-features/)
-    * [`https://www.w3.org/TR/2002/REC-UAAG10-20021217/`](https://www.w3.org/TR/2002/REC-UAAG10-20021217/) but related reference "UAAG10" uses URL [`https://www.w3.org/TR/UAAG10/`](https://www.w3.org/TR/UAAG10/)
     * [`https://www.w3.org/TR/2014/REC-rdf-schema-20140225/`](https://www.w3.org/TR/2014/REC-rdf-schema-20140225/) but related reference "RDF-SCHEMA" uses URL [`https://www.w3.org/TR/rdf-schema/`](https://www.w3.org/TR/rdf-schema/)
     * [`https://www.w3.org/TR/2007/REC-xforms-20071029/`](https://www.w3.org/TR/2007/REC-xforms-20071029/) but related reference "XFORMS10" uses URL [`https://www.w3.org/TR/xforms/`](https://www.w3.org/TR/xforms/)
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
     * [`https://www.w3.org/TR/2006/REC-xforms-20060314/`](https://www.w3.org/TR/2006/REC-xforms-20060314/) but related reference "XFORMS10" uses URL [`https://www.w3.org/TR/xforms/`](https://www.w3.org/TR/xforms/)
+    * [`https://www.w3.org/TR/2002/REC-UAAG10-20021217/`](https://www.w3.org/TR/2002/REC-UAAG10-20021217/) but related reference "UAAG10" uses URL [`https://www.w3.org/TR/UAAG10/`](https://www.w3.org/TR/UAAG10/)
     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "XML-NAMES" uses URL [`https://www.w3.org/TR/xml-names/`](https://www.w3.org/TR/xml-names/)
     * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Background Fetch](https://wicg.github.io/background-fetch/) links to:
