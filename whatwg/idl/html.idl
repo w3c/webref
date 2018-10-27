@@ -364,7 +364,6 @@ interface HTMLIFrameElement : HTMLElement {
   [CEReactions] attribute DOMString allow;
   [CEReactions] attribute boolean allowFullscreen;
   [CEReactions] attribute boolean allowPaymentRequest;
-  [CEReactions] attribute boolean allowUserMedia;
   [CEReactions] attribute DOMString width;
   [CEReactions] attribute DOMString height;
   [CEReactions] attribute DOMString referrerPolicy;
@@ -1513,9 +1512,13 @@ interface Window : EventTarget {
   void print();
 
   void postMessage(any message, USVString targetOrigin, optional sequence<object> transfer = []);
+  void postMessage(any message, optional WindowPostMessageOptions options);
 };
 Window includes GlobalEventHandlers;
-Window includes WindowEventHandlers;
+
+dictionary WindowPostMessageOptions : PostMessageOptions {
+  USVString targetOrigin = "/";
+};
 
 [Exposed=Window]
 interface BarProp {
@@ -1993,12 +1996,17 @@ interface MessageChannel {
 [Exposed=(Window,Worker,AudioWorklet), Transferable]
 interface MessagePort : EventTarget {
   void postMessage(any message, optional sequence<object> transfer = []);
+  void postMessage(any message, PostMessageOptions options);
   void start();
   void close();
 
   // event handlers
   attribute EventHandler onmessage;
   attribute EventHandler onmessageerror;
+};
+
+dictionary PostMessageOptions {
+  sequence<object> transfer = [];
 };
 
 [Constructor(DOMString name), Exposed=(Window,Worker)]
@@ -2030,6 +2038,7 @@ interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
   [Replaceable] readonly attribute DOMString name;
 
   void postMessage(any message, optional sequence<object> transfer = []);
+  void postMessage(any message, PostMessageOptions options);
 
   void close();
 
@@ -2055,6 +2064,7 @@ interface Worker : EventTarget {
   void terminate();
 
   void postMessage(any message, optional sequence<object> transfer = []);
+  void postMessage(any message, PostMessageOptions options);
   attribute EventHandler onmessage;
   attribute EventHandler onmessageerror;
 };
