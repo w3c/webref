@@ -23,6 +23,7 @@ interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
   [Replaceable] readonly attribute DOMString name;
 
   void postMessage(any message, optional sequence<object> transfer = []);
+  void postMessage(any message, PostMessageOptions options);
 
   void close();
 
@@ -48,6 +49,7 @@ interface Worker : EventTarget {
   void terminate();
 
   void postMessage(any message, optional sequence<object> transfer = []);
+  void postMessage(any message, PostMessageOptions options);
   attribute EventHandler onmessage;
   attribute EventHandler onmessageerror;
 };
