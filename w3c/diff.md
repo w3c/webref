@@ -1,36 +1,12 @@
-% Diff between report from "October 27, 2018" and reference report from "October 26, 2018"
+% Diff between report from "October 28, 2018" and reference report from "October 27, 2018"
 % Reffy
-% October 27, 2018
+% October 28, 2018
 
-## CSS Box Model Module Level 3
+## Cookie Store API
 
-- URL: [https://drafts.csswg.org/css-box-3/](https://drafts.csswg.org/css-box-3/)
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-box-3/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *DEL* https://www.w3.org/TR/svg2/, https://www.w3.org/TR/css3-background/
-
-
-## CSS Fragmentation Module Level 3
-
-- URL: [https://www.w3.org/TR/css-break-3/](https://www.w3.org/TR/css-break-3/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-break/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-page/
-
-
-## CSS Values and Units Module Level 3
-
-- URL: [https://www.w3.org/TR/css-values-3/](https://www.w3.org/TR/css-values-3/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-3/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-page/
-
-
-## Web Workers
-
-- URL: [https://www.w3.org/TR/workers/](https://www.w3.org/TR/workers/)
-- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
-- Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
-- Unknown WebIDL names used: *INS* PostMessageOptions
+- URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
+- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/)
+- Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
+- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/
 
 
