@@ -237,6 +237,14 @@ partial interface Document {
   readonly attribute SVGSVGElement? rootElement;
 };
 
+// must only be implemented in certain implementations
+partial interface Document {
+  readonly attribute DOMString title;
+  readonly attribute DOMString referrer;
+  readonly attribute DOMString domain;
+  readonly attribute Element? activeElement;
+};
+
 [Exposed=Window]
 interface SVGSVGElement : SVGGraphicsElement {
 
@@ -676,7 +684,7 @@ interface SVGAElement : SVGGraphicsElement {
   attribute DOMString download;
   attribute USVString ping;
   attribute DOMString rel;
-  [SameObject, PutsForward=value] readonly attribute DOMTokenList relList;
+  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
   attribute DOMString hreflang;
   attribute DOMString type;
 
