@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-10-28T06:05:08.849Z",
+  "date": "2018-10-29T06:05:07.183Z",
   "stats": {
     "crawled": 239,
-    "errors": 1,
+    "errors": 2,
     "studied": 239
   },
   "results": [
@@ -158,7 +158,7 @@
     {
       "title": "404 not found",
       "shortname": "SVG2",
-      "date": "Sun Oct 28 2018",
+      "date": "Mon Oct 29 2018",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
@@ -2055,7 +2055,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "October 28, 2018",
+      "date": "October 29, 2018",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -2140,6 +2140,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -3183,7 +3184,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -12254,7 +12255,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://wicg.github.io/ResizeObserver/",
@@ -12619,7 +12620,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -13531,6 +13532,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "Navigator",
           "Window"
         ],
@@ -13567,6 +13569,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "EventHandler",
           "Window"
         ],
@@ -13736,6 +13739,7 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "AbortSignal",
+          "DOMHighResTimeStamp",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -13903,43 +13907,26 @@
     {
       "title": "High Resolution Time Level 3",
       "shortname": "hr-time-3",
-      "date": "03 August 2017",
       "url": "https://www.w3.org/TR/hr-time-3/",
       "latest": "https://www.w3.org/TR/hr-time-3/",
       "datedUrl": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
       "datedStatus": "Retired",
       "edDraft": "https://w3c.github.io/hr-time/",
-      "crawled": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
+      "crawled": "https://www.w3.org/TR/hr-time-3/",
       "repository": "https://github.com/w3c/hr-time",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": true,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "EventTarget",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/dom41/",
-                "title": "W3C DOM 4.1",
-                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
-                "date": "1 February 2018"
-              }
-            ]
-          }
-        ],
-        "missingLinkRef": [
-          "https://w3c.github.io/workers/"
-        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -14035,12 +14022,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/hr-time-3/",
-              "title": "High Resolution Time Level 3",
-              "crawled": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
-              "date": "03 August 2017"
-            },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
@@ -14384,12 +14365,6 @@
               "title": "Geometry Interfaces Module Level 1",
               "crawled": "http://www.w3.org/TR/2014/CR-geometry-1-20141125/",
               "date": "25 November 2014"
-            },
-            {
-              "url": "https://www.w3.org/TR/hr-time-3/",
-              "title": "High Resolution Time Level 3",
-              "crawled": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
-              "date": "03 August 2017"
             },
             {
               "url": "https://www.w3.org/TR/2dcontext/",
@@ -14737,7 +14712,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -14749,7 +14724,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14791,13 +14766,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -15555,13 +15530,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -15591,13 +15566,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16277,13 +16252,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -16319,13 +16294,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16470,6 +16445,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "RTCRTPStreamStats"
         ],
         "redefinedIdlNames": [
@@ -16630,7 +16606,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "October 28, 2018",
+      "date": "October 29, 2018",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -17659,6 +17635,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "EventHandler",
           "Window"
         ],
@@ -17672,17 +17649,6 @@
                 "title": "Media Capture and Streams",
                 "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
                 "date": "3 October 2017"
-              }
-            ]
-          },
-          {
-            "name": "DOMHighResTimeStamp",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/hr-time-3/",
-                "title": "High Resolution Time Level 3",
-                "crawled": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
-                "date": "03 August 2017"
               }
             ]
           }
@@ -18029,6 +17995,8 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "Performance",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -18564,6 +18532,8 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "Performance",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -18802,7 +18772,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             }
           ]
         },
@@ -18906,7 +18876,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -18920,7 +18890,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             }
           ]
         },
@@ -18967,7 +18937,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             }
           ],
           "informative": [
@@ -18985,7 +18955,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "October 28, 2018",
+      "date": "October 29, 2018",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -19533,7 +19503,9 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "EventHandler",
+          "Performance",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -20113,6 +20085,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -20131,17 +20104,6 @@
                 "title": "Web Workers",
                 "crawled": "http://www.w3.org/TR/2015/WD-workers-20150924/",
                 "date": "24 September 2015"
-              }
-            ]
-          },
-          {
-            "name": "DOMHighResTimeStamp",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/hr-time-3/",
-                "title": "High Resolution Time Level 3",
-                "crawled": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
-                "date": "03 August 2017"
               }
             ]
           }
@@ -20794,7 +20756,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             }
           ],
           "informative": [
@@ -20861,7 +20823,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -21260,13 +21222,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -21378,6 +21340,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "Performance",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -21469,6 +21432,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "HTMLSlotElement",
           "Window"
         ],
@@ -21827,7 +21791,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -22043,7 +22007,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -22165,6 +22129,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "EventHandler",
           "Window"
         ],
@@ -22322,6 +22287,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "EventHandler",
           "HTMLMediaElement",
           "Window"
@@ -22695,7 +22661,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "October 28, 2018",
+      "date": "October 29, 2018",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -22825,7 +22791,7 @@
     },
     {
       "title": "Web Share API - Level 1",
-      "date": "October 28, 2018",
+      "date": "October 29, 2018",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "repository": "https://github.com/wicg/web-share",
@@ -23241,12 +23207,6 @@
               "date": "17 October 2018"
             },
             {
-              "url": "https://www.w3.org/TR/hr-time-3/",
-              "title": "High Resolution Time Level 3",
-              "crawled": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
-              "date": "03 August 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/webmessaging/",
               "title": "HTML5 Web Messaging",
               "crawled": "http://www.w3.org/TR/2015/REC-webmessaging-20150519/",
@@ -23490,13 +23450,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -23526,13 +23486,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -23842,7 +23802,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sun Oct 28 2018",
+      "date": "Mon Oct 29 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23879,7 +23839,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sun Oct 28 2018",
+      "date": "Mon Oct 29 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23910,7 +23870,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             }
           ],
           "informative": [
@@ -24245,12 +24205,6 @@
               "date": "20 March 2018"
             },
             {
-              "url": "https://www.w3.org/TR/hr-time-3/",
-              "title": "High Resolution Time Level 3",
-              "crawled": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
-              "date": "03 August 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/2dcontext/",
               "title": "HTML Canvas 2D Context",
               "crawled": "http://www.w3.org/TR/2015/REC-2dcontext-20151119/",
@@ -24272,7 +24226,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -24422,7 +24376,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -24596,13 +24550,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "October 28, 2018"
+              "date": "October 29, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -24644,13 +24598,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Oct 28 2018"
+              "date": "Mon Oct 29 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -24783,6 +24737,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "EventHandler",
           "RTCError",
           "Window"
@@ -25031,6 +24986,7 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
+          "DOMHighResTimeStamp",
           "DOMPointReadOnly",
           "EventHandler",
           "HTMLCanvasElement",
@@ -25040,24 +24996,13 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
-            "name": "DOMHighResTimeStamp",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/hr-time-3/",
-                "title": "High Resolution Time Level 3",
-                "crawled": "https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/",
-                "date": "03 August 2017"
-              }
-            ]
-          },
-          {
             "name": "WebGLRenderingContext",
             "refs": [
               {
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun Oct 28 2018"
+                "date": "Mon Oct 29 2018"
               }
             ]
           },
@@ -25068,7 +25013,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Sun Oct 28 2018"
+                "date": "Mon Oct 29 2018"
               }
             ]
           },
@@ -25079,7 +25024,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun Oct 28 2018"
+                "date": "Mon Oct 29 2018"
               }
             ]
           },
@@ -25090,7 +25035,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun Oct 28 2018"
+                "date": "Mon Oct 29 2018"
               }
             ]
           },
@@ -25101,7 +25046,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun Oct 28 2018"
+                "date": "Mon Oct 29 2018"
               }
             ]
           }
