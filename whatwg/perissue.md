@@ -1,22 +1,8 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% October 29, 2018
+% October 30, 2018
 
 228 specifications were crawled in this report.
-
-
-## Specifications that could not be rendered
-
-Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
-
-- [Beacon](https://www.w3.org/TR/beacon/): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-=> 1 specification found
 
 
 ## Specifications that do not link to an Editor's Draft
