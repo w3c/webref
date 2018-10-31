@@ -1,13 +1,13 @@
-% Diff between report from "October 30, 2018" and reference report from "October 29, 2018"
+% Diff between report from "October 31, 2018" and reference report from "October 30, 2018"
 % Reffy
-% October 30, 2018
+% October 31, 2018
 
-## Beacon
+## Cookie Store API
 
-- URL: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/)
-- Repository: [GitHub w3c/beacon](https://github.com/w3c/beacon)
-- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
+- Crawled version: [Latest published version](undefined)
+- Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)

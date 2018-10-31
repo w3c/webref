@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% October 30, 2018
+% October 31, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Tue Oct 30 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Wed Oct 31 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -619,13 +619,11 @@ No informative reference to this spec from other specs.
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
-     * `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+     * `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -698,7 +696,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 30, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (October 31, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -808,7 +806,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
 
-## CSS Animation Worklet API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Animation Worklet API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -818,6 +816,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `WorkletGlobalScope`
+- Missing references for WebIDL names: 
+     * `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - Missing references for links: 
      * [`https://w3c.github.io/html/infrastructure.html`](https://w3c.github.io/html/infrastructure.html)
      * [`https://w3c.github.io/web-animations/level-2/`](https://w3c.github.io/web-animations/level-2/)
@@ -2968,7 +2969,7 @@ Informative references to this spec from:
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 
 
-## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2980,8 +2981,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `WorkletGlobalScope`
 - WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+    * `Worklet` also defined in [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
      * [`https://www.w3.org/TR/css4-images/`](https://www.w3.org/TR/css4-images/)
@@ -2997,12 +2999,11 @@ No normative reference to this spec from other specs.
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Console Standard](https://console.spec.whatwg.org/)
+- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180904/)
 
-Informative references to this spec from:
-
-- [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+No informative reference to this spec from other specs.
 
 
 ## CSS Parser API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -5008,7 +5009,7 @@ Normative references to this spec from:
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20181017/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181017/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -5128,6 +5129,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181017/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
@@ -5178,7 +5180,6 @@ Normative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -5290,6 +5291,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181017/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
@@ -5327,7 +5329,6 @@ Normative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -5442,6 +5443,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181017/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
@@ -5482,7 +5484,6 @@ Normative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -5571,7 +5572,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 30, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (October 31, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6207,7 +6208,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 
 
 ## Network Information API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
@@ -6438,26 +6439,20 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/) (08 December 2016)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/) (30 October 2018)
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 - Repository: [GitHub w3c/performance-timeline](https://github.com/w3c/performance-timeline)
 - Shortname: performance-timeline-2
 
 ### Potential issue(s) {.anomalies}
 
-- Obsolete WebIDL constructs found
 - Unknown WebIDL names used: `Window`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/) or [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
-- Missing references for links: 
-     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
-     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6466,12 +6461,12 @@ Normative references to this spec from:
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20181017/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181017/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 
 Informative references to this spec from:
 
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 
 
@@ -6527,7 +6522,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (28 October 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (30 October 2018)
 - Repository: [GitHub wicg/picture-in-picture](https://github.com/wicg/picture-in-picture)
 - Shortname: no shortname
 
@@ -6606,7 +6601,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 30, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (October 31, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6886,7 +6881,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 
 
 ## Screen Capture {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -7203,7 +7198,6 @@ Although they do not, the following specs should also normatively reference this
 - [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 
@@ -7661,7 +7655,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 
 
@@ -7763,6 +7757,7 @@ Normative references to this spec from:
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
@@ -7933,9 +7928,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `Window`, `WorkletGlobalScope`
 - WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+    * `Worklet` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - Missing references for links: 
      * [`https://w3c.github.io/mediacapture-fromelement/`](https://w3c.github.io/mediacapture-fromelement/)
 - Inconsistent references for links: 
@@ -7951,6 +7946,7 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Console Standard](https://console.spec.whatwg.org/)
+- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180904/)
 
 Informative references to this spec from:
@@ -8100,7 +8096,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 30, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (October 31, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8157,7 +8153,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 30, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (October 31, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8299,6 +8295,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181017/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
@@ -8338,7 +8335,6 @@ Normative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -8348,7 +8344,6 @@ Although they do not, the following specs should also normatively reference this
 - [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
 - [File API](https://www.w3.org/TR/2017/WD-FileAPI-20171026/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 
@@ -8364,7 +8359,6 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20180208/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -8385,7 +8379,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Window`
 - Missing references for WebIDL names: 
-     * `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+     * `Worklet` defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/)
      * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/)
@@ -8460,7 +8454,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Oct 30 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Oct 31 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8485,7 +8479,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Oct 30 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Oct 31 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8599,7 +8593,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181017/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2016/CR-performance-timeline-2-20161208/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
@@ -8647,7 +8641,6 @@ Normative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -8812,11 +8805,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Worklets Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true}
+## Worklets Level 1 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-worklets-1-20160607/) (07 June 2016)
+- Crawled version: [Latest published version](http://www.w3.org/TR/worklets-1/)
 - Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
 - Latest published version: [http://www.w3.org/TR/worklets-1/](http://www.w3.org/TR/worklets-1/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
@@ -8824,9 +8817,15 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Console`, `Window`
-- WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
+The following network or parsing error occurred:
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8838,11 +8837,6 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Console Standard](https://console.spec.whatwg.org/)
-- [WebAssembly JavaScript Interface](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180904/)
-
 No informative reference to this spec from other specs.
 
 
@@ -8850,7 +8844,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (25 October 2018)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (30 October 2018)
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 

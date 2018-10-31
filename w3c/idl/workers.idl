@@ -22,8 +22,8 @@ interface WorkerGlobalScope : EventTarget {
 interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
   [Replaceable] readonly attribute DOMString name;
 
-  void postMessage(any message, optional sequence<object> transfer = []);
-  void postMessage(any message, PostMessageOptions options);
+  void postMessage(any message, sequence<object> transfer);
+  void postMessage(any message, optional PostMessageOptions options);
 
   void close();
 
@@ -48,8 +48,8 @@ interface mixin AbstractWorker {
 interface Worker : EventTarget {
   void terminate();
 
-  void postMessage(any message, optional sequence<object> transfer = []);
-  void postMessage(any message, PostMessageOptions options);
+  void postMessage(any message, sequence<object> transfer);
+  void postMessage(any message, optional PostMessageOptions options);
   attribute EventHandler onmessage;
   attribute EventHandler onmessageerror;
 };
