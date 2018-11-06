@@ -11,20 +11,20 @@
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "relative to the width of the containing block (for the first value) or the height (for the second value)",
-      "computedValue": "as specified, with lengths made absolute",
+      "computedValue": "the keyword none, or a list of 2 or 3 <length-percentage>s, with lengths made absolute",
       "canonicalOrder": "per grammar",
-      "animatable": "as <length> or <percentage> list"
+      "animatable": "as <length> or <percentage> list, but see below for none"
     },
     "rotate": {
       "name": "rotate",
-      "value": "none | [ x | y | z | <number>{3} ]? && <angle>",
+      "value": "none | <angle> | [ x | y | z | <number>{3} ] && <angle>",
       "initial": "none",
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "the keyword none, or an <angle>, optionally with an axis consisting of a list of three <number>s",
       "canonicalOrder": "per grammar",
-      "animatable": "as SLERP"
+      "animatable": "as SLERP, but see below for none"
     },
     "scale": {
       "name": "scale",
@@ -33,9 +33,9 @@
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "the keyword none, or a list of 2 or 3 <number>s",
       "canonicalOrder": "per grammar",
-      "animatable": "as <number> list"
+      "animatable": "as <number> list, but see below for none"
     },
     "transform-style": {
       "name": "transform-style",
