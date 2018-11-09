@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 08, 2018
+% November 09, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Thu Nov 08 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Fri Nov 09 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -82,20 +82,19 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Filter Effects Module Level 1](http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
-- [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2017/WD-motion-1-20170711/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181105/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
 - [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
 - [SVG Strokes](http://www.w3.org/TR/2015/WD-svg-strokes-20150409/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 
 Informative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20180719/)
-- [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
+- [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
@@ -207,11 +206,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Ambient Light Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Ambient Light Sensor {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-ambient-light-20180320/) (20 March 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/ambient-light/)
 - Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
 - Latest published version: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
@@ -220,7 +219,15 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`
+The following network or parsing error occurred:
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -435,7 +442,6 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Filter Effects Module Level 1](http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
-- [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Intersection Observer](https://www.w3.org/TR/2018/WD-intersection-observer-20181106/)
 - [Media Queries](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
@@ -451,7 +457,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 
 
 ## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true}
@@ -499,10 +505,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/) (29 September 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/) (8 November 2018)
 - Editor's Draft: [https://w3c.github.io/clipboard-apis/](https://w3c.github.io/clipboard-apis/)
 - Latest published version: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
 - Repository: [GitHub w3c/clipboard-apis](https://github.com/w3c/clipboard-apis)
 - Shortname: clipboard-apis
 
@@ -512,6 +518,7 @@ Informative references to this spec from:
 - Missing references for links: 
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
 - Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -698,7 +705,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (November 08, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (November 09, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1348,8 +1355,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
-- [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
-- [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
+- [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 
@@ -2358,7 +2364,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-sizing-4/) (23 October 2018)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-sizing-4/) (7 November 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -2773,7 +2779,6 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
-- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Easing Functions Level 1](https://www.w3.org/TR/2018/WD-css-easing-1-20181009/)
 
@@ -3427,7 +3432,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-shadow-parts-1/) (7 November 2018)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-shadow-parts-1/) (8 November 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3605,7 +3610,6 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181105/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20180202/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181107/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 
@@ -4192,7 +4196,6 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
-- [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
@@ -4365,8 +4368,8 @@ No informative reference to this spec from other specs.
 
 - Unknown WebIDL names used: `DOMPoint`, `DOMPointInit`, `DOMQuad`, `DOMQuadInit`, `DOMRect`, `DOMRectReadOnly`, `EventHandler`, `HTMLElement`, `HTMLImageElement`, `Window`
 - Missing references for WebIDL names: 
-     * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-     * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+     * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
+     * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
      * [`https://www.w3.org/TR/geometry-1/`](https://www.w3.org/TR/geometry-1/)
@@ -4394,7 +4397,6 @@ Normative references to this spec from:
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181107/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -4666,7 +4668,7 @@ Normative references to this spec from:
 
 - ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
-- [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
+- [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
@@ -4731,27 +4733,6 @@ Normative references to this spec from:
 - [CSS Color Module Level 4](http://www.w3.org/TR/2016/WD-css-color-4-20160705/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
-- [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
-
-No informative reference to this spec from other specs.
-
-
-## Filter Effects Module Level 2 {data-spec=true data-ok=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://drafts.fxtf.org/filter-effects-2/) (9 November 2017)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-This specification looks good!
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
 No informative reference to this spec from other specs.
 
@@ -4805,14 +4786,35 @@ Informative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181107/)
 
 
+## FX Task Force Editor Drafts {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://drafts.fxtf.org/filter-effects-2/) (Fri Nov 09 2018)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- No CSS definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
+
+No informative reference to this spec from other specs.
+
+
 ## Gamepad {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-gamepad-20181018/) (18 October 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-gamepad-20181109/) (09 November 2018)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-gamepad-20181018/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-gamepad-20181109/)
 - Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
 - Shortname: gamepad
 
@@ -4851,7 +4853,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
-- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
 - [Magnetometer](https://www.w3.org/TR/2018/CR-magnetometer-20180320/)
@@ -5001,7 +5002,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181018/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181109/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
@@ -5061,7 +5062,7 @@ Normative references to this spec from:
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
-- [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
+- [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
@@ -5101,7 +5102,7 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Filter Effects Module Level 1](http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181018/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181109/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
@@ -5112,7 +5113,7 @@ Normative references to this spec from:
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
-- [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
+- [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
@@ -5152,7 +5153,7 @@ Normative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
@@ -5187,7 +5188,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20180719/)
-- [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
+- [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181108/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
@@ -5229,8 +5230,8 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`
 - Missing references for WebIDL names: 
      * `Element` defined in [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-     * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
-     * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+     * `MouseEvent` defined in [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
+     * `MouseEventInit` defined in [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - Inconsistent references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
      * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
@@ -5242,7 +5243,7 @@ Normative references to this spec from:
 - ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
+- [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
@@ -5278,10 +5279,10 @@ Normative references to this spec from:
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181018/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181109/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
-- [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
+- [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
@@ -5311,7 +5312,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -5397,7 +5398,7 @@ Normative references to this spec from:
 - ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
+- [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
@@ -5432,10 +5433,10 @@ Normative references to this spec from:
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181018/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181109/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
-- [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
+- [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
@@ -5467,7 +5468,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -5577,7 +5578,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (November 08, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (November 09, 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5592,31 +5593,31 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Input Events Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Input Events Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-input-events-1-20170905/) (05 September 2017)
-- Editor's Draft: [https://rawgit.com/w3c/input-events/v1/index.html](https://rawgit.com/w3c/input-events/v1/index.html)
-- Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
-- Repository: [GitHub w3c/input-events](https://github.com/w3c/input-events)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-input-events-2-20181108/) (08 November 2018)
+- Editor's Draft: [https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
+- Latest published version: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - Shortname: input-events-2
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
 - Unknown WebIDL names used: `DataTransfer`
+- Missing references for WebIDL names: 
+     * `StaticRange` defined in [Static Range](https://w3c.github.io/staticrange/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
 
-Informative references to this spec from:
+- [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 
-- [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
+No informative reference to this spec from other specs.
 
 
 ## Intersection Observer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -5967,9 +5968,7 @@ This specification looks good!
 
 No normative reference to this spec from other specs.
 
-Informative references to this spec from:
-
-- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
+No informative reference to this spec from other specs.
 
 
 ## Media Session Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -6205,7 +6204,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181018/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181109/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20181105/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181105/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
@@ -6503,8 +6502,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
-- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
@@ -6607,7 +6606,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (November 08, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (November 09, 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7230,9 +7229,11 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
+No normative reference to this spec from other specs.
 
-- [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 
 No informative reference to this spec from other specs.
 
@@ -7434,7 +7435,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `WindowProxy`
 - Missing references for WebIDL names: 
-     * `UIEvent` defined in [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+     * `UIEvent` defined in [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7447,39 +7448,38 @@ Informative references to this spec from:
 - [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 
 
-## UI Events {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## UI Events {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/WD-uievents-20160804/) (04 August 2016)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-uievents-20181108/) (8 November 2018)
 - Editor's Draft: [https://w3c.github.io/uievents/](https://w3c.github.io/uievents/)
 - Latest published version: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - Repository: [GitHub w3c/uievents](https://github.com/w3c/uievents)
 - Shortname: uievents
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
 - Unknown WebIDL names used: `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
      * [`https://www.w3.org/TR/2004/REC-xml-20040204/`](https://www.w3.org/TR/2004/REC-xml-20040204/)
 - Inconsistent references for links: 
-     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "DOM-Level-3-Core" uses URL [`http://www.w3.org/TR/DOM-Level-3-Core/`](http://www.w3.org/TR/DOM-Level-3-Core/)
-     * [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/), related reference "CSS-SYNTAX-3" uses URL [`http://dev.w3.org/csswg/css-syntax/`](http://dev.w3.org/csswg/css-syntax/)
+     * [`https://www.w3.org/TR/2014/WD-uievents-20140612/`](https://www.w3.org/TR/2014/WD-uievents-20140612/), related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
-- [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
+- [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
+- [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
 - [UI Events KeyboardEvent key Values](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -7515,7 +7515,7 @@ Normative references to this spec from:
 
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [UI Events KeyboardEvent key Values](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
@@ -7543,7 +7543,7 @@ Normative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20180719/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
@@ -7721,7 +7721,7 @@ Normative references to this spec from:
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
-- [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
+- [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
@@ -7752,11 +7752,12 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181018/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181109/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
+- [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Intersection Observer](https://www.w3.org/TR/2018/WD-intersection-observer-20181106/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
@@ -7789,7 +7790,7 @@ Normative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -8104,7 +8105,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (November 08, 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (November 09, 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8161,7 +8162,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (November 08, 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (November 09, 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8252,7 +8253,7 @@ Normative references to this spec from:
 - ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
+- [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
@@ -8287,12 +8288,12 @@ Normative references to this spec from:
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181018/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181109/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
-- [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
+- [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
@@ -8323,7 +8324,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
+- [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -8463,7 +8464,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Nov 08 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Nov 09 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8488,7 +8489,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Nov 08 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Nov 09 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8538,13 +8539,12 @@ Normative references to this spec from:
 - ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
-- [Ambient Light Sensor](https://www.w3.org/TR/2018/CR-ambient-light-20180320/)
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
-- [Clipboard API and events](https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/)
+- [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
@@ -8575,7 +8575,7 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181018/)
+- [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181109/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/)
@@ -8584,6 +8584,7 @@ Normative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
+- [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Intersection Observer](https://www.w3.org/TR/2018/WD-intersection-observer-20181106/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
@@ -8625,6 +8626,7 @@ Normative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
+- [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
@@ -8662,11 +8664,9 @@ Informative references to this spec from:
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
-- [Input Events Level 1](https://www.w3.org/TR/2017/WD-input-events-1-20170905/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [UI Events](https://www.w3.org/TR/2016/WD-uievents-20160804/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
 
@@ -8736,7 +8736,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (6 November 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (8 November 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
