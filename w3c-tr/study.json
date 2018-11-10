@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-11-09T07:05:15.170Z",
+  "date": "2018-11-10T07:05:29.091Z",
   "stats": {
     "crawled": 239,
-    "errors": 2,
+    "errors": 1,
     "studied": 239
   },
   "results": [
@@ -158,7 +158,7 @@
     {
       "title": "404 not found",
       "shortname": "SVG2",
-      "date": "Fri Nov 09 2018",
+      "date": "Sat Nov 10 2018",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
@@ -665,23 +665,26 @@
     {
       "title": "Ambient Light Sensor",
       "shortname": "ambient-light",
+      "date": "20 March 2018",
       "url": "https://www.w3.org/TR/ambient-light/",
       "latest": "https://www.w3.org/TR/ambient-light/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/ambient-light/",
-      "crawled": "https://www.w3.org/TR/ambient-light/",
+      "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
       "repository": "https://github.com/w3c/ambient-light",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1950,7 +1953,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -2047,7 +2050,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "November 09, 2018",
+      "date": "November 10, 2018",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -3175,7 +3178,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -3858,9 +3861,9 @@
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 2",
-              "crawled": "https://www.w3.org/TR/2018/WD-input-events-2-20181108/",
-              "date": "08 November 2018"
+              "title": "Input Events Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-input-events-1-20181109/",
+              "date": "09 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -7749,6 +7752,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
+              "date": "20 March 2018"
+            },
             {
               "url": "https://www.w3.org/TR/css-cascade-4/",
               "title": "CSS Cascading and Inheritance Level 4",
@@ -12276,7 +12285,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://wicg.github.io/ResizeObserver/",
@@ -12587,7 +12596,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -12635,7 +12644,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -12807,7 +12816,7 @@
     },
     {
       "title": "Fetch Standard",
-      "date": "7 November 2018",
+      "date": "9 November 2018",
       "url": "https://fetch.spec.whatwg.org/",
       "crawled": "https://fetch.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/fetch",
@@ -13040,7 +13049,7 @@
     },
     {
       "title": "File and Directory Entries API",
-      "date": "27 August 2018",
+      "date": "9 November 2018",
       "url": "https://wicg.github.io/entries-api/",
       "crawled": "https://wicg.github.io/entries-api/",
       "repository": "https://github.com/wicg/entries-api",
@@ -13129,13 +13138,13 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "27 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -13424,7 +13433,7 @@
     },
     {
       "title": "FX Task Force Editor Drafts",
-      "date": "Fri Nov 09 2018",
+      "date": "Sat Nov 10 2018",
       "url": "https://drafts.fxtf.org/filter-effects-2/",
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "report": {
@@ -13548,6 +13557,12 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://www.w3.org/TR/2018/CR-accelerometer-20180320/",
+              "date": "20 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
               "date": "20 March 2018"
             },
             {
@@ -13780,7 +13795,7 @@
               "url": "https://immersive-web.github.io/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/",
-              "date": "20 August 2018"
+              "date": "9 November 2018"
             }
           ],
           "informative": []
@@ -14269,13 +14284,13 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "27 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -14363,9 +14378,9 @@
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 2",
-              "crawled": "https://www.w3.org/TR/2018/WD-input-events-2-20181108/",
-              "date": "08 November 2018"
+              "title": "Input Events Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-input-events-1-20181109/",
+              "date": "09 November 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -14689,7 +14704,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -14701,7 +14716,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14743,13 +14758,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -14761,7 +14776,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -14773,7 +14788,7 @@
               "url": "https://immersive-web.github.io/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/",
-              "date": "20 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -15243,13 +15258,13 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "27 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -15283,9 +15298,9 @@
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 2",
-              "crawled": "https://www.w3.org/TR/2018/WD-input-events-2-20181108/",
-              "date": "08 November 2018"
+              "title": "Input Events Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-input-events-1-20181109/",
+              "date": "09 November 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -15519,13 +15534,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -15555,13 +15570,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -15573,7 +15588,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -15585,7 +15600,7 @@
               "url": "https://immersive-web.github.io/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/",
-              "date": "20 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -15965,13 +15980,13 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "27 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -16005,9 +16020,9 @@
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 2",
-              "crawled": "https://www.w3.org/TR/2018/WD-input-events-2-20181108/",
-              "date": "08 November 2018"
+              "title": "Input Events Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-input-events-1-20181109/",
+              "date": "09 November 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -16253,13 +16268,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -16295,13 +16310,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16313,7 +16328,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -16325,7 +16340,7 @@
               "url": "https://immersive-web.github.io/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/",
-              "date": "20 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -16600,7 +16615,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "November 09, 2018",
+      "date": "November 10, 2018",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -16627,15 +16642,15 @@
       }
     },
     {
-      "title": "Input Events Level 2",
+      "title": "Input Events Level 1",
       "shortname": "input-events-2",
-      "date": "08 November 2018",
+      "date": "09 November 2018",
       "url": "https://www.w3.org/TR/input-events-2/",
-      "latest": "https://www.w3.org/TR/input-events-2/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-input-events-2-20181108/",
+      "latest": "https://www.w3.org/TR/input-events-1/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-input-events-1-20181109/",
       "datedStatus": "Working Draft",
       "edDraft": "https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html",
-      "crawled": "https://www.w3.org/TR/2018/WD-input-events-2-20181108/",
+      "crawled": "https://www.w3.org/TR/2018/WD-input-events-1-20181109/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -16676,9 +16691,9 @@
           "normative": [
             {
               "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 2",
-              "crawled": "https://www.w3.org/TR/2018/WD-input-events-2-20181108/",
-              "date": "08 November 2018"
+              "title": "Input Events Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-input-events-1-20181109/",
+              "date": "09 November 2018"
             }
           ],
           "informative": []
@@ -17497,7 +17512,14 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
+              "date": "20 March 2018"
+            }
+          ]
         },
         "noEdDraft": null,
         "ok": true
@@ -17880,7 +17902,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -18225,7 +18247,7 @@
               "url": "https://immersive-web.github.io/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/",
-              "date": "20 August 2018"
+              "date": "9 November 2018"
             }
           ]
         },
@@ -18680,6 +18702,12 @@
               "date": "20 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
+              "date": "20 March 2018"
+            },
+            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/",
@@ -18767,7 +18795,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 November 2018"
+              "date": "9 November 2018"
             }
           ],
           "informative": [
@@ -18775,7 +18803,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             }
           ]
         },
@@ -18879,7 +18907,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -18893,7 +18921,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             }
           ]
         },
@@ -18940,7 +18968,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             }
           ],
           "informative": [
@@ -18958,7 +18986,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "November 09, 2018",
+      "date": "November 10, 2018",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -19329,7 +19357,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -19771,7 +19799,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 November 2018"
+              "date": "9 November 2018"
             }
           ]
         },
@@ -20277,7 +20305,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -20458,7 +20486,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -20516,7 +20544,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             }
           ],
           "informative": [
@@ -20772,7 +20800,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             }
           ],
           "informative": [
@@ -20832,13 +20860,13 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 2",
-              "crawled": "https://www.w3.org/TR/2018/WD-input-events-2-20181108/",
-              "date": "08 November 2018"
+              "title": "Input Events Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-input-events-1-20181109/",
+              "date": "09 November 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -21135,7 +21163,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -21237,13 +21265,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -21684,7 +21712,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -21736,9 +21764,9 @@
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 2",
-              "crawled": "https://www.w3.org/TR/2018/WD-input-events-2-20181108/",
-              "date": "08 November 2018"
+              "title": "Input Events Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-input-events-1-20181109/",
+              "date": "09 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -21816,7 +21844,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -22038,7 +22066,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -22050,7 +22078,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -22062,7 +22090,7 @@
               "url": "https://immersive-web.github.io/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/",
-              "date": "20 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -22697,7 +22725,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "November 09, 2018",
+      "date": "November 10, 2018",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -22827,7 +22855,7 @@
     },
     {
       "title": "Web Share API - Level 1",
-      "date": "November 09, 2018",
+      "date": "November 10, 2018",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "repository": "https://github.com/wicg/web-share",
@@ -23210,13 +23238,13 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "27 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -23262,9 +23290,9 @@
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 2",
-              "crawled": "https://www.w3.org/TR/2018/WD-input-events-2-20181108/",
-              "date": "08 November 2018"
+              "title": "Input Events Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-input-events-1-20181109/",
+              "date": "09 November 2018"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -23510,13 +23538,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -23546,13 +23574,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -23564,7 +23592,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -23576,7 +23604,7 @@
               "url": "https://immersive-web.github.io/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/",
-              "date": "20 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -23850,7 +23878,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Fri Nov 09 2018",
+      "date": "Sat Nov 10 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23887,7 +23915,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Fri Nov 09 2018",
+      "date": "Sat Nov 10 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23918,7 +23946,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             }
           ],
           "informative": [
@@ -24010,6 +24038,12 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://www.w3.org/TR/2018/CR-accelerometer-20180320/",
+              "date": "20 March 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://www.w3.org/TR/2018/CR-ambient-light-20180320/",
               "date": "20 March 2018"
             },
             {
@@ -24202,13 +24236,13 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "27 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -24280,13 +24314,13 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
-              "title": "Input Events Level 2",
-              "crawled": "https://www.w3.org/TR/2018/WD-input-events-2-20181108/",
-              "date": "08 November 2018"
+              "title": "Input Events Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-input-events-1-20181109/",
+              "date": "09 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -24436,7 +24470,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -24622,13 +24656,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "November 09, 2018"
+              "date": "November 10, 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -24670,13 +24704,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Fri Nov 09 2018"
+              "date": "Sat Nov 10 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -24688,7 +24722,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -24700,7 +24734,7 @@
               "url": "https://immersive-web.github.io/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/",
-              "date": "20 August 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -24928,7 +24962,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "8 November 2018",
+      "date": "9 November 2018",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
@@ -25026,7 +25060,7 @@
     },
     {
       "title": "WebXR Device API",
-      "date": "20 August 2018",
+      "date": "9 November 2018",
       "url": "https://immersive-web.github.io/webxr/",
       "crawled": "https://immersive-web.github.io/webxr/",
       "report": {
@@ -25065,7 +25099,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Fri Nov 09 2018"
+                "date": "Sat Nov 10 2018"
               }
             ]
           },
@@ -25076,7 +25110,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Fri Nov 09 2018"
+                "date": "Sat Nov 10 2018"
               }
             ]
           },
@@ -25087,7 +25121,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Fri Nov 09 2018"
+                "date": "Sat Nov 10 2018"
               }
             ]
           },
@@ -25098,7 +25132,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Fri Nov 09 2018"
+                "date": "Sat Nov 10 2018"
               }
             ]
           },
@@ -25109,7 +25143,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Fri Nov 09 2018"
+                "date": "Sat Nov 10 2018"
               }
             ]
           }
@@ -25293,7 +25327,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "7 November 2018"
+              "date": "9 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",

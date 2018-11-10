@@ -1502,7 +1502,7 @@ interface Window : EventTarget {
   // the user agent
   readonly attribute Navigator navigator;
 
-  readonly attribute ApplicationCache applicationCache;
+  [SecureContext] readonly attribute ApplicationCache applicationCache;
 
   // user prompts
   void alert();
@@ -1595,7 +1595,8 @@ interface BeforeUnloadEvent : Event {
   attribute DOMString returnValue;
 };
 
-[Exposed=Window]
+[SecureContext,
+ Exposed=Window]
 interface ApplicationCache : EventTarget {
 
   // update status
