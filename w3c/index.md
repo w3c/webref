@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 12, 2018
+% November 13, 2018
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -131,7 +131,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
 - Latest published version: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
@@ -184,7 +184,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/battery/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/battery/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
 - Latest published version: [http://www.w3.org/TR/battery-status/](http://www.w3.org/TR/battery-status/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
@@ -210,7 +210,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
 - Latest published version: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-beacon-20170413/)
@@ -270,7 +270,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
@@ -341,6 +340,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
@@ -413,17 +413,25 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Compatibility Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Compatibility Standard {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://compat.spec.whatwg.org/) (27 August 2018)
+- Crawled version: [Latest published version](undefined)
 - Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLBodyElement`, `Window`
+The following network or parsing error occurred:
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -588,7 +596,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (12, 2018 )
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (13, 2018 )
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -627,7 +635,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
 - Latest published version: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
@@ -743,7 +751,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -825,7 +832,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
@@ -875,6 +881,7 @@ Informative references to this spec from:
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
@@ -925,7 +932,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
@@ -1012,7 +1018,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
@@ -1218,7 +1223,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
@@ -1270,7 +1274,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
@@ -1334,7 +1337,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
@@ -1342,6 +1344,7 @@ Normative references to this spec from:
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 
@@ -1473,6 +1476,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
@@ -1505,7 +1509,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
@@ -1701,7 +1704,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -2133,7 +2135,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
@@ -2147,6 +2148,7 @@ Normative references to this spec from:
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -2271,7 +2273,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
@@ -2416,7 +2417,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-logical-1/) (10 November 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-logical-1/) (26 September 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-logical-1/](https://drafts.csswg.org/css-logical-1/)
 - Latest published version: [https://www.w3.org/TR/css-logical-1/](https://www.w3.org/TR/css-logical-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-logical-1-20180827/)
@@ -2472,7 +2473,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
@@ -2508,7 +2508,6 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 
 No informative reference to this spec from other specs.
@@ -2987,6 +2986,7 @@ Informative references to this spec from:
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 
 
 ## CSS Properties and Values API Level 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -3130,11 +3130,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Round Display Level 1 {data-spec=true data-error=true}
+## CSS Round Display Level 1 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-round-display-1/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-round-display/) (26 September 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-round-display/](https://drafts.csswg.org/css-round-display/)
 - Latest published version: [https://www.w3.org/TR/css-round-display-1/](https://www.w3.org/TR/css-round-display-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
@@ -3143,15 +3143,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3296,7 +3288,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-shadow-parts-1/) (8 November 2018)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-shadow-parts-1/) (12 November 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3339,6 +3331,7 @@ Normative references to this spec from:
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
@@ -3685,7 +3678,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
@@ -3720,7 +3712,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-transforms-2/) (7 November 2018)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-transforms-2/) (12 November 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3768,7 +3760,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -3885,7 +3876,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
@@ -3992,7 +3982,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
@@ -4050,6 +4039,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
@@ -4289,7 +4279,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/deviceorientation/spec-source-orientation.html) (Mon Nov 12 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/deviceorientation/spec-source-orientation.html) (Tue Nov 13 2018)
 - Editor's Draft: [https://w3c.github.io/deviceorientation/spec-source-orientation.html](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - Latest published version: [https://www.w3.org/TR/orientation-event/](https://www.w3.org/TR/orientation-event/)
 - Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/)
@@ -4451,7 +4441,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (9 November 2018)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (12 November 2018)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -4592,7 +4582,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -4676,7 +4665,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-gamepad-20181109/)
@@ -4763,7 +4752,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/) (17 October 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/) (12 November 2018)
 - Repository: [GitHub wicg/geolocation-sensor](https://github.com/wicg/geolocation-sensor)
 - Shortname: no shortname
 
@@ -4782,7 +4771,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.fxtf.org/geometry/) (9 November 2018)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/geometry/) (12 November 2018)
 - Editor's Draft: [https://drafts.fxtf.org/geometry/](https://drafts.fxtf.org/geometry/)
 - Latest published version: [http://www.w3.org/TR/geometry-1/](http://www.w3.org/TR/geometry-1/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2014/CR-geometry-1-20141125/)
@@ -4798,7 +4787,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
@@ -4850,7 +4838,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
 - Latest published version: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -4931,7 +4919,6 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
@@ -5128,7 +5115,6 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
@@ -5313,7 +5299,6 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
@@ -5460,7 +5445,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
@@ -5520,7 +5505,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (12, 2018 )
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (13, 2018 )
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5539,7 +5524,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html) (12, 2018 )
+- Crawled version: [Editor's Draft](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html) (13, 2018 )
 - Editor's Draft: [https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-1/](https://www.w3.org/TR/input-events-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-input-events-1-20181109/)
@@ -5719,7 +5704,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
@@ -5765,7 +5750,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/mediacapture-depth/](https://w3c.github.io/mediacapture-depth/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-depth/](https://www.w3.org/TR/mediacapture-depth/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -5790,7 +5775,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -5866,7 +5851,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
@@ -5884,7 +5868,9 @@ Normative references to this spec from:
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 
 
 ## Media Queries Level 5 {data-spec=true data-ok=true}
@@ -5907,6 +5893,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 
 
 ## Media Session Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -6028,7 +6015,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/mst-content-hint/](https://w3c.github.io/mst-content-hint/)
 - Latest published version: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
@@ -6133,6 +6120,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -6145,7 +6133,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-navigation-timing-2-20181105/)
@@ -6257,7 +6245,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
 - Latest published version: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
@@ -6316,7 +6304,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -6338,7 +6326,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181101/)
@@ -6364,7 +6352,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
@@ -6389,7 +6377,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181030/)
@@ -6506,7 +6494,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -6520,7 +6507,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
 - Latest published version: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
@@ -6547,7 +6534,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (12, 2018 )
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (13, 2018 )
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6568,7 +6555,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
 - Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -6591,7 +6578,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Latest published version: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -6666,7 +6653,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
 - Latest published version: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-push-api-20181026/)
@@ -6727,7 +6714,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
 - Latest published version: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -6803,7 +6790,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-resource-timing-2-20181105/)
@@ -6958,7 +6945,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
 - Latest published version: [http://www.w3.org/TR/screen-capture/](http://www.w3.org/TR/screen-capture/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -7054,7 +7041,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-selection-api-20181018/)
@@ -7209,7 +7196,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
@@ -7477,7 +7464,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
@@ -7493,7 +7480,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
@@ -7529,7 +7515,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/touch-events/](https://w3c.github.io/touch-events/)
 - Latest published version: [http://www.w3.org/TR/touch-events/](http://www.w3.org/TR/touch-events/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
@@ -7753,7 +7739,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
@@ -7779,7 +7765,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
 - Latest published version: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-vibration-20161018/)
@@ -7832,7 +7818,6 @@ Normative references to this spec from:
 - [Beacon](https://w3c.github.io/beacon/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -7951,7 +7936,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
 - Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -8222,7 +8207,6 @@ Normative references to this spec from:
 - [Beacon](https://w3c.github.io/beacon/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
@@ -8357,7 +8341,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/) (12, 2018 )
+- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/) (13, 2018 )
 - Editor's Draft: [http://webaudio.github.io/web-midi-api/](http://webaudio.github.io/web-midi-api/)
 - Latest published version: [http://www.w3.org/TR/webmidi/](http://www.w3.org/TR/webmidi/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
@@ -8381,7 +8365,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (12, 2018 )
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (13, 2018 )
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8437,7 +8421,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (12, 2018 )
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (13, 2018 )
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8542,7 +8526,6 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
@@ -8783,7 +8766,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Nov 12 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Nov 13 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8810,7 +8793,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Nov 12 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Nov 13 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8839,7 +8822,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (12, 2018 )
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (13, 2018 )
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
@@ -8899,7 +8882,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (11 November 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (12 November 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
