@@ -42,7 +42,7 @@ partial interface DocumentOrShadowRoot {
 };
 
 interface mixin LinkStyle {
-  readonly attribute StyleSheet? sheet;
+  readonly attribute CSSStyleSheet? sheet;
 };
 
 ProcessingInstruction includes LinkStyle;
