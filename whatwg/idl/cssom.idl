@@ -17,7 +17,7 @@ interface StyleSheet {
   readonly attribute CSSOMString type;
   readonly attribute USVString? href;
   readonly attribute (Element or ProcessingInstruction)? ownerNode;
-  readonly attribute StyleSheet? parentStyleSheet;
+  readonly attribute CSSStyleSheet? parentStyleSheet;
   readonly attribute DOMString? title;
   [SameObject, PutForwards=mediaText] readonly attribute MediaList media;
   attribute boolean disabled;
@@ -33,7 +33,7 @@ interface CSSStyleSheet : StyleSheet {
 
 [Exposed=Window]
 interface StyleSheetList {
-  getter StyleSheet? item(unsigned long index);
+  getter CSSStyleSheet? item(unsigned long index);
   readonly attribute unsigned long length;
 };
 

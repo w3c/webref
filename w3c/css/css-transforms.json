@@ -11,9 +11,9 @@
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "relative to the width of the containing block (for the first value) or the height (for the second value)",
-      "computedValue": "the keyword none, or a list of 2 or 3 <length-percentage>s, with lengths made absolute",
+      "computedValue": "the keyword none or a pair of computed <length-percentage> values and optionally an absolute length",
       "canonicalOrder": "per grammar",
-      "animatable": "as <length> or <percentage> list, but see below for none"
+      "animationType": "by computed value, adding a third 0 value if needed to match components, but see below for none"
     },
     "rotate": {
       "name": "rotate",
@@ -22,9 +22,9 @@
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "the keyword none, or an <angle>, optionally with an axis consisting of a list of three <number>s",
+      "computedValue": "the keyword none, or an <angle> with an optional axis consisting of a list of three <number>s",
       "canonicalOrder": "per grammar",
-      "animatable": "as SLERP, but see below for none"
+      "animationType": "as SLERP, but see below for none"
     },
     "scale": {
       "name": "scale",
@@ -35,7 +35,7 @@
       "percentages": "n/a",
       "computedValue": "the keyword none, or a list of 2 or 3 <number>s",
       "canonicalOrder": "per grammar",
-      "animatable": "as <number> list, but see below for none"
+      "animationType": "by computed value, but see below for none"
     },
     "transform-style": {
       "name": "transform-style",
@@ -44,9 +44,9 @@
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "Same as specified value.",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "perspective": {
       "name": "perspective",
@@ -55,9 +55,9 @@
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "Absolute length or \"none\".",
+      "computedValue": "the keyword none or an absolute length",
       "canonicalOrder": "per grammar",
-      "animatable": "as length"
+      "animationType": "by computed value"
     },
     "perspective-origin": {
       "name": "perspective-origin",
@@ -66,9 +66,9 @@
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "refer to the size of the reference box",
-      "computedValue": "For <length> the absolute value, otherwise a percentage.",
+      "computedValue": "see background-position",
       "canonicalOrder": "per grammar",
-      "animatable": "as simple list of length, percentage, or calc"
+      "animationType": "by computed value"
     },
     "backface-visibility": {
       "name": "backface-visibility",
@@ -77,9 +77,9 @@
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "Same as specified value.",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     }
   },
   "descriptors": {},

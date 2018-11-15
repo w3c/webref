@@ -21,14 +21,6 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>228 specifications were crawled in this report.</p>
-  <section id="specifications-that-could-not-be-rendered" class="level2">
-  <h2>Specifications that could not be rendered</h2>
-  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
-  <ul>
-  <li><a href="https://www.w3.org/TR/css-text-decor-4/">CSS Text Decoration Module Level 4</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
-  </ul>
-  <p>=&gt; 1 specification found</p>
-  </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
   <ul>
@@ -522,21 +514,13 @@
   <li><a href="https://www.w3.org/TR/css3-text/"><code>https://www.w3.org/TR/css3-text/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-scroll-anchoring-1/">CSS Scroll Anchoring Module Level 1</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
-  <li><a href="https://drafts.csswg.org/css-scrollbars-1/">CSS Scrollbars Module Level 1</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/css3-transitions/"><code>https://www.w3.org/TR/css3-transitions/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
-  </ul></li>
+  <li><a href="https://drafts.csswg.org/css-scrollbars-1/">CSS Scrollbars Module Level 1</a> links to <a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/css-shapes/">CSS Shapes Module Level 1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-transitions/"><code>https://www.w3.org/TR/css3-transitions/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-shapes-2/">CSS Shapes Module Level 2</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/css-shapes/"><code>https://www.w3.org/TR/css-shapes/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-transitions/"><code>https://www.w3.org/TR/css3-transitions/</code></a> but does not list it in its references</li>
-  </ul></li>
+  <li><a href="https://drafts.csswg.org/css-shapes-2/">CSS Shapes Module Level 2</a> links to <a href="https://www.w3.org/TR/css-shapes/"><code>https://www.w3.org/TR/css-shapes/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a> but does not list it in its references</li>
@@ -552,6 +536,11 @@
   <li><a href="https://www.w3.org/TR/css3-break/"><code>https://www.w3.org/TR/css3-break/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
+  </ul></li>
+  <li><a href="https://drafts.csswg.org/css-text-decor-4/">CSS Text Decoration Module Level 4</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css3-text/"><code>https://www.w3.org/TR/css3-text/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-text/"><code>https://www.w3.org/TR/css-text/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-text-3/">CSS Text Module Level 3</a> links to:
   <ul>
@@ -712,12 +701,12 @@
   </ul></li>
   <li><a href="https://drafts.csswg.org/selectors">Selectors Level 4</a> links to:
   <ul>
+  <li><a href="https://www.w3.org/TR/selectors4/"><code>https://www.w3.org/TR/selectors4/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-selectors/"><code>https://www.w3.org/TR/css3-selectors/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-namespace/"><code>https://www.w3.org/TR/css3-namespace/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2013/WD-selectors4-20130502/"><code>https://www.w3.org/TR/2013/WD-selectors4-20130502/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2012/WD-selectors4-20120823/"><code>https://www.w3.org/TR/2012/WD-selectors4-20120823/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2011/WD-selectors4-20110929/"><code>https://www.w3.org/TR/2011/WD-selectors4-20110929/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css-cascade-3/"><code>https://www.w3.org/TR/css-cascade-3/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a> links to <a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a> links to:
@@ -772,7 +761,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 344 missing references for links found in 117 specifications</p>
+  <p>=&gt; 344 missing references for links found in 118 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>

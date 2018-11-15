@@ -11,9 +11,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "a list of strings and/or <generic-family> keywords",
+      "computedValue": "list, each item a string and/or <generic-family> keywords",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "font-weight": {
       "name": "font-weight",
@@ -22,9 +22,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "numeric weight value (see description)",
+      "computedValue": "a number, see below",
       "canonicalOrder": "per grammar",
-      "animatable": "As <number>"
+      "animationType": "by computed value type"
     },
     "font-stretch": {
       "name": "font-stretch",
@@ -33,9 +33,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "Not resolved",
-      "computedValue": "percentage",
+      "computedValue": "a percentage, see below",
       "canonicalOrder": "per grammar",
-      "animatable": "As <percentage>"
+      "animationType": "by computed value type"
     },
     "font-style": {
       "name": "font-style",
@@ -44,9 +44,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "As specified",
+      "computedValue": "the keyword specified, plus angle in degrees if specified",
       "canonicalOrder": "per grammar",
-      "animatable": "If both \"from\" and \"to\" values are \"oblique\", then yes, as an <angle>. Otherwise, no."
+      "animationType": "by computed value type"
     },
     "font-size": {
       "name": "font-size",
@@ -57,7 +57,7 @@
       "percentages": "refer to parent element’s font size",
       "computedValue": "an absolute length, as clamped by font-min-size and font-max-size",
       "canonicalOrder": "per grammar",
-      "animatable": "As <length>"
+      "animationType": "by computed value type`"
     },
     "font-min-size": {
       "name": "font-min-size",
@@ -66,9 +66,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "refer to parent element’s font size",
-      "computedValue": "absolute length",
+      "computedValue": "an absolute length",
       "canonicalOrder": "per grammar",
-      "animatable": "As <length>"
+      "animationType": "by computed value type"
     },
     "font-max-size": {
       "name": "font-max-size",
@@ -77,9 +77,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "refer to parent element’s font size",
-      "computedValue": "absolute length",
+      "computedValue": "an absolute length",
       "canonicalOrder": "per grammar",
-      "animatable": "As <length>"
+      "animationType": "by computed value type"
     },
     "font-size-adjust": {
       "name": "font-size-adjust",
@@ -88,9 +88,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "a number or the keyword none",
       "canonicalOrder": "per grammar",
-      "animatable": "as <number>"
+      "animationType": "by computed value type"
     },
     "font": {
       "name": "font",
@@ -101,7 +101,7 @@
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "see individual properties"
+      "animationType": "see individual properties"
     },
     "font-synthesis-weight": {
       "name": "font-synthesis-weight",
@@ -110,10 +110,10 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "yes"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "font-synthesis-style": {
       "name": "font-synthesis-style",
@@ -122,10 +122,10 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "yes"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "font-synthesis-small-caps": {
       "name": "font-synthesis-small-caps",
@@ -134,10 +134,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "yes"
+      "animationType": "discrete"
     },
     "font-synthesis": {
       "name": "font-synthesis",
@@ -146,9 +145,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "font-variant-alternates": {
       "name": "font-variant-alternates",
@@ -159,7 +158,7 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "font-language-override": {
       "name": "font-language-override",
@@ -168,9 +167,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified string or the keyword none",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "font-optical-sizing": {
       "name": "font-optical-sizing",
@@ -179,9 +178,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "font-variation-settings": {
       "name": "font-variation-settings",
@@ -190,9 +189,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "the keyword normal or a list, each item a string paired with a sequence of numbers",
       "canonicalOrder": "per grammar",
-      "animatable": "yes (see description)"
+      "animationType": "(see prose)"
     },
     "font-palette": {
       "name": "font-palette",
@@ -201,9 +200,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/a",
-      "computedValue": "As specified",
+      "computedValue": "specified keyword or identifier",
       "canonicalOrder": "per grammar",
-      "animatable": "No (see below)"
+      "animationType": "discrete"
     },
     "font-variant-emoji": {
       "name": "font-variant-emoji",
@@ -212,9 +211,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/a",
-      "computedValue": "As specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "No (see below)"
+      "animationType": "discrete"
     }
   },
   "descriptors": {
