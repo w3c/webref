@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% November 20, 2018
+% November 21, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Tue Nov 20 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Wed Nov 21 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -699,7 +699,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Tue Nov 20 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Wed Nov 21 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4576,7 +4576,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (16 November 2018)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (20 November 2018)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -5129,7 +5129,6 @@ Normative references to this spec from:
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181115/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181119/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -5206,6 +5205,7 @@ Informative references to this spec from:
 - [Feature Policy](https://wicg.github.io/feature-policy/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -5293,7 +5293,6 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20181105/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181115/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181119/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -5350,6 +5349,7 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -5448,7 +5448,6 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20181105/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181115/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181119/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -5507,6 +5506,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -5581,7 +5581,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Tue Nov 20 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Wed Nov 21 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5981,7 +5981,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/mediasession/) (17 August 2017)
+- Crawled version: [Initial URL](https://wicg.github.io/mediasession/) (20 November 2018)
 - Repository: [GitHub wicg/mediasession](https://github.com/wicg/mediasession)
 - Shortname: no shortname
 
@@ -6226,7 +6226,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Tue Nov 20 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Wed Nov 21 2018)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6403,10 +6403,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181115/) (November 2018 )
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/) (November 2018 )
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181115/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
 - Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
 - Shortname: payment-method-basic-card
 
@@ -6445,7 +6445,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181115/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
 
 No informative reference to this spec from other specs.
 
@@ -6613,7 +6613,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Tue Nov 20 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Wed Nov 21 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8113,7 +8113,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Tue Nov 20 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Wed Nov 21 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8170,7 +8170,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Tue Nov 20 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Wed Nov 21 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8311,7 +8311,6 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20181105/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181115/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181119/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -8379,6 +8378,7 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 
@@ -8473,7 +8473,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Nov 20 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Nov 21 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8498,7 +8498,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Nov 20 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Nov 21 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8612,7 +8612,7 @@ Normative references to this spec from:
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181115/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181119/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -8746,7 +8746,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (19 November 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (20 November 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -8799,7 +8799,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (16 November 2018)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (20 November 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
