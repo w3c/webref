@@ -1,12 +1,4 @@
-% Diff between report from "November 20, 2018" and reference report from "November 19, 2018"
+% Diff between report from "November 21, 2018" and reference report from "November 20, 2018"
 % Reffy
-% November 20, 2018
-
-## Media Capabilities
-
-- URL: [https://wicg.github.io/media-capabilities/](https://wicg.github.io/media-capabilities/)
-- Crawled version: [Initial URL](https://wicg.github.io/media-capabilities/)
-- Repository: [GitHub wicg/media-capabilities](https://github.com/wicg/media-capabilities)
-- Inconsistent references for links: *INS* https://www.w3.org/TR/dom/
-
+% November 21, 2018
 
