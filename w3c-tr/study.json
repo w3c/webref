@@ -2,13 +2,38 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2018-11-21T07:05:17.091Z",
+  "date": "2018-11-22T07:05:21.757Z",
   "stats": {
     "crawled": 239,
-    "errors": 1,
+    "errors": 3,
     "studied": 239
   },
   "results": [
+    {
+      "title": "https://w3c.github.io/pointerevents/extension.html",
+      "url": "https://w3c.github.io/pointerevents/extension.html",
+      "report": {
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
     {
       "title": "\"MediaStream Image Capture\"",
       "shortname": "image-capture",
@@ -158,7 +183,7 @@
     {
       "title": "404 not found",
       "shortname": "SVG2",
-      "date": "Wed Nov 21 2018",
+      "date": "Thu Nov 22 2018",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
@@ -323,8 +348,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/svg-markers/",
@@ -415,8 +440,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             }
           ]
         },
@@ -754,63 +779,22 @@
     },
     {
       "title": "Background Fetch",
-      "date": "31 October 2018",
       "url": "https://wicg.github.io/background-fetch/",
-      "crawled": "https://wicg.github.io/background-fetch/",
       "repository": "https://github.com/wicg/background-fetch",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "EventHandler",
-          "Window"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "ImageResource",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/appmanifest/",
-                "title": "Web App Manifest",
-                "crawled": "https://www.w3.org/TR/2018/WD-appmanifest-20181113/",
-                "date": "Living Document"
-              }
-            ]
-          }
-        ],
-        "missingLinkRef": [
-          "https://storage.spec.whatwg.org/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/ServiceWorker/",
-            "ref": {
-              "name": "SERVICE-WORKERS-1",
-              "url": "https://www.w3.org/TR/service-workers-1/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/permissions/",
-            "ref": {
-              "name": "PERMISSIONS",
-              "url": "https://www.w3.org/TR/permissions/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/webdriver/webdriver-spec.html",
-            "ref": {
-              "name": "WebDriver",
-              "url": "https://www.w3.org/TR/webdriver1/"
-            }
-          }
-        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -1392,8 +1376,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/UISecurity/",
@@ -1551,12 +1535,6 @@
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/",
               "date": "4 March 2018"
-            },
-            {
-              "url": "https://www.w3.org/TR/selectors-4/",
-              "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
             }
           ]
         },
@@ -1965,7 +1943,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -2062,7 +2040,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "Wed Nov 21 2018",
+      "date": "Thu Nov 22 2018",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -2392,7 +2370,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -2886,8 +2864,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             }
           ]
         },
@@ -3196,7 +3174,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -4663,8 +4641,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -7530,8 +7508,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             }
           ],
           "informative": []
@@ -7988,7 +7966,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -8825,8 +8803,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -9231,8 +9209,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             }
           ],
           "informative": []
@@ -9570,8 +9548,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             }
           ]
         },
@@ -9782,8 +9760,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -10231,8 +10209,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -11379,13 +11357,13 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -11664,13 +11642,19 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "30 October 2018"
+              "date": "20 November 2018"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/selectors-4/",
+              "title": "Selectors Level 4",
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -11955,8 +11939,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -12153,7 +12137,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -12313,12 +12297,6 @@
               "date": "5 September 2017"
             },
             {
-              "url": "https://w3c.github.io/pointerevents/extension.html",
-              "title": "PointerEvents - Level 2 - Extensions",
-              "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Wed Nov 21 2018"
-            },
-            {
               "url": "https://wicg.github.io/ResizeObserver/",
               "title": "Resize Observer 1",
               "crawled": "https://wicg.github.io/ResizeObserver/",
@@ -12328,7 +12306,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -12627,7 +12605,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -12675,7 +12653,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -12854,7 +12832,7 @@
     },
     {
       "title": "Fetch Standard",
-      "date": "20 November 2018",
+      "date": "21 November 2018",
       "url": "https://fetch.spec.whatwg.org/",
       "crawled": "https://fetch.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/fetch",
@@ -12879,12 +12857,6 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/",
-              "date": "31 October 2018"
-            },
             {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
@@ -13176,7 +13148,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -13489,7 +13461,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "30 October 2018"
+              "date": "20 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -14097,12 +14069,6 @@
               "date": "03 October 2017"
             },
             {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/",
-              "date": "31 October 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
               "crawled": "http://www.w3.org/TR/2016/CR-battery-status-20160707/",
@@ -14328,7 +14294,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -14496,7 +14462,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -14532,7 +14498,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "30 October 2018"
+              "date": "20 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -14598,7 +14564,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -14615,8 +14581,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/eventsource/",
@@ -14742,7 +14708,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -14754,7 +14720,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14796,13 +14762,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -14814,7 +14780,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -14983,8 +14949,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
@@ -15099,12 +15065,6 @@
               "title": "Accelerated Shape Detection in Images",
               "crawled": "https://wicg.github.io/shape-detection-api/",
               "date": "3 October 2018"
-            },
-            {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/",
-              "date": "31 October 2018"
             },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
@@ -15302,7 +15262,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -15392,7 +15352,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -15422,7 +15382,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "30 October 2018"
+              "date": "20 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -15470,7 +15430,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -15487,8 +15447,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -15572,13 +15532,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -15608,13 +15568,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -15626,7 +15586,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -15835,12 +15795,6 @@
               "date": "3 October 2018"
             },
             {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/",
-              "date": "31 October 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/clipboard-apis/",
               "title": "Clipboard API and events",
               "crawled": "https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/",
@@ -16030,7 +15984,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -16120,7 +16074,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -16150,7 +16104,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "30 October 2018"
+              "date": "20 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -16204,7 +16158,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -16221,8 +16175,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/eventsource/",
@@ -16312,13 +16266,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -16354,13 +16308,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16372,7 +16326,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -16671,7 +16625,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "Wed Nov 21 2018",
+      "date": "Thu Nov 22 2018",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -17618,7 +17572,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "30 October 2018"
+              "date": "20 November 2018"
             }
           ]
         },
@@ -17965,7 +17919,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -18170,7 +18124,7 @@
     },
     {
       "title": "Network Information API",
-      "date": "Wed Nov 21 2018",
+      "date": "Thu Nov 22 2018",
       "url": "https://wicg.github.io/netinfo/",
       "crawled": "https://wicg.github.io/netinfo/",
       "repository": "https://github.com/wicg/netinfo",
@@ -18386,7 +18340,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "30 October 2018"
+              "date": "20 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -18771,12 +18725,6 @@
               "date": "20 March 2018"
             },
             {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/",
-              "date": "31 October 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/clipboard-apis/",
               "title": "Clipboard API and events",
               "crawled": "https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/",
@@ -18858,7 +18806,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             }
           ],
           "informative": [
@@ -18866,7 +18814,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             }
           ]
         },
@@ -18876,7 +18824,7 @@
     },
     {
       "title": "Picture-in-Picture",
-      "date": "30 October 2018",
+      "date": "20 November 2018",
       "url": "https://wicg.github.io/picture-in-picture/",
       "crawled": "https://wicg.github.io/picture-in-picture/",
       "repository": "https://github.com/wicg/picture-in-picture",
@@ -18967,12 +18915,6 @@
               "date": "Level 2"
             },
             {
-              "url": "https://w3c.github.io/pointerevents/extension.html",
-              "title": "PointerEvents - Level 2 - Extensions",
-              "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Wed Nov 21 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/webdriver/",
               "title": "WebDriver",
               "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
@@ -18984,7 +18926,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             }
           ]
         },
@@ -19026,12 +18968,6 @@
               "title": "Pointer Events",
               "crawled": "https://www.w3.org/TR/2018/PR-pointerevents2-20181016/",
               "date": "Level 2"
-            },
-            {
-              "url": "https://w3c.github.io/pointerevents/extension.html",
-              "title": "PointerEvents - Level 2 - Extensions",
-              "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Wed Nov 21 2018"
             }
           ],
           "informative": [
@@ -19044,43 +18980,6 @@
           ]
         },
         "noEdDraft": false,
-        "ok": false
-      }
-    },
-    {
-      "title": "PointerEvents - Level 2 - Extensions",
-      "date": "Wed Nov 21 2018",
-      "url": "https://w3c.github.io/pointerevents/extension.html",
-      "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
-        "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/uievents/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/pointerevents/",
-            "ref": {
-              "name": "pointerevents2",
-              "url": "https://www.w3.org/TR/pointerevents2/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "noEdDraft": null,
         "ok": false
       }
     },
@@ -19420,7 +19319,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -19488,7 +19387,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "30 October 2018"
+              "date": "20 November 2018"
             }
           ],
           "informative": []
@@ -19681,7 +19580,7 @@
     },
     {
       "title": "Scroll-linked Animations",
-      "date": "1 November 2018",
+      "date": "21 November 2018",
       "url": "https://wicg.github.io/scroll-animations/",
       "crawled": "https://wicg.github.io/scroll-animations/",
       "repository": "https://github.com/wicg/scroll-animations",
@@ -19868,7 +19767,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             }
           ]
         },
@@ -20035,6 +19934,12 @@
               "date": "10 October 2018"
             },
             {
+              "url": "https://www.w3.org/TR/selectors-4/",
+              "title": "Selectors Level 4",
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/",
@@ -20063,13 +19968,13 @@
     {
       "title": "Selectors Level 4",
       "shortname": "selectors-4",
-      "date": "2 February 2018",
+      "date": "21 November 2018",
       "url": "https://www.w3.org/TR/selectors-4/",
       "latest": "https://www.w3.org/TR/selectors-4/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
       "datedStatus": "Working Draft",
-      "edDraft": "https://drafts.csswg.org/selectors",
-      "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
+      "edDraft": "https://drafts.csswg.org/selectors/",
+      "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
         "noNormativeRefs": false,
@@ -20084,11 +19989,13 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
+          "https://www.w3.org/TR/selectors4/",
+          "https://www.w3.org/TR/css3-selectors/",
           "https://www.w3.org/TR/svg2/",
           "https://www.w3.org/TR/css3-namespace/",
-          "https://www.w3.org/TR/css3-text/",
           "https://www.w3.org/TR/2013/WD-selectors4-20130502/",
-          "https://www.w3.org/TR/selectors4/"
+          "https://www.w3.org/TR/2012/WD-selectors4-20120823/",
+          "https://www.w3.org/TR/2011/WD-selectors4-20110929/"
         ],
         "inconsistentRef": [
           {
@@ -20153,7 +20060,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -20353,12 +20260,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/",
-              "date": "31 October 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/CSP3/",
               "title": "Content Security Policy Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-CSP3-20181015/",
@@ -20374,7 +20275,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -20555,7 +20456,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -20613,7 +20514,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             }
           ],
           "informative": [
@@ -20869,7 +20770,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             }
           ],
           "informative": [
@@ -20929,7 +20830,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -21157,12 +21058,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/",
-              "date": "31 October 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://www.w3.org/TR/2017/CR-beacon-20170413/",
@@ -21232,7 +21127,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -21297,8 +21192,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -21334,13 +21229,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -21598,12 +21493,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/",
-              "date": "31 October 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://www.w3.org/TR/2017/CR-beacon-20170413/",
@@ -21781,7 +21670,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -21859,7 +21748,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -21895,7 +21784,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "30 October 2018"
+              "date": "20 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -21908,12 +21797,6 @@
               "title": "Pointer Lock 2.0",
               "crawled": "https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/",
               "date": "06 November 2018"
-            },
-            {
-              "url": "https://w3c.github.io/pointerevents/extension.html",
-              "title": "PointerEvents - Level 2 - Extensions",
-              "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Wed Nov 21 2018"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -21967,7 +21850,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/selection-api/",
@@ -21984,8 +21867,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/eventsource/",
@@ -22135,7 +22018,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -22147,7 +22030,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -22313,7 +22196,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             }
           ],
           "informative": []
@@ -22795,7 +22678,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "Wed Nov 21 2018",
+      "date": "Thu Nov 22 2018",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -22925,7 +22808,7 @@
     },
     {
       "title": "Web Share API - Level 1",
-      "date": "Wed Nov 21 2018",
+      "date": "Thu Nov 22 2018",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "repository": "https://github.com/wicg/web-share",
@@ -23111,12 +22994,6 @@
               "title": "Accelerated Shape Detection in Images",
               "crawled": "https://wicg.github.io/shape-detection-api/",
               "date": "3 October 2018"
-            },
-            {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/",
-              "date": "31 October 2018"
             },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
@@ -23308,7 +23185,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -23410,7 +23287,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -23440,7 +23317,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "30 October 2018"
+              "date": "20 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -23488,7 +23365,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -23505,8 +23382,8 @@
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
-              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
-              "date": "2 February 2018"
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/eventsource/",
@@ -23602,13 +23479,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -23638,13 +23515,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -23656,7 +23533,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -23934,12 +23811,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/",
-              "date": "31 October 2018"
-            },
-            {
               "url": "https://w3c.github.io/reporting/",
               "title": "Reporting API 1",
               "crawled": "https://w3c.github.io/reporting/",
@@ -23954,7 +23825,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Wed Nov 21 2018",
+      "date": "Thu Nov 22 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23991,7 +23862,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Wed Nov 21 2018",
+      "date": "Thu Nov 22 2018",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -24022,7 +23893,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             }
           ],
           "informative": [
@@ -24127,12 +23998,6 @@
               "title": "Audio Output Devices API",
               "crawled": "https://www.w3.org/TR/2017/CR-audio-output-20171003/",
               "date": "03 October 2017"
-            },
-            {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/",
-              "date": "31 October 2018"
             },
             {
               "url": "https://www.w3.org/TR/battery-status/",
@@ -24312,7 +24177,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://wicg.github.io/entries-api/",
@@ -24390,7 +24255,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -24480,7 +24345,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/orientation-sensor/",
@@ -24528,7 +24393,7 @@
               "url": "https://wicg.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "30 October 2018"
+              "date": "20 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -24541,12 +24406,6 @@
               "title": "Pointer Lock 2.0",
               "crawled": "https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/",
               "date": "06 November 2018"
-            },
-            {
-              "url": "https://w3c.github.io/pointerevents/extension.html",
-              "title": "PointerEvents - Level 2 - Extensions",
-              "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Wed Nov 21 2018"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -24594,7 +24453,7 @@
               "url": "https://wicg.github.io/scroll-animations/",
               "title": "Scroll-linked Animations",
               "crawled": "https://wicg.github.io/scroll-animations/",
-              "date": "1 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/selection-api/",
@@ -24732,13 +24591,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -24780,13 +24639,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Wed Nov 21 2018"
+              "date": "Thu Nov 22 2018"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -24798,7 +24657,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -25038,7 +24897,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "20 November 2018",
+      "date": "21 November 2018",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
@@ -25175,7 +25034,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Wed Nov 21 2018"
+                "date": "Thu Nov 22 2018"
               }
             ]
           },
@@ -25186,7 +25045,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Wed Nov 21 2018"
+                "date": "Thu Nov 22 2018"
               }
             ]
           },
@@ -25197,7 +25056,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Wed Nov 21 2018"
+                "date": "Thu Nov 22 2018"
               }
             ]
           },
@@ -25208,7 +25067,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Wed Nov 21 2018"
+                "date": "Thu Nov 22 2018"
               }
             ]
           },
@@ -25219,7 +25078,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Wed Nov 21 2018"
+                "date": "Thu Nov 22 2018"
               }
             ]
           }
@@ -25403,7 +25262,7 @@
               "url": "https://fetch.spec.whatwg.org/",
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
-              "date": "20 November 2018"
+              "date": "21 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",

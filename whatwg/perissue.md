@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% November 21, 2018
+% November 22, 2018
 
 228 specifications were crawled in this report.
 
@@ -53,7 +53,7 @@ Reffy was expecting to find IDL content in the specifications  listed here but c
 - [Media Queries Level 3](http://dev.w3.org/csswg/css3-mediaqueries/)
 - [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/)
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
-- [Selectors Level 4](https://drafts.csswg.org/selectors)
+- [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 => 19 specifications found
 
@@ -561,7 +561,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/) links to:
     * [`https://www.w3.org/TR/2011/REC-css3-selectors-20110929/`](https://www.w3.org/TR/2011/REC-css3-selectors-20110929/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/) but does not list it in its references
-- [Selectors Level 4](https://drafts.csswg.org/selectors) links to:
+- [Selectors Level 4](https://drafts.csswg.org/selectors/) links to:
     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/) but does not list it in its references
