@@ -1,17 +1,12 @@
-% Diff between report from "November 22, 2018" and reference report from "November 21, 2018"
+% Diff between report from "November 23, 2018" and reference report from "November 22, 2018"
 % Reffy
-% November 22, 2018
+% November 23, 2018
 
-## CSS Grid Layout Module Level 2
+## Selectors Level 4
 
-- URL: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-grid-2/)
+- URL: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/selectors/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+- Missing references for links: *DEL* https://www.w3.org/TR/selectors4/
 
 
