@@ -21,14 +21,6 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>228 specifications were crawled in this report.</p>
-  <section id="specifications-that-could-not-be-rendered" class="level2">
-  <h2>Specifications that could not be rendered</h2>
-  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
-  <ul>
-  <li><a href="undefined">WebGL 2.0 Specification</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
-  </ul>
-  <p>=&gt; 1 specification found</p>
-  </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
   <ul>
@@ -135,11 +127,10 @@
   <li><code>RTCError</code> used in <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>RTCRTPStreamStats</code> used in <a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><code>ReadableStream</code> used in <a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a>, <a href="https://encoding.spec.whatwg.org/">Encoding Standard</a>, <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
-  <li><code>WebGL2RenderingContext</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://immersive-web.github.io/webxr/">WebXR Device API</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><code>WritableStream</code> used in <a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   </ul>
-  <p>=&gt; 15 WebIDL names found</p>
+  <p>=&gt; 14 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -183,7 +174,11 @@
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a> uses <code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></li>
   <li><a href="https://wicg.github.io/feature-policy/">Feature Policy</a> uses <code>ReportBody</code> but does not reference <a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a> uses <code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
-  <li><a href="https://html.spec.whatwg.org/">HTML Standard</a> uses <code>AudioWorklet</code> but does not reference <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
+  <li><a href="https://html.spec.whatwg.org/">HTML Standard</a> uses:
+  <ul>
+  <li><code>WebGL2RenderingContext</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">WebGL 2.0 Specification</a></li>
+  <li><code>AudioWorklet</code> but does not reference <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a> uses:
   <ul>
@@ -212,12 +207,13 @@
   <ul>
   <li><code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><code>WebGLRenderingContext</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
+  <li><code>WebGL2RenderingContext</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">WebGL 2.0 Specification</a></li>
   <li><code>WebGLFramebuffer</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><code>WebGLContextAttributes</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 32 missing references for IDL definitions found in 20 specifications</p>
+  <p>=&gt; 34 missing references for IDL definitions found in 20 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -316,7 +312,9 @@
   <li><a href="https://www.w3.org/TR/css-grid/"><code>https://www.w3.org/TR/css-grid/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-position/"><code>https://www.w3.org/TR/css-position/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-tables/"><code>https://www.w3.org/TR/css-tables/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-logical-1/"><code>https://www.w3.org/TR/css-logical-1/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-break/"><code>https://www.w3.org/TR/css3-break/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-cascade-3/">CSS Cascading and Inheritance Level 3</a> links to:
   <ul>
@@ -554,7 +552,7 @@
   <li><a href="https://drafts.csswg.org/css-text-4/">CSS Text Module Level 4</a> links to <a href="https://www.w3.org/TR/css-text/"><code>https://www.w3.org/TR/css-text/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/css-transforms/">CSS Transforms Module Level 1</a> links to:
   <ul>
-  <li><a href="https://www.w3.org/TR/css3-2d-transforms/"><code>https://www.w3.org/TR/css3-2d-transforms/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2009/WD-css3-2d-transforms-20090320/"><code>https://www.w3.org/TR/2009/WD-css3-2d-transforms-20090320/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2009/WD-SVG-Transforms-20090320/"><code>https://www.w3.org/TR/2009/WD-SVG-Transforms-20090320/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-transitions/"><code>https://www.w3.org/TR/css3-transitions/</code></a> but does not list it in its references</li>
@@ -765,7 +763,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 344 missing references for links found in 119 specifications</p>
+  <p>=&gt; 346 missing references for links found in 119 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
