@@ -1,49 +1,105 @@
-% Diff between report from "November 27, 2018" and reference report from "November 26, 2018"
+% Diff between report from "November 28, 2018" and reference report from "November 27, 2018"
 % Reffy
-% November 27, 2018
+% November 28, 2018
 
-## CSS Box Model Module Level 3
+## Background Fetch
 
-- URL: [https://drafts.csswg.org/css-box-3/](https://drafts.csswg.org/css-box-3/)
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-box-3/)
+- URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
+- Crawled version: [Initial URL](https://wicg.github.io/background-fetch/)
+- Repository: [GitHub wicg/background-fetch](https://github.com/wicg/background-fetch)
+- Missing references for WebIDL names: *INS* ServiceWorkerGlobalScope, ServiceWorkerRegistration, CacheQueryOptions, ExtendableEvent, ServiceWorker, ExtendableEventInit
+- Missing references for links: *INS* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *DEL* https://w3c.github.io/ServiceWorker/
+
+
+## Content Security Policy Level 3
+
+- URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-csp/)
+- Repository: [GitHub w3c/webappsec-csp](https://github.com/w3c/webappsec-csp)
+- Missing references for links: *INS* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *DEL* https://w3c.github.io/ServiceWorker/
+
+
+## Cookie Store API
+
+- URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
+- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/)
+- Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
+- Missing references for WebIDL names: *INS* ServiceWorker, ExtendableEvent, ExtendableEventInit, ServiceWorkerGlobalScope
+- Missing references for links: *INS* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *DEL* https://w3c.github.io/ServiceWorker/
+
+
+## CSS Fonts Module Level 4
+
+- URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/css-logical-1/, https://www.w3.org/TR/css3-background/
+- Unknown WebIDL names used: *DEL* CSSOMRGBColor
 
 
-## CSS Transforms Module Level 1
+## Payment Handler API
 
-- URL: [https://www.w3.org/TR/css-transforms-1/](https://www.w3.org/TR/css-transforms-1/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-transforms/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/2009/WD-css3-2d-transforms-20090320/ / *DEL* https://www.w3.org/TR/css3-2d-transforms/
-
-
-## HTML Standard
-
-- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/)
-- Unknown WebIDL names used: *DEL* WebGL2RenderingContext
-- Missing references for WebIDL names: *INS* WebGL2RenderingContext
+- URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
+- Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
+- Spec is OK: *INS* false / *DEL* true
+- Missing references for WebIDL names: *INS* ServiceWorkerRegistration, ServiceWorkerGlobalScope, ExtendableEvent, ServiceWorker, ExtendableEventInit, WindowClient
 
 
-## WebGL 2.0 Specification
+## Push API
 
-- URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
-- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+- URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/)
+- Repository: [GitHub w3c/push-api](https://github.com/w3c/push-api)
+- Missing references for WebIDL names: *INS* ServiceWorkerRegistration, ServiceWorker, ServiceWorkerGlobalScope, ExtendableEventInit, ExtendableEvent
+- Missing references for links: *INS* https://www.w3.org/TR/service-workers/, https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/service-workers/, https://w3c.github.io/ServiceWorker/
 
 
-## WebXR Device API
+## Service Workers 1
 
-- URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/)
-- Unknown WebIDL names used: *DEL* WebGL2RenderingContext
-- Missing references for WebIDL names: *INS* WebGL2RenderingContext
+- URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/ServiceWorker/v1/)
+- Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
+- This specification is not in the new crawl report.
+
+
+## Service Workers Nightly
+
+- URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
+- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/)
+- Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
+- This specification was not in the reference crawl report.
+
+
+## Web App Manifest
+
+- URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
+- Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
+- Missing references for WebIDL names: *INS* ServiceWorkerUpdateViaCache
+- Missing references for links: *INS* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *DEL* https://w3c.github.io/ServiceWorker/
+
+
+## Web Background Synchronization
+
+- URL: [https://wicg.github.io/BackgroundSync/spec/](https://wicg.github.io/BackgroundSync/spec/)
+- Crawled version: [Initial URL](https://wicg.github.io/BackgroundSync/spec/)
+- Repository: [GitHub wicg/BackgroundSync](https://github.com/wicg/BackgroundSync)
+- Missing references for WebIDL names: *INS* ServiceWorkerRegistration, ServiceWorkerGlobalScope, ExtendableEvent, ServiceWorker, ExtendableEventInit
+- Missing references for links: *INS* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *DEL* https://w3c.github.io/ServiceWorker/
+
+
+## Web NFC API
+
+- URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
+- Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
+- Missing references for WebIDL names: *INS* AbortSignal
+- Missing references for links: *INS* https://dom.spec.whatwg.org/
 
 
