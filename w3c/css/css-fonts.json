@@ -149,9 +149,86 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
+    "font-kerning": {
+      "name": "font-kerning",
+      "value": "auto | normal | none",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "font-variant-ligatures": {
+      "name": "font-variant-ligatures",
+      "value": "normal | none | [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> ]",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "font-variant-position": {
+      "name": "font-variant-position",
+      "value": "normal | sub | super",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "font-variant-caps": {
+      "name": "font-variant-caps",
+      "value": "normal | small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "font-variant-numeric": {
+      "name": "font-variant-numeric",
+      "value": "normal | [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ] titling-caps",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
     "font-variant-alternates": {
       "name": "font-variant-alternates",
       "value": "normal | [ stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) ]",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "font-variant-east-asian": {
+      "name": "font-variant-east-asian",
+      "value": "normal | [ <east-asian-variant-values> || <east-asian-width-values> || ruby ]",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "font-variant": {
+      "name": "font-variant",
+      "value": "normal | none | [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || [ stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) ] || <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero || <east-asian-variant-values> || <east-asian-width-values> || ruby || [ sub | super ] ]",
       "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "yes",
@@ -321,6 +398,27 @@
     "<color-font-technology>": {
       "value": "[COLR | SVG | sbix]"
     },
+    "<common-lig-values>": {
+      "value": "[ common-ligatures | no-common-ligatures ]"
+    },
+    "<discretionary-lig-values>": {
+      "value": "[ discretionary-ligatures | no-discretionary-ligatures ]"
+    },
+    "<historical-lig-values>": {
+      "value": "[ historical-ligatures | no-historical-ligatures ]"
+    },
+    "<contextual-alt-values>": {
+      "value": "[ contextual | no-contextual ]"
+    },
+    "<numeric-figure-values>": {
+      "value": "[ lining-nums | oldstyle-nums ]"
+    },
+    "<numeric-spacing-values>": {
+      "value": "[ proportional-nums | tabular-nums ]"
+    },
+    "<numeric-fraction-values>": {
+      "value": "[ diagonal-fractions | stacked-fractions ]"
+    },
     "<feature-value-name>": {
       "value": "<ident>"
     },
@@ -335,6 +433,12 @@
     },
     "<feature-value>": {
       "value": "<integer>+"
+    },
+    "<east-asian-variant-values>": {
+      "value": "[ jis78 | jis83 | jis90 | jis04 | simplified | traditional ]"
+    },
+    "<east-asian-width-values>": {
+      "value": "[ full-width | proportional-width ]"
     },
     "<stylistic()>": {
       "value": "stylistic(<feature-value-name>)"
