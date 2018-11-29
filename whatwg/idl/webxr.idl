@@ -5,7 +5,7 @@
 
 [SecureContext, Exposed=Window] interface XR : EventTarget {
   // Methods
-  Promise<void> supportsSession(optional XRSessionCreationOptions options);
+  Promise<void> supportsSessionMode(XRSessionMode mode);
   Promise<XRSession> requestSession(optional XRSessionCreationOptions parameters);
 
   // Events
@@ -17,8 +17,14 @@ partial interface Navigator {
   [SameObject] readonly attribute XR xr;
 };
 
+enum XRSessionMode {
+  "inline",
+  "immersive-vr",
+  "immersive-ar"
+};
+
 dictionary XRSessionCreationOptions {
-  boolean immersive = false;
+  XRSessionMode mode = "inline";
   XRPresentationContext outputContext;
 };
 
@@ -30,7 +36,7 @@ enum XREnvironmentBlendMode {
 
 [SecureContext, Exposed=Window] interface XRSession : EventTarget {
   // Attributes
-  readonly attribute boolean immersive;
+  readonly attribute XRSessionMode mode;
   readonly attribute XRPresentationContext outputContext;
   readonly attribute XREnvironmentBlendMode environmentBlendMode;
 
