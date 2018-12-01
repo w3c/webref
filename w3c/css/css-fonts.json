@@ -237,6 +237,17 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
+    "font-feature-settings": {
+      "name": "font-feature-settings",
+      "value": "normal | <feature-tag-value> #",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
     "font-language-override": {
       "name": "font-language-override",
       "value": "normal | <string>",
@@ -439,6 +450,9 @@
     },
     "<east-asian-width-values>": {
       "value": "[ full-width | proportional-width ]"
+    },
+    "<feature-tag-value>": {
+      "value": "<string> [ <integer> | on | off ]?"
     },
     "<stylistic()>": {
       "value": "stylistic(<feature-value-name>)"
