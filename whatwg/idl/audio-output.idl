@@ -4,6 +4,6 @@
 // Source: Audio Output Devices API (https://w3c.github.io/mediacapture-output/)
 
 partial interface HTMLMediaElement {
-  [SecureContext] readonly attribute DOMString sinkId;
-  [SecureContext] Promise<void> setSinkId(DOMString sinkId);
-};
+        [SecureContext] readonly attribute DOMString sinkId;
+        [SecureContext] Promise<void> setSinkId (DOMString sinkId);
+      };
