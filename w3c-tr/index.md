@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 02, 2018
+% December 03, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Sun Dec 02 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Mon Dec 03 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -474,7 +474,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
@@ -522,17 +521,25 @@ Informative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 
 
-## Compatibility Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Compatibility Standard {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://compat.spec.whatwg.org/) (27 August 2018)
+- Crawled version: [Latest published version](undefined)
 - Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLBodyElement`, `Window`
+The following network or parsing error occurred:
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -697,7 +704,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sun Dec 02 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Mon Dec 03 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -854,7 +861,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
@@ -927,7 +933,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
@@ -1060,7 +1065,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
@@ -1098,7 +1102,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
@@ -1300,7 +1303,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
@@ -1344,7 +1346,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
@@ -1396,7 +1397,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](http://www.w3.org/TR/2015/CR-css-variables-1-20151203/)
@@ -1575,7 +1575,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180830/)
@@ -1759,7 +1758,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180830/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
@@ -2202,7 +2200,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
@@ -2338,7 +2335,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20180830/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
@@ -2580,7 +2576,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
@@ -2614,7 +2609,6 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
 No informative reference to this spec from other specs.
@@ -3848,7 +3842,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2017/CR-css-break-3-20170209/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
@@ -3927,7 +3920,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
@@ -4067,7 +4059,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
@@ -4177,7 +4168,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
@@ -4739,7 +4729,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Color Module Level 4](http://www.w3.org/TR/2016/WD-css-color-4-20160705/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -4948,7 +4937,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Intersection Observer](https://www.w3.org/TR/2018/WD-intersection-observer-20181106/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
@@ -5074,7 +5062,6 @@ Normative references to this spec from:
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
@@ -5256,7 +5243,6 @@ Normative references to this spec from:
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
@@ -5414,7 +5400,6 @@ Normative references to this spec from:
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
@@ -5592,17 +5577,17 @@ Informative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 
 
-## Input Device Capabilities {data-spec=true data-ok=true}
+## Input Device Capabilities {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sun Dec 02 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Mon Dec 03 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Spec uses WebIDL but does not reference it normatively
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5951,7 +5936,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Color Module Level 4](http://www.w3.org/TR/2016/WD-css-color-4-20160705/)
@@ -6238,16 +6222,17 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181127/)
 
 
-## Network Information API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## Network Information API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sun Dec 02 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Mon Dec 03 2018)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
+- Spec uses WebIDL but does not reference it normatively
 - Unknown WebIDL names used: `EventHandler`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/ServiceWorker/v1/`](https://w3c.github.io/ServiceWorker/v1/)
@@ -6589,7 +6574,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -6626,15 +6610,16 @@ Informative references to this spec from:
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 
 
-## PointerEvents - Level 2 - Extensions {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## PointerEvents - Level 2 - Extensions {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sun Dec 02 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Mon Dec 03 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
+- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
      * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - Inconsistent references for links: 
@@ -7418,7 +7403,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181113/)
 
 No informative reference to this spec from other specs.
@@ -7752,7 +7736,6 @@ Normative references to this spec from:
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -8135,7 +8118,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sun Dec 02 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Mon Dec 03 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8193,7 +8176,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sun Dec 02 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Mon Dec 03 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8285,7 +8268,6 @@ Normative references to this spec from:
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
@@ -8498,7 +8480,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Dec 02 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Dec 03 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8523,7 +8505,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Dec 02 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Dec 03 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8580,7 +8562,6 @@ Normative references to this spec from:
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -8619,7 +8600,6 @@ Normative references to this spec from:
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Intersection Observer](https://www.w3.org/TR/2018/WD-intersection-observer-20181106/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
@@ -8634,7 +8614,6 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2018/WD-navigation-timing-2-20181130/)
-- [Network Information API](https://wicg.github.io/netinfo/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -8645,7 +8624,6 @@ Normative references to this spec from:
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
-- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -8772,7 +8750,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (1 December 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (2 December 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
