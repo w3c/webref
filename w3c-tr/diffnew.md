@@ -1,58 +1,44 @@
-% Diff between report from "December 04, 2018" and reference report from "December 03, 2018"
+% Diff between report from "December 05, 2018" and reference report from "December 04, 2018"
 % Reffy
-% December 04, 2018
+% December 05, 2018
 
-## Compatibility Standard
+## CSS Fragmentation Module Level 3
 
-- URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://compat.spec.whatwg.org/)
-- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
-- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:332:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+- URL: [https://www.w3.org/TR/css-break-3/](https://www.w3.org/TR/css-break-3/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
+- Editor's Draft: [https://drafts.csswg.org/css-break/](https://drafts.csswg.org/css-break/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *INS* https://www.w3.org/TR/css3-multicol/, https://www.w3.org/TR/css3-background/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-page/
 
 
-## HTML 5.2
+## CSSOM View Module
 
-- URL: [https://www.w3.org/TR/html52/](https://www.w3.org/TR/html52/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/html52/)
-- Editor's Draft: [https://w3c.github.io/html/](https://w3c.github.io/html/)
-- Repository: [GitHub w3c/html](https://github.com/w3c/html)
-- Spec could not be rendered: *INS* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5) / *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:338:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
+- URL: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
+- Editor's Draft: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for WebIDL names: *INS* DOMRect, DOMQuad, DOMQuadInit, DOMRectReadOnly, DOMPoint, DOMPointInit
 
 
-## Input Device Capabilities
+## Geometry Interfaces Module Level 1
 
-- URL: [https://wicg.github.io/InputDeviceCapabilities/](https://wicg.github.io/InputDeviceCapabilities/)
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/)
-- Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
-- Spec is OK: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
-## Network Information API
-
-- URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/)
-- Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- URL: [https://www.w3.org/TR/geometry-1/](https://www.w3.org/TR/geometry-1/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
+- Editor's Draft: [https://drafts.fxtf.org/geometry/](https://drafts.fxtf.org/geometry/)
+- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- Invalid WebIDL content found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* Window
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-values/, https://www.w3.org/TR/cssom-view/ / *DEL* https://html.spec.whatwg.org/
 
 
-## PointerEvents - Level 2 - Extensions
+## SVG Markers
 
-- URL: [https://w3c.github.io/pointerevents/extension.html](https://w3c.github.io/pointerevents/extension.html)
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html)
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- URL: [https://www.w3.org/TR/svg-markers/](https://www.w3.org/TR/svg-markers/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
+- Editor's Draft: [https://svgwg.org/specs/markers/](https://svgwg.org/specs/markers/)
+- Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
+- Missing references for WebIDL names: *INS* DOMPoint, DOMPointReadOnly
 
 
