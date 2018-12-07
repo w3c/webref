@@ -21,6 +21,16 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>229 specifications were crawled in this report.</p>
+  <section id="specifications-that-could-not-be-rendered" class="level2">
+  <h2>Specifications that could not be rendered</h2>
+  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-writing-modes-3/">CSS Writing Modes Level 3</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
+  <li><a href="https://www.w3.org/TR/FileAPI/">File API</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
+  <li><a href="http://www.w3.org/TR/css3-mediaqueries/">Media Queries</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
+  </ul>
+  <p>=&gt; 3 specifications found</p>
+  </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
   <ul>
@@ -64,12 +74,11 @@
   <li><a href="https://drafts.csswg.org/css-tv/">CSS TV Profile 1.0</a></li>
   <li><a href="https://drafts.csswg.org/css-values-3/">CSS Values and Units Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values-4/">CSS Values and Units Module Level 4</a></li>
-  <li><a href="http://dev.w3.org/csswg/css3-mediaqueries/">Media Queries Level 3</a></li>
   <li><a href="https://drafts.csswg.org/selectors-nonelement/">Non-element Selectors Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/selectors-3/">Selectors Level 3</a></li>
   <li><a href="https://drafts.csswg.org/selectors/">Selectors Level 4</a></li>
   </ul>
-  <p>=&gt; 19 specifications found</p>
+  <p>=&gt; 18 specifications found</p>
   <p>Reffy was expecting to find CSS definitions in the specifications listed here but could not extract any.</p>
   </section>
   <section id="specifications-with-unexpected-webidl-definitions" class="level2">
@@ -115,9 +124,12 @@
   <section id="list-of-webidl-names-not-defined-in-the-specifications-crawled" class="level2">
   <h2>List of WebIDL names not defined in the specifications crawled</h2>
   <ul>
+  <li><code>Blob</code> used in <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a>, <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a>, <a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a>, <a href="https://w3c.github.io/presentation-api/">Presentation API</a>, <a href="https://w3c.github.io/push-api/">Push API</a>, <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a>, <a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   <li><code>CSSOMString</code> used in <a href="https://drafts.csswg.org/css-animations/">CSS Animations Level 1</a>, <a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a>, <a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a>, <a href="https://drafts.csswg.org/css-counter-styles/">CSS Counter Styles Level 3</a>, <a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a>, <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a>, <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a>, <a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a>, <a href="https://drafts.csswg.org/css-regions/">CSS Regions Module Level 1</a>, <a href="https://drafts.csswg.org/css-transitions/">CSS Transitions</a>, <a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a>, <a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><code>Date</code> used in <a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
   <li><code>Dictionary</code> used in <a href="https://w3c.github.io/web-nfc/">Web NFC API</a></li>
+  <li><code>File</code> used in <a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a>, <a href="https://html.spec.whatwg.org/">HTML Standard</a>, <a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
+  <li><code>FileList</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><code>KeyframeEffectReadOnly</code> used in <a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a></li>
   <li><code>LayoutWorklet</code> used in <a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><code>Map</code> used in <a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
@@ -129,7 +141,7 @@
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><code>WritableStream</code> used in <a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   </ul>
-  <p>=&gt; 13 WebIDL names found</p>
+  <p>=&gt; 16 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -243,7 +255,6 @@
   <li><code>ServiceWorker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>ExtendableEventInit</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/web-nfc/">Web NFC API</a> uses <code>AbortSignal</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a> uses <code>Worklet</code> but does not reference <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> uses:
   <ul>
@@ -255,7 +266,7 @@
   <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 62 missing references for IDL definitions found in 26 specifications</p>
+  <p>=&gt; 61 missing references for IDL definitions found in 25 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -628,12 +639,6 @@
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/css-logical-1/"><code>https://www.w3.org/TR/css-logical-1/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-flexbox/"><code>https://www.w3.org/TR/css3-flexbox/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a> but does not list it in its references</li>
-  </ul></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-4/">CSS Writing Modes Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-logical-1/"><code>https://www.w3.org/TR/css-logical-1/</code></a> but does not list it in its references</li>
@@ -670,13 +675,6 @@
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a> links to <a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a> but does not list it in its references</li>
   <li><a href="https://wicg.github.io/media-capabilities/">Media Capabilities</a> links to <a href="https://www.w3.org/TR/webrtc/"><code>https://www.w3.org/TR/webrtc/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a> links to <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but does not list it in its references</li>
-  <li><a href="http://dev.w3.org/csswg/css3-mediaqueries/">Media Queries Level 3</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/1999/REC-html401-19991224/"><code>https://www.w3.org/TR/1999/REC-html401-19991224/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/1999/REC-html401-19991224/present/"><code>https://www.w3.org/TR/1999/REC-html401-19991224/present/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/1999/REC-html401-19991224"><code>https://www.w3.org/TR/1999/REC-html401-19991224</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/"><code>https://www.w3.org/TR/2011/WD-html5-20110525/</code></a> but does not list it in its references</li>
-  </ul></li>
   <li><a href="https://drafts.csswg.org/mediaqueries-4/">Media Queries Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-mediaqueries/"><code>https://www.w3.org/TR/css3-mediaqueries/</code></a> but does not list it in its references</li>
@@ -804,9 +802,7 @@
   <li><a href="https://w3c.github.io/web-nfc/">Web NFC API</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webappsec/specs/powerfulfeatures/"><code>https://w3c.github.io/webappsec/specs/powerfulfeatures/</code></a> but does not list it in its references</li>
-  <li><a href="https://streams.spec.whatwg.org/"><code>https://streams.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a> but does not list it in its references</li>
-  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://wicg.github.io/web-share/">Web Share API - Level 1</a> links to <a href="https://www.w3.org/TR/web-intents/"><code>https://www.w3.org/TR/web-intents/</code></a> but does not list it in its references</li>
   <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a> links to:
@@ -831,7 +827,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 357 missing references for links found in 122 specifications</p>
+  <p>=&gt; 348 missing references for links found in 120 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>

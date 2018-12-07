@@ -24,10 +24,6 @@ enum NFCRecordType {
   "opaque"
 };
 
-partial interface Navigator {
-  [SecureContext, SameObject] readonly attribute NFC nfc;
-};
-
 typedef (DOMString or ArrayBuffer or NFCMessage) NFCMessageSource;
 
 [Constructor(), SecureContext, Exposed=Window]
@@ -35,12 +31,20 @@ interface NFCWriter {
   Promise<void> push(NFCMessageSource message, optional NFCPushOptions options);
 };
 
-[SecureContext]
-interface NFC {
-  Promise<void> watch(MessageCallback callback, optional NFCWatchOptions options);
+[Constructor(), SecureContext, Exposed=Window]
+interface NFCReader : EventTarget {
+  Promise<void> watch(optional NFCWatchOptions options);
+  attribute EventHandler onreading;
 };
 
-callback MessageCallback = void (NFCMessage message);
+[Constructor(DOMString type, NFCReadingEventInit nfcReadingEventInitDict), SecureContext, Exposed=Window]
+interface NFCReadingEvent : Event {
+  readonly attribute NFCMessage message;
+};
+
+dictionary NFCReadingEventInit : EventInit {
+  required NFCMessage message;
+};
 
 dictionary NFCPushOptions {
   NFCPushTarget target = "any";
