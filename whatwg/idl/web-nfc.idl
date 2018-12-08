@@ -31,10 +31,11 @@ interface NFCWriter {
   Promise<void> push(NFCMessageSource message, optional NFCPushOptions options);
 };
 
-[Constructor(), SecureContext, Exposed=Window]
+[Constructor(optional NFCReaderOptions options), SecureContext, Exposed=Window]
 interface NFCReader : EventTarget {
-  Promise<void> watch(optional NFCWatchOptions options);
   attribute EventHandler onreading;
+
+  Promise<void> watch();
 };
 
 [Constructor(DOMString type, NFCReadingEventInit nfcReadingEventInitDict), SecureContext, Exposed=Window]
@@ -59,15 +60,14 @@ enum NFCPushTarget {
   "any"
 };
 
-dictionary NFCWatchOptions {
+dictionary NFCReaderOptions {
   USVString url = "";
   NFCRecordType recordType;
   USVString mediaType = "";
-  NFCWatchMode mode = "web-nfc-only";
-  AbortSignal? signal;
+  NFCAccept accept = "web-nfc-only";
 };
 
-enum NFCWatchMode {
+enum NFCAccept {
   "web-nfc-only",
   "any"
 };
