@@ -1,14 +1,14 @@
-% Diff between report from "December 09, 2018" and reference report from "December 08, 2018"
+% Diff between report from "December 10, 2018" and reference report from "December 09, 2018"
 % Reffy
-% December 09, 2018
+% December 10, 2018
 
 ## CSS Animations Level 1
 
 - URL: [https://www.w3.org/TR/css-animations-1/](https://www.w3.org/TR/css-animations-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-animations-1/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - Editor's Draft: [https://drafts.csswg.org/css-animations/](https://drafts.csswg.org/css-animations/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -22,7 +22,7 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
-- Unknown WebIDL names used: *INS* PaymentCurrencyAmount, PaymentDetailsModifier, PaymentMethodData
+- Unknown WebIDL names used: *DEL* PaymentCurrencyAmount, PaymentDetailsModifier, PaymentMethodData
 
 
 ## Payment Method: Basic Card
@@ -31,17 +31,17 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* AddressErrors, PaymentAddress
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* AddressErrors, PaymentAddress
 
 
 ## Payment Request API
 
 - URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/payment-request/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
