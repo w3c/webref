@@ -118,8 +118,8 @@ dictionary BluetoothAdvertisingEventInit : EventInit {
   unsigned short appearance;
   byte txPower;
   byte rssi;
-  Map manufacturerData;
-  Map serviceData;
+  BluetoothManufacturerDataMap manufacturerData;
+  BluetoothServiceDataMap serviceData;
 };
 
 [Exposed=Window, SecureContext]
