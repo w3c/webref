@@ -1,12 +1,4 @@
-% Diff between report from "December 11, 2018" and reference report from "December 10, 2018"
+% Diff between report from "December 12, 2018" and reference report from "December 11, 2018"
 % Reffy
-% December 11, 2018
-
-## Media Queries Level 3
-
-- URL: [https://www.w3.org/TR/css3-mediaqueries/](https://www.w3.org/TR/css3-mediaqueries/)
-- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css3-mediaqueries/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://infra.spec.whatwg.org/
-
+% December 12, 2018
 
