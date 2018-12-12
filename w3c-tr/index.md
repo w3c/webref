@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 11, 2018
+% December 12, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Tue Dec 11 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Wed Dec 12 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -267,7 +267,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `EventHandler`, `Window`
 - Missing references for WebIDL names: 
-     * `ImageResource` defined in [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+     * `ImageResource` defined in [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - Missing references for links: 
      * [`https://storage.spec.whatwg.org/`](https://storage.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -376,6 +376,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
@@ -441,7 +442,7 @@ Normative references to this spec from:
 - [Media Queries](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2017/WD-motion-1-20170711/)
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
@@ -474,7 +475,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
@@ -525,7 +525,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://compat.spec.whatwg.org/) (27 August 2018)
+- Crawled version: [Living Standard](https://compat.spec.whatwg.org/) (11 December 2018)
 - Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
 - Shortname: no shortname
 
@@ -535,11 +535,11 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
+No normative reference to this spec from other specs.
 
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+Informative references to this spec from:
 
-No informative reference to this spec from other specs.
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 
 
 ## Compositing and Blending Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -608,7 +608,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://console.spec.whatwg.org/) (25 October 2018)
+- Crawled version: [Living Standard](https://console.spec.whatwg.org/) (11 December 2018)
 - Repository: [GitHub whatwg/console](https://github.com/whatwg/console)
 - Shortname: no shortname
 
@@ -658,7 +658,7 @@ Normative references to this spec from:
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -696,7 +696,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Tue Dec 11 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Wed Dec 12 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3442,7 +3442,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-shadow-parts-1/) (10 December 2018)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-shadow-parts-1/) (11 December 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3621,7 +3621,7 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181105/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
 
 No informative reference to this spec from other specs.
@@ -3893,6 +3893,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -4430,7 +4431,7 @@ Normative references to this spec from:
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181012/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -4439,7 +4440,7 @@ Informative references to this spec from:
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 
 
@@ -4535,7 +4536,7 @@ Normative references to this spec from:
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
@@ -4605,7 +4606,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (30 November 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (11 December 2018)
 - Repository: [GitHub wicg/feature-policy](https://github.com/wicg/feature-policy)
 - Shortname: no shortname
 
@@ -4638,7 +4639,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (29 November 2018)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (11 December 2018)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -4674,7 +4675,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [WebAssembly Web API](https://www.w3.org/TR/2018/WD-wasm-web-api-1-20180904/)
@@ -4856,7 +4857,7 @@ Informative references to this spec from:
 
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 
 
 ## Gamepad {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -4949,7 +4950,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/) (12 November 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/) (12 December 2018)
 - Repository: [GitHub wicg/geolocation-sensor](https://github.com/wicg/geolocation-sensor)
 - Shortname: no shortname
 
@@ -5189,7 +5190,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181127/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -5216,7 +5217,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -5357,7 +5358,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181127/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -5376,7 +5377,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -5515,7 +5516,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181127/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
@@ -5536,7 +5537,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -5645,7 +5646,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Tue Dec 11 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Wed Dec 12 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6014,7 +6015,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 
 Informative references to this spec from:
 
@@ -6291,7 +6292,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Tue Dec 11 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Wed Dec 12 2018)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6624,10 +6625,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/) (Level 2)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/) (Level 2)
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
-- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 - Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
 - Shortname: pointerevents2
 
@@ -6643,7 +6644,6 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
@@ -6671,7 +6671,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 
 Informative references to this spec from:
@@ -6683,7 +6683,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Tue Dec 11 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Wed Dec 12 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6895,7 +6895,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/reporting/) (5 December 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/reporting/) (11 December 2018)
 - Repository: [GitHub w3c/reporting](https://github.com/w3c/reporting)
 - Shortname: no shortname
 
@@ -7049,7 +7049,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -7279,7 +7279,7 @@ Normative references to this spec from:
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181105/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -7476,7 +7476,7 @@ Normative references to this spec from:
 
 - [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 
 No informative reference to this spec from other specs.
 
@@ -7533,7 +7533,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 
 
 ## UI Events {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -7566,7 +7566,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
@@ -7682,7 +7682,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Share API - Level 1](https://wicg.github.io/web-share/)
@@ -7858,7 +7858,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181127/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -7886,7 +7886,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -7985,10 +7985,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-appmanifest-20181207/) (Living Document)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-appmanifest-20181212/) (Living Document)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Shortname: appmanifest
 
@@ -8196,7 +8196,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Tue Dec 11 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Wed Dec 12 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8252,7 +8252,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Tue Dec 11 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Wed Dec 12 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8400,7 +8400,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181127/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -8421,7 +8421,7 @@ Normative references to this spec from:
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -8559,7 +8559,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Dec 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Dec 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8584,7 +8584,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Dec 11 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Dec 12 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8706,7 +8706,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181127/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2018/PR-pointerevents2-20181016/)
+- [Pointer Events](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -8733,7 +8733,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181207/)
+- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)

@@ -35,7 +35,8 @@ interface NFCWriter {
 interface NFCReader : EventTarget {
   attribute EventHandler onreading;
 
-  Promise<void> watch();
+  Promise<void> start();
+  void stop();
 };
 
 [Constructor(DOMString type, NFCReadingEventInit nfcReadingEventInitDict), SecureContext, Exposed=Window]
