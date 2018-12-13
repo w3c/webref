@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 12, 2018
+% December 13, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Wed Dec 12 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Thu Dec 13 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -424,7 +424,7 @@ Normative references to this spec from:
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 - [CSS Style Attributes](http://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
@@ -608,7 +608,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://console.spec.whatwg.org/) (11 December 2018)
+- Crawled version: [Living Standard](https://console.spec.whatwg.org/) (12 December 2018)
 - Repository: [GitHub whatwg/console](https://github.com/whatwg/console)
 - Shortname: no shortname
 
@@ -696,7 +696,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Wed Dec 12 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Thu Dec 13 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -946,7 +946,7 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
@@ -1246,7 +1246,7 @@ Normative references to this spec from:
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2018/WD-css-text-4-20180920/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -1469,7 +1469,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 
 
 ## CSS Custom Properties for Cascading Variables Module Level 1 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-inconsistentRef=true}
@@ -1604,7 +1604,7 @@ Normative references to this spec from:
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2018/WD-css-text-4-20180920/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
@@ -1857,7 +1857,7 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
@@ -1915,7 +1915,7 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
@@ -2305,7 +2305,7 @@ Normative references to this spec from:
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
@@ -2356,7 +2356,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
@@ -2769,7 +2769,7 @@ Normative references to this spec from:
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
@@ -2836,7 +2836,7 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -3083,7 +3083,7 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
@@ -3316,7 +3316,7 @@ Normative references to this spec from:
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
@@ -3698,7 +3698,7 @@ Informative references to this spec from:
 
 - [CSS Color Module Level 4](http://www.w3.org/TR/2016/WD-css-color-4-20160705/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 
 
@@ -3735,10 +3735,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-css-text-3-20181206/) (6 December 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-css-text-3-20181212/) (12 December 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-text-3
 
@@ -4124,7 +4124,7 @@ Normative references to this spec from:
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2018/WD-css-text-4-20180920/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -4211,7 +4211,7 @@ Normative references to this spec from:
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2018/WD-css-text-4-20180920/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -4308,7 +4308,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/)
@@ -4367,7 +4367,7 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2018/WD-css-text-4-20180920/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
@@ -4639,7 +4639,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (11 December 2018)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (12 December 2018)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -5253,7 +5253,7 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](http://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
@@ -5403,7 +5403,7 @@ Informative references to this spec from:
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
@@ -5565,7 +5565,7 @@ Informative references to this spec from:
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
@@ -5646,7 +5646,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Wed Dec 12 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Thu Dec 13 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6292,7 +6292,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Wed Dec 12 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Thu Dec 13 2018)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6683,7 +6683,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Wed Dec 12 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Thu Dec 13 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7180,7 +7180,7 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/)
@@ -7643,7 +7643,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (25 October 2018)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (12 December 2018)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -8196,7 +8196,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Wed Dec 12 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Thu Dec 13 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8252,7 +8252,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Wed Dec 12 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Dec 13 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8456,7 +8456,7 @@ Informative references to this spec from:
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181206/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
@@ -8559,7 +8559,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Dec 12 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Dec 13 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8584,7 +8584,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Dec 12 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Dec 13 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8835,7 +8835,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (10 December 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (12 December 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -8888,7 +8888,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (7 December 2018)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (12 December 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}

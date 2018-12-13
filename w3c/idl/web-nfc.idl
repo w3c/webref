@@ -34,18 +34,28 @@ interface NFCWriter {
 [Constructor(optional NFCReaderOptions options), SecureContext, Exposed=Window]
 interface NFCReader : EventTarget {
   attribute EventHandler onreading;
+  attribute EventHandler onerror;
 
-  Promise<void> start();
+  void start();
   void stop();
 };
 
-[Constructor(DOMString type, NFCReadingEventInit nfcReadingEventInitDict), SecureContext, Exposed=Window]
+[Constructor(DOMString type, NFCReadingEventInit readingEventInitDict), SecureContext, Exposed=Window]
 interface NFCReadingEvent : Event {
   readonly attribute NFCMessage message;
 };
 
 dictionary NFCReadingEventInit : EventInit {
   required NFCMessage message;
+};
+
+[Constructor(DOMString type, NFCErrorEventInit errorEventInitDict), SecureContext, Exposed=Window]
+interface NFCErrorEvent : Event {
+  readonly attribute DOMException error;
+};
+
+dictionary NFCErrorEventInit : EventInit {
+  required DOMException error;
 };
 
 dictionary NFCPushOptions {
