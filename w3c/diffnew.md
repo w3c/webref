@@ -1,25 +1,12 @@
-% Diff between report from "December 14, 2018" and reference report from "December 13, 2018"
+% Diff between report from "December 15, 2018" and reference report from "December 14, 2018"
 % Reffy
-% December 14, 2018
+% December 15, 2018
 
-## DeviceOrientation Event Specification
+## https://drafts.fxtf.org/filter-effects-2/
 
-- URL: [https://www.w3.org/TR/orientation-event/](https://www.w3.org/TR/orientation-event/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- Repository: [GitHub w3c/deviceorientation](https://github.com/w3c/deviceorientation)
-- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
-
-
-## Filter Effects Module Level 1
-
-- URL: [https://www.w3.org/TR/filter-effects-1/](https://www.w3.org/TR/filter-effects-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/filter-effects-1/)
-- Editor's Draft: [https://drafts.fxtf.org/filter-effects-1/](https://drafts.fxtf.org/filter-effects-1/)
-- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- URL: [https://drafts.fxtf.org/filter-effects-2/](https://drafts.fxtf.org/filter-effects-2/)
+- Crawled version: [Latest published version](undefined)
+- Spec title: *INS* https://drafts.fxtf.org/filter-effects-2/ / *DEL* Filter Effects Module Level 2
 - Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
     at Object.onceWrapper (events.js:317:30)
@@ -28,120 +15,99 @@
     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
-## Media Capture and Streams
+## Accelerated Shape Detection in Images
 
-- URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/)
-- Repository: [GitHub w3c/mediacapture-main](https://github.com/w3c/mediacapture-main)
-- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
+- URL: [https://wicg.github.io/shape-detection-api/](https://wicg.github.io/shape-detection-api/)
+- Crawled version: [Initial URL](https://wicg.github.io/shape-detection-api/)
+- Repository: [GitHub wicg/shape-detection-api](https://github.com/wicg/shape-detection-api)
+- Missing references for WebIDL names: *INS* Worker
 
 
-## Media Capture Depth Stream Extensions
+## CORS and RFC1918
 
-- URL: [https://www.w3.org/TR/mediacapture-depth/](https://www.w3.org/TR/mediacapture-depth/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/)
-- Repository: [GitHub w3c/mediacapture-depth](https://github.com/w3c/mediacapture-depth)
-- Inconsistent references for links: *INS* https://w3c.github.io/mediacapture-main/
-
-
-## Media Capture from DOM Elements
-
-- URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/)
-- Repository: [GitHub w3c/mediacapture-fromelement](https://github.com/w3c/mediacapture-fromelement)
-- Inconsistent references for links: *INS* https://w3c.github.io/mediacapture-main/, https://www.w3.org/TR/2dcontext2/
+- URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
+- Crawled version: [Initial URL](https://wicg.github.io/cors-rfc1918/)
+- Repository: [GitHub wicg/cors-rfc1918](https://github.com/wicg/cors-rfc1918)
+- Unknown WebIDL names used: *INS* WorkerGlobalScope
 
 
-## MediaStreamTrack Content Hints
+## CSS Font Loading Module Level 3
 
-- URL: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/)
-- Repository: [GitHub w3c/mst-content-hint](https://github.com/w3c/mst-content-hint)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Navigation Timing Level 2
-
-- URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/)
-- Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
-- Inconsistent references for links: *INS* https://w3c.github.io/navigation-timing/
+- URL: [https://www.w3.org/TR/css-font-loading-3/](https://www.w3.org/TR/css-font-loading-3/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-font-loading/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for WebIDL names: *INS* Worker
 
 
-## Orientation Sensor
+## File API
 
-- URL: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
-- Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
-- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
+- URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/FileAPI/)
+- Repository: [GitHub w3c/FileAPI](https://github.com/w3c/FileAPI)
+- Unknown WebIDL names used: *INS* DedicatedWorker, SharedWorker
+- Missing references for WebIDL names: *INS* Worker
 
 
-## Page Visibility Level 2
+## Filter Effects Module Level 1
 
-- URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/)
-- Repository: [GitHub w3c/page-visibility](https://github.com/w3c/page-visibility)
-- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
-
-
-## Paint Timing 1
-
-- URL: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/paint-timing/)
-- Repository: [GitHub w3c/paint-timing](https://github.com/w3c/paint-timing)
-- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
+- URL: [https://www.w3.org/TR/filter-effects-1/](https://www.w3.org/TR/filter-effects-1/)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/filter-effects-1/)
+- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
-## Payment Handler API
+## Geometry Interfaces Module Level 1
 
-- URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
-- Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
-- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
+- URL: [https://www.w3.org/TR/geometry-1/](https://www.w3.org/TR/geometry-1/)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/geometry/)
+- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- Missing references for WebIDL names: *INS* Worker
 
 
-## Payment Method: Basic Card
+## High Resolution Time Level 2
 
-- URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
-- Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
-- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
+- URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/)
+- Repository: [GitHub w3c/hr-time](https://github.com/w3c/hr-time)
+- Missing references for WebIDL names: *INS* Worker
 
 
-## Payment Request API
+## HTML5 Web Messaging
 
-- URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/)
-- Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
-- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
+- URL: [https://www.w3.org/TR/webmessaging/](https://www.w3.org/TR/webmessaging/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
+- Editor's Draft: [http://dev.w3.org/html5/postmsg/](http://dev.w3.org/html5/postmsg/)
+- Missing references for WebIDL names: *INS* Worker
+
+
+## Indexed Database API 3.0
+
+- URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/IndexedDB/)
+- Repository: [GitHub w3c/IndexedDB](https://github.com/w3c/IndexedDB)
+- Missing references for WebIDL names: *INS* Worker
+
+
+## Media Capabilities
+
+- URL: [https://wicg.github.io/media-capabilities/](https://wicg.github.io/media-capabilities/)
+- Crawled version: [Initial URL](https://wicg.github.io/media-capabilities/)
+- Repository: [GitHub wicg/media-capabilities](https://github.com/wicg/media-capabilities)
+- Unknown WebIDL names used: *INS* WorkerNavigator
+- Missing references for WebIDL names: *INS* Worker
+
+
+## Network Information API
+
+- URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/)
+- Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
+- Missing references for WebIDL names: *INS* Worker
 
 
 ## Performance Timeline Level 2
@@ -149,11 +115,7 @@
 - URL: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/)
 - Repository: [GitHub w3c/performance-timeline](https://github.com/w3c/performance-timeline)
-- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
+- Missing references for WebIDL names: *INS* Worker
 
 
 ## Permissions
@@ -161,10 +123,109 @@
 - URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/permissions/)
 - Repository: [GitHub w3c/permissions](https://github.com/w3c/permissions)
-- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
+- Unknown WebIDL names used: *INS* WorkerNavigator
+- Missing references for WebIDL names: *INS* Worker
+
+
+## Service Workers 1
+
+- URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/ServiceWorker/v1/)
+- Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
+- Unknown WebIDL names used: *INS* WorkerGlobalScope, WorkerNavigator, WorkerType
+
+
+## Storage Standard
+
+- URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://storage.spec.whatwg.org/)
+- Repository: [GitHub whatwg/storage](https://github.com/whatwg/storage)
+- Missing references for WebIDL names: *INS* Worker
+
+
+## URL Standard
+
+- URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/)
+- Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
+- Missing references for WebIDL names: *INS* Worker
+
+
+## User Timing Level 2
+
+- URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
+- Repository: [GitHub w3c/user-timing](https://github.com/w3c/user-timing)
+- Missing references for WebIDL names: *INS* Worker
+
+
+## Web App Manifest
+
+- URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
+- Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
+- Unknown WebIDL names used: *INS* WorkerType
+
+
+## Web IDL
+
+- URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
+- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/)
+- Missing references for WebIDL names: *INS* Worker
+
+
+## Web Workers
+
+- URL: [https://www.w3.org/TR/workers/](https://www.w3.org/TR/workers/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/workers/)
+- Editor's Draft: [https://html.spec.whatwg.org/multipage/workers.html](https://html.spec.whatwg.org/multipage/workers.html)
+- Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+
+
+## WebAssembly JavaScript Interface
+
+- URL: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/)
+- Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
+- Missing references for WebIDL names: *INS* Worker
+
+
+## WebGL 2.0 Specification
+
+- URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
+- Missing references for WebIDL names: *INS* Worker
+
+
+## WebGL Specification
+
+- URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
+- Missing references for WebIDL names: *INS* Worker
+
+
+## WebUSB API
+
+- URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/)
+- Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
+- Unknown WebIDL names used: *INS* DedicatedWorker, SharedWorker, WorkerNavigator
+
+
+## XMLHttpRequest Standard
+
+- URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/)
+- Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
+- Unknown WebIDL names used: *INS* DedicatedWorker, SharedWorker
+- Missing references for WebIDL names: *INS* Worker
 
 
