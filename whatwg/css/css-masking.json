@@ -13,8 +13,8 @@
       "percentages": "n/a",
       "computedValue": "as specified, but with <url> values made absolute",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "as specified for <basic-shape> [CSS-SHAPES], otherwise no"
+      "animationType": "by computed value",
+      "media": "visual"
     },
     "clip-rule": {
       "name": "clip-rule",
@@ -25,8 +25,8 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask-image": {
       "name": "mask-image",
@@ -37,8 +37,8 @@
       "percentages": "n/a",
       "computedValue": "as specified, but with URIs made absolute",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask-mode": {
       "name": "mask-mode",
@@ -49,8 +49,8 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask-repeat": {
       "name": "mask-repeat",
@@ -61,8 +61,8 @@
       "percentages": "n/a",
       "computedValue": "Consists of: two keywords, one per dimension",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask-position": {
       "name": "mask-position",
@@ -73,8 +73,8 @@
       "percentages": "refer to size of mask painting area minus size of mask layer image; see text background-position [CSS3BG]",
       "computedValue": "Consisting of: two keywords representing the origin and two offsets from that origin, each given as an absolute length (if given a <length>), otherwise as a percentage.",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "as repeatable list of simple list of length, percentage, or calc"
+      "animationType": "repeatable list",
+      "media": "visual"
     },
     "mask-clip": {
       "name": "mask-clip",
@@ -85,8 +85,8 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask-origin": {
       "name": "mask-origin",
@@ -97,8 +97,8 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask-size": {
       "name": "mask-size",
@@ -109,8 +109,8 @@
       "percentages": "n/a",
       "computedValue": "as specified, but with lengths made absolute",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "as repeatable list of simple list of length, percentage, or calc (This means keyword values are not animatable.)"
+      "animationType": "repeatable list",
+      "media": "visual"
     },
     "mask-composite": {
       "name": "mask-composite",
@@ -121,8 +121,8 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask": {
       "name": "mask",
@@ -133,8 +133,8 @@
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "see individual properties"
+      "animationType": "see individual properties",
+      "media": "visual"
     },
     "mask-border-source": {
       "name": "mask-border-source",
@@ -145,8 +145,8 @@
       "percentages": "n/a",
       "computedValue": "none or the image with its URI made absolute",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask-border-mode": {
       "name": "mask-border-mode",
@@ -157,8 +157,9 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "media": "visual",
-      "animatable": "no"
+      "animationDiscrete": "discrete"
     },
     "mask-border-slice": {
       "name": "mask-border-slice",
@@ -169,8 +170,8 @@
       "percentages": "refer to size of the mask border image",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask-border-width": {
       "name": "mask-border-width",
@@ -181,8 +182,8 @@
       "percentages": "relative to width/height of the mask border image area",
       "computedValue": "all <length>s made absolute, otherwise as specified",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask-border-outset": {
       "name": "mask-border-outset",
@@ -193,8 +194,8 @@
       "percentages": "n/a",
       "computedValue": "all <length>s made absolute, otherwise as specified",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask-border-repeat": {
       "name": "mask-border-repeat",
@@ -205,8 +206,8 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "mask-border": {
       "name": "mask-border",
@@ -217,8 +218,8 @@
       "percentages": "n/a",
       "computedValue": "See individual properties",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "See individual properties"
+      "animationType": "See individual properties",
+      "media": "visual"
     },
     "mask-type": {
       "name": "mask-type",
@@ -229,8 +230,8 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "no"
+      "animationType": "discrete",
+      "media": "visual"
     },
     "clip": {
       "name": "clip",
@@ -241,8 +242,8 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "media": "visual",
-      "animatable": "as rectangle"
+      "animationType": "as rectangle",
+      "media": "visual"
     }
   },
   "descriptors": {},
