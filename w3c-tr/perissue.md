@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 18, 2018
+% December 19, 2018
 
 240 specifications were crawled in this report.
 
@@ -141,7 +141,6 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20180719/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [CSS Conditional Rules Module Level 3](http://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
@@ -161,7 +160,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [WebRTC DSCP Control API](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
 
-=> 19 specifications found
+=> 18 specifications found
 
 
 
@@ -208,16 +207,16 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `ReadableStream` used in [CSS Parser API](https://wicg.github.io/CSS-Parser-API/), [Fetch Standard](https://fetch.spec.whatwg.org/)
 - `SVGAngle` used in [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
 - `SVGAnimatedAngle` used in [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
-- `SVGAnimatedBoolean` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/)
-- `SVGAnimatedEnumeration` used in [CSS Masking Module Level 1](http://www.w3.org/TR/2014/CR-css-masking-1-20140826/), [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/), [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
-- `SVGAnimatedInteger` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/)
-- `SVGAnimatedLength` used in [CSS Masking Module Level 1](http://www.w3.org/TR/2014/CR-css-masking-1-20140826/), [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/), [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
-- `SVGAnimatedNumber` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/)
-- `SVGAnimatedNumberList` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/)
-- `SVGAnimatedPreserveAspectRatio` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/)
-- `SVGAnimatedString` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/)
+- `SVGAnimatedBoolean` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedEnumeration` used in [CSS Masking Module Level 1](http://www.w3.org/TR/2014/CR-css-masking-1-20140826/), [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/), [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
+- `SVGAnimatedInteger` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedLength` used in [CSS Masking Module Level 1](http://www.w3.org/TR/2014/CR-css-masking-1-20140826/), [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/), [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
+- `SVGAnimatedNumber` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedNumberList` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedPreserveAspectRatio` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedString` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - `SVGAnimatedTransformList` used in [CSS Masking Module Level 1](http://www.w3.org/TR/2014/CR-css-masking-1-20140826/)
-- `SVGElement` used in [CSS Masking Module Level 1](http://www.w3.org/TR/2014/CR-css-masking-1-20140826/), [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/), [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
+- `SVGElement` used in [CSS Masking Module Level 1](http://www.w3.org/TR/2014/CR-css-masking-1-20140826/), [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/), [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
 - `SensorReading` used in [Proximity Sensor](http://www.w3.org/TR/2016/WD-proximity-20160719/)
 - `SupportedType` used in [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - `TextTrack` used in [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
@@ -339,9 +338,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/) links to:
     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
     * [`https://w3c.github.io/sensors/usecases.html`](https://w3c.github.io/sensors/usecases.html) but does not list it in its references
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20180719/) links to:
-    * [`https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/`](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) but does not list it in its references
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20181218/) links to:
     * [`https://www.w3.org/TR/wai-aria-practices/`](https://www.w3.org/TR/wai-aria-practices/) but does not list it in its references
+    * [`https://www.w3.org/TR/accname-aam-1.1/`](https://www.w3.org/TR/accname-aam-1.1/) but does not list it in its references
+    * [`https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/`](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) but does not list it in its references
     * [`https://www.w3.org/TR/di-gloss/`](https://www.w3.org/TR/di-gloss/) but does not list it in its references
     * [`https://www.w3.org/TR/xhtml-role/`](https://www.w3.org/TR/xhtml-role/) but does not list it in its references
     * [`https://www.w3.org/TR/2002/REC-xhtml1-20020801/`](https://www.w3.org/TR/2002/REC-xhtml1-20020801/) but does not list it in its references
@@ -866,15 +866,15 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/) links to [`https://domparsing.spec.whatwg.org/`](https://domparsing.spec.whatwg.org/) but does not list it in its references
 - [Event Timing API](https://wicg.github.io/event-timing/) links to [`https://w3c.github.io/pointerevents/extension.html`](https://w3c.github.io/pointerevents/extension.html) but does not list it in its references
 - [Feature Policy](https://wicg.github.io/feature-policy/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but does not list it in its references
-- [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/) links to:
+- [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/) links to:
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-transitions-1/`](https://www.w3.org/TR/css-transitions-1/) but does not list it in its references
     * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
+    * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/WD-filter-effects-20121025/`](https://www.w3.org/TR/2012/WD-filter-effects-20121025/) but does not list it in its references
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/) links to [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/) but does not list it in its references
 - [Gyroscope](https://www.w3.org/TR/2018/CR-gyroscope-20180320/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
@@ -909,11 +909,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/) but does not list it in its references
     * [`https://www.w3.org/TR/eventsource/`](https://www.w3.org/TR/eventsource/) but does not list it in its references
-- [Motion Path Module Level 1](https://www.w3.org/TR/2017/WD-motion-1-20170711/) links to:
-    * [`https://www.w3.org/TR/css-display-3/`](https://www.w3.org/TR/css-display-3/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
+- [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/) links to:
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
+    * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
 - [Network Information API](https://wicg.github.io/netinfo/) links to:
     * [`https://w3c.github.io/ServiceWorker/v1/`](https://w3c.github.io/ServiceWorker/v1/) but does not list it in its references
     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
@@ -1015,7 +1015,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Device API](https://immersive-web.github.io/webxr/) links to [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 587 missing references for links found in 143 specifications
+=> 588 missing references for links found in 143 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1029,17 +1029,16 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/) links to [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Accelerometer](https://www.w3.org/TR/2018/CR-accelerometer-20180320/) links to [`https://www.w3.org/TR/screen-orientation/`](https://www.w3.org/TR/screen-orientation/) but related reference "SCREEN-ORIENTATION" uses URL [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/)
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20180719/) links to:
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20181218/) links to:
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
     * [`https://www.w3.org/TR/2004/REC-owl-features-20040210/`](https://www.w3.org/TR/2004/REC-owl-features-20040210/) but related reference "OWL-FEATURES" uses URL [`https://www.w3.org/TR/owl-features/`](https://www.w3.org/TR/owl-features/)
-    * [`https://www.w3.org/TR/2002/REC-UAAG10-20021217/`](https://www.w3.org/TR/2002/REC-UAAG10-20021217/) but related reference "UAAG10" uses URL [`https://www.w3.org/TR/UAAG10/`](https://www.w3.org/TR/UAAG10/)
     * [`https://www.w3.org/TR/2014/REC-rdf-schema-20140225/`](https://www.w3.org/TR/2014/REC-rdf-schema-20140225/) but related reference "RDF-SCHEMA" uses URL [`https://www.w3.org/TR/rdf-schema/`](https://www.w3.org/TR/rdf-schema/)
     * [`https://www.w3.org/TR/2007/REC-xforms-20071029/`](https://www.w3.org/TR/2007/REC-xforms-20071029/) but related reference "XFORMS10" uses URL [`https://www.w3.org/TR/xforms/`](https://www.w3.org/TR/xforms/)
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
     * [`https://www.w3.org/TR/2006/REC-xforms-20060314/`](https://www.w3.org/TR/2006/REC-xforms-20060314/) but related reference "XFORMS10" uses URL [`https://www.w3.org/TR/xforms/`](https://www.w3.org/TR/xforms/)
+    * [`https://www.w3.org/TR/2002/REC-UAAG10-20021217/`](https://www.w3.org/TR/2002/REC-UAAG10-20021217/) but related reference "UAAG10" uses URL [`https://www.w3.org/TR/UAAG10/`](https://www.w3.org/TR/UAAG10/)
     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "XML-NAMES" uses URL [`https://www.w3.org/TR/xml-names/`](https://www.w3.org/TR/xml-names/)
     * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
-    * [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/) but related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 - [Background Fetch](https://wicg.github.io/background-fetch/) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
@@ -1209,7 +1208,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP-3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
     * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/) but related reference "PAYMENT-REQUEST" uses URL [`https://www.w3.org/TR/payment-request/`](https://www.w3.org/TR/payment-request/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/) links to [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
-- [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/) links to:
+- [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/) links to:
     * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/) links to:
@@ -1256,7 +1255,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/) but related reference "XML" uses URL [`https://www.w3.org/TR/xml`](https://www.w3.org/TR/xml)
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
-- [Motion Path Module Level 1](https://www.w3.org/TR/2017/WD-motion-1-20170711/) links to:
+- [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/`](https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/) but related reference "CSS-ROUND-DISPLAY-1" uses URL [`https://www.w3.org/TR/css-round-display-1/`](https://www.w3.org/TR/css-round-display-1/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/) links to:
@@ -1365,6 +1364,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
-=> 267 inconsistent references for links found in 134 specifications
+=> 266 inconsistent references for links found in 134 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
