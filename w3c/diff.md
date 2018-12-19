@@ -1,12 +1,12 @@
-% Diff between report from "December 18, 2018" and reference report from "December 17, 2018"
+% Diff between report from "December 19, 2018" and reference report from "December 18, 2018"
 % Reffy
-% December 18, 2018
+% December 19, 2018
 
-## CSS Masking Module Level 1
+## Accessible Rich Internet Applications (WAI-ARIA) 1.2
 
-- URL: [https://www.w3.org/TR/css-masking-1/](https://www.w3.org/TR/css-masking-1/)
-- Crawled version: [Editor's Draft](https://drafts.fxtf.org/css-masking-1/)
-- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
-- Missing references for links: *DEL* https://www.w3.org/TR/css3-transitions/
+- URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/)
+- Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
+- Missing references for links: *DEL* https://www.w3.org/TR/wai-aria-1.1/
 
 
