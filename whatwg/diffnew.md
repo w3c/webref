@@ -1,13 +1,13 @@
-% Diff between report from "December 19, 2018" and reference report from "December 18, 2018"
+% Diff between report from "December 20, 2018" and reference report from "December 19, 2018"
 % Reffy
-% December 19, 2018
+% December 20, 2018
 
 ## Network Information API
 
 - URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
-- Crawled version: [Latest published version](undefined)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
