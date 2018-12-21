@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 20, 2018
+% December 21, 2018
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Thu Dec 20 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Fri Dec 21 2018)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -652,7 +652,6 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -695,7 +694,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Thu Dec 20 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Fri Dec 21 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4604,39 +4603,6 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Feature Policy {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (17 December 2018)
-- Repository: [GitHub wicg/feature-policy](https://github.com/wicg/feature-policy)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `HTMLIFrameElement`
-- Missing references for WebIDL names: 
-     * `ReportBody` defined in [Reporting API 1](https://w3c.github.io/reporting/)
-- Missing references for links: 
-     * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP-3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
-     * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/), related reference "PAYMENT-REQUEST" uses URL [`https://www.w3.org/TR/payment-request/`](https://www.w3.org/TR/payment-request/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
-- [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
-- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
-
-Informative references to this spec from:
-
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
-
-
 ## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
@@ -4664,7 +4630,6 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
@@ -4849,7 +4814,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [The Screen Orientation API](https://www.w3.org/TR/2018/WD-screen-orientation-20181214/)
@@ -5081,7 +5045,6 @@ Although they do not, the following specs should also normatively reference this
 - [Intersection Observer](https://www.w3.org/TR/2018/WD-intersection-observer-20181106/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Server Timing](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
-- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
 
@@ -5157,7 +5120,6 @@ Normative references to this spec from:
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
@@ -5262,10 +5224,9 @@ Informative references to this spec from:
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181220/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -5336,7 +5297,6 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
@@ -5412,7 +5372,7 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181220/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -5494,7 +5454,6 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
@@ -5573,7 +5532,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181220/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -5648,7 +5607,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Thu Dec 20 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Fri Dec 21 2018)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6294,7 +6253,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Thu Dec 20 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Fri Dec 21 2018)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6409,6 +6368,7 @@ Normative references to this spec from:
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -6473,10 +6433,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/) (November 2018 )
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181220/) (December 2018 )
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181220/)
 - Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
 - Shortname: payment-method-basic-card
 
@@ -6514,9 +6474,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181220/)
 
 No informative reference to this spec from other specs.
 
@@ -6595,11 +6554,10 @@ Normative references to this spec from:
 - [Proximity Sensor](http://www.w3.org/TR/2016/WD-proximity-20160719/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 
-Informative references to this spec from:
-
-- [Web NFC API](https://w3c.github.io/web-nfc/)
+No informative reference to this spec from other specs.
 
 
 ## Picture-in-Picture {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -6685,7 +6643,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Thu Dec 20 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Fri Dec 21 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6911,10 +6869,6 @@ No informative reference to this spec from other specs.
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 
 No informative reference to this spec from other specs.
 
@@ -7301,6 +7255,33 @@ Informative references to this spec from:
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 
 
+## Site not found · GitHub Pages {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/feature-policy/) (Fri Dec 21 2018)
+- Repository: [GitHub wicg/feature-policy](https://github.com/wicg/feature-policy)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
+- [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+
+Informative references to this spec from:
+
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+
+
 ## Static Range {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
@@ -7668,7 +7649,6 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
@@ -7839,7 +7819,6 @@ Normative references to this spec from:
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
@@ -8193,23 +8172,17 @@ Informative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 
 
-## Web NFC API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web NFC API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Thu Dec 20 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Fri Dec 21 2018)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `AbortSignal`, `Dictionary`, `EventHandler`, `Window`
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/)
-     * [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "permissions" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8253,7 +8226,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Dec 20 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Fri Dec 21 2018)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8375,7 +8348,6 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
@@ -8465,7 +8437,7 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181220/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 
@@ -8560,7 +8532,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Dec 20 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Dec 21 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8572,10 +8544,6 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [WebXR Device API](https://immersive-web.github.io/webxr/)
-
 Informative references to this spec from:
 
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -8585,7 +8553,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Dec 20 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Dec 21 2018)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8598,10 +8566,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
 
@@ -8668,7 +8632,6 @@ Normative references to this spec from:
 - [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [Feature Policy](https://wicg.github.io/feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
@@ -8703,7 +8666,7 @@ Normative references to this spec from:
 - [Orientation Sensor](https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181121/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181220/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181127/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -8885,23 +8848,16 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Device API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## WebXR Device API {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (19 December 2018)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (20 December 2018)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLCanvasElement`, `Navigator`, `Window`
-- Missing references for WebIDL names: 
-     * `DOMHighResTimeStamp` defined in [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
-     * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-     * `WebGL2RenderingContext` defined in [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-     * `WebGLFramebuffer` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-     * `WebGLContextAttributes` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-     * `WebGLRenderingContextBase` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- Invalid WebIDL content found
 - Missing references for links: 
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
 - Inconsistent references for links: 
