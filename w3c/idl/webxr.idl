@@ -61,7 +61,7 @@ enum XRSessionMode {
 
 dictionary XRSessionCreationOptions {
   XRSessionMode mode = "inline";
-  XRPresentationContext outputContext? = null;
+  XRPresentationContext? outputContext = null;
 };
 
 callback XRFrameRequestCallback = void (DOMHighResTimeStamp time, XRFrame frame);
