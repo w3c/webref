@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 23, 2018
+% December 24, 2018
 
 240 specifications were crawled in this report.
 
@@ -34,6 +34,7 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 
 ## Specifications without normative dependencies
 
+- [[No title found for https://wicg.github.io/webappsec-feature-policy/]](https://wicg.github.io/webappsec-feature-policy/)
 - [404 not found](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
 - [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](http://www.w3.org/TR/2011/REC-CSS2-20110607/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
@@ -49,7 +50,6 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 - [CSS Syntax Module Level 3](http://www.w3.org/TR/2014/CR-css-syntax-3-20140220/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/)
 - [Non-element Selectors Module Level 1](http://www.w3.org/TR/2014/WD-selectors-nonelement-1-20140603/)
-- [Site not found · GitHub Pages](https://wicg.github.io/webappsec-feature-policy/)
 
 => 16 specifications found
 
@@ -58,9 +58,9 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## Specifications without WebIDL definitions
 
+- [[No title found for https://wicg.github.io/webappsec-feature-policy/]](https://wicg.github.io/webappsec-feature-policy/)
 - [404 not found](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/)
-- [Site not found · GitHub Pages](https://wicg.github.io/webappsec-feature-policy/)
 
 => 3 specifications found
 

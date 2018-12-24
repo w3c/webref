@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 23, 2018
+% December 24, 2018
 
 240 specifications were crawled in this report.
 
@@ -34,9 +34,9 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 
 ## Specifications without normative dependencies
 
+- [[No title found for https://wicg.github.io/webappsec-feature-policy/]](https://wicg.github.io/webappsec-feature-policy/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [Site not found · GitHub Pages](https://wicg.github.io/webappsec-feature-policy/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 => 4 specifications found
@@ -46,8 +46,8 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## Specifications without WebIDL definitions
 
+- [[No title found for https://wicg.github.io/webappsec-feature-policy/]](https://wicg.github.io/webappsec-feature-policy/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [Site not found · GitHub Pages](https://wicg.github.io/webappsec-feature-policy/)
 
 => 2 specifications found
 
