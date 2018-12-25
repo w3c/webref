@@ -1,11 +1,18 @@
-% Diff between report from "December 24, 2018" and reference report from "December 23, 2018"
+% Diff between report from "December 25, 2018" and reference report from "December 24, 2018"
 % Reffy
-% December 24, 2018
+% December 25, 2018
 
-## [No title found for https://wicg.github.io/webappsec-feature-policy/]
+## Accelerometer
 
-- URL: [https://wicg.github.io/webappsec-feature-policy/](https://wicg.github.io/webappsec-feature-policy/)
-- Crawled version: [Initial URL](https://wicg.github.io/webappsec-feature-policy/)
-- Spec title: *INS* [No title found for https://wicg.github.io/webappsec-feature-policy/] / *DEL* Site not found · GitHub Pages
+- URL: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/accelerometer/)
+- Editor's Draft: [https://w3c.github.io/accelerometer/](https://w3c.github.io/accelerometer/)
+- Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
