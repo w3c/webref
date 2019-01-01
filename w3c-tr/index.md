@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% December 31, 2018
+% January 01, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webappsec-feature-policy/) (Mon Dec 31 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webappsec-feature-policy/) (Tue Jan 01 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -65,7 +65,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Mon Dec 31 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Tue Jan 01 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -90,6 +90,7 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Color Module Level 3](https://www.w3.org/TR/2018/REC-css-color-3-20180619/)
 - [CSS Color Module Level 4](http://www.w3.org/TR/2016/WD-css-color-4-20160705/)
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
@@ -408,6 +409,7 @@ Normative references to this spec from:
 - [CSS Color Module Level 3](https://www.w3.org/TR/2018/REC-css-color-3-20180619/)
 - [CSS Color Module Level 4](http://www.w3.org/TR/2016/WD-css-color-4-20160705/)
 - [CSS Conditional Rules Module Level 3](http://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](http://www.w3.org/TR/2015/CR-css-variables-1-20151203/)
 - [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/)
@@ -711,7 +713,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Mon Dec 31 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Tue Jan 01 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -949,6 +951,7 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
@@ -1041,6 +1044,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
@@ -1422,11 +1426,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Containment Module Level 1 {data-spec=true data-error=true}
+## CSS Containment Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-contain-1/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/) (8 November 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-contain/](https://drafts.csswg.org/css-contain/)
 - Latest published version: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
@@ -1435,15 +1439,13 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/)
+     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
+     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
+     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
+     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
+     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1596,6 +1598,7 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
@@ -1982,6 +1985,7 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
@@ -2102,6 +2106,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
 
 
@@ -2152,6 +2157,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 
@@ -2379,6 +2385,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/)
 
 
@@ -2493,6 +2500,7 @@ Normative references to this spec from:
 
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Generated Content Module Level 3](http://www.w3.org/TR/2016/WD-css-content-3-20160602/)
@@ -2672,6 +2680,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
@@ -2833,6 +2842,7 @@ Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
@@ -2895,6 +2905,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
 
 
@@ -2994,6 +3005,7 @@ Informative references to this spec from:
 
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 
@@ -3224,6 +3236,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 
 
@@ -4198,6 +4211,7 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2018/CR-css-contain-1-20181108/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
 - [CSS Easing Functions Level 1](https://www.w3.org/TR/2018/WD-css-easing-1-20181009/)
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
@@ -5167,7 +5181,6 @@ Normative references to this spec from:
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
-- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181105/)
@@ -5613,7 +5626,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Mon Dec 31 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Tue Jan 01 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6259,7 +6272,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Mon Dec 31 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Tue Jan 01 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6649,7 +6662,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Mon Dec 31 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Tue Jan 01 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6713,9 +6726,7 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-Informative references to this spec from:
-
-- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
+No informative reference to this spec from other specs.
 
 
 ## Progress Events {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
@@ -6831,11 +6842,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Remote Playback API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## Remote Playback API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-remote-playback-20171019/) (19 October 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/remote-playback/)
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
 - Latest published version: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -6844,9 +6855,15 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `Window`
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+The following network or parsing error occurred:
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7008,7 +7025,6 @@ Normative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
-- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
@@ -7635,7 +7651,6 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
-- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
@@ -7874,7 +7889,6 @@ Although they do not, the following specs should also normatively reference this
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
-- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 
 Informative references to this spec from:
 
@@ -8155,7 +8169,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Mon Dec 31 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Tue Jan 01 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8205,7 +8219,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Mon Dec 31 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Tue Jan 01 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8511,7 +8525,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Dec 31 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Jan 01 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8536,7 +8550,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Dec 31 2018)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Jan 01 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8663,7 +8677,6 @@ Normative references to this spec from:
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
-- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181105/)
@@ -8786,7 +8799,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (30 December 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (31 December 2018)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
