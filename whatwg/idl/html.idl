@@ -1119,6 +1119,8 @@ enum ImageSmoothingQuality { "low", "medium", "high" };
 interface CanvasRenderingContext2D {
   // back-reference to the canvas
   readonly attribute HTMLCanvasElement canvas;
+
+  CanvasRenderingContext2DSettings getContextAttributes();
 };
 CanvasRenderingContext2D includes CanvasState;
 CanvasRenderingContext2D includes CanvasTransform;
