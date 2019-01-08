@@ -237,6 +237,14 @@ partial interface Document {
   readonly attribute SVGSVGElement? rootElement;
 };
 
+// must only be implemented in certain implementations
+partial interface Document {
+  readonly attribute DOMString title;
+  readonly attribute DOMString referrer;
+  readonly attribute DOMString domain;
+  readonly attribute Element? activeElement;
+};
+
 [Exposed=Window]
 interface SVGSVGElement : SVGGraphicsElement {
 
@@ -262,7 +270,7 @@ interface SVGSVGElement : SVGGraphicsElement {
   DOMMatrix createSVGMatrix();
   DOMRect createSVGRect();
   SVGTransform createSVGTransform();
-  SVGTransform createSVGTransformFromMatrix(DOMMatrixReadOnly matrix);
+  SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix);
 
   Element getElementById(DOMString elementId);
 
@@ -367,7 +375,7 @@ interface SVGTransform {
   [SameObject] readonly attribute DOMMatrix matrix;
   readonly attribute float angle;
 
-  void setMatrix(DOMMatrixReadOnly matrix);
+  void setMatrix(optional DOMMatrix2DInit matrix);
   void setTranslate(float tx, float ty);
   void setScale(float sx, float sy);
   void setRotate(float angle, float cx, float cy);
@@ -391,7 +399,7 @@ interface SVGTransformList {
   setter void (unsigned long index, SVGTransform newItem);
 
   // Additional methods not common to other list interfaces.
-  SVGTransform createSVGTransformFromMatrix(DOMMatrixReadOnly matrix);
+  SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix);
   SVGTransform? consolidate();
 };
 
