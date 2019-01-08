@@ -34,7 +34,7 @@ enum XREnvironmentBlendMode {
   attribute XRLayer? baseLayer;
 
   // Methods
-  Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type, optional XRReferenceSpaceOptions options);
+  Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceOptions options);
 
   FrozenArray<XRInputSource> getInputSources();
 

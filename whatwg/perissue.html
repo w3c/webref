@@ -32,9 +32,9 @@
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
-  <li><a href="https://wicg.github.io/webappsec-feature-policy/">[No title found for https://wicg.github.io/webappsec-feature-policy/]</a></li>
   <li><a href="http://dev.w3.org/csswg/css2/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/mst-content-hint/">Page not found · GitHub Pages</a></li>
   </ul>
   <p>=&gt; 3 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
@@ -42,8 +42,8 @@
   <section id="specifications-without-webidl-definitions" class="level2">
   <h2>Specifications without WebIDL definitions</h2>
   <ul>
-  <li><a href="https://wicg.github.io/webappsec-feature-policy/">[No title found for https://wicg.github.io/webappsec-feature-policy/]</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/mst-content-hint/">Page not found · GitHub Pages</a></li>
   </ul>
   <p>=&gt; 2 specifications found</p>
   <p>Reffy was expecting to find IDL content in the specifications listed here but could not extract any.</p>
@@ -188,6 +188,7 @@
   </ul></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a> uses <code>AudioWorklet</code> but does not reference <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a> uses <code>Worker</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><a href="https://w3c.github.io/webappsec-feature-policy/">Feature Policy</a> uses <code>ReportBody</code> but does not reference <a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
   <li><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a> uses <code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a> uses:
   <ul>
@@ -254,7 +255,7 @@
   <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 60 missing references for IDL definitions found in 24 specifications</p>
+  <p>=&gt; 61 missing references for IDL definitions found in 25 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -327,6 +328,13 @@
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-transitions/"><code>https://www.w3.org/TR/css3-transitions/</code></a> but does not list it in its references</li>
   </ul></li>
+  <li><a href="https://drafts.csswg.org/css-ui-4/">CSS Basic User Interface Module Level 4</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2000/WD-css3-userint-20000216"><code>https://www.w3.org/TR/2000/WD-css3-userint-20000216</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-style-attr/"><code>https://www.w3.org/TR/css-style-attr/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://drafts.csswg.org/css-ui/">CSS Basic User Interface Module Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/2000/WD-css3-userint-20000216"><code>https://www.w3.org/TR/2000/WD-css3-userint-20000216</code></a> but does not list it in its references</li>
@@ -335,13 +343,6 @@
   <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-ui-4-20171222/"><code>https://www.w3.org/TR/2017/WD-css-ui-4-20171222/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2015/WD-css-ui-4-20150922/"><code>https://www.w3.org/TR/2015/WD-css-ui-4-20150922/</code></a> but does not list it in its references</li>
-  </ul></li>
-  <li><a href="https://drafts.csswg.org/css-ui-4/">CSS Basic User Interface Module Level 4</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/2000/WD-css3-userint-20000216"><code>https://www.w3.org/TR/2000/WD-css3-userint-20000216</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css-style-attr/"><code>https://www.w3.org/TR/css-style-attr/</code></a> but does not list it in its references</li>
-  <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-align/">CSS Box Alignment Module Level 3</a> links to:
   <ul>
@@ -642,6 +643,7 @@
   </ul></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a> links to <a href="https://w3c.github.io/deviceorientation/"><code>https://w3c.github.io/deviceorientation/</code></a> but does not list it in its references</li>
   <li><a href="https://wicg.github.io/event-timing/">Event Timing API</a> links to <a href="https://w3c.github.io/pointerevents/extension.html"><code>https://w3c.github.io/pointerevents/extension.html</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/webappsec-feature-policy/">Feature Policy</a> links to <a href="https://w3c.github.io/reporting/"><code>https://w3c.github.io/reporting/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.fxtf.org/filter-effects-1/">Filter Effects Module Level 1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-transitions-1/"><code>https://www.w3.org/TR/css-transitions-1/</code></a> but does not list it in its references</li>
@@ -816,7 +818,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 349 missing references for links found in 120 specifications</p>
+  <p>=&gt; 350 missing references for links found in 121 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -876,8 +878,8 @@
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2011/REC-CSS2-20110607/"><code>https://www.w3.org/TR/2011/REC-CSS2-20110607/</code></a> but related reference &quot;CSS2&quot; uses URL <a href="https://www.w3.org/TR/CSS2/"><code>https://www.w3.org/TR/CSS2/</code></a></li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-ui/">CSS Basic User Interface Module Level 4</a> links to <a href="https://www.w3.org/TR/html/"><code>https://www.w3.org/TR/html/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-ui-4/">CSS Basic User Interface Module Level 4</a> links to <a href="https://www.w3.org/TR/html/"><code>https://www.w3.org/TR/html/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-ui/">CSS Basic User Interface Module Level 4</a> links to <a href="https://www.w3.org/TR/html/"><code>https://www.w3.org/TR/html/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-align/">CSS Box Alignment Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-writing-modes/"><code>https://www.w3.org/TR/css3-writing-modes/</code></a> but related reference &quot;CSS-WRITING-MODES-3&quot; uses URL <a href="https://www.w3.org/TR/css-writing-modes-3/"><code>https://www.w3.org/TR/css-writing-modes-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-cascade-3/">CSS Cascading and Inheritance Level 3</a> links to:
   <ul>
@@ -977,6 +979,11 @@
   <li><a href="https://w3c.github.io/paint-timing/"><code>https://w3c.github.io/paint-timing/</code></a> but related reference &quot;PAINT-TIMING&quot; uses URL <a href="https://www.w3.org/TR/paint-timing/"><code>https://www.w3.org/TR/paint-timing/</code></a></li>
   <li><a href="https://w3c.github.io/pointerevents/"><code>https://w3c.github.io/pointerevents/</code></a> but related reference &quot;POINTEREVENTS&quot; uses URL <a href="https://www.w3.org/TR/pointerevents/"><code>https://www.w3.org/TR/pointerevents/</code></a></li>
   <li><a href="https://w3c.github.io/touch-events/"><code>https://w3c.github.io/touch-events/</code></a> but related reference &quot;TOUCH-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/touch-events/"><code>https://www.w3.org/TR/touch-events/</code></a></li>
+  </ul></li>
+  <li><a href="https://w3c.github.io/webappsec-feature-policy/">Feature Policy</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP-3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
+  <li><a href="https://w3c.github.io/payment-request/"><code>https://w3c.github.io/payment-request/</code></a> but related reference &quot;PAYMENT-REQUEST&quot; uses URL <a href="https://www.w3.org/TR/payment-request/"><code>https://www.w3.org/TR/payment-request/</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a> links to <a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
   <li><a href="https://drafts.fxtf.org/filter-effects-1/">Filter Effects Module Level 1</a> links to <a href="https://www.w3.org/TR/2011/REC-SVG11-20110816/"><code>https://www.w3.org/TR/2011/REC-SVG11-20110816/</code></a> but related reference &quot;SVG11&quot; uses URL <a href="https://www.w3.org/TR/SVG11/"><code>https://www.w3.org/TR/SVG11/</code></a></li>
@@ -1170,7 +1177,7 @@
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 202 inconsistent references for links found in 98 specifications</p>
+  <p>=&gt; 204 inconsistent references for links found in 99 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
