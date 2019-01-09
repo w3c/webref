@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% January 08, 2019
+% January 09, 2019
 
 240 specifications were crawled in this report.
 
@@ -14,14 +14,8 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
-- [Input Device Capabilities](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
-=> 2 specifications found
+=> 1 specification found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -42,10 +36,9 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [Page not found · GitHub Pages](https://w3c.github.io/mst-content-hint/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
-=> 4 specifications found
+=> 3 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -53,9 +46,8 @@ Basically all specifications have normative dependencies on some other specifica
 ## Specifications without WebIDL definitions
 
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [Page not found · GitHub Pages](https://w3c.github.io/mst-content-hint/)
 
-=> 2 specifications found
+=> 1 specification found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
