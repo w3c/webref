@@ -1,16 +1,19 @@
-% Diff between report from "January 09, 2019" and reference report from "January 08, 2019"
+% Diff between report from "January 10, 2019" and reference report from "January 09, 2019"
 % Reffy
-% January 09, 2019
+% January 10, 2019
 
-## MediaStreamTrack Content Hints
+## CSS Typed OM Level 1
 
-- URL: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/)
-- Repository: [GitHub w3c/mst-content-hint](https://github.com/w3c/mst-content-hint)
-- Spec title: *INS* MediaStreamTrack Content Hints / *DEL* Page not found · GitHub Pages
-- Spec is OK: *INS* true / *DEL* false
-- No normative references found: *INS* false / *DEL* true
-- No WebIDL definitions found: *INS* false / *DEL* true
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- URL: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
+- Missing references for links: *INS* https://www.w3.org/TR/svg2/
+
+
+## User Timing Level 3
+
+- URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
+- Repository: [GitHub w3c/user-timing](https://github.com/w3c/user-timing)
+- Spec title: *INS* User Timing Level 3 / *DEL* User Timing Level 2
 
 
