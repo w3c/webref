@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% January 09, 2019
+% January 10, 2019
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -66,7 +66,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/) (Thu Jan 10 2019)
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20181218/)
@@ -130,7 +130,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
 - Latest published version: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
@@ -183,7 +183,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/battery/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/battery/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
 - Latest published version: [http://www.w3.org/TR/battery-status/](http://www.w3.org/TR/battery-status/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
@@ -209,7 +209,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
 - Latest published version: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-beacon-20170413/)
@@ -386,7 +386,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/clipboard-apis/) (3 January 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/clipboard-apis/) (9 January 2019)
 - Editor's Draft: [https://w3c.github.io/clipboard-apis/](https://w3c.github.io/clipboard-apis/)
 - Latest published version: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/)
@@ -588,7 +588,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Thu Jan 10 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -627,7 +627,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
 - Latest published version: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
@@ -3849,6 +3849,7 @@ No informative reference to this spec from other specs.
      * `PaintWorklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
+     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4294,7 +4295,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/deviceorientation/spec-source-orientation.html) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/deviceorientation/spec-source-orientation.html) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/deviceorientation/spec-source-orientation.html](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - Latest published version: [https://www.w3.org/TR/orientation-event/](https://www.w3.org/TR/orientation-event/)
 - Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/)
@@ -4323,7 +4324,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/DOM-Parsing/](https://w3c.github.io/DOM-Parsing/)
 - Latest published version: [http://www.w3.org/TR/DOM-Parsing/](http://www.w3.org/TR/DOM-Parsing/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
@@ -4352,7 +4353,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://encoding.spec.whatwg.org/) (11 December 2018)
+- Crawled version: [Editor's Draft](https://encoding.spec.whatwg.org/) (9 January 2019)
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-encoding-20180327/)
@@ -4701,7 +4702,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-gamepad-20181214/)
@@ -4875,7 +4876,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
 - Latest published version: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -4906,7 +4907,7 @@ Normative references to this spec from:
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
@@ -5064,7 +5065,7 @@ Normative references to this spec from:
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
@@ -5303,7 +5304,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
 - Latest published version: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
@@ -5496,7 +5497,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
@@ -5556,7 +5557,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Thu Jan 10 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5575,7 +5576,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html) (Thu Jan 10 2019)
 - Editor's Draft: [https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
@@ -5758,7 +5759,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
@@ -5804,7 +5805,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/mediacapture-depth/](https://w3c.github.io/mediacapture-depth/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-depth/](https://www.w3.org/TR/mediacapture-depth/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -5829,7 +5830,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -6071,7 +6072,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/mst-content-hint/](https://w3c.github.io/mst-content-hint/)
 - Latest published version: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
@@ -6188,7 +6189,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-navigation-timing-2-20181130/)
@@ -6209,19 +6210,19 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Server Timing](https://w3c.github.io/server-timing/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 Informative references to this spec from:
 
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 
 ## Network Information API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Thu Jan 10 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6300,7 +6301,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
 - Latest published version: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
@@ -6362,7 +6363,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -6384,7 +6385,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-method-basic-card-20181220/)
@@ -6410,7 +6411,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
@@ -6436,7 +6437,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-performance-timeline-2-20181127/)
@@ -6458,7 +6459,7 @@ Normative references to this spec from:
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 Informative references to this spec from:
 
@@ -6536,7 +6537,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-pointerevents2-20181211/)
@@ -6568,7 +6569,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
 - Latest published version: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
@@ -6595,7 +6596,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Thu Jan 10 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6616,7 +6617,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
 - Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -6639,7 +6640,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Latest published version: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -6714,7 +6715,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
 - Latest published version: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-push-api-20181026/)
@@ -6775,7 +6776,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
 - Latest published version: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -6851,7 +6852,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-resource-timing-2-20181105/)
@@ -6879,7 +6880,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (07 January 2019)
+- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (09 January 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -7004,7 +7005,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
 - Latest published version: [http://www.w3.org/TR/screen-capture/](http://www.w3.org/TR/screen-capture/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -7106,7 +7107,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-selection-api-20181018/)
@@ -7261,7 +7262,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-server-timing-20181019/)
@@ -7358,6 +7359,7 @@ Although they do not, the following specs should also normatively reference this
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Server Timing](https://w3c.github.io/server-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 Informative references to this spec from:
@@ -7473,7 +7475,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/specs/markers/) (07 January 2019)
+- Crawled version: [Editor's Draft](https://svgwg.org/specs/markers/) (09 January 2019)
 - Editor's Draft: [https://svgwg.org/specs/markers/](https://svgwg.org/specs/markers/)
 - Latest published version: [http://www.w3.org/TR/svg-markers/](http://www.w3.org/TR/svg-markers/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
@@ -7507,7 +7509,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/specs/strokes/) (07 January 2019)
+- Crawled version: [Editor's Draft](https://svgwg.org/specs/strokes/) (09 January 2019)
 - Editor's Draft: [https://svgwg.org/specs/strokes/](https://svgwg.org/specs/strokes/)
 - Latest published version: [http://www.w3.org/TR/svg-strokes/](http://www.w3.org/TR/svg-strokes/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-svg-strokes-20150409/)
@@ -7530,10 +7532,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
@@ -7582,7 +7584,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/touch-events/](https://w3c.github.io/touch-events/)
 - Latest published version: [http://www.w3.org/TR/touch-events/](http://www.w3.org/TR/touch-events/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
@@ -7803,11 +7805,11 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## User Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## User Timing Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
@@ -7817,12 +7819,14 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Window`
+- Missing references for WebIDL names: 
+     * `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 Informative references to this spec from:
 
@@ -7833,7 +7837,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
 - Latest published version: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-vibration-20161018/)
@@ -8007,7 +8011,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
 - Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -8029,7 +8033,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/web-animations-1/) (7 January 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/web-animations-1/) (8 January 2019)
 - Editor's Draft: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
 - Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -8062,7 +8066,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
@@ -8096,7 +8100,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (18 December 2018)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (9 January 2019)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -8136,7 +8140,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (18 December 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (9 January 2019)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
@@ -8193,7 +8197,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/) (10 December 2018)
+- Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/) (9 January 2019)
 - Repository: [GitHub webbluetoothcg/web-bluetooth](https://github.com/webbluetoothcg/web-bluetooth)
 - Shortname: no shortname
 
@@ -8252,7 +8256,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (11 December 2018)
+- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (9 January 2019)
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
@@ -8379,7 +8383,7 @@ Normative references to this spec from:
 - [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
@@ -8414,7 +8418,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/) (Thu Jan 10 2019)
 - Editor's Draft: [http://webaudio.github.io/web-midi-api/](http://webaudio.github.io/web-midi-api/)
 - Latest published version: [http://www.w3.org/TR/webmidi/](http://www.w3.org/TR/webmidi/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
@@ -8438,7 +8442,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Thu Jan 10 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8487,7 +8491,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Jan 10 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8688,7 +8692,6 @@ Normative references to this spec from:
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [User Timing Level 2](https://w3c.github.io/user-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -8720,6 +8723,7 @@ Although they do not, the following specs should also normatively reference this
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Server Timing](https://w3c.github.io/server-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 Informative references to this spec from:
@@ -8749,7 +8753,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (13 December 2018)
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (9 January 2019)
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180904/)
@@ -8779,7 +8783,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/web-api/) (13 December 2018)
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/web-api/) (9 January 2019)
 - Editor's Draft: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-wasm-web-api-1-20180904/)
@@ -8804,7 +8808,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
 - Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -8837,7 +8841,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Jan 10 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8864,7 +8868,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Jan 10 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8893,7 +8897,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (Wed Jan 09 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (Thu Jan 10 2019)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
@@ -8953,7 +8957,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (7 January 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (9 January 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 

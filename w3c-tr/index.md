@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% January 09, 2019
+% January 10, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Wed Jan 09 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Thu Jan 10 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -695,7 +695,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Thu Jan 10 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1544,7 +1544,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 
 
 ## CSS Display Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -4432,7 +4432,7 @@ Normative references to this spec from:
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -4472,7 +4472,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 
 
 ## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -4845,7 +4845,7 @@ Normative references to this spec from:
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -5204,7 +5204,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -5367,7 +5367,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -5527,7 +5527,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -5641,7 +5641,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Thu Jan 10 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6287,7 +6287,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Thu Jan 10 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6398,7 +6398,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
@@ -6678,7 +6678,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Thu Jan 10 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7454,10 +7454,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/) (January 2019 )
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/) (January 2019 )
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
@@ -7873,7 +7873,7 @@ Normative references to this spec from:
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -8006,7 +8006,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 
 
 ## Web Audio API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -8109,7 +8109,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/) (10 December 2018)
+- Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/) (9 January 2019)
 - Repository: [GitHub webbluetoothcg/web-bluetooth](https://github.com/webbluetoothcg/web-bluetooth)
 - Shortname: no shortname
 
@@ -8190,7 +8190,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Thu Jan 10 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8240,7 +8240,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Jan 10 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8403,7 +8403,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2018/CR-user-timing-2-20180709/)
@@ -8547,7 +8547,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Jan 10 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8572,7 +8572,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Jan 09 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Jan 10 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8712,7 +8712,7 @@ Normative references to this spec from:
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190108/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190109/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -8823,7 +8823,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (7 January 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (9 January 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
