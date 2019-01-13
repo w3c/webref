@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% January 12, 2019
+% January 13, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Sat Jan 12 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Sun Jan 13 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -695,7 +695,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sat Jan 12 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sun Jan 13 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -730,11 +730,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cooperative Scheduling of Background Tasks {data-spec=true data-error=true}
+## Cooperative Scheduling of Background Tasks {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/requestidlecallback/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/) (10 October 2017)
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
 - Latest published version: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
@@ -743,15 +743,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5059,6 +5051,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181214/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
@@ -5127,6 +5120,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
@@ -5169,7 +5163,6 @@ Normative references to this spec from:
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
-- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
@@ -5439,11 +5432,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## HTML5 Web Messaging {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true}
+## HTML5 Web Messaging {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-webmessaging-20150519/) (19 May 2015)
+- Crawled version: [Latest published version](http://www.w3.org/TR/webmessaging/)
 - Editor's Draft: [http://dev.w3.org/html5/postmsg/](http://dev.w3.org/html5/postmsg/)
 - Latest published version: [http://www.w3.org/TR/webmessaging/](http://www.w3.org/TR/webmessaging/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
@@ -5451,8 +5444,15 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Obsolete WebIDL constructs found
-- Unknown WebIDL names used: `EventHandler`, `Transferable`, `Window`, `WindowProxy`
+The following network or parsing error occurred:
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5646,7 +5646,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sat Jan 12 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sun Jan 13 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6293,7 +6293,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sat Jan 12 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sun Jan 13 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6400,6 +6400,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
+- [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
@@ -6683,7 +6684,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sat Jan 12 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sun Jan 13 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7256,7 +7257,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`, `WindowOrWorkerGlobalScope`, `WorkerType`
+- Unknown WebIDL names used: `EventHandler`, `MessagePort`, `Navigator`, `Window`, `WindowOrWorkerGlobalScope`, `WorkerType`
 - WebIDL names also defined elsewhere: 
     * `Worker` also defined in [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 - Missing references for links: 
@@ -7846,7 +7847,6 @@ Normative references to this spec from:
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181214/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
-- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Intersection Observer](https://www.w3.org/TR/2018/WD-intersection-observer-20181106/)
@@ -8028,7 +8028,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `Window`
+- Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `MessagePort`, `Window`
 - WebIDL names also defined elsewhere: 
     * `Worklet` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
@@ -8196,7 +8196,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sat Jan 12 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sun Jan 13 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8246,7 +8246,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sat Jan 12 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sun Jan 13 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8321,7 +8321,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ApplicationCache`, `EventHandler`, `OnErrorEventHandler`, `Transferable`, `Window`
+- Unknown WebIDL names used: `ApplicationCache`, `EventHandler`, `MessagePort`, `OnErrorEventHandler`, `Transferable`, `Window`
 - WebIDL names also defined elsewhere: 
     * `Worker` also defined in [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - Missing references for links: 
@@ -8379,7 +8379,6 @@ Normative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
-- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
@@ -8553,7 +8552,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Jan 12 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Jan 13 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8578,7 +8577,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Jan 12 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Jan 13 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8640,6 +8639,7 @@ Normative references to this spec from:
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
@@ -8753,6 +8753,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
+- [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
