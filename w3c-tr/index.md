@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% January 17, 2019
+% January 18, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Thu Jan 17 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Fri Jan 18 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -651,7 +651,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
@@ -695,7 +695,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Thu Jan 17 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Fri Jan 18 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -779,16 +779,16 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/) (4 August 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/) (17 January 2019)
 - Editor's Draft: [https://w3c.github.io/webappsec-credential-management/](https://w3c.github.io/webappsec-credential-management/)
 - Latest published version: [https://www.w3.org/TR/credential-management-1/](https://www.w3.org/TR/credential-management-1/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - Repository: [GitHub w3c/webappsec-credential-management](https://github.com/w3c/webappsec-credential-management)
 - Shortname: credential-management-1
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLFormElement`, `Navigator`, `Window`
+- Unknown WebIDL names used: `AbortSignal`, `HTMLFormElement`, `Navigator`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec/usecases/credentialmanagement/`](https://w3c.github.io/webappsec/usecases/credentialmanagement/)
 - Inconsistent references for links: 
@@ -798,7 +798,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 
 Informative references to this spec from:
 
@@ -1544,7 +1544,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 
 
 ## CSS Display Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -2853,7 +2853,7 @@ Informative references to this spec from:
 
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 
 
 ## CSS Overflow Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -4431,7 +4431,7 @@ Normative references to this spec from:
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Resize Observer 1](https://wicg.github.io/ResizeObserver/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -4471,7 +4471,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 
 
 ## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -4539,7 +4539,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180904/)
@@ -4608,7 +4608,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (22 December 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (17 January 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4626,7 +4626,9 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 
 
 ## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -4651,7 +4653,7 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/)
@@ -4671,7 +4673,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - [WebAssembly Web API](https://www.w3.org/TR/2018/WD-wasm-web-api-1-20180904/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
@@ -4844,7 +4846,7 @@ Normative references to this spec from:
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -4930,7 +4932,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 
 Informative references to this spec from:
 
@@ -5122,7 +5124,7 @@ Normative references to this spec from:
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
@@ -5203,7 +5205,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -5214,7 +5216,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
@@ -5304,7 +5306,7 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
@@ -5366,14 +5368,14 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
@@ -5462,7 +5464,7 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
@@ -5526,14 +5528,14 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
@@ -5554,7 +5556,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/)
@@ -5640,7 +5642,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Thu Jan 17 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Fri Jan 18 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6204,12 +6206,12 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 
 Informative references to this spec from:
 
@@ -6287,7 +6289,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Thu Jan 17 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Fri Jan 18 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6398,10 +6400,10 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
@@ -6678,7 +6680,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Thu Jan 17 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Fri Jan 18 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7032,7 +7034,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [Generic Sensor API](https://www.w3.org/TR/2018/CR-generic-sensor-20180320/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
@@ -7045,7 +7047,7 @@ Normative references to this spec from:
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 
@@ -7389,7 +7391,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 
 
@@ -7454,10 +7456,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/) (January 2019 )
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/) (January 2019 )
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
@@ -7656,7 +7658,6 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2018/CR-css-values-3-20180814/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2018/WD-css-values-4-20181010/)
@@ -7677,7 +7678,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Share API - Level 1](https://wicg.github.io/web-share/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -7811,7 +7812,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
@@ -7874,7 +7875,7 @@ Normative references to this spec from:
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -7884,7 +7885,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
@@ -8007,7 +8008,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 
 
 ## Web Audio API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -8049,26 +8050,22 @@ Informative references to this spec from:
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 
 
-## Web Authentication: An API for accessing Public Key Credentials Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Authentication: An API for accessing Public Key Credentials Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-webauthn-20180807/) (7 August 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/PR-webauthn-20190117/) (17 January 2019)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Shortname: webauthn
 
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `Window`
-- Missing references for links: 
-     * [`https://w3c.github.io/html/browsers.html`](https://w3c.github.io/html/browsers.html)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/), related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
-     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8076,7 +8073,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 
 
 ## Web Background Synchronization {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -8191,7 +8188,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Thu Jan 17 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Fri Jan 18 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8241,7 +8238,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Jan 17 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Fri Jan 18 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8339,7 +8336,7 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
@@ -8404,7 +8401,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/PR-user-timing-2-20190110/)
@@ -8412,7 +8409,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
@@ -8548,7 +8545,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Jan 17 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Jan 18 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8573,7 +8570,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Jan 17 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Jan 18 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8636,7 +8633,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
@@ -8713,7 +8710,7 @@ Normative references to this spec from:
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190110/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190117/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -8725,7 +8722,7 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2018/CR-webauthn-20180807/)
+- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/PR-webauthn-20190117/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
@@ -8824,7 +8821,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (15 January 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (17 January 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -8959,7 +8956,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Credential Management Level 1](https://www.w3.org/TR/2017/WD-credential-management-1-20170804/)
+- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2018/WD-resource-timing-2-20181105/)
