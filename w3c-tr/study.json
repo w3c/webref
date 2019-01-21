@@ -2,13 +2,38 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-01-20T07:05:24.649Z",
+  "date": "2019-01-21T07:05:25.498Z",
   "stats": {
     "crawled": 240,
     "errors": 2,
     "studied": 240
   },
   "results": [
+    {
+      "title": "https://drafts.csswg.org/css-shadow-parts-1/",
+      "url": "https://drafts.csswg.org/css-shadow-parts-1/",
+      "report": {
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "noCssDefinitions": true,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
     {
       "title": "\"MediaStream Image Capture\"",
       "shortname": "image-capture",
@@ -30,18 +55,99 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "ConstrainBoolean",
-          "ConstrainDOMString",
-          "ConstrainDouble",
-          "ImageBitmap",
-          "MediaStreamTrack",
-          "MediaTrackCapabilities",
-          "MediaTrackConstraintSet",
-          "MediaTrackSettings",
-          "MediaTrackSupportedConstraints"
+          "ImageBitmap"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "MediaStreamTrack",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+                "date": "3 October 2017"
+              }
+            ]
+          },
+          {
+            "name": "MediaTrackSupportedConstraints",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+                "date": "3 October 2017"
+              }
+            ]
+          },
+          {
+            "name": "MediaTrackCapabilities",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+                "date": "3 October 2017"
+              }
+            ]
+          },
+          {
+            "name": "MediaTrackConstraintSet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+                "date": "3 October 2017"
+              }
+            ]
+          },
+          {
+            "name": "ConstrainDOMString",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+                "date": "3 October 2017"
+              }
+            ]
+          },
+          {
+            "name": "ConstrainDouble",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+                "date": "3 October 2017"
+              }
+            ]
+          },
+          {
+            "name": "ConstrainBoolean",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+                "date": "3 October 2017"
+              }
+            ]
+          },
+          {
+            "name": "MediaTrackSettings",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+                "date": "3 October 2017"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -61,7 +167,14 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+              "date": "3 October 2017"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -70,7 +183,7 @@
     {
       "title": "404 not found",
       "shortname": "SVG2",
-      "date": "Sun Jan 20 2019",
+      "date": "Mon Jan 21 2019",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
@@ -1949,7 +2062,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "Sun Jan 20 2019",
+      "date": "Mon Jan 21 2019",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -3109,7 +3222,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -4181,12 +4294,6 @@
               "date": "9 November 2017"
             },
             {
-              "url": "https://drafts.csswg.org/css-shadow-parts-1/",
-              "title": "CSS Shadow Parts",
-              "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
-              "date": "11 December 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
@@ -4313,7 +4420,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             }
           ]
@@ -9357,33 +9464,6 @@
       }
     },
     {
-      "title": "CSS Shadow Parts",
-      "date": "11 December 2018",
-      "url": "https://drafts.csswg.org/css-shadow-parts-1/",
-      "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": true,
-        "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "noEdDraft": null,
-        "ok": false
-      }
-    },
-    {
       "title": "CSS Shapes Module Level 1",
       "shortname": "css-shapes-1",
       "date": "20 March 2014",
@@ -11633,12 +11713,6 @@
               "date": "14 November 2018"
             },
             {
-              "url": "https://drafts.csswg.org/css-shadow-parts-1/",
-              "title": "CSS Shadow Parts",
-              "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
-              "date": "11 December 2018"
-            },
-            {
               "url": "https://drafts.csswg.org/css-shapes-2/",
               "title": "CSS Shapes Module Level 2",
               "crawled": "https://drafts.csswg.org/css-shapes-2/",
@@ -12444,7 +12518,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://wicg.github.io/ResizeObserver/",
@@ -12461,7 +12535,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             },
             {
@@ -12565,7 +12639,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             }
           ]
@@ -12809,7 +12883,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -13646,7 +13720,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             },
             {
@@ -14641,6 +14715,12 @@
               "date": "3 January 2019"
             },
             {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+              "date": "3 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
               "title": "Media Capture Depth Stream Extensions",
               "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/",
@@ -14686,7 +14766,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -14835,7 +14915,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             },
             {
@@ -14932,7 +15012,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -14944,7 +15024,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14986,13 +15066,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -15600,7 +15680,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -15719,7 +15799,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             },
             {
@@ -15780,13 +15860,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -15816,13 +15896,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16346,7 +16426,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -16477,7 +16557,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             },
             {
@@ -16538,13 +16618,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -16580,13 +16660,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16891,7 +16971,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "Sun Jan 20 2019",
+      "date": "Mon Jan 21 2019",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -17315,25 +17395,64 @@
     {
       "title": "Media Capture and Streams",
       "shortname": "mediacapture-streams",
+      "date": "3 October 2017",
       "url": "https://www.w3.org/TR/mediacapture-streams/",
       "latest": "https://www.w3.org/TR/mediacapture-streams/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/mediacapture-main/",
-      "crawled": "https://www.w3.org/TR/mediacapture-streams/",
+      "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
       "repository": "https://github.com/w3c/mediacapture-main",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "OverconstrainedError",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "Event",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          },
+          {
+            "name": "EventInit",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/dom41/",
+                "title": "W3C DOM 4.1",
+                "crawled": "https://www.w3.org/TR/2018/WD-dom41-20180201/",
+                "date": "1 February 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -17438,16 +17557,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "ConstrainBoolean",
-          "ConstrainDOMString",
-          "ConstrainDouble",
-          "DoubleRange",
-          "MediaTrackCapabilities",
-          "MediaTrackConstraintSet",
-          "MediaTrackSettings",
-          "MediaTrackSupportedConstraints"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17498,8 +17608,6 @@
         "unknownIdlNames": [
           "HTMLCanvasElement",
           "HTMLMediaElement",
-          "MediaStream",
-          "MediaStreamTrack",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -17523,7 +17631,14 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+              "date": "3 October 2017"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -17931,11 +18046,21 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "MediaStream",
           "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
+          {
+            "name": "MediaStream",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+                "date": "3 October 2017"
+              }
+            ]
+          },
           {
             "name": "DOMHighResTimeStamp",
             "refs": [
@@ -17978,6 +18103,12 @@
               "date": "3 January 2019"
             },
             {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+              "date": "3 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://www.w3.org/TR/2018/CR-webaudio-20180918/",
@@ -18009,9 +18140,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "MediaStreamTrack"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18168,6 +18297,12 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-CSP3-20181015/",
               "date": "15 October 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+              "date": "3 October 2017"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -18340,7 +18475,7 @@
     },
     {
       "title": "Network Information API",
-      "date": "Sun Jan 20 2019",
+      "date": "Mon Jan 21 2019",
       "url": "https://wicg.github.io/netinfo/",
       "crawled": "https://wicg.github.io/netinfo/",
       "repository": "https://github.com/wicg/netinfo",
@@ -18566,7 +18701,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             },
             {
@@ -18591,7 +18726,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -19001,6 +19136,12 @@
               "date": "20 March 2018"
             },
             {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+              "date": "3 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
               "title": "Media Capture Depth Stream Extensions",
               "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/",
@@ -19046,7 +19187,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -19157,7 +19298,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/webdriver/",
@@ -19171,7 +19312,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             }
           ]
         },
@@ -19218,7 +19359,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             }
           ],
           "informative": [
@@ -19236,7 +19377,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "Sun Jan 20 2019",
+      "date": "Mon Jan 21 2019",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -19844,14 +19985,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "ConstrainBoolean",
-          "ConstrainDOMString",
-          "MediaStream",
-          "MediaStreamConstraints",
-          "MediaTrackConstraintSet",
-          "NavigatorUserMedia"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -20328,12 +20462,6 @@
               "title": "CSS Scroll Snap Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-css-scroll-snap-1-20180814/",
               "date": "14 August 2018"
-            },
-            {
-              "url": "https://drafts.csswg.org/css-shadow-parts-1/",
-              "title": "CSS Shadow Parts",
-              "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
-              "date": "11 December 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-text-3/",
@@ -20956,10 +21084,10 @@
       "date": "January 2019 ",
       "url": "https://www.w3.org/TR/screen-orientation/",
       "latest": "https://www.w3.org/TR/screen-orientation/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/screen-orientation/",
-      "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+      "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
       "repository": "https://github.com/w3c/screen-orientation",
       "report": {
         "noNormativeRefs": false,
@@ -21106,7 +21234,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             }
           ],
           "informative": [
@@ -21172,7 +21300,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -21565,13 +21693,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -21974,12 +22102,6 @@
               "date": "14 November 2018"
             },
             {
-              "url": "https://drafts.csswg.org/css-shadow-parts-1/",
-              "title": "CSS Shadow Parts",
-              "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
-              "date": "11 December 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-transitions-1/",
               "title": "CSS Transitions",
               "crawled": "https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/",
@@ -22103,7 +22225,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -22157,7 +22279,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -22264,7 +22386,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             },
             {
@@ -22349,7 +22471,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -22385,7 +22507,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -22628,7 +22750,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             }
           ]
@@ -22660,8 +22782,6 @@
         "unknownIdlNames": [
           "EventHandler",
           "HTMLMediaElement",
-          "MediaStream",
-          "MediaStreamTrack",
           "Window"
         ],
         "redefinedIdlNames": [
@@ -22713,6 +22833,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+              "date": "3 October 2017"
+            },
             {
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
@@ -23018,7 +23144,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "Sun Jan 20 2019",
+      "date": "Mon Jan 21 2019",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -23131,7 +23257,7 @@
     },
     {
       "title": "Web Share API - Level 1",
-      "date": "Sun Jan 20 2019",
+      "date": "Mon Jan 21 2019",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "repository": "https://github.com/wicg/web-share",
@@ -23634,7 +23760,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -23759,7 +23885,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             },
             {
@@ -23826,13 +23952,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -23862,13 +23988,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -24184,7 +24310,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sun Jan 20 2019",
+      "date": "Mon Jan 21 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -24221,7 +24347,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sun Jan 20 2019",
+      "date": "Mon Jan 21 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -24252,7 +24378,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             }
           ],
           "informative": [
@@ -24491,12 +24617,6 @@
               "date": "9 November 2017"
             },
             {
-              "url": "https://drafts.csswg.org/css-shadow-parts-1/",
-              "title": "CSS Shadow Parts",
-              "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
-              "date": "11 December 2018"
-            },
-            {
               "url": "https://www.w3.org/TR/css-transitions-1/",
               "title": "CSS Transitions",
               "crawled": "https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/",
@@ -24644,7 +24764,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -24689,6 +24809,12 @@
               "date": "3 January 2019"
             },
             {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+              "date": "3 October 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
               "title": "Media Capture Depth Stream Extensions",
               "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/",
@@ -24728,7 +24854,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/orientation-sensor/",
@@ -24794,7 +24920,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -24883,7 +25009,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190117/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190120/",
               "date": "January 2019 "
             },
             {
@@ -24980,13 +25106,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -25028,13 +25154,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sun Jan 20 2019"
+              "date": "Mon Jan 21 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -25150,8 +25276,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "MediaStream",
-          "MediaStreamTrack",
           "RTCError",
           "Window"
         ],
@@ -25197,6 +25321,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/",
+              "date": "3 October 2017"
+            },
             {
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
@@ -25400,7 +25530,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun Jan 20 2019"
+                "date": "Mon Jan 21 2019"
               }
             ]
           },
@@ -25411,7 +25541,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Sun Jan 20 2019"
+                "date": "Mon Jan 21 2019"
               }
             ]
           },
@@ -25422,7 +25552,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun Jan 20 2019"
+                "date": "Mon Jan 21 2019"
               }
             ]
           },
@@ -25433,7 +25563,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun Jan 20 2019"
+                "date": "Mon Jan 21 2019"
               }
             ]
           },
@@ -25444,7 +25574,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sun Jan 20 2019"
+                "date": "Mon Jan 21 2019"
               }
             ]
           }
