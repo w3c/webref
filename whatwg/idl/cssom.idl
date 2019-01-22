@@ -37,7 +37,7 @@ interface StyleSheetList {
   readonly attribute unsigned long length;
 };
 
-partial interface DocumentOrShadowRoot {
+partial interface mixin DocumentOrShadowRoot {
   [SameObject] readonly attribute StyleSheetList styleSheets;
 };
 
