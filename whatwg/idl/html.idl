@@ -3,6 +3,11 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: HTML Standard (https://html.spec.whatwg.org/)
 
+[Exposed=Window]
+interface Example {
+  // this is an IDL definition
+};
+
 [Exposed=Window,
  LegacyUnenumerableNamedProperties]
 interface HTMLAllCollection {
@@ -1816,7 +1821,7 @@ interface mixin NavigatorID {
   [Exposed=Window] readonly attribute DOMString vendorSub; // constant ""
 };
 
-partial interface mixin NavigatorID {
+partial interface NavigatorID {
   [Exposed=Window] boolean taintEnabled(); // constant false
   [Exposed=Window] readonly attribute DOMString oscpu;
 };
