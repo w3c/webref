@@ -1,24 +1,20 @@
-% Diff between report from "January 25, 2019" and reference report from "January 24, 2019"
+% Diff between report from "January 26, 2019" and reference report from "January 25, 2019"
 % Reffy
-% January 25, 2019
+% January 26, 2019
 
-## Resize Observer
+## Picture-in-Picture
 
-- URL: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
-- Crawled version: [Initial URL](https://drafts.csswg.org/resize-observer/)
-- This specification was not in the reference crawl report.
+- URL: [https://wicg.github.io/picture-in-picture/](https://wicg.github.io/picture-in-picture/)
+- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/)
+- Repository: [GitHub wicg/picture-in-picture](https://github.com/wicg/picture-in-picture)
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
 
 
-## Server-Sent Events
+## Reporting API 1
 
-- URL: [https://www.w3.org/TR/eventsource/](https://www.w3.org/TR/eventsource/)
-- Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
-- Editor's Draft: [http://dev.w3.org/html5/eventsource/](http://dev.w3.org/html5/eventsource/)
-- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+- URL: [https://w3c.github.io/reporting/](https://w3c.github.io/reporting/)
+- Crawled version: [Initial URL](https://w3c.github.io/reporting/)
+- Repository: [GitHub w3c/reporting](https://github.com/w3c/reporting)
+- Inconsistent references for links: *INS* https://w3c.github.io/FileAPI/
 
 
