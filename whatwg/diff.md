@@ -1,44 +1,36 @@
-% Diff between report from "January 26, 2019" and reference report from "January 25, 2019"
+% Diff between report from "January 27, 2019" and reference report from "January 26, 2019"
 % Reffy
-% January 26, 2019
+% January 27, 2019
 
-## Ambient Light Sensor
+## CSS Grid Layout Module Level 1
 
-- URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/ambient-light/)
-- Repository: [GitHub w3c/ambient-light](https://github.com/w3c/ambient-light)
-- WebIDL names also defined elsewhere: *INS* AmbientLightReadingValues
-
-
-## Generic Sensor API
-
-- URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/)
-- Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
-- WebIDL names also defined elsewhere: *INS* AmbientLightReadingValues
+- URL: [https://www.w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/css-grid-1/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-grid-1/versions?embed=1 reason: Unexpected end of JSON input FetchError: invalid json response body at https://api.w3.org/specifications/css-grid-1/versions?embed=1 reason: Unexpected end of JSON input
+    at /home/dom/github.com/reffy/node_modules/node-fetch/lib/index.js:239:32
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
-## Picture-in-Picture
+## Fetch Standard
 
-- URL: [https://wicg.github.io/picture-in-picture/](https://wicg.github.io/picture-in-picture/)
-- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/)
-- Repository: [GitHub wicg/picture-in-picture](https://github.com/wicg/picture-in-picture)
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
-## Reporting API 1
-
-- URL: [https://w3c.github.io/reporting/](https://w3c.github.io/reporting/)
-- Crawled version: [Initial URL](https://w3c.github.io/reporting/)
-- Repository: [GitHub w3c/reporting](https://github.com/w3c/reporting)
-- Inconsistent references for links: *INS* https://w3c.github.io/FileAPI/
+- URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/)
+- Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
+- Unknown WebIDL names used: *INS* FormData
 
 
-## Screen Capture
+## XMLHttpRequest Standard
 
-- URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/)
-- Repository: [GitHub w3c/mediacapture-screen-share](https://github.com/w3c/mediacapture-screen-share)
-- Inconsistent references for links: *DEL* https://html.spec.whatwg.org/
+- URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
+- Crawled version: [Latest published version](undefined)
+- Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
