@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% February 01, 2019
+% February 02, 2019
 
 240 specifications were crawled in this report.
 
@@ -117,12 +117,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Custom Properties for Cascading Variables Module Level 1](https://www.w3.org/TR/css-variables-1): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [CSS Custom Properties for Cascading Variables Module Level 1](https://www.w3.org/TR/css-variables-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -159,12 +157,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Generated Content Module Level 3](https://www.w3.org/TR/css-content-3): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [CSS Generated Content Module Level 3](https://www.w3.org/TR/css-content-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -177,12 +173,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -191,12 +185,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Line Grid Module Level 1](https://www.w3.org/TR/css-line-grid-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -405,10 +397,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [HTML Media Capture](https://www.w3.org/TR/html-media-capture): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [HTML Media Capture](https://www.w3.org/TR/html-media-capture): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -437,10 +431,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/mediacapture-depth): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -541,12 +537,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Progress Events](https://www.w3.org/TR/progress-events): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [Progress Events](https://www.w3.org/TR/progress-events): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Proximity Sensor](https://www.w3.org/TR/proximity): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -599,12 +593,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Server-Sent Events](https://www.w3.org/TR/eventsource): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [Server-Sent Events](https://www.w3.org/TR/eventsource): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Service Workers 1](https://www.w3.org/TR/service-workers-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
