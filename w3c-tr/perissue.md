@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% February 02, 2019
+% February 03, 2019
 
 240 specifications were crawled in this report.
 
@@ -397,12 +397,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [HTML Media Capture](https://www.w3.org/TR/html-media-capture): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [HTML Media Capture](https://www.w3.org/TR/html-media-capture): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -431,12 +429,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/mediacapture-depth): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
