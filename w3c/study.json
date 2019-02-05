@@ -2,13 +2,38 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-02-05T07:01:10.182Z",
+  "date": "2019-02-05T08:34:18.167Z",
   "stats": {
     "crawled": 240,
-    "errors": 177,
+    "errors": 178,
     "studied": 240
   },
   "results": [
+    {
+      "title": "https://drafts.csswg.org/css-gcpm-4/",
+      "url": "https://drafts.csswg.org/css-gcpm-4/",
+      "report": {
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "noCssDefinitions": true,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
     {
       "title": "\"MediaStream Image Capture\"",
       "shortname": "image-capture",
@@ -2036,44 +2061,10 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": [
-            {
-              "url": "https://drafts.csswg.org/css-gcpm-4/",
-              "title": "CSS Generated Content for Paged Media Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-gcpm-4/",
-              "date": "9 December 2018"
-            }
-          ]
+          "informative": []
         },
         "noEdDraft": true,
         "ok": false
-      }
-    },
-    {
-      "title": "CSS Generated Content for Paged Media Module Level 4",
-      "date": "9 December 2018",
-      "url": "https://drafts.csswg.org/css-gcpm-4/",
-      "crawled": "https://drafts.csswg.org/css-gcpm-4/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
-        "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "noEdDraft": null,
-        "ok": true
       }
     },
     {
@@ -2099,14 +2090,7 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://drafts.csswg.org/css-gcpm-4/",
-              "title": "CSS Generated Content for Paged Media Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-gcpm-4/",
-              "date": "9 December 2018"
-            }
-          ],
+          "normative": [],
           "informative": []
         },
         "noEdDraft": true,
@@ -3127,12 +3111,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://drafts.csswg.org/css-gcpm-4/",
-              "title": "CSS Generated Content for Paged Media Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-gcpm-4/",
-              "date": "9 December 2018"
-            },
-            {
               "url": "https://drafts.csswg.org/css-multicol-2/",
               "title": "CSS Multi-column Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-multicol-2/",
@@ -3400,12 +3378,13 @@
     {
       "title": "CSS Shapes Module Level 1",
       "shortname": "css-shapes-1",
+      "date": "",
       "url": "https://www.w3.org/TR/css-shapes-1/",
       "latest": "https://www.w3.org/TR/css-shapes-1",
-      "crawled": "https://www.w3.org/TR/css-shapes-1",
+      "crawled": "https://www.w3.org/TR/css-shapes-1/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
         "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
@@ -4081,12 +4060,6 @@
               "date": "10 September 2018"
             },
             {
-              "url": "https://drafts.csswg.org/css-gcpm-4/",
-              "title": "CSS Generated Content for Paged Media Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-gcpm-4/",
-              "date": "9 December 2018"
-            },
-            {
               "url": "https://drafts.csswg.org/css-sizing-4/",
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/",
@@ -4241,13 +4214,12 @@
     {
       "title": "CSS Writing Modes Level 4",
       "shortname": "css-writing-modes-4",
-      "date": "",
       "url": "https://www.w3.org/TR/css-writing-modes-4/",
       "latest": "https://www.w3.org/TR/css-writing-modes-4",
-      "crawled": "https://www.w3.org/TR/css-writing-modes-4/",
+      "crawled": "https://www.w3.org/TR/css-writing-modes-4",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
         "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
@@ -5192,12 +5164,13 @@
     {
       "title": "HTML 5.2",
       "shortname": "html52",
+      "date": "",
       "url": "https://www.w3.org/TR/html52/",
       "latest": "https://www.w3.org/TR/html52",
-      "crawled": "https://www.w3.org/TR/html52",
+      "crawled": "https://www.w3.org/TR/html52/",
       "repository": "https://github.com/w3c/html",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
         "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
@@ -7965,11 +7938,12 @@
     {
       "title": "Selectors API Level 1",
       "shortname": "selectors-api",
+      "date": "",
       "url": "https://www.w3.org/TR/selectors-api/",
       "latest": "https://www.w3.org/TR/selectors-api",
-      "crawled": "https://www.w3.org/TR/selectors-api",
+      "crawled": "https://www.w3.org/TR/selectors-api/",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
         "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
