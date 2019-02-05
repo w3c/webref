@@ -1,4 +1,4 @@
-% Diff between report from "February 05, 2019" and reference report from "February 04, 2019"
+% Diff between report from "February 05, 2019" and reference report from "February 05, 2019"
 % Reffy
 % February 05, 2019
 
@@ -6,22 +6,6 @@
 
 - URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-color-4)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSS Image Values and Replaced Content Module Level 3
-
-- URL: [https://www.w3.org/TR/css3-images/](https://www.w3.org/TR/css3-images/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css3-images)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
@@ -34,10 +18,10 @@
     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
-## Media Queries
+## CSS Display Module Level 3
 
-- URL: [https://www.w3.org/TR/css3-mediaqueries/](https://www.w3.org/TR/css3-mediaqueries/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css3-mediaqueries)
+- URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/css-display-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
@@ -50,10 +34,35 @@
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
-## WebXR Device API
+## Media Queries
 
-- URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/)
-- Inconsistent references for links: *DEL* https://www.w3.org/TR/html51/, https://www.w3.org/TR/html5/
+- URL: [https://www.w3.org/TR/css3-mediaqueries/](https://www.w3.org/TR/css3-mediaqueries/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/css3-mediaqueries)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+
+
+## Page Visibility Level 2
+
+- URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/page-visibility-2)
+- Repository: [GitHub w3c/page-visibility](https://github.com/w3c/page-visibility)
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
