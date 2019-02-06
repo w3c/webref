@@ -2,11 +2,11 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-02-05T08:34:18.167Z",
+  "date": "2019-02-06T07:01:11.556Z",
   "options": {},
   "stats": {
     "crawled": 240,
-    "errors": 178
+    "errors": 177
   },
   "results": [
     {
@@ -4061,7 +4061,151 @@
       "versions": [
         "https://drafts.csswg.org/css-gcpm-4/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
+      "title": "CSS Generated Content for Paged Media Module Level 4",
+      "crawled": "https://drafts.csswg.org/css-gcpm-4/",
+      "date": "9 December 2018",
+      "links": [
+        "https://www.w3.org/TR/CSS/",
+        "https://github.com/w3c/csswg-drafts/issues",
+        "https://lists.w3.org/Archives/Public/public-css-archive/",
+        "https://lists.w3.org/Archives/Public/www-style/",
+        "https://www.w3.org/Style/CSS/members",
+        "https://www.w3.org/Consortium/Patent-Policy/",
+        "https://www.w3.org/2004/01/pp-impl/32061/status",
+        "https://www.w3.org/2018/Process-20180201/",
+        "https://drafts.csswg.org/css-content-3/",
+        "https://drafts.csswg.org/css-values/",
+        "https://drafts.csswg.org/css-values-4/",
+        "https://drafts.csswg.org/css-cascade/",
+        "https://drafts.csswg.org/web-animations/",
+        "https://drafts.csswg.org/css-regions-1/",
+        "https://www.w3.org/TR/CSS2/",
+        "https://www.w3.org/Style/CSS/Test/",
+        "https://lists.w3.org/Archives/Public/public-css-testsuite",
+        "https://www.w3.org/TR/css-values-4/",
+        "https://www.w3.org/TR/css-regions-1/",
+        "https://www.w3.org/TR/css-content-3/",
+        "https://tools.ietf.org/html/rfc2119",
+        "https://drafts.csswg.org/css3-page-template/",
+        "https://www.w3.org/TR/css-gcpm-3/",
+        "https://www.w3.org/TR/css-page-3/"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "CSS-VALUES-4",
+            "url": "https://www.w3.org/TR/css-values-4/"
+          },
+          {
+            "name": "CSS3-REGIONS",
+            "url": "https://www.w3.org/TR/css-regions-1/"
+          },
+          {
+            "name": "CSS3GENCON",
+            "url": "https://www.w3.org/TR/css-content-3/"
+          },
+          {
+            "name": "RFC2119",
+            "url": "https://tools.ietf.org/html/rfc2119"
+          }
+        ],
+        "informative": [
+          {
+            "name": "CSS3-PAGE-TEMPLATE",
+            "url": "https://drafts.csswg.org/css3-page-template/"
+          },
+          {
+            "name": "CSS3GCPM",
+            "url": "https://www.w3.org/TR/css-gcpm-3/"
+          },
+          {
+            "name": "CSS3PAGE",
+            "url": "https://www.w3.org/TR/css-page-3/"
+          }
+        ]
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {},
+          "_reallyDependsOnWindow": false
+        },
+        "idlExtendedNames": {},
+        "externalDependencies": [],
+        "hasObsoleteIdl": false,
+        "idl": ""
+      },
+      "css": {
+        "properties": {
+          "copy-into": {
+            "name": "copy-into",
+            "value": "none | [ [ <custom-ident> <content-level>] [, <custom-ident> <content-level>]* ]?",
+            "initial": "none",
+            "appliesTo": "all elements and pseudo-elements, but not ::first-line or ::first-letter.",
+            "inherited": "no",
+            "percentages": "n/a",
+            "computedValue": "as specified",
+            "canonicalOrder": "per grammar",
+            "animationType": "discrete",
+            "parsedValue": {
+              "oneOf": [
+                {
+                  "type": "keyword",
+                  "name": "none"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "primitive",
+                            "name": "custom-ident"
+                          },
+                          {
+                            "type": "valuespace",
+                            "name": "content-level"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string",
+                              "content": ","
+                            },
+                            {
+                              "type": "primitive",
+                              "name": "custom-ident"
+                            },
+                            {
+                              "type": "valuespace",
+                              "name": "content-level"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "maxItems": 1
+                }
+              ]
+            }
+          }
+        },
+        "descriptors": {},
+        "valuespaces": {}
+      }
     },
     {
       "url": "https://drafts.csswg.org/css-multicol-2/",
@@ -10276,9 +10420,10 @@
       "versions": [
         "https://immersive-web.github.io/webxr/"
       ],
+      "repository": "https://github.com/immersive-web/webxr",
       "title": "WebXR Device API",
       "crawled": "https://immersive-web.github.io/webxr/",
-      "date": "4 February 2019",
+      "date": "5 February 2019",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/immersive-web/",
@@ -13874,7 +14019,7 @@
       "repository": "https://github.com/whatwg/streams",
       "title": "Streams Standard",
       "crawled": "https://streams.spec.whatwg.org/",
-      "date": "9 December 2018",
+      "date": "5 February 2019",
       "links": [
         "https://fetch.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -14864,7 +15009,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Tue Feb 05 2019",
+      "date": "Wed Feb 06 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -15176,7 +15321,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Tue Feb 05 2019",
+      "date": "Wed Feb 06 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -18908,7 +19053,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Tue Feb 05 2019",
+      "date": "Wed Feb 06 2019",
       "links": [
         "https://www.nfc-forum.org/specs/spec_list/",
         "https://url.spec.whatwg.org/",
@@ -30836,7 +30981,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Tue Feb 05 2019",
+      "date": "Wed Feb 06 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -33014,7 +33159,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Tue Feb 05 2019",
+      "date": "Wed Feb 06 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -35582,7 +35727,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Tue Feb 05 2019",
+      "date": "Wed Feb 06 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -39223,7 +39368,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Tue Feb 05 2019",
+      "date": "Wed Feb 06 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -54298,7 +54443,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Tue Feb 05 2019",
+      "date": "Wed Feb 06 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -75552,15 +75697,11 @@
         "https://www.w3.org/TR/css-color-3/",
         "https://www.w3.org/TR/css-color-3"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/css-color-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Color Module Level 3",
-      "crawled": "https://www.w3.org/TR/css-color-3/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/css-color-3"
     },
     {
       "url": "https://www.w3.org/TR/css-color-4/",
@@ -75806,15 +75947,11 @@
         "https://www.w3.org/TR/css-grid-1/",
         "https://www.w3.org/TR/css-grid-1"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/css-grid-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Grid Layout Module Level 1",
-      "crawled": "https://www.w3.org/TR/css-grid-1/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/css-grid-1"
     },
     {
       "url": "https://www.w3.org/TR/css-grid-2/",
@@ -76729,11 +76866,15 @@
         "https://www.w3.org/TR/css-writing-modes-4/",
         "https://www.w3.org/TR/css-writing-modes-4"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-writing-modes-4",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Writing Modes Level 4",
-      "crawled": "https://www.w3.org/TR/css-writing-modes-4"
+      "crawled": "https://www.w3.org/TR/css-writing-modes-4/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/CSS2/",
@@ -77474,14 +77615,10 @@
         "https://www.w3.org/TR/mediaont-api-1.0/",
         "https://www.w3.org/TR/mediaont-api-1.0"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/mediaont-api-1.0",
       "title": "Metadata API for Media Resources 1.0",
-      "crawled": "https://www.w3.org/TR/mediaont-api-1.0/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/mediaont-api-1.0"
     },
     {
       "url": "https://www.w3.org/TR/mediaqueries-4/",
@@ -77622,14 +77759,9 @@
         "https://www.w3.org/TR/notifications",
         "https://notifications.spec.whatwg.org/"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/notifications",
-      "title": "notifications",
-      "crawled": "https://www.w3.org/TR/notifications/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/notifications"
     },
     {
       "url": "https://www.w3.org/TR/orientation-event/",
@@ -78023,15 +78155,11 @@
         "https://www.w3.org/TR/requestidlecallback/",
         "https://www.w3.org/TR/requestidlecallback"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/requestidlecallback",
       "repository": "https://github.com/w3c/requestidlecallback",
       "title": "Cooperative Scheduling of Background Tasks",
-      "crawled": "https://www.w3.org/TR/requestidlecallback/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/requestidlecallback"
     },
     {
       "url": "https://www.w3.org/TR/resource-timing-2/",
