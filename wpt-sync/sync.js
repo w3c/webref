@@ -23,7 +23,7 @@ const CSSOM_PREAMBLE = `// GENERATED PREAMBLE - DO NOT EDIT
 // implementations that use DOMString.
 typedef DOMString CSSOMString;
 
-`
+`;
 
 function findIDLFiles(dir) {
     const files = fs.readdirSync(dir);
