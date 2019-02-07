@@ -14,6 +14,17 @@ If additional changes are needed, please manually create another PR based on thi
 
 See the [README](https://github.com/web-platform-tests/wpt/blob/master/interfaces/README.md) for how the IDL files in this directory are used.`
 
+const CSSOM_PREAMBLE = `// GENERATED PREAMBLE - DO NOT EDIT
+// This preamble was added by reffy-reports for web-platform-tests.
+// CSSOMString is an implementation-defined type of either DOMString or
+// USVString in CSSOM: https://drafts.csswg.org/cssom/#cssomstring-type
+// For web-platform-tests, use DOMString because USVString has additional
+// requirements in type conversion and could result in spurious failures for
+// implementations that use DOMString.
+typedef DOMString CSSOMString;
+
+`;
+
 function findIDLFiles(dir) {
     const files = fs.readdirSync(dir);
     files.sort();
@@ -74,7 +85,12 @@ function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
     const wptFiles = findIDLFiles(dstDir);
 
     for (const file of reffyFiles) {
-        const reffyBytes = fs.readFileSync(`${srcDir}/${file}`);
+        let reffyBytes = fs.readFileSync(`${srcDir}/${file}`);
+
+        if (file === 'cssom.idl') {
+            reffyBytes = Buffer.concat([Buffer.from(CSSOM_PREAMBLE), reffyBytes]);
+        }
+
         if (wptFiles.has(file)) {
             const wptBytes = fs.readFileSync(`${dstDir}/${file}`);
             if (reffyBytes.equals(wptBytes)) {
