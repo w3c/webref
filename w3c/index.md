@@ -1,34 +1,8 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% February 07, 2019
+% February 08, 2019
 
-## https://drafts.csswg.org/css-tv/ {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](undefined)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## https://drafts.csswg.org/css-sizing-4/ {data-spec=true data-error=true}
+## https://drafts.csswg.org/css-shapes-2/ {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
@@ -50,34 +24,6 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## https://drafts.csswg.org/css-size-adjust-1/ {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](undefined)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -361,8 +307,11 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
+- [CSS TV Profile 1.0](https://drafts.csswg.org/css-tv/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
@@ -399,7 +348,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/clipboard-apis)
+- Crawled version: [Initial URL](https://www.w3.org/TR/clipboard-apis/)
 - Latest published version: [https://www.w3.org/TR/clipboard-apis](https://www.w3.org/TR/clipboard-apis)
 - Repository: [GitHub w3c/clipboard-apis](https://github.com/w3c/clipboard-apis)
 - Shortname: clipboard-apis
@@ -407,12 +356,10 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -578,7 +525,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Thu Feb 07 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Fri Feb 08 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -789,6 +736,7 @@ Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 
@@ -1204,8 +1152,9 @@ Normative references to this spec from:
 
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 
 No informative reference to this spec from other specs.
 
@@ -1352,7 +1301,9 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 
 No informative reference to this spec from other specs.
 
@@ -1380,6 +1331,7 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 Normative references to this spec from:
 
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
 
 No informative reference to this spec from other specs.
@@ -1413,6 +1365,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 
 
 ## CSS Generated Content for Paged Media Module {data-spec=true data-error=true}
@@ -1570,7 +1523,7 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
 
 No informative reference to this spec from other specs.
@@ -1597,7 +1550,9 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 
 No informative reference to this spec from other specs.
 
@@ -1652,7 +1607,28 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 Normative references to this spec from:
 
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
+
+No informative reference to this spec from other specs.
+
+
+## CSS Intrinsic & Extrinsic Sizing Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-sizing-4/) (10 January 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2012/WD-css3-sizing-20120927/`](https://www.w3.org/TR/2012/WD-css3-sizing-20120927/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -1757,7 +1733,9 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 
 No informative reference to this spec from other specs.
 
@@ -1792,6 +1770,26 @@ Informative references to this spec from:
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 
 
+## CSS Mobile Text Size Adjustment Module Level 1 {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-size-adjust-1/) (14 November 2018)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+
+No informative reference to this spec from other specs.
+
+
 ## CSS Multi-column Layout Module Level 1 {data-spec=true data-error=true}
 
 ### Spec info {.info}
@@ -1816,6 +1814,7 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 Normative references to this spec from:
 
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 
 No informative reference to this spec from other specs.
@@ -2371,27 +2370,6 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
-
-No informative reference to this spec from other specs.
-
-
-## CSS Shapes Module Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-shapes-2/) (11 January 2019)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/)
-
-### Known dependencies on this specification {.dependencies}
-
 No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
@@ -2551,7 +2529,9 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 
 No informative reference to this spec from other specs.
 
@@ -2577,7 +2557,9 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 
 No informative reference to this spec from other specs.
 
@@ -2686,6 +2668,24 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## CSS TV Profile 1.0 {data-spec=true data-anomaly=true data-noCssDefinitions=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-tv/) (10 October 2014)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No CSS definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## CSS Typed OM Level 1 {data-spec=true data-error=true}
 
 ### Spec info {.info}
@@ -2740,9 +2740,10 @@ Normative references to this spec from:
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 
@@ -2778,12 +2779,13 @@ Normative references to this spec from:
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overscroll Behavior Module Level 1](https://wicg.github.io/overscroll-behavior/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
@@ -2871,6 +2873,7 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 Normative references to this spec from:
 
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 
@@ -3530,6 +3533,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 
 
@@ -3592,7 +3596,9 @@ Normative references to this spec from:
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 
 
 ## HTML Media Capture {data-spec=true data-error=true}
@@ -3681,7 +3687,9 @@ Normative references to this spec from:
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 
 
 ## Identifiers for WebRTC's Statistics API {data-spec=true data-error=true}
@@ -3740,7 +3748,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Thu Feb 07 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Fri Feb 08 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -4054,6 +4062,7 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 Normative references to this spec from:
 
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 
@@ -4266,7 +4275,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/navigation-timing-2/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/navigation-timing-2)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2](https://www.w3.org/TR/navigation-timing-2)
 - Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
 - Shortname: navigation-timing-2
@@ -4274,10 +4283,12 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4292,7 +4303,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Thu Feb 07 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Fri Feb 08 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -4590,7 +4601,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (31 January 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (7 February 2019)
 - Repository: [GitHub wicg/picture-in-picture](https://github.com/wicg/picture-in-picture)
 - Shortname: no shortname
 
@@ -4672,7 +4683,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Thu Feb 07 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Fri Feb 08 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5647,7 +5658,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/vibration)
+- Crawled version: [Initial URL](https://www.w3.org/TR/vibration/)
 - Latest published version: [https://www.w3.org/TR/vibration](https://www.w3.org/TR/vibration)
 - Repository: [GitHub w3c/vibration](https://github.com/w3c/vibration)
 - Shortname: vibration
@@ -5655,12 +5666,10 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -5675,7 +5684,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/dom41/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/dom41)
 - Latest published version: [https://www.w3.org/TR/dom41](https://www.w3.org/TR/dom41)
 - Repository: [GitHub w3c/dom](https://github.com/w3c/dom)
 - Shortname: dom41
@@ -5683,10 +5692,12 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -5973,7 +5984,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Thu Feb 07 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Fri Feb 08 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -5992,7 +6003,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Feb 07 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Fri Feb 08 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -6114,7 +6125,9 @@ Normative references to this spec from:
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 
 
 ## WebAssembly JavaScript Interface {data-spec=true data-error=true}
@@ -6201,7 +6214,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Feb 07 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Feb 08 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -6224,7 +6237,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Feb 07 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Feb 08 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 

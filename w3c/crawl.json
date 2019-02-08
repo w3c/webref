@@ -2,11 +2,11 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-02-07T07:01:05.673Z",
+  "date": "2019-02-08T07:01:12.711Z",
   "options": {},
   "stats": {
     "crawled": 240,
-    "errors": 180
+    "errors": 178
   },
   "results": [
     {
@@ -4815,9 +4815,20 @@
       "versions": [
         "https://drafts.csswg.org/css-shapes-2/"
       ],
-      "title": "CSS Shapes Module Level 2",
-      "crawled": "https://drafts.csswg.org/css-shapes-2/",
-      "date": "11 January 2019",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
+    },
+    {
+      "url": "https://drafts.csswg.org/css-size-adjust-1/",
+      "flags": {
+        "css": true,
+        "idl": false
+      },
+      "versions": [
+        "https://drafts.csswg.org/css-size-adjust-1/"
+      ],
+      "title": "CSS Mobile Text Size Adjustment Module Level 1",
+      "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
+      "date": "14 November 2018",
       "links": [
         "https://www.w3.org/TR/CSS/",
         "https://github.com/w3c/csswg-drafts/issues",
@@ -4827,47 +4838,51 @@
         "https://www.w3.org/Consortium/Patent-Policy/",
         "https://www.w3.org/2004/01/pp-impl/32061/status",
         "https://www.w3.org/2018/Process-20180201/",
-        "https://drafts.csswg.org/css-box-3/",
-        "https://drafts.csswg.org/css-shapes-1/",
-        "https://www.w3.org/Bugs/Public/show_bug.cgi?id=15089",
-        "https://www.w3.org/TR/css-shapes/",
+        "https://drafts.csswg.org/css-text-4/",
+        "https://www.w3.org/TR/CSS21/",
         "https://drafts.csswg.org/css-values-4/",
-        "https://drafts.csswg.org/css-values-3/",
-        "https://www.w3.org/TR/SVG/",
-        "https://www.w3.org/TR/SVG11/",
-        "https://www.w3.org/Bugs/Public/show_bug.cgi?id=16448",
-        "https://www.w3.org/Bugs/Public/show_bug.cgi?id=16716",
-        "https://lists.w3.org/Archives/Public/www-style/2014Mar/0120.html",
-        "https://drafts.csswg.org/css-values/",
-        "https://drafts.csswg.org/css-images-3/",
-        "https://drafts.csswg.org/css-cascade/",
-        "https://drafts.csswg.org/web-animations/",
-        "https://drafts.csswg.org/css-round-display",
         "https://drafts.csswg.org/css-display-3/",
+        "https://drafts.csswg.org/css2/visudet.html",
+        "https://drafts.csswg.org/css-sizing-3/",
+        "https://drafts.csswg.org/css-text-3/",
+        "https://drafts.csswg.org/css-fonts-3/",
+        "https://drafts.csswg.org/css-values/",
+        "https://drafts.csswg.org/css-cascade/",
+        "https://drafts.csswg.org/css-pseudo/",
+        "https://drafts.csswg.org/web-animations/",
         "https://www.w3.org/TR/CSS2/",
         "https://www.w3.org/Style/CSS/Test/",
         "https://lists.w3.org/Archives/Public/public-css-testsuite",
-        "https://www.w3.org/TR/css-box-3/",
         "https://www.w3.org/TR/css-display-3/",
-        "https://www.w3.org/TR/css-shapes-1/",
+        "https://www.w3.org/TR/css-fonts-3/",
+        "https://www.w3.org/TR/css-sizing-3/",
+        "https://www.w3.org/TR/css-text-3/",
+        "https://www.w3.org/TR/css-text-4/",
         "https://www.w3.org/TR/css-values-3/",
         "https://www.w3.org/TR/css-values-4/",
-        "https://www.w3.org/TR/css3-images/",
         "https://tools.ietf.org/html/rfc2119"
       ],
       "refs": {
         "normative": [
           {
-            "name": "CSS-BOX-3",
-            "url": "https://www.w3.org/TR/css-box-3/"
-          },
-          {
             "name": "CSS-DISPLAY-3",
             "url": "https://www.w3.org/TR/css-display-3/"
           },
           {
-            "name": "CSS-SHAPES",
-            "url": "https://www.w3.org/TR/css-shapes-1/"
+            "name": "CSS-FONTS-3",
+            "url": "https://www.w3.org/TR/css-fonts-3/"
+          },
+          {
+            "name": "CSS-SIZING-3",
+            "url": "https://www.w3.org/TR/css-sizing-3/"
+          },
+          {
+            "name": "CSS-TEXT-3",
+            "url": "https://www.w3.org/TR/css-text-3/"
+          },
+          {
+            "name": "CSS-TEXT-4",
+            "url": "https://www.w3.org/TR/css-text-4/"
           },
           {
             "name": "CSS-VALUES-3",
@@ -4878,8 +4893,8 @@
             "url": "https://www.w3.org/TR/css-values-4/"
           },
           {
-            "name": "CSS3-IMAGES",
-            "url": "https://www.w3.org/TR/css3-images/"
+            "name": "CSS21",
+            "url": "https://www.w3.org/TR/CSS2/"
           },
           {
             "name": "RFC2119",
@@ -4905,16 +4920,16 @@
       },
       "css": {
         "properties": {
-          "shape-inside": {
-            "name": "shape-inside",
-            "value": "auto | outside-shape | [ <basic-shape> || shape-box ] | <image> | display",
+          "text-size-adjust": {
+            "name": "text-size-adjust",
+            "value": "auto | none | <percentage>",
             "initial": "auto",
-            "appliesTo": "block-level elements",
-            "inherited": "no",
-            "percentages": "n/a",
-            "computedValue": "computed lengths for <basic-shape>, the absolute URI for <uri>, otherwise as specified",
-            "canonicalOrder": "per grammar",
-            "animationType": "as defined for <basic-shape>, otherwise discrete",
+            "appliesTo": "all elements",
+            "inherited": "yes",
+            "percentages": "see below",
+            "computedValue": "specfied keyword or percentage",
+            "canonicalOrder": "N/A",
+            "animationType": "by computed value",
             "parsedValue": {
               "oneOf": [
                 {
@@ -4923,92 +4938,23 @@
                 },
                 {
                   "type": "keyword",
-                  "name": "outside-shape"
-                },
-                {
-                  "anyOf": [
-                    {
-                      "type": "valuespace",
-                      "name": "basic-shape"
-                    },
-                    {
-                      "type": "keyword",
-                      "name": "shape-box"
-                    }
-                  ]
+                  "name": "none"
                 },
                 {
                   "type": "primitive",
-                  "name": "image"
-                },
-                {
-                  "type": "keyword",
-                  "name": "display"
+                  "name": "percentage"
                 }
               ]
-            }
-          },
-          "shape-padding": {
-            "name": "shape-padding",
-            "value": "<length>",
-            "initial": "none",
-            "appliesTo": "block-level elements",
-            "inherited": "no",
-            "percentages": "n/a",
-            "computedValue": "the absolute length",
-            "canonicalOrder": "per grammar",
-            "animationType": "by computed value",
-            "parsedValue": {
-              "type": "primitive",
-              "name": "length"
             }
           }
         },
         "descriptors": {},
         "valuespaces": {
-          "<path()>": {
-            "value": "path( [<fill-rule>,]? <string> )",
-            "parsedValue": {
-              "type": "function",
-              "name": "path",
-              "arguments": [
-                "[",
-                {
-                  "type": "valuespace",
-                  "name": "fill-rule"
-                },
-                {
-                  "type": "string",
-                  "content": ","
-                },
-                "]",
-                "?",
-                {
-                  "type": "primitive",
-                  "name": "string"
-                }
-              ]
-            }
-          },
-          "<basic-shape>": {
-            "prose": "The shape is computed based on the values of one of inset(), circle(), ellipse() or polygon()."
-          },
-          "<uri>": {
-            "prose": "If the <uri> references an SVG shape element, that element defines the shape. Otherwise, if the <uri> references an image, the shape is extracted and computed based on the alpha channel of the specified image. If the <uri> does not reference an SVG shape element or an image, the effect is as if the value auto had been specified."
+          "<percentage>": {
+            "prose": "When displaying on a small device, renderers must not do size adjustment but instead the computed value of font-size must be multiplied by this percentage. Note: This means that 'text-size-adjust: 100%;' is equivalent to 'text-size-adjust: none;'."
           }
         }
       }
-    },
-    {
-      "url": "https://drafts.csswg.org/css-size-adjust-1/",
-      "flags": {
-        "css": true,
-        "idl": false
-      },
-      "versions": [
-        "https://drafts.csswg.org/css-size-adjust-1/"
-      ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
     },
     {
       "url": "https://drafts.csswg.org/css-sizing-4/",
@@ -5019,7 +4965,201 @@
       "versions": [
         "https://drafts.csswg.org/css-sizing-4/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
+      "title": "CSS Intrinsic & Extrinsic Sizing Module Level 4",
+      "crawled": "https://drafts.csswg.org/css-sizing-4/",
+      "date": "10 January 2019",
+      "links": [
+        "https://www.w3.org/TR/CSS/",
+        "https://github.com/w3c/csswg-drafts/issues",
+        "https://lists.w3.org/Archives/Public/public-css-archive/",
+        "https://lists.w3.org/Archives/Public/www-style/",
+        "https://www.w3.org/Style/CSS/members",
+        "https://www.w3.org/Consortium/Patent-Policy/",
+        "https://www.w3.org/2004/01/pp-impl/32061/status",
+        "https://www.w3.org/2018/Process-20180201/",
+        "https://www.w3.org/TR/css-sizing-3/",
+        "https://drafts.csswg.org/css2/visudet.html",
+        "https://drafts.csswg.org/css-multicol-1/",
+        "https://www.w3.org/TR/CSS2/",
+        "https://drafts.csswg.org/css-values-4/",
+        "https://github.com/w3c/csswg-drafts/issues/333",
+        "https://github.com/w3c/csswg-drafts/issues/1173",
+        "https://drafts.csswg.org/css-values/",
+        "https://drafts.csswg.org/mediaqueries-4/",
+        "https://drafts.csswg.org/css-cascade/",
+        "https://drafts.csswg.org/css-display-3/",
+        "https://drafts.csswg.org/web-animations/",
+        "https://drafts.csswg.org/css-sizing-3/",
+        "https://drafts.csswg.org/css-images-3/",
+        "https://html.spec.whatwg.org/",
+        "https://drafts.csswg.org/css-writing-modes-4/",
+        "https://drafts.csswg.org/css-logical-1/",
+        "https://www.w3.org/TR/css3-images/",
+        "https://lists.w3.org/Archives/Public/www-style/2014Oct/0061.html",
+        "https://lists.w3.org/Archives/Public/www-style/2014Nov/0085.html",
+        "https://drafts.csswg.org/css-images-4/",
+        "https://drafts.csswg.org/css-backgrounds-3/",
+        "https://www.w3.org/TR/2012/WD-css3-sizing-20120927/",
+        "https://www.w3.org/Style/CSS/Test/",
+        "https://lists.w3.org/Archives/Public/public-css-testsuite",
+        "https://www.w3.org/TR/css-backgrounds-3/",
+        "https://www.w3.org/TR/css-display-3/",
+        "https://www.w3.org/TR/css-images-4/",
+        "https://www.w3.org/TR/css-logical-1/",
+        "https://www.w3.org/TR/css-values-3/",
+        "https://www.w3.org/TR/css-values-4/",
+        "https://www.w3.org/TR/css-writing-modes-4/",
+        "https://www.w3.org/TR/css-multicol-1/",
+        "https://www.w3.org/TR/mediaqueries-4/",
+        "https://tools.ietf.org/html/rfc2119",
+        "https://www.w3.org/TR/css-break-3/"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "CSS-BACKGROUNDS-3",
+            "url": "https://www.w3.org/TR/css-backgrounds-3/"
+          },
+          {
+            "name": "CSS-DISPLAY-3",
+            "url": "https://www.w3.org/TR/css-display-3/"
+          },
+          {
+            "name": "CSS-IMAGES-4",
+            "url": "https://www.w3.org/TR/css-images-4/"
+          },
+          {
+            "name": "CSS-LOGICAL-1",
+            "url": "https://www.w3.org/TR/css-logical-1/"
+          },
+          {
+            "name": "CSS-SIZING-3",
+            "url": "https://www.w3.org/TR/css-sizing-3/"
+          },
+          {
+            "name": "CSS-VALUES-3",
+            "url": "https://www.w3.org/TR/css-values-3/"
+          },
+          {
+            "name": "CSS-VALUES-4",
+            "url": "https://www.w3.org/TR/css-values-4/"
+          },
+          {
+            "name": "CSS-WRITING-MODES-4",
+            "url": "https://www.w3.org/TR/css-writing-modes-4/"
+          },
+          {
+            "name": "CSS2",
+            "url": "https://www.w3.org/TR/CSS2/"
+          },
+          {
+            "name": "CSS3-IMAGES",
+            "url": "https://www.w3.org/TR/css3-images/"
+          },
+          {
+            "name": "CSS3COL",
+            "url": "https://www.w3.org/TR/css-multicol-1/"
+          },
+          {
+            "name": "MEDIAQUERIES-4",
+            "url": "https://www.w3.org/TR/mediaqueries-4/"
+          },
+          {
+            "name": "RFC2119",
+            "url": "https://tools.ietf.org/html/rfc2119"
+          }
+        ],
+        "informative": [
+          {
+            "name": "CSS3-BREAK",
+            "url": "https://www.w3.org/TR/css-break-3/"
+          },
+          {
+            "name": "HTML",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          }
+        ]
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {},
+          "_reallyDependsOnWindow": false
+        },
+        "idlExtendedNames": {},
+        "externalDependencies": [],
+        "hasObsoleteIdl": false,
+        "idl": ""
+      },
+      "css": {
+        "properties": {
+          "aspect-ratio": {
+            "name": "aspect-ratio",
+            "value": "auto | <ratio>",
+            "initial": "auto",
+            "appliesTo": "all elements except inline boxes and internal ruby or table boxes",
+            "inherited": "no",
+            "percentages": "n/a",
+            "computedValue": "specified keyword or a pair of numbers",
+            "canonicalOrder": "per grammar",
+            "animationType": "discrete",
+            "parsedValue": {
+              "oneOf": [
+                {
+                  "type": "keyword",
+                  "name": "auto"
+                },
+                {
+                  "type": "valuespace",
+                  "name": "ratio"
+                }
+              ]
+            }
+          },
+          "min-width": {
+            "name": "min-width",
+            "newValues": "<transfer-ratio>",
+            "computedValue": "tr dimension value",
+            "parsedValue": {
+              "type": "valuespace",
+              "name": "transfer-ratio"
+            }
+          },
+          "min-height": {
+            "name": "min-height",
+            "newValues": "<transfer-ratio>",
+            "computedValue": "tr dimension value",
+            "parsedValue": {
+              "type": "valuespace",
+              "name": "transfer-ratio"
+            }
+          },
+          "max-width": {
+            "name": "max-width",
+            "newValues": "<transfer-ratio>",
+            "computedValue": "tr dimension value",
+            "parsedValue": {
+              "type": "valuespace",
+              "name": "transfer-ratio"
+            }
+          },
+          "max-height": {
+            "name": "max-height",
+            "newValues": "<transfer-ratio>",
+            "computedValue": "tr dimension value",
+            "parsedValue": {
+              "type": "valuespace",
+              "name": "transfer-ratio"
+            }
+          }
+        },
+        "descriptors": {},
+        "valuespaces": {}
+      }
     },
     {
       "url": "https://drafts.csswg.org/css-transforms-2/",
@@ -6006,7 +6146,70 @@
       "versions": [
         "https://drafts.csswg.org/css-tv/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
+      "title": "CSS TV Profile 1.0",
+      "crawled": "https://drafts.csswg.org/css-tv/",
+      "date": "10 October 2014",
+      "links": [
+        "https://www.w3.org/TR/CSS/",
+        "https://www.w3.org/TR/",
+        "https://www.w3.org/Style/CSS/members",
+        "https://www.w3.org/Style/",
+        "https://lists.w3.org/Archives/Public/www-style/",
+        "https://www.w3.org/Mail/Request",
+        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
+        "https://www.w3.org/2004/01/pp-impl/32061/status",
+        "https://www.w3.org/2014/Process-20140801/",
+        "https://www.w3.org/TR/2008/REC-CSS1-20080411",
+        "https://www.w3.org/TR/2008/REC-CSS2-20080411",
+        "https://www.w3.org/TR/2011/REC-css3-color-20110607",
+        "https://www.w3.org/TR/1999/REC-html401-19991224",
+        "https://www.ietf.org/rfc/rfc2119.txt"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "CSS1",
+            "url": "http://www.w3.org/TR/2008/REC-CSS1-20080411"
+          },
+          {
+            "name": "CSS2",
+            "url": "http://www.w3.org/TR/2008/REC-CSS2-20080411"
+          },
+          {
+            "name": "CSS3COLOR",
+            "url": "http://www.w3.org/TR/2011/REC-css3-color-20110607"
+          },
+          {
+            "name": "HTML401",
+            "url": "http://www.w3.org/TR/1999/REC-html401-19991224"
+          },
+          {
+            "name": "RFC2119",
+            "url": "http://www.ietf.org/rfc/rfc2119.txt"
+          }
+        ],
+        "informative": []
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {},
+          "_reallyDependsOnWindow": false
+        },
+        "idlExtendedNames": {},
+        "externalDependencies": [],
+        "hasObsoleteIdl": false,
+        "idl": ""
+      },
+      "css": {
+        "properties": {},
+        "descriptors": {},
+        "valuespaces": {}
+      }
     },
     {
       "url": "https://drafts.csswg.org/mediaqueries-5/",
@@ -14630,7 +14833,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Thu Feb 07 2019",
+      "date": "Fri Feb 08 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -14942,7 +15145,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Thu Feb 07 2019",
+      "date": "Fri Feb 08 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -18674,7 +18877,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Thu Feb 07 2019",
+      "date": "Fri Feb 08 2019",
       "links": [
         "https://www.nfc-forum.org/specs/spec_list/",
         "https://url.spec.whatwg.org/",
@@ -30602,7 +30805,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Thu Feb 07 2019",
+      "date": "Fri Feb 08 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -32780,7 +32983,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Thu Feb 07 2019",
+      "date": "Fri Feb 08 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -33331,7 +33534,7 @@
       "repository": "https://github.com/wicg/picture-in-picture",
       "title": "Picture-in-Picture",
       "crawled": "https://wicg.github.io/picture-in-picture/",
-      "date": "31 January 2019",
+      "date": "7 February 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -35348,7 +35551,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Thu Feb 07 2019",
+      "date": "Fri Feb 08 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -38989,7 +39192,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Thu Feb 07 2019",
+      "date": "Fri Feb 08 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -54064,7 +54267,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Thu Feb 07 2019",
+      "date": "Fri Feb 08 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -75086,11 +75289,15 @@
         "https://www.w3.org/TR/clipboard-apis/",
         "https://www.w3.org/TR/clipboard-apis"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/clipboard-apis",
       "repository": "https://github.com/w3c/clipboard-apis",
       "title": "Clipboard API and events",
-      "crawled": "https://www.w3.org/TR/clipboard-apis"
+      "crawled": "https://www.w3.org/TR/clipboard-apis/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/compositing-1/",
@@ -76702,15 +76909,11 @@
         "https://www.w3.org/TR/domcore/",
         "https://www.w3.org/TR/REC-DOM-Level-1/"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/dom41",
       "repository": "https://github.com/w3c/dom",
       "title": "W3C DOM 4.1",
-      "crawled": "https://www.w3.org/TR/dom41/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/dom41"
     },
     {
       "url": "https://www.w3.org/TR/encoding/",
@@ -77362,15 +77565,11 @@
         "https://www.w3.org/TR/navigation-timing-2",
         "https://www.w3.org/TR/navigation-timing/"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/navigation-timing-2",
       "repository": "https://github.com/w3c/navigation-timing",
       "title": "Navigation Timing Level 2",
-      "crawled": "https://www.w3.org/TR/navigation-timing-2/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/navigation-timing-2"
     },
     {
       "url": "https://www.w3.org/TR/notifications/",
@@ -78255,11 +78454,15 @@
         "https://www.w3.org/TR/vibration",
         "https://dev.w3.org/2009/dap/vibration/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/vibration",
       "repository": "https://github.com/w3c/vibration",
       "title": "Vibration API (Second Edition)",
-      "crawled": "https://www.w3.org/TR/vibration"
+      "crawled": "https://www.w3.org/TR/vibration/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/wai-aria-1.2/",

@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% February 07, 2019
+% February 08, 2019
 
 240 specifications were crawled in this report.
 
@@ -9,19 +9,7 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [https://drafts.csswg.org/css-tv/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-- [https://drafts.csswg.org/css-sizing-4/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-- [https://drafts.csswg.org/css-size-adjust-1/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+- [https://drafts.csswg.org/css-shapes-2/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -63,12 +51,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Clipboard API and events](https://www.w3.org/TR/clipboard-apis): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [Clipboard API and events](https://www.w3.org/TR/clipboard-apis/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Compositing and Blending Level 1](https://www.w3.org/TR/compositing-1/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -495,10 +481,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Navigation Timing Level 2](https://www.w3.org/TR/navigation-timing-2/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [Navigation Timing Level 2](https://www.w3.org/TR/navigation-timing-2): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [Non-element Selectors Module Level 1](https://www.w3.org/TR/selectors-nonelement-1/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -663,16 +651,16 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Vibration API (Second Edition)](https://www.w3.org/TR/vibration): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+- [Vibration API (Second Edition)](https://www.w3.org/TR/vibration/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [W3C DOM 4.1](https://www.w3.org/TR/dom41): `Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
     at ChildProcess.emit (events.js:214:7)
     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-- [W3C DOM 4.1](https://www.w3.org/TR/dom41/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Wake Lock API](https://www.w3.org/TR/wake-lock/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -742,7 +730,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 
-=> 180 specifications found
+=> 178 specifications found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -771,8 +759,9 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
+- [CSS TV Profile 1.0](https://drafts.csswg.org/css-tv/)
 
-=> 3 specifications found
+=> 4 specifications found
 
 Reffy was expecting to find CSS definitions in the specifications  listed here but could not extract any.
 
@@ -953,6 +942,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/) links to [`https://www.w3.org/TR/css3-box/`](https://www.w3.org/TR/css3-box/) but does not list it in its references
+- [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/) links to [`https://www.w3.org/TR/2012/WD-css3-sizing-20120927/`](https://www.w3.org/TR/2012/WD-css3-sizing-20120927/) but does not list it in its references
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/) links to [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
 - [CSS Overscroll Behavior Module Level 1](https://wicg.github.io/overscroll-behavior/) links to:
     * [`https://www.w3.org/TR/css-display-3/`](https://www.w3.org/TR/css-display-3/) but does not list it in its references
@@ -960,7 +950,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/) but does not list it in its references
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/) links to [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/) but does not list it in its references
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/) links to [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/) but does not list it in its references
 - [Event Timing API](https://wicg.github.io/event-timing/) links to:
     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but does not list it in its references
