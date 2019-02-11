@@ -5,7 +5,6 @@ language: node_js
 node_js:
   - "8"
 install:
-  - cd wpt-sync
   - npm install
   - git clone --single-branch https://github.com/web-platform-tests/wpt.git
   - cd wpt
@@ -16,4 +15,4 @@ install:
   - git config user.name "autofoolip"
   - cd ..
 script:
-  - GH_USER=autofoolip node sync.js --wpt-dir wpt --build-url https://travis-ci.org/tidoust/reffy-reports/builds/$TRAVIS_BUILD_ID
+  - GH_USER=autofoolip node wpt-sync/sync.js --wpt-dir wpt --build-url https://travis-ci.org/tidoust/reffy-reports/builds/$TRAVIS_BUILD_ID
