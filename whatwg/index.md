@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% February 11, 2019
+% February 12, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-error=true}
 
@@ -510,7 +510,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Mon Feb 11 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Tue Feb 12 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3028,7 +3028,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (16 January 2019)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (11 February 2019)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -3196,7 +3196,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (23 January 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (11 February 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -3270,6 +3270,7 @@ Normative references to this spec from:
 
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 No informative reference to this spec from other specs.
 
@@ -3581,7 +3582,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (8 February 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (11 February 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3707,7 +3708,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Mon Feb 11 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Tue Feb 12 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -4235,7 +4236,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Mon Feb 11 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Tue Feb 12 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -4257,7 +4258,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/selectors-nonelement-1)
+- Crawled version: [Initial URL](https://www.w3.org/TR/selectors-nonelement-1/)
 - Latest published version: [https://www.w3.org/TR/selectors-nonelement-1](https://www.w3.org/TR/selectors-nonelement-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: selectors-nonelement-1
@@ -4265,12 +4266,10 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4610,7 +4609,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Mon Feb 11 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Tue Feb 12 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5091,7 +5090,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (1 November 2018)
+- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (11 February 2019)
 - Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
 - Shortname: no shortname
 
@@ -5102,6 +5101,7 @@ No informative reference to this spec from other specs.
     * `Worker` also defined in [HTML Standard](https://html.spec.whatwg.org/)
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/)
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/)
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
      * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/)
@@ -5398,7 +5398,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (14 January 2019)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (11 February 2019)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -5650,7 +5650,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/) (10 January 2019)
+- Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/) (11 February 2019)
 - Repository: [GitHub webbluetoothcg/web-bluetooth](https://github.com/webbluetoothcg/web-bluetooth)
 - Shortname: no shortname
 
@@ -5727,7 +5727,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Mon Feb 11 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Tue Feb 12 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -5746,7 +5746,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Mon Feb 11 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Tue Feb 12 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -5864,7 +5864,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Feb 11 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Feb 12 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -5888,7 +5888,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Feb 11 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Feb 12 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -6038,7 +6038,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (8 February 2019)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (11 February 2019)
 - Repository: [GitHub immersive-web/webxr](https://github.com/immersive-web/webxr)
 - Shortname: no shortname
 
@@ -6094,7 +6094,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (22 January 2019)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (11 February 2019)
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
