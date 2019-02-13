@@ -2,11 +2,11 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-02-12T07:01:11.600Z",
+  "date": "2019-02-13T07:01:11.136Z",
   "options": {},
   "stats": {
     "crawled": 240,
-    "errors": 178
+    "errors": 179
   },
   "results": [
     {
@@ -4668,143 +4668,7 @@
       "versions": [
         "https://drafts.csswg.org/css-shadow-parts-1/"
       ],
-      "title": "CSS Shadow Parts",
-      "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
-      "date": "11 December 2018",
-      "links": [
-        "https://dom.spec.whatwg.org/",
-        "https://www.w3.org/TR/CSS/",
-        "https://github.com/w3c/csswg-drafts/issues",
-        "https://lists.w3.org/Archives/Public/public-css-archive/",
-        "https://lists.w3.org/Archives/Public/www-style/",
-        "https://www.w3.org/Style/CSS/members",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/32061/status",
-        "https://www.w3.org/2018/Process-20180201/",
-        "https://drafts.csswg.org/css-variables-1/",
-        "https://drafts.csswg.org/selectors-4/",
-        "https://infra.spec.whatwg.org/",
-        "https://drafts.csswg.org/css-values-4/",
-        "https://heycam.github.io/webidl/",
-        "https://github.com/w3c/csswg-drafts/issues/3424",
-        "https://www.w3.org/TR/CSS2/",
-        "https://www.w3.org/Style/CSS/Test/",
-        "https://lists.w3.org/Archives/Public/public-css-testsuite",
-        "https://www.w3.org/TR/css-values-4/",
-        "https://www.w3.org/TR/css-variables-1/",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://www.w3.org/TR/selectors-4/"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "CSS-VALUES-4",
-            "url": "https://www.w3.org/TR/css-values-4/"
-          },
-          {
-            "name": "CSS-VARIABLES-1",
-            "url": "https://www.w3.org/TR/css-variables-1/"
-          },
-          {
-            "name": "DOM",
-            "url": "https://dom.spec.whatwg.org/"
-          },
-          {
-            "name": "INFRA",
-            "url": "https://infra.spec.whatwg.org/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "SELECTORS-4",
-            "url": "https://www.w3.org/TR/selectors-4/"
-          },
-          {
-            "name": "WebIDL",
-            "url": "https://heycam.github.io/webidl/"
-          }
-        ],
-        "informative": []
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {},
-          "functions": {},
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "Element": [
-              "DOMTokenList"
-            ]
-          },
-          "_reallyDependsOnWindow": false
-        },
-        "idlExtendedNames": {
-          "Element": [
-            {
-              "type": "interface",
-              "name": "Element",
-              "partial": true,
-              "members": [
-                {
-                  "type": "attribute",
-                  "static": false,
-                  "stringifier": false,
-                  "inherit": false,
-                  "readonly": true,
-                  "idlType": {
-                    "type": "attribute-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "DOMTokenList",
-                    "extAttrs": []
-                  },
-                  "name": "part",
-                  "extAttrs": [
-                    {
-                      "name": "SameObject",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": null
-                    },
-                    {
-                      "name": "PutForwards",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": {
-                        "type": "identifier",
-                        "value": "value"
-                      }
-                    }
-                  ]
-                }
-              ],
-              "extAttrs": []
-            }
-          ]
-        },
-        "externalDependencies": [
-          "Element",
-          "DOMTokenList"
-        ],
-        "hasObsoleteIdl": false,
-        "idl": "partial interface Element {\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList part;\n};\n\n"
-      },
-      "css": {
-        "properties": {},
-        "descriptors": {},
-        "valuespaces": {
-          "<::part()>": {
-            "value": "::part( <ident> )",
-            "valueParseError": "Unrecognized token ::part("
-          }
-        }
-      }
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
     },
     {
       "url": "https://drafts.csswg.org/css-shapes-2/",
@@ -10360,7 +10224,7 @@
       "repository": "https://github.com/immersive-web/webxr",
       "title": "WebXR Device API",
       "crawled": "https://immersive-web.github.io/webxr/",
-      "date": "11 February 2019",
+      "date": "12 February 2019",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/immersive-web/",
@@ -10457,9 +10321,9 @@
               "XRUnboundedReferenceSpace",
               "XRView",
               "XRViewport",
+              "XRPose",
               "XRViewerPose",
               "XRInputSource",
-              "XRInputPose",
               "XRLayer",
               "XRPresentationContext"
             ]
@@ -10509,14 +10373,12 @@
               "XRSession",
               "XRViewerPose",
               "XRReferenceSpace",
-              "XRInputPose",
-              "XRInputSource"
+              "XRPose",
+              "XRSpace"
             ],
             "XRSpace": [
               "EventTarget",
-              "Window",
-              "XRRigidTransform",
-              "XRSpace"
+              "Window"
             ],
             "XRReferenceSpaceOptions": [
               "XRReferenceSpaceType",
@@ -10561,20 +10423,20 @@
               "XRRigidTransform",
               "DOMPointReadOnly"
             ],
-            "XRViewerPose": [
+            "XRPose": [
               "Window",
-              "XRRigidTransform",
+              "XRRigidTransform"
+            ],
+            "XRViewerPose": [
+              "XRPose",
+              "Window",
               "XRView"
             ],
             "XRInputSource": [
               "Window",
               "XRHandedness",
-              "XRTargetRayMode"
-            ],
-            "XRInputPose": [
-              "Window",
-              "XRRay",
-              "XRRigidTransform"
+              "XRTargetRayMode",
+              "XRSpace"
             ],
             "XRLayer": [
               "Window"
@@ -11499,7 +11361,7 @@
                 "name": "getViewerPose",
                 "arguments": [
                   {
-                    "optional": true,
+                    "optional": false,
                     "variadic": false,
                     "extAttrs": [],
                     "idlType": {
@@ -11529,10 +11391,10 @@
                   "generic": null,
                   "nullable": true,
                   "union": false,
-                  "idlType": "XRInputPose",
+                  "idlType": "XRPose",
                   "extAttrs": []
                 },
-                "name": "getInputPose",
+                "name": "getPose",
                 "arguments": [
                   {
                     "optional": false,
@@ -11544,13 +11406,13 @@
                       "generic": null,
                       "nullable": false,
                       "union": false,
-                      "idlType": "XRInputSource",
+                      "idlType": "XRSpace",
                       "extAttrs": []
                     },
-                    "name": "inputSource"
+                    "name": "space"
                   },
                   {
-                    "optional": true,
+                    "optional": false,
                     "variadic": false,
                     "extAttrs": [],
                     "idlType": {
@@ -11559,10 +11421,10 @@
                       "generic": null,
                       "nullable": false,
                       "union": false,
-                      "idlType": "XRReferenceSpace",
+                      "idlType": "XRSpace",
                       "extAttrs": []
                     },
-                    "name": "referenceSpace"
+                    "name": "relativeTo"
                   }
                 ],
                 "extAttrs": []
@@ -11591,44 +11453,7 @@
             "type": "interface",
             "name": "XRSpace",
             "partial": false,
-            "members": [
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": true,
-                  "union": false,
-                  "idlType": "XRRigidTransform",
-                  "extAttrs": []
-                },
-                "name": "getTransformTo",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "XRSpace",
-                      "extAttrs": []
-                    },
-                    "name": "other"
-                  }
-                ],
-                "extAttrs": []
-              }
-            ],
+            "members": [],
             "inheritance": "EventTarget",
             "extAttrs": [
               {
@@ -12367,9 +12192,9 @@
               }
             ]
           },
-          "XRViewerPose": {
+          "XRPose": {
             "type": "interface",
-            "name": "XRViewerPose",
+            "name": "XRPose",
             "partial": false,
             "members": [
               {
@@ -12399,6 +12224,49 @@
                 "idlType": {
                   "type": "attribute-type",
                   "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean",
+                  "extAttrs": []
+                },
+                "name": "emulatedPosition",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": [
+              {
+                "name": "SecureContext",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": null
+              },
+              {
+                "name": "Exposed",
+                "arguments": null,
+                "type": "extended-attribute",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                }
+              }
+            ]
+          },
+          "XRViewerPose": {
+            "type": "interface",
+            "name": "XRViewerPose",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
                   "generic": "FrozenArray",
                   "nullable": false,
                   "union": false,
@@ -12417,7 +12285,7 @@
                 "extAttrs": []
               }
             ],
-            "inheritance": null,
+            "inheritance": "XRPose",
             "extAttrs": [
               {
                 "name": "SecureContext",
@@ -12514,49 +12382,6 @@
                 },
                 "name": "targetRayMode",
                 "extAttrs": []
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": [
-              {
-                "name": "SecureContext",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": null
-              },
-              {
-                "name": "Exposed",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": {
-                  "type": "identifier",
-                  "value": "Window"
-                }
-              }
-            ]
-          },
-          "XRInputPose": {
-            "type": "interface",
-            "name": "XRInputPose",
-            "partial": false,
-            "members": [
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "boolean",
-                  "extAttrs": []
-                },
-                "name": "emulatedPosition",
-                "extAttrs": []
               },
               {
                 "type": "attribute",
@@ -12570,10 +12395,10 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "XRRay",
+                  "idlType": "XRSpace",
                   "extAttrs": []
                 },
-                "name": "targetRay",
+                "name": "targetRaySpace",
                 "extAttrs": []
               },
               {
@@ -12588,10 +12413,10 @@
                   "generic": null,
                   "nullable": true,
                   "union": false,
-                  "idlType": "XRRigidTransform",
+                  "idlType": "XRSpace",
                   "extAttrs": []
                 },
-                "name": "gripTransform",
+                "name": "gripSpace",
                 "extAttrs": []
               }
             ],
@@ -14057,7 +13882,7 @@
       "repository": "https://github.com/whatwg/url",
       "title": "URL Standard",
       "crawled": "https://url.spec.whatwg.org/",
-      "date": "11 February 2019",
+      "date": "12 February 2019",
       "links": [
         "https://trends.google.com/trends/explore?q=url,uri",
         "https://tools.ietf.org/html/rfc6454",
@@ -14956,7 +14781,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Tue Feb 12 2019",
+      "date": "Wed Feb 13 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -15268,7 +15093,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Tue Feb 12 2019",
+      "date": "Wed Feb 13 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -19000,7 +18825,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Tue Feb 12 2019",
+      "date": "Wed Feb 13 2019",
       "links": [
         "https://www.nfc-forum.org/specs/spec_list/",
         "https://url.spec.whatwg.org/",
@@ -30946,7 +30771,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Tue Feb 12 2019",
+      "date": "Wed Feb 13 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -33124,7 +32949,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Tue Feb 12 2019",
+      "date": "Wed Feb 13 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -33675,7 +33500,7 @@
       "repository": "https://github.com/wicg/picture-in-picture",
       "title": "Picture-in-Picture",
       "crawled": "https://wicg.github.io/picture-in-picture/",
-      "date": "8 February 2019",
+      "date": "12 February 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -35692,7 +35517,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Tue Feb 12 2019",
+      "date": "Wed Feb 13 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -35898,7 +35723,7 @@
       "repository": "https://github.com/wicg/webusb",
       "title": "WebUSB API",
       "crawled": "https://wicg.github.io/webusb/",
-      "date": "10 February 2019",
+      "date": "12 February 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -39333,7 +39158,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Tue Feb 12 2019",
+      "date": "Wed Feb 13 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -54408,7 +54233,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Tue Feb 12 2019",
+      "date": "Wed Feb 13 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
