@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% February 13, 2019
+% February 14, 2019
 
 240 specifications were crawled in this report.
 
@@ -9,13 +9,13 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [https://drafts.csswg.org/css-tv/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+- [https://drafts.csswg.org/css-size-adjust-1/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
     at ChildProcess.emit (events.js:214:7)
     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-- [https://drafts.csswg.org/css-shadow-parts-1/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+- [https://drafts.csswg.org/css-shapes-2/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -181,10 +181,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Image Values and Replaced Content Module Level 3](https://www.w3.org/TR/css3-images/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [CSS Image Values and Replaced Content Module Level 3](https://www.w3.org/TR/css3-images): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -397,10 +399,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Gyroscope](https://www.w3.org/TR/gyroscope/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [Gyroscope](https://www.w3.org/TR/gyroscope): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [High Resolution Time Level 3](https://www.w3.org/TR/hr-time-3/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -445,10 +449,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Media Capture Depth Stream Extensions](https://www.w3.org/TR/mediacapture-depth/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [Media Capture Depth Stream Extensions](https://www.w3.org/TR/mediacapture-depth): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [Media Capture from DOM Elements](https://www.w3.org/TR/mediacapture-fromelement/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -757,9 +763,11 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 ## Specifications without CSS definitions
 
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
+- [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
+- [CSS TV Profile 1.0](https://drafts.csswg.org/css-tv/)
 
-=> 2 specifications found
+=> 4 specifications found
 
 Reffy was expecting to find CSS definitions in the specifications  listed here but could not extract any.
 
@@ -818,13 +826,14 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `DOMPointInit` used in [WebXR Device API](https://immersive-web.github.io/webxr/)
 - `DOMPointReadOnly` used in [WebXR Device API](https://immersive-web.github.io/webxr/)
 - `DOMRectReadOnly` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/), [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- `DOMTokenList` used in [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
 - `DataTransferItem` used in [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
 - `DedicatedWorker` used in [WebUSB API](https://wicg.github.io/webusb/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `Dictionary` used in [Web NFC API](https://w3c.github.io/web-nfc/)
 - `Document` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [Feature Policy](https://w3c.github.io/webappsec-feature-policy/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Web Speech API](https://w3c.github.io/speech-api/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `DocumentOrShadowRoot` used in [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- `Element` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
+- `Element` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - `Event` used in [Cookie Store API](https://wicg.github.io/cookie-store/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `EventHandler` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Compatibility Standard](https://compat.spec.whatwg.org/), [Cookie Store API](https://wicg.github.io/cookie-store/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Media Capabilities](https://wicg.github.io/media-capabilities/), [Network Information API](https://wicg.github.io/netinfo/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `EventInit` used in [Cookie Store API](https://wicg.github.io/cookie-store/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -878,7 +887,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `Worklet` used in [Console Standard](https://console.spec.whatwg.org/), [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - `WorkletGlobalScope` used in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 
-=> 72 WebIDL names found
+=> 73 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -947,7 +956,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/) but does not list it in its references
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/) links to [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/) but does not list it in its references
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/) links to [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/) but does not list it in its references
 - [Event Timing API](https://wicg.github.io/event-timing/) links to:
     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but does not list it in its references
@@ -1004,7 +1012,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 77 missing references for links found in 34 specifications
+=> 76 missing references for links found in 33 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
