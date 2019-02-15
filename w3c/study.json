@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-02-14T07:01:08.911Z",
+  "date": "2019-02-15T07:01:12.981Z",
   "stats": {
     "crawled": 240,
-    "errors": 179,
+    "errors": 178,
     "studied": 240
   },
   "results": [
@@ -35,31 +35,6 @@
               "date": "22 January 2019"
             }
           ],
-          "informative": []
-        },
-        "noEdDraft": null,
-        "ok": false
-      }
-    },
-    {
-      "title": "https://drafts.csswg.org/css-shapes-2/",
-      "url": "https://drafts.csswg.org/css-shapes-2/",
-      "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
-        "noCssDefinitions": true,
-        "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
           "informative": []
         },
         "noEdDraft": null,
@@ -499,7 +474,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             }
           ],
           "informative": []
@@ -818,7 +793,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -1353,7 +1328,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://drafts.csswg.org/mediaqueries-5/",
@@ -1745,6 +1720,12 @@
               "title": "CSS Scroll Anchoring Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scroll-anchoring-1/",
               "date": "14 November 2018"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-shapes-2/",
+              "title": "CSS Shapes Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-shapes-2/",
+              "date": "11 January 2019"
             }
           ],
           "informative": []
@@ -2222,12 +2203,13 @@
     {
       "title": "CSS Image Values and Replaced Content Module Level 3",
       "shortname": "css3-images",
+      "date": "",
       "url": "https://www.w3.org/TR/css3-images/",
       "latest": "https://www.w3.org/TR/css3-images",
-      "crawled": "https://www.w3.org/TR/css3-images",
+      "crawled": "https://www.w3.org/TR/css3-images/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
         "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
@@ -2253,6 +2235,12 @@
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/",
               "date": "10 January 2019"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-shapes-2/",
+              "title": "CSS Shapes Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-shapes-2/",
+              "date": "11 January 2019"
             },
             {
               "url": "https://www.w3.org/TR/2dcontext/",
@@ -2700,13 +2688,12 @@
     {
       "title": "CSS Object Model (CSSOM)",
       "shortname": "cssom-1",
-      "date": "",
       "url": "https://www.w3.org/TR/cssom-1/",
       "latest": "https://www.w3.org/TR/cssom-1",
-      "crawled": "https://www.w3.org/TR/cssom-1/",
+      "crawled": "https://www.w3.org/TR/cssom-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
         "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
@@ -3018,12 +3005,11 @@
     {
       "title": "CSS Properties and Values API Level 1",
       "shortname": "css-properties-values-api-1",
-      "date": "",
       "url": "https://www.w3.org/TR/css-properties-values-api-1/",
       "latest": "https://www.w3.org/TR/css-properties-values-api-1",
-      "crawled": "https://www.w3.org/TR/css-properties-values-api-1/",
+      "crawled": "https://www.w3.org/TR/css-properties-values-api-1",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
         "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
@@ -3157,13 +3143,12 @@
     {
       "title": "CSS Round Display Level 1",
       "shortname": "css-round-display-1",
-      "date": "",
       "url": "https://www.w3.org/TR/css-round-display-1/",
       "latest": "https://www.w3.org/TR/css-round-display-1",
-      "crawled": "https://www.w3.org/TR/css-round-display-1/",
+      "crawled": "https://www.w3.org/TR/css-round-display-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
         "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
@@ -3399,10 +3384,46 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://drafts.csswg.org/css-shapes-2/",
+              "title": "CSS Shapes Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-shapes-2/",
+              "date": "11 January 2019"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": true,
+        "ok": false
+      }
+    },
+    {
+      "title": "CSS Shapes Module Level 2",
+      "date": "11 January 2019",
+      "url": "https://drafts.csswg.org/css-shapes-2/",
+      "crawled": "https://drafts.csswg.org/css-shapes-2/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css-shapes/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
         "ok": false
       }
     },
@@ -3856,7 +3877,7 @@
               "url": "https://drafts.css-houdini.org/font-metrics-api/",
               "title": "Font Metrics API Level 1",
               "crawled": "https://drafts.css-houdini.org/font-metrics-api/",
-              "date": "9 November 2017"
+              "date": "11 February 2019"
             }
           ],
           "informative": []
@@ -3924,6 +3945,12 @@
               "title": "CSS Scrollbars Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scrollbars-1/",
               "date": "14 November 2018"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-shapes-2/",
+              "title": "CSS Shapes Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-shapes-2/",
+              "date": "11 January 2019"
             },
             {
               "url": "https://drafts.csswg.org/css-transforms-2/",
@@ -4039,6 +4066,12 @@
               "title": "CSS Shadow Parts",
               "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
               "date": "11 December 2018"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-shapes-2/",
+              "title": "CSS Shapes Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-shapes-2/",
+              "date": "11 January 2019"
             },
             {
               "url": "https://drafts.csswg.org/css-transforms-2/",
@@ -4297,7 +4330,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://drafts.csswg.org/resize-observer/",
@@ -4764,7 +4797,7 @@
     },
     {
       "title": "Font Metrics API Level 1",
-      "date": "9 November 2017",
+      "date": "11 February 2019",
       "url": "https://drafts.css-houdini.org/font-metrics-api/",
       "crawled": "https://drafts.css-houdini.org/font-metrics-api/",
       "report": {
@@ -4772,10 +4805,15 @@
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
-        "hasInvalidIdl": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "Element",
+          "StylePropertyMapReadOnly"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -5031,12 +5069,13 @@
     {
       "title": "Gyroscope",
       "shortname": "gyroscope",
+      "date": "",
       "url": "https://www.w3.org/TR/gyroscope/",
       "latest": "https://www.w3.org/TR/gyroscope",
-      "crawled": "https://www.w3.org/TR/gyroscope",
+      "crawled": "https://www.w3.org/TR/gyroscope/",
       "repository": "https://github.com/w3c/gyroscope",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
         "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
@@ -5242,7 +5281,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/picture-in-picture/",
@@ -5272,7 +5311,7 @@
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
-              "date": "25 October 2018"
+              "date": "14 February 2019"
             },
             {
               "url": "https://streams.spec.whatwg.org/",
@@ -5302,13 +5341,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -5320,19 +5359,19 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 February 2019"
+              "date": "14 February 2019"
             },
             {
               "url": "https://immersive-web.github.io/webxr/",
@@ -5531,7 +5570,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/picture-in-picture/",
@@ -5561,7 +5600,7 @@
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
-              "date": "25 October 2018"
+              "date": "14 February 2019"
             },
             {
               "url": "https://streams.spec.whatwg.org/",
@@ -5591,13 +5630,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -5609,19 +5648,19 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 February 2019"
+              "date": "14 February 2019"
             },
             {
               "url": "https://immersive-web.github.io/webxr/",
@@ -5820,7 +5859,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/picture-in-picture/",
@@ -5850,7 +5889,7 @@
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
-              "date": "25 October 2018"
+              "date": "14 February 2019"
             },
             {
               "url": "https://streams.spec.whatwg.org/",
@@ -5880,13 +5919,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -5898,19 +5937,19 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 February 2019"
+              "date": "14 February 2019"
             },
             {
               "url": "https://immersive-web.github.io/webxr/",
@@ -6000,7 +6039,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -6318,12 +6357,13 @@
     {
       "title": "Media Capture Depth Stream Extensions",
       "shortname": "mediacapture-depth",
+      "date": "",
       "url": "https://www.w3.org/TR/mediacapture-depth/",
       "latest": "https://www.w3.org/TR/mediacapture-depth",
-      "crawled": "https://www.w3.org/TR/mediacapture-depth",
+      "crawled": "https://www.w3.org/TR/mediacapture-depth/",
       "repository": "https://github.com/w3c/mediacapture-depth",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
         "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
@@ -6757,7 +6797,7 @@
     },
     {
       "title": "Network Information API",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "url": "https://wicg.github.io/netinfo/",
       "crawled": "https://wicg.github.io/netinfo/",
       "repository": "https://github.com/wicg/netinfo",
@@ -6922,7 +6962,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             }
           ],
           "informative": []
@@ -7142,13 +7182,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 February 2019"
+              "date": "14 February 2019"
             }
           ],
           "informative": []
@@ -7231,7 +7271,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             }
           ],
           "informative": [
@@ -7239,7 +7279,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             }
           ]
         },
@@ -7275,7 +7315,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             }
           ],
           "informative": [
@@ -7293,7 +7333,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -7829,7 +7869,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 February 2019"
+              "date": "14 February 2019"
             }
           ]
         },
@@ -8124,7 +8164,7 @@
     },
     {
       "title": "Storage Standard",
-      "date": "25 October 2018",
+      "date": "14 February 2019",
       "url": "https://storage.spec.whatwg.org/",
       "crawled": "https://storage.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/storage",
@@ -8377,7 +8417,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             }
           ],
           "informative": []
@@ -8420,7 +8460,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://w3c.github.io/keyboard-lock/",
@@ -8592,19 +8632,19 @@
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
-              "date": "25 October 2018"
+              "date": "14 February 2019"
             },
             {
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -8821,7 +8861,7 @@
               "url": "https://drafts.css-houdini.org/font-metrics-api/",
               "title": "Font Metrics API Level 1",
               "crawled": "https://drafts.css-houdini.org/font-metrics-api/",
-              "date": "9 November 2017"
+              "date": "11 February 2019"
             },
             {
               "url": "https://fullscreen.spec.whatwg.org/",
@@ -8845,7 +8885,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/picture-in-picture/",
@@ -8857,7 +8897,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://w3c.github.io/reporting/",
@@ -8887,7 +8927,7 @@
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
-              "date": "25 October 2018"
+              "date": "14 February 2019"
             },
             {
               "url": "https://streams.spec.whatwg.org/",
@@ -8911,7 +8951,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -8923,13 +8963,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 February 2019"
+              "date": "14 February 2019"
             },
             {
               "url": "https://immersive-web.github.io/webxr/",
@@ -9283,7 +9323,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -9319,7 +9359,7 @@
     },
     {
       "title": "Web Share API - Level 1",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "repository": "https://github.com/wicg/web-share",
@@ -9555,7 +9595,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/picture-in-picture/",
@@ -9585,7 +9625,7 @@
               "url": "https://storage.spec.whatwg.org/",
               "title": "Storage Standard",
               "crawled": "https://storage.spec.whatwg.org/",
-              "date": "25 October 2018"
+              "date": "14 February 2019"
             },
             {
               "url": "https://streams.spec.whatwg.org/",
@@ -9615,13 +9655,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -9633,19 +9673,19 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "12 February 2019"
+              "date": "14 February 2019"
             },
             {
               "url": "https://immersive-web.github.io/webxr/",
@@ -9777,7 +9817,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -9808,7 +9848,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -9842,7 +9882,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Thu Feb 14 2019"
+              "date": "Fri Feb 15 2019"
             }
           ],
           "informative": []
@@ -9949,7 +9989,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "12 February 2019",
+      "date": "14 February 2019",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
@@ -10055,7 +10095,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Thu Feb 14 2019"
+                "date": "Fri Feb 15 2019"
               }
             ]
           },
@@ -10066,7 +10106,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Thu Feb 14 2019"
+                "date": "Fri Feb 15 2019"
               }
             ]
           },
@@ -10077,7 +10117,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Thu Feb 14 2019"
+                "date": "Fri Feb 15 2019"
               }
             ]
           },
@@ -10088,7 +10128,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Thu Feb 14 2019"
+                "date": "Fri Feb 15 2019"
               }
             ]
           },
@@ -10099,7 +10139,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Thu Feb 14 2019"
+                "date": "Fri Feb 15 2019"
               }
             ]
           }

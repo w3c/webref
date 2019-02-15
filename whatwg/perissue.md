@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% February 14, 2019
+% February 15, 2019
 
 229 specifications were crawled in this report.
 
@@ -201,12 +201,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -287,18 +285,14 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Text Decoration Module Level 3](https://www.w3.org/TR/css-text-decor-3): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-- [CSS Text Decoration Module Level 4](https://www.w3.org/TR/css-text-decor-4): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [CSS Text Decoration Module Level 3](https://www.w3.org/TR/css-text-decor-3/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [CSS Text Decoration Module Level 4](https://www.w3.org/TR/css-text-decor-4/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -467,12 +461,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Navigation Timing Level 2](https://www.w3.org/TR/navigation-timing-2): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [Navigation Timing Level 2](https://www.w3.org/TR/navigation-timing-2/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Non-element Selectors Module Level 1](https://www.w3.org/TR/selectors-nonelement-1/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -725,11 +717,8 @@ Reffy was not expecting to find IDL content in the specifications listed here bu
 
 ## List of specifications with invalid WebIDL content
 
-- [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 
-=> 1 specification found
-
-WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
+=> 0 specification found
 
 
 ## List of specifications with obsolete WebIDL constructs
@@ -789,6 +778,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `Screen` used in [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - `Sensor` used in [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - `SensorOptions` used in [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
+- `StylePropertyMapReadOnly` used in [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - `UIEvent` used in [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - `UIEventInit` used in [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - `VibratePattern` used in [Notifications API Standard](https://notifications.spec.whatwg.org/)
@@ -797,7 +787,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `Worklet` used in [Console Standard](https://console.spec.whatwg.org/), [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - `WorkletGlobalScope` used in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 
-=> 48 WebIDL names found
+=> 49 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.

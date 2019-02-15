@@ -2,7 +2,7 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-02-14T07:02:15.957Z",
+  "date": "2019-02-15T07:02:19.176Z",
   "options": {
     "publishedVersion": true
   },
@@ -1739,7 +1739,7 @@
       ],
       "title": "Font Metrics API Level 1",
       "crawled": "https://drafts.css-houdini.org/font-metrics-api/",
-      "date": "9 November 2017",
+      "date": "11 February 2019",
       "links": [
         "https://dom.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -1773,31 +1773,513 @@
         "informative": []
       },
       "idl": {
-        "message": "Got an error during or right after parsing `interface FontMetrics`: Attributes cannot accept sequence types",
-        "line": 8,
-        "input": "advances;\n\n  readonly ",
-        "tokens": [
-          {
-            "type": "identifier",
-            "value": "advances"
+        "jsNames": {
+          "constructors": {},
+          "functions": {
+            "Window": [
+              "FontMetrics",
+              "Baseline",
+              "Font"
+            ]
           },
-          {
-            "type": "other",
-            "value": ";"
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {
+            "Document": [
+              "FontMetrics",
+              "Element",
+              "StylePropertyMapReadOnly"
+            ],
+            "FontMetrics": [
+              "Baseline",
+              "Font"
+            ],
+            "Baseline": [],
+            "Font": []
           },
-          {
-            "type": "whitespace",
-            "value": "\n\n  "
+          "_reallyDependsOnWindow": false,
+          "FontMetrics": {
+            "type": "interface",
+            "name": "FontMetrics",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "width",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": "FrozenArray",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double",
+                    "extAttrs": []
+                  },
+                  "extAttrs": []
+                },
+                "name": "advances",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "boundingBoxLeft",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "boundingBoxRight",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "height",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "emHeightAscent",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "emHeightDescent",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "boundingBoxAscent",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "boundingBoxDescent",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "fontBoundingBoxAscent",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "fontBoundingBoxDescent",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Baseline",
+                  "extAttrs": []
+                },
+                "name": "dominantBaseline",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": "FrozenArray",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "Baseline",
+                    "extAttrs": []
+                  },
+                  "extAttrs": []
+                },
+                "name": "baselines",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": "FrozenArray",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": {
+                    "type": "attribute-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "Font",
+                    "extAttrs": []
+                  },
+                  "extAttrs": []
+                },
+                "name": "fonts",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": []
           },
-          {
-            "type": "identifier",
-            "value": "readonly"
+          "Baseline": {
+            "type": "interface",
+            "name": "Baseline",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString",
+                  "extAttrs": []
+                },
+                "name": "name",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double",
+                  "extAttrs": []
+                },
+                "name": "value",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": []
           },
-          {
-            "type": "whitespace",
-            "value": " "
+          "Font": {
+            "type": "interface",
+            "name": "Font",
+            "partial": false,
+            "members": [
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString",
+                  "extAttrs": []
+                },
+                "name": "name",
+                "extAttrs": []
+              },
+              {
+                "type": "attribute",
+                "static": false,
+                "stringifier": false,
+                "inherit": false,
+                "readonly": true,
+                "idlType": {
+                  "type": "attribute-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long",
+                  "extAttrs": []
+                },
+                "name": "glyphsRendered",
+                "extAttrs": []
+              }
+            ],
+            "inheritance": null,
+            "extAttrs": []
           }
-        ]
+        },
+        "idlExtendedNames": {
+          "Document": [
+            {
+              "type": "interface",
+              "name": "Document",
+              "partial": true,
+              "members": [
+                {
+                  "type": "operation",
+                  "getter": false,
+                  "setter": false,
+                  "deleter": false,
+                  "static": false,
+                  "stringifier": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "FontMetrics",
+                    "extAttrs": []
+                  },
+                  "name": "measureElement",
+                  "arguments": [
+                    {
+                      "optional": false,
+                      "variadic": false,
+                      "extAttrs": [],
+                      "idlType": {
+                        "type": "argument-type",
+                        "sequence": false,
+                        "generic": null,
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "Element",
+                        "extAttrs": []
+                      },
+                      "name": "element"
+                    }
+                  ],
+                  "extAttrs": []
+                },
+                {
+                  "type": "operation",
+                  "getter": false,
+                  "setter": false,
+                  "deleter": false,
+                  "static": false,
+                  "stringifier": false,
+                  "idlType": {
+                    "type": "return-type",
+                    "sequence": false,
+                    "generic": null,
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "FontMetrics",
+                    "extAttrs": []
+                  },
+                  "name": "measureText",
+                  "arguments": [
+                    {
+                      "optional": false,
+                      "variadic": false,
+                      "extAttrs": [],
+                      "idlType": {
+                        "type": "argument-type",
+                        "sequence": false,
+                        "generic": null,
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "DOMString",
+                        "extAttrs": []
+                      },
+                      "name": "text"
+                    },
+                    {
+                      "optional": false,
+                      "variadic": false,
+                      "extAttrs": [],
+                      "idlType": {
+                        "type": "argument-type",
+                        "sequence": false,
+                        "generic": null,
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "StylePropertyMapReadOnly",
+                        "extAttrs": []
+                      },
+                      "name": "styleMap"
+                    }
+                  ],
+                  "extAttrs": []
+                }
+              ],
+              "extAttrs": []
+            }
+          ]
+        },
+        "externalDependencies": [
+          "Document",
+          "Element",
+          "StylePropertyMapReadOnly"
+        ],
+        "hasObsoleteIdl": false
       },
       "css": {
         "properties": {},
@@ -13698,7 +14180,7 @@
       "repository": "https://github.com/whatwg/storage",
       "title": "Storage Standard",
       "crawled": "https://storage.spec.whatwg.org/",
-      "date": "25 October 2018",
+      "date": "14 February 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://url.spec.whatwg.org/",
@@ -13793,7 +14275,14 @@
                   "extAttrs": []
                 },
                 "name": "storage",
-                "extAttrs": []
+                "extAttrs": [
+                  {
+                    "name": "SameObject",
+                    "arguments": null,
+                    "type": "extended-attribute",
+                    "rhs": null
+                  }
+                ]
               }
             ],
             "extAttrs": [
@@ -14982,7 +15471,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -15294,7 +15783,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -19026,7 +19515,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "links": [
         "https://www.nfc-forum.org/specs/spec_list/",
         "https://url.spec.whatwg.org/",
@@ -19188,8 +19677,7 @@
               "AbortSignal"
             ],
             "NFCReaderOptions": [
-              "NFCRecordType",
-              "NFCAccept"
+              "NFCRecordType"
             ]
           },
           "_reallyDependsOnWindow": false,
@@ -19992,43 +20480,9 @@
                   "type": "string",
                   "value": ""
                 }
-              },
-              {
-                "type": "field",
-                "name": "accept",
-                "required": false,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "NFCAccept",
-                  "extAttrs": []
-                },
-                "extAttrs": [],
-                "default": {
-                  "type": "string",
-                  "value": "web-nfc-only"
-                }
               }
             ],
             "inheritance": null,
-            "extAttrs": []
-          },
-          "NFCAccept": {
-            "type": "enum",
-            "name": "NFCAccept",
-            "values": [
-              {
-                "type": "string",
-                "value": "web-nfc-only"
-              },
-              {
-                "type": "string",
-                "value": "any"
-              }
-            ],
             "extAttrs": []
           }
         },
@@ -30972,7 +31426,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -33150,7 +33604,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -35718,7 +36172,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -35924,7 +36378,7 @@
       "repository": "https://github.com/wicg/webusb",
       "title": "WebUSB API",
       "crawled": "https://wicg.github.io/webusb/",
-      "date": "12 February 2019",
+      "date": "14 February 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -39359,7 +39813,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -54434,7 +54888,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Thu Feb 14 2019",
+      "date": "Fri Feb 15 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -75835,15 +76289,11 @@
         "https://www.w3.org/TR/css-flexbox-1/",
         "https://www.w3.org/TR/css-flexbox-1"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/css-flexbox-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Flexible Box Layout Module Level 1",
-      "crawled": "https://www.w3.org/TR/css-flexbox-1",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/css-flexbox-1"
     },
     {
       "url": "https://www.w3.org/TR/css-font-loading-3/",
@@ -75877,15 +76327,11 @@
         "https://www.w3.org/TR/css-fonts-3/",
         "https://www.w3.org/TR/css-fonts-3"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/css-fonts-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Fonts Module Level 3",
-      "crawled": "https://www.w3.org/TR/css-fonts-3",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/css-fonts-3"
     },
     {
       "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -75921,15 +76367,11 @@
         "https://www.w3.org/TR/css-gcpm-3/",
         "https://www.w3.org/TR/css-gcpm-3"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/css-gcpm-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Generated Content for Paged Media Module",
-      "crawled": "https://www.w3.org/TR/css-gcpm-3",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/css-gcpm-3"
     },
     {
       "url": "https://www.w3.org/TR/css-grid-1/",
@@ -78059,14 +78501,10 @@
         "https://www.w3.org/TR/progress-events/",
         "https://www.w3.org/TR/progress-events"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/progress-events",
       "title": "Progress Events",
-      "crawled": "https://www.w3.org/TR/progress-events",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/progress-events"
     },
     {
       "url": "https://www.w3.org/TR/proximity/",
@@ -78142,11 +78580,15 @@
         "https://www.w3.org/TR/remote-playback/",
         "https://www.w3.org/TR/remote-playback"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/remote-playback",
       "repository": "https://github.com/w3c/remote-playback",
       "title": "Remote Playback API",
-      "crawled": "https://www.w3.org/TR/remote-playback"
+      "crawled": "https://www.w3.org/TR/remote-playback",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/requestidlecallback/",
