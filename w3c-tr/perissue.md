@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% February 14, 2019
+% February 15, 2019
 
 240 specifications were crawled in this report.
 
@@ -133,18 +133,22 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [CSS Font Loading Module Level 3](https://www.w3.org/TR/css-font-loading-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -153,10 +157,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Generated Content for Paged Media Module](https://www.w3.org/TR/css-gcpm-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [CSS Generated Content for Paged Media Module](https://www.w3.org/TR/css-gcpm-3): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/css-content-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -533,10 +539,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Progress Events](https://www.w3.org/TR/progress-events): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [Progress Events](https://www.w3.org/TR/progress-events): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [Proximity Sensor](https://www.w3.org/TR/proximity): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -549,12 +557,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Remote Playback API](https://www.w3.org/TR/remote-playback): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [Remote Playback API](https://www.w3.org/TR/remote-playback): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Resource Timing Level 2](https://www.w3.org/TR/resource-timing-2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -774,11 +780,8 @@ Reffy was not expecting to find IDL content in the specifications listed here bu
 
 ## List of specifications with invalid WebIDL content
 
-- [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 
-=> 1 specification found
-
-WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
+=> 0 specification found
 
 
 ## List of specifications with obsolete WebIDL constructs
@@ -815,9 +818,9 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
 - `DedicatedWorker` used in [WebUSB API](https://wicg.github.io/webusb/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `Dictionary` used in [Web NFC API](https://w3c.github.io/web-nfc/)
-- `Document` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [Feature Policy](https://w3c.github.io/webappsec-feature-policy/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Web Speech API](https://w3c.github.io/speech-api/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `Document` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [Feature Policy](https://w3c.github.io/webappsec-feature-policy/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Web Speech API](https://w3c.github.io/speech-api/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `DocumentOrShadowRoot` used in [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- `Element` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
+- `Element` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - `Event` used in [Cookie Store API](https://wicg.github.io/cookie-store/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `EventHandler` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Compatibility Standard](https://compat.spec.whatwg.org/), [Cookie Store API](https://wicg.github.io/cookie-store/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Media Capabilities](https://wicg.github.io/media-capabilities/), [Network Information API](https://wicg.github.io/netinfo/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `EventInit` used in [Cookie Store API](https://wicg.github.io/cookie-store/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -861,6 +864,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `ServiceWorkerGlobalScope` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Cookie Store API](https://wicg.github.io/cookie-store/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - `ServiceWorkerRegistration` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - `SharedWorker` used in [WebUSB API](https://wicg.github.io/webusb/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `StylePropertyMapReadOnly` used in [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - `UIEvent` used in [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - `UIEventInit` used in [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - `Window` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/), [Background Fetch](https://wicg.github.io/background-fetch/), [Compatibility Standard](https://compat.spec.whatwg.org/), [Console Standard](https://console.spec.whatwg.org/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [Event Timing API](https://wicg.github.io/event-timing/), [Fetch Standard](https://fetch.spec.whatwg.org/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [Keyboard Lock](https://w3c.github.io/keyboard-lock/), [Keyboard Map](https://wicg.github.io/keyboard-map/), [Media Capabilities](https://wicg.github.io/media-capabilities/), [Media Session Standard](https://wicg.github.io/mediasession/), [Network Information API](https://wicg.github.io/netinfo/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Scroll-linked Animations](https://wicg.github.io/scroll-animations/), [Static Range](https://w3c.github.io/staticrange/), [Storage Standard](https://storage.spec.whatwg.org/), [URL Standard](https://url.spec.whatwg.org/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -871,7 +875,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - `Worklet` used in [Console Standard](https://console.spec.whatwg.org/), [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - `WorkletGlobalScope` used in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 
-=> 73 WebIDL names found
+=> 74 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
