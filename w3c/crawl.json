@@ -2,7 +2,7 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-02-15T07:01:12.981Z",
+  "date": "2019-02-16T07:01:38.186Z",
   "options": {},
   "stats": {
     "crawled": 240,
@@ -5490,7 +5490,135 @@
       "versions": [
         "https://drafts.csswg.org/css-size-adjust-1/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
+      "title": "CSS Mobile Text Size Adjustment Module Level 1",
+      "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
+      "date": "14 November 2018",
+      "links": [
+        "https://www.w3.org/TR/CSS/",
+        "https://github.com/w3c/csswg-drafts/issues",
+        "https://lists.w3.org/Archives/Public/public-css-archive/",
+        "https://lists.w3.org/Archives/Public/www-style/",
+        "https://www.w3.org/Style/CSS/members",
+        "https://www.w3.org/Consortium/Patent-Policy/",
+        "https://www.w3.org/2004/01/pp-impl/32061/status",
+        "https://www.w3.org/2018/Process-20180201/",
+        "https://drafts.csswg.org/css-text-4/",
+        "https://www.w3.org/TR/CSS21/",
+        "https://drafts.csswg.org/css-values-4/",
+        "https://drafts.csswg.org/css-display-3/",
+        "https://drafts.csswg.org/css2/visudet.html",
+        "https://drafts.csswg.org/css-sizing-3/",
+        "https://drafts.csswg.org/css-text-3/",
+        "https://drafts.csswg.org/css-fonts-3/",
+        "https://drafts.csswg.org/css-values/",
+        "https://drafts.csswg.org/css-cascade/",
+        "https://drafts.csswg.org/css-pseudo/",
+        "https://drafts.csswg.org/web-animations/",
+        "https://www.w3.org/TR/CSS2/",
+        "https://www.w3.org/Style/CSS/Test/",
+        "https://lists.w3.org/Archives/Public/public-css-testsuite",
+        "https://www.w3.org/TR/css-display-3/",
+        "https://www.w3.org/TR/css-fonts-3/",
+        "https://www.w3.org/TR/css-sizing-3/",
+        "https://www.w3.org/TR/css-text-3/",
+        "https://www.w3.org/TR/css-text-4/",
+        "https://www.w3.org/TR/css-values-3/",
+        "https://www.w3.org/TR/css-values-4/",
+        "https://tools.ietf.org/html/rfc2119"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "CSS-DISPLAY-3",
+            "url": "https://www.w3.org/TR/css-display-3/"
+          },
+          {
+            "name": "CSS-FONTS-3",
+            "url": "https://www.w3.org/TR/css-fonts-3/"
+          },
+          {
+            "name": "CSS-SIZING-3",
+            "url": "https://www.w3.org/TR/css-sizing-3/"
+          },
+          {
+            "name": "CSS-TEXT-3",
+            "url": "https://www.w3.org/TR/css-text-3/"
+          },
+          {
+            "name": "CSS-TEXT-4",
+            "url": "https://www.w3.org/TR/css-text-4/"
+          },
+          {
+            "name": "CSS-VALUES-3",
+            "url": "https://www.w3.org/TR/css-values-3/"
+          },
+          {
+            "name": "CSS-VALUES-4",
+            "url": "https://www.w3.org/TR/css-values-4/"
+          },
+          {
+            "name": "CSS21",
+            "url": "https://www.w3.org/TR/CSS2/"
+          },
+          {
+            "name": "RFC2119",
+            "url": "https://tools.ietf.org/html/rfc2119"
+          }
+        ],
+        "informative": []
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {},
+          "_reallyDependsOnWindow": false
+        },
+        "idlExtendedNames": {},
+        "externalDependencies": [],
+        "hasObsoleteIdl": false,
+        "idl": ""
+      },
+      "css": {
+        "properties": {
+          "text-size-adjust": {
+            "name": "text-size-adjust",
+            "value": "auto | none | <percentage>",
+            "initial": "auto",
+            "appliesTo": "all elements",
+            "inherited": "yes",
+            "percentages": "see below",
+            "computedValue": "specfied keyword or percentage",
+            "canonicalOrder": "N/A",
+            "animationType": "by computed value",
+            "parsedValue": {
+              "oneOf": [
+                {
+                  "type": "keyword",
+                  "name": "auto"
+                },
+                {
+                  "type": "keyword",
+                  "name": "none"
+                },
+                {
+                  "type": "primitive",
+                  "name": "percentage"
+                }
+              ]
+            }
+          }
+        },
+        "descriptors": {},
+        "valuespaces": {
+          "<percentage>": {
+            "prose": "When displaying on a small device, renderers must not do size adjustment but instead the computed value of font-size must be multiplied by this percentage. Note: This means that 'text-size-adjust: 100%;' is equivalent to 'text-size-adjust: none;'."
+          }
+        }
+      }
     },
     {
       "url": "https://drafts.csswg.org/css-sizing-4/",
@@ -6682,70 +6810,7 @@
       "versions": [
         "https://drafts.csswg.org/css-tv/"
       ],
-      "title": "CSS TV Profile 1.0",
-      "crawled": "https://drafts.csswg.org/css-tv/",
-      "date": "10 October 2014",
-      "links": [
-        "https://www.w3.org/TR/CSS/",
-        "https://www.w3.org/TR/",
-        "https://www.w3.org/Style/CSS/members",
-        "https://www.w3.org/Style/",
-        "https://lists.w3.org/Archives/Public/www-style/",
-        "https://www.w3.org/Mail/Request",
-        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
-        "https://www.w3.org/2004/01/pp-impl/32061/status",
-        "https://www.w3.org/2014/Process-20140801/",
-        "https://www.w3.org/TR/2008/REC-CSS1-20080411",
-        "https://www.w3.org/TR/2008/REC-CSS2-20080411",
-        "https://www.w3.org/TR/2011/REC-css3-color-20110607",
-        "https://www.w3.org/TR/1999/REC-html401-19991224",
-        "https://www.ietf.org/rfc/rfc2119.txt"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "CSS1",
-            "url": "http://www.w3.org/TR/2008/REC-CSS1-20080411"
-          },
-          {
-            "name": "CSS2",
-            "url": "http://www.w3.org/TR/2008/REC-CSS2-20080411"
-          },
-          {
-            "name": "CSS3COLOR",
-            "url": "http://www.w3.org/TR/2011/REC-css3-color-20110607"
-          },
-          {
-            "name": "HTML401",
-            "url": "http://www.w3.org/TR/1999/REC-html401-19991224"
-          },
-          {
-            "name": "RFC2119",
-            "url": "http://www.ietf.org/rfc/rfc2119.txt"
-          }
-        ],
-        "informative": []
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {},
-          "functions": {},
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {},
-          "_reallyDependsOnWindow": false
-        },
-        "idlExtendedNames": {},
-        "externalDependencies": [],
-        "hasObsoleteIdl": false,
-        "idl": ""
-      },
-      "css": {
-        "properties": {},
-        "descriptors": {},
-        "valuespaces": {}
-      }
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
     },
     {
       "url": "https://drafts.csswg.org/mediaqueries-5/",
@@ -15341,7 +15406,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Fri Feb 15 2019",
+      "date": "Sat Feb 16 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -15653,7 +15718,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Fri Feb 15 2019",
+      "date": "Sat Feb 16 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -19385,7 +19450,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Fri Feb 15 2019",
+      "date": "Sat Feb 16 2019",
       "links": [
         "https://www.nfc-forum.org/specs/spec_list/",
         "https://url.spec.whatwg.org/",
@@ -19406,13 +19471,6 @@
         "https://www.iana.org/assignments/media-types/media-types.xhtml",
         "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
         "https://pubs.opengroup.org/onlinepubs/007904875/utilities/xcu_chap02.html",
-        "https://github.com/w3c/web-nfc/commits/gh-pages",
-        "https://github.com/w3c/web-nfc/issues?page=1&state=closed",
-        "https://github.com/w3c/web-nfc/issues/2",
-        "https://github.com/w3c/web-nfc/issues/3",
-        "https://github.com/w3c/web-nfc/issues/40",
-        "https://github.com/w3c/web-nfc/issues/17",
-        "https://github.com/w3c/web-nfc/issues/53",
         "https://www.loc.gov/standards/iso639-2/php/code_list.php",
         "https://members.nfc-forum.org/specs/spec_list/",
         "https://tools.ietf.org/html/rfc2119",
@@ -19506,16 +19564,16 @@
         },
         "idlNames": {
           "_dependencies": {
-            "NFCMessage": [
-              "NFCRecord"
+            "NDEFMessage": [
+              "NDEFRecord"
             ],
-            "NFCRecord": [
-              "NFCRecordType",
-              "NFCRecordData"
+            "NDEFRecord": [
+              "NDEFRecordType",
+              "NDEFRecordData"
             ],
             "NFCWriter": [
               "Window",
-              "NFCMessageSource",
+              "NDEFMessageSource",
               "NFCPushOptions"
             ],
             "NFCReader": [
@@ -19528,11 +19586,11 @@
               "Event",
               "Window",
               "NFCReadingEventInit",
-              "NFCMessage"
+              "NDEFMessage"
             ],
             "NFCReadingEventInit": [
               "EventInit",
-              "NFCMessage"
+              "NDEFMessage"
             ],
             "NFCErrorEvent": [
               "Event",
@@ -19544,16 +19602,18 @@
             ],
             "NFCPushOptions": [
               "NFCPushTarget",
-              "AbortSignal"
+              "AbortSignal",
+              "NDEFCompatibility"
             ],
             "NFCReaderOptions": [
-              "NFCRecordType"
+              "NDEFRecordType",
+              "NDEFCompatibility"
             ]
           },
           "_reallyDependsOnWindow": false,
-          "NFCMessage": {
+          "NDEFMessage": {
             "type": "dictionary",
-            "name": "NFCMessage",
+            "name": "NDEFMessage",
             "partial": false,
             "members": [
               {
@@ -19572,7 +19632,7 @@
                     "generic": null,
                     "nullable": false,
                     "union": false,
-                    "idlType": "NFCRecord",
+                    "idlType": "NDEFRecord",
                     "extAttrs": []
                   },
                   "extAttrs": []
@@ -19598,7 +19658,7 @@
             "inheritance": null,
             "extAttrs": []
           },
-          "NFCRecordData": {
+          "NDEFRecordData": {
             "type": "typedef",
             "idlType": {
               "type": "typedef-type",
@@ -19646,12 +19706,12 @@
               ],
               "extAttrs": []
             },
-            "name": "NFCRecordData",
+            "name": "NDEFRecordData",
             "extAttrs": []
           },
-          "NFCRecord": {
+          "NDEFRecord": {
             "type": "dictionary",
-            "name": "NFCRecord",
+            "name": "NDEFRecord",
             "partial": false,
             "members": [
               {
@@ -19664,7 +19724,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "NFCRecordType",
+                  "idlType": "NDEFRecordType",
                   "extAttrs": []
                 },
                 "extAttrs": []
@@ -19694,7 +19754,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "NFCRecordData",
+                  "idlType": "NDEFRecordData",
                   "extAttrs": []
                 },
                 "extAttrs": []
@@ -19703,9 +19763,9 @@
             "inheritance": null,
             "extAttrs": []
           },
-          "NFCRecordType": {
+          "NDEFRecordType": {
             "type": "enum",
-            "name": "NFCRecordType",
+            "name": "NDEFRecordType",
             "values": [
               {
                 "type": "string",
@@ -19730,7 +19790,7 @@
             ],
             "extAttrs": []
           },
-          "NFCMessageSource": {
+          "NDEFMessageSource": {
             "type": "typedef",
             "idlType": {
               "type": "typedef-type",
@@ -19763,13 +19823,13 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "NFCMessage",
+                  "idlType": "NDEFMessage",
                   "extAttrs": []
                 }
               ],
               "extAttrs": []
             },
-            "name": "NFCMessageSource",
+            "name": "NDEFMessageSource",
             "extAttrs": []
           },
           "NFCWriter": {
@@ -19813,7 +19873,7 @@
                       "generic": null,
                       "nullable": false,
                       "union": false,
-                      "idlType": "NFCMessageSource",
+                      "idlType": "NDEFMessageSource",
                       "extAttrs": []
                     },
                     "name": "message"
@@ -20002,7 +20062,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "NFCMessage",
+                  "idlType": "NDEFMessage",
                   "extAttrs": []
                 },
                 "name": "message",
@@ -20080,7 +20140,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "NFCMessage",
+                  "idlType": "NDEFMessage",
                   "extAttrs": []
                 },
                 "extAttrs": []
@@ -20193,6 +20253,25 @@
             "inheritance": "EventInit",
             "extAttrs": []
           },
+          "NDEFCompatibility": {
+            "type": "enum",
+            "name": "NDEFCompatibility",
+            "values": [
+              {
+                "type": "string",
+                "value": "nfc-forum"
+              },
+              {
+                "type": "string",
+                "value": "vendor"
+              },
+              {
+                "type": "string",
+                "value": "any"
+              }
+            ],
+            "extAttrs": []
+          },
           "NFCPushOptions": {
             "type": "dictionary",
             "name": "NFCPushOptions",
@@ -20269,6 +20348,25 @@
                   "extAttrs": []
                 },
                 "extAttrs": []
+              },
+              {
+                "type": "field",
+                "name": "compatibility",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NDEFCompatibility",
+                  "extAttrs": []
+                },
+                "extAttrs": [],
+                "default": {
+                  "type": "string",
+                  "value": "nfc-forum"
+                }
               }
             ],
             "inheritance": null,
@@ -20327,7 +20425,7 @@
                   "generic": null,
                   "nullable": false,
                   "union": false,
-                  "idlType": "NFCRecordType",
+                  "idlType": "NDEFRecordType",
                   "extAttrs": []
                 },
                 "extAttrs": []
@@ -20349,6 +20447,25 @@
                 "default": {
                   "type": "string",
                   "value": ""
+                }
+              },
+              {
+                "type": "field",
+                "name": "compatibility",
+                "required": false,
+                "idlType": {
+                  "type": "dictionary-type",
+                  "sequence": false,
+                  "generic": null,
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NDEFCompatibility",
+                  "extAttrs": []
+                },
+                "extAttrs": [],
+                "default": {
+                  "type": "string",
+                  "value": "nfc-forum"
                 }
               }
             ],
@@ -31296,7 +31413,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Fri Feb 15 2019",
+      "date": "Sat Feb 16 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -33474,7 +33591,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Fri Feb 15 2019",
+      "date": "Sat Feb 16 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -36042,7 +36159,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Fri Feb 15 2019",
+      "date": "Sat Feb 16 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -36248,7 +36365,7 @@
       "repository": "https://github.com/wicg/webusb",
       "title": "WebUSB API",
       "crawled": "https://wicg.github.io/webusb/",
-      "date": "14 February 2019",
+      "date": "15 February 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -39683,7 +39800,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Fri Feb 15 2019",
+      "date": "Sat Feb 16 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -54758,7 +54875,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Fri Feb 15 2019",
+      "date": "Sat Feb 16 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -76600,10 +76717,14 @@
         "https://www.w3.org/TR/css-properties-values-api-1/",
         "https://www.w3.org/TR/css-properties-values-api-1"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-properties-values-api-1",
       "title": "CSS Properties and Values API Level 1",
-      "crawled": "https://www.w3.org/TR/css-properties-values-api-1"
+      "crawled": "https://www.w3.org/TR/css-properties-values-api-1/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -76679,11 +76800,15 @@
         "https://www.w3.org/TR/css-round-display-1/",
         "https://www.w3.org/TR/css-round-display-1"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-round-display-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Round Display Level 1",
-      "crawled": "https://www.w3.org/TR/css-round-display-1"
+      "crawled": "https://www.w3.org/TR/css-round-display-1/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-ruby-1/",
@@ -77327,11 +77452,15 @@
         "https://www.w3.org/TR/cssom-1/",
         "https://www.w3.org/TR/cssom-1"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/cssom-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Object Model (CSSOM)",
-      "crawled": "https://www.w3.org/TR/cssom-1"
+      "crawled": "https://www.w3.org/TR/cssom-1/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/cssom-view-1/",
