@@ -2,11 +2,11 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-02-19T07:01:13.617Z",
+  "date": "2019-02-20T07:01:11.608Z",
   "options": {},
   "stats": {
     "crawled": 240,
-    "errors": 179
+    "errors": 177
   },
   "results": [
     {
@@ -5490,7 +5490,135 @@
       "versions": [
         "https://drafts.csswg.org/css-size-adjust-1/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
+      "title": "CSS Mobile Text Size Adjustment Module Level 1",
+      "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
+      "date": "14 November 2018",
+      "links": [
+        "https://www.w3.org/TR/CSS/",
+        "https://github.com/w3c/csswg-drafts/issues",
+        "https://lists.w3.org/Archives/Public/public-css-archive/",
+        "https://lists.w3.org/Archives/Public/www-style/",
+        "https://www.w3.org/Style/CSS/members",
+        "https://www.w3.org/Consortium/Patent-Policy/",
+        "https://www.w3.org/2004/01/pp-impl/32061/status",
+        "https://www.w3.org/2018/Process-20180201/",
+        "https://drafts.csswg.org/css-text-4/",
+        "https://www.w3.org/TR/CSS21/",
+        "https://drafts.csswg.org/css-values-4/",
+        "https://drafts.csswg.org/css-display-3/",
+        "https://drafts.csswg.org/css2/visudet.html",
+        "https://drafts.csswg.org/css-sizing-3/",
+        "https://drafts.csswg.org/css-text-3/",
+        "https://drafts.csswg.org/css-fonts-3/",
+        "https://drafts.csswg.org/css-values/",
+        "https://drafts.csswg.org/css-cascade/",
+        "https://drafts.csswg.org/css-pseudo/",
+        "https://drafts.csswg.org/web-animations/",
+        "https://www.w3.org/TR/CSS2/",
+        "https://www.w3.org/Style/CSS/Test/",
+        "https://lists.w3.org/Archives/Public/public-css-testsuite",
+        "https://www.w3.org/TR/css-display-3/",
+        "https://www.w3.org/TR/css-fonts-3/",
+        "https://www.w3.org/TR/css-sizing-3/",
+        "https://www.w3.org/TR/css-text-3/",
+        "https://www.w3.org/TR/css-text-4/",
+        "https://www.w3.org/TR/css-values-3/",
+        "https://www.w3.org/TR/css-values-4/",
+        "https://tools.ietf.org/html/rfc2119"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "CSS-DISPLAY-3",
+            "url": "https://www.w3.org/TR/css-display-3/"
+          },
+          {
+            "name": "CSS-FONTS-3",
+            "url": "https://www.w3.org/TR/css-fonts-3/"
+          },
+          {
+            "name": "CSS-SIZING-3",
+            "url": "https://www.w3.org/TR/css-sizing-3/"
+          },
+          {
+            "name": "CSS-TEXT-3",
+            "url": "https://www.w3.org/TR/css-text-3/"
+          },
+          {
+            "name": "CSS-TEXT-4",
+            "url": "https://www.w3.org/TR/css-text-4/"
+          },
+          {
+            "name": "CSS-VALUES-3",
+            "url": "https://www.w3.org/TR/css-values-3/"
+          },
+          {
+            "name": "CSS-VALUES-4",
+            "url": "https://www.w3.org/TR/css-values-4/"
+          },
+          {
+            "name": "CSS21",
+            "url": "https://www.w3.org/TR/CSS2/"
+          },
+          {
+            "name": "RFC2119",
+            "url": "https://tools.ietf.org/html/rfc2119"
+          }
+        ],
+        "informative": []
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {},
+          "_reallyDependsOnWindow": false
+        },
+        "idlExtendedNames": {},
+        "externalDependencies": [],
+        "hasObsoleteIdl": false,
+        "idl": ""
+      },
+      "css": {
+        "properties": {
+          "text-size-adjust": {
+            "name": "text-size-adjust",
+            "value": "auto | none | <percentage>",
+            "initial": "auto",
+            "appliesTo": "all elements",
+            "inherited": "yes",
+            "percentages": "see below",
+            "computedValue": "specfied keyword or percentage",
+            "canonicalOrder": "N/A",
+            "animationType": "by computed value",
+            "parsedValue": {
+              "oneOf": [
+                {
+                  "type": "keyword",
+                  "name": "auto"
+                },
+                {
+                  "type": "keyword",
+                  "name": "none"
+                },
+                {
+                  "type": "primitive",
+                  "name": "percentage"
+                }
+              ]
+            }
+          }
+        },
+        "descriptors": {},
+        "valuespaces": {
+          "<percentage>": {
+            "prose": "When displaying on a small device, renderers must not do size adjustment but instead the computed value of font-size must be multiplied by this percentage. Note: This means that 'text-size-adjust: 100%;' is equivalent to 'text-size-adjust: none;'."
+          }
+        }
+      }
     },
     {
       "url": "https://drafts.csswg.org/css-sizing-4/",
@@ -6682,7 +6810,70 @@
       "versions": [
         "https://drafts.csswg.org/css-tv/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
+      "title": "CSS TV Profile 1.0",
+      "crawled": "https://drafts.csswg.org/css-tv/",
+      "date": "10 October 2014",
+      "links": [
+        "https://www.w3.org/TR/CSS/",
+        "https://www.w3.org/TR/",
+        "https://www.w3.org/Style/CSS/members",
+        "https://www.w3.org/Style/",
+        "https://lists.w3.org/Archives/Public/www-style/",
+        "https://www.w3.org/Mail/Request",
+        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
+        "https://www.w3.org/2004/01/pp-impl/32061/status",
+        "https://www.w3.org/2014/Process-20140801/",
+        "https://www.w3.org/TR/2008/REC-CSS1-20080411",
+        "https://www.w3.org/TR/2008/REC-CSS2-20080411",
+        "https://www.w3.org/TR/2011/REC-css3-color-20110607",
+        "https://www.w3.org/TR/1999/REC-html401-19991224",
+        "https://www.ietf.org/rfc/rfc2119.txt"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "CSS1",
+            "url": "http://www.w3.org/TR/2008/REC-CSS1-20080411"
+          },
+          {
+            "name": "CSS2",
+            "url": "http://www.w3.org/TR/2008/REC-CSS2-20080411"
+          },
+          {
+            "name": "CSS3COLOR",
+            "url": "http://www.w3.org/TR/2011/REC-css3-color-20110607"
+          },
+          {
+            "name": "HTML401",
+            "url": "http://www.w3.org/TR/1999/REC-html401-19991224"
+          },
+          {
+            "name": "RFC2119",
+            "url": "http://www.ietf.org/rfc/rfc2119.txt"
+          }
+        ],
+        "informative": []
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {},
+          "_reallyDependsOnWindow": false
+        },
+        "idlExtendedNames": {},
+        "externalDependencies": [],
+        "hasObsoleteIdl": false,
+        "idl": ""
+      },
+      "css": {
+        "properties": {},
+        "descriptors": {},
+        "valuespaces": {}
+      }
     },
     {
       "url": "https://drafts.csswg.org/mediaqueries-5/",
@@ -10714,7 +10905,7 @@
       "repository": "https://github.com/immersive-web/webxr",
       "title": "WebXR Device API",
       "crawled": "https://immersive-web.github.io/webxr/",
-      "date": "18 February 2019",
+      "date": "19 February 2019",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/immersive-web/",
@@ -12818,7 +13009,7 @@
             "values": [
               {
                 "type": "string",
-                "value": ""
+                "value": "none"
               },
               {
                 "type": "string",
@@ -14306,7 +14497,7 @@
       "repository": "https://github.com/whatwg/streams",
       "title": "Streams Standard",
       "crawled": "https://streams.spec.whatwg.org/",
-      "date": "18 February 2019",
+      "date": "19 February 2019",
       "links": [
         "https://fetch.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -15296,7 +15487,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Tue Feb 19 2019",
+      "date": "Wed Feb 20 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -15608,7 +15799,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Tue Feb 19 2019",
+      "date": "Wed Feb 20 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -19340,7 +19531,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Tue Feb 19 2019",
+      "date": "Wed Feb 20 2019",
       "links": [
         "https://www.nfc-forum.org/specs/spec_list/",
         "https://url.spec.whatwg.org/",
@@ -19354,15 +19545,14 @@
         "https://infra.spec.whatwg.org/",
         "https://dom.spec.whatwg.org/",
         "https://encoding.spec.whatwg.org/",
-        "https://tools.ietf.org/html/rfc2046",
         "https://w3c.github.io/web-nfc/security-privacy.html",
         "https://github.com/w3c/permissions/issues/47",
         "https://w3c.github.io/web-nfc/use-cases.html",
-        "https://www.iana.org/assignments/media-types/media-types.xhtml",
         "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
         "https://pubs.opengroup.org/onlinepubs/007904875/utilities/xcu_chap02.html",
         "https://www.loc.gov/standards/iso639-2/php/code_list.php",
         "https://members.nfc-forum.org/specs/spec_list/",
+        "https://tools.ietf.org/html/rfc2046",
         "https://tools.ietf.org/html/rfc2119",
         "https://tools.ietf.org/html/rfc5234"
       ],
@@ -31303,7 +31493,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Tue Feb 19 2019",
+      "date": "Wed Feb 20 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -33481,7 +33671,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Tue Feb 19 2019",
+      "date": "Wed Feb 20 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -36049,7 +36239,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Tue Feb 19 2019",
+      "date": "Wed Feb 20 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -36255,7 +36445,7 @@
       "repository": "https://github.com/wicg/webusb",
       "title": "WebUSB API",
       "crawled": "https://wicg.github.io/webusb/",
-      "date": "17 February 2019",
+      "date": "19 February 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -39690,7 +39880,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Tue Feb 19 2019",
+      "date": "Wed Feb 20 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -54765,7 +54955,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Tue Feb 19 2019",
+      "date": "Wed Feb 20 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -76273,11 +76463,15 @@
         "https://www.w3.org/TR/css-grid-1/",
         "https://www.w3.org/TR/css-grid-1"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-grid-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Grid Layout Module Level 1",
-      "crawled": "https://www.w3.org/TR/css-grid-1"
+      "crawled": "https://www.w3.org/TR/css-grid-1/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-grid-2/",
@@ -77042,15 +77236,11 @@
         "https://www.w3.org/TR/css-ui-3/",
         "https://www.w3.org/TR/css-ui-3"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/css-ui-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
-      "crawled": "https://www.w3.org/TR/css-ui-3/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/css-ui-3"
     },
     {
       "url": "https://www.w3.org/TR/css-ui-4/",
@@ -78406,15 +78596,11 @@
         "https://www.w3.org/TR/proximity/",
         "https://www.w3.org/TR/proximity"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/proximity",
       "repository": "https://github.com/w3c/proximity",
       "title": "Proximity Sensor",
-      "crawled": "https://www.w3.org/TR/proximity/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/proximity"
     },
     {
       "url": "https://www.w3.org/TR/push-api/",
@@ -78701,15 +78887,11 @@
         "https://www.w3.org/TR/server-timing/",
         "https://www.w3.org/TR/server-timing"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/server-timing",
       "repository": "https://github.com/w3c/server-timing",
       "title": "Server Timing",
-      "crawled": "https://www.w3.org/TR/server-timing/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/server-timing"
     },
     {
       "url": "https://www.w3.org/TR/service-workers-1/",
