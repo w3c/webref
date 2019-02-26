@@ -2,11 +2,11 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-02-25T07:01:09.180Z",
+  "date": "2019-02-26T07:01:10.739Z",
   "options": {},
   "stats": {
     "crawled": 240,
-    "errors": 178
+    "errors": 177
   },
   "results": [
     {
@@ -4827,7 +4827,149 @@
       "versions": [
         "https://drafts.csswg.org/css-scroll-anchoring-1/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
+      "title": "CSS Scroll Anchoring Module Level 1",
+      "crawled": "https://drafts.csswg.org/css-scroll-anchoring-1/",
+      "date": "14 November 2018",
+      "links": [
+        "https://drafts.csswg.org/cssom-view-1/",
+        "https://www.w3.org/TR/CSS/",
+        "https://github.com/w3c/csswg-drafts/issues",
+        "https://lists.w3.org/Archives/Public/public-css-archive/",
+        "https://lists.w3.org/Archives/Public/www-style/",
+        "https://www.w3.org/Style/CSS/members",
+        "https://www.w3.org/Consortium/Patent-Policy/",
+        "https://www.w3.org/2004/01/pp-impl/32061/status",
+        "https://www.w3.org/2018/Process-20180201/",
+        "https://github.com/WICG/ScrollAnchoring/blob/master/explainer.md",
+        "https://drafts.csswg.org/css-scroll-snap-1/",
+        "https://drafts.csswg.org/css-exclusions-1/",
+        "https://drafts.csswg.org/css-display-3/",
+        "https://dom.spec.whatwg.org/",
+        "https://drafts.csswg.org/css-position-3/",
+        "https://drafts.csswg.org/css-overflow-3/",
+        "https://drafts.csswg.org/css-writing-modes-4/",
+        "https://html.spec.whatwg.org/",
+        "https://drafts.csswg.org/css-box-3/",
+        "https://drafts.csswg.org/css-transforms-1/",
+        "https://drafts.csswg.org/css-values/",
+        "https://drafts.csswg.org/css-values-4/",
+        "https://drafts.csswg.org/css-cascade/",
+        "https://drafts.csswg.org/css-pseudo/",
+        "https://drafts.csswg.org/web-animations/",
+        "https://tabatkins.github.io/specs/css-sticky-scrollbars/",
+        "https://www.w3.org/TR/CSS2/",
+        "https://www.w3.org/Style/CSS/Test/",
+        "https://lists.w3.org/Archives/Public/public-css-testsuite",
+        "https://www.w3.org/TR/css-box-3/",
+        "https://www.w3.org/TR/css-display-3/",
+        "https://www.w3.org/TR/css-overflow-3/",
+        "https://www.w3.org/TR/css-position-3/",
+        "https://www.w3.org/TR/css-scroll-snap-1/",
+        "https://www.w3.org/TR/css-transforms-1/",
+        "https://www.w3.org/TR/css-values-4/",
+        "https://www.w3.org/TR/css-writing-modes-4/",
+        "https://www.w3.org/TR/cssom-view-1/",
+        "https://tools.ietf.org/html/rfc2119",
+        "https://www.w3.org/TR/css3-exclusions/"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "CSS-BOX-3",
+            "url": "https://www.w3.org/TR/css-box-3/"
+          },
+          {
+            "name": "CSS-DISPLAY-3",
+            "url": "https://www.w3.org/TR/css-display-3/"
+          },
+          {
+            "name": "CSS-OVERFLOW-3",
+            "url": "https://www.w3.org/TR/css-overflow-3/"
+          },
+          {
+            "name": "CSS-POSITION-3",
+            "url": "https://www.w3.org/TR/css-position-3/"
+          },
+          {
+            "name": "CSS-SCROLL-SNAP-1",
+            "url": "https://www.w3.org/TR/css-scroll-snap-1/"
+          },
+          {
+            "name": "CSS-TRANSFORMS-1",
+            "url": "https://www.w3.org/TR/css-transforms-1/"
+          },
+          {
+            "name": "CSS-VALUES-4",
+            "url": "https://www.w3.org/TR/css-values-4/"
+          },
+          {
+            "name": "CSS-WRITING-MODES-4",
+            "url": "https://www.w3.org/TR/css-writing-modes-4/"
+          },
+          {
+            "name": "CSSOM-VIEW",
+            "url": "https://www.w3.org/TR/cssom-view-1/"
+          },
+          {
+            "name": "DOM",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          {
+            "name": "RFC2119",
+            "url": "https://tools.ietf.org/html/rfc2119"
+          }
+        ],
+        "informative": [
+          {
+            "name": "CSS3-EXCLUSIONS",
+            "url": "https://www.w3.org/TR/css3-exclusions/"
+          }
+        ]
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {},
+          "_reallyDependsOnWindow": false
+        },
+        "idlExtendedNames": {},
+        "externalDependencies": [],
+        "hasObsoleteIdl": false,
+        "idl": ""
+      },
+      "css": {
+        "properties": {
+          "overflow-anchor": {
+            "name": "overflow-anchor",
+            "value": "auto | none",
+            "initial": "auto",
+            "appliesTo": "all elements",
+            "inherited": "no",
+            "percentages": "n/a",
+            "computedValue": "specified keyword",
+            "canonicalOrder": "per grammar",
+            "animationType": "discrete",
+            "parsedValue": {
+              "oneOf": [
+                {
+                  "type": "keyword",
+                  "name": "auto"
+                },
+                {
+                  "type": "keyword",
+                  "name": "none"
+                }
+              ]
+            }
+          }
+        },
+        "descriptors": {},
+        "valuespaces": {}
+      }
     },
     {
       "url": "https://drafts.csswg.org/css-scrollbars-1/",
@@ -10352,7 +10494,7 @@
       "repository": "https://github.com/whatwg/fullscreen",
       "title": "Fullscreen API Standard",
       "crawled": "https://fullscreen.spec.whatwg.org/",
-      "date": "23 January 2019",
+      "date": "25 February 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://dom.spec.whatwg.org/",
@@ -10763,7 +10905,7 @@
       "repository": "https://github.com/immersive-web/webxr",
       "title": "WebXR Device API",
       "crawled": "https://immersive-web.github.io/webxr/",
-      "date": "22 February 2019",
+      "date": "25 February 2019",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/immersive-web/",
@@ -15345,7 +15487,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Mon Feb 25 2019",
+      "date": "Tue Feb 26 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -15657,7 +15799,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Mon Feb 25 2019",
+      "date": "Tue Feb 26 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -19389,7 +19531,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Mon Feb 25 2019",
+      "date": "Tue Feb 26 2019",
       "links": [
         "https://url.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -31340,7 +31482,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Mon Feb 25 2019",
+      "date": "Tue Feb 26 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -33518,7 +33660,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Mon Feb 25 2019",
+      "date": "Tue Feb 26 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -36093,7 +36235,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Mon Feb 25 2019",
+      "date": "Tue Feb 26 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -36299,7 +36441,7 @@
       "repository": "https://github.com/wicg/webusb",
       "title": "WebUSB API",
       "crawled": "https://wicg.github.io/webusb/",
-      "date": "24 February 2019",
+      "date": "25 February 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -39734,7 +39876,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Mon Feb 25 2019",
+      "date": "Tue Feb 26 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -54809,7 +54951,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Mon Feb 25 2019",
+      "date": "Tue Feb 26 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -75937,15 +76079,11 @@
         "https://www.w3.org/TR/css-align-3/",
         "https://www.w3.org/TR/css-align-3"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/css-align-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Box Alignment Module Level 3",
-      "crawled": "https://www.w3.org/TR/css-align-3/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/css-align-3"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -75979,15 +76117,11 @@
         "https://www.w3.org/TR/css-backgrounds-3/",
         "https://www.w3.org/TR/css-backgrounds-3"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/css-backgrounds-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Backgrounds and Borders Module Level 3",
-      "crawled": "https://www.w3.org/TR/css-backgrounds-3/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/css-backgrounds-3"
     },
     {
       "url": "https://www.w3.org/TR/css-break-3/",
@@ -76021,11 +76155,15 @@
         "https://www.w3.org/TR/css-cascade-3/",
         "https://www.w3.org/TR/css-cascade-3"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-cascade-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Cascading and Inheritance Level 3",
-      "crawled": "https://www.w3.org/TR/css-cascade-3"
+      "crawled": "https://www.w3.org/TR/css-cascade-3/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-4/",
@@ -76206,11 +76344,15 @@
         "https://www.w3.org/TR/css-flexbox-1/",
         "https://www.w3.org/TR/css-flexbox-1"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-flexbox-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Flexible Box Layout Module Level 1",
-      "crawled": "https://www.w3.org/TR/css-flexbox-1"
+      "crawled": "https://www.w3.org/TR/css-flexbox-1/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-font-loading-3/",
@@ -76309,11 +76451,15 @@
         "https://www.w3.org/TR/css-grid-1/",
         "https://www.w3.org/TR/css-grid-1"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-grid-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Grid Layout Module Level 1",
-      "crawled": "https://www.w3.org/TR/css-grid-1"
+      "crawled": "https://www.w3.org/TR/css-grid-1/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-grid-2/",
