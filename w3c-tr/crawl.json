@@ -2,13 +2,13 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-02-26T07:02:18.058Z",
+  "date": "2019-02-27T07:02:19.089Z",
   "options": {
     "publishedVersion": true
   },
   "stats": {
     "crawled": 240,
-    "errors": 177
+    "errors": 179
   },
   "results": [
     {
@@ -6449,359 +6449,7 @@
       "versions": [
         "https://drafts.csswg.org/css-transitions-2/"
       ],
-      "title": "CSS Transitions Level 2",
-      "crawled": "https://drafts.csswg.org/css-transitions-2/",
-      "date": "25 October 2017",
-      "links": [
-        "https://www.w3.org/TR/CSS/",
-        "https://github.com/w3c/csswg-drafts/issues",
-        "https://lists.w3.org/Archives/Public/public-css-archive/",
-        "https://lists.w3.org/Archives/Public/www-style/",
-        "https://www.w3.org/Style/CSS/members",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/32061/status",
-        "https://www.w3.org/2018/Process-20180201/",
-        "https://drafts.csswg.org/css-transitions-1/",
-        "https://drafts.csswg.org/css-backgrounds-3/",
-        "https://w3c.github.io/web-animations/",
-        "https://dom.spec.whatwg.org/",
-        "https://www.w3.org/TR/web-animations-1/",
-        "https://heycam.github.io/webidl/",
-        "https://drafts.csswg.org/cssom-1/",
-        "https://drafts.csswg.org/web-animations-1/",
-        "https://github.com/w3c/web-animations/issues/62",
-        "https://lists.w3.org/Archives/Public/www-style/2011Mar/0729.html",
-        "https://drafts.csswg.org/css-cascade-4/",
-        "https://drafts.csswg.org/css-color-4/",
-        "https://drafts.csswg.org/css-animations-1/",
-        "https://lists.w3.org/Archives/Public/www-style/2013Jun/0376.html",
-        "https://lists.w3.org/Archives/Public/public-fx/2015JulSep/thread.html",
-        "https://www.w3.org/TR/CSS2/",
-        "https://www.w3.org/Style/CSS/Test/",
-        "https://lists.w3.org/Archives/Public/public-css-testsuite",
-        "https://www.w3.org/TR/css-backgrounds-3/",
-        "https://www.w3.org/TR/css-cascade-4/",
-        "https://www.w3.org/TR/css-transitions-1/",
-        "https://www.w3.org/TR/cssom-1/",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://www.w3.org/TR/css-animations-1/",
-        "https://www.w3.org/TR/css-color-4/"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "CSS-BACKGROUNDS-3",
-            "url": "https://www.w3.org/TR/css-backgrounds-3/"
-          },
-          {
-            "name": "CSS-CASCADE-4",
-            "url": "https://www.w3.org/TR/css-cascade-4/"
-          },
-          {
-            "name": "CSS3-TRANSITIONS",
-            "url": "https://www.w3.org/TR/css-transitions-1/"
-          },
-          {
-            "name": "CSSOM-1",
-            "url": "https://www.w3.org/TR/cssom-1/"
-          },
-          {
-            "name": "DOM",
-            "url": "https://dom.spec.whatwg.org/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "WEB-ANIMATIONS",
-            "url": "https://www.w3.org/TR/web-animations-1/"
-          },
-          {
-            "name": "WebIDL",
-            "url": "https://heycam.github.io/webidl/"
-          }
-        ],
-        "informative": [
-          {
-            "name": "CSS-ANIMATIONS-1",
-            "url": "https://www.w3.org/TR/css-animations-1/"
-          },
-          {
-            "name": "CSS-COLOR-4",
-            "url": "https://www.w3.org/TR/css-color-4/"
-          }
-        ]
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {},
-          "functions": {
-            "Window": [
-              "CSSTransition"
-            ]
-          },
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "CSSTransition": [
-              "Animation",
-              "Window",
-              "CSSOMString"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "CSSTransition": {
-            "type": "interface",
-            "name": "CSSTransition",
-            "partial": false,
-            "members": [
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CSSOMString",
-                  "extAttrs": []
-                },
-                "name": "transitionProperty",
-                "extAttrs": []
-              }
-            ],
-            "inheritance": "Animation",
-            "extAttrs": [
-              {
-                "name": "Exposed",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": {
-                  "type": "identifier",
-                  "value": "Window"
-                }
-              }
-            ]
-          }
-        },
-        "idlExtendedNames": {
-          "CSSTransition": [
-            {
-              "type": "interface",
-              "name": "CSSTransition",
-              "partial": true,
-              "members": [],
-              "extAttrs": [
-                {
-                  "name": "Constructor",
-                  "arguments": [
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": true,
-                        "union": false,
-                        "idlType": "Animatable",
-                        "extAttrs": []
-                      },
-                      "name": "target"
-                    },
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "CSSOMString",
-                        "extAttrs": []
-                      },
-                      "name": "transitionProperty"
-                    },
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "any",
-                        "extAttrs": []
-                      },
-                      "name": "transitionValue"
-                    },
-                    {
-                      "optional": true,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": true,
-                        "idlType": [
-                          {
-                            "type": null,
-                            "sequence": false,
-                            "generic": null,
-                            "nullable": false,
-                            "union": false,
-                            "idlType": "unrestricted double",
-                            "extAttrs": []
-                          },
-                          {
-                            "type": null,
-                            "sequence": false,
-                            "generic": null,
-                            "nullable": false,
-                            "union": false,
-                            "idlType": "KeyframeEffectOptions",
-                            "extAttrs": []
-                          }
-                        ],
-                        "extAttrs": []
-                      },
-                      "name": "options"
-                    }
-                  ],
-                  "type": "extended-attribute",
-                  "rhs": null
-                },
-                {
-                  "name": "Constructor",
-                  "arguments": [
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": true,
-                        "union": false,
-                        "idlType": "Animatable",
-                        "extAttrs": []
-                      },
-                      "name": "target"
-                    },
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "CSSOMString",
-                        "extAttrs": []
-                      },
-                      "name": "transitionProperty"
-                    },
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "any",
-                        "extAttrs": []
-                      },
-                      "name": "transitionValue"
-                    },
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": true,
-                        "idlType": [
-                          {
-                            "type": null,
-                            "sequence": false,
-                            "generic": null,
-                            "nullable": false,
-                            "union": false,
-                            "idlType": "unrestricted double",
-                            "extAttrs": []
-                          },
-                          {
-                            "type": null,
-                            "sequence": false,
-                            "generic": null,
-                            "nullable": false,
-                            "union": false,
-                            "idlType": "KeyframeEffectOptions",
-                            "extAttrs": []
-                          }
-                        ],
-                        "extAttrs": []
-                      },
-                      "name": "options"
-                    },
-                    {
-                      "optional": false,
-                      "variadic": false,
-                      "extAttrs": [],
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": true,
-                        "union": false,
-                        "idlType": "AnimationTimeline",
-                        "extAttrs": []
-                      },
-                      "name": "timeline"
-                    }
-                  ],
-                  "type": "extended-attribute",
-                  "rhs": null
-                }
-              ]
-            }
-          ]
-        },
-        "externalDependencies": [
-          "Animation",
-          "Window",
-          "CSSOMString"
-        ],
-        "hasObsoleteIdl": false,
-        "idl": "[Exposed=Window]\ninterface CSSTransition : Animation {\n  readonly attribute CSSOMString transitionProperty;\n};\n\n[Constructor (Animatable? target,\n              CSSOMString transitionProperty,\n              any transitionValue,\n              optional (unrestricted double or KeyframeEffectOptions) options),\n Constructor (Animatable? target,\n              CSSOMString transitionProperty,\n              any transitionValue,\n              (unrestricted double or KeyframeEffectOptions) options,\n              AnimationTimeline? timeline)]\npartial interface CSSTransition { };\n\n"
-      },
-      "css": {
-        "properties": {},
-        "descriptors": {},
-        "valuespaces": {}
-      }
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
     },
     {
       "url": "https://drafts.csswg.org/css-tv/",
@@ -6886,249 +6534,7 @@
       "versions": [
         "https://drafts.csswg.org/mediaqueries-5/"
       ],
-      "title": "Media Queries Level 5",
-      "crawled": "https://drafts.csswg.org/mediaqueries-5/",
-      "date": "16 July 2018",
-      "links": [
-        "https://drafts.csswg.org/mediaqueries-4/",
-        "https://www.w3.org/TR/CSS/",
-        "https://github.com/w3c/csswg-drafts/issues",
-        "https://lists.w3.org/Archives/Public/public-css-archive/",
-        "https://lists.w3.org/Archives/Public/www-style/",
-        "https://www.w3.org/Style/CSS/members",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/32061/status",
-        "https://www.w3.org/2018/Process-20180201/",
-        "https://drafts.csswg.org/css-values-4/",
-        "https://drafts.csswg.org/css-conditional-3/",
-        "https://msdn.microsoft.com/en-us/library/windows/apps/hh465764.aspx",
-        "https://github.com/w3c/csswg-drafts/issues/503",
-        "https://drafts.csswg.org/css-cascade-3/",
-        "https://drafts.csswg.org/css-extensions-1/",
-        "https://www.w3.org/TR/mediaqueries-4/",
-        "https://www.w3.org/TR/CSS2/",
-        "https://www.w3.org/Style/CSS/Test/",
-        "https://lists.w3.org/Archives/Public/public-css-testsuite",
-        "https://www.w3.org/TR/css-cascade-3/",
-        "https://www.w3.org/TR/css3-conditional/",
-        "https://drafts.csswg.org/css-extensions/",
-        "https://www.w3.org/TR/css-values-4/",
-        "https://tools.ietf.org/html/rfc2119"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "CSS-CASCADE-3",
-            "url": "https://www.w3.org/TR/css-cascade-3/"
-          },
-          {
-            "name": "CSS-CONDITIONAL-3",
-            "url": "https://www.w3.org/TR/css3-conditional/"
-          },
-          {
-            "name": "CSS-EXTENSIONS",
-            "url": "https://drafts.csswg.org/css-extensions/"
-          },
-          {
-            "name": "CSS-VALUES-4",
-            "url": "https://www.w3.org/TR/css-values-4/"
-          },
-          {
-            "name": "MEDIAQUERIES-4",
-            "url": "https://www.w3.org/TR/mediaqueries-4/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          }
-        ],
-        "informative": []
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {},
-          "functions": {},
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {},
-          "_reallyDependsOnWindow": false
-        },
-        "idlExtendedNames": {},
-        "externalDependencies": [],
-        "hasObsoleteIdl": false,
-        "idl": ""
-      },
-      "css": {
-        "properties": {},
-        "descriptors": {
-          "light-level": {
-            "name": "light-level",
-            "for": "@media",
-            "value": "dim | normal | washed",
-            "type": "discrete",
-            "parsedValue": {
-              "oneOf": [
-                {
-                  "type": "keyword",
-                  "name": "dim"
-                },
-                {
-                  "type": "keyword",
-                  "name": "normal"
-                },
-                {
-                  "type": "keyword",
-                  "name": "washed"
-                }
-              ]
-            }
-          },
-          "environment-blending": {
-            "name": "environment-blending",
-            "for": "@media",
-            "value": "opaque | additive | subtractive",
-            "type": "discrete",
-            "parsedValue": {
-              "oneOf": [
-                {
-                  "type": "keyword",
-                  "name": "opaque"
-                },
-                {
-                  "type": "keyword",
-                  "name": "additive"
-                },
-                {
-                  "type": "keyword",
-                  "name": "subtractive"
-                }
-              ]
-            }
-          },
-          "scripting": {
-            "name": "scripting",
-            "for": "@media",
-            "value": "none | initial-only | enabled",
-            "type": "discrete",
-            "parsedValue": {
-              "oneOf": [
-                {
-                  "type": "keyword",
-                  "name": "none"
-                },
-                {
-                  "type": "keyword",
-                  "name": "initial-only"
-                },
-                {
-                  "type": "keyword",
-                  "name": "enabled"
-                }
-              ]
-            }
-          },
-          "inverted-colors": {
-            "name": "inverted-colors",
-            "for": "@media",
-            "value": "none | inverted",
-            "type": "discrete",
-            "parsedValue": {
-              "oneOf": [
-                {
-                  "type": "keyword",
-                  "name": "none"
-                },
-                {
-                  "type": "keyword",
-                  "name": "inverted"
-                }
-              ]
-            }
-          },
-          "prefers-reduced-motion": {
-            "name": "prefers-reduced-motion",
-            "for": "@media",
-            "value": "no-preference | reduce",
-            "type": "discrete",
-            "parsedValue": {
-              "oneOf": [
-                {
-                  "type": "keyword",
-                  "name": "no-preference"
-                },
-                {
-                  "type": "keyword",
-                  "name": "reduce"
-                }
-              ]
-            }
-          },
-          "prefers-reduced-transparency": {
-            "name": "prefers-reduced-transparency",
-            "for": "@media",
-            "value": "no-preference | reduce",
-            "type": "discrete",
-            "parsedValue": {
-              "oneOf": [
-                {
-                  "type": "keyword",
-                  "name": "no-preference"
-                },
-                {
-                  "type": "keyword",
-                  "name": "reduce"
-                }
-              ]
-            }
-          },
-          "prefers-contrast": {
-            "name": "prefers-contrast",
-            "for": "@media",
-            "value": "no-preference | high | low",
-            "type": "discrete",
-            "parsedValue": {
-              "oneOf": [
-                {
-                  "type": "keyword",
-                  "name": "no-preference"
-                },
-                {
-                  "type": "keyword",
-                  "name": "high"
-                },
-                {
-                  "type": "keyword",
-                  "name": "low"
-                }
-              ]
-            }
-          },
-          "prefers-color-scheme": {
-            "name": "prefers-color-scheme",
-            "for": "@media",
-            "value": "no-preference | light | dark",
-            "type": "discrete",
-            "parsedValue": {
-              "oneOf": [
-                {
-                  "type": "keyword",
-                  "name": "no-preference"
-                },
-                {
-                  "type": "keyword",
-                  "name": "light"
-                },
-                {
-                  "type": "keyword",
-                  "name": "dark"
-                }
-              ]
-            }
-          }
-        },
-        "valuespaces": {}
-      }
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
     },
     {
       "url": "https://drafts.csswg.org/resize-observer/",
@@ -10907,7 +10313,7 @@
       "repository": "https://github.com/immersive-web/webxr",
       "title": "WebXR Device API",
       "crawled": "https://immersive-web.github.io/webxr/",
-      "date": "25 February 2019",
+      "date": "26 February 2019",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/immersive-web/",
@@ -15489,7 +14895,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Tue Feb 26 2019",
+      "date": "Wed Feb 27 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -15801,7 +15207,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Tue Feb 26 2019",
+      "date": "Wed Feb 27 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -19533,7 +18939,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Tue Feb 26 2019",
+      "date": "Wed Feb 27 2019",
       "links": [
         "https://url.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -31484,7 +30890,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Tue Feb 26 2019",
+      "date": "Wed Feb 27 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -33662,7 +33068,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Tue Feb 26 2019",
+      "date": "Wed Feb 27 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -36237,7 +35643,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Tue Feb 26 2019",
+      "date": "Wed Feb 27 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -39878,7 +39284,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Tue Feb 26 2019",
+      "date": "Wed Feb 27 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -54953,7 +54359,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Tue Feb 26 2019",
+      "date": "Wed Feb 27 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -76018,11 +75424,15 @@
         "https://www.w3.org/TR/credential-management-1/",
         "https://www.w3.org/TR/credential-management-1"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/credential-management-1",
       "repository": "https://github.com/w3c/webappsec-credential-management",
       "title": "Credential Management Level 1",
-      "crawled": "https://www.w3.org/TR/credential-management-1"
+      "crawled": "https://www.w3.org/TR/credential-management-1",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/csp-embedded-enforcement/",
@@ -76329,15 +75739,11 @@
         "https://www.w3.org/TR/css-display-3/",
         "https://www.w3.org/TR/css-display-3"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/css-display-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Display Module Level 3",
-      "crawled": "https://www.w3.org/TR/css-display-3",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/css-display-3"
     },
     {
       "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -76457,15 +75863,11 @@
         "https://www.w3.org/TR/css-grid-1/",
         "https://www.w3.org/TR/css-grid-1"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/css-grid-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Grid Layout Module Level 1",
-      "crawled": "https://www.w3.org/TR/css-grid-1",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/css-grid-1"
     },
     {
       "url": "https://www.w3.org/TR/css-grid-2/",
@@ -76708,11 +76110,15 @@
         "https://www.w3.org/TR/css-overflow-4/",
         "https://www.w3.org/TR/css-overflow-4"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-overflow-4",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Overflow Module Level 4",
-      "crawled": "https://www.w3.org/TR/css-overflow-4"
+      "crawled": "https://www.w3.org/TR/css-overflow-4",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-page-floats-3/",
@@ -77418,11 +76824,15 @@
         "https://www.w3.org/TR/CSS22/",
         "https://www.w3.org/TR/CSS22"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/CSS22",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
-      "crawled": "https://www.w3.org/TR/CSS22"
+      "crawled": "https://www.w3.org/TR/CSS22",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css3-conditional/",
@@ -77477,11 +76887,15 @@
         "https://www.w3.org/TR/css3-mediaqueries/",
         "https://www.w3.org/TR/css3-mediaqueries"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css3-mediaqueries",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "Media Queries",
-      "crawled": "https://www.w3.org/TR/css3-mediaqueries"
+      "crawled": "https://www.w3.org/TR/css3-mediaqueries",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css3-page/",
@@ -77536,11 +76950,15 @@
         "https://www.w3.org/TR/cssom-view-1",
         "https://www.w3.org/TR/cssom-view/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/cssom-view-1",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSSOM View Module",
-      "crawled": "https://www.w3.org/TR/cssom-view-1"
+      "crawled": "https://www.w3.org/TR/cssom-view-1",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/DOM-Parsing/",
@@ -77724,15 +77142,11 @@
         "https://www.w3.org/TR/gamepad/",
         "https://www.w3.org/TR/gamepad"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/gamepad",
       "repository": "https://github.com/w3c/gamepad",
       "title": "Gamepad",
-      "crawled": "https://www.w3.org/TR/gamepad",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/gamepad"
     },
     {
       "url": "https://www.w3.org/TR/generic-sensor/",
@@ -77965,15 +77379,11 @@
         "https://www.w3.org/TR/intersection-observer/",
         "https://www.w3.org/TR/intersection-observer"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/intersection-observer",
       "repository": "https://github.com/w3c/IntersectionObserver",
       "title": "Intersection Observer",
-      "crawled": "https://www.w3.org/TR/intersection-observer",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/intersection-observer"
     },
     {
       "url": "https://www.w3.org/TR/longtasks-1/",
@@ -78092,11 +77502,15 @@
         "https://www.w3.org/TR/mediacapture-streams",
         "https://w3c.github.io/mediacapture-main/getusermedia.html"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/mediacapture-streams",
       "repository": "https://github.com/w3c/mediacapture-main",
       "title": "Media Capture and Streams",
-      "crawled": "https://www.w3.org/TR/mediacapture-streams"
+      "crawled": "https://www.w3.org/TR/mediacapture-streams",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/mediaont-api-1.0/",
@@ -78786,15 +78200,11 @@
         "https://www.w3.org/TR/selectors-3/",
         "https://www.w3.org/TR/selectors-3"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/selectors-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "Selectors Level 3",
-      "crawled": "https://www.w3.org/TR/selectors-3",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/selectors-3"
     },
     {
       "url": "https://www.w3.org/TR/selectors-4/",
@@ -78828,10 +78238,14 @@
         "https://www.w3.org/TR/selectors-api/",
         "https://www.w3.org/TR/selectors-api"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/selectors-api",
       "title": "Selectors API Level 1",
-      "crawled": "https://www.w3.org/TR/selectors-api"
+      "crawled": "https://www.w3.org/TR/selectors-api",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/selectors-nonelement-1/",
