@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 01, 2019
+% March 02, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-error=true}
 
@@ -499,7 +499,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Fri Mar 01 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sat Mar 02 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -915,10 +915,12 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -944,10 +946,12 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1293,12 +1297,10 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3144,25 +3146,19 @@ Informative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
-## File and Directory Entries API {data-spec=true data-error=true}
+## File and Directory Entries API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](undefined)
+- Crawled version: [Initial URL](https://wicg.github.io/entries-api/) (9 November 2018)
 - Repository: [GitHub wicg/entries-api](https://github.com/wicg/entries-api)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `DataTransferItem`, `File`, `HTMLInputElement`
+- Missing references for links: 
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3194,6 +3190,7 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 Normative references to this spec from:
 
+- [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 
 No informative reference to this spec from other specs.
@@ -3508,6 +3505,7 @@ Normative references to this spec from:
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
@@ -3573,6 +3571,7 @@ Normative references to this spec from:
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
@@ -3663,6 +3662,7 @@ Normative references to this spec from:
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
@@ -3731,10 +3731,12 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3749,7 +3751,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Fri Mar 01 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sat Mar 02 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -4202,10 +4204,12 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4302,7 +4306,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Fri Mar 01 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sat Mar 02 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -4682,7 +4686,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Fri Mar 01 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sat Mar 02 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5242,10 +5246,12 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -5980,7 +5986,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Fri Mar 01 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sat Mar 02 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -5999,7 +6005,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Fri Mar 01 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sat Mar 02 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -6095,6 +6101,7 @@ Normative references to this spec from:
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
@@ -6209,7 +6216,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Mar 01 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Mar 02 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -6232,7 +6239,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Mar 01 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Mar 02 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -6336,7 +6343,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (28 February 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (1 March 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -6383,7 +6390,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (28 February 2019)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr/) (1 March 2019)
 - Repository: [GitHub immersive-web/webxr](https://github.com/immersive-web/webxr)
 - Shortname: no shortname
 
