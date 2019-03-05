@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 04, 2019
+% March 05, 2019
 
 240 specifications were crawled in this report.
 
@@ -9,6 +9,12 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
+- [https://www.w3.org/TR/css3-page/](https://www.w3.org/TR/css3-page): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - ["MediaStream Image Capture"](https://www.w3.org/TR/image-capture/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -141,10 +147,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -277,10 +285,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [CSS Table Module Level 3](https://www.w3.org/TR/css-tables-3/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -334,10 +344,6 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [css-timing-1](https://www.w3.org/TR/css-timing-1/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [css3-page](https://www.w3.org/TR/css3-page/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
@@ -417,10 +423,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Intersection Observer](https://www.w3.org/TR/intersection-observer/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [Intersection Observer](https://www.w3.org/TR/intersection-observer): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [Long Tasks API 1](https://www.w3.org/TR/longtasks-1/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -497,12 +505,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Payment Handler API](https://www.w3.org/TR/payment-handler): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [Payment Handler API](https://www.w3.org/TR/payment-handler/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Payment Method: Basic Card](https://www.w3.org/TR/payment-method-basic-card/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -611,12 +617,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [The Screen Orientation API](https://www.w3.org/TR/screen-orientation): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [The WebSocket API](https://www.w3.org/TR/websockets/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -669,10 +673,6 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Web Authentication:An API for accessing Public Key CredentialsLevel 1](https://www.w3.org/TR/webauthn/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Web Cryptography API](https://www.w3.org/TR/WebCryptoAPI/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -694,6 +694,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [WebAssembly Web API](https://www.w3.org/TR/wasm-web-api-1/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
+- [webauthn](https://www.w3.org/TR/webauthn/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
