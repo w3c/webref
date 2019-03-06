@@ -2,7 +2,7 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-03-05T07:01:09.276Z",
+  "date": "2019-03-06T07:01:09.167Z",
   "options": {},
   "stats": {
     "crawled": 240,
@@ -21,7 +21,7 @@
       "repository": "https://github.com/whatwg/compat",
       "title": "Compatibility Standard",
       "crawled": "https://compat.spec.whatwg.org/",
-      "date": "22 January 2019",
+      "date": "5 March 2019",
       "links": [
         "https://wiki.mozilla.org/Compatibility/Mobile/Non_Standard_Compatibility",
         "https://www.w3.org/TR/CSS/",
@@ -5836,7 +5836,7 @@
       ],
       "title": "CSS Transforms Module Level 2",
       "crawled": "https://drafts.csswg.org/css-transforms-2/",
-      "date": "5 December 2018",
+      "date": "5 March 2019",
       "links": [
         "https://www.w3.org/TR/CSS/",
         "https://github.com/w3c/csswg-drafts/issues",
@@ -10860,7 +10860,7 @@
       "repository": "https://github.com/immersive-web/webxr",
       "title": "WebXR Device API",
       "crawled": "https://immersive-web.github.io/webxr/",
-      "date": "1 March 2019",
+      "date": "5 March 2019",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/immersive-web/",
@@ -10868,7 +10868,7 @@
         "https://lists.w3.org/Archives/Public/public-immersive-web/",
         "https://www.w3.org/Consortium/Patent-Policy/",
         "https://www.w3.org/2004/01/pp-impl/109735/status",
-        "https://www.w3.org/2018/Process-20180201/",
+        "https://www.w3.org/2019/Process-20190301/",
         "https://w3c.github.io/orientation-sensor/",
         "https://html.spec.whatwg.org/",
         "https://infra.spec.whatwg.org/",
@@ -12131,6 +12131,10 @@
             "type": "enum",
             "name": "XRReferenceSpaceType",
             "values": [
+              {
+                "type": "string",
+                "value": "identity"
+              },
               {
                 "type": "string",
                 "value": "stationary"
@@ -15442,7 +15446,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Tue Mar 05 2019",
+      "date": "Wed Mar 06 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -15754,7 +15758,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Tue Mar 05 2019",
+      "date": "Wed Mar 06 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -19486,7 +19490,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Tue Mar 05 2019",
+      "date": "Wed Mar 06 2019",
       "links": [
         "https://url.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -31437,7 +31441,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Tue Mar 05 2019",
+      "date": "Wed Mar 06 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -33615,7 +33619,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Tue Mar 05 2019",
+      "date": "Wed Mar 06 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -36190,7 +36194,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Tue Mar 05 2019",
+      "date": "Wed Mar 06 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -36205,7 +36209,8 @@
         "https://github.com/WICG/web-share/issues/12",
         "https://github.com/heycam/webidl/issues/107",
         "https://www.w3.org/TR/web-intents/",
-        "https://paul.kinlan.me/"
+        "https://paul.kinlan.me/",
+        "https://tools.ietf.org/html/rfc2119"
       ],
       "refs": {
         "normative": [
@@ -36220,6 +36225,10 @@
           {
             "name": "promises-guide",
             "url": "https://www.w3.org/2001/tag/doc/promises-guide"
+          },
+          {
+            "name": "RFC2119",
+            "url": "https://tools.ietf.org/html/rfc2119"
           },
           {
             "name": "URL",
@@ -39831,7 +39840,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Tue Mar 05 2019",
+      "date": "Wed Mar 06 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -54906,7 +54915,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Tue Mar 05 2019",
+      "date": "Wed Mar 06 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -76349,11 +76358,15 @@
         "https://www.w3.org/TR/css-fonts-3/",
         "https://www.w3.org/TR/css-fonts-3"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-fonts-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Fonts Module Level 3",
-      "crawled": "https://www.w3.org/TR/css-fonts-3"
+      "crawled": "https://www.w3.org/TR/css-fonts-3/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -76975,11 +76988,15 @@
         "https://www.w3.org/TR/css-syntax-3",
         "https://www.w3.org/TR/css-syntax/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-syntax-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Syntax Module Level 3",
-      "crawled": "https://www.w3.org/TR/css-syntax-3"
+      "crawled": "https://www.w3.org/TR/css-syntax-3/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-tables-3/",
@@ -77455,9 +77472,14 @@
         "https://www.w3.org/TR/css3-page/",
         "https://www.w3.org/TR/css3-page"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css3-page",
-      "crawled": "https://www.w3.org/TR/css3-page"
+      "title": "css3-page",
+      "crawled": "https://www.w3.org/TR/css3-page/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/cssom-1/",
@@ -77925,11 +77947,15 @@
         "https://www.w3.org/TR/intersection-observer/",
         "https://www.w3.org/TR/intersection-observer"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/intersection-observer",
       "repository": "https://github.com/w3c/IntersectionObserver",
       "title": "Intersection Observer",
-      "crawled": "https://www.w3.org/TR/intersection-observer"
+      "crawled": "https://www.w3.org/TR/intersection-observer/",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/longtasks-1/",
@@ -78005,15 +78031,11 @@
         "https://www.w3.org/TR/mediacapture-depth/",
         "https://www.w3.org/TR/mediacapture-depth"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/mediacapture-depth",
       "repository": "https://github.com/w3c/mediacapture-depth",
       "title": "Media Capture Depth Stream Extensions",
-      "crawled": "https://www.w3.org/TR/mediacapture-depth/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/mediacapture-depth"
     },
     {
       "url": "https://www.w3.org/TR/mediacapture-fromelement/",
@@ -79044,15 +79066,11 @@
         "https://www.w3.org/TR/UISecurity/",
         "https://www.w3.org/TR/UISecurity"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/UISecurity",
       "repository": "https://github.com/w3c/webappsec-uisecurity",
       "title": "User Interface Security and the Visibility API",
-      "crawled": "https://www.w3.org/TR/UISecurity/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/UISecurity"
     },
     {
       "url": "https://www.w3.org/TR/user-timing-2/",
@@ -79422,14 +79440,10 @@
         "https://www.w3.org/TR/websockets/",
         "https://www.w3.org/TR/websockets"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/websockets",
       "title": "The WebSocket API",
-      "crawled": "https://www.w3.org/TR/websockets/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/websockets"
     },
     {
       "url": "https://www.w3.org/TR/webstorage/",
@@ -79486,15 +79500,11 @@
         "https://www.w3.org/TR/workers",
         "https://html.spec.whatwg.org/"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/workers",
       "repository": "https://github.com/whatwg/html",
       "title": "Web Workers",
-      "crawled": "https://www.w3.org/TR/workers/",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/workers"
     },
     {
       "url": "https://www.w3.org/TR/worklets-1/",
