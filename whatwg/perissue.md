@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 10, 2019
+% March 11, 2019
 
 229 specifications were crawled in this report.
 
@@ -9,31 +9,6 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [https://drafts.csswg.org/css-transitions-2/](undefined): `Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)`
-- [https://drafts.csswg.org/css-transforms-2/](undefined): `Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)`
-- [https://drafts.csswg.org/css-scrollbars-1/](undefined): `Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)`
-- [https://drafts.csswg.org/css-size-adjust-1/](undefined): `Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)`
-- [https://drafts.csswg.org/css-env-1/](undefined): `Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)`
 - ["MediaStream Image Capture"](https://www.w3.org/TR/image-capture/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -538,12 +513,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Presentation API](https://www.w3.org/TR/presentation-api): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [Presentation API](https://www.w3.org/TR/presentation-api/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Proximity Sensor](https://www.w3.org/TR/proximity/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -693,7 +666,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 
-=> 169 specifications found
+=> 164 specifications found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -716,10 +689,12 @@ Reffy could not fetch or render these specifications for some reason. This may h
 
 ## Specifications without CSS definitions
 
+- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS TV Profile 1.0](https://drafts.csswg.org/css-tv/)
 
-=> 2 specifications found
+=> 4 specifications found
 
 Reffy was expecting to find CSS definitions in the specifications  listed here but could not extract any.
 
@@ -727,8 +702,9 @@ Reffy was expecting to find CSS definitions in the specifications  listed here b
 ## Specifications with unexpected WebIDL definitions
 
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 
-=> 1 specification found
+=> 2 specifications found
 
 Reffy was not expecting to find IDL content in the specifications listed here but it did. Note that Reffy cannot deal with specifications that define IDL content and exist at different levels: only one level is flagged as defining the IDL. Other levels will incorrectly appear in this list as a consequence.
 
@@ -761,13 +737,13 @@ Reffy was not expecting to find IDL content in the specifications listed here bu
 
 ## List of WebIDL names not defined in the specifications crawled
 
-- `Animation` used in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+- `Animation` used in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - `AnimationEffect` used in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - `AnimationTimeline` used in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/), [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - `AudioWorklet` used in [DOM Standard](https://dom.spec.whatwg.org/), [HTML Standard](https://html.spec.whatwg.org/)
 - `Blob` used in [Fetch Standard](https://fetch.spec.whatwg.org/), [HTML Standard](https://html.spec.whatwg.org/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `CSS` used in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/), [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
-- `CSSOMString` used in [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+- `CSSOMString` used in [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - `CSSStyleValue` used in [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - `DOMHighResTimeStamp` used in [DOM Standard](https://dom.spec.whatwg.org/), [Event Timing API](https://wicg.github.io/event-timing/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [HTML Standard](https://html.spec.whatwg.org/), [WebXR Device API](https://immersive-web.github.io/webxr/)
 - `DOMMatrix` used in [HTML Standard](https://html.spec.whatwg.org/)
@@ -903,7 +879,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/) but does not list it in its references
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
+- [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/) links to [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/) but does not list it in its references
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/) links to [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/) but does not list it in its references
 - [DOM Standard](https://dom.spec.whatwg.org/) links to [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but does not list it in its references
 - [Event Timing API](https://wicg.github.io/event-timing/) links to:
     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but does not list it in its references
@@ -972,7 +950,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 88 missing references for links found in 36 specifications
+=> 90 missing references for links found in 38 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
