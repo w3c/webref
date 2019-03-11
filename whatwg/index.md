@@ -1,137 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 10, 2019
-
-## https://drafts.csswg.org/css-transitions-2/ {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](undefined)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## https://drafts.csswg.org/css-transforms-2/ {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](undefined)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
-
-Informative references to this spec from:
-
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-
-
-## https://drafts.csswg.org/css-env-1/ {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](undefined)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## https://drafts.csswg.org/css-scrollbars-1/ {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](undefined)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## https://drafts.csswg.org/css-size-adjust-1/ {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](undefined)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
-
-No informative reference to this spec from other specs.
-
+% March 11, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-error=true}
 
@@ -419,6 +288,9 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
+- [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS TV Profile 1.0](https://drafts.csswg.org/css-tv/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -545,7 +417,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 
 No informative reference to this spec from other specs.
 
@@ -634,7 +508,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sun Mar 10 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Mon Mar 11 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -797,7 +671,9 @@ Normative references to this spec from:
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 
 
 ## CSS Animations Level 2 {data-spec=true data-anomaly=true data-hasUnexpectedIdl=true data-unknownIdlNames=true data-missingLinkRef=true}
@@ -847,6 +723,8 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 
 No informative reference to this spec from other specs.
 
@@ -1032,6 +910,9 @@ Normative references to this spec from:
 
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 
 No informative reference to this spec from other specs.
 
@@ -1060,6 +941,7 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
+- [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 
 No informative reference to this spec from other specs.
 
@@ -1087,9 +969,12 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 Normative references to this spec from:
 
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 
 
 ## CSS Conditional Rules Module Level 3 {data-spec=true data-error=true}
@@ -1115,6 +1000,7 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 Normative references to this spec from:
 
+- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 
 No informative reference to this spec from other specs.
@@ -1195,6 +1081,7 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 Normative references to this spec from:
 
+- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
 
 No informative reference to this spec from other specs.
@@ -1252,8 +1139,27 @@ Normative references to this spec from:
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
+
+No informative reference to this spec from other specs.
+
+
+## CSS Environment Variables Module Level 1 {data-spec=true data-anomaly=true data-noCssDefinitions=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-env-1/) (3 August 2018)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No CSS definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -1382,7 +1288,9 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 
 No informative reference to this spec from other specs.
 
@@ -1408,7 +1316,9 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 
 No informative reference to this spec from other specs.
 
@@ -1684,6 +1594,7 @@ Normative references to this spec from:
 
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 
 No informative reference to this spec from other specs.
@@ -1836,11 +1747,33 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 
 Informative references to this spec from:
 
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+
+
+## CSS Mobile Text Size Adjustment Module Level 1 {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-size-adjust-1/) (14 November 2018)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+
+No informative reference to this spec from other specs.
 
 
 ## CSS Multi-column Layout Module Level 1 {data-spec=true data-error=true}
@@ -1944,6 +1877,8 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 
 No informative reference to this spec from other specs.
 
@@ -1973,6 +1908,8 @@ Normative references to this spec from:
 
 - [CSS Overscroll Behavior Module Level 1](https://wicg.github.io/overscroll-behavior/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
+- [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 
 No informative reference to this spec from other specs.
@@ -2360,6 +2297,25 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## CSS Scrollbars Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-scrollbars-1/) (14 November 2018)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## CSS Shadow Parts {data-spec=true data-anomaly=true data-noCssDefinitions=true}
 
 ### Spec info {.info}
@@ -2474,6 +2430,7 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 Normative references to this spec from:
 
+- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 
 No informative reference to this spec from other specs.
@@ -2578,7 +2535,9 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 
 No informative reference to this spec from other specs.
 
@@ -2604,7 +2563,9 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 
 No informative reference to this spec from other specs.
 
@@ -2633,8 +2594,31 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 Normative references to this spec from:
 
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 
 No informative reference to this spec from other specs.
+
+
+## CSS Transforms Module Level 2 {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-transforms-2/) (5 March 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+
+Informative references to this spec from:
+
+- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 
 
 ## CSS Transitions {data-spec=true data-error=true}
@@ -2661,10 +2645,33 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 Normative references to this spec from:
 
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 
 Informative references to this spec from:
 
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+
+
+## CSS Transitions Level 2 {data-spec=true data-anomaly=true data-hasUnexpectedIdl=true data-noCssDefinitions=true data-unknownIdlNames=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-transitions-2/) (25 October 2017)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No CSS definitions found
+- Unexpected WebIDL definitions found
+- Unknown WebIDL names used: `Animation`, `CSSOMString`
+- Missing references for links: 
+     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## CSS TV Profile 1.0 {data-spec=true data-anomaly=true data-noCssDefinitions=true}
@@ -2738,9 +2745,13 @@ Normative references to this spec from:
 
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
+- [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 
 No informative reference to this spec from other specs.
@@ -2772,14 +2783,18 @@ Normative references to this spec from:
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overscroll Behavior Module Level 1](https://wicg.github.io/overscroll-behavior/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
+- [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
@@ -3034,8 +3049,10 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -3279,6 +3296,7 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 Normative references to this spec from:
 
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 
 No informative reference to this spec from other specs.
@@ -3589,6 +3607,7 @@ Normative references to this spec from:
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
@@ -3687,7 +3706,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sun Mar 10 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Mon Mar 11 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -4178,7 +4197,9 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 
 No informative reference to this spec from other specs.
 
@@ -4213,7 +4234,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sun Mar 10 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Mon Mar 11 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -4586,7 +4607,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sun Mar 10 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Mon Mar 11 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4633,7 +4654,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/presentation-api)
+- Crawled version: [Initial URL](https://www.w3.org/TR/presentation-api/)
 - Latest published version: [https://www.w3.org/TR/presentation-api](https://www.w3.org/TR/presentation-api)
 - Repository: [GitHub w3c/presentation-api](https://github.com/w3c/presentation-api)
 - Shortname: presentation-api
@@ -4641,12 +4662,10 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4866,6 +4885,7 @@ Normative references to this spec from:
 
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
@@ -5509,6 +5529,7 @@ Normative references to this spec from:
 
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 
 No informative reference to this spec from other specs.
@@ -5677,7 +5698,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sun Mar 10 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Mon Mar 11 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -5696,7 +5717,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sun Mar 10 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Mon Mar 11 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -5839,7 +5860,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Mar 10 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Mon Mar 11 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -5863,7 +5884,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Mar 10 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Mon Mar 11 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
