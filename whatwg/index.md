@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 12, 2019
+% March 13, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-error=true}
 
@@ -508,7 +508,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Tue Mar 12 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Wed Mar 13 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -701,7 +701,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-backgrounds-3)
+- Crawled version: [Initial URL](https://www.w3.org/TR/css-backgrounds-3/)
 - Latest published version: [https://www.w3.org/TR/css-backgrounds-3](https://www.w3.org/TR/css-backgrounds-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-backgrounds-3
@@ -709,12 +709,10 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3359,7 +3357,6 @@ Normative references to this spec from:
 
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [HTML Standard](https://html.spec.whatwg.org/)
-- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 
 Informative references to this spec from:
 
@@ -3450,7 +3447,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/) (28 January 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/) (12 March 2019)
 - Repository: [GitHub wicg/geolocation-sensor](https://github.com/wicg/geolocation-sensor)
 - Shortname: no shortname
 
@@ -3617,7 +3614,6 @@ Normative references to this spec from:
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
-- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
@@ -3708,7 +3704,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Tue Mar 12 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Wed Mar 13 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -3774,27 +3770,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Keyboard Lock {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://w3c.github.io/keyboard-lock/) (7 September 2018)
-- Repository: [GitHub w3c/keyboard-lock](https://github.com/w3c/keyboard-lock)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- WebIDL names also defined elsewhere: 
-    * `Keyboard` also defined in [Keyboard Map](https://wicg.github.io/keyboard-map/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Keyboard Map {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
+## Keyboard Map {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -3804,8 +3780,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `Keyboard` also defined in [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - Missing references for links: 
      * [`https://w3c.github.io/keyboard-lock/`](https://w3c.github.io/keyboard-lock/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
@@ -4236,7 +4210,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Tue Mar 12 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Wed Mar 13 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -4325,6 +4299,26 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
+
+
+## Page not found · GitHub Pages {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/keyboard-lock/) (Wed Mar 13 2019)
+- Repository: [GitHub w3c/keyboard-lock](https://github.com/w3c/keyboard-lock)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Page Visibility Level 2 {data-spec=true data-error=true}
@@ -4528,7 +4522,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (12 February 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/) (12 March 2019)
 - Repository: [GitHub wicg/picture-in-picture](https://github.com/wicg/picture-in-picture)
 - Shortname: no shortname
 
@@ -4600,16 +4594,14 @@ Normative references to this spec from:
 
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 
-Informative references to this spec from:
-
-- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
+No informative reference to this spec from other specs.
 
 
 ## PointerEvents - Level 2 - Extensions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Tue Mar 12 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Wed Mar 13 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5330,7 +5322,6 @@ Normative references to this spec from:
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
-- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 
 No informative reference to this spec from other specs.
@@ -5359,7 +5350,6 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 
 Normative references to this spec from:
 
-- [Keyboard Lock](https://w3c.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 
 No informative reference to this spec from other specs.
@@ -5646,7 +5636,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/WebCryptoAPI)
+- Crawled version: [Initial URL](https://www.w3.org/TR/WebCryptoAPI/)
 - Latest published version: [https://www.w3.org/TR/WebCryptoAPI](https://www.w3.org/TR/WebCryptoAPI)
 - Repository: [GitHub w3c/webcrypto](https://github.com/w3c/webcrypto)
 - Shortname: WebCryptoAPI
@@ -5654,12 +5644,10 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -5702,7 +5690,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Tue Mar 12 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Wed Mar 13 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -5721,7 +5709,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Tue Mar 12 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Wed Mar 13 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -5864,7 +5852,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Mar 12 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Mar 13 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -5888,7 +5876,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Mar 12 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Mar 13 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -5991,7 +5979,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (11 March 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (12 March 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
