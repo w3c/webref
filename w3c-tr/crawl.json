@@ -2,13 +2,13 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-03-12T06:02:21.402Z",
+  "date": "2019-03-13T06:02:17.510Z",
   "options": {
     "publishedVersion": true
   },
   "stats": {
     "crawled": 240,
-    "errors": 177
+    "errors": 178
   },
   "results": [
     {
@@ -4371,170 +4371,7 @@
       "versions": [
         "https://drafts.csswg.org/css-exclusions-1/"
       ],
-      "title": "CSS Exclusions Module Level 1",
-      "crawled": "https://drafts.csswg.org/css-exclusions-1/",
-      "date": "10 September 2018",
-      "links": [
-        "https://www.w3.org/TR/CSS/",
-        "https://github.com/w3c/csswg-drafts/issues",
-        "https://lists.w3.org/Archives/Public/public-css-archive/",
-        "https://lists.w3.org/Archives/Public/www-style/",
-        "https://www.w3.org/Style/CSS/members",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/32061/status",
-        "https://www.w3.org/2019/Process-20190301/",
-        "https://www.w3.org/TR/css3-box/",
-        "https://www.w3.org/TR/CSS2/",
-        "https://drafts.csswg.org/css-box-3/",
-        "https://drafts.csswg.org/css-position-3/",
-        "https://drafts.csswg.org/css-values/",
-        "https://drafts.csswg.org/css-values-4/",
-        "https://drafts.csswg.org/css-cascade/",
-        "https://drafts.csswg.org/css2/visuren.html",
-        "https://drafts.csswg.org/web-animations/",
-        "https://www.w3.org/TR/css3-writing-modes/",
-        "https://drafts.csswg.org/css-lists-3/",
-        "https://www.w3.org/Bugs/Public/show_bug.cgi?id=15183",
-        "https://www.w3.org/Style/CSS/Test/",
-        "https://lists.w3.org/Archives/Public/public-css-testsuite",
-        "https://www.w3.org/TR/css-lists-3/",
-        "https://www.w3.org/TR/css-position-3/",
-        "https://www.w3.org/TR/css-values-4/",
-        "https://www.w3.org/TR/css-writing-modes-3/",
-        "https://www.w3.org/TR/css-box-3/",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://www.w3.org/TR/css-flexbox-1/",
-        "https://www.w3.org/TR/css-grid-1/"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "CSS-LISTS-3",
-            "url": "https://www.w3.org/TR/css-lists-3/"
-          },
-          {
-            "name": "CSS-POSITION-3",
-            "url": "https://www.w3.org/TR/css-position-3/"
-          },
-          {
-            "name": "CSS-VALUES-4",
-            "url": "https://www.w3.org/TR/css-values-4/"
-          },
-          {
-            "name": "CSS21",
-            "url": "https://www.w3.org/TR/CSS2/"
-          },
-          {
-            "name": "CSS3-WRITING-MODES",
-            "url": "https://www.w3.org/TR/css-writing-modes-3/"
-          },
-          {
-            "name": "CSS3BOX",
-            "url": "https://www.w3.org/TR/css-box-3/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          }
-        ],
-        "informative": [
-          {
-            "name": "CSS3-FLEXBOX",
-            "url": "https://www.w3.org/TR/css-flexbox-1/"
-          },
-          {
-            "name": "CSS3-GRID-LAYOUT",
-            "url": "https://www.w3.org/TR/css-grid-1/"
-          }
-        ]
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {},
-          "functions": {},
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {},
-          "_reallyDependsOnWindow": false
-        },
-        "idlExtendedNames": {},
-        "externalDependencies": [],
-        "hasObsoleteIdl": false,
-        "idl": ""
-      },
-      "css": {
-        "properties": {
-          "wrap-flow": {
-            "name": "wrap-flow",
-            "value": "auto | both | start | end | minimum | maximum | clear",
-            "initial": "auto",
-            "appliesTo": "block-level elements.",
-            "inherited": "no",
-            "percentages": "N/A",
-            "computedValue": "as specified except for element’s whose float computed value is not none, in which case the computed value is auto.",
-            "canonicalOrder": "per grammar",
-            "animationType": "discrete",
-            "parsedValue": {
-              "oneOf": [
-                {
-                  "type": "keyword",
-                  "name": "auto"
-                },
-                {
-                  "type": "keyword",
-                  "name": "both"
-                },
-                {
-                  "type": "keyword",
-                  "name": "start"
-                },
-                {
-                  "type": "keyword",
-                  "name": "end"
-                },
-                {
-                  "type": "keyword",
-                  "name": "minimum"
-                },
-                {
-                  "type": "keyword",
-                  "name": "maximum"
-                },
-                {
-                  "type": "keyword",
-                  "name": "clear"
-                }
-              ]
-            }
-          },
-          "wrap-through": {
-            "name": "wrap-through",
-            "value": "wrap | none",
-            "initial": "wrap",
-            "appliesTo": "block-level elements",
-            "inherited": "no",
-            "percentages": "N/A",
-            "computedValue": "as specified",
-            "canonicalOrder": "per grammar",
-            "animationType": "discrete",
-            "parsedValue": {
-              "oneOf": [
-                {
-                  "type": "keyword",
-                  "name": "wrap"
-                },
-                {
-                  "type": "keyword",
-                  "name": "none"
-                }
-              ]
-            }
-          }
-        },
-        "descriptors": {},
-        "valuespaces": {}
-      }
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
     },
     {
       "url": "https://drafts.csswg.org/css-gcpm-4/",
@@ -15489,7 +15326,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Tue Mar 12 2019",
+      "date": "Wed Mar 13 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -15535,254 +15372,29 @@
         "https://w3c.github.io/keyboard-lock/"
       ],
       "repository": "https://github.com/w3c/keyboard-lock",
-      "title": "Keyboard Lock",
+      "title": "Page not found · GitHub Pages",
       "crawled": "https://w3c.github.io/keyboard-lock/",
-      "date": "7 September 2018",
+      "date": "Wed Mar 13 2019",
       "links": [
-        "https://www.w3.org/TR/",
-        "https://www.w3.org/WebPlatform/WG/",
-        "https://lists.w3.org/Archives/Public/public-webapps/",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/83482/status",
-        "https://www.w3.org/2018/Process-20180201/",
-        "https://html.spec.whatwg.org/",
-        "https://heycam.github.io/webidl/",
-        "https://wicg.github.io/keyboard-map/",
-        "https://www.w3.org/TR/uievents-code/",
-        "https://tc39.github.io/ecma262/",
-        "https://infra.spec.whatwg.org/",
-        "https://fullscreen.spec.whatwg.org/",
-        "https://www.w3.org/TR/uievents/",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://www.x.org/releases/X11R7.7/doc/xproto/x11protocol.html",
-        "https://msdn.microsoft.com/en-us/library/windows/desktop/ms644985(v=vs.85).aspx",
-        "https://www.w3.org/TR/pointerlock/",
-        "https://developer.apple.com/reference/coregraphics/1658572-quartz_event_services"
+        "https://help.github.com/pages/",
+        "https://githubstatus.com/",
+        "https://twitter.com/githubstatus"
       ],
-      "refs": {
-        "normative": [
-          {
-            "name": "ECMASCRIPT",
-            "url": "https://tc39.github.io/ecma262/"
-          },
-          {
-            "name": "Fullscreen",
-            "url": "https://fullscreen.spec.whatwg.org/"
-          },
-          {
-            "name": "HTML",
-            "url": "https://html.spec.whatwg.org/multipage/"
-          },
-          {
-            "name": "INFRA",
-            "url": "https://infra.spec.whatwg.org/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "UIEVENTS",
-            "url": "https://www.w3.org/TR/uievents/"
-          },
-          {
-            "name": "UIEvents-Code",
-            "url": "https://www.w3.org/TR/uievents-code/"
-          },
-          {
-            "name": "WebIDL",
-            "url": "https://heycam.github.io/webidl/"
-          }
-        ],
-        "informative": [
-          {
-            "name": "GrabKeyboard",
-            "url": "https://www.x.org/releases/X11R7.7/doc/xproto/x11protocol.html#requests:GrabKeyboard"
-          },
-          {
-            "name": "LowLevelKeyboardProc",
-            "url": "https://msdn.microsoft.com/en-us/library/windows/desktop/ms644985(v=vs.85).aspx"
-          },
-          {
-            "name": "PointerLock",
-            "url": "https://www.w3.org/TR/pointerlock/"
-          },
-          {
-            "name": "QuartzEventServices",
-            "url": "https://developer.apple.com/reference/coregraphics/1658572-quartz_event_services"
-          }
-        ]
-      },
+      "refs": {},
       "idl": {
         "jsNames": {
           "constructors": {},
-          "functions": {
-            "Window": [
-              "Keyboard"
-            ]
-          },
+          "functions": {},
           "objects": {}
         },
         "idlNames": {
-          "_dependencies": {
-            "Navigator": [
-              "Keyboard"
-            ],
-            "Keyboard": [
-              "Window"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "Keyboard": {
-            "type": "interface",
-            "name": "Keyboard",
-            "partial": false,
-            "members": [
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": "Promise",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": {
-                    "type": "return-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "void",
-                    "extAttrs": []
-                  },
-                  "extAttrs": []
-                },
-                "name": "lock",
-                "arguments": [
-                  {
-                    "optional": true,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": true,
-                      "generic": "sequence",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": {
-                        "type": "argument-type",
-                        "sequence": false,
-                        "generic": null,
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "DOMString",
-                        "extAttrs": []
-                      },
-                      "extAttrs": []
-                    },
-                    "name": "keyCodes",
-                    "default": {
-                      "type": "sequence",
-                      "value": []
-                    }
-                  }
-                ],
-                "extAttrs": []
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "void",
-                  "extAttrs": []
-                },
-                "name": "unlock",
-                "arguments": [],
-                "extAttrs": []
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": [
-              {
-                "name": "SecureContext",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": null
-              },
-              {
-                "name": "Exposed",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": {
-                  "type": "identifier",
-                  "value": "Window"
-                }
-              }
-            ]
-          }
+          "_dependencies": {},
+          "_reallyDependsOnWindow": false
         },
-        "idlExtendedNames": {
-          "Navigator": [
-            {
-              "type": "interface",
-              "name": "Navigator",
-              "partial": true,
-              "members": [
-                {
-                  "type": "attribute",
-                  "static": false,
-                  "stringifier": false,
-                  "inherit": false,
-                  "readonly": true,
-                  "idlType": {
-                    "type": "attribute-type",
-                    "sequence": false,
-                    "generic": null,
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "Keyboard",
-                    "extAttrs": []
-                  },
-                  "name": "keyboard",
-                  "extAttrs": [
-                    {
-                      "name": "SecureContext",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": null
-                    },
-                    {
-                      "name": "SameObject",
-                      "arguments": null,
-                      "type": "extended-attribute",
-                      "rhs": null
-                    }
-                  ]
-                }
-              ],
-              "extAttrs": []
-            }
-          ]
-        },
-        "externalDependencies": [
-          "Navigator",
-          "Window"
-        ],
-        "hasObsoleteIdl": false
+        "idlExtendedNames": {},
+        "externalDependencies": [],
+        "hasObsoleteIdl": false,
+        "idl": ""
       },
       "css": {
         "properties": {},
@@ -15801,7 +15413,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Tue Mar 12 2019",
+      "date": "Wed Mar 13 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -19533,7 +19145,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Tue Mar 12 2019",
+      "date": "Wed Mar 13 2019",
       "links": [
         "https://url.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -30884,13 +30496,13 @@
       "repository": "https://github.com/wicg/geolocation-sensor",
       "title": "Geolocation Sensor",
       "crawled": "https://wicg.github.io/geolocation-sensor/",
-      "date": "28 January 2019",
+      "date": "12 March 2019",
       "links": [
         "https://lists.w3.org/Archives/Public/public-device-apis/",
         "https://www.w3.org/das/",
         "https://www.w3.org/Consortium/Patent-Policy/",
         "https://www.w3.org/2004/01/pp-impl/43696/status",
-        "https://www.w3.org/2018/Process-20180201/",
+        "https://www.w3.org/2019/Process-20190301/",
         "https://w3c.github.io/sensors/",
         "https://www.w3.org/das/roadmap",
         "https://github.com/kenchris/sensor-polyfills/blob/master/src/geolocation-sensor.js",
@@ -30949,6 +30561,9 @@
       "idl": {
         "jsNames": {
           "constructors": {
+            "DedicatedWorker": [
+              "GeolocationSensor"
+            ],
             "Window": [
               "GeolocationSensor"
             ]
@@ -30960,6 +30575,7 @@
           "_dependencies": {
             "GeolocationSensor": [
               "Sensor",
+              "DedicatedWorker",
               "Window",
               "GeolocationSensorOptions",
               "GeolocationSensorReading",
@@ -31189,8 +30805,11 @@
                 "arguments": null,
                 "type": "extended-attribute",
                 "rhs": {
-                  "type": "identifier",
-                  "value": "Window"
+                  "type": "identifier-list",
+                  "value": [
+                    "DedicatedWorker",
+                    "Window"
+                  ]
                 }
               }
             ]
@@ -31474,6 +31093,7 @@
         "idlExtendedNames": {},
         "externalDependencies": [
           "Sensor",
+          "DedicatedWorker",
           "Window",
           "SensorOptions",
           "AbortSignal",
@@ -31499,7 +31119,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Tue Mar 12 2019",
+      "date": "Wed Mar 13 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -33681,7 +33301,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Tue Mar 12 2019",
+      "date": "Wed Mar 13 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -34239,7 +33859,7 @@
       "repository": "https://github.com/wicg/picture-in-picture",
       "title": "Picture-in-Picture",
       "crawled": "https://wicg.github.io/picture-in-picture/",
-      "date": "12 February 2019",
+      "date": "12 March 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -36256,7 +35876,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Tue Mar 12 2019",
+      "date": "Wed Mar 13 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -36467,7 +36087,7 @@
       "repository": "https://github.com/wicg/webusb",
       "title": "WebUSB API",
       "crawled": "https://wicg.github.io/webusb/",
-      "date": "11 March 2019",
+      "date": "12 March 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -39902,7 +39522,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Tue Mar 12 2019",
+      "date": "Wed Mar 13 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -54977,7 +54597,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Tue Mar 12 2019",
+      "date": "Wed Mar 13 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -76084,11 +75704,15 @@
         "https://www.w3.org/TR/CSP3/",
         "https://www.w3.org/TR/CSP3"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/CSP3",
       "repository": "https://github.com/w3c/webappsec-csp",
       "title": "Content Security Policy Level 3",
-      "crawled": "https://www.w3.org/TR/CSP3"
+      "crawled": "https://www.w3.org/TR/CSP3",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-align-3/",
@@ -76311,11 +75935,15 @@
         "https://www.w3.org/TR/css-counter-styles-3/",
         "https://www.w3.org/TR/css-counter-styles-3"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-counter-styles-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Counter Styles Level 3",
-      "crawled": "https://www.w3.org/TR/css-counter-styles-3"
+      "crawled": "https://www.w3.org/TR/css-counter-styles-3",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-device-adapt-1/",
@@ -76707,11 +76335,15 @@
         "https://www.w3.org/TR/css-overflow-3/",
         "https://www.w3.org/TR/css-overflow-3"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/css-overflow-3",
       "repository": "https://github.com/w3c/csswg-drafts",
       "title": "CSS Overflow Module Level 3",
-      "crawled": "https://www.w3.org/TR/css-overflow-3"
+      "crawled": "https://www.w3.org/TR/css-overflow-3",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/css-overflow-4/",
@@ -77955,11 +77587,15 @@
         "https://www.w3.org/TR/IndexedDB-2",
         "https://www.w3.org/TR/IndexedDB/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/IndexedDB-2",
       "repository": "https://github.com/w3c/IndexedDB",
       "title": "Indexed Database API 2.0",
-      "crawled": "https://www.w3.org/TR/IndexedDB-2"
+      "crawled": "https://www.w3.org/TR/IndexedDB-2",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/input-events-2/",
@@ -77993,11 +77629,15 @@
         "https://www.w3.org/TR/intersection-observer/",
         "https://www.w3.org/TR/intersection-observer"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/intersection-observer",
       "repository": "https://github.com/w3c/IntersectionObserver",
       "title": "Intersection Observer",
-      "crawled": "https://www.w3.org/TR/intersection-observer"
+      "crawled": "https://www.w3.org/TR/intersection-observer",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/longtasks-1/",
@@ -78348,11 +77988,15 @@
         "https://www.w3.org/TR/page-visibility-2",
         "https://www.w3.org/TR/page-visibility/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/page-visibility-2",
       "repository": "https://github.com/w3c/page-visibility",
       "title": "Page Visibility Level 2",
-      "crawled": "https://www.w3.org/TR/page-visibility-2"
+      "crawled": "https://www.w3.org/TR/page-visibility-2",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/paint-timing/",
@@ -78937,15 +78581,11 @@
         "https://www.w3.org/TR/SRI/",
         "https://www.w3.org/TR/SRI"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/SRI",
       "repository": "https://github.com/w3c/webappsec-subresource-integrity",
       "title": "Subresource Integrity",
-      "crawled": "https://www.w3.org/TR/SRI",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/SRI"
     },
     {
       "url": "https://www.w3.org/TR/svg-markers/",
@@ -79087,15 +78727,11 @@
         "https://www.w3.org/TR/uievents",
         "https://w3c.github.io/uievents/"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/uievents",
       "repository": "https://github.com/w3c/uievents",
       "title": "UI Events",
-      "crawled": "https://www.w3.org/TR/uievents",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/uievents"
     },
     {
       "url": "https://www.w3.org/TR/UISecurity/",
@@ -79236,15 +78872,11 @@
         "https://www.w3.org/TR/wasm-web-api-1/",
         "https://www.w3.org/TR/wasm-web-api-1"
       ],
-      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
       "latest": "https://www.w3.org/TR/wasm-web-api-1",
       "repository": "https://github.com/webassembly/spec",
       "title": "WebAssembly Web API",
-      "crawled": "https://www.w3.org/TR/wasm-web-api-1",
-      "date": "",
-      "links": [],
-      "refs": {},
-      "idl": {}
+      "crawled": "https://www.w3.org/TR/wasm-web-api-1"
     },
     {
       "url": "https://www.w3.org/TR/web-animations-1/",

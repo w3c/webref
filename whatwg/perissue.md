@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 12, 2019
+% March 13, 2019
 
 229 specifications were crawled in this report.
 
@@ -73,12 +73,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -623,12 +621,10 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Web Cryptography API](https://www.w3.org/TR/WebCryptoAPI): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [Web Cryptography API](https://www.w3.org/TR/WebCryptoAPI/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Web MIDI API](https://www.w3.org/TR/webmidi/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)
     at <anonymous>
@@ -681,14 +677,20 @@ Reffy could not fetch or render these specifications for some reason. This may h
 
 ## Specifications without normative dependencies
 
+- [Page not found · GitHub Pages](https://w3c.github.io/keyboard-lock/)
 
-=> 0 specification found
+=> 1 specification found
+
+Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
 
 ## Specifications without WebIDL definitions
 
+- [Page not found · GitHub Pages](https://w3c.github.io/keyboard-lock/)
 
-=> 0 specification found
+=> 1 specification found
+
+Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
 
 ## Specifications without CSS definitions
@@ -799,10 +801,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## List of WebIDL names defined in more than one spec
 
-- `Keyboard` defined in [Keyboard Lock](https://w3c.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - `Worker` defined in [HTML Standard](https://html.spec.whatwg.org/) and [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
-=> 2 WebIDL names found
+=> 1 WebIDL name found
 
 "There can be only one"...
 
