@@ -2,7 +2,7 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-03-13T06:02:17.510Z",
+  "date": "2019-03-14T06:02:12.482Z",
   "options": {
     "publishedVersion": true
   },
@@ -4371,7 +4371,170 @@
       "versions": [
         "https://drafts.csswg.org/css-exclusions-1/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
+      "title": "CSS Exclusions Module Level 1",
+      "crawled": "https://drafts.csswg.org/css-exclusions-1/",
+      "date": "10 September 2018",
+      "links": [
+        "https://www.w3.org/TR/CSS/",
+        "https://github.com/w3c/csswg-drafts/issues",
+        "https://lists.w3.org/Archives/Public/public-css-archive/",
+        "https://lists.w3.org/Archives/Public/www-style/",
+        "https://www.w3.org/Style/CSS/members",
+        "https://www.w3.org/Consortium/Patent-Policy/",
+        "https://www.w3.org/2004/01/pp-impl/32061/status",
+        "https://www.w3.org/2019/Process-20190301/",
+        "https://www.w3.org/TR/css3-box/",
+        "https://www.w3.org/TR/CSS2/",
+        "https://drafts.csswg.org/css-box-3/",
+        "https://drafts.csswg.org/css-position-3/",
+        "https://drafts.csswg.org/css-values/",
+        "https://drafts.csswg.org/css-values-4/",
+        "https://drafts.csswg.org/css-cascade/",
+        "https://drafts.csswg.org/css2/visuren.html",
+        "https://drafts.csswg.org/web-animations/",
+        "https://www.w3.org/TR/css3-writing-modes/",
+        "https://drafts.csswg.org/css-lists-3/",
+        "https://www.w3.org/Bugs/Public/show_bug.cgi?id=15183",
+        "https://www.w3.org/Style/CSS/Test/",
+        "https://lists.w3.org/Archives/Public/public-css-testsuite",
+        "https://www.w3.org/TR/css-lists-3/",
+        "https://www.w3.org/TR/css-position-3/",
+        "https://www.w3.org/TR/css-values-4/",
+        "https://www.w3.org/TR/css-writing-modes-3/",
+        "https://www.w3.org/TR/css-box-3/",
+        "https://tools.ietf.org/html/rfc2119",
+        "https://www.w3.org/TR/css-flexbox-1/",
+        "https://www.w3.org/TR/css-grid-1/"
+      ],
+      "refs": {
+        "normative": [
+          {
+            "name": "CSS-LISTS-3",
+            "url": "https://www.w3.org/TR/css-lists-3/"
+          },
+          {
+            "name": "CSS-POSITION-3",
+            "url": "https://www.w3.org/TR/css-position-3/"
+          },
+          {
+            "name": "CSS-VALUES-4",
+            "url": "https://www.w3.org/TR/css-values-4/"
+          },
+          {
+            "name": "CSS21",
+            "url": "https://www.w3.org/TR/CSS2/"
+          },
+          {
+            "name": "CSS3-WRITING-MODES",
+            "url": "https://www.w3.org/TR/css-writing-modes-3/"
+          },
+          {
+            "name": "CSS3BOX",
+            "url": "https://www.w3.org/TR/css-box-3/"
+          },
+          {
+            "name": "RFC2119",
+            "url": "https://tools.ietf.org/html/rfc2119"
+          }
+        ],
+        "informative": [
+          {
+            "name": "CSS3-FLEXBOX",
+            "url": "https://www.w3.org/TR/css-flexbox-1/"
+          },
+          {
+            "name": "CSS3-GRID-LAYOUT",
+            "url": "https://www.w3.org/TR/css-grid-1/"
+          }
+        ]
+      },
+      "idl": {
+        "jsNames": {
+          "constructors": {},
+          "functions": {},
+          "objects": {}
+        },
+        "idlNames": {
+          "_dependencies": {},
+          "_reallyDependsOnWindow": false
+        },
+        "idlExtendedNames": {},
+        "externalDependencies": [],
+        "hasObsoleteIdl": false,
+        "idl": ""
+      },
+      "css": {
+        "properties": {
+          "wrap-flow": {
+            "name": "wrap-flow",
+            "value": "auto | both | start | end | minimum | maximum | clear",
+            "initial": "auto",
+            "appliesTo": "block-level elements.",
+            "inherited": "no",
+            "percentages": "N/A",
+            "computedValue": "as specified except for element’s whose float computed value is not none, in which case the computed value is auto.",
+            "canonicalOrder": "per grammar",
+            "animationType": "discrete",
+            "parsedValue": {
+              "oneOf": [
+                {
+                  "type": "keyword",
+                  "name": "auto"
+                },
+                {
+                  "type": "keyword",
+                  "name": "both"
+                },
+                {
+                  "type": "keyword",
+                  "name": "start"
+                },
+                {
+                  "type": "keyword",
+                  "name": "end"
+                },
+                {
+                  "type": "keyword",
+                  "name": "minimum"
+                },
+                {
+                  "type": "keyword",
+                  "name": "maximum"
+                },
+                {
+                  "type": "keyword",
+                  "name": "clear"
+                }
+              ]
+            }
+          },
+          "wrap-through": {
+            "name": "wrap-through",
+            "value": "wrap | none",
+            "initial": "wrap",
+            "appliesTo": "block-level elements",
+            "inherited": "no",
+            "percentages": "N/A",
+            "computedValue": "as specified",
+            "canonicalOrder": "per grammar",
+            "animationType": "discrete",
+            "parsedValue": {
+              "oneOf": [
+                {
+                  "type": "keyword",
+                  "name": "wrap"
+                },
+                {
+                  "type": "keyword",
+                  "name": "none"
+                }
+              ]
+            }
+          }
+        },
+        "descriptors": {},
+        "valuespaces": {}
+      }
     },
     {
       "url": "https://drafts.csswg.org/css-gcpm-4/",
@@ -15326,7 +15489,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Wed Mar 13 2019",
+      "date": "Thu Mar 14 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -15374,7 +15537,7 @@
       "repository": "https://github.com/w3c/keyboard-lock",
       "title": "Page not found · GitHub Pages",
       "crawled": "https://w3c.github.io/keyboard-lock/",
-      "date": "Wed Mar 13 2019",
+      "date": "Thu Mar 14 2019",
       "links": [
         "https://help.github.com/pages/",
         "https://githubstatus.com/",
@@ -15413,7 +15576,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Wed Mar 13 2019",
+      "date": "Thu Mar 14 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -18837,301 +19000,7 @@
       ],
       "repository": "https://github.com/w3c/staticrange",
       "title": "Static Range",
-      "crawled": "https://w3c.github.io/staticrange/",
-      "date": "14 December 2017",
-      "links": [
-        "https://dom.spec.whatwg.org/",
-        "https://github.com/w3c/staticrange",
-        "https://lists.w3.org/Archives/Public/public-webapps/",
-        "https://www.w3.org/Mail/Request",
-        "https://www.w3.org/WebPlatform/WG/",
-        "https://www.w3.org/Consortium/Patent-Policy-20040205/",
-        "https://www.w3.org/2004/01/pp-impl/83482/status",
-        "https://www.w3.org/2015/Process-20150901/",
-        "https://heycam.github.io/webidl/",
-        "https://tools.ietf.org/html/rfc2119"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "WebIDL",
-            "url": "https://heycam.github.io/webidl/"
-          },
-          {
-            "name": "WHATWG-DOM",
-            "url": "https://dom.spec.whatwg.org/"
-          }
-        ],
-        "informative": []
-      },
-      "idl": {
-        "jsNames": {
-          "constructors": {
-            "Window": [
-              "StaticRange"
-            ]
-          },
-          "functions": {},
-          "objects": {}
-        },
-        "idlNames": {
-          "_dependencies": {
-            "StaticRangeInit": [
-              "Node"
-            ],
-            "StaticRange": [
-              "Window",
-              "StaticRangeInit",
-              "Node",
-              "Range"
-            ]
-          },
-          "_reallyDependsOnWindow": false,
-          "StaticRangeInit": {
-            "type": "dictionary",
-            "name": "StaticRangeInit",
-            "partial": false,
-            "members": [
-              {
-                "type": "field",
-                "name": "startContainer",
-                "required": true,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Node",
-                  "extAttrs": []
-                },
-                "extAttrs": []
-              },
-              {
-                "type": "field",
-                "name": "startOffset",
-                "required": true,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long",
-                  "extAttrs": []
-                },
-                "extAttrs": []
-              },
-              {
-                "type": "field",
-                "name": "endContainer",
-                "required": true,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Node",
-                  "extAttrs": []
-                },
-                "extAttrs": []
-              },
-              {
-                "type": "field",
-                "name": "endOffset",
-                "required": true,
-                "idlType": {
-                  "type": "dictionary-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long",
-                  "extAttrs": []
-                },
-                "extAttrs": []
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": []
-          },
-          "StaticRange": {
-            "type": "interface",
-            "name": "StaticRange",
-            "partial": false,
-            "members": [
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": false,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Node",
-                  "extAttrs": []
-                },
-                "name": "startContainer",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": false,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long",
-                  "extAttrs": []
-                },
-                "name": "startOffset",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": false,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Node",
-                  "extAttrs": []
-                },
-                "name": "endContainer",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": false,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long",
-                  "extAttrs": []
-                },
-                "name": "endOffset",
-                "extAttrs": []
-              },
-              {
-                "type": "attribute",
-                "static": false,
-                "stringifier": false,
-                "inherit": false,
-                "readonly": true,
-                "idlType": {
-                  "type": "attribute-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "boolean",
-                  "extAttrs": []
-                },
-                "name": "collapsed",
-                "extAttrs": []
-              },
-              {
-                "type": "operation",
-                "getter": false,
-                "setter": false,
-                "deleter": false,
-                "static": false,
-                "stringifier": false,
-                "idlType": {
-                  "type": "return-type",
-                  "sequence": false,
-                  "generic": null,
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Range",
-                  "extAttrs": []
-                },
-                "name": "toRange",
-                "arguments": [],
-                "extAttrs": [
-                  {
-                    "name": "NewObject",
-                    "arguments": null,
-                    "type": "extended-attribute",
-                    "rhs": null
-                  }
-                ]
-              }
-            ],
-            "inheritance": null,
-            "extAttrs": [
-              {
-                "name": "Constructor",
-                "arguments": [
-                  {
-                    "optional": false,
-                    "variadic": false,
-                    "extAttrs": [],
-                    "idlType": {
-                      "type": "argument-type",
-                      "sequence": false,
-                      "generic": null,
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "StaticRangeInit",
-                      "extAttrs": []
-                    },
-                    "name": "initDict"
-                  }
-                ],
-                "type": "extended-attribute",
-                "rhs": null
-              },
-              {
-                "name": "Exposed",
-                "arguments": null,
-                "type": "extended-attribute",
-                "rhs": {
-                  "type": "identifier",
-                  "value": "Window"
-                }
-              }
-            ]
-          }
-        },
-        "idlExtendedNames": {},
-        "externalDependencies": [
-          "Node",
-          "Window",
-          "Range"
-        ],
-        "hasObsoleteIdl": false
-      },
-      "css": {
-        "properties": {},
-        "descriptors": {},
-        "valuespaces": {}
-      }
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
     },
     {
       "url": "https://w3c.github.io/web-nfc/",
@@ -19145,7 +19014,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Wed Mar 13 2019",
+      "date": "Thu Mar 14 2019",
       "links": [
         "https://url.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -31119,7 +30988,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Wed Mar 13 2019",
+      "date": "Thu Mar 14 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -33301,7 +33170,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Wed Mar 13 2019",
+      "date": "Thu Mar 14 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -35876,7 +35745,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Wed Mar 13 2019",
+      "date": "Thu Mar 14 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -36087,7 +35956,7 @@
       "repository": "https://github.com/wicg/webusb",
       "title": "WebUSB API",
       "crawled": "https://wicg.github.io/webusb/",
-      "date": "12 March 2019",
+      "date": "13 March 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -39522,7 +39391,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Wed Mar 13 2019",
+      "date": "Thu Mar 14 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -54597,7 +54466,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Wed Mar 13 2019",
+      "date": "Thu Mar 14 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -78581,11 +78450,15 @@
         "https://www.w3.org/TR/SRI/",
         "https://www.w3.org/TR/SRI"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/SRI",
       "repository": "https://github.com/w3c/webappsec-subresource-integrity",
       "title": "Subresource Integrity",
-      "crawled": "https://www.w3.org/TR/SRI"
+      "crawled": "https://www.w3.org/TR/SRI",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/svg-markers/",
@@ -78727,11 +78600,15 @@
         "https://www.w3.org/TR/uievents",
         "https://w3c.github.io/uievents/"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/uievents",
       "repository": "https://github.com/w3c/uievents",
       "title": "UI Events",
-      "crawled": "https://www.w3.org/TR/uievents"
+      "crawled": "https://www.w3.org/TR/uievents",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/UISecurity/",
@@ -78872,11 +78749,15 @@
         "https://www.w3.org/TR/wasm-web-api-1/",
         "https://www.w3.org/TR/wasm-web-api-1"
       ],
-      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+      "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:312:34)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)",
       "latest": "https://www.w3.org/TR/wasm-web-api-1",
       "repository": "https://github.com/webassembly/spec",
       "title": "WebAssembly Web API",
-      "crawled": "https://www.w3.org/TR/wasm-web-api-1"
+      "crawled": "https://www.w3.org/TR/wasm-web-api-1",
+      "date": "",
+      "links": [],
+      "refs": {},
+      "idl": {}
     },
     {
       "url": "https://www.w3.org/TR/web-animations-1/",
