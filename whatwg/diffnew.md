@@ -1,11 +1,12 @@
-% Diff between report from "March 22, 2019" and reference report from "March 21, 2019"
+% Diff between report from "March 23, 2019" and reference report from "March 22, 2019"
 % Reffy
-% March 22, 2019
+% March 23, 2019
 
-## CSS Exclusions Module Level 1
+## Filter Effects Module Level 2
 
-- URL: [https://drafts.csswg.org/css-exclusions-1/](https://drafts.csswg.org/css-exclusions-1/)
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-exclusions-1/)
-- Missing references for links: *INS* https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/, https://www.w3.org/TR/2013/WD-css3-exclusions-20130528/, https://www.w3.org/TR/2012/WD-css3-exclusions-20120503/, https://www.w3.org/TR/css-shapes/
+- URL: [https://drafts.fxtf.org/filter-effects-2/](https://drafts.fxtf.org/filter-effects-2/)
+- Crawled version: [Initial URL](https://drafts.fxtf.org/filter-effects-2/)
+- Spec is OK: *INS* false / *DEL* true
+- Missing references for links: *INS* https://www.w3.org/TR/compositing-1/
 
 
