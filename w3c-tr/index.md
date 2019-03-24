@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 23, 2019
+% March 24, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
@@ -33,7 +33,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Sat Mar 23 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Sun Mar 24 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -63,6 +63,7 @@ Normative references to this spec from:
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
@@ -409,6 +410,7 @@ Normative references to this spec from:
 - [CSS Style Attributes](http://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
 - [CSS TV Profile 1.0](https://drafts.csswg.org/css-tv/)
@@ -678,7 +680,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sat Mar 23 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sun Mar 24 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -926,6 +928,7 @@ Normative references to this spec from:
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -1228,6 +1231,7 @@ Normative references to this spec from:
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2018/WD-css-text-4-20180920/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
@@ -2558,6 +2562,7 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
@@ -2739,6 +2744,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
@@ -2801,6 +2807,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars-1/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190131/)
@@ -3032,6 +3039,7 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
@@ -3560,6 +3568,7 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190131/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -3771,11 +3780,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Transforms Module Level 1 {data-spec=true data-error=true}
+## CSS Transforms Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-transforms-1/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/) (14 February 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-transforms/](https://drafts.csswg.org/css-transforms/)
 - Latest published version: [https://www.w3.org/TR/css-transforms-1/](https://www.w3.org/TR/css-transforms-1/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
@@ -3784,15 +3793,17 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2009/WD-css3-2d-transforms-20090320/`](https://www.w3.org/TR/2009/WD-css3-2d-transforms-20090320/)
+     * [`https://www.w3.org/TR/2009/WD-SVG-Transforms-20090320/`](https://www.w3.org/TR/2009/WD-SVG-Transforms-20090320/)
+     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
+     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
+     * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/)
+     * [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/), related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+     * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/), related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3848,6 +3859,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
 
 
@@ -4059,6 +4071,7 @@ Normative references to this spec from:
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2018/WD-css-text-4-20180920/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -4146,6 +4159,7 @@ Normative references to this spec from:
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2018/WD-css-text-4-20180920/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -4361,6 +4375,7 @@ Informative references to this spec from:
 
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
 - [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -4544,7 +4559,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (22 February 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (23 March 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -5147,6 +5162,7 @@ Informative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190131/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
@@ -5155,7 +5171,7 @@ Informative references to this spec from:
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190314/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190324/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -5292,12 +5308,13 @@ Informative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190131/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190314/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190324/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -5452,11 +5469,12 @@ Informative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190131/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190314/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190324/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -5526,7 +5544,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sat Mar 23 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sun Mar 24 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6151,7 +6169,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sat Mar 23 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sun Mar 24 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6334,10 +6352,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190314/) (March 2019 )
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190324/) (March 2019 )
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190314/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190324/)
 - Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
 - Shortname: payment-method-basic-card
 
@@ -6377,7 +6395,7 @@ Normative references to this spec from:
 
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190314/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190324/)
 
 No informative reference to this spec from other specs.
 
@@ -6544,7 +6562,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sat Mar 23 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sun Mar 24 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7989,7 +8007,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sat Mar 23 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sun Mar 24 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8039,7 +8057,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sat Mar 23 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sun Mar 24 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8233,13 +8251,14 @@ Informative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
+- [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190131/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190314/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190324/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190321/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -8336,7 +8355,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Mar 23 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Mar 24 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8357,7 +8376,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Mar 23 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Mar 24 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8472,7 +8491,7 @@ Normative references to this spec from:
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190314/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190324/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190321/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -8604,7 +8623,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (21 March 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (23 March 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
