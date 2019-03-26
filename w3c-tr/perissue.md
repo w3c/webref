@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% March 25, 2019
+% March 26, 2019
 
 240 specifications were crawled in this report.
 
@@ -135,7 +135,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190324/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190326/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190321/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
