@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% March 28, 2019
+% March 29, 2019
 
 229 specifications were crawled in this report.
 
@@ -622,7 +622,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/ServiceWorker/v1/`](https://w3c.github.io/ServiceWorker/v1/) but does not list it in its references
     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/) but does not list it in its references
-- [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/) links to [`https://www.w3.org/TR/its20/`](https://www.w3.org/TR/its20/) but does not list it in its references
+- [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/) links to:
+    * [`https://www.w3.org/TR/its20/`](https://www.w3.org/TR/its20/) but does not list it in its references
+    * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/) links to:
     * [`https://www.w3.org/TR/2016/CR-orientation-event-20160818/`](https://www.w3.org/TR/2016/CR-orientation-event-20160818/) but does not list it in its references
     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
@@ -734,7 +736,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 380 missing references for links found in 128 specifications
+=> 381 missing references for links found in 128 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
