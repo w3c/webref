@@ -2,7 +2,7 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-03-29T06:02:36.476Z",
+  "date": "2019-03-30T06:02:33.334Z",
   "options": {},
   "stats": {
     "crawled": 240,
@@ -1385,7 +1385,7 @@
           },
           "corners": {
             "name": "corners",
-            "value": "<corner-shape> || <border-radius>",
+            "value": "<'corner-shape'> || <'border-radius'>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -1396,11 +1396,11 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "corner-shape"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-radius"
                 }
               ]
@@ -2182,7 +2182,7 @@
           },
           "margin": {
             "name": "margin",
-            "value": "<margin-top>{1,4}",
+            "value": "<'margin-top'>{1,4}",
             "initial": "0",
             "appliesTo": "all elements except internal table elements",
             "inherited": "no",
@@ -2193,7 +2193,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "margin-top"
               },
               "minItems": 1,
@@ -2289,7 +2289,7 @@
           },
           "padding": {
             "name": "padding",
-            "value": "<padding-top>{1,4}",
+            "value": "<'padding-top'>{1,4}",
             "initial": "0",
             "appliesTo": "all elements except: internal table elements other than table cells",
             "inherited": "no",
@@ -2300,7 +2300,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "padding-top"
               },
               "minItems": 1,
@@ -6120,7 +6120,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -6167,7 +6167,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -6492,7 +6492,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://url.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -7846,7 +7846,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -7908,6 +7908,7 @@
       "versions": [
         "https://wicg.github.io/keyboard-lock/"
       ],
+      "repository": "https://github.com/wicg/keyboard-lock",
       "title": "Keyboard Lock",
       "crawled": "https://wicg.github.io/keyboard-lock/",
       "date": "7 September 2018",
@@ -8265,7 +8266,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -9008,7 +9009,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -9181,7 +9182,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -9426,7 +9427,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -10052,7 +10053,7 @@
       "edDraft": "https://w3c.github.io/manifest/",
       "repository": "https://github.com/w3c/manifest",
       "crawled": "https://w3c.github.io/manifest/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://github.com/w3c/manifest/issues",
         "https://html.spec.whatwg.org/",
@@ -10277,7 +10278,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-output/",
       "repository": "https://github.com/w3c/mediacapture-output",
       "crawled": "https://w3c.github.io/mediacapture-output/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/html5/",
         "https://heycam.github.io/webidl/",
@@ -10341,7 +10342,7 @@
       "edDraft": "https://w3c.github.io/battery/",
       "repository": "https://github.com/w3c/battery",
       "crawled": "https://w3c.github.io/battery/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/2014/CR-battery-status-20141209/",
         "https://lists.w3.org/Archives/Public/public-device-apis/2015Aug/0000.html",
@@ -10431,7 +10432,7 @@
       "edDraft": "https://w3c.github.io/beacon/",
       "repository": "https://github.com/w3c/beacon",
       "crawled": "https://w3c.github.io/beacon/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/page-visibility-2/",
         "https://fetch.spec.whatwg.org/",
@@ -11864,7 +11865,7 @@
           },
           "place-content": {
             "name": "place-content",
-            "value": "<align-content> <justify-content>?",
+            "value": "<'align-content'> <'justify-content'>?",
             "initial": "normal",
             "appliesTo": "block containers, flex containers, and grid containers",
             "inherited": "no",
@@ -11876,11 +11877,11 @@
               "type": "array",
               "items": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "align-content"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "justify-content",
                   "optional": true
                 }
@@ -11991,7 +11992,7 @@
           },
           "place-self": {
             "name": "place-self",
-            "value": "<align-self> <justify-self>?",
+            "value": "<'align-self'> <'justify-self'>?",
             "initial": "auto",
             "appliesTo": "block-level boxes, absolutely-positioned boxes, and grid items",
             "inherited": "no",
@@ -12003,11 +12004,11 @@
               "type": "array",
               "items": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "align-self"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "justify-self",
                   "optional": true
                 }
@@ -12141,7 +12142,7 @@
           },
           "place-items": {
             "name": "place-items",
-            "value": "<align-items> <justify-items>?",
+            "value": "<'align-items'> <'justify-items'>?",
             "initial": "see individual properties",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -12153,11 +12154,11 @@
               "type": "array",
               "items": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "align-items"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "justify-items",
                   "optional": true
                 }
@@ -12212,7 +12213,7 @@
           },
           "gap": {
             "name": "gap",
-            "value": "<row-gap> <column-gap>?",
+            "value": "<'row-gap'> <'column-gap'>?",
             "initial": "see individual properties",
             "appliesTo": "multi-column containers, flex containers, grid containers",
             "inherited": "no",
@@ -12224,11 +12225,11 @@
               "type": "array",
               "items": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "row-gap"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "column-gap",
                   "optional": true
                 }
@@ -13842,7 +13843,7 @@
           },
           "border-image": {
             "name": "border-image",
-            "value": "<border-image-source> || <border-image-slice> [ / <border-image-width> | / <border-image-width>? / <border-image-outset> ]? || <border-image-repeat>",
+            "value": "<'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>",
             "initial": "See individual properties",
             "appliesTo": "See individual properties",
             "inherited": "no",
@@ -13852,14 +13853,14 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-image-source"
                 },
                 {
                   "type": "array",
                   "items": [
                     {
-                      "type": "valuespace",
+                      "type": "propertyref",
                       "name": "border-image-slice"
                     },
                     {
@@ -13874,7 +13875,7 @@
                                 "content": "/"
                               },
                               {
-                                "type": "valuespace",
+                                "type": "propertyref",
                                 "name": "border-image-width"
                               }
                             ]
@@ -13887,7 +13888,7 @@
                                 "content": "/"
                               },
                               {
-                                "type": "valuespace",
+                                "type": "propertyref",
                                 "name": "border-image-width",
                                 "optional": true
                               },
@@ -13896,7 +13897,7 @@
                                 "content": "/"
                               },
                               {
-                                "type": "valuespace",
+                                "type": "propertyref",
                                 "name": "border-image-outset"
                               }
                             ]
@@ -13908,7 +13909,7 @@
                   ]
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-image-repeat"
                 }
               ]
@@ -14266,61 +14267,8 @@
             }
           },
           "<final-bg-layer>": {
-            "value": "<'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>",
-            "parsedValue": {
-              "anyOf": [
-                {
-                  "type": "propertyref",
-                  "name": "background-color"
-                },
-                {
-                  "type": "valuespace",
-                  "name": "bg-image"
-                },
-                {
-                  "type": "array",
-                  "items": [
-                    {
-                      "type": "valuespace",
-                      "name": "bg-position"
-                    },
-                    {
-                      "type": "array",
-                      "items": {
-                        "type": "array",
-                        "items": [
-                          {
-                            "type": "string",
-                            "content": "/"
-                          },
-                          {
-                            "type": "valuespace",
-                            "name": "bg-size"
-                          }
-                        ]
-                      },
-                      "maxItems": 1
-                    }
-                  ]
-                },
-                {
-                  "type": "valuespace",
-                  "name": "repeat-style"
-                },
-                {
-                  "type": "valuespace",
-                  "name": "attachment"
-                },
-                {
-                  "type": "valuespace",
-                  "name": "box"
-                },
-                {
-                  "type": "valuespace",
-                  "name": "box"
-                }
-              ]
-            }
+            "value": "<\\'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>",
+            "valueParseError": "Unrecognized token <\\'background-color'>"
           },
           "<line-style>": {
             "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset",
@@ -19062,7 +19010,7 @@
           },
           "flex-flow": {
             "name": "flex-flow",
-            "value": "<flex-direction> || <flex-wrap>",
+            "value": "<'flex-direction'> || <'flex-wrap'>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -19073,11 +19021,11 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "flex-direction"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "flex-wrap"
                 }
               ]
@@ -19100,7 +19048,7 @@
           },
           "flex": {
             "name": "flex",
-            "value": "none | [ <flex-grow> <flex-shrink>? || <flex-basis> ]",
+            "value": "none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]",
             "initial": "0 1 auto",
             "appliesTo": "flex items",
             "inherited": "no",
@@ -19120,18 +19068,18 @@
                       "type": "array",
                       "items": [
                         {
-                          "type": "valuespace",
+                          "type": "propertyref",
                           "name": "flex-grow"
                         },
                         {
-                          "type": "valuespace",
+                          "type": "propertyref",
                           "name": "flex-shrink",
                           "optional": true
                         }
                       ]
                     },
                     {
-                      "type": "valuespace",
+                      "type": "propertyref",
                       "name": "flex-basis"
                     }
                   ]
@@ -19171,7 +19119,7 @@
           },
           "flex-basis": {
             "name": "flex-basis",
-            "value": "content | <width>",
+            "value": "content | <'width'>",
             "initial": "auto",
             "appliesTo": "flex items",
             "inherited": "no",
@@ -19186,7 +19134,7 @@
                   "name": "content"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "width"
                 }
               ]
@@ -21086,7 +21034,7 @@
           },
           "font": {
             "name": "font",
-            "value": "[ [ <font-style> || <font-variant-css2> || <font-weight> || <font-stretch-css3> ]? <font-size> [ / <line-height> ]? <font-family> ] | caption | icon | menu | message-box | small-caption | status-bar",
+            "value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-stretch-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar",
             "initial": "see individual properties",
             "appliesTo": "all elements",
             "inherited": "yes",
@@ -21106,7 +21054,7 @@
                         "items": {
                           "anyOf": [
                             {
-                              "type": "valuespace",
+                              "type": "propertyref",
                               "name": "font-style"
                             },
                             {
@@ -21114,7 +21062,7 @@
                               "name": "font-variant-css2"
                             },
                             {
-                              "type": "valuespace",
+                              "type": "propertyref",
                               "name": "font-weight"
                             },
                             {
@@ -21126,7 +21074,7 @@
                         "maxItems": 1
                       },
                       {
-                        "type": "valuespace",
+                        "type": "propertyref",
                         "name": "font-size"
                       },
                       {
@@ -21141,7 +21089,7 @@
                                 "content": "/"
                               },
                               {
-                                "type": "valuespace",
+                                "type": "propertyref",
                                 "name": "line-height"
                               }
                             ]
@@ -21150,7 +21098,7 @@
                         "maxItems": 1
                       },
                       {
-                        "type": "valuespace",
+                        "type": "propertyref",
                         "name": "font-family"
                       }
                     ]
@@ -21974,10 +21922,10 @@
           "font-family": {
             "name": "font-family",
             "for": "@font-palette-values",
-            "value": "<font-family>",
+            "value": "<'font-family'>",
             "initial": "N/A",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "font-family"
             }
           },
@@ -22087,7 +22035,7 @@
           "font-stretch": {
             "name": "font-stretch",
             "for": "@font-face",
-            "value": "auto | <font-stretch> <font-stretch>?",
+            "value": "auto | <'font-stretch'> <'font-stretch'>?",
             "initial": "auto",
             "parsedValue": {
               "oneOf": [
@@ -22099,11 +22047,11 @@
                   "type": "array",
                   "items": [
                     {
-                      "type": "valuespace",
+                      "type": "propertyref",
                       "name": "font-stretch"
                     },
                     {
-                      "type": "valuespace",
+                      "type": "propertyref",
                       "name": "font-stretch",
                       "optional": true
                     }
@@ -23798,7 +23746,7 @@
           },
           "grid-template": {
             "name": "grid-template",
-            "value": "none | [ <grid-template-rows> / <grid-template-columns> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?",
+            "value": "none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?",
             "initial": "none",
             "appliesTo": "grid containers",
             "inherited": "see individual properties",
@@ -23818,7 +23766,7 @@
                     "type": "array",
                     "items": [
                       {
-                        "type": "valuespace",
+                        "type": "propertyref",
                         "name": "grid-template-rows"
                       },
                       {
@@ -23826,7 +23774,7 @@
                         "content": "/"
                       },
                       {
-                        "type": "valuespace",
+                        "type": "propertyref",
                         "name": "grid-template-columns"
                       }
                     ]
@@ -23956,7 +23904,7 @@
           },
           "grid": {
             "name": "grid",
-            "value": "<grid-template> | <grid-template-rows> / [ auto-flow && dense? ] <grid-auto-columns>? | [ auto-flow && dense? ] <grid-auto-rows>? / <grid-template-columns>",
+            "value": "<'grid-template'> | <'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>? | [ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>",
             "initial": "none",
             "appliesTo": "grid containers",
             "inherited": "see individual properties",
@@ -23967,14 +23915,14 @@
             "parsedValue": {
               "oneOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "grid-template"
                 },
                 {
                   "type": "array",
                   "items": [
                     {
-                      "type": "valuespace",
+                      "type": "propertyref",
                       "name": "grid-template-rows"
                     },
                     {
@@ -23995,7 +23943,7 @@
                       ]
                     },
                     {
-                      "type": "valuespace",
+                      "type": "propertyref",
                       "name": "grid-auto-columns",
                       "optional": true
                     }
@@ -24018,7 +23966,7 @@
                       ]
                     },
                     {
-                      "type": "valuespace",
+                      "type": "propertyref",
                       "name": "grid-auto-rows",
                       "optional": true
                     },
@@ -24027,7 +23975,7 @@
                       "content": "/"
                     },
                     {
-                      "type": "valuespace",
+                      "type": "propertyref",
                       "name": "grid-template-columns"
                     }
                   ]
@@ -26019,7 +25967,7 @@
           },
           "vertical-align": {
             "name": "vertical-align",
-            "value": "<baseline-shift> || <alignment-baseline>",
+            "value": "<'baseline-shift'> || <'alignment-baseline'>",
             "initial": "baseline",
             "appliesTo": "inline-level boxes",
             "inherited": "no",
@@ -26030,11 +25978,11 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "baseline-shift"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "alignment-baseline"
                 }
               ]
@@ -27118,7 +27066,7 @@
           },
           "list-style": {
             "name": "list-style",
-            "value": "<list-style-type> || <list-style-position> || <list-style-image>",
+            "value": "<'list-style-type'> || <'list-style-position'> || <'list-style-image'>",
             "initial": "see individual properties",
             "appliesTo": "list items",
             "inherited": "see individual properties",
@@ -27129,15 +27077,15 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "list-style-type"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "list-style-position"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "list-style-image"
                 }
               ]
@@ -27620,7 +27568,7 @@
           },
           "block-size": {
             "name": "block-size",
-            "value": "<width>",
+            "value": "<'width'>",
             "initial": "auto",
             "appliesTo": "Same as height and width",
             "inherited": "No",
@@ -27629,13 +27577,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "width"
             }
           },
           "inline-size": {
             "name": "inline-size",
-            "value": "<width>",
+            "value": "<'width'>",
             "initial": "auto",
             "appliesTo": "Same as height and width",
             "inherited": "No",
@@ -27644,13 +27592,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "width"
             }
           },
           "min-block-size": {
             "name": "min-block-size",
-            "value": "<min-width>",
+            "value": "<'min-width'>",
             "initial": "0",
             "appliesTo": "same as height and width",
             "inherited": "No",
@@ -27659,13 +27607,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "min-width"
             }
           },
           "min-inline-size": {
             "name": "min-inline-size",
-            "value": "<min-width>",
+            "value": "<'min-width'>",
             "initial": "0",
             "appliesTo": "same as height and width",
             "inherited": "No",
@@ -27674,13 +27622,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "min-width"
             }
           },
           "max-block-size": {
             "name": "max-block-size",
-            "value": "<max-width>",
+            "value": "<'max-width'>",
             "initial": "none",
             "appliesTo": "same as height and width",
             "inherited": "no",
@@ -27689,13 +27637,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "max-width"
             }
           },
           "max-inline-size": {
             "name": "max-inline-size",
-            "value": "<max-width>",
+            "value": "<'max-width'>",
             "initial": "none",
             "appliesTo": "same as height and width",
             "inherited": "no",
@@ -27704,13 +27652,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "max-width"
             }
           },
           "margin-block-start": {
             "name": "margin-block-start",
-            "value": "<margin-top>",
+            "value": "<'margin-top'>",
             "initial": "0",
             "appliesTo": "Same as margin-top",
             "inherited": "no",
@@ -27719,13 +27667,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "margin-top"
             }
           },
           "margin-block-end": {
             "name": "margin-block-end",
-            "value": "<margin-top>",
+            "value": "<'margin-top'>",
             "initial": "0",
             "appliesTo": "Same as margin-top",
             "inherited": "no",
@@ -27734,13 +27682,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "margin-top"
             }
           },
           "margin-inline-start": {
             "name": "margin-inline-start",
-            "value": "<margin-top>",
+            "value": "<'margin-top'>",
             "initial": "0",
             "appliesTo": "Same as margin-top",
             "inherited": "no",
@@ -27749,13 +27697,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "margin-top"
             }
           },
           "margin-inline-end": {
             "name": "margin-inline-end",
-            "value": "<margin-top>",
+            "value": "<'margin-top'>",
             "initial": "0",
             "appliesTo": "Same as margin-top",
             "inherited": "no",
@@ -27764,13 +27712,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "margin-top"
             }
           },
           "margin-block": {
             "name": "margin-block",
-            "value": "<margin-top>{1,2}",
+            "value": "<'margin-top'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -27781,7 +27729,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "margin-top"
               },
               "minItems": 1,
@@ -27790,7 +27738,7 @@
           },
           "margin-inline": {
             "name": "margin-inline",
-            "value": "<margin-top>{1,2}",
+            "value": "<'margin-top'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -27801,7 +27749,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "margin-top"
               },
               "minItems": 1,
@@ -27810,7 +27758,7 @@
           },
           "inset-block-start": {
             "name": "inset-block-start",
-            "value": "<top>",
+            "value": "<'top'>",
             "initial": "auto",
             "appliesTo": "positioned elements",
             "inherited": "no",
@@ -27819,13 +27767,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "top"
             }
           },
           "inset-block-end": {
             "name": "inset-block-end",
-            "value": "<top>",
+            "value": "<'top'>",
             "initial": "auto",
             "appliesTo": "positioned elements",
             "inherited": "no",
@@ -27834,13 +27782,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "top"
             }
           },
           "inset-inline-start": {
             "name": "inset-inline-start",
-            "value": "<top>",
+            "value": "<'top'>",
             "initial": "auto",
             "appliesTo": "positioned elements",
             "inherited": "no",
@@ -27849,13 +27797,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "top"
             }
           },
           "inset-inline-end": {
             "name": "inset-inline-end",
-            "value": "<top>",
+            "value": "<'top'>",
             "initial": "auto",
             "appliesTo": "positioned elements",
             "inherited": "no",
@@ -27864,13 +27812,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "top"
             }
           },
           "inset-block": {
             "name": "inset-block",
-            "value": "<top>{1,2}",
+            "value": "<'top'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -27881,7 +27829,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "top"
               },
               "minItems": 1,
@@ -27890,7 +27838,7 @@
           },
           "inset-inline": {
             "name": "inset-inline",
-            "value": "<top>{1,2}",
+            "value": "<'top'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -27901,7 +27849,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "top"
               },
               "minItems": 1,
@@ -27910,7 +27858,7 @@
           },
           "inset": {
             "name": "inset",
-            "value": "<top>{1,4}",
+            "value": "<'top'>{1,4}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -27921,7 +27869,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "top"
               },
               "minItems": 1,
@@ -27930,7 +27878,7 @@
           },
           "padding-block-start": {
             "name": "padding-block-start",
-            "value": "<padding-top>",
+            "value": "<'padding-top'>",
             "initial": "0",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -27939,13 +27887,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "padding-top"
             }
           },
           "padding-block-end": {
             "name": "padding-block-end",
-            "value": "<padding-top>",
+            "value": "<'padding-top'>",
             "initial": "0",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -27954,13 +27902,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "padding-top"
             }
           },
           "padding-inline-start": {
             "name": "padding-inline-start",
-            "value": "<padding-top>",
+            "value": "<'padding-top'>",
             "initial": "0",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -27969,13 +27917,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "padding-top"
             }
           },
           "padding-inline-end": {
             "name": "padding-inline-end",
-            "value": "<padding-top>",
+            "value": "<'padding-top'>",
             "initial": "0",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -27984,13 +27932,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "padding-top"
             }
           },
           "padding-block": {
             "name": "padding-block",
-            "value": "<padding-top>{1,2}",
+            "value": "<'padding-top'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28001,7 +27949,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "padding-top"
               },
               "minItems": 1,
@@ -28010,7 +27958,7 @@
           },
           "padding-inline": {
             "name": "padding-inline",
-            "value": "<padding-top>{1,2}",
+            "value": "<'padding-top'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28021,7 +27969,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "padding-top"
               },
               "minItems": 1,
@@ -28030,7 +27978,7 @@
           },
           "border-block-start-width": {
             "name": "border-block-start-width",
-            "value": "<border-top-width>",
+            "value": "<'border-top-width'>",
             "initial": "medium",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28039,13 +27987,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-width"
             }
           },
           "border-block-end-width": {
             "name": "border-block-end-width",
-            "value": "<border-top-width>",
+            "value": "<'border-top-width'>",
             "initial": "medium",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28054,13 +28002,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-width"
             }
           },
           "border-inline-start-width": {
             "name": "border-inline-start-width",
-            "value": "<border-top-width>",
+            "value": "<'border-top-width'>",
             "initial": "medium",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28069,13 +28017,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-width"
             }
           },
           "border-inline-end-width": {
             "name": "border-inline-end-width",
-            "value": "<border-top-width>",
+            "value": "<'border-top-width'>",
             "initial": "medium",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28084,13 +28032,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-width"
             }
           },
           "border-block-width": {
             "name": "border-block-width",
-            "value": "<border-top-width>{1,2}",
+            "value": "<'border-top-width'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28101,7 +28049,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "border-top-width"
               },
               "minItems": 1,
@@ -28110,7 +28058,7 @@
           },
           "border-inline-width": {
             "name": "border-inline-width",
-            "value": "<border-top-width>{1,2}",
+            "value": "<'border-top-width'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28121,7 +28069,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "border-top-width"
               },
               "minItems": 1,
@@ -28130,7 +28078,7 @@
           },
           "border-block-start-style": {
             "name": "border-block-start-style",
-            "value": "<border-top-style>",
+            "value": "<'border-top-style'>",
             "initial": "none",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28139,13 +28087,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "discrete",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-style"
             }
           },
           "border-block-end-style": {
             "name": "border-block-end-style",
-            "value": "<border-top-style>",
+            "value": "<'border-top-style'>",
             "initial": "none",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28154,13 +28102,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "discrete",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-style"
             }
           },
           "border-inline-start-style": {
             "name": "border-inline-start-style",
-            "value": "<border-top-style>",
+            "value": "<'border-top-style'>",
             "initial": "none",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28169,13 +28117,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "discrete",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-style"
             }
           },
           "border-inline-end-style": {
             "name": "border-inline-end-style",
-            "value": "<border-top-style>",
+            "value": "<'border-top-style'>",
             "initial": "none",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28184,13 +28132,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "discrete",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-style"
             }
           },
           "border-block-style": {
             "name": "border-block-style",
-            "value": "<border-top-style>{1,2}",
+            "value": "<'border-top-style'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28201,7 +28149,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "border-top-style"
               },
               "minItems": 1,
@@ -28210,7 +28158,7 @@
           },
           "border-inline-style": {
             "name": "border-inline-style",
-            "value": "<border-top-style>{1,2}",
+            "value": "<'border-top-style'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28221,7 +28169,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "border-top-style"
               },
               "minItems": 1,
@@ -28230,7 +28178,7 @@
           },
           "border-block-start-color": {
             "name": "border-block-start-color",
-            "value": "<border-top-color>",
+            "value": "<'border-top-color'>",
             "initial": "currentcolor",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28239,13 +28187,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-color"
             }
           },
           "border-block-end-color": {
             "name": "border-block-end-color",
-            "value": "<border-top-color>",
+            "value": "<'border-top-color'>",
             "initial": "currentcolor",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28254,13 +28202,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-color"
             }
           },
           "border-inline-start-color": {
             "name": "border-inline-start-color",
-            "value": "<border-top-color>",
+            "value": "<'border-top-color'>",
             "initial": "currentcolor",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28269,13 +28217,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-color"
             }
           },
           "border-inline-end-color": {
             "name": "border-inline-end-color",
-            "value": "<border-top-color>",
+            "value": "<'border-top-color'>",
             "initial": "currentcolor",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28284,13 +28232,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-color"
             }
           },
           "border-block-color": {
             "name": "border-block-color",
-            "value": "<border-top-color>{1,2}",
+            "value": "<'border-top-color'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28301,7 +28249,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "border-top-color"
               },
               "minItems": 1,
@@ -28310,7 +28258,7 @@
           },
           "border-inline-color": {
             "name": "border-inline-color",
-            "value": "<border-top-color>{1,2}",
+            "value": "<'border-top-color'>{1,2}",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28321,7 +28269,7 @@
             "parsedValue": {
               "type": "array",
               "items": {
-                "type": "valuespace",
+                "type": "propertyref",
                 "name": "border-top-color"
               },
               "minItems": 1,
@@ -28330,7 +28278,7 @@
           },
           "border-block-start": {
             "name": "border-block-start",
-            "value": "<border-top-width> || <border-top-style> || <color>",
+            "value": "<'border-top-width'> || <'border-top-style'> || <color>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28341,11 +28289,11 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-top-width"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-top-style"
                 },
                 {
@@ -28357,7 +28305,7 @@
           },
           "border-block-end": {
             "name": "border-block-end",
-            "value": "<border-top-width> || <border-top-style> || <color>",
+            "value": "<'border-top-width'> || <'border-top-style'> || <color>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28368,11 +28316,11 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-top-width"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-top-style"
                 },
                 {
@@ -28384,7 +28332,7 @@
           },
           "border-inline-start": {
             "name": "border-inline-start",
-            "value": "<border-top-width> || <border-top-style> || <color>",
+            "value": "<'border-top-width'> || <'border-top-style'> || <color>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28395,11 +28343,11 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-top-width"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-top-style"
                 },
                 {
@@ -28411,7 +28359,7 @@
           },
           "border-inline-end": {
             "name": "border-inline-end",
-            "value": "<border-top-width> || <border-top-style> || <color>",
+            "value": "<'border-top-width'> || <'border-top-style'> || <color>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28422,11 +28370,11 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-top-width"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-top-style"
                 },
                 {
@@ -28438,7 +28386,7 @@
           },
           "border-block": {
             "name": "border-block",
-            "value": "<border-block-start>",
+            "value": "<'border-block-start'>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28447,13 +28395,13 @@
             "animationType": "see individual properties",
             "canonicalOrder": "per grammar",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-block-start"
             }
           },
           "border-inline": {
             "name": "border-inline",
-            "value": "<border-block-start>",
+            "value": "<'border-block-start'>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -28462,13 +28410,13 @@
             "animationType": "see individual properties",
             "canonicalOrder": "per grammar",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-block-start"
             }
           },
           "border-start-start-radius": {
             "name": "border-start-start-radius",
-            "value": "<border-top-left-radius>",
+            "value": "<'border-top-left-radius'>",
             "initial": "Same as border-top-left-radius",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28477,13 +28425,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-left-radius"
             }
           },
           "border-start-end-radius": {
             "name": "border-start-end-radius",
-            "value": "<border-top-left-radius>",
+            "value": "<'border-top-left-radius'>",
             "initial": "Same as border-top-left-radius",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28492,13 +28440,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-left-radius"
             }
           },
           "border-end-start-radius": {
             "name": "border-end-start-radius",
-            "value": "<border-top-left-radius>",
+            "value": "<'border-top-left-radius'>",
             "initial": "Same as border-top-left-radius",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28507,13 +28455,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-left-radius"
             }
           },
           "border-end-end-radius": {
             "name": "border-end-end-radius",
-            "value": "<border-top-left-radius>",
+            "value": "<'border-top-left-radius'>",
             "initial": "Same as border-top-left-radius",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -28522,7 +28470,7 @@
             "canonicalOrder": "per grammar",
             "animationType": "by computed value type",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "border-top-left-radius"
             }
           }
@@ -29216,7 +29164,7 @@
           },
           "mask-border": {
             "name": "mask-border",
-            "value": "<mask-border-source> || <mask-border-slice> [ / <mask-border-width>? [ / <mask-border-outset> ]? ]? || <mask-border-repeat> || <mask-border-mode>",
+            "value": "<'mask-border-source'> || <'mask-border-slice'> [ / <'mask-border-width'>? [ / <'mask-border-outset'> ]? ]? || <'mask-border-repeat'> || <'mask-border-mode'>",
             "initial": "See individual properties",
             "appliesTo": "See individual properties",
             "inherited": "no",
@@ -29228,14 +29176,14 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "mask-border-source"
                 },
                 {
                   "type": "array",
                   "items": [
                     {
-                      "type": "valuespace",
+                      "type": "propertyref",
                       "name": "mask-border-slice"
                     },
                     {
@@ -29248,7 +29196,7 @@
                             "content": "/"
                           },
                           {
-                            "type": "valuespace",
+                            "type": "propertyref",
                             "name": "mask-border-width",
                             "optional": true
                           },
@@ -29262,7 +29210,7 @@
                                   "content": "/"
                                 },
                                 {
-                                  "type": "valuespace",
+                                  "type": "propertyref",
                                   "name": "mask-border-outset"
                                 }
                               ]
@@ -29276,11 +29224,11 @@
                   ]
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "mask-border-repeat"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "mask-border-mode"
                 }
               ]
@@ -29769,7 +29717,7 @@
           },
           "columns": {
             "name": "columns",
-            "value": "<column-width> || <column-count>",
+            "value": "<'column-width'> || <'column-count'>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -29780,11 +29728,11 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "column-width"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "column-count"
                 }
               ]
@@ -29860,7 +29808,7 @@
           },
           "column-rule": {
             "name": "column-rule",
-            "value": "<column-rule-width> || <column-rule-style> || <column-rule-color>",
+            "value": "<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -29871,15 +29819,15 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "column-rule-width"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "column-rule-style"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "column-rule-color"
                 }
               ]
@@ -30417,7 +30365,7 @@
           },
           "overflow-inline": {
             "name": "overflow-inline",
-            "value": "<overflow>",
+            "value": "<'overflow'>",
             "initial": "visible",
             "appliesTo": "Same as overflow-x and overflow-y",
             "inherited": "No",
@@ -30426,13 +30374,13 @@
             "canonicalOrder": "per grammar",
             "animationType": "discrete",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "overflow"
             }
           },
           "overflow-block": {
             "name": "overflow-block",
-            "value": "<overflow>",
+            "value": "<'overflow'>",
             "initial": "visible",
             "appliesTo": "Same as overflow-x and overflow-y",
             "inherited": "No",
@@ -30441,7 +30389,7 @@
             "canonicalOrder": "per grammar",
             "animationType": "discrete",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "overflow"
             }
           },
@@ -30497,7 +30445,7 @@
           },
           "line-clamp": {
             "name": "line-clamp",
-            "value": "none | <integer> <block-ellipsis>?",
+            "value": "none | <integer> <'block-ellipsis'>?",
             "initial": "none",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -30519,7 +30467,7 @@
                       "name": "integer"
                     },
                     {
-                      "type": "valuespace",
+                      "type": "propertyref",
                       "name": "block-ellipsis",
                       "optional": true
                     }
@@ -33275,7 +33223,7 @@
           },
           "block-step": {
             "name": "block-step",
-            "value": "<block-step-size> || <block-step-insert> || <block-step-align> || <block-step-round>",
+            "value": "<'block-step-size'> || <'block-step-insert'> || <'block-step-align'> || <'block-step-round'>",
             "initial": "see individual properties",
             "appliesTo": "block-level boxes",
             "inherited": "no",
@@ -33286,19 +33234,19 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "block-step-size"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "block-step-insert"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "block-step-align"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "block-step-round"
                 }
               ]
@@ -34975,7 +34923,7 @@
             }
           },
           "<inset()>": {
-            "value": "inset( <length-percentage>{1,4} [ round <border-radius> ]? )",
+            "value": "inset( <length-percentage>{1,4} [ round <'border-radius'> ]? )",
             "parsedValue": {
               "type": "function",
               "name": "inset",
@@ -34995,7 +34943,7 @@
                   "name": "round"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "border-radius"
                 },
                 "]",
@@ -38423,7 +38371,7 @@
           },
           "text-decoration": {
             "name": "text-decoration",
-            "value": "<text-decoration-line> || <text-decoration-style> || <text-decoration-color>",
+            "value": "<'text-decoration-line'> || <'text-decoration-style'> || <'text-decoration-color'>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -38434,15 +38382,15 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "text-decoration-line"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "text-decoration-style"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "text-decoration-color"
                 }
               ]
@@ -38567,7 +38515,7 @@
           },
           "text-emphasis": {
             "name": "text-emphasis",
-            "value": "<text-emphasis-style> || <text-emphasis-color>",
+            "value": "<'text-emphasis-style'> || <'text-emphasis-color'>",
             "initial": "see individual properties",
             "appliesTo": "see individual properties",
             "inherited": "see individual properties",
@@ -38578,11 +38526,11 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "text-emphasis-style"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "text-emphasis-color"
                 }
               ]
@@ -40752,7 +40700,7 @@
         "properties": {
           "outline": {
             "name": "outline",
-            "value": "[ <outline-color> || <outline-style> || <outline-width> ]",
+            "value": "[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]",
             "initial": "see individual properties",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -40763,15 +40711,15 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "outline-color"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "outline-style"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "outline-width"
                 }
               ]
@@ -41137,7 +41085,7 @@
           },
           "caret": {
             "name": "caret",
-            "value": "<caret-color> || <caret-shape>",
+            "value": "<'caret-color'> || <'caret-shape'>",
             "initial": "auto",
             "appliesTo": "elements that accept input",
             "inherited": "yes",
@@ -41148,11 +41096,11 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "caret-color"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "caret-shape"
                 }
               ]
@@ -41694,7 +41642,7 @@
         "properties": {
           "outline": {
             "name": "outline",
-            "value": "[ <outline-color> || <outline-style> || <outline-width> ]",
+            "value": "[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]",
             "initial": "see individual properties",
             "appliesTo": "all elements",
             "inherited": "no",
@@ -41705,15 +41653,15 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "outline-color"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "outline-style"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "outline-width"
                 }
               ]
@@ -42079,7 +42027,7 @@
           },
           "caret": {
             "name": "caret",
-            "value": "<caret-color> || <caret-shape>",
+            "value": "<'caret-color'> || <'caret-shape'>",
             "initial": "auto",
             "appliesTo": "elements that accept input",
             "inherited": "yes",
@@ -42090,11 +42038,11 @@
             "parsedValue": {
               "anyOf": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "caret-color"
                 },
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "caret-shape"
                 }
               ]
@@ -49426,7 +49374,7 @@
       "edDraft": "https://drafts.csswg.org/css-conditional-3/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "crawled": "https://drafts.csswg.org/css-conditional-3/",
-      "date": "28 March 2019",
+      "date": "29 March 2019",
       "links": [
         "https://www.w3.org/TR/CSS/",
         "https://github.com/w3c/csswg-drafts/issues",
@@ -50882,7 +50830,7 @@
       "edDraft": "https://w3c.github.io/DOM-Parsing/",
       "repository": "https://github.com/w3c/DOM-Parsing",
       "crawled": "https://w3c.github.io/DOM-Parsing/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://w3c-test.org/domparsing/",
         "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/implementationReport.html",
@@ -52062,7 +52010,7 @@
           },
           "fill": {
             "name": "fill",
-            "value": "<background> with modifications",
+            "value": "<'background'> with modifications",
             "initial": "See individual properties",
             "appliesTo": "See individual properties",
             "inherited": "See individual properties",
@@ -52075,7 +52023,7 @@
               "type": "array",
               "items": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "background"
                 },
                 {
@@ -52091,7 +52039,7 @@
           },
           "fill-opacity": {
             "name": "fill-opacity",
-            "value": "<opacity>",
+            "value": "<'opacity'>",
             "initial": "1",
             "appliesTo": "inline boxes and SVG shapes",
             "inherited": "yes",
@@ -52101,7 +52049,7 @@
             "media": "visual",
             "animatable": "as number",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "opacity"
             }
           },
@@ -52535,7 +52483,7 @@
           },
           "stroke": {
             "name": "stroke",
-            "value": "<background> with modifications",
+            "value": "<'background'> with modifications",
             "initial": "See individual properties",
             "appliesTo": "See individual properties",
             "inherited": "See individual properties",
@@ -52548,7 +52496,7 @@
               "type": "array",
               "items": [
                 {
-                  "type": "valuespace",
+                  "type": "propertyref",
                   "name": "background"
                 },
                 {
@@ -52564,7 +52512,7 @@
           },
           "stroke-opacity": {
             "name": "stroke-opacity",
-            "value": "<opacity>",
+            "value": "<'opacity'>",
             "initial": "1",
             "appliesTo": "inline boxes and SVG shapes",
             "inherited": "yes",
@@ -52574,7 +52522,7 @@
             "media": "visual",
             "animatable": "as number",
             "parsedValue": {
-              "type": "valuespace",
+              "type": "propertyref",
               "name": "opacity"
             }
           }
@@ -53332,7 +53280,7 @@
       "edDraft": "https://w3c.github.io/gamepad/",
       "repository": "https://github.com/w3c/gamepad",
       "crawled": "https://w3c.github.io/gamepad/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://www.w3.org/TR/hr-time-2/",
@@ -53929,7 +53877,7 @@
       "edDraft": "https://w3c.github.io/hr-time/",
       "repository": "https://github.com/w3c/hr-time",
       "crawled": "https://w3c.github.io/hr-time/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/hr-time-1/",
         "https://html.spec.whatwg.org/",
@@ -54026,7 +53974,7 @@
       "edDraft": "https://w3c.github.io/html-media-capture/",
       "repository": "https://github.com/w3c/html-media-capture",
       "crawled": "https://w3c.github.io/html-media-capture/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/2017/PR-html-media-capture-20171128/",
         "https://www.w3.org/2009/dap/wiki/ImplementationStatus",
@@ -54475,7 +54423,7 @@
       "informative": false,
       "edDraft": "https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html",
       "crawled": "https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://github.com/web-platform-tests/wpt/tree/master/input-events",
         "https://w3c.github.io/test-results/input-events/",
@@ -54936,7 +54884,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-depth/",
       "repository": "https://github.com/w3c/mediacapture-depth",
       "crawled": "https://w3c.github.io/mediacapture-depth/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://w3c.github.io/mediacapture-main/",
         "https://www.w3.org/TR/mediacapture-streams/",
@@ -55270,7 +55218,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-fromelement/",
       "repository": "https://github.com/w3c/mediacapture-fromelement",
       "crawled": "https://w3c.github.io/mediacapture-fromelement/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/html5/",
         "https://w3c.github.io/mediacapture-main/",
@@ -55359,7 +55307,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-main/",
       "repository": "https://github.com/w3c/mediacapture-main",
       "crawled": "https://w3c.github.io/mediacapture-main/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/html52/",
         "https://www.w3.org/TR/WebIDL-1/",
@@ -57320,7 +57268,7 @@
       "edDraft": "https://w3c.github.io/mst-content-hint/",
       "repository": "https://github.com/w3c/mst-content-hint",
       "crawled": "https://w3c.github.io/mst-content-hint/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://heycam.github.io/webidl/",
         "https://www.w3.org/TR/mediacapture-streams/",
@@ -57484,7 +57432,7 @@
       "edDraft": "https://w3c.github.io/navigation-timing/",
       "repository": "https://github.com/w3c/navigation-timing",
       "crawled": "https://w3c.github.io/navigation-timing/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/resource-hints/",
         "https://w3c.github.io/navigation-timing/",
@@ -57697,7 +57645,7 @@
       "edDraft": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
       "repository": "https://github.com/w3c/deviceorientation",
       "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://w3c.github.io/deviceorientation/"
       ],
@@ -57860,7 +57808,7 @@
       "edDraft": "https://w3c.github.io/page-visibility/",
       "repository": "https://github.com/w3c/page-visibility",
       "crawled": "https://w3c.github.io/page-visibility/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -58179,7 +58127,7 @@
       "edDraft": "https://w3c.github.io/payment-handler/",
       "repository": "https://github.com/w3c/payment-handler",
       "crawled": "https://w3c.github.io/payment-handler/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://github.com/w3c/payment-handler/issues",
         "https://www.w3.org/TR/service-workers-1/",
@@ -58320,7 +58268,7 @@
       "edDraft": "https://w3c.github.io/payment-method-basic-card/",
       "repository": "https://github.com/w3c/payment-method-basic-card",
       "crawled": "https://w3c.github.io/payment-method-basic-card/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/payment-request/",
         "https://www.w3.org/TR/payment-method-id/",
@@ -58468,7 +58416,7 @@
       "edDraft": "https://w3c.github.io/payment-request/",
       "repository": "https://github.com/w3c/payment-request",
       "crawled": "https://w3c.github.io/payment-request/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://github.com/w3c/payment-request/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20-label%3A%22Priority%3A%20Postponed%22%20",
         "https://w3c.github.io/test-results/payment-request/all.html",
@@ -58639,6 +58587,7 @@
       },
       "shortname": "performance-timeline-2",
       "versions": [
+        "https://www.w3.org/TR/2019/WD-performance-timeline-2-20190329/",
         "https://www.w3.org/TR/2019/WD-performance-timeline-2-20190321/",
         "https://www.w3.org/TR/2019/WD-performance-timeline-2-20190320/",
         "https://www.w3.org/TR/2019/WD-performance-timeline-2-20190110/",
@@ -58674,13 +58623,13 @@
       ],
       "title": "Performance Timeline Level 2",
       "latest": "https://www.w3.org/TR/performance-timeline-2/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20190321/",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20190329/",
       "datedStatus": "Working Draft",
       "informative": false,
       "edDraft": "https://w3c.github.io/performance-timeline/",
       "repository": "https://github.com/w3c/performance-timeline",
       "crawled": "https://w3c.github.io/performance-timeline/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/hr-time-2/",
         "https://heycam.github.io/webidl/",
@@ -58972,7 +58921,7 @@
       "edDraft": "https://w3c.github.io/pointerevents/",
       "repository": "https://github.com/w3c/pointerevents",
       "crawled": "https://w3c.github.io/pointerevents/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/WCAG20/",
         "https://www.w3.org/community/touchevents/",
@@ -59099,7 +59048,7 @@
       "edDraft": "https://w3c.github.io/pointerlock/",
       "repository": "https://github.com/w3c/pointerlock",
       "crawled": "https://w3c.github.io/pointerlock/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://github.com/w3c/pointerlock/commits/gh-pages/",
         "https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/",
@@ -59214,7 +59163,7 @@
       "edDraft": "https://w3c.github.io/preload/",
       "repository": "https://github.com/w3c/preload",
       "crawled": "https://w3c.github.io/preload/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://www.w3.org/TR/html52/",
@@ -59336,7 +59285,7 @@
       "edDraft": "https://w3c.github.io/presentation-api/",
       "repository": "https://github.com/w3c/presentation-api",
       "crawled": "https://w3c.github.io/presentation-api/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/2016/CR-presentation-api-20160714/",
         "https://w3c-test.org/presentation-api/",
@@ -59718,7 +59667,7 @@
       "edDraft": "https://w3c.github.io/push-api/",
       "repository": "https://github.com/w3c/push-api",
       "crawled": "https://w3c.github.io/push-api/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://fetch.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -60078,7 +60027,7 @@
       "edDraft": "https://w3c.github.io/remote-playback/",
       "repository": "https://github.com/w3c/remote-playback",
       "crawled": "https://w3c.github.io/remote-playback/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://github.com/w3c/remote-playback/issues/",
         "https://github.com/w3c/remote-playback/issues/41",
@@ -60164,7 +60113,7 @@
       "edDraft": "https://w3c.github.io/requestidlecallback/",
       "repository": "https://github.com/w3c/requestidlecallback",
       "crawled": "https://w3c.github.io/requestidlecallback/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://w3c-test.org/requestidlecallback/",
         "https://wpt.fyi/requestidlecallback",
@@ -60254,7 +60203,7 @@
       "edDraft": "https://w3c.github.io/resource-timing/",
       "repository": "https://github.com/w3c/resource-timing",
       "crawled": "https://w3c.github.io/resource-timing/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://dom.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -60411,7 +60360,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-screen-share/",
       "repository": "https://github.com/w3c/mediacapture-screen-share",
       "crawled": "https://w3c.github.io/mediacapture-screen-share/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://w3c.github.io/mediacapture-main/",
         "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/",
@@ -60572,7 +60521,7 @@
       "edDraft": "https://w3c.github.io/screen-orientation/",
       "repository": "https://github.com/w3c/screen-orientation",
       "crawled": "https://w3c.github.io/screen-orientation/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/cssom-view-1/",
         "https://heycam.github.io/webidl/",
@@ -60944,7 +60893,7 @@
       "edDraft": "https://w3c.github.io/selection-api/",
       "repository": "https://github.com/w3c/selection-api",
       "crawled": "https://w3c.github.io/selection-api/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/html5/",
         "https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/",
@@ -62181,7 +62130,7 @@
       "edDraft": "https://w3c.github.io/server-timing/",
       "repository": "https://github.com/w3c/server-timing",
       "crawled": "https://w3c.github.io/server-timing/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://heycam.github.io/webidl/",
         "https://www.w3.org/TR/resource-timing-2/",
@@ -65258,7 +65207,7 @@
       "edDraft": "https://w3c.github.io/touch-events/",
       "repository": "https://github.com/w3c/touch-events",
       "crawled": "https://w3c.github.io/touch-events/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://w3c-test.org/webevents/tests/touch-events-v1/approved/",
         "https://www.w3.org/2010/webevents/wiki/TEv1ImplReport",
@@ -65889,7 +65838,7 @@
       "edDraft": "https://w3c.github.io/user-timing/",
       "repository": "https://github.com/w3c/user-timing",
       "crawled": "https://w3c.github.io/user-timing/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/hr-time-2/",
         "https://heycam.github.io/webidl/",
@@ -65982,7 +65931,7 @@
       "edDraft": "https://w3c.github.io/vibration/",
       "repository": "https://github.com/w3c/vibration",
       "crawled": "https://w3c.github.io/vibration/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/html5/",
         "https://heycam.github.io/webidl/",
@@ -66050,7 +65999,7 @@
       "edDraft": "https://rawgit.com/w3c/aria/master/",
       "repository": "https://github.com/w3c/aria",
       "crawled": "https://rawgit.com/w3c/aria/master/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/WAI/intro/aria.php",
         "https://github.com/w3c/aria/issues/new",
@@ -66329,7 +66278,7 @@
       "edDraft": "https://w3c.github.io/wake-lock/",
       "repository": "https://github.com/w3c/wake-lock",
       "crawled": "https://w3c.github.io/wake-lock/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://github.com/w3c/wake-lock/issues",
         "https://html.spec.whatwg.org/",
@@ -66429,7 +66378,7 @@
       "edDraft": "https://webassembly.github.io/spec/js-api/",
       "repository": "https://github.com/webassembly/spec",
       "crawled": "https://webassembly.github.io/spec/js-api/",
-      "date": "28 March 2019",
+      "date": "29 March 2019",
       "links": [
         "https://www.w3.org/TR/wasm-core/",
         "https://www.w3.org/TR/wasm-js-api/",
@@ -66539,7 +66488,7 @@
       "edDraft": "https://webassembly.github.io/spec/web-api/",
       "repository": "https://github.com/webassembly/spec",
       "crawled": "https://webassembly.github.io/spec/web-api/",
-      "date": "28 March 2019",
+      "date": "29 March 2019",
       "links": [
         "https://www.w3.org/TR/wasm-core/",
         "https://www.w3.org/TR/wasm-js-api/",
@@ -67750,7 +67699,7 @@
       "edDraft": "https://w3c.github.io/webdriver/",
       "repository": "https://github.com/w3c/webdriver",
       "crawled": "https://w3c.github.io/webdriver/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://github.com/w3c/webdriver",
         "https://www.seleniumhq.org/",
@@ -68338,7 +68287,7 @@
       "edDraft": "http://webaudio.github.io/web-midi-api/",
       "repository": "https://github.com/webaudio/web-midi-api",
       "crawled": "http://webaudio.github.io/web-midi-api/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://dom.spec.whatwg.org/",
@@ -68562,7 +68511,7 @@
       "edDraft": "https://w3c.github.io/webrtc-stats/",
       "repository": "https://github.com/w3c/webrtc-stats",
       "crawled": "https://w3c.github.io/webrtc-stats/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://www.w3.org/TR/2014/REC-html5-20141028/",
         "https://www.w3.org/TR/webrtc/",
@@ -68828,7 +68777,7 @@
       "edDraft": "https://w3c.github.io/webrtc-pc/",
       "repository": "https://github.com/w3c/webrtc-pc",
       "crawled": "https://w3c.github.io/webrtc-pc/",
-      "date": "Fri Mar 29 2019",
+      "date": "Sat Mar 30 2019",
       "links": [
         "https://github.com/w3c/webrtc-pc/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20-label%3AEditorial%20",
         "https://github.com/web-platform-tests/wpt/tree/master/webrtc",
@@ -69838,7 +69787,7 @@
       "edDraft": "https://html.spec.whatwg.org/multipage/workers.html",
       "repository": "https://github.com/whatwg/html",
       "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-      "date": "28 March 2019",
+      "date": "29 March 2019",
       "links": [
         "https://fetch.spec.whatwg.org/",
         "https://caniuse.com/",
