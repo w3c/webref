@@ -25,7 +25,7 @@
   <h2>Specifications that could not be rendered</h2>
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
-  <li><a href="https://www.w3.org/TR/html52/">HTML 5.2</a>: <code>Error: Crawl took too long Error: Crawl took too long at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29) at ontimeout (timers.js:498:11) at tryOnTimeout (timers.js:323:5) at Timer.listOnTimeout (timers.js:290:5)</code></li>
+  <li><a href="https://www.w3.org/TR/css-tables-3/">CSS Table Module Level 3</a>: <code>Error: Crawl took too long Error: Crawl took too long at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29) at ontimeout (timers.js:498:11) at tryOnTimeout (timers.js:323:5) at Timer.listOnTimeout (timers.js:290:5)</code></li>
   </ul>
   <p>=&gt; 1 specification found</p>
   </section>
@@ -121,6 +121,7 @@
   <li><a href="https://www.w3.org/TR/2018/CR-geometry-1-20181204/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2019/WD-gyroscope-20190307/">Gyroscope</a></li>
   <li><a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">High Resolution Time Level 3</a></li>
+  <li><a href="https://www.w3.org/TR/2017/REC-html52-20171214/">HTML 5.2</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-webmessaging-20150519/">HTML5 Web Messaging</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/">Identifiers for WebRTC's Statistics API</a></li>
@@ -207,7 +208,7 @@
   <li><a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
-  <p>=&gt; 139 specifications found</p>
+  <p>=&gt; 140 specifications found</p>
   <p>Reffy was expecting to find IDL content in the specifications listed here but could not extract any.</p>
   </section>
   <section id="specifications-without-css-definitions" class="level2">
@@ -244,7 +245,11 @@
   </section>
   <section id="specifications-with-unexpected-css-definitions" class="level2">
   <h2>Specifications with unexpected CSS definitions</h2>
-  <p>=&gt; 0 specification found</p>
+  <ul>
+  <li><a href="https://www.w3.org/TR/2017/REC-html52-20171214/">HTML 5.2</a></li>
+  </ul>
+  <p>=&gt; 1 specification found</p>
+  <p>Reffy was not expecting to find CSS definitions in the specifications listed here but it did.</p>
   </section>
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
   <h2>List of specifications with invalid WebIDL content</h2>
@@ -865,14 +870,6 @@
   <li><a href="https://www.w3.org/TR/2014/CR-html5-20140204/"><code>https://www.w3.org/TR/2014/CR-html5-20140204/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/"><code>https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-css-tables-3-20170307/">CSS Table Module Level 3</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-ui/"><code>https://www.w3.org/TR/css3-ui/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-break/"><code>https://www.w3.org/TR/css3-break/</code></a> but does not list it in its references</li>
-  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
-  </ul></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/">CSS Text Decoration Module Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-break/"><code>https://www.w3.org/TR/css3-break/</code></a> but does not list it in its references</li>
@@ -1018,6 +1015,19 @@
   <li><a href="https://www.w3.org/TR/2019/WD-generic-sensor-20190307/">Generic Sensor API</a> links to <a href="https://w3c.github.io/webappsec-feature-policy/"><code>https://w3c.github.io/webappsec-feature-policy/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2019/WD-gyroscope-20190307/">Gyroscope</a> links to <a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">High Resolution Time Level 3</a> links to <a href="https://w3c.github.io/workers/"><code>https://w3c.github.io/workers/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2017/REC-html52-20171214/">HTML 5.2</a> links to:
+  <ul>
+  <li><a href="https://url.spec.whatwg.org/"><code>https://url.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-syntax/"><code>https://www.w3.org/TR/css3-syntax/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/using-aria/"><code>https://www.w3.org/TR/using-aria/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-device-adapt-1/"><code>https://www.w3.org/TR/css-device-adapt-1/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/turingtest/"><code>https://www.w3.org/TR/turingtest/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-pseudo-4/"><code>https://www.w3.org/TR/css-pseudo-4/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-ui/"><code>https://www.w3.org/TR/css3-ui/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/xlink11/"><code>https://www.w3.org/TR/xlink11/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/2018/WD-intersection-observer-20181106/">Intersection Observer</a> links to:
   <ul>
   <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
@@ -1213,7 +1223,7 @@
   </ul></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 621 missing references for links found in 147 specifications</p>
+  <p>=&gt; 626 missing references for links found in 147 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -1383,7 +1393,6 @@
   <li><a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a> but related reference &quot;CSSOM-VIEW-1&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/2017/WD-css-tables-3-20170307/">CSS Table Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/">CSS Text Decoration Module Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
@@ -1459,6 +1468,19 @@
   <ul>
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a> but related reference &quot;CSSOM-VIEW&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
+  </ul></li>
+  <li><a href="https://www.w3.org/TR/2017/REC-html52-20171214/">HTML 5.2</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
+  <li><a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a> but related reference &quot;CSSOM-VIEW&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
+  <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM41&quot; uses URL <a href="https://www.w3.org/TR/dom41/"><code>https://www.w3.org/TR/dom41/</code></a></li>
+  <li><a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://www.w3.org/TR/1999/REC-xpath-19991116"><code>https://www.w3.org/TR/1999/REC-xpath-19991116</code></a> but related reference &quot;XPATH&quot; uses URL <a href="https://www.w3.org/TR/xpath"><code>https://www.w3.org/TR/xpath</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-referrer-policy/"><code>https://w3c.github.io/webappsec-referrer-policy/</code></a> but related reference &quot;REFERRERPOLICY&quot; uses URL <a href="https://www.w3.org/TR/referrer-policy"><code>https://www.w3.org/TR/referrer-policy</code></a></li>
+  <li><a href="https://w3c.github.io/html/"><code>https://w3c.github.io/html/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
   </ul></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a> links to:
   <ul>
@@ -1653,7 +1675,7 @@
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 234 inconsistent references for links found in 126 specifications</p>
+  <p>=&gt; 243 inconsistent references for links found in 126 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
