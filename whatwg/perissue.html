@@ -26,9 +26,8 @@
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
   <li><a href="undefined">https://html.spec.whatwg.org/</a>: <code>Error: Crawl took too long Error: Crawl took too long at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29) at ontimeout (timers.js:498:11) at tryOnTimeout (timers.js:323:5) at Timer.listOnTimeout (timers.js:290:5)</code></li>
-  <li><a href="http://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
   </ul>
-  <p>=&gt; 2 specifications found</p>
+  <p>=&gt; 1 specification found</p>
   </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
@@ -84,6 +83,7 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
@@ -177,7 +177,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
-  <p>=&gt; 126 specifications found</p>
+  <p>=&gt; 127 specifications found</p>
   <p>Reffy was expecting to find IDL content in the specifications listed here but could not extract any.</p>
   </section>
   <section id="specifications-without-css-definitions" class="level2">
@@ -1019,6 +1019,7 @@
   <li><a href="https://www.w3.org/TR/css-syntax/"><code>https://www.w3.org/TR/css-syntax/</code></a> but related reference &quot;CSS3SYN&quot; uses URL <a href="https://www.w3.org/TR/css-syntax-3/"><code>https://www.w3.org/TR/css-syntax-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-fonts/"><code>https://www.w3.org/TR/css3-fonts/</code></a> but related reference &quot;CSS3-FONTS&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a> links to <a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM4&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a></li>
@@ -1223,7 +1224,7 @@
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a> links to <a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> links to <a href="https://w3c.github.io/orientation-sensor/"><code>https://w3c.github.io/orientation-sensor/</code></a> but related reference &quot;ORIENTATION-SENSOR&quot; uses URL <a href="https://www.w3.org/TR/orientation-sensor/"><code>https://www.w3.org/TR/orientation-sensor/</code></a></li>
   </ul>
-  <p>=&gt; 192 inconsistent references for links found in 96 specifications</p>
+  <p>=&gt; 193 inconsistent references for links found in 97 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
