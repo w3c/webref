@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% April 04, 2019
+% April 05, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
@@ -33,7 +33,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Thu Apr 04 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Fri Apr 05 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -427,7 +427,7 @@ Normative references to this spec from:
 - [Media Queries](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
@@ -471,7 +471,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -525,7 +525,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 
 
 ## Compositing and Blending Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -680,7 +680,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Thu Apr 04 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Fri Apr 05 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -939,7 +939,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -1044,7 +1044,7 @@ Normative references to this spec from:
 
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -1090,7 +1090,7 @@ Normative references to this spec from:
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 No informative reference to this spec from other specs.
 
@@ -1246,7 +1246,7 @@ Normative references to this spec from:
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -1297,7 +1297,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190131/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 No informative reference to this spec from other specs.
 
@@ -1341,7 +1341,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Input Events Level 2](https://www.w3.org/TR/2018/WD-input-events-2-20181108/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -1595,7 +1595,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -1756,7 +1756,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2018/WD-css-text-4-20180920/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -1841,7 +1841,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -1897,7 +1897,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -2338,7 +2338,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -2755,7 +2755,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -2817,7 +2817,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -3047,7 +3047,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -3276,7 +3276,7 @@ Normative references to this spec from:
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 No informative reference to this spec from other specs.
 
@@ -3580,7 +3580,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -3652,7 +3652,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -3744,7 +3744,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -3778,7 +3778,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 No informative reference to this spec from other specs.
 
@@ -3901,7 +3901,7 @@ Normative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -4090,7 +4090,7 @@ Normative references to this spec from:
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 No informative reference to this spec from other specs.
 
@@ -4264,7 +4264,7 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -4326,7 +4326,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 No informative reference to this spec from other specs.
 
@@ -4381,7 +4381,7 @@ Informative references to this spec from:
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 
 
@@ -4473,7 +4473,7 @@ Normative references to this spec from:
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180904/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
@@ -5103,7 +5103,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190329/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -5150,7 +5150,7 @@ Normative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 - [WebUSB API](https://wicg.github.io/webusb/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190205/)
 - [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -5265,7 +5265,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190329/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -5299,7 +5299,7 @@ Normative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 - [WebUSB API](https://wicg.github.io/webusb/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190205/)
 - [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -5422,7 +5422,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190329/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
@@ -5459,7 +5459,7 @@ Normative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 - [WebUSB API](https://wicg.github.io/webusb/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190205/)
 - [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -5548,7 +5548,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Thu Apr 04 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Fri Apr 05 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6174,7 +6174,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Thu Apr 04 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Fri Apr 05 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6504,10 +6504,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/) (Level 2)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/) (Level 2)
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
-- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
 - Shortname: pointerevents2
 
@@ -6550,7 +6550,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 
 Informative references to this spec from:
@@ -6562,7 +6562,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Thu Apr 04 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Fri Apr 05 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7014,7 +7014,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
@@ -7063,7 +7063,7 @@ Normative references to this spec from:
 - [Non-element Selectors Module Level 1](https://www.w3.org/TR/2019/NOTE-selectors-nonelement-1-20190402/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 No informative reference to this spec from other specs.
 
@@ -7387,7 +7387,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 
 
 ## UI Events {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -7420,7 +7420,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/2017/CR-uievents-code-20170601/)
@@ -7491,7 +7491,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (18 February 2019)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (4 April 2019)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -7701,7 +7701,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190329/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
@@ -7744,7 +7744,7 @@ Normative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 - [WebUSB API](https://wicg.github.io/webusb/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190205/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -8011,7 +8011,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Thu Apr 04 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Fri Apr 05 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8061,7 +8061,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Apr 04 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Fri Apr 05 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8206,7 +8206,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190329/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -8242,7 +8242,7 @@ Normative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 - [WebUSB API](https://wicg.github.io/webusb/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190205/)
 - [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -8359,7 +8359,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Apr 04 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Apr 05 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8380,7 +8380,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Apr 04 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Apr 05 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8500,7 +8500,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190329/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2019/PR-pointerevents2-20190221/)
+- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2018/WD-pointerlock-2-20181106/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -8545,7 +8545,7 @@ Normative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 - [WebUSB API](https://wicg.github.io/webusb/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190205/)
 - [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -8648,10 +8648,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-webvtt1-20180510/) (10 May 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-webvtt1-20190404/) (4 April 2019)
 - Editor's Draft: [https://w3c.github.io/webvtt/](https://w3c.github.io/webvtt/)
 - Latest published version: [https://www.w3.org/TR/webvtt1/](https://www.w3.org/TR/webvtt1/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webvtt1-20180510/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - Repository: [GitHub w3c/webvtt](https://github.com/w3c/webvtt)
 - Shortname: webvtt1
 
