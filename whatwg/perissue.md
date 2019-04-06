@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% April 05, 2019
+% April 06, 2019
 
 229 specifications were crawled in this report.
 
@@ -14,8 +14,14 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
+- [Keyboard Lock](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 
-=> 1 specification found
+=> 2 specifications found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -97,7 +103,6 @@ Basically all specifications have normative dependencies on some other specifica
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
-- [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
@@ -167,7 +172,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-=> 127 specifications found
+=> 126 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
@@ -400,9 +405,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/) but does not list it in its references
     * [`https://www.w3.org/TR/css-multicol-1/`](https://www.w3.org/TR/css-multicol-1/) but does not list it in its references
-- [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/) links to:
-    * [`https://www.w3.org/TR/2017/WD-css-timing-1-20170221/`](https://www.w3.org/TR/2017/WD-css-timing-1-20170221/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
+- [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/) links to [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/) links to:
     * [`https://www.w3.org/TR/css3-box/`](https://www.w3.org/TR/css3-box/) but does not list it in its references
     * [`https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/`](https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/) but does not list it in its references
@@ -736,7 +739,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 381 missing references for links found in 128 specifications
+=> 380 missing references for links found in 128 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
