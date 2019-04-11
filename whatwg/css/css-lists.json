@@ -39,7 +39,7 @@
     },
     "list-style": {
       "name": "list-style",
-      "value": "<'list-style-type'> || <'list-style-position'> || <'list-style-image'>",
+      "value": "<'list-style-position'> || <'list-style-image'> || <'list-style-type'>",
       "initial": "see individual properties",
       "appliesTo": "list items",
       "inherited": "see individual properties",
@@ -95,6 +95,9 @@
   },
   "descriptors": {},
   "valuespaces": {
+    "<counter>": {
+      "value": "<counter()> | <counters()>"
+    },
     "<counter()>": {
       "value": "counter( <custom-ident>, [ <counter-style> | none ]? )"
     },

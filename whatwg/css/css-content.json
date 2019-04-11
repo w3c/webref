@@ -6,7 +6,7 @@
   "properties": {
     "content": {
       "name": "content",
-      "value": "normal | none | [ <content-replacement> | <content-list> ] [/ <string> ]?",
+      "value": "normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> ]+ ]?",
       "initial": "normal",
       "appliesTo": "all elements, tree-abiding pseudo-elements, and page margin boxes",
       "inherited": "no",
@@ -104,7 +104,7 @@
       "value": "<image>"
     },
     "<content-list>": {
-      "value": "[ <string> | contents | <image> | <quote> | <target> | <leader()> ]+"
+      "value": "[ <string> | contents | <image> | <counter> | <quote> | <target> | <leader()> ]+"
     }
   }
 }

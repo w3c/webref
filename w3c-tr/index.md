@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% April 10, 2019
+% April 11, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
@@ -33,7 +33,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Wed Apr 10 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Thu Apr 11 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -642,7 +642,7 @@ Normative references to this spec from:
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -680,7 +680,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Wed Apr 10 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Thu Apr 11 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3579,7 +3579,7 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
@@ -4372,7 +4372,7 @@ Normative references to this spec from:
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190326/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -4468,7 +4468,7 @@ Normative references to this spec from:
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
@@ -4598,7 +4598,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [WebAssembly Web API](https://www.w3.org/TR/2018/WD-wasm-web-api-1-20180904/)
@@ -4782,7 +4782,7 @@ Informative references to this spec from:
 
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 
 
 ## Gamepad {data-spec=true data-anomaly=true data-noIdlContent=true}
@@ -5130,7 +5130,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -5284,7 +5284,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -5443,7 +5443,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -5548,7 +5548,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Wed Apr 10 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Thu Apr 11 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -5901,7 +5901,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 
 Informative references to this spec from:
 
@@ -6174,7 +6174,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Wed Apr 10 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Thu Apr 11 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6562,7 +6562,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Wed Apr 10 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Thu Apr 11 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6922,7 +6922,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -7152,7 +7152,7 @@ Normative references to this spec from:
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 
 Informative references to this spec from:
@@ -7332,7 +7332,7 @@ Normative references to this spec from:
 
 - [Accelerometer](https://www.w3.org/TR/2019/WD-accelerometer-20190307/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 
 No informative reference to this spec from other specs.
 
@@ -7528,7 +7528,7 @@ Normative references to this spec from:
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Share API - Level 1](https://wicg.github.io/web-share/)
@@ -7729,7 +7729,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -7819,10 +7819,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-appmanifest-20181212/) (Living Document)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-appmanifest-20190410/) (Living Document)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Shortname: appmanifest
 
@@ -8011,7 +8011,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Wed Apr 10 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Thu Apr 11 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8061,7 +8061,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Wed Apr 10 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Apr 11 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8227,7 +8227,7 @@ Normative references to this spec from:
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -8359,7 +8359,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Apr 10 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Apr 11 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8380,7 +8380,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Apr 10 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Apr 11 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8527,7 +8527,7 @@ Normative references to this spec from:
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2018/WD-appmanifest-20181212/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190410/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -8627,7 +8627,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (9 April 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (10 April 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
