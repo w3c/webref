@@ -25,9 +25,10 @@
   <h2>Specifications that could not be rendered</h2>
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
+  <li><a href="undefined">https://drafts.css-houdini.org/font-metrics-api/</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
   <li><a href="https://www.w3.org/TR/html52/">HTML 5.2</a>: <code>Error: Crawl took too long Error: Crawl took too long at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29) at ontimeout (timers.js:498:11) at tryOnTimeout (timers.js:323:5) at Timer.listOnTimeout (timers.js:290:5)</code></li>
   </ul>
-  <p>=&gt; 1 specification found</p>
+  <p>=&gt; 2 specifications found</p>
   </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
@@ -111,7 +112,6 @@
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-FileAPI-20181106/">File API</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/">Filter Effects Module Level 1</a></li>
-  <li><a href="https://drafts.css-houdini.org/font-metrics-api/">Font Metrics API Level 1</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-gamepad-20181214/">Gamepad</a></li>
   <li><a href="https://www.w3.org/TR/2019/WD-generic-sensor-20190307/">Generic Sensor API</a></li>
@@ -144,7 +144,7 @@
   <li><a href="https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/">Orientation Sensor</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-paint-timing-20170907/">Paint Timing 1</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-payment-handler-20180108/">Payment Handler API</a></li>
-  <li><a href="https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190403/">Payment Method: Basic Card</a></li>
+  <li><a href="https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/">Payment Method: Basic Card</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-payment-request-20180830/">Payment Request API</a></li>
   <li><a href="https://www.w3.org/TR/2019/WD-performance-timeline-2-20190329/">Performance Timeline Level 2</a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-permissions-20170925/">Permissions</a></li>
@@ -206,7 +206,7 @@
   <li><a href="http://www.w3.org/TR/2016/WD-worklets-1-20160607/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
-  <p>=&gt; 139 specifications found</p>
+  <p>=&gt; 138 specifications found</p>
   <p>Reffy was expecting to find IDL content in the specifications listed here but could not extract any.</p>
   </section>
   <section id="specifications-without-css-definitions" class="level2">
@@ -1090,7 +1090,11 @@
   <li><a href="https://w3c.github.io/manifest/"><code>https://w3c.github.io/manifest/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://w3c.github.io/pointerevents/extension.html">PointerEvents - Level 2 - Extensions</a> links to <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/pointerevents/extension.html">PointerEvents - Level 2 - Extensions</a> links to:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/2017/CR-preload-20171026/">Preload</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/html/document-metadata.html"><code>https://w3c.github.io/html/document-metadata.html</code></a> but does not list it in its references</li>
@@ -1208,7 +1212,7 @@
   </ul></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 617 missing references for links found in 147 specifications</p>
+  <p>=&gt; 618 missing references for links found in 147 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>

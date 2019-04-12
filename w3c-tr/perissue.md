@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% April 11, 2019
+% April 12, 2019
 
 240 specifications were crawled in this report.
 
@@ -9,13 +9,19 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
+- [https://drafts.css-houdini.org/font-metrics-api/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [HTML 5.2](https://www.w3.org/TR/html52/): `Error: Crawl took too long Error: Crawl took too long
     at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
 
-=> 1 specification found
+=> 2 specifications found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -101,7 +107,6 @@ Basically all specifications have normative dependencies on some other specifica
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
-- [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181214/)
 - [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/)
@@ -134,7 +139,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190403/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/)
 - [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190329/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -196,7 +201,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-=> 139 specifications found
+=> 138 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
@@ -937,7 +942,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/) links to:
     * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/) but does not list it in its references
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but does not list it in its references
-- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html) links to [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/) but does not list it in its references
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html) links to:
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
+    * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/) but does not list it in its references
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/) links to:
     * [`https://w3c.github.io/html/document-metadata.html`](https://w3c.github.io/html/document-metadata.html) but does not list it in its references
     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
@@ -1023,7 +1030,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 617 missing references for links found in 147 specifications
+=> 618 missing references for links found in 147 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
