@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% April 12, 2019
+% April 13, 2019
 
 240 specifications were crawled in this report.
 
@@ -9,19 +9,13 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [https://drafts.css-houdini.org/font-metrics-api/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [HTML 5.2](https://www.w3.org/TR/html52/): `Error: Crawl took too long Error: Crawl took too long
     at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
 
-=> 2 specifications found
+=> 1 specification found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -107,6 +101,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181214/)
 - [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/)
@@ -201,7 +196,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-=> 138 specifications found
+=> 139 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
