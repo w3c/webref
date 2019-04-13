@@ -3,7 +3,7 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: File API (https://w3c.github.io/FileAPI/)
 
-[Constructor(optional sequence<BlobPart> blobParts,
+[Constructor(optional sequence&lt;BlobPart> blobParts,
              optional BlobPropertyBag options),
  Exposed=(Window,Worker), Serializable]
 interface Blob {
@@ -15,6 +15,11 @@ interface Blob {
   Blob slice(optional [Clamp] long long start,
             optional [Clamp] long long end,
             optional DOMString contentType);
+
+  // read from the Blob.
+  [NewObject] ReadableStream stream();
+  [NewObject] Promise<USVString> text();
+  [NewObject] Promise<ArrayBuffer> arrayBuffer();
 };
 
 enum EndingType { "transparent", "native" };

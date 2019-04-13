@@ -1,32 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% April 12, 2019
-
-## https://drafts.css-houdini.org/font-metrics-api/ {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](undefined)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
+% April 13, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
@@ -59,7 +33,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Fri Apr 12 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Sat Apr 13 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -706,7 +680,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Fri Apr 12 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sat Apr 13 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4012,6 +3986,7 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
+- [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 
 No informative reference to this spec from other specs.
 
@@ -4757,6 +4732,24 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
+
+No informative reference to this spec from other specs.
+
+
+## Font Metrics API Level 1 {data-spec=true data-anomaly=true data-noIdlContent=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://drafts.css-houdini.org/font-metrics-api/) (11 February 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -5555,7 +5548,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Fri Apr 12 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sat Apr 13 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6181,7 +6174,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Fri Apr 12 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sat Apr 13 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6569,7 +6562,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Fri Apr 12 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sat Apr 13 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7691,6 +7684,7 @@ Normative references to this spec from:
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
+- [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181214/)
 - [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/)
@@ -8018,7 +8012,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Fri Apr 12 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sat Apr 13 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8068,7 +8062,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Fri Apr 12 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sat Apr 13 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8366,7 +8360,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Apr 12 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Apr 13 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8387,7 +8381,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Apr 12 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Apr 13 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8472,6 +8466,7 @@ Normative references to this spec from:
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181214/)
 - [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/)
@@ -8633,7 +8628,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (11 April 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (12 April 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
