@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% April 16, 2019
+% April 17, 2019
 
 240 specifications were crawled in this report.
 
@@ -47,9 +47,8 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 - [CSS Scoping Module Level 1](http://www.w3.org/TR/2014/WD-css-scoping-1-20140403/)
 - [CSS Shapes Module Level 1](http://www.w3.org/TR/2014/CR-css-shapes-1-20140320/)
 - [CSS Syntax Module Level 3](http://www.w3.org/TR/2014/CR-css-syntax-3-20140220/)
-- [DeviceOrientation Event Specification](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/)
 
-=> 14 specifications found
+=> 13 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -91,7 +90,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
-- [DeviceOrientation Event Specification](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/)
+- [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
@@ -135,7 +134,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/)
-- [Payment Request API](https://www.w3.org/TR/2018/CR-payment-request-20180830/)
+- [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190329/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
@@ -159,7 +158,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190415/)
+- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190416/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2018/WD-uievents-20181108/)
@@ -867,7 +866,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but does not list it in its references
-- [DeviceOrientation Event Specification](https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/) links to [`https://www.w3.org/TR/2016/REC-geolocation-API-20161108/`](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/) but does not list it in its references
+- [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/) links to [`https://compat.spec.whatwg.org/`](https://compat.spec.whatwg.org/) but does not list it in its references
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/) links to [`https://domparsing.spec.whatwg.org/`](https://domparsing.spec.whatwg.org/) but does not list it in its references
 - [Event Timing API](https://wicg.github.io/event-timing/) links to [`https://w3c.github.io/pointerevents/extension.html`](https://w3c.github.io/pointerevents/extension.html) but does not list it in its references
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but does not list it in its references
@@ -1179,6 +1178,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/) but related reference "CSS-VALUES" uses URL [`http://www.w3.org/TR/css-values/`](http://www.w3.org/TR/css-values/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/) links to [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/) links to:
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
@@ -1334,6 +1334,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
-=> 233 inconsistent references for links found in 125 specifications
+=> 234 inconsistent references for links found in 126 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

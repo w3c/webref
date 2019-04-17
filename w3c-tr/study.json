@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-04-16T06:05:23.068Z",
+  "date": "2019-04-17T06:05:20.581Z",
   "stats": {
     "crawled": 240,
     "errors": 1,
@@ -66,7 +66,7 @@
     {
       "title": "404 not found",
       "shortname": "SVG2",
-      "date": "Tue Apr 16 2019",
+      "date": "Wed Apr 17 2019",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
@@ -1851,7 +1851,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "Tue Apr 16 2019",
+      "date": "Wed Apr 17 2019",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -2965,7 +2965,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -4135,7 +4135,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
               "date": "April 2019 "
             }
           ]
@@ -11892,7 +11892,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://drafts.csswg.org/resize-observer/",
@@ -11909,7 +11909,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
               "date": "April 2019 "
             },
             {
@@ -11977,30 +11977,37 @@
     {
       "title": "DeviceOrientation Event Specification",
       "shortname": "orientation-event",
-      "date": "30 May 2017",
+      "date": "16 April 2019",
       "url": "https://www.w3.org/TR/orientation-event/",
       "latest": "https://www.w3.org/TR/orientation-event/",
-      "datedUrl": "https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/",
-      "datedStatus": "Retired",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/",
+      "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
-      "crawled": "https://www.w3.org/TR/2017/NOTE-orientation-event-20170530/",
+      "crawled": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/",
       "repository": "https://github.com/w3c/deviceorientation",
       "report": {
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
         "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/"
+          "https://compat.spec.whatwg.org/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/page-visibility-2/",
+            "ref": {
+              "name": "PAGE-VISIBILITY",
+              "url": "https://www.w3.org/TR/page-visibility/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": [
@@ -12171,7 +12178,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -12359,7 +12366,14 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/payment-request/",
+              "title": "Payment Request API",
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
+              "date": "April 2019 "
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/webauthn-1/",
@@ -12579,8 +12593,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180830/",
-              "date": "30 August 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
+              "date": "April 2019 "
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
@@ -12959,7 +12973,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
               "date": "April 2019 "
             },
             {
@@ -13776,6 +13790,12 @@
               "date": "17 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/orientation-event/",
+              "title": "DeviceOrientation Event Specification",
+              "crawled": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/",
+              "date": "16 April 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/DOM-Parsing/",
               "title": "DOM Parsing and Serialization",
               "crawled": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
@@ -13971,7 +13991,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -13988,8 +14008,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180830/",
-              "date": "30 August 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
+              "date": "April 2019 "
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -14120,7 +14140,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
               "date": "April 2019 "
             },
             {
@@ -14217,7 +14237,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -14229,7 +14249,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -14271,13 +14291,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -14723,6 +14743,12 @@
               "date": "17 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/orientation-event/",
+              "title": "DeviceOrientation Event Specification",
+              "crawled": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/",
+              "date": "16 April 2019"
+            },
+            {
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
@@ -14840,7 +14866,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -14851,8 +14877,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180830/",
-              "date": "30 August 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
+              "date": "April 2019 "
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -14959,7 +14985,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
               "date": "April 2019 "
             },
             {
@@ -15020,13 +15046,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -15056,13 +15082,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -15463,6 +15489,12 @@
               "date": "17 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/orientation-event/",
+              "title": "DeviceOrientation Event Specification",
+              "crawled": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/",
+              "date": "16 April 2019"
+            },
+            {
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
@@ -15580,7 +15612,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -15591,8 +15623,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180830/",
-              "date": "30 August 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
+              "date": "April 2019 "
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -15711,7 +15743,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
               "date": "April 2019 "
             },
             {
@@ -15772,13 +15804,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -15814,13 +15846,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16104,7 +16136,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "Tue Apr 16 2019",
+      "date": "Wed Apr 17 2019",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -17420,7 +17452,7 @@
     },
     {
       "title": "Network Information API",
-      "date": "Tue Apr 16 2019",
+      "date": "Wed Apr 17 2019",
       "url": "https://wicg.github.io/netinfo/",
       "crawled": "https://wicg.github.io/netinfo/",
       "repository": "https://github.com/wicg/netinfo",
@@ -17623,6 +17655,12 @@
               "date": "10 October 2017"
             },
             {
+              "url": "https://www.w3.org/TR/orientation-event/",
+              "title": "DeviceOrientation Event Specification",
+              "crawled": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/",
+              "date": "16 April 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://www.w3.org/TR/2019/WD-generic-sensor-20190307/",
@@ -17643,7 +17681,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
               "date": "April 2019 "
             },
             {
@@ -17668,7 +17706,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -17817,8 +17855,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180830/",
-              "date": "30 August 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
+              "date": "April 2019 "
             }
           ]
         },
@@ -17829,13 +17867,13 @@
     {
       "title": "Payment Request API",
       "shortname": "payment-request",
-      "date": "30 August 2018",
+      "date": "April 2019 ",
       "url": "https://www.w3.org/TR/payment-request/",
       "latest": "https://www.w3.org/TR/payment-request/",
-      "datedUrl": "https://www.w3.org/TR/2018/CR-payment-request-20180830/",
+      "datedUrl": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/payment-request/",
-      "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180830/",
+      "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
       "repository": "https://github.com/w3c/payment-request",
       "report": {
         "noNormativeRefs": false,
@@ -18104,7 +18142,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -18204,7 +18242,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -18218,7 +18256,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             }
           ]
         },
@@ -18262,7 +18300,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             }
           ],
           "informative": [
@@ -18280,7 +18318,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "Tue Apr 16 2019",
+      "date": "Wed Apr 17 2019",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -18922,6 +18960,12 @@
               "date": "17 January 2019"
             },
             {
+              "url": "https://www.w3.org/TR/orientation-event/",
+              "title": "DeviceOrientation Event Specification",
+              "crawled": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/",
+              "date": "16 April 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://www.w3.org/TR/2019/WD-generic-sensor-20190307/",
@@ -18944,12 +18988,6 @@
               "title": "Mixed Content",
               "crawled": "https://www.w3.org/TR/2016/CR-mixed-content-20160802/",
               "date": "2 August 2016"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180830/",
-              "date": "30 August 2018"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -19018,6 +19056,12 @@
               "title": "Encrypted Media Extensions",
               "crawled": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/",
               "date": "18 September 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-request/",
+              "title": "Payment Request API",
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
+              "date": "April 2019 "
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -19851,10 +19895,10 @@
       "date": "April 2019 ",
       "url": "https://www.w3.org/TR/screen-orientation/",
       "latest": "https://www.w3.org/TR/screen-orientation/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/screen-orientation/",
-      "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+      "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
       "repository": "https://github.com/w3c/screen-orientation",
       "report": {
         "noNormativeRefs": false,
@@ -19982,7 +20026,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             }
           ],
           "informative": [
@@ -20045,7 +20089,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -20366,6 +20410,12 @@
               "date": "08 January 2018"
             },
             {
+              "url": "https://www.w3.org/TR/payment-request/",
+              "title": "Payment Request API",
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
+              "date": "April 2019 "
+            },
+            {
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
               "crawled": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/",
@@ -20435,13 +20485,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -20863,6 +20913,12 @@
               "date": "17 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/orientation-event/",
+              "title": "DeviceOrientation Event Specification",
+              "crawled": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/",
+              "date": "16 April 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/encrypted-media/",
               "title": "Encrypted Media Extensions",
               "crawled": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/",
@@ -20962,7 +21018,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -20979,8 +21035,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180830/",
-              "date": "30 August 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
+              "date": "April 2019 "
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -21016,7 +21072,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -21202,7 +21258,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -21238,7 +21294,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -21472,7 +21528,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
               "date": "April 2019 "
             }
           ]
@@ -21793,7 +21849,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "Tue Apr 16 2019",
+      "date": "Wed Apr 17 2019",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -21897,7 +21953,7 @@
     },
     {
       "title": "Web Share API - Level 1",
-      "date": "Tue Apr 16 2019",
+      "date": "Wed Apr 17 2019",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "repository": "https://github.com/wicg/web-share",
@@ -22238,6 +22294,12 @@
               "date": "17 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/orientation-event/",
+              "title": "DeviceOrientation Event Specification",
+              "crawled": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/",
+              "date": "16 April 2019"
+            },
+            {
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
@@ -22367,7 +22429,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -22378,8 +22440,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180830/",
-              "date": "30 August 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
+              "date": "April 2019 "
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -22492,7 +22554,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
               "date": "April 2019 "
             },
             {
@@ -22559,13 +22621,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -22595,13 +22657,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -22906,7 +22968,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Tue Apr 16 2019",
+      "date": "Wed Apr 17 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -22940,7 +23002,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Tue Apr 16 2019",
+      "date": "Wed Apr 17 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -22963,7 +23025,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             }
           ],
           "informative": [
@@ -23238,6 +23300,12 @@
               "date": "17 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/orientation-event/",
+              "title": "DeviceOrientation Event Specification",
+              "crawled": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/",
+              "date": "16 April 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/DOM-Parsing/",
               "title": "DOM Parsing and Serialization",
               "crawled": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/",
@@ -23361,7 +23429,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -23451,7 +23519,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/orientation-sensor/",
@@ -23480,8 +23548,8 @@
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
-              "crawled": "https://www.w3.org/TR/2018/CR-payment-request-20180830/",
-              "date": "30 August 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20190416/",
+              "date": "April 2019 "
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -23517,7 +23585,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -23612,7 +23680,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190415/",
+              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20190416/",
               "date": "April 2019 "
             },
             {
@@ -23703,13 +23771,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -23751,13 +23819,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Apr 16 2019"
+              "date": "Wed Apr 17 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",

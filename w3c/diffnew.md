@@ -1,13 +1,13 @@
-% Diff between report from "April 16, 2019" and reference report from "April 15, 2019"
+% Diff between report from "April 17, 2019" and reference report from "April 16, 2019"
 % Reffy
-% April 16, 2019
+% April 17, 2019
 
-## https://drafts.css-houdini.org/box-tree-api/
+## Box Tree API Level 1
 
 - URL: [https://drafts.css-houdini.org/box-tree-api/](https://drafts.css-houdini.org/box-tree-api/)
-- Crawled version: [Latest published version](undefined)
-- Spec title: *INS* https://drafts.css-houdini.org/box-tree-api/ / *DEL* Box Tree API Level 1
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Crawled version: [Initial URL](https://drafts.css-houdini.org/box-tree-api/)
+- Spec title: *INS* Box Tree API Level 1 / *DEL* https://drafts.css-houdini.org/box-tree-api/
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
