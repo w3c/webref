@@ -2,7 +2,7 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-04-20T06:06:05.113Z",
+  "date": "2019-04-21T06:05:33.364Z",
   "options": {
     "publishedVersion": true
   },
@@ -4759,7 +4759,6 @@
         "https://drafts.csswg.org/css-cascade-3/",
         "https://drafts.csswg.org/css-extensions-1/",
         "https://www.w3.org/TR/mediaqueries-4/",
-        "https://github.com/w3c/csswg-drafts/issues/3807",
         "https://github.com/w3c/csswg-drafts/issues/2943",
         "https://www.w3.org/TR/CSS2/",
         "https://www.w3.org/Style/CSS/Test/",
@@ -4977,6 +4976,24 @@
                 {
                   "type": "keyword",
                   "name": "dark"
+                }
+              ]
+            }
+          },
+          "forced-colors": {
+            "name": "forced-colors",
+            "for": "@media",
+            "value": "none | active",
+            "type": "discrete",
+            "parsedValue": {
+              "oneOf": [
+                {
+                  "type": "keyword",
+                  "name": "none"
+                },
+                {
+                  "type": "keyword",
+                  "name": "active"
                 }
               ]
             }
@@ -6134,7 +6151,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Sat Apr 20 2019",
+      "date": "Sun Apr 21 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -6181,7 +6198,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Sat Apr 20 2019",
+      "date": "Sun Apr 21 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -6507,7 +6524,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Sat Apr 20 2019",
+      "date": "Sun Apr 21 2019",
       "links": [
         "https://url.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -6886,34 +6903,43 @@
       "repository": "https://github.com/wicg/animation-worklet",
       "title": "CSS Animation Worklet API",
       "crawled": "https://wicg.github.io/animation-worklet/",
-      "date": "13 August 2018",
+      "date": "10 March 2019",
       "links": [
-        "https://www.w3.org/community/wicg/",
-        "https://www.w3.org/community/about/agreements/cla/",
-        "https://www.w3.org/community/",
+        "https://github.com/w3c/css-houdini-drafts/issues",
+        "https://lists.w3.org/Archives/Public/public-houdini-archive/",
+        "https://www.w3.org/Style/CSS/members",
+        "https://www.w3.org/Consortium/Patent-Policy/",
+        "https://www.w3.org/2004/01/pp-impl/32061/status",
+        "https://www.w3.org/2019/Process-20190301/",
         "https://w3c.github.io/web-animations/",
         "https://drafts.csswg.org/web-animations-1/",
         "https://html.spec.whatwg.org/",
         "https://drafts.css-houdini.org/worklets/",
-        "https://drafts.csswg.org/cssom-1/",
         "https://heycam.github.io/webidl/",
+        "https://drafts.csswg.org/cssom-1/",
         "https://infra.spec.whatwg.org/",
         "https://drafts.csswg.org/css-values-4/",
         "https://tc39.github.io/ecma262/",
         "https://w3c.github.io/html/infrastructure.html",
         "https://dom.spec.whatwg.org/",
         "https://drafts.csswg.org/css-transitions-1/",
-        "https://github.com/wicg/animation-worklet/issues/63",
-        "https://github.com/wicg/animation-worklet/issues/61",
+        "https://github.com/w3c/css-houdini-drafts/issues/811",
+        "https://github.com/w3c/css-houdini-drafts/issues/810",
         "https://wicg.github.io/scroll-animations/",
         "https://w3c.github.io/web-animations/level-2/",
         "https://github.com/w3c/csswg-drafts/issues/2071",
+        "https://www.w3.org/TR/CSS21/",
+        "https://www.w3.org/TR/CSS/",
+        "https://www.w3.org/Style/CSS/Test/",
+        "https://lists.w3.org/Archives/Public/public-css-testsuite",
         "https://www.w3.org/TR/css-transitions-1/",
+        "https://www.w3.org/TR/css-values-4/",
         "https://www.w3.org/TR/cssom-1/",
         "https://tools.ietf.org/html/rfc2119",
         "https://www.w3.org/TR/web-animations-1/",
         "https://www.w3.org/TR/worklets-1/",
-        "https://github.com/WICG/animation-worklet/blob/gh-pages/README.md"
+        "https://github.com/w3c/css-houdini-drafts/blob/master/css-animationworklet/README.md",
+        "https://github.com/w3c/css-houdini-drafts/blob/master/css-animationworklet/principles.md"
       ],
       "refs": {
         "normative": [
@@ -6923,7 +6949,7 @@
           },
           {
             "name": "CSS-VALUES-4",
-            "url": "https://drafts.csswg.org/css-values-4/"
+            "url": "https://www.w3.org/TR/css-values-4/"
           },
           {
             "name": "CSSOM-1",
@@ -6961,7 +6987,11 @@
         "informative": [
           {
             "name": "EXPLAINER",
-            "url": "https://github.com/WICG/animation-worklet/blob/gh-pages/README.md"
+            "url": "https://github.com/w3c/css-houdini-drafts/blob/master/css-animationworklet/README.md"
+          },
+          {
+            "name": "PRINCIPLES",
+            "url": "https://github.com/w3c/css-houdini-drafts/blob/master/css-animationworklet/principles.md"
           }
         ]
       },
@@ -7155,7 +7185,7 @@
       "repository": "https://github.com/wicg/cookie-store",
       "title": "Cookie Store API",
       "crawled": "https://wicg.github.io/cookie-store/",
-      "date": "27 October 2018",
+      "date": "20 April 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -7861,7 +7891,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Sat Apr 20 2019",
+      "date": "Sun Apr 21 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -8021,7 +8051,7 @@
       "repository": "https://github.com/wicg/keyboard-map",
       "title": "Keyboard Map | keyboard-map",
       "crawled": "https://wicg.github.io/keyboard-map/",
-      "date": "Sat Apr 20 2019",
+      "date": "Sun Apr 21 2019",
       "links": [
         "https://wicg.github.io/keyboard-map/",
         "https://w3c.github.io/uievents-code/"
@@ -8249,7 +8279,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Sat Apr 20 2019",
+      "date": "Sun Apr 21 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -8869,7 +8899,7 @@
       "repository": "https://github.com/wicg/shape-detection-api",
       "title": "Accelerated Shape Detection in Images",
       "crawled": "https://wicg.github.io/shape-detection-api/",
-      "date": "8 April 2019",
+      "date": "20 April 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -8992,7 +9022,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Sat Apr 20 2019",
+      "date": "Sun Apr 21 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -9067,7 +9097,7 @@
       "repository": "https://github.com/wicg/webusb",
       "title": "WebUSB API",
       "crawled": "https://wicg.github.io/webusb/",
-      "date": "19 April 2019",
+      "date": "20 April 2019",
       "links": [
         "https://www.w3.org/community/wicg/",
         "https://www.w3.org/community/about/agreements/cla/",
@@ -9165,7 +9195,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Sat Apr 20 2019",
+      "date": "Sun Apr 21 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -9410,7 +9440,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Sat Apr 20 2019",
+      "date": "Sun Apr 21 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -55951,7 +55981,7 @@
       "edDraft": "https://svgwg.org/svg2-draft/",
       "repository": "https://github.com/w3c/svgwg",
       "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
-      "date": "Sat Apr 20 2019",
+      "date": "Sun Apr 21 2019",
       "links": [
         "https://www.w3.org/",
         "https://www.w3.org/Consortium/site",
