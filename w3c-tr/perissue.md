@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% April 24, 2019
+% April 25, 2019
 
 240 specifications were crawled in this report.
 
@@ -133,7 +133,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -148,7 +148,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20181018/)
