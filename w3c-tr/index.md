@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% April 24, 2019
+% April 25, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
@@ -33,7 +33,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Wed Apr 24 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Thu Apr 25 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -74,7 +74,7 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
 - [SVG Strokes](http://www.w3.org/TR/2015/WD-svg-strokes-20150409/)
@@ -317,7 +317,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 
 Informative references to this spec from:
 
@@ -680,7 +680,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Wed Apr 24 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Thu Apr 25 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -698,7 +698,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/) (20 April 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/) (24 April 2019)
 - Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
 - Shortname: no shortname
 
@@ -3577,7 +3577,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
 - [Intersection Observer](https://www.w3.org/TR/2018/WD-intersection-observer-20181106/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190418/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
@@ -4599,7 +4599,7 @@ Normative references to this spec from:
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -4992,7 +4992,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -5118,7 +5118,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20181018/)
@@ -5181,7 +5181,7 @@ Informative references to this spec from:
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -5278,7 +5278,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20181018/)
@@ -5325,7 +5325,7 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -5437,7 +5437,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20181018/)
@@ -5486,7 +5486,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190131/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -5556,7 +5556,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Wed Apr 24 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Thu Apr 25 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6168,7 +6168,7 @@ Normative references to this spec from:
 
 - [Gamepad](https://www.w3.org/TR/2018/WD-gamepad-20181214/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
@@ -6182,7 +6182,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Wed Apr 24 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Thu Apr 25 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6361,10 +6361,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/) (April 2019 )
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/) (April 2019 )
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
 - Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
 - Shortname: payment-method-basic-card
 
@@ -6404,7 +6404,7 @@ Normative references to this spec from:
 
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
 
 No informative reference to this spec from other specs.
 
@@ -6432,7 +6432,7 @@ Normative references to this spec from:
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
 Informative references to this spec from:
@@ -6571,7 +6571,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Wed Apr 24 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Thu Apr 25 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6826,10 +6826,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/) (March 2019 )
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/) (April 2019 )
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
 - Shortname: resource-timing-2
 
@@ -7161,7 +7161,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2018/WD-push-api-20181026/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190418/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -7169,7 +7169,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -7724,7 +7724,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20181018/)
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
@@ -8021,7 +8021,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Wed Apr 24 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Thu Apr 25 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8071,7 +8071,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Wed Apr 24 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Apr 25 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8223,7 +8223,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20181018/)
@@ -8273,7 +8273,7 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
 - [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -8370,7 +8370,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Apr 24 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Apr 25 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8391,7 +8391,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Apr 24 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Apr 25 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8507,7 +8507,7 @@ Normative references to this spec from:
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190412/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -8521,7 +8521,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20181018/)
@@ -8639,7 +8639,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (22 April 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (24 April 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -8766,7 +8766,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2018/WD-FileAPI-20181106/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190307/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
 
 Informative references to this spec from:
 
