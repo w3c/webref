@@ -36,7 +36,7 @@ enum XREnvironmentBlendMode {
 
   // Methods
   void updateRenderState(optional XRRenderStateInit state);
-  Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceOptions options);
+  Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);
 
   FrozenArray<XRInputSource> getInputSources();
 
@@ -86,39 +86,23 @@ callback XRFrameRequestCallback = void (DOMHighResTimeStamp time, XRFrame frame)
 
 enum XRReferenceSpaceType {
   "identity",
-  "stationary",
+  "position-disabled",
+  "eye-level",
+  "floor-level",
   "bounded",
   "unbounded"
 };
 
-enum XRStationaryReferenceSpaceSubtype {
-  "eye-level",
-  "floor-level",
-  "position-disabled"
-};
-
-dictionary XRReferenceSpaceOptions {
-  required XRReferenceSpaceType type;
-  XRStationaryReferenceSpaceSubtype subtype;
-};
-
-[SecureContext, Exposed=Window] interface XRReferenceSpace : XRSpace {
-  attribute XRRigidTransform originOffset;
-  attribute EventHandler onreset;
-};
-
 [SecureContext, Exposed=Window]
-interface XRStationaryReferenceSpace : XRReferenceSpace {
+interface XRReferenceSpace : XRSpace {
+  XRReferenceSpace getOffsetReferenceSpace(XRRigidTransform originOffset);
+
+  attribute EventHandler onreset;
 };
 
 [SecureContext, Exposed=Window]
 interface XRBoundedReferenceSpace : XRReferenceSpace {
   readonly attribute FrozenArray<DOMPointReadOnly> boundsGeometry;
-};
-
-[SecureContext, Exposed=Window]
-
-interface XRUnboundedReferenceSpace : XRReferenceSpace {
 };
 
 enum XREye {
@@ -159,7 +143,7 @@ interface XRRay {
 
 [SecureContext, Exposed=Window] interface XRPose {
   [SameObject] readonly attribute XRRigidTransform transform;
-  [SameObject] readonly attribute boolean emulatedPosition;
+  readonly attribute boolean emulatedPosition;
 };
 
 [SecureContext, Exposed=Window] interface XRViewerPose : XRPose {
@@ -180,8 +164,8 @@ enum XRTargetRayMode {
 
 [SecureContext, Exposed=Window]
 interface XRInputSource {
-  [SameObject] readonly attribute XRHandedness handedness;
-  [SameObject] readonly attribute XRTargetRayMode targetRayMode;
+  readonly attribute XRHandedness handedness;
+  readonly attribute XRTargetRayMode targetRayMode;
   [SameObject] readonly attribute XRSpace targetRaySpace;
   [SameObject] readonly attribute XRSpace? gripSpace;
   [SameObject] readonly attribute Gamepad? gamepad;
