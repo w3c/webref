@@ -1,12 +1,31 @@
-% Diff between report from "May 02, 2019" and reference report from "May 01, 2019"
+% Diff between report from "May 03, 2019" and reference report from "May 02, 2019"
 % Reffy
-% May 02, 2019
+% May 03, 2019
 
-## Event Timing API
+## https://drafts.csswg.org/css-sizing-4/
 
-- URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Crawled version: [Initial URL](https://wicg.github.io/event-timing/)
-- Repository: [GitHub wicg/event-timing](https://github.com/wicg/event-timing)
-- Inconsistent references for links: *INS* https://w3c.github.io/uievents/
+- URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
+- Crawled version: [Latest published version](undefined)
+- Spec title: *INS* https://drafts.csswg.org/css-sizing-4/ / *DEL* CSS Intrinsic & Extrinsic Sizing Module Level 4
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+
+
+## CSS Rhythmic Sizing
+
+- URL: [https://www.w3.org/TR/css-rhythm-1/](https://www.w3.org/TR/css-rhythm-1/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/css-rhythm-1/)
+- Editor's Draft: [https://drafts.csswg.org/css-rhythm/](https://drafts.csswg.org/css-rhythm/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
