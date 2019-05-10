@@ -32,7 +32,6 @@ enum XREnvironmentBlendMode {
   // Attributes
   readonly attribute XREnvironmentBlendMode environmentBlendMode;
   [SameObject] readonly attribute XRRenderState renderState;
-  [SameObject] readonly attribute XRSpace viewerSpace;
 
   // Methods
   void updateRenderState(optional XRRenderStateInit state);
@@ -85,8 +84,7 @@ callback XRFrameRequestCallback = void (DOMHighResTimeStamp time, XRFrame frame)
 };
 
 enum XRReferenceSpaceType {
-  "identity",
-  "position-disabled",
+  "viewer",
   "eye-level",
   "floor-level",
   "bounded",
@@ -207,7 +205,6 @@ interface XRWebGLLayer : XRLayer {
 
   // Methods
   XRViewport? getViewport(XRView view);
-  void requestViewportScaling(double viewportScaleFactor);
 
   // Static Methods
   static double getNativeFramebufferScaleFactor(XRSession session);
