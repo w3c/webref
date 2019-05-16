@@ -109,6 +109,7 @@ dictionary RTCOutboundRtpStreamStats : RTCSentRtpStreamStats {
              unsigned long framesEncoded;
              unsigned long long qpSum;
              double totalEncodeTime;
+             double totalPacketSendDelay;
              double averageRtcpInterval;
              RTCQualityLimitationReason qualityLimitationReason;
              record<DOMString, double> qualityLimitationDurations;
