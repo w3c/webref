@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% May 16, 2019
+% May 17, 2019
 
 240 specifications were crawled in this report.
 
@@ -147,7 +147,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190424/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190516/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Selection API](https://www.w3.org/TR/2018/WD-selection-api-20181018/)
