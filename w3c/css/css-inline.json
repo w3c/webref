@@ -17,7 +17,7 @@
     },
     "vertical-align": {
       "name": "vertical-align",
-      "value": "<'baseline-shift'> || <'alignment-baseline'>",
+      "value": "<'baseline-source'> || <'baseline-shift'> || <'alignment-baseline'>",
       "initial": "baseline",
       "appliesTo": "inline-level boxes",
       "inherited": "no",
@@ -25,6 +25,17 @@
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar"
+    },
+    "baseline-source": {
+      "name": "baseline-source",
+      "value": "auto | first | last",
+      "initial": "auto",
+      "appliesTo": "inline-level boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
     },
     "alignment-baseline": {
       "name": "alignment-baseline",
