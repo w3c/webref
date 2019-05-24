@@ -149,6 +149,9 @@ dictionary GetAnimationsOptions {
 
 partial interface Document {
     readonly attribute DocumentTimeline timeline;
+};
+
+partial interface mixin DocumentOrShadowRoot {
     sequence<Animation> getAnimations();
 };
 
