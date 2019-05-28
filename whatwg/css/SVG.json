@@ -345,17 +345,6 @@
       "computedValue": "as specified",
       "animationType": "discrete"
     },
-    "color-rendering": {
-      "name": "color-rendering",
-      "value": "auto | optimizeSpeed | optimizeQuality",
-      "initial": "auto",
-      "appliesTo": "container elements, graphics elements, gradient elements, ‘use’ and ‘animate’",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified",
-      "animationType": "discrete"
-    },
     "shape-rendering": {
       "name": "shape-rendering",
       "value": "auto | optimizeSpeed | crispEdges | geometricPrecision",
@@ -407,7 +396,7 @@
       "value": "[ <number>+ ]#"
     },
     "<dasharray>": {
-      "value": "[ <length-percentage> | <number> ]#*"
+      "value": "[ [ <length-percentage> | <number> ]+ ]#"
     },
     "<marker-ref>": {
       "value": "<url>"
