@@ -1,12 +1,12 @@
-% Diff between report from "May 29, 2019" and reference report from "May 28, 2019"
+% Diff between report from "May 30, 2019" and reference report from "May 29, 2019"
 % Reffy
-% May 29, 2019
+% May 30, 2019
 
-## Fullscreen API Standard
+## Remote Playback API
 
-- URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://fullscreen.spec.whatwg.org/)
-- Repository: [GitHub whatwg/fullscreen](https://github.com/whatwg/fullscreen)
-- Missing references for links: *INS* https://www.w3.org/TR/feature-policy-1/
+- URL: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/)
+- Repository: [GitHub w3c/remote-playback](https://github.com/w3c/remote-playback)
+- Missing references for links: *INS* https://dom.spec.whatwg.org/
 
 
