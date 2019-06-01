@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% May 31, 2019
+% June 01, 2019
 
 240 specifications were crawled in this report.
 
@@ -9,13 +9,19 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
+- [Compatibility Standard](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [HTML 5.2](https://www.w3.org/TR/html52/): `Error: Crawl took too long Error: Crawl took too long
     at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
 
-=> 1 specification found
+=> 2 specifications found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -258,8 +264,7 @@ Reffy was expecting to find CSS definitions in the specifications  listed here b
 - `DOMTokenList` used in [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
 - `Document` used in [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - `Element` used in [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
-- `EventHandler` used in [Compatibility Standard](https://compat.spec.whatwg.org/), [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
-- `HTMLBodyElement` used in [Compatibility Standard](https://compat.spec.whatwg.org/)
+- `EventHandler` used in [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - `HTMLIFrameElement` used in [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - `HTMLInputElement` used in [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - `HTMLLinkElement` used in [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
@@ -271,11 +276,10 @@ Reffy was expecting to find CSS definitions in the specifications  listed here b
 - `MediaTrackSupportedConstraints` used in [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - `RTCPriorityType` used in [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
 - `RTCRtpEncodingParameters` used in [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
-- `Window` used in [Compatibility Standard](https://compat.spec.whatwg.org/)
 - `WindowOrWorkerGlobalScope` used in [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - `WorkerGlobalScope` used in [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 
-=> 21 WebIDL names found
+=> 19 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.

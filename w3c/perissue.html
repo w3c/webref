@@ -25,9 +25,10 @@
   <h2>Specifications that could not be rendered</h2>
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
+  <li><a href="undefined">Compatibility Standard</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
   <li><a href="https://www.w3.org/TR/html52/">HTML 5.2</a>: <code>Error: Crawl took too long Error: Crawl took too long at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29) at ontimeout (timers.js:498:11) at tryOnTimeout (timers.js:323:5) at Timer.listOnTimeout (timers.js:290:5)</code></li>
   </ul>
-  <p>=&gt; 1 specification found</p>
+  <p>=&gt; 2 specifications found</p>
   </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
@@ -257,8 +258,7 @@
   <li><code>DOMTokenList</code> used in <a href="https://drafts.csswg.org/css-shadow-parts-1/">CSS Shadow Parts</a></li>
   <li><code>Document</code> used in <a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a>, <a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><code>Element</code> used in <a href="https://drafts.csswg.org/css-shadow-parts-1/">CSS Shadow Parts</a></li>
-  <li><code>EventHandler</code> used in <a href="https://compat.spec.whatwg.org/">Compatibility Standard</a>, <a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
-  <li><code>HTMLBodyElement</code> used in <a href="https://compat.spec.whatwg.org/">Compatibility Standard</a></li>
+  <li><code>EventHandler</code> used in <a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><code>HTMLIFrameElement</code> used in <a href="https://w3c.github.io/webappsec-cspee/">Content Security Policy: Embedded Enforcement</a></li>
   <li><code>HTMLInputElement</code> used in <a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></li>
   <li><code>HTMLLinkElement</code> used in <a href="https://w3c.github.io/webappsec-subresource-integrity/">Subresource Integrity</a></li>
@@ -270,11 +270,10 @@
   <li><code>MediaTrackSupportedConstraints</code> used in <a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><code>RTCPriorityType</code> used in <a href="https://w3c.github.io/webrtc-dscp-exp/">WebRTC DSCP Control API</a></li>
   <li><code>RTCRtpEncodingParameters</code> used in <a href="https://w3c.github.io/webrtc-dscp-exp/">WebRTC DSCP Control API</a></li>
-  <li><code>Window</code> used in <a href="https://compat.spec.whatwg.org/">Compatibility Standard</a></li>
   <li><code>WindowOrWorkerGlobalScope</code> used in <a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   <li><code>WorkerGlobalScope</code> used in <a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   </ul>
-  <p>=&gt; 21 WebIDL names found</p>
+  <p>=&gt; 19 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
