@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% June 01, 2019
+% June 02, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
@@ -33,7 +33,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Sat Jun 01 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Sun Jun 02 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -679,7 +679,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sat Jun 01 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sun Jun 02 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5138,7 +5138,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190516/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190530/)
+- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190602/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
@@ -5298,7 +5298,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190516/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190530/)
+- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190602/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
@@ -5457,7 +5457,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190516/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190530/)
+- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190602/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
@@ -5575,7 +5575,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sat Jun 01 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sun Jun 02 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6203,7 +6203,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sat Jun 01 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sun Jun 02 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6594,7 +6594,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sat Jun 01 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sun Jun 02 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6971,10 +6971,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-selection-api-20190530/) (May 2019 )
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-selection-api-20190602/) (June 2019 )
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-selection-api-20190530/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-selection-api-20190602/)
 - Repository: [GitHub w3c/selection-api](https://github.com/w3c/selection-api)
 - Shortname: selection-api
 
@@ -7750,7 +7750,7 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190516/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190530/)
+- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190602/)
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
@@ -8046,7 +8046,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sat Jun 01 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sun Jun 02 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8096,7 +8096,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sat Jun 01 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sun Jun 02 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
@@ -8249,7 +8249,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190516/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190530/)
+- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190602/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
@@ -8395,7 +8395,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Jun 01 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sun Jun 02 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8416,7 +8416,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Jun 01 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sun Jun 02 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8548,7 +8548,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190516/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190530/)
+- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190602/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Static Range](https://w3c.github.io/staticrange/)
