@@ -2,7 +2,7 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2019-06-05T06:08:21.241Z",
+  "date": "2019-06-06T06:08:13.573Z",
   "options": {},
   "stats": {
     "crawled": 229,
@@ -1023,7 +1023,7 @@
       ],
       "title": "CSS Backgrounds and Borders Module Level 4",
       "crawled": "https://drafts.csswg.org/css-backgrounds-4/",
-      "date": "9 May 2019",
+      "date": "5 June 2019",
       "links": [
         "https://www.w3.org/TR/css3-background/",
         "https://drafts.csswg.org/css-backgrounds-3/",
@@ -1045,6 +1045,7 @@
         "https://github.com/w3c/csswg-drafts/issues/1172",
         "https://drafts.csswg.org/css2/tables.html",
         "https://drafts.csswg.org/css-text-4/",
+        "https://drafts.fxtf.org/motion-1/",
         "https://drafts.csswg.org/css-easing-1/",
         "https://drafts.csswg.org/css-grid-1/",
         "https://lists.w3.org/Archives/Public/www-style/2012Oct/0314.html",
@@ -1057,6 +1058,7 @@
         "https://www.w3.org/TR/css-values-4/",
         "https://www.w3.org/TR/css-backgrounds-3/",
         "https://www.w3.org/TR/css-grid-1/",
+        "https://www.w3.org/TR/motion-1/",
         "https://tools.ietf.org/html/rfc2119",
         "https://www.w3.org/TR/CSS1/"
       ],
@@ -1089,6 +1091,10 @@
           {
             "name": "CSS3GRID",
             "url": "https://www.w3.org/TR/css-grid-1/"
+          },
+          {
+            "name": "MOTION-1",
+            "url": "https://www.w3.org/TR/motion-1/"
           },
           {
             "name": "RFC2119",
@@ -1526,7 +1532,7 @@
           },
           "corner-shape": {
             "name": "corner-shape",
-            "value": "[ round | bevel | scoop | notch ]{1,4}",
+            "value": "[ round | angle ]{1,4}",
             "initial": "round",
             "appliesTo": "all elements, except table element when border-collapse is collapse",
             "inherited": "no",
@@ -1544,15 +1550,7 @@
                   },
                   {
                     "type": "keyword",
-                    "name": "bevel"
-                  },
-                  {
-                    "type": "keyword",
-                    "name": "scoop"
-                  },
-                  {
-                    "type": "keyword",
-                    "name": "notch"
+                    "name": "angle"
                   }
                 ]
               },
@@ -6422,7 +6420,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -6469,7 +6467,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -6670,7 +6668,7 @@
       "repository": "https://github.com/w3c/ServiceWorker",
       "title": "Service Workers Nightly",
       "crawled": "https://w3c.github.io/ServiceWorker/",
-      "date": "3 June 2019",
+      "date": "5 June 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://www.w3.org/TR/",
@@ -6890,7 +6888,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://url.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -8254,7 +8252,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -8671,7 +8669,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -9477,7 +9475,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -9650,7 +9648,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -9895,7 +9893,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -10367,7 +10365,7 @@
       "edDraft": "https://w3c.github.io/manifest/",
       "repository": "https://github.com/w3c/manifest",
       "crawled": "https://w3c.github.io/manifest/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://github.com/w3c/manifest/issues",
         "https://html.spec.whatwg.org/",
@@ -10590,7 +10588,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-output/",
       "repository": "https://github.com/w3c/mediacapture-output",
       "crawled": "https://w3c.github.io/mediacapture-output/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/html5/",
         "https://heycam.github.io/webidl/",
@@ -10654,7 +10652,7 @@
       "edDraft": "https://w3c.github.io/battery/",
       "repository": "https://github.com/w3c/battery",
       "crawled": "https://w3c.github.io/battery/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/2014/CR-battery-status-20141209/",
         "https://lists.w3.org/Archives/Public/public-device-apis/2015Aug/0000.html",
@@ -10744,7 +10742,7 @@
       "edDraft": "https://w3c.github.io/beacon/",
       "repository": "https://github.com/w3c/beacon",
       "crawled": "https://w3c.github.io/beacon/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/page-visibility-2/",
         "https://fetch.spec.whatwg.org/",
@@ -10808,6 +10806,7 @@
       },
       "shortname": "clipboard-apis",
       "versions": [
+        "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/",
         "https://www.w3.org/TR/2019/WD-clipboard-apis-20190530/",
         "https://www.w3.org/TR/2018/WD-clipboard-apis-20181108/",
         "https://www.w3.org/TR/2017/WD-clipboard-apis-20170929/",
@@ -10828,13 +10827,13 @@
       ],
       "title": "Clipboard API and events",
       "latest": "https://www.w3.org/TR/clipboard-apis/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190530/",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/",
       "datedStatus": "Working Draft",
       "informative": false,
       "edDraft": "https://w3c.github.io/clipboard-apis/",
       "repository": "https://github.com/w3c/clipboard-apis",
       "crawled": "https://w3c.github.io/clipboard-apis/",
-      "date": "31 May 2019",
+      "date": "5 June 2019",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/2019/webapps/",
@@ -23164,7 +23163,7 @@
             "prose": "The name of a font family, such as Helvetica or Verdana in the previous example."
           },
           "<generic-family>": {
-            "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as an alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a reliable fallback for when an author’s more specific font choices are not available. Authors are encouraged to append a generic font family as a last alternative for improved robustness. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The following generic family keywords are defined: serif, sans-serif, cursive, fantasy, monospace, system-ui, emoji, math and fangsong. See §2.1.3 Generic font families."
+            "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as an alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a reliable fallback for when an author’s more specific font choices are not available. Authors are encouraged to append a generic font family as a last alternative for improved robustness. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The following generic family keywords are defined: serif, sans-serif, cursive, fantasy, monospace, system-ui, emoji, math and fangsong. See § 2.1.3 Generic font families."
           },
           "<palette-identifier>": {
             "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. Note: Such a CSS-defined palette may be a reference to an existing palette already present in the font, be a modification of an existing palette already present in the font, or be an entirely new palette."
@@ -23681,7 +23680,7 @@
       "edDraft": "https://drafts.csswg.org/css-grid/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "crawled": "https://drafts.csswg.org/css-grid/",
-      "date": "17 April 2019",
+      "date": "5 June 2019",
       "links": [
         "https://www.w3.org/TR/CSS/",
         "https://github.com/w3c/csswg-drafts/issues",
@@ -23754,6 +23753,8 @@
         "https://github.com/w3c/csswg-drafts/issues/3020",
         "https://github.com/w3c/csswg-drafts/issues/3638",
         "https://github.com/w3c/csswg-drafts/issues/3665",
+        "https://github.com/w3c/csswg-drafts/issues/3694",
+        "https://github.com/w3c/csswg-drafts/issues/3693",
         "https://github.com/w3c/csswg-drafts/issues/2201",
         "https://github.com/w3c/csswg-drafts/issues/2655",
         "https://github.com/w3c/csswg-drafts/pull/3198",
@@ -23953,7 +23954,7 @@
             "percentages": "refer to corresponding dimension of the content area",
             "computedValue": "the keyword none or a computed track list",
             "canonicalOrder": "per grammar",
-            "animationType": "if the list lengths match, by computed value type per item in the computed track list (see §7.2.5 Computed Value of a Track Listing and §7.2.3.3 Interpolation/Combination of repeat()); discrete otherwise",
+            "animationType": "if the list lengths match, by computed value type per item in the computed track list (see § 7.2.5 Computed Value of a Track Listing and § 7.2.3.3 Interpolation/Combination of repeat()); discrete otherwise",
             "parsedValue": {
               "oneOf": [
                 {
@@ -23980,7 +23981,7 @@
             "percentages": "refer to corresponding dimension of the content area",
             "computedValue": "the keyword none or a computed track list",
             "canonicalOrder": "per grammar",
-            "animationType": "if the list lengths match, by computed value type per item in the computed track list (see §7.2.5 Computed Value of a Track Listing and §7.2.3.3 Interpolation/Combination of repeat()); discrete otherwise",
+            "animationType": "if the list lengths match, by computed value type per item in the computed track list (see § 7.2.5 Computed Value of a Track Listing and § 7.2.3.3 Interpolation/Combination of repeat()); discrete otherwise",
             "parsedValue": {
               "oneOf": [
                 {
@@ -29900,7 +29901,7 @@
       "edDraft": "https://drafts.csswg.org/css-multicol/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "crawled": "https://drafts.csswg.org/css-multicol/",
-      "date": "23 March 2019",
+      "date": "5 June 2019",
       "links": [
         "https://www.w3.org/TR/CSS/",
         "https://github.com/w3c/csswg-drafts/issues",
@@ -29910,11 +29911,11 @@
         "https://www.w3.org/Consortium/Patent-Policy/",
         "https://www.w3.org/2004/01/pp-impl/32061/status",
         "https://www.w3.org/2019/Process-20190301/",
-        "https://drafts.csswg.org/css-values-4/",
-        "https://drafts.csswg.org/css-values-3/",
         "https://drafts.csswg.org/css-backgrounds-3/",
         "https://drafts.csswg.org/css-position-3/",
         "https://drafts.csswg.org/css-values/",
+        "https://drafts.csswg.org/css-values-4/",
+        "https://drafts.csswg.org/css-values-3/",
         "https://drafts.csswg.org/css-cascade/",
         "https://drafts.csswg.org/css-display-3/",
         "https://drafts.csswg.org/css-tables-3/",
@@ -29927,6 +29928,7 @@
         "https://drafts.csswg.org/css-sizing-3/",
         "https://drafts.csswg.org/css-overflow-3/",
         "https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/",
+        "https://github.com/w3c/csswg-drafts/issues/3988",
         "https://github.com/w3c/csswg-drafts/issues/3224",
         "https://github.com/w3c/csswg-drafts/issues/3654",
         "https://github.com/w3c/csswg-drafts/issues/3649",
@@ -51388,7 +51390,7 @@
       "edDraft": "https://w3c.github.io/DOM-Parsing/",
       "repository": "https://github.com/w3c/DOM-Parsing",
       "crawled": "https://w3c.github.io/DOM-Parsing/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://w3c-test.org/domparsing/",
         "https://dvcs.w3.org/hg/innerhtml/raw-file/tip/implementationReport.html",
@@ -51743,7 +51745,7 @@
       "edDraft": "https://w3c.github.io/FileAPI/",
       "repository": "https://github.com/w3c/FileAPI",
       "crawled": "https://w3c.github.io/FileAPI/",
-      "date": "31 May 2019",
+      "date": "5 June 2019",
       "links": [
         "https://xhr.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -53476,7 +53478,7 @@
       "edDraft": "https://w3c.github.io/gamepad/",
       "repository": "https://github.com/w3c/gamepad",
       "crawled": "https://w3c.github.io/gamepad/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://www.w3.org/TR/hr-time-2/",
@@ -54073,7 +54075,7 @@
       "edDraft": "https://w3c.github.io/hr-time/",
       "repository": "https://github.com/w3c/hr-time",
       "crawled": "https://w3c.github.io/hr-time/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/hr-time-1/",
         "https://html.spec.whatwg.org/",
@@ -54175,7 +54177,7 @@
       "edDraft": "https://w3c.github.io/html-media-capture/",
       "repository": "https://github.com/w3c/html-media-capture",
       "crawled": "https://w3c.github.io/html-media-capture/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/2017/PR-html-media-capture-20171128/",
         "https://www.w3.org/2009/dap/wiki/ImplementationStatus",
@@ -54589,7 +54591,7 @@
       "informative": false,
       "edDraft": "https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html",
       "crawled": "https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://github.com/web-platform-tests/wpt/tree/master/input-events",
         "https://w3c.github.io/test-results/input-events/",
@@ -55053,7 +55055,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-depth/",
       "repository": "https://github.com/w3c/mediacapture-depth",
       "crawled": "https://w3c.github.io/mediacapture-depth/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://w3c.github.io/mediacapture-main/",
         "https://www.w3.org/TR/mediacapture-streams/",
@@ -55387,7 +55389,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-fromelement/",
       "repository": "https://github.com/w3c/mediacapture-fromelement",
       "crawled": "https://w3c.github.io/mediacapture-fromelement/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/html5/",
         "https://w3c.github.io/mediacapture-main/",
@@ -55475,7 +55477,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-main/",
       "repository": "https://github.com/w3c/mediacapture-main",
       "crawled": "https://w3c.github.io/mediacapture-main/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/html52/",
         "https://www.w3.org/TR/WebIDL-1/",
@@ -57293,7 +57295,7 @@
       "edDraft": "https://w3c.github.io/mst-content-hint/",
       "repository": "https://github.com/w3c/mst-content-hint",
       "crawled": "https://w3c.github.io/mst-content-hint/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://heycam.github.io/webidl/",
         "https://www.w3.org/TR/mediacapture-streams/",
@@ -57457,7 +57459,7 @@
       "edDraft": "https://w3c.github.io/navigation-timing/",
       "repository": "https://github.com/w3c/navigation-timing",
       "crawled": "https://w3c.github.io/navigation-timing/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/resource-hints/",
         "https://w3c.github.io/navigation-timing/",
@@ -57587,7 +57589,7 @@
       "edDraft": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
       "repository": "https://github.com/w3c/deviceorientation",
       "crawled": "https://w3c.github.io/deviceorientation/spec-source-orientation.html",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://w3c.github.io/deviceorientation/"
       ],
@@ -57750,7 +57752,7 @@
       "edDraft": "https://w3c.github.io/page-visibility/",
       "repository": "https://github.com/w3c/page-visibility",
       "crawled": "https://w3c.github.io/page-visibility/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -58069,7 +58071,7 @@
       "edDraft": "https://w3c.github.io/payment-handler/",
       "repository": "https://github.com/w3c/payment-handler",
       "crawled": "https://w3c.github.io/payment-handler/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://github.com/w3c/payment-handler/issues",
         "https://www.w3.org/TR/service-workers-1/",
@@ -58215,7 +58217,7 @@
       "edDraft": "https://w3c.github.io/payment-method-basic-card/",
       "repository": "https://github.com/w3c/payment-method-basic-card",
       "crawled": "https://w3c.github.io/payment-method-basic-card/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/payment-method-id/",
         "https://en.wikipedia.org/wiki/Payment_card_number",
@@ -58359,7 +58361,7 @@
       "edDraft": "https://w3c.github.io/payment-request/",
       "repository": "https://github.com/w3c/payment-request",
       "crawled": "https://w3c.github.io/payment-request/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://github.com/w3c/payment-request/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20-label%3A%22Priority%3A%20Postponed%22%20",
         "https://w3c.github.io/test-results/payment-request/all.html",
@@ -58575,7 +58577,7 @@
       "edDraft": "https://w3c.github.io/performance-timeline/",
       "repository": "https://github.com/w3c/performance-timeline",
       "crawled": "https://w3c.github.io/performance-timeline/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/hr-time-2/",
         "https://heycam.github.io/webidl/",
@@ -58868,7 +58870,7 @@
       "edDraft": "https://w3c.github.io/pointerevents/",
       "repository": "https://github.com/w3c/pointerevents",
       "crawled": "https://w3c.github.io/pointerevents/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/WCAG20/",
         "https://www.w3.org/community/touchevents/",
@@ -58996,7 +58998,7 @@
       "edDraft": "https://w3c.github.io/pointerlock/",
       "repository": "https://github.com/w3c/pointerlock",
       "crawled": "https://w3c.github.io/pointerlock/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://github.com/w3c/pointerlock/commits/gh-pages/",
         "https://www.w3.org/TR/2016/WD-pointerlock-2-20161122/",
@@ -59004,11 +59006,11 @@
         "https://github.com/w3c/pointerlock/issues/13",
         "https://www.w3.org/Bugs/Public/show_bug.cgi?id=14600",
         "https://html.spec.whatwg.org/",
-        "https://dom.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
         "https://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html",
         "https://tronche.com/gui/x/xlib/window/attributes/",
         "https://en.wikipedia.org/wiki/Xlib",
+        "https://dom.spec.whatwg.org/",
         "https://fullscreen.spec.whatwg.org/",
         "https://tools.ietf.org/html/rfc2119",
         "https://www.w3.org/TR/uievents/",
@@ -59018,7 +59020,7 @@
       "refs": {
         "normative": [
           {
-            "name": "DOM4",
+            "name": "DOM",
             "url": "https://dom.spec.whatwg.org/"
           },
           {
@@ -59026,7 +59028,7 @@
             "url": "https://fullscreen.spec.whatwg.org/"
           },
           {
-            "name": "HTML",
+            "name": "html",
             "url": "https://html.spec.whatwg.org/multipage/"
           },
           {
@@ -59034,7 +59036,7 @@
             "url": "https://tools.ietf.org/html/rfc2119"
           },
           {
-            "name": "UIEVENTS",
+            "name": "ui-events",
             "url": "https://www.w3.org/TR/uievents/"
           },
           {
@@ -59111,7 +59113,7 @@
       "edDraft": "https://w3c.github.io/preload/",
       "repository": "https://github.com/w3c/preload",
       "crawled": "https://w3c.github.io/preload/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://www.w3.org/TR/html52/",
@@ -59233,7 +59235,7 @@
       "edDraft": "https://w3c.github.io/presentation-api/",
       "repository": "https://github.com/w3c/presentation-api",
       "crawled": "https://w3c.github.io/presentation-api/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/2016/CR-presentation-api-20160714/",
         "https://w3c-test.org/presentation-api/",
@@ -59528,7 +59530,7 @@
       "edDraft": "https://w3c.github.io/push-api/",
       "repository": "https://github.com/w3c/push-api",
       "crawled": "https://w3c.github.io/push-api/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://tc39.github.io/ecma262/",
@@ -59868,7 +59870,7 @@
       "edDraft": "https://w3c.github.io/remote-playback/",
       "repository": "https://github.com/w3c/remote-playback",
       "crawled": "https://w3c.github.io/remote-playback/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://github.com/w3c/remote-playback/issues/",
         "https://github.com/w3c/remote-playback/issues/41",
@@ -59955,7 +59957,7 @@
       "edDraft": "https://w3c.github.io/requestidlecallback/",
       "repository": "https://github.com/w3c/requestidlecallback",
       "crawled": "https://w3c.github.io/requestidlecallback/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://w3c-test.org/requestidlecallback/",
         "https://wpt.fyi/requestidlecallback",
@@ -60047,7 +60049,7 @@
       "edDraft": "https://w3c.github.io/resource-timing/",
       "repository": "https://github.com/w3c/resource-timing",
       "crawled": "https://w3c.github.io/resource-timing/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://dom.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -60205,7 +60207,7 @@
       "edDraft": "https://w3c.github.io/mediacapture-screen-share/",
       "repository": "https://github.com/w3c/mediacapture-screen-share",
       "crawled": "https://w3c.github.io/mediacapture-screen-share/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://w3c.github.io/mediacapture-main/",
         "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/",
@@ -60371,7 +60373,7 @@
       "edDraft": "https://w3c.github.io/screen-orientation/",
       "repository": "https://github.com/w3c/screen-orientation",
       "crawled": "https://w3c.github.io/screen-orientation/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/cssom-view-1/",
         "https://heycam.github.io/webidl/",
@@ -60715,6 +60717,7 @@
       },
       "shortname": "selection-api",
       "versions": [
+        "https://www.w3.org/TR/2019/WD-selection-api-20190605/",
         "https://www.w3.org/TR/2019/WD-selection-api-20190604/",
         "https://www.w3.org/TR/2019/WD-selection-api-20190602/",
         "https://www.w3.org/TR/2019/WD-selection-api-20190530/",
@@ -60742,13 +60745,13 @@
       ],
       "title": "Selection API",
       "latest": "https://www.w3.org/TR/selection-api/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-selection-api-20190604/",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-selection-api-20190605/",
       "datedStatus": "Working Draft",
       "informative": false,
       "edDraft": "https://w3c.github.io/selection-api/",
       "repository": "https://github.com/w3c/selection-api",
       "crawled": "https://w3c.github.io/selection-api/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/html5/",
         "https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/",
@@ -60769,7 +60772,7 @@
       "refs": {
         "normative": [
           {
-            "name": "dom",
+            "name": "DOM",
             "url": "https://dom.spec.whatwg.org/"
           },
           {
@@ -61888,7 +61891,7 @@
       "edDraft": "https://w3c.github.io/server-timing/",
       "repository": "https://github.com/w3c/server-timing",
       "crawled": "https://w3c.github.io/server-timing/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://heycam.github.io/webidl/",
         "https://www.w3.org/TR/resource-timing-2/",
@@ -64786,7 +64789,7 @@
       "edDraft": "https://w3c.github.io/touch-events/",
       "repository": "https://github.com/w3c/touch-events",
       "crawled": "https://w3c.github.io/touch-events/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://w3c-test.org/webevents/tests/touch-events-v1/approved/",
         "https://www.w3.org/2010/webevents/wiki/TEv1ImplReport",
@@ -65297,7 +65300,7 @@
       "edDraft": "https://w3c.github.io/user-timing/",
       "repository": "https://github.com/w3c/user-timing",
       "crawled": "https://w3c.github.io/user-timing/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/hr-time-2/",
         "https://heycam.github.io/webidl/",
@@ -65395,7 +65398,7 @@
       "edDraft": "https://w3c.github.io/vibration/",
       "repository": "https://github.com/w3c/vibration",
       "crawled": "https://w3c.github.io/vibration/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/html5/",
         "https://heycam.github.io/webidl/",
@@ -65463,7 +65466,7 @@
       "edDraft": "https://rawgit.com/w3c/aria/master/",
       "repository": "https://github.com/w3c/aria",
       "crawled": "https://rawgit.com/w3c/aria/master/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/WAI/intro/aria.php",
         "https://github.com/w3c/aria/issues/new",
@@ -65718,7 +65721,7 @@
       "edDraft": "https://w3c.github.io/wake-lock/",
       "repository": "https://github.com/w3c/wake-lock",
       "crawled": "https://w3c.github.io/wake-lock/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://github.com/w3c/wake-lock/issues",
         "https://w3c-webmob.github.io/wake-lock-use-cases/",
@@ -67167,7 +67170,7 @@
       "edDraft": "https://w3c.github.io/webdriver/",
       "repository": "https://github.com/w3c/webdriver",
       "crawled": "https://w3c.github.io/webdriver/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://github.com/w3c/webdriver",
         "https://www.seleniumhq.org/",
@@ -67686,7 +67689,7 @@
       "edDraft": "http://webaudio.github.io/web-midi-api/",
       "repository": "https://github.com/webaudio/web-midi-api",
       "crawled": "http://webaudio.github.io/web-midi-api/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://dom.spec.whatwg.org/",
@@ -67910,7 +67913,7 @@
       "edDraft": "https://w3c.github.io/webrtc-stats/",
       "repository": "https://github.com/w3c/webrtc-stats",
       "crawled": "https://w3c.github.io/webrtc-stats/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://www.w3.org/TR/2014/REC-html5-20141028/",
         "https://www.w3.org/TR/webrtc/",
@@ -68176,7 +68179,7 @@
       "edDraft": "https://w3c.github.io/webrtc-pc/",
       "repository": "https://github.com/w3c/webrtc-pc",
       "crawled": "https://w3c.github.io/webrtc-pc/",
-      "date": "Wed Jun 05 2019",
+      "date": "Thu Jun 06 2019",
       "links": [
         "https://github.com/w3c/webrtc-pc/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20-label%3AEditorial%20",
         "https://github.com/web-platform-tests/wpt/tree/master/webrtc",
@@ -68914,7 +68917,7 @@
       "edDraft": "https://immersive-web.github.io/webxr/",
       "repository": "https://github.com/immersive-web/webxr",
       "crawled": "https://immersive-web.github.io/webxr/",
-      "date": "28 May 2019",
+      "date": "5 June 2019",
       "links": [
         "https://www.w3.org/TR/",
         "https://www.w3.org/immersive-web/",
@@ -68936,6 +68939,7 @@
         "https://www.w3.org/TR/hr-time/",
         "https://www.w3.org/TR/WebIDL-1/",
         "https://drafts.fxtf.org/geometry-1/",
+        "https://tc39.github.io/ecma262/",
         "https://w3c.github.io/gamepad/",
         "https://github.com/immersive-web/webxr/issues/550",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
@@ -68956,6 +68960,10 @@
           {
             "name": "DOM",
             "url": "https://dom.spec.whatwg.org/"
+          },
+          {
+            "name": "ECMASCRIPT",
+            "url": "https://tc39.github.io/ecma262/"
           },
           {
             "name": "FEATURE-POLICY-1",
