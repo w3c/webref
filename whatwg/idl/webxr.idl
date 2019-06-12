@@ -57,7 +57,7 @@ dictionary XRRenderStateInit {
   double depthNear;
   double depthFar;
   double inlineVerticalFieldOfView;
-  XRLayer? baseLayer;
+  XRWebGLLayer? baseLayer;
   XRPresentationContext? outputContext;
 };
 
@@ -65,7 +65,7 @@ dictionary XRRenderStateInit {
   readonly attribute double depthNear;
   readonly attribute double depthFar;
   readonly attribute double? inlineVerticalFieldOfView;
-  readonly attribute XRLayer? baseLayer;
+  readonly attribute XRWebGLLayer? baseLayer;
   readonly attribute XRPresentationContext? outputContext;
 };
 
@@ -182,8 +182,6 @@ enum GamepadMappingType {
   "xr-standard",
 };
 
-[SecureContext, Exposed=Window] interface XRLayer {};
-
 typedef (WebGLRenderingContext or
          WebGL2RenderingContext) XRWebGLRenderingContext;
 
@@ -199,7 +197,7 @@ dictionary XRWebGLLayerInit {
 [SecureContext, Exposed=Window, Constructor(XRSession session,
              XRWebGLRenderingContext context,
              optional XRWebGLLayerInit layerInit)]
-interface XRWebGLLayer : XRLayer {
+interface XRWebGLLayer {
   // Attributes
   [SameObject] readonly attribute XRWebGLRenderingContext context;
 
