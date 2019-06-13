@@ -2,13 +2,13 @@
   "type": "crawl",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-06-12T06:05:03.653Z",
+  "date": "2019-06-13T06:05:22.777Z",
   "options": {
     "publishedVersion": true
   },
   "stats": {
     "crawled": 240,
-    "errors": 1
+    "errors": 2
   },
   "results": [
     {
@@ -4549,98 +4549,7 @@
       "versions": [
         "https://drafts.csswg.org/css-transitions-2/"
       ],
-      "title": "CSS Transitions Level 2",
-      "crawled": "https://drafts.csswg.org/css-transitions-2/",
-      "date": "18 April 2019",
-      "links": [
-        "https://www.w3.org/TR/CSS/",
-        "https://github.com/w3c/csswg-drafts/issues",
-        "https://lists.w3.org/Archives/Public/public-css-archive/",
-        "https://lists.w3.org/Archives/Public/www-style/",
-        "https://www.w3.org/Style/CSS/members",
-        "https://www.w3.org/Consortium/Patent-Policy/",
-        "https://www.w3.org/2004/01/pp-impl/32061/status",
-        "https://www.w3.org/2019/Process-20190301/",
-        "https://drafts.csswg.org/css-transitions-1/",
-        "https://drafts.csswg.org/css-backgrounds-3/",
-        "https://w3c.github.io/web-animations/",
-        "https://dom.spec.whatwg.org/",
-        "https://www.w3.org/TR/web-animations-1/",
-        "https://heycam.github.io/webidl/",
-        "https://drafts.csswg.org/cssom-1/",
-        "https://drafts.csswg.org/web-animations-1/",
-        "https://github.com/w3c/web-animations/issues/62",
-        "https://lists.w3.org/Archives/Public/www-style/2011Mar/0729.html",
-        "https://drafts.csswg.org/css-cascade-4/",
-        "https://drafts.csswg.org/css-color-4/",
-        "https://drafts.csswg.org/css-animations-1/",
-        "https://lists.w3.org/Archives/Public/www-style/2013Jun/0376.html",
-        "https://lists.w3.org/Archives/Public/public-fx/2015JulSep/thread.html",
-        "https://www.w3.org/TR/CSS2/",
-        "https://www.w3.org/Style/CSS/Test/",
-        "https://lists.w3.org/Archives/Public/public-css-testsuite",
-        "https://www.w3.org/TR/css-backgrounds-3/",
-        "https://www.w3.org/TR/css-cascade-4/",
-        "https://www.w3.org/TR/css-transitions-1/",
-        "https://www.w3.org/TR/cssom-1/",
-        "https://tools.ietf.org/html/rfc2119",
-        "https://www.w3.org/TR/css-animations-1/",
-        "https://www.w3.org/TR/css-color-4/"
-      ],
-      "refs": {
-        "normative": [
-          {
-            "name": "CSS-BACKGROUNDS-3",
-            "url": "https://www.w3.org/TR/css-backgrounds-3/"
-          },
-          {
-            "name": "CSS-CASCADE-4",
-            "url": "https://www.w3.org/TR/css-cascade-4/"
-          },
-          {
-            "name": "CSS3-TRANSITIONS",
-            "url": "https://www.w3.org/TR/css-transitions-1/"
-          },
-          {
-            "name": "CSSOM-1",
-            "url": "https://www.w3.org/TR/cssom-1/"
-          },
-          {
-            "name": "DOM",
-            "url": "https://dom.spec.whatwg.org/"
-          },
-          {
-            "name": "RFC2119",
-            "url": "https://tools.ietf.org/html/rfc2119"
-          },
-          {
-            "name": "WEB-ANIMATIONS",
-            "url": "https://www.w3.org/TR/web-animations-1/"
-          },
-          {
-            "name": "WebIDL",
-            "url": "https://heycam.github.io/webidl/"
-          }
-        ],
-        "informative": [
-          {
-            "name": "CSS-ANIMATIONS-1",
-            "url": "https://www.w3.org/TR/css-animations-1/"
-          },
-          {
-            "name": "CSS-COLOR-4",
-            "url": "https://www.w3.org/TR/css-color-4/"
-          }
-        ]
-      },
-      "idl": {
-        "idl": "[Exposed=Window]\ninterface CSSTransition : Animation {\n  readonly attribute CSSOMString transitionProperty;\n};\n\n[Constructor (Animatable? target,\n              CSSOMString transitionProperty,\n              any transitionValue,\n              optional (unrestricted double or KeyframeEffectOptions) options),\n Constructor (Animatable? target,\n              CSSOMString transitionProperty,\n              any transitionValue,\n              (unrestricted double or KeyframeEffectOptions) options,\n              AnimationTimeline? timeline)]\npartial interface CSSTransition { };\n\n"
-      },
-      "css": {
-        "properties": {},
-        "descriptors": {},
-        "valuespaces": {}
-      }
+      "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:345:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)"
     },
     {
       "url": "https://drafts.csswg.org/css-tv/",
@@ -6150,7 +6059,7 @@
       ],
       "title": "ContentEditable",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
-      "date": "Wed Jun 12 2019",
+      "date": "Thu Jun 13 2019",
       "links": [
         "https://extensiblewebmanifesto.org/",
         "https://www.w3.org/TR/css-cascade-3/",
@@ -6197,7 +6106,7 @@
       ],
       "title": "PointerEvents - Level 2 - Extensions",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
-      "date": "Wed Jun 12 2019",
+      "date": "Thu Jun 13 2019",
       "links": [
         "https://w3c.github.io/pointerevents/",
         "https://developer.android.com/reference/android/view/MotionEvent.html",
@@ -6524,7 +6433,7 @@
       "repository": "https://github.com/w3c/web-nfc",
       "title": "Web NFC API",
       "crawled": "https://w3c.github.io/web-nfc/",
-      "date": "Wed Jun 12 2019",
+      "date": "Thu Jun 13 2019",
       "links": [
         "https://url.spec.whatwg.org/",
         "https://html.spec.whatwg.org/",
@@ -6630,7 +6539,7 @@
       "repository": "https://github.com/w3c/webappsec-feature-policy",
       "title": "Feature Policy",
       "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-      "date": "29 May 2019",
+      "date": "12 June 2019",
       "links": [
         "https://github.com/w3c/webappsec",
         "https://lists.w3.org/Archives/Public/public-webappsec/",
@@ -7888,7 +7797,7 @@
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "title": "Input Device Capabilities",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-      "date": "Wed Jun 12 2019",
+      "date": "Thu Jun 13 2019",
       "links": [
         "https://www.w3.org/2008/webapps/",
         "https://www.w3.org/2012/pointerevents/",
@@ -8305,7 +8214,7 @@
       "repository": "https://github.com/wicg/netinfo",
       "title": "Network Information API",
       "crawled": "https://wicg.github.io/netinfo/",
-      "date": "Wed Jun 12 2019",
+      "date": "Thu Jun 13 2019",
       "links": [
         "https://wicg.github.io/netinfo/",
         "https://w3c.github.io/ServiceWorker/v1/",
@@ -9111,7 +9020,7 @@
       "repository": "https://github.com/wicg/web-share",
       "title": "Web Share API - Level 1",
       "crawled": "https://wicg.github.io/web-share/",
-      "date": "Wed Jun 12 2019",
+      "date": "Thu Jun 13 2019",
       "links": [
         "https://html.spec.whatwg.org/",
         "https://heycam.github.io/webidl/",
@@ -9284,7 +9193,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "Wed Jun 12 2019",
+      "date": "Thu Jun 13 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/1.0/webgl.idl",
@@ -9529,7 +9438,7 @@
       "repository": "https://github.com/KhronosGroup/WebGL",
       "title": "WebGL 2.0 Specification",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "Wed Jun 12 2019",
+      "date": "Thu Jun 13 2019",
       "links": [
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/webgl2.idl",
@@ -56187,7 +56096,7 @@
       "edDraft": "https://svgwg.org/svg2-draft/",
       "repository": "https://github.com/w3c/svgwg",
       "crawled": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
-      "date": "Wed Jun 12 2019",
+      "date": "Thu Jun 13 2019",
       "links": [
         "https://www.w3.org/",
         "https://www.w3.org/Consortium/site",
