@@ -28,9 +28,16 @@ enum XREnvironmentBlendMode {
   "alpha-blend",
 };
 
+enum XRVisibilityState {
+  "visible",
+  "visible-blurred",
+  "hidden",
+};
+
 [SecureContext, Exposed=Window] interface XRSession : EventTarget {
   // Attributes
   readonly attribute XREnvironmentBlendMode environmentBlendMode;
+  readonly attribute XRVisibilityState visibilityState;
   [SameObject] readonly attribute XRRenderState renderState;
   [SameObject] readonly attribute XRInputSourceArray inputSources;
 
@@ -44,13 +51,12 @@ enum XREnvironmentBlendMode {
   Promise<void> end();
 
   // Events
-  attribute EventHandler onblur;
-  attribute EventHandler onfocus;
   attribute EventHandler onend;
   attribute EventHandler onselect;
   attribute EventHandler oninputsourceschange;
   attribute EventHandler onselectstart;
   attribute EventHandler onselectend;
+  attribute EventHandler onvisibilitychange;
 };
 
 dictionary XRRenderStateInit {
@@ -58,7 +64,6 @@ dictionary XRRenderStateInit {
   double depthFar;
   double inlineVerticalFieldOfView;
   XRWebGLLayer? baseLayer;
-  XRPresentationContext? outputContext;
 };
 
 [SecureContext, Exposed=Window] interface XRRenderState {
@@ -66,7 +71,6 @@ dictionary XRRenderStateInit {
   readonly attribute double depthFar;
   readonly attribute double? inlineVerticalFieldOfView;
   readonly attribute XRWebGLLayer? baseLayer;
-  readonly attribute XRPresentationContext? outputContext;
 };
 
 callback XRFrameRequestCallback = void (DOMHighResTimeStamp time, XRFrame frame);
@@ -221,10 +225,6 @@ partial dictionary WebGLContextAttributes {
 
 partial interface mixin WebGLRenderingContextBase {
     Promise<void> makeXRCompatible();
-};
-
-[SecureContext, Exposed=Window] interface XRPresentationContext {
-  [SameObject] readonly attribute HTMLCanvasElement canvas;
 };
 
 [SecureContext, Exposed=Window, Constructor(DOMString type, XRSessionEventInit eventInitDict)]
