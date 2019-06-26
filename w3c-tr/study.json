@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-06-26T17:01:18.078Z",
+  "date": "2019-06-26T18:17:49.525Z",
   "stats": {
     "crawled": 240,
     "errors": 1,
@@ -22,12 +22,23 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "ConstrainBoolean",
+          "ConstrainDOMString",
+          "ConstrainDouble",
+          "ImageBitmap",
+          "MediaStreamTrack",
+          "MediaTrackCapabilities",
+          "MediaTrackConstraintSet",
+          "MediaTrackSettings",
+          "MediaTrackSupportedConstraints"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -350,14 +361,56 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMRectReadOnly",
+          "ImageBitmapSource",
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Point2D",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/image-capture/",
+                "title": "\"MediaStream Image Capture\"",
+                "crawled": "https://www.w3.org/TR/2017/WD-image-capture-20170621/",
+                "date": "21 June 2017"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/mediacapture-image/"
         ],
@@ -398,12 +451,63 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window",
+          {
+            "name": "Sensor",
+            "escapedName": "Sensor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SensorOptions",
+            "escapedName": "SensorOptions",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Accelerometer",
+            "escapedName": "Accelerometer",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Accelerometer",
+            "escapedName": "Accelerometer",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "AccelerometerReadingValues",
+            "escapedName": "AccelerometerReadingValues",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "AccelerometerReadingValues",
+            "escapedName": "AccelerometerReadingValues",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -472,9 +576,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -576,12 +681,23 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window",
+          {
+            "name": "Sensor",
+            "escapedName": "Sensor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -621,12 +737,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "HTMLMediaElement"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -654,14 +773,112 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CacheQueryOptions",
+          "EventHandler",
+          "ServiceWorker",
+          "ServiceWorkerGlobalScope",
+          "ServiceWorkerRegistration",
+          {
+            "name": "BackgroundFetchUIOptions",
+            "escapedName": "BackgroundFetchUIOptions",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "name": "BackgroundFetchEvent",
+            "escapedName": "BackgroundFetchEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "ExtendableEvent",
+            "escapedName": "ExtendableEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "ExtendableEventInit",
+            "escapedName": "ExtendableEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ImageResource",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/appmanifest/",
+                "title": "Web App Manifest",
+                "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
+                "date": "May 2019 "
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://storage.spec.whatwg.org/",
           "https://w3c.github.io/webdriver/webdriver-spec.html"
@@ -703,12 +920,24 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -741,12 +970,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -791,12 +1023,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "Element",
+          "Node"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1399,12 +1636,49 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DataTransfer",
+          "Navigator",
+          "Window",
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PermissionDescriptor",
+            "escapedName": "PermissionDescriptor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -1650,12 +1924,35 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worklet",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1688,12 +1985,43 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -1865,12 +2193,79 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "ServiceWorker",
+          "ServiceWorkerGlobalScope",
+          "Window",
+          {
+            "name": "CookieStoreSetOptions",
+            "escapedName": "CookieStoreSetOptions",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "ServiceWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "ExtendableEvent",
+            "escapedName": "ExtendableEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "ExtendableEventInit",
+            "escapedName": "ExtendableEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1904,12 +2299,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1973,12 +2372,50 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AbortSignal",
+          "HTMLFormElement",
+          "Navigator",
+          "Window",
+          {
+            "name": "Credential",
+            "escapedName": "Credential",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "CredentialData",
+            "escapedName": "CredentialData",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Credential",
+            "escapedName": "Credential",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "CredentialData",
+            "escapedName": "CredentialData",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -2023,12 +2460,32 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSS",
+          "Window",
+          {
+            "name": "WorkletGlobalScope",
+            "escapedName": "WorkletGlobalScope",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Animation",
+            "escapedName": "Animation",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -2058,12 +2515,53 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "CSSRule",
+          "CSSRuleList",
+          "CSSStyleDeclaration",
+          "EventHandler",
+          "GlobalEventHandlers",
+          "Window",
+          {
+            "name": "CSSRule",
+            "escapedName": "CSSRule",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "CSSRule",
+            "escapedName": "CSSRule",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -2176,11 +2674,31 @@
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
-        "hasUnexpectedIdl": false,
+        "hasUnexpectedIdl": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Window",
+          {
+            "name": "Animation",
+            "escapedName": "Animation",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "KeyframeEffectReadOnly",
+            "escapedName": "KeyframeEffectReadOnly",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -3907,12 +4425,24 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "CSSRule",
+          {
+            "name": "CSSRule",
+            "escapedName": "CSSRule",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -4087,12 +4617,24 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSRule",
+          "CSSStyleDeclaration",
+          {
+            "name": "CSSRule",
+            "escapedName": "CSSRule",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -4914,12 +5456,35 @@
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
-        "hasUnexpectedIdl": false,
+        "hasUnexpectedIdl": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "CSSStyleDeclaration",
+          {
+            "name": "CSSRule",
+            "escapedName": "CSSRule",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "CSSFontFaceRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-4/",
+                "title": "CSS Fonts Module Level 4",
+                "crawled": "https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/",
+                "date": "20 September 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/2002/WD-css3-fonts-20020802/",
@@ -5094,13 +5659,56 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMRGBColor",
+          "CSSOMString",
+          "CSSRule",
+          "CSSStyleDeclaration",
+          "Window",
+          {
+            "name": "CSSRule",
+            "escapedName": "CSSRule",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "CSSRule",
+            "escapedName": "CSSRule",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "CSSRule",
+            "escapedName": "CSSRule",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "CSSFontFaceRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-3/",
+                "title": "CSS Fonts Module Level 3",
+                "crawled": "https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/",
+                "date": "20 September 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css3-background/",
@@ -8043,13 +8651,35 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "CSS",
+          "PaintWorklet"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "[object Object]",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://www.w3.org/TR/2018/CR-webaudio-20180918/",
+                "date": "18 September 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "http://www.w3.org/TR/2016/WD-worklets-1-20160607/",
+                "date": "07 June 2016"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -8338,12 +8968,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSS"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -8391,12 +9024,25 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Element",
+          "Window",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -10283,12 +10929,34 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "EventHandler",
+          "GlobalEventHandlers",
+          "Window",
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -10399,11 +11067,23 @@
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
-        "hasUnexpectedIdl": false,
+        "hasUnexpectedIdl": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Window",
+          {
+            "name": "Animation",
+            "escapedName": "Animation",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -12021,13 +12701,61 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window",
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "PermissionState",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/permissions/",
+                "title": "Permissions",
+                "crawled": "https://www.w3.org/TR/2017/WD-permissions-20170925/",
+                "date": "25 September 2017"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://compat.spec.whatwg.org/"
@@ -12069,12 +12797,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "DocumentFragment",
+          "Element",
+          "Node",
+          "Range",
+          "SupportedType"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -12122,12 +12858,40 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -12244,12 +13008,57 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "HTMLMediaElement",
+          "Navigator",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -12299,12 +13108,25 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "Performance",
+          "Window",
+          {
+            "name": "PerformanceEntry",
+            "escapedName": "PerformanceEntry",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -12370,12 +13192,24 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "HTMLIFrameElement",
+          {
+            "name": "ReportBody",
+            "escapedName": "ReportBody",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -12439,12 +13273,57 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AbortSignal",
+          "ReadableStream",
+          "URLSearchParams",
+          "WindowOrWorkerGlobalScope",
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -12671,12 +13550,32 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DataTransferItem",
+          "HTMLInputElement",
+          {
+            "name": "FileSystemEntry",
+            "escapedName": "FileSystemEntry",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "FileSystemEntry",
+            "escapedName": "FileSystemEntry",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -12710,12 +13609,106 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "ReadableStream",
+          "URL",
+          {
+            "name": "Blob",
+            "escapedName": "Blob",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "BlobPropertyBag",
+            "escapedName": "BlobPropertyBag",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": "",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -12849,12 +13842,238 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "SVGAnimatedBoolean",
+          "SVGAnimatedEnumeration",
+          "SVGAnimatedInteger",
+          "SVGAnimatedLength",
+          "SVGAnimatedNumber",
+          "SVGAnimatedNumberList",
+          "SVGAnimatedPreserveAspectRatio",
+          "SVGAnimatedString",
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGComponentTransferFunctionElement",
+            "escapedName": "SVGComponentTransferFunctionElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGComponentTransferFunctionElement",
+            "escapedName": "SVGComponentTransferFunctionElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGComponentTransferFunctionElement",
+            "escapedName": "SVGComponentTransferFunctionElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGComponentTransferFunctionElement",
+            "escapedName": "SVGComponentTransferFunctionElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SVGElement",
+            "escapedName": "SVGElement",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -12961,12 +14180,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "Element",
+          "StylePropertyMapReadOnly"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -12987,12 +14211,18 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "DocumentOrShadowRoot",
+          "Element",
+          "EventHandler"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -13071,13 +14301,46 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "Navigator",
+          "Window",
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": "",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": "",
+              "name": " "
+            }
+          }
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "GamepadMappingType",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webxr/",
+                "title": "WebXR Device API",
+                "crawled": "https://www.w3.org/TR/2019/WD-webxr-20190521/",
+                "date": "21 May 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -13109,12 +14372,41 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "EventHandler",
+          "Window",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -13213,12 +14505,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -13271,12 +14566,53 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AbortSignal",
+          "DOMHighResTimeStamp",
+          {
+            "name": "Sensor",
+            "escapedName": "Sensor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": " ",
+            "separator": null
+          },
+          {
+            "name": "SensorOptions",
+            "escapedName": "SensorOptions",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "GeolocationSensorOptions",
+            "escapedName": "GeolocationSensorOptions",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -13403,12 +14739,31 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window",
+          {
+            "name": "Sensor",
+            "escapedName": "Sensor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SensorOptions",
+            "escapedName": "SensorOptions",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -13596,7 +14951,7 @@
       "edDraft": "https://w3c.github.io/html/",
       "crawled": "https://www.w3.org/TR/html52/",
       "report": {
-        "error": "Error: Crawl took too long Error: Crawl took too long\n    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:351:29)\n    at ontimeout (timers.js:498:11)\n    at tryOnTimeout (timers.js:323:5)\n    at Timer.listOnTimeout (timers.js:290:5)",
+        "error": "Error: Crawl took too long Error: Crawl took too long\n    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:352:29)\n    at ontimeout (timers.js:498:11)\n    at tryOnTimeout (timers.js:323:5)\n    at Timer.listOnTimeout (timers.js:290:5)",
         "noNormativeRefs": true,
         "noRefToWebIDL": true,
         "noIdlContent": true,
@@ -15345,12 +16700,80 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": true,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Transferable",
+          "WindowProxy",
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -16074,12 +17497,216 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "RTCRTPStreamStats",
+          {
+            "name": "RTCRtpStreamStats",
+            "escapedName": "RTCRtpStreamStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCReceivedRtpStreamStats",
+            "escapedName": "RTCReceivedRtpStreamStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCStats",
+            "escapedName": "RTCStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCReceivedRtpStreamStats",
+            "escapedName": "RTCReceivedRtpStreamStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCRtpStreamStats",
+            "escapedName": "RTCRtpStreamStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCSentRtpStreamStats",
+            "escapedName": "RTCSentRtpStreamStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCSentRtpStreamStats",
+            "escapedName": "RTCSentRtpStreamStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCStats",
+            "escapedName": "RTCStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCStats",
+            "escapedName": "RTCStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCStats",
+            "escapedName": "RTCStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCStats",
+            "escapedName": "RTCStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCStats",
+            "escapedName": "RTCStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCVideoHandlerStats",
+            "escapedName": "RTCVideoHandlerStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCVideoSenderStats",
+            "escapedName": "RTCVideoSenderStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCVideoHandlerStats",
+            "escapedName": "RTCVideoHandlerStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCMediaHandlerStats",
+            "escapedName": "RTCMediaHandlerStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCAudioHandlerStats",
+            "escapedName": "RTCAudioHandlerStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCAudioSenderStats",
+            "escapedName": "RTCAudioSenderStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCAudioHandlerStats",
+            "escapedName": "RTCAudioHandlerStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCStats",
+            "escapedName": "RTCStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCStats",
+            "escapedName": "RTCStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCStats",
+            "escapedName": "RTCStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCStats",
+            "escapedName": "RTCStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCStats",
+            "escapedName": "RTCStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCMediaHandlerStats",
+            "escapedName": "RTCMediaHandlerStats",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -16120,12 +17747,216 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMStringList",
+          "EventHandler",
+          "WindowOrWorkerGlobalScope",
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "IDBRequest",
+            "escapedName": "IDBRequest",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "IDBCursor",
+            "escapedName": "IDBCursor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -16207,9 +18038,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -16222,7 +18054,7 @@
           "informative": []
         },
         "noEdDraft": null,
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -16291,12 +18123,19 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "DOMRectInit",
+          "DOMRectReadOnly",
+          "Element",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -16336,13 +18175,29 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "Keyboard",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/keyboard-map/",
+                "title": "Keyboard Map",
+                "crawled": "https://wicg.github.io/keyboard-map/",
+                "date": "22 April 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -16362,13 +18217,29 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "Keyboard",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/keyboard-lock/",
+                "title": "Keyboard Lock",
+                "crawled": "https://wicg.github.io/keyboard-lock/",
+                "date": "7 September 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/keyboard-lock/"
@@ -16403,12 +18274,30 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          {
+            "name": "PerformanceEntry",
+            "escapedName": "PerformanceEntry",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PerformanceEntry",
+            "escapedName": "PerformanceEntry",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -16451,12 +18340,39 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window",
+          {
+            "name": "Sensor",
+            "escapedName": "Sensor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SensorOptions",
+            "escapedName": "SensorOptions",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Sensor",
+            "escapedName": "Sensor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -16521,12 +18437,55 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          "Screen",
+          "WorkerNavigator",
+          {
+            "name": "MediaConfiguration",
+            "escapedName": "MediaConfiguration",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "MediaConfiguration",
+            "escapedName": "MediaConfiguration",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "MediaCapabilitiesInfo",
+            "escapedName": "MediaCapabilitiesInfo",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": " ",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -16674,12 +18633,22 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "ConstrainBoolean",
+          "ConstrainDOMString",
+          "ConstrainDouble",
+          "DoubleRange",
+          "MediaTrackCapabilities",
+          "MediaTrackConstraintSet",
+          "MediaTrackSettings",
+          "MediaTrackSupportedConstraints"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -16720,12 +18689,26 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "HTMLCanvasElement",
+          "HTMLMediaElement",
+          "MediaStream",
+          "Window",
+          {
+            "name": "MediaStreamTrack",
+            "escapedName": "MediaStreamTrack",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17003,12 +18986,33 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator",
+          "Window",
+          {
+            "name": "MediaSessionActionDetails",
+            "escapedName": "MediaSessionActionDetails",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "MediaSessionActionDetails",
+            "escapedName": "MediaSessionActionDetails",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          "bool"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17041,12 +19045,47 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AudioTrack",
+          "AudioTrackList",
+          "EventHandler",
+          "TextTrack",
+          "TextTrackList",
+          "TimeRanges",
+          "URL",
+          "VideoTrack",
+          "VideoTrackList",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -17100,12 +19139,50 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "EventHandler",
+          "MediaStream",
+          "Window",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -17447,12 +19524,25 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "Performance",
+          "Window",
+          {
+            "name": "PerformanceResourceTiming",
+            "escapedName": "PerformanceResourceTiming",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17517,12 +19607,36 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -17587,12 +19701,56 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMMatrix",
+          "Window",
+          {
+            "name": "Sensor",
+            "escapedName": "Sensor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SensorOptions",
+            "escapedName": "SensorOptions",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "OrientationSensor",
+            "escapedName": "OrientationSensor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "OrientationSensor",
+            "escapedName": "OrientationSensor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "AbsoluteOrientationReadingValues",
+            "escapedName": "AbsoluteOrientationReadingValues",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -17796,12 +19954,22 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          {
+            "name": "PerformanceEntry",
+            "escapedName": "PerformanceEntry",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -17844,12 +20012,61 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "ServiceWorker",
+          "ServiceWorkerGlobalScope",
+          "ServiceWorkerRegistration",
+          "WindowClient",
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "name": "ExtendableEvent",
+            "escapedName": "ExtendableEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "ExtendableEventInit",
+            "escapedName": "ExtendableEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -17884,9 +20101,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -17913,7 +20131,7 @@
           ]
         },
         "noEdDraft": false,
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -17929,12 +20147,101 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PaymentDetailsBase",
+            "escapedName": "PaymentDetailsBase",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PaymentDetailsBase",
+            "escapedName": "PaymentDetailsBase",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PaymentRequestUpdateEvent",
+            "escapedName": "PaymentRequestUpdateEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PaymentRequestUpdateEventInit",
+            "escapedName": "PaymentRequestUpdateEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17979,12 +20286,55 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "Performance",
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18060,13 +20410,89 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          "PermissionName",
+          "WorkerNavigator",
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "PermissionDescriptor",
+            "escapedName": "PermissionDescriptor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PermissionDescriptor",
+            "escapedName": "PermissionDescriptor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PermissionDescriptor",
+            "escapedName": "PermissionDescriptor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "PermissionState",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/orientation-event/",
+                "title": "DeviceOrientation Event Specification",
+                "crawled": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/",
+                "date": "16 April 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/manifest/",
@@ -18214,12 +20640,44 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "DocumentOrShadowRoot",
+          "Element",
+          "EventHandler",
+          "HTMLVideoElement",
+          "Window",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18253,12 +20711,35 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Element",
+          "EventHandler",
+          "GlobalEventHandlers",
+          "Navigator",
+          "Window",
+          {
+            "name": "MouseEventInit",
+            "escapedName": "MouseEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "MouseEvent",
+            "escapedName": "MouseEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18324,12 +20805,18 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "DocumentOrShadowRoot",
+          "Element",
+          "EventHandler"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18370,9 +20857,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -18446,12 +20934,80 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18506,13 +21062,54 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "ProgressEvent",
+            "refs": [
+              {
+                "url": "https://xhr.spec.whatwg.org/",
+                "title": "XMLHttpRequest Standard",
+                "crawled": "https://xhr.spec.whatwg.org/",
+                "date": "15 May 2019"
+              }
+            ]
+          },
+          {
+            "name": "ProgressEventInit",
+            "refs": [
+              {
+                "url": "https://xhr.spec.whatwg.org/",
+                "title": "XMLHttpRequest Standard",
+                "crawled": "https://xhr.spec.whatwg.org/",
+                "date": "15 May 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://xhr.spec.whatwg.org/",
@@ -18540,12 +21137,23 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window",
+          {
+            "name": "Sensor",
+            "escapedName": "Sensor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18578,14 +21186,103 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "ServiceWorker",
+          "ServiceWorkerGlobalScope",
+          "ServiceWorkerRegistration",
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "ExtendableEvent",
+            "escapedName": "ExtendableEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "ExtendableEventInit",
+            "escapedName": "ExtendableEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "ExtendableEvent",
+            "escapedName": "ExtendableEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "ExtendableEventInit",
+            "escapedName": "ExtendableEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Blob",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/FileAPI/",
+                "title": "File API",
+                "crawled": "https://www.w3.org/TR/2019/WD-FileAPI-20190531/",
+                "date": "31 May 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -18689,12 +21386,25 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "HTMLMediaElement",
+          "Window",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18722,12 +21432,39 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Date",
+          {
+            "name": "ReportBody",
+            "escapedName": "ReportBody",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "ReportBody",
+            "escapedName": "ReportBody",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "ReportBody",
+            "escapedName": "ReportBody",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -18765,12 +21502,22 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMRectReadOnly",
+          "Element",
+          "Window",
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -18801,12 +21548,38 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "EventHandler",
+          "Performance",
+          {
+            "name": "PerformanceEntry",
+            "escapedName": "PerformanceEntry",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18858,12 +21631,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "ConstrainBoolean",
+          "ConstrainDOMString",
+          "MediaStream",
+          "MediaStreamConstraints",
+          "MediaTrackConstraintSet",
+          "NavigatorUserMedia"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18892,12 +21673,24 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Element",
+          "Window",
+          {
+            "name": "AnimationTimeline",
+            "escapedName": "AnimationTimeline",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -19091,12 +21884,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "EventHandler",
+          "GlobalEventHandlers",
+          "Node",
+          "Range",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -19131,12 +21932,18 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "DocumentFragment",
+          "Element",
+          "NodeList"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -19461,12 +22268,23 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -19646,12 +22464,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Node",
+          "Range",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -19672,12 +22495,27 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -19893,12 +22731,25 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Screen",
+          "Window",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -19993,12 +22844,25 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "EventTarget",
+          "WindowProxy",
+          {
+            "name": "UIEvent",
+            "escapedName": "UIEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -20044,12 +22908,136 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventTarget",
+          "Window",
+          {
+            "name": "UIEventInit",
+            "escapedName": "UIEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "UIEvent",
+            "escapedName": "UIEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "UIEventInit",
+            "escapedName": "UIEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "UIEvent",
+            "escapedName": "UIEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventModifierInit",
+            "escapedName": "EventModifierInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "MouseEvent",
+            "escapedName": "MouseEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "MouseEventInit",
+            "escapedName": "MouseEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "UIEvent",
+            "escapedName": "UIEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "UIEventInit",
+            "escapedName": "UIEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "UIEvent",
+            "escapedName": "UIEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventModifierInit",
+            "escapedName": "EventModifierInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "UIEvent",
+            "escapedName": "UIEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "UIEventInit",
+            "escapedName": "UIEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -20574,12 +23562,57 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Performance",
+          {
+            "name": "PerformanceEntry",
+            "escapedName": "PerformanceEntry",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "PerformanceEntry",
+            "escapedName": "PerformanceEntry",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -20618,12 +23651,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -21335,12 +24371,25 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          "Window",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -21366,12 +24415,83 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "Document",
+          "Element",
+          "EventHandler",
+          "Window",
+          {
+            "name": "EffectTiming",
+            "escapedName": "EffectTiming",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "AnimationTimeline",
+            "escapedName": "AnimationTimeline",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EffectTiming",
+            "escapedName": "EffectTiming",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "KeyframeEffectOptions",
+            "escapedName": "KeyframeEffectOptions",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "AnimationEffect",
+            "escapedName": "AnimationEffect",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -21460,12 +24580,26 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "ServiceWorkerUpdateViaCache",
+          "Window",
+          "WorkerType",
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -21517,13 +24651,39 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "EventHandler",
+          "HTMLMediaElement",
+          "MediaStream",
+          "MediaStreamTrack",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "[object Object]",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+                "date": "9 August 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "http://www.w3.org/TR/2016/WD-worklets-1-20160607/",
+                "date": "07 June 2016"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/mediacapture-fromelement/"
@@ -21585,12 +24745,55 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window",
+          {
+            "name": "Credential",
+            "escapedName": "Credential",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "AuthenticatorResponse",
+            "escapedName": "AuthenticatorResponse",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "AuthenticatorResponse",
+            "escapedName": "AuthenticatorResponse",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PublicKeyCredentialEntity",
+            "escapedName": "PublicKeyCredentialEntity",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PublicKeyCredentialEntity",
+            "escapedName": "PublicKeyCredentialEntity",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -21619,12 +24822,47 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "ServiceWorker",
+          "ServiceWorkerGlobalScope",
+          "ServiceWorkerRegistration",
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "ExtendableEvent",
+            "escapedName": "ExtendableEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "ExtendableEventInit",
+            "escapedName": "ExtendableEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -21669,12 +24907,97 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          "Window",
+          {
+            "name": "PermissionDescriptor",
+            "escapedName": "PermissionDescriptor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PermissionStatus",
+            "escapedName": "PermissionStatus",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -21775,12 +25098,80 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "MIDIPort",
+            "escapedName": "MIDIPort",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "MIDIPort",
+            "escapedName": "MIDIPort",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -21816,12 +25207,58 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AbortSignal",
+          "Dictionary",
+          "EventHandler",
+          "Window",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -21846,12 +25283,23 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -21919,12 +25367,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -21947,12 +25398,105 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "EventHandler",
+          "Window",
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SpeechSynthesisEvent",
+            "escapedName": "SpeechSynthesisEvent",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "SpeechSynthesisEventInit",
+            "escapedName": "SpeechSynthesisEventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -22787,12 +26331,140 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worklet",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worklet",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worklet",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worklet",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worklet",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worklet",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -22829,9 +26501,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -22864,9 +26537,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -22934,12 +26608,132 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "WebGLObject",
+            "escapedName": "WebGLObject",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "WebGLObject",
+            "escapedName": "WebGLObject",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "WebGLObject",
+            "escapedName": "WebGLObject",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "name": "WebGLObject",
+            "escapedName": "WebGLObject",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "WebGLObject",
+            "escapedName": "WebGLObject",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -22967,12 +26761,240 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "HTMLCanvasElement",
+          "HTMLImageElement",
+          "HTMLVideoElement",
+          "ImageBitmap",
+          "ImageData",
+          "OffscreenCanvas",
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "WebGLObject",
+            "escapedName": "WebGLObject",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "WebGLObject",
+            "escapedName": "WebGLObject",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "WebGLObject",
+            "escapedName": "WebGLObject",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "WebGLObject",
+            "escapedName": "WebGLObject",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "name": "WebGLObject",
+            "escapedName": "WebGLObject",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "WebGLObject",
+            "escapedName": "WebGLObject",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -23878,12 +27900,229 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AlgorithmIdentifier",
+          "DOMHighResTimeStamp",
+          "EventHandler",
+          "MediaStream",
+          "MediaStreamTrack",
+          "RTCError",
+          "Window",
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCOfferAnswerOptions",
+            "escapedName": "RTCOfferAnswerOptions",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCRtpParameters",
+            "escapedName": "RTCRtpParameters",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCRtpParameters",
+            "escapedName": "RTCRtpParameters",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCRtpCodingParameters",
+            "escapedName": "RTCRtpCodingParameters",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCRtpCodingParameters",
+            "escapedName": "RTCRtpCodingParameters",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCOfferAnswerOptions",
+            "escapedName": "RTCOfferAnswerOptions",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "RTCRtpContributingSource",
+            "escapedName": "RTCRtpContributingSource",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -23975,10 +28214,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "RTCPriorityType",
-          "RTCRtpEncodingParameters"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -24001,12 +28237,330 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          "WorkerNavigator",
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "PermissionDescriptor",
+            "escapedName": "PermissionDescriptor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "PermissionStatus",
+            "escapedName": "PermissionStatus",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -24040,12 +28594,24 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DocumentFragment",
+          "Window",
+          {
+            "name": "TextTrackCue",
+            "escapedName": "TextTrackCue",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -24093,14 +28659,194 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "DOMPointReadOnly",
+          "EventHandler",
+          "HTMLCanvasElement",
+          "Navigator",
+          "Window",
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "XRSpace",
+            "escapedName": "XRSpace",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "XRReferenceSpace",
+            "escapedName": "XRReferenceSpace",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "XRPose",
+            "escapedName": "XRPose",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "XRLayer",
+            "escapedName": "XRLayer",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "GamepadMappingType",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/gamepad/",
+                "title": "Gamepad",
+                "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190531/",
+                "date": "May 2019 "
+              }
+            ]
+          }
+        ],
+        "missingWebIdlRef": [
+          {
+            "name": "WebGLRenderingContext",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "date": "Wed Jun 26 2019"
+              }
+            ]
+          },
+          {
+            "name": "WebGL2RenderingContext",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+                "title": "WebGL 2.0 Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+                "date": "Wed Jun 26 2019"
+              }
+            ]
+          },
+          {
+            "name": "WebGLFramebuffer",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "date": "Wed Jun 26 2019"
+              }
+            ]
+          },
+          {
+            "name": "WebGLContextAttributes",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "date": "Wed Jun 26 2019"
+              }
+            ]
+          },
+          {
+            "name": "WebGLRenderingContextBase",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "date": "Wed Jun 26 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/hr-time/"
         ],
@@ -24141,13 +28887,36 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "Console",
+          "FakeWorklet",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "[object Object]",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+                "date": "9 August 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://www.w3.org/TR/2018/CR-webaudio-20180918/",
+                "date": "18 September 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -24204,13 +28973,177 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "EventHandler",
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "EventTarget",
+            "escapedName": "EventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "name": "XMLHttpRequestEventTarget",
+            "escapedName": "XMLHttpRequestEventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "XMLHttpRequestEventTarget",
+            "escapedName": "XMLHttpRequestEventTarget",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "Event",
+            "escapedName": "Event",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "DedicatedWorker",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "SharedWorker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "name": "EventInit",
+            "escapedName": "EventInit",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "ProgressEvent",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/progress-events/",
+                "title": "Progress Events",
+                "crawled": "http://www.w3.org/TR/2014/REC-progress-events-20140211/",
+                "date": "11 February 2014"
+              }
+            ]
+          },
+          {
+            "name": "ProgressEventInit",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/progress-events/",
+                "title": "Progress Events",
+                "crawled": "http://www.w3.org/TR/2014/REC-progress-events-20140211/",
+                "date": "11 February 2014"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"
