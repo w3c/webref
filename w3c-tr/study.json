@@ -2,38 +2,13 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-06-26T22:44:03.792Z",
+  "date": "2019-06-26T23:10:32.641Z",
   "stats": {
     "crawled": 240,
-    "errors": 3,
+    "errors": 1,
     "studied": 240
   },
   "results": [
-    {
-      "title": "https://w3c.github.io/reporting/",
-      "url": "https://w3c.github.io/reporting/",
-      "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
-        "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
-        "noCssDefinitions": false,
-        "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "noEdDraft": null,
-        "ok": false
-      }
-    },
     {
       "title": "\"MediaStream Image Capture\"",
       "shortname": "image-capture",
@@ -842,22 +817,27 @@
     {
       "title": "Battery Status API",
       "shortname": "battery-status",
+      "date": "07 July 2016",
       "url": "https://www.w3.org/TR/battery-status/",
       "latest": "http://www.w3.org/TR/battery-status/",
       "datedUrl": "http://www.w3.org/TR/2016/CR-battery-status-20160707/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://w3c.github.io/battery/",
-      "crawled": "http://www.w3.org/TR/battery-status/",
+      "crawled": "http://www.w3.org/TR/2016/CR-battery-status-20160707/",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "EventTarget",
+          "Navigator"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1974,6 +1954,12 @@
               "title": "Preload",
               "crawled": "https://www.w3.org/TR/2019/CR-preload-20190626/",
               "date": "June 2019 "
+            },
+            {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
             },
             {
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -8339,13 +8325,35 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "CSS",
+          "PaintWorklet"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "[object Object]",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://www.w3.org/TR/2018/CR-webaudio-20180918/",
+                "date": "18 September 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "http://www.w3.org/TR/2016/WD-worklets-1-20160607/",
+                "date": "07 June 2016"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -12762,11 +12770,22 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "Document",
-          "HTMLIFrameElement",
-          "ReportBody"
+          "HTMLIFrameElement"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ReportBody",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/reporting/",
+                "title": "Reporting API 1",
+                "crawled": "https://w3c.github.io/reporting/",
+                "date": "14 May 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/reporting/"
         ],
@@ -12994,6 +13013,12 @@
               "date": "26 January 2017"
             },
             {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
               "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/",
@@ -13093,7 +13118,7 @@
     },
     {
       "title": "File and Directory Entries API",
-      "date": "9 November 2018",
+      "date": "26 June 2019",
       "url": "https://wicg.github.io/entries-api/",
       "crawled": "https://wicg.github.io/entries-api/",
       "report": {
@@ -13263,7 +13288,7 @@
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "9 November 2018"
+              "date": "26 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -13288,6 +13313,12 @@
               "title": "Presentation API",
               "crawled": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/",
               "date": "01 June 2017"
+            },
+            {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
             },
             {
               "url": "https://url.spec.whatwg.org/",
@@ -13346,12 +13377,23 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "SVGAnimatedBoolean",
+          "SVGAnimatedEnumeration",
+          "SVGAnimatedInteger",
+          "SVGAnimatedLength",
+          "SVGAnimatedNumber",
+          "SVGAnimatedNumberList",
+          "SVGAnimatedPreserveAspectRatio",
+          "SVGAnimatedString",
+          "SVGElement"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -14200,6 +14242,12 @@
               "date": "23 May 2019"
             },
             {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "http://www.w3.org/TR/2016/CR-battery-status-20160707/",
+              "date": "07 July 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://www.w3.org/TR/2017/CR-beacon-20170413/",
@@ -14431,7 +14479,7 @@
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "9 November 2018"
+              "date": "26 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -14666,6 +14714,12 @@
               "title": "Remote Playback API",
               "crawled": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/",
               "date": "19 October 2017"
+            },
+            {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
             },
             {
               "url": "https://drafts.csswg.org/resize-observer/",
@@ -15366,7 +15420,7 @@
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "9 November 2018"
+              "date": "26 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -15517,6 +15571,12 @@
               "title": "Referrer Policy",
               "crawled": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/",
               "date": "26 January 2017"
+            },
+            {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
             },
             {
               "url": "https://drafts.csswg.org/resize-observer/",
@@ -16158,7 +16218,7 @@
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "9 November 2018"
+              "date": "26 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -16315,6 +16375,12 @@
               "title": "Referrer Policy",
               "crawled": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/",
               "date": "26 January 2017"
+            },
+            {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
             },
             {
               "url": "https://drafts.csswg.org/resize-observer/",
@@ -19843,6 +19909,52 @@
       }
     },
     {
+      "title": "Reporting API 1",
+      "date": "14 May 2019",
+      "url": "https://w3c.github.io/reporting/",
+      "crawled": "https://w3c.github.io/reporting/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownIdlNames": [
+          "Date"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/webdriver/webdriver-spec.html"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP3",
+              "url": "https://www.w3.org/TR/CSP3/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FileAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
+    {
       "title": "Resize Observer",
       "date": "7 June 2019",
       "url": "https://drafts.csswg.org/resize-observer/",
@@ -20134,6 +20246,12 @@
               "title": "Remote Playback API",
               "crawled": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/",
               "date": "19 October 2017"
+            },
+            {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -21606,6 +21724,12 @@
               "date": "19 October 2017"
             },
             {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/secure-contexts/",
               "title": "Secure Contexts",
               "crawled": "https://www.w3.org/TR/2016/CR-secure-contexts-20160915/",
@@ -22281,6 +22405,12 @@
               "date": "26 January 2017"
             },
             {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
+            },
+            {
               "url": "https://drafts.csswg.org/resize-observer/",
               "title": "Resize Observer",
               "crawled": "https://drafts.csswg.org/resize-observer/",
@@ -22768,6 +22898,12 @@
             "name": "[object Object]",
             "refs": [
               {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+                "date": "9 August 2018"
+              },
+              {
                 "url": "https://www.w3.org/TR/worklets-1/",
                 "title": "Worklets Level 1",
                 "crawled": "http://www.w3.org/TR/2016/WD-worklets-1-20160607/",
@@ -22945,12 +23081,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Navigator",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -23585,7 +23729,7 @@
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "9 November 2018"
+              "date": "26 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -23748,6 +23892,12 @@
               "title": "Referrer Policy",
               "crawled": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/",
               "date": "26 January 2017"
+            },
+            {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
             },
             {
               "url": "https://drafts.csswg.org/resize-observer/",
@@ -24294,9 +24444,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -24342,6 +24493,12 @@
               "title": "Generic Sensor API",
               "crawled": "https://www.w3.org/TR/2019/WD-generic-sensor-20190307/",
               "date": "7 March 2019"
+            },
+            {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
             }
           ],
           "informative": []
@@ -24358,12 +24515,92 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          },
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -24692,6 +24929,12 @@
               "date": "23 May 2019"
             },
             {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "http://www.w3.org/TR/2016/CR-battery-status-20160707/",
+              "date": "07 July 2016"
+            },
+            {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://www.w3.org/TR/2017/CR-beacon-20170413/",
@@ -24887,7 +25130,7 @@
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
-              "date": "9 November 2018"
+              "date": "26 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -25140,6 +25383,12 @@
               "title": "Remote Playback API",
               "crawled": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/",
               "date": "19 October 2017"
+            },
+            {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/",
+              "date": "14 May 2019"
             },
             {
               "url": "https://drafts.csswg.org/resize-observer/",
@@ -25981,7 +26230,6 @@
           "EventTarget",
           "HTMLCanvasElement",
           "Navigator",
-          "WebGL2RenderingContext",
           "Window"
         ],
         "redefinedIdlNames": [
@@ -26005,6 +26253,17 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "date": "Wed Jun 26 2019"
+              }
+            ]
+          },
+          {
+            "name": "WebGL2RenderingContext",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+                "title": "WebGL 2.0 Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "date": "Wed Jun 26 2019"
               }
             ]
@@ -26098,6 +26357,12 @@
           {
             "name": "[object Object]",
             "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+                "date": "9 August 2018"
+              },
               {
                 "url": "https://www.w3.org/TR/webaudio/",
                 "title": "Web Audio API",

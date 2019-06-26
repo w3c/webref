@@ -13,7 +13,7 @@
 
 - URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
 - Crawled version: [Initial URL](https://wicg.github.io/background-fetch/)
-- Unknown WebIDL names used: *INS* CacheQueryOptions, ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* CacheQueryOptions, ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## Console Standard
@@ -34,14 +34,14 @@
 
 - URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled version: [Initial URL](https://wicg.github.io/cookie-store/)
-- Unknown WebIDL names used: *INS* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, [object Object], [object Object] / *DEL* [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, [object Object], [object Object]
 
 
 ## CORS and RFC1918
 
 - URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
 - Crawled version: [Initial URL](https://wicg.github.io/cors-rfc1918/)
-- Unknown WebIDL names used: *INS* WorkerGlobalScope
+- Unknown WebIDL names used: *DEL* WorkerGlobalScope
 
 
 ## CSS Font Loading Module Level 3
@@ -55,17 +55,17 @@
 
 - URL: [https://www.w3.org/TR/css-masking-1/](https://www.w3.org/TR/css-masking-1/)
 - Crawled version: [Editor's Draft](https://drafts.fxtf.org/css-masking-1/)
-- Unknown WebIDL names used: *INS* SVGAnimatedEnumeration, SVGAnimatedLength, SVGAnimatedTransformList, SVGElement
+- Unknown WebIDL names used: *DEL* SVGAnimatedEnumeration, SVGAnimatedLength, SVGAnimatedTransformList, SVGElement
 
 
 ## CSS Painting API Level 1
 
 - URL: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
 - Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Unknown WebIDL names used: *DEL* PaintWorklet
-- WebIDL names also defined elsewhere: *DEL* [object Object]
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* PaintWorklet
+- WebIDL names also defined elsewhere: *INS* [object Object]
 
 
 ## Encoding Standard
@@ -93,8 +93,8 @@
 
 - URL: [https://www.w3.org/TR/filter-effects-1/](https://www.w3.org/TR/filter-effects-1/)
 - Crawled version: [Editor's Draft](https://drafts.fxtf.org/filter-effects-1/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
 
 
 ## Generic Sensor API
@@ -137,7 +137,7 @@
 
 - URL: [https://wicg.github.io/media-capabilities/](https://wicg.github.io/media-capabilities/)
 - Crawled version: [Initial URL](https://wicg.github.io/media-capabilities/)
-- Unknown WebIDL names used: *INS* WorkerNavigator, [object Object], [object Object] / *DEL* [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* WorkerNavigator, [object Object], [object Object]
 
 
 ## Network Information API
@@ -151,7 +151,7 @@
 
 - URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
-- Unknown WebIDL names used: *INS* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration, WindowClient, [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object] / *DEL* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration, WindowClient, [object Object], [object Object], [object Object], [object Object]
 
 
 ## Payment Request API
@@ -172,14 +172,14 @@
 
 - URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/permissions/)
-- Unknown WebIDL names used: *INS* WorkerNavigator, [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object] / *DEL* WorkerNavigator, [object Object], [object Object], [object Object], [object Object]
 
 
 ## Push API
 
 - URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/push-api/)
-- Unknown WebIDL names used: *INS* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## Resize Observer
@@ -200,10 +200,10 @@
 
 - URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Unknown WebIDL names used: *DEL* DOMMatrix, DOMMatrix2DInit, DOMPoint, DOMPointInit, DOMPointReadOnly, DOMRect, DOMRectReadOnly, DOMTokenList, Document, Element, NodeList, ShadowRoot, Window
-- WebIDL names also defined elsewhere: *DEL* SVGMarkerElement
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* DOMMatrix, DOMMatrix2DInit, DOMPoint, DOMPointInit, DOMPointReadOnly, DOMRect, DOMRectReadOnly, DOMTokenList, Document, Element, NodeList, ShadowRoot, Window
+- WebIDL names also defined elsewhere: *INS* SVGMarkerElement
 
 
 ## Server Timing
@@ -217,10 +217,10 @@
 
 - URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/ServiceWorker/v1/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Unknown WebIDL names used: *DEL* Event, EventHandler, EventInit, EventTarget, Navigator, WindowOrWorkerGlobalScope
-- WebIDL names also defined elsewhere: *DEL* [object Object]
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* Event, EventHandler, EventInit, EventTarget, Navigator, WindowOrWorkerGlobalScope
+- WebIDL names also defined elsewhere: *INS* [object Object]
 
 
 ## Storage Standard
@@ -234,10 +234,10 @@
 
 - URL: [https://www.w3.org/TR/svg-markers/](https://www.w3.org/TR/svg-markers/)
 - Crawled version: [Editor's Draft](https://svgwg.org/specs/markers/)
-- Unexpected WebIDL definitions found: *INS* false / *DEL* true
-- Obsolete WebIDL constructs found: *DEL* false
-- Unknown WebIDL names used: *DEL* DOMPoint, DOMPointReadOnly
-- WebIDL names also defined elsewhere: *DEL* SVGMarkerElement
+- Unexpected WebIDL definitions found: *INS* true / *DEL* false
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* DOMPoint, DOMPointReadOnly
+- WebIDL names also defined elsewhere: *INS* SVGMarkerElement
 
 
 ## User Timing Level 3
@@ -258,23 +258,23 @@
 
 - URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
-- Unknown WebIDL names used: *INS* ServiceWorkerUpdateViaCache, WorkerType
+- Unknown WebIDL names used: *DEL* ServiceWorkerUpdateViaCache, WorkerType
 
 
 ## Web Background Synchronization
 
 - URL: [https://wicg.github.io/BackgroundSync/spec/](https://wicg.github.io/BackgroundSync/spec/)
 - Crawled version: [Initial URL](https://wicg.github.io/BackgroundSync/spec/)
-- Unknown WebIDL names used: *INS* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration, [object Object], [object Object] / *DEL* [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* ExtendableEvent, ExtendableEventInit, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration, [object Object], [object Object]
 
 
 ## Web Bluetooth
 
 - URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
 - Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Unknown WebIDL names used: *DEL* Event, EventHandler, EventInit, EventTarget, Navigator, Window
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* Event, EventHandler, EventInit, EventTarget, Navigator, Window
 
 
 ## Web Cryptography API
@@ -295,11 +295,11 @@
 
 - URL: [https://www.w3.org/TR/workers/](https://www.w3.org/TR/workers/)
 - Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Unknown WebIDL names used: *DEL* DedicatedWorker, EventHandler, EventTarget, OnErrorEventHandler, PostMessageOptions
-- WebIDL names also defined elsewhere: *DEL* [object Object]
-- Missing references for WebIDL names: *DEL* RequestCredentials, MessagePort
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* DedicatedWorker, EventHandler, EventTarget, OnErrorEventHandler, PostMessageOptions
+- WebIDL names also defined elsewhere: *INS* [object Object]
+- Missing references for WebIDL names: *INS* RequestCredentials, MessagePort
 
 
 ## WebAssembly JavaScript Interface
@@ -313,17 +313,17 @@
 
 - URL: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
 
 
 ## WebGL 2.0 Specification
 
 - URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Unknown WebIDL names used: *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## WebGL Specification
@@ -337,15 +337,15 @@
 
 - URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled version: [Initial URL](https://wicg.github.io/webusb/)
-- Unknown WebIDL names used: *INS* WorkerNavigator, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* WorkerNavigator, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## WebXR Device API
 
 - URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/)
-- Unknown WebIDL names used: *INS* WebGL2RenderingContext
-- Missing references for WebIDL names: *DEL* WebGL2RenderingContext
+- Unknown WebIDL names used: *DEL* WebGL2RenderingContext
+- Missing references for WebIDL names: *INS* WebGL2RenderingContext
 
 
 ## XMLHttpRequest Standard

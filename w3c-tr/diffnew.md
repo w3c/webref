@@ -2,19 +2,6 @@
 % Reffy
 % June 26, 2019
 
-## https://w3c.github.io/reporting/
-
-- URL: [https://w3c.github.io/reporting/](https://w3c.github.io/reporting/)
-- Crawled version: [Latest published version](undefined)
-- Spec title: *INS* https://w3c.github.io/reporting/ / *DEL* Reporting API 1
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
-
-
 ## Accelerated Shape Detection in Images
 
 - URL: [https://wicg.github.io/shape-detection-api/](https://wicg.github.io/shape-detection-api/)
@@ -32,9 +19,9 @@
 ## Battery Status API
 
 - URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
-- Crawled version: [Latest published version](http://www.w3.org/TR/battery-status/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -64,26 +51,15 @@
 - Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* [object Object], [object Object]
 
 
-## CSS Color Module Level 4
-
-- URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
-- Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
-
-
 ## CSS Painting API Level 1
 
 - URL: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - Editor's Draft: [https://drafts.css-houdini.org/css-paint-api-1/](https://drafts.css-houdini.org/css-paint-api-1/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* CSS, PaintWorklet
+- WebIDL names also defined elsewhere: *INS* [object Object]
 
 
 ## Encoding
@@ -98,7 +74,7 @@
 
 - URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/)
-- Unknown WebIDL names used: *INS* ReportBody
+- Missing references for WebIDL names: *INS* ReportBody
 
 
 ## Fetch Standard
@@ -121,8 +97,9 @@
 - URL: [https://www.w3.org/TR/filter-effects-1/](https://www.w3.org/TR/filter-effects-1/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - Editor's Draft: [https://drafts.fxtf.org/filter-effects-1/](https://drafts.fxtf.org/filter-effects-1/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* SVGAnimatedBoolean, SVGAnimatedEnumeration, SVGAnimatedInteger, SVGAnimatedLength, SVGAnimatedNumber, SVGAnimatedNumberList, SVGAnimatedPreserveAspectRatio, SVGAnimatedString, SVGElement
 
 
 ## Geolocation Sensor
@@ -202,6 +179,19 @@
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
+## Reporting API 1
+
+- URL: [https://w3c.github.io/reporting/](https://w3c.github.io/reporting/)
+- Crawled version: [Initial URL](https://w3c.github.io/reporting/)
+- Spec title: *INS* Reporting API 1 / *DEL* https://w3c.github.io/reporting/
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+
+
 ## Resize Observer
 
 - URL: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
@@ -243,8 +233,9 @@
 
 - URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
 - Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* Event, EventHandler, EventInit, EventTarget, Navigator, Window
 
 
 ## WebAssembly JavaScript Interface
@@ -260,16 +251,17 @@
 - URL: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - Editor's Draft: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
 
 
 ## WebGL 2.0 Specification
 
 - URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## WebGL Specification
@@ -291,7 +283,7 @@
 - URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-webxr-20190521/)
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Unknown WebIDL names used: *INS* WebGL2RenderingContext
+- Missing references for WebIDL names: *INS* WebGL2RenderingContext
 
 
 ## XMLHttpRequest Standard
