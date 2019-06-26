@@ -59,7 +59,6 @@ Normative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Color Module Level 3](https://www.w3.org/TR/2018/REC-css-color-3-20180619/)
-- [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2019/CR-css-contain-1-20190430/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
@@ -136,7 +135,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
      * [`https://w3c.github.io/sensors/usecases.html`](https://w3c.github.io/sensors/usecases.html)
@@ -208,7 +207,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`, `[object Object]`
+- Unknown WebIDL names used: `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -253,7 +252,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CacheQueryOptions`, `EventHandler`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `CacheQueryOptions`, `EventHandler`, `EventTarget`, `ExtendableEvent`, `ExtendableEventInit`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 - Missing references for WebIDL names: 
      * `ImageResource` defined in [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190531/)
 - Missing references for links: 
@@ -282,7 +281,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`, `Navigator`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -373,7 +372,6 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Color Module Level 3](https://www.w3.org/TR/2018/REC-css-color-3-20180619/)
-- [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
 - [CSS Conditional Rules Module Level 3](http://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2019/CR-css-contain-1-20190430/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
@@ -484,7 +482,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DataTransfer`, `Navigator`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `DataTransfer`, `Event`, `EventInit`, `EventTarget`, `Navigator`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
 - Inconsistent references for links: 
@@ -545,7 +543,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2017/WD-css-tables-3-20170307/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
@@ -614,7 +611,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventInit`, `[object Object]`, `[object Object]`
 - Missing references for links: 
      * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/)
 
@@ -629,13 +626,13 @@ Normative references to this spec from:
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
-- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190531/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
 
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 
@@ -691,7 +688,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `ExtendableEvent`, `ExtendableEventInit`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `Window`, `[object Object]`, `[object Object]`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "Service-Workers" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
@@ -756,7 +753,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AbortSignal`, `HTMLFormElement`, `Navigator`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `AbortSignal`, `HTMLFormElement`, `Navigator`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec/usecases/credentialmanagement/`](https://w3c.github.io/webappsec/usecases/credentialmanagement/)
 - Inconsistent references for links: 
@@ -782,7 +779,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CSS`, `Window`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `CSS`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
      * [`https://w3c.github.io/html/infrastructure.html`](https://w3c.github.io/html/infrastructure.html)
@@ -807,7 +804,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CSSOMString`, `CSSRule`, `CSSRuleList`, `CSSStyleDeclaration`, `EventHandler`, `GlobalEventHandlers`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `CSSOMString`, `CSSRule`, `CSSRuleList`, `CSSStyleDeclaration`, `Event`, `EventHandler`, `EventInit`, `GlobalEventHandlers`, `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
@@ -846,7 +843,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unexpected WebIDL definitions found
-- Unknown WebIDL names used: `CSSOMString`, `Window`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `CSSOMString`, `KeyframeEffectReadOnly`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
 
@@ -1205,7 +1202,6 @@ Normative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
-- [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](http://www.w3.org/TR/2015/CR-css-variables-1-20151203/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
@@ -1300,11 +1296,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Color Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Color Module Level 4 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-css-color-4-20190305/) (5 March 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/css-color-4/)
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
@@ -1312,12 +1308,15 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-color-3/`](https://www.w3.org/TR/css-color-3/)
-     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/2008/REC-WCAG20-20081211/`](https://www.w3.org/TR/2008/REC-WCAG20-20081211/), related reference "WCAG20" uses URL [`https://www.w3.org/TR/WCAG20/`](https://www.w3.org/TR/WCAG20/)
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+The following network or parsing error occurred:
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1430,7 +1429,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CSSOMString`, `CSSRule`, `[object Object]`
+- Unknown WebIDL names used: `CSSOMString`, `CSSRule`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
@@ -1497,7 +1496,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `CSSRule`, `CSSStyleDeclaration`, `[object Object]`
+- Unknown WebIDL names used: `CSSRule`, `CSSStyleDeclaration`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
      * [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
@@ -1802,7 +1801,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unexpected WebIDL definitions found
-- Unknown WebIDL names used: `CSSStyleDeclaration`, `[object Object]`
+- Unknown WebIDL names used: `CSSRule`, `CSSStyleDeclaration`
 - WebIDL names also defined elsewhere: 
     * `CSSFontFaceRule` also defined in [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
 - Missing references for links: 
@@ -1859,7 +1858,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CSSOMRGBColor`, `CSSOMString`, `CSSRule`, `CSSStyleDeclaration`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `CSSOMRGBColor`, `CSSOMString`, `CSSRule`, `CSSStyleDeclaration`, `Window`
 - WebIDL names also defined elsewhere: 
     * `CSSFontFaceRule` also defined in [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/)
 - Missing references for links: 
@@ -2985,7 +2984,6 @@ Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
@@ -3056,7 +3054,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - No CSS definitions found
-- Unknown WebIDL names used: `CSSOMString`, `Element`, `Window`, `[object Object]`
+- Unknown WebIDL names used: `CSSOMString`, `Element`, `EventTarget`, `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
@@ -3503,7 +3501,6 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
-- [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](http://www.w3.org/TR/2015/CR-css-variables-1-20151203/)
 - [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/)
@@ -3602,7 +3599,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
@@ -3821,7 +3817,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CSSOMString`, `EventHandler`, `GlobalEventHandlers`, `Window`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `CSSOMString`, `Event`, `EventHandler`, `EventInit`, `GlobalEventHandlers`, `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
@@ -3863,7 +3859,7 @@ Informative references to this spec from:
 
 - No CSS definitions found
 - Unexpected WebIDL definitions found
-- Unknown WebIDL names used: `CSSOMString`, `Window`, `[object Object]`
+- Unknown WebIDL names used: `CSSOMString`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
 
@@ -3978,7 +3974,6 @@ Normative references to this spec from:
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
-- [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](http://www.w3.org/TR/2015/CR-css-variables-1-20151203/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
@@ -4083,7 +4078,6 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
-- [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2019/CR-css-contain-1-20190430/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2018/CR-css-display-3-20180828/)
 - [CSS Easing Functions Level 1](https://www.w3.org/TR/2019/CR-css-easing-1-20190430/)
@@ -4339,7 +4333,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `Window`
 - WebIDL names also defined elsewhere: 
     * `PermissionState` also defined in [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - Missing references for links: 
@@ -4433,7 +4427,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `Navigator`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLMediaElement`, `Navigator`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
      * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
@@ -4458,7 +4452,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Performance`, `Window`, `[object Object]`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Performance`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/pointerevents/extension.html`](https://w3c.github.io/pointerevents/extension.html)
 - Inconsistent references for links: 
@@ -4476,7 +4470,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Feature Policy {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Feature Policy {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -4485,7 +4479,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Document`, `HTMLIFrameElement`, `[object Object]`
+- Unknown WebIDL names used: `Document`, `HTMLIFrameElement`
+- Missing references for WebIDL names: 
+     * `ReportBody` defined in [Reporting API 1](https://w3c.github.io/reporting/)
 - Missing references for links: 
      * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/)
 - Inconsistent references for links: 
@@ -4535,8 +4531,8 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
-- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
@@ -4568,7 +4564,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DataTransferItem`, `HTMLInputElement`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `DataTransferItem`, `HTMLInputElement`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 
@@ -4591,7 +4587,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `ReadableStream`, `URL`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`, `ReadableStream`, `URL`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 - Missing references for links: 
      * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
 - Inconsistent references for links: 
@@ -4638,7 +4634,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `SVGAnimatedBoolean`, `SVGAnimatedEnumeration`, `SVGAnimatedInteger`, `SVGAnimatedLength`, `SVGAnimatedNumber`, `SVGAnimatedNumberList`, `SVGAnimatedPreserveAspectRatio`, `SVGAnimatedString`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `SVGAnimatedBoolean`, `SVGAnimatedEnumeration`, `SVGAnimatedInteger`, `SVGAnimatedLength`, `SVGAnimatedNumber`, `SVGAnimatedNumberList`, `SVGAnimatedPreserveAspectRatio`, `SVGAnimatedString`, `SVGElement`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
@@ -4747,7 +4743,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Navigator`, `Window`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Event`, `EventInit`, `Navigator`, `Window`
 - WebIDL names also defined elsewhere: 
     * `GamepadMappingType` also defined in [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
 
@@ -4772,7 +4768,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `EventHandler`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
 - Inconsistent references for links: 
@@ -4834,7 +4830,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AbortSignal`, `DOMHighResTimeStamp`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `AbortSignal`, `DOMHighResTimeStamp`, `[object Object]`, `[object Object]`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4889,7 +4885,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
 
@@ -4932,9 +4928,9 @@ Normative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
@@ -5042,17 +5038,17 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
-- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -5124,7 +5120,6 @@ Informative references to this spec from:
 - [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
-- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
@@ -5207,15 +5202,16 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
@@ -5269,7 +5265,6 @@ Informative references to this spec from:
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
-- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -5310,7 +5305,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Obsolete WebIDL constructs found
-- Unknown WebIDL names used: `EventHandler`, `Transferable`, `WindowProxy`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Transferable`, `WindowProxy`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5366,15 +5361,16 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -5431,7 +5427,6 @@ Informative references to this spec from:
 - [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
-- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Share API - Level 1](https://wicg.github.io/web-share/)
@@ -5450,7 +5445,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `RTCRTPStreamStats`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `RTCRTPStreamStats`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
@@ -5475,7 +5470,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMStringList`, `EventHandler`, `WindowOrWorkerGlobalScope`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `DOMStringList`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `WindowOrWorkerGlobalScope`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML52" uses URL [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/)
@@ -5613,7 +5608,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Long Tasks API 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Long Tasks API 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -5625,7 +5620,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `[object Object]`, `[object Object]`
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -5651,7 +5645,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
 - Inconsistent references for links: 
@@ -5680,7 +5674,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Screen`, `WorkerNavigator`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Screen`, `WorkerNavigator`, `[object Object]`, `[object Object]`
 - Missing references for links: 
      * [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/)
 - Inconsistent references for links: 
@@ -5766,7 +5760,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLMediaElement`, `MediaStream`, `Window`, `[object Object]`
+- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLMediaElement`, `MediaStream`, `MediaStreamTrack`, `Window`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
      * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/), related reference "2DCONTEXT" uses URL [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
@@ -5885,7 +5879,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Navigator`, `Window`, `[object Object]`, `[object Object]`, `bool`
+- Unknown WebIDL names used: `Navigator`, `Window`, `bool`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5908,7 +5902,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AudioTrack`, `AudioTrackList`, `EventHandler`, `TextTrack`, `TextTrackList`, `TimeRanges`, `URL`, `VideoTrack`, `VideoTrackList`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `AudioTrack`, `AudioTrackList`, `EventHandler`, `EventTarget`, `TextTrack`, `TextTrackList`, `TimeRanges`, `URL`, `VideoTrack`, `VideoTrackList`
 - Missing references for links: 
      * [`https://w3c.github.io/encrypted-media/`](https://w3c.github.io/encrypted-media/)
 
@@ -5937,7 +5931,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `EventHandler`, `MediaStream`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `MediaStream`, `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
      * [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
@@ -6035,7 +6029,6 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 
@@ -6043,6 +6036,7 @@ Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
 
@@ -6084,29 +6078,29 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/) (March 2019 )
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/) (June 2019 )
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - Shortname: navigation-timing-2
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Performance`, `Window`, `[object Object]`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Performance`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
 Informative references to this spec from:
 
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
 
@@ -6119,7 +6113,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`, `[object Object]`, `[object Object]`
 - Missing references for links: 
      * [`https://w3c.github.io/ServiceWorker/v1/`](https://w3c.github.io/ServiceWorker/v1/)
      * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
@@ -6168,7 +6162,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMMatrix`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `DOMMatrix`, `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/2016/CR-orientation-event-20160818/`](https://www.w3.org/TR/2016/CR-orientation-event-20160818/)
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
@@ -6231,7 +6225,7 @@ Informative references to this spec from:
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 
 
-## Paint Timing 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Paint Timing 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -6243,7 +6237,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `[object Object]`
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -6270,7 +6263,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `WindowClient`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `ExtendableEvent`, `ExtendableEventInit`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `WindowClient`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 - Missing references for links: 
      * [`https://w3c.github.io/payment-method-manifest/`](https://w3c.github.io/payment-method-manifest/)
 
@@ -6320,7 +6313,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Window`, `[object Object]`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6333,19 +6326,21 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/) (April 2019 )
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/) (June 2019 )
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - Shortname: performance-timeline-2
 
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `DOMHighResTimeStamp`, `Performance`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Missing references for links: 
+     * [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6353,14 +6348,14 @@ Normative references to this spec from:
 
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
 Informative references to this spec from:
 
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 
 
@@ -6376,7 +6371,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `PermissionName`, `WorkerNavigator`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`, `Navigator`, `PermissionName`, `WorkerNavigator`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 - WebIDL names also defined elsewhere: 
     * `PermissionState` also defined in [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
 - Missing references for links: 
@@ -6421,7 +6416,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Document`, `DocumentOrShadowRoot`, `Element`, `EventHandler`, `HTMLVideoElement`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Document`, `DocumentOrShadowRoot`, `Element`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLVideoElement`, `Window`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/remote-playback/`](https://w3c.github.io/remote-playback/), related reference "Remote-Playback" uses URL [`https://www.w3.org/TR/remote-playback/`](https://www.w3.org/TR/remote-playback/)
 
@@ -6444,7 +6439,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Element`, `EventHandler`, `GlobalEventHandlers`, `Navigator`, `Window`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Element`, `EventHandler`, `GlobalEventHandlers`, `Navigator`, `Window`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
@@ -6514,16 +6509,15 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-preload-20171026/) (26 October 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-preload-20190626/) (June 2019 )
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
 - Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-preload-20171026/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - Shortname: preload
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://w3c.github.io/html/document-metadata.html`](https://w3c.github.io/html/document-metadata.html)
      * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -6545,7 +6539,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Navigator`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FILEAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
@@ -6572,7 +6566,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventInit`
 - WebIDL names also defined elsewhere: 
     * `ProgressEvent` also defined in [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
     * `ProgressEventInit` also defined in [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -6599,7 +6593,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`, `[object Object]`
+- Unknown WebIDL names used: `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6622,7 +6616,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `ExtendableEvent`, `ExtendableEventInit`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 - Missing references for WebIDL names: 
      * `Blob` defined in [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/)
 
@@ -6658,10 +6652,11 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 
 
 ## Remote Playback API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -6676,7 +6671,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `HTMLMediaElement`, `Window`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`, `HTMLMediaElement`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6696,7 +6691,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Date`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Date`
 - Missing references for links: 
      * [`https://w3c.github.io/webdriver/webdriver-spec.html`](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Inconsistent references for links: 
@@ -6706,6 +6701,10 @@ No informative reference to this spec from other specs.
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 
 No informative reference to this spec from other specs.
 
@@ -6745,19 +6744,18 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `EventHandler`, `Performance`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `EventHandler`, `Performance`, `[object Object]`, `[object Object]`
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 
 Informative references to this spec from:
 
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 
 
 ## Screen Capture {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -6792,7 +6790,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Element`, `Window`, `[object Object]`
+- Unknown WebIDL names used: `Element`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
      * [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/)
@@ -7023,7 +7021,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7061,7 +7059,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
@@ -7163,6 +7161,7 @@ Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 
 Informative references to this spec from:
 
@@ -7232,7 +7231,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Screen`, `Window`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`, `Screen`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7271,7 +7270,7 @@ Informative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 
 
-## Touch Events {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Touch Events {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -7283,7 +7282,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Document`, `EventTarget`, `WindowProxy`, `[object Object]`
+- Unknown WebIDL names used: `Document`, `EventTarget`, `WindowProxy`
+- Missing references for WebIDL names: 
+     * `UIEvent` defined in [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7309,7 +7310,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventTarget`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventInit`, `EventTarget`, `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
      * [`https://www.w3.org/TR/2004/REC-xml-20040204/`](https://www.w3.org/TR/2004/REC-xml-20040204/)
@@ -7332,6 +7333,10 @@ Normative references to this spec from:
 - [UI Events KeyboardEvent key Values](https://www.w3.org/TR/2017/CR-uievents-key-20170601/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 
 Informative references to this spec from:
 
@@ -7421,7 +7426,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -7487,7 +7492,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Performance`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Performance`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7495,7 +7500,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
 
@@ -7598,13 +7603,13 @@ Normative references to this spec from:
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
-- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -7666,7 +7671,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`, `Navigator`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7687,7 +7692,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Document`, `Element`, `EventHandler`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Document`, `Element`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
      * [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/)
@@ -7724,7 +7729,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `ServiceWorkerUpdateViaCache`, `Window`, `WorkerType`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `ServiceWorkerUpdateViaCache`, `Window`, `WorkerType`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7755,7 +7760,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `EventHandler`, `HTMLMediaElement`, `MediaStream`, `MediaStreamTrack`, `Window`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLMediaElement`, `MediaStream`, `MediaStreamTrack`, `Window`
 - WebIDL names also defined elsewhere: 
     * `[object Object]` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
@@ -7788,7 +7793,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Window`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
 
@@ -7808,7 +7813,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `ExtendableEvent`, `ExtendableEventInit`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `[object Object]`, `[object Object]`
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/)
      * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/)
@@ -7834,7 +7839,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Navigator`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/fingerprinting-guidance/`](https://w3c.github.io/fingerprinting-guidance/)
 - Inconsistent references for links: 
@@ -7888,7 +7893,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Navigator`
 - Inconsistent references for links: 
      * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "DOM-LEVEL-3-CORE" uses URL [`http://www.w3.org/TR/DOM-Level-3-Core/`](http://www.w3.org/TR/DOM-Level-3-Core/)
 
@@ -7910,7 +7915,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AbortSignal`, `Dictionary`, `EventHandler`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `AbortSignal`, `Dictionary`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7931,7 +7936,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Link to an Editor's Draft not found
-- Unknown WebIDL names used: `EventHandler`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`
 - Inconsistent references for links: 
      * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/), related reference "WEBIDL" uses URL [`https://www.w3.org/TR/2015/PR-notifications-20150910/`](https://www.w3.org/TR/2015/PR-notifications-20150910/)
      * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML5" uses URL [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/)
@@ -7979,7 +7984,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Document`, `EventHandler`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Document`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8089,15 +8094,16 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
@@ -8154,8 +8160,7 @@ Informative references to this spec from:
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
-- [Preload](https://www.w3.org/TR/2017/CR-preload-20171026/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Share API - Level 1](https://wicg.github.io/web-share/)
 
@@ -8251,7 +8256,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8275,7 +8280,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`, `ImageBitmap`, `ImageData`, `OffscreenCanvas`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventInit`, `HTMLCanvasElement`, `HTMLImageElement`, `HTMLVideoElement`, `ImageBitmap`, `ImageData`, `OffscreenCanvas`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8383,14 +8388,14 @@ Normative references to this spec from:
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190308/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190423/)
+- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
@@ -8466,7 +8471,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AlgorithmIdentifier`, `DOMHighResTimeStamp`, `EventHandler`, `MediaStream`, `MediaStreamTrack`, `RTCError`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `AlgorithmIdentifier`, `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `MediaStream`, `MediaStreamTrack`, `RTCError`, `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/webrtc-identity/`](https://www.w3.org/TR/webrtc-identity/)
 - Inconsistent references for links: 
@@ -8521,7 +8526,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `WorkerNavigator`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Navigator`, `WorkerNavigator`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 
@@ -8544,7 +8549,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DocumentFragment`, `Window`, `[object Object]`
+- Unknown WebIDL names used: `DocumentFragment`, `TextTrackCue`, `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
      * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/)
@@ -8575,7 +8580,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `DOMPointReadOnly`, `EventHandler`, `HTMLCanvasElement`, `Navigator`, `Window`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `DOMPointReadOnly`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLCanvasElement`, `Navigator`, `Window`
 - WebIDL names also defined elsewhere: 
     * `GamepadMappingType` also defined in [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/)
 - Missing references for WebIDL names: 
@@ -8636,7 +8641,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Document`, `EventHandler`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Document`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 - WebIDL names also defined elsewhere: 
     * `ProgressEvent` also defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
     * `ProgressEventInit` also defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
