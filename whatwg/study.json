@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2019-06-26T18:20:54.640Z",
+  "date": "2019-06-26T18:52:59.765Z",
   "stats": {
     "crawled": 229,
-    "errors": 4,
+    "errors": 1,
     "studied": 229
   },
   "results": [
@@ -1045,6 +1045,12 @@
               "date": "26 April 2019"
             },
             {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
+              "date": "Wed Jun 26 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
@@ -1389,22 +1395,33 @@
     {
       "title": "Ambient Light Sensor",
       "shortname": "ambient-light",
+      "date": "21 February 2019",
       "url": "https://www.w3.org/TR/ambient-light/",
       "latest": "https://www.w3.org/TR/ambient-light/",
       "datedUrl": "https://www.w3.org/TR/2019/WD-ambient-light-20190307/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/ambient-light/",
-      "crawled": "https://www.w3.org/TR/ambient-light/",
+      "crawled": "https://w3c.github.io/ambient-light/",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window",
+          {
+            "name": "Sensor",
+            "escapedName": "Sensor",
+            "trivia": {
+              "colon": " ",
+              "name": " "
+            }
+          }
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1990,6 +2007,12 @@
               "title": "CSS Images Module Level 4",
               "crawled": "https://drafts.csswg.org/css-images-4/",
               "date": "9 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
@@ -4231,6 +4254,12 @@
               "date": "10 May 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-line-grid-1/",
               "title": "CSS Line Grid Module Level 1",
               "crawled": "https://drafts.csswg.org/css-line-grid/",
@@ -4419,6 +4448,12 @@
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-grid-2/",
               "date": "10 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
@@ -4866,6 +4901,12 @@
               "title": "CSS Images Module Level 3",
               "crawled": "https://drafts.csswg.org/css-images-3/",
               "date": "7 November 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
@@ -6195,6 +6236,12 @@
               "date": "10 May 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -7056,6 +7103,12 @@
               "date": "24 June 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-masking-1/",
               "title": "CSS Masking Module Level 1",
               "crawled": "https://drafts.fxtf.org/css-masking-1/",
@@ -7309,6 +7362,12 @@
               "date": "10 April 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-masking-1/",
               "title": "CSS Masking Module Level 1",
               "crawled": "https://drafts.fxtf.org/css-masking-1/",
@@ -7548,6 +7607,12 @@
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-grid/",
               "date": "6 June 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
@@ -8387,25 +8452,28 @@
     {
       "title": "CSS Inline Layout Module Level 3",
       "shortname": "css-inline-3",
+      "date": "10 June 2019",
       "url": "https://www.w3.org/TR/css-inline-3/",
       "latest": "https://www.w3.org/TR/css-inline-3/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-css-inline-3-20180808/",
       "datedStatus": "Working Draft",
       "edDraft": "https://drafts.csswg.org/css-inline-3/",
-      "crawled": "https://www.w3.org/TR/css-inline-3/",
+      "crawled": "https://drafts.csswg.org/css-inline-3/",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/2002/WD-css3-linebox-20020515/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -8654,6 +8722,12 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-regions-1/",
               "title": "CSS Regions Module Level 1",
               "crawled": "https://drafts.csswg.org/css-regions/",
@@ -8738,6 +8812,12 @@
               "title": "CSS Images Module Level 4",
               "crawled": "https://drafts.csswg.org/css-images-4/",
               "date": "9 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -9105,6 +9185,12 @@
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-grid-2/",
               "date": "10 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
             },
             {
               "url": "https://drafts.csswg.org/css-multicol-2/",
@@ -9600,6 +9686,12 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://w3c.github.io/ambient-light/",
+              "date": "21 February 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-cascade-4/",
               "title": "CSS Cascading and Inheritance Level 4",
               "crawled": "https://drafts.csswg.org/css-cascade/",
@@ -10033,6 +10125,12 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
+            },
             {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
@@ -10560,6 +10658,12 @@
               "date": "23 November 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-round-display-1/",
               "title": "CSS Round Display Level 1",
               "crawled": "https://drafts.csswg.org/css-round-display/",
@@ -10706,6 +10810,12 @@
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-grid/",
               "date": "6 June 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
@@ -11043,6 +11153,12 @@
               "date": "22 June 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
               "crawled": "https://drafts.csswg.org/css-text-decor-3/",
@@ -11362,6 +11478,12 @@
               "title": "CSS Fragmentation Module Level 3",
               "crawled": "https://drafts.csswg.org/css-break/",
               "date": "23 November 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -12135,6 +12257,12 @@
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts-4/",
               "date": "24 June 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-logical-1/",
@@ -13172,6 +13300,12 @@
               "date": "9 May 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-line-grid-1/",
               "title": "CSS Line Grid Module Level 1",
               "crawled": "https://drafts.csswg.org/css-line-grid/",
@@ -13718,6 +13852,12 @@
               "title": "CSS Images Module Level 4",
               "crawled": "https://drafts.csswg.org/css-images-4/",
               "date": "9 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
@@ -14288,7 +14428,14 @@
               "date": "30 March 2018"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -14398,6 +14545,12 @@
               "title": "CSS Images Module Level 3",
               "crawled": "https://drafts.csswg.org/css-images-3/",
               "date": "7 November 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
@@ -16213,6 +16366,12 @@
               "date": "20 June 2019"
             },
             {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
+              "date": "Wed Jun 26 2019"
+            },
+            {
               "url": "https://w3c.github.io/ServiceWorker/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/",
@@ -17216,6 +17375,12 @@
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/",
               "date": "22 February 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://w3c.github.io/ambient-light/",
+              "date": "21 February 2019"
             },
             {
               "url": "https://wicg.github.io/geolocation-sensor/",
@@ -19372,6 +19537,12 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://w3c.github.io/ambient-light/",
+              "date": "21 February 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-round-display-1/",
               "title": "CSS Round Display Level 1",
               "crawled": "https://drafts.csswg.org/css-round-display/",
@@ -19981,6 +20152,12 @@
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
               "crawled": "https://w3c.github.io/resource-timing/",
+              "date": "Wed Jun 26 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
               "date": "Wed Jun 26 2019"
             },
             {
@@ -20908,7 +21085,14 @@
               "date": "Wed Jun 26 2019"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
+              "date": "Wed Jun 26 2019"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -21027,6 +21211,12 @@
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/",
               "date": "22 February 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://w3c.github.io/ambient-light/",
+              "date": "21 February 2019"
             },
             {
               "url": "https://wicg.github.io/background-fetch/",
@@ -22039,6 +22229,12 @@
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/",
+              "date": "Wed Jun 26 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
               "date": "Wed Jun 26 2019"
             }
           ],
@@ -23332,6 +23528,12 @@
               "date": "29 May 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-inline-3/",
+              "date": "10 June 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-namespaces-3/",
               "title": "CSS Namespaces Module Level 3",
               "crawled": "https://drafts.csswg.org/css-namespaces/",
@@ -23542,26 +23744,70 @@
     {
       "title": "Server Timing",
       "shortname": "server-timing",
+      "date": "Wed Jun 26 2019",
       "url": "https://www.w3.org/TR/server-timing/",
       "latest": "https://www.w3.org/TR/server-timing/",
       "datedUrl": "https://www.w3.org/TR/2019/WD-server-timing-20190307/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/server-timing/",
-      "crawled": "https://www.w3.org/TR/server-timing/",
+      "crawled": "https://w3c.github.io/server-timing/",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          {
+            "value": "Window",
+            "trivia": "",
+            "separator": {
+              "value": ",",
+              "trivia": ""
+            }
+          },
+          {
+            "value": "Worker",
+            "trivia": "",
+            "separator": null
+          }
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time Level 2",
+                "crawled": "https://w3c.github.io/hr-time/",
+                "date": "Wed Jun 26 2019"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [
+          "https://w3c.github.io/webappsec-secure-contexts/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/resource-timing/",
+            "ref": {
+              "name": "RESOURCE-TIMING-2",
+              "url": "https://www.w3.org/TR/resource-timing-2/"
+            }
+          },
+          {
+            "link": "https://html.spec.whatwg.org/",
+            "ref": {
+              "name": "HTML5",
+              "url": "https://www.w3.org/TR/html5/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -26016,6 +26262,12 @@
               "date": "Wed Jun 26 2019"
             },
             {
+              "url": "https://www.w3.org/TR/ambient-light/",
+              "title": "Ambient Light Sensor",
+              "crawled": "https://w3c.github.io/ambient-light/",
+              "date": "21 February 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/audio-output/",
               "title": "Audio Output Devices API",
               "crawled": "https://w3c.github.io/mediacapture-output/",
@@ -26601,6 +26853,12 @@
               "url": "https://www.w3.org/TR/selection-api/",
               "title": "Selection API",
               "crawled": "https://w3c.github.io/selection-api/",
+              "date": "Wed Jun 26 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/",
               "date": "Wed Jun 26 2019"
             },
             {
