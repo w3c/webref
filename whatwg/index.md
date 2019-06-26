@@ -196,6 +196,7 @@ Informative references to this spec from:
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Share API - Level 1](https://wicg.github.io/web-share/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -301,11 +302,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Ambient Light Sensor {data-spec=true data-error=true}
+## Ambient Light Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/ambient-light/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/ambient-light/) (21 February 2019)
 - Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
 - Latest published version: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-ambient-light-20190307/)
@@ -313,15 +314,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `Window`, `[object Object]`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -528,6 +521,7 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
@@ -1207,6 +1201,7 @@ Normative references to this spec from:
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
@@ -1280,6 +1275,7 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
@@ -1414,6 +1410,7 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
@@ -1780,6 +1777,7 @@ Normative references to this spec from:
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
@@ -2051,6 +2049,7 @@ Normative references to this spec from:
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
@@ -2109,6 +2108,7 @@ Normative references to this spec from:
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -2171,6 +2171,7 @@ Normative references to this spec from:
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
@@ -2447,11 +2448,11 @@ Informative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 
 
-## CSS Inline Layout Module Level 3 {data-spec=true data-error=true}
+## CSS Inline Layout Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-inline-3/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-inline-3/) (10 June 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
 - Latest published version: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
@@ -2459,15 +2460,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2002/WD-css3-linebox-20020515/`](https://www.w3.org/TR/2002/WD-css3-linebox-20020515/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2551,6 +2545,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 
 
@@ -2580,6 +2575,7 @@ Normative references to this spec from:
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 
@@ -2711,6 +2707,7 @@ Normative references to this spec from:
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
@@ -2840,6 +2837,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
+- [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
@@ -2983,6 +2981,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -3145,6 +3144,7 @@ Informative references to this spec from:
 
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 
 
@@ -3202,6 +3202,7 @@ Normative references to this spec from:
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
@@ -3332,6 +3333,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -3482,6 +3484,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
@@ -3742,6 +3745,7 @@ Normative references to this spec from:
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
@@ -4055,6 +4059,7 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
@@ -4170,6 +4175,7 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
@@ -4301,7 +4307,9 @@ Normative references to this spec from:
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 
 
 ## CSS Writing Modes Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -4340,6 +4348,7 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
@@ -4755,6 +4764,7 @@ Normative references to this spec from:
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
@@ -4993,6 +5003,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
+- [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
@@ -5154,6 +5165,7 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
@@ -5620,6 +5632,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 
 
@@ -5842,6 +5855,7 @@ Normative references to this spec from:
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 Informative references to this spec from:
@@ -6116,7 +6130,9 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Server Timing](https://w3c.github.io/server-timing/)
 
 
 ## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -6145,6 +6161,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
+- [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
@@ -6482,6 +6499,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 
 Informative references to this spec from:
 
@@ -6776,6 +6794,7 @@ Informative references to this spec from:
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
@@ -6834,11 +6853,11 @@ Informative references to this spec from:
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 
 
-## Server Timing {data-spec=true data-error=true}
+## Server Timing {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/server-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (Wed Jun 26 2019)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
@@ -6846,15 +6865,14 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `[object Object]`, `[object Object]`
+- Missing references for WebIDL names: 
+     * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/), related reference "RESOURCE-TIMING-2" uses URL [`https://www.w3.org/TR/resource-timing-2/`](https://www.w3.org/TR/resource-timing-2/)
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7554,6 +7572,7 @@ Normative references to this spec from:
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
+- [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Battery Status API](https://w3c.github.io/battery/)
@@ -7652,6 +7671,7 @@ Normative references to this spec from:
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
