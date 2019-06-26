@@ -359,9 +359,15 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CacheQueryOptions`, `EventHandler`, `EventTarget`, `ExtendableEvent`, `ExtendableEventInit`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 - Missing references for WebIDL names: 
+     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ImageResource` defined in [Web App Manifest](https://w3c.github.io/manifest/)
+     * `CacheQueryOptions` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
      * [`https://storage.spec.whatwg.org/`](https://storage.spec.whatwg.org/)
@@ -789,7 +795,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cookie Store API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## Cookie Store API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -798,7 +804,12 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `ExtendableEvent`, `ExtendableEventInit`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `Window`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Window`, `[object Object]`, `[object Object]`
+- Missing references for WebIDL names: 
+     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
 
@@ -2502,7 +2513,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `LayoutWorklet`, `StylePropertyMapReadOnly`
 - WebIDL names also defined elsewhere: 
-    * `[object Object]` also defined in [Web Audio API](https://webaudio.github.io/web-audio-api/)
+    * `[object Object]` also defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) and [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
@@ -2610,7 +2621,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Masking Module Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Masking Module Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2623,7 +2634,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `SVGAnimatedEnumeration`, `SVGAnimatedLength`, `SVGAnimatedTransformList`, `SVGElement`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/)
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
@@ -3042,7 +3052,7 @@ Informative references to this spec from:
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 
 
-## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true}
+## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -3054,7 +3064,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Unknown WebIDL names used: `PaintWorklet`
+- WebIDL names also defined elsewhere: 
+    * `[object Object]` also defined in [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) and [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) and [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
 
@@ -4782,7 +4794,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/entries-api/) (9 November 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/entries-api/) (26 June 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4842,7 +4854,7 @@ Informative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 
-## Filter Effects Module Level 1 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## Filter Effects Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -4854,7 +4866,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-transitions-1/`](https://www.w3.org/TR/css-transitions-1/)
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
@@ -5912,7 +5923,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `EventTarget`, `ExtendableEvent`, `ExtendableEventInit`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`, `[object Object]`, `[object Object]`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6017,7 +6028,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Payment Handler API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -6029,7 +6040,14 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `ExtendableEvent`, `ExtendableEventInit`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `WindowClient`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Missing references for WebIDL names: 
+     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `WindowClient` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6348,9 +6366,14 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `ExtendableEvent`, `ExtendableEventInit`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 - Missing references for WebIDL names: 
+     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `Blob` defined in [File API](https://w3c.github.io/FileAPI/)
+     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6495,7 +6518,7 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
-## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -6507,7 +6530,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Unknown WebIDL names used: `DOMMatrix`, `DOMMatrix2DInit`, `DOMPoint`, `DOMPointInit`, `DOMPointReadOnly`, `DOMRect`, `DOMRectReadOnly`, `DOMTokenList`, `Document`, `Element`, `NodeList`, `ShadowRoot`, `Window`
+- WebIDL names also defined elsewhere: 
+    * `SVGMarkerElement` also defined in [SVG Markers](https://svgwg.org/specs/markers/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/)
      * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/)
@@ -6868,7 +6893,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Service Workers Nightly {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## Service Workers Nightly {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -6877,7 +6902,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `MessagePort`, `Navigator`, `PostMessageOptions`, `WindowOrWorkerGlobalScope`, `WorkerGlobalScope`, `WorkerNavigator`, `WorkerType`
+- WebIDL names also defined elsewhere: 
+    * `[object Object]` also defined in [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) and [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
      * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/)
@@ -6894,6 +6921,15 @@ Normative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Push API](https://w3c.github.io/push-api/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 
 Informative references to this spec from:
 
@@ -6978,7 +7014,7 @@ Informative references to this spec from:
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 
 
-## SVG Markers {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## SVG Markers {data-spec=true data-anomaly=true data-hasUnexpectedIdl=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -6990,6 +7026,10 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unexpected WebIDL definitions found
+- Unknown WebIDL names used: `DOMPoint`, `DOMPointReadOnly`
+- WebIDL names also defined elsewhere: 
+    * `SVGMarkerElement` also defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/`](https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
@@ -7340,7 +7380,7 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 
 
-## Web App Manifest {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Web App Manifest {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -7352,7 +7392,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Event`, `EventHandler`, `ServiceWorkerUpdateViaCache`, `Window`, `WorkerType`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `Window`, `WorkerType`
+- Missing references for WebIDL names: 
+     * `ServiceWorkerUpdateViaCache` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7385,7 +7427,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLMediaElement`, `MessagePort`, `Window`
 - WebIDL names also defined elsewhere: 
-    * `[object Object]` also defined in [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
+    * `[object Object]` also defined in [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) and [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for WebIDL names: 
      * `MediaStream` defined in [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
      * `MediaStreamTrack` defined in [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -7435,7 +7477,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Background Synchronization {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## Web Background Synchronization {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -7444,7 +7486,13 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `ExtendableEvent`, `ExtendableEventInit`, `ServiceWorker`, `ServiceWorkerGlobalScope`, `ServiceWorkerRegistration`, `[object Object]`, `[object Object]`
+- Unknown WebIDL names used: `EventHandler`, `[object Object]`, `[object Object]`
+- Missing references for WebIDL names: 
+     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/)
      * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/)
@@ -7460,7 +7508,7 @@ Informative references to this spec from:
 - [Push API](https://w3c.github.io/push-api/)
 
 
-## Web Bluetooth {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Bluetooth {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -7469,7 +7517,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Navigator`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/fingerprinting-guidance/`](https://w3c.github.io/fingerprinting-guidance/)
 - Inconsistent references for links: 
@@ -7804,7 +7852,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebDriver {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## WebDriver {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -7816,7 +7864,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Missing references for links: 
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
      * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
@@ -7838,7 +7885,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-noIdlContent=true}
+## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -7847,11 +7894,15 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Unknown WebIDL names used: `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
 
@@ -7999,12 +8050,13 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMPointReadOnly`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Navigator`, `WebGL2RenderingContext`, `Window`
+- Unknown WebIDL names used: `DOMPointReadOnly`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Navigator`, `Window`
 - WebIDL names also defined elsewhere: 
     * `GamepadMappingType` also defined in [Gamepad](https://w3c.github.io/gamepad/)
 - Missing references for WebIDL names: 
      * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
      * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+     * `WebGL2RenderingContext` defined in [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
      * `WebGLFramebuffer` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
      * `WebGLContextAttributes` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
      * `WebGLRenderingContextBase` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)

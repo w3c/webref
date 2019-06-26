@@ -2,32 +2,6 @@
 % Reffy
 % June 26, 2019
 
-## https://w3c.github.io/reporting/ {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Latest published version](undefined)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -296,11 +270,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Battery Status API {data-spec=true data-error=true}
+## Battery Status API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/battery-status/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2016/CR-battery-status-20160707/) (07 July 2016)
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
 - Latest published version: [http://www.w3.org/TR/battery-status/](http://www.w3.org/TR/battery-status/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
@@ -308,15 +282,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `EventHandler`, `EventTarget`, `Navigator`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -670,6 +636,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 
 
@@ -2945,7 +2912,7 @@ Informative references to this spec from:
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 
 
-## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2957,7 +2924,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Unknown WebIDL names used: `CSS`, `PaintWorklet`
+- WebIDL names also defined elsewhere: 
+    * `[object Object]` also defined in [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
      * [`https://www.w3.org/TR/css4-images/`](https://www.w3.org/TR/css4-images/)
@@ -4507,7 +4476,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Feature Policy {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Feature Policy {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -4516,7 +4485,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Document`, `HTMLIFrameElement`, `ReportBody`
+- Unknown WebIDL names used: `Document`, `HTMLIFrameElement`
+- Missing references for WebIDL names: 
+     * `ReportBody` defined in [Reporting API 1](https://w3c.github.io/reporting/)
 - Missing references for links: 
      * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/)
 - Inconsistent references for links: 
@@ -4569,6 +4540,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190626/)
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
@@ -4593,7 +4565,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/entries-api/) (9 November 2018)
+- Crawled version: [Initial URL](https://wicg.github.io/entries-api/) (26 June 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4640,6 +4612,7 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -4655,7 +4628,7 @@ Informative references to this spec from:
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
 
 
-## Filter Effects Module Level 1 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## Filter Effects Module Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -4667,7 +4640,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Unknown WebIDL names used: `SVGAnimatedBoolean`, `SVGAnimatedEnumeration`, `SVGAnimatedInteger`, `SVGAnimatedLength`, `SVGAnimatedNumber`, `SVGAnimatedNumberList`, `SVGAnimatedPreserveAspectRatio`, `SVGAnimatedString`, `SVGElement`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
@@ -5007,6 +4980,7 @@ Normative references to this spec from:
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20181218/)
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
@@ -5085,6 +5059,7 @@ Normative references to this spec from:
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
@@ -5245,6 +5220,7 @@ Normative references to this spec from:
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
@@ -5404,6 +5380,7 @@ Normative references to this spec from:
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
@@ -6711,6 +6688,33 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## Reporting API 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/reporting/) (14 May 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `Date`
+- Missing references for links: 
+     * [`https://w3c.github.io/webdriver/webdriver-spec.html`](https://w3c.github.io/webdriver/webdriver-spec.html)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
+
+No informative reference to this spec from other specs.
+
+
 ## Resize Observer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -6837,6 +6841,7 @@ Normative references to this spec from:
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190531/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
@@ -7433,6 +7438,7 @@ Normative references to this spec from:
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
@@ -7613,6 +7619,7 @@ Normative references to this spec from:
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
@@ -7761,7 +7768,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLMediaElement`, `MediaStream`, `MediaStreamTrack`, `Window`
 - WebIDL names also defined elsewhere: 
-    * `[object Object]` also defined in [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+    * `[object Object]` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
      * [`https://w3c.github.io/mediacapture-fromelement/`](https://w3c.github.io/mediacapture-fromelement/)
 - Inconsistent references for links: 
@@ -7829,7 +7836,7 @@ Informative references to this spec from:
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
 
 
-## Web Bluetooth {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Bluetooth {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -7838,7 +7845,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Navigator`, `Window`
 - Missing references for links: 
      * [`https://w3c.github.io/fingerprinting-guidance/`](https://w3c.github.io/fingerprinting-guidance/)
 - Inconsistent references for links: 
@@ -8105,6 +8112,7 @@ Normative references to this spec from:
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
@@ -8214,7 +8222,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebDriver {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## WebDriver {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -8226,7 +8234,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
 - Missing references for links: 
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
      * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
@@ -8241,11 +8248,12 @@ Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 
 No informative reference to this spec from other specs.
 
 
-## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-noIdlContent=true}
+## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -8254,11 +8262,15 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Unknown WebIDL names used: `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`, `[object Object]`
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
 
 Informative references to this spec from:
 
@@ -8322,6 +8334,7 @@ Normative references to this spec from:
 - [Ambient Light Sensor](https://www.w3.org/TR/2019/WD-ambient-light-20190307/)
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/)
@@ -8397,6 +8410,7 @@ Normative references to this spec from:
 - [Proximity Sensor](https://www.w3.org/TR/2019/WD-proximity-20190305/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20190603/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -8572,11 +8586,12 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `DOMPointReadOnly`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLCanvasElement`, `Navigator`, `WebGL2RenderingContext`, `Window`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `DOMPointReadOnly`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLCanvasElement`, `Navigator`, `Window`
 - WebIDL names also defined elsewhere: 
     * `GamepadMappingType` also defined in [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/)
 - Missing references for WebIDL names: 
      * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+     * `WebGL2RenderingContext` defined in [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
      * `WebGLFramebuffer` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
      * `WebGLContextAttributes` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
      * `WebGLRenderingContextBase` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -8607,7 +8622,7 @@ No informative reference to this spec from other specs.
 
 - Unknown WebIDL names used: `Console`, `FakeWorklet`, `Window`
 - WebIDL names also defined elsewhere: 
-    * `[object Object]` also defined in [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
+    * `[object Object]` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 
 ### Known dependencies on this specification {.dependencies}
 
