@@ -239,13 +239,11 @@ dictionary XRSessionEventInit : EventInit {
 interface XRInputSourceEvent : Event {
   [SameObject] readonly attribute XRFrame frame;
   [SameObject] readonly attribute XRInputSource inputSource;
-  [SameObject] readonly attribute long? buttonIndex;
 };
 
 dictionary XRInputSourceEventInit : EventInit {
   required XRFrame frame;
   required XRInputSource inputSource;
-  long? buttonIndex = null;
 };
 
 [SecureContext, Exposed=Window, Constructor(DOMString type, XRInputSourcesChangeEventInit eventInitDict)]
