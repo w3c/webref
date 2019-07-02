@@ -1,6 +1,6 @@
-% Diff between report from "July 01, 2019" and reference report from "June 30, 2019"
+% Diff between report from "July 02, 2019" and reference report from "July 01, 2019"
 % Reffy
-% July 01, 2019
+% July 02, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -37,11 +37,25 @@
 - Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* [object Object], [object Object]
 
 
+## CSS Conditional Rules Module Level 3
+
+- URL: [https://www.w3.org/TR/css3-conditional/](https://www.w3.org/TR/css3-conditional/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-conditional-3/)
+- WebIDL names also defined elsewhere: *DEL* CSSGroupingRule
+
+
 ## CSS Font Loading Module Level 3
 
 - URL: [https://www.w3.org/TR/css-font-loading-3/](https://www.w3.org/TR/css-font-loading-3/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-font-loading/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+
+
+## CSS Object Model (CSSOM)
+
+- URL: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/cssom/)
+- WebIDL names also defined elsewhere: *DEL* CSSGroupingRule
 
 
 ## Encoding Standard

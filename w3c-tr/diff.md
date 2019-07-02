@@ -1,6 +1,6 @@
-% Diff between report from "July 01, 2019" and reference report from "June 30, 2019"
+% Diff between report from "July 02, 2019" and reference report from "July 01, 2019"
 % Reffy
-% July 01, 2019
+% July 02, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -41,9 +41,9 @@
 ## CSS Animations Level 1
 
 - URL: [https://www.w3.org/TR/css-animations-1/](https://www.w3.org/TR/css-animations-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-animations-1/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - Editor's Draft: [https://drafts.csswg.org/css-animations/](https://drafts.csswg.org/css-animations/)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -54,9 +54,9 @@
 ## CSS Flexible Box Layout Module Level 1
 
 - URL: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-flexbox-1/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - Editor's Draft: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
