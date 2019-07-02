@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-07-01T06:05:35.001Z",
+  "date": "2019-07-02T06:05:29.846Z",
   "stats": {
     "crawled": 240,
-    "errors": 3,
+    "errors": 1,
     "studied": 240
   },
   "results": [
@@ -76,7 +76,7 @@
     {
       "title": "404 not found",
       "shortname": "SVG2",
-      "date": "Mon Jul 01 2019",
+      "date": "Tue Jul 02 2019",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
@@ -780,8 +780,8 @@
               {
                 "url": "https://www.w3.org/TR/appmanifest/",
                 "title": "Web App Manifest",
-                "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-                "date": "May 2019 "
+                "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+                "date": "July 2019 "
               }
             ]
           }
@@ -991,6 +991,12 @@
               "date": "28 October 2015"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
               "title": "CSS Backgrounds and Borders Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/",
@@ -1097,6 +1103,12 @@
               "title": "CSS Exclusions Module Level 1",
               "crawled": "https://drafts.csswg.org/css-exclusions-1/",
               "date": "18 December 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -1926,8 +1938,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -2005,7 +2017,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "Mon Jul 01 2019",
+      "date": "Tue Jul 02 2019",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -2283,26 +2295,48 @@
     {
       "title": "CSS Animations Level 1",
       "shortname": "css-animations-1",
+      "date": "11 October 2018",
       "url": "https://www.w3.org/TR/css-animations-1/",
       "latest": "https://www.w3.org/TR/css-animations-1/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
       "datedStatus": "Working Draft",
       "edDraft": "https://drafts.csswg.org/css-animations/",
-      "crawled": "https://www.w3.org/TR/css-animations-1/",
+      "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "CSSRule",
+          "CSSRuleList",
+          "CSSStyleDeclaration",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "GlobalEventHandlers",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css3-positioning/",
+          "https://www.w3.org/TR/css3-background/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css3-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -2684,6 +2718,12 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-sizing-3/",
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 3",
               "crawled": "https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/",
@@ -2839,6 +2879,12 @@
               "title": "CSS Containment Module Level 1",
               "crawled": "https://www.w3.org/TR/2019/CR-css-contain-1-20190430/",
               "date": "30 April 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-sizing-3/",
@@ -3004,6 +3050,12 @@
               "title": "CSS Display Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/CR-css-display-3-20180828/",
               "date": "28 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-1/",
@@ -3192,7 +3244,13 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -3377,6 +3435,12 @@
               "title": "CSS Fill and Stroke Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/",
               "date": "13 April 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -4412,6 +4476,12 @@
               "date": "18 June 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://www.w3.org/TR/2017/WD-css-ui-4-20171222/",
@@ -4452,6 +4522,12 @@
               "title": "CSS Fill and Stroke Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/",
               "date": "13 April 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-break-3/",
@@ -4690,6 +4766,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
               "crawled": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -4854,26 +4936,62 @@
     {
       "title": "CSS Flexible Box Layout Module Level 1",
       "shortname": "css-flexbox-1",
+      "date": "19 November 2018",
       "url": "https://www.w3.org/TR/css-flexbox-1/",
       "latest": "https://www.w3.org/TR/css-flexbox-1/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://drafts.csswg.org/css-flexbox-1/",
-      "crawled": "https://www.w3.org/TR/css-flexbox-1/",
+      "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css3-multicol/",
+          "https://www.w3.org/TR/css-align/",
+          "https://www.w3.org/TR/css-display/",
+          "https://www.w3.org/TR/css3-align/",
+          "https://www.w3.org/TR/css3-positioning/",
+          "https://www.w3.org/TR/css3-mediaqueries/",
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations-1/",
+          "https://www.w3.org/TR/css3-speech/",
+          "https://www.w3.org/TR/css3-break/",
+          "https://www.w3.org/TR/css-break/",
+          "https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css3-writing-modes/",
+            "ref": {
+              "name": "CSS3-WRITING-MODES",
+              "url": "https://www.w3.org/TR/css-writing-modes-3/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/css3-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -5564,6 +5682,12 @@
               "date": "13 April 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-grid-1/",
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-grid-1-20171214/",
@@ -6201,6 +6325,12 @@
               "date": "13 April 2017"
             },
             {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-content-3/",
               "title": "CSS Generated Content Module Level 3",
               "crawled": "http://www.w3.org/TR/2016/WD-css-content-3-20160602/",
@@ -6465,6 +6595,12 @@
               "date": "28 August 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-grid-1/",
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-grid-1-20171214/",
@@ -6613,6 +6749,12 @@
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/",
               "date": "10 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-break-3/",
@@ -7488,6 +7630,12 @@
               "date": "28 June 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
               "crawled": "https://drafts.csswg.org/css-animations-2/",
@@ -7510,6 +7658,12 @@
               "title": "CSS Display Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/CR-css-display-3-20180828/",
               "date": "28 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -7746,6 +7900,12 @@
               "title": "CSS Display Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/CR-css-display-3-20180828/",
               "date": "28 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-break-3/",
@@ -8354,6 +8514,12 @@
               "date": "18 December 2018"
             },
             {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-grid-1/",
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2017/CR-css-grid-1-20171214/",
@@ -8463,6 +8629,12 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
             {
               "url": "https://www.w3.org/TR/css-break-3/",
               "title": "CSS Fragmentation Module Level 3",
@@ -8598,6 +8770,12 @@
               "title": "CSS Display Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/CR-css-display-3-20180828/",
               "date": "28 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-content-3/",
@@ -9449,6 +9627,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-cascade-3/",
               "title": "CSS Cascading and Inheritance Level 3",
               "crawled": "https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/",
@@ -9607,8 +9791,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -9797,6 +9981,12 @@
               "date": "5 March 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-text-3/",
               "title": "CSS Text Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-text-3-20181212/",
@@ -9942,6 +10132,12 @@
               "title": "CSS Display Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/CR-css-display-3-20180828/",
               "date": "28 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -10522,6 +10718,12 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
               "crawled": "https://drafts.csswg.org/css-animations-2/",
@@ -10753,6 +10955,12 @@
               "date": "28 October 2015"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
               "title": "CSS Backgrounds and Borders Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/",
@@ -10841,6 +11049,12 @@
               "title": "CSS Fill and Stroke Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/",
               "date": "13 April 2017"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
@@ -11212,6 +11426,12 @@
               "date": "28 June 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
               "crawled": "https://drafts.csswg.org/css-animations-2/",
@@ -11276,6 +11496,12 @@
               "title": "CSS Exclusions Module Level 1",
               "crawled": "https://drafts.csswg.org/css-exclusions-1/",
               "date": "18 December 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -11526,6 +11752,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
@@ -11626,6 +11858,12 @@
               "title": "CSS Exclusions Module Level 1",
               "crawled": "https://drafts.csswg.org/css-exclusions-1/",
               "date": "18 December 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-break-3/",
@@ -11816,6 +12054,12 @@
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/",
               "date": "10 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-break-3/",
@@ -12066,8 +12310,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -12350,8 +12594,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webauthn-1/",
@@ -12369,7 +12613,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -12772,7 +13016,7 @@
               "url": "https://wicg.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
-              "date": "20 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -12831,8 +13075,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -13385,8 +13629,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             }
           ]
         },
@@ -14100,6 +14344,12 @@
               "date": "28 June 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
               "title": "CSS Backgrounds and Borders Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/",
@@ -14385,7 +14635,7 @@
               "url": "https://wicg.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
-              "date": "20 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/media-source/",
@@ -14415,7 +14665,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -14618,8 +14868,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -14661,7 +14911,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -14709,13 +14959,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -14727,7 +14977,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "30 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -14772,6 +15022,12 @@
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/",
               "date": "10 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-1/",
@@ -14915,7 +15171,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -15045,6 +15301,12 @@
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
               "date": "28 June 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
@@ -15260,7 +15522,7 @@
               "url": "https://wicg.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
-              "date": "20 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -15278,7 +15540,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -15433,8 +15695,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -15464,7 +15726,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -15494,13 +15756,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -15512,7 +15774,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "30 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -15545,6 +15807,12 @@
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/",
               "date": "10 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-lists-3/",
@@ -15646,7 +15914,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             }
           ]
         },
@@ -15833,6 +16101,12 @@
               "date": "28 June 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
               "title": "CSS Backgrounds and Borders Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/",
@@ -16046,7 +16320,7 @@
               "url": "https://wicg.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
-              "date": "20 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -16064,7 +16338,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -16231,8 +16505,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -16262,7 +16536,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -16298,13 +16572,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16316,7 +16590,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "30 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -16355,6 +16629,12 @@
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/",
               "date": "10 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-lists-3/",
@@ -16444,7 +16724,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             }
           ]
         },
@@ -16747,7 +17027,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "Mon Jul 01 2019",
+      "date": "Tue Jul 02 2019",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "report": {
@@ -17563,8 +17843,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             }
           ],
           "informative": [
@@ -17623,7 +17903,7 @@
     },
     {
       "title": "Media Session Standard",
-      "date": "20 June 2019",
+      "date": "1 July 2019",
       "url": "https://wicg.github.io/mediasession/",
       "crawled": "https://wicg.github.io/mediasession/",
       "report": {
@@ -18168,7 +18448,7 @@
     },
     {
       "title": "Network Information API",
-      "date": "Mon Jul 01 2019",
+      "date": "Tue Jul 02 2019",
       "url": "https://wicg.github.io/netinfo/",
       "crawled": "https://wicg.github.io/netinfo/",
       "report": {
@@ -18439,7 +18719,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -19008,13 +19288,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "30 June 2019"
+              "date": "1 July 2019"
             }
           ],
           "informative": []
@@ -19124,7 +19404,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -19138,7 +19418,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             }
           ]
         },
@@ -19187,7 +19467,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             }
           ],
           "informative": [
@@ -19205,7 +19485,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "Mon Jul 01 2019",
+      "date": "Tue Jul 02 2019",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -20012,8 +20292,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webauthn-1/",
@@ -20051,7 +20331,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "30 June 2019"
+              "date": "1 July 2019"
             }
           ]
         },
@@ -20590,8 +20870,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://wicg.github.io/BackgroundSync/spec/",
@@ -20951,8 +21231,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             }
           ],
           "informative": []
@@ -21063,7 +21343,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             }
           ],
           "informative": [
@@ -21131,7 +21411,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -21435,7 +21715,7 @@
               "url": "https://wicg.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
-              "date": "20 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -21512,8 +21792,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webauthn-1/",
@@ -21525,7 +21805,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -21867,6 +22147,12 @@
               "date": "28 June 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
               "crawled": "https://drafts.csswg.org/css-animations-2/",
@@ -22068,7 +22354,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -22122,7 +22408,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -22271,8 +22557,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -22308,7 +22594,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -22344,7 +22630,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -22356,7 +22642,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "30 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -22552,13 +22838,13 @@
     {
       "title": "Web App Manifest",
       "shortname": "appmanifest",
-      "date": "May 2019 ",
+      "date": "July 2019 ",
       "url": "https://www.w3.org/TR/appmanifest/",
       "latest": "https://www.w3.org/TR/appmanifest/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/manifest/",
-      "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
+      "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -22585,7 +22871,7 @@
               "url": "https://wicg.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
-              "date": "20 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -22993,7 +23279,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "Mon Jul 01 2019",
+      "date": "Tue Jul 02 2019",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "report": {
@@ -23109,7 +23395,7 @@
     },
     {
       "title": "Web Share API - Level 1",
-      "date": "Mon Jul 01 2019",
+      "date": "Tue Jul 02 2019",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "report": {
@@ -23338,6 +23624,12 @@
               "date": "28 June 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
+            },
+            {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
               "title": "CSS Backgrounds and Borders Module Level 3",
               "crawled": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/",
@@ -23563,7 +23855,7 @@
               "url": "https://wicg.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
-              "date": "20 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -23581,7 +23873,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -23748,8 +24040,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -23779,7 +24071,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -23809,13 +24101,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -23827,7 +24119,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "30 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -23860,6 +24152,12 @@
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/",
               "date": "10 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
+              "date": "19 November 2018"
             },
             {
               "url": "https://www.w3.org/TR/css-lists-3/",
@@ -23961,7 +24259,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             }
           ]
         },
@@ -24253,7 +24551,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Mon Jul 01 2019",
+      "date": "Tue Jul 02 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "report": {
@@ -24366,7 +24664,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Mon Jul 01 2019",
+      "date": "Tue Jul 02 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "report": {
@@ -24554,7 +24852,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             }
           ],
           "informative": [
@@ -24737,6 +25035,12 @@
               "title": "CSS Animation Worklet API",
               "crawled": "https://wicg.github.io/animation-worklet/",
               "date": "28 June 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
+              "date": "11 October 2018"
             },
             {
               "url": "https://drafts.csswg.org/css-animations-2/",
@@ -24952,7 +25256,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -25012,7 +25316,7 @@
               "url": "https://wicg.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://wicg.github.io/mediasession/",
-              "date": "20 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/media-source/",
@@ -25036,7 +25340,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/orientation-sensor/",
@@ -25096,7 +25400,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -25239,8 +25543,8 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190531/",
-              "date": "May 2019 "
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20190702/",
+              "date": "July 2019 "
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -25276,13 +25580,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -25324,13 +25628,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Mon Jul 01 2019"
+              "date": "Tue Jul 02 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -25342,7 +25646,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "30 June 2019"
+              "date": "1 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -25569,7 +25873,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "30 June 2019",
+      "date": "1 July 2019",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "report": {
@@ -25991,7 +26295,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Mon Jul 01 2019"
+                "date": "Tue Jul 02 2019"
               }
             ]
           },
@@ -26002,7 +26306,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Mon Jul 01 2019"
+                "date": "Tue Jul 02 2019"
               }
             ]
           },
@@ -26013,7 +26317,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Mon Jul 01 2019"
+                "date": "Tue Jul 02 2019"
               }
             ]
           },
@@ -26024,7 +26328,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Mon Jul 01 2019"
+                "date": "Tue Jul 02 2019"
               }
             ]
           },
@@ -26035,7 +26339,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Mon Jul 01 2019"
+                "date": "Tue Jul 02 2019"
               }
             ]
           }
