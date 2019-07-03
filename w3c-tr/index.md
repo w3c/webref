@@ -1,8 +1,34 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 02, 2019
+% July 03, 2019
 
-## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## https://drafts.csswg.org/css-transitions-2/ {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](undefined)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -14,29 +40,38 @@
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ConstrainBoolean`, `ConstrainDOMString`, `ConstrainDouble`, `ImageBitmap`, `MediaStreamTrack`, `MediaTrackCapabilities`, `MediaTrackConstraintSet`, `MediaTrackSettings`, `MediaTrackSupportedConstraints`
+- Unknown WebIDL names used: `ImageBitmap`
+- Missing references for WebIDL names: 
+     * `MediaStreamTrack` defined in [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+     * `MediaTrackSupportedConstraints` defined in [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+     * `MediaTrackCapabilities` defined in [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+     * `MediaTrackConstraintSet` defined in [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+     * `ConstrainDOMString` defined in [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+     * `ConstrainDouble` defined in [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+     * `ConstrainBoolean` defined in [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+     * `MediaTrackSettings` defined in [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 
-Informative references to this spec from:
-
-- [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
+No informative reference to this spec from other specs.
 
 
 ## 404 not found {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true data-noCssDefinitions=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Tue Jul 02 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Wed Jul 03 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -668,7 +703,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Tue Jul 02 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Wed Jul 03 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -832,7 +867,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/)
-- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
@@ -915,7 +949,6 @@ Normative references to this spec from:
 - [CSS Text Module Level 3](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
-- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -1235,7 +1268,6 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
-- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -1347,7 +1379,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
-- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 
 
 ## CSS Conditional Rules Module Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-noCssDefinitions=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2709,7 +2740,6 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
-- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -3842,7 +3872,6 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
-- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
@@ -3852,28 +3881,6 @@ Informative references to this spec from:
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-
-
-## CSS Transitions Level 2 {data-spec=true data-anomaly=true data-hasUnexpectedIdl=true data-noCssDefinitions=true data-unknownIdlNames=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-transitions-2/) (18 April 2019)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- No CSS definitions found
-- Unexpected WebIDL definitions found
-- Unknown WebIDL names used: `CSSOMString`, `Window`
-- Missing references for links: 
-     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ## CSS TV Profile 1.0 {data-spec=true data-anomaly=true data-noCssDefinitions=true}
@@ -5039,7 +5046,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
@@ -5207,6 +5214,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
@@ -5366,6 +5374,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
@@ -5503,7 +5512,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Tue Jul 02 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Wed Jul 03 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5696,19 +5705,19 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Media Capture and Streams {data-spec=true data-anomaly=true data-noIdlContent=true}
+## Media Capture and Streams {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/) (3 October 2017)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/) (July 2019 )
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - Shortname: mediacapture-streams
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Navigator`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5724,6 +5733,11 @@ Normative references to this spec from:
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
+- [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
+
 Informative references to this spec from:
 
 - ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
@@ -5731,7 +5745,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
 
-## Media Capture Depth Stream Extensions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Media Capture Depth Stream Extensions {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -5743,7 +5757,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ConstrainBoolean`, `ConstrainDOMString`, `ConstrainDouble`, `DoubleRange`, `MediaTrackCapabilities`, `MediaTrackConstraintSet`, `MediaTrackSettings`, `MediaTrackSupportedConstraints`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
@@ -5768,18 +5781,18 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLMediaElement`, `MediaStream`, `MediaStreamTrack`, `Window`
+- Unknown WebIDL names used: `HTMLCanvasElement`, `HTMLMediaElement`, `Window`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
      * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/), related reference "2DCONTEXT" uses URL [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
 
-Informative references to this spec from:
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 
-- [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
+No informative reference to this spec from other specs.
 
 
 ## Media Queries {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
@@ -5927,7 +5940,7 @@ Informative references to this spec from:
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 
 
-## MediaStream Recording {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## MediaStream Recording {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -5939,7 +5952,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `MediaStream`, `Window`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Window`
+- Missing references for WebIDL names: 
+     * `MediaStream` defined in [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
      * [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
@@ -5950,16 +5965,16 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
 
 Informative references to this spec from:
 
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 
 
-## MediaStreamTrack Content Hints {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true}
+## MediaStreamTrack Content Hints {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
 
@@ -5972,7 +5987,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `MediaStreamTrack`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6037,13 +6051,13 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
-- [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
@@ -6116,7 +6130,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Tue Jul 02 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Wed Jul 03 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6402,7 +6416,7 @@ Normative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/2019/WD-gyroscope-20190307/)
 - [Magnetometer](https://www.w3.org/TR/2019/WD-magnetometer-20190307/)
-- [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -6496,7 +6510,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Tue Jul 02 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Wed Jul 03 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6778,7 +6792,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ConstrainBoolean`, `ConstrainDOMString`, `MediaStream`, `MediaStreamConstraints`, `MediaTrackConstraintSet`, `NavigatorUserMedia`
+- Unknown WebIDL names used: `NavigatorUserMedia`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
@@ -7588,7 +7602,6 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
-- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
@@ -7606,6 +7619,7 @@ Normative references to this spec from:
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
@@ -7717,7 +7731,6 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
-- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 
@@ -7769,7 +7782,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLMediaElement`, `MediaStream`, `MediaStreamTrack`, `Window`
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLMediaElement`, `Window`
 - WebIDL names also defined elsewhere: 
     * `[object Object]` also defined in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/) and [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
@@ -7782,11 +7795,11 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
 
 Informative references to this spec from:
 
-- [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 
 
@@ -7919,7 +7932,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Tue Jul 02 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Wed Jul 03 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7968,7 +7981,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Tue Jul 02 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Wed Jul 03 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8100,6 +8113,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
@@ -8260,7 +8274,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Jul 02 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Jul 03 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8284,7 +8298,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Jul 02 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Jul 03 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8360,7 +8374,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
-- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
@@ -8391,7 +8404,7 @@ Normative references to this spec from:
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Magnetometer](https://www.w3.org/TR/2019/WD-magnetometer-20190307/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
@@ -8480,7 +8493,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AlgorithmIdentifier`, `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `MediaStream`, `MediaStreamTrack`, `RTCError`, `Window`
+- Unknown WebIDL names used: `AlgorithmIdentifier`, `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `RTCError`, `Window`
 - Missing references for links: 
      * [`https://www.w3.org/TR/webrtc-identity/`](https://www.w3.org/TR/webrtc-identity/)
 - Inconsistent references for links: 
@@ -8491,13 +8504,13 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
+- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [WebRTC DSCP Control API](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
 
 Informative references to this spec from:
 
-- [Media Capture and Streams](https://www.w3.org/TR/2017/CR-mediacapture-streams-20171003/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -8530,7 +8543,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (1 July 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (2 July 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
