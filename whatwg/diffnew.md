@@ -1,6 +1,6 @@
-% Diff between report from "July 03, 2019" and reference report from "July 02, 2019"
+% Diff between report from "July 04, 2019" and reference report from "July 03, 2019"
 % Reffy
-% July 03, 2019
+% July 04, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -238,6 +238,13 @@
 - URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled version: [Initial URL](https://wicg.github.io/webusb/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+
+
+## WebXR Device API
+
+- URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
+- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/)
+- Missing references for links: *INS* https://w3c.github.io/orientation-sensor/
 
 
 ## XMLHttpRequest Standard

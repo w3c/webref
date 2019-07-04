@@ -1,15 +1,6 @@
-% Diff between report from "July 03, 2019" and reference report from "July 02, 2019"
+% Diff between report from "July 04, 2019" and reference report from "July 03, 2019"
 % Reffy
-% July 03, 2019
-
-## "MediaStream Image Capture"
-
-- URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
-- Editor's Draft: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
-- Unknown WebIDL names used: *DEL* ConstrainBoolean, ConstrainDOMString, ConstrainDouble, MediaStreamTrack, MediaTrackCapabilities, MediaTrackConstraintSet, MediaTrackSettings, MediaTrackSupportedConstraints
-- Missing references for WebIDL names: *INS* MediaStreamTrack, MediaTrackSupportedConstraints, MediaTrackCapabilities, MediaTrackConstraintSet, ConstrainDOMString, ConstrainDouble, ConstrainBoolean, MediaTrackSettings
-
+% July 04, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -45,6 +36,19 @@
 - URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled version: [Initial URL](https://wicg.github.io/cookie-store/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* [object Object], [object Object]
+
+
+## CSS Transitions Level 2
+
+- URL: [https://drafts.csswg.org/css-transitions-2/](https://drafts.csswg.org/css-transitions-2/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-transitions-2/)
+- Spec title: *INS* CSS Transitions Level 2 / *DEL* https://drafts.csswg.org/css-transitions-2/
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
 ## Encoding
@@ -85,19 +89,6 @@
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
-## https://drafts.csswg.org/css-transitions-2/
-
-- URL: [https://drafts.csswg.org/css-transitions-2/](https://drafts.csswg.org/css-transitions-2/)
-- Crawled version: [Latest published version](undefined)
-- Spec title: *INS* https://drafts.csswg.org/css-transitions-2/ / *DEL* CSS Transitions Level 2
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
-
-
 ## Indexed Database API 2.0
 
 - URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
@@ -111,49 +102,6 @@
 - URL: [https://wicg.github.io/media-capabilities/](https://wicg.github.io/media-capabilities/)
 - Crawled version: [Initial URL](https://wicg.github.io/media-capabilities/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* [object Object], [object Object]
-
-
-## Media Capture and Streams
-
-- URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
-- Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
-- No WebIDL definitions found: *INS* false / *DEL* true
-- Obsolete WebIDL constructs found: *INS* false
-- Unknown WebIDL names used: *INS* Event, EventHandler, EventInit, EventTarget, Navigator, Window
-
-
-## Media Capture Depth Stream Extensions
-
-- URL: [https://www.w3.org/TR/mediacapture-depth/](https://www.w3.org/TR/mediacapture-depth/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
-- Editor's Draft: [https://w3c.github.io/mediacapture-depth/](https://w3c.github.io/mediacapture-depth/)
-- Unknown WebIDL names used: *DEL* ConstrainBoolean, ConstrainDOMString, ConstrainDouble, DoubleRange, MediaTrackCapabilities, MediaTrackConstraintSet, MediaTrackSettings, MediaTrackSupportedConstraints
-
-
-## Media Capture from DOM Elements
-
-- URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
-- Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
-- Unknown WebIDL names used: *DEL* MediaStream, MediaStreamTrack
-
-
-## MediaStream Recording
-
-- URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- Editor's Draft: [https://w3c.github.io/mediacapture-record/](https://w3c.github.io/mediacapture-record/)
-- Unknown WebIDL names used: *DEL* MediaStream
-- Missing references for WebIDL names: *INS* MediaStream
-
-
-## MediaStreamTrack Content Hints
-
-- URL: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
-- Editor's Draft: [https://w3c.github.io/mst-content-hint/](https://w3c.github.io/mst-content-hint/)
-- Unknown WebIDL names used: *DEL* MediaStreamTrack
 
 
 ## Network Information API
@@ -218,14 +166,6 @@
 - Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* [object Object], [object Object]
 
 
-## Screen Capture
-
-- URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
-- Crawled version: [Latest published version](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
-- Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
-- Unknown WebIDL names used: *DEL* ConstrainBoolean, ConstrainDOMString, MediaStream, MediaStreamConstraints, MediaTrackConstraintSet
-
-
 ## Storage Standard
 
 - URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
@@ -239,14 +179,6 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
-
-
-## Web Audio API
-
-- URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
-- Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
-- Unknown WebIDL names used: *DEL* MediaStream, MediaStreamTrack
 
 
 ## Web Background Synchronization
@@ -276,14 +208,6 @@
 - URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
-
-
-## WebRTC 1.0: Real-time Communication Between Browsers
-
-- URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
-- Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- Unknown WebIDL names used: *DEL* MediaStream, MediaStreamTrack
 
 
 ## WebUSB API
