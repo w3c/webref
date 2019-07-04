@@ -1,26 +1,12 @@
-% Diff between report from "July 03, 2019" and reference report from "July 02, 2019"
+% Diff between report from "July 04, 2019" and reference report from "July 03, 2019"
 % Reffy
-% July 03, 2019
+% July 04, 2019
 
 ## Accelerated Shape Detection in Images
 
 - URL: [https://wicg.github.io/shape-detection-api/](https://wicg.github.io/shape-detection-api/)
 - Crawled version: [Initial URL](https://wicg.github.io/shape-detection-api/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
-
-
-## Accelerometer
-
-- URL: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/accelerometer/)
-- Unknown WebIDL names used: *INS* Sensor, SensorOptions
-
-
-## Ambient Light Sensor
-
-- URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/ambient-light/)
-- Unknown WebIDL names used: *INS* Sensor
 
 
 ## Background Fetch
@@ -82,9 +68,8 @@
 ## Generic Sensor API
 
 - URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/generic-sensor/)
-- Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/)
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -96,14 +81,7 @@
 
 - URL: [https://wicg.github.io/geolocation-sensor/](https://wicg.github.io/geolocation-sensor/)
 - Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/)
-- Unknown WebIDL names used: *INS* Sensor, SensorOptions, [object Object], [object Object] / *DEL* [object Object], [object Object]
-
-
-## Gyroscope
-
-- URL: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/gyroscope/)
-- Unknown WebIDL names used: *INS* Sensor, SensorOptions
+- Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* Sensor, SensorOptions, [object Object], [object Object]
 
 
 ## High Resolution Time Level 2
@@ -128,13 +106,6 @@
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
-## Magnetometer
-
-- URL: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/magnetometer/)
-- Unknown WebIDL names used: *INS* Sensor, SensorOptions
-
-
 ## Media Capabilities
 
 - URL: [https://wicg.github.io/media-capabilities/](https://wicg.github.io/media-capabilities/)
@@ -147,13 +118,6 @@
 - URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
 - Crawled version: [Initial URL](https://wicg.github.io/netinfo/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* [object Object], [object Object]
-
-
-## Orientation Sensor
-
-- URL: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
-- Unknown WebIDL names used: *INS* Sensor, SensorOptions
 
 
 ## Payment Handler API
@@ -182,13 +146,6 @@
 - URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/permissions/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
-
-
-## Proximity Sensor
-
-- URL: [https://www.w3.org/TR/proximity/](https://www.w3.org/TR/proximity/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/proximity/)
-- Unknown WebIDL names used: *INS* Sensor
 
 
 ## Push API
@@ -287,6 +244,13 @@
 - URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled version: [Initial URL](https://wicg.github.io/webusb/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+
+
+## WebXR Device API
+
+- URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
+- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/)
+- Missing references for links: *INS* https://w3c.github.io/orientation-sensor/
 
 
 ## XMLHttpRequest Standard

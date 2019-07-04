@@ -1,27 +1,6 @@
-% Diff between report from "July 03, 2019" and reference report from "July 02, 2019"
+% Diff between report from "July 04, 2019" and reference report from "July 03, 2019"
 % Reffy
-% July 03, 2019
-
-## https://drafts.csswg.org/css-transitions-2/
-
-- URL: [https://drafts.csswg.org/css-transitions-2/](https://drafts.csswg.org/css-transitions-2/)
-- Crawled version: [Latest published version](undefined)
-- Spec title: *INS* https://drafts.csswg.org/css-transitions-2/ / *DEL* CSS Transitions Level 2
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
-
-
-## "MediaStream Image Capture"
-
-- URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
-- Editor's Draft: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
-- Missing references for WebIDL names: *INS* MediaStreamTrack, MediaTrackSupportedConstraints, MediaTrackCapabilities, MediaTrackConstraintSet, ConstrainDOMString, ConstrainDouble, ConstrainBoolean, MediaTrackSettings
-
+% July 04, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -57,6 +36,19 @@
 - URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled version: [Initial URL](https://wicg.github.io/cookie-store/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* [object Object], [object Object]
+
+
+## CSS Transitions Level 2
+
+- URL: [https://drafts.csswg.org/css-transitions-2/](https://drafts.csswg.org/css-transitions-2/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-transitions-2/)
+- Spec title: *INS* CSS Transitions Level 2 / *DEL* https://drafts.csswg.org/css-transitions-2/
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
 ## Encoding
@@ -110,24 +102,6 @@
 - URL: [https://wicg.github.io/media-capabilities/](https://wicg.github.io/media-capabilities/)
 - Crawled version: [Initial URL](https://wicg.github.io/media-capabilities/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* [object Object], [object Object]
-
-
-## Media Capture and Streams
-
-- URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
-- Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
-- No WebIDL definitions found: *INS* false / *DEL* true
-- Obsolete WebIDL constructs found: *INS* false
-- Unknown WebIDL names used: *INS* Event, EventHandler, EventInit, EventTarget, Navigator, Window
-
-
-## MediaStream Recording
-
-- URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- Editor's Draft: [https://w3c.github.io/mediacapture-record/](https://w3c.github.io/mediacapture-record/)
-- Missing references for WebIDL names: *INS* MediaStream
 
 
 ## Network Information API
