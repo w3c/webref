@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 05, 2019
+% July 06, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -45,7 +45,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Fri Jul 05 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Sat Jul 06 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -677,7 +677,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Fri Jul 05 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sat Jul 06 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5512,7 +5512,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Fri Jul 05 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sat Jul 06 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6131,7 +6131,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Fri Jul 05 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sat Jul 06 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6512,7 +6512,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Fri Jul 05 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sat Jul 06 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7926,7 +7926,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Fri Jul 05 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sat Jul 06 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7975,7 +7975,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Fri Jul 05 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sat Jul 06 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8268,7 +8268,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Jul 05 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Jul 06 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8292,7 +8292,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Jul 05 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Jul 06 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8538,7 +8538,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (3 July 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (5 July 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
