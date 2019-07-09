@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 08, 2019
+% July 09, 2019
 
 240 specifications were crawled in this report.
 
@@ -183,7 +183,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `ImageBitmapSource` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - `ImageData` used in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - `LayoutWorklet` used in [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
-- `Navigator` used in [Battery Status API](https://w3c.github.io/battery/), [Beacon](https://w3c.github.io/beacon/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Keyboard Map](https://wicg.github.io/keyboard-map/), [Media Capabilities](https://wicg.github.io/media-capabilities/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Session Standard](https://wicg.github.io/mediasession/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Vibration API (Second Edition)](https://w3c.github.io/vibration/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://webaudio.github.io/web-midi-api/), [Web Share API - Level 1](https://wicg.github.io/web-share/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/)
+- `Navigator` used in [Battery Status API](https://w3c.github.io/battery/), [Beacon](https://w3c.github.io/beacon/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Keyboard Map](https://wicg.github.io/keyboard-map/), [Media Capabilities](https://wicg.github.io/media-capabilities/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Session Standard](https://wicg.github.io/mediasession/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Vibration API (Second Edition)](https://w3c.github.io/vibration/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://webaudio.github.io/web-midi-api/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/)
 - `Node` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Selection API](https://w3c.github.io/selection-api/), [Static Range](https://w3c.github.io/staticrange/)
 - `NodeList` used in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - `OffscreenCanvas` used in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -723,10 +723,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Device API](https://immersive-web.github.io/webxr/) links to:
     * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/) but does not list it in its references
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
+    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but does not list it in its references
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 388 missing references for links found in 130 specifications
+=> 389 missing references for links found in 130 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

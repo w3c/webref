@@ -1,6 +1,6 @@
-% Diff between report from "July 08, 2019" and reference report from "July 07, 2019"
+% Diff between report from "July 09, 2019" and reference report from "July 08, 2019"
 % Reffy
-% July 08, 2019
+% July 09, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -651,6 +651,7 @@
 - URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Missing references for links: *INS* https://w3c.github.io/webappsec-secure-contexts/
 
 
 ## XMLHttpRequest Standard
