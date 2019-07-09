@@ -1,6 +1,6 @@
-% Diff between report from "July 08, 2019" and reference report from "July 07, 2019"
+% Diff between report from "July 09, 2019" and reference report from "July 08, 2019"
 % Reffy
-% July 08, 2019
+% July 09, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -287,13 +287,7 @@
 
 - URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/IndexedDB/)
-- Spec title: *INS* Indexed Database API 3.0 / *DEL* Indexed Database API 2.0
-- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## Long Tasks API 1
@@ -681,6 +675,7 @@
 - URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Missing references for links: *INS* https://w3c.github.io/webappsec-secure-contexts/
 
 
 ## XMLHttpRequest Standard
