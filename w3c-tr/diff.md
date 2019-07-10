@@ -1,6 +1,6 @@
-% Diff between report from "July 09, 2019" and reference report from "July 08, 2019"
+% Diff between report from "July 10, 2019" and reference report from "July 09, 2019"
 % Reffy
-% July 09, 2019
+% July 10, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -593,13 +593,6 @@
 - URL: [https://www.w3.org/TR/notifications/](https://www.w3.org/TR/notifications/)
 - Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - Unknown WebIDL names used: *INS* [object Object] / *DEL* [object Object]
-
-
-## Web Share API - Level 1
-
-- URL: [https://wicg.github.io/web-share/](https://wicg.github.io/web-share/)
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/)
-- Unknown WebIDL names used: *DEL* Navigator
 
 
 ## Web Speech API

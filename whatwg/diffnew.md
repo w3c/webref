@@ -1,6 +1,6 @@
-% Diff between report from "July 09, 2019" and reference report from "July 08, 2019"
+% Diff between report from "July 10, 2019" and reference report from "July 09, 2019"
 % Reffy
-% July 09, 2019
+% July 10, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -14,6 +14,16 @@
 - URL: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/accelerometer/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+
+
+## Accessible Rich Internet Applications (WAI-ARIA) 1.2
+
+- URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/)
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'trim' of undefined TypeError: Cannot read property 'trim' of undefined
+    at loadSpecificationFromHtml (/home/dom/github.com/reffy/src/lib/util.js:105:35)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Ambient Light Sensor
@@ -651,7 +661,6 @@
 - URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
-- Missing references for links: *INS* https://w3c.github.io/webappsec-secure-contexts/
 
 
 ## XMLHttpRequest Standard
