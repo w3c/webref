@@ -1,6 +1,6 @@
-% Diff between report from "July 10, 2019" and reference report from "July 09, 2019"
+% Diff between report from "July 11, 2019" and reference report from "July 10, 2019"
 % Reffy
-% July 10, 2019
+% July 11, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -20,7 +20,7 @@
 
 - URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'trim' of undefined TypeError: Cannot read property 'trim' of undefined
+- Spec could not be rendered: *DEL* TypeError: Cannot read property 'trim' of undefined TypeError: Cannot read property 'trim' of undefined
     at loadSpecificationFromHtml (/home/dom/github.com/reffy/src/lib/util.js:105:35)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
