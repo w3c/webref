@@ -1,6 +1,6 @@
-% Diff between report from "July 10, 2019" and reference report from "July 09, 2019"
+% Diff between report from "July 11, 2019" and reference report from "July 10, 2019"
 % Reffy
-% July 10, 2019
+% July 11, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -123,6 +123,14 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object]
+
+
+## CSS Generated Content Module Level 3
+
+- URL: [https://www.w3.org/TR/css-content-3/](https://www.w3.org/TR/css-content-3/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-css-content-3-20190710/)
+- Editor's Draft: [https://drafts.csswg.org/css-content-3/](https://drafts.csswg.org/css-content-3/)
+- Missing references for links: *INS* https://www.w3.org/TR/selectors4/, https://www.w3.org/TR/css4-images/ / *DEL* https://www.w3.org/TR/css3-lists/
 
 
 ## CSS Pseudo-Elements Module Level 4
