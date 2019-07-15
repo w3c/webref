@@ -26,7 +26,7 @@
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
   <li><a href="undefined">https://html.spec.whatwg.org/</a>: <code>Error: Crawl took too long Error: Crawl took too long at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:352:29) at ontimeout (timers.js:498:11) at tryOnTimeout (timers.js:323:5) at Timer.listOnTimeout (timers.js:290:5)</code></li>
-  <li><a href="https://www.w3.org/TR/css-tables-3/">CSS Table Module Level 3</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
+  <li><a href="https://www.w3.org/TR/geometry-1/">Geometry Interfaces Module Level 1</a>: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33) at Object.onceWrapper (events.js:317:30) at emitTwo (events.js:126:13) at ChildProcess.emit (events.js:214:7) at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></li>
   </ul>
   <p>=&gt; 2 specifications found</p>
   </section>
@@ -54,10 +54,9 @@
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
-  <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   </ul>
-  <p>=&gt; 6 specifications found</p>
+  <p>=&gt; 5 specifications found</p>
   <p>Reffy was expecting to find IDL content in the specifications listed here but could not extract any.</p>
   </section>
   <section id="specifications-without-css-definitions" class="level2">
@@ -608,6 +607,11 @@
   <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/selectors-api/"><code>https://www.w3.org/TR/selectors-api/</code></a> but does not list it in its references</li>
   </ul></li>
+  <li><a href="https://drafts.csswg.org/css-tables-3/">CSS Table Module Level 3</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but does not list it in its references</li>
+  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://drafts.csswg.org/css-text-decor-3/">CSS Text Decoration Module Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-break/"><code>https://www.w3.org/TR/css3-break/</code></a> but does not list it in its references</li>
@@ -869,7 +873,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 373 missing references for links found in 125 specifications</p>
+  <p>=&gt; 375 missing references for links found in 126 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>

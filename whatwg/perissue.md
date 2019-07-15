@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% July 14, 2019
+% July 15, 2019
 
 229 specifications were crawled in this report.
 
@@ -14,7 +14,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
-- [CSS Table Module Level 3](https://www.w3.org/TR/css-tables-3/): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+- [Geometry Interfaces Module Level 1](https://www.w3.org/TR/geometry-1/): `Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -49,10 +49,9 @@ Basically all specifications have normative dependencies on some other specifica
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [DOM Standard](https://dom.spec.whatwg.org/)
-- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [URL Standard](https://url.spec.whatwg.org/)
 
-=> 6 specifications found
+=> 5 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
@@ -518,6 +517,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/) links to:
     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
     * [`https://www.w3.org/TR/selectors-api/`](https://www.w3.org/TR/selectors-api/) but does not list it in its references
+- [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/) links to:
+    * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but does not list it in its references
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/) links to:
     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
@@ -715,7 +717,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 373 missing references for links found in 125 specifications
+=> 375 missing references for links found in 126 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

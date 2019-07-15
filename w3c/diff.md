@@ -1,6 +1,6 @@
-% Diff between report from "July 14, 2019" and reference report from "July 13, 2019"
+% Diff between report from "July 15, 2019" and reference report from "July 14, 2019"
 % Reffy
-% July 14, 2019
+% July 15, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -19,9 +19,8 @@
 ## Ambient Light Sensor
 
 - URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/ambient-light/)
-- Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Crawled version: [Editor's Draft](https://w3c.github.io/ambient-light/)
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -111,6 +110,19 @@
 - URL: [https://www.w3.org/TR/css-device-adapt-1/](https://www.w3.org/TR/css-device-adapt-1/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-device-adapt/)
 - Unknown WebIDL names used: *INS* [object Object] / *DEL* [object Object]
+
+
+## CSS Display Module Level 3
+
+- URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/css-display-3/)
+- Editor's Draft: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
 ## CSS Font Loading Module Level 3
@@ -448,7 +460,7 @@
 
 - URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/push-api/)
-- Unknown WebIDL names used: *INS* PushManager, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## Remote Playback API
