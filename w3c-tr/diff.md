@@ -1,6 +1,6 @@
-% Diff between report from "July 14, 2019" and reference report from "July 13, 2019"
+% Diff between report from "July 15, 2019" and reference report from "July 14, 2019"
 % Reffy
-% July 14, 2019
+% July 15, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -433,17 +433,6 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-proximity-20190305/)
 - Editor's Draft: [https://w3c.github.io/proximity/](https://w3c.github.io/proximity/)
 - Unknown WebIDL names used: *INS* [object Object] / *DEL* [object Object]
-
-
-## Push API
-
-- URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-push-api-20190714/)
-- Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Unknown WebIDL names used: *DEL* EventHandler, ServiceWorker, ServiceWorkerGlobalScope, ServiceWorkerRegistration, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
-- Missing references for WebIDL names: *DEL* Blob
 
 
 ## Remote Playback API
