@@ -61,7 +61,7 @@ dictionary PushEventInit : ExtendableEventInit {
   PushMessageDataInit data;
 };
 
-dictionary PushSubscriptionChangeInit : ExtendableEventInit {
+dictionary PushSubscriptionChangeEventInit : ExtendableEventInit {
   PushSubscription newSubscription = null;
   PushSubscription oldSubscription = null;
 };
