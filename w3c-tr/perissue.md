@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 17, 2019
+% July 18, 2019
 
 240 specifications were crawled in this report.
 
@@ -69,7 +69,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190716/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
@@ -192,7 +192,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `DataTransferItem` used in [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
 - `Dictionary` used in [Web NFC API](https://w3c.github.io/web-nfc/)
-- `Document` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/), [Feature Policy](https://w3c.github.io/webappsec-feature-policy/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/), [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190607/), [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/), [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web Speech API](https://w3c.github.io/speech-api/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `Document` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/), [Feature Policy](https://w3c.github.io/webappsec-feature-policy/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/), [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190607/), [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/), [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `DocumentFragment` used in [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/), [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/), [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - `DocumentOrShadowRoot` used in [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
 - `Element` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/), [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/), [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/), [Picture-in-Picture](https://wicg.github.io/picture-in-picture/), [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/), [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Scroll-linked Animations](https://wicg.github.io/scroll-animations/), [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
