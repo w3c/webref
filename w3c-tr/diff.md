@@ -1,6 +1,6 @@
-% Diff between report from "July 18, 2019" and reference report from "July 17, 2019"
+% Diff between report from "July 19, 2019" and reference report from "July 18, 2019"
 % Reffy
-% July 18, 2019
+% July 19, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -245,6 +245,19 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-gyroscope-20190307/)
 - Editor's Draft: [https://w3c.github.io/gyroscope/](https://w3c.github.io/gyroscope/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* [object Object], [object Object]
+
+
+## High Resolution Time Level 3
+
+- URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/hr-time-3/)
+- Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
 ## HTML5 Web Messaging
@@ -591,13 +604,13 @@
 
 - URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
 - Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
-- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* Document, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## WebAssembly JavaScript Interface
 
 - URL: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180904/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-wasm-js-api-1-20190718/)
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
