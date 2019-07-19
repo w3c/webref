@@ -1,6 +1,6 @@
-% Diff between report from "July 18, 2019" and reference report from "July 17, 2019"
+% Diff between report from "July 19, 2019" and reference report from "July 18, 2019"
 % Reffy
-% July 18, 2019
+% July 19, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -520,20 +520,11 @@
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
-## User Timing Level 3
-
-- URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-
-
 ## Wake Lock API
 
 - URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/)
-- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
-- Unknown WebIDL names used: *INS* [object Object] / *DEL* [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object] / *DEL* [object Object]
 
 
 ## Web Animations
@@ -603,7 +594,7 @@
 
 - URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
 - Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
-- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* Document, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## WebAssembly JavaScript Interface
