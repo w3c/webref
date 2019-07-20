@@ -64,10 +64,13 @@
       "value": "[left | right] || [top | bottom]"
     },
     "<color-stop-list>": {
-      "value": "<color-stop>#{2,}"
+      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
     },
-    "<color-stop>": {
-      "value": "<color> <length-percentage>?"
+    "<linear-color-stop>": {
+      "value": "<color> && <length-percentage>?"
+    },
+    "<linear-color-hint>": {
+      "value": "<length-percentage>"
     },
     "<radial-gradient()>": {
       "value": "radial-gradient( [ [ circle || <length> ] [ at <position> ]? , | [ ellipse || <length-percentage>{2} ] [ at <position> ]? , | [ [ circle | ellipse ] || <extent-keyword> ] [ at <position> ]? , | at <position> , ]? <color-stop> [ , <color-stop> ]+ )"

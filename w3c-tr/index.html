@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">July 19, 2019</h2>
+            <h2 class="date">July 20, 2019</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -92,7 +92,7 @@
   <section id="spec-info-1" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/2018/CR-SVG2-20181004/">Latest published version</a> (Fri Jul 19 2019)</li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/2018/CR-SVG2-20181004/">Latest published version</a> (Sat Jul 20 2019)</li>
   <li>Editor's Draft: <a href="https://svgwg.org/svg2-draft/" class="uri">https://svgwg.org/svg2-draft/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/SVG2/" class="uri">https://www.w3.org/TR/SVG2/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/CR-SVG2-20181004/">Candidate Recommendation</a></li>
@@ -842,7 +842,7 @@
   <section id="spec-info-20" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/editing/contentEditable.html">Initial URL</a> (Fri Jul 19 2019)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/editing/contentEditable.html">Initial URL</a> (Sat Jul 20 2019)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -5887,12 +5887,12 @@
   </ul>
   </section>
   </section>
-  <section id="high-resolution-time-level-3" class="level2" data-spec="true" data-error="true">
+  <section id="high-resolution-time-level-3" class="level2" data-spec="true" data-anomaly="true" data-noIdlContent="true" data-missingLinkRef="true">
   <h2>High Resolution Time Level 3</h2>
   <section id="spec-info-132" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/hr-time-3/">Latest published version</a></li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">Latest published version</a> (03 August 2017)</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/hr-time/" class="uri">https://w3c.github.io/hr-time/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/hr-time-3/" class="uri">https://www.w3.org/TR/hr-time-3/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">Retired</a></li>
@@ -5901,8 +5901,13 @@
   </section>
   <section id="potential-issues-132" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Crawl exited without sending result Error: Crawl exited without sending result     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)     at Object.onceWrapper (events.js:317:30)     at emitTwo (events.js:126:13)     at ChildProcess.emit (events.js:214:7)     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>No WebIDL definitions found</li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/workers/"><code>https://w3c.github.io/workers/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-132" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -5927,6 +5932,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">High Resolution Time Level 3</a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-web-animations-1-20181011/">Web Animations</a></li>
   </ul>
   </section>
@@ -6005,6 +6011,7 @@
   <li><a href="https://www.w3.org/TR/2016/REC-geolocation-API-20161108/">Geolocation API Specification 2nd Edition</a></li>
   <li><a href="https://wicg.github.io/geolocation-sensor/">Geolocation Sensor</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-geometry-1-20181204/">Geometry Interfaces Module Level 1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">High Resolution Time Level 3</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
   <li><a href="https://www.w3.org/TR/2018/REC-html-media-capture-20180201/">HTML Media Capture</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-webmessaging-20150519/">HTML5 Web Messaging</a></li>
@@ -6512,7 +6519,7 @@
   <section id="spec-info-139" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/InputDeviceCapabilities/">Initial URL</a> (Fri Jul 19 2019)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/InputDeviceCapabilities/">Initial URL</a> (Sat Jul 20 2019)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -7272,7 +7279,7 @@
   <section id="spec-info-161" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/netinfo/">Initial URL</a> (Fri Jul 19 2019)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/netinfo/">Initial URL</a> (Sat Jul 20 2019)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -7736,7 +7743,7 @@
   <section id="spec-info-174" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/pointerevents/extension.html">Initial URL</a> (Fri Jul 19 2019)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/pointerevents/extension.html">Initial URL</a> (Sat Jul 20 2019)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -9421,7 +9428,7 @@
   <section id="spec-info-221" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/web-nfc/">Initial URL</a> (Fri Jul 19 2019)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/web-nfc/">Initial URL</a> (Sat Jul 20 2019)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -9480,7 +9487,7 @@
   <section id="spec-info-223" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/web-share/">Initial URL</a> (Fri Jul 19 2019)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/web-share/">Initial URL</a> (Sat Jul 20 2019)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -9626,6 +9633,7 @@
   <li><a href="https://www.w3.org/TR/2019/WD-generic-sensor-20190307/">Generic Sensor API</a></li>
   <li><a href="https://wicg.github.io/geolocation-sensor/">Geolocation Sensor</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-geometry-1-20181204/">Geometry Interfaces Module Level 1</a></li>
+  <li><a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">High Resolution Time Level 3</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-webmessaging-20150519/">HTML5 Web Messaging</a></li>
   <li><a href="https://wicg.github.io/keyboard-lock/">Keyboard Lock</a></li>
   <li><a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
@@ -9813,7 +9821,7 @@
   <section id="spec-info-230" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Fri Jul 19 2019)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sat Jul 20 2019)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -9841,7 +9849,7 @@
   <section id="spec-info-231" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Fri Jul 19 2019)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sat Jul 20 2019)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -9947,6 +9955,7 @@
   <li><a href="https://wicg.github.io/geolocation-sensor/">Geolocation Sensor</a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-geometry-1-20181204/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2019/WD-gyroscope-20190307/">Gyroscope</a></li>
+  <li><a href="https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/">High Resolution Time Level 3</a></li>
   <li><a href="http://www.w3.org/TR/2015/REC-2dcontext-20151119/">HTML Canvas 2D Context</a></li>
   <li><a href="https://www.w3.org/TR/2018/REC-html-media-capture-20180201/">HTML Media Capture</a></li>
   <li><a href="https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/">Indexed Database API 2.0</a></li>
@@ -10112,7 +10121,7 @@
   <section id="spec-info-235" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/webusb/">Initial URL</a> (18 July 2019)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/webusb/">Initial URL</a> (19 July 2019)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>

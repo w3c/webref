@@ -1,6 +1,6 @@
-% Diff between report from "July 19, 2019" and reference report from "July 18, 2019"
+% Diff between report from "July 20, 2019" and reference report from "July 19, 2019"
 % Reffy
-% July 19, 2019
+% July 20, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -126,6 +126,20 @@
 - URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object]
+
+
+## CSS Images Module Level 3
+
+- URL: [https://www.w3.org/TR/css3-images/](https://www.w3.org/TR/css3-images/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-images-3/)
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-values/
+
+
+## CSS Images Module Level 4
+
+- URL: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-images-4/)
+- Missing references for links: *INS* https://www.w3.org/TR/css-animations/, https://www.w3.org/TR/css-transitions/
 
 
 ## CSS Masking Module Level 1
