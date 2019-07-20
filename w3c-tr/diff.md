@@ -1,6 +1,6 @@
-% Diff between report from "July 19, 2019" and reference report from "July 18, 2019"
+% Diff between report from "July 20, 2019" and reference report from "July 19, 2019"
 % Reffy
-% July 19, 2019
+% July 20, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -250,9 +250,9 @@
 ## High Resolution Time Level 3
 
 - URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/hr-time-3/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
