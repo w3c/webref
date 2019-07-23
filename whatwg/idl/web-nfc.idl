@@ -3,14 +3,27 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Web NFC API (https://w3c.github.io/web-nfc/)
 
-dictionary NDEFMessage {
+[Constructor(NDEFMessageInit messageInit), Exposed=Window]
+interface NDEFMessage {
+  readonly attribute USVString url;
+  readonly attribute FrozenArray<NDEFRecord> records;
+};
+
+dictionary NDEFMessageInit {
   USVString url;
-  sequence<NDEFRecord> records;
+  sequence<NDEFRecordInit> records;
 };
 
 typedef (DOMString or unrestricted double or ArrayBuffer or Dictionary) NDEFRecordData;
 
-dictionary NDEFRecord {
+[Constructor(NDEFRecordInit recordInit), Exposed=Window]
+interface NDEFRecord {
+  readonly attribute NDEFRecordType recordType;
+  readonly attribute USVString mediaType;
+  NDEFRecordData data();
+};
+
+dictionary NDEFRecordInit {
   NDEFRecordType recordType;
   USVString mediaType;
   NDEFRecordData data;
@@ -22,42 +35,6 @@ enum NDEFRecordType {
   "url",
   "json",
   "opaque"
-};
-
-typedef (DOMString or ArrayBuffer or NDEFMessage) NDEFMessageSource;
-
-[Constructor(), SecureContext, Exposed=Window]
-interface NFCWriter {
-  Promise<void> push(NDEFMessageSource message, optional NFCPushOptions options);
-};
-
-[Constructor(optional NFCReaderOptions options), SecureContext, Exposed=Window]
-interface NFCReader : EventTarget {
-  attribute EventHandler onreading;
-  attribute EventHandler onerror;
-
-  void start();
-  void stop();
-};
-
-[Constructor(DOMString type, NFCReadingEventInit readingEventInitDict), SecureContext, Exposed=Window]
-interface NFCReadingEvent : Event {
-  readonly attribute DOMString serialNumber;
-  readonly attribute object message;  // NDEFMessage
-};
-
-dictionary NFCReadingEventInit : EventInit {
-  DOMString? serialNumber = "";
-  required NDEFMessage message;
-};
-
-[Constructor(DOMString type, NFCErrorEventInit errorEventInitDict), SecureContext, Exposed=Window]
-interface NFCErrorEvent : Event {
-  readonly attribute DOMException error;
-};
-
-dictionary NFCErrorEventInit : EventInit {
-  required DOMException error;
 };
 
 enum NDEFCompatibility {
