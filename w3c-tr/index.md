@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 23, 2019
+% July 24, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -45,7 +45,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Tue Jul 23 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Wed Jul 24 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -677,7 +677,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Tue Jul 23 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Wed Jul 24 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4431,7 +4431,7 @@ Normative references to this spec from:
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190702/)
@@ -4578,7 +4578,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
@@ -4634,7 +4634,7 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
@@ -5075,7 +5075,7 @@ Normative references to this spec from:
 - [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
@@ -5239,7 +5239,7 @@ Normative references to this spec from:
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
@@ -5401,7 +5401,7 @@ Normative references to this spec from:
 - [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
@@ -5525,7 +5525,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Tue Jul 23 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Wed Jul 24 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6145,7 +6145,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Tue Jul 23 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Wed Jul 24 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6526,7 +6526,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Tue Jul 23 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Wed Jul 24 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6646,10 +6646,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-push-api-20190717/) (July 2019 )
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-push-api-20190724/) (July 2019 )
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
 - Latest published version: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - Shortname: push-api
 
 ### Potential issue(s) {.anomalies}
@@ -6864,7 +6864,7 @@ Normative references to this spec from:
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
@@ -7097,7 +7097,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
 - [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190702/)
@@ -7641,7 +7641,7 @@ Normative references to this spec from:
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
@@ -7858,7 +7858,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 
 
 ## Web Bluetooth {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -7941,7 +7941,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Tue Jul 23 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Wed Jul 24 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7976,7 +7976,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 
 Informative references to this spec from:
@@ -7990,7 +7990,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Tue Jul 23 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Wed Jul 24 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8135,7 +8135,7 @@ Normative references to this spec from:
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
@@ -8283,7 +8283,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Tue Jul 23 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Jul 24 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8307,7 +8307,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Tue Jul 23 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Jul 24 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8434,7 +8434,7 @@ Normative references to this spec from:
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Proximity Sensor](https://www.w3.org/TR/2019/WD-proximity-20190305/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
@@ -8553,7 +8553,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (22 July 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (23 July 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}

@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 23, 2019
+% July 24, 2019
 
 240 specifications were crawled in this report.
 
@@ -69,7 +69,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190717/)
+- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
