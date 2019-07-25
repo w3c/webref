@@ -1,6 +1,6 @@
-% Diff between report from "July 24, 2019" and reference report from "July 23, 2019"
+% Diff between report from "July 25, 2019" and reference report from "July 24, 2019"
 % Reffy
-% July 24, 2019
+% July 25, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -76,6 +76,13 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - Editor's Draft: [https://w3c.github.io/webappsec-credential-management/](https://w3c.github.io/webappsec-credential-management/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
+
+
+## CSS Animation Worklet API
+
+- URL: [https://wicg.github.io/animation-worklet/](https://wicg.github.io/animation-worklet/)
+- Crawled version: [Initial URL](https://wicg.github.io/animation-worklet/)
+- Unknown WebIDL names used: *INS* AnimationWorklet
 
 
 ## CSS Animations Level 1
@@ -154,6 +161,13 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
 - Editor's Draft: [https://w3c.github.io/deviceorientation/spec-source-orientation.html](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
+
+
+## Element Timing API
+
+- URL: [https://wicg.github.io/element-timing/](https://wicg.github.io/element-timing/)
+- Crawled version: [Initial URL](https://wicg.github.io/element-timing/)
+- This specification was not in the reference crawl report.
 
 
 ## Encoding
@@ -269,6 +283,13 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+
+
+## Largest Contentful Paint
+
+- URL: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
+- Crawled version: [Initial URL](https://wicg.github.io/largest-contentful-paint/)
+- This specification was not in the reference crawl report.
 
 
 ## Long Tasks API 1

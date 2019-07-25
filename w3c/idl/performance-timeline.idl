@@ -19,16 +19,6 @@ interface PerformanceEntry {
   [Default] object toJSON();
 };
 
-callback PerformanceObserverCallback = void (PerformanceObserverEntryList entries,
-                                             PerformanceObserver observer);
-[Constructor(PerformanceObserverCallback callback), Exposed=(Window,Worker)]
-interface PerformanceObserver {
-  void observe(optional PerformanceObserverInit options);
-  void disconnect();
-  PerformanceEntryList takeRecords();
-  [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;
-};
-
 dictionary PerformanceObserverInit {
   sequence<DOMString> entryTypes;
   DOMString type;

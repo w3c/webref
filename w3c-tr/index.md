@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 24, 2019
+% July 25, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -45,7 +45,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Wed Jul 24 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Thu Jul 25 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -80,6 +80,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -677,7 +678,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Wed Jul 24 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Thu Jul 25 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -786,12 +787,12 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/animation-worklet/) (28 June 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/animation-worklet/) (24 July 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CSS`, `Window`
+- Unknown WebIDL names used: `AnimationWorklet`, `CSS`, `Window`
 - WebIDL names also defined elsewhere: 
     * `[object Object]` also defined in [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - Missing references for links: 
@@ -931,6 +932,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -1610,6 +1612,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -1913,6 +1916,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -4330,6 +4334,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
@@ -4404,6 +4409,31 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
+
+
+## Element Timing API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/element-timing/) (24 July 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `DOMRectReadOnly`, `Element`, `[object Object]`
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+     * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/), related reference "RESOURCE-TIMING-1" uses URL [`https://www.w3.org/TR/resource-timing-1/`](https://www.w3.org/TR/resource-timing-1/)
+     * [`https://w3c.github.io/IntersectionObserver/`](https://w3c.github.io/IntersectionObserver/), related reference "INTERSECTION-OBSERVER" uses URL [`https://www.w3.org/TR/intersection-observer/`](https://www.w3.org/TR/intersection-observer/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+
+No informative reference to this spec from other specs.
 
 
 ## Encoding {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -4495,7 +4525,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 
 No informative reference to this spec from other specs.
 
@@ -4557,6 +4589,7 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
@@ -4888,7 +4921,9 @@ Normative references to this spec from:
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
@@ -4947,11 +4982,13 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/)
 - [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
@@ -5034,6 +5071,7 @@ Normative references to this spec from:
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
@@ -5055,6 +5093,7 @@ Normative references to this spec from:
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -5211,6 +5250,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -5224,6 +5264,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -5372,6 +5413,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -5385,6 +5427,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -5525,7 +5568,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Wed Jul 24 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Thu Jul 25 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5589,7 +5632,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Element Timing API](https://wicg.github.io/element-timing/)
 
 No informative reference to this spec from other specs.
 
@@ -5634,6 +5679,29 @@ No informative reference to this spec from other specs.
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Largest Contentful Paint {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/largest-contentful-paint/) (23 July 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Element`, `[object Object]`
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Element Timing API](https://wicg.github.io/element-timing/)
 
 No informative reference to this spec from other specs.
 
@@ -6145,7 +6213,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Wed Jul 24 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Thu Jul 25 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6384,7 +6452,9 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
@@ -6526,7 +6596,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Wed Jul 24 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Thu Jul 25 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6782,6 +6852,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 
@@ -7451,6 +7522,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/)
@@ -7612,6 +7684,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
@@ -7625,6 +7698,7 @@ Normative references to this spec from:
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
@@ -7941,7 +8015,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Wed Jul 24 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Thu Jul 25 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7990,7 +8064,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Wed Jul 24 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Jul 25 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8105,6 +8179,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -8120,6 +8195,7 @@ Normative references to this spec from:
 - [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -8283,7 +8359,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Wed Jul 24 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Thu Jul 25 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8307,7 +8383,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Wed Jul 24 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Thu Jul 25 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8388,6 +8464,7 @@ Normative references to this spec from:
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
@@ -8411,6 +8488,7 @@ Normative references to this spec from:
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Magnetometer](https://www.w3.org/TR/2019/WD-magnetometer-20190307/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)

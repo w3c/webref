@@ -1,19 +1,6 @@
-% Diff between report from "July 24, 2019" and reference report from "July 23, 2019"
+% Diff between report from "July 25, 2019" and reference report from "July 24, 2019"
 % Reffy
-% July 24, 2019
-
-## https://console.spec.whatwg.org/
-
-- URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
-- Crawled version: [Latest published version](undefined)
-- Spec title: *INS* https://console.spec.whatwg.org/ / *DEL* Console Standard
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
-
+% July 25, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -32,9 +19,8 @@
 ## Accessible Rich Internet Applications (WAI-ARIA) 1.2
 
 - URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/wai-aria-1.2/)
-- Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Spec could not be rendered: *INS* Error: Crawl took too long Error: Crawl took too long
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/)
+- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
     at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:352:29)
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
@@ -66,7 +52,20 @@
 
 - URL: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/clipboard-apis/)
-- Unknown WebIDL names used: *INS* Blob, [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
+
+
+## Console Standard
+
+- URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://console.spec.whatwg.org/)
+- Spec title: *INS* Console Standard / *DEL* https://console.spec.whatwg.org/
+- Spec could not be rendered: *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:346:33)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
 
 
 ## Content Security Policy Level 3
@@ -88,6 +87,13 @@
 - URL: [https://www.w3.org/TR/credential-management-1/](https://www.w3.org/TR/credential-management-1/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-credential-management/)
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
+
+
+## CSS Animation Worklet API
+
+- URL: [https://wicg.github.io/animation-worklet/](https://wicg.github.io/animation-worklet/)
+- Crawled version: [Initial URL](https://wicg.github.io/animation-worklet/)
+- Unknown WebIDL names used: *INS* AnimationWorklet
 
 
 ## CSS Animations Level 1
@@ -202,6 +208,13 @@
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
+## Element Timing API
+
+- URL: [https://wicg.github.io/element-timing/](https://wicg.github.io/element-timing/)
+- Crawled version: [Initial URL](https://wicg.github.io/element-timing/)
+- This specification was not in the reference crawl report.
+
+
 ## Encoding Standard
 
 - URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
@@ -234,23 +247,14 @@
 
 - URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled version: [Living Standard](https://fetch.spec.whatwg.org/)
-- Unknown WebIDL names used: *INS* Blob, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## File and Directory Entries API
 
 - URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
 - Crawled version: [Initial URL](https://wicg.github.io/entries-api/)
-- Unknown WebIDL names used: *INS* File, [object Object], [object Object] / *DEL* [object Object], [object Object]
-
-
-## File API
-
-- URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/FileAPI/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Inconsistent references for links: *INS* https://w3c.github.io/FileAPI/
+- Unknown WebIDL names used: *INS* [object Object], [object Object] / *DEL* [object Object], [object Object]
 
 
 ## Filter Effects Module Level 1
@@ -317,6 +321,13 @@
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
+## Largest Contentful Paint
+
+- URL: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
+- Crawled version: [Initial URL](https://wicg.github.io/largest-contentful-paint/)
+- This specification was not in the reference crawl report.
+
+
 ## Long Tasks API 1
 
 - URL: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
@@ -366,18 +377,11 @@
 - Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object]
 
 
-## MediaStream Image Capture
-
-- URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-image/)
-- Unknown WebIDL names used: *INS* Blob
-
-
 ## MediaStream Recording
 
 - URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-record/)
-- Unknown WebIDL names used: *INS* Blob, [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object]
 
 
 ## Navigation Timing Level 2
@@ -426,7 +430,7 @@
 
 - URL: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/)
-- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## Permissions
@@ -454,7 +458,7 @@
 
 - URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/)
-- Unknown WebIDL names used: *INS* Blob, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## Progress Events
@@ -476,7 +480,7 @@
 
 - URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/push-api/)
-- Unknown WebIDL names used: *INS* Blob, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## Remote Playback API
@@ -673,7 +677,7 @@
 
 - URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
-- Unknown WebIDL names used: *INS* Blob, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
 ## WebUSB API
@@ -701,6 +705,6 @@
 
 - URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
 - Crawled version: [Living Standard](https://xhr.spec.whatwg.org/)
-- Unknown WebIDL names used: *INS* Blob, File, [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
+- Unknown WebIDL names used: *INS* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object] / *DEL* [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]
 
 
