@@ -37,6 +37,42 @@ enum NDEFRecordType {
   "opaque"
 };
 
+typedef (DOMString or ArrayBuffer or NDEFMessageInit) NDEFMessageSource;
+
+[Constructor(), SecureContext, Exposed=Window]
+interface NFCWriter {
+  Promise<void> push(NDEFMessageSource message, optional NFCPushOptions options={});
+};
+
+[Constructor(optional NFCReaderOptions options={}), SecureContext, Exposed=Window]
+interface NFCReader : EventTarget {
+  attribute EventHandler onreading;
+  attribute EventHandler onerror;
+
+  void start();
+  void stop();
+};
+
+[Constructor(DOMString type, NFCReadingEventInit readingEventInitDict), SecureContext, Exposed=Window]
+interface NFCReadingEvent : Event {
+  readonly attribute DOMString serialNumber;
+  [SameObject] readonly attribute NDEFMessage message;
+};
+
+dictionary NFCReadingEventInit : EventInit {
+  DOMString? serialNumber = "";
+  required NDEFMessageInit message;
+};
+
+[Constructor(DOMString type, NFCErrorEventInit errorEventInitDict), SecureContext, Exposed=Window]
+interface NFCErrorEvent : Event {
+  readonly attribute DOMException error;
+};
+
+dictionary NFCErrorEventInit : EventInit {
+  required DOMException error;
+};
+
 enum NDEFCompatibility {
   "nfc-forum",
   "vendor",
