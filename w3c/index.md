@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 26, 2019
+% July 27, 2019
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -61,11 +61,11 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Accessible Rich Internet Applications (WAI-ARIA) 1.2 {data-spec=true data-error=true}
+## Accessible Rich Internet Applications (WAI-ARIA) 1.2 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/) (Sat Jul 27 2019)
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20181218/)
@@ -74,20 +74,27 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/)
+     * [`https://www.w3.org/TR/wai-aria-practices/`](https://www.w3.org/TR/wai-aria-practices/)
+     * [`https://www.w3.org/TR/accname-aam-1.1/`](https://www.w3.org/TR/accname-aam-1.1/)
+     * [`https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/`](https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/)
+     * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/)
+     * [`https://www.w3.org/TR/di-gloss/`](https://www.w3.org/TR/di-gloss/)
+     * [`https://www.w3.org/TR/html50/`](https://www.w3.org/TR/html50/)
+     * [`https://www.w3.org/TR/xhtml-role/`](https://www.w3.org/TR/xhtml-role/)
+     * [`https://www.w3.org/TR/2002/REC-xhtml1-20020801/`](https://www.w3.org/TR/2002/REC-xhtml1-20020801/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/2004/REC-owl-features-20040210/`](https://www.w3.org/TR/2004/REC-owl-features-20040210/), related reference "OWL-FEATURES" uses URL [`https://www.w3.org/TR/owl-features/`](https://www.w3.org/TR/owl-features/)
+     * [`https://www.w3.org/TR/2014/REC-rdf-schema-20140225/`](https://www.w3.org/TR/2014/REC-rdf-schema-20140225/), related reference "RDF-SCHEMA" uses URL [`https://www.w3.org/TR/rdf-schema/`](https://www.w3.org/TR/rdf-schema/)
+     * [`https://www.w3.org/TR/2007/REC-xforms-20071029/`](https://www.w3.org/TR/2007/REC-xforms-20071029/), related reference "XFORMS10" uses URL [`https://www.w3.org/TR/xforms/`](https://www.w3.org/TR/xforms/)
+     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+     * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+     * [`https://www.w3.org/TR/2006/REC-xforms-20060314/`](https://www.w3.org/TR/2006/REC-xforms-20060314/), related reference "XFORMS10" uses URL [`https://www.w3.org/TR/xforms/`](https://www.w3.org/TR/xforms/)
+     * [`https://www.w3.org/TR/2002/REC-UAAG10-20021217/`](https://www.w3.org/TR/2002/REC-UAAG10-20021217/), related reference "UAAG10" uses URL [`https://www.w3.org/TR/UAAG10/`](https://www.w3.org/TR/UAAG10/)
+     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/), related reference "XML-NAMES" uses URL [`https://www.w3.org/TR/xml-names/`](https://www.w3.org/TR/xml-names/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -122,11 +129,11 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Audio Output Devices API {data-spec=true data-error=true}
+## Audio Output Devices API {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
 - Latest published version: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
@@ -135,20 +142,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -184,13 +178,14 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 
 
-## Battery Status API {data-spec=true data-error=true}
+## Battery Status API {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/battery/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/battery/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
 - Latest published version: [http://www.w3.org/TR/battery-status/](http://www.w3.org/TR/battery-status/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
@@ -199,20 +194,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -223,11 +205,11 @@ Informative references to this spec from:
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 
 
-## Beacon {data-spec=true data-error=true}
+## Beacon {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
 - Latest published version: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-beacon-20170413/)
@@ -236,24 +218,13 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 
 Informative references to this spec from:
 
@@ -368,16 +339,20 @@ Normative references to this spec from:
 - [Media Queries Level 3](http://dev.w3.org/csswg/css3-mediaqueries/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
 
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [UI Events](https://w3c.github.io/uievents/)
 
 
@@ -428,7 +403,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -451,7 +428,9 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
 ## Compositing and Blending Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -481,6 +460,7 @@ Normative references to this spec from:
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 No informative reference to this spec from other specs.
 
@@ -568,6 +548,8 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
 
@@ -604,7 +586,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Fri Jul 26 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sat Jul 27 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -639,11 +621,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cooperative Scheduling of Background Tasks {data-spec=true data-error=true}
+## Cooperative Scheduling of Background Tasks {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
 - Latest published version: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
@@ -652,20 +634,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -792,6 +761,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
 ## CSS Animations Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -957,6 +927,7 @@ Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -1289,7 +1260,9 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -1350,6 +1323,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -1415,6 +1389,7 @@ Informative references to this spec from:
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
 ## CSS Conditional Rules Module Level 3 {data-spec=true data-anomaly=true data-noIdlContent=true data-noCssDefinitions=true data-missingLinkRef=true}
@@ -1583,10 +1558,12 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
 
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
 ## CSS Display Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -1665,6 +1642,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -1866,11 +1844,11 @@ Informative references to this spec from:
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 
 
-## CSS Fonts Module Level 3 {data-spec=true data-error=true}
+## CSS Fonts Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts/) (20 September 2018)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts/](https://drafts.csswg.org/css-fonts/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/)
@@ -1879,20 +1857,16 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2002/WD-css3-fonts-20020802/`](https://www.w3.org/TR/2002/WD-css3-fonts-20020802/)
+     * [`https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/`](https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/)
+     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
+     * [`https://www.w3.org/TR/2005/REC-charmod-20050215/`](https://www.w3.org/TR/2005/REC-charmod-20050215/)
+     * [`https://www.w3.org/TR/2018/WD-charmod-norm-20180420/`](https://www.w3.org/TR/2018/WD-charmod-norm-20180420/)
+     * [`https://www.w3.org/TR/2017/WD-css-text-3-20170822/`](https://www.w3.org/TR/2017/WD-css-text-3-20170822/)
+     * [`https://www.w3.org/TR/2013/CR-css3-conditional-20130404/`](https://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES" uses URL [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1917,6 +1891,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -1977,6 +1952,8 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -2265,7 +2242,9 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -2350,6 +2329,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -2520,6 +2500,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -2690,8 +2671,11 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -2762,6 +2746,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 
 Informative references to this spec from:
@@ -2807,7 +2792,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/overscroll-behavior/) (24 May 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/overscroll-behavior/) (22 July 2019)
 - Repository: [GitHub wicg/overscroll-behavior](https://github.com/wicg/overscroll-behavior)
 - Shortname: no shortname
 
@@ -3233,6 +3218,7 @@ Normative references to this spec from:
 
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 No informative reference to this spec from other specs.
@@ -3361,6 +3347,7 @@ Normative references to this spec from:
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -3474,7 +3461,9 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
@@ -3549,6 +3538,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -3636,6 +3626,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -3674,6 +3665,7 @@ Normative references to this spec from:
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
@@ -3723,6 +3715,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 
 Informative references to this spec from:
@@ -3805,6 +3798,7 @@ Informative references to this spec from:
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
 ## CSS Transitions Level 2 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
@@ -3883,7 +3877,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-3/) (30 June 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-3/) (3 July 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-values-3/](https://drafts.csswg.org/css-values-3/)
 - Latest published version: [https://www.w3.org/TR/css-values-3/](https://www.w3.org/TR/css-values-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
@@ -3924,6 +3918,7 @@ Normative references to this spec from:
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
+- [CSS Fonts Module Level 3](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
@@ -3967,9 +3962,12 @@ Normative references to this spec from:
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
 
@@ -3982,7 +3980,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/) (15 July 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/) (26 July 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
 - Latest published version: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -4174,6 +4172,7 @@ Normative references to this spec from:
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -4287,7 +4286,10 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
+- [Web App Manifest](https://w3c.github.io/manifest/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
 
@@ -4295,6 +4297,7 @@ Informative references to this spec from:
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 
 
@@ -4302,7 +4305,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/deviceorientation/spec-source-orientation.html) (Fri Jul 26 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/deviceorientation/spec-source-orientation.html) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/deviceorientation/spec-source-orientation.html](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - Latest published version: [https://www.w3.org/TR/orientation-event/](https://www.w3.org/TR/orientation-event/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
@@ -4326,11 +4329,11 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## DOM Parsing and Serialization {data-spec=true data-error=true}
+## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/DOM-Parsing/](https://w3c.github.io/DOM-Parsing/)
 - Latest published version: [http://www.w3.org/TR/DOM-Parsing/](http://www.w3.org/TR/DOM-Parsing/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
@@ -4339,25 +4342,15 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [WebDriver](https://w3c.github.io/webdriver/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -4414,24 +4407,28 @@ Normative references to this spec from:
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
 
-## Encrypted Media Extensions {data-spec=true data-error=true}
+## Encrypted Media Extensions {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/encrypted-media/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/encrypted-media/) (22 February 2018)
 - Editor's Draft: [https://w3c.github.io/encrypted-media/](https://w3c.github.io/encrypted-media/)
 - Latest published version: [https://www.w3.org/TR/encrypted-media/](https://www.w3.org/TR/encrypted-media/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
@@ -4440,20 +4437,10 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4463,6 +4450,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
@@ -4500,7 +4488,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (18 July 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (26 July 2019)
 - Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
 - Shortname: no shortname
 
@@ -4540,6 +4528,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -4547,6 +4536,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Fonts Module Level 3](https://drafts.csswg.org/css-fonts/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
@@ -4555,20 +4545,29 @@ Normative references to this spec from:
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Preload](https://w3c.github.io/preload/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -4619,15 +4618,22 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 
 ## Filter Effects Module Level 1 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -4660,6 +4666,7 @@ Normative references to this spec from:
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 No informative reference to this spec from other specs.
 
@@ -4724,19 +4731,23 @@ Normative references to this spec from:
 
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
 
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## Gamepad {data-spec=true data-error=true}
+## Gamepad {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-gamepad-20190531/)
@@ -4745,20 +4756,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4807,31 +4805,19 @@ Informative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 
 
-## Geolocation API Specification 2nd Edition {data-spec=true data-error=true}
+## Geolocation API Specification 2nd Edition {data-spec=true data-anomaly=true data-noIdlContent=true data-noEdDraft=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/geolocation-API/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/geolocation-API/) (31 January 2018))
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
 - Shortname: geolocation-API
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Link to an Editor's Draft not found
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4895,7 +4881,9 @@ Normative references to this spec from:
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
+- [WebDriver](https://w3c.github.io/webdriver/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
@@ -4932,11 +4920,11 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## High Resolution Time Level 3 {data-spec=true data-error=true}
+## High Resolution Time Level 2 {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
 - Latest published version: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -4945,36 +4933,33 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
 
@@ -5008,7 +4993,11 @@ Reffy could not render this specification as a DOM tree and cannot say anything 
 Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
@@ -5016,6 +5005,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
@@ -5052,7 +5042,9 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -5060,45 +5052,88 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
+- [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Information API](https://wicg.github.io/netinfo/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Preload](https://w3c.github.io/preload/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
+- [Web Notifications](https://www.w3.org/TR/notifications/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
+- [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -5124,37 +5159,33 @@ Informative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Server Timing](https://w3c.github.io/server-timing/)
+- [Web Share API - Level 1](https://wicg.github.io/web-share/)
 
 
-## HTML Canvas 2D Context {data-spec=true data-error=true}
+## HTML Canvas 2D Context {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true data-noEdDraft=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/2dcontext/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/2dcontext/) (19 November 2015)
 - Latest published version: [http://www.w3.org/TR/2dcontext/](http://www.w3.org/TR/2dcontext/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
 - Shortname: 2dcontext
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Link to an Editor's Draft not found
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
+     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5162,6 +5193,8 @@ Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
@@ -5169,6 +5202,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
@@ -5204,6 +5238,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
@@ -5212,45 +5247,79 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Information API](https://wicg.github.io/netinfo/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Preload](https://w3c.github.io/preload/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web IDL](https://heycam.github.io/webidl/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -5270,15 +5339,18 @@ Informative references to this spec from:
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web Share API - Level 1](https://wicg.github.io/web-share/)
 
 
-## HTML Media Capture {data-spec=true data-error=true}
+## HTML Media Capture {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
 - Latest published version: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
@@ -5287,20 +5359,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `HTMLInputElement`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5309,11 +5368,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## HTML5 Web Messaging {data-spec=true data-error=true}
+## HTML5 Web Messaging {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-webmessaging-20150519/) (19 May 2015)
 - Editor's Draft: [http://dev.w3.org/html5/postmsg/](http://dev.w3.org/html5/postmsg/)
 - Latest published version: [http://www.w3.org/TR/webmessaging/](http://www.w3.org/TR/webmessaging/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
@@ -5321,20 +5380,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5342,6 +5388,8 @@ Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
@@ -5349,6 +5397,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
@@ -5384,6 +5433,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
@@ -5392,45 +5442,79 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Information API](https://wicg.github.io/netinfo/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Preload](https://w3c.github.io/preload/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web IDL](https://heycam.github.io/webidl/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -5451,46 +5535,19 @@ Informative references to this spec from:
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Web Share API - Level 1](https://wicg.github.io/web-share/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## https://w3c.github.io/pointerevents/extension.html {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Identifiers for WebRTC's Statistics API {data-spec=true data-error=true}
+## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
@@ -5499,24 +5556,16 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+     * [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 No informative reference to this spec from other specs.
 
@@ -5540,38 +5589,29 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
 
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 
-## Input Device Capabilities {data-spec=true data-error=true}
+## Input Device Capabilities {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sat Jul 27 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5580,11 +5620,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Input Events Level 2 {data-spec=true data-error=true}
+## Input Events Level 1 {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
+- Crawled version: [Editor's Draft](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html) (Sat Jul 27 2019)
 - Editor's Draft: [https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - Latest published version: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
@@ -5592,24 +5632,15 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 
 Informative references to this spec from:
 
@@ -5792,11 +5823,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Media Capture and Streams {data-spec=true data-error=true}
+## Media Capture and Streams {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
@@ -5805,27 +5836,22 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
 
@@ -5834,11 +5860,11 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## Media Capture Depth Stream Extensions {data-spec=true data-error=true}
+## Media Capture Depth Stream Extensions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/mediacapture-depth/](https://w3c.github.io/mediacapture-depth/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-depth/](https://www.w3.org/TR/mediacapture-depth/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -5847,33 +5873,24 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `ConstrainDOMString`, `MediaTrackCapabilities`, `MediaTrackConstraintSet`, `MediaTrackSettings`, `MediaTrackSupportedConstraints`
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
-## Media Capture from DOM Elements {data-spec=true data-error=true}
+## Media Capture from DOM Elements {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -5882,24 +5899,16 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+     * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/), related reference "2DCONTEXT" uses URL [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 
 No informative reference to this spec from other specs.
 
@@ -5973,6 +5982,7 @@ Normative references to this spec from:
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 
 Informative references to this spec from:
 
@@ -6024,11 +6034,11 @@ Informative references to this spec from:
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 
 
-## Media Source Extensions™ {data-spec=true data-error=true}
+## Media Source Extensions™ {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/media-source/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/media-source/) (08 November 2016)
 - Editor's Draft: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
 - Latest published version: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-media-source-20161117/)
@@ -6037,20 +6047,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6060,7 +6057,10 @@ Normative references to this spec from:
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
 - [URL Standard](https://url.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Media Source Extensions™](https://w3c.github.io/media-source/)
 
 
 ## MediaStream Image Capture {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
@@ -6083,7 +6083,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 
 No informative reference to this spec from other specs.
 
@@ -6110,7 +6112,10 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
 
 Informative references to this spec from:
 
@@ -6118,11 +6123,11 @@ Informative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
-## MediaStreamTrack Content Hints {data-spec=true data-error=true}
+## MediaStreamTrack Content Hints {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/mst-content-hint/](https://w3c.github.io/mst-content-hint/)
 - Latest published version: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
@@ -6131,20 +6136,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `MediaStreamTrack`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6153,31 +6145,25 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Metadata API for Media Resources 1.0 {data-spec=true data-error=true}
+## Metadata API for Media Resources 1.0 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true data-noEdDraft=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/mediaont-api-1.0/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/mediaont-api-1.0/) (13 March 2014)
 - Latest published version: [http://www.w3.org/TR/mediaont-api-1.0/](http://www.w3.org/TR/mediaont-api-1.0/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
 - Shortname: mediaont-api-1.0
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Link to an Editor's Draft not found
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/mediaont-10/`](https://www.w3.org/TR/mediaont-10/)
+     * [`https://www.w3.org/TR/2012/REC-mediaont-10-20120209/`](https://www.w3.org/TR/2012/REC-mediaont-10-20120209/)
+     * [`https://www.w3.org/TR/2011/NOTE-dap-policy-reqs-20110317/`](https://www.w3.org/TR/2011/NOTE-dap-policy-reqs-20110317/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2012/REC-media-frags-20120925/`](https://www.w3.org/TR/2012/REC-media-frags-20120925/), related reference "MEDIA-FRAGMENTS" uses URL [`http://www.w3.org/TR/media-frags/`](http://www.w3.org/TR/media-frags/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6210,7 +6196,10 @@ Normative references to this spec from:
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 
 Informative references to this spec from:
@@ -6252,11 +6241,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Navigation Timing Level 2 {data-spec=true data-error=true}
+## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
@@ -6265,52 +6254,39 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
 
-No informative reference to this spec from other specs.
+- [Gamepad](https://w3c.github.io/gamepad/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Server Timing](https://w3c.github.io/server-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+
+Informative references to this spec from:
+
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 
-## Network Information API {data-spec=true data-error=true}
+## Network Information API {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sat Jul 27 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://w3c.github.io/ServiceWorker/v1/`](https://w3c.github.io/ServiceWorker/v1/)
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6376,11 +6352,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Page Visibility Level 2 {data-spec=true data-error=true}
+## Page Visibility Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
 - Latest published version: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
@@ -6389,29 +6365,24 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `Document`, `EventHandler`
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Beacon](https://w3c.github.io/beacon/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
 No informative reference to this spec from other specs.
 
@@ -6442,11 +6413,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-error=true}
+## Payment Handler API {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
@@ -6455,20 +6426,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6477,11 +6435,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Payment Method: Basic Card {data-spec=true data-error=true}
+## Payment Method: Basic Card {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
@@ -6490,33 +6448,24 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
 
-No informative reference to this spec from other specs.
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+
+Informative references to this spec from:
+
+- [Payment Request API](https://w3c.github.io/payment-request/)
 
 
-## Payment Request API {data-spec=true data-error=true}
+## Payment Request API {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
@@ -6525,35 +6474,24 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-error=true}
+## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
@@ -6562,20 +6500,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6583,11 +6510,18 @@ Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Server Timing](https://w3c.github.io/server-timing/)
 
 
 ## Permissions {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -6624,8 +6558,13 @@ Normative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 
 No informative reference to this spec from other specs.
@@ -6652,11 +6591,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Pointer Events {data-spec=true data-error=true}
+## Pointer Events {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
@@ -6665,20 +6604,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6686,15 +6614,20 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 
 
-## Pointer Lock 2.0 {data-spec=true data-error=true}
+## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
 - Latest published version: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
@@ -6703,35 +6636,47 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 
 Informative references to this spec from:
 
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 
 
+## PointerEvents - Level 2 - Extensions {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sat Jul 27 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/pointerevents/`](https://w3c.github.io/pointerevents/), related reference "pointerevents2" uses URL [`https://www.w3.org/TR/pointerevents2/`](https://www.w3.org/TR/pointerevents2/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Preload {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (Fri Jul 26 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/preload/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
 - Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-preload-20190626/)
@@ -6750,11 +6695,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Presentation API {data-spec=true data-error=true}
+## Presentation API {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Latest published version: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
@@ -6763,33 +6708,25 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 
 No informative reference to this spec from other specs.
 
 
-## Progress Events {data-spec=true data-error=true}
+## Progress Events {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2014/REC-progress-events-20140211/) (11 February 2014)
 - Editor's Draft: [http://dvcs.w3.org/hg/progress/raw-file/tip/Overview.html](http://dvcs.w3.org/hg/progress/raw-file/tip/Overview.html)
 - Latest published version: [http://www.w3.org/TR/progress-events/](http://www.w3.org/TR/progress-events/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
@@ -6797,20 +6734,10 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6843,11 +6770,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Push API {data-spec=true data-error=true}
+## Push API {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/push-api/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
 - Latest published version: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-push-api-20190724/)
@@ -6856,20 +6783,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6903,6 +6817,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 
 Informative references to this spec from:
@@ -6910,11 +6825,11 @@ Informative references to this spec from:
 - [Preload](https://w3c.github.io/preload/)
 
 
-## Remote Playback API {data-spec=true data-error=true}
+## Remote Playback API {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
 - Latest published version: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
@@ -6923,20 +6838,11 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6994,11 +6900,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Resource Timing Level 2 {data-spec=true data-error=true}
+## Resource Timing Level 2 {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
@@ -7007,35 +6913,26 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
-## Scalable Vector Graphics (SVG) 2 {data-spec=true data-error=true}
+## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/)
+- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/) (14 July 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -7044,25 +6941,68 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/)
+     * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/)
+     * [`https://www.w3.org/TR/filter-effects/`](https://www.w3.org/TR/filter-effects/)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+     * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/)
+     * [`https://www.w3.org/TR/wai-aria/`](https://www.w3.org/TR/wai-aria/)
+     * [`https://w3c.github.io/svg-aam/`](https://w3c.github.io/svg-aam/)
+     * [`https://w3c.github.io/selection-api/`](https://w3c.github.io/selection-api/)
+     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
+     * [`https://www.w3.org/TR/2013/REC-css-style-attr-20131107/`](https://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
+     * [`https://www.w3.org/TR/css-position-3/`](https://www.w3.org/TR/css-position-3/)
+     * [`https://www.w3.org/TR/css3-exclusions/`](https://www.w3.org/TR/css3-exclusions/)
+     * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/)
+     * [`https://www.w3.org/TR/css-backgrounds-3/`](https://www.w3.org/TR/css-backgrounds-3/)
+     * [`https://www.w3.org/TR/css-box-3/`](https://www.w3.org/TR/css-box-3/)
+     * [`https://www.w3.org/TR/css-content-3/`](https://www.w3.org/TR/css-content-3/)
+     * [`https://www.w3.org/TR/resource-hints/`](https://www.w3.org/TR/resource-hints/)
+     * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/)
+     * [`https://www.w3.org/TR/orientation-event/`](https://www.w3.org/TR/orientation-event/)
+     * [`https://www.w3.org/TR/css-selectors-3/`](https://www.w3.org/TR/css-selectors-3/)
+     * [`https://www.w3.org/TR/xlink/`](https://www.w3.org/TR/xlink/)
+     * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/)
+     * [`https://www.w3.org/TR/css3-transforms/`](https://www.w3.org/TR/css3-transforms/)
+     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
+     * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/)
+     * [`https://www.w3.org/TR/accname-aam-1.1/`](https://www.w3.org/TR/accname-aam-1.1/)
+     * [`https://w3c.github.io/graphics-aria/`](https://w3c.github.io/graphics-aria/)
+     * [`https://www.w3.org/TR/smil/`](https://www.w3.org/TR/smil/)
+     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
+     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
+     * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/)
+     * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/), related reference "xml" uses URL [`https://www.w3.org/TR/xml`](https://www.w3.org/TR/xml)
+     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/), related reference "xml-names" uses URL [`https://www.w3.org/TR/xml-names`](https://www.w3.org/TR/xml-names)
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "dom" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "css-values" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/), related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
+     * [`https://www.w3.org/TR/compositing/`](https://www.w3.org/TR/compositing/), related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113/`](https://www.w3.org/TR/2015/CR-compositing-1-20150113/), related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113`](https://www.w3.org/TR/2015/CR-compositing-1-20150113), related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "css-values" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+     * [`https://www.w3.org/TR/2014/CR-geometry-1-20141125/`](https://www.w3.org/TR/2014/CR-geometry-1-20141125/), related reference "geometry-1" uses URL [`https://www.w3.org/TR/geometry-1/`](https://www.w3.org/TR/geometry-1/)
+     * [`https://www.w3.org/TR/2014/WD-geometry-1-20140522/`](https://www.w3.org/TR/2014/WD-geometry-1-20140522/), related reference "geometry-1" uses URL [`https://www.w3.org/TR/geometry-1/`](https://www.w3.org/TR/geometry-1/)
+     * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+     * [`https://www.w3.org/TR/2014/WD-dom-20140204/`](https://www.w3.org/TR/2014/WD-dom-20140204/), related reference "dom" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "css-writing-modes-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+     * [`https://www.w3.org/TR/2011/WD-css3-fonts-20111004/`](https://www.w3.org/TR/2011/WD-css3-fonts-20111004/), related reference "css-fonts-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+     * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/), related reference "smil-animation" uses URL [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/)
+     * [`https://w3c.github.io/clipboard-apis/`](https://w3c.github.io/clipboard-apis/), related reference "clipboard-apis" uses URL [`https://www.w3.org/TR/clipboard-apis/`](https://www.w3.org/TR/clipboard-apis/)
+     * [`https://www.w3.org/TR/referrer-policy/`](https://www.w3.org/TR/referrer-policy/), related reference "ReferrerPolicy" uses URL [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/)
+     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+     * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/), related reference "UAAG20" uses URL [`https://www.w3.org/TR/UAAG20/`](https://www.w3.org/TR/UAAG20/)
+     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/), related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
@@ -7090,7 +7030,9 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [SVG Markers](https://svgwg.org/specs/markers/)
 - [SVG Strokes](https://svgwg.org/specs/strokes/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -7112,11 +7054,11 @@ Informative references to this spec from:
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 
-## Screen Capture {data-spec=true data-error=true}
+## Screen Capture {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-screen-share/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
 - Latest published version: [http://www.w3.org/TR/screen-capture/](http://www.w3.org/TR/screen-capture/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
@@ -7125,20 +7067,12 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+     * [`https://w3c.github.io/mediacapture-main/getusermedia.html`](https://w3c.github.io/mediacapture-main/getusermedia.html), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7193,6 +7127,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Battery Status API](https://w3c.github.io/battery/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
@@ -7201,10 +7136,13 @@ Normative references to this spec from:
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -7212,14 +7150,16 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 
 
-## Selection API {data-spec=true data-error=true}
+## Selection API {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-selection-api-20190607/)
@@ -7228,20 +7168,11 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7250,31 +7181,21 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Selectors API Level 1 {data-spec=true data-error=true}
+## Selectors API Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-inconsistentRef=true data-noEdDraft=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/selectors-api/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/selectors-api/) (21 February 2013)
 - Latest published version: [http://www.w3.org/TR/selectors-api/](http://www.w3.org/TR/selectors-api/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - Shortname: selectors-api
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Link to an Editor's Draft not found
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/), related reference "SELECT" uses URL [`http://www.w3.org/TR/2011/REC-css3-selectors-20110929/`](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7323,6 +7244,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
@@ -7330,6 +7252,7 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
 ## Selectors Level 4 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
@@ -7386,11 +7309,11 @@ Informative references to this spec from:
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 
 
-## Server Timing {data-spec=true data-error=true}
+## Server Timing {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
@@ -7399,20 +7322,12 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/), related reference "RESOURCE-TIMING-2" uses URL [`https://www.w3.org/TR/resource-timing-2/`](https://www.w3.org/TR/resource-timing-2/)
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7421,11 +7336,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Server-Sent Events {data-spec=true data-error=true}
+## Server-Sent Events {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-eventsource-20150203/) (03 February 2015)
 - Editor's Draft: [http://dev.w3.org/html5/eventsource/](http://dev.w3.org/html5/eventsource/)
 - Latest published version: [http://www.w3.org/TR/eventsource/](http://www.w3.org/TR/eventsource/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
@@ -7433,20 +7348,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7489,11 +7391,19 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 
 Informative references to this spec from:
 
+- [Beacon](https://w3c.github.io/beacon/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
@@ -7597,11 +7507,11 @@ Informative references to this spec from:
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 
 
-## SVG Markers {data-spec=true data-error=true}
+## SVG Markers {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://svgwg.org/specs/markers/)
+- Crawled version: [Editor's Draft](https://svgwg.org/specs/markers/) (14 July 2019)
 - Editor's Draft: [https://svgwg.org/specs/markers/](https://svgwg.org/specs/markers/)
 - Latest published version: [http://www.w3.org/TR/svg-markers/](http://www.w3.org/TR/svg-markers/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
@@ -7610,20 +7520,13 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/`](https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
+     * [`https://www.w3.org/TR/geometry-1/`](https://www.w3.org/TR/geometry-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7655,11 +7558,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## The Screen Orientation API {data-spec=true data-error=true}
+## The Screen Orientation API {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-orientation-20190723/)
@@ -7668,20 +7571,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7689,52 +7579,42 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
 
 
-## The WebSocket API {data-spec=true data-error=true}
+## The WebSocket API {data-spec=true data-anomaly=true data-noIdlContent=true data-noEdDraft=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/websockets/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/websockets/) (20 September 2012)
 - Latest published version: [http://www.w3.org/TR/websockets/](http://www.w3.org/TR/websockets/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2012/CR-websockets-20120920/)
 - Shortname: websockets
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Link to an Editor's Draft not found
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## Touch Events {data-spec=true data-error=true}
+## Touch Events - Level 2 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/touch-events/](https://w3c.github.io/touch-events/)
 - Latest published version: [http://www.w3.org/TR/touch-events/](http://www.w3.org/TR/touch-events/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
@@ -7743,28 +7623,20 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/touch-events-extensions/`](https://www.w3.org/TR/touch-events-extensions/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
 ## UI Events {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -7793,13 +7665,20 @@ Normative references to this spec from:
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
+- [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
 No informative reference to this spec from other specs.
 
@@ -7827,6 +7706,7 @@ Normative references to this spec from:
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
 No informative reference to this spec from other specs.
 
@@ -7850,9 +7730,11 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
 No informative reference to this spec from other specs.
 
@@ -7874,6 +7756,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -7887,14 +7770,22 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -7933,11 +7824,11 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## User Timing Level 2 {data-spec=true data-error=true}
+## User Timing Level 3 {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
@@ -7946,33 +7837,24 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
 
-No informative reference to this spec from other specs.
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+
+Informative references to this spec from:
+
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
-## Vibration API (Second Edition) {data-spec=true data-error=true}
+## Vibration API (Second Edition) {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/vibration/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
 - Latest published version: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-vibration-20161018/)
@@ -7981,20 +7863,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8031,7 +7902,10 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
@@ -8060,45 +7934,74 @@ Normative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
+- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Network Information API](https://wicg.github.io/netinfo/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
 - [Preload](https://w3c.github.io/preload/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
+- [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
+- [Web Notifications](https://www.w3.org/TR/notifications/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
+- [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -8110,11 +8013,11 @@ Informative references to this spec from:
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 
 
-## Wake Lock API {data-spec=true data-error=true}
+## Wake Lock API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
 - Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
@@ -8123,20 +8026,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8174,6 +8064,7 @@ Normative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 
 Informative references to this spec from:
@@ -8181,11 +8072,11 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 
 
-## Web App Manifest {data-spec=true data-error=true}
+## Web App Manifest {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20190702/)
@@ -8194,37 +8085,26 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Media Session Standard](https://wicg.github.io/mediasession/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
 ## Web Audio API {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (19 July 2019)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (26 July 2019)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -8242,7 +8122,11 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 
 Informative references to this spec from:
 
@@ -8299,6 +8183,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
+- [Push API](https://w3c.github.io/push-api/)
 
 
 ## Web Bluetooth {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -8329,11 +8214,11 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Web Cryptography API {data-spec=true data-error=true}
+## Web Cryptography API {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcrypto/Overview.html)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webcrypto/Overview.html) (14 May 2018)
 - Editor's Draft: [https://w3c.github.io/webcrypto/Overview.html](https://w3c.github.io/webcrypto/Overview.html)
 - Latest published version: [https://www.w3.org/TR/WebCryptoAPI/](https://www.w3.org/TR/WebCryptoAPI/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
@@ -8342,27 +8227,19 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
 
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
@@ -8388,8 +8265,12 @@ Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
@@ -8397,6 +8278,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
@@ -8419,8 +8301,10 @@ Normative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -8429,11 +8313,18 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
+- [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
@@ -8441,34 +8332,71 @@ Normative references to this spec from:
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
+- [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Information API](https://wicg.github.io/netinfo/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
+- [Push API](https://w3c.github.io/push-api/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Static Range](https://w3c.github.io/staticrange/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
+- [Web Share API - Level 1](https://wicg.github.io/web-share/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
+- [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -8478,11 +8406,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Web MIDI API {data-spec=true data-error=true}
+## Web MIDI API {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/)
+- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/) (Sat Jul 27 2019)
 - Editor's Draft: [http://webaudio.github.io/web-midi-api/](http://webaudio.github.io/web-midi-api/)
 - Latest published version: [http://www.w3.org/TR/webmidi/](http://www.w3.org/TR/webmidi/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
@@ -8491,20 +8419,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8515,30 +8430,17 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Web NFC API {data-spec=true data-error=true}
+## Web NFC API {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sat Jul 27 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8547,65 +8449,49 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Notifications {data-spec=true data-error=true}
+## Web Notifications {data-spec=true data-anomaly=true data-noIdlContent=true data-inconsistentRef=true data-noEdDraft=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/notifications/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/notifications/) (22 October 2015)
 - Latest published version: [http://www.w3.org/TR/notifications/](http://www.w3.org/TR/notifications/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2015/REC-notifications-20151022/)
 - Shortname: notifications
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Link to an Editor's Draft not found
+- No WebIDL definitions found
+- Inconsistent references for links: 
+     * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/), related reference "WEBIDL" uses URL [`https://www.w3.org/TR/2015/PR-notifications-20150910/`](https://www.w3.org/TR/2015/PR-notifications-20150910/)
+     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML5" uses URL [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Push API](https://w3c.github.io/push-api/)
+- [Web Notifications](https://www.w3.org/TR/notifications/)
 
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 
 
-## Web Share API {data-spec=true data-error=true}
+## Web Share API - Level 1 {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Sat Jul 27 2019)
 - Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8632,11 +8518,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Storage (Second Edition) {data-spec=true data-error=true}
+## Web Storage (Second Edition) {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2016/REC-webstorage-20160419/) (19 April 2016)
 - Editor's Draft: [https://w3c.github.io/webstorage/](https://w3c.github.io/webstorage/)
 - Latest published version: [http://www.w3.org/TR/webstorage/](http://www.w3.org/TR/webstorage/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
@@ -8645,24 +8531,13 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Presentation API](https://w3c.github.io/presentation-api/)
 
 Informative references to this spec from:
 
@@ -8670,11 +8545,11 @@ Informative references to this spec from:
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
 
 
-## Web Workers {data-spec=true data-error=true}
+## Web Workers {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
+- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html) (18 July 2019)
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/workers.html](https://html.spec.whatwg.org/multipage/workers.html)
 - Latest published version: [http://www.w3.org/TR/workers/](http://www.w3.org/TR/workers/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-workers-20150924/)
@@ -8683,20 +8558,19 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No normative references found
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
+     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/)
+     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
+     * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/)
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
+     * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/)
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8704,6 +8578,8 @@ Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
@@ -8711,6 +8587,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
@@ -8746,6 +8623,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
@@ -8754,45 +8632,80 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Media Capabilities](https://wicg.github.io/media-capabilities/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Media Session Standard](https://wicg.github.io/mediasession/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Information API](https://wicg.github.io/netinfo/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Preload](https://w3c.github.io/preload/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web IDL](https://heycam.github.io/webidl/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -8812,8 +8725,12 @@ Informative references to this spec from:
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Web Share API - Level 1](https://wicg.github.io/web-share/)
 
 
 ## WebAssembly JavaScript Interface {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true}
@@ -8870,11 +8787,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebDriver {data-spec=true data-error=true}
+## WebDriver {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
 - Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -8883,20 +8800,15 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
+     * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+     * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/), related reference "DOM-PARSING" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FILEAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8910,30 +8822,17 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebGL 2.0 Specification {data-spec=true data-error=true}
+## WebGL 2.0 Specification {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Jul 27 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8943,52 +8842,42 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## WebGL Specification, Version 1.0 {data-spec=true data-error=true}
+## WebGL Specification {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Jul 27 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
 
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-error=true}
+## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (Sat Jul 27 2019)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
@@ -8997,29 +8886,23 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
 ## WebRTC DSCP Control API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true}
@@ -9051,7 +8934,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (25 July 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (26 July 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -9173,6 +9056,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 
 Informative references to this spec from:
 
