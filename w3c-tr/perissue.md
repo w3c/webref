@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 27, 2019
+% July 28, 2019
 
 242 specifications were crawled in this report.
 
@@ -14,51 +14,51 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Accelerometer](https://www.w3.org/TR/accelerometer): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/wai-aria-1.2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Ambient Light Sensor](https://www.w3.org/TR/ambient-light): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Audio Output Devices API](https://www.w3.org/TR/audio-output): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Battery Status API](https://www.w3.org/TR/battery-status): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Beacon](https://www.w3.org/TR/beacon): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](https://www.w3.org/TR/CSS2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://www.w3.org/TR/CSS22): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Clipboard API and events](https://www.w3.org/TR/clipboard-apis): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Compositing and Blending Level 1](https://www.w3.org/TR/compositing-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Content Security Policy Level 3](https://www.w3.org/TR/CSP3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/csp-embedded-enforcement): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -66,35 +66,35 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Credential Management Level 1](https://www.w3.org/TR/credential-management-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Color Module Level 3](https://www.w3.org/TR/css-color-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -110,19 +110,19 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://www.w3.org/TR/css-variables-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -130,15 +130,15 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Easing Functions Level 1](https://www.w3.org/TR/css-easing-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/fill-stroke-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Font Loading Module Level 3](https://www.w3.org/TR/css-font-loading-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -150,11 +150,11 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Generated Content for Paged Media Module](https://www.w3.org/TR/css-gcpm-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -162,27 +162,27 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/css-content-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Image Values and Replaced Content Module Level 3](https://www.w3.org/TR/css3-images): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -190,35 +190,33 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Line Grid Module Level 1](https://www.w3.org/TR/css-line-grid-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [CSS Namespaces Module Level 3](https://www.w3.org/TR/css-namespaces-3): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [CSS Namespaces Module Level 3](https://www.w3.org/TR/css-namespaces-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
@@ -228,23 +226,23 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/css-overflow-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Page Floats](https://www.w3.org/TR/css-page-floats-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Positioned Layout Module Level 3](https://www.w3.org/TR/css-position-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -252,67 +250,67 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Regions Module Level 1](https://www.w3.org/TR/css-regions-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/css-rhythm-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Round Display Level 1](https://www.w3.org/TR/css-round-display-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/css-ruby-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Scoping Module Level 1](https://www.w3.org/TR/css-scoping-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/css-scroll-snap-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Shapes Module Level 1](https://www.w3.org/TR/css-shapes-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Style Attributes](https://www.w3.org/TR/css-style-attr): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Table Module Level 3](https://www.w3.org/TR/css-tables-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/css-text-decor-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/css-text-decor-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Text Module Level 4](https://www.w3.org/TR/css-text-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -320,27 +318,27 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Will Change Module Level 1](https://www.w3.org/TR/css-will-change-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [CSSOM View Module](https://www.w3.org/TR/cssom-view-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -348,11 +346,11 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [encoding](https://www.w3.org/TR/encoding): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -368,7 +366,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Gamepad](https://www.w3.org/TR/gamepad): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -388,7 +386,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Gyroscope](https://www.w3.org/TR/gyroscope): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [High Resolution Time Level 3](https://www.w3.org/TR/hr-time-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -396,11 +394,11 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [HTML 5.2](https://www.w3.org/TR/html52): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [HTML Media Capture](https://www.w3.org/TR/html-media-capture): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -408,11 +406,11 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [HTML5 Web Messaging](https://www.w3.org/TR/webmessaging): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/webrtc-stats): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Indexed Database API 2.0](https://www.w3.org/TR/IndexedDB-2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -436,7 +434,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/mediacapture-depth): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -444,15 +442,15 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Media Capture from DOM Elements](https://www.w3.org/TR/mediacapture-fromelement): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Media Queries](https://www.w3.org/TR/css3-mediaqueries): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Media Source Extensions™](https://www.w3.org/TR/media-source): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -468,7 +466,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Mixed Content](https://www.w3.org/TR/mixed-content): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -476,7 +474,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Motion Path Module Level 1](https://www.w3.org/TR/motion-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Navigation Timing Level 2](https://www.w3.org/TR/navigation-timing-2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -488,23 +486,23 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [notifications](https://www.w3.org/TR/notifications): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Orientation Sensor](https://www.w3.org/TR/orientation-sensor): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Page Visibility Level 2](https://www.w3.org/TR/page-visibility-2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Paint Timing 1](https://www.w3.org/TR/paint-timing): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Payment Handler API](https://www.w3.org/TR/payment-handler): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Payment Method: Basic Card](https://www.w3.org/TR/payment-method-basic-card): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -516,11 +514,11 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Permissions](https://www.w3.org/TR/permissions): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Pointer Events](https://www.w3.org/TR/pointerevents2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -528,7 +526,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Preload](https://www.w3.org/TR/preload): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -540,15 +538,15 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Progress Events](https://www.w3.org/TR/progress-events): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Proximity Sensor](https://www.w3.org/TR/proximity): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Push API](https://www.w3.org/TR/push-api): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Referrer Policy](https://www.w3.org/TR/referrer-policy): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -556,11 +554,11 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Remote Playback API](https://www.w3.org/TR/remote-playback): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Resource Timing Level 2](https://www.w3.org/TR/resource-timing-2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -576,19 +574,19 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Selection API](https://www.w3.org/TR/selection-api): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Selectors Level 3](https://www.w3.org/TR/selectors-3): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Server Timing](https://www.w3.org/TR/server-timing): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -596,25 +594,23 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Server-Sent Events](https://www.w3.org/TR/eventsource): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [Service Workers 1](https://www.w3.org/TR/service-workers-1): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [Service Workers 1](https://www.w3.org/TR/service-workers-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Subresource Integrity](https://www.w3.org/TR/SRI): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [SVG Markers](https://www.w3.org/TR/svg-markers): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [SVG Strokes](https://www.w3.org/TR/svg-strokes): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [The Screen Orientation API](https://www.w3.org/TR/screen-orientation): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -622,29 +618,27 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [The WebSocket API](https://www.w3.org/TR/websockets): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Touch Events](https://www.w3.org/TR/touch-events): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [UI Events](https://www.w3.org/TR/uievents): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [UI Events](https://www.w3.org/TR/uievents): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [UI Events KeyboardEvent code Values](https://www.w3.org/TR/uievents-code): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [UI Events KeyboardEvent key Values](https://www.w3.org/TR/uievents-key): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [User Interface Security and the Visibility API](https://www.w3.org/TR/UISecurity): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [User Timing Level 2](https://www.w3.org/TR/user-timing-2): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
@@ -652,15 +646,13 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Vibration API (Second Edition)](https://www.w3.org/TR/vibration): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [W3C DOM 4.1](https://www.w3.org/TR/dom41): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [W3C DOM 4.1](https://www.w3.org/TR/dom41): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Wake Lock API](https://www.w3.org/TR/wake-lock): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
@@ -670,69 +662,67 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Web App Manifest](https://www.w3.org/TR/appmanifest): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Web Audio API](https://www.w3.org/TR/webaudio): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Web Authentication:An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/webauthn-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Web Cryptography API](https://www.w3.org/TR/WebCryptoAPI): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Web MIDI API](https://www.w3.org/TR/webmidi): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Web Storage (Second Edition)](https://www.w3.org/TR/webstorage): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Web Workers](https://www.w3.org/TR/workers): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
-- [WebAssembly Web API](https://www.w3.org/TR/wasm-web-api-1): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
+- [WebAssembly Web API](https://www.w3.org/TR/wasm-web-api-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [WebDriver](https://www.w3.org/TR/webdriver1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [WebIDL-1](https://www.w3.org/TR/WebIDL-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/webrtc): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [WebRTC DSCP Control API](https://www.w3.org/TR/webrtc-dscp): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [WebXR Device API](https://www.w3.org/TR/webxr): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 - [Worklets Level 1](https://www.w3.org/TR/worklets-1): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)`
 
