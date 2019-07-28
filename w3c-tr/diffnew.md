@@ -1,17 +1,6 @@
-% Diff between report from "July 27, 2019" and reference report from "July 26, 2019"
+% Diff between report from "July 28, 2019" and reference report from "July 27, 2019"
 % Reffy
-% July 27, 2019
-
-## "MediaStream Image Capture"
-
-- URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/image-capture)
-- Repository: [GitHub w3c/mediacapture-image](https://github.com/w3c/mediacapture-image)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
+% July 28, 2019
 
 ## Accelerometer
 
@@ -19,6 +8,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/accelerometer)
 - Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -30,19 +22,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/wai-aria-1.2)
 - Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Ambient Light Sensor
@@ -51,6 +36,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/ambient-light)
 - Repository: [GitHub w3c/ambient-light](https://github.com/w3c/ambient-light)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -62,27 +50,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/audio-output)
 - Repository: [GitHub w3c/mediacapture-output](https://github.com/w3c/mediacapture-output)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Background Fetch
-
-- URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
-- Crawled version: [Initial URL](https://wicg.github.io/background-fetch/)
-- Repository: [GitHub wicg/background-fetch](https://github.com/wicg/background-fetch)
-- Missing references for links: *INS* https://w3c.github.io/permissions/
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Battery Status API
@@ -91,19 +64,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/battery-status)
 - Repository: [GitHub w3c/battery](https://github.com/w3c/battery)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Beacon
@@ -112,19 +78,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/beacon)
 - Repository: [GitHub w3c/beacon](https://github.com/w3c/beacon)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification
@@ -132,8 +91,10 @@
 - URL: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/CSS2)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec title: *INS* Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification / *DEL* Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -144,8 +105,10 @@
 - URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/CSS22)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec title: *INS* Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification / *DEL* Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -157,6 +120,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/clipboard-apis)
 - Repository: [GitHub w3c/clipboard-apis](https://github.com/w3c/clipboard-apis)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -168,6 +134,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/compositing-1)
 - Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -179,6 +148,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/CSP3)
 - Repository: [GitHub w3c/webappsec-csp](https://github.com/w3c/webappsec-csp)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -190,38 +162,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/csp-embedded-enforcement)
 - Repository: [GitHub w3c/webappsec-csp](https://github.com/w3c/webappsec-csp)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Cooperative Scheduling of Background Tasks
-
-- URL: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/requestidlecallback)
-- Repository: [GitHub w3c/requestidlecallback](https://github.com/w3c/requestidlecallback)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## CORS and RFC1918
-
-- URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
-- Crawled version: [Initial URL](https://wicg.github.io/cors-rfc1918/)
-- Repository: [GitHub wicg/cors-rfc1918](https://github.com/wicg/cors-rfc1918)
-- Missing references for links: *INS* https://w3c.github.io/webappsec-csp/
 
 
 ## Credential Management Level 1
@@ -230,6 +176,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/credential-management-1)
 - Repository: [GitHub w3c/webappsec-credential-management](https://github.com/w3c/webappsec-credential-management)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -241,6 +190,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-animations-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -252,6 +204,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-backgrounds-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -263,6 +218,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-ui-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -274,6 +232,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-ui-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -285,6 +246,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-align-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -296,6 +260,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-cascade-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -307,52 +274,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-cascade-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSS Color Module Level 3
-
-- URL: [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-color-3)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSS Color Module Level 4
-
-- URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-color-4)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSS Conditional Rules Module Level 3
-
-- URL: [https://www.w3.org/TR/css3-conditional/](https://www.w3.org/TR/css3-conditional/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css3-conditional)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
 
 
 ## CSS Containment Module Level 1
@@ -361,6 +288,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-contain-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -372,6 +302,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-counter-styles-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -383,6 +316,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-variables-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -394,18 +330,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-device-adapt-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSS Display Module Level 3
-
-- URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-display-3)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -416,6 +344,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-easing-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -427,6 +358,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/fill-stroke-3)
 - Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -438,51 +372,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-flexbox-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSS Font Loading Module Level 3
-
-- URL: [https://www.w3.org/TR/css-font-loading-3/](https://www.w3.org/TR/css-font-loading-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-font-loading-3)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## CSS Fonts Module Level 3
-
-- URL: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-fonts-3)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
 
 
 ## CSS Fonts Module Level 4
@@ -491,6 +386,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-fonts-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -502,18 +400,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-break-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSS Generated Content for Paged Media Module
-
-- URL: [https://www.w3.org/TR/css-gcpm-3/](https://www.w3.org/TR/css-gcpm-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-gcpm-3)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -524,6 +414,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-content-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -535,6 +428,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-grid-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -546,6 +442,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-grid-2)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -557,6 +456,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css3-images)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -568,6 +470,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-images-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -579,18 +484,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-inline-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSS Intrinsic & Extrinsic Sizing Module Level 3
-
-- URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-sizing-3)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -600,6 +497,9 @@
 - URL: [https://www.w3.org/TR/css-layout-api-1/](https://www.w3.org/TR/css-layout-api-1/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-layout-api-1)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -611,6 +511,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-line-grid-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -622,6 +525,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-lists-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -633,6 +539,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-logical-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -644,19 +553,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-masking-1)
 - Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## CSS Multi-column Layout Module Level 1
@@ -665,6 +567,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-multicol-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -675,34 +580,15 @@
 - URL: [https://www.w3.org/TR/css-namespaces-3/](https://www.w3.org/TR/css-namespaces-3/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-namespaces-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
     at ChildProcess.emit (events.js:214:7)
     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
-
-
-## CSS Object Model (CSSOM)
-
-- URL: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/cssom-1)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSS Overflow Module Level 3
-
-- URL: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-overflow-3)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## CSS Overflow Module Level 4
@@ -711,6 +597,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-overflow-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -722,6 +611,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-page-floats-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -733,6 +625,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-page-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -743,6 +638,9 @@
 - URL: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-paint-api-1)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -754,17 +652,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-position-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSS Properties and Values API Level 1
-
-- URL: [https://www.w3.org/TR/css-properties-values-api-1/](https://www.w3.org/TR/css-properties-values-api-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-properties-values-api-1)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -775,6 +666,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-pseudo-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -786,19 +680,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-regions-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## CSS Rhythmic Sizing
@@ -807,6 +694,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-rhythm-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -818,6 +708,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-round-display-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -829,6 +722,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-ruby-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -840,6 +736,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-scoping-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -851,6 +750,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-scroll-snap-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -862,6 +764,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-shapes-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -873,6 +778,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-style-attr)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -884,6 +792,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-syntax-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -895,6 +806,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-tables-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -906,6 +820,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-text-decor-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -917,6 +834,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-text-decor-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -928,6 +848,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-text-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -939,6 +862,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-text-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -950,18 +876,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-transforms-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSS Transitions
-
-- URL: [https://www.w3.org/TR/css-transitions-1/](https://www.w3.org/TR/css-transitions-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/css-transitions-1)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -971,6 +889,9 @@
 - URL: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-typed-om-1)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -982,6 +903,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-values-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -993,6 +917,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-values-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -1004,6 +931,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-will-change-1)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -1015,6 +945,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-writing-modes-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -1026,18 +959,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css-writing-modes-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## CSSOM View Module
-
-- URL: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/cssom-view-1)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -1048,6 +973,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/orientation-event)
 - Repository: [GitHub w3c/deviceorientation](https://github.com/w3c/deviceorientation)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -1059,96 +987,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/DOM-Parsing)
 - Repository: [GitHub w3c/DOM-Parsing](https://github.com/w3c/DOM-Parsing)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Element Timing API
-
-- URL: [https://wicg.github.io/element-timing/](https://wicg.github.io/element-timing/)
-- Crawled version: [Initial URL](https://wicg.github.io/element-timing/)
-- Repository: [GitHub wicg/element-timing](https://github.com/wicg/element-timing)
-- Missing references for links: *INS* https://w3c.github.io/performance-timeline/, https://w3c.github.io/hr-time/, https://w3c.github.io/resource-timing/, https://w3c.github.io/IntersectionObserver/
-
-
-## encoding
-
-- URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/encoding)
-- Spec title: *INS* encoding / *DEL* Encoding
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:365:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
-
-
-## Encrypted Media Extensions
-
-- URL: [https://www.w3.org/TR/encrypted-media/](https://www.w3.org/TR/encrypted-media/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/encrypted-media)
-- Repository: [GitHub w3c/encrypted-media](https://github.com/w3c/encrypted-media)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Event Timing API
-
-- URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Crawled version: [Initial URL](https://wicg.github.io/event-timing/)
-- Repository: [GitHub wicg/event-timing](https://github.com/wicg/event-timing)
-- Missing references for links: *INS* https://w3c.github.io/hr-time/, https://w3c.github.io/pointerevents/, https://w3c.github.io/touch-events/, https://w3c.github.io/performance-timeline/, https://w3c.github.io/paint-timing/
-
-
-## Feature Policy
-
-- URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/)
-- Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
-- Missing references for links: *INS* https://w3c.github.io/webappsec-csp/, https://w3c.github.io/payment-request/
-
-
-## File and Directory Entries API
-
-- URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
-- Crawled version: [Initial URL](https://wicg.github.io/entries-api/)
-- Repository: [GitHub wicg/entries-api](https://github.com/wicg/entries-api)
-- Missing references for links: *INS* https://w3c.github.io/FileAPI/
-
-
-## File API
-
-- URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/FileAPI)
-- Repository: [GitHub w3c/FileAPI](https://github.com/w3c/FileAPI)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -1159,70 +1001,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/filter-effects-1)
 - Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Gamepad
-
-- URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/gamepad)
-- Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Generic Sensor API
-
-- URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/generic-sensor)
-- Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Geolocation API Specification 2nd Edition
-
-- URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/geolocation-API)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Geometry Interfaces Module Level 1
-
-- URL: [https://www.w3.org/TR/geometry-1/](https://www.w3.org/TR/geometry-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/geometry-1)
-- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -1233,30 +1015,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/gyroscope)
 - Repository: [GitHub w3c/gyroscope](https://github.com/w3c/gyroscope)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## High Resolution Time Level 3
-
-- URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/hr-time-3)
-- Repository: [GitHub w3c/hr-time](https://github.com/w3c/hr-time)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
 
 
 ## HTML 5.2
@@ -1265,13 +1029,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/html52)
 - Repository: [GitHub w3c/html](https://github.com/w3c/html)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:365:29)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## HTML Canvas 2D Context
@@ -1279,40 +1042,12 @@
 - URL: [https://www.w3.org/TR/2dcontext/](https://www.w3.org/TR/2dcontext/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/2dcontext)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## HTML Media Capture
-
-- URL: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/html-media-capture)
-- Repository: [GitHub w3c/html-media-capture](https://github.com/w3c/html-media-capture)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## HTML5 Web Messaging
@@ -1320,19 +1055,12 @@
 - URL: [https://www.w3.org/TR/webmessaging/](https://www.w3.org/TR/webmessaging/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/webmessaging)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Identifiers for WebRTC's Statistics API
@@ -1341,115 +1069,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/webrtc-stats)
 - Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Indexed Database API 2.0
-
-- URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/IndexedDB-2)
-- Repository: [GitHub w3c/IndexedDB](https://github.com/w3c/IndexedDB)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Input Device Capabilities
-
-- URL: [https://wicg.github.io/InputDeviceCapabilities/](https://wicg.github.io/InputDeviceCapabilities/)
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/)
-- Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
-- Spec could not be rendered: *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Input Events Level 2
-
-- URL: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/input-events-2)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Intersection Observer
-
-- URL: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/intersection-observer)
-- Repository: [GitHub w3c/IntersectionObserver](https://github.com/w3c/IntersectionObserver)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Keyboard Map
-
-- URL: [https://wicg.github.io/keyboard-map/](https://wicg.github.io/keyboard-map/)
-- Crawled version: [Initial URL](https://wicg.github.io/keyboard-map/)
-- Repository: [GitHub wicg/keyboard-map](https://github.com/wicg/keyboard-map)
-- Missing references for links: *INS* https://w3c.github.io/webappsec-secure-contexts/
-
-
-## Largest Contentful Paint
-
-- URL: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
-- Crawled version: [Initial URL](https://wicg.github.io/largest-contentful-paint/)
-- Repository: [GitHub wicg/largest-contentful-paint](https://github.com/wicg/largest-contentful-paint)
-- Missing references for links: *INS* https://w3c.github.io/performance-timeline/, https://w3c.github.io/hr-time/
-
-
-## Long Tasks API 1
-
-- URL: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/longtasks-1)
-- Repository: [GitHub w3c/longtasks](https://github.com/w3c/longtasks)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Magnetometer
-
-- URL: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/magnetometer)
-- Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Media Capabilities
-
-- URL: [https://wicg.github.io/media-capabilities/](https://wicg.github.io/media-capabilities/)
-- Crawled version: [Initial URL](https://wicg.github.io/media-capabilities/)
-- Repository: [GitHub wicg/media-capabilities](https://github.com/wicg/media-capabilities)
-- Missing references for links: *INS* https://w3c.github.io/media-source/
 
 
 ## Media Capture and Streams
@@ -1458,40 +1083,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/mediacapture-streams)
 - Repository: [GitHub w3c/mediacapture-main](https://github.com/w3c/mediacapture-main)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Media Capture Depth Stream Extensions
-
-- URL: [https://www.w3.org/TR/mediacapture-depth/](https://www.w3.org/TR/mediacapture-depth/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/mediacapture-depth)
-- Repository: [GitHub w3c/mediacapture-depth](https://github.com/w3c/mediacapture-depth)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Media Capture from DOM Elements
@@ -1500,19 +1097,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/mediacapture-fromelement)
 - Repository: [GitHub w3c/mediacapture-fromelement](https://github.com/w3c/mediacapture-fromelement)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Media Queries
@@ -1521,6 +1111,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/css3-mediaqueries)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -1532,62 +1125,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/mediaqueries-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Media Source Extensions™
-
-- URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/media-source)
-- Repository: [GitHub w3c/media-source](https://github.com/w3c/media-source)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## MediaStream Recording
-
-- URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/mediastream-recording)
-- Repository: [GitHub w3c/mediacapture-record](https://github.com/w3c/mediacapture-record)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## MediaStreamTrack Content Hints
-
-- URL: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/mst-content-hint)
-- Repository: [GitHub w3c/mst-content-hint](https://github.com/w3c/mst-content-hint)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
 
 
 ## Metadata API for Media Resources 1.0
@@ -1595,28 +1138,10 @@
 - URL: [https://www.w3.org/TR/mediaont-api-1.0/](https://www.w3.org/TR/mediaont-api-1.0/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/mediaont-api-1.0)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Mixed Content
-
-- URL: [https://www.w3.org/TR/mixed-content/](https://www.w3.org/TR/mixed-content/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/mixed-content)
-- Repository: [GitHub w3c/webappsec-mixed-content](https://github.com/w3c/webappsec-mixed-content)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -1627,57 +1152,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/motion-1)
 - Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Navigation Timing Level 2
-
-- URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/navigation-timing-2)
-- Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Network Information API
-
-- URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/)
-- Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
-- Spec could not be rendered: *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Non-element Selectors Module Level 1
-
-- URL: [https://www.w3.org/TR/selectors-nonelement-1/](https://www.w3.org/TR/selectors-nonelement-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/selectors-nonelement-1)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -1686,21 +1164,13 @@
 
 - URL: [https://www.w3.org/TR/notifications/](https://www.w3.org/TR/notifications/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/notifications)
-- Spec title: *INS* notifications / *DEL* Web Notifications
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Orientation Sensor
@@ -1709,6 +1179,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/orientation-sensor)
 - Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -1720,19 +1193,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/page-visibility-2)
 - Repository: [GitHub w3c/page-visibility](https://github.com/w3c/page-visibility)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Paint Timing 1
@@ -1741,6 +1207,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/paint-timing)
 - Repository: [GitHub w3c/paint-timing](https://github.com/w3c/paint-timing)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -1752,61 +1221,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/payment-handler)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Payment Method: Basic Card
-
-- URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/payment-method-basic-card)
-- Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Payment Request API
-
-- URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/payment-request)
-- Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Performance Timeline Level 2
@@ -1815,19 +1235,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/performance-timeline-2)
 - Repository: [GitHub w3c/performance-timeline](https://github.com/w3c/performance-timeline)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Permissions
@@ -1836,38 +1249,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/permissions)
 - Repository: [GitHub w3c/permissions](https://github.com/w3c/permissions)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Picture-in-Picture
-
-- URL: [https://wicg.github.io/picture-in-picture/](https://wicg.github.io/picture-in-picture/)
-- Crawled version: [Initial URL](https://wicg.github.io/picture-in-picture/)
-- Repository: [GitHub wicg/picture-in-picture](https://github.com/wicg/picture-in-picture)
-- Missing references for links: *INS* https://w3c.github.io/remote-playback/
-
-
-## Pointer Events
-
-- URL: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/pointerevents2)
-- Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
 
 
 ## Pointer Lock 2.0
@@ -1876,69 +1263,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/pointerlock-2)
 - Repository: [GitHub w3c/pointerlock](https://github.com/w3c/pointerlock)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## PointerEvents - Level 2 - Extensions
-
-- URL: [https://w3c.github.io/pointerevents/extension.html](https://w3c.github.io/pointerevents/extension.html)
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html)
-- Spec title: *INS* PointerEvents - Level 2 - Extensions / *DEL* https://w3c.github.io/pointerevents/extension.html
-- Spec could not be rendered: *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Preload
-
-- URL: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/preload)
-- Repository: [GitHub w3c/preload](https://github.com/w3c/preload)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Presentation API
-
-- URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/presentation-api)
-- Repository: [GitHub w3c/presentation-api](https://github.com/w3c/presentation-api)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
 
 
 ## Progress Events
@@ -1946,19 +1276,12 @@
 - URL: [https://www.w3.org/TR/progress-events/](https://www.w3.org/TR/progress-events/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/progress-events)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Proximity Sensor
@@ -1967,6 +1290,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/proximity)
 - Repository: [GitHub w3c/proximity](https://github.com/w3c/proximity)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -1978,28 +1304,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/push-api)
 - Repository: [GitHub w3c/push-api](https://github.com/w3c/push-api)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Referrer Policy
-
-- URL: [https://www.w3.org/TR/referrer-policy/](https://www.w3.org/TR/referrer-policy/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/referrer-policy)
-- Repository: [GitHub w3c/webappsec-referrer-policy](https://github.com/w3c/webappsec-referrer-policy)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -2010,27 +1318,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/remote-playback)
 - Repository: [GitHub w3c/remote-playback](https://github.com/w3c/remote-playback)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Reporting API 1
-
-- URL: [https://w3c.github.io/reporting/](https://w3c.github.io/reporting/)
-- Crawled version: [Initial URL](https://w3c.github.io/reporting/)
-- Repository: [GitHub w3c/reporting](https://github.com/w3c/reporting)
-- Missing references for links: *INS* https://w3c.github.io/webappsec-csp/, https://w3c.github.io/FileAPI/
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Resource Timing Level 2
@@ -2039,61 +1332,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/resource-timing-2)
 - Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Scalable Vector Graphics (SVG) 2
-
-- URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/SVG2)
-- Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
-- Spec title: *INS* Scalable Vector Graphics (SVG) 2 / *DEL* 404 not found
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Screen Capture
-
-- URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/screen-capture)
-- Repository: [GitHub w3c/mediacapture-screen-share](https://github.com/w3c/mediacapture-screen-share)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Secure Contexts
-
-- URL: [https://www.w3.org/TR/secure-contexts/](https://www.w3.org/TR/secure-contexts/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/secure-contexts)
-- Repository: [GitHub w3c/webappsec-secure-contexts](https://github.com/w3c/webappsec-secure-contexts)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -2104,19 +1346,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/selection-api)
 - Repository: [GitHub w3c/selection-api](https://github.com/w3c/selection-api)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Selectors API Level 1
@@ -2124,19 +1359,12 @@
 - URL: [https://www.w3.org/TR/selectors-api/](https://www.w3.org/TR/selectors-api/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/selectors-api)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Selectors Level 3
@@ -2145,6 +1373,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/selectors-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -2156,18 +1387,10 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/selectors-4)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Server Timing
-
-- URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/server-timing)
-- Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
 
@@ -2177,19 +1400,12 @@
 - URL: [https://www.w3.org/TR/eventsource/](https://www.w3.org/TR/eventsource/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/eventsource)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Service Workers 1
@@ -2197,7 +1413,10 @@
 - URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/service-workers-1)
 - Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -2211,19 +1430,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/SRI)
 - Repository: [GitHub w3c/webappsec-subresource-integrity](https://github.com/w3c/webappsec-subresource-integrity)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## SVG Markers
@@ -2232,19 +1444,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/svg-markers)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## SVG Strokes
@@ -2253,30 +1458,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/svg-strokes)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## The Screen Orientation API
-
-- URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/screen-orientation)
-- Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
 
 
 ## The WebSocket API
@@ -2284,19 +1471,12 @@
 - URL: [https://www.w3.org/TR/websockets/](https://www.w3.org/TR/websockets/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/websockets)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Touch Events
@@ -2305,19 +1485,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/touch-events)
 - Repository: [GitHub w3c/touch-events](https://github.com/w3c/touch-events)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## UI Events
@@ -2325,7 +1498,10 @@
 - URL: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/uievents)
 - Repository: [GitHub w3c/uievents](https://github.com/w3c/uievents)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -2339,6 +1515,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/uievents-code)
 - Repository: [GitHub w3c/uievents-code](https://github.com/w3c/uievents-code)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -2350,6 +1529,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/uievents-key)
 - Repository: [GitHub w3c/uievents-key](https://github.com/w3c/uievents-key)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -2361,30 +1543,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/UISecurity)
 - Repository: [GitHub w3c/webappsec-uisecurity](https://github.com/w3c/webappsec-uisecurity)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## User Timing Level 2
-
-- URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/user-timing-2)
-- Repository: [GitHub w3c/user-timing](https://github.com/w3c/user-timing)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
 
 
 ## Vibration API (Second Edition)
@@ -2393,19 +1557,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/vibration)
 - Repository: [GitHub w3c/vibration](https://github.com/w3c/vibration)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## W3C DOM 4.1
@@ -2413,44 +1570,15 @@
 - URL: [https://www.w3.org/TR/dom41/](https://www.w3.org/TR/dom41/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/dom41)
 - Repository: [GitHub w3c/dom](https://github.com/w3c/dom)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
     at ChildProcess.emit (events.js:214:7)
     at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)
-
-
-## Wake Lock API
-
-- URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/wake-lock)
-- Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Web Animations
-
-- URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/web-animations-1)
-- Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Web App Manifest
@@ -2459,19 +1587,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/appmanifest)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Web Audio API
@@ -2480,6 +1601,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/webaudio)
 - Repository: [GitHub webaudio/web-audio-api](https://github.com/webaudio/web-audio-api)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -2490,19 +1614,13 @@
 - URL: [https://www.w3.org/TR/webauthn-1/](https://www.w3.org/TR/webauthn-1/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/webauthn-1)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
-- Spec title: *INS* Web Authentication:An API for accessing Public Key Credentials Level 1 / *DEL* Web Authentication: An API for accessing Public Key Credentials Level 1
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## Web Bluetooth
-
-- URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
-- Crawled version: [Initial URL](https://webbluetoothcg.github.io/web-bluetooth/)
-- Repository: [GitHub webbluetoothcg/web-bluetooth](https://github.com/webbluetoothcg/web-bluetooth)
-- Missing references for links: *INS* https://w3c.github.io/webappsec-secure-contexts/, https://w3c.github.io/permissions/
 
 
 ## Web Cryptography API
@@ -2511,19 +1629,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/WebCryptoAPI)
 - Repository: [GitHub w3c/webcrypto](https://github.com/w3c/webcrypto)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Web MIDI API
@@ -2532,56 +1643,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/webmidi)
 - Repository: [GitHub webaudio/web-midi-api](https://github.com/webaudio/web-midi-api)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Web NFC API
-
-- URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
-- Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
-- Spec could not be rendered: *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## Web Share API - Level 1
-
-- URL: [https://wicg.github.io/web-share/](https://wicg.github.io/web-share/)
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/)
-- Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
-- Spec title: *INS* Web Share API - Level 1 / *DEL* Web Share API
-- Spec could not be rendered: *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Web Storage (Second Edition)
@@ -2590,19 +1657,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/webstorage)
 - Repository: [GitHub w3c/webstorage](https://github.com/w3c/webstorage)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## Web Workers
@@ -2611,19 +1671,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/workers)
 - Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## WebAssembly JavaScript Interface
@@ -2632,6 +1685,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/wasm-js-api-1)
 - Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -2642,7 +1698,10 @@
 - URL: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/wasm-web-api-1)
 - Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
-- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* Error: Crawl exited without sending result Error: Crawl exited without sending result
     at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)
     at Object.onceWrapper (events.js:317:30)
     at emitTwo (events.js:126:13)
@@ -2656,77 +1715,25 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/webdriver1)
 - Repository: [GitHub w3c/webdriver](https://github.com/w3c/webdriver)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## WebGL 2.0 Specification
-
-- URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
-- Spec could not be rendered: *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
-
-
-## WebGL Specification
-
-- URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
-- Spec title: *INS* WebGL Specification / *DEL* WebGL Specification, Version 1.0
-- Spec could not be rendered: *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## WebIDL-1
 
 - URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/WebIDL-1)
-- Spec title: *INS* WebIDL-1 / *DEL* WebIDL Level 1
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## WebRTC 1.0: Real-time Communication Between Browsers
@@ -2735,19 +1742,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/webrtc)
 - Repository: [GitHub w3c/webrtc-pc](https://github.com/w3c/webrtc-pc)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: line.trimEnd is not a function TypeError: line.trimEnd is not a function
-    at lines.map.line (/home/dom/github.com/reffy/src/cli/extract-webidl.js:125:33)
-    at Array.map (<anonymous>)
-    at trimIdlSpaces (/home/dom/github.com/reffy/src/cli/extract-webidl.js:119:14)
-    at idl.map.reduce.filter.filter.filter.map.el (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:24)
-    at Array.map (<anonymous>)
-    at resolve (/home/dom/github.com/reffy/src/cli/extract-webidl.js:159:14)
-    at new Promise (<anonymous>)
-    at extractRespecIdl (/home/dom/github.com/reffy/src/cli/extract-webidl.js:134:12)
-    at /home/dom/github.com/reffy/src/cli/extract-webidl.js:47:24
-    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
 
 
 ## WebRTC DSCP Control API
@@ -2756,17 +1756,12 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/webrtc-dscp)
 - Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
-
-
-## WebUSB API
-
-- URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/)
-- Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
-- Missing references for links: *INS* https://w3c.github.io/permissions/
 
 
 ## WebVTT: The Web Video Text Tracks Format
@@ -2775,6 +1770,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/webvtt1)
 - Repository: [GitHub w3c/webvtt](https://github.com/w3c/webvtt)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -2786,6 +1784,9 @@
 - Crawled version: [Latest published version](https://www.w3.org/TR/webxr)
 - Repository: [GitHub immersive-web/webxr](https://github.com/immersive-web/webxr)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
@@ -2796,6 +1797,9 @@
 - URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/worklets-1)
 - Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:316:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) / *DEL* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.then.then.s (/home/dom/github.com/reffy/src/lib/util.js:319:41)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
