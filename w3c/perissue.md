@@ -2,7 +2,7 @@
 % Reffy
 % July 29, 2019
 
-242 specifications were crawled in this report.
+243 specifications were crawled in this report.
 
 
 ## Specifications that could not be rendered
@@ -45,148 +45,19 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## Specifications without WebIDL definitions
 
-- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
-- [Accelerometer](https://w3c.github.io/accelerometer/)
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
-- [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
-- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
-- [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Battery Status API](https://w3c.github.io/battery/)
-- [Beacon](https://w3c.github.io/beacon/)
-- [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Console Standard](https://console.spec.whatwg.org/)
-- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [Cookie Store API](https://wicg.github.io/cookie-store/)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
-- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
-- [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
-- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
-- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
-- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
-- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
-- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
-- [Element Timing API](https://wicg.github.io/element-timing/)
-- [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
-- [Event Timing API](https://wicg.github.io/event-timing/)
-- [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
-- [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [File and Directory Entries API](https://wicg.github.io/entries-api/)
-- [File API](https://w3c.github.io/FileAPI/)
-- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://w3c.github.io/gamepad/)
-- [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/)
-- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [Gyroscope](https://w3c.github.io/gyroscope/)
-- [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
-- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
-- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
-- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
-- [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
-- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
-- [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
-- [Keyboard Map](https://wicg.github.io/keyboard-map/)
-- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
-- [Long Tasks API 1](https://w3c.github.io/longtasks/)
-- [Magnetometer](https://w3c.github.io/magnetometer/)
-- [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
-- [Media Session Standard](https://wicg.github.io/mediasession/)
-- [Media Source Extensions™](https://w3c.github.io/media-source/)
-- [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
-- [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
-- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
-- [Network Information API](https://wicg.github.io/netinfo/)
-- [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
-- [Paint Timing 1](https://w3c.github.io/paint-timing/)
-- [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Permissions](https://w3c.github.io/permissions/)
-- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
-- [Presentation API](https://w3c.github.io/presentation-api/)
-- [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
-- [Proximity Sensor](https://w3c.github.io/proximity/)
-- [Push API](https://w3c.github.io/push-api/)
-- [Remote Playback API](https://w3c.github.io/remote-playback/)
-- [Reporting API 1](https://w3c.github.io/reporting/)
-- [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
-- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [Selection API](https://w3c.github.io/selection-api/)
-- [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
-- [Server Timing](https://w3c.github.io/server-timing/)
-- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
-- [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)
-- [Static Range](https://w3c.github.io/staticrange/)
-- [Storage Standard](https://storage.spec.whatwg.org/)
-- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [The WebSocket API](https://www.w3.org/TR/websockets/)
-- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
-- [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
-- [User Timing Level 3](https://w3c.github.io/user-timing/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
-- [Wake Lock API](https://w3c.github.io/wake-lock/)
-- [Web Animations](https://drafts.csswg.org/web-animations-1/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
-- [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
-- [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
-- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
-- [Web IDL](https://heycam.github.io/webidl/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
-- [Web NFC API](https://w3c.github.io/web-nfc/)
-- [Web Notifications](https://www.w3.org/TR/notifications/)
-- [Web Share API - Level 1](https://wicg.github.io/web-share/)
-- [Web Speech API](https://w3c.github.io/speech-api/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
-- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
-- [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
-- [WebDriver](https://w3c.github.io/webdriver/)
-- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- [WebUSB API](https://wicg.github.io/webusb/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-- [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
-- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-=> 140 specifications found
+=> 11 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
@@ -220,8 +91,14 @@ Reffy was expecting to find CSS definitions in the specifications  listed here b
 
 ## Specifications with unexpected WebIDL definitions
 
+- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+- [CSS Fonts Module Level 3](https://drafts.csswg.org/css-fonts/)
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
+- [SVG Markers](https://svgwg.org/specs/markers/)
 
-=> 0 specification found
+=> 4 specifications found
+
+Reffy was not expecting to find IDL content in the specifications listed here but it did. Note that Reffy cannot deal with specifications that define IDL content and exist at different levels: only one level is flagged as defining the IDL. Other levels will incorrectly appear in this list as a consequence.
 
 
 ## Specifications with unexpected CSS definitions
@@ -241,46 +118,105 @@ Reffy was not expecting to find CSS definitions in the specifications listed her
 
 ## List of specifications with obsolete WebIDL constructs
 
+- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 
-=> 0 specification found
+=> 1 specification found
+
+A typical example is the use of `[]` instead of `FrozenArray`.
 
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
+- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
 
-=> 4 specifications found
+=> 8 specifications found
 
 
 
 ## List of WebIDL names not defined in the specifications crawled
 
-- `CSS` used in [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
-- `ConstrainDOMString` used in [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
-- `DOMTokenList` used in [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
-- `Document` used in [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
-- `Element` used in [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
-- `EventHandler` used in [Compatibility Standard](https://compat.spec.whatwg.org/), [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
+- `AbortSignal` used in [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [Fetch Standard](https://fetch.spec.whatwg.org/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web NFC API](https://w3c.github.io/web-nfc/)
+- `AudioTrack` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
+- `AudioTrackList` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
+- `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- `DOMMatrix` used in [Orientation Sensor](https://w3c.github.io/orientation-sensor/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- `DOMMatrix2DInit` used in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- `DOMPoint` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [SVG Markers](https://svgwg.org/specs/markers/)
+- `DOMPointInit` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [WebXR Device API](https://immersive-web.github.io/webxr/)
+- `DOMPointReadOnly` used in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [SVG Markers](https://svgwg.org/specs/markers/), [WebXR Device API](https://immersive-web.github.io/webxr/)
+- `DOMQuad` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- `DOMQuadInit` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- `DOMRect` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- `DOMRectInit` used in [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- `DOMRectList` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- `DOMRectReadOnly` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Element Timing API](https://wicg.github.io/element-timing/), [Intersection Observer](https://w3c.github.io/IntersectionObserver/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- `DOMStringList` used in [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- `DOMTokenList` used in [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- `DataTransfer` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)
+- `DataTransferItem` used in [File and Directory Entries API](https://wicg.github.io/entries-api/)
+- `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
+- `Dictionary` used in [Web NFC API](https://w3c.github.io/web-nfc/)
+- `Document` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Feature Policy](https://w3c.github.io/webappsec-feature-policy/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Page Visibility Level 2](https://w3c.github.io/page-visibility/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Selection API](https://w3c.github.io/selection-api/), [Selectors API Level 1](https://www.w3.org/TR/selectors-api/), [Web Animations](https://drafts.csswg.org/web-animations-1/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `DocumentFragment` used in [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Selectors API Level 1](https://www.w3.org/TR/selectors-api/), [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+- `DocumentOrShadowRoot` used in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- `Element` used in [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/), [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Element Timing API](https://wicg.github.io/element-timing/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Intersection Observer](https://w3c.github.io/IntersectionObserver/), [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Events](https://w3c.github.io/pointerevents/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Scroll-linked Animations](https://wicg.github.io/scroll-animations/), [Selectors API Level 1](https://www.w3.org/TR/selectors-api/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- `Event` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Generic Sensor API](https://w3c.github.io/sensors/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Payment Request API](https://w3c.github.io/payment-request/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Presentation API](https://w3c.github.io/presentation-api/), [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [UI Events](https://w3c.github.io/uievents/), [Web Animations](https://drafts.csswg.org/web-animations-1/), [Web App Manifest](https://w3c.github.io/manifest/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://webaudio.github.io/web-midi-api/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `EventHandler` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Battery Status API](https://w3c.github.io/battery/), [Compatibility Standard](https://compat.spec.whatwg.org/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [File API](https://w3c.github.io/FileAPI/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Generic Sensor API](https://w3c.github.io/sensors/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/), [Media Capabilities](https://w3c.github.io/media-capabilities/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Source Extensions™](https://w3c.github.io/media-source/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Network Information API](https://wicg.github.io/netinfo/), [Page Visibility Level 2](https://w3c.github.io/page-visibility/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Payment Request API](https://w3c.github.io/payment-request/), [Permissions](https://w3c.github.io/permissions/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Events](https://w3c.github.io/pointerevents/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/), [Presentation API](https://w3c.github.io/presentation-api/), [Push API](https://w3c.github.io/push-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Resource Timing Level 2](https://w3c.github.io/resource-timing/), [Selection API](https://w3c.github.io/selection-api/), [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [Web Animations](https://drafts.csswg.org/web-animations-1/), [Web App Manifest](https://w3c.github.io/manifest/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://webaudio.github.io/web-midi-api/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Notifications](https://www.w3.org/TR/notifications/), [Web Speech API](https://w3c.github.io/speech-api/), [Web Workers](https://html.spec.whatwg.org/multipage/workers.html), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `EventInit` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Generic Sensor API](https://w3c.github.io/sensors/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Payment Request API](https://w3c.github.io/payment-request/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Presentation API](https://w3c.github.io/presentation-api/), [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [UI Events](https://w3c.github.io/uievents/), [Web Animations](https://drafts.csswg.org/web-animations-1/), [Web App Manifest](https://w3c.github.io/manifest/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://webaudio.github.io/web-midi-api/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `EventListener` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- `EventTarget` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Battery Status API](https://w3c.github.io/battery/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [File API](https://w3c.github.io/FileAPI/), [Generic Sensor API](https://w3c.github.io/sensors/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Source Extensions™](https://w3c.github.io/media-source/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Network Information API](https://wicg.github.io/netinfo/), [Payment Request API](https://w3c.github.io/payment-request/), [Permissions](https://w3c.github.io/permissions/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Presentation API](https://w3c.github.io/presentation-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [UI Events](https://w3c.github.io/uievents/), [Web Animations](https://drafts.csswg.org/web-animations-1/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://webaudio.github.io/web-midi-api/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Notifications](https://www.w3.org/TR/notifications/), [Web Speech API](https://w3c.github.io/speech-api/), [Web Workers](https://html.spec.whatwg.org/multipage/workers.html), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `GlobalEventHandlers` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [Pointer Events](https://w3c.github.io/pointerevents/), [Selection API](https://w3c.github.io/selection-api/), [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - `HTMLBodyElement` used in [Compatibility Standard](https://compat.spec.whatwg.org/)
-- `HTMLIFrameElement` used in [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
-- `HTMLInputElement` used in [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- `HTMLCanvasElement` used in [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- `HTMLElement` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- `HTMLFormElement` used in [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `HTMLIFrameElement` used in [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/), [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
+- `HTMLImageElement` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- `HTMLInputElement` used in [File and Directory Entries API](https://wicg.github.io/entries-api/), [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - `HTMLLinkElement` used in [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
+- `HTMLMediaElement` used in [Audio Output Devices API](https://w3c.github.io/mediacapture-output/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - `HTMLScriptElement` used in [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
-- `MediaStreamTrack` used in [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
-- `MediaTrackCapabilities` used in [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
-- `MediaTrackConstraintSet` used in [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
-- `MediaTrackSettings` used in [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
-- `MediaTrackSupportedConstraints` used in [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
-- `RTCPriorityType` used in [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
-- `RTCRtpEncodingParameters` used in [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
-- `Window` used in [Compatibility Standard](https://compat.spec.whatwg.org/)
-- `WindowOrWorkerGlobalScope` used in [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- `WorkerGlobalScope` used in [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- `HTMLVideoElement` used in [Media Playback Quality](https://w3c.github.io/media-playback-quality/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- `ImageBitmap` used in [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- `ImageBitmapSource` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+- `ImageData` used in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- `KeyframeEffectReadOnly` used in [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+- `Navigator` used in [Battery Status API](https://w3c.github.io/battery/), [Beacon](https://w3c.github.io/beacon/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Gamepad](https://w3c.github.io/gamepad/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Keyboard Map](https://wicg.github.io/keyboard-map/), [Media Capabilities](https://w3c.github.io/media-capabilities/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Session Standard](https://w3c.github.io/mediasession/), [Permissions](https://w3c.github.io/permissions/), [Pointer Events](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Vibration API (Second Edition)](https://w3c.github.io/vibration/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://webaudio.github.io/web-midi-api/), [Web Share API - Level 1](https://wicg.github.io/web-share/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/)
+- `Node` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Selection API](https://w3c.github.io/selection-api/), [Static Range](https://w3c.github.io/staticrange/)
+- `NodeList` used in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
+- `OffscreenCanvas` used in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- `OnErrorEventHandler` used in [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+- `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
+- `PostMessageOptions` used in [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+- `ProcessingInstruction` used in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- `Range` used in [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Selection API](https://w3c.github.io/selection-api/), [Static Range](https://w3c.github.io/staticrange/)
+- `ReadableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/)
+- `ShadowRoot` used in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- `StylePropertyMapReadOnly` used in [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
+- `Text` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- `TextTrack` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
+- `TextTrackCue` used in [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+- `TextTrackList` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
+- `TimeRanges` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
+- `Transferable` used in [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
+- `URL` used in [File API](https://w3c.github.io/FileAPI/), [Media Source Extensions™](https://w3c.github.io/media-source/)
+- `URLSearchParams` used in [Fetch Standard](https://fetch.spec.whatwg.org/)
+- `VideoTrack` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
+- `VideoTrackList` used in [Media Source Extensions™](https://w3c.github.io/media-source/)
+- `Window` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/), [Accelerometer](https://w3c.github.io/accelerometer/), [Ambient Light Sensor](https://w3c.github.io/ambient-light/), [Background Fetch](https://wicg.github.io/background-fetch/), [Battery Status API](https://w3c.github.io/battery/), [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Compatibility Standard](https://compat.spec.whatwg.org/), [Console Standard](https://console.spec.whatwg.org/), [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/), [Cookie Store API](https://wicg.github.io/cookie-store/), [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/), [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Encoding Standard](https://encoding.spec.whatwg.org/), [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/), [Event Timing API](https://wicg.github.io/event-timing/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/), [Gamepad](https://w3c.github.io/gamepad/), [Generic Sensor API](https://w3c.github.io/sensors/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [Gyroscope](https://w3c.github.io/gyroscope/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/), [Intersection Observer](https://w3c.github.io/IntersectionObserver/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Keyboard Map](https://wicg.github.io/keyboard-map/), [Magnetometer](https://w3c.github.io/magnetometer/), [Media Capabilities](https://w3c.github.io/media-capabilities/), [Media Capture and Streams](https://w3c.github.io/mediacapture-main/), [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/), [Media Session Standard](https://w3c.github.io/mediasession/), [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/), [MediaStream Recording](https://w3c.github.io/mediacapture-record/), [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/), [Network Information API](https://wicg.github.io/netinfo/), [Orientation Sensor](https://w3c.github.io/orientation-sensor/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Payment Request API](https://w3c.github.io/payment-request/), [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/), [Permissions](https://w3c.github.io/permissions/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Events](https://w3c.github.io/pointerevents/), [Presentation API](https://w3c.github.io/presentation-api/), [Proximity Sensor](https://w3c.github.io/proximity/), [Push API](https://w3c.github.io/push-api/), [Remote Playback API](https://w3c.github.io/remote-playback/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Resource Timing Level 2](https://w3c.github.io/resource-timing/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Scroll-linked Animations](https://wicg.github.io/scroll-animations/), [Selection API](https://w3c.github.io/selection-api/), [Server Timing](https://w3c.github.io/server-timing/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Static Range](https://w3c.github.io/staticrange/), [Storage Standard](https://storage.spec.whatwg.org/), [The Screen Orientation API](https://w3c.github.io/screen-orientation/), [Touch Events - Level 2](https://w3c.github.io/touch-events/), [UI Events](https://w3c.github.io/uievents/), [User Timing Level 3](https://w3c.github.io/user-timing/), [Wake Lock API](https://w3c.github.io/wake-lock/), [Web Animations](https://drafts.csswg.org/web-animations-1/), [Web App Manifest](https://w3c.github.io/manifest/), [Web Audio API](https://webaudio.github.io/web-audio-api/), [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html), [Web IDL](https://heycam.github.io/webidl/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [Web Workers](https://html.spec.whatwg.org/multipage/workers.html), [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/), [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), [WebUSB API](https://wicg.github.io/webusb/), [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/), [WebXR Device API](https://immersive-web.github.io/webxr/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `WindowOrWorkerGlobalScope` used in [Fetch Standard](https://fetch.spec.whatwg.org/), [High Resolution Time Level 2](https://w3c.github.io/hr-time/), [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/), [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/), [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/), [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
+- `WindowProxy` used in [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
+- `WritableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/)
+- `bool` used in [Media Session Standard](https://w3c.github.io/mediasession/)
 
-=> 21 WebIDL names found
+=> 73 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -288,14 +224,56 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## List of WebIDL names defined in more than one spec
 
+- `CSSFontFaceRule` defined in [CSS Fonts Module Level 3](https://drafts.csswg.org/css-fonts/) and [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- `GamepadMappingType` defined in [Gamepad](https://w3c.github.io/gamepad/) and [WebXR Device API](https://immersive-web.github.io/webxr/)
+- `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
+- `ProgressEvent` defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `ProgressEventInit` defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `SVGMarkerElement` defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) and [SVG Markers](https://svgwg.org/specs/markers/)
+- `Worker` defined in [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) and [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+- `Worklet` defined in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/) and [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) and [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Web Audio API](https://webaudio.github.io/web-audio-api/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
-=> 0 WebIDL name found
+=> 8 WebIDL names found
+
+"There can be only one"...
 
 
 ## Missing references for WebIDL names
 
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/) uses `Point2D` but does not reference [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
+- [Background Fetch](https://wicg.github.io/background-fetch/) uses `ImageResource` but does not reference [Web App Manifest](https://w3c.github.io/manifest/)
+- [Console Standard](https://console.spec.whatwg.org/) uses:
+    * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+    * `Worklet` but does not reference [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/) or [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) or [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) uses `ReportBody` but does not reference [Reporting API 1](https://w3c.github.io/reporting/)
+- [CSS Fonts Module Level 3](https://drafts.csswg.org/css-fonts/) uses:
+    * `CSSRule` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+    * `CSSStyleDeclaration` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [Encoding Standard](https://encoding.spec.whatwg.org/) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+- [Feature Policy](https://w3c.github.io/webappsec-feature-policy/) uses `ReportBody` but does not reference [Reporting API 1](https://w3c.github.io/reporting/)
+- [Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html) uses `StaticRange` but does not reference [Static Range](https://w3c.github.io/staticrange/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [Media Playback Quality](https://w3c.github.io/media-playback-quality/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [Push API](https://w3c.github.io/push-api/) uses `Blob` but does not reference [File API](https://w3c.github.io/FileAPI/)
+- [Server Timing](https://w3c.github.io/server-timing/) uses:
+    * `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+    * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/) uses:
+    * `MediaStream` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+    * `MediaStreamTrack` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html) uses `Worker` but does not reference [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) or [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+- [Web Workers](https://html.spec.whatwg.org/multipage/workers.html) uses:
+    * `RequestCredentials` but does not reference [Fetch Standard](https://fetch.spec.whatwg.org/)
+    * `MessagePort` but does not reference [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/) uses `Worklet` but does not reference [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/) or [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) or [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/) uses:
+    * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+    * `WebGLRenderingContext` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `WebGLFramebuffer` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 0 missing reference for IDL definitions found in 0 specification
+=> 26 missing references for IDL definitions found in 17 specifications
 
 
 ## Missing references based on document links
@@ -352,6 +330,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/) links to:
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/) links to:
+    * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
+    * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/) links to:
     * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216) but does not list it in its references
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
@@ -359,11 +342,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
     * [`https://www.w3.org/TR/2017/WD-css-ui-4-20171222/`](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/) but does not list it in its references
     * [`https://www.w3.org/TR/2015/WD-css-ui-4-20150922/`](https://www.w3.org/TR/2015/WD-css-ui-4-20150922/) but does not list it in its references
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/) links to:
-    * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
-    * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/) links to:
     * [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
@@ -611,7 +589,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-masking-1/`](https://www.w3.org/TR/css-masking-1/) but does not list it in its references
 - [Keyboard Map](https://wicg.github.io/keyboard-map/) links to [`https://w3c.github.io/keyboard-lock/`](https://w3c.github.io/keyboard-lock/) but does not list it in its references
 - [Magnetometer](https://w3c.github.io/magnetometer/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
-- [Media Capabilities](https://wicg.github.io/media-capabilities/) links to [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/) but does not list it in its references
+- [Media Capabilities](https://w3c.github.io/media-capabilities/) links to [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/) but does not list it in its references
 - [Media Queries Level 3](http://dev.w3.org/csswg/css3-mediaqueries/) links to:
     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/) but does not list it in its references
     * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/) but does not list it in its references
@@ -810,8 +788,8 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/) but related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2/`](https://www.w3.org/TR/CSS2/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/) links to [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/) links to [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/) links to [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/) links to [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -918,7 +896,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/) but related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
-- [Media Capabilities](https://wicg.github.io/media-capabilities/) links to:
+- [Media Capabilities](https://w3c.github.io/media-capabilities/) links to:
     * [`https://w3c.github.io/media-source/`](https://w3c.github.io/media-source/) but related reference "MEDIA-SOURCE" uses URL [`https://www.w3.org/TR/media-source/`](https://www.w3.org/TR/media-source/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
@@ -949,7 +927,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Permissions](https://w3c.github.io/permissions/) links to:
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
-- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/) links to [`https://w3c.github.io/remote-playback/`](https://w3c.github.io/remote-playback/) but related reference "Remote-Playback" uses URL [`https://www.w3.org/TR/remote-playback/`](https://www.w3.org/TR/remote-playback/)
+- [Picture-in-Picture](https://w3c.github.io/picture-in-picture/) links to [`https://w3c.github.io/remote-playback/`](https://w3c.github.io/remote-playback/) but related reference "Remote-Playback" uses URL [`https://www.w3.org/TR/remote-playback/`](https://www.w3.org/TR/remote-playback/)
 - [Pointer Events](https://w3c.github.io/pointerevents/) links to [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html) links to [`https://w3c.github.io/pointerevents/`](https://w3c.github.io/pointerevents/) but related reference "pointerevents2" uses URL [`https://www.w3.org/TR/pointerevents2/`](https://www.w3.org/TR/pointerevents2/)
 - [Presentation API](https://w3c.github.io/presentation-api/) links to:

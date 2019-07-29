@@ -2,26 +2,20 @@
 % Reffy
 % July 29, 2019
 
-242 specifications were crawled in this report.
+243 specifications were crawled in this report.
 
 
 ## Specifications that could not be rendered
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/fill-stroke-3/): `Error: Crawl exited without sending result Error: Crawl exited without sending result
-    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)
-    at Object.onceWrapper (events.js:317:30)
-    at emitTwo (events.js:126:13)
-    at ChildProcess.emit (events.js:214:7)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)`
 - [HTML 5.2](https://www.w3.org/TR/html52/): `Error: Crawl took too long Error: Crawl took too long
     at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:365:29)
     at ontimeout (timers.js:498:11)
     at tryOnTimeout (timers.js:323:5)
     at Timer.listOnTimeout (timers.js:290:5)`
 
-=> 2 specifications found
+=> 1 specification found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -60,149 +54,33 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## Specifications without WebIDL definitions
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
 - [404 not found](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
-- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
-- [Accelerometer](https://www.w3.org/TR/2019/WD-accelerometer-20190307/)
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2018/WD-wai-aria-1.2-20181218/)
-- [Ambient Light Sensor](https://www.w3.org/TR/2019/WD-ambient-light-20190307/)
-- [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
-- [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
-- [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
-- [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
-- [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/)
-- [Console Standard](https://console.spec.whatwg.org/)
-- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
-- [Cookie Store API](https://wicg.github.io/cookie-store/)
-- [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
-- [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
-- [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)
-- [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Conditional Rules Module Level 3](http://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
-- [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
-- [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/)
 - [CSS Font Loading Module Level 3](http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/)
-- [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Masking Module Level 1](http://www.w3.org/TR/2014/CR-css-masking-1-20140826/)
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
-- [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
-- [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
-- [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
-- [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
-- [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
-- [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
-- [Element Timing API](https://wicg.github.io/element-timing/)
-- [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
-- [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
-- [Event Timing API](https://wicg.github.io/event-timing/)
-- [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
-- [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [File and Directory Entries API](https://wicg.github.io/entries-api/)
-- [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/)
-- [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
-- [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/)
-- [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/)
-- [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
-- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
-- [Gyroscope](https://www.w3.org/TR/2019/WD-gyroscope-20190307/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML Canvas 2D Context](http://www.w3.org/TR/2015/REC-2dcontext-20151119/)
-- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
-- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
-- [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
-- [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
-- [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
-- [Keyboard Map](https://wicg.github.io/keyboard-map/)
-- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
-- [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
-- [Magnetometer](https://www.w3.org/TR/2019/WD-magnetometer-20190307/)
-- [Media Capabilities](https://wicg.github.io/media-capabilities/)
-- [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
-- [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
-- [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
-- [Media Session Standard](https://wicg.github.io/mediasession/)
-- [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
-- [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Metadata API for Media Resources 1.0](http://www.w3.org/TR/2014/REC-mediaont-api-1.0-20140313/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
-- [Network Information API](https://wicg.github.io/netinfo/)
-- [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
-- [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
-- [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190425/)
-- [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
-- [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
-- [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/)
-- [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
-- [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
-- [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)
-- [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
-- [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/)
-- [Proximity Sensor](https://www.w3.org/TR/2019/WD-proximity-20190305/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/)
-- [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
-- [Reporting API 1](https://w3c.github.io/reporting/)
-- [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/)
-- [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
-- [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
-- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190607/)
-- [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
-- [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - [Service Workers 1](https://www.w3.org/TR/2017/WD-service-workers-1-20171102/)
-- [Static Range](https://w3c.github.io/staticrange/)
-- [Storage Standard](https://storage.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190723/)
 - [The WebSocket API](http://www.w3.org/TR/2012/CR-websockets-20120920/)
-- [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
-- [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Interface Security and the Visibility API](http://www.w3.org/TR/2016/WD-UISecurity-20160607/)
-- [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
-- [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [W3C DOM 4.1](https://www.w3.org/TR/2018/WD-dom41-20180201/)
-- [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
-- [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190702/)
-- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
-- [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
-- [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
-- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
-- [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
-- [Web NFC API](https://w3c.github.io/web-nfc/)
-- [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/)
-- [Web Share API - Level 1](https://wicg.github.io/web-share/)
-- [Web Speech API](https://w3c.github.io/speech-api/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
 - [Web Workers](http://www.w3.org/TR/2015/WD-workers-20150924/)
-- [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/CR-wasm-js-api-1-20190718/)
-- [WebAssembly Web API](https://www.w3.org/TR/2019/CR-wasm-web-api-1-20190718/)
-- [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
-- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
-- [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
-- [WebUSB API](https://wicg.github.io/webusb/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
-- [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
-- [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
-- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-=> 141 specifications found
+=> 25 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
@@ -238,8 +116,13 @@ Reffy was expecting to find CSS definitions in the specifications  listed here b
 
 ## Specifications with unexpected WebIDL definitions
 
+- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+- [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/)
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 
-=> 0 specification found
+=> 3 specifications found
+
+Reffy was not expecting to find IDL content in the specifications listed here but it did. Note that Reffy cannot deal with specifications that define IDL content and exist at different levels: only one level is flagged as defining the IDL. Other levels will incorrectly appear in this list as a consequence.
 
 
 ## Specifications with unexpected CSS definitions
@@ -256,46 +139,134 @@ Reffy was expecting to find CSS definitions in the specifications  listed here b
 
 ## List of specifications with obsolete WebIDL constructs
 
+- [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 
-=> 0 specification found
+=> 1 specification found
+
+A typical example is the use of `[]` instead of `FrozenArray`.
 
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/)
+- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
+- [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
+- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190607/)
+- [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [WebRTC DSCP Control API](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
 
-=> 8 specifications found
+=> 13 specifications found
 
 
 
 ## List of WebIDL names not defined in the specifications crawled
 
-- `CSS` used in [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
+- `AbortSignal` used in [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/), [Fetch Standard](https://fetch.spec.whatwg.org/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [Web NFC API](https://w3c.github.io/web-nfc/)
+- `AlgorithmIdentifier` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
+- `AudioTrack` used in [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
+- `AudioTrackList` used in [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
+- `CSS` used in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/), [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/), [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
+- `CSSOMRGBColor` used in [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
+- `CSSOMString` used in [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/), [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/), [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/), [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
+- `CSSRule` used in [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/), [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/), [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/), [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/), [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
+- `CSSRuleList` used in [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
+- `CSSStyleDeclaration` used in [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/), [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/), [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/), [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
+- `CacheQueryOptions` used in [Background Fetch](https://wicg.github.io/background-fetch/)
+- `Console` used in [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+- `DOMHighResTimeStamp` used in [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/), [Element Timing API](https://wicg.github.io/element-timing/), [Event Timing API](https://wicg.github.io/event-timing/), [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/), [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/), [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/), [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/), [Media Playback Quality](https://w3c.github.io/media-playback-quality/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/), [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- `DOMMatrix` used in [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
+- `DOMPointInit` used in [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- `DOMPointReadOnly` used in [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- `DOMRectInit` used in [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
+- `DOMRectReadOnly` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/), [Element Timing API](https://wicg.github.io/element-timing/), [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/), [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- `DOMStringList` used in [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - `DOMTokenList` used in [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
-- `Document` used in [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
-- `Element` used in [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/)
-- `EventHandler` used in [Compatibility Standard](https://compat.spec.whatwg.org/), [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
+- `DataTransfer` used in [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/)
+- `DataTransferItem` used in [File and Directory Entries API](https://wicg.github.io/entries-api/)
+- `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
+- `DedicatedWorker` used in [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [WebUSB API](https://wicg.github.io/webusb/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `Dictionary` used in [Web NFC API](https://w3c.github.io/web-nfc/)
+- `Document` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/), [Feature Policy](https://w3c.github.io/webappsec-feature-policy/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/), [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190607/), [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/), [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `DocumentFragment` used in [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/), [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/), [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
+- `DocumentOrShadowRoot` used in [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
+- `Element` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/), [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/), [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/), [Element Timing API](https://wicg.github.io/element-timing/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/), [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/), [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Scroll-linked Animations](https://wicg.github.io/scroll-animations/), [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
+- `Event` used in [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/), [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/), [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/), [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/), [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/), [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/), [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/), [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190702/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `EventHandler` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/), [Compatibility Standard](https://compat.spec.whatwg.org/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/), [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/), [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/), [Media Capabilities](https://w3c.github.io/media-capabilities/), [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/), [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Network Information API](https://wicg.github.io/netinfo/), [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/), [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/), [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/), [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/), [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/), [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/), [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/), [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/), [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190607/), [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/), [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190723/), [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190702/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/), [Web Speech API](https://w3c.github.io/speech-api/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `EventInit` used in [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/), [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/), [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/), [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/), [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/), [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/), [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/), [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190702/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `EventTarget` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/), [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/), [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/), [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/), [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Network Information API](https://wicg.github.io/netinfo/), [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/), [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/), [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/), [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190723/), [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/), [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/), [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Notifications](http://www.w3.org/TR/2015/REC-notifications-20151022/), [Web Speech API](https://w3c.github.io/speech-api/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `ExtendableEvent` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Cookie Store API](https://wicg.github.io/cookie-store/), [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/), [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- `ExtendableEventInit` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Cookie Store API](https://wicg.github.io/cookie-store/), [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/), [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- `GlobalEventHandlers` used in [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/), [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/), [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/), [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190607/)
 - `HTMLBodyElement` used in [Compatibility Standard](https://compat.spec.whatwg.org/)
-- `HTMLIFrameElement` used in [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
-- `HTMLInputElement` used in [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
+- `HTMLCanvasElement` used in [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- `HTMLFormElement` used in [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `HTMLIFrameElement` used in [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/), [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
+- `HTMLImageElement` used in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- `HTMLInputElement` used in [File and Directory Entries API](https://wicg.github.io/entries-api/), [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - `HTMLLinkElement` used in [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
+- `HTMLMediaElement` used in [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/), [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - `HTMLScriptElement` used in [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
+- `HTMLVideoElement` used in [Media Playback Quality](https://w3c.github.io/media-playback-quality/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- `ImageBitmap` used in ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- `ImageBitmapSource` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+- `ImageData` used in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- `KeyframeEffectReadOnly` used in [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - `Map` used in [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
-- `MediaStreamTrack` used in [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
-- `RTCPriorityType` used in [WebRTC DSCP Control API](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
-- `RTCRtpEncodingParameters` used in [WebRTC DSCP Control API](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
-- `Window` used in [Compatibility Standard](https://compat.spec.whatwg.org/)
-- `WindowOrWorkerGlobalScope` used in [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
+- `Navigator` used in [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/), [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/), [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/), [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/), [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/), [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Keyboard Map](https://wicg.github.io/keyboard-map/), [Media Capabilities](https://w3c.github.io/media-capabilities/), [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/), [Media Session Standard](https://w3c.github.io/mediasession/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/), [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/), [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/), [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/), [Web Share API - Level 1](https://wicg.github.io/web-share/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- `NavigatorUserMedia` used in [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
+- `Node` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/), [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190607/), [Static Range](https://w3c.github.io/staticrange/)
+- `NodeList` used in [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
+- `OffscreenCanvas` used in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- `Performance` used in [Event Timing API](https://wicg.github.io/event-timing/), [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/), [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/), [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
+- `PermissionName` used in [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- `RTCError` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
+- `RTCRTPStreamStats` used in [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
+- `Range` used in [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/), [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190607/), [Static Range](https://w3c.github.io/staticrange/)
+- `ReadableStream` used in [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/)
+- `SVGAnimatedBoolean` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedEnumeration` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedInteger` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedLength` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedNumber` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedNumberList` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedPreserveAspectRatio` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGAnimatedString` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `SVGElement` used in [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- `Screen` used in [Media Capabilities](https://w3c.github.io/media-capabilities/), [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190723/)
+- `ServiceWorker` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Cookie Store API](https://wicg.github.io/cookie-store/), [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/), [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- `ServiceWorkerGlobalScope` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Cookie Store API](https://wicg.github.io/cookie-store/), [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/), [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- `ServiceWorkerRegistration` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/), [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- `ServiceWorkerUpdateViaCache` used in [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190702/)
+- `SharedWorker` used in [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/), [WebUSB API](https://wicg.github.io/webusb/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `StylePropertyMapReadOnly` used in [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
+- `SupportedType` used in [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
+- `TextTrack` used in [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
+- `TextTrackCue` used in [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
+- `TextTrackList` used in [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
+- `TimeRanges` used in [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
+- `Transferable` used in [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
+- `URL` used in [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/), [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
+- `URLSearchParams` used in [Fetch Standard](https://fetch.spec.whatwg.org/)
+- `VideoTrack` used in [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
+- `VideoTrackList` used in [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
+- `Window` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/), [Accelerometer](https://www.w3.org/TR/2019/WD-accelerometer-20190307/), [Ambient Light Sensor](https://www.w3.org/TR/2019/WD-ambient-light-20190307/), [Background Fetch](https://wicg.github.io/background-fetch/), [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/), [Compatibility Standard](https://compat.spec.whatwg.org/), [Console Standard](https://console.spec.whatwg.org/), [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/), [Cookie Store API](https://wicg.github.io/cookie-store/), [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/), [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/), [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/), [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/), [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/), [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/), [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/), [Event Timing API](https://wicg.github.io/event-timing/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/), [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/), [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [Gyroscope](https://www.w3.org/TR/2019/WD-gyroscope-20190307/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/), [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Keyboard Map](https://wicg.github.io/keyboard-map/), [Magnetometer](https://www.w3.org/TR/2019/WD-magnetometer-20190307/), [Media Capabilities](https://w3c.github.io/media-capabilities/), [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/), [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/), [Media Session Standard](https://w3c.github.io/mediasession/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/), [Network Information API](https://wicg.github.io/netinfo/), [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/), [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/), [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/), [Proximity Sensor](https://www.w3.org/TR/2019/WD-proximity-20190305/), [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/), [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/), [Scroll-linked Animations](https://wicg.github.io/scroll-animations/), [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190607/), [Static Range](https://w3c.github.io/staticrange/), [Storage Standard](https://storage.spec.whatwg.org/), [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20190723/), [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/), [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/), [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190702/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web NFC API](https://w3c.github.io/web-nfc/), [Web Speech API](https://w3c.github.io/speech-api/), [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/CR-wasm-js-api-1-20190718/), [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/), [WebUSB API](https://wicg.github.io/webusb/), [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/), [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `WindowClient` used in [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
+- `WindowOrWorkerGlobalScope` used in [Fetch Standard](https://fetch.spec.whatwg.org/), [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/), [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
+- `WindowProxy` used in [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
+- `Worker` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/), [Background Fetch](https://wicg.github.io/background-fetch/), [Console Standard](https://console.spec.whatwg.org/), [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/), [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/), [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/), [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/), [Media Capabilities](https://w3c.github.io/media-capabilities/), [Network Information API](https://wicg.github.io/netinfo/), [Payment Handler API](https://www.w3.org/TR/2018/WD-payment-handler-20180108/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [Push API](https://www.w3.org/TR/2019/WD-push-api-20190724/), [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/), [Storage Standard](https://storage.spec.whatwg.org/), [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/), [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/), [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/CR-wasm-js-api-1-20190718/), [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `WorkerGlobalScope` used in [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- `WorkerNavigator` used in [Media Capabilities](https://w3c.github.io/media-capabilities/), [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/), [WebUSB API](https://wicg.github.io/webusb/)
+- `WorkerType` used in [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190702/)
+- `bool` used in [Media Session Standard](https://w3c.github.io/mediasession/)
 
-=> 17 WebIDL names found
+=> 97 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -303,14 +274,45 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## List of WebIDL names defined in more than one spec
 
+- `CSSFontFaceRule` defined in [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/) and [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
+- `GamepadMappingType` defined in [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/) and [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
+- `PermissionState` defined in [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/) and [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- `ProgressEvent` defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `ProgressEventInit` defined in [Progress Events](http://www.w3.org/TR/2014/REC-progress-events-20140211/) and [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `Worklet` defined in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/) and [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) and [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/) and [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 
-=> 0 WebIDL name found
+=> 7 WebIDL names found
+
+"There can be only one"...
 
 
 ## Missing references for WebIDL names
 
+- ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/) uses:
+    * `MediaStreamTrack` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+    * `MediaTrackSupportedConstraints` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+    * `MediaTrackCapabilities` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+    * `MediaTrackConstraintSet` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+    * `ConstrainDOMString` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+    * `ConstrainDouble` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+    * `ConstrainBoolean` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+    * `MediaTrackSettings` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/) uses `Point2D` but does not reference ["MediaStream Image Capture"](https://www.w3.org/TR/2017/WD-image-capture-20170621/)
+- [Background Fetch](https://wicg.github.io/background-fetch/) uses `ImageResource` but does not reference [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190702/)
+- [Console Standard](https://console.spec.whatwg.org/) uses `Worklet` but does not reference [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/) or [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+- [Feature Policy](https://w3c.github.io/webappsec-feature-policy/) uses `ReportBody` but does not reference [Reporting API 1](https://w3c.github.io/reporting/)
+- [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/) uses `MediaStream` but does not reference [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+- [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/) uses `UIEvent` but does not reference [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
+- [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/CR-wasm-js-api-1-20190718/) uses `Worklet` but does not reference [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/) or [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/) or [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+- [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/) uses:
+    * `WebGLRenderingContext` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+    * `WebGLFramebuffer` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 0 missing reference for IDL definitions found in 0 specification
+=> 20 missing references for IDL definitions found in 9 specifications
 
 
 ## Missing references based on document links
@@ -459,6 +461,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2013/WD-css3-exclusions-20130528/`](https://www.w3.org/TR/2013/WD-css3-exclusions-20130528/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/WD-css3-exclusions-20120503/`](https://www.w3.org/TR/2012/WD-css3-exclusions-20120503/) but does not list it in its references
     * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/) but does not list it in its references
+- [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/) links to:
+    * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/) links to:
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
     * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/) but does not list it in its references
@@ -879,7 +884,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Keyboard Map](https://wicg.github.io/keyboard-map/) links to [`https://w3c.github.io/keyboard-lock/`](https://w3c.github.io/keyboard-lock/) but does not list it in its references
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [Magnetometer](https://www.w3.org/TR/2019/WD-magnetometer-20190307/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
-- [Media Capabilities](https://wicg.github.io/media-capabilities/) links to [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/) but does not list it in its references
+- [Media Capabilities](https://w3c.github.io/media-capabilities/) links to [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/) but does not list it in its references
 - [Media Queries](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/) links to:
     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/) but does not list it in its references
     * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/) but does not list it in its references
@@ -1005,7 +1010,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/) links to [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 595 missing references for links found in 147 specifications
+=> 597 missing references for links found in 148 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1081,6 +1086,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/) links to [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/) but related reference "CSSOM-1" uses URL [`https://drafts.csswg.org/cssom/`](https://drafts.csswg.org/cssom/)
 - [CSS Easing Functions Level 1](https://www.w3.org/TR/2019/CR-css-easing-1-20190430/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/) links to [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+- [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/) links to:
     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1215,7 +1221,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/) but related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
-- [Media Capabilities](https://wicg.github.io/media-capabilities/) links to:
+- [Media Capabilities](https://w3c.github.io/media-capabilities/) links to:
     * [`https://w3c.github.io/media-source/`](https://w3c.github.io/media-source/) but related reference "MEDIA-SOURCE" uses URL [`https://www.w3.org/TR/media-source/`](https://www.w3.org/TR/media-source/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
@@ -1247,7 +1253,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-- [Picture-in-Picture](https://wicg.github.io/picture-in-picture/) links to [`https://w3c.github.io/remote-playback/`](https://w3c.github.io/remote-playback/) but related reference "Remote-Playback" uses URL [`https://www.w3.org/TR/remote-playback/`](https://www.w3.org/TR/remote-playback/)
+- [Picture-in-Picture](https://w3c.github.io/picture-in-picture/) links to [`https://w3c.github.io/remote-playback/`](https://w3c.github.io/remote-playback/) but related reference "Remote-Playback" uses URL [`https://www.w3.org/TR/remote-playback/`](https://www.w3.org/TR/remote-playback/)
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/) links to [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html) links to [`https://w3c.github.io/pointerevents/`](https://w3c.github.io/pointerevents/) but related reference "pointerevents2" uses URL [`https://www.w3.org/TR/pointerevents2/`](https://www.w3.org/TR/pointerevents2/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/) links to:
@@ -1318,6 +1324,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/) but related reference "ORIENTATION-SENSOR" uses URL [`https://www.w3.org/TR/orientation-sensor/`](https://www.w3.org/TR/orientation-sensor/)
     * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 237 inconsistent references for links found in 129 specifications
+=> 238 inconsistent references for links found in 130 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
