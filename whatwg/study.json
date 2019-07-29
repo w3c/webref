@@ -2,11 +2,11 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (WHATWG perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring WHATWG specifications to W3C specifications when both exist.",
-  "date": "2019-07-29T06:08:09.777Z",
+  "date": "2019-07-29T16:19:38.395Z",
   "stats": {
-    "crawled": 231,
+    "crawled": 232,
     "errors": 1,
-    "studied": 231
+    "studied": 232
   },
   "results": [
     {
@@ -32,7 +32,7 @@
               "url": "https://wicg.github.io/shape-detection-api/",
               "title": "Accelerated Shape Detection in Images",
               "crawled": "https://wicg.github.io/shape-detection-api/",
-              "date": "25 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/wai-aria-1.2/",
@@ -479,10 +479,10 @@
               "date": "3 July 2019"
             },
             {
-              "url": "https://wicg.github.io/media-capabilities/",
+              "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
-              "crawled": "https://wicg.github.io/media-capabilities/",
-              "date": "17 July 2019"
+              "crawled": "https://w3c.github.io/media-capabilities/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -503,10 +503,16 @@
               "date": "Mon Jul 29 2019"
             },
             {
-              "url": "https://wicg.github.io/mediasession/",
+              "url": "https://w3c.github.io/media-playback-quality/",
+              "title": "Media Playback Quality",
+              "crawled": "https://w3c.github.io/media-playback-quality/",
+              "date": "Mon Jul 29 2019"
+            },
+            {
+              "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
-              "crawled": "https://wicg.github.io/mediasession/",
-              "date": "1 July 2019"
+              "crawled": "https://w3c.github.io/mediasession/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/media-source/",
@@ -587,10 +593,10 @@
               "date": "31 October 2018"
             },
             {
-              "url": "https://wicg.github.io/picture-in-picture/",
+              "url": "https://w3c.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
-              "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "15 July 2019"
+              "crawled": "https://w3c.github.io/picture-in-picture/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -770,7 +776,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webauthn-1/",
@@ -860,7 +866,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "28 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -1060,7 +1066,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
@@ -1082,21 +1088,49 @@
     },
     {
       "title": "Accelerated Shape Detection in Images",
-      "date": "25 July 2019",
+      "date": "29 July 2019",
       "url": "https://wicg.github.io/shape-detection-api/",
       "crawled": "https://wicg.github.io/shape-detection-api/",
       "repository": "https://github.com/wicg/shape-detection-api",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMRectReadOnly",
+          "ImageBitmapSource",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "Point2D",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/image-capture/",
+                "title": "MediaStream Image Capture",
+                "crawled": "https://w3c.github.io/mediacapture-image/",
+                "date": "14 May 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/mediacapture-image/"
         ],
@@ -1116,7 +1150,7 @@
               "url": "https://wicg.github.io/shape-detection-api/",
               "title": "Accelerated Shape Detection in Images",
               "crawled": "https://wicg.github.io/shape-detection-api/",
-              "date": "25 July 2019"
+              "date": "29 July 2019"
             }
           ]
         },
@@ -1138,12 +1172,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -1213,12 +1250,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Element"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -1319,12 +1359,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1365,12 +1408,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "HTMLMediaElement"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1399,14 +1445,108 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ServiceWorkerGlobalScope",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ServiceWorkerRegistration",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ImageResource",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/appmanifest/",
+                "title": "Web App Manifest",
+                "crawled": "https://w3c.github.io/manifest/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          },
+          {
+            "name": "CacheQueryOptions",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEvent",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ServiceWorker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEventInit",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/ServiceWorker/",
           "https://storage.spec.whatwg.org/",
@@ -1456,12 +1596,18 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "EventTarget",
+          "Navigator",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1470,10 +1616,10 @@
           "normative": [],
           "informative": [
             {
-              "url": "https://wicg.github.io/media-capabilities/",
+              "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
-              "crawled": "https://wicg.github.io/media-capabilities/",
-              "date": "17 July 2019"
+              "crawled": "https://w3c.github.io/media-capabilities/",
+              "date": "29 July 2019"
             }
           ]
         },
@@ -1495,12 +1641,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -1535,12 +1684,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "Element",
+          "Node"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -2130,12 +2284,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DataTransfer",
+          "Event",
+          "EventInit",
+          "EventTarget",
+          "Navigator",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -2389,14 +2551,64 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/animation-worklet/",
+                "title": "CSS Animation Worklet API",
+                "crawled": "https://wicg.github.io/animation-worklet/",
+                "date": "24 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-layout-api-1/",
+                "title": "CSS Layout API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+                "date": "20 February 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "23 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "29 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "22 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -2421,14 +2633,42 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventInit",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ReportBody",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/reporting/",
+                "title": "Reporting API 1",
+                "crawled": "https://w3c.github.io/reporting/",
+                "date": "14 May 2019"
+              }
+            ]
+          },
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/ServiceWorker/",
           "https://w3c.github.io/reporting/"
@@ -2609,14 +2849,66 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ServiceWorker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEvent",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEventInit",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ServiceWorkerGlobalScope",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/ServiceWorker/"
         ],
@@ -2643,12 +2935,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -2714,12 +3009,18 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AbortSignal",
+          "HTMLFormElement",
+          "Navigator",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -2780,13 +3081,46 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-layout-api-1/",
+                "title": "CSS Layout API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+                "date": "20 February 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "23 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "29 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "22 July 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/web-animations/",
@@ -2816,12 +3150,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "GlobalEventHandlers",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -2959,11 +3301,16 @@
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
-        "hasUnexpectedIdl": false,
+        "hasUnexpectedIdl": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "KeyframeEffectReadOnly",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -5077,12 +5424,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -5276,12 +5627,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -5459,12 +5814,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -6324,14 +6682,34 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -6372,13 +6750,49 @@
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
-        "hasUnexpectedIdl": false,
+        "hasUnexpectedIdl": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "redefinedIdlNames": [
+          {
+            "name": "CSSFontFaceRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-4/",
+                "title": "CSS Fonts Module Level 4",
+                "crawled": "https://drafts.csswg.org/css-fonts-4/",
+                "date": "11 July 2019"
+              }
+            ]
+          }
+        ],
+        "missingWebIdlRef": [
+          {
+            "name": "CSSRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/cssom-1/",
+                "title": "CSS Object Model (CSSOM)",
+                "crawled": "https://drafts.csswg.org/cssom/",
+                "date": "7 June 2019"
+              }
+            ]
+          },
+          {
+            "name": "CSSStyleDeclaration",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/cssom-1/",
+                "title": "CSS Object Model (CSSOM)",
+                "crawled": "https://drafts.csswg.org/cssom/",
+                "date": "7 June 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/2002/WD-css3-fonts-20020802/",
           "https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/",
@@ -6589,13 +7003,29 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "CSSFontFaceRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-3/",
+                "title": "CSS Fonts Module Level 3",
+                "crawled": "https://drafts.csswg.org/css-fonts/",
+                "date": "20 September 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css3-syntax/",
@@ -7680,9 +8110,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "CSS"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -7944,13 +8372,46 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "StylePropertyMapReadOnly"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/animation-worklet/",
+                "title": "CSS Animation Worklet API",
+                "crawled": "https://wicg.github.io/animation-worklet/",
+                "date": "24 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "23 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "29 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "22 July 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css-values-3/",
@@ -8237,9 +8698,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -8661,12 +9123,19 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "DocumentOrShadowRoot",
+          "Element",
+          "ProcessingInstruction",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -9577,13 +10046,44 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/animation-worklet/",
+                "title": "CSS Animation Worklet API",
+                "crawled": "https://wicg.github.io/animation-worklet/",
+                "date": "24 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-layout-api-1/",
+                "title": "CSS Layout API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+                "date": "20 February 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "29 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "22 July 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -9871,12 +10371,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": true,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -9924,12 +10428,18 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Element",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -10069,12 +10579,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Document",
+          "EventTarget",
+          "Node",
+          "Range",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -11982,12 +12500,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "GlobalEventHandlers",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -12106,11 +12632,15 @@
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
-        "hasUnexpectedIdl": false,
+        "hasUnexpectedIdl": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -13305,10 +13835,10 @@
               "date": "28 March 2019"
             },
             {
-              "url": "https://wicg.github.io/picture-in-picture/",
+              "url": "https://w3c.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
-              "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "15 July 2019"
+              "crawled": "https://w3c.github.io/picture-in-picture/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -13919,12 +14449,35 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString",
+          "DOMPoint",
+          "DOMPointInit",
+          "DOMQuad",
+          "DOMQuadInit",
+          "DOMRect",
+          "DOMRectList",
+          "DOMRectReadOnly",
+          "Document",
+          "Element",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventListener",
+          "EventTarget",
+          "HTMLElement",
+          "HTMLImageElement",
+          "Node",
+          "Range",
+          "Text",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -13974,10 +14527,10 @@
               "date": "25 July 2019"
             },
             {
-              "url": "https://wicg.github.io/media-capabilities/",
+              "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
-              "crawled": "https://wicg.github.io/media-capabilities/",
-              "date": "17 July 2019"
+              "crawled": "https://w3c.github.io/media-capabilities/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediaqueries-4/",
@@ -14128,12 +14681,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "DocumentFragment",
+          "Element",
+          "Node",
+          "Range",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -14505,10 +15066,10 @@
               "date": "3 July 2019"
             },
             {
-              "url": "https://wicg.github.io/media-capabilities/",
+              "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
-              "crawled": "https://wicg.github.io/media-capabilities/",
-              "date": "17 July 2019"
+              "crawled": "https://w3c.github.io/media-capabilities/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -14559,10 +15120,10 @@
               "date": "31 October 2018"
             },
             {
-              "url": "https://wicg.github.io/picture-in-picture/",
+              "url": "https://w3c.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
-              "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "15 July 2019"
+              "crawled": "https://w3c.github.io/picture-in-picture/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -14700,7 +15261,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webauthn-1/",
@@ -14766,7 +15327,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "28 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -14821,12 +15382,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMRectReadOnly",
+          "Element"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -14888,14 +15453,31 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "ReadableStream",
+          "Window",
+          "WritableStream"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -15029,12 +15611,21 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "HTMLMediaElement",
+          "Navigator",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -15057,10 +15648,10 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/media-capabilities/",
+              "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
-              "crawled": "https://wicg.github.io/media-capabilities/",
-              "date": "17 July 2019"
+              "crawled": "https://w3c.github.io/media-capabilities/",
+              "date": "29 July 2019"
             }
           ],
           "informative": [
@@ -15091,12 +15682,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -15170,14 +15764,30 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "HTMLIFrameElement"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ReportBody",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/reporting/",
+                "title": "Reporting API 1",
+                "crawled": "https://w3c.github.io/reporting/",
+                "date": "14 May 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/reporting/"
         ],
@@ -15227,12 +15837,19 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AbortSignal",
+          "ReadableStream",
+          "URLSearchParams",
+          "Window",
+          "WindowOrWorkerGlobalScope"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -15336,10 +15953,10 @@
               "date": "25 July 2019"
             },
             {
-              "url": "https://wicg.github.io/mediasession/",
+              "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
-              "crawled": "https://wicg.github.io/mediasession/",
-              "date": "1 July 2019"
+              "crawled": "https://w3c.github.io/mediasession/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -15417,7 +16034,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webauthn-1/",
@@ -15490,12 +16107,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DataTransferItem",
+          "HTMLInputElement"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -15530,14 +16151,35 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DedicatedWorker",
+          "EventHandler",
+          "EventTarget",
+          "ReadableStream",
+          "SharedWorker",
+          "URL",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -15675,9 +16317,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -15786,12 +16429,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "Element",
+          "StylePropertyMapReadOnly"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -15813,12 +16461,18 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "DocumentOrShadowRoot",
+          "Element",
+          "EventHandler"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -15867,10 +16521,10 @@
               "date": "18 June 2019"
             },
             {
-              "url": "https://wicg.github.io/picture-in-picture/",
+              "url": "https://w3c.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
-              "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "15 July 2019"
+              "crawled": "https://w3c.github.io/picture-in-picture/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -15910,13 +16564,31 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventInit",
+          "Navigator",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "GamepadMappingType",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webxr/",
+                "title": "WebXR Device API",
+                "crawled": "https://immersive-web.github.io/webxr/",
+                "date": "22 July 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -15949,12 +16621,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DedicatedWorker",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -16053,12 +16733,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -16118,12 +16801,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AbortSignal",
+          "DedicatedWorker",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -16166,7 +16854,7 @@
               "url": "https://wicg.github.io/shape-detection-api/",
               "title": "Accelerated Shape Detection in Images",
               "crawled": "https://wicg.github.io/shape-detection-api/",
-              "date": "25 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://compat.spec.whatwg.org/",
@@ -16262,12 +16950,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -16316,14 +17007,31 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventTarget",
+          "Window",
+          "WindowOrWorkerGlobalScope"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -16440,7 +17148,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webmidi/",
@@ -16517,9 +17225,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -16571,14 +17280,35 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMStringList",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Window",
+          "WindowOrWorkerGlobalScope"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -16632,9 +17362,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -16647,7 +17378,7 @@
           "informative": []
         },
         "noEdDraft": null,
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -16663,12 +17394,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DataTransfer",
+          "StaticRange"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -16717,14 +17452,32 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMRectInit",
+          "DOMRectReadOnly",
+          "Element",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time Level 2",
+                "crawled": "https://w3c.github.io/hr-time/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://html.spec.whatwg.org/",
           "https://www.w3.org/TR/hr-time/",
@@ -16755,13 +17508,29 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "Keyboard",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/keyboard-map/",
+                "title": "Keyboard Map",
+                "crawled": "https://wicg.github.io/keyboard-map/",
+                "date": "22 April 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -16782,13 +17551,29 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "Keyboard",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/keyboard-lock/",
+                "title": "Keyboard Lock",
+                "crawled": "https://wicg.github.io/keyboard-lock/",
+                "date": "7 September 2018"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/keyboard-lock/"
@@ -16819,12 +17604,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Element"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -16873,9 +17661,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -16920,12 +17709,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -16984,21 +17776,38 @@
     },
     {
       "title": "Media Capabilities",
-      "date": "17 July 2019",
-      "url": "https://wicg.github.io/media-capabilities/",
-      "crawled": "https://wicg.github.io/media-capabilities/",
-      "repository": "https://github.com/wicg/media-capabilities",
+      "date": "29 July 2019",
+      "url": "https://w3c.github.io/media-capabilities/",
+      "crawled": "https://w3c.github.io/media-capabilities/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Navigator",
+          "Window",
+          "WorkerNavigator"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/webrtc/"
         ],
@@ -17040,12 +17849,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Navigator",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17158,13 +17975,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "ConstrainDOMString",
-          "MediaTrackCapabilities",
-          "MediaTrackConstraintSet",
-          "MediaTrackSettings",
-          "MediaTrackSupportedConstraints"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17206,12 +18017,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "HTMLCanvasElement",
+          "HTMLMediaElement",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17243,6 +18059,47 @@
           "informative": []
         },
         "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
+      "title": "Media Playback Quality",
+      "date": "Mon Jul 29 2019",
+      "url": "https://w3c.github.io/media-playback-quality/",
+      "crawled": "https://w3c.github.io/media-playback-quality/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownIdlNames": [
+          "HTMLVideoElement"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time Level 2",
+                "crawled": "https://w3c.github.io/hr-time/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
         "ok": false
       }
     },
@@ -17410,10 +18267,10 @@
               "date": "26 July 2019"
             },
             {
-              "url": "https://wicg.github.io/media-capabilities/",
+              "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
-              "crawled": "https://wicg.github.io/media-capabilities/",
-              "date": "17 July 2019"
+              "crawled": "https://w3c.github.io/media-capabilities/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediaqueries-4/",
@@ -17502,33 +18359,30 @@
     },
     {
       "title": "Media Session Standard",
-      "date": "1 July 2019",
-      "url": "https://wicg.github.io/mediasession/",
-      "crawled": "https://wicg.github.io/mediasession/",
-      "repository": "https://github.com/wicg/mediasession",
+      "date": "29 July 2019",
+      "url": "https://w3c.github.io/mediasession/",
+      "crawled": "https://w3c.github.io/mediasession/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator",
+          "Window",
+          "bool"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": [
-            {
-              "url": "https://wicg.github.io/picture-in-picture/",
-              "title": "Picture-in-Picture",
-              "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "15 July 2019"
-            }
-          ]
+          "informative": []
         },
         "noEdDraft": null,
         "ok": false
@@ -17548,12 +18402,24 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AudioTrack",
+          "AudioTrackList",
+          "EventHandler",
+          "EventTarget",
+          "TextTrack",
+          "TextTrackList",
+          "TimeRanges",
+          "URL",
+          "VideoTrack",
+          "VideoTrackList"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17567,10 +18433,16 @@
               "date": "23 July 2019"
             },
             {
-              "url": "https://wicg.github.io/media-capabilities/",
+              "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
-              "crawled": "https://wicg.github.io/media-capabilities/",
-              "date": "17 July 2019"
+              "crawled": "https://w3c.github.io/media-capabilities/",
+              "date": "29 July 2019"
+            },
+            {
+              "url": "https://w3c.github.io/media-playback-quality/",
+              "title": "Media Playback Quality",
+              "crawled": "https://w3c.github.io/media-playback-quality/",
+              "date": "Mon Jul 29 2019"
             },
             {
               "url": "https://url.spec.whatwg.org/",
@@ -17612,12 +18484,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "ImageBitmap",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17666,12 +18542,19 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -17710,16 +18593,16 @@
           ],
           "informative": [
             {
-              "url": "https://wicg.github.io/media-capabilities/",
+              "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
-              "crawled": "https://wicg.github.io/media-capabilities/",
-              "date": "17 July 2019"
+              "crawled": "https://w3c.github.io/media-capabilities/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             }
           ]
         },
@@ -17747,9 +18630,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "MediaStreamTrack"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17759,7 +18640,7 @@
           "informative": []
         },
         "noEdDraft": false,
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -17973,12 +18854,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18044,14 +18928,31 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/ServiceWorker/v1/",
           "https://fetch.spec.whatwg.org/",
@@ -18111,12 +19012,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18163,12 +19069,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMMatrix",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -18275,10 +19185,10 @@
               "date": "Mon Jul 29 2019"
             },
             {
-              "url": "https://wicg.github.io/picture-in-picture/",
+              "url": "https://w3c.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
-              "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "15 July 2019"
+              "crawled": "https://w3c.github.io/picture-in-picture/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://w3c.github.io/ServiceWorker/",
@@ -18343,9 +19253,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -18390,14 +19301,96 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ServiceWorkerRegistration",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ServiceWorkerGlobalScope",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEvent",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ServiceWorker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEventInit",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "WindowClient",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -18422,9 +19415,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -18451,7 +19445,7 @@
           ]
         },
         "noEdDraft": false,
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -18468,12 +19462,19 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18519,14 +19520,29 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/timing-entrytypes-registry/"
         ],
@@ -18621,14 +19637,34 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "EventTarget",
+          "Navigator",
+          "PermissionName",
+          "Window",
+          "WorkerNavigator"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/manifest/",
           "https://w3c.github.io/sensors/",
@@ -18746,7 +19782,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "28 July 2019"
+              "date": "29 July 2019"
             }
           ],
           "informative": []
@@ -18757,19 +19793,29 @@
     },
     {
       "title": "Picture-in-Picture",
-      "date": "15 July 2019",
-      "url": "https://wicg.github.io/picture-in-picture/",
-      "crawled": "https://wicg.github.io/picture-in-picture/",
-      "repository": "https://github.com/wicg/picture-in-picture",
+      "date": "29 July 2019",
+      "url": "https://w3c.github.io/picture-in-picture/",
+      "crawled": "https://w3c.github.io/picture-in-picture/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "DocumentOrShadowRoot",
+          "Element",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "HTMLVideoElement",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18804,12 +19850,19 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Element",
+          "EventHandler",
+          "GlobalEventHandlers",
+          "Navigator",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18882,12 +19935,18 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "DocumentOrShadowRoot",
+          "Element",
+          "EventHandler"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -18928,9 +19987,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -19005,12 +20065,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Navigator",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -19059,12 +20127,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -19098,14 +20169,96 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ServiceWorkerRegistration",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ServiceWorker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "Blob",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/FileAPI/",
+                "title": "File API",
+                "crawled": "https://w3c.github.io/FileAPI/",
+                "date": "23 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ServiceWorkerGlobalScope",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEvent",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEventInit",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -19211,12 +20364,18 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "EventTarget",
+          "HTMLMediaElement",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -19234,10 +20393,10 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/picture-in-picture/",
+              "url": "https://w3c.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
-              "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "15 July 2019"
+              "crawled": "https://w3c.github.io/picture-in-picture/",
+              "date": "29 July 2019"
             }
           ],
           "informative": []
@@ -19255,12 +20414,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Date"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -19298,12 +20460,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMRectReadOnly",
+          "Element",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -19335,14 +20502,30 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -19393,13 +20576,40 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "DOMMatrix",
+          "DOMMatrix2DInit",
+          "DOMPoint",
+          "DOMPointInit",
+          "DOMPointReadOnly",
+          "DOMRect",
+          "DOMRectReadOnly",
+          "DOMTokenList",
+          "Document",
+          "Element",
+          "NodeList",
+          "ShadowRoot",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "SVGMarkerElement",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/svg-markers/",
+                "title": "SVG Markers",
+                "crawled": "https://svgwg.org/specs/markers/",
+                "date": "27 July 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/svg-integration/",
@@ -19890,9 +21100,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -19941,12 +21152,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Element",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -20031,10 +21246,10 @@
               "date": "22 April 2019"
             },
             {
-              "url": "https://wicg.github.io/media-capabilities/",
+              "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
-              "crawled": "https://wicg.github.io/media-capabilities/",
-              "date": "17 July 2019"
+              "crawled": "https://w3c.github.io/media-capabilities/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -20138,7 +21353,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "28 July 2019"
+              "date": "29 July 2019"
             }
           ]
         },
@@ -20160,12 +21375,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "EventHandler",
+          "GlobalEventHandlers",
+          "Node",
+          "Range",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -20494,10 +21717,10 @@
               "date": "28 March 2019"
             },
             {
-              "url": "https://wicg.github.io/picture-in-picture/",
+              "url": "https://w3c.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
-              "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "15 July 2019"
+              "crawled": "https://w3c.github.io/picture-in-picture/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -20557,14 +21780,40 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time Level 2",
+                "crawled": "https://w3c.github.io/hr-time/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/webappsec-secure-contexts/"
         ],
@@ -20601,12 +21850,26 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "MessagePort",
+          "Navigator",
+          "PostMessageOptions",
+          "Window",
+          "WindowOrWorkerGlobalScope",
+          "WorkerGlobalScope",
+          "WorkerNavigator",
+          "WorkerType"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -20686,14 +21949,29 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -20863,12 +22141,28 @@
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "noIdlContent": false,
-        "hasUnexpectedIdl": false,
+        "hasUnexpectedIdl": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "DOMPoint",
+          "DOMPointReadOnly"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "SVGMarkerElement",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/SVG2/",
+                "title": "Scalable Vector Graphics (SVG) 2",
+                "crawled": "https://svgwg.org/svg2-draft/",
+                "date": "27 July 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/",
@@ -20936,12 +22230,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -20987,12 +22286,18 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "EventTarget",
+          "GlobalEventHandlers",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -21047,12 +22352,18 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventInit",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -21412,10 +22723,10 @@
               "date": "23 July 2019"
             },
             {
-              "url": "https://wicg.github.io/mediasession/",
+              "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
-              "crawled": "https://wicg.github.io/mediasession/",
-              "date": "1 July 2019"
+              "crawled": "https://w3c.github.io/mediasession/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -21559,14 +22870,29 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -21605,12 +22931,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -21652,12 +22981,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AbortSignal",
+          "DedicatedWorker",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -21684,12 +23018,22 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Document",
+          "DocumentOrShadowRoot",
+          "Element",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -21792,23 +23136,42 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "Window",
+          "WorkerType"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ServiceWorkerUpdateViaCache",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/mediasession/",
+              "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
-              "crawled": "https://wicg.github.io/mediasession/",
-              "date": "1 July 2019"
+              "crawled": "https://w3c.github.io/mediasession/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -21839,7 +23202,7 @@
     {
       "title": "Web Audio API",
       "shortname": "webaudio",
-      "date": "26 July 2019",
+      "date": "29 July 2019",
       "url": "https://www.w3.org/TR/webaudio/",
       "latest": "https://www.w3.org/TR/webaudio/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-webaudio-20180918/",
@@ -21850,14 +23213,76 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "HTMLMediaElement",
+          "MessagePort",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/animation-worklet/",
+                "title": "CSS Animation Worklet API",
+                "crawled": "https://wicg.github.io/animation-worklet/",
+                "date": "24 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-layout-api-1/",
+                "title": "CSS Layout API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+                "date": "20 February 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "23 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "22 July 2019"
+              }
+            ]
+          }
+        ],
+        "missingWebIdlRef": [
+          {
+            "name": "MediaStream",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://w3c.github.io/mediacapture-main/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          },
+          {
+            "name": "MediaStreamTrack",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://w3c.github.io/mediacapture-main/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/mediacapture-streams/",
           "https://w3c.github.io/mediacapture-fromelement/"
@@ -21919,12 +23344,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -21968,14 +23396,85 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "EventHandler",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ServiceWorkerRegistration",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ServiceWorkerGlobalScope",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEvent",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ServiceWorker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEventInit",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/webappsec/specs/powerfulfeatures/",
           "https://notifications.spec.whatwg.org/",
@@ -22012,12 +23511,20 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Navigator",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -22075,14 +23582,30 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window",
+          "WindowOrWorkerGlobalScope"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -22134,14 +23657,29 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -22158,7 +23696,7 @@
               "url": "https://wicg.github.io/shape-detection-api/",
               "title": "Accelerated Shape Detection in Images",
               "crawled": "https://wicg.github.io/shape-detection-api/",
-              "date": "25 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/accelerometer/",
@@ -22563,10 +24101,10 @@
               "date": "21 February 2019"
             },
             {
-              "url": "https://wicg.github.io/media-capabilities/",
+              "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
-              "crawled": "https://wicg.github.io/media-capabilities/",
-              "date": "17 July 2019"
+              "crawled": "https://w3c.github.io/media-capabilities/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -22587,10 +24125,16 @@
               "date": "Mon Jul 29 2019"
             },
             {
-              "url": "https://wicg.github.io/mediasession/",
+              "url": "https://w3c.github.io/media-playback-quality/",
+              "title": "Media Playback Quality",
+              "crawled": "https://w3c.github.io/media-playback-quality/",
+              "date": "Mon Jul 29 2019"
+            },
+            {
+              "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
-              "crawled": "https://wicg.github.io/mediasession/",
-              "date": "1 July 2019"
+              "crawled": "https://w3c.github.io/mediasession/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/media-source/",
@@ -22683,10 +24227,10 @@
               "date": "31 October 2018"
             },
             {
-              "url": "https://wicg.github.io/picture-in-picture/",
+              "url": "https://w3c.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
-              "crawled": "https://wicg.github.io/picture-in-picture/",
-              "date": "15 July 2019"
+              "crawled": "https://w3c.github.io/picture-in-picture/",
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -22854,7 +24398,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webauthn-1/",
@@ -22944,7 +24488,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "28 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -22991,12 +24535,19 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Navigator"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -23025,12 +24576,21 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AbortSignal",
+          "Dictionary",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -23052,12 +24612,15 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Navigator"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -23080,12 +24643,19 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -23112,14 +24682,64 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          },
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/animation-worklet/",
+                "title": "CSS Animation Worklet API",
+                "crawled": "https://wicg.github.io/animation-worklet/",
+                "date": "24 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-layout-api-1/",
+                "title": "CSS Layout API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+                "date": "20 February 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "23 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "29 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "https://drafts.css-houdini.org/worklets/",
+                "date": "22 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/wasm-core/",
           "https://www.w3.org/TR/wasm-js-api/",
@@ -23155,9 +24775,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -23191,9 +24812,10 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -23275,14 +24897,29 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -23305,7 +24942,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -23328,14 +24965,37 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventInit",
+          "HTMLCanvasElement",
+          "HTMLImageElement",
+          "HTMLVideoElement",
+          "ImageBitmap",
+          "ImageData",
+          "OffscreenCanvas",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -23364,7 +25024,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -23392,12 +25052,19 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -23438,7 +25105,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-dscp/",
@@ -23480,10 +25147,7 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "RTCPriorityType",
-          "RTCRtpEncodingParameters"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -23500,19 +25164,30 @@
     },
     {
       "title": "WebUSB API",
-      "date": "28 July 2019",
+      "date": "29 July 2019",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DedicatedWorker",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Navigator",
+          "SharedWorker",
+          "Window",
+          "WorkerNavigator"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -23547,12 +25222,17 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DocumentFragment",
+          "TextTrackCue",
+          "Window"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -23581,14 +25261,92 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "unknownIdlNames": [
+          "DOMPointInit",
+          "DOMPointReadOnly",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Navigator",
+          "Window"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "GamepadMappingType",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/gamepad/",
+                "title": "Gamepad",
+                "crawled": "https://w3c.github.io/gamepad/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          }
+        ],
+        "missingWebIdlRef": [
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time Level 2",
+                "crawled": "https://w3c.github.io/hr-time/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          },
+          {
+            "name": "WebGLRenderingContext",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          },
+          {
+            "name": "WebGLFramebuffer",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          },
+          {
+            "name": "WebGLContextAttributes",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          },
+          {
+            "name": "WebGLRenderingContextBase",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "date": "Mon Jul 29 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/orientation-sensor/",
           "https://www.w3.org/TR/hr-time/"
@@ -23623,13 +25381,44 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/animation-worklet/",
+                "title": "CSS Animation Worklet API",
+                "crawled": "https://wicg.github.io/animation-worklet/",
+                "date": "24 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-layout-api-1/",
+                "title": "CSS Layout API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
+                "date": "20 February 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
+                "date": "23 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://webaudio.github.io/web-audio-api/",
+                "date": "29 July 2019"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/webappsec-csp/"
@@ -23671,7 +25460,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             }
           ],
           "informative": [
@@ -23696,14 +25485,37 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DedicatedWorker",
+          "Document",
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "HTMLFormElement",
+          "SharedWorker",
+          "Window"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/",
+                "date": "19 July 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"
         ],
@@ -23752,7 +25564,7 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/",
-              "date": "26 July 2019"
+              "date": "29 July 2019"
             }
           ]
         },
