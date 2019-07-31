@@ -2,3 +2,169 @@
 % Reffy
 % July 31, 2019
 
+## Ambient Light Sensor
+
+- URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/ambient-light/)
+- Repository: [GitHub w3c/ambient-light](https://github.com/w3c/ambient-light)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Audio Output Devices API
+
+- URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
+- Repository: [GitHub w3c/mediacapture-output](https://github.com/w3c/mediacapture-output)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Beacon
+
+- URL: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/)
+- Repository: [GitHub w3c/beacon](https://github.com/w3c/beacon)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Compatibility Standard
+
+- URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://compat.spec.whatwg.org/)
+- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Cooperative Scheduling of Background Tasks
+
+- URL: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
+- Repository: [GitHub w3c/requestidlecallback](https://github.com/w3c/requestidlecallback)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## HTML Media Capture
+
+- URL: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/)
+- Repository: [GitHub w3c/html-media-capture](https://github.com/w3c/html-media-capture)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## HTML Standard
+
+- URL: [https://www.w3.org/TR/html52/](https://www.w3.org/TR/html52/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/html/)
+- Repository: [GitHub w3c/html](https://github.com/w3c/html)
+- Spec title: *INS* HTML Standard / *DEL* HTML 5.2
+- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
+    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:365:29)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+
+
+## HTML5 Web Messaging
+
+- URL: [https://www.w3.org/TR/webmessaging/](https://www.w3.org/TR/webmessaging/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
+- Editor's Draft: [http://dev.w3.org/html5/postmsg/](http://dev.w3.org/html5/postmsg/)
+- WebIDL names also defined elsewhere: *INS* MessageEvent, MessageEventInit, MessageChannel, MessagePort
+
+
+## Navigation Timing Level 2
+
+- URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/)
+- Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Payment Handler API
+
+- URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
+- Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Presentation API
+
+- URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/)
+- Repository: [GitHub w3c/presentation-api](https://github.com/w3c/presentation-api)
+- WebIDL names also defined elsewhere: *INS* BinaryType
+
+
+## Proximity Sensor
+
+- URL: [https://www.w3.org/TR/proximity/](https://www.w3.org/TR/proximity/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/proximity/)
+- Repository: [GitHub w3c/proximity](https://github.com/w3c/proximity)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Resource Timing Level 2
+
+- URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/)
+- Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Server Timing
+
+- URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/)
+- Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
+- Missing references for links: *INS* https://html.spec.whatwg.org/
+
+
+## Server-Sent Events
+
+- URL: [https://www.w3.org/TR/eventsource/](https://www.w3.org/TR/eventsource/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
+- Editor's Draft: [http://dev.w3.org/html5/eventsource/](http://dev.w3.org/html5/eventsource/)
+- WebIDL names also defined elsewhere: *INS* EventSource, EventSourceInit
+
+
+## Storage Standard
+
+- URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://storage.spec.whatwg.org/)
+- Repository: [GitHub whatwg/storage](https://github.com/whatwg/storage)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## User Timing Level 3
+
+- URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
+- Repository: [GitHub w3c/user-timing](https://github.com/w3c/user-timing)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Web Share API - Level 1
+
+- URL: [https://wicg.github.io/web-share/](https://wicg.github.io/web-share/)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share/)
+- Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
+- Missing references for WebIDL names: *INS* Navigator
+
+
+## Web Workers
+
+- URL: [https://www.w3.org/TR/workers/](https://www.w3.org/TR/workers/)
+- Crawled version: [Editor's Draft](https://html.spec.whatwg.org/multipage/workers.html)
+- Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
+- WebIDL names also defined elsewhere: *INS* WorkerGlobalScope, DedicatedWorkerGlobalScope, DedicatedWorker, SharedWorkerGlobalScope, SharedWorker, AbstractWorker, WorkerOptions, WorkerType, NavigatorConcurrentHardware, WorkerNavigator, WorkerLocation
+- Missing references for WebIDL names: *INS* OnErrorEventHandler, EventHandler, PostMessageOptions
+
+
+## WebGL 2.0 Specification
+
+- URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
+- Spec is OK: *INS* true / *DEL* false
+
+

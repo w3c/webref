@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-07-31T09:26:02.103Z",
+  "date": "2019-07-31T09:41:10.908Z",
   "stats": {
     "crawled": 244,
-    "errors": 3,
+    "errors": 0,
     "studied": 244
   },
   "results": [
@@ -319,6 +319,12 @@
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/",
               "date": "16 July 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/motion-1/",
@@ -881,6 +887,12 @@
           "normative": [],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
@@ -1382,6 +1394,12 @@
               "date": "16 July 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
@@ -1541,6 +1559,12 @@
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
               "date": "10 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -1824,20 +1848,55 @@
     },
     {
       "title": "Console Standard",
+      "date": "7 July 2019",
       "url": "https://console.spec.whatwg.org/",
+      "crawled": "https://console.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/console",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window",
+          "Worker"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/animation-worklet/",
+                "title": "CSS Animation Worklet API",
+                "crawled": "https://wicg.github.io/animation-worklet/",
+                "date": "30 July 2019"
+              },
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+                "date": "9 August 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/webaudio/",
+                "title": "Web Audio API",
+                "crawled": "https://www.w3.org/TR/2018/CR-webaudio-20180918/",
+                "date": "18 September 2018"
+              },
+              {
+                "url": "https://www.w3.org/TR/worklets-1/",
+                "title": "Worklets Level 1",
+                "crawled": "http://www.w3.org/TR/2016/WD-worklets-1-20160607/",
+                "date": "07 June 2016"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -1924,6 +1983,12 @@
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
               "date": "16 July 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -2881,6 +2946,12 @@
               "title": "Filter Effects Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/",
               "date": "18 December 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             }
           ],
           "informative": [
@@ -2980,6 +3051,12 @@
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
               "date": "10 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -3638,6 +3715,12 @@
               "date": "18 December 2018"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
               "title": "Indexed Database API 2.0",
               "crawled": "https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/",
@@ -3981,6 +4064,12 @@
               "title": "Filter Effects Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/",
               "date": "18 December 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -4779,6 +4868,12 @@
               "date": "18 December 2018"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
@@ -5242,7 +5337,14 @@
         ],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -5397,6 +5499,12 @@
               "title": "Filter Effects Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/",
               "date": "18 December 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -5614,6 +5722,12 @@
               "title": "Filter Effects Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/",
               "date": "18 December 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/2dcontext/",
@@ -6104,6 +6218,12 @@
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
               "date": "10 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             }
           ],
           "informative": [
@@ -6521,6 +6641,12 @@
               "date": "18 December 2018"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/2dcontext/",
               "title": "HTML Canvas 2D Context",
               "crawled": "http://www.w3.org/TR/2015/REC-2dcontext-20151119/",
@@ -6791,6 +6917,12 @@
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/",
               "date": "30 July 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             }
           ],
           "informative": [
@@ -6972,6 +7104,12 @@
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/",
               "date": "30 July 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -7196,7 +7334,14 @@
               "date": "10 April 2018"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -7264,6 +7409,12 @@
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/",
               "date": "10 April 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -7900,6 +8051,12 @@
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/",
               "date": "31 January 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/referrer-policy/",
@@ -8768,6 +8925,12 @@
               "date": "18 December 2018"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/motion-1/",
               "title": "Motion Path Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-motion-1-20181218/",
@@ -9345,6 +9508,12 @@
               "date": "30 July 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/",
@@ -9741,6 +9910,12 @@
               "title": "CSS Cascading and Inheritance Level 4",
               "crawled": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/",
               "date": "28 August 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             }
           ],
           "informative": [
@@ -9936,6 +10111,12 @@
               "title": "Geometry Interfaces Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/",
               "date": "4 December 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -10435,6 +10616,12 @@
               "title": "Filter Effects Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/",
               "date": "18 December 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/selectors-4/",
@@ -11496,6 +11683,12 @@
               "date": "4 December 2018"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/intersection-observer/",
               "title": "Intersection Observer",
               "crawled": "https://www.w3.org/TR/2019/WD-intersection-observer-20190531/",
@@ -12182,6 +12375,12 @@
               "date": "18 December 2018"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/mediaqueries-4/",
               "title": "Media Queries Level 4",
               "crawled": "https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/",
@@ -12512,10 +12711,22 @@
               "date": "10 April 2018"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/intersection-observer/",
               "title": "Intersection Observer",
               "crawled": "https://www.w3.org/TR/2019/WD-intersection-observer-20190531/",
               "date": "31 May 2019"
+            },
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
             },
             {
               "url": "https://w3c.github.io/media-capabilities/",
@@ -12713,6 +12924,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/webdriver1/",
               "title": "WebDriver",
               "crawled": "https://www.w3.org/TR/2018/REC-webdriver1-20180605/",
@@ -12792,7 +13009,14 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": null,
@@ -12869,6 +13093,12 @@
               "title": "File API",
               "crawled": "https://www.w3.org/TR/2019/WD-FileAPI-20190531/",
               "date": "31 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/push-api/",
@@ -13076,7 +13306,14 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": null,
@@ -13275,6 +13512,18 @@
               "title": "File API",
               "crawled": "https://www.w3.org/TR/2019/WD-FileAPI-20190531/",
               "date": "31 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
@@ -13524,6 +13773,12 @@
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/",
               "date": "26 June 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -13800,6 +14055,12 @@
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
               "date": "26 July 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -14187,10 +14448,22 @@
               "date": "25 July 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/intersection-observer/",
               "title": "Intersection Observer",
               "crawled": "https://www.w3.org/TR/2019/WD-intersection-observer-20190531/",
               "date": "31 May 2019"
+            },
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/orientation-sensor/",
@@ -14351,10 +14624,22 @@
               "date": "12 March 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/",
               "date": "03 July 2018"
+            },
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -14445,27 +14730,109 @@
     {
       "title": "HTML 5.2",
       "shortname": "html52",
+      "date": "14 December 2017",
       "url": "https://www.w3.org/TR/html52/",
       "latest": "https://www.w3.org/TR/html52/",
       "datedUrl": "https://www.w3.org/TR/2017/REC-html52-20171214/",
       "datedStatus": "Recommendation",
       "edDraft": "https://w3c.github.io/html/",
-      "crawled": "https://www.w3.org/TR/html52/",
+      "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
       "repository": "https://github.com/w3c/html",
       "report": {
-        "error": "Error: Crawl took too long Error: Crawl took too long\n    at Timeout._ [as _onTimeout] (/home/dom/github.com/reffy/src/cli/crawl-specs.js:365:29)\n    at ontimeout (timers.js:498:11)\n    at tryOnTimeout (timers.js:323:5)\n    at Timer.listOnTimeout (timers.js:290:5)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
         "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
         "noCssDefinitions": false,
-        "hasUnexpectedCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": true,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://url.spec.whatwg.org/",
+          "https://www.w3.org/TR/css3-syntax/",
+          "https://www.w3.org/TR/svg2/",
+          "https://www.w3.org/TR/using-aria/",
+          "https://www.w3.org/TR/css-device-adapt-1/",
+          "https://www.w3.org/TR/turingtest/",
+          "https://www.w3.org/TR/css3-positioning/",
+          "https://www.w3.org/TR/css-pseudo-4/",
+          "https://www.w3.org/TR/css3-ui/",
+          "https://www.w3.org/TR/xlink11/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/html51/",
+            "ref": {
+              "name": "HTML",
+              "url": "https://html.spec.whatwg.org/multipage/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/cssom-view/",
+            "ref": {
+              "name": "CSSOM-VIEW",
+              "url": "https://www.w3.org/TR/cssom-view-1/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/dom/",
+            "ref": {
+              "name": "DOM41",
+              "url": "https://www.w3.org/TR/dom41/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/hr-time/",
+            "ref": {
+              "name": "HR-TIME-2",
+              "url": "https://www.w3.org/TR/hr-time-2/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/css3-values/",
+            "ref": {
+              "name": "CSS-VALUES",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/1999/REC-xpath-19991116",
+            "ref": {
+              "name": "XPATH",
+              "url": "https://www.w3.org/TR/xpath"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-referrer-policy/",
+            "ref": {
+              "name": "REFERRERPOLICY",
+              "url": "https://www.w3.org/TR/referrer-policy"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/html/",
+            "ref": {
+              "name": "HTML",
+              "url": "https://html.spec.whatwg.org/multipage/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP3",
+              "url": "https://www.w3.org/TR/CSP3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -14839,6 +15206,12 @@
               "title": "Keyboard Map",
               "crawled": "https://wicg.github.io/keyboard-map/",
               "date": "22 April 2019"
+            },
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -15359,6 +15732,12 @@
               "date": "26 July 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/html-media-capture/",
               "title": "HTML Media Capture",
               "crawled": "https://www.w3.org/TR/2018/REC-html-media-capture-20180201/",
@@ -15752,6 +16131,12 @@
               "date": "4 December 2018"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://wicg.github.io/keyboard-lock/",
               "title": "Keyboard Lock",
               "crawled": "https://wicg.github.io/keyboard-lock/",
@@ -15762,6 +16147,12 @@
               "title": "Keyboard Map",
               "crawled": "https://wicg.github.io/keyboard-map/",
               "date": "22 April 2019"
+            },
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -16142,6 +16533,12 @@
               "title": "CSS Values and Units Module Level 3",
               "crawled": "https://www.w3.org/TR/2019/CR-css-values-3-20190606/",
               "date": "6 June 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/html-media-capture/",
@@ -16556,6 +16953,12 @@
               "date": "22 April 2019"
             },
             {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
+            },
+            {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
@@ -16960,6 +17363,12 @@
               "date": "6 June 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/html-media-capture/",
               "title": "HTML Media Capture",
               "crawled": "https://www.w3.org/TR/2018/REC-html-media-capture-20180201/",
@@ -17123,6 +17532,12 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
@@ -17405,22 +17820,42 @@
     },
     {
       "title": "Largest Contentful Paint",
+      "date": "25 July 2019",
       "url": "https://wicg.github.io/largest-contentful-paint/",
+      "crawled": "https://wicg.github.io/largest-contentful-paint/",
       "repository": "https://github.com/wicg/largest-contentful-paint",
       "report": {
-        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "Element"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/performance-timeline/",
+            "ref": {
+              "name": "PERFORMANCE-TIMELINE-2",
+              "url": "https://www.w3.org/TR/performance-timeline-2/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/hr-time/",
+            "ref": {
+              "name": "HR-TIME",
+              "url": "https://www.w3.org/TR/hr-time/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -17721,6 +18156,12 @@
               "date": "03 October 2017"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/html-media-capture/",
               "title": "HTML Media Capture",
               "crawled": "https://www.w3.org/TR/2018/REC-html-media-capture-20180201/",
@@ -17977,6 +18418,12 @@
               "date": "29 March 2016"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/mediaqueries-4/",
               "title": "Media Queries Level 4",
               "crawled": "https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/",
@@ -18094,6 +18541,12 @@
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/",
               "date": "31 January 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://w3c.github.io/media-capabilities/",
@@ -18250,6 +18703,12 @@
               "title": "File API",
               "crawled": "https://www.w3.org/TR/2019/WD-FileAPI-20190531/",
               "date": "31 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://w3c.github.io/media-capabilities/",
@@ -18960,6 +19419,12 @@
               "date": "7 March 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://w3c.github.io/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://w3c.github.io/picture-in-picture/",
@@ -19216,6 +19681,12 @@
               "date": "26 July 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://www.w3.org/TR/2018/WD-payment-handler-20180108/",
@@ -19279,6 +19750,12 @@
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
               "date": "16 July 2019"
+            },
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -19674,6 +20151,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/pointerevents2/",
               "title": "Pointer Events",
               "crawled": "https://www.w3.org/TR/2019/REC-pointerevents2-20190404/",
@@ -19825,7 +20308,14 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/remote-playback/",
@@ -19893,7 +20383,14 @@
         ],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": false,
@@ -20045,6 +20542,12 @@
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
               "date": "16 July 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -20405,6 +20908,12 @@
               "date": "7 March 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://wicg.github.io/keyboard-map/",
               "title": "Keyboard Map",
               "crawled": "https://wicg.github.io/keyboard-map/",
@@ -20551,7 +21060,14 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": false,
@@ -20942,7 +21458,14 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -21022,6 +21545,12 @@
               "title": "Fetch Standard",
               "crawled": "https://fetch.spec.whatwg.org/",
               "date": "16 July 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -21529,6 +22058,12 @@
               "date": "16 July 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
@@ -21596,6 +22131,12 @@
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
               "date": "16 July 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
@@ -22494,6 +23035,12 @@
               "date": "12 March 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/webmessaging/",
               "title": "HTML5 Web Messaging",
               "crawled": "http://www.w3.org/TR/2015/REC-webmessaging-20150519/",
@@ -22510,6 +23057,12 @@
               "title": "Intersection Observer",
               "crawled": "https://www.w3.org/TR/2019/WD-intersection-observer-20190531/",
               "date": "31 May 2019"
+            },
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -23674,6 +24227,12 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
               "crawled": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/",
@@ -24019,6 +24578,12 @@
               "date": "03 August 2017"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/webmessaging/",
               "title": "HTML5 Web Messaging",
               "crawled": "http://www.w3.org/TR/2015/REC-webmessaging-20150519/",
@@ -24035,6 +24600,12 @@
               "title": "Keyboard Map",
               "crawled": "https://wicg.github.io/keyboard-map/",
               "date": "22 April 2019"
+            },
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -24435,6 +25006,12 @@
               "date": "31 May 2019"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/html-media-capture/",
               "title": "HTML Media Capture",
               "crawled": "https://www.w3.org/TR/2018/REC-html-media-capture-20180201/",
@@ -24703,7 +25280,14 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -24750,6 +25334,12 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
@@ -24901,6 +25491,12 @@
               "title": "Compatibility Standard",
               "crawled": "https://compat.spec.whatwg.org/",
               "date": "18 June 2019"
+            },
+            {
+              "url": "https://console.spec.whatwg.org/",
+              "title": "Console Standard",
+              "crawled": "https://console.spec.whatwg.org/",
+              "date": "7 July 2019"
             },
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -25137,6 +25733,12 @@
               "date": "03 August 2017"
             },
             {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            },
+            {
               "url": "https://www.w3.org/TR/2dcontext/",
               "title": "HTML Canvas 2D Context",
               "crawled": "http://www.w3.org/TR/2015/REC-2dcontext-20151119/",
@@ -25177,6 +25779,12 @@
               "title": "Keyboard Map",
               "crawled": "https://wicg.github.io/keyboard-map/",
               "date": "22 April 2019"
+            },
+            {
+              "url": "https://wicg.github.io/largest-contentful-paint/",
+              "title": "Largest Contentful Paint",
+              "crawled": "https://wicg.github.io/largest-contentful-paint/",
+              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -25884,7 +26492,14 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -26204,6 +26819,12 @@
               "title": "Content Security Policy Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-CSP3-20181015/",
               "date": "15 October 2018"
+            },
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML 5.2",
+              "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
+              "date": "14 December 2017"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
