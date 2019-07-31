@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-07-31T08:08:40.242Z",
+  "date": "2019-07-31T09:26:02.103Z",
   "stats": {
     "crawled": 244,
-    "errors": 1,
+    "errors": 3,
     "studied": 244
   },
   "results": [
@@ -1824,55 +1824,20 @@
     },
     {
       "title": "Console Standard",
-      "date": "7 July 2019",
       "url": "https://console.spec.whatwg.org/",
-      "crawled": "https://console.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/console",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "Window",
-          "Worker"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "Worklet",
-            "refs": [
-              {
-                "url": "https://wicg.github.io/animation-worklet/",
-                "title": "CSS Animation Worklet API",
-                "crawled": "https://wicg.github.io/animation-worklet/",
-                "date": "30 July 2019"
-              },
-              {
-                "url": "https://www.w3.org/TR/css-paint-api-1/",
-                "title": "CSS Painting API Level 1",
-                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
-                "date": "9 August 2018"
-              },
-              {
-                "url": "https://www.w3.org/TR/webaudio/",
-                "title": "Web Audio API",
-                "crawled": "https://www.w3.org/TR/2018/CR-webaudio-20180918/",
-                "date": "18 September 2018"
-              },
-              {
-                "url": "https://www.w3.org/TR/worklets-1/",
-                "title": "Worklets Level 1",
-                "crawled": "http://www.w3.org/TR/2016/WD-worklets-1-20160607/",
-                "date": "07 June 2016"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -12553,12 +12518,6 @@
               "date": "31 May 2019"
             },
             {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
-            },
-            {
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
@@ -12833,14 +12792,7 @@
           }
         ],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
-            }
-          ],
+          "normative": [],
           "informative": []
         },
         "noEdDraft": null,
@@ -13124,14 +13076,7 @@
           }
         ],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
-            }
-          ],
+          "normative": [],
           "informative": []
         },
         "noEdDraft": null,
@@ -13330,12 +13275,6 @@
               "title": "File API",
               "crawled": "https://www.w3.org/TR/2019/WD-FileAPI-20190531/",
               "date": "31 May 2019"
-            },
-            {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
@@ -14254,12 +14193,6 @@
               "date": "31 May 2019"
             },
             {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
-            },
-            {
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/",
@@ -14422,12 +14355,6 @@
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/",
               "date": "03 July 2018"
-            },
-            {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -14912,12 +14839,6 @@
               "title": "Keyboard Map",
               "crawled": "https://wicg.github.io/keyboard-map/",
               "date": "22 April 2019"
-            },
-            {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -15843,12 +15764,6 @@
               "date": "22 April 2019"
             },
             {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
-            },
-            {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
@@ -16639,12 +16554,6 @@
               "title": "Keyboard Map",
               "crawled": "https://wicg.github.io/keyboard-map/",
               "date": "22 April 2019"
-            },
-            {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -17496,42 +17405,22 @@
     },
     {
       "title": "Largest Contentful Paint",
-      "date": "25 July 2019",
       "url": "https://wicg.github.io/largest-contentful-paint/",
-      "crawled": "https://wicg.github.io/largest-contentful-paint/",
       "repository": "https://github.com/wicg/largest-contentful-paint",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: Crawl exited without sending result Error: Crawl exited without sending result\n    at ChildProcess.child.once.code (/home/dom/github.com/reffy/src/cli/crawl-specs.js:359:33)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at ChildProcess.emit (events.js:214:7)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [
-          "DOMHighResTimeStamp",
-          "Element"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/performance-timeline/",
-            "ref": {
-              "name": "PERFORMANCE-TIMELINE-2",
-              "url": "https://www.w3.org/TR/performance-timeline-2/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/hr-time/",
-            "ref": {
-              "name": "HR-TIME",
-              "url": "https://www.w3.org/TR/hr-time/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -19390,12 +19279,6 @@
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
               "date": "16 July 2019"
-            },
-            {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -22629,12 +22512,6 @@
               "date": "31 May 2019"
             },
             {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
-            },
-            {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
@@ -24160,12 +24037,6 @@
               "date": "22 April 2019"
             },
             {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
-            },
-            {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
@@ -25032,12 +24903,6 @@
               "date": "18 June 2019"
             },
             {
-              "url": "https://console.spec.whatwg.org/",
-              "title": "Console Standard",
-              "crawled": "https://console.spec.whatwg.org/",
-              "date": "7 July 2019"
-            },
-            {
               "url": "https://www.w3.org/TR/CSP3/",
               "title": "Content Security Policy Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-CSP3-20181015/",
@@ -25312,12 +25177,6 @@
               "title": "Keyboard Map",
               "crawled": "https://wicg.github.io/keyboard-map/",
               "date": "22 April 2019"
-            },
-            {
-              "url": "https://wicg.github.io/largest-contentful-paint/",
-              "title": "Largest Contentful Paint",
-              "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
