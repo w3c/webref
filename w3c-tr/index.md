@@ -442,6 +442,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Media Queries](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
@@ -2035,6 +2036,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190730/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 
 Informative references to this spec from:
 
@@ -4245,6 +4247,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 - [Non-element Selectors Module Level 1](https://www.w3.org/TR/2019/NOTE-selectors-nonelement-1-20190402/)
@@ -4399,6 +4402,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190730/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Scroll-linked Animations](https://wicg.github.io/scroll-animations/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
@@ -5114,6 +5118,7 @@ Normative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
@@ -5220,6 +5225,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -5392,6 +5398,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -5557,6 +5564,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -5839,6 +5847,35 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
+
+No informative reference to this spec from other specs.
+
+
+## Layout Instability API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/layout-instability/) (16 July 2019)
+- Repository: [GitHub wicg/layout-instability](https://github.com/wicg/layout-instability)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `DOMHighResTimeStamp`
+- Missing references for links: 
+     * [`https://www.w3.org/TR/html401/struct/`](https://www.w3.org/TR/html401/struct/)
+     * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+     * [`https://www.w3.org/TR/pointerevents/`](https://www.w3.org/TR/pointerevents/)
+     * [`https://www.w3.org/TR/css-transforms-1/`](https://www.w3.org/TR/css-transforms-1/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+     * [`https://w3c.github.io/paint-timing/`](https://w3c.github.io/paint-timing/), related reference "PAINT-TIMING" uses URL [`https://www.w3.org/TR/paint-timing/`](https://www.w3.org/TR/paint-timing/)
+     * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/), related reference "RESOURCE-TIMING-1" uses URL [`https://www.w3.org/TR/resource-timing-1/`](https://www.w3.org/TR/resource-timing-1/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -6523,6 +6560,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 
 No informative reference to this spec from other specs.
 
@@ -6629,6 +6667,7 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
@@ -7042,6 +7081,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 
@@ -7917,6 +7957,7 @@ Normative references to this spec from:
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
@@ -8433,6 +8474,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
@@ -8734,6 +8776,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Magnetometer](https://www.w3.org/TR/2019/WD-magnetometer-20190307/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)

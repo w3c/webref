@@ -2,7 +2,7 @@
 % Reffy
 % July 31, 2019
 
-243 specifications were crawled in this report.
+244 specifications were crawled in this report.
 
 
 ## Specifications that could not be rendered
@@ -180,7 +180,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `CSSStyleDeclaration` used in [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/), [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/), [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/), [CSS Fonts Module Level 4](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
 - `CacheQueryOptions` used in [Background Fetch](https://wicg.github.io/background-fetch/)
 - `Console` used in [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
-- `DOMHighResTimeStamp` used in [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/), [Element Timing API](https://wicg.github.io/element-timing/), [Event Timing API](https://wicg.github.io/event-timing/), [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/), [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/), [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/), [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/), [Media Playback Quality](https://w3c.github.io/media-playback-quality/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/), [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- `DOMHighResTimeStamp` used in [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/), [Element Timing API](https://wicg.github.io/element-timing/), [Event Timing API](https://wicg.github.io/event-timing/), [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190531/), [Generic Sensor API](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/), [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/), [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/), [Layout Instability API](https://wicg.github.io/layout-instability/), [Media Playback Quality](https://w3c.github.io/media-playback-quality/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/), [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190626/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
 - `DOMMatrix` used in [Orientation Sensor](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
 - `DOMPointInit` used in [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
 - `DOMPointReadOnly` used in [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
@@ -881,6 +881,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
     * [`https://www.w3.org/TR/css-masking-1/`](https://www.w3.org/TR/css-masking-1/) but does not list it in its references
 - [Keyboard Map](https://wicg.github.io/keyboard-map/) links to [`https://w3c.github.io/keyboard-lock/`](https://w3c.github.io/keyboard-lock/) but does not list it in its references
+- [Layout Instability API](https://wicg.github.io/layout-instability/) links to:
+    * [`https://www.w3.org/TR/html401/struct/`](https://www.w3.org/TR/html401/struct/) but does not list it in its references
+    * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/) but does not list it in its references
+    * [`https://www.w3.org/TR/pointerevents/`](https://www.w3.org/TR/pointerevents/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-transforms-1/`](https://www.w3.org/TR/css-transforms-1/) but does not list it in its references
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [Magnetometer](https://www.w3.org/TR/2019/WD-magnetometer-20190307/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [Media Capabilities](https://w3c.github.io/media-capabilities/) links to [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/) but does not list it in its references
@@ -1009,7 +1014,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/) links to [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 596 missing references for links found in 148 specifications
+=> 600 missing references for links found in 149 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1213,6 +1218,11 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/) links to:
     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/) but related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/) links to:
+    * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/) but related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+    * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+    * [`https://w3c.github.io/paint-timing/`](https://w3c.github.io/paint-timing/) but related reference "PAINT-TIMING" uses URL [`https://www.w3.org/TR/paint-timing/`](https://www.w3.org/TR/paint-timing/)
+    * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/) but related reference "RESOURCE-TIMING-1" uses URL [`https://www.w3.org/TR/resource-timing-1/`](https://www.w3.org/TR/resource-timing-1/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/) links to:
     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/) but related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
@@ -1323,6 +1333,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/) but related reference "ORIENTATION-SENSOR" uses URL [`https://www.w3.org/TR/orientation-sensor/`](https://www.w3.org/TR/orientation-sensor/)
     * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 238 inconsistent references for links found in 130 specifications
+=> 242 inconsistent references for links found in 131 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
