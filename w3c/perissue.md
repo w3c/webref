@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% July 31, 2019
+% August 01, 2019
 
 244 specifications were crawled in this report.
 
