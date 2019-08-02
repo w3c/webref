@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 01, 2019
+% August 02, 2019
 
 244 specifications were crawled in this report.
 
@@ -183,7 +183,6 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `DataTransferItem` used in [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
 - `DedicatedWorker` used in [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190531/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [WebUSB API](https://wicg.github.io/webusb/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
-- `Dictionary` used in [Web NFC API](https://w3c.github.io/web-nfc/)
 - `Document` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/), [Feature Policy](https://w3c.github.io/webappsec-feature-policy/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/), [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190607/), [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/), [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `DocumentFragment` used in [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/), [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/), [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - `DocumentOrShadowRoot` used in [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190606/)
@@ -257,7 +256,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `WorkerType` used in [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20190730/)
 - `bool` used in [Media Session Standard](https://w3c.github.io/mediasession/)
 
-=> 97 WebIDL names found
+=> 96 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.

@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 01, 2019
+% August 02, 2019
 
 244 specifications were crawled in this report.
 
@@ -144,7 +144,6 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `DOMRectReadOnly` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Element Timing API](https://wicg.github.io/element-timing/), [Intersection Observer](https://w3c.github.io/IntersectionObserver/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - `DOMTokenList` used in [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts-1/), [HTML Standard](https://w3c.github.io/html/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
-- `Dictionary` used in [Web NFC API](https://w3c.github.io/web-nfc/)
 - `Document` used in [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/), [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Feature Policy](https://w3c.github.io/webappsec-feature-policy/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [HTML Standard](https://w3c.github.io/html/), [Page Visibility Level 2](https://w3c.github.io/page-visibility/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Selection API](https://w3c.github.io/selection-api/), [Selectors API Level 1](https://www.w3.org/TR/selectors-api/), [Web Animations](https://drafts.csswg.org/web-animations-1/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 - `DocumentFragment` used in [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [HTML Standard](https://w3c.github.io/html/), [Selectors API Level 1](https://www.w3.org/TR/selectors-api/), [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - `DocumentOrShadowRoot` used in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Picture-in-Picture](https://w3c.github.io/picture-in-picture/), [Pointer Lock 2.0](https://w3c.github.io/pointerlock/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -171,7 +170,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - `WritableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/)
 - `bool` used in [Media Session Standard](https://w3c.github.io/mediasession/)
 
-=> 41 WebIDL names found
+=> 40 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
