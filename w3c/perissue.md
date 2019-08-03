@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 02, 2019
+% August 03, 2019
 
 244 specifications were crawled in this report.
 
@@ -185,7 +185,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `DedicatedWorkerGlobalScope` defined in [HTML Standard](https://w3c.github.io/html/) and [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - `EventSource` defined in [HTML Standard](https://w3c.github.io/html/) and [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
 - `EventSourceInit` defined in [HTML Standard](https://w3c.github.io/html/) and [Server-Sent Events](http://www.w3.org/TR/2015/REC-eventsource-20150203/)
-- `GamepadMappingType` defined in [Gamepad](https://w3c.github.io/gamepad/) and [WebXR Device API](https://immersive-web.github.io/webxr/)
 - `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - `MessageChannel` defined in [HTML Standard](https://w3c.github.io/html/) and [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
 - `MessageEvent` defined in [HTML Standard](https://w3c.github.io/html/) and [HTML5 Web Messaging](http://www.w3.org/TR/2015/REC-webmessaging-20150519/)
@@ -205,7 +204,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `WorkerType` defined in [HTML Standard](https://w3c.github.io/html/) and [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - `Worklet` defined in [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/) and [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) and [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Web Audio API](https://webaudio.github.io/web-audio-api/) and [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
-=> 26 WebIDL names found
+=> 25 WebIDL names found
 
 "There can be only one"...
 
@@ -994,8 +993,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/) but related reference "DOM-PARSING" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FILEAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - [WebUSB API](https://wicg.github.io/webusb/) links to [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-- [WebXR Device API](https://immersive-web.github.io/webxr/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 208 inconsistent references for links found in 104 specifications
+=> 207 inconsistent references for links found in 103 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
