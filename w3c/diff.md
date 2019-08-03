@@ -1,12 +1,21 @@
-% Diff between report from "August 02, 2019" and reference report from "August 01, 2019"
+% Diff between report from "August 03, 2019" and reference report from "August 02, 2019"
 % Reffy
-% August 02, 2019
+% August 03, 2019
 
-## Web NFC API
+## Gamepad
 
-- URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
-- Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
-- Unknown WebIDL names used: *DEL* Dictionary
+- URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/)
+- Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
+- WebIDL names also defined elsewhere: *DEL* GamepadMappingType
+
+
+## WebXR Device API
+
+- URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
+- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/)
+- Repository: [GitHub immersive-web/webxr](https://github.com/immersive-web/webxr)
+- WebIDL names also defined elsewhere: *DEL* GamepadMappingType
+- Inconsistent references for links: *DEL* https://w3c.github.io/gamepad/
 
 
