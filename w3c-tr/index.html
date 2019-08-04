@@ -21,7 +21,7 @@
   
       <header>
       <h1>Specifications that define WebIDL content (W3C perspective)</h1>
-            <h2 class="date">August 03, 2019</h2>
+            <h2 class="date">August 04, 2019</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -93,7 +93,7 @@
   <section id="spec-info-1" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.w3.org/TR/2018/CR-SVG2-20181004/">Latest published version</a> (Sat Aug 03 2019)</li>
+  <li>Crawled version: <a href="https://www.w3.org/TR/2018/CR-SVG2-20181004/">Latest published version</a> (Sun Aug 04 2019)</li>
   <li>Editor's Draft: <a href="https://svgwg.org/svg2-draft/" class="uri">https://svgwg.org/svg2-draft/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/SVG2/" class="uri">https://www.w3.org/TR/SVG2/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2018/CR-SVG2-20181004/">Candidate Recommendation</a></li>
@@ -175,7 +175,7 @@
   <section id="potential-issues-2" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DOMRectReadOnly</code>, <code>ImageBitmapSource</code>, <code>Window</code>, <code>Worker</code></li>
+  <li>Unknown WebIDL names used: <code>ImageBitmapSource</code>, <code>Window</code>, <code>Worker</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>Point2D</code> defined in <a href="https://www.w3.org/TR/2017/WD-image-capture-20170621/">&quot;MediaStream Image Capture&quot;</a></li>
@@ -869,7 +869,7 @@
   <section id="spec-info-20" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/editing/contentEditable.html">Initial URL</a> (Sat Aug 03 2019)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/editing/contentEditable.html">Initial URL</a> (Sun Aug 04 2019)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -3676,6 +3676,7 @@
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
+  <li><a href="https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/">CSS Typed OM Level 1</a></li>
   <li><a href="https://www.w3.org/TR/2019/CR-wasm-js-api-1-20190718/">WebAssembly JavaScript Interface</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -3684,7 +3685,7 @@
   </ul>
   </section>
   </section>
-  <section id="css-parser-api" class="level2" data-spec="true" data-anomaly="true" data-noIdlContent="true">
+  <section id="css-parser-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>CSS Parser API</h2>
   <section id="spec-info-79" class="level3 info">
   <h3>Spec info</h3>
@@ -3697,7 +3698,7 @@
   <section id="potential-issues-79" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>No WebIDL definitions found</li>
+  <li>Unknown WebIDL names used: <code>CSS</code>, <code>ReadableStream</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-79" class="level3 dependencies">
@@ -4827,7 +4828,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-typed-om-level-1" class="level2" data-spec="true" data-anomaly="true" data-noIdlContent="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="css-typed-om-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>CSS Typed OM Level 1</h2>
   <section id="spec-info-106" class="level3 info">
   <h3>Spec info</h3>
@@ -4842,7 +4843,11 @@
   <section id="potential-issues-106" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>No WebIDL definitions found</li>
+  <li>Unknown WebIDL names used: <code>CSS</code>, <code>CSSStyleRule</code>, <code>Element</code>, <code>ElementCSSInlineStyle</code>, <code>LayoutWorklet</code>, <code>Window</code>, <code>Worker</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>PaintWorklet</code> defined in <a href="https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/">CSS Painting API Level 1</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a></li>
@@ -5426,7 +5431,7 @@
   <section id="potential-issues-115" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DOMHighResTimeStamp</code>, <code>DOMRectReadOnly</code>, <code>Element</code></li>
+  <li>Unknown WebIDL names used: <code>DOMHighResTimeStamp</code>, <code>Element</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/performance-timeline/"><code>https://w3c.github.io/performance-timeline/</code></a>, related reference &quot;PERFORMANCE-TIMELINE-2&quot; uses URL <a href="https://www.w3.org/TR/performance-timeline-2/"><code>https://www.w3.org/TR/performance-timeline-2/</code></a></li>
@@ -5619,7 +5624,7 @@
   <section id="potential-issues-120" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>AbortSignal</code>, <code>ReadableStream</code>, <code>URLSearchParams</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code>, <code>Worker</code></li>
+  <li>Unknown WebIDL names used: <code>AbortSignal</code>, <code>ReadableStream</code>, <code>Window</code>, <code>WindowOrWorkerGlobalScope</code>, <code>Worker</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-120" class="level3 dependencies">
@@ -5710,7 +5715,7 @@
   <section id="potential-issues-122" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DedicatedWorker</code>, <code>EventHandler</code>, <code>EventTarget</code>, <code>ReadableStream</code>, <code>SharedWorker</code>, <code>URL</code>, <code>Window</code>, <code>Worker</code></li>
+  <li>Unknown WebIDL names used: <code>DedicatedWorker</code>, <code>EventHandler</code>, <code>EventTarget</code>, <code>ReadableStream</code>, <code>SharedWorker</code>, <code>Window</code>, <code>Worker</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a></li>
@@ -5836,7 +5841,7 @@
   <section id="potential-issues-125" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Document</code>, <code>Element</code>, <code>StylePropertyMapReadOnly</code></li>
+  <li>Unknown WebIDL names used: <code>Document</code>, <code>Element</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-125" class="level3 dependencies">
@@ -6019,7 +6024,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="geometry-interfaces-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-noIdlContent="true" data-inconsistentRef="true">
+  <section id="geometry-interfaces-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Geometry Interfaces Module Level 1</h2>
   <section id="spec-info-131" class="level3 info">
   <h3>Spec info</h3>
@@ -6035,7 +6040,7 @@
   <section id="potential-issues-131" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>No WebIDL definitions found</li>
+  <li>Unknown WebIDL names used: <code>Window</code>, <code>Worker</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a>, related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
@@ -6785,7 +6790,7 @@
   <section id="spec-info-140" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/InputDeviceCapabilities/">Initial URL</a> (Sat Aug 03 2019)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/InputDeviceCapabilities/">Initial URL</a> (Sun Aug 04 2019)</li>
   <li>Repository: <a href="https://github.com/wicg/InputDeviceCapabilities">GitHub wicg/InputDeviceCapabilities</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -6849,7 +6854,7 @@
   <section id="potential-issues-142" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DOMHighResTimeStamp</code>, <code>DOMRectInit</code>, <code>DOMRectReadOnly</code>, <code>Element</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>DOMHighResTimeStamp</code>, <code>Element</code>, <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a></li>
@@ -7220,7 +7225,7 @@
   <section id="spec-info-153" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/media-playback-quality/">Initial URL</a> (Sat Aug 03 2019)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/media-playback-quality/">Initial URL</a> (Sun Aug 04 2019)</li>
   <li>Repository: <a href="https://github.com/w3c/media-playback-quality">GitHub w3c/media-playback-quality</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -7381,7 +7386,7 @@
   </ul>
   </section>
   </section>
-  <section id="media-source-extensions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="media-source-extensions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>Media Source Extensions™</h2>
   <section id="spec-info-158" class="level3 info">
   <h3>Spec info</h3>
@@ -7397,7 +7402,11 @@
   <section id="potential-issues-158" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>AudioTrack</code>, <code>AudioTrackList</code>, <code>EventHandler</code>, <code>EventTarget</code>, <code>TextTrack</code>, <code>TextTrackList</code>, <code>TimeRanges</code>, <code>URL</code>, <code>VideoTrack</code>, <code>VideoTrackList</code></li>
+  <li>Unknown WebIDL names used: <code>AudioTrack</code>, <code>AudioTrackList</code>, <code>EventHandler</code>, <code>EventTarget</code>, <code>TextTrack</code>, <code>TextTrackList</code>, <code>TimeRanges</code>, <code>VideoTrack</code>, <code>VideoTrackList</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>URL</code> defined in <a href="https://url.spec.whatwg.org/">URL Standard</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/encrypted-media/"><code>https://w3c.github.io/encrypted-media/</code></a></li>
@@ -7659,7 +7668,7 @@
   <section id="spec-info-165" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/netinfo/">Initial URL</a> (Sat Aug 03 2019)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/netinfo/">Initial URL</a> (Sun Aug 04 2019)</li>
   <li>Repository: <a href="https://github.com/wicg/netinfo">GitHub wicg/netinfo</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -7728,7 +7737,7 @@
   <section id="potential-issues-167" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DOMMatrix</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/2016/CR-orientation-event-20160818/"><code>https://www.w3.org/TR/2016/CR-orientation-event-20160818/</code></a></li>
@@ -8142,7 +8151,7 @@
   <section id="spec-info-178" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/pointerevents/extension.html">Initial URL</a> (Sat Aug 03 2019)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/pointerevents/extension.html">Initial URL</a> (Sun Aug 04 2019)</li>
   <li>Shortname: no shortname</li>
   </ul>
   </section>
@@ -8437,7 +8446,7 @@
   <section id="potential-issues-187" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DOMRectReadOnly</code>, <code>Element</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>Element</code>, <code>Window</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a></li>
@@ -9278,7 +9287,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="url-standard" class="level2" data-spec="true" data-anomaly="true" data-noIdlContent="true">
+  <section id="url-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>URL Standard</h2>
   <section id="spec-info-211" class="level3 info">
   <h3>Spec info</h3>
@@ -9291,7 +9300,7 @@
   <section id="potential-issues-211" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>No WebIDL definitions found</li>
+  <li>Unknown WebIDL names used: <code>Window</code>, <code>Worker</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-211" class="level3 dependencies">
@@ -9329,6 +9338,10 @@
   <li><a href="http://www.w3.org/TR/2015/WD-workers-20150924/">Web Workers</a></li>
   <li><a href="https://www.w3.org/TR/2018/REC-webdriver1-20180605/">WebDriver</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
+  </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://www.w3.org/TR/2016/REC-media-source-20161117/">Media Source Extensions™</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -9908,7 +9921,7 @@
   <section id="spec-info-225" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/web-nfc/">Initial URL</a> (Sat Aug 03 2019)</li>
+  <li>Crawled version: <a href="https://w3c.github.io/web-nfc/">Initial URL</a> (Sun Aug 04 2019)</li>
   <li>Repository: <a href="https://github.com/w3c/web-nfc">GitHub w3c/web-nfc</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -9968,7 +9981,7 @@
   <section id="spec-info-227" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/web-share/">Initial URL</a> (Sat Aug 03 2019)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/web-share/">Initial URL</a> (Sun Aug 04 2019)</li>
   <li>Repository: <a href="https://github.com/wicg/web-share">GitHub wicg/web-share</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -10320,7 +10333,7 @@
   <section id="spec-info-234" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sat Aug 03 2019)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Initial URL</a> (Sun Aug 04 2019)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -10352,7 +10365,7 @@
   <section id="spec-info-235" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sat Aug 03 2019)</li>
+  <li>Crawled version: <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">Initial URL</a> (Sun Aug 04 2019)</li>
   <li>Repository: <a href="https://github.com/KhronosGroup/WebGL">GitHub KhronosGroup/WebGL</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -10633,7 +10646,7 @@
   <section id="spec-info-239" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://wicg.github.io/webusb/">Initial URL</a> (2 August 2019)</li>
+  <li>Crawled version: <a href="https://wicg.github.io/webusb/">Initial URL</a> (3 August 2019)</li>
   <li>Repository: <a href="https://github.com/wicg/webusb">GitHub wicg/webusb</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -10712,7 +10725,7 @@
   <section id="potential-issues-241" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>DOMHighResTimeStamp</code>, <code>DOMPointInit</code>, <code>DOMPointReadOnly</code>, <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>HTMLCanvasElement</code>, <code>Navigator</code>, <code>Window</code></li>
+  <li>Unknown WebIDL names used: <code>DOMHighResTimeStamp</code>, <code>Event</code>, <code>EventHandler</code>, <code>EventInit</code>, <code>EventTarget</code>, <code>HTMLCanvasElement</code>, <code>Navigator</code>, <code>Window</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>GamepadMappingType</code> also defined in <a href="https://www.w3.org/TR/2019/WD-gamepad-20190531/">Gamepad</a></li>
