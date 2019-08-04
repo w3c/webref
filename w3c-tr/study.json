@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-08-03T06:08:31.142Z",
+  "date": "2019-08-04T06:08:21.432Z",
   "stats": {
     "crawled": 244,
     "errors": 0,
@@ -158,7 +158,7 @@
     {
       "title": "404 not found",
       "shortname": "SVG2",
-      "date": "Sat Aug 03 2019",
+      "date": "Sun Aug 04 2019",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
@@ -464,7 +464,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "DOMRectReadOnly",
           "ImageBitmapSource",
           "Window",
           "Worker"
@@ -2085,7 +2084,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "Sat Aug 03 2019",
+      "date": "Sun Aug 04 2019",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -3335,7 +3334,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -8755,12 +8754,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSS",
+          "ReadableStream"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -11198,14 +11201,35 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSS",
+          "CSSStyleRule",
+          "Element",
+          "ElementCSSInlineStyle",
+          "LayoutWorklet",
+          "Window",
+          "Worker"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "PaintWorklet",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-paint-api-1/",
+                "title": "CSS Painting API Level 1",
+                "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+                "date": "9 August 2018"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/css3-background/",
           "https://www.w3.org/TR/css3-animations/",
@@ -12972,7 +12996,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "DOMHighResTimeStamp",
-          "DOMRectReadOnly",
           "Element"
         ],
         "redefinedIdlNames": [],
@@ -13140,7 +13163,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -13424,7 +13447,6 @@
         "unknownIdlNames": [
           "AbortSignal",
           "ReadableStream",
-          "URLSearchParams",
           "Window",
           "WindowOrWorkerGlobalScope",
           "Worker"
@@ -13724,7 +13746,6 @@
           "EventTarget",
           "ReadableStream",
           "SharedWorker",
-          "URL",
           "Window",
           "Worker"
         ],
@@ -14005,8 +14026,7 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "Document",
-          "Element",
-          "StylePropertyMapReadOnly"
+          "Element"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -14396,12 +14416,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window",
+          "Worker"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -15247,7 +15271,7 @@
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
@@ -15283,7 +15307,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -15529,7 +15553,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -15577,13 +15601,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -15595,7 +15619,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "2 August 2019"
+              "date": "3 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -15801,7 +15825,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -16182,7 +16206,7 @@
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
@@ -16206,7 +16230,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -16392,7 +16416,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -16422,13 +16446,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16440,7 +16464,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "2 August 2019"
+              "date": "3 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -16592,7 +16616,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             }
           ]
         },
@@ -16986,7 +17010,7 @@
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
@@ -17010,7 +17034,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -17208,7 +17232,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -17244,13 +17268,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -17262,7 +17286,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "2 August 2019"
+              "date": "3 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -17408,7 +17432,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             }
           ]
         },
@@ -17578,7 +17602,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "Sat Aug 03 2019",
+      "date": "Sun Aug 04 2019",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -17679,8 +17703,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "DOMHighResTimeStamp",
-          "DOMRectInit",
-          "DOMRectReadOnly",
           "Element",
           "Window"
         ],
@@ -18345,7 +18367,7 @@
     },
     {
       "title": "Media Playback Quality",
-      "date": "Sat Aug 03 2019",
+      "date": "Sun Aug 04 2019",
       "url": "https://w3c.github.io/media-playback-quality/",
       "crawled": "https://w3c.github.io/media-playback-quality/",
       "repository": "https://github.com/w3c/media-playback-quality",
@@ -18696,12 +18718,23 @@
           "TextTrack",
           "TextTrackList",
           "TimeRanges",
-          "URL",
           "VideoTrack",
           "VideoTrackList"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "URL",
+            "refs": [
+              {
+                "url": "https://url.spec.whatwg.org/",
+                "title": "URL Standard",
+                "crawled": "https://url.spec.whatwg.org/",
+                "date": "4 April 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/encrypted-media/"
         ],
@@ -18730,7 +18763,7 @@
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://url.spec.whatwg.org/",
@@ -19204,7 +19237,7 @@
     },
     {
       "title": "Network Information API",
-      "date": "Sat Aug 03 2019",
+      "date": "Sun Aug 04 2019",
       "url": "https://wicg.github.io/netinfo/",
       "crawled": "https://wicg.github.io/netinfo/",
       "repository": "https://github.com/wicg/netinfo",
@@ -19296,7 +19329,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "DOMMatrix",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -19474,7 +19506,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -19989,13 +20021,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "2 August 2019"
+              "date": "3 August 2019"
             }
           ],
           "informative": []
@@ -20107,7 +20139,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -20121,7 +20153,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             }
           ]
         },
@@ -20177,7 +20209,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             }
           ],
           "informative": [
@@ -20195,7 +20227,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "Sat Aug 03 2019",
+      "date": "Sun Aug 04 2019",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -20687,7 +20719,6 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "DOMRectReadOnly",
           "Element",
           "Window"
         ],
@@ -21020,7 +21051,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "2 August 2019"
+              "date": "3 August 2019"
             }
           ]
         },
@@ -22078,7 +22109,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             }
           ],
           "informative": [
@@ -22153,7 +22184,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -22366,12 +22397,16 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Window",
+          "Worker"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -23097,7 +23132,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -23151,7 +23186,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -23343,7 +23378,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -23379,7 +23414,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -23391,7 +23426,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "2 August 2019"
+              "date": "3 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -24031,7 +24066,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "Sat Aug 03 2019",
+      "date": "Sun Aug 04 2019",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -24147,7 +24182,7 @@
     },
     {
       "title": "Web Share API - Level 1",
-      "date": "Sat Aug 03 2019",
+      "date": "Sun Aug 04 2019",
       "url": "https://wicg.github.io/web-share/",
       "crawled": "https://wicg.github.io/web-share/",
       "repository": "https://github.com/wicg/web-share",
@@ -24645,7 +24680,7 @@
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
@@ -24669,7 +24704,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -24867,7 +24902,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -24897,13 +24932,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -24915,7 +24950,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "2 August 2019"
+              "date": "3 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -25067,7 +25102,7 @@
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             }
           ]
         },
@@ -25268,7 +25303,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Sat Aug 03 2019",
+      "date": "Sun Aug 04 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -25313,7 +25348,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Sat Aug 03 2019",
+      "date": "Sun Aug 04 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -25354,7 +25389,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             }
           ],
           "informative": [
@@ -25770,7 +25805,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -25842,7 +25877,7 @@
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
@@ -25872,7 +25907,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/orientation-sensor/",
@@ -25932,7 +25967,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -26112,13 +26147,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://wicg.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://wicg.github.io/web-share/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -26160,13 +26195,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Sat Aug 03 2019"
+              "date": "Sun Aug 04 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -26178,7 +26213,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "2 August 2019"
+              "date": "3 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -26405,7 +26440,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "2 August 2019",
+      "date": "3 August 2019",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
@@ -26537,8 +26572,6 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "DOMHighResTimeStamp",
-          "DOMPointInit",
-          "DOMPointReadOnly",
           "Event",
           "EventHandler",
           "EventInit",
@@ -26568,7 +26601,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat Aug 03 2019"
+                "date": "Sun Aug 04 2019"
               }
             ]
           },
@@ -26579,7 +26612,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Sat Aug 03 2019"
+                "date": "Sun Aug 04 2019"
               }
             ]
           },
@@ -26590,7 +26623,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat Aug 03 2019"
+                "date": "Sun Aug 04 2019"
               }
             ]
           },
@@ -26601,7 +26634,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat Aug 03 2019"
+                "date": "Sun Aug 04 2019"
               }
             ]
           },
@@ -26612,7 +26645,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Sat Aug 03 2019"
+                "date": "Sun Aug 04 2019"
               }
             ]
           }
