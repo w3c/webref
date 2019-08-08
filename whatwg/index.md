@@ -2,26 +2,6 @@
 % Reffy
 % August 08, 2019
 
-## [No title found for https://wicg.github.io/web-share/] {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Aug 08 2019)
-- Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-- No WebIDL definitions found
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -5398,6 +5378,7 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Server Timing](https://w3c.github.io/server-timing/)
+- [Web Share API - Level 1](https://w3c.github.io/web-share/)
 
 Informative references to this spec from:
 
@@ -5430,6 +5411,7 @@ Informative references to this spec from:
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web Share API - Level 1](https://w3c.github.io/web-share/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
@@ -8109,6 +8091,7 @@ Normative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
+- [Web Share API - Level 1](https://w3c.github.io/web-share/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
@@ -8160,6 +8143,27 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Web Share API - Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/web-share/) (Thu Aug 08 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for WebIDL names: 
+     * `Navigator` defined in [HTML Standard](https://html.spec.whatwg.org/)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/)
 
 ### Known dependencies on this specification {.dependencies}
 

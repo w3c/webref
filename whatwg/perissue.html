@@ -32,20 +32,18 @@
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
-  <li><a href="https://wicg.github.io/web-share/">[No title found for https://wicg.github.io/web-share/]</a></li>
   <li><a href="http://dev.w3.org/csswg/css2/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   </ul>
-  <p>=&gt; 3 specifications found</p>
+  <p>=&gt; 2 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="specifications-without-webidl-definitions" class="level2">
   <h2>Specifications without WebIDL definitions</h2>
   <ul>
-  <li><a href="https://wicg.github.io/web-share/">[No title found for https://wicg.github.io/web-share/]</a></li>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></li>
   </ul>
-  <p>=&gt; 2 specifications found</p>
+  <p>=&gt; 1 specification found</p>
   <p>Reffy was expecting to find IDL content in the specifications listed here but could not extract any.</p>
   </section>
   <section id="specifications-without-css-definitions" class="level2">
@@ -241,6 +239,7 @@
   <li><code>ServiceWorker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>ExtendableEventInit</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/web-share/">Web Share API - Level 1</a> uses <code>Navigator</code> but does not reference <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a> uses <code>Worklet</code> but does not reference <a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a> or <a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a> or <a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a> or <a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> or <a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> uses:
   <ul>
@@ -251,7 +250,7 @@
   <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 64 missing references for IDL definitions found in 29 specifications</p>
+  <p>=&gt; 65 missing references for IDL definitions found in 30 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -833,6 +832,7 @@
   <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a> links to <a href="https://w3c.github.io/fingerprinting-guidance/"><code>https://w3c.github.io/fingerprinting-guidance/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/web-share/">Web Share API - Level 1</a> links to <a href="https://www.w3.org/TR/web-intents/"><code>https://www.w3.org/TR/web-intents/</code></a> but does not list it in its references</li>
   <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/wasm-core/"><code>https://www.w3.org/TR/wasm-core/</code></a> but does not list it in its references</li>
@@ -860,7 +860,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 372 missing references for links found in 125 specifications</p>
+  <p>=&gt; 373 missing references for links found in 126 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
