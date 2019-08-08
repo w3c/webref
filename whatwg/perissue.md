@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 07, 2019
+% August 08, 2019
 
 233 specifications were crawled in this report.
 
@@ -16,9 +16,9 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 
 ## Specifications without normative dependencies
 
+- [[No title found for https://wicg.github.io/web-share/]](https://wicg.github.io/web-share/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [Page not found · GitHub Pages](https://wicg.github.io/web-share/)
 
 => 3 specifications found
 
@@ -27,8 +27,8 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## Specifications without WebIDL definitions
 
+- [[No title found for https://wicg.github.io/web-share/]](https://wicg.github.io/web-share/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [Page not found · GitHub Pages](https://wicg.github.io/web-share/)
 
 => 2 specifications found
 

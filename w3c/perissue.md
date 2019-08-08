@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 07, 2019
+% August 08, 2019
 
 244 specifications were crawled in this report.
 
@@ -21,9 +21,9 @@ It is good practice to link to Editor's Draft for W3C specifications even for sp
 
 ## Specifications without normative dependencies
 
+- [[No title found for https://wicg.github.io/web-share/]](https://wicg.github.io/web-share/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
-- [Page not found · GitHub Pages](https://wicg.github.io/web-share/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 => 4 specifications found
@@ -33,10 +33,10 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## Specifications without WebIDL definitions
 
+- [[No title found for https://wicg.github.io/web-share/]](https://wicg.github.io/web-share/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - [HTML Canvas 2D Context](https://www.w3.org/TR/2dcontext/)
 - [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
-- [Page not found · GitHub Pages](https://wicg.github.io/web-share/)
 - [The WebSocket API](https://www.w3.org/TR/websockets/)
 - [User Interface Security and the Visibility API](http://w3c.github.io/webappsec-uisecurity/index.html)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
