@@ -2,26 +2,6 @@
 % Reffy
 % August 08, 2019
 
-## [No title found for https://wicg.github.io/web-share/] {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://wicg.github.io/web-share/) (Thu Aug 08 2019)
-- Repository: [GitHub wicg/web-share](https://github.com/wicg/web-share)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-- No WebIDL definitions found
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -5248,6 +5228,7 @@ Informative references to this spec from:
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web Share API - Level 1](https://w3c.github.io/web-share/)
 
 
 ## HTML Media Capture {data-spec=true data-ok=true}
@@ -5473,6 +5454,7 @@ Although they do not, the following specs should also normatively reference this
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Server Timing](https://w3c.github.io/server-timing/)
+- [Web Share API - Level 1](https://w3c.github.io/web-share/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 
 Informative references to this spec from:
@@ -5502,6 +5484,7 @@ Informative references to this spec from:
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Server Timing](https://w3c.github.io/server-timing/)
+- [Web Share API - Level 1](https://w3c.github.io/web-share/)
 
 
 ## HTML5 Web Messaging {data-spec=true data-anomaly=true data-hasObsoleteIdl=true data-unknownIdlNames=true data-redefinedIdlNames=true}
@@ -5688,6 +5671,7 @@ Informative references to this spec from:
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - [W3C DOM 4.1](https://w3c.github.io/dom/)
+- [Web Share API - Level 1](https://w3c.github.io/web-share/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
@@ -8676,6 +8660,7 @@ Normative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
+- [Web Share API - Level 1](https://w3c.github.io/web-share/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
@@ -8764,6 +8749,27 @@ Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+
+
+## Web Share API - Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/web-share/) (Thu Aug 08 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for WebIDL names: 
+     * `Navigator` defined in [HTML Standard](https://w3c.github.io/html/)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Web Speech API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -9025,6 +9031,7 @@ Informative references to this spec from:
 - [Metadata API for Media Resources 1.0](https://www.w3.org/TR/mediaont-api-1.0/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Web Share API - Level 1](https://w3c.github.io/web-share/)
 
 
 ## WebAssembly JavaScript Interface {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
