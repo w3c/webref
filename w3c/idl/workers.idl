@@ -23,7 +23,7 @@ interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
   [Replaceable] readonly attribute DOMString name;
 
   void postMessage(any message, sequence<object> transfer);
-  void postMessage(any message, optional PostMessageOptions options);
+  void postMessage(any message, optional PostMessageOptions options = {});
 
   void close();
 
@@ -44,12 +44,13 @@ interface mixin AbstractWorker {
   attribute EventHandler onerror;
 };
 
-[Constructor(USVString scriptURL, optional WorkerOptions options), Exposed=(Window,Worker)]
+[Constructor(USVString scriptURL, optional WorkerOptions options = {}),
+ Exposed=(Window,Worker)]
 interface Worker : EventTarget {
   void terminate();
 
   void postMessage(any message, sequence<object> transfer);
-  void postMessage(any message, optional PostMessageOptions options);
+  void postMessage(any message, optional PostMessageOptions options = {});
   attribute EventHandler onmessage;
   attribute EventHandler onmessageerror;
 };
@@ -64,7 +65,7 @@ enum WorkerType { "classic", "module" };
 
 Worker includes AbstractWorker;
 
-[Constructor(USVString scriptURL, optional (DOMString or WorkerOptions) options),
+[Constructor(USVString scriptURL, optional (DOMString or WorkerOptions) options = {}),
  Exposed=(Window,Worker)]
 interface SharedWorker : EventTarget {
   readonly attribute MessagePort port;

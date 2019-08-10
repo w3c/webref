@@ -1,12 +1,12 @@
-% Diff between report from "August 09, 2019" and reference report from "August 08, 2019"
+% Diff between report from "August 10, 2019" and reference report from "August 09, 2019"
 % Reffy
-% August 09, 2019
+% August 10, 2019
 
-## Web Audio API
+## Service Workers Nightly
 
-- URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
-- Repository: [GitHub webaudio/web-audio-api](https://github.com/webaudio/web-audio-api)
-- Missing references for links: *INS* https://www.w3.org/TR/html50/
+- URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
+- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/)
+- Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
+- Inconsistent references for links: *INS* https://w3c.github.io/FileAPI/
 
 

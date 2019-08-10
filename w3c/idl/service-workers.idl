@@ -57,7 +57,7 @@ interface ServiceWorkerContainer : EventTarget {
   readonly attribute ServiceWorker? controller;
   readonly attribute Promise<ServiceWorkerRegistration> ready;
 
-  [NewObject] Promise<ServiceWorkerRegistration> register(USVString scriptURL, optional RegistrationOptions options);
+  [NewObject] Promise<ServiceWorkerRegistration> register(USVString scriptURL, optional RegistrationOptions options = {});
 
   [NewObject] Promise<any> getRegistration(optional USVString clientURL = "");
   [NewObject] Promise<FrozenArray<ServiceWorkerRegistration>> getRegistrations();
@@ -120,7 +120,7 @@ enum FrameType {
 interface Clients {
   // The objects returned will be new instances every time
   [NewObject] Promise<any> get(DOMString id);
-  [NewObject] Promise<FrozenArray<Client>> matchAll(optional ClientQueryOptions options);
+  [NewObject] Promise<FrozenArray<Client>> matchAll(optional ClientQueryOptions options = {});
   [NewObject] Promise<WindowClient?> openWindow(USVString url);
   [NewObject] Promise<void> claim();
 };
@@ -137,7 +137,7 @@ enum ClientType {
   "all"
 };
 
-[Constructor(DOMString type, optional ExtendableEventInit eventInitDict), Exposed=ServiceWorker]
+[Constructor(DOMString type, optional ExtendableEventInit eventInitDict = {}), Exposed=ServiceWorker]
 interface ExtendableEvent : Event {
   void waitUntil(Promise<any> f);
 };
@@ -159,7 +159,7 @@ dictionary FetchEventInit : ExtendableEventInit {
   DOMString clientId = "";
 };
 
-[Constructor(DOMString type, optional ExtendableMessageEventInit eventInitDict), Exposed=ServiceWorker]
+[Constructor(DOMString type, optional ExtendableMessageEventInit eventInitDict = {}), Exposed=ServiceWorker]
 interface ExtendableMessageEvent : ExtendableEvent {
   readonly attribute any data;
   readonly attribute USVString origin;
@@ -182,13 +182,13 @@ partial interface WindowOrWorkerGlobalScope {
 
 [SecureContext, Exposed=(Window,Worker)]
 interface Cache {
-  [NewObject] Promise<any> match(RequestInfo request, optional CacheQueryOptions options);
-  [NewObject] Promise<FrozenArray<Response>> matchAll(optional RequestInfo request, optional CacheQueryOptions options);
+  [NewObject] Promise<any> match(RequestInfo request, optional CacheQueryOptions options = {});
+  [NewObject] Promise<FrozenArray<Response>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});
   [NewObject] Promise<void> add(RequestInfo request);
   [NewObject] Promise<void> addAll(sequence<RequestInfo> requests);
   [NewObject] Promise<void> put(RequestInfo request, Response response);
-  [NewObject] Promise<boolean> delete(RequestInfo request, optional CacheQueryOptions options);
-  [NewObject] Promise<FrozenArray<Request>> keys(optional RequestInfo request, optional CacheQueryOptions options);
+  [NewObject] Promise<boolean> delete(RequestInfo request, optional CacheQueryOptions options = {});
+  [NewObject] Promise<FrozenArray<Request>> keys(optional RequestInfo request, optional CacheQueryOptions options = {});
 };
 
 dictionary CacheQueryOptions {
@@ -199,7 +199,7 @@ dictionary CacheQueryOptions {
 
 [SecureContext, Exposed=(Window,Worker)]
 interface CacheStorage {
-  [NewObject] Promise<any> match(RequestInfo request, optional MultiCacheQueryOptions options);
+  [NewObject] Promise<any> match(RequestInfo request, optional MultiCacheQueryOptions options = {});
   [NewObject] Promise<boolean> has(DOMString cacheName);
   [NewObject] Promise<Cache> open(DOMString cacheName);
   [NewObject] Promise<boolean> delete(DOMString cacheName);
