@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 09, 2019
+% August 10, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -46,7 +46,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Fri Aug 09 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (Sat Aug 10 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -614,7 +614,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://console.spec.whatwg.org/) (7 July 2019)
+- Crawled version: [Living Standard](https://console.spec.whatwg.org/) (9 August 2019)
 - Repository: [GitHub whatwg/console](https://github.com/whatwg/console)
 - Shortname: no shortname
 
@@ -702,7 +702,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Fri Aug 09 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (Sat Aug 10 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4717,7 +4717,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (8 August 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (9 August 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -5045,7 +5045,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/) (12 March 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/) (9 August 2019)
 - Repository: [GitHub wicg/geolocation-sensor](https://github.com/wicg/geolocation-sensor)
 - Shortname: no shortname
 
@@ -5768,7 +5768,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Fri Aug 09 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (Sat Aug 10 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
@@ -6121,7 +6121,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/media-playback-quality/) (Fri Aug 09 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/media-playback-quality/) (Sat Aug 10 2019)
 - Repository: [GitHub w3c/media-playback-quality](https://github.com/w3c/media-playback-quality)
 - Shortname: no shortname
 
@@ -6241,7 +6241,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/mediasession/) (29 July 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/mediasession/) (9 August 2019)
 - Repository: [GitHub w3c/mediasession](https://github.com/w3c/mediasession)
 - Shortname: no shortname
 
@@ -6487,7 +6487,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Fri Aug 09 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/netinfo/) (Sat Aug 10 2019)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -6887,7 +6887,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Fri Aug 09 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Sat Aug 10 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8382,7 +8382,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Fri Aug 09 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (Sat Aug 10 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8432,7 +8432,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-share/) (Fri Aug 09 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-share/) (Sat Aug 10 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8740,7 +8740,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Fri Aug 09 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (Sat Aug 10 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8767,7 +8767,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Fri Aug 09 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (Sat Aug 10 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -9147,7 +9147,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (15 May 2019)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (9 August 2019)
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
