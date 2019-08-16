@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (WHATWG perspective)
 % Reffy
-% August 13, 2019
+% August 16, 2019
 
 233 specifications were crawled in this report.
 
@@ -210,6 +210,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [Web NFC API](https://w3c.github.io/web-nfc/) uses `EventHandler` but does not reference [HTML Standard](https://html.spec.whatwg.org/)
 - [Web Share API - Level 1](https://w3c.github.io/web-share/) uses `Navigator` but does not reference [HTML Standard](https://html.spec.whatwg.org/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/) uses `Worklet` but does not reference [CSS Animation Worklet API](https://wicg.github.io/animation-worklet/) or [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) or [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/) or [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/) uses:
@@ -219,7 +220,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 65 missing references for IDL definitions found in 30 specifications
+=> 66 missing references for IDL definitions found in 31 specifications
 
 
 ## Missing references based on document links
@@ -542,10 +543,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-masking-1/`](https://www.w3.org/TR/css-masking-1/) but does not list it in its references
 - [Keyboard Map](https://wicg.github.io/keyboard-map/) links to [`https://w3c.github.io/keyboard-lock/`](https://w3c.github.io/keyboard-lock/) but does not list it in its references
 - [Layout Instability API](https://wicg.github.io/layout-instability/) links to:
-    * [`https://www.w3.org/TR/html401/struct/`](https://www.w3.org/TR/html401/struct/) but does not list it in its references
     * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/) but does not list it in its references
     * [`https://www.w3.org/TR/pointerevents/`](https://www.w3.org/TR/pointerevents/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-transforms-1/`](https://www.w3.org/TR/css-transforms-1/) but does not list it in its references
 - [Magnetometer](https://w3c.github.io/magnetometer/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [Media Capabilities](https://w3c.github.io/media-capabilities/) links to [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/) but does not list it in its references
 - [Media Queries Level 3](http://dev.w3.org/csswg/css3-mediaqueries/) links to:
@@ -676,7 +675,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 374 missing references for links found in 126 specifications
+=> 372 missing references for links found in 126 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

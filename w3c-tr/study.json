@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-08-13T06:07:52.641Z",
+  "date": "2019-08-16T06:07:57.387Z",
   "stats": {
     "crawled": 244,
     "errors": 0,
@@ -158,7 +158,7 @@
     {
       "title": "404 not found",
       "shortname": "SVG2",
-      "date": "Tue Aug 13 2019",
+      "date": "Fri Aug 16 2019",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
@@ -300,7 +300,7 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -465,11 +465,21 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "ImageBitmapSource",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          },
           {
             "name": "Point2D",
             "refs": [
@@ -800,16 +810,9 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "CacheQueryOptions",
           "EventHandler",
           "EventTarget",
-          "ExtendableEvent",
-          "ExtendableEventInit",
-          "ServiceWorker",
-          "ServiceWorkerGlobalScope",
-          "ServiceWorkerRegistration",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
@@ -895,7 +898,7 @@
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             }
           ]
         },
@@ -1305,8 +1308,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-3/",
@@ -1402,7 +1405,7 @@
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css3-mediaqueries/",
@@ -1861,11 +1864,21 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          },
           {
             "name": "Worklet",
             "refs": [
@@ -1936,8 +1949,7 @@
         "unknownIdlNames": [
           "Event",
           "EventInit",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -1975,7 +1987,7 @@
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -1998,8 +2010,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -2084,7 +2096,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "Tue Aug 13 2019",
+      "date": "Fri Aug 16 2019",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -2129,10 +2141,6 @@
           "EventHandler",
           "EventInit",
           "EventTarget",
-          "ExtendableEvent",
-          "ExtendableEventInit",
-          "ServiceWorker",
-          "ServiceWorkerGlobalScope",
           "Window"
         ],
         "redefinedIdlNames": [],
@@ -2457,8 +2465,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://drafts.csswg.org/css-transitions-2/",
@@ -2700,8 +2708,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -2767,7 +2775,7 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -3333,7 +3341,7 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -3887,8 +3895,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-transitions-1/",
@@ -4032,6 +4040,12 @@
               "title": "CSS Table Module Level 3",
               "crawled": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/",
               "date": "27 July 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-text-decor-3/",
+              "title": "CSS Text Decoration Module Level 3",
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://drafts.csswg.org/css-transforms-2/",
@@ -4814,8 +4828,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-3/",
@@ -4857,7 +4871,7 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -4870,6 +4884,12 @@
               "title": "HTML 5.2",
               "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
               "date": "14 December 2017"
+            },
+            {
+              "url": "https://wicg.github.io/layout-instability/",
+              "title": "Layout Instability API",
+              "crawled": "https://wicg.github.io/layout-instability/",
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/selectors-4/",
@@ -5459,8 +5479,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -5676,8 +5696,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -5713,7 +5733,7 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -5962,8 +5982,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-4/",
@@ -5988,12 +6008,6 @@
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/",
               "date": "30 July 2019"
-            },
-            {
-              "url": "https://wicg.github.io/layout-instability/",
-              "title": "Layout Instability API",
-              "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
             }
           ],
           "informative": [
@@ -6877,8 +6891,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -8270,6 +8284,12 @@
               "date": "27 July 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-text-decor-3/",
+              "title": "CSS Text Decoration Module Level 3",
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-text-3/",
               "title": "CSS Text Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-text-3-20181212/",
@@ -8322,6 +8342,12 @@
               "title": "Filter Effects Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/",
               "date": "18 December 2018"
+            },
+            {
+              "url": "https://wicg.github.io/layout-instability/",
+              "title": "Layout Instability API",
+              "crawled": "https://wicg.github.io/layout-instability/",
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -9494,8 +9520,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-3/",
@@ -10239,13 +10265,13 @@
     {
       "title": "CSS Text Decoration Module Level 3",
       "shortname": "css-text-decor-3",
-      "date": "03 July 2018",
+      "date": "13 August 2019",
       "url": "https://www.w3.org/TR/css-text-decor-3/",
       "latest": "https://www.w3.org/TR/css-text-decor-3/",
-      "datedUrl": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
+      "datedUrl": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://drafts.csswg.org/css-text-decor-3/",
-      "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
+      "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
         "noNormativeRefs": false,
@@ -10262,7 +10288,7 @@
         "missingLinkRef": [
           "https://www.w3.org/TR/css3-break/",
           "https://www.w3.org/TR/css3-color/",
-          "https://www.w3.org/TR/css-transitions-1/"
+          "https://www.w3.org/TR/css3-background/"
         ],
         "inconsistentRef": [
           {
@@ -10586,8 +10612,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -10630,6 +10656,12 @@
               "title": "HTML 5.2",
               "crawled": "https://www.w3.org/TR/2017/REC-html52-20171214/",
               "date": "14 December 2017"
+            },
+            {
+              "url": "https://wicg.github.io/layout-instability/",
+              "title": "Layout Instability API",
+              "crawled": "https://wicg.github.io/layout-instability/",
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/selectors-4/",
@@ -10877,6 +10909,12 @@
               "title": "Geometry Interfaces Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/",
               "date": "4 December 2018"
+            },
+            {
+              "url": "https://wicg.github.io/layout-instability/",
+              "title": "Layout Instability API",
+              "crawled": "https://wicg.github.io/layout-instability/",
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/motion-1/",
@@ -11218,11 +11256,21 @@
           "Element",
           "ElementCSSInlineStyle",
           "LayoutWorklet",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          },
           {
             "name": "PaintWorklet",
             "refs": [
@@ -11636,8 +11684,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -12041,6 +12089,12 @@
               "date": "27 July 2019"
             },
             {
+              "url": "https://www.w3.org/TR/css-text-decor-3/",
+              "title": "CSS Text Decoration Module Level 3",
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
+            },
+            {
               "url": "https://www.w3.org/TR/css-text-3/",
               "title": "CSS Text Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-text-3-20181212/",
@@ -12116,7 +12170,7 @@
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://drafts.csswg.org/mediaqueries-5/",
@@ -12609,8 +12663,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-3/",
@@ -12652,7 +12706,7 @@
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -12755,13 +12809,19 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
+            },
+            {
+              "url": "https://wicg.github.io/layout-instability/",
+              "title": "Layout Instability API",
+              "crawled": "https://wicg.github.io/layout-instability/",
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediaqueries-4/",
@@ -12986,7 +13046,7 @@
     },
     {
       "title": "Element Timing API",
-      "date": "7 August 2019",
+      "date": "15 August 2019",
       "url": "https://wicg.github.io/element-timing/",
       "crawled": "https://wicg.github.io/element-timing/",
       "repository": "https://github.com/wicg/element-timing",
@@ -13042,7 +13102,7 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             }
           ],
           "informative": []
@@ -13071,11 +13131,22 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -13168,7 +13239,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -13248,7 +13319,7 @@
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             }
           ],
           "informative": [
@@ -13266,7 +13337,7 @@
     },
     {
       "title": "Event Timing API",
-      "date": "16 July 2019",
+      "date": "15 August 2019",
       "url": "https://wicg.github.io/event-timing/",
       "crawled": "https://wicg.github.io/event-timing/",
       "repository": "https://github.com/wicg/event-timing",
@@ -13339,7 +13410,7 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             }
           ],
           "informative": []
@@ -13350,7 +13421,7 @@
     },
     {
       "title": "Feature Policy",
-      "date": "7 August 2019",
+      "date": "14 August 2019",
       "url": "https://w3c.github.io/webappsec-feature-policy/",
       "crawled": "https://w3c.github.io/webappsec-feature-policy/",
       "repository": "https://github.com/w3c/webappsec-feature-policy",
@@ -13453,8 +13524,7 @@
           "AbortSignal",
           "ReadableStream",
           "Window",
-          "WindowOrWorkerGlobalScope",
-          "Worker"
+          "WindowOrWorkerGlobalScope"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -13532,7 +13602,7 @@
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/FileAPI/",
@@ -13550,13 +13620,13 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://w3c.github.io/mediasession/",
-              "date": "9 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -13597,8 +13667,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/SRI/",
@@ -13751,11 +13821,22 @@
           "EventTarget",
           "ReadableStream",
           "SharedWorker",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/svg2/"
         ],
@@ -13841,6 +13922,12 @@
               "title": "Reporting API 1",
               "crawled": "https://w3c.github.io/reporting/",
               "date": "14 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/service-workers-1/",
+              "title": "Service Workers 1",
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://url.spec.whatwg.org/",
@@ -14079,7 +14166,7 @@
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -14143,10 +14230,10 @@
       "date": "August 2019 ",
       "url": "https://www.w3.org/TR/gamepad/",
       "latest": "https://www.w3.org/TR/gamepad/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-gamepad-20190805/",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-gamepad-20190814/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/gamepad/",
-      "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190805/",
+      "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190814/",
       "repository": "https://github.com/w3c/gamepad",
       "report": {
         "noNormativeRefs": false,
@@ -14428,11 +14515,22 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -14474,7 +14572,7 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -14492,7 +14590,7 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/orientation-sensor/",
@@ -14626,18 +14724,18 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190805/",
+              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190814/",
               "date": "August 2019 "
             },
             {
@@ -14668,13 +14766,13 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/longtasks-1/",
@@ -15108,7 +15206,7 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -15120,13 +15218,13 @@
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -15161,7 +15259,7 @@
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190805/",
+              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190814/",
               "date": "August 2019 "
             },
             {
@@ -15240,19 +15338,19 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -15276,13 +15374,13 @@
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://w3c.github.io/mediasession/",
-              "date": "9 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/media-source/",
@@ -15312,7 +15410,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -15443,8 +15541,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://storage.spec.whatwg.org/",
@@ -15555,12 +15653,6 @@
               "date": "17 March 2015"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC API",
-              "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Aug 13 2019"
-            },
-            {
               "url": "https://www.w3.org/TR/notifications/",
               "title": "Web Notifications",
               "crawled": "http://www.w3.org/TR/2015/REC-notifications-20151022/",
@@ -15606,13 +15698,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -15624,7 +15716,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -15709,8 +15801,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-3/",
@@ -15758,7 +15850,7 @@
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -15830,7 +15922,7 @@
               "url": "https://w3c.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://w3c.github.io/web-share/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -16091,19 +16183,19 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -16138,7 +16230,7 @@
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190805/",
+              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190814/",
               "date": "August 2019 "
             },
             {
@@ -16181,19 +16273,19 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -16211,13 +16303,13 @@
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://w3c.github.io/mediasession/",
-              "date": "9 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -16235,7 +16327,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -16342,8 +16434,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://storage.spec.whatwg.org/",
@@ -16418,12 +16510,6 @@
               "date": "14 June 2019"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC API",
-              "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Aug 13 2019"
-            },
-            {
               "url": "https://w3c.github.io/speech-api/",
               "title": "Web Speech API",
               "crawled": "https://w3c.github.io/speech-api/",
@@ -16451,13 +16537,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16469,7 +16555,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -16536,8 +16622,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-3/",
@@ -16621,7 +16707,7 @@
               "url": "https://w3c.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://w3c.github.io/web-share/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             }
           ]
         },
@@ -16690,11 +16776,22 @@
           "EventTarget",
           "Transferable",
           "Window",
-          "WindowProxy",
-          "Worker"
+          "WindowProxy"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -16901,19 +16998,19 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -16948,7 +17045,7 @@
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190805/",
+              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190814/",
               "date": "August 2019 "
             },
             {
@@ -16985,19 +17082,19 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -17015,13 +17112,13 @@
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://w3c.github.io/mediasession/",
-              "date": "9 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -17039,7 +17136,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -17158,8 +17255,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://storage.spec.whatwg.org/",
@@ -17234,12 +17331,6 @@
               "date": "14 June 2019"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC API",
-              "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Aug 13 2019"
-            },
-            {
               "url": "https://w3c.github.io/speech-api/",
               "title": "Web Speech API",
               "crawled": "https://w3c.github.io/speech-api/",
@@ -17273,13 +17364,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -17291,7 +17382,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -17364,8 +17455,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-3/",
@@ -17437,7 +17528,7 @@
               "url": "https://w3c.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://w3c.github.io/web-share/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             }
           ]
         },
@@ -17523,11 +17614,22 @@
           "EventInit",
           "EventTarget",
           "Window",
-          "WindowOrWorkerGlobalScope",
-          "Worker"
+          "WindowOrWorkerGlobalScope"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -17607,7 +17709,7 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "Tue Aug 13 2019",
+      "date": "Fri Aug 16 2019",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
@@ -17740,7 +17842,7 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             }
           ],
           "informative": []
@@ -17847,7 +17949,7 @@
     },
     {
       "title": "Largest Contentful Paint",
-      "date": "25 July 2019",
+      "date": "15 August 2019",
       "url": "https://wicg.github.io/largest-contentful-paint/",
       "crawled": "https://wicg.github.io/largest-contentful-paint/",
       "repository": "https://github.com/wicg/largest-contentful-paint",
@@ -17889,7 +17991,7 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             }
           ],
           "informative": []
@@ -17900,7 +18002,7 @@
     },
     {
       "title": "Layout Instability API",
-      "date": "16 July 2019",
+      "date": "15 August 2019",
       "url": "https://wicg.github.io/layout-instability/",
       "crawled": "https://wicg.github.io/layout-instability/",
       "repository": "https://github.com/wicg/layout-instability",
@@ -17919,10 +18021,8 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/html401/struct/",
           "https://www.w3.org/TR/uievents/",
-          "https://www.w3.org/TR/pointerevents/",
-          "https://www.w3.org/TR/css-transforms-1/"
+          "https://www.w3.org/TR/pointerevents/"
         ],
         "inconsistentRef": [
           {
@@ -18093,7 +18193,7 @@
     },
     {
       "title": "Media Capabilities",
-      "date": "29 July 2019",
+      "date": "14 August 2019",
       "url": "https://w3c.github.io/media-capabilities/",
       "crawled": "https://w3c.github.io/media-capabilities/",
       "repository": "https://github.com/w3c/media-capabilities",
@@ -18111,11 +18211,22 @@
           "Navigator",
           "Screen",
           "Window",
-          "Worker",
           "WorkerNavigator"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/webrtc/"
         ],
@@ -18372,7 +18483,7 @@
     },
     {
       "title": "Media Playback Quality",
-      "date": "Tue Aug 13 2019",
+      "date": "Fri Aug 16 2019",
       "url": "https://w3c.github.io/media-playback-quality/",
       "crawled": "https://w3c.github.io/media-playback-quality/",
       "repository": "https://github.com/w3c/media-playback-quality",
@@ -18395,7 +18506,14 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://w3c.github.io/media-capabilities/",
+              "title": "Media Capabilities",
+              "crawled": "https://w3c.github.io/media-capabilities/",
+              "date": "14 August 2019"
+            }
+          ]
         },
         "noEdDraft": null,
         "ok": false
@@ -18581,7 +18699,7 @@
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://drafts.csswg.org/mediaqueries-5/",
@@ -18658,7 +18776,7 @@
     },
     {
       "title": "Media Session Standard",
-      "date": "9 August 2019",
+      "date": "15 August 2019",
       "url": "https://w3c.github.io/mediasession/",
       "crawled": "https://w3c.github.io/mediasession/",
       "repository": "https://github.com/w3c/mediasession",
@@ -18762,13 +18880,13 @@
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://url.spec.whatwg.org/",
@@ -18865,7 +18983,7 @@
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -19193,7 +19311,7 @@
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190805/",
+              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190814/",
               "date": "August 2019 "
             },
             {
@@ -19242,7 +19360,7 @@
     },
     {
       "title": "Network Information API",
-      "date": "Tue Aug 13 2019",
+      "date": "Fri Aug 16 2019",
       "url": "https://wicg.github.io/netinfo/",
       "crawled": "https://wicg.github.io/netinfo/",
       "repository": "https://github.com/wicg/netinfo",
@@ -19258,11 +19376,22 @@
         "unknownIdlNames": [
           "EventHandler",
           "EventTarget",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/ServiceWorker/v1/",
           "https://fetch.spec.whatwg.org/",
@@ -19480,8 +19609,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -19506,12 +19635,6 @@
               "title": "Web Authentication: An API for accessing Public Key Credentials Level 1",
               "crawled": "https://www.w3.org/TR/2019/REC-webauthn-1-20190304/",
               "date": "4 March 2019"
-            },
-            {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC API",
-              "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Aug 13 2019"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -19574,13 +19697,13 @@
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             }
           ],
           "informative": []
@@ -19611,14 +19734,7 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "ExtendableEvent",
-          "ExtendableEventInit",
-          "ServiceWorker",
-          "ServiceWorkerGlobalScope",
-          "ServiceWorkerRegistration",
-          "Window",
-          "WindowClient",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -19725,7 +19841,7 @@
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -19775,11 +19891,22 @@
         "unknownIdlNames": [
           "DOMHighResTimeStamp",
           "Performance",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/timing-entrytypes-registry/"
         ],
@@ -19790,25 +19917,25 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/longtasks-1/",
@@ -19886,7 +20013,6 @@
           "Navigator",
           "PermissionName",
           "Window",
-          "Worker",
           "WorkerNavigator"
         ],
         "redefinedIdlNames": [
@@ -19902,7 +20028,19 @@
             ]
           }
         ],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/manifest/",
           "https://w3c.github.io/sensors/"
@@ -20026,13 +20164,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 August 2019"
+              "date": "15 August 2019"
             }
           ],
           "informative": []
@@ -20138,13 +20276,13 @@
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -20158,7 +20296,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             }
           ]
         },
@@ -20214,7 +20352,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             }
           ],
           "informative": [
@@ -20232,7 +20370,7 @@
     },
     {
       "title": "PointerEvents - Level 2 - Extensions",
-      "date": "Tue Aug 13 2019",
+      "date": "Fri Aug 16 2019",
       "url": "https://w3c.github.io/pointerevents/extension.html",
       "crawled": "https://w3c.github.io/pointerevents/extension.html",
       "report": {
@@ -20509,13 +20647,7 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "ExtendableEvent",
-          "ExtendableEventInit",
-          "ServiceWorker",
-          "ServiceWorkerGlobalScope",
-          "ServiceWorkerRegistration",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -20600,8 +20732,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             }
           ],
           "informative": [
@@ -20768,8 +20900,7 @@
           "DOMHighResTimeStamp",
           "EventHandler",
           "Performance",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -20781,13 +20912,13 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -20970,7 +21101,7 @@
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -21011,8 +21142,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -21056,7 +21187,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 August 2019"
+              "date": "15 August 2019"
             }
           ]
         },
@@ -21529,29 +21660,50 @@
     {
       "title": "Service Workers 1",
       "shortname": "service-workers-1",
-      "date": "2 November 2017",
+      "date": "13 August 2019",
       "url": "https://www.w3.org/TR/service-workers-1/",
       "latest": "https://www.w3.org/TR/service-workers-1/",
-      "datedUrl": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/ServiceWorker/v1/",
-      "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
+      "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
       "repository": "https://github.com/w3c/ServiceWorker",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "Event",
+          "EventHandler",
+          "EventInit",
+          "EventTarget",
+          "Navigator",
+          "Window",
+          "WindowOrWorkerGlobalScope",
+          "WorkerGlobalScope",
+          "WorkerNavigator",
+          "WorkerType"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/push-api/"
+          "https://w3c.github.io/push-api/",
+          "https://notifications.spec.whatwg.org/",
+          "https://w3c.github.io/payment-handler/"
         ],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FileAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          },
           {
             "link": "https://w3c.github.io/webappsec-secure-contexts/",
             "ref": {
@@ -21733,11 +21885,22 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -21794,6 +21957,12 @@
               "title": "File API",
               "crawled": "https://www.w3.org/TR/2019/WD-FileAPI-20190531/",
               "date": "31 May 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/service-workers-1/",
+              "title": "Service Workers 1",
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             }
           ],
           "informative": []
@@ -22102,7 +22271,7 @@
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -22114,7 +22283,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             }
           ],
           "informative": [
@@ -22177,7 +22346,7 @@
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/html52/",
@@ -22189,7 +22358,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -22409,11 +22578,22 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -22476,13 +22656,13 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -22500,7 +22680,7 @@
               "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://w3c.github.io/mediasession/",
-              "date": "9 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -22559,8 +22739,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://storage.spec.whatwg.org/",
@@ -22590,7 +22770,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/workers/",
@@ -22697,11 +22877,22 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "Performance",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -23023,7 +23214,7 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/encrypted-media/",
@@ -23035,13 +23226,13 @@
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -23070,7 +23261,7 @@
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190805/",
+              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190814/",
               "date": "August 2019 "
             },
             {
@@ -23113,19 +23304,19 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -23143,7 +23334,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -23197,7 +23388,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -23280,8 +23471,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://w3c.github.io/staticrange/",
@@ -23389,7 +23580,7 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/notifications/",
@@ -23425,7 +23616,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -23437,7 +23628,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -23662,7 +23853,6 @@
           "Event",
           "EventHandler",
           "EventInit",
-          "ServiceWorkerUpdateViaCache",
           "Window",
           "WorkerType"
         ],
@@ -23676,7 +23866,7 @@
               "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://w3c.github.io/mediasession/",
-              "date": "9 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -23866,13 +24056,7 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
           "EventHandler",
-          "ExtendableEvent",
-          "ExtendableEventInit",
-          "ServiceWorker",
-          "ServiceWorkerGlobalScope",
-          "ServiceWorkerRegistration",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -24077,7 +24261,7 @@
     },
     {
       "title": "Web NFC API",
-      "date": "Tue Aug 13 2019",
+      "date": "Fri Aug 16 2019",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -24174,12 +24358,6 @@
               "date": "25 September 2017"
             },
             {
-              "url": "https://www.w3.org/TR/service-workers-1/",
-              "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
-            },
-            {
               "url": "https://www.w3.org/TR/vibration/",
               "title": "Vibration API (Second Edition)",
               "crawled": "https://www.w3.org/TR/2016/REC-vibration-20161018/",
@@ -24193,7 +24371,7 @@
     },
     {
       "title": "Web Share API - Level 1",
-      "date": "Tue Aug 13 2019",
+      "date": "Fri Aug 16 2019",
       "url": "https://w3c.github.io/web-share/",
       "crawled": "https://w3c.github.io/web-share/",
       "report": {
@@ -24558,19 +24736,19 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -24605,7 +24783,7 @@
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190805/",
+              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190814/",
               "date": "August 2019 "
             },
             {
@@ -24660,19 +24838,19 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -24690,13 +24868,13 @@
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://w3c.github.io/mediasession/",
-              "date": "9 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -24714,7 +24892,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -24827,8 +25005,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://storage.spec.whatwg.org/",
@@ -24909,12 +25087,6 @@
               "date": "14 June 2019"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC API",
-              "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Aug 13 2019"
-            },
-            {
               "url": "https://w3c.github.io/speech-api/",
               "title": "Web Speech API",
               "crawled": "https://w3c.github.io/speech-api/",
@@ -24942,13 +25114,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -24960,7 +25132,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -25027,8 +25199,8 @@
             {
               "url": "https://www.w3.org/TR/css-text-decor-3/",
               "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
-              "date": "03 July 2018"
+              "crawled": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-text-3/",
@@ -25112,7 +25284,7 @@
               "url": "https://w3c.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://w3c.github.io/web-share/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             }
           ]
         },
@@ -25141,11 +25313,21 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          },
           {
             "name": "Worklet",
             "refs": [
@@ -25313,7 +25495,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "Tue Aug 13 2019",
+      "date": "Fri Aug 16 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -25327,11 +25509,22 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -25358,7 +25551,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "Tue Aug 13 2019",
+      "date": "Fri Aug 16 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -25380,11 +25573,22 @@
           "ImageBitmap",
           "ImageData",
           "OffscreenCanvas",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -25399,7 +25603,7 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             }
           ],
           "informative": [
@@ -25689,7 +25893,7 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/",
-              "date": "7 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/encoding/",
@@ -25707,13 +25911,13 @@
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -25754,7 +25958,7 @@
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190805/",
+              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190814/",
               "date": "August 2019 "
             },
             {
@@ -25815,7 +26019,7 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -25839,13 +26043,13 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/",
-              "date": "25 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/",
-              "date": "16 July 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/longtasks-1/",
@@ -25863,7 +26067,7 @@
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/",
-              "date": "29 July 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -25887,13 +26091,13 @@
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://w3c.github.io/mediasession/",
-              "date": "9 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/media-source/",
@@ -25917,7 +26121,7 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/orientation-sensor/",
@@ -25977,7 +26181,7 @@
               "url": "https://w3c.github.io/pointerevents/extension.html",
               "title": "PointerEvents - Level 2 - Extensions",
               "crawled": "https://w3c.github.io/pointerevents/extension.html",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -26042,8 +26246,8 @@
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers 1",
-              "crawled": "https://www.w3.org/TR/2017/WD-service-workers-1-20171102/",
-              "date": "2 November 2017"
+              "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+              "date": "13 August 2019"
             },
             {
               "url": "https://w3c.github.io/staticrange/",
@@ -26157,13 +26361,13 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC API",
               "crawled": "https://w3c.github.io/web-nfc/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://w3c.github.io/web-share/",
               "title": "Web Share API - Level 1",
               "crawled": "https://w3c.github.io/web-share/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://w3c.github.io/speech-api/",
@@ -26205,13 +26409,13 @@
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
               "title": "WebGL 2.0 Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
               "title": "WebGL Specification",
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-              "date": "Tue Aug 13 2019"
+              "date": "Fri Aug 16 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -26223,7 +26427,7 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/",
-              "date": "8 August 2019"
+              "date": "15 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -26450,7 +26654,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "8 August 2019",
+      "date": "15 August 2019",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
@@ -26597,7 +26801,7 @@
               {
                 "url": "https://www.w3.org/TR/gamepad/",
                 "title": "Gamepad",
-                "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190805/",
+                "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20190814/",
                 "date": "August 2019 "
               }
             ]
@@ -26611,7 +26815,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Tue Aug 13 2019"
+                "date": "Fri Aug 16 2019"
               }
             ]
           },
@@ -26622,7 +26826,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
                 "title": "WebGL 2.0 Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-                "date": "Tue Aug 13 2019"
+                "date": "Fri Aug 16 2019"
               }
             ]
           },
@@ -26633,7 +26837,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Tue Aug 13 2019"
+                "date": "Fri Aug 16 2019"
               }
             ]
           },
@@ -26644,7 +26848,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Tue Aug 13 2019"
+                "date": "Fri Aug 16 2019"
               }
             ]
           },
@@ -26655,7 +26859,7 @@
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
                 "title": "WebGL Specification",
                 "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-                "date": "Tue Aug 13 2019"
+                "date": "Fri Aug 16 2019"
               }
             ]
           }
@@ -26768,7 +26972,7 @@
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/",
-              "date": "7 August 2019"
+              "date": "14 August 2019"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -26807,8 +27011,7 @@
           "EventTarget",
           "HTMLFormElement",
           "SharedWorker",
-          "Window",
-          "Worker"
+          "Window"
         ],
         "redefinedIdlNames": [
           {
@@ -26834,7 +27037,19 @@
             ]
           }
         ],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Worker",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/service-workers-1/",
+                "title": "Service Workers 1",
+                "crawled": "https://www.w3.org/TR/2019/WD-service-workers-1-20190813/",
+                "date": "13 August 2019"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"
         ],
