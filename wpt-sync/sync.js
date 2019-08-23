@@ -262,10 +262,9 @@ function isDir(path) {
     }
 }
 
-function main() {
+async function main() {
     if (!process.env.GH_USER || !process.env.GH_TOKEN) {
-        console.error(`GH_USER and GH_TOKEN must be set, see README.md`);
-        process.exit(1);
+        throw new Error('GH_USER and GH_TOKEN must be set, see README.md');
     }
 
     flags.defineString('wpt-dir', undefined, 'Path to wpt checkout (required)');
@@ -307,8 +306,10 @@ function main() {
     const remote = flags.get('wpt-remote');
     const remoteBranches = listRemoteBranches(wptDir, remote);
 
-    // `updatePullRequests` is async and should be invoked last.
-    updatePullRequests(wptDir, localBranches, remote, remoteBranches);
+    await updatePullRequests(wptDir, localBranches, remote, remoteBranches);
 }
 
-main();
+main().catch(reason => {
+    console.error(reason);
+    process.exit(1);
+});
