@@ -131,8 +131,14 @@ function listRemoteBranches(dir, remote) {
 // (if any) doesn't have the same changes as the local branch. Then remove
 // remote-only branches to close pull requests that are now no-ops.
 async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
+    const DRY_RUN = flags.get('dry-run');
+
     function git(args) {
-        return child.execSync(`git ${args}`, { cwd: dir, encoding: 'utf-8' });
+        const command = `git ${args}`;
+        if (DRY_RUN) {
+            return 'Mock git stdout in dry run';
+        }
+        return child.execSync(command, { cwd: dir, encoding: 'utf-8' });
     }
 
     const PR_LIMIT = flags.get('pr-limit');
@@ -143,6 +149,20 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
     const octokit = new Octokit({
         auth: process.env.GH_TOKEN,
     });
+
+    if (DRY_RUN) {
+        octokit.hook.wrap('request', (request, options) => {
+            let data = {};
+            if (options.url === '/repos/:owner/:repo/pulls') {
+                if (options.method === 'GET') {
+                    data = [];
+                } else if (options.method === 'POST') {
+                    data = {html_url:'mock://url-in-dry-run'};
+                }
+            }
+            return {data};
+        });
+    }
 
     console.log('Updating pull requests:');
     for (const branch of localBranches) {
@@ -252,6 +272,7 @@ function main() {
     flags.defineString('wpt-remote', 'fork', 'Git remote to push branches to');
     flags.defineString('build-url', undefined, 'Build URL to include in commit message (optional)');
     flags.defineString('pr-limit', 5, 'Maxium number of new PRs to create');
+    flags.defineBoolean('dry-run', false, 'Run without pushing branches or creating PRs');
     flags.parse();
 
     const srcDir = `${__dirname}/../whatwg/idl`;
