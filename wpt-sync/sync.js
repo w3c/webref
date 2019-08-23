@@ -4,7 +4,7 @@ const assert = require('assert');
 const child = require('child_process');
 const fs = require('fs');
 const flags = require('flags');
-const octokit = require('@octokit/rest')();
+const Octokit = require('@octokit/rest');
 
 const PR_BOILERPLATE = `This PR was automatically created by a bot.
 
@@ -140,9 +140,8 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
 
     const owner = process.env.GH_USER;
 
-    octokit.authenticate({
-        type: 'token',
-        token: process.env.GH_TOKEN,
+    const octokit = new Octokit({
+        auth: process.env.GH_TOKEN,
     });
 
     console.log('Updating pull requests:');
@@ -177,7 +176,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
         const pr_body = `${PR_BOILERPLATE}\n\n<hr>\n\n${commit_body}`;
 
         // Look for open PRs for the same branch.
-        const open_prs = (await octokit.pullRequests.getAll({
+        const open_prs = (await octokit.pulls.list({
             owner: 'web-platform-tests',
             repo: 'wpt',
             state: 'open',
@@ -188,7 +187,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
             // If there is an existing PR, just update its title/body.
             const existing_pr = open_prs[0];
 
-            await octokit.pullRequests.update({
+            await octokit.pulls.update({
                 owner: 'web-platform-tests',
                 repo: 'wpt',
                 number: existing_pr.number,
@@ -200,7 +199,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
         } else {
             if (pr_counter < PR_LIMIT) {
                 // Create a new PR.
-                const created_pr = (await octokit.pullRequests.create({
+                const created_pr = (await octokit.pulls.create({
                     owner: 'web-platform-tests',
                     repo: 'wpt',
                     head: `${owner}:${branch}`,
@@ -222,7 +221,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
     console.log('Removing remote-only branches:');
     for (const branch of remoteBranches) {
         if (!localBranches.has(branch)) {
-            await octokit.gitdata.deleteReference({
+            await octokit.git.deleteRef({
                 owner: 'autofoolip',
                 repo: 'wpt',
                 ref: `heads/${branch}`,
