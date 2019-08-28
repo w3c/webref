@@ -733,7 +733,7 @@ WebGLRenderingContext includes WebGLRenderingContextOverloads;
 
 [Exposed=(Window,Worker),
  Constructor(DOMString type,
- optional WebGLContextEventInit eventInit)]
+ optional WebGLContextEventInit eventInit = {})]
 interface WebGLContextEvent : Event {
     readonly attribute DOMString statusMessage;
 };
