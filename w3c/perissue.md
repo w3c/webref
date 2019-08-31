@@ -1,6 +1,6 @@
 % Specifications that define WebIDL content (W3C perspective)
 % Reffy
-% August 30, 2019
+% August 31, 2019
 
 244 specifications were crawled in this report.
 
@@ -111,6 +111,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
@@ -118,7 +119,7 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
 
-=> 8 specifications found
+=> 9 specifications found
 
 
 
