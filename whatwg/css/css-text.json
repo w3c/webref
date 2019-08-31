@@ -4,6 +4,28 @@
     "url": "https://drafts.csswg.org/css-text-4/"
   },
   "properties": {
+    "word-boundary-detection": {
+      "name": "word-boundary-detection",
+      "value": "normal | manual | auto(<lang>)",
+      "initial": "normal",
+      "appliesTo": "inline boxes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified (However, see special provision for unsupported <lang>)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "word-boundary-expansion": {
+      "name": "word-boundary-expansion",
+      "value": "none | space | ideographic-space",
+      "initial": "none",
+      "appliesTo": "inline boxes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
     "text-space-collapse": {
       "name": "text-space-collapse",
       "value": "collapse | discard | preserve | preserve-breaks | preserve-spaces",
@@ -171,5 +193,9 @@
     }
   },
   "descriptors": {},
-  "valuespaces": {}
+  "valuespaces": {
+    "<auto()>": {
+      "value": "auto(<lang>)"
+    }
+  }
 }

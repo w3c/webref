@@ -1,12 +1,13 @@
-% Diff between report from "August 30, 2019" and reference report from "August 29, 2019"
+% Diff between report from "August 31, 2019" and reference report from "August 30, 2019"
 % Reffy
-% August 30, 2019
+% August 31, 2019
 
-## CSS Fonts Module Level 4
+## Input Device Capabilities
 
-- URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-fonts-4/
+- URL: [https://wicg.github.io/InputDeviceCapabilities/](https://wicg.github.io/InputDeviceCapabilities/)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/)
+- Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
+- Spec is OK: *INS* false / *DEL* true
+- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
 
 
