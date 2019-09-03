@@ -210,7 +210,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
             await octokit.pulls.update({
                 owner: 'web-platform-tests',
                 repo: 'wpt',
-                number: existing_pr.number,
+                pull_number: existing_pr.number,
                 title: pr_title,
                 body: pr_body,
             });
