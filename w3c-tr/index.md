@@ -8442,7 +8442,7 @@ Informative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 
 
-## Web NFC API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Web NFC API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -8452,6 +8452,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Spec uses WebIDL but does not reference it normatively
 - Unknown WebIDL names used: `AbortSignal`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `Window`
 
 ### Known dependencies on this specification {.dependencies}
@@ -8996,7 +8997,6 @@ Normative references to this spec from:
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
-- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Share API - Level 1](https://w3c.github.io/web-share/)
 - [Web Speech API](https://w3c.github.io/speech-api/)
 - [Web Storage (Second Edition)](http://www.w3.org/TR/2016/REC-webstorage-20160419/)
@@ -9023,6 +9023,7 @@ Informative references to this spec from:
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
 

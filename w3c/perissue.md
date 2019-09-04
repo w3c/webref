@@ -116,10 +116,11 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Selectors API Level 1](https://www.w3.org/TR/selectors-api/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
 - [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
 
-=> 9 specifications found
+=> 10 specifications found
 
 
 

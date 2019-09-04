@@ -5111,13 +5111,13 @@
   </ul>
   </section>
   </section>
-  <section id="deviceorientation-event-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-noIdlContent="true" data-missingLinkRef="true">
+  <section id="deviceorientation-event-specification" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>DeviceOrientation Event Specification</h2>
   <section id="spec-info-111" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">Editor's Draft</a> (Wed Sep 04 2019)</li>
-  <li>Editor's Draft: <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html" class="uri">https://w3c.github.io/deviceorientation/spec-source-orientation.html</a></li>
+  <li>Crawled version: <a href="https://w3c.github.io/deviceorientation/">Editor's Draft</a> (9 August 2019)</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/deviceorientation/" class="uri">https://w3c.github.io/deviceorientation/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/orientation-event/" class="uri">https://www.w3.org/TR/orientation-event/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2019/WD-orientation-event-20190416/">Working Draft</a></li>
   <li>Repository: <a href="https://github.com/w3c/deviceorientation">GitHub w3c/deviceorientation</a></li>
@@ -5127,11 +5127,17 @@
   <section id="potential-issues-111" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>No normative references found</li>
-  <li>No WebIDL definitions found</li>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>PermissionState</code> also defined in <a href="https://w3c.github.io/permissions/">Permissions</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
-  <li><a href="https://w3c.github.io/deviceorientation/"><code>https://w3c.github.io/deviceorientation/</code></a></li>
+  <li><a href="https://compat.spec.whatwg.org/"><code>https://compat.spec.whatwg.org/</code></a></li>
+  </ul></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/page-visibility-2/"><code>https://www.w3.org/TR/page-visibility-2/</code></a>, related reference &quot;PAGE-VISIBILITY&quot; uses URL <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -5244,6 +5250,7 @@
   <li><a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
+  <li><a href="https://w3c.github.io/deviceorientation/">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://wicg.github.io/element-timing/">Element Timing API</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
@@ -6181,6 +6188,7 @@
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-4/">CSS Writing Modes Level 4</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
+  <li><a href="https://w3c.github.io/deviceorientation/">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://wicg.github.io/element-timing/">Element Timing API</a></li>
@@ -7394,6 +7402,7 @@
   <ul>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></li>
+  <li><a href="https://w3c.github.io/deviceorientation/">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/picture-in-picture/">Picture-in-Picture</a></li>
@@ -7577,7 +7586,7 @@
   </ul>
   </section>
   </section>
-  <section id="permissions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="permissions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Permissions</h2>
   <section id="spec-info-172" class="level3 info">
   <h3>Spec info</h3>
@@ -7594,6 +7603,10 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>PermissionName</code></li>
+  <li>WebIDL names also defined elsewhere:
+  <ul>
+  <li><code>PermissionState</code> also defined in <a href="https://w3c.github.io/deviceorientation/">DeviceOrientation Event Specification</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/manifest/"><code>https://w3c.github.io/manifest/</code></a></li>
@@ -8289,6 +8302,7 @@
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
+  <li><a href="https://w3c.github.io/deviceorientation/">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
@@ -9357,7 +9371,7 @@
   <section id="spec-info-216" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Crawled version: <a href="https://heycam.github.io/webidl/">Editor's Draft</a> (3 September 2019)</li>
+  <li>Crawled version: <a href="https://heycam.github.io/webidl/">Editor's Draft</a> (4 September 2019)</li>
   <li>Editor's Draft: <a href="https://heycam.github.io/webidl/" class="uri">https://heycam.github.io/webidl/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/WebIDL-1/" class="uri">https://www.w3.org/TR/WebIDL-1/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">Recommendation</a></li>
@@ -9415,6 +9429,7 @@
   <li><a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a></li>
   <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
+  <li><a href="https://w3c.github.io/deviceorientation/">DeviceOrientation Event Specification</a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://wicg.github.io/element-timing/">Element Timing API</a></li>
@@ -9502,7 +9517,6 @@
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
   <li><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></li>
   <li><a href="http://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
-  <li><a href="https://w3c.github.io/web-nfc/">Web NFC API</a></li>
   <li><a href="https://w3c.github.io/web-share/">Web Share API - Level 1</a></li>
   <li><a href="https://w3c.github.io/speech-api/">Web Speech API</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a></li>
@@ -9517,7 +9531,10 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/web-nfc/">Web NFC API</a></li>
+  </ul>
   </section>
   </section>
   <section id="web-midi-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
@@ -9554,7 +9571,7 @@
   </ul>
   </section>
   </section>
-  <section id="web-nfc-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <section id="web-nfc-api" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
   <h2>Web NFC API</h2>
   <section id="spec-info-218" class="level3 info">
   <h3>Spec info</h3>
@@ -9567,6 +9584,7 @@
   <section id="potential-issues-218" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>EventHandler</code> defined in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>

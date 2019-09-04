@@ -144,9 +144,10 @@ A typical example is the use of `[]` instead of `FrozenArray`.
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selectors API Level 1](http://www.w3.org/TR/2013/REC-selectors-api-20130221/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
+- [Web NFC API](https://w3c.github.io/web-nfc/)
 - [WebRTC DSCP Control API](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
 
-=> 12 specifications found
+=> 13 specifications found
 
 
 
