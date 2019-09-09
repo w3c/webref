@@ -1,0 +1,44 @@
+on:
+  schedule:
+    - cron: '30 */6 * * *'
+  push:
+    branches:
+    - master
+name: crawl
+jobs:
+  crawl:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: checkout reffy
+      uses: actions/checkout@master
+    - name: setup node
+      uses: actions/setup-node@master
+      with:
+        node-version: '10.x'
+    - name: install pandoc
+      run: sudo apt-get install pandoc
+    - name: setup reffy
+      run: |
+        echo "${{ secrets.CONFIG_JSON }}" | base64 --decode > config.json
+        npm ci
+    - name: reffy crawl
+      run: npm run all
+    - name: checkout reffy-reports
+      uses: actions/checkout@master
+      with:
+        repository: tidoust/reffy-reports
+        ref: master
+        path: reffy-reports
+    - name: copy reports
+      run: rsync -av --exclude=README.md reports/ ../reffy-reports/
+    - name: push reffy-reports
+      working-directory: ../reffy-reports
+      run: |
+        git config user.email auto@foolip.org
+        git config user.name autofoolip
+        git remote set-url --push origin https://autofoolip:${{ secrets.REFFY_REPORTS_TOKEN }}@github.com/foolip/reffy-reports.git
+        git add -A
+        git commit -m 'Update from new reffy run'
+        #npm version patch
+        git push origin HEAD:master
+        #git push origin --tags
