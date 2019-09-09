@@ -4,13 +4,20 @@ on:
   push:
     branches:
     - master
-name: crawl
+name: update
 jobs:
-  crawl:
+  update:
     runs-on: ubuntu-18.04
     steps:
+    - name: checkout
+      uses: actions/checkout@master
     - name: checkout reffy
       uses: actions/checkout@master
+      with:
+        repository: tidoust/reffy
+        ref: master
+        fetch-depth: 1
+        path: reffy
     - name: setup node
       uses: actions/setup-node@master
       with:
@@ -21,24 +28,20 @@ jobs:
       run: |
         echo "${{ secrets.CONFIG_JSON }}" | base64 --decode > config.json
         npm ci
+      working-directory: ../reffy
     - name: reffy crawl
       run: npm run all
-    - name: checkout reffy-reports
-      uses: actions/checkout@master
-      with:
-        repository: tidoust/reffy-reports
-        ref: master
-        path: reffy-reports
+      working-directory: ../reffy
     - name: copy reports
-      run: rsync -av --exclude=README.md reports/ ../reffy-reports/
-    - name: push reffy-reports
-      working-directory: ../reffy-reports
+      run: rsync -av --exclude=README.md ../reffy/reports/ ./
+    - name: git push
       run: |
         git config user.email auto@foolip.org
         git config user.name autofoolip
-        git remote set-url --push origin https://autofoolip:${{ secrets.REFFY_REPORTS_TOKEN }}@github.com/foolip/reffy-reports.git
+        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git add -A
-        git commit -m 'Update from new reffy run'
+        REFFY_SHA=$(git --git-dir=../reffy/.git rev-parse HEAD)
+        git commit -m "Update from new reffy run" -m "Using reffy commit $REFFY_SHA."
         #npm version patch
         git push origin HEAD:master
         #git push origin --tags
