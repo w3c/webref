@@ -30,13 +30,13 @@ dictionary PositionOptions {
   [Clamp] unsigned long maximumAge = 0;
 };
 
-[Exposed=Window]
+[Exposed=Window, SecureContext]
 interface GeolocationPosition {
   readonly attribute GeolocationCoordinates coords;
   readonly attribute DOMTimeStamp timestamp;
 };
 
-[Exposed=Window]
+[Exposed=Window, SecureContext]
 interface GeolocationCoordinates {
   readonly attribute double latitude;
   readonly attribute double longitude;
