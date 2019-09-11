@@ -199,7 +199,6 @@
   <h2>Missing references for WebIDL names</h2>
   <ul>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a> uses <code>Point2D</code> but does not reference <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
-  <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a> uses <code>ImageResource</code> but does not reference <a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a> uses:
   <ul>
   <li><code>Worker</code> but does not reference <a href="https://w3c.github.io/html/">HTML Standard</a> or <a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a> or <a href="https://html.spec.whatwg.org/multipage/workers.html">Web Workers</a></li>
@@ -239,11 +238,6 @@
   <li><code>DOMPoint</code> but does not reference <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><code>DOMPointReadOnly</code> but does not reference <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   </ul></li>
-  <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> uses:
-  <ul>
-  <li><code>MediaStream</code> but does not reference <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  <li><code>MediaStreamTrack</code> but does not reference <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  </ul></li>
   <li><a href="http://webaudio.github.io/web-midi-api/">Web MIDI API</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></li>
   <li><a href="https://w3c.github.io/web-nfc/">Web NFC API</a> uses <code>EventHandler</code> but does not reference <a href="https://w3c.github.io/html/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/web-share/">Web Share API - Level 1</a> uses <code>Navigator</code> but does not reference <a href="https://w3c.github.io/html/">HTML Standard</a></li>
@@ -265,7 +259,7 @@
   <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 39 missing references for IDL definitions found in 24 specifications</p>
+  <p>=&gt; 36 missing references for IDL definitions found in 22 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -851,7 +845,6 @@
   <li><a href="https://w3c.github.io/dom/">W3C DOM 4.1</a> links to <a href="https://www.w3.org/TR/touch-events/"><code>https://www.w3.org/TR/touch-events/</code></a> but does not list it in its references</li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> links to:
   <ul>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/"><code>https://w3c.github.io/mediacapture-fromelement/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/html50/"><code>https://www.w3.org/TR/html50/</code></a> but does not list it in its references</li>
   </ul></li>
@@ -902,7 +895,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 388 missing references for links found in 131 specifications</p>
+  <p>=&gt; 387 missing references for links found in 131 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
