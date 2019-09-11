@@ -142,7 +142,6 @@
   <ul>
   <li><code>ServiceWorkerGlobalScope</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>ServiceWorkerRegistration</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  <li><code>ImageResource</code> but does not reference <a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><code>CacheQueryOptions</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>ExtendableEvent</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>ServiceWorker</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
@@ -222,11 +221,6 @@
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a> uses <code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a> uses <code>AbortSignal</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a> uses <code>ServiceWorkerUpdateViaCache</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> uses:
-  <ul>
-  <li><code>MediaStream</code> but does not reference <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  <li><code>MediaStreamTrack</code> but does not reference <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  </ul></li>
   <li><a href="https://wicg.github.io/BackgroundSync/spec/">Web Background Synchronization</a> uses:
   <ul>
   <li><code>ServiceWorkerRegistration</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
@@ -254,7 +248,7 @@
   <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 71 missing references for IDL definitions found in 33 specifications</p>
+  <p>=&gt; 68 missing references for IDL definitions found in 32 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -825,7 +819,6 @@
   <li><a href="https://w3c.github.io/uievents/">UI Events</a> links to <a href="https://www.w3.org/TR/2004/REC-xml-20040204/"><code>https://www.w3.org/TR/2004/REC-xml-20040204/</code></a> but does not list it in its references</li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> links to:
   <ul>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/"><code>https://w3c.github.io/mediacapture-fromelement/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/html50/"><code>https://www.w3.org/TR/html50/</code></a> but does not list it in its references</li>
   </ul></li>
@@ -864,7 +857,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 373 missing references for links found in 127 specifications</p>
+  <p>=&gt; 372 missing references for links found in 127 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
