@@ -4930,7 +4930,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fullscreen.spec.whatwg.org/) (16 July 2019)
+- Crawled version: [Living Standard](https://fullscreen.spec.whatwg.org/) (12 September 2019)
 - Repository: [GitHub whatwg/fullscreen](https://github.com/whatwg/fullscreen)
 - Shortname: no shortname
 
@@ -4960,7 +4960,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## Gamepad {data-spec=true data-ok=true}
+## Gamepad {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
 
 ### Spec info {.info}
 
@@ -4973,11 +4973,14 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- WebIDL names also defined elsewhere: 
+    * `GamepadMappingType` also defined in [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 
 No informative reference to this spec from other specs.
 
@@ -8118,6 +8121,7 @@ Normative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
+- [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -8465,11 +8469,37 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebXR Device API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## WebXR Augmented Reality Module - Level 1 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (10 September 2019)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/) (4 September 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Spec uses WebIDL but does not reference it normatively
+- WebIDL names also defined elsewhere: 
+    * `XRSessionMode` also defined in [WebXR Device API](https://immersive-web.github.io/webxr/)
+- Missing references for WebIDL names: 
+     * `XRSession` defined in [WebXR Device API](https://immersive-web.github.io/webxr/)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/)
+     * [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## WebXR Device API {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (12 September 2019)
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20190521/)
@@ -8478,6 +8508,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- WebIDL names also defined elsewhere: 
+    * `XRSessionMode` also defined in [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 - Missing references for WebIDL names: 
      * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
      * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -8487,6 +8519,36 @@ No informative reference to this spec from other specs.
 - Missing references for links: 
      * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/)
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
+- [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
+
+No informative reference to this spec from other specs.
+
+
+## WebXR Gamepads Module - Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-gamepads-module/) (29 August 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- WebIDL names also defined elsewhere: 
+    * `GamepadMappingType` also defined in [Gamepad](https://w3c.github.io/gamepad/)
+- Missing references for WebIDL names: 
+     * `XRInputSource` defined in [WebXR Device API](https://immersive-web.github.io/webxr/)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/), related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
 ### Known dependencies on this specification {.dependencies}
 

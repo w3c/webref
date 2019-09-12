@@ -1,0 +1,25 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content was automatically extracted by Reffy into reffy-reports
+// (https://github.com/tidoust/reffy-reports)
+// Source: Worklets Level 1 (http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+
+[Exposed=Worklet]
+interface WorkletGlobalScope {
+    attribute Console console;
+};
+
+interface Worklet {
+    [NewObject] Promise<void> import(DOMString moduleURL);
+};
+
+partial interface Window {
+  [SameObject] readonly attribute Worklet fakeWorklet1;
+  [SameObject] readonly attribute Worklet fakeWorklet2;
+};
+
+callback Function = any (any... arguments);
+
+[Global=(Worklet,FakeWorklet),Exposed=FakeWorklet]
+interface FakeWorkletGlobalScope : WorkletGlobalScope {
+    void registerAnArbitaryClass(DOMString type, Function classConstructor);
+};

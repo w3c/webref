@@ -4940,7 +4940,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fullscreen.spec.whatwg.org/) (16 July 2019)
+- Crawled version: [Living Standard](https://fullscreen.spec.whatwg.org/) (12 September 2019)
 - Repository: [GitHub whatwg/fullscreen](https://github.com/whatwg/fullscreen)
 - Shortname: no shortname
 
@@ -4984,13 +4984,14 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `DOMHighResTimeStamp`, `Event`, `EventInit`, `Navigator`, `Window`
 - WebIDL names also defined elsewhere: 
-    * `GamepadMappingType` also defined in [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+    * `GamepadMappingType` also defined in [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/) and [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 
 No informative reference to this spec from other specs.
 
@@ -8251,7 +8252,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Event`, `EventHandler`, `EventInit`, `Window`, `WorkerType`
+- Unknown WebIDL names used: `Event`, `EventHandler`, `Window`, `WorkerType`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9003,6 +9004,7 @@ Normative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 - [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -9135,6 +9137,33 @@ Informative references to this spec from:
 - [HTML 5.2](https://www.w3.org/TR/2017/REC-html52-20171214/)
 
 
+## WebXR Augmented Reality Module - Level 1 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/) (4 September 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Spec uses WebIDL but does not reference it normatively
+- WebIDL names also defined elsewhere: 
+    * `XRSessionMode` also defined in [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+    * `XREnvironmentBlendMode` also defined in [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- Missing references for WebIDL names: 
+     * `XRSession` defined in [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/)
+     * [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## WebXR Device API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -9150,7 +9179,9 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `DOMHighResTimeStamp`, `Event`, `EventHandler`, `EventInit`, `EventTarget`, `HTMLCanvasElement`, `Navigator`, `Window`
 - WebIDL names also defined elsewhere: 
-    * `GamepadMappingType` also defined in [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190903/)
+    * `XRSessionMode` also defined in [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
+    * `XREnvironmentBlendMode` also defined in [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
+    * `GamepadMappingType` also defined in [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190903/) and [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 - Missing references for WebIDL names: 
      * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
      * `WebGL2RenderingContext` defined in [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
@@ -9161,6 +9192,36 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/), related reference "ORIENTATION-SENSOR" uses URL [`https://www.w3.org/TR/orientation-sensor/`](https://www.w3.org/TR/orientation-sensor/)
+     * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/), related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
+- [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
+
+No informative reference to this spec from other specs.
+
+
+## WebXR Gamepads Module - Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-gamepads-module/) (29 August 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- WebIDL names also defined elsewhere: 
+    * `GamepadMappingType` also defined in [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20190903/) and [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- Missing references for WebIDL names: 
+     * `XRInputSource` defined in [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/)
+- Inconsistent references for links: 
      * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/), related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
 ### Known dependencies on this specification {.dependencies}

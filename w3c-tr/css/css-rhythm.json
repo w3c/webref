@@ -1,0 +1,82 @@
+{
+  "spec": {
+    "title": "CSS Rhythmic Sizing",
+    "url": "https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/"
+  },
+  "properties": {
+    "line-height-step": {
+      "name": "line-height-step",
+      "value": "none | <length>",
+      "initial": "none",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "the absolute length, 0 for none",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "block-step-size": {
+      "name": "block-step-size",
+      "value": "none | <length>",
+      "initial": "none",
+      "appliesTo": "block-level boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "keyword or absolute length",
+      "canonicalOrder": "per grammar",
+      "animatable": "???"
+    },
+    "block-step-insert": {
+      "name": "block-step-insert",
+      "value": "margin | padding",
+      "initial": "margin",
+      "appliesTo": "block-level boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "block-step-align": {
+      "name": "block-step-align",
+      "value": "auto | center | start | end",
+      "initial": "auto",
+      "appliesTo": "block-level boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "block-step-round": {
+      "name": "block-step-round",
+      "value": "up | down | nearest",
+      "initial": "up",
+      "appliesTo": "block-level boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    },
+    "block-step": {
+      "name": "block-step",
+      "value": "<block-step-size> || <block-step-insert> || <block-step-align> || <block-step-round>",
+      "initial": "See individual properties",
+      "appliesTo": "block-level boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "See individual properties",
+      "canonicalOrder": "per grammar",
+      "animatable": "See individual properties"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {}
+}
