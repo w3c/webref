@@ -21,7 +21,7 @@ jobs:
     - name: setup node
       uses: actions/setup-node@master
       with:
-        node-version: '10.x'
+        node-version: 10.x
     - name: install pandoc
       run: sudo apt-get install pandoc
     - name: setup reffy
