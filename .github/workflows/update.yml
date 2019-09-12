@@ -36,8 +36,8 @@ jobs:
       run: rsync -av --exclude=README.md ../reffy/reports/ ./
     - name: git push
       run: |
-        git config user.email auto@foolip.org
-        git config user.name autofoolip
+        git config user.name "reffy-bot"
+        git config user.email "<>"
         git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git add -A
         REFFY_SHA=$(git --git-dir=../reffy/.git rev-parse HEAD)
