@@ -1,0 +1,108 @@
+{
+  "spec": {
+    "title": "CSS Lists Module Level 3",
+    "url": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/"
+  },
+  "properties": {
+    "list-style-image": {
+      "name": "list-style-image",
+      "value": "<image> | none",
+      "initial": "none",
+      "appliesTo": "list items",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "the keyword noneor the computed <image>",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "list-style-type": {
+      "name": "list-style-type",
+      "value": "<counter-style> | <string> | none",
+      "initial": "disc",
+      "appliesTo": "list items",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "list-style-position": {
+      "name": "list-style-position",
+      "value": "inside | outside",
+      "initial": "outside",
+      "appliesTo": "list items",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "keyword, but see prose",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "list-style": {
+      "name": "list-style",
+      "value": "<'list-style-position'> || <'list-style-image'> || <'list-style-type'>",
+      "initial": "see individual properties",
+      "appliesTo": "list items",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
+    },
+    "marker-side": {
+      "name": "marker-side",
+      "value": "match-self | match-parent",
+      "initial": "match-self",
+      "appliesTo": "list items",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "counter-reset": {
+      "name": "counter-reset",
+      "value": "[ <counter-name> <integer>? ]+ | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the keyword none or a list, each item an identifier paired with an integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    },
+    "counter-increment": {
+      "name": "counter-increment",
+      "value": "[ <counter-name> <integer>? ]+ | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the keyword none or a list, each item an identifier paired with an integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    },
+    "counter-set": {
+      "name": "counter-set",
+      "value": "[ <counter-name> <integer>? ]+ | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the keyword none or a list, each item an identifier paired with an integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<counter>": {
+      "value": "<counter()> | <counters()>"
+    },
+    "<counter()>": {
+      "value": "counter( <counter-name>, <counter-style>? )"
+    },
+    "<counters()>": {
+      "value": "counters( <counter-name>, <string>, <counter-style>? )"
+    }
+  }
+}
